@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GEOPÓLEM">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#101d2b"/>
+      <stop offset="100%" stop-color="#05080c"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <path d="M64 256H448M256 64V448" stroke="#22d3ee" stroke-width="4" opacity=".2"/>
+  <circle cx="256" cy="256" r="172" fill="none" stroke="#22d3ee" stroke-width="10" opacity=".45"/>
+  <circle cx="256" cy="256" r="116" fill="none" stroke="#22d3ee" stroke-width="8"/>
+  <circle cx="256" cy="256" r="22" fill="#ef4444" filter="url(#glow)"/>
+  <path d="M256 42V96M256 416V470M42 256H96M416 256H470" stroke="#22d3ee" stroke-width="14" stroke-linecap="round"/>
+  <path d="M128 128L164 164M348 164L384 128M128 384L164 348M348 348L384 384" stroke="#22d3ee" stroke-width="8" opacity=".65" stroke-linecap="round"/>
+  <path d="M256 116L288 256L256 396L224 256Z" fill="#22d3ee" opacity=".18"/>
+</svg>

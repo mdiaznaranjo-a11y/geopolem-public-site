@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GEOPÓLEM">
+  <rect width="512" height="512" fill="#05080c"/>
+  <circle cx="256" cy="256" r="196" fill="#08111a" stroke="#22d3ee" stroke-width="8" opacity=".92"/>
+  <circle cx="256" cy="256" r="126" fill="none" stroke="#22d3ee" stroke-width="10"/>
+  <path d="M72 256H440M256 72V440" stroke="#22d3ee" stroke-width="5" opacity=".3"/>
+  <circle cx="256" cy="256" r="24" fill="#ef4444"/>
+  <path d="M256 96V148M256 364V416M96 256H148M364 256H416" stroke="#22d3ee" stroke-width="16" stroke-linecap="round"/>
+  <path d="M256 128L292 256L256 384L220 256Z" fill="#22d3ee" opacity=".2"/>
+</svg>
