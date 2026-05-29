@@ -1,9 +1,10 @@
-const CACHE_NAME = 'geopolem-command-v1.8.0';
+const CACHE_NAME = 'geopolem-command-v1.9.0';
 const APP_SHELL = [
   './',
   './index.html',
   './app.js',
   './data.js',
+  './videos.js',
   './worldmap.js',
   './manifest.webmanifest',
   './icons/icon-192.svg',
@@ -33,6 +34,11 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   if (url.pathname.includes('/api/') || url.pathname.includes('/port/')) {
+    event.respondWith(fetch(request));
+    return;
+  }
+  // Stream videos directly from the network — never put MP4s into the app-shell cache.
+  if (url.pathname.endsWith('.mp4') || request.destination === 'video') {
     event.respondWith(fetch(request));
     return;
   }

@@ -4,6 +4,7 @@ import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
 import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
+import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 
 const html = htm.bind(React.createElement);
 const API_BASE = window.GEOP_API_BASE || ('__PORT_8000__'.startsWith('__') ? 'http://127.0.0.1:8000' : '__PORT_8000__');
@@ -37,7 +38,7 @@ const I18N = {
   ES: {
     welcome: 'Bienvenido al tablero.',
     tagline: 'GEO + PÓLEMOS · sala situacional editorial',
-    nav: { dashboard:'Tablero', map:'Mapa', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio' },
+    nav: { dashboard:'Tablero', map:'Mapa', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio' },
     kpi: 'Indicadores clave',
     alerts: 'Alertas en vivo',
     selectFoco: 'Selecciona un foco',
@@ -56,7 +57,7 @@ const I18N = {
   EN: {
     welcome: 'Welcome to the board.',
     tagline: 'GEO + PÓLEMOS · editorial situation room',
-    nav: { dashboard:'Dashboard', map:'Map', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio' },
+    nav: { dashboard:'Dashboard', map:'Map', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio' },
     kpi:'Key indicators',
     alerts:'Live alerts',
     selectFoco:'Select a focus',
@@ -75,7 +76,7 @@ const I18N = {
   FR: {
     welcome:'Bienvenue sur le tableau.',
     tagline:'GEO + PÓLEMOS · salle de situation éditoriale',
-    nav:{ dashboard:'Tableau', map:'Carte', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Carte', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio' },
     kpi:'Indicateurs clés', alerts:'Alertes en direct',
     selectFoco:'Sélectionner un foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Acteurs', risk:'Matrice des risques',
@@ -92,7 +93,7 @@ const I18N = {
   DE: {
     welcome:'Willkommen am Lagebrett.',
     tagline:'GEO + PÓLEMOS · redaktioneller Lageraum',
-    nav:{ dashboard:'Dashboard', map:'Karte', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio' },
+    nav:{ dashboard:'Dashboard', map:'Karte', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio' },
     kpi:'Schlüsselindikatoren', alerts:'Live-Warnungen',
     selectFoco:'Brennpunkt auswählen',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteure', risk:'Risikomatrix',
@@ -109,7 +110,7 @@ const I18N = {
   LB: {
     welcome:'Wëllkomm um Tableau.',
     tagline:'GEO + PÓLEMOS · redaktionellen Situatiouns-Raum',
-    nav:{ dashboard:'Tableau', map:'Kaart', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Kaart', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio' },
     kpi:'Haaptindikateuren', alerts:'Live Alarmen',
     selectFoco:'Wielt e Foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteuren', risk:'Risiko-Matrix',
@@ -123,6 +124,117 @@ const I18N = {
     nodes:'Knäpp vum Weltsystem',
     systemIntro:'D\u2019Weltsystem verbënnt Energie, Handel, Iesswueren, Waasser, Daten, Migratioun, Finanzen a Klima. Eng Kris an engem Knapp breet sech aus.',
   }
+};
+
+/* ========================================================================
+   Sala audiovisual · Video intelligence — copy by language
+   ======================================================================== */
+const SALA_COPY = {
+  ES: {
+    eyebrow: 'SALA AUDIOVISUAL · OSINT',
+    title: 'Bienvenidos al tablero',
+    subtitle: 'Reels editoriales, manifiestos y briefings OSINT en formato audiovisual.',
+    intro: 'Cada pieza es una tesis comprimida: contexto, evidencia y ángulo estratégico. Producción interna GEOPÓLEM.',
+    featured: 'Destacados',
+    library: 'Biblioteca completa',
+    filterAll: 'Todos',
+    audio: 'Audio',
+    subs: 'Subtítulos',
+    none: 'Sin subtítulos',
+    duration: 'Duración',
+    strategic: 'Ángulo estratégico',
+    source: 'Archivo fuente',
+    play: 'Reproducir',
+    vertical: 'Vertical · Reel',
+    horizontal: 'Horizontal · Editorial',
+    counter: (n) => `${n} piezas curadas`,
+    badge: 'OSINT · Producción GEOPÓLEM',
+    note: 'Material editorial basado en fuentes abiertas. Uso interpretativo, no operativo.',
+  },
+  EN: {
+    eyebrow: 'VIDEO INTELLIGENCE · OSINT',
+    title: 'Welcome to the board',
+    subtitle: 'Editorial reels, manifestos and OSINT briefings in audiovisual format.',
+    intro: 'Each piece is a compressed thesis: context, evidence and strategic angle. Produced in-house by GEOPÓLEM.',
+    featured: 'Featured',
+    library: 'Full library',
+    filterAll: 'All',
+    audio: 'Audio',
+    subs: 'Subtitles',
+    none: 'No subtitles',
+    duration: 'Runtime',
+    strategic: 'Strategic angle',
+    source: 'Source file',
+    play: 'Play',
+    vertical: 'Vertical · Reel',
+    horizontal: 'Horizontal · Editorial',
+    counter: (n) => `${n} curated pieces`,
+    badge: 'OSINT · GEOPÓLEM production',
+    note: 'Editorial material based on open sources. Interpretive use, not operational.',
+  },
+  FR: {
+    eyebrow: 'SALLE AUDIOVISUELLE · OSINT',
+    title: 'Bienvenue sur le tableau',
+    subtitle: 'Reels éditoriaux, manifestes et briefings OSINT en format audiovisuel.',
+    intro: 'Chaque pièce est une thèse compressée : contexte, preuves et angle stratégique. Production interne GEOPÓLEM.',
+    featured: 'Sélection',
+    library: 'Bibliothèque complète',
+    filterAll: 'Tous',
+    audio: 'Audio',
+    subs: 'Sous-titres',
+    none: 'Sans sous-titres',
+    duration: 'Durée',
+    strategic: 'Angle stratégique',
+    source: 'Fichier source',
+    play: 'Lire',
+    vertical: 'Vertical · Reel',
+    horizontal: 'Horizontal · Éditorial',
+    counter: (n) => `${n} pièces curatées`,
+    badge: 'OSINT · Production GEOPÓLEM',
+    note: 'Matériel éditorial fondé sur des sources ouvertes. Usage interprétatif, non opérationnel.',
+  },
+  DE: {
+    eyebrow: 'LAGE-VIDEOS · OSINT',
+    title: 'Willkommen am Lagebrett',
+    subtitle: 'Redaktionelle Reels, Manifeste und OSINT-Briefings im audiovisuellen Format.',
+    intro: 'Jedes Stück ist eine komprimierte These: Kontext, Belege und strategischer Blickwinkel. Eigenproduktion von GEOPÓLEM.',
+    featured: 'Auswahl',
+    library: 'Vollständige Bibliothek',
+    filterAll: 'Alle',
+    audio: 'Audio',
+    subs: 'Untertitel',
+    none: 'Keine Untertitel',
+    duration: 'Länge',
+    strategic: 'Strategischer Blickwinkel',
+    source: 'Quelldatei',
+    play: 'Abspielen',
+    vertical: 'Vertikal · Reel',
+    horizontal: 'Horizontal · Redaktion',
+    counter: (n) => `${n} kuratierte Stücke`,
+    badge: 'OSINT · GEOPÓLEM-Produktion',
+    note: 'Redaktionelles Material aus offenen Quellen. Interpretativ, nicht operativ.',
+  },
+  LB: {
+    eyebrow: 'AUDIOVISUELL SALL · OSINT',
+    title: 'Wëllkomm um Tableau',
+    subtitle: 'Redaktionnel Reels, Manifester an OSINT-Briefingen am audiovisuelle Format.',
+    intro: 'All Stéck ass eng kompriméiert Thes: Kontext, Beweiser a strategeschen Blickwénkel. Eege Produktioun vu GEOPÓLEM.',
+    featured: 'Auswiel',
+    library: 'Voll Bibliothéik',
+    filterAll: 'All',
+    audio: 'Audio',
+    subs: 'Ënnertitelen',
+    none: 'Keng Ënnertitelen',
+    duration: 'Längt',
+    strategic: 'Strategesche Blickwénkel',
+    source: 'Quelldatei',
+    play: 'Ofspillen',
+    vertical: 'Vertikal · Reel',
+    horizontal: 'Horizontal · Redaktioun',
+    counter: (n) => `${n} curéiert Stécker`,
+    badge: 'OSINT · GEOPÓLEM-Produktioun',
+    note: 'Redaktionelle Material aus oppene Quellen. Interpretativ, net operationell.',
+  },
 };
 
 /* ========================================================================
@@ -2180,6 +2292,269 @@ function EditorWorkspace({ t, focos, onCreate, onDelete, onPasswordChange, histo
 }
 
 /* ========================================================================
+   Sala audiovisual · Video Intelligence
+   ======================================================================== */
+function VideoCard({ video, copy, onOpen }) {
+  const cat = VIDEO_CATEGORIES[video.category] || { label: video.category, tone: 'cyan', accent: '#22d3ee' };
+  const tone = TONE_TO_COLOR[cat.tone] || TONE_TO_COLOR.cyan;
+  const isVertical = video.orientation === 'vertical';
+  const aspect = isVertical ? 'aspect-[9/16]' : 'aspect-video';
+  const subs = (video.subtitles && video.subtitles.length)
+    ? video.subtitles.join(' · ')
+    : copy.none;
+  return html`
+  <article class=${clsx(
+    'group relative panel rounded-lg overflow-hidden flex flex-col',
+    'hover:border-radar/40 hover:shadow-glow transition'
+  )}>
+    <span class="corner-tl"></span><span class="corner-tr"></span>
+    <span class="corner-bl"></span><span class="corner-br"></span>
+
+    <button onClick=${onOpen} class=${clsx('relative w-full bg-carbon-950 overflow-hidden', aspect)} aria-label=${copy.play + ' — ' + video.title}>
+      <img src=${video.poster} alt=${video.title} loading="lazy"
+           class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-[1.03] transition duration-500"/>
+      <div class="absolute inset-0 bg-gradient-to-b from-carbon-950/10 via-carbon-950/40 to-carbon-950/85"></div>
+      <div class="absolute inset-0 scanlines pointer-events-none opacity-40"></div>
+      <div class="absolute top-2 left-2 flex items-center gap-1.5">
+        <span class=${clsx('chip', tone.txt)} style=${{borderColor: cat.accent + '55', background: cat.accent + '12'}}>${cat.label}</span>
+        ${isVertical && html`<span class="chip">${copy.vertical}</span>`}
+      </div>
+      <div class="absolute top-2 right-2 flex items-center gap-1">
+        <span class="chip font-mono">${video.language}${video.subtitles?.length ? ' · sub ' + video.subtitles.join('/') : ''}</span>
+      </div>
+      <div class="absolute bottom-2 right-2">
+        <span class="chip font-mono">${video.duration}</span>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <span class="w-14 h-14 rounded-full border border-radar/60 bg-carbon-950/55 backdrop-blur-sm flex items-center justify-center group-hover:bg-radar/15 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-radar translate-x-[1px]">
+            <polygon points="6,4 20,12 6,20" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
+      </div>
+    </button>
+
+    <div class="p-3.5 flex-1 flex flex-col gap-2">
+      <h3 class="font-display font-semibold text-[15px] leading-snug text-slate-100">${video.title}</h3>
+      <p class="text-[12.5px] leading-relaxed text-slate-400">${video.description}</p>
+      <div class="mt-auto pt-2 border-t border-white/5 flex items-center justify-between gap-2">
+        <div class="flex items-center gap-1.5 text-[10.5px] font-mono uppercase tracking-widest text-slate-500">
+          <span class="w-1.5 h-1.5 rounded-full animate-pulse-dot" style=${{background: cat.accent}}></span>
+          ${copy.audio} ${video.language} · ${subs}
+        </div>
+        <button onClick=${onOpen}
+          class="px-2.5 py-1 rounded border border-radar/40 text-radar text-[10.5px] font-mono uppercase tracking-widest hover:bg-radar/10 transition">
+          ${copy.play}
+        </button>
+      </div>
+    </div>
+  </article>`;
+}
+
+function VideoPlayerModal({ video, copy, onClose }) {
+  const videoRef = useRef(null);
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [onClose]);
+  if (!video) return null;
+  const cat = VIDEO_CATEGORIES[video.category] || { label: video.category, accent: '#22d3ee' };
+  const isVertical = video.orientation === 'vertical';
+  return html`
+  <div class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-carbon-950/90 backdrop-blur-md"
+       onClick=${onClose}>
+    <div class="relative w-full max-w-5xl panel rounded-lg overflow-hidden max-h-[92vh] flex flex-col"
+         onClick=${(e)=>e.stopPropagation()}>
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+
+      <div class="flex items-center justify-between gap-3 px-4 py-3 border-b border-white/5">
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="chip" style=${{borderColor: cat.accent + '55', background: cat.accent + '12', color: cat.accent}}>${cat.label}</span>
+          <h3 class="font-display font-semibold text-[15px] text-slate-100 truncate">${video.title}</h3>
+        </div>
+        <button onClick=${onClose}
+          class="px-2.5 py-1 rounded border border-white/10 text-slate-300 text-[11px] font-mono uppercase tracking-widest hover:bg-white/5 transition"
+          aria-label="Close">✕ Esc</button>
+      </div>
+
+      <div class=${clsx('flex flex-col lg:flex-row bg-carbon-950', isVertical ? 'lg:items-stretch' : '')}>
+        <div class=${clsx('relative bg-black flex items-center justify-center',
+                         isVertical ? 'lg:w-[55%] aspect-[9/16] lg:aspect-auto lg:max-h-[78vh]' : 'w-full aspect-video')}>
+          <video
+            ref=${videoRef}
+            class=${clsx('w-full h-full', isVertical ? 'object-contain' : 'object-contain')}
+            src=${video.src}
+            poster=${video.poster}
+            controls
+            autoplay
+            playsInline
+            preload="metadata"
+          ></video>
+          <div class="absolute inset-0 pointer-events-none scanlines opacity-25"></div>
+        </div>
+        <div class=${clsx('p-4 lg:p-5 space-y-3 overflow-y-auto', isVertical ? 'lg:w-[45%] lg:max-h-[78vh]' : '')}>
+          <p class="text-[13.5px] leading-relaxed text-slate-300">${video.description}</p>
+          <div class="panel-soft rounded p-3">
+            <div class="heading-mono">${copy.strategic}</div>
+            <p class="mt-1 text-[13px] leading-relaxed text-slate-200">${video.strategic}</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 text-[11.5px]">
+            <div class="panel-soft rounded p-2.5">
+              <div class="heading-mono">${copy.audio}</div>
+              <div class="text-slate-200 font-mono mt-0.5">${video.language}</div>
+            </div>
+            <div class="panel-soft rounded p-2.5">
+              <div class="heading-mono">${copy.subs}</div>
+              <div class="text-slate-200 font-mono mt-0.5">${video.subtitles?.length ? video.subtitles.join(' · ') : copy.none}</div>
+            </div>
+            <div class="panel-soft rounded p-2.5">
+              <div class="heading-mono">${copy.duration}</div>
+              <div class="text-slate-200 font-mono mt-0.5">${video.duration}</div>
+            </div>
+            <div class="panel-soft rounded p-2.5">
+              <div class="heading-mono">${copy.source}</div>
+              <div class="text-slate-200 font-mono mt-0.5 truncate" title=${video.source}>${video.source}</div>
+            </div>
+          </div>
+          <a href=${video.src} download
+             class="inline-flex items-center gap-2 px-3 py-1.5 rounded border border-radar/40 text-radar text-[11px] font-mono uppercase tracking-widest hover:bg-radar/10 transition">
+            ⬇ MP4
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function VideoLibrary({ lang }) {
+  const copy = SALA_COPY[lang] || SALA_COPY.ES;
+  const [openId, setOpenId] = useState(null);
+  const [filter, setFilter] = useState('all');
+  const featured = useMemo(() => VIDEOS.filter(v => v.featured), []);
+  const filtered = useMemo(() =>
+    filter === 'all' ? VIDEOS : VIDEOS.filter(v => v.category === filter),
+    [filter]
+  );
+  const open = openId ? VIDEOS.find(v => v.id === openId) : null;
+  const categories = useMemo(() => {
+    const used = new Set(VIDEOS.map(v => v.category));
+    return Array.from(used).map(id => ({ id, ...VIDEO_CATEGORIES[id] }));
+  }, []);
+
+  return html`
+  <section class="space-y-5 lg:space-y-7">
+    <!-- Hero -->
+    <div class="relative panel rounded-lg overflow-hidden">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="boot-grid absolute inset-0 opacity-50 pointer-events-none"></div>
+      <div class="absolute inset-0 scanlines pointer-events-none opacity-50"></div>
+      <div class="relative p-5 lg:p-8 flex flex-col gap-2 lg:gap-3">
+        <div class="flex items-center gap-2">
+          <span class="relative flex w-2 h-2">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-alert/70 opacity-70 animate-ping-ring"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-alert"></span>
+          </span>
+          <span class="font-mono text-[10.5px] uppercase tracking-[0.32em] text-radar">${copy.eyebrow}</span>
+        </div>
+        <h2 class="font-display font-bold text-[26px] sm:text-[34px] lg:text-[40px] text-slate-50 leading-tight glow-text">${copy.title}</h2>
+        <p class="text-[14px] sm:text-[15px] text-slate-300 max-w-2xl">${copy.subtitle}</p>
+        <p class="text-[12.5px] text-slate-400 max-w-2xl">${copy.intro}</p>
+        <div class="mt-2 flex flex-wrap items-center gap-2">
+          <span class="chip text-radar" style=${{borderColor: 'rgba(34,211,238,0.45)'}}>${copy.badge}</span>
+          <span class="chip">${copy.counter(VIDEOS.length)}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured -->
+    ${featured.length > 0 && html`
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-display font-semibold text-[17px] text-slate-100 tracking-wide">${copy.featured}</h3>
+          <span class="heading-mono">${featured.length}</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+          ${featured.map(v => html`<${VideoCard} key=${v.id} video=${v} copy=${copy} onOpen=${()=>setOpenId(v.id)}/>`)}
+        </div>
+      </div>
+    `}
+
+    <!-- Library -->
+    <div>
+      <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+        <h3 class="font-display font-semibold text-[17px] text-slate-100 tracking-wide">${copy.library}</h3>
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <button onClick=${()=>setFilter('all')}
+            class=${clsx(
+              'px-2.5 py-1 rounded text-[11px] font-mono uppercase tracking-widest border transition',
+              filter==='all' ? 'border-radar/50 text-radar bg-radar/10' : 'border-white/10 text-slate-400 hover:text-slate-100 hover:bg-white/5'
+            )}>${copy.filterAll}</button>
+          ${categories.map(c => html`
+            <button key=${c.id} onClick=${()=>setFilter(c.id)}
+              class=${clsx(
+                'px-2.5 py-1 rounded text-[11px] font-mono uppercase tracking-widest border transition',
+                filter===c.id ? 'border-radar/50 text-radar bg-radar/10' : 'border-white/10 text-slate-400 hover:text-slate-100 hover:bg-white/5'
+              )}>${c.label}</button>
+          `)}
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-4">
+        ${filtered.map(v => html`<${VideoCard} key=${v.id} video=${v} copy=${copy} onOpen=${()=>setOpenId(v.id)}/>`)}
+      </div>
+    </div>
+
+    <p class="text-[11px] font-mono uppercase tracking-widest text-slate-500 text-center pt-2">${copy.note}</p>
+
+    ${open && html`<${VideoPlayerModal} video=${open} copy=${copy} onClose=${()=>setOpenId(null)}/>`}
+  </section>`;
+}
+
+function SalaTeaser({ lang, onOpen }) {
+  const copy = SALA_COPY[lang] || SALA_COPY.ES;
+  const picks = useMemo(() => VIDEOS.filter(v => v.featured).slice(0, 3), []);
+  return html`
+  <section class="relative panel rounded-lg overflow-hidden">
+    <span class="corner-tl"></span><span class="corner-tr"></span>
+    <span class="corner-bl"></span><span class="corner-br"></span>
+    <div class="boot-grid absolute inset-0 opacity-40 pointer-events-none"></div>
+    <div class="relative p-4 lg:p-6 grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-6 items-center">
+      <div class="lg:col-span-2 space-y-2">
+        <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${copy.eyebrow}</div>
+        <h3 class="font-display font-bold text-[22px] lg:text-[26px] text-slate-50 leading-tight glow-text">${copy.title}</h3>
+        <p class="text-[13px] text-slate-300">${copy.subtitle}</p>
+        <button onClick=${onOpen}
+          class="mt-2 inline-flex items-center gap-2 px-3.5 py-2 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+          ▶ ${copy.library} · ${VIDEOS.length}
+        </button>
+      </div>
+      <div class="lg:col-span-3 grid grid-cols-3 gap-2 lg:gap-3">
+        ${picks.map(v => html`
+          <button key=${v.id} onClick=${onOpen}
+            class="relative group aspect-[9/16] overflow-hidden rounded border border-white/5 hover:border-radar/40 transition">
+            <img src=${v.poster} alt=${v.title} loading="lazy"
+                 class="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.04] transition duration-500"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-carbon-950/90 via-carbon-950/30 to-transparent"></div>
+            <div class="absolute bottom-1.5 left-1.5 right-1.5 text-left">
+              <div class="text-[10.5px] font-display font-semibold text-slate-100 leading-tight line-clamp-2">${v.title}</div>
+            </div>
+            <span class="absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-carbon-950/55 border border-radar/40 flex items-center justify-center">
+              <svg width="11" height="11" viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20" fill="#22d3ee"/></svg>
+            </span>
+          </button>
+        `)}
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ========================================================================
    App root
    ======================================================================== */
 function App() {
@@ -2377,6 +2752,7 @@ function App() {
           </div>
           <${Analysis} t=${t} foco=${selectedFoco}/>
           <${Scenarios} t=${t} foco=${selectedFoco}/>
+          <${SalaTeaser} lang=${lang} onOpen=${()=>setView('sala')}/>
         </div>
       `}
 
@@ -2407,6 +2783,8 @@ function App() {
           <${Scenarios} t=${t} foco=${selectedFoco}/>
         </div>
       `}
+
+      ${view==='sala' && html`<${VideoLibrary} lang=${lang}/>`}
 
       ${view==='rearm' && html`<${RearmamentModule} t=${t} onOpenFoco=${openFocoOnMap}/>`}
 
