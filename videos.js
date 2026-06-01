@@ -14,6 +14,7 @@ export const VIDEO_CATEGORIES = {
   artico:       { label: 'Ártico · Rutas',      labelEn: 'Arctic · Routes',    tone: 'cyan',   accent: '#67e8f9' },
   drones:       { label: 'Guerra de drones',    labelEn: 'Drone warfare',      tone: 'red',    accent: '#fb7185' },
   tripolar:     { label: 'Orden tripolar',      labelEn: 'Tripolar order',     tone: 'violet', accent: '#c4b5fd' },
+  hemisferio:   { label: 'OSINT · Hemisferio',   labelEn: 'OSINT · Hemisphere', tone: 'red',    accent: '#f87171' },
 };
 
 // Each entry:
@@ -27,6 +28,7 @@ export const VIDEO_CATEGORIES = {
 //   duration    — approximate runtime (display only)
 //   description — short editorial summary (ES)
 //   strategic   — strategic angle / why it matters
+//   tags        — optional array of editorial tags (ES)
 //   source      — original filename for traceability
 //   featured    — boolean, promoted in the hero strip
 //   orientation — 'vertical' (9:16 reels) or 'horizontal'
@@ -284,6 +286,22 @@ export const VIDEOS = [
     strategic: 'El cartel ya no fija precio; lo negocia en un tablero multipolar donde China e India son los nuevos árbitros.',
     source: 'geopolem_reel_opep_fragmentacion_es_sub_en.mp4',
     featured: false,
+    orientation: 'vertical',
+  },
+  {
+    id: 'cuba-tablero',
+    src: './assets/videos/geopolem_reel_cuba_tablero_es_sub_en_v2.mp4',
+    poster: './assets/videos/posters/geopolem_reel_cuba_tablero_es_sub_en_v2.jpg',
+    title: 'Cuba vuelve al tablero',
+    category: 'hemisferio',
+    language: 'ES',
+    subtitles: ['EN'],
+    duration: '01:20',
+    description: 'Hipótesis estratégica sobre Cuba como punto de presión hemisférica: no invasión como escenario base, sino coerción, sanciones, cerco financiero, inteligencia, presión migratoria y desgaste interno.',
+    strategic: 'Mira la arquitectura de presión: energía, remesas, puertos, diáspora, legitimidad e inteligencia.',
+    tags: ['Cuba', 'Estados Unidos', 'OSINT', 'Guerra híbrida', 'Seguridad hemisférica'],
+    source: 'geopolem_reel_cuba_tablero_es_sub_en_v2.mp4',
+    featured: true,
     orientation: 'vertical',
   },
 ];
