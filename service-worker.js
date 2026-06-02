@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geopolem-command-v1.11.0';
+const CACHE_NAME = 'geopolem-command-v1.12.0';
 const APP_SHELL = [
   './',
   './index.html',
