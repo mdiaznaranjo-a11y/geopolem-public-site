@@ -143,6 +143,8 @@ const SALA_COPY = {
     none: 'Sin subtítulos',
     duration: 'Duración',
     strategic: 'Ángulo estratégico',
+    sources: 'Fuentes',
+    editorialClose: 'Cierre editorial',
     source: 'Archivo fuente',
     play: 'Reproducir',
     vertical: 'Vertical · Reel',
@@ -164,6 +166,8 @@ const SALA_COPY = {
     none: 'No subtitles',
     duration: 'Runtime',
     strategic: 'Strategic angle',
+    sources: 'Sources',
+    editorialClose: 'Editorial close',
     source: 'Source file',
     play: 'Play',
     vertical: 'Vertical · Reel',
@@ -185,6 +189,8 @@ const SALA_COPY = {
     none: 'Sans sous-titres',
     duration: 'Durée',
     strategic: 'Angle stratégique',
+    sources: 'Sources',
+    editorialClose: 'Conclusion éditoriale',
     source: 'Fichier source',
     play: 'Lire',
     vertical: 'Vertical · Reel',
@@ -206,6 +212,8 @@ const SALA_COPY = {
     none: 'Keine Untertitel',
     duration: 'Länge',
     strategic: 'Strategischer Blickwinkel',
+    sources: 'Quellen',
+    editorialClose: 'Redaktioneller Abschluss',
     source: 'Quelldatei',
     play: 'Abspielen',
     vertical: 'Vertikal · Reel',
@@ -227,6 +235,8 @@ const SALA_COPY = {
     none: 'Keng Ënnertitelen',
     duration: 'Längt',
     strategic: 'Strategesche Blickwénkel',
+    sources: 'Quellen',
+    editorialClose: 'Redaktionnellen Ofschloss',
     source: 'Quelldatei',
     play: 'Ofspillen',
     vertical: 'Vertikal · Reel',
@@ -2404,6 +2414,22 @@ function VideoPlayerModal({ video, copy, onClose }) {
             <div class="heading-mono">${copy.strategic}</div>
             <p class="mt-1 text-[13px] leading-relaxed text-slate-200">${video.strategic}</p>
           </div>
+          ${video.sources?.length && html`
+          <div class="panel-soft rounded p-3">
+            <div class="heading-mono">${copy.sources}</div>
+            <ul class="mt-1.5 space-y-1.5">
+              ${video.sources.map(s => html`
+                <li class="text-[12px] leading-snug">
+                  <a href=${s.url} target="_blank" rel="noreferrer"
+                     class="text-radar hover:underline break-words">${s.label}</a>
+                </li>`)}
+            </ul>
+          </div>`}
+          ${video.editorialClose && html`
+          <div class="rounded p-3 border border-radar/30 bg-radar/5">
+            <div class="heading-mono">${copy.editorialClose}</div>
+            <p class="mt-1 font-display font-semibold text-[14px] text-radar tracking-wide">${video.editorialClose}</p>
+          </div>`}
           <div class="grid grid-cols-2 gap-2 text-[11.5px]">
             <div class="panel-soft rounded p-2.5">
               <div class="heading-mono">${copy.audio}</div>

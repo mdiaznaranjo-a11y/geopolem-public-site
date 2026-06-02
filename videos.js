@@ -8,6 +8,7 @@ export const VIDEO_CATEGORIES = {
   osint:        { label: 'OSINT · Análisis',    labelEn: 'OSINT analysis',     tone: 'red',    accent: '#ef4444' },
   chokepoints:  { label: 'Chokepoints',         labelEn: 'Chokepoints',        tone: 'amber',  accent: '#f59e0b' },
   energia:      { label: 'Energía',             labelEn: 'Energy',             tone: 'amber',  accent: '#fbbf24' },
+  infraestructura: { label: 'Infraestructura crítica', labelEn: 'Critical infrastructure', tone: 'amber', accent: '#f59e0b' },
   agua:         { label: 'Agua',                labelEn: 'Water',              tone: 'cyan',   accent: '#22d3ee' },
   finanzas:     { label: 'Finanzas digitales',  labelEn: 'Digital finance',    tone: 'green',  accent: '#10b981' },
   doctrina:     { label: 'Doctrina',            labelEn: 'Doctrine',           tone: 'violet', accent: '#a78bfa' },
@@ -32,6 +33,9 @@ export const VIDEO_CATEGORIES = {
 //   source      — original filename for traceability
 //   featured    — boolean, promoted in the hero strip
 //   orientation — 'vertical' (9:16 reels) or 'horizontal'
+//   copyShort   — optional short card copy (ES) shown in the player
+//   sources     — optional array of { label, url } open-source references
+//   editorialClose — optional editorial sign-off line shown in the player
 export const VIDEOS = [
   {
     id: 'manifiesto-inaugural',
@@ -286,6 +290,28 @@ export const VIDEOS = [
     strategic: 'El cartel ya no fija precio; lo negocia en un tablero multipolar donde China e India son los nuevos árbitros.',
     source: 'geopolem_reel_opep_fragmentacion_es_sub_en.mp4',
     featured: false,
+    orientation: 'vertical',
+  },
+  {
+    id: 'venezuela-sistema-electrico',
+    src: './assets/videos/geopolem_reel_venezuela_sistema_electrico_es_sub_en.mp4',
+    poster: './assets/videos/posters/geopolem_reel_venezuela_sistema_electrico_es_sub_en.jpg',
+    title: 'Venezuela: sistema eléctrico bajo estrés',
+    category: 'infraestructura',
+    language: 'ES',
+    subtitles: ['EN'],
+    duration: '02:38',
+    description: 'No son solo apagones: es una arquitectura eléctrica bajo estrés. Generación centralizada, fuerte dependencia hidroeléctrica, transmisión exigida, respaldo térmico regional insuficiente y operación al límite.',
+    strategic: 'Venezuela muestra cómo la falla de una red puede convertirse en variable geopolítica: energía, petróleo, agua, frontera, migración e inversión entran en el mismo tablero.',
+    copyShort: 'No son solo apagones. Es una arquitectura eléctrica bajo estrés. Venezuela muestra cómo la falla de una red puede convertirse en variable geopolítica: energía, petróleo, agua, frontera, migración e inversión entran en el mismo tablero.',
+    sources: [
+      { label: 'U.S. Energy Information Administration · Venezuela', url: 'https://www.eia.gov/international/content/analysis/countries_long/Venezuela/' },
+      { label: 'EFE · Rationing nightmare of a Venezuela desperate to recover its power grid', url: 'https://efe.com/english/economy/2026-05-09/rationing-nightmare-of-a-venezuela-desperate-to-recover-its-power-grid/' },
+    ],
+    editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
+    tags: ['Venezuela', 'Energía', 'Infraestructura crítica', 'OSINT', 'Geopolítica'],
+    source: 'geopolem_reel_venezuela_sistema_electrico_es_sub_en.mp4',
+    featured: true,
     orientation: 'vertical',
   },
   {
