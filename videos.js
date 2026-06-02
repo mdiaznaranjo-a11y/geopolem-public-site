@@ -330,6 +330,30 @@ export const VIDEOS = [
     featured: true,
     orientation: 'vertical',
   },
+  {
+    id: 'trampa-tucidides-tripolaridad',
+    src: './assets/videos/geopolem_reel_trampa_tucidides_tripolaridad_es_sub_en.mp4',
+    poster: './assets/videos/posters/geopolem_reel_trampa_tucidides_tripolaridad_es_sub_en.jpg',
+    title: 'Trampa de Tucídides y tripolaridad',
+    category: 'tripolar',
+    language: 'ES',
+    subtitles: ['EN'],
+    duration: '02:30',
+    description: 'La trampa de Tucídides suele contarse como un duelo entre la potencia dominante y la ascendente. Pero el tablero actual no es bilateral: es un triángulo de presión entre EEUU, China y Rusia donde Ucrania, Taiwán, el Ártico, el Mar Negro, el Golfo Pérsico y los chokepoints marítimos son placas del mismo sistema.',
+    strategic: 'EEUU conserva alianzas, dólar, mares y arquitectura militar global; China concentra escala industrial, tecnología y presión sobre el Indo-Pacífico; Rusia altera el sistema con energía, capacidad nuclear, profundidad territorial y guerra híbrida. La trampa ya no es una línea recta.',
+    copyShort: 'La trampa de Tucídides ya no es una línea recta entre dos potencias: es un triángulo de presión EEUU–China–Rusia. No mires solo el titular; lee la arquitectura de presión.',
+    sources: [
+      { label: 'Harvard Kennedy School · Graham Allison y la trampa de Tucídides', url: 'https://www.belfercenter.org/thucydides-trap/overview-thucydides-trap' },
+      { label: 'SIPRI Yearbook 2025 · Riesgos nucleares y arsenales', url: 'https://www.sipri.org/yearbook/2025' },
+      { label: 'IMF · World Economic Outlook', url: 'https://www.imf.org/en/Publications/WEO' },
+      { label: 'World Bank · Military expenditure (% of GDP)', url: 'https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS' },
+    ],
+    editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
+    tags: ['Tripolaridad', 'Trampa de Tucídides', 'Estados Unidos', 'China', 'Rusia', 'Sistema internacional', 'Seguridad global', 'OSINT'],
+    source: 'geopolem_reel_trampa_tucidides_tripolaridad_es_sub_en.mp4',
+    featured: true,
+    orientation: 'vertical',
+  },
 ];
 
 export const VIDEO_TOTAL_COUNT = VIDEOS.length;
