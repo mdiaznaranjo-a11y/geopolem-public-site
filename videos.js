@@ -354,6 +354,30 @@ export const VIDEOS = [
     featured: true,
     orientation: 'vertical',
   },
+  {
+    id: 'rehemisferizacion-presion-hemisferica',
+    src: './assets/videos/geopolem_reel_rehemisferizacion_presion_hemisferica_es_sub_en.mp4',
+    poster: './assets/videos/posters/geopolem_reel_rehemisferizacion_presion_hemisferica_es_sub_en.jpg',
+    title: 'Re-hemisphering · Arquitectura de presión hemisférica',
+    category: 'hemisferio',
+    language: 'ES',
+    subtitles: ['EN'],
+    duration: '02:23',
+    description: 'No es conspiración pura. Tampoco es prueba total. Es arquitectura de presión hemisférica. Project 2025 sí habla de re-hemisphering —manufactura, energía y cadenas productivas reorientadas hacia el hemisferio occidental—, pero eso no equivale a una orden explícita de control absoluto desde Groenlandia hasta Venezuela.',
+    strategic: 'La capa seria está en la doctrina: Monroe reactivada y Trump Corollary, con Groenlandia (Ártico, radar, minerales), Panamá (paso marítimo) y Venezuela (petróleo, Caribe, migración y presión sobre potencias externas) como piezas de una misma arquitectura de presión.',
+    copyShort: 'No es conspiración pura. Tampoco es prueba total. Es arquitectura de presión hemisférica. GEOPÓLEM no compra propaganda: la disecciona. Lee la arquitectura —Monroe reactivada, Groenlandia, Panamá, Venezuela— sin confundir un patrón con un plan total.',
+    sources: [
+      { label: 'The Heritage Foundation · Project 2025 — Mandate for Leadership', url: 'https://www.project2025.org/policy/' },
+      { label: 'The White House', url: 'https://www.whitehouse.gov/' },
+      { label: 'U.S. Department of Defense', url: 'https://www.defense.gov/' },
+      { label: 'U.S. Department of Justice', url: 'https://www.justice.gov/' },
+    ],
+    editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
+    tags: ['Re-hemisphering', 'Doctrina Monroe', 'Project 2025', 'Groenlandia', 'Panamá', 'Venezuela', 'Caribe', 'OSINT', 'Seguridad hemisférica'],
+    source: 'geopolem_reel_rehemisferizacion_presion_hemisferica_es_sub_en.mp4',
+    featured: true,
+    orientation: 'vertical',
+  },
 ];
 
 export const VIDEO_TOTAL_COUNT = VIDEOS.length;
