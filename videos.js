@@ -378,6 +378,29 @@ export const VIDEOS = [
     featured: true,
     orientation: 'vertical',
   },
+  {
+    id: 'golfo-en-llamas',
+    src: './assets/videos/geopolem_reel_golfo_en_llamas_es_sub_en.mp4',
+    poster: './assets/videos/posters/geopolem_reel_golfo_en_llamas_es_sub_en.jpg',
+    title: 'El Golfo no está en llamas por accidente',
+    category: 'osint',
+    language: 'ES',
+    subtitles: ['EN'],
+    duration: '02:17',
+    description: 'La publicación tiene base real: hubo misiles, drones, interceptaciones, Qeshm, Kuwait y Bahréin. Pero mezcla hechos con lenguaje ideológico. La supuesta "Doctrina de Inmovilización Quirúrgica" no aparece verificada en las fuentes revisadas y el nombre exacto M/T Lexie tampoco queda sólidamente confirmado. Veredicto OSINT: parcialmente verdadera, pero propagandística.',
+    strategic: 'No es un incendio accidental: es guerra de bases, puertos, rutas y anfitriones. Qeshm controla vigilancia y drones; Kharg es salida petrolera iraní; Kuwait es infraestructura logística y militar; Bahréin concentra la Quinta Flota; Ormuz es el cuello de botella energético. Cuando Irán dispara hacia Kuwait y Bahréin, avisa a los anfitriones que prestar territorio implica heredar riesgo; cuando EEUU golpea Qeshm, marca el límite de la libertad de acción iraní en el estrecho.',
+    copyShort: 'El Golfo no está en llamas por accidente: está en llamas porque las bases, los puertos y los anfitriones se convirtieron en parte del campo de batalla. No compres propaganda. Lee arquitectura.',
+    sources: [
+      { label: 'CENTCOM · US partner forces defend against aggressive Iranian behavior', url: 'https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4507109/us-partner-forces-defend-against-aggressive-iranian-behavior/' },
+      { label: 'Al Jazeera · Iranian drone hits Kuwait airport after US strikes Qeshm Island', url: 'https://www.aljazeera.com/news/2026/6/3/iranian-drone-hits-kuwaits-main-airport-after-us-strikes-qeshm-island' },
+      { label: 'AP News · Iran–US war, Kuwait strikes', url: 'https://apnews.com/article/iran-us-irael-war-kuwait-strikes-88daa9f90b48baaa7beb18e35515c59d' },
+    ],
+    editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
+    tags: ['OSINT', 'Golfo Pérsico', 'Energía', 'Seguridad global', 'Irán', 'Kuwait', 'Bahréin', 'Qeshm', 'Ormuz', 'Guerra híbrida'],
+    source: 'geopolem_reel_golfo_en_llamas_es_sub_en.mp4',
+    featured: true,
+    orientation: 'vertical',
+  },
 ];
 
 export const VIDEO_TOTAL_COUNT = VIDEOS.length;
