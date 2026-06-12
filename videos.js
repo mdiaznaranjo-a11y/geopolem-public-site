@@ -401,6 +401,30 @@ export const VIDEOS = [
     featured: true,
     orientation: 'vertical',
   },
+  {
+    id: 'five-eyes-israel-iran',
+    src: './assets/videos/geopolem_reel_five_eyes_israel_iran_es_sub_en.mp4',
+    poster: './assets/videos/posters/geopolem_reel_five_eyes_israel_iran_es_sub_en.jpg',
+    title: 'Five Eyes, Israel-Irán y guerra híbrida',
+    category: 'osint',
+    language: 'ES',
+    subtitles: ['EN'],
+    duration: '02:12',
+    description: 'No es solo un choque entre Israel e Irán: es una guerra entre redes. Five Eyes no es una fuerza militar en el frente, es una arquitectura de inteligencia occidental (vigilancia, SIGINT, ciberseguridad, alerta temprana). Israel no es miembro oficial, pero sí ha sido un socio externo relevante en inteligencia de señales. Veredicto OSINT: ni la propaganda de que Five Eyes controla toda la guerra, ni la ingenuidad de ignorar que la inteligencia occidental cambia el cálculo operacional.',
+    strategic: 'La guerra híbrida opera en datos, cables, señales, proxies, ciberoperaciones, narrativa y rutas marítimas. Israel se apoya en una arquitectura occidental de vigilancia y alerta temprana; Irán compensa la asimetría con proxies, ciberoperaciones, negación plausible, presión marítima y guerra psicológica. Detectar una comunicación, atribuir un ciberataque, rastrear un lanzamiento, mapear una red logística o anticipar una escalada puede valer tanto como un misil.',
+    copyShort: 'No estamos viendo solo un choque entre Israel e Irán: estamos viendo una guerra entre redes. Five Eyes es arquitectura de inteligencia, no una fuerza en el frente. Israel no es miembro oficial, pero sí socio externo relevante. Ahí está la zona gris. No compres propaganda: lee arquitectura.',
+    sources: [
+      { label: 'LISA News · Guerra híbrida en Medio Oriente: la participación silenciosa de los Five Eyes en el conflicto Israel-Irán', url: 'https://www.lisanews.org/inteligencia/guerra-hibrida-en-medio-oriente-la-participacion-silenciosa-de-los-five-eyes-en-el-conflicto-israel-iran/' },
+      { label: 'ODNI · Five Eyes Intelligence Oversight and Review Council (FIORC)', url: 'https://www.dni.gov/index.php/ncsc-how-we-work/217-about/organization/icig-pages/2660-icig-fiorc' },
+      { label: 'The Intercept · Cash, Weapons and Surveillance (cooperación NSA-Israel, documentos Snowden)', url: 'https://theintercept.com/2014/08/04/cash-weapons-surveillance/' },
+      { label: 'SentinelOne · Intelligence Brief: Iranian Cyber Activity Outlook', url: 'https://www.sentinelone.com/blog/sentinelone-intelligence-brief-iranian-cyber-activity-outlook/' },
+    ],
+    editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
+    tags: ['OSINT', 'Five Eyes', 'Israel', 'Irán', 'Guerra híbrida', 'Inteligencia', 'SIGINT', 'Ciberseguridad', 'Medio Oriente', 'Geopolítica'],
+    source: 'geopolem_reel_five_eyes_israel_iran_es_sub_en.mp4',
+    featured: true,
+    orientation: 'vertical',
+  },
 ];
 
 export const VIDEO_TOTAL_COUNT = VIDEOS.length;
