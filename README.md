@@ -118,7 +118,7 @@ Requiere iniciar `server.py` en el puerto 8000 antes del despliegue para exponer
 - **Backend permanente GEOPÓLEM**: usar `/home/user/workspace/geopolem-production-backend` para alojar login, usuarios, sesiones, fichas, adjuntos e historial fuera del prototipo local.
 - **API Render conectada**: el frontend apunta a `https://geopolem-api.onrender.com` mediante `window.GEOP_API_BASE`.
 - **Reemplazar mapa low-poly por TopoJSON** (Natural Earth 110m) o usar D3-geo con proyección Robinson.
-- **Conectar feeds OSINT reales** (ACLED, GDELT, UNHCR, IEA, Bellingcat) vía un backend Express con caché diaria.
+- **Conectar feeds OSINT reales** (ACLED, GDELT, UNHCR, IEA, Bellingcat) vía un backend Express con caché diaria. _Primer feed en marcha:_ **SENTINEL** consume `data/sentinel/conflict-events.json`, regenerado a diario desde GDELT por `scripts/sentinel_gdelt.py` y el workflow `.github/workflows/sentinel-gdelt.yml` (ver `data/sentinel/README.md`).
 - **Generación real en Content Studio**: PPTX vía la skill office/pptx, PDFs editoriales con el branding.
 - **Panel editorial avanzado**: MFA, revisión por pares con firmas, exportación a PDF/DOCX, permisos por célula editorial y bitácora inmutable.
 - **Layer histórico temporal**: timeline en la parte inferior con scrubber para ver intensidad de focos a lo largo del tiempo.

@@ -1,0 +1,58 @@
+# GEOPÓLEM · SENTINEL — Ingesta diaria de eventos de conflicto (GDELT)
+#
+# Ejecuta scripts/sentinel_gdelt.py una vez al día (y bajo demanda con
+# workflow_dispatch). El script consulta el API público de GDELT, puntúa y
+# filtra los eventos por relevancia geopolítica, y reescribe el JSON estático
+# que consume el panel SENTINEL del frontend.
+#
+# Robustez:
+#   - Si el script falla (red/API/runtime) → el job falla (exit != 0).
+#   - Si NO hay eventos nuevos relevantes → el JSON puede no cambiar; en ese
+#     caso simplemente no se hace commit y el job termina en verde.
+name: SENTINEL GDELT feed
+
+on:
+  schedule:
+    # Diario, 06:17 UTC (minuto no redondo para repartir carga en GitHub).
+    - cron: "17 6 * * *"
+  workflow_dispatch: {}
+
+# Permite al GITHUB_TOKEN hacer commit/push del JSON actualizado.
+permissions:
+  contents: write
+
+concurrency:
+  group: sentinel-gdelt
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run SENTINEL GDELT ingest
+        # Solo biblioteca estándar: no hay paso de pip install.
+        # Si esto falla, el job falla — un error de API/red NO se silencia.
+        run: python3 scripts/sentinel_gdelt.py --window-hours 24
+
+      - name: Commit & push updated feed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "geopolem-sentinel[bot]"
+          git config user.email "sentinel-bot@users.noreply.github.com"
+          if git diff --quiet -- data/sentinel/conflict-events.json; then
+            echo "Sin cambios relevantes en el feed SENTINEL; nada que commitear."
+            exit 0
+          fi
+          git add data/sentinel/conflict-events.json
+          git commit -m "chore(sentinel): refresh GDELT conflict feed [skip ci]"
+          git push

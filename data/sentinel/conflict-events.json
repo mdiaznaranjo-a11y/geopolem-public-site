@@ -1,0 +1,136 @@
+{
+  "events": [
+    {
+      "actors": [
+        "Ukraine"
+      ],
+      "domain": "example.org",
+      "id": "evt_3372a26c5bc7ca90",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [
+        "offensive",
+        "shelling",
+        "escalate",
+        "frontline"
+      ],
+      "region": "Europa del Este",
+      "score": 9.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 6.0,
+        "tone": 1.5
+      },
+      "seen_date": "20260617T060000Z",
+      "source_country": "Ukraine",
+      "tier": "high",
+      "title": "Heavy shelling reported along Ukraine frontline as offensive escalates",
+      "tone": -7.2,
+      "url": "https://example.org/news/ukraine-frontline-shelling"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "example.org",
+      "id": "evt_7f0faee3bb5af307",
+      "language": "English",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [
+        "airstrike",
+        "ceasefire",
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 9.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 6.0,
+        "tone": 1.5
+      },
+      "seen_date": "20260617T050000Z",
+      "source_country": "Israel",
+      "tier": "high",
+      "title": "Airstrike on Gaza kills several as ceasefire talks stall",
+      "tone": -9.1,
+      "url": "https://example.org/news/gaza-airstrike"
+    },
+    {
+      "actors": [
+        "Taiwan"
+      ],
+      "domain": "example.org",
+      "id": "evt_dd66284d639b1ef5",
+      "language": "English",
+      "matched_regions": [
+        "china",
+        "taiwan"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260617T040000Z",
+      "source_country": "Taiwan",
+      "tier": "medium",
+      "title": "China launches military drills near Taiwan amid rising tension",
+      "tone": -4.0,
+      "url": "https://example.org/news/taiwan-drills"
+    },
+    {
+      "actors": [
+        "Mali"
+      ],
+      "domain": "example.org",
+      "id": "evt_d98b57dc8f938efb",
+      "language": "English",
+      "matched_regions": [
+        "mali"
+      ],
+      "matched_themes": [
+        "coup"
+      ],
+      "region": "Sahel",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260617T030000Z",
+      "source_country": "Mali",
+      "tier": "medium",
+      "title": "Coup leaders in Mali announce new security measures",
+      "tone": -3.5,
+      "url": "https://example.org/news/sahel-coup"
+    }
+  ],
+  "filters": {
+    "max_records": 250,
+    "query": "(conflict OR war OR warfare OR military OR offensive OR airstrike OR airstrikes OR shelling OR clashes OR insurgency OR militants OR ceasefire OR \"armed forces\" OR drone OR missile OR sanctions OR \"security forces\" OR coup OR mobilization OR escalation)",
+    "tiers": {
+      "high": 6.0,
+      "medium": 3.5,
+      "monitor": 1.5
+    },
+    "tone_negative_threshold": -5.0,
+    "version": "1.0.0"
+  },
+  "generated_at": "2026-06-17T15:44:19Z",
+  "query_window": "last 24h",
+  "source": "GDELT 2.0 DOC API (dry-run sample)",
+  "tier_counts": {
+    "high": 2,
+    "medium": 2,
+    "monitor": 0
+  },
+  "total_events": 4
+}
