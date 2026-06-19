@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX } from './data.js';
+import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 
@@ -38,7 +38,7 @@ const I18N = {
   ES: {
     welcome: 'Bienvenido al tablero.',
     tagline: 'GEO + PÓLEMOS · sala situacional editorial',
-    nav: { dashboard:'Tablero', map:'Mapa', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio' },
+    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio' },
     kpi: 'Indicadores clave',
     alerts: 'Alertas en vivo',
     selectFoco: 'Selecciona un foco',
@@ -57,7 +57,7 @@ const I18N = {
   EN: {
     welcome: 'Welcome to the board.',
     tagline: 'GEO + PÓLEMOS · editorial situation room',
-    nav: { dashboard:'Dashboard', map:'Map', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio' },
+    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio' },
     kpi:'Key indicators',
     alerts:'Live alerts',
     selectFoco:'Select a focus',
@@ -76,7 +76,7 @@ const I18N = {
   FR: {
     welcome:'Bienvenue sur le tableau.',
     tagline:'GEO + PÓLEMOS · salle de situation éditoriale',
-    nav:{ dashboard:'Tableau', map:'Carte', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio' },
     kpi:'Indicateurs clés', alerts:'Alertes en direct',
     selectFoco:'Sélectionner un foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Acteurs', risk:'Matrice des risques',
@@ -93,7 +93,7 @@ const I18N = {
   DE: {
     welcome:'Willkommen am Lagebrett.',
     tagline:'GEO + PÓLEMOS · redaktioneller Lageraum',
-    nav:{ dashboard:'Dashboard', map:'Karte', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio' },
+    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio' },
     kpi:'Schlüsselindikatoren', alerts:'Live-Warnungen',
     selectFoco:'Brennpunkt auswählen',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteure', risk:'Risikomatrix',
@@ -110,7 +110,7 @@ const I18N = {
   LB: {
     welcome:'Wëllkomm um Tableau.',
     tagline:'GEO + PÓLEMOS · redaktionellen Situatiouns-Raum',
-    nav:{ dashboard:'Tableau', map:'Kaart', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio' },
     kpi:'Haaptindikateuren', alerts:'Live Alarmen',
     selectFoco:'Wielt e Foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteuren', risk:'Risiko-Matrix',
@@ -2581,6 +2581,228 @@ function SalaTeaser({ lang, onOpen }) {
 }
 
 /* ========================================================================
+   Doctrina GEOPÓLEM — Tripolaridad imperfecta
+   Marco analítico permanente (situation room). Bilingüe ES/EN.
+   ======================================================================== */
+function YouTubeEmbed({ id, title }) {
+  const [play, setPlay] = useState(false);
+  const poster = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+  if (play) {
+    return html`
+    <div class="relative w-full aspect-video overflow-hidden rounded border border-radar/30 bg-black">
+      <iframe class="absolute inset-0 w-full h-full"
+        src=${`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`}
+        title=${title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>`;
+  }
+  return html`
+  <button onClick=${()=>setPlay(true)}
+    class="group relative block w-full aspect-video overflow-hidden rounded border border-white/10 hover:border-radar/40 transition">
+    <img src=${poster} alt=${title} loading="lazy"
+         class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.03] transition duration-500"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-carbon-950/90 via-carbon-950/20 to-transparent"></div>
+    <span class="absolute inset-0 flex items-center justify-center">
+      <span class="w-14 h-14 rounded-full bg-carbon-950/70 border border-radar/50 flex items-center justify-center group-hover:shadow-glow transition">
+        <svg width="20" height="20" viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20" fill="#22d3ee"/></svg>
+      </span>
+    </span>
+    <div class="absolute bottom-2 left-3 right-3 text-left">
+      <div class="text-[12px] font-display font-semibold text-slate-100 leading-tight">${title}</div>
+    </div>
+  </button>`;
+}
+
+const ROLE_STYLE = {
+  structure: { tag:'Estructura', tagEn:'Structures', dot:'#22d3ee', ring:'border-radar/40' },
+  normative: { tag:'Potencia normativa', tagEn:'Normative', dot:'#a78bfa', ring:'border-violet-400/40' },
+  maneuver:  { tag:'Maniobra', tagEn:'Maneuvers', dot:'#10b981', ring:'border-intel/40' },
+};
+
+function TripolarDiagram({ pillars, en }) {
+  const w = 560, h = 360;
+  // Tres polos estructurantes en triángulo, normativa y sur global periféricos
+  const pos = {
+    eeuu:        { x:0.28, y:0.26 },
+    china:       { x:0.72, y:0.26 },
+    rusia:       { x:0.50, y:0.78 },
+    ue:          { x:0.13, y:0.62 },
+    'sur-global':{ x:0.87, y:0.62 },
+  };
+  const core = pillars.filter(p => p.role === 'structure');
+  return html`
+  <svg viewBox=${`0 0 ${w} ${h}`} class="w-full h-auto">
+    <defs>
+      <filter id="triGlow"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <!-- triángulo estructurante (tripolaridad) -->
+    <polygon points=${core.map(p => `${pos[p.id].x*w},${pos[p.id].y*h}`).join(' ')}
+      fill="rgba(34,211,238,0.05)" stroke="rgba(34,211,238,0.35)" stroke-width="1" stroke-dasharray="4 4"/>
+    <!-- vínculos periféricos -->
+    ${['ue','sur-global'].map(id => {
+      const a = pos[id]; const c = pos.rusia;
+      return core.map(p => html`<line key=${id+p.id} x1=${a.x*w} y1=${a.y*h} x2=${pos[p.id].x*w} y2=${pos[p.id].y*h} stroke="rgba(148,163,184,0.14)" stroke-width="0.6"/>`);
+    })}
+    <!-- nodos -->
+    ${pillars.map(p => {
+      const x = pos[p.id].x*w, y = pos[p.id].y*h;
+      const isCore = p.role === 'structure';
+      return html`
+      <g key=${p.id}>
+        <circle cx=${x} cy=${y} r=${isCore?30:23} fill=${`${p.accent}1e`} stroke=${p.accent} stroke-width=${isCore?1.6:1} filter=${isCore?'url(#triGlow)':'none'}/>
+        <circle cx=${x} cy=${y} r="4" fill=${p.accent}/>
+        <text x=${x} y=${y-(isCore?38:30)} text-anchor="middle" font-family="Space Grotesk" font-weight="700" font-size="13" fill="#e2e8f0">${en?p.actorEn:p.actor}</text>
+        <text x=${x} y=${y+(isCore?44:36)} text-anchor="middle" font-family="JetBrains Mono" font-size="9" letter-spacing="1" fill=${p.accent}>${(en?p.functionEn:p.function).toUpperCase()}</text>
+      </g>`;
+    })}
+    <text x=${w/2} y=${h*0.5} text-anchor="middle" font-family="JetBrains Mono" font-size="9" letter-spacing="2" fill="rgba(148,163,184,0.5)">TRIPOLARIDAD</text>
+  </svg>`;
+}
+
+function DoctrinaTeaser({ lang, onOpen }) {
+  const en = lang === 'EN';
+  const d = DOCTRINA;
+  return html`
+  <section class="relative panel rounded-lg overflow-hidden border border-violet-400/20">
+    <span class="corner-tl"></span><span class="corner-tr"></span>
+    <span class="corner-bl"></span><span class="corner-br"></span>
+    <div class="boot-grid absolute inset-0 opacity-30 pointer-events-none"></div>
+    <div class="relative p-4 lg:p-6 flex flex-col lg:flex-row gap-4 lg:items-center justify-between">
+      <div class="space-y-1.5 max-w-2xl">
+        <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-violet-400">${d.eyebrow}</div>
+        <h3 class="font-display font-bold text-[20px] lg:text-[24px] text-slate-50 leading-tight glow-text">${d.title} <span class="text-violet-300">${d.subtitle}</span></h3>
+        <p class="text-[13px] text-slate-300">${en?d.summaryEn:d.summary}</p>
+      </div>
+      <button onClick=${onOpen}
+        class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded border border-violet-400/40 text-violet-200 text-[12px] font-mono uppercase tracking-widest hover:bg-violet-400/10 hover:shadow-glow transition">
+        ◬ ${en?'Open doctrine':'Abrir doctrina'}
+      </button>
+    </div>
+  </section>`;
+}
+
+function Doctrina({ lang }) {
+  const en = lang === 'EN';
+  const d = DOCTRINA;
+  const date = new Date().toLocaleDateString(en?'en-GB':'es-ES', { day:'2-digit', month:'long', year:'numeric' });
+  return html`
+  <section class="space-y-4">
+    <!-- Hero -->
+    <div class="relative panel rounded-lg overflow-hidden">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="boot-grid absolute inset-0 opacity-30 pointer-events-none"></div>
+      <div class="scanlines absolute inset-0 pointer-events-none"></div>
+      <div class="relative p-5 lg:p-7">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-violet-400">${d.eyebrow} · <span class="text-slate-500">${d.eyebrowEn}</span></div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">SITUATION ROOM · ${date}</div>
+        </div>
+        <h2 class="font-display font-bold text-[26px] lg:text-[34px] text-slate-50 leading-tight mt-2 glow-text">
+          ${d.title} <span class="text-violet-300">${d.subtitle}</span>
+        </h2>
+        <div class="text-[13px] text-slate-400 font-display">${d.titleEn} ${d.subtitleEn}</div>
+        <p class="text-[14px] lg:text-[15px] text-slate-200 leading-relaxed mt-3 max-w-3xl">${d.summary}</p>
+        <p class="text-[12.5px] text-slate-500 leading-relaxed mt-1.5 max-w-3xl italic">${d.summaryEn}</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          ${d.tags.map(tag => html`<span key=${tag} class="chip">#${tag}</span>`)}
+        </div>
+      </div>
+    </div>
+
+    <!-- Diagrama tripolar + pregunta analítica -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+      <div class="lg:col-span-3 relative panel rounded-md p-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="heading-mono">${en?'Tri-polar board':'Tablero tripolar'}</div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">FLOW · v1.0</div>
+        </div>
+        <div class="panel-soft rounded p-2">
+          <${TripolarDiagram} pillars=${d.pillars} en=${en}/>
+        </div>
+      </div>
+      <div class="lg:col-span-2 relative panel rounded-md p-4 flex flex-col justify-center">
+        <span class="corner-tl"></span><span class="corner-br"></span>
+        <div class="heading-mono mb-2">${en?'Analytical question':'Pregunta analítica'}</div>
+        <p class="font-display font-semibold text-[18px] lg:text-[20px] text-slate-100 leading-snug">${d.question}</p>
+        <p class="text-[12.5px] text-slate-500 italic mt-2 leading-snug">${d.questionEn}</p>
+        <div class="grid grid-cols-3 gap-2 mt-4">
+          ${d.axes.map(ax => html`
+            <div key=${ax.id} class="panel-soft rounded p-2 text-center">
+              <div class="font-mono text-[9px] uppercase tracking-wider text-violet-400">${en?ax.labelEn:ax.label}</div>
+            </div>
+          `)}
+        </div>
+      </div>
+    </div>
+
+    <!-- Pilares: quién estructura / maniobra -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      ${d.pillars.map(p => {
+        const rs = ROLE_STYLE[p.role] || ROLE_STYLE.structure;
+        return html`
+        <div key=${p.id} class=${clsx('relative panel-soft rounded-md p-3.5 border', rs.ring)}>
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full" style=${{background:p.accent}}></span>
+              <div class="font-display font-bold text-[15px] text-slate-100">${en?p.actorEn:p.actor}</div>
+            </div>
+            <span class="font-mono text-[9px] uppercase tracking-wider" style=${{color:p.accent}}>${en?rs.tagEn:rs.tag}</span>
+          </div>
+          <div class="text-[11px] text-slate-500 font-mono mt-0.5">${en?p.functionEn:p.function}</div>
+          <div class="flex flex-wrap gap-1 mt-2.5">
+            ${(en?p.domainsEn:p.domains).map(dm => html`<span key=${dm} class="chip" style=${{borderColor:`${p.accent}55`, color:'#cbd5e1'}}>${dm}</span>`)}
+          </div>
+        </div>`;
+      })}
+    </div>
+
+    <!-- SENTINEL reading layer -->
+    <div class="relative panel rounded-md p-4 border border-alert/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <div class="flex items-center gap-2">
+        <span class="relative flex w-2 h-2">
+          <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-alert"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-alert"></span>
+        </span>
+        <div class="heading-mono text-alert-soft">${d.sentinel.label} · <span class="text-slate-500">${d.sentinel.labelEn}</span></div>
+      </div>
+      <p class="text-[13px] text-slate-300 leading-relaxed mt-2 max-w-3xl">${d.sentinel.note}</p>
+      <p class="text-[12px] text-slate-500 italic leading-relaxed mt-1 max-w-3xl">${d.sentinel.noteEn}</p>
+    </div>
+
+    <!-- Vídeos: largo + short -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="lg:col-span-2 panel rounded-md p-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="heading-mono">${en?d.videos.long.labelEn:d.videos.long.label}</div>
+          <a href=${d.videos.long.url} target="_blank" rel="noopener"
+             class="text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">YouTube ↗</a>
+        </div>
+        <${YouTubeEmbed} id=${d.videos.long.id} title=${`${d.title} ${d.subtitle}`}/>
+      </div>
+      <div class="panel rounded-md p-4 flex flex-col">
+        <div class="flex items-center justify-between mb-2">
+          <div class="heading-mono">${en?d.videos.short.labelEn:d.videos.short.label}</div>
+          <a href=${d.videos.short.url} target="_blank" rel="noopener"
+             class="text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">Short ↗</a>
+        </div>
+        <${YouTubeEmbed} id=${d.videos.short.id} title=${en?d.videos.short.labelEn:d.videos.short.label}/>
+        <a href=${d.videos.long.url} target="_blank" rel="noopener"
+          class="mt-3 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+          ▶ ${en?'Watch full analysis':'Ver análisis completo'}
+        </a>
+      </div>
+    </div>
+
+    <!-- Cierre de marca -->
+    <div class="text-center py-2">
+      <div class="font-display font-semibold text-[15px] text-violet-300 glow-text tracking-wide">${d.close}</div>
+    </div>
+  </section>`;
+}
+
+/* ========================================================================
    App root
    ======================================================================== */
 function App() {
@@ -2778,6 +3000,7 @@ function App() {
           </div>
           <${Analysis} t=${t} foco=${selectedFoco}/>
           <${Scenarios} t=${t} foco=${selectedFoco}/>
+          <${DoctrinaTeaser} lang=${lang} onOpen=${()=>setView('doctrina')}/>
           <${SalaTeaser} lang=${lang} onOpen=${()=>setView('sala')}/>
         </div>
       `}
@@ -2791,6 +3014,8 @@ function App() {
           <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId}/>
         </div>
       `}
+
+      ${view==='doctrina' && html`<${Doctrina} lang=${lang}/>`}
 
       ${view==='watchlist' && html`<${Watchlist} t=${t} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId}/>`}
 

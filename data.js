@@ -516,3 +516,103 @@ export const MILEX = {
   ],
   watch: ['Compromisos OTAN sobre PIB', 'pedidos de defensa aérea', 'producción 155mm', 'contratos de drones', 'export controls dual-use', 'incidentes Báltico / Mar Negro / Taiwán'],
 };
+
+/* ========================================================================
+   DOCTRINA GEOPÓLEM — Tripolaridad imperfecta con multipolaridad periférica
+   Marco analítico permanente. Conectado a SENTINEL como capa de lectura.
+   Vídeo largo + Short teaser referenciados para CTA/embed.
+   ======================================================================== */
+export const DOCTRINA = {
+  id: 'tripolaridad-imperfecta',
+  slug: 'tripolaridad-imperfecta',
+  category: 'doctrina',
+  tone: 'violet',
+  eyebrow: 'Doctrina GEOPÓLEM',
+  eyebrowEn: 'GEOPÓLEM Doctrine',
+  title: 'Tripolaridad imperfecta',
+  titleEn: 'Imperfect Tripolarity',
+  subtitle: 'con multipolaridad periférica',
+  subtitleEn: 'with peripheral multipolarity',
+  summary: 'El mundo no es simplemente multipolar. GEOPÓLEM lo lee como una tripolaridad imperfecta con multipolaridad periférica: tres potencias estructuran el tablero, mientras el resto maniobra en sus márgenes.',
+  summaryEn: 'The world is not simply multipolar. GEOPÓLEM reads it as an imperfect tripolarity with peripheral multipolarity: three powers structure the board while the rest maneuver at its margins.',
+  // La pregunta analítica central de la doctrina
+  question: 'La pregunta no es solo cuántos actores existen, sino quién estructura, quién maniobra y quién acelera.',
+  questionEn: 'The question is not just how many actors exist, but who structures, who maneuvers, and who accelerates.',
+  // Pilares del tablero. role: 'structure' | 'normative' | 'maneuver'
+  pillars: [
+    {
+      id: 'eeuu',
+      actor: 'Estados Unidos',
+      actorEn: 'United States',
+      role: 'structure',
+      function: 'Estructura',
+      functionEn: 'Structures',
+      accent: '#22d3ee',
+      domains: ['Alianzas', 'Finanzas', 'Poder militar', 'Sanciones', 'Arquitectura de mando'],
+      domainsEn: ['Alliances', 'Finance', 'Military power', 'Sanctions', 'Command architecture'],
+    },
+    {
+      id: 'china',
+      actor: 'China',
+      actorEn: 'China',
+      role: 'structure',
+      function: 'Estructura',
+      functionEn: 'Structures',
+      accent: '#ef4444',
+      domains: ['Producción', 'Infraestructura', 'Deuda', 'Tecnología', 'Escala comercial'],
+      domainsEn: ['Production', 'Infrastructure', 'Debt', 'Technology', 'Commercial scale'],
+    },
+    {
+      id: 'rusia',
+      actor: 'Rusia',
+      actorEn: 'Russia',
+      role: 'structure',
+      function: 'Estructura',
+      functionEn: 'Structures',
+      accent: '#f59e0b',
+      domains: ['Disrupción', 'Energía', 'Presión militar', 'Veto estratégico'],
+      domainsEn: ['Disruption', 'Energy', 'Military pressure', 'Strategic veto'],
+    },
+    {
+      id: 'ue',
+      actor: 'Unión Europea',
+      actorEn: 'European Union',
+      role: 'normative',
+      function: 'Potencia normativa',
+      functionEn: 'Normative power',
+      accent: '#a78bfa',
+      domains: ['Regulación', 'Estándares', 'Poder normativo'],
+      domainsEn: ['Regulation', 'Standards', 'Normative power'],
+    },
+    {
+      id: 'sur-global',
+      actor: 'Sur Global',
+      actorEn: 'Global South',
+      role: 'maneuver',
+      function: 'Maniobra y arbitraje',
+      functionEn: 'Maneuver & arbitrage',
+      accent: '#10b981',
+      domains: ['Maniobra', 'Arbitraje', 'Autonomía estratégica', 'Competencia entre potencias'],
+      domainsEn: ['Maneuver', 'Arbitrage', 'Strategic autonomy', 'Power competition'],
+    },
+  ],
+  // Ejes de lectura: quién estructura / maniobra / acelera
+  axes: [
+    { id:'structure', label:'Quién estructura', labelEn:'Who structures', desc:'EE.UU., China y Rusia fijan las reglas, los flujos y los umbrales del tablero.', descEn:'The US, China and Russia set the rules, flows and thresholds of the board.' },
+    { id:'maneuver',  label:'Quién maniobra',   labelEn:'Who maneuvers',  desc:'La UE como potencia normativa y el Sur Global arbitran entre potencias para ganar autonomía.', descEn:'The EU as normative power and the Global South arbitrate between powers to gain autonomy.' },
+    { id:'accelerate',label:'Quién acelera',    labelEn:'Who accelerates',desc:'La disrupción, la energía y la presión militar aceleran o congelan los ciclos de crisis.', descEn:'Disruption, energy and military pressure accelerate or freeze crisis cycles.' },
+  ],
+  // Conexión con el feed SENTINEL (no altera los datos, añade capa de lectura)
+  sentinel: {
+    label: 'Capa de lectura SENTINEL',
+    labelEn: 'SENTINEL reading layer',
+    note: 'Los eventos de conflicto de SENTINEL se leen con esta doctrina: quién estructura el incidente, quién lo aprovecha para maniobrar y quién lo acelera.',
+    noteEn: 'SENTINEL conflict events are read through this doctrine: who structures the incident, who exploits it to maneuver, and who accelerates it.',
+  },
+  videos: {
+    long:  { id:'ii_PIdlupZE', url:'https://www.youtube.com/watch?v=ii_PIdlupZE', label:'Análisis completo', labelEn:'Full analysis' },
+    short: { id:'tLni47YWTDw', url:'https://www.youtube.com/watch?v=tLni47YWTDw', label:'Short · teaser', labelEn:'Short · teaser' },
+  },
+  tags: ['tripolaridad', 'multipolaridad', 'sistema-mundo', 'EE.UU.', 'China', 'Rusia', 'UE', 'Sur Global', 'doctrina'],
+  close: 'GEOPÓLEM. Bienvenidos al tablero.',
+};
