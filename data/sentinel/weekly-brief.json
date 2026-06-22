@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-06-22T06:10:00Z",
+  "brand": "GEOPÓLEM",
+  "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
+  "week_window": {
+    "timezone": "Europe/Luxembourg",
+    "start_local": "2026-06-15T00:00:00+02:00",
+    "end_local": "2026-06-21T23:59:59+02:00",
+    "start_utc": "2026-06-14T22:00:00Z",
+    "end_utc": "2026-06-21T21:59:59Z"
+  },
+  "method_note": "Se cruzaron eventos de conflicto del feed SENTINEL/GDELT de GEOPÓLEM con eventos ambientales NASA EONET, terremotos USGS y fuentes institucionales humanitarias o de seguridad alimentaria. El criterio de selección fue impacto geopolítico del acople, no espectacularidad. Correlación temporal no implica causalidad.",
+  "source_urls": [
+    "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+    "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
+    "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
+    "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-14T22%3A00%3A00&endtime=2026-06-21T21%3A59%3A59&minmagnitude=5.5&orderby=magnitude&limit=200",
+    "https://reliefweb.int/report/occupied-palestinian-territory/unicef-state-palestine-humanitarian-situation-update-wash-gaza-strip-29-may-2026",
+    "https://reliefweb.int/report/mali/24-million-people-sahel-urgently-need-aid-and-world-needs-do-more",
+    "https://fews.net/global/food-assistance-outlook-brief/june-2026/print",
+    "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-17-2026/"
+  ],
+  "totals": {
+    "total_conflict_candidates": 4,
+    "total_environment_candidates_reviewed": 31,
+    "confirmed_couplings": 2,
+    "under_observation": 1
+  },
+  "total_conflict_candidates": 4,
+  "total_environment_candidates_reviewed": 31,
+  "selected_inflection_points": [
+    {
+      "rank": 1,
+      "status": "confirmado",
+      "priority": "alta",
+      "location": "Gaza / Israel-Palestina",
+      "headline": "Gaza: cuando el agua se convierte en línea de control",
+      "sentinel_event": {
+        "id": "evt_7f0faee3bb5af307",
+        "title": "Airstrike on Gaza kills several as ceasefire talks stall",
+        "seen_date": "2026-06-17T05:00:00Z",
+        "tier": "high",
+        "region": "MENA",
+        "source_country": "Israel"
+      },
+      "environmental_coupling": "Agua, saneamiento, calor estacional y acceso humanitario bajo presión militar y logística.",
+      "why_it_matters": "El agua deja de ser solo una necesidad civil y se convierte en indicador de control territorial, legitimidad, presión diplomática y riesgo sanitario.",
+      "tripolar_reading": "Estados Unidos queda asociado al costo político de sostener a Israel; China puede explotar diplomáticamente la narrativa de doble rasero; Rusia usa el teatro como munición discursiva contra Occidente; la UE queda atrapada entre derecho internacional, ayuda y baja capacidad coercitiva.",
+      "sources": [
+        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+        "https://reliefweb.int/report/occupied-palestinian-territory/unicef-state-palestine-humanitarian-situation-update-wash-gaza-strip-29-may-2026"
+      ]
+    },
+    {
+      "rank": 2,
+      "status": "confirmado",
+      "priority": "alta",
+      "location": "Mali / Sahel central",
+      "headline": "Mali y Sahel: seguridad, alimentos y clima como arquitectura de fragilidad",
+      "sentinel_event": {
+        "id": "evt_d98b57dc8f938efb",
+        "title": "Coup leaders in Mali announce new security measures",
+        "seen_date": "2026-06-17T03:00:00Z",
+        "tier": "medium",
+        "region": "Sahel",
+        "source_country": "Mali"
+      },
+      "environmental_coupling": "Inseguridad, sequía/desertificación, temporada de carestía y presión alimentaria regional.",
+      "why_it_matters": "El acople clima-conflicto no solo agrava hambre; redefine capacidad estatal, movilidad de grupos armados, desplazamiento y dependencia de ayuda.",
+      "tripolar_reading": "Rusia capitaliza vacíos de seguridad; China mira minerales, infraestructura y estabilidad logística; Estados Unidos y la UE pierden margen si la cooperación no se traduce en presencia y confianza local; el Sur Global arbitra entre seguridad, desarrollo y soberanía.",
+      "sources": [
+        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+        "https://reliefweb.int/report/mali/24-million-people-sahel-urgently-need-aid-and-world-needs-do-more",
+        "https://fews.net/global/food-assistance-outlook-brief/june-2026/print"
+      ]
+    },
+    {
+      "rank": 3,
+      "status": "en observación",
+      "priority": "media",
+      "location": "Taiwán / Mar de Filipinas / Pacífico occidental",
+      "headline": "Taiwán y Mar de Filipinas: clima severo en una zona de presión militar",
+      "sentinel_event": {
+        "id": "evt_dd66284d639b1ef5",
+        "title": "China launches military drills near Taiwan amid rising tension",
+        "seen_date": "2026-06-17T04:00:00Z",
+        "tier": "medium",
+        "region": "Asia-Pacífico",
+        "source_country": "Taiwan"
+      },
+      "environmental_coupling": "Tifón Mekkhala en el entorno del Mar de Filipinas durante la misma ventana semanal.",
+      "why_it_matters": "No hay prueba institucional de interrupción operacional directa; sí existe una señal de observación porque clima severo puede afectar tempo naval, aéreo, ISR, evacuación y logística regional.",
+      "tripolar_reading": "China prueba presión de zona gris; Estados Unidos y aliados miden respuesta y resiliencia; Rusia observa la distracción estratégica; la UE depende de estabilidad marítima y tecnológica sin ser actor militar central.",
+      "sources": [
+        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+        "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
+      ]
+    }
+  ],
+  "not_selected_but_relevant": [
+    {
+      "location": "Ucrania / Rusia",
+      "reason": "El caso es estratégico por energía y guerra industrial, pero no quedó seleccionado como acople ambiental directo NASA/USGS esta semana.",
+      "note": "ISW reportó ataques ucranianos contra infraestructura energética rusa y ataques rusos contra instalaciones energéticas ucranianas; se conserva como energía estratégica en observación.",
+      "sources": [
+        "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-17-2026/"
+      ]
+    }
+  ],
+  "best_short_candidate": {
+    "rank": 1,
+    "title": "Gaza: cuando el agua se convierte en línea de control",
+    "reason": "Combina conflicto, infraestructura de supervivencia, acceso humanitario, legitimidad internacional y lectura tripolar en una narrativa clara para audiencia amplia."
+  },
+  "disclaimer": "Correlación temporal entre evento de conflicto y evento ambiental no implica causalidad. Los casos confirmados indican acople significativo de presión; el caso en observación no tiene prueba institucional de interrupción operacional directa.",
+  "reduced_hashtags": [
+    "#GEOPÓLEM",
+    "#Geopolítica",
+    "#OSINT",
+    "#Gaza",
+    "#WaterSecurity",
+    "#Sahel",
+    "#Taiwan",
+    "#Tripolaridad",
+    "#BienvenidosAlTablero"
+  ],
+  "brand_close": "GEOPÓLEM. Bienvenidos al tablero."
+}

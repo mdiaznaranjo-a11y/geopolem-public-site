@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA } from './data.js';
+import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 
@@ -38,7 +38,7 @@ const I18N = {
   ES: {
     welcome: 'Bienvenido al tablero.',
     tagline: 'GEO + PÓLEMOS · sala situacional editorial',
-    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio' },
+    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio' },
     kpi: 'Indicadores clave',
     alerts: 'Alertas en vivo',
     selectFoco: 'Selecciona un foco',
@@ -57,7 +57,7 @@ const I18N = {
   EN: {
     welcome: 'Welcome to the board.',
     tagline: 'GEO + PÓLEMOS · editorial situation room',
-    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio' },
+    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio' },
     kpi:'Key indicators',
     alerts:'Live alerts',
     selectFoco:'Select a focus',
@@ -76,7 +76,7 @@ const I18N = {
   FR: {
     welcome:'Bienvenue sur le tableau.',
     tagline:'GEO + PÓLEMOS · salle de situation éditoriale',
-    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio' },
     kpi:'Indicateurs clés', alerts:'Alertes en direct',
     selectFoco:'Sélectionner un foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Acteurs', risk:'Matrice des risques',
@@ -93,7 +93,7 @@ const I18N = {
   DE: {
     welcome:'Willkommen am Lagebrett.',
     tagline:'GEO + PÓLEMOS · redaktioneller Lageraum',
-    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio' },
+    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio' },
     kpi:'Schlüsselindikatoren', alerts:'Live-Warnungen',
     selectFoco:'Brennpunkt auswählen',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteure', risk:'Risikomatrix',
@@ -110,7 +110,7 @@ const I18N = {
   LB: {
     welcome:'Wëllkomm um Tableau.',
     tagline:'GEO + PÓLEMOS · redaktionellen Situatiouns-Raum',
-    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio' },
     kpi:'Haaptindikateuren', alerts:'Live Alarmen',
     selectFoco:'Wielt e Foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteuren', risk:'Risiko-Matrix',
@@ -563,7 +563,39 @@ function WorldMap({ focos, selectedId, onSelect, filter }) {
 /* ========================================================================
    Alerts panel
    ======================================================================== */
-function AlertsPanel({ focos, onSelect, selectedId }) {
+function SentinelCouplingLayer({ onOpen }) {
+  const b = SENTINEL_BRIEF;
+  return html`
+  <div class="mb-3 rounded border border-alert/25 bg-alert/[0.04] p-2.5">
+    <div class="flex items-center justify-between gap-2 mb-1.5">
+      <div class="flex items-center gap-1.5">
+        <span class="relative flex w-1.5 h-1.5">
+          <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-alert"></span>
+          <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-alert"></span>
+        </span>
+        <span class="font-mono text-[9.5px] uppercase tracking-widest text-alert-soft">Acople ambiental significativo</span>
+      </div>
+      <span class="font-mono text-[9px] uppercase tracking-wider text-slate-500">SENTINEL</span>
+    </div>
+    <div class="flex flex-col gap-1">
+      ${b.points.map(p => html`
+        <button key=${p.id} onClick=${onOpen}
+          class="group text-left px-2 py-1.5 rounded border border-white/5 hover:border-radar/25 hover:bg-white/[0.03] transition">
+          <div class="flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full shrink-0" style=${{background:p.accent, boxShadow:`0 0 6px ${p.accent}`}}></span>
+            <span class="flex-1 min-w-0 text-[11.5px] text-slate-200 leading-tight truncate">${p.location}</span>
+            <span class="font-mono text-[8.5px] uppercase tracking-wider shrink-0" style=${{color: p.status==='confirmado' ? '#fca5a5' : '#67e8f9'}}>${p.status}</span>
+          </div>
+        </button>`)}
+    </div>
+    <button onClick=${onOpen}
+      class="w-full mt-1.5 text-[9px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">
+      Ver brief semanal →
+    </button>
+  </div>`;
+}
+
+function AlertsPanel({ focos, onSelect, selectedId, onOpenSentinel }) {
   // Build alerts list grouped: top by intensity
   const sorted = [...focos].sort((a,b)=>b.intensity-a.intensity);
   return html`
@@ -575,6 +607,7 @@ function AlertsPanel({ focos, onSelect, selectedId }) {
         <span class="font-mono text-[10px] uppercase tracking-widest text-alert">LIVE</span>
       </div>
     </div>
+    ${onOpenSentinel && html`<${SentinelCouplingLayer} onOpen=${onOpenSentinel}/>`}
     <div class="flex flex-col gap-1.5 overflow-y-auto pr-1 -mr-2" style=${{maxHeight:'460px'}}>
       ${sorted.map(f => {
         const cat = CATEGORIES[f.category] || CATEGORIES.conflicto;
@@ -2803,6 +2836,127 @@ function Doctrina({ lang }) {
 }
 
 /* ========================================================================
+   SENTINEL · Brief semanal de inflexiones conflicto-ambiente
+   ======================================================================== */
+function SentinelStatusChip({ status, accent }) {
+  const confirmed = status === 'confirmado';
+  return html`
+    <span class="chip" style=${{borderColor:`${accent}66`, color: confirmed ? '#fca5a5' : '#67e8f9', background:`${accent}12`}}>
+      <span class="w-1.5 h-1.5 rounded-full" style=${{background:accent, boxShadow:`0 0 6px ${accent}`}}></span>
+      ${status.toUpperCase()}
+    </span>`;
+}
+
+function SentinelBrief({ lang }) {
+  const en = lang === 'EN';
+  const b = SENTINEL_BRIEF;
+  return html`
+  <section class="space-y-4 lg:space-y-6">
+    <!-- Cabecera -->
+    <div class="relative panel rounded-md p-5 lg:p-6 overflow-hidden">
+      <span class="corner-tl"></span><span class="corner-tr"></span><span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="scanlines absolute inset-0"></div>
+      <div class="relative">
+        <div class="flex items-center gap-2">
+          <span class="relative flex w-2 h-2">
+            <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-alert"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-alert"></span>
+          </span>
+          <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-alert-soft">${b.eyebrow} · ${en?'WEEKLY BRIEF':'BRIEF SEMANAL'}</div>
+        </div>
+        <h2 class="font-display font-bold text-[24px] lg:text-[32px] text-slate-50 leading-tight mt-2 glow-text">
+          ${en?b.titleEn:b.title}
+        </h2>
+        <div class="text-[12px] font-mono uppercase tracking-widest text-slate-500 mt-1">${en?b.windowEn:b.window}</div>
+        <p class="text-[14px] lg:text-[15px] text-slate-200 leading-relaxed mt-3 max-w-4xl">${en?b.summaryEn:b.summary}</p>
+        <p class="text-[12px] text-risk-soft italic leading-relaxed mt-2 max-w-4xl">⚠ ${en?b.caveatEn:b.caveat}</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
+          ${b.stats.map(s => html`
+            <div key=${s.label} class="panel-soft rounded p-3 text-center">
+              <div class="font-display font-bold text-[22px] text-slate-100">${s.value}</div>
+              <div class="font-mono text-[9px] uppercase tracking-wider text-slate-500 mt-0.5">${en?s.labelEn:s.label}</div>
+            </div>`)}
+        </div>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          ${b.tags.map(tag => html`<span key=${tag} class="chip">#${tag}</span>`)}
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjetas de puntos de inflexión -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-4">
+      ${b.points.map(p => html`
+        <article key=${p.id} class=${clsx('relative panel rounded-md p-4 flex flex-col border', p.status==='confirmado' ? 'border-alert/25' : 'border-radar/25')}>
+          <span class="corner-tl"></span><span class="corner-br"></span>
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <${SentinelStatusChip} status=${p.status} accent=${p.accent}/>
+            <span class="font-mono text-[9px] uppercase tracking-widest text-slate-500">${en?'PRIORITY':'PRIORIDAD'} ${en?p.priorityEn:p.priority} · ${String(p.rank).padStart(2,'0')}</span>
+          </div>
+          <div class="text-[10px] font-mono uppercase tracking-wider mt-0.5" style=${{color:p.accent}}>${p.location}</div>
+          <h3 class="font-display font-semibold text-[16px] text-slate-100 leading-snug mt-1">${en?p.headlineEn:p.headline}</h3>
+
+          <div class="mt-3 space-y-2.5 text-[12.5px] leading-relaxed">
+            <div>
+              <div class="heading-mono mb-0.5">${en?'Fact':'Hecho'}</div>
+              <p class="text-slate-300">${p.fact}</p>
+            </div>
+            <div>
+              <div class="heading-mono mb-0.5">${en?'Coupling':'Acople'}</div>
+              <p class="text-slate-300">${en?p.couplingEn:p.coupling}</p>
+            </div>
+            <div>
+              <div class="heading-mono mb-0.5">${en?'Strategic implication':'Implicación estratégica'}</div>
+              <p class="text-slate-300">${p.implication}</p>
+            </div>
+            <div>
+              <div class="heading-mono mb-0.5">${en?'Tri-polar reading':'Lectura tripolar'}</div>
+              <p class="text-slate-400 italic">${p.tripolar}</p>
+            </div>
+          </div>
+
+          <div class="mt-auto pt-3 flex flex-wrap gap-1.5">
+            ${p.sources.map(s => html`
+              <a key=${s.url} href=${s.url} target="_blank" rel="noopener"
+                 class="text-[10px] font-mono uppercase tracking-wider text-radar hover:text-radar-glow transition border border-radar/20 rounded px-1.5 py-0.5">
+                ${s.label} ↗
+              </a>`)}
+          </div>
+        </article>`)}
+    </div>
+
+    <!-- Línea no seleccionada · Ucrania energía estratégica -->
+    <div class="relative panel-soft rounded-md p-4 border border-risk/25">
+      <div class="flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-risk" style=${{boxShadow:'0 0 6px #f59e0b'}}></span>
+        <div class="heading-mono text-risk-soft">${en?b.notSelected.labelEn:b.notSelected.label} · ${b.notSelected.location}</div>
+      </div>
+      <p class="text-[12.5px] text-slate-300 leading-relaxed mt-2 max-w-4xl">${b.notSelected.note}</p>
+      <a href=${b.notSelected.source.url} target="_blank" rel="noopener"
+         class="inline-block mt-2 text-[10px] font-mono uppercase tracking-wider text-radar hover:text-radar-glow transition border border-radar/20 rounded px-1.5 py-0.5">
+        ${b.notSelected.source.label} ↗
+      </a>
+    </div>
+
+    <!-- Mejor candidato para Short -->
+    <div class="relative panel rounded-md p-4">
+      <span class="corner-tl"></span><span class="corner-br"></span>
+      <div class="heading-mono mb-1">${en?'Best short candidate':'Mejor candidato para Short'}</div>
+      <h3 class="font-display font-semibold text-[16px] text-slate-100">${b.bestShort.title}</h3>
+      <p class="text-[12.5px] text-slate-400 leading-relaxed mt-1.5 max-w-4xl">${b.bestShort.reason}</p>
+      <a href=${b.dataUrl} target="_blank" rel="noopener"
+         class="inline-flex items-center gap-1.5 mt-3 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
+        ${en?'Open structured JSON':'Abrir JSON estructurado'} ↗
+      </a>
+    </div>
+
+    <!-- Cierre de marca -->
+    <div class="text-center py-2">
+      <div class="font-display font-semibold text-[15px] text-violet-300 glow-text tracking-wide">${b.close}</div>
+    </div>
+  </section>`;
+}
+
+/* ========================================================================
    App root
    ======================================================================== */
 function App() {
@@ -2996,7 +3150,7 @@ function App() {
               <${WorldMap} focos=${allFocos} selectedId=${selectedId} onSelect=${setSelectedId}/>
               <${FocoDetail} foco=${selectedFoco}/>
             </div>
-            <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId}/>
+            <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId} onOpenSentinel=${()=>setView('sentinel')}/>
           </div>
           <${Analysis} t=${t} foco=${selectedFoco}/>
           <${Scenarios} t=${t} foco=${selectedFoco}/>
@@ -3011,11 +3165,13 @@ function App() {
             <${WorldMap} focos=${allFocos} selectedId=${selectedId} onSelect=${setSelectedId}/>
             <${FocoDetail} foco=${selectedFoco}/>
           </div>
-          <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId}/>
+          <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId} onOpenSentinel=${()=>setView('sentinel')}/>
         </div>
       `}
 
       ${view==='doctrina' && html`<${Doctrina} lang=${lang}/>`}
+
+      ${view==='sentinel' && html`<${SentinelBrief} lang=${lang}/>`}
 
       ${view==='watchlist' && html`<${Watchlist} t=${t} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId}/>`}
 

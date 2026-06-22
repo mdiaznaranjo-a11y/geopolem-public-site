@@ -616,3 +616,111 @@ export const DOCTRINA = {
   tags: ['tripolaridad', 'multipolaridad', 'sistema-mundo', 'EE.UU.', 'China', 'Rusia', 'UE', 'Sur Global', 'doctrina'],
   close: 'GEOPÓLEM. Bienvenidos al tablero.',
 };
+
+/* ========================================================================
+   SENTINEL · Brief semanal de inflexiones conflicto-ambiente
+   Capa que cruza el feed SENTINEL/GDELT con NASA EONET, USGS y fuentes
+   institucionales. Acoples confirmados vs. en observación.
+   Fuente consumible: ./data/sentinel/weekly-brief.json
+   IMPORTANTE: correlación temporal no implica causalidad.
+   ======================================================================== */
+export const SENTINEL_BRIEF = {
+  brand: 'GEOPÓLEM',
+  eyebrow: 'GEOPÓLEM SENTINEL',
+  eyebrowEn: 'GEOPÓLEM SENTINEL',
+  title: 'Brief semanal de inflexiones conflicto-ambiente',
+  titleEn: 'Weekly conflict-environment inflection brief',
+  generatedAt: '2026-06-22T06:10:00Z',
+  window: '15–21 de junio de 2026 · Europe/Luxembourg',
+  windowEn: 'June 15–21, 2026 · Europe/Luxembourg',
+  dataUrl: './data/sentinel/weekly-brief.json',
+  summary: 'Se cruzaron eventos del feed SENTINEL/GDELT de GEOPÓLEM con NASA EONET, USGS y fuentes institucionales humanitarias y de seguridad alimentaria. Se detectaron dos acoples confirmados y uno en observación. Ucrania queda como energía estratégica en observación, no seleccionada como acople ambiental directo.',
+  summaryEn: 'GEOPÓLEM’s SENTINEL/GDELT feed was cross-referenced with NASA EONET, USGS and institutional humanitarian and food-security sources. Two confirmed couplings and one under observation were detected. Ukraine remains strategic-energy under observation, not selected as a direct environmental coupling.',
+  caveat: 'La correlación temporal entre un evento de conflicto y un evento ambiental no implica causalidad.',
+  caveatEn: 'Temporal correlation between a conflict event and an environmental event does not imply causation.',
+  stats: [
+    { label: 'Candidatos de conflicto', labelEn: 'Conflict candidates', value: '4' },
+    { label: 'Eventos ambientales revisados', labelEn: 'Environmental events reviewed', value: '31' },
+    { label: 'Acoples confirmados', labelEn: 'Confirmed couplings', value: '2' },
+    { label: 'En observación', labelEn: 'Under observation', value: '1' },
+  ],
+  points: [
+    {
+      id: 'gaza-agua',
+      rank: 1,
+      status: 'confirmado',
+      statusEn: 'confirmed',
+      priority: 'alta',
+      priorityEn: 'high',
+      accent: '#ef4444',
+      location: 'Gaza / Israel-Palestina',
+      headline: 'Cuando el agua se convierte en línea de control',
+      headlineEn: 'When water becomes a line of control',
+      fact: 'SENTINEL marcó el 17 de junio de 2026 un evento de alta prioridad sobre un ataque aéreo en Gaza mientras las conversaciones de alto el fuego estaban estancadas. UNICEF reporta ~1,1 millones de niños con incertidumbre diaria sobre el agua, 82% de familias en inseguridad hídrica y caída de la desalación de 20.000 a 16.000 m³/día.',
+      coupling: 'Agua, saneamiento, calor estacional y acceso humanitario bajo presión militar y logística.',
+      couplingEn: 'Water, sanitation, seasonal heat and humanitarian access under military and logistical pressure.',
+      implication: 'El agua deja de ser solo una necesidad civil y se convierte en indicador de control territorial, legitimidad, presión diplomática y riesgo sanitario.',
+      tripolar: 'Estados Unidos queda asociado al costo político de sostener a Israel; China puede explotar la narrativa de doble rasero; Rusia usa el teatro como munición discursiva contra Occidente; la UE queda atrapada entre derecho internacional, ayuda y baja capacidad coercitiva.',
+      sources: [
+        { label: 'GEOPÓLEM SENTINEL', url: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json' },
+        { label: 'UNICEF vía ReliefWeb', url: 'https://reliefweb.int/report/occupied-palestinian-territory/unicef-state-palestine-humanitarian-situation-update-wash-gaza-strip-29-may-2026' },
+      ],
+    },
+    {
+      id: 'mali-sahel',
+      rank: 2,
+      status: 'confirmado',
+      statusEn: 'confirmed',
+      priority: 'alta',
+      priorityEn: 'high',
+      accent: '#f59e0b',
+      location: 'Mali / Sahel central',
+      headline: 'Seguridad, alimentos y clima como arquitectura de fragilidad',
+      headlineEn: 'Security, food and climate as an architecture of fragility',
+      fact: 'SENTINEL registró el 17 de junio de 2026 nuevas medidas de seguridad anunciadas por la junta en Mali. OCHA reporta 24,3 millones de personas con necesidad humanitaria urgente en el Sahel; la temporada de carestía (jun–ago) podría dejar 15,4 millones en crisis alimentaria o peor. FEWS NET proyecta áreas en Emergencia (IPC Fase 4) hacia diciembre de 2026.',
+      coupling: 'Inseguridad, sequía/desertificación, temporada de carestía y presión alimentaria regional.',
+      couplingEn: 'Insecurity, drought/desertification, lean season and regional food pressure.',
+      implication: 'El acople clima-conflicto no solo agrava el hambre; redefine capacidad estatal, movilidad de grupos armados, desplazamiento y dependencia de ayuda.',
+      tripolar: 'Rusia capitaliza vacíos de seguridad; China mira minerales, infraestructura y estabilidad logística; EE.UU. y la UE pierden margen si la cooperación no se traduce en presencia y confianza local; el Sur Global arbitra entre seguridad, desarrollo y soberanía.',
+      sources: [
+        { label: 'GEOPÓLEM SENTINEL', url: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json' },
+        { label: 'OCHA vía ReliefWeb', url: 'https://reliefweb.int/report/mali/24-million-people-sahel-urgently-need-aid-and-world-needs-do-more' },
+        { label: 'FEWS NET', url: 'https://fews.net/global/food-assistance-outlook-brief/june-2026/print' },
+      ],
+    },
+    {
+      id: 'taiwan-mekkhala',
+      rank: 3,
+      status: 'en observación',
+      statusEn: 'under observation',
+      priority: 'media',
+      priorityEn: 'medium',
+      accent: '#22d3ee',
+      location: 'Taiwán / Mar de Filipinas / Pacífico occidental',
+      headline: 'Clima severo en una zona de presión militar',
+      headlineEn: 'Severe weather in a zone of military pressure',
+      fact: 'SENTINEL registró el 17 de junio de 2026 ejercicios militares chinos cerca de Taiwán. NASA EONET registró el tifón Mekkhala como tormenta severa en el Pacífico occidental (19–21 de junio), con datos asociados al JTWC.',
+      coupling: 'Tifón Mekkhala en el entorno del Mar de Filipinas durante la misma ventana semanal.',
+      couplingEn: 'Typhoon Mekkhala in the Philippine Sea environment during the same weekly window.',
+      implication: 'No hay prueba institucional de interrupción operacional directa; sí existe una señal de observación porque el clima severo puede afectar tempo naval, aéreo, ISR, evacuación y logística regional. No debe presentarse como causalidad confirmada.',
+      tripolar: 'China prueba presión de zona gris; EE.UU. y aliados miden respuesta y resiliencia; Rusia observa la distracción estratégica; la UE depende de estabilidad marítima y tecnológica sin ser actor militar central.',
+      sources: [
+        { label: 'GEOPÓLEM SENTINEL', url: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json' },
+        { label: 'NASA EONET', url: 'https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open' },
+      ],
+    },
+  ],
+  notSelected: {
+    location: 'Ucrania / Rusia',
+    label: 'Energía estratégica · en observación',
+    labelEn: 'Strategic energy · under observation',
+    note: 'Caso crítico por energía y guerra industrial, pero esta semana el vínculo dominante fue energético-industrial, no un evento ambiental directo NASA/USGS. ISW reportó ataques mutuos contra infraestructura energética. Se conserva como capa separada de energía estratégica.',
+    source: { label: 'Institute for the Study of War', url: 'https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-17-2026/' },
+  },
+  bestShort: {
+    title: 'Gaza: cuando el agua se convierte en línea de control',
+    reason: 'Combina conflicto, infraestructura de supervivencia, acceso humanitario, legitimidad internacional y lectura tripolar en una narrativa clara para audiencia amplia.',
+  },
+  tags: ['GEOPÓLEM', 'Geopolítica', 'OSINT', 'Gaza', 'WaterSecurity', 'Sahel', 'Taiwan', 'Tripolaridad', 'BienvenidosAlTablero'],
+  close: 'GEOPÓLEM. Bienvenidos al tablero.',
+};
