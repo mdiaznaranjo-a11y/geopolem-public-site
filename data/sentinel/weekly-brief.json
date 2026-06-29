@@ -1,127 +1,150 @@
 {
-  "generated_at": "2026-06-22T06:10:00Z",
+  "generated_at": "2026-06-29T08:09:00+02:00",
   "brand": "GEOPÓLEM",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "week_window": {
     "timezone": "Europe/Luxembourg",
-    "start_local": "2026-06-15T00:00:00+02:00",
-    "end_local": "2026-06-21T23:59:59+02:00",
-    "start_utc": "2026-06-14T22:00:00Z",
-    "end_utc": "2026-06-21T21:59:59Z"
+    "start_local": "2026-06-22T00:00:00",
+    "end_local": "2026-06-28T23:59:59",
+    "start_utc": "2026-06-21T22:00:00Z",
+    "end_utc": "2026-06-28T21:59:59Z"
   },
   "method_note": "Se cruzaron eventos de conflicto del feed SENTINEL/GDELT de GEOPÓLEM con eventos ambientales NASA EONET, terremotos USGS y fuentes institucionales humanitarias o de seguridad alimentaria. El criterio de selección fue impacto geopolítico del acople, no espectacularidad. Correlación temporal no implica causalidad.",
   "source_urls": [
     "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
     "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
     "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
-    "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-14T22%3A00%3A00&endtime=2026-06-21T21%3A59%3A59&minmagnitude=5.5&orderby=magnitude&limit=200",
-    "https://reliefweb.int/report/occupied-palestinian-territory/unicef-state-palestine-humanitarian-situation-update-wash-gaza-strip-29-may-2026",
-    "https://reliefweb.int/report/mali/24-million-people-sahel-urgently-need-aid-and-world-needs-do-more",
-    "https://fews.net/global/food-assistance-outlook-brief/june-2026/print",
-    "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-17-2026/"
+    "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-21T22:00:00&endtime=2026-06-28T21:59:59&minmagnitude=5",
+    "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/06/24/heavy-rains-trigger-flooding-in-five-townships-across-myanmar039s-kachin-state",
+    "https://www.albawaba.com/news/farmers-brace-combat-wildfires-wheat-1631152",
+    "https://www.ungeneva.org/en/news-media/news/2026/06/120110/un-envoy-urges-parties-stay-course-towards-peace-eastern-dr-congo"
   ],
-  "totals": {
-    "total_conflict_candidates": 4,
-    "total_environment_candidates_reviewed": 31,
-    "confirmed_couplings": 2,
-    "under_observation": 1
+  "total_candidates": {
+    "sentinel_events": 4,
+    "nasa_eonet_open_events": 9,
+    "nasa_eonet_closed_events_14d": 163,
+    "usgs_m5_plus_events": 37,
+    "selected_points": 3,
+    "confirmed_significant_couplings": 2,
+    "observation_points": 1
   },
-  "total_conflict_candidates": 4,
-  "total_environment_candidates_reviewed": 31,
   "selected_inflection_points": [
     {
       "rank": 1,
-      "status": "confirmado",
-      "priority": "alta",
-      "location": "Gaza / Israel-Palestina",
-      "headline": "Gaza: cuando el agua se convierte en línea de control",
-      "sentinel_event": {
-        "id": "evt_7f0faee3bb5af307",
-        "title": "Airstrike on Gaza kills several as ceasefire talks stall",
-        "seen_date": "2026-06-17T05:00:00Z",
-        "tier": "high",
-        "region": "MENA",
-        "source_country": "Israel"
+      "status": "confirmed",
+      "priority": "Alta",
+      "location": "Kachin, Myanmar",
+      "headline": "Cuando la inundación entra en zona de guerra civil",
+      "conflict_event": "Guerra civil y deterioro humanitario en Myanmar",
+      "environmental_event": "Flood in Myanmar 1103975",
+      "environmental_source": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_20736",
+      "coupling_type": "Acceso humanitario, carreteras, alimentos, desplazamiento",
+      "fact": "NASA/EONET registró «Flood in Myanmar 1103975» con geometría del 23 de junio de 2026 en torno a 96.0263, 19.9105. En Kachin, lluvias intensas inundaron Mohnyin, Hpakant, Mogaung, Namti y Hain; en Mogaung los arroyos Nantin y Nan Yin superaron niveles de peligro y obligaron a evacuar a más de 10.000 personas.",
+      "assessment": "La inundación golpea un territorio donde la guerra civil sigue activa, con cortes de carretera, erosión agrícola, escasez de alimentos y acceso humanitario restringido. El acople no es lluvia más guerra: es bloqueo de movilidad, presión alimentaria y mayor dependencia de redes locales.",
+      "hypothesis": "Si los corredores de Kachin y el eje Irrawaddy quedan dañados por agua y barro, la ayuda entra tarde, la población se mueve bajo riesgo y la economía local pierde resiliencia.",
+      "why_it_matters": "El agua golpea una zona de conflicto donde ayuda, movilidad y seguridad alimentaria ya están restringidas.",
+      "tripolar_reading": {
+        "china": "Riesgo sobre corredores Myanmar-Yunnan-Índico y estabilidad fronteriza.",
+        "us_eu": "Crisis humanitaria prolongada y acceso limitado, con capacidad de presión occidental reducida.",
+        "russia": "Coste reputacional indirecto asociado a cooperación militar con el Estado."
       },
-      "environmental_coupling": "Agua, saneamiento, calor estacional y acceso humanitario bajo presión militar y logística.",
-      "why_it_matters": "El agua deja de ser solo una necesidad civil y se convierte en indicador de control territorial, legitimidad, presión diplomática y riesgo sanitario.",
-      "tripolar_reading": "Estados Unidos queda asociado al costo político de sostener a Israel; China puede explotar diplomáticamente la narrativa de doble rasero; Rusia usa el teatro como munición discursiva contra Occidente; la UE queda atrapada entre derecho internacional, ayuda y baja capacidad coercitiva.",
       "sources": [
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-        "https://reliefweb.int/report/occupied-palestinian-territory/unicef-state-palestine-humanitarian-situation-update-wash-gaza-strip-29-may-2026"
+        "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_20736",
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/06/24/heavy-rains-trigger-flooding-in-five-townships-across-myanmar039s-kachin-state",
+        "https://www.theguardian.com/global-development/2026/jun/22/myanmar-paragliders-junta-bombs-light-aircraft-civilians"
       ]
     },
     {
       "rank": 2,
-      "status": "confirmado",
-      "priority": "alta",
-      "location": "Mali / Sahel central",
-      "headline": "Mali y Sahel: seguridad, alimentos y clima como arquitectura de fragilidad",
-      "sentinel_event": {
-        "id": "evt_d98b57dc8f938efb",
-        "title": "Coup leaders in Mali announce new security measures",
-        "seen_date": "2026-06-17T03:00:00Z",
-        "tier": "medium",
-        "region": "Sahel",
-        "source_country": "Mali"
+      "status": "confirmed",
+      "priority": "Media-alta",
+      "location": "Hasakah, Siria",
+      "headline": "Cuando arde el trigo en una zona de soberanía fragmentada",
+      "conflict_event": "Zona agrícola-fronteriza fragmentada por la guerra siria",
+      "environmental_event": "Wildfire in Syrian Arab Republic 1029038",
+      "environmental_source": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_20674",
+      "coupling_type": "Seguridad alimentaria, gobernanza de emergencia, frontera Siria-Iraq",
+      "fact": "NASA/EONET registró «Wildfire in Syrian Arab Republic 1029038» con geometría del 22 de junio de 2026 en torno a 41.0729, 36.9357. Fuentes regionales reportaron incendios en Hasakah que afectaron trigo, cebada, residuos agrícolas y pastizales, con menciones a Tell Brak, Tell Hamis y Al-Yaarubiyah.",
+      "assessment": "Hasakah es un espacio agrícola y fronterizo con autoridades fragmentadas, actores armados y dependencia de ayuda. El fuego sobre trigo y cebada golpea un recurso de legitimidad: alimento, control local y capacidad de respuesta.",
+      "hypothesis": "Cuando arde el trigo en soberanía fragmentada, el margen administrativo para apagar, indemnizar, resembrar y garantizar pan se convierte en poder político.",
+      "why_it_matters": "La pérdida de trigo en Hasakah afecta alimento, control local y legitimidad administrativa.",
+      "tripolar_reading": {
+        "russia": "Riesgo de erosión de la estabilización del Estado sirio.",
+        "us_eu": "Presencia estadounidense/SDF y contención de ISIS bajo presión; posible fricción local.",
+        "turkey": "Lectura fronteriza y kurda sobre el noreste sirio; la UE observa migración y ayuda."
       },
-      "environmental_coupling": "Inseguridad, sequía/desertificación, temporada de carestía y presión alimentaria regional.",
-      "why_it_matters": "El acople clima-conflicto no solo agrava hambre; redefine capacidad estatal, movilidad de grupos armados, desplazamiento y dependencia de ayuda.",
-      "tripolar_reading": "Rusia capitaliza vacíos de seguridad; China mira minerales, infraestructura y estabilidad logística; Estados Unidos y la UE pierden margen si la cooperación no se traduce en presencia y confianza local; el Sur Global arbitra entre seguridad, desarrollo y soberanía.",
       "sources": [
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-        "https://reliefweb.int/report/mali/24-million-people-sahel-urgently-need-aid-and-world-needs-do-more",
-        "https://fews.net/global/food-assistance-outlook-brief/june-2026/print"
+        "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_20674",
+        "https://www.albawaba.com/news/farmers-brace-combat-wildfires-wheat-1631152"
       ]
     },
     {
       "rank": 3,
-      "status": "en observación",
-      "priority": "media",
-      "location": "Taiwán / Mar de Filipinas / Pacífico occidental",
-      "headline": "Taiwán y Mar de Filipinas: clima severo en una zona de presión militar",
-      "sentinel_event": {
-        "id": "evt_dd66284d639b1ef5",
-        "title": "China launches military drills near Taiwan amid rising tension",
-        "seen_date": "2026-06-17T04:00:00Z",
-        "tier": "medium",
-        "region": "Asia-Pacífico",
-        "source_country": "Taiwan"
+      "status": "observation",
+      "priority": "Observación",
+      "location": "República Democrática del Congo",
+      "headline": "Presión ambiental sobre un Estado en crisis de seguridad",
+      "conflict_event": "Conflicto M23/FARDC, ADF y crisis humanitaria en el este",
+      "environmental_event": "Wildfires in DRC 1029121/1029112",
+      "environmental_source": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_20765",
+      "coupling_type": "En observación: presión ambiental sobre Estado con crisis de seguridad",
+      "fact": "NASA/EONET registró incendios en la RDC durante la semana, incluidos eventos del 24 de junio de 2026 en torno a 26.44, -6.33 y 27.08, -8.75. La ONU describió el este como «altamente inestable», con combates AFC/M23 y FARDC/Wazalendo, violencia del ADF, casi 27 millones de personas en inseguridad alimentaria y un brote de ébola declarado el 15 de mayo.",
+      "assessment": "El acople queda en observación: la evidencia abierta confirma simultaneidad país-evento, pero no confirma que esos incendios hayan afectado rutas, minas o frentes en North Kivu, South Kivu o Ituri. No debe presentarse como causalidad.",
+      "hypothesis": "En un país donde conflicto, minerales, inseguridad alimentaria y brotes sanitarios ya están acoplados, un evento ambiental relevante podría degradar logística estatal y humanitaria con rapidez; esta semana el umbral de evidencia no basta para declararlo inflexión.",
+      "why_it_matters": "Hay coincidencia temporal país-evento, pero falta evidencia pública de impacto directo sobre frentes, rutas o minas esta semana.",
+      "tripolar_reading": {
+        "us_eu": "Minerales críticos y estabilidad del este congoleño.",
+        "china": "Exposición a cadenas de cobre, cobalto y minería.",
+        "russia_regional": "Espacio para redes armadas y extracción informal si cae la capacidad estatal."
       },
-      "environmental_coupling": "Tifón Mekkhala en el entorno del Mar de Filipinas durante la misma ventana semanal.",
-      "why_it_matters": "No hay prueba institucional de interrupción operacional directa; sí existe una señal de observación porque clima severo puede afectar tempo naval, aéreo, ISR, evacuación y logística regional.",
-      "tripolar_reading": "China prueba presión de zona gris; Estados Unidos y aliados miden respuesta y resiliencia; Rusia observa la distracción estratégica; la UE depende de estabilidad marítima y tecnológica sin ser actor militar central.",
       "sources": [
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-        "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
+        "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_20765",
+        "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_20739",
+        "https://www.ungeneva.org/en/news-media/news/2026/06/120110/un-envoy-urges-parties-stay-course-towards-peace-eastern-dr-congo"
       ]
     }
   ],
   "not_selected_but_relevant": [
     {
-      "location": "Ucrania / Rusia",
-      "reason": "El caso es estratégico por energía y guerra industrial, pero no quedó seleccionado como acople ambiental directo NASA/USGS esta semana.",
-      "note": "ISW reportó ataques ucranianos contra infraestructura energética rusa y ataques rusos contra instalaciones energéticas ucranianas; se conserva como energía estratégica en observación.",
+      "location": "Sismicidad global y otros eventos EONET",
+      "reason": "Se revisaron 9 eventos abiertos y 163 cerrados de NASA EONET y 37 sismos USGS de magnitud 5+ en la ventana semanal.",
+      "note": "Ninguno superó el umbral de acople conflicto-ambiente significativo más allá de los tres puntos seleccionados; se conservan como base de vigilancia.",
       "sources": [
-        "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-june-17-2026/"
+        "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-21T22:00:00&endtime=2026-06-28T21:59:59&minmagnitude=5"
       ]
     }
   ],
   "best_short_candidate": {
     "rank": 1,
-    "title": "Gaza: cuando el agua se convierte en línea de control",
-    "reason": "Combina conflicto, infraestructura de supervivencia, acceso humanitario, legitimidad internacional y lectura tripolar en una narrativa clara para audiencia amplia."
+    "title": "Myanmar: cuando la inundación entra en zona de guerra",
+    "location": "Kachin, Myanmar",
+    "duration_seconds": 50,
+    "hook": "No es solo una inundación. Es una inundación dentro de una guerra civil.",
+    "reason": "Es el caso donde el acople entre guerra, inundación, ayuda, movilidad y seguridad alimentaria es más claro: evento NASA/EONET, fuente local con evacuaciones y cortes de carretera, y contexto de guerra civil con ayuda restringida.",
+    "closing": "GEOPÓLEM. Bienvenidos al tablero.",
+    "hashtags": [
+      "#GEOPÓLEM",
+      "#Myanmar",
+      "#Kachin",
+      "#OSINT",
+      "#Geopolítica",
+      "#ClimateSecurity",
+      "#HumanitarianCrisis",
+      "#BienvenidosAlTablero"
+    ]
   },
-  "disclaimer": "Correlación temporal entre evento de conflicto y evento ambiental no implica causalidad. Los casos confirmados indican acople significativo de presión; el caso en observación no tiene prueba institucional de interrupción operacional directa.",
+  "disclaimer": "Correlación temporal entre evento de conflicto y evento ambiental no implica causalidad. Los casos confirmados indican acople significativo de presión; el caso en observación (RDC) no tiene evidencia abierta de impacto directo y no debe presentarse como causalidad.",
   "reduced_hashtags": [
     "#GEOPÓLEM",
-    "#Geopolítica",
+    "#Myanmar",
+    "#Kachin",
     "#OSINT",
-    "#Gaza",
-    "#WaterSecurity",
-    "#Sahel",
-    "#Taiwan",
-    "#Tripolaridad",
+    "#Geopolítica",
+    "#ClimateSecurity",
+    "#HumanitarianCrisis",
     "#BienvenidosAlTablero"
   ],
   "brand_close": "GEOPÓLEM. Bienvenidos al tablero."
