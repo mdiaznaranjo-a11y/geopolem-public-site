@@ -728,3 +728,75 @@ export const SENTINEL_BRIEF = {
   tags: ['GEOPÓLEM', 'Myanmar', 'Kachin', 'OSINT', 'Geopolítica', 'ClimateSecurity', 'HumanitarianCrisis', 'BienvenidosAlTablero'],
   close: 'GEOPÓLEM. Bienvenidos al tablero.',
 };
+
+/* ========================================================================
+   PLAN Z — Documental de inteligencia GEOPÓLEM
+   Petróleo, deuda, poder y rediseño institucional en Venezuela.
+   Documental completo alojado en YouTube (público, ~37 min).
+   No es una noticia: es una lectura de inteligencia. Método Hecho·Evaluación·Hipótesis.
+   ======================================================================== */
+export const PLAN_Z = {
+  id: 'plan-z',
+  slug: 'plan-z',
+  category: 'osint',
+  tone: 'red',
+  eyebrow: 'Documental de inteligencia',
+  eyebrowEn: 'Intelligence documentary',
+  title: 'PLAN Z',
+  subtitle: 'la mina, la libreta y la firma',
+  subtitleEn: 'the mine, the ledger and the signature',
+  fullTitle: 'PLAN Z: la mina, la libreta y la firma | GEOPÓLEM',
+  // Documental completo en YouTube (no se aloja localmente)
+  youtube: {
+    id: 'bUaQLojBLxU',
+    url: 'https://www.youtube.com/watch?v=bUaQLojBLxU',
+    duration: '≈ 37 min',
+  },
+  // Resumen editorial: qué es y qué no es
+  summary: 'Plan Z no es una noticia. Es una lectura de inteligencia sobre petróleo, deuda, poder y rediseño institucional. El documental analiza qué ocurre cuando la arquitectura política, fiscal y diplomática de un Estado depende de un recurso estratégico y ese Estado pierde el control técnico, financiero y operativo sobre él.',
+  summaryEn: 'Plan Z is not breaking news. It is an intelligence reading of oil, debt, power and institutional redesign. The documentary examines what happens when a state whose political, fiscal and diplomatic architecture depends on a strategic resource loses technical, financial and operational control over it.',
+  notNews: 'Sin amarillismo. Sin propaganda. Sala situacional.',
+  notNewsEn: 'No sensationalism. No propaganda. Situation room.',
+  // Pregunta analítica central
+  question: 'Cuando un petroestado pierde el control sobre su petróleo, ¿quién mueve la palanca energética?',
+  questionEn: 'When a petro-state loses control over its oil, who moves the energy lever?',
+  questionContext: 'Petróleo. Deuda. Oro. PDVSA. Orinoco. Madrid. Roma. Nueva York.',
+  // Disciplinas de inteligencia empleadas
+  methods: [
+    { id:'osint',  label:'OSINT',  desc:'Fuentes abiertas: documentos, registros y prensa.', descEn:'Open sources: documents, records and press.', accent:'#22d3ee' },
+    { id:'humint', label:'HUMINT', desc:'Testimonios y fuentes humanas.', descEn:'Testimonies and human sources.', accent:'#a78bfa' },
+    { id:'finint', label:'FININT', desc:'Deuda, acreedores y flujos financieros.', descEn:'Debt, creditors and financial flows.', accent:'#10b981' },
+    { id:'geoint', label:'GEOINT', desc:'Mapas, rutas y nodos estratégicos.', descEn:'Maps, routes and strategic nodes.', accent:'#f59e0b' },
+  ],
+  // Doctrina editorial: Hecho · Evaluación · Hipótesis
+  doctrine: [
+    { id:'hecho',      label:'Hecho',      labelEn:'Fact',       desc:'Lo verificable en fuentes abiertas.', descEn:'What is verifiable in open sources.' },
+    { id:'evaluacion', label:'Evaluación', labelEn:'Assessment', desc:'Lo que las evidencias permiten inferir.', descEn:'What the evidence allows us to infer.' },
+    { id:'hipotesis',  label:'Hipótesis',  labelEn:'Hypothesis', desc:'Escenarios plausibles, señalados como tales.', descEn:'Plausible scenarios, flagged as such.' },
+  ],
+  // Vectores del análisis (chips)
+  vectors: ['Petróleo', 'Deuda', 'Oro', 'PDVSA', 'Orinoco', 'Poder', 'Rediseño institucional'],
+  // Activación social: copy por plataforma + short 9:16
+  social: {
+    short: {
+      src: './assets/videos/geopolem_plan_z_social_short_30s_9x16.mp4',
+      poster: './assets/videos/posters/geopolem_plan_z_social_short_30s_9x16.jpg',
+      duration: '00:30',
+      label: 'Short · 30s · 9:16',
+    },
+    summary: {
+      src: './assets/videos/geopolem_plan_z_social_summary_9x16.mp4',
+      label: 'Resumen · 9:16',
+    },
+    platforms: [
+      { id:'instagram', label:'Instagram', desc:'Reels + Stories', accent:'#ec4899' },
+      { id:'tiktok',    label:'TikTok',    desc:'Vertical 9:16',   accent:'#22d3ee' },
+      { id:'x',         label:'X',         desc:'Hilo + vídeo',     accent:'#e2e8f0' },
+      { id:'linkedin',  label:'LinkedIn',  desc:'Análisis largo',   accent:'#0a66c2' },
+      { id:'facebook',  label:'Facebook',  desc:'Reels',            accent:'#1877f2' },
+    ],
+    caption: 'Plan Z ya está en YouTube. La pregunta no es sólo quién gobierna: es quién mueve la palanca energética. Documental completo en YouTube.',
+  },
+  tags: ['PlanZ', 'Venezuela', 'Geopolítica', 'Petróleo', 'PDVSA', 'Orinoco', 'OSINT', 'Energía', 'Petropoder'],
+  close: 'GEOPÓLEM. Bienvenidos al tablero.',
+};

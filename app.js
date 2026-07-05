@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF } from './data.js';
+import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 
@@ -38,7 +38,7 @@ const I18N = {
   ES: {
     welcome: 'Bienvenido al tablero.',
     tagline: 'GEO + PÓLEMOS · sala situacional editorial',
-    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio' },
+    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio' },
     kpi: 'Indicadores clave',
     alerts: 'Alertas en vivo',
     selectFoco: 'Selecciona un foco',
@@ -57,7 +57,7 @@ const I18N = {
   EN: {
     welcome: 'Welcome to the board.',
     tagline: 'GEO + PÓLEMOS · editorial situation room',
-    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio' },
+    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio' },
     kpi:'Key indicators',
     alerts:'Live alerts',
     selectFoco:'Select a focus',
@@ -76,7 +76,7 @@ const I18N = {
   FR: {
     welcome:'Bienvenue sur le tableau.',
     tagline:'GEO + PÓLEMOS · salle de situation éditoriale',
-    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio' },
     kpi:'Indicateurs clés', alerts:'Alertes en direct',
     selectFoco:'Sélectionner un foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Acteurs', risk:'Matrice des risques',
@@ -93,7 +93,7 @@ const I18N = {
   DE: {
     welcome:'Willkommen am Lagebrett.',
     tagline:'GEO + PÓLEMOS · redaktioneller Lageraum',
-    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio' },
+    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio' },
     kpi:'Schlüsselindikatoren', alerts:'Live-Warnungen',
     selectFoco:'Brennpunkt auswählen',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteure', risk:'Risikomatrix',
@@ -110,7 +110,7 @@ const I18N = {
   LB: {
     welcome:'Wëllkomm um Tableau.',
     tagline:'GEO + PÓLEMOS · redaktionellen Situatiouns-Raum',
-    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio' },
     kpi:'Haaptindikateuren', alerts:'Live Alarmen',
     selectFoco:'Wielt e Foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteuren', risk:'Risiko-Matrix',
@@ -2836,6 +2836,172 @@ function Doctrina({ lang }) {
 }
 
 /* ========================================================================
+   PLAN Z — Documental de inteligencia (petróleo, deuda, poder)
+   Documental completo embebido desde YouTube + activación social 9:16.
+   ======================================================================== */
+function PlanZTeaser({ lang, onOpen }) {
+  const en = lang === 'EN';
+  const p = PLAN_Z;
+  return html`
+  <section class="relative panel rounded-lg overflow-hidden border border-alert/25">
+    <span class="corner-tl"></span><span class="corner-tr"></span>
+    <span class="corner-bl"></span><span class="corner-br"></span>
+    <div class="boot-grid absolute inset-0 opacity-30 pointer-events-none"></div>
+    <div class="scanlines absolute inset-0 pointer-events-none"></div>
+    <div class="relative p-4 lg:p-6 flex flex-col lg:flex-row gap-4 lg:items-center justify-between">
+      <div class="space-y-1.5 max-w-2xl">
+        <div class="flex items-center gap-2">
+          <span class="relative flex w-2 h-2">
+            <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-alert"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-alert"></span>
+          </span>
+          <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-alert-soft">${en?p.eyebrowEn:p.eyebrow} · ${en?'NOW ON YOUTUBE':'YA EN YOUTUBE'}</div>
+        </div>
+        <h3 class="font-display font-bold text-[20px] lg:text-[26px] text-slate-50 leading-tight glow-text">${p.title} <span class="text-alert-soft">${en?p.subtitleEn:p.subtitle}</span></h3>
+        <p class="text-[13px] text-slate-300">${en?p.summaryEn:p.summary}</p>
+      </div>
+      <button onClick=${onOpen}
+        class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded border border-alert/40 text-alert-soft text-[12px] font-mono uppercase tracking-widest hover:bg-alert/10 hover:shadow-glow transition">
+        ▶ ${en?'Open Plan Z':'Abrir Plan Z'}
+      </button>
+    </div>
+  </section>`;
+}
+
+function PlanZ({ lang }) {
+  const en = lang === 'EN';
+  const p = PLAN_Z;
+  const date = new Date().toLocaleDateString(en?'en-GB':'es-ES', { day:'2-digit', month:'long', year:'numeric' });
+  return html`
+  <section class="space-y-4">
+    <!-- Hero -->
+    <div class="relative panel rounded-lg overflow-hidden border border-alert/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="boot-grid absolute inset-0 opacity-30 pointer-events-none"></div>
+      <div class="scanlines absolute inset-0 pointer-events-none"></div>
+      <div class="relative p-5 lg:p-7">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-2">
+            <span class="relative flex w-2 h-2">
+              <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-alert"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-alert"></span>
+            </span>
+            <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-alert-soft">${en?p.eyebrowEn:p.eyebrow} · <span class="text-slate-500">${en?p.eyebrow:p.eyebrowEn}</span></div>
+          </div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">SITUATION ROOM · ${date}</div>
+        </div>
+        <h2 class="font-display font-bold text-[28px] lg:text-[38px] text-slate-50 leading-tight mt-2 glow-text">
+          ${p.title} <span class="text-alert-soft">${en?p.subtitleEn:p.subtitle}</span>
+        </h2>
+        <p class="text-[14px] lg:text-[15px] text-slate-200 leading-relaxed mt-3 max-w-3xl">${en?p.summaryEn:p.summary}</p>
+        <p class="text-[12.5px] text-radar font-mono uppercase tracking-widest mt-2">${en?p.notNewsEn:p.notNews}</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          ${p.vectors.map(v => html`<span key=${v} class="chip" style=${{borderColor:'rgba(239,68,68,0.35)'}}>${v}</span>`)}
+        </div>
+      </div>
+    </div>
+
+    <!-- Documental + pregunta analítica -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="lg:col-span-2 panel rounded-md p-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="heading-mono">${en?'Full documentary':'Documental completo'} · ${p.youtube.duration}</div>
+          <a href=${p.youtube.url} target="_blank" rel="noopener"
+             class="text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">YouTube ↗</a>
+        </div>
+        <${YouTubeEmbed} id=${p.youtube.id} title=${p.fullTitle}/>
+        <a href=${p.youtube.url} target="_blank" rel="noopener"
+          class="mt-3 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded border border-alert/40 text-alert-soft text-[12px] font-mono uppercase tracking-widest hover:bg-alert/10 hover:shadow-glow transition w-full lg:w-auto">
+          ▶ ${en?'Watch full documentary on YouTube':'Ver documental completo en YouTube'}
+        </a>
+      </div>
+      <div class="relative panel rounded-md p-4 flex flex-col justify-center border border-alert/20">
+        <span class="corner-tl"></span><span class="corner-br"></span>
+        <div class="heading-mono mb-2">${en?'Core question':'Pregunta central'}</div>
+        <p class="font-display font-semibold text-[19px] lg:text-[21px] text-slate-100 leading-snug">${en?p.questionEn:p.question}</p>
+        <p class="text-[11.5px] font-mono uppercase tracking-wider text-slate-500 mt-3">${p.questionContext}</p>
+      </div>
+    </div>
+
+    <!-- Disciplinas de inteligencia + doctrina editorial -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div class="panel rounded-md p-4">
+        <div class="heading-mono mb-3">${en?'Intelligence disciplines':'Disciplinas de inteligencia'}</div>
+        <div class="grid grid-cols-2 gap-2.5">
+          ${p.methods.map(m => html`
+            <div key=${m.id} class="panel-soft rounded-md p-3 border" style=${{borderColor:`${m.accent}44`}}>
+              <div class="font-mono font-semibold text-[13px] tracking-widest" style=${{color:m.accent}}>${m.label}</div>
+              <div class="text-[11.5px] text-slate-400 mt-1 leading-snug">${en?m.descEn:m.desc}</div>
+            </div>`)}
+        </div>
+      </div>
+      <div class="panel rounded-md p-4">
+        <div class="heading-mono mb-3">${en?'Editorial method':'Método editorial'}</div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          ${p.doctrine.map(d => html`<span key=${d.id} class="chip" style=${{borderColor:'rgba(34,211,238,0.4)', color:'#67e8f9'}}>${en?d.labelEn:d.label}</span>`)}
+        </div>
+        <div class="space-y-2">
+          ${p.doctrine.map(d => html`
+            <div key=${d.id} class="flex gap-2 text-[12.5px] leading-snug">
+              <span class="font-mono uppercase tracking-wider text-radar shrink-0 w-24">${en?d.labelEn:d.label}</span>
+              <span class="text-slate-400">${en?d.descEn:d.desc}</span>
+            </div>`)}
+        </div>
+      </div>
+    </div>
+
+    <!-- Activación social · short 9:16 -->
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <div class="heading-mono mb-1">${en?'Social activation':'Activación social'}</div>
+      <p class="text-[13px] text-slate-300 max-w-3xl">${p.social.caption}</p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 items-start">
+        <div class="lg:col-span-1">
+          <video controls preload="none" playsinline
+            poster=${p.social.short.poster}
+            class="w-full max-w-[300px] mx-auto lg:mx-0 rounded border border-radar/25 bg-black aspect-[9/16] object-cover">
+            <source src=${p.social.short.src} type="video/mp4"/>
+          </video>
+          <div class="text-center lg:text-left mt-2 font-mono text-[10px] uppercase tracking-widest text-slate-500">${p.social.short.label}</div>
+        </div>
+        <div class="lg:col-span-2 space-y-3">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            ${p.social.platforms.map(pl => html`
+              <div key=${pl.id} class="panel-soft rounded-md p-3 border" style=${{borderColor:`${pl.accent}44`}}>
+                <div class="font-display font-semibold text-[13px] text-slate-100">${pl.label}</div>
+                <div class="font-mono text-[9.5px] uppercase tracking-wider text-slate-500 mt-0.5">${pl.desc}</div>
+              </div>`)}
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href=${p.social.short.src} download
+              class="inline-flex items-center gap-2 px-3.5 py-2 rounded border border-radar/40 text-radar text-[11.5px] font-mono uppercase tracking-widest hover:bg-radar/10 transition">
+              ⬇ ${en?'Download 30s short':'Descargar short 30s'}
+            </a>
+            <a href=${p.social.summary.src} download
+              class="inline-flex items-center gap-2 px-3.5 py-2 rounded border border-white/15 text-slate-300 text-[11.5px] font-mono uppercase tracking-widest hover:bg-white/5 transition">
+              ⬇ ${en?'Download summary reel':'Descargar reel resumen'}
+            </a>
+            <a href=${p.youtube.url} target="_blank" rel="noopener"
+              class="inline-flex items-center gap-2 px-3.5 py-2 rounded border border-alert/40 text-alert-soft text-[11.5px] font-mono uppercase tracking-widest hover:bg-alert/10 transition">
+              ▶ YouTube ↗
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            ${p.tags.map(tag => html`<span key=${tag} class="chip">#${tag}</span>`)}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cierre de marca -->
+    <div class="text-center py-2">
+      <div class="font-display font-semibold text-[15px] text-alert-soft glow-text tracking-wide">${p.close}</div>
+    </div>
+  </section>`;
+}
+
+/* ========================================================================
    SENTINEL · Brief semanal de inflexiones conflicto-ambiente
    ======================================================================== */
 function SentinelStatusChip({ status, accent }) {
@@ -3154,6 +3320,7 @@ function App() {
           </div>
           <${Analysis} t=${t} foco=${selectedFoco}/>
           <${Scenarios} t=${t} foco=${selectedFoco}/>
+          <${PlanZTeaser} lang=${lang} onOpen=${()=>setView('planz')}/>
           <${DoctrinaTeaser} lang=${lang} onOpen=${()=>setView('doctrina')}/>
           <${SalaTeaser} lang=${lang} onOpen=${()=>setView('sala')}/>
         </div>
@@ -3170,6 +3337,8 @@ function App() {
       `}
 
       ${view==='doctrina' && html`<${Doctrina} lang=${lang}/>`}
+
+      ${view==='planz' && html`<${PlanZ} lang=${lang}/>`}
 
       ${view==='sentinel' && html`<${SentinelBrief} lang=${lang}/>`}
 
