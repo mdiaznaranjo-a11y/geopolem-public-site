@@ -5,6 +5,7 @@ import htm from 'https://esm.sh/htm@3.1.1';
 import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
+import { loadWatchlistFocos } from './api-adapter.js';
 
 const html = htm.bind(React.createElement);
 const API_BASE = window.GEOP_API_BASE || ('__PORT_8000__'.startsWith('__') ? 'http://127.0.0.1:8000' : '__PORT_8000__');
@@ -3132,6 +3133,10 @@ function App() {
   const [sitRoom, setSitRoom] = useState(false);
   const [bootComplete, setBootComplete] = useState(false);
   const [customFocos, setCustomFocos] = useState([]);
+  // Sprint 1 — capa de adaptador API con respaldo local. `baseFocos` arranca
+  // con los datos locales (data.js) y sólo se reemplaza si la API v1 responde.
+  const [baseFocos, setBaseFocos] = useState(FOCOS);
+  const [dataSource, setDataSource] = useState('local');
   const [auth, setAuth] = useState(null);
   const [authStatus, setAuthStatus] = useState('');
   const [dbStatus, setDbStatus] = useState('standby');
@@ -3143,6 +3148,21 @@ function App() {
   useEffect(() => {
     document.body.classList.toggle('sitroom', sitRoom);
   }, [sitRoom]);
+
+  // Sprint 1 — carga watchlist vía adaptador (API-first con fallback local).
+  // Con USE_API=false devuelve FOCOS locales de inmediato; ante error de API,
+  // cae al respaldo local sin romper la UI.
+  useEffect(() => {
+    let cancelled = false;
+    loadWatchlistFocos({ localFocos: FOCOS })
+      .then(({ focos, source }) => {
+        if (cancelled) return;
+        if (Array.isArray(focos) && focos.length) setBaseFocos(focos);
+        setDataSource(source);
+      })
+      .catch(() => { if (!cancelled) setDataSource('local'); });
+    return () => { cancelled = true; };
+  }, []);
 
   const loadEditorData = async (token = auth?.token) => {
     if (!token) return;
@@ -3177,9 +3197,9 @@ function App() {
 
   const allFocos = useMemo(() => {
     const map = new Map();
-    [...FOCOS, ...customFocos].forEach(f => map.set(f.id, f));
+    [...baseFocos, ...customFocos].forEach(f => map.set(f.id, f));
     return [...map.values()];
-  }, [customFocos]);
+  }, [baseFocos, customFocos]);
   const selectedFoco = allFocos.find(f => f.id === selectedId);
   const openFocoOnMap = (id) => {
     setSelectedId(id);

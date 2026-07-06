@@ -43,6 +43,19 @@
 <script>
   window.GEOP_API_BASE = window.GEOP_API_BASE || "https://geopolem-api.onrender.com";
 </script>
+<!--
+  GEOPÓLEM — Configuración del adaptador de datos (Sprint 1).
+  La watchlist/mapa siguen usando datos locales (data.js) por defecto.
+  Para activar la carga API-first del contrato /api/v1/conflicts, poner
+  GEOP_USE_API = true cuando la API v1 esté estable (ver Sprint 2).
+  Si la API falla, el adaptador cae automáticamente al respaldo local.
+-->
+<script>
+  window.GEOP_USE_API = window.GEOP_USE_API ?? false;              // API-first on/off
+  window.GEOP_CONFLICTS_PATH = window.GEOP_CONFLICTS_PATH || "/api/v1/conflicts";
+  // Respaldo estático opcional para GitHub Pages sin backend:
+  // window.GEOP_CONFLICTS_STATIC = "./api/v1/conflicts.json";
+</script>
 <script>
   tailwind.config = {
     darkMode: 'class',
