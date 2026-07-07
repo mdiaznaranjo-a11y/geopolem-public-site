@@ -10,6 +10,7 @@ import {
   normalizeEnrichedDetail, toRelationRows, hasAnyEnrichment,
   deriveFilterFacets, applyAdvancedFilters, loadEnrichedDetail,
 } from './public-enriched.mjs';
+import { readDeepLink, writeDeepLink, onDeepLinkChange } from './deeplinks.mjs';
 
 const html = htm.bind(React.createElement);
 const API_BASE = window.GEOP_API_BASE || ('__PORT_8000__'.startsWith('__') ? 'http://127.0.0.1:8000' : '__PORT_8000__');
@@ -1336,8 +1337,15 @@ function MapFilters({ facets, selected, onChange, onReset, count, total }) {
   </div>`;
 }
 
-function MapExplorer({ focos, selectedFoco, selectedId, onSelect }) {
-  const [selected, setSelected] = useState({});
+function MapExplorer({ focos, selectedFoco, selectedId, onSelect, filters, onFiltersChange }) {
+  // Filtros CONTROLADOS por el contenedor (deep-link URL). Si no llega el par
+  // controlado, degrada a estado local (compatibilidad con otros usos).
+  const [localSel, setLocalSel] = useState({});
+  const controlled = filters && typeof onFiltersChange === 'function';
+  const selected = controlled ? filters : localSel;
+  const setSelected = controlled
+    ? (updater) => onFiltersChange(typeof updater === 'function' ? updater(filters) : updater)
+    : setLocalSel;
   const facets = useMemo(() => deriveFilterFacets(focos), [focos]);
   const visible = useMemo(() => applyAdvancedFilters(focos, selected), [focos, selected]);
   const shownFoco = visible.find(f => f.id === selectedId) || selectedFoco;
@@ -3302,10 +3310,21 @@ function SentinelBrief({ lang }) {
 /* ========================================================================
    App root
    ======================================================================== */
+// Vistas navegables por deep-link (Sprint 11). Una `view` desconocida en la URL
+// se ignora (degradación limpia) y se conserva la vista por defecto.
+const KNOWN_VIEWS = [
+  'dashboard', 'map', 'watchlist', 'analysis', 'scenarios', 'rearm', 'editor',
+  'sentinel', 'studio', 'brief', 'doctrina', 'monetization', 'planz', 'sala', 'system',
+];
+
 function App() {
+  // Estado inicial de navegación desde la URL (hash) — no destructivo: si no hay
+  // deep-link, se usan los valores por defecto de siempre.
+  const initialLink = readDeepLink({ knownViews: KNOWN_VIEWS });
   const [lang, setLang] = useState('ES');
-  const [view, setView] = useState('dashboard');
-  const [selectedId, setSelectedId] = useState('ukr-rus');
+  const [view, setView] = useState(initialLink.view || 'dashboard');
+  const [selectedId, setSelectedId] = useState(initialLink.focus || 'ukr-rus');
+  const [mapFilters, setMapFilters] = useState(initialLink.filters || {});
   const [sitRoom, setSitRoom] = useState(false);
   const [bootComplete, setBootComplete] = useState(false);
   const [customFocos, setCustomFocos] = useState([]);
@@ -3324,6 +3343,25 @@ function App() {
   useEffect(() => {
     document.body.classList.toggle('sitroom', sitRoom);
   }, [sitRoom]);
+
+  // Sprint 11 — Deep-links por URL (no destructivo, sin almacenamiento).
+  // Refleja el estado navegable (vista/foco/filtros) en el hash y responde a
+  // back/forward. Los valores por defecto se OMITEN para no ensuciar la URL.
+  const deepLinkState = useMemo(() => ({
+    view: view !== 'dashboard' ? view : null,
+    focus: selectedId && selectedId !== 'ukr-rus' ? selectedId : null,
+    filters: mapFilters,
+  }), [view, selectedId, mapFilters]);
+
+  useEffect(() => {
+    writeDeepLink(deepLinkState);
+  }, [deepLinkState]);
+
+  useEffect(() => onDeepLinkChange((next) => {
+    if (next.view && KNOWN_VIEWS.includes(next.view)) setView(next.view);
+    if (next.focus) setSelectedId(next.focus);
+    setMapFilters(next.filters || {});
+  }, { knownViews: KNOWN_VIEWS }), []);
 
   // Sprint 1 — carga watchlist vía adaptador (API-first con fallback local).
   // Con USE_API=false devuelve FOCOS locales de inmediato; ante error de API,
@@ -3526,7 +3564,7 @@ function App() {
       ${view==='map' && html`
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div class="lg:col-span-2">
-            <${MapExplorer} focos=${allFocos} selectedFoco=${selectedFoco} selectedId=${selectedId} onSelect=${setSelectedId}/>
+            <${MapExplorer} focos=${allFocos} selectedFoco=${selectedFoco} selectedId=${selectedId} onSelect=${setSelectedId} filters=${mapFilters} onFiltersChange=${setMapFilters}/>
           </div>
           <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId} onOpenSentinel=${()=>setView('sentinel')}/>
         </div>

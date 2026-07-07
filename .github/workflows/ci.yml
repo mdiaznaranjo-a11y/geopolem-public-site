@@ -51,6 +51,8 @@ jobs:
         run: npm run validate:staging
       - name: Validar puente estático en disco (Sprint 5, sin DB)
         run: npm run export:static:check
+      - name: Verificar rutas/detalle estático y deep-links (Sprint 11, sin navegador)
+        run: npm run verify:static-routes
 
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
