@@ -278,6 +278,56 @@ function wrap(detailsMap) {
   return out;
 }
 
+/* --------------------------------------------------------------------------
+   summarizePromotion: dado un bundle (buildPromotionBundle) y un gate, produce
+   un RESUMEN AUDITABLE y PURO (sin disco) de qué se ESCRIBIRÍA en una promoción,
+   para el modo --dry-run. No toca disco ni genera timestamps propios: refleja
+   exactamente el contenido del bundle. `targets` describe las rutas destino sin
+   escribirlas. `pendingChecklist` recuerda los gates humanos aún abiertos.
+-------------------------------------------------------------------------- */
+export function summarizePromotion({ bundle, gate, targets = {}, scope = 'staging' }) {
+  const detailIds = bundle && bundle.detailsDoc && isPlainObject(bundle.detailsDoc.data)
+    ? Object.keys(bundle.detailsDoc.data)
+    : [];
+  const reviewFlags = gate && Array.isArray(gate.review_flags) ? gate.review_flags : [];
+  const wouldWrite = [];
+  if (targets.bundle) wouldWrite.push({ path: targets.bundle, kind: 'bundle', canonical: false });
+  if (targets.map) wouldWrite.push({ path: targets.map, kind: 'map.enriched', canonical: false });
+  if (targets.coverage) wouldWrite.push({ path: targets.coverage, kind: 'coverage-report', canonical: false });
+  for (const id of detailIds) {
+    const p = targets.detail ? targets.detail(id) : null;
+    if (p) wouldWrite.push({ path: p, kind: 'detail', id, canonical: false });
+  }
+
+  const pendingChecklist = [];
+  if (!gate || !gate.ok) pendingChecklist.push('gate editorial con bloqueos: resolver blockers antes de promover');
+  if (!gate || !gate.coverage_ok) pendingChecklist.push('cobertura verificada por debajo del mínimo requerido');
+  if (reviewFlags.length) pendingChecklist.push(`${reviewFlags.length} fuente(s) con needs_human_review: revisar acceso indirecto antes del sign-off`);
+  if (scope === 'production') pendingChecklist.push('sign-off humano de producción (GEOP_PROMOTION_SIGNOFF) — nunca en CI');
+
+  return {
+    dry_run: true,
+    scope,
+    generated_at: bundle ? bundle.generated_at : null,
+    authorized: Boolean(gate && gate.ok && gate.coverage_ok),
+    coverage_pct: gate ? gate.coverage_pct : null,
+    counts: {
+      details: detailIds.length,
+      files_would_write: wouldWrite.length,
+      blockers: gate ? gate.blockers.length : 0,
+      warnings: gate ? gate.warnings.length : 0,
+      review_flags: reviewFlags.length,
+    },
+    would_write: wouldWrite,
+    blockers: gate ? gate.blockers : [],
+    warnings: gate ? gate.warnings : [],
+    review_flags: reviewFlags,
+    pending_checklist: pendingChecklist,
+    touches_canonical: false,
+    touches_disk: false,
+  };
+}
+
 function countSources(detailsWrapped) {
   const d = isPlainObject(detailsWrapped) ? detailsWrapped : {};
   let withSources = 0;

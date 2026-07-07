@@ -14,9 +14,10 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, existsSync, rmSync } from 'node:fs';
+import { readFileSync, existsSync, rmSync, mkdtempSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { dirname, resolve } from 'node:path';
+import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 
 const {
@@ -246,14 +247,23 @@ test('los artefactos de STAGING en disco viven bajo api/v1/staging y validan con
 
 test('la CLI de promoción respalda y restaura los artefactos de staging (rollback)', () => {
   const script = resolve(REPO_ROOT, 'scripts/promote-canonical-staging.mjs');
-  const rollbackDir = resolve(REPO_ROOT, 'api/v1/staging/.rollback');
-  rmSync(rollbackDir, { recursive: true, force: true });
-  // Primera escritura (crea artefactos si no existen).
-  execFileSync('node', [script, '--write-staging'], { cwd: resolve(REPO_ROOT, 'api-server') });
-  // Segunda escritura: al existir artefactos, deben respaldarse en .rollback.
-  execFileSync('node', [script, '--write-staging'], { cwd: resolve(REPO_ROOT, 'api-server') });
-  assert.equal(existsSync(rollbackDir), true, 'debe existir .rollback tras sobrescribir');
-  // Rollback restaura y limpia el respaldo.
-  execFileSync('node', [script, '--rollback'], { cwd: resolve(REPO_ROOT, 'api-server') });
-  assert.equal(existsSync(rollbackDir), false, '.rollback debe eliminarse tras restaurar');
+  // Sprint 17: aislamos la escritura en un tempdir (GEOP_STAGING_ROOT) para NO
+  // ensuciar los artefactos versionados de api/v1/staging (regenerable pero
+  // con generated_at no determinista → provocaba diffs en el árbol).
+  const stagingRoot = mkdtempSync(resolve(tmpdir(), 'geop-staging-'));
+  const rollbackDir = resolve(stagingRoot, '.rollback');
+  const env = { ...process.env, GEOP_STAGING_ROOT: stagingRoot };
+  const cwd = resolve(REPO_ROOT, 'api-server');
+  try {
+    // Primera escritura (crea artefactos si no existen).
+    execFileSync('node', [script, '--write-staging'], { cwd, env });
+    // Segunda escritura: al existir artefactos, deben respaldarse en .rollback.
+    execFileSync('node', [script, '--write-staging'], { cwd, env });
+    assert.equal(existsSync(rollbackDir), true, 'debe existir .rollback tras sobrescribir');
+    // Rollback restaura y limpia el respaldo.
+    execFileSync('node', [script, '--rollback'], { cwd, env });
+    assert.equal(existsSync(rollbackDir), false, '.rollback debe eliminarse tras restaurar');
+  } finally {
+    rmSync(stagingRoot, { recursive: true, force: true });
+  }
 });

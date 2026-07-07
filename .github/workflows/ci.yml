@@ -68,6 +68,12 @@ jobs:
       - name: Validación E2E de artefactos de staging y separación canónica (Sprint 16)
         run: npm run validate:staging-artifacts
 
+      - name: Dry-run auditable de promoción (Sprint 17, no-write)
+        run: npm run promote:dry-run
+
+      - name: Garantía NO-WRITE/NO-DIFF de las validaciones (Sprint 17)
+        run: npm run verify:clean-tree
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest

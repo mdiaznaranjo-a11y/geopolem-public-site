@@ -2,3 +2,5 @@ node_modules/
 *.tmp
 # Sprint 15: respaldos efímeros de la promoción a staging (regenerables)
 api/v1/staging/.rollback/
+# Sprint 17: sign-off humano de promoción a producción (NO versionar, sin secretos)
+.promotion-signoff.json

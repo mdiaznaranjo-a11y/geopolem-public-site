@@ -1,6 +1,6 @@
 # GEOPÓLEM — Checklist de promoción STAGING → PRODUCCIÓN
 
-- **Versión:** 1.0.0 (Sprint 16)
+- **Versión:** 1.1.0 (Sprint 17)
 - **Contrato staging:** `sprint-15-staging-canonical-v1` (bundle) · `sprint-15-staging-map-v1` (mapa)
 - **Principio rector:** _no inventar datos_. Lo no verificable queda pendiente y
   documentado. La promoción a producción **exige sign-off editorial humano**.
@@ -20,6 +20,9 @@
 - [ ] `npm run validate:staging-artifacts` → OK (bundle, 10 detalles, mapa,
       coverage-report consumibles; separación canónica verificada).
 - [ ] `npm run promote:check` → **AUTORIZA promoción: sí** y cobertura **100%**.
+      (Sprint 17: `promote:check` es estrictamente **no-write/no-diff**.)
+- [ ] `npm run promote:dry-run` → resumen auditable de qué se escribiría (sin tocar disco).
+- [ ] `npm run verify:clean-tree` → **OK** (las validaciones no dejan diffs versionados).
 - [ ] `npm run verify:static-routes` → deep-links canónicos resueltos.
 
 ## 1. Cobertura y fuentes
@@ -105,7 +108,13 @@ sign-off causal humano o reformulación:
 - [ ] §6 producción intacta y separación garantizada ✔
 - [ ] §7 rollback ensayado ✔
 - [ ] Autorización humana explícita registrada: `__________` (nombre, fecha)
+- [ ] **Sign-off técnico (Sprint 17)** provisto por un humano vía
+      `GEOP_PROMOTION_SIGNOFF="approver=NOMBRE;scope=production;date=YYYY-MM-DD"`
+      o archivo local `.promotion-signoff.json` (no versionado, **sin secretos**).
+      `npm run promote:production:dry` debe **aceptar** el sign-off y ejecutar sólo
+      un dry-run (nunca publica). **Sin sign-off, la promoción está BLOQUEADA.**
 
 > Sólo con **todas** las casillas de §8 marcadas se puede abrir el PR de
 > promoción a producción. La promoción **no** es responsabilidad de un agente
-> autónomo.
+> autónomo. El sign-off técnico (`GEOP_PROMOTION_SIGNOFF`) **no debe definirse en
+> CI**: es una acción humana local y auditable.
