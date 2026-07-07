@@ -107,6 +107,20 @@ export const CONFIG = {
   // falsos persistentes y protege producción por defecto.
   adminWritesEnabled: bool(process.env.GEOP_ADMIN_WRITES, false),
 
+  // --- Colector de analítica de uso (Sprint 12) --------------------------
+  // Endpoint OPCIONAL POST /api/v1/analytics/events que recibe eventos de
+  // interacción pública ya sanitizados por el cliente (analytics.mjs). Está
+  // DESACTIVADO por defecto (fail-safe): sin él, el endpoint responde 404 y no
+  // hay superficie de escritura extra. Al activarlo, los eventos se agregan en
+  // memoria (contadores por tipo/origen, sin PII) y opcionalmente se registran
+  // como log estructurado. Nunca se persisten datos personales.
+  //   GEOP_ANALYTICS_ENABLED     → 'true' habilita el endpoint (por defecto off).
+  //   GEOP_ANALYTICS_MAX_EVENTS  → tamaño del buffer circular en memoria.
+  //   GEOP_ANALYTICS_LOG         → emite una línea JSON por evento aceptado.
+  analyticsEnabled: bool(process.env.GEOP_ANALYTICS_ENABLED, false),
+  analyticsMaxEvents: num(process.env.GEOP_ANALYTICS_MAX_EVENTS, 5000),
+  analyticsLog: bool(process.env.GEOP_ANALYTICS_LOG, false),
+
   // Rutas del puente estático (Sprint 2) usadas como respaldo permanente.
   staticConflictsPath: resolve(REPO_ROOT, 'api/v1/conflicts.json'),
   staticMapPath: resolve(REPO_ROOT, 'api/v1/conflicts/active/map.json'),

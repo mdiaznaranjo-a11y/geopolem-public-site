@@ -57,6 +57,7 @@ function endpointLabel(pathname) {
   if (rest === '/filters') return 'filters';
   if (rest === '/conflicts') return 'conflicts';
   if (rest === '/conflicts/active/map') return 'conflicts_active_map';
+  if (rest === '/analytics/events') return 'analytics_events';
   if (rest === '/admin/conflicts') return 'admin_conflicts';
   if (/^\/admin\/conflicts\/[^/]+\/status$/.test(rest)) return 'admin_conflict_status';
   if (/^\/admin\/conflicts\/[^/]+$/.test(rest)) return 'admin_conflict_detail';

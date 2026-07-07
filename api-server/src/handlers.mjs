@@ -8,6 +8,7 @@ import { CONFIG } from './config.mjs';
 import { ok, list, apiError, paginate } from './response.mjs';
 import * as repo from './repository.mjs';
 import { recordSource, snapshot as observabilitySnapshot, httpSnapshot, prometheus } from './observability.mjs';
+import { getCollector } from './analytics.mjs';
 
 function parseBool(v) {
   if (v == null) return null;
@@ -56,6 +57,9 @@ export async function handleHealth() {
   const data = await repo.health();
   data.observability = observabilitySnapshot();
   data.observability.http = httpSnapshot();
+  data.analytics = CONFIG.analyticsEnabled
+    ? { enabled: true, ...getCollector().snapshot() }
+    : { enabled: false };
   return { status: 200, body: ok(data) };
 }
 
@@ -65,11 +69,39 @@ export async function handleMetrics() {
     const e = apiError('not_found', 'Métricas deshabilitadas (GEOP_METRICS_ENABLED=false).');
     return { status: e.status, body: e.body };
   }
+  let text = prometheus();
+  if (CONFIG.analyticsEnabled) {
+    text += analyticsPrometheus(getCollector().snapshot());
+  }
   return {
     status: 200,
-    body: prometheus(),
+    body: text,
     contentType: 'text/plain; version=0.0.4; charset=utf-8',
   };
+}
+
+// Líneas Prometheus para los contadores de analítica (agregados, sin PII).
+function analyticsPrometheus(snap) {
+  const lines = [];
+  lines.push('# HELP geopolem_analytics_events_total Eventos de analítica recibidos.');
+  lines.push('# TYPE geopolem_analytics_events_total counter');
+  lines.push(`geopolem_analytics_events_total ${snap.total}`);
+  lines.push('# HELP geopolem_analytics_events_accepted_total Eventos aceptados tras sanitizar.');
+  lines.push('# TYPE geopolem_analytics_events_accepted_total counter');
+  lines.push(`geopolem_analytics_events_accepted_total ${snap.accepted}`);
+  lines.push('# HELP geopolem_analytics_events_rejected_total Eventos descartados (contrato inválido).');
+  lines.push('# TYPE geopolem_analytics_events_rejected_total counter');
+  lines.push(`geopolem_analytics_events_rejected_total ${snap.rejected}`);
+  const typeSamples = Object.entries(snap.by_type);
+  if (typeSamples.length) {
+    lines.push('# HELP geopolem_analytics_events_by_type_total Eventos por tipo.');
+    lines.push('# TYPE geopolem_analytics_events_by_type_total counter');
+    for (const [t, n] of typeSamples) {
+      const label = String(t).replace(/[^a-z_]/g, '');
+      lines.push(`geopolem_analytics_events_by_type_total{type="${label}"} ${n}`);
+    }
+  }
+  return `${lines.join('\n')}\n`;
 }
 
 // GET /api/v1/conflicts
@@ -121,4 +153,48 @@ export async function handleFilters() {
   const body = ok(filters, { source });
   recordSource('filters', source, body.meta.request_id);
   return { status: 200, body };
+}
+
+// POST /api/v1/analytics/events  (colector opcional; Sprint 12)
+// Desactivado por defecto (GEOP_ANALYTICS_ENABLED=false → 404, sin superficie
+// extra). Acepta UN evento (objeto) o un LOTE (array). Re-sanitiza en servidor,
+// agrega en memoria y NUNCA persiste PII. Responde 202 con contadores agregados.
+export async function handleAnalyticsIngest(body) {
+  if (!CONFIG.analyticsEnabled) {
+    const e = apiError('not_found', 'Colector de analítica deshabilitado (GEOP_ANALYTICS_ENABLED=false).');
+    return { status: e.status, body: e.body };
+  }
+  if (body == null || (typeof body !== 'object')) {
+    const e = apiError('bad_request', 'Se espera un evento JSON o un array de eventos.');
+    return { status: e.status, body: e.body };
+  }
+  const collector = getCollector();
+  const items = Array.isArray(body) ? body : [body];
+  // Límite defensivo de tamaño de lote (evita abuso puntual).
+  const MAX_BATCH = 50;
+  const batch = items.slice(0, MAX_BATCH);
+  let accepted = 0;
+  let rejected = 0;
+  for (const raw of batch) {
+    const res = collector.ingest(raw);
+    if (res.accepted) {
+      accepted += 1;
+      if (CONFIG.analyticsLog && res.event) {
+        process.stdout.write(`${JSON.stringify({
+          ts: res.event.ts,
+          level: 'info',
+          event: 'analytics_event',
+          service: CONFIG.serviceName,
+          type: res.event.type,
+          props: res.event.props,
+        })}\n`);
+      }
+    } else {
+      rejected += 1;
+    }
+  }
+  return {
+    status: 202,
+    body: ok({ accepted, rejected, received: items.length }),
+  };
 }

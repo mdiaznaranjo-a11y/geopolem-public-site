@@ -11,6 +11,7 @@ import {
   handleActiveMap,
   handleConflictDetail,
   handleFilters,
+  handleAnalyticsIngest,
 } from './handlers.mjs';
 import {
   handleCreateConflict,
@@ -69,6 +70,15 @@ export async function route(method, pathname, searchParams = new URLSearchParams
 
   // --- Superficie administrativa CMS/Admin (Sprint 7) ----------------------
   if (admin) return routeAdmin(method, path, context);
+
+  // --- Colector de analítica opcional (Sprint 12) --------------------------
+  // POST público (lectura pública puede ser anónima; la telemetría también).
+  // El propio handler responde 404 si GEOP_ANALYTICS_ENABLED=false. El rate
+  // limiting configurado (arriba) ya lo protege cuando está activo.
+  if (path === `${BASE}/analytics/events`) {
+    if (method === 'POST') return handleAnalyticsIngest(context.body ?? null);
+    return methodNotAllowed('Usa POST para enviar eventos de analítica.');
+  }
 
   // --- API pública de LECTURA (sólo GET/HEAD) ------------------------------
   if (method !== 'GET' && method !== 'HEAD') {

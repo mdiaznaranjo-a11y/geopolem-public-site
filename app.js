@@ -11,8 +11,16 @@ import {
   deriveFilterFacets, applyAdvancedFilters, loadEnrichedDetail,
 } from './public-enriched.mjs';
 import { readDeepLink, writeDeepLink, onDeepLinkChange } from './deeplinks.mjs';
+import { analytics } from './analytics.mjs';
 
 const html = htm.bind(React.createElement);
+
+// Sprint 12 — atajo de analítica no invasiva. `analytics` degrada a NO-OP si no
+// hay endpoint configurado (window.GEOP_ANALYTICS_ENDPOINT) o el navegador está
+// offline. `track()` nunca lanza ni bloquea la UI; envolvemos por si acaso.
+function trackEvent(type, props) {
+  try { analytics.track(type, props); } catch { /* telemetría nunca rompe la UI */ }
+}
 const API_BASE = window.GEOP_API_BASE || ('__PORT_8000__'.startsWith('__') ? 'http://127.0.0.1:8000' : '__PORT_8000__');
 
 async function apiRequest(path, options = {}) {
@@ -1222,12 +1230,20 @@ function EnrichedDetail({ foco }) {
     let cancelled = false;
     const localVm = normalizeEnrichedDetail(foco);
     setState({ status: 'loading', vm: localVm, source: 'local', error: null });
+    // Sprint 12 — se está visualizando una ficha de conflicto.
+    trackEvent('view_conflict', { conflict: foco.slug || foco.id });
     loadEnrichedDetail(foco.slug || foco.id, { localFoco: foco })
       .then(({ detail, source, error }) => {
         if (!cancelled) setState({ status: 'ready', vm: detail, source, error });
+        // Origen efectivo del detalle: static → puente JSON; local → fallback.
+        if (source === 'static') trackEvent('load_static_detail', { conflict: foco.slug || foco.id, source });
+        else if (source === 'local') trackEvent('fallback_local', { conflict: foco.slug || foco.id, source, reason: 'detail' });
+        if (error) trackEvent('api_error', { conflict: foco.slug || foco.id, endpoint: 'conflict_detail' });
       })
       .catch((err) => {
         if (!cancelled) setState({ status: 'error', vm: localVm, source: 'local', error: err });
+        trackEvent('api_error', { conflict: foco.slug || foco.id, endpoint: 'conflict_detail' });
+        trackEvent('fallback_local', { conflict: foco.slug || foco.id, source: 'local', reason: 'detail_error' });
       });
     return () => { cancelled = true; };
   }, [foco?.id]);
@@ -1349,8 +1365,20 @@ function MapExplorer({ focos, selectedFoco, selectedId, onSelect, filters, onFil
   const facets = useMemo(() => deriveFilterFacets(focos), [focos]);
   const visible = useMemo(() => applyAdvancedFilters(focos, selected), [focos, selected]);
   const shownFoco = visible.find(f => f.id === selectedId) || selectedFoco;
-  const change = (dim, value) => setSelected(prev => ({ ...prev, [dim]: value }));
-  const reset = () => setSelected({});
+  const change = (dim, value) => {
+    // Sprint 12 — 'all'/vacío equivale a limpiar esa dimensión.
+    if (!value || value === 'all') trackEvent('clear_filter', { dimension: dim });
+    else trackEvent('select_filter', { dimension: dim, value: String(value) });
+    setSelected(prev => ({ ...prev, [dim]: value }));
+  };
+  const reset = () => { trackEvent('clear_filter', { reason: 'reset_all' }); setSelected({}); };
+  // Sprint 12 — estado vacío del mapa por combinación de filtros (no en carga inicial).
+  const hasActiveFilters = Object.values(selected || {}).some(v => v && v !== 'all');
+  useEffect(() => {
+    if (hasActiveFilters && visible.length === 0) {
+      trackEvent('map_empty_state', { count: 0 });
+    }
+  }, [visible.length, hasActiveFilters]);
   return html`
   <div class="space-y-4">
     <${MapFilters} facets=${facets} selected=${selected} onChange=${change} onReset=${reset}
@@ -3363,6 +3391,18 @@ function App() {
     setMapFilters(next.filters || {});
   }, { knownViews: KNOWN_VIEWS }), []);
 
+  // Sprint 12 — si la app se ABRE con un deep-link activo (vista/foco/filtros en
+  // el hash), lo registramos una sola vez al montar. NO invasivo: sólo señala
+  // que se llegó por un enlace profundo, sin identificar al usuario.
+  useEffect(() => {
+    if (initialLink.view || initialLink.focus || Object.keys(initialLink.filters || {}).length) {
+      trackEvent('open_deeplink', {
+        view: initialLink.view || undefined,
+        conflict: initialLink.focus || undefined,
+      });
+    }
+  }, []);
+
   // Sprint 1 — carga watchlist vía adaptador (API-first con fallback local).
   // Con USE_API=false devuelve FOCOS locales de inmediato; ante error de API,
   // cae al respaldo local sin romper la UI.
@@ -3373,8 +3413,14 @@ function App() {
         if (cancelled) return;
         if (Array.isArray(focos) && focos.length) setBaseFocos(focos);
         setDataSource(source);
+        // Sprint 12 — observabilidad del origen de la watchlist (api|static|local).
+        if (source === 'local') trackEvent('fallback_local', { source: 'local', reason: 'watchlist' });
       })
-      .catch(() => { if (!cancelled) setDataSource('local'); });
+      .catch(() => {
+        if (!cancelled) setDataSource('local');
+        trackEvent('api_error', { endpoint: 'watchlist' });
+        trackEvent('fallback_local', { source: 'local', reason: 'watchlist_error' });
+      });
     return () => { cancelled = true; };
   }, []);
 

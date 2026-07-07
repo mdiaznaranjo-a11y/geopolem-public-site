@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geopolem-command-v1.19.0';
+const CACHE_NAME = 'geopolem-command-v1.20.0';
 const APP_SHELL = [
   './',
   './index.html',
@@ -6,6 +6,7 @@ const APP_SHELL = [
   './api-adapter.js',
   './public-enriched.mjs',
   './deeplinks.mjs',
+  './analytics.mjs',
   './data.js',
   './videos.js',
   './worldmap.js',
