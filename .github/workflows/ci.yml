@@ -95,6 +95,9 @@ jobs:
       - name: Resolución técnica de bloqueos del RC al día, sin producción (Sprint 21)
         run: npm run resolution:build:check
 
+      - name: Materiales docentes alineados con taxonomía, sin producción/secrets (Sprint 24)
+        run: npm run education:validate
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest

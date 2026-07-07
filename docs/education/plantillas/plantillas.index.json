@@ -1,0 +1,13 @@
+{
+  "contract": "sprint-24-templates-index-v1",
+  "notice": "Índice de plantillas docentes reutilizables (Sprint 24). Materiales de formación; no activan producción.",
+  "templates": [
+    { "id": "syllabus", "file": "syllabus.template.md", "purpose": "Planificar un curso o seminario." },
+    { "id": "caso-de-estudio", "file": "caso-de-estudio.template.md", "purpose": "Analizar un foco real de principio a fin." },
+    { "id": "ficha-conflicto", "file": "ficha-conflicto.template.md", "purpose": "Fichar un conflicto según el contrato v1." },
+    { "id": "actividad-mapa", "file": "actividad-mapa.template.md", "purpose": "Actividad guiada sobre el mapa interactivo." },
+    { "id": "rubrica-evaluacion", "file": "rubrica-evaluacion.template.md", "purpose": "Evaluar por competencias." },
+    { "id": "checklist-fuentes", "file": "checklist-fuentes.template.md", "purpose": "Verificar fuentes (OSINT responsable)." },
+    { "id": "matriz-causalidad", "file": "matriz-causalidad.template.md", "purpose": "Modelar cadenas causales trazables." }
+  ]
+}

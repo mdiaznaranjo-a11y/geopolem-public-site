@@ -91,7 +91,9 @@
     "gate": "node ../scripts/evaluate-production-gate.mjs",
     "gate:json": "node ../scripts/evaluate-production-gate.mjs --json",
     "gate:write": "node ../scripts/evaluate-production-gate.mjs --write",
-    "gate:check": "node ../scripts/evaluate-production-gate.mjs --check"
+    "gate:check": "node ../scripts/evaluate-production-gate.mjs --check",
+    "education:validate": "node ../scripts/validate-education-materials.mjs",
+    "education:validate:json": "node ../scripts/validate-education-materials.mjs --json"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"
