@@ -1,0 +1,91 @@
+{
+  "contract": "sprint-25-education-fiche-v1",
+  "generated_at": "2026-07-07T08:50:21.839Z",
+  "conflict_id": "rearme-global",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Ficha docente derivada del contrato v1 GEOPÓLEM (Sprint 25). Material de FORMACIÓN: no sustituye la revisión editorial final ni activa producción. No añade hechos: los campos ausentes se marcan como pendientes.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "title": "Rearme global — gasto militar récord",
+  "summary": "El gasto militar mundial alcanzó 2,887 billones de dólares en 2025, con Europa y Asia-Oceanía como zonas de aceleración y una concentración del 51% en EE.UU., China y Rusia.",
+  "conflict_type": {
+    "slug": "defensa",
+    "label": "Defensa / Rearme"
+  },
+  "region": {
+    "slug": "global",
+    "label": "Global"
+  },
+  "status": "active",
+  "intensity_level": 4,
+  "energy_dimension": false,
+  "actors": {
+    "state": [
+      {
+        "slug": "estados-unidos",
+        "name": "Estados Unidos",
+        "role": "Mayor gasto militar mundial",
+        "alignment": null,
+        "involvement_level": null
+      },
+      {
+        "slug": "china",
+        "name": "China",
+        "role": "Segundo mayor gasto militar",
+        "alignment": null,
+        "involvement_level": null
+      },
+      {
+        "slug": "rusia",
+        "name": "Rusia",
+        "role": "Aceleración del gasto en defensa",
+        "alignment": null,
+        "involvement_level": null
+      }
+    ],
+    "non_state": []
+  },
+  "resources": [],
+  "chokepoints": [],
+  "causal_links": [
+    {
+      "link_type": "contributes_to",
+      "title": "Carrera de rearme y presión presupuestaria",
+      "explanation": "El gasto militar mundial alcanzó 2.887 billones USD en 2025 (+2,9% real sobre 2024), décimo año consecutivo de subidas, tensionando presupuestos y cadenas industriales.",
+      "pending": false,
+      "source_slugs": [
+        "sipri-milex-2025"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "slug": "sipri-milex-2025",
+      "title": "Global military spending rise continues as European and Asian expenditures surge",
+      "url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
+      "publisher": "Stockholm International Peace Research Institute (SIPRI)",
+      "source_name": "SIPRI",
+      "accessed_at": "2026-07-07",
+      "verification": "verified"
+    }
+  ],
+  "activities": [
+    "Completar la **matriz de causalidad** del caso `rearme-global` a partir de los enlaces registrados y marcar explícitamente los nodos/enlaces pendientes.",
+    "Localizar el foco `rearme-global` en el **laboratorio de mapa offline** usando el deep-link `#foco=rearme-global` y contrastar sus filtros (región, tipo, severidad) con otros focos del inventario.",
+    "Rellenar la **checklist de fuentes** para cada fuente citada y proponer, en su caso, fuentes adicionales que cubran los campos pendientes."
+  ],
+  "teaching_questions": [
+    "Justifica el tipo de enlace causal `contributes_to` del vínculo «Carrera de rearme y presión presupuestaria» a partir de su explicación y de la(s) fuente(s) `sipri-milex-2025`.",
+    "El foco declara `intensity_level = 4`: ¿qué factores del caso sostienen esa valoración y cuáles podrían revisarla?",
+    "No constan `resources` ni `chokepoints`: identifica cuáles serían relevantes y cómo los documentarías con fuentes verificables.",
+    "Aplica la checklist de fuentes a `sipri-milex-2025`: ¿son primarias?, ¿cómo las triangularías?"
+  ],
+  "pending_fields": [
+    "resources",
+    "chokepoints"
+  ]
+}

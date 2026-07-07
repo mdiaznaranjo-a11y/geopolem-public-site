@@ -1,0 +1,112 @@
+{
+  "contract": "sprint-25-education-fiche-v1",
+  "generated_at": "2026-07-07T08:50:21.837Z",
+  "conflict_id": "isr-gaza-irn",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Ficha docente derivada del contrato v1 GEOPÓLEM (Sprint 25). Material de FORMACIÓN: no sustituye la revisión editorial final ni activa producción. No añade hechos: los campos ausentes se marcan como pendientes.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "title": "Israel – Gaza – Irán",
+  "summary": "Crisis humanitaria en Gaza, frentes con Hezbollah y Houthi, intercambio directo Israel–Irán y riesgo de guerra regional.",
+  "conflict_type": {
+    "slug": "conflicto",
+    "label": "Conflictos"
+  },
+  "region": {
+    "slug": "mena",
+    "label": "MENA"
+  },
+  "status": "active",
+  "intensity_level": 5,
+  "energy_dimension": false,
+  "actors": {
+    "state": [
+      {
+        "slug": "israel",
+        "name": "Israel",
+        "role": "Parte beligerante",
+        "alignment": null,
+        "involvement_level": null
+      },
+      {
+        "slug": "iran",
+        "name": "Irán",
+        "role": "Parte beligerante",
+        "alignment": null,
+        "involvement_level": null
+      }
+    ],
+    "non_state": [
+      {
+        "slug": "hamas",
+        "name": "Hamás",
+        "role": "Grupo armado",
+        "alignment": null,
+        "involvement_level": null
+      },
+      {
+        "slug": "hezbollah",
+        "name": "Hezbollah",
+        "role": "Grupo armado",
+        "alignment": null,
+        "involvement_level": null
+      }
+    ]
+  },
+  "resources": [
+    {
+      "slug": "petroleo",
+      "name": "Petróleo",
+      "relevance_level": null,
+      "strategic_importance": null,
+      "critical_mineral": false
+    }
+  ],
+  "chokepoints": [
+    {
+      "slug": "estrecho-de-ormuz",
+      "name": "Estrecho de Ormuz",
+      "risk_level": null,
+      "strategic_importance": null,
+      "energy_flow_relevance": true
+    }
+  ],
+  "causal_links": [
+    {
+      "link_type": "escalates",
+      "title": "Crisis humanitaria y riesgo de escalada regional",
+      "explanation": "OCHA documenta la crisis humanitaria en Gaza; la afirmación causal concreta sobre escalada regional Israel–Irán y chokepoints energéticos requiere verificación editorial adicional.",
+      "pending": true,
+      "source_slugs": [
+        "ocha-opt"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "slug": "ocha-opt",
+      "title": "Occupied Palestinian Territory | OCHA",
+      "url": "https://www.unocha.org/occupied-palestinian-territory",
+      "publisher": "UN Office for the Coordination of Humanitarian Affairs (OCHA)",
+      "source_name": "OCHA",
+      "accessed_at": "2026-07-07",
+      "verification": "verified"
+    }
+  ],
+  "activities": [
+    "Completar la **matriz de causalidad** del caso `isr-gaza-irn` a partir de los enlaces registrados y marcar explícitamente los nodos/enlaces pendientes.",
+    "Localizar el foco `isr-gaza-irn` en el **laboratorio de mapa offline** usando el deep-link `#foco=isr-gaza-irn` y contrastar sus filtros (región, tipo, severidad) con otros focos del inventario.",
+    "Rellenar la **checklist de fuentes** para cada fuente citada y proponer, en su caso, fuentes adicionales que cubran los campos pendientes."
+  ],
+  "teaching_questions": [
+    "Justifica el tipo de enlace causal `escalates` del vínculo «Crisis humanitaria y riesgo de escalada regional» a partir de su explicación y de la(s) fuente(s) `ocha-opt`.",
+    "El foco declara `intensity_level = 5`: ¿qué factores del caso sostienen esa valoración y cuáles podrían revisarla?",
+    "Relaciona cada recurso y/o chokepoint listado con un canal de impacto global concreto (energético, alimentario, comercial o financiero).",
+    "Aplica la checklist de fuentes a `ocha-opt`: ¿son primarias?, ¿cómo las triangularías?"
+  ],
+  "pending_fields": []
+}

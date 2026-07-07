@@ -1,0 +1,61 @@
+{
+  "contract": "sprint-25-rubric-v1",
+  "id": "rubrica-causalidad",
+  "title": "Rúbrica de razonamiento causal",
+  "description": "Evalúa la construcción y justificación de la matriz causal de un foco.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "scale": {
+    "levels": [
+      { "id": "insuficiente", "label": "Insuficiente", "points": 1 },
+      { "id": "suficiente", "label": "Suficiente", "points": 2 },
+      { "id": "notable", "label": "Notable", "points": 3 },
+      { "id": "excelente", "label": "Excelente", "points": 4 }
+    ]
+  },
+  "criteria": [
+    {
+      "id": "nodos",
+      "title": "Definición de nodos",
+      "weight": 0.2,
+      "descriptors": {
+        "insuficiente": "Nodos ausentes o irrelevantes.",
+        "suficiente": "Nodos básicos sin tipar.",
+        "notable": "Nodos derivados de actores/recursos/chokepoints reales.",
+        "excelente": "Nodos completos, tipados y justificados."
+      }
+    },
+    {
+      "id": "enlaces",
+      "title": "Enlaces y tipo causal",
+      "weight": 0.3,
+      "descriptors": {
+        "insuficiente": "No distingue tipos de enlace (`causes`, `escalates`...).",
+        "suficiente": "Asigna tipos sin justificar.",
+        "notable": "Usa `link_type` coherente con la evidencia.",
+        "excelente": "Justifica cada `link_type` frente a alternativas."
+      }
+    },
+    {
+      "id": "evidencia",
+      "title": "Evidencia de soporte",
+      "weight": 0.3,
+      "descriptors": {
+        "insuficiente": "Enlaces sin evidencia.",
+        "suficiente": "Evidencia parcial o sin fuente.",
+        "notable": "Cada enlace cita `source_slugs` verificados.",
+        "excelente": "Evidencia sólida, triangulada y con límites explícitos."
+      }
+    },
+    {
+      "id": "confianza",
+      "title": "Nivel de confianza y pendientes",
+      "weight": 0.2,
+      "descriptors": {
+        "insuficiente": "No valora la confianza ni marca pendientes.",
+        "suficiente": "Asigna confianza sin criterio.",
+        "notable": "Asigna confianza y marca campos `pending`.",
+        "excelente": "Confianza calibrada con criterio explícito y plan de cierre de pendientes."
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "contract": "sprint-25-causal-matrix-v1",
+  "conflict_id": "ia-narrativa",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Matriz causal pre-rellenada desde `causal_links` verificados (Sprint 25). Material docente: el nivel de confianza y los nodos/enlaces faltantes quedan `pending` para su completado analítico. No activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "nodes": [],
+  "links": [
+    {
+      "id": "link-1",
+      "link_type": "contributes_to",
+      "title": "Riesgo narrativo por IA",
+      "evidence": "Naciones Unidas advierte que la desinformación potenciada por IA ya pone en peligro operaciones de paz y humanitarias y amenaza la integridad de la información y las instituciones democráticas, amplificando el riesgo narrativo global.",
+      "source_slugs": [
+        "un-ai-global-issues"
+      ],
+      "confidence": null,
+      "pending": false
+    }
+  ],
+  "pending_fields": [
+    "nodes",
+    "confidence"
+  ]
+}

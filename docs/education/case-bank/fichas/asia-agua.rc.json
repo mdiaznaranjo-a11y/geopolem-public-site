@@ -1,0 +1,91 @@
+{
+  "contract": "sprint-25-education-fiche-v1",
+  "generated_at": "2026-07-07T08:50:21.836Z",
+  "conflict_id": "asia-agua",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Ficha docente derivada del contrato v1 GEOPÓLEM (Sprint 25). Material de FORMACIÓN: no sustituye la revisión editorial final ni activa producción. No añade hechos: los campos ausentes se marcan como pendientes.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "title": "Asia del Sur — Glaciares e Indo",
+  "summary": "Retroceso de glaciares HKH alimenta Ganges, Indo, Brahmaputra. Tratado del Indo bajo presión IN–PK. Calor extremo y monzón errático.",
+  "conflict_type": {
+    "slug": "agua",
+    "label": "Agua / Clima"
+  },
+  "region": {
+    "slug": "asia_del_sur",
+    "label": "Asia del Sur"
+  },
+  "status": "active",
+  "intensity_level": 4,
+  "energy_dimension": false,
+  "actors": {
+    "state": [
+      {
+        "slug": "india",
+        "name": "India",
+        "role": "Estado ribereño (Indo)",
+        "alignment": null,
+        "involvement_level": null
+      },
+      {
+        "slug": "pakistan",
+        "name": "Pakistán",
+        "role": "Estado ribereño (Indo)",
+        "alignment": null,
+        "involvement_level": null
+      }
+    ],
+    "non_state": []
+  },
+  "resources": [
+    {
+      "slug": "agua-dulce",
+      "name": "Agua dulce",
+      "relevance_level": null,
+      "strategic_importance": null,
+      "critical_mineral": false
+    }
+  ],
+  "chokepoints": [],
+  "causal_links": [
+    {
+      "link_type": "contributes_to",
+      "title": "Marco del Tratado de Aguas del Indo bajo presión",
+      "explanation": "El Tratado de Aguas del Indo (1960, mediado por el Banco Mundial) reparte el sistema del Indo entre India y Pakistán; la afirmación causal concreta sobre deshielo glaciar requiere verificación editorial adicional.",
+      "pending": true,
+      "source_slugs": [
+        "worldbank-indus-waters-treaty"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "slug": "worldbank-indus-waters-treaty",
+      "title": "Fact Sheet: The Indus Waters Treaty 1960 and the Role of the World Bank",
+      "url": "https://www.worldbank.org/en/region/sar/brief/fact-sheet-the-indus-waters-treaty-1960-and-the-world-bank",
+      "publisher": "World Bank",
+      "source_name": "World Bank",
+      "accessed_at": "2026-07-07",
+      "verification": "verified"
+    }
+  ],
+  "activities": [
+    "Completar la **matriz de causalidad** del caso `asia-agua` a partir de los enlaces registrados y marcar explícitamente los nodos/enlaces pendientes.",
+    "Localizar el foco `asia-agua` en el **laboratorio de mapa offline** usando el deep-link `#foco=asia-agua` y contrastar sus filtros (región, tipo, severidad) con otros focos del inventario.",
+    "Rellenar la **checklist de fuentes** para cada fuente citada y proponer, en su caso, fuentes adicionales que cubran los campos pendientes."
+  ],
+  "teaching_questions": [
+    "Justifica el tipo de enlace causal `contributes_to` del vínculo «Marco del Tratado de Aguas del Indo bajo presión» a partir de su explicación y de la(s) fuente(s) `worldbank-indus-waters-treaty`.",
+    "El foco declara `intensity_level = 4`: ¿qué factores del caso sostienen esa valoración y cuáles podrían revisarla?",
+    "Relaciona cada recurso y/o chokepoint listado con un canal de impacto global concreto (energético, alimentario, comercial o financiero).",
+    "Aplica la checklist de fuentes a `worldbank-indus-waters-treaty`: ¿son primarias?, ¿cómo las triangularías?"
+  ],
+  "pending_fields": [
+    "chokepoints"
+  ]
+}
