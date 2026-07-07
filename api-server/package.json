@@ -1,0 +1,19 @@
+{
+  "name": "geopolem-api-server",
+  "version": "0.1.0",
+  "description": "GEOPÓLEM API v1 (Sprint 3) — servidor REST read-only PostgreSQL/PostGIS-ready con fallback a JSON estático. No rompe GitHub Pages ni la app existente.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test test/",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "optionalDependencies": {
+    "pg": "^8.11.0"
+  }
+}
