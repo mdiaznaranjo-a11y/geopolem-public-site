@@ -1,0 +1,100 @@
+{
+  "contract": "sprint-30-master-close-v1",
+  "artifact": "production-checklist",
+  "notice": "Checklist de producción FUTURA con GATE HUMANO obligatorio. Este sprint NO publica: todos los ítems quedan en estado pending y production=false.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "publishes": false,
+  "requires_human_gate": true,
+  "totals": {
+    "items": 10,
+    "blocking": 8,
+    "human_gates": 9,
+    "pending": 10
+  },
+  "items": [
+    {
+      "id": "human-signoff",
+      "domain": "gate",
+      "title": "Sign-off humano explícito del cierre de serie y del desbloqueo de producción",
+      "human_gate": true,
+      "status": "pending",
+      "blocking": true
+    },
+    {
+      "id": "pr-chain-integrated",
+      "domain": "integration",
+      "title": "Cadena de PRs #1–#30 integrada en orden, sin conflictos y CI verde",
+      "human_gate": true,
+      "status": "pending",
+      "blocking": true
+    },
+    {
+      "id": "no-production-flags",
+      "domain": "safety",
+      "title": "Artefactos con production=false y sin secretos (verificado por validador no-production)",
+      "human_gate": false,
+      "status": "pending",
+      "blocking": true
+    },
+    {
+      "id": "canonical-causal-complete",
+      "domain": "editorial",
+      "title": "canonical con causal_links completos y cross-check canónico sin divergencias",
+      "human_gate": true,
+      "status": "pending",
+      "blocking": true
+    },
+    {
+      "id": "editorial-sources-verified",
+      "domain": "editorial",
+      "title": "Fuentes/citas verificadas por editor humano; sin claims sin fuente en published",
+      "human_gate": true,
+      "status": "pending",
+      "blocking": true
+    },
+    {
+      "id": "security-review",
+      "domain": "security",
+      "title": "Revisión de seguridad JWT/roles superada; secretos gestionados fuera del repo",
+      "human_gate": true,
+      "status": "pending",
+      "blocking": true
+    },
+    {
+      "id": "backups-dr",
+      "domain": "ops",
+      "title": "Backups probados y restauración DR ensayada en staging",
+      "human_gate": true,
+      "status": "pending",
+      "blocking": true
+    },
+    {
+      "id": "observability-live",
+      "domain": "ops",
+      "title": "Observabilidad y alertas conectadas a destino real y validadas",
+      "human_gate": true,
+      "status": "pending",
+      "blocking": false
+    },
+    {
+      "id": "domain-api-db-cms",
+      "domain": "infra",
+      "title": "Habilitación de dominio/API/DB/CMS aprobada explícitamente por humano",
+      "human_gate": true,
+      "status": "pending",
+      "blocking": true
+    },
+    {
+      "id": "social-channels",
+      "domain": "distribution",
+      "title": "Conexión de redes sociales aprobada por humano con credenciales seguras",
+      "human_gate": true,
+      "status": "pending",
+      "blocking": false
+    }
+  ]
+}

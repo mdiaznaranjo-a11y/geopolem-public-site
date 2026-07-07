@@ -149,7 +149,13 @@
     "education:close-prep": "node ../scripts/build-master-close-prep.mjs",
     "education:close-prep:json": "node ../scripts/build-master-close-prep.mjs --json",
     "education:close-prep:write": "node ../scripts/build-master-close-prep.mjs --write",
-    "education:close-prep:check": "node ../scripts/build-master-close-prep.mjs --check"
+    "education:close-prep:check": "node ../scripts/build-master-close-prep.mjs --check",
+    "master-close": "node ../scripts/build-master-close.mjs",
+    "master-close:json": "node ../scripts/build-master-close.mjs --json",
+    "master-close:write": "node ../scripts/build-master-close.mjs --write",
+    "master-close:check": "node ../scripts/build-master-close.mjs --check",
+    "verify:no-production": "node ../scripts/verify-no-production.mjs",
+    "verify:no-production:json": "node ../scripts/verify-no-production.mjs --json"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

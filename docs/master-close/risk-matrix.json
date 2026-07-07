@@ -1,0 +1,159 @@
+{
+  "contract": "sprint-30-master-close-v1",
+  "artifact": "risk-matrix",
+  "notice": "Matriz de riesgos abierta del cierre maestro. Riesgos = hechos del proyecto declarados y enriquecidos con señales en vivo; no se inventan fuentes ni aprobaciones.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "source_stage": "rc",
+  "signals": {
+    "i18n_ok": true,
+    "i18n_coverage": 100,
+    "i18n_namespaces": [
+      "glossary",
+      "feedback",
+      "instructor_guide",
+      "syllabus",
+      "dashboard"
+    ],
+    "causal_divergent_rc": 0,
+    "causal_pending_matrix_rc": 0,
+    "canonical_conflicts": 10,
+    "canonical_not_applicable": 0,
+    "canonical_checked": 0,
+    "queue_items": 11,
+    "queue_blocking": 0,
+    "adr_decision": "portable-mapping",
+    "adr_ok": true
+  },
+  "totals": {
+    "risks": 11,
+    "by_severity": {
+      "high": 5,
+      "info": 1,
+      "medium": 4,
+      "low": 1
+    },
+    "by_status": {
+      "open": 8,
+      "by_design": 1,
+      "partial": 1,
+      "deferred": 1
+    },
+    "open": 8
+  },
+  "risks": [
+    {
+      "id": "pr-chain-open",
+      "title": "Cadena de PRs #1–#30 abierta y dependiente",
+      "severity": "high",
+      "probability": "high",
+      "owner": "maintainer",
+      "mitigation": "Integrar en orden de dependencia con rebase/retarget y --check tras cada merge (ver plan de integración).",
+      "close_criteria": "Todos los PRs integrados en orden, CI verde, sin conflictos pendientes.",
+      "status": "open"
+    },
+    {
+      "id": "production-blocked",
+      "title": "Producción bloqueada por diseño (sin gates, sin secretos)",
+      "severity": "info",
+      "probability": "certain",
+      "owner": "maintainer",
+      "mitigation": "Mantener production=false; habilitar sólo tras GATE HUMANO del checklist final.",
+      "close_criteria": "Decisión humana explícita de desbloqueo con checklist de producción superado.",
+      "status": "by_design"
+    },
+    {
+      "id": "canonical-causal-links",
+      "title": "canonical sin causal_links completos → cross-check usa rc por defecto",
+      "severity": "high",
+      "probability": "high",
+      "owner": "editorial-lead",
+      "mitigation": "Poblar causal_links en canonical antes de promover. En canonical 0 not_applicable / 10 conflictos, 0 checked.",
+      "close_criteria": "canonical con causal_links poblados y cross-check en stage=canonical sin divergencias.",
+      "status": "open"
+    },
+    {
+      "id": "i18n-incomplete",
+      "title": "i18n incompleta más allá de los namespaces clave",
+      "severity": "medium",
+      "probability": "medium",
+      "owner": "education-lead",
+      "mitigation": "Cobertura 100% en namespaces definidos; ampliar reusando el validador escalable.",
+      "close_criteria": "Todos los materiales docentes traducidos ES/EN con validador --check verde.",
+      "status": "partial"
+    },
+    {
+      "id": "human-curation",
+      "title": "Curaduría humana pendiente de la cola editorial causal",
+      "severity": "medium",
+      "probability": "medium",
+      "owner": "editorial-lead",
+      "mitigation": "11 ítem(s) en la cola (0 bloqueante) requieren revisión humana; no automatizable.",
+      "close_criteria": "Cola editorial causal resuelta o aceptada con sign-off humano.",
+      "status": "open"
+    },
+    {
+      "id": "scorm-real-vs-portable",
+      "title": "SCORM real vs mapping portable (SCORM diferido)",
+      "severity": "low",
+      "probability": "low",
+      "owner": "education-lead",
+      "mitigation": "ADR-0001 decide \"portable-mapping\"; el empaquetado SCORM real queda diferido.",
+      "close_criteria": "Necesidad de SCORM real confirmada por un LMS objetivo y empaquetado validado, o cierre del ADR.",
+      "status": "deferred"
+    },
+    {
+      "id": "editorial-sources-citations",
+      "title": "Fuentes/citas editoriales requieren verificación humana",
+      "severity": "high",
+      "probability": "medium",
+      "owner": "editorial-lead",
+      "mitigation": "Regla published-exige-fuente y causal_links-exigen-fuente ya en CI; la veracidad de cada fuente exige revisión humana. No se inventan fuentes.",
+      "close_criteria": "Fuentes verificadas por editor humano y trazables; sin claims sin fuente en published.",
+      "status": "open"
+    },
+    {
+      "id": "security-jwt-roles",
+      "title": "Seguridad JWT/roles pendiente de revisión previa a producción",
+      "severity": "high",
+      "probability": "medium",
+      "owner": "platform-lead",
+      "mitigation": "JWT/roles implementados y testeados sin DB; rotación de claves y scopes cubiertos por tests. Revisión de seguridad formal fuera de este repo antes de exponer.",
+      "close_criteria": "Auditoría de seguridad superada; secretos gestionados fuera del repo; rotación operativa.",
+      "status": "open"
+    },
+    {
+      "id": "backups-dr",
+      "title": "Backups y recuperación ante desastres (DR) no verificados",
+      "severity": "high",
+      "probability": "medium",
+      "owner": "platform-lead",
+      "mitigation": "Plan de rollback canónico y export estático versionado existen; backups de DB/DR reales dependen de infraestructura fuera del repo.",
+      "close_criteria": "Backups automáticos probados y restauración DR ensayada en staging.",
+      "status": "open"
+    },
+    {
+      "id": "observability",
+      "title": "Observabilidad: métricas/alertas requieren destino real en producción",
+      "severity": "medium",
+      "probability": "medium",
+      "owner": "platform-lead",
+      "mitigation": "Observabilidad y alertas implementadas en api-server (Sprint 5/7); en producción requieren sink/alerting configurados con aprobación.",
+      "close_criteria": "Dashboards y alertas conectados a un destino real y validados.",
+      "status": "open"
+    },
+    {
+      "id": "social-not-connected",
+      "title": "Redes sociales no conectadas automáticamente sin aprobación",
+      "severity": "medium",
+      "probability": "low",
+      "owner": "editorial-lead",
+      "mitigation": "Ningún artefacto publica en redes; la conexión multicanal exige aprobación humana explícita y credenciales gestionadas fuera del repo.",
+      "close_criteria": "Aprobación humana + credenciales seguras + prueba controlada antes de automatizar.",
+      "status": "open"
+    }
+  ]
+}
