@@ -7,7 +7,7 @@
 import { CONFIG } from './config.mjs';
 import { ok, list, apiError, paginate } from './response.mjs';
 import * as repo from './repository.mjs';
-import { recordSource, snapshot as observabilitySnapshot } from './observability.mjs';
+import { recordSource, snapshot as observabilitySnapshot, httpSnapshot, prometheus } from './observability.mjs';
 
 function parseBool(v) {
   if (v == null) return null;
@@ -55,7 +55,21 @@ function parseConflictFilters(sp) {
 export async function handleHealth() {
   const data = await repo.health();
   data.observability = observabilitySnapshot();
+  data.observability.http = httpSnapshot();
   return { status: 200, body: ok(data) };
+}
+
+// GET /api/v1/metrics  (exposición Prometheus en texto plano; siempre pública)
+export async function handleMetrics() {
+  if (!CONFIG.metricsEnabled) {
+    const e = apiError('not_found', 'Métricas deshabilitadas (GEOP_METRICS_ENABLED=false).');
+    return { status: e.status, body: e.body };
+  }
+  return {
+    status: 200,
+    body: prometheus(),
+    contentType: 'text/plain; version=0.0.4; charset=utf-8',
+  };
 }
 
 // GET /api/v1/conflicts
@@ -89,9 +103,9 @@ export async function handleActiveMap(sp) {
   };
 }
 
-// GET /api/v1/conflicts/:id
+// GET /api/v1/conflicts/:id  (detalle enriquecido con relaciones si hay DB)
 export async function handleConflictDetail(idOrSlug) {
-  const { conflict, source } = await repo.getConflict(idOrSlug);
+  const { conflict, source } = await repo.getConflict(idOrSlug, { withRelations: true });
   if (!conflict) {
     const e = apiError('not_found', 'No existe un conflicto con ese id/slug.', { field: 'id', value: idOrSlug });
     return { status: e.status, body: e.body };

@@ -11,16 +11,37 @@
 import { createServer } from 'node:http';
 import { CONFIG, hasDatabase } from './src/config.mjs';
 import { route } from './src/router.mjs';
-import { recordSource } from './src/observability.mjs';
+import { recordSource, recordRequest } from './src/observability.mjs';
 
 function applyCors(res) {
   res.setHeader('Access-Control-Allow-Origin', CONFIG.corsOrigin);
   res.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Accept');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization');
 }
 
 function isGeoJson(body) {
-  return body && body.type === 'FeatureCollection';
+  return body && typeof body === 'object' && body.type === 'FeatureCollection';
+}
+
+// Etiqueta de endpoint estable (baja cardinalidad) para métricas por ruta.
+function endpointLabel(pathname) {
+  const p = pathname.replace(/\/+$/, '') || '/';
+  if (!p.startsWith('/api/v1')) return 'other';
+  const rest = p.slice('/api/v1'.length) || '/';
+  if (rest === '/health') return 'health';
+  if (rest === '/metrics') return 'metrics';
+  if (rest === '/filters') return 'filters';
+  if (rest === '/conflicts') return 'conflicts';
+  if (rest === '/conflicts/active/map') return 'conflicts_active_map';
+  if (/^\/conflicts\/[^/]+$/.test(rest)) return 'conflict_detail';
+  return 'other';
+}
+
+// IP del cliente para el rate limiting (respeta X-Forwarded-For tras proxy).
+function clientIp(req) {
+  const xff = req.headers['x-forwarded-for'];
+  if (typeof xff === 'string' && xff.length) return xff.split(',')[0].trim();
+  return req.socket?.remoteAddress || 'unknown';
 }
 
 const server = createServer(async (req, res) => {
@@ -32,10 +53,14 @@ const server = createServer(async (req, res) => {
     return;
   }
 
+  const startedAt = process.hrtime.bigint();
+  const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
   let result;
   try {
-    const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
-    const context = { authorization: req.headers['authorization'] || null };
+    const context = {
+      authorization: req.headers['authorization'] || null,
+      clientId: clientIp(req),
+    };
     result = await route(req.method, url.pathname, url.searchParams, context);
   } catch (err) {
     console.error('[geopolem-api] error no controlado:', err);
@@ -46,11 +71,19 @@ const server = createServer(async (req, res) => {
     };
   }
 
-  const contentType = isGeoJson(result.body)
-    ? 'application/geo+json; charset=utf-8'
-    : 'application/json; charset=utf-8';
-  res.writeHead(result.status, { 'Content-Type': contentType });
-  res.end(req.method === 'HEAD' ? undefined : JSON.stringify(result.body));
+  // Cuerpos de texto (p. ej. /metrics) se envían tal cual; el resto como JSON.
+  const isText = typeof result.body === 'string';
+  const contentType = result.contentType
+    || (isGeoJson(result.body)
+      ? 'application/geo+json; charset=utf-8'
+      : 'application/json; charset=utf-8');
+  const headers = { 'Content-Type': contentType, ...(result.headers || {}) };
+  res.writeHead(result.status, headers);
+  const payload = isText ? result.body : JSON.stringify(result.body);
+  res.end(req.method === 'HEAD' ? undefined : payload);
+
+  const durationMs = Number(process.hrtime.bigint() - startedAt) / 1e6;
+  recordRequest(endpointLabel(url.pathname), result.status, durationMs);
 });
 
 server.listen(CONFIG.port, CONFIG.host, () => {
@@ -59,8 +92,11 @@ server.listen(CONFIG.port, CONFIG.host, () => {
   console.log(`Modo de datos: ${mode}`);
   console.log(`Modo de auth: ${CONFIG.authMode}${CONFIG.authMode !== 'public' && !CONFIG.jwtSecret ? ' (¡falta JWT_SECRET! → 500 fail-closed)' : ''}`);
   console.log(`Observabilidad meta.source: logs ${CONFIG.obsLog ? 'ON' : 'OFF'}, contadores en /api/v1/health`);
+  console.log(`Métricas Prometheus: ${CONFIG.metricsEnabled ? 'ON (/api/v1/metrics)' : 'OFF'}`);
+  console.log(`Rate limiting: ${CONFIG.rateLimitMax > 0 ? `${CONFIG.rateLimitMax}/${CONFIG.rateLimitWindowMs}ms` : 'OFF (modo public)'}`);
   console.log('Endpoints:');
   console.log('  GET /api/v1/health');
+  console.log('  GET /api/v1/metrics');
   console.log('  GET /api/v1/conflicts');
   console.log('  GET /api/v1/conflicts/active/map');
   console.log('  GET /api/v1/conflicts/:id');

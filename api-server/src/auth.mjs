@@ -93,6 +93,38 @@ export function extractBearer(authorization) {
   return m ? m[1].trim() : null;
 }
 
+// --- Scopes / claims (Sprint 6) --------------------------------------------
+// Normaliza los scopes de un payload JWT. Admite el estilo OAuth2 `scope`
+// (string separada por espacios) y/o un array `scopes`. Devuelve string[].
+export function tokenScopes(payload) {
+  if (!payload || typeof payload !== 'object') return [];
+  const out = new Set();
+  if (typeof payload.scope === 'string') {
+    for (const s of payload.scope.split(/\s+/)) if (s) out.add(s);
+  }
+  if (Array.isArray(payload.scopes)) {
+    for (const s of payload.scopes) if (typeof s === 'string' && s) out.add(s);
+  }
+  return [...out];
+}
+
+// ¿El token tiene el scope requerido? El scope 'admin' es comodín (acceso total).
+export function hasScope(payload, required) {
+  if (!required) return true; // sin requisito → permitido
+  const scopes = tokenScopes(payload);
+  return scopes.includes('admin') || scopes.includes(required);
+}
+
+// Mapa de scopes por prefijo de ruta, PREPARADO para endpoints CMS/Admin del
+// Sprint 7. Hoy no existen esas rutas, así que no altera el comportamiento;
+// el orden importa (coincidencia por prefijo más específico primero).
+export function requiredScopeForPath(path) {
+  if (path.startsWith('/api/v1/admin')) return CONFIG.scopeAdmin;
+  if (path.startsWith('/api/v1/cms')) return CONFIG.scopeCms;
+  // Endpoints de lectura v1: scope de lectura sólo si se configura explícitamente.
+  return CONFIG.scopeRead || null;
+}
+
 // Aplica la política de auth a una petición.
 // Devuelve `null` si se permite continuar, o `{ status, body }` (error) si se
 // debe cortar. `context.authorization` es la cabecera cruda.
@@ -126,8 +158,16 @@ export function authorize(path, context = {}) {
     return { status: e.status, body: e.body };
   }
 
-  // Token válido: se permite. (Los claims quedan disponibles por si en el
-  // futuro se aplican scopes/roles por ruta.)
+  // Token válido: se guardan claims y scopes para el resto de la petición.
   context.claims = result.payload;
+  context.scopes = tokenScopes(result.payload);
+
+  // Autorización por scope (lectura pública / CMS / admin). Con scopeRead
+  // vacío (por defecto) los endpoints de lectura no exigen scope: sin cambios.
+  const needed = requiredScopeForPath(path);
+  if (needed && !hasScope(result.payload, needed)) {
+    const e = apiError('forbidden', `Scope insuficiente: se requiere "${needed}".`);
+    return { status: e.status, body: e.body };
+  }
   return null;
 }

@@ -188,6 +188,92 @@ export const queryLayer = {
     return rowToConflict(res.rows[0]);
   },
 
+  // GET /conflicts/:id (enriquecido) — relaciones del conflicto.
+  // Devuelve { actors: {state[], non_state[]}, resources[], chokepoints[],
+  // causal_links[] }. Cada consulta es read-only, parametrizada y tolerante:
+  // si una tabla de relación estuviera vacía, devuelve arrays vacíos.
+  async getConflictRelations(conflictId) {
+    const [stateActors, nonStateActors, resources, chokepoints, causal] = await Promise.all([
+      query(
+        `SELECT sa.slug, sa.official_name_es AS name,
+                csa.alignment::text AS alignment, csa.involvement_level, csa.role_id,
+                rt.label_es AS role
+           FROM conflict_state_actors csa
+           JOIN state_actors sa ON csa.state_actor_id = sa.id
+           LEFT JOIN taxonomies rt ON csa.role_id = rt.id
+          WHERE csa.conflict_id = $1
+          ORDER BY csa.involvement_level DESC NULLS LAST, sa.official_name_es`,
+        [conflictId],
+      ),
+      query(
+        `SELECT nsa.slug, nsa.name_es AS name,
+                cnsa.alignment::text AS alignment, cnsa.involvement_level,
+                rt.label_es AS role
+           FROM conflict_non_state_actors cnsa
+           JOIN non_state_actors nsa ON cnsa.non_state_actor_id = nsa.id
+           LEFT JOIN taxonomies rt ON cnsa.role_id = rt.id
+          WHERE cnsa.conflict_id = $1
+          ORDER BY cnsa.involvement_level DESC NULLS LAST, nsa.name_es`,
+        [conflictId],
+      ),
+      query(
+        `SELECT er.slug, er.name_es AS name, cr.relevance_level,
+                er.strategic_importance, er.critical_mineral
+           FROM conflict_resources cr
+           JOIN energy_resources er ON cr.resource_id = er.id
+          WHERE cr.conflict_id = $1
+          ORDER BY cr.relevance_level DESC NULLS LAST, er.name_es`,
+        [conflictId],
+      ),
+      query(
+        `SELECT cp.slug, cp.name_es AS name, cc.risk_level,
+                cp.strategic_importance, cp.energy_flow_relevance
+           FROM conflict_chokepoints cc
+           JOIN chokepoints cp ON cc.chokepoint_id = cp.id
+          WHERE cc.conflict_id = $1
+          ORDER BY cc.risk_level DESC NULLS LAST, cp.name_es`,
+        [conflictId],
+      ),
+      query(
+        `SELECT link_type::text AS link_type, title, explanation, mechanism,
+                strength, confidence_score
+           FROM causal_links
+          WHERE (source_entity_type = 'conflict' AND source_entity_id = $1)
+             OR (target_entity_type = 'conflict' AND target_entity_id = $1)
+          ORDER BY strength DESC NULLS LAST, title`,
+        [conflictId],
+      ),
+    ]);
+
+    return {
+      actors: {
+        state: stateActors.rows.map((r) => ({
+          slug: r.slug, name: r.name, role: r.role ?? null,
+          alignment: r.alignment ?? null, involvement_level: r.involvement_level ?? null,
+        })),
+        non_state: nonStateActors.rows.map((r) => ({
+          slug: r.slug, name: r.name, role: r.role ?? null,
+          alignment: r.alignment ?? null, involvement_level: r.involvement_level ?? null,
+        })),
+      },
+      resources: resources.rows.map((r) => ({
+        slug: r.slug, name: r.name, relevance_level: r.relevance_level ?? null,
+        strategic_importance: r.strategic_importance ?? null,
+        critical_mineral: Boolean(r.critical_mineral),
+      })),
+      chokepoints: chokepoints.rows.map((r) => ({
+        slug: r.slug, name: r.name, risk_level: r.risk_level ?? null,
+        strategic_importance: r.strategic_importance ?? null,
+        energy_flow_relevance: Boolean(r.energy_flow_relevance),
+      })),
+      causal_links: causal.rows.map((r) => ({
+        link_type: r.link_type, title: r.title, explanation: r.explanation,
+        mechanism: r.mechanism ?? null, strength: r.strength ?? null,
+        confidence_score: r.confidence_score ?? null,
+      })),
+    };
+  },
+
   // GET /conflicts/active/map — FeatureCollection GeoJSON desde la vista.
   async activeConflictsMap(filters = {}) {
     // Usa la vista v_active_conflicts_map (status='active' ya aplicado).
