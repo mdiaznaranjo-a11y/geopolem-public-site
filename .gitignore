@@ -1,0 +1,4 @@
+node_modules/
+*.tmp
+# Sprint 15: respaldos efímeros de la promoción a staging (regenerables)
+api/v1/staging/.rollback/

@@ -62,6 +62,9 @@ jobs:
       - name: Validar semilla verificada y regla causal_links-exigen-fuente (Sprint 14)
         run: npm run verified:check
 
+      - name: Gate de promoción canónica a staging (Sprint 15)
+        run: npm run promote:check
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest

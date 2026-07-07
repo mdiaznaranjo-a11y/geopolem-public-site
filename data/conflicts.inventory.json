@@ -1,11 +1,11 @@
 {
   "contract": "sprint-14-inventory-v1",
-  "generated_at": "2026-07-07T06:05:05.029Z",
+  "generated_at": "2026-07-07T06:22:27.253Z",
   "notice": "Inventario derivado de api/v1/conflicts.json (Sprint 14). Determinista y versionado. No sustituye a los artefactos canónicos.",
   "totals": {
     "conflicts": 10,
     "with_canonical_detail": 10,
-    "with_verified_sources": 8
+    "with_verified_sources": 10
   },
   "conflicts": [
     {
@@ -107,8 +107,8 @@
       "has_canonical_detail": true,
       "in_verified_seed": true,
       "in_demo_seed": true,
-      "verified_sources": 0,
-      "editorial_status": "draft"
+      "verified_sources": 1,
+      "editorial_status": "review"
     },
     {
       "id": "mena-agua",
@@ -175,8 +175,8 @@
       "has_canonical_detail": true,
       "in_verified_seed": true,
       "in_demo_seed": true,
-      "verified_sources": 0,
-      "editorial_status": "draft"
+      "verified_sources": 1,
+      "editorial_status": "review"
     }
   ]
 }

@@ -39,7 +39,12 @@
     "verified:report": "node ../scripts/verified-sources-report.mjs",
     "verified:report:json": "node ../scripts/verified-sources-report.mjs --json",
     "verified:check": "node ../scripts/verified-sources-report.mjs --check",
-    "verified:enriched": "node ../scripts/verified-sources-report.mjs --write-enriched"
+    "verified:enriched": "node ../scripts/verified-sources-report.mjs --write-enriched",
+    "promote:report": "node ../scripts/promote-canonical-staging.mjs",
+    "promote:report:json": "node ../scripts/promote-canonical-staging.mjs --json",
+    "promote:check": "node ../scripts/promote-canonical-staging.mjs --check",
+    "promote:staging": "node ../scripts/promote-canonical-staging.mjs --write-staging",
+    "promote:rollback": "node ../scripts/promote-canonical-staging.mjs --rollback"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

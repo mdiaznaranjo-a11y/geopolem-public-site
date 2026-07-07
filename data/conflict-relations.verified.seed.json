@@ -1,8 +1,8 @@
 {
   "contract": "sprint-14-verified-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "generated_at": "2026-07-07T00:00:00.000Z",
-  "notice": "Semilla editorial VERIFICADA GEOPÓLEM (Sprint 14). Sustituye las fixtures DEMO del Sprint 13 por fuentes reales de instituciones y organismos multilaterales, verificadas por búsqueda + fetch web durante la ejecución del sprint (accessed_at). Cada 'source' con verification='verified' incluye título exacto, URL http(s), publisher y fecha de acceso. Los causal_links con pending=false están respaldados por al menos una fuente verificada (source_slugs). Los que siguen pending=true tienen fuente asociada de contexto pero su afirmación causal concreta aún requiere verificación editorial humana. Conflictos sin fuente verificable en este entorno (istanbul, ia-narrativa) quedan como PENDING explícito (ver data/source-research.todo.json). Ningún conflicto se marca 'published' ni se promociona a los artefactos canónicos: la publicación exige sign-off editorial humano.",
+  "notice": "Semilla editorial VERIFICADA GEOPÓLEM (Sprint 14, ampliada en Sprint 15). Sustituye las fixtures DEMO del Sprint 13 por fuentes reales de instituciones y organismos multilaterales, verificadas por búsqueda + fetch web (accessed_at). Cada 'source' con verification='verified' incluye título exacto, URL http(s), publisher y fecha de acceso. Sprint 15 CIERRA los 2 pendientes con fuentes verificadas fetchables (istanbul → Türkiye MFA / Convención de Montreux; ia-narrativa → Naciones Unidas / IA), llevando la cobertura de fuente verificada al 100% (10/10). Los causal_links con pending=false están respaldados por al menos una fuente verificada (source_slugs); los que siguen pending=true tienen fuente de contexto pero su afirmación causal concreta requiere sign-off editorial humano. Las fuentes con accessed_via='web-search' cuyo fetch directo sigue bloqueado por el proxy quedan marcadas needs_human_review:true (transparencia preservada). Ningún conflicto se marca 'published' ni se promociona a los artefactos canónicos de producción: los artefactos de STAGING (api/v1/staging/**) son derivados y separados, y la publicación exige sign-off editorial humano.",
   "editorial_rules": {
     "publishable_source_requires": ["title", "url(http/https)", "source_name|publisher", "verification=verified", "accessed_at"],
     "real_causal_link_requires": "todo causal_link con pending=false DEBE referenciar (source_slugs) al menos una source publicable del mismo conflicto",
@@ -50,7 +50,7 @@
         { "link_type": "escalates", "title": "Riesgo sobre infraestructura energética (nuclear)", "explanation": "El OIEA documenta pérdidas repetidas de energía externa y daños en líneas eléctricas de la central de Zaporiyia por la actividad militar, con impacto directo en la seguridad de la infraestructura energética.", "evidence": "verified", "pending": false, "source_slugs": ["iaea-ukraine-update-356"] }
       ],
       "sources": [
-        { "slug": "iaea-ukraine-update-356", "title": "Update 356 – IAEA Director General Statement on Situation in Ukraine", "url": "https://www.iaea.org/newscenter/pressreleases/update-356-iaea-director-general-statement-on-situation-in-ukraine", "source_name": "IAEA", "publisher": "International Atomic Energy Agency (IAEA)", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-search" }
+        { "slug": "iaea-ukraine-update-356", "title": "Update 356 – IAEA Director General Statement on Situation in Ukraine", "url": "https://www.iaea.org/newscenter/pressreleases/update-356-iaea-director-general-statement-on-situation-in-ukraine", "source_name": "IAEA", "publisher": "International Atomic Energy Agency (IAEA)", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-search", "needs_human_review": true, "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 402); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo." }
       ]
     },
     "isr-gaza-irn": {
@@ -75,7 +75,7 @@
         { "link_type": "escalates", "title": "Crisis humanitaria y riesgo de escalada regional", "explanation": "OCHA documenta la crisis humanitaria en Gaza; la afirmación causal concreta sobre escalada regional Israel–Irán y chokepoints energéticos requiere verificación editorial adicional.", "evidence": "pending", "pending": true, "source_slugs": ["ocha-opt"] }
       ],
       "sources": [
-        { "slug": "ocha-opt", "title": "Occupied Palestinian Territory | OCHA", "url": "https://www.unocha.org/occupied-palestinian-territory", "source_name": "OCHA", "publisher": "UN Office for the Coordination of Humanitarian Affairs (OCHA)", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-search" }
+        { "slug": "ocha-opt", "title": "Occupied Palestinian Territory | OCHA", "url": "https://www.unocha.org/occupied-palestinian-territory", "source_name": "OCHA", "publisher": "UN Office for the Coordination of Humanitarian Affairs (OCHA)", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-search", "needs_human_review": true, "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo." }
       ]
     },
     "sahel": {
@@ -99,7 +99,7 @@
         { "link_type": "contributes_to", "title": "Violencia armada y desplazamiento forzado", "explanation": "ACNUR documenta el desplazamiento forzado a gran escala en Malí, Burkina Faso y Níger impulsado por violencia e inseguridad; la caracterización causal de retroalimentación juntas–yihadismo requiere verificación editorial adicional.", "evidence": "pending", "pending": true, "source_slugs": ["unhcr-sahel-emergency"] }
       ],
       "sources": [
-        { "slug": "unhcr-sahel-emergency", "title": "Sahel emergency", "url": "https://www.unhcr.org/us/emergencies/sahel-emergency", "source_name": "UNHCR", "publisher": "UNHCR — The UN Refugee Agency", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-search" }
+        { "slug": "unhcr-sahel-emergency", "title": "Sahel emergency", "url": "https://www.unhcr.org/us/emergencies/sahel-emergency", "source_name": "UNHCR", "publisher": "UNHCR — The UN Refugee Agency", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-search", "needs_human_review": true, "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo." }
       ]
     },
     "red-sea": {
@@ -125,7 +125,7 @@
       ]
     },
     "istanbul": {
-      "editorial_status": "draft",
+      "editorial_status": "review",
       "actors": {
         "state": [
           { "slug": "turquia", "name": "Turquía", "role": "Estado ribereño", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
@@ -141,9 +141,11 @@
         { "slug": "dardanelos", "name": "Dardanelos", "risk_level": null, "strategic_importance": null, "energy_flow_relevance": true, "evidence": "public-knowledge" }
       ],
       "causal_links": [
-        { "link_type": "contributes_to", "title": "Canal de Estambul y tránsito del Bósforo", "explanation": "El proyecto del Canal de Estambul y el régimen del Bósforo afectan el tránsito de energía y grano.", "evidence": "pending", "pending": true, "source_slugs": [] }
+        { "link_type": "contributes_to", "title": "Régimen del Bósforo y tránsito por los Estrechos", "explanation": "La Convención de Montreux (1936) rige el régimen de los Estrechos Turcos (Bósforo y Dardanelos) y es, según el Ministerio de Exteriores turco, el elemento esencial para la seguridad y estabilidad del Mar Negro; la afirmación causal concreta sobre el impacto en flujos de energía y grano requiere verificación editorial adicional.", "evidence": "pending", "pending": true, "source_slugs": ["turkiye-mfa-montreux"] }
       ],
-      "sources": []
+      "sources": [
+        { "slug": "turkiye-mfa-montreux", "title": "Implementation of the Montreux Convention", "url": "https://www.mfa.gov.tr/implementation-of-the-montreux-convention.en.mfa", "source_name": "Türkiye MFA", "publisher": "Republic of Türkiye Ministry of Foreign Affairs", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-fetch" }
+      ]
     },
     "mena-agua": {
       "editorial_status": "review",
@@ -198,14 +200,16 @@
       ]
     },
     "ia-narrativa": {
-      "editorial_status": "draft",
+      "editorial_status": "review",
       "actors": { "state": [], "non_state": [] },
       "resources": [],
       "chokepoints": [],
       "causal_links": [
-        { "link_type": "contributes_to", "title": "Riesgo narrativo por IA", "explanation": "La generación masiva de contenido por IA amplifica riesgos narrativos y de desinformación global.", "evidence": "pending", "pending": true, "source_slugs": [] }
+        { "link_type": "contributes_to", "title": "Riesgo narrativo por IA", "explanation": "Naciones Unidas advierte que la desinformación potenciada por IA ya pone en peligro operaciones de paz y humanitarias y amenaza la integridad de la información y las instituciones democráticas, amplificando el riesgo narrativo global.", "evidence": "verified", "pending": false, "source_slugs": ["un-ai-global-issues"] }
       ],
-      "sources": []
+      "sources": [
+        { "slug": "un-ai-global-issues", "title": "Artificial Intelligence (AI) | United Nations", "url": "https://www.un.org/en/global-issues/artificial-intelligence", "source_name": "United Nations", "publisher": "United Nations", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-fetch" }
+      ]
     }
   }
 }
