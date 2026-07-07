@@ -193,7 +193,7 @@ export const queryLayer = {
   // causal_links[] }. Cada consulta es read-only, parametrizada y tolerante:
   // si una tabla de relación estuviera vacía, devuelve arrays vacíos.
   async getConflictRelations(conflictId) {
-    const [stateActors, nonStateActors, resources, chokepoints, causal] = await Promise.all([
+    const [stateActors, nonStateActors, resources, chokepoints, causal, sources] = await Promise.all([
       query(
         `SELECT sa.slug, sa.official_name_es AS name,
                 csa.alignment::text AS alignment, csa.involvement_level, csa.role_id,
@@ -243,6 +243,16 @@ export const queryLayer = {
           ORDER BY strength DESC NULLS LAST, title`,
         [conflictId],
       ),
+      query(
+        `SELECT s.slug, s.title, s.url, s.publisher,
+                sl.claim, sl.confidence_score,
+                sl.verification::text AS verification
+           FROM source_links sl
+           JOIN sources s ON sl.source_id = s.id
+          WHERE sl.entity_type = 'conflict' AND sl.entity_id = $1
+          ORDER BY s.publication_date DESC NULLS LAST, s.title`,
+        [conflictId],
+      ),
     ]);
 
     return {
@@ -270,6 +280,12 @@ export const queryLayer = {
         link_type: r.link_type, title: r.title, explanation: r.explanation,
         mechanism: r.mechanism ?? null, strength: r.strength ?? null,
         confidence_score: r.confidence_score ?? null,
+      })),
+      sources: sources.rows.map((r) => ({
+        slug: r.slug, title: r.title, url: r.url ?? null,
+        publisher: r.publisher ?? null, claim: r.claim ?? null,
+        confidence_score: r.confidence_score ?? null,
+        verification: r.verification ?? null,
       })),
     };
   },
@@ -340,5 +356,95 @@ export const queryLayer = {
 
   async close() {
     if (pool) { await pool.end(); pool = null; }
+  },
+};
+
+// --- Capa de ESCRITURA CMS/Admin (Sprint 7) --------------------------------
+// Consultas parametrizadas de escritura. SÓLO se invocan cuando la escritura
+// real está habilitada (GEOP_ADMIN_WRITES=true) y hay DB alcanzable; el
+// repositorio administrativo aplica esa guarda (ver admin-repository.mjs).
+// El estado editorial (draft/review/published/archived) llega YA mapeado al
+// enum persistente `geopolem_status` desde la capa de validación.
+
+async function taxonomyIdBySlug(slug) {
+  if (!slug) return null;
+  const res = await query('SELECT id FROM taxonomies WHERE slug = $1 LIMIT 1', [slug]);
+  return res.rowCount ? res.rows[0].id : null;
+}
+
+export const writeLayer = {
+  async available() {
+    return Boolean(await getPool());
+  },
+
+  // INSERT de un conflicto. `input` ya validado/normalizado; `dbStatus` es el
+  // enum persistente. Devuelve el ConflictListItem creado (mismo shape lectura).
+  async createConflict(input, dbStatus) {
+    const conflictTypeId = await taxonomyIdBySlug(input.conflict_type);
+    const regionId = await taxonomyIdBySlug(input.primary_region);
+    const loc = input.location || {};
+    const res = await query(
+      `INSERT INTO conflicts
+         (slug, name_es, summary, conflict_type_id, primary_region_id, status,
+          intensity_level, escalation_risk, humanitarian_impact,
+          energy_dimension, territorial_dimension, external_involvement,
+          latitude, longitude)
+       VALUES ($1,$2,$3,$4,$5,$6::geopolem_status,$7,$8,$9,
+               COALESCE($10,false),COALESCE($11,false),COALESCE($12,false),$13,$14)
+       RETURNING id::text AS id`,
+      [
+        input.slug, input.name, input.summary ?? null, conflictTypeId, regionId, dbStatus,
+        input.intensity_level ?? null, input.escalation_risk ?? null, input.humanitarian_impact ?? null,
+        input.energy_dimension ?? null, input.territorial_dimension ?? null, input.external_involvement ?? null,
+        loc.latitude ?? null, loc.longitude ?? null,
+      ],
+    );
+    return queryLayer.getConflict(res.rows[0].id);
+  },
+
+  // UPDATE parcial de un conflicto por id/slug. `patch` sólo trae campos
+  // presentes; `dbStatus` (opcional) fija el estado si se incluyó en el patch.
+  async updateConflict(idOrSlug, patch, dbStatus) {
+    const sets = [];
+    const params = [];
+    const add = (col, val) => { params.push(val); sets.push(`${col} = $${params.length}`); };
+
+    if ('name' in patch) add('name_es', patch.name);
+    if ('summary' in patch) add('summary', patch.summary ?? null);
+    if ('intensity_level' in patch) add('intensity_level', patch.intensity_level ?? null);
+    if ('escalation_risk' in patch) add('escalation_risk', patch.escalation_risk ?? null);
+    if ('humanitarian_impact' in patch) add('humanitarian_impact', patch.humanitarian_impact ?? null);
+    if ('energy_dimension' in patch) add('energy_dimension', patch.energy_dimension);
+    if ('territorial_dimension' in patch) add('territorial_dimension', patch.territorial_dimension);
+    if ('external_involvement' in patch) add('external_involvement', patch.external_involvement);
+    if ('conflict_type' in patch) add('conflict_type_id', await taxonomyIdBySlug(patch.conflict_type));
+    if ('primary_region' in patch) add('primary_region_id', await taxonomyIdBySlug(patch.primary_region));
+    if (patch.location?.latitude != null) add('latitude', patch.location.latitude);
+    if (patch.location?.longitude != null) add('longitude', patch.location.longitude);
+    if (dbStatus) add('status', dbStatus); // cast implícito a geopolem_status
+
+    if (!sets.length) return queryLayer.getConflict(idOrSlug);
+
+    params.push(idOrSlug);
+    const res = await query(
+      `UPDATE conflicts SET ${sets.join(', ')}
+        WHERE slug = $${params.length} OR id::text = $${params.length}
+        RETURNING id::text AS id`,
+      params,
+    );
+    if (!res.rowCount) return null;
+    return queryLayer.getConflict(res.rows[0].id);
+  },
+
+  // Fija el estado editorial (ya mapeado a enum persistente) de un conflicto.
+  async setStatus(idOrSlug, dbStatus) {
+    const res = await query(
+      `UPDATE conflicts SET status = $1::geopolem_status
+        WHERE slug = $2 OR id::text = $2
+        RETURNING id::text AS id, status::text AS status`,
+      [dbStatus, idOrSlug],
+    );
+    if (!res.rowCount) return null;
+    return queryLayer.getConflict(res.rows[0].id);
   },
 };

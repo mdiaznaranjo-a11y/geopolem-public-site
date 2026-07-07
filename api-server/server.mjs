@@ -15,8 +15,32 @@ import { recordSource, recordRequest } from './src/observability.mjs';
 
 function applyCors(res) {
   res.setHeader('Access-Control-Allow-Origin', CONFIG.corsOrigin);
-  res.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, POST, PUT, PATCH, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization');
+}
+
+// Límite defensivo del cuerpo de escritura (1 MiB): evita payloads abusivos.
+const MAX_BODY_BYTES = 1024 * 1024;
+const WRITE_METHODS = new Set(['POST', 'PUT', 'PATCH']);
+
+// Lee y parsea el cuerpo JSON en métodos de escritura. Devuelve
+// { body } o { bodyError } (JSON inválido) o { tooLarge }.
+async function readJsonBody(req) {
+  if (!WRITE_METHODS.has(req.method)) return { body: null };
+  const chunks = [];
+  let size = 0;
+  for await (const chunk of req) {
+    size += chunk.length;
+    if (size > MAX_BODY_BYTES) return { tooLarge: true };
+    chunks.push(chunk);
+  }
+  const raw = Buffer.concat(chunks).toString('utf8').trim();
+  if (!raw) return { body: null };
+  try {
+    return { body: JSON.parse(raw) };
+  } catch {
+    return { bodyError: true };
+  }
 }
 
 function isGeoJson(body) {
@@ -33,6 +57,9 @@ function endpointLabel(pathname) {
   if (rest === '/filters') return 'filters';
   if (rest === '/conflicts') return 'conflicts';
   if (rest === '/conflicts/active/map') return 'conflicts_active_map';
+  if (rest === '/admin/conflicts') return 'admin_conflicts';
+  if (/^\/admin\/conflicts\/[^/]+\/status$/.test(rest)) return 'admin_conflict_status';
+  if (/^\/admin\/conflicts\/[^/]+$/.test(rest)) return 'admin_conflict_detail';
   if (/^\/conflicts\/[^/]+$/.test(rest)) return 'conflict_detail';
   return 'other';
 }
@@ -57,11 +84,19 @@ const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
   let result;
   try {
-    const context = {
-      authorization: req.headers['authorization'] || null,
-      clientId: clientIp(req),
-    };
-    result = await route(req.method, url.pathname, url.searchParams, context);
+    const parsed = await readJsonBody(req);
+    if (parsed.tooLarge) {
+      result = { status: 413, body: { error: { code: 'bad_request', message: 'Cuerpo demasiado grande.' } } };
+    } else if (parsed.bodyError) {
+      result = { status: 400, body: { error: { code: 'bad_request', message: 'JSON del cuerpo inválido.' } } };
+    } else {
+      const context = {
+        authorization: req.headers['authorization'] || null,
+        clientId: clientIp(req),
+        body: parsed.body,
+      };
+      result = await route(req.method, url.pathname, url.searchParams, context);
+    }
   } catch (err) {
     console.error('[geopolem-api] error no controlado:', err);
     recordSource('unhandled', 'error', null);
@@ -101,6 +136,10 @@ server.listen(CONFIG.port, CONFIG.host, () => {
   console.log('  GET /api/v1/conflicts/active/map');
   console.log('  GET /api/v1/conflicts/:id');
   console.log('  GET /api/v1/filters');
+  console.log(`Admin CMS (JWT scope requerido): escritura ${CONFIG.adminWritesEnabled ? 'REAL (GEOP_ADMIN_WRITES=true)' : 'PREPARED (no persiste)'}`);
+  console.log('  POST  /api/v1/admin/conflicts');
+  console.log('  PUT   /api/v1/admin/conflicts/:id');
+  console.log('  POST  /api/v1/admin/conflicts/:id/status');
 });
 
 // Cierre ordenado.

@@ -17,7 +17,9 @@
     "healthcheck": "node scripts/healthcheck.mjs",
     "export:static": "node scripts/export-static-bridge.mjs",
     "export:static:dry": "node scripts/export-static-bridge.mjs --dry-run",
-    "export:static:check": "node scripts/export-static-bridge.mjs --check"
+    "export:static:check": "node scripts/export-static-bridge.mjs --check",
+    "export:static:enriched": "node scripts/export-static-bridge.mjs --with-enriched-map",
+    "issue:jwt": "node scripts/issue-jwt.mjs"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

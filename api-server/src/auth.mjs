@@ -93,6 +93,46 @@ export function extractBearer(authorization) {
   return m ? m[1].trim() : null;
 }
 
+function base64urlEncode(buf) {
+  return Buffer.from(buf).toString('base64')
+    .replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
+}
+
+// Firma un JWT HS256 (Sprint 7). Sin dependencias externas (node:crypto).
+// Reutilizado por el CLI scripts/issue-jwt.mjs y por los tests. NUNCA imprime
+// ni persiste el secreto: sólo lo usa para el HMAC. `opts.expiresInSec` añade
+// `exp` relativo a ahora; `opts.notBeforeSec` añade `nbf`. Cualquier claim
+// adicional (sub, scope, scopes, iss, aud, jti…) se pasa en `payload`.
+export function signJwt(payload, secret, opts = {}) {
+  if (!secret) throw new Error('signJwt: falta el secreto HS256.');
+  if (!payload || typeof payload !== 'object') throw new Error('signJwt: payload inválido.');
+  const now = Math.floor(Date.now() / 1000);
+  const claims = { iat: now, ...payload };
+  if (opts.expiresInSec != null && claims.exp == null) {
+    claims.exp = now + Number(opts.expiresInSec);
+  }
+  if (opts.notBeforeSec != null && claims.nbf == null) {
+    claims.nbf = now + Number(opts.notBeforeSec);
+  }
+  const header = base64urlEncode(JSON.stringify({ alg: 'HS256', typ: 'JWT' }));
+  const body = base64urlEncode(JSON.stringify(claims));
+  const sig = base64urlEncode(createHmac('sha256', secret).update(`${header}.${body}`).digest());
+  return `${header}.${body}.${sig}`;
+}
+
+// Verifica un token aceptando el secreto actual O el anterior (Sprint 7):
+// habilita rotación de JWT_SECRET sin caída. Devuelve el primer resultado
+// válido; si ninguno valida, devuelve el del secreto actual (razón principal).
+export function verifyJwtWithRotation(token, opts = {}) {
+  const primary = verifyJwt(token, CONFIG.jwtSecret, opts);
+  if (primary.valid) return primary;
+  if (CONFIG.jwtSecretPrevious) {
+    const prev = verifyJwt(token, CONFIG.jwtSecretPrevious, opts);
+    if (prev.valid) return prev;
+  }
+  return primary;
+}
+
 // --- Scopes / claims (Sprint 6) --------------------------------------------
 // Normaliza los scopes de un payload JWT. Admite el estilo OAuth2 `scope`
 // (string separada por espacios) y/o un array `scopes`. Devuelve string[].
@@ -115,9 +155,18 @@ export function hasScope(payload, required) {
   return scopes.includes('admin') || scopes.includes(required);
 }
 
-// Mapa de scopes por prefijo de ruta, PREPARADO para endpoints CMS/Admin del
-// Sprint 7. Hoy no existen esas rutas, así que no altera el comportamiento;
-// el orden importa (coincidencia por prefijo más específico primero).
+// Prefijos administrativos (Sprint 7). SIEMPRE exigen autenticación con scope,
+// con independencia de GEOP_API_AUTH_MODE: la lectura pública puede ser anónima,
+// pero la escritura CMS/Admin nunca. Ver authorize().
+const ADMIN_PREFIXES = ['/api/v1/admin', '/api/v1/cms'];
+
+// ¿La ruta pertenece a la superficie administrativa protegida?
+export function isAdminPath(path) {
+  return ADMIN_PREFIXES.some((p) => path === p || path.startsWith(`${p}/`));
+}
+
+// Mapa de scopes por prefijo de ruta. Los endpoints CMS/Admin (Sprint 7) exigen
+// su scope; el orden importa (prefijo más específico primero).
 export function requiredScopeForPath(path) {
   if (path.startsWith('/api/v1/admin')) return CONFIG.scopeAdmin;
   if (path.startsWith('/api/v1/cms')) return CONFIG.scopeCms;
@@ -129,26 +178,35 @@ export function requiredScopeForPath(path) {
 // Devuelve `null` si se permite continuar, o `{ status, body }` (error) si se
 // debe cortar. `context.authorization` es la cabecera cruda.
 export function authorize(path, context = {}) {
+  const admin = isAdminPath(path);
   const mode = CONFIG.authMode;
-  if (mode === 'public') return null;
-  if (PUBLIC_PATHS.has(path)) return null;
 
-  // Modo != public exige secreto configurado; si falta, fail-closed (500).
+  // Lectura pública: en modo public y fuera de rutas admin, no se aplica auth.
+  if (!admin) {
+    if (mode === 'public') return null;
+    if (PUBLIC_PATHS.has(path)) return null;
+  }
+
+  // Se debe verificar (admin siempre, o modo != public): exige secreto. Si
+  // falta, fail-closed (500) para no servir/escribir sin poder verificar.
   if (!CONFIG.jwtSecret) {
     const e = apiError('internal_error',
-      'Auth activada (GEOP_API_AUTH_MODE) pero JWT_SECRET no está configurado.');
+      admin
+        ? 'Endpoint administrativo activo pero JWT_SECRET no está configurado.'
+        : 'Auth activada (GEOP_API_AUTH_MODE) pero JWT_SECRET no está configurado.');
     return { status: e.status, body: e.body };
   }
 
   const token = extractBearer(context.authorization);
 
   if (!token) {
-    if (mode === 'optional') return null; // sin token → acceso anónimo permitido
+    // Sin token: sólo el modo optional (y nunca en rutas admin) permite anónimo.
+    if (!admin && mode === 'optional') return null;
     const e = apiError('unauthorized', 'Se requiere un Bearer token para este endpoint.');
     return { status: e.status, body: e.body };
   }
 
-  const result = verifyJwt(token, CONFIG.jwtSecret, {
+  const result = verifyJwtWithRotation(token, {
     leewaySec: CONFIG.jwtLeewaySec,
     issuer: CONFIG.jwtIssuer || undefined,
     audience: CONFIG.jwtAudience || undefined,

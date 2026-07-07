@@ -37,6 +37,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(__dirname, '..', '..');
 const LIST_PATH = resolve(REPO_ROOT, 'api/v1/conflicts.json');
 const MAP_PATH = resolve(REPO_ROOT, 'api/v1/conflicts/active/map.json');
+// Mapa ENRIQUECIDO (Sprint 7): archivo ADITIVO y separado. No sustituye a
+// map.json (la PWA sigue consumiendo el mapa base sin cambios); añade metadatos
+// mínimos por feature para vistas ricas cuando la DB real esté disponible.
+const MAP_ENRICHED_PATH = resolve(REPO_ROOT, 'api/v1/conflicts/active/map.enriched.json');
 
 const API_VERSION = 'v1';
 const SOURCE_LABEL = 'postgres (static bridge, Sprint 5)';
@@ -90,6 +94,66 @@ export function buildActiveMapPayload(items, generatedAt = new Date().toISOStrin
       source: SOURCE_LABEL,
     },
   };
+}
+
+// Mapa ENRIQUECIDO (Sprint 7): mismo GeoJSON base + propiedades adicionales
+// derivadas EXCLUSIVAMENTE de los campos ya presentes en cada item (sin
+// inventar datos). Superconjunto compatible: un cliente que sólo lea las
+// propiedades base (id, slug, name, intensity_level…) sigue funcionando igual.
+export function buildEnrichedMapPayload(items, generatedAt = new Date().toISOString()) {
+  return {
+    type: 'FeatureCollection',
+    features: items
+      .filter((c) => c.status === 'active'
+        && c.location && c.location.longitude != null && c.location.latitude != null)
+      .map((c) => ({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [c.location.longitude, c.location.latitude] },
+        properties: {
+          id: c.id,
+          slug: c.slug,
+          name: c.name,
+          intensity_level: c.intensity_level,
+          escalation_risk: c.escalation_risk,
+          energy_dimension: c.energy_dimension,
+          primary_region: c.primary_region?.label ?? null,
+          // Enriquecimiento mínimo (sólo campos existentes del item):
+          conflict_type: c.conflict_type?.label ?? null,
+          territorial_dimension: c.territorial_dimension ?? null,
+          external_involvement: c.external_involvement ?? null,
+          humanitarian_impact: c.humanitarian_impact ?? null,
+          updated_at: c.updated_at ?? null,
+        },
+      })),
+    meta: {
+      api_version: API_VERSION,
+      generated_at: generatedAt,
+      source: SOURCE_LABEL,
+      enriched: true,
+    },
+  };
+}
+
+// Valida el mapa enriquecido: mismas invariantes GeoJSON que el base más la
+// marca meta.enriched. No lanza. Devuelve { ok, errors[] }.
+export function validateEnrichedMap(map) {
+  const errors = [];
+  const fail = (msg) => errors.push(msg);
+  if (!map || map.type !== 'FeatureCollection') fail('map.enriched.json: type != FeatureCollection');
+  else if (!Array.isArray(map.features)) fail('map.enriched.json: features no es array');
+  else if (map.meta?.enriched !== true) fail('map.enriched.json: falta meta.enriched=true');
+  else {
+    for (const f of map.features) {
+      const geomOk = f.type === 'Feature'
+        && f.geometry?.type === 'Point'
+        && Array.isArray(f.geometry.coordinates)
+        && f.geometry.coordinates.length === 2
+        && typeof f.properties?.slug === 'string'
+        && 'conflict_type' in f.properties;
+      if (!geomOk) { fail(`map.enriched.json: feature inválida (${f?.properties?.slug})`); break; }
+    }
+  }
+  return { ok: errors.length === 0, errors };
 }
 
 // --- Validación de contrato (post-export) -----------------------------------
@@ -187,10 +251,12 @@ function log(msg) { console.log(`[export-static-bridge] ${msg}`); }
 async function main() {
   const args = new Set(process.argv.slice(2));
   if (args.has('--help') || args.has('-h')) {
-    console.log(`Uso: node scripts/export-static-bridge.mjs [--dry-run|--check]
-  (sin flags)  Lee DATABASE_URL, valida y ESCRIBE atómicamente los JSON.
-  --dry-run    Lee DB y valida, pero NO escribe.
-  --check      No usa DB: valida los JSON ya presentes en disco (CI).
+    console.log(`Uso: node scripts/export-static-bridge.mjs [--dry-run|--check|--with-enriched-map]
+  (sin flags)         Lee DATABASE_URL, valida y ESCRIBE atómicamente los JSON.
+  --dry-run           Lee DB y valida, pero NO escribe.
+  --check             No usa DB: valida los JSON ya presentes en disco (CI).
+  --with-enriched-map Además del mapa base, genera api/v1/conflicts/active/map.enriched.json
+                      (aditivo, no sustituye al base; requiere DB salvo en --check).
 `);
     return 0;
   }
@@ -206,6 +272,16 @@ async function main() {
       log('VALIDACIÓN FALLIDA del puente en disco:');
       for (const e of errors) log(`  - ${e}`);
       return 1;
+    }
+    // Si existe el mapa enriquecido en disco, valídalo también (aditivo).
+    if (existsSync(MAP_ENRICHED_PATH)) {
+      const enr = validateEnrichedMap(readJson(MAP_ENRICHED_PATH));
+      if (!enr.ok) {
+        log('VALIDACIÓN FALLIDA del mapa enriquecido en disco:');
+        for (const e of enr.errors) log(`  - ${e}`);
+        return 1;
+      }
+      log('OK: mapa enriquecido en disco válido.');
     }
     log('OK: puente estático en disco válido.');
     return 0;
@@ -229,9 +305,11 @@ async function main() {
   }
   log(`Leídos ${items.length} conflictos.`);
 
+  const withEnriched = args.has('--with-enriched-map');
   const generatedAt = new Date().toISOString();
   const listPayload = buildConflictsPayload(items, generatedAt);
   const mapPayload = buildActiveMapPayload(items, generatedAt);
+  const enrichedPayload = withEnriched ? buildEnrichedMapPayload(items, generatedAt) : null;
 
   // Validación en memoria ANTES de tocar el disco.
   const pre = validateBridge(listPayload, mapPayload);
@@ -241,9 +319,18 @@ async function main() {
     for (const e of pre.errors) log(`  - ${e}`);
     return 1;
   }
+  if (enrichedPayload) {
+    const preEnr = validateEnrichedMap(enrichedPayload);
+    if (!preEnr.ok) {
+      log('ERROR: el mapa enriquecido generado no valida. No se modificó ningún archivo:');
+      for (const e of preEnr.errors) log(`  - ${e}`);
+      return 1;
+    }
+  }
 
   if (dryRun) {
-    log(`--dry-run: ${listPayload.data.length} conflictos, ${mapPayload.features.length} features. `
+    log(`--dry-run: ${listPayload.data.length} conflictos, ${mapPayload.features.length} features`
+      + `${enrichedPayload ? `, ${enrichedPayload.features.length} features enriquecidas` : ''}. `
       + 'Contrato válido. NO se escribió nada.');
     return 0;
   }
@@ -252,6 +339,10 @@ async function main() {
   writeJsonAtomic(MAP_PATH, mapPayload);
   log(`Escrito ${listPayload.data.length} conflictos → ${LIST_PATH}`);
   log(`Escrito ${mapPayload.features.length} features   → ${MAP_PATH}`);
+  if (enrichedPayload) {
+    writeJsonAtomic(MAP_ENRICHED_PATH, enrichedPayload);
+    log(`Escrito ${enrichedPayload.features.length} features   → ${MAP_ENRICHED_PATH}`);
+  }
 
   // Validación post-export leyendo de disco (round-trip real).
   const post = validateBridge(readJson(LIST_PATH), readJson(MAP_PATH));
@@ -259,6 +350,14 @@ async function main() {
     log('ERROR CRÍTICO: el JSON en disco no valida tras escribir:');
     for (const e of post.errors) log(`  - ${e}`);
     return 1;
+  }
+  if (enrichedPayload) {
+    const postEnr = validateEnrichedMap(readJson(MAP_ENRICHED_PATH));
+    if (!postEnr.ok) {
+      log('ERROR CRÍTICO: el mapa enriquecido en disco no valida tras escribir:');
+      for (const e of postEnr.errors) log(`  - ${e}`);
+      return 1;
+    }
   }
   log(`OK: puente regenerado y validado. generated_at=${generatedAt}`);
   return 0;

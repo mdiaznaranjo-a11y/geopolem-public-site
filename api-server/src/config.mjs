@@ -61,6 +61,10 @@ export const CONFIG = {
   // Emisor/audiencia esperados (opcionales; si se definen, se validan).
   jwtIssuer: process.env.JWT_ISSUER || '',
   jwtAudience: process.env.JWT_AUDIENCE || '',
+  // Secreto HS256 ANTERIOR (Sprint 7): habilita rotación sin caída. Durante la
+  // ventana de rotación se aceptan tokens firmados con el secreto nuevo O el
+  // anterior. Vacío por defecto (sin rotación en curso). Ver docs/jwt-rotation.md.
+  jwtSecretPrevious: process.env.JWT_SECRET_PREVIOUS || '',
 
   // --- Observabilidad de meta.source (Sprint 5) --------------------------
   // Emite una línea JSON estructurada por respuesta con el origen de datos
@@ -94,6 +98,14 @@ export const CONFIG = {
   scopeRead: process.env.GEOP_SCOPE_READ || '',
   scopeCms: process.env.GEOP_SCOPE_CMS || 'cms:write',
   scopeAdmin: process.env.GEOP_SCOPE_ADMIN || 'admin',
+
+  // --- CMS / Admin API (Sprint 7) ----------------------------------------
+  // Interruptor maestro de ESCRITURA real. Por defecto FALSE: los endpoints
+  // administrativos existen y validan el contrato, pero operan en modo
+  // "prepared" (no persisten). Sólo con GEOP_ADMIN_WRITES=true Y una DB
+  // alcanzable se ejecutan INSERT/UPDATE parametrizados. Esto evita datos
+  // falsos persistentes y protege producción por defecto.
+  adminWritesEnabled: bool(process.env.GEOP_ADMIN_WRITES, false),
 
   // Rutas del puente estático (Sprint 2) usadas como respaldo permanente.
   staticConflictsPath: resolve(REPO_ROOT, 'api/v1/conflicts.json'),
