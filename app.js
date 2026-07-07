@@ -6,6 +6,10 @@ import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO,
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 import { loadWatchlistFocos } from './api-adapter.js';
+import {
+  normalizeEnrichedDetail, toRelationRows, hasAnyEnrichment,
+  deriveFilterFacets, applyAdvancedFilters, loadEnrichedDetail,
+} from './public-enriched.mjs';
 
 const html = htm.bind(React.createElement);
 const API_BASE = window.GEOP_API_BASE || ('__PORT_8000__'.startsWith('__') ? 'http://127.0.0.1:8000' : '__PORT_8000__');
@@ -1178,6 +1182,178 @@ function FocoDetail({ foco }) {
         <div class="font-mono text-[14px]">${[...Array(5)].map((_,i)=>html`<span key=${i} class=${i<foco.intensity?'text-alert':'text-slate-700'}>■</span>`)}</div>
       </div>
     </div>
+  </div>`;
+}
+
+/* ========================================================================
+   Ficha pública enriquecida (Sprint 10)
+   Consume el normalizador PURO `public-enriched.mjs`. Aditivo: no reemplaza a
+   FocoDetail, sólo añade metadatos y relaciones (actor/recurso/chokepoint/
+   causa→efecto) cuando existen. Estados loading/error/empty. Fallback local.
+   ======================================================================== */
+const REL_ACCENT = { actor:'#38bdf8', resource:'#f59e0b', chokepoint:'#fbbf24', causal:'#a78bfa' };
+
+function RelationGroup({ title, kind, rows }) {
+  if (!rows || !rows.length) return null;
+  const accent = REL_ACCENT[kind] || '#94a3b8';
+  return html`
+  <div class="rounded border border-white/5 bg-white/[0.02] p-3">
+    <div class="flex items-center gap-1.5 mb-2">
+      <span class="w-1.5 h-1.5 rounded-full" style=${{background:accent, boxShadow:`0 0 6px ${accent}`}}></span>
+      <span class="font-mono text-[10px] uppercase tracking-widest text-slate-400">${title} · ${rows.length}</span>
+    </div>
+    <ul class="flex flex-col gap-1">
+      ${rows.map((r,i) => html`
+        <li key=${i} class="text-[12px] text-slate-300 leading-snug flex flex-wrap items-baseline gap-x-2">
+          <span>${r.label}</span>
+          ${r.detail && html`<span class="font-mono text-[9.5px] uppercase tracking-wider text-slate-500">${r.detail}</span>`}
+          ${r.meta && html`<span class="font-mono text-[9.5px] text-slate-600">${r.meta}</span>`}
+        </li>`)}
+    </ul>
+  </div>`;
+}
+
+function EnrichedDetail({ foco }) {
+  const [state, setState] = useState({ status: 'idle', vm: null, source: 'local', error: null });
+
+  useEffect(() => {
+    if (!foco) { setState({ status: 'idle', vm: null, source: 'local', error: null }); return; }
+    let cancelled = false;
+    const localVm = normalizeEnrichedDetail(foco);
+    setState({ status: 'loading', vm: localVm, source: 'local', error: null });
+    loadEnrichedDetail(foco.slug || foco.id, { localFoco: foco })
+      .then(({ detail, source, error }) => {
+        if (!cancelled) setState({ status: 'ready', vm: detail, source, error });
+      })
+      .catch((err) => {
+        if (!cancelled) setState({ status: 'error', vm: localVm, source: 'local', error: err });
+      });
+    return () => { cancelled = true; };
+  }, [foco?.id]);
+
+  if (!foco) return null;
+  const vm = state.vm || normalizeEnrichedDetail(foco);
+  const rel = toRelationRows(vm, vm.name);
+  const enriched = hasAnyEnrichment(vm);
+
+  const meta = [
+    vm.status && ['Estado', vm.status],
+    vm.country && ['País', vm.country],
+    (vm.severity != null) && ['Severidad', `${vm.severity}/5`],
+    vm.coords && ['Coordenadas', `${vm.coords.lat.toFixed(1)}, ${vm.coords.lng.toFixed(1)}`],
+  ].filter(Boolean);
+
+  // Nada extra que aportar sobre FocoDetail: se oculta limpiamente.
+  if (!enriched && !meta.length && !vm.has.sources) return null;
+
+  return html`
+  <div class="panel rounded-md p-4 lg:p-5 space-y-3">
+    <div class="flex items-center justify-between gap-2 flex-wrap">
+      <div class="heading-mono">Detalle enriquecido</div>
+      <div class="flex items-center gap-1.5">
+        ${state.status === 'loading' && html`<span class="font-mono text-[9px] uppercase tracking-widest text-slate-500 animate-pulse">Cargando…</span>`}
+        <span class="font-mono text-[9px] uppercase tracking-widest ${state.source==='api' ? 'text-intel' : state.source==='static' ? 'text-radar' : 'text-slate-500'}">origen: ${state.source}</span>
+      </div>
+    </div>
+
+    ${state.status === 'error' && html`
+      <div class="text-[11px] text-risk-soft font-mono">No se pudo cargar el detalle remoto; mostrando respaldo local.</div>`}
+
+    ${meta.length > 0 && html`
+      <div class="flex flex-wrap gap-x-5 gap-y-1">
+        ${meta.map(([k,v]) => html`
+          <div key=${k} class="leading-tight">
+            <div class="font-mono text-[9px] uppercase tracking-widest text-slate-500">${k}</div>
+            <div class="text-[12.5px] text-slate-200">${v}</div>
+          </div>`)}
+      </div>`}
+
+    ${enriched ? html`
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+        <${RelationGroup} title="Actores ↔ conflicto" kind="actor" rows=${rel.actorLinks}/>
+        <${RelationGroup} title="Recursos energéticos ↔ conflicto" kind="resource" rows=${rel.resourceLinks}/>
+        <${RelationGroup} title="Chokepoints ↔ conflicto" kind="chokepoint" rows=${rel.chokepointLinks}/>
+        <${RelationGroup} title="Causa → efecto" kind="causal" rows=${rel.causalChain}/>
+      </div>
+    ` : html`
+      <div class="text-[11.5px] text-slate-500">Sin relaciones enriquecidas disponibles para este foco.</div>`}
+
+    ${vm.has.sources && html`
+      <div class="pt-1">
+        <div class="font-mono text-[10px] uppercase tracking-widest text-slate-400 mb-1.5">Fuentes · ${vm.sources.length}</div>
+        <ul class="flex flex-col gap-1">
+          ${vm.sources.map((s,i) => html`
+            <li key=${i} class="text-[12px] leading-snug">
+              ${s.url
+                ? html`<a href=${s.url} target="_blank" rel="noreferrer noopener" class="text-radar hover:text-radar-glow underline decoration-dotted">${s.title}</a>`
+                : html`<span class="text-slate-300">${s.title}</span>`}
+              ${s.publisher && html`<span class="font-mono text-[9.5px] text-slate-600 ml-1.5">${s.publisher}</span>`}
+            </li>`)}
+        </ul>
+      </div>`}
+  </div>`;
+}
+
+/* ========================================================================
+   Filtros avanzados del mapa (Sprint 10)
+   Se derivan de los datos: una dimensión sin valores NO se muestra. Ningún
+   filtro es destructivo (los datos locales/JSON quedan intactos).
+   ======================================================================== */
+const FACET_LABELS = { region:'Región', type:'Tipo', severity:'Severidad', status:'Estado', resource:'Recurso', actor:'Actor', chokepoint:'Chokepoint' };
+const FACET_ORDER = ['region', 'type', 'severity', 'status', 'resource', 'actor', 'chokepoint'];
+
+function MapFilters({ facets, selected, onChange, onReset, count, total }) {
+  const dims = FACET_ORDER.filter(d => facets[d]);
+  if (!dims.length) return null;
+  const active = Object.entries(selected || {}).some(([k, v]) => facets[k] && v && v !== 'all');
+  const optionLabel = (dim, value) => {
+    if (dim === 'severity') return `≥ ${value}`;
+    if (dim === 'type') return (CATEGORIES[value] && CATEGORIES[value].label) || value;
+    return value;
+  };
+  return html`
+  <div class="panel rounded-md p-3 lg:p-4">
+    <div class="flex items-center justify-between gap-2 mb-2.5 flex-wrap">
+      <div class="heading-mono">Filtros avanzados</div>
+      <div class="flex items-center gap-2">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-slate-500">${count}/${total} focos</span>
+        ${active && html`<button onClick=${onReset} class="font-mono text-[9.5px] uppercase tracking-widest text-radar hover:text-radar-glow">Limpiar</button>`}
+      </div>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+      ${dims.map(dim => html`
+        <label key=${dim} class="flex flex-col gap-1">
+          <span class="font-mono text-[9px] uppercase tracking-widest text-slate-500">${FACET_LABELS[dim]}</span>
+          <select
+            value=${selected[dim] || 'all'}
+            onChange=${e => onChange(dim, e.target.value)}
+            class="bg-carbon-900/70 border border-white/10 rounded px-2 py-1.5 text-[12px] text-slate-200 focus:border-radar/50 focus:outline-none">
+            <option value="all">Todos</option>
+            ${facets[dim].map(v => html`<option key=${v} value=${String(v)}>${optionLabel(dim, v)}</option>`)}
+          </select>
+        </label>`)}
+    </div>
+  </div>`;
+}
+
+function MapExplorer({ focos, selectedFoco, selectedId, onSelect }) {
+  const [selected, setSelected] = useState({});
+  const facets = useMemo(() => deriveFilterFacets(focos), [focos]);
+  const visible = useMemo(() => applyAdvancedFilters(focos, selected), [focos, selected]);
+  const shownFoco = visible.find(f => f.id === selectedId) || selectedFoco;
+  const change = (dim, value) => setSelected(prev => ({ ...prev, [dim]: value }));
+  const reset = () => setSelected({});
+  return html`
+  <div class="space-y-4">
+    <${MapFilters} facets=${facets} selected=${selected} onChange=${change} onReset=${reset}
+      count=${visible.length} total=${focos.length}/>
+    <${WorldMap} focos=${visible} selectedId=${selectedId} onSelect=${onSelect}/>
+    ${visible.length === 0 && html`
+      <div class="panel rounded-md p-4 text-center text-[12px] text-slate-500">
+        Ningún foco coincide con los filtros. <button onClick=${reset} class="text-radar hover:text-radar-glow underline decoration-dotted">Reiniciar</button>
+      </div>`}
+    <${FocoDetail} foco=${shownFoco}/>
+    <${EnrichedDetail} foco=${shownFoco}/>
   </div>`;
 }
 
@@ -3335,6 +3511,7 @@ function App() {
             <div class="lg:col-span-2 space-y-4">
               <${WorldMap} focos=${allFocos} selectedId=${selectedId} onSelect=${setSelectedId}/>
               <${FocoDetail} foco=${selectedFoco}/>
+              <${EnrichedDetail} foco=${selectedFoco}/>
             </div>
             <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId} onOpenSentinel=${()=>setView('sentinel')}/>
           </div>
@@ -3348,9 +3525,8 @@ function App() {
 
       ${view==='map' && html`
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <div class="lg:col-span-2 space-y-4">
-            <${WorldMap} focos=${allFocos} selectedId=${selectedId} onSelect=${setSelectedId}/>
-            <${FocoDetail} foco=${selectedFoco}/>
+          <div class="lg:col-span-2">
+            <${MapExplorer} focos=${allFocos} selectedFoco=${selectedFoco} selectedId=${selectedId} onSelect=${setSelectedId}/>
           </div>
           <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId} onOpenSentinel=${()=>setView('sentinel')}/>
         </div>
