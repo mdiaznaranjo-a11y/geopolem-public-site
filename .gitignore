@@ -4,3 +4,8 @@ node_modules/
 api/v1/staging/.rollback/
 # Sprint 17: sign-off humano de promoción a producción (NO versionar, sin secretos)
 .promotion-signoff.json
+# Sprint 18: segunda confirmación de release (NO versionar, sin secretos)
+.release-confirmation.json
+# Sprint 18: respaldos efímeros de canónicos y salidas de simulacro (regenerables)
+.canonical-rollback/
+.release-sim/

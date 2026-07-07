@@ -49,7 +49,19 @@
     "promote:production:dry": "node ../scripts/promote-canonical-staging.mjs --promote-production",
     "promote:rollback": "node ../scripts/promote-canonical-staging.mjs --rollback",
     "validate:staging-artifacts": "node ../scripts/validate-staging-artifacts.mjs",
-    "verify:clean-tree": "node ../scripts/check-clean-tree.mjs"
+    "verify:clean-tree": "node ../scripts/check-clean-tree.mjs",
+    "canonical:rollback:plan": "node ../scripts/canonical-rollback.mjs",
+    "canonical:rollback:backup": "node ../scripts/canonical-rollback.mjs --backup",
+    "canonical:rollback:restore": "node ../scripts/canonical-rollback.mjs --restore",
+    "canonical:rollback:verify": "node ../scripts/canonical-rollback.mjs --verify",
+    "hooks:setup": "node ../scripts/setup-hooks.mjs --install",
+    "hooks:check": "node ../scripts/setup-hooks.mjs --check",
+    "review:queue": "node ../scripts/editorial-review-queue.mjs",
+    "review:queue:json": "node ../scripts/editorial-review-queue.mjs --json",
+    "review:queue:write": "node ../scripts/editorial-review-queue.mjs --write",
+    "review:queue:check": "node ../scripts/editorial-review-queue.mjs --check",
+    "release:simulate": "node ../scripts/release-simulation.mjs",
+    "release:simulate:json": "node ../scripts/release-simulation.mjs --json"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

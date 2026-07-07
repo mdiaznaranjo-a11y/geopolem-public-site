@@ -74,6 +74,12 @@ jobs:
       - name: Garantía NO-WRITE/NO-DIFF de las validaciones (Sprint 17)
         run: npm run verify:clean-tree
 
+      - name: Cola de revisión editorial residual al día (Sprint 18)
+        run: npm run review:queue:check
+
+      - name: Simulacro de release GATED end-to-end, sin producción (Sprint 18)
+        run: npm run release:simulate:json
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest

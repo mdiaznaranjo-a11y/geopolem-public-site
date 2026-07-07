@@ -40,6 +40,9 @@ import {
   summarizePromotion, DEFAULT_MIN_COVERAGE_PCT,
 } from '../conflict-promotion.mjs';
 import { resolveSignoff, SIGNOFF_FILE, SIGNOFF_ENV_VAR } from '../promotion-signoff.mjs';
+import {
+  resolveReleaseConfirmation, evaluateProductionRelease, CONFIRM_FILE, CONFIRM_ENV_VAR,
+} from '../release-confirmation.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(__dirname, '..');
@@ -49,6 +52,7 @@ const TODO_PATH = resolve(REPO_ROOT, 'data/source-research.todo.json');
 const LIST_PATH = resolve(REPO_ROOT, 'api/v1/conflicts.json');
 const DETAILS_DIR = resolve(REPO_ROOT, 'api/v1/conflicts');
 const SIGNOFF_PATH = resolve(REPO_ROOT, SIGNOFF_FILE);
+const CONFIRM_PATH = resolve(REPO_ROOT, CONFIRM_FILE);
 
 // Raíz de staging (sobrescribible por entorno para aislar escrituras en tests).
 const STAGING_ROOT = process.env.GEOP_STAGING_ROOT
@@ -206,7 +210,7 @@ function formatReport(gate) {
   return L.join('\n');
 }
 
-function formatDrySummary(summary, signoff) {
+function formatDrySummary(summary, signoff, release) {
   const L = [];
   L.push(`GEOPÓLEM — DRY-RUN de promoción (${summary.scope}) — NO-WRITE / NO-DIFF`);
   L.push('='.repeat(64));
@@ -216,6 +220,11 @@ function formatDrySummary(summary, signoff) {
   L.push(`AUTORIZA (gate):        ${summary.authorized ? 'sí' : 'NO'} (cobertura ${summary.coverage_pct}%)`);
   if (signoff) {
     L.push(`Sign-off humano:        ${signoff.ok ? `sí (${signoff.source}: ${signoff.signoff.approver})` : `NO — ${signoff.reason}`}`);
+  }
+  if (release) {
+    L.push(`Segunda confirmación:   ${release.confirmation_ok ? 'sí' : 'NO'}`);
+    L.push(`Doble gate:             ${release.double_gate_ok ? 'sí' : 'NO'}`);
+    L.push(`Publicación real:       DESHABILITADA (no se publica producción en este sprint)`);
   }
   L.push('');
   L.push(`Se ESCRIBIRÍAN ${summary.counts.files_would_write} archivo(s) (${summary.counts.details} detalle/s):`);
@@ -267,13 +276,39 @@ function runPromoteProduction() {
   }
   // Con sign-off válido, en este sprint SÓLO se ofrece dry-run auditable:
   // nunca se escriben canónicos de producción desde esta herramienta.
+  //
+  // Sprint 18: además del sign-off editorial, evaluamos la SEGUNDA CONFIRMACIÓN
+  // de release (gate independiente, no automatizable en CI). El doble gate se
+  // informa de forma auditable, pero la publicación real sigue DESHABILITADA:
+  // aunque ambos gates estén satisfechos, NO se publica producción.
+  const confirmation = resolveReleaseConfirmation({
+    env: process.env,
+    confirmPath: CONFIRM_PATH,
+    fileExists: (p) => existsSync(p),
+    readFile: (p) => readFileSync(p, 'utf8'),
+  });
+  const release = evaluateProductionRelease({ signoff, confirmation });
   const { seed, gate } = computeGate();
   const bundle = computeBundle(seed, gate);
   const summary = summarizePromotion({ bundle, gate, targets: TARGETS, scope: 'production' });
   process.stderr.write(`[promote] sign-off aceptado (${signoff.source}: ${signoff.signoff.approver}); ejecutando DRY-RUN de producción (no se publica).\n`);
-  if (args.has('--json')) process.stdout.write(`${JSON.stringify({ summary, signoff: { ok: true, source: signoff.source, approver: signoff.signoff.approver } }, null, 2)}\n`);
-  else process.stdout.write(`${formatDrySummary(summary, signoff)}\n`);
-  // Aunque el gate autorice y haya sign-off, no publicamos producción aquí.
+  if (release.confirmation_ok) {
+    process.stderr.write(`[promote] segunda confirmación aceptada (${confirmation.source}: ${confirmation.confirmation.confirmed_by}). Doble gate satisfecho; publicación real DESHABILITADA en este sprint.\n`);
+  } else {
+    process.stderr.write(`[promote] segunda confirmación de release AUSENTE/INVÁLIDA: ${confirmation.reason}\n          Ejemplo: ${CONFIRM_ENV_VAR}="confirmed_by=NOMBRE;scope=production;ack=<frase>;date=YYYY-MM-DD"\n`);
+  }
+  if (args.has('--json')) {
+    process.stdout.write(`${JSON.stringify({
+      summary,
+      signoff: { ok: true, source: signoff.source, approver: signoff.signoff.approver },
+      confirmation: { ok: release.confirmation_ok, source: confirmation.source },
+      release,
+    }, null, 2)}\n`);
+  } else {
+    process.stdout.write(`${formatDrySummary(summary, signoff, release)}\n`);
+  }
+  // Aunque el gate autorice, haya sign-off y segunda confirmación, NO se publica
+  // producción aquí (ready_for_real_release es siempre false en este sprint).
   return summary.authorized ? 0 : 2;
 }
 
