@@ -57,6 +57,11 @@ jobs:
       - name: Validar semilla relacional y regla published-exige-fuente (Sprint 13)
         run: npm run seed:check
 
+      - name: Verificar inventario de conflictos al día (Sprint 14)
+        run: npm run inventory:check
+      - name: Validar semilla verificada y regla causal_links-exigen-fuente (Sprint 14)
+        run: npm run verified:check
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest
