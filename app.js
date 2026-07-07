@@ -1205,12 +1205,12 @@ function CommandBoot({ onEnter }) {
   ];
 
   return html`
-  <div class="min-h-screen relative overflow-hidden bg-carbon-950 boot-grid text-slate-100">
+  <div class="min-h-screen relative overflow-x-hidden bg-carbon-950 boot-grid text-slate-100">
     <div class="absolute inset-0 boot-noise pointer-events-none opacity-70"></div>
     <div class="absolute inset-x-0 top-0 h-px bg-radar/50"></div>
     <div class="absolute inset-x-0 bottom-0 h-px bg-alert/40"></div>
 
-    <main class="relative z-10 min-h-screen max-w-[1500px] mx-auto px-5 lg:px-8 py-6 flex flex-col">
+    <main class="relative z-10 min-h-screen max-w-[1500px] mx-auto px-5 lg:px-8 pt-6 pb-24 lg:pb-8 flex flex-col">
       <header class="flex items-center justify-between gap-4">
         <div class="flex items-center gap-3 text-radar">
           <${BrandMark} size=${34}/>
