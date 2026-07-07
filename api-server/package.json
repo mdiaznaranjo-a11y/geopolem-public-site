@@ -108,7 +108,19 @@
     "education:lms": "node ../scripts/export-lms.mjs",
     "education:lms:json": "node ../scripts/export-lms.mjs --json",
     "education:lms:write": "node ../scripts/export-lms.mjs --write",
-    "education:lms:check": "node ../scripts/export-lms.mjs --check"
+    "education:lms:check": "node ../scripts/export-lms.mjs --check",
+    "education:batch": "node ../scripts/score-rubric-batch.mjs",
+    "education:batch:json": "node ../scripts/score-rubric-batch.mjs --json",
+    "education:batch:write": "node ../scripts/score-rubric-batch.mjs --write",
+    "education:batch:check": "node ../scripts/score-rubric-batch.mjs --check",
+    "education:feedback": "node ../scripts/render-feedback.mjs",
+    "education:backlog": "node ../scripts/build-causal-backlog.mjs",
+    "education:backlog:json": "node ../scripts/build-causal-backlog.mjs --json",
+    "education:backlog:write": "node ../scripts/build-causal-backlog.mjs --write",
+    "education:backlog:check": "node ../scripts/build-causal-backlog.mjs --check",
+    "education:xapi": "node ../scripts/xapi-scorm-mapping.mjs",
+    "education:xapi:json": "node ../scripts/xapi-scorm-mapping.mjs --json",
+    "education:xapi:check": "node ../scripts/xapi-scorm-mapping.mjs"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"
