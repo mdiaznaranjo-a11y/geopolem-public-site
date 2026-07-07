@@ -3,6 +3,7 @@ const APP_SHELL = [
   './',
   './index.html',
   './app.js',
+  './api-adapter.js',
   './data.js',
   './videos.js',
   './worldmap.js',
