@@ -12,10 +12,14 @@ import {
   handleFilters,
 } from './handlers.mjs';
 import { apiError } from './response.mjs';
+import { authorize } from './auth.mjs';
 
 const BASE = '/api/v1';
 
-export async function route(method, pathname, searchParams = new URLSearchParams()) {
+// `context` transporta metadatos de la petición (p. ej. la cabecera
+// Authorization) desde server.mjs. Es opcional para que los tests puedan
+// invocar el router sin sockets ni cabeceras.
+export async function route(method, pathname, searchParams = new URLSearchParams(), context = {}) {
   if (method !== 'GET' && method !== 'HEAD') {
     const e = apiError('bad_request', 'Sólo se admite GET en la API pública de lectura.');
     return { status: 405, body: e.body };
@@ -23,6 +27,10 @@ export async function route(method, pathname, searchParams = new URLSearchParams
 
   // Normaliza barra final.
   const path = pathname.replace(/\/+$/, '') || '/';
+
+  // Política de auth JWT (no-op en modo public; /health siempre público).
+  const denied = authorize(path, context);
+  if (denied) return denied;
 
   if (path === `${BASE}/health`) return handleHealth();
   if (path === `${BASE}/filters`) return handleFilters();

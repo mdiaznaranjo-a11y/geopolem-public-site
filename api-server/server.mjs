@@ -11,6 +11,7 @@
 import { createServer } from 'node:http';
 import { CONFIG, hasDatabase } from './src/config.mjs';
 import { route } from './src/router.mjs';
+import { recordSource } from './src/observability.mjs';
 
 function applyCors(res) {
   res.setHeader('Access-Control-Allow-Origin', CONFIG.corsOrigin);
@@ -34,9 +35,11 @@ const server = createServer(async (req, res) => {
   let result;
   try {
     const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
-    result = await route(req.method, url.pathname, url.searchParams);
+    const context = { authorization: req.headers['authorization'] || null };
+    result = await route(req.method, url.pathname, url.searchParams, context);
   } catch (err) {
     console.error('[geopolem-api] error no controlado:', err);
+    recordSource('unhandled', 'error', null);
     result = {
       status: 500,
       body: { error: { code: 'internal_error', message: 'Error interno del servidor.' } },
@@ -54,6 +57,8 @@ server.listen(CONFIG.port, CONFIG.host, () => {
   const mode = hasDatabase() ? 'PostgreSQL (con fallback estático)' : 'JSON estático (sin DATABASE_URL)';
   console.log(`GEOPÓLEM API v1 escuchando en http://${CONFIG.host}:${CONFIG.port}${''}`);
   console.log(`Modo de datos: ${mode}`);
+  console.log(`Modo de auth: ${CONFIG.authMode}${CONFIG.authMode !== 'public' && !CONFIG.jwtSecret ? ' (¡falta JWT_SECRET! → 500 fail-closed)' : ''}`);
+  console.log(`Observabilidad meta.source: logs ${CONFIG.obsLog ? 'ON' : 'OFF'}, contadores en /api/v1/health`);
   console.log('Endpoints:');
   console.log('  GET /api/v1/health');
   console.log('  GET /api/v1/conflicts');
