@@ -134,7 +134,22 @@
     "education:causal-scale:check": "node ../scripts/causal-crosscheck-scale.mjs --check",
     "education:adr": "node ../scripts/validate-adr.mjs",
     "education:adr:json": "node ../scripts/validate-adr.mjs --json",
-    "education:adr:check": "node ../scripts/validate-adr.mjs"
+    "education:adr:check": "node ../scripts/validate-adr.mjs",
+    "education:i18n:scale": "node ../scripts/validate-i18n-coverage.mjs --manifest=docs/education/i18n/i18n.sprint29.manifest.json --contract=sprint-29-education-i18n-v1",
+    "education:i18n:scale:json": "node ../scripts/validate-i18n-coverage.mjs --manifest=docs/education/i18n/i18n.sprint29.manifest.json --contract=sprint-29-education-i18n-v1 --json",
+    "education:i18n:scale:check": "node ../scripts/validate-i18n-coverage.mjs --manifest=docs/education/i18n/i18n.sprint29.manifest.json --contract=sprint-29-education-i18n-v1",
+    "education:queue": "node ../scripts/build-causal-queue.mjs",
+    "education:queue:json": "node ../scripts/build-causal-queue.mjs --json",
+    "education:queue:write": "node ../scripts/build-causal-queue.mjs --write",
+    "education:queue:check": "node ../scripts/build-causal-queue.mjs --check",
+    "education:dashboard": "node ../scripts/build-teacher-dashboard.mjs",
+    "education:dashboard:json": "node ../scripts/build-teacher-dashboard.mjs --json",
+    "education:dashboard:write": "node ../scripts/build-teacher-dashboard.mjs --write",
+    "education:dashboard:check": "node ../scripts/build-teacher-dashboard.mjs --check",
+    "education:close-prep": "node ../scripts/build-master-close-prep.mjs",
+    "education:close-prep:json": "node ../scripts/build-master-close-prep.mjs --json",
+    "education:close-prep:write": "node ../scripts/build-master-close-prep.mjs --write",
+    "education:close-prep:check": "node ../scripts/build-master-close-prep.mjs --check"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

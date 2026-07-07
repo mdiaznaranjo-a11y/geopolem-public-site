@@ -1,0 +1,26 @@
+{
+  "locale": "es",
+  "namespace": "syllabus",
+  "common": {
+    "learning_outcomes_title": "Resultados de aprendizaje",
+    "sessions_title": "Estructura por sesiones",
+    "cases_title": "Casos incluidos",
+    "assessment_title": "Evaluación",
+    "anonymity_note": "La evaluación de entrada es anónima: no se registran datos personales ni notas reales.",
+    "training_note": "Material de formación. No sustituye la revisión editorial final ni activa producción."
+  },
+  "packages": {
+    "curso-corto": {
+      "title": "Curso corto — Análisis geopolítico de focos energéticos",
+      "audience": "estudiantes de grado / formación continua",
+      "duration": "4 sesiones de 2 h",
+      "summary": "Introduce el marco de análisis, la construcción de matrices causales y la validación de fuentes sobre casos reales del contrato v1."
+    },
+    "seminario-ejecutivo": {
+      "title": "Seminario ejecutivo — Riesgo geoeconómico y decisión",
+      "audience": "directivos / analistas senior",
+      "duration": "1 jornada intensiva (6 h)",
+      "summary": "Traslada el análisis causal a la toma de decisión bajo incertidumbre y a la comunicación ejecutiva de riesgo geoeconómico."
+    }
+  }
+}

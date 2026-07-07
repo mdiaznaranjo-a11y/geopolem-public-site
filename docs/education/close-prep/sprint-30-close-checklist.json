@@ -1,0 +1,177 @@
+{
+  "contract": "sprint-29-master-close-prep-v1",
+  "notice": "Preparación del cierre maestro Sprint 30 (Sprint 29). PREPARA, no ejecuta: no cierra la serie ni activa producción. Estados derivados de señales en vivo deterministas; riesgos declarados explícitamente.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "series": {
+    "from_sprint": 3,
+    "to_sprint": 30,
+    "base_branch": "main"
+  },
+  "source_stage": "rc",
+  "signals": {
+    "i18n_ok": true,
+    "i18n_coverage": 100,
+    "i18n_namespaces": [
+      "glossary",
+      "feedback",
+      "instructor_guide",
+      "syllabus",
+      "dashboard"
+    ],
+    "causal_divergent_rc": 0,
+    "causal_pending_matrix_rc": 0,
+    "canonical_conflicts": 10,
+    "canonical_not_applicable": 0,
+    "canonical_checked": 0,
+    "queue_items": 11,
+    "queue_blocking": 0,
+    "adr_decision": "portable-mapping",
+    "adr_ok": true
+  },
+  "totals": {
+    "checklist_items": 9,
+    "by_area": {
+      "technical": 3,
+      "educational": 3,
+      "editorial": 3
+    },
+    "by_status": {
+      "pending": 3,
+      "by_design": 1,
+      "done": 5
+    },
+    "blockers": 0,
+    "risks": 7,
+    "open_risks": 4,
+    "close_ready": true
+  },
+  "checklist": [
+    {
+      "id": "tech-tests-green",
+      "area": "technical",
+      "title": "Suite educativa (Sprint 24–29) en verde y artefactos --check al día",
+      "status": "pending",
+      "blocker": false,
+      "note": "Verificar en CI que todos los checks educativos pasan antes del cierre."
+    },
+    {
+      "id": "tech-production-blocked",
+      "area": "technical",
+      "title": "Producción permanece BLOQUEADA (sin gates, sin secretos)",
+      "status": "by_design",
+      "blocker": false,
+      "note": "Estado intencional de toda la serie; el cierre NO habilita producción."
+    },
+    {
+      "id": "tech-reversible-arch",
+      "area": "technical",
+      "title": "Arquitectura reversible API real v1 → JSON estático → fallback intacta",
+      "status": "done",
+      "blocker": false,
+      "note": "La capa educativa sólo consume artefactos versionados; no altera web/PWA/mapa/rutas."
+    },
+    {
+      "id": "edu-i18n-coverage",
+      "area": "educational",
+      "title": "Cobertura i18n ES/EN de paquetes clave al 100 % en los namespaces definidos",
+      "status": "done",
+      "blocker": false,
+      "note": "Cobertura 100% sobre namespaces: glossary, feedback, instructor_guide, syllabus, dashboard. Faltan materiales no incluidos aún (ver riesgo i18n-incomplete)."
+    },
+    {
+      "id": "edu-dashboard",
+      "area": "educational",
+      "title": "Panel docente agregado no individualizado disponible y al día",
+      "status": "done",
+      "blocker": false,
+      "note": "Panel agregado sin PII ni tracking individual; verificado con --check."
+    },
+    {
+      "id": "edu-scorm-decision",
+      "area": "educational",
+      "title": "Decisión SCORM vs mapping portable registrada (ADR-0001)",
+      "status": "done",
+      "blocker": false,
+      "note": "SCORM real queda diferido; se mantiene mapping portable (ver riesgo scorm-real)."
+    },
+    {
+      "id": "ed-causal-queue",
+      "area": "editorial",
+      "title": "Cola editorial causal normalizada, estable y sin ítems bloqueantes",
+      "status": "pending",
+      "blocker": false,
+      "note": "11 ítem(s) abiertos, 0 bloqueante(s). Requiere curaduría humana (ver riesgo human-curation)."
+    },
+    {
+      "id": "ed-causal-divergence",
+      "area": "editorial",
+      "title": "Cross-check causal ampliado (rc) sin divergencias de severidad error",
+      "status": "done",
+      "blocker": false,
+      "note": "0 divergencia(s) en rc; 0 pendiente(s) de matriz."
+    },
+    {
+      "id": "ed-human-signoff",
+      "area": "editorial",
+      "title": "Sign-off editorial humano del cierre de la serie (3–30)",
+      "status": "pending",
+      "blocker": false,
+      "note": "Acción humana fuera del alcance automatizable; debe ejecutarse en Sprint 30."
+    }
+  ],
+  "risks": [
+    {
+      "id": "pr-chain",
+      "title": "Cadena de PRs dependientes de la serie de sprints",
+      "severity": "medium",
+      "status": "open",
+      "mitigation": "Ordenar y fusionar los PRs por dependencia antes del cierre maestro; documentar el orden en Sprint 30."
+    },
+    {
+      "id": "pr28-vs-main",
+      "title": "PR #28 pendiente de integración contra main",
+      "severity": "medium",
+      "status": "open",
+      "mitigation": "Confirmar el estado de PR #28 (base del Sprint 29) y su fusión a main como paso previo al cierre."
+    },
+    {
+      "id": "production-blocked",
+      "title": "Producción bloqueada por diseño en toda la serie",
+      "severity": "info",
+      "status": "by_design",
+      "mitigation": "El cierre NO debe habilitar producción; mantener gates desactivados y sin secretos."
+    },
+    {
+      "id": "canonical-causal-links",
+      "title": "canonical carece de causal_links → el cross-check usa rc por defecto",
+      "severity": "high",
+      "status": "open",
+      "mitigation": "Riesgo heredado del Sprint 28. En canonical 0/10 conflictos quedan sin datos causales (not_applicable) y sólo 0 checked; por eso el barrido ampliado y la cola usan stage=rc. Poblar causal_links en canonical antes de promover."
+    },
+    {
+      "id": "scorm-real",
+      "title": "SCORM real vs mapping portable (SCORM diferido)",
+      "severity": "low",
+      "status": "deferred",
+      "mitigation": "ADR-0001 decide \"portable-mapping\". El empaquetado SCORM real queda diferido; el mapping portable es suficiente para la serie."
+    },
+    {
+      "id": "i18n-incomplete",
+      "title": "i18n incompleta más allá de los namespaces clave",
+      "severity": "medium",
+      "status": "partial",
+      "mitigation": "Cobertura 100% en los namespaces definidos (glossary, feedback, instructor_guide, syllabus, dashboard), pero no todos los materiales docentes están traducidos. Ampliar namespaces en futuros sprints reusando el validador escalable."
+    },
+    {
+      "id": "human-curation",
+      "title": "Curaduría humana pendiente de la cola editorial causal",
+      "severity": "medium",
+      "status": "open",
+      "mitigation": "11 ítem(s) en la cola requieren revisión editorial/datos humana; no automatizable. Resolver o aceptar antes del cierre."
+    }
+  ]
+}

@@ -12,11 +12,14 @@
 //   • No activa producción ni contiene secretos.
 //
 // Patrón ESCALABLE: descubre namespaces y locales desde el manifiesto; añadir un
-// idioma o un espacio de nombres no requiere tocar este validador.
+// idioma o un espacio de nombres no requiere tocar este validador. El manifiesto
+// y el contrato esperado son parametrizables, de modo que el Sprint 29 puede
+// validar un manifiesto AMPLIADO (más paquetes clave) reutilizando este motor.
 //
 // Uso:
 //   node scripts/validate-i18n-coverage.mjs            (PASS/FAIL + exit)
 //   node scripts/validate-i18n-coverage.mjs --json      (informe JSON)
+//   node scripts/validate-i18n-coverage.mjs --manifest=<rel> --contract=<id>
 // ---------------------------------------------------------------------------
 
 import { readFileSync, existsSync } from 'node:fs';
@@ -68,11 +71,12 @@ export function diffNamespace(baseObj, targetObj) {
   return { total: baseKeys.length, covered, missing, extra, empty };
 }
 
-export function validateI18n({ repoRoot = REPO_ROOT } = {}) {
+export function validateI18n({ repoRoot = REPO_ROOT, manifestRel = MANIFEST, expectedContract = I18N_CONTRACT } = {}) {
   const absR = (rel) => resolve(repoRoot, rel);
-  const manifest = JSON.parse(readFileSync(absR(MANIFEST), 'utf8'));
+  const manifest = JSON.parse(readFileSync(absR(manifestRel), 'utf8'));
+  const i18nDir = dirname(manifestRel);
   const errors = [];
-  if (manifest.contract !== I18N_CONTRACT) errors.push(`contrato inesperado en manifiesto: ${manifest.contract}`);
+  if (manifest.contract !== expectedContract) errors.push(`contrato inesperado en manifiesto: ${manifest.contract}`);
   const p = manifest.production || {};
   if (p.is_production !== false || p.activates_production_gate !== false || p.contains_secrets !== false) {
     errors.push('el manifiesto i18n no debe activar producción ni declarar secretos');
@@ -85,7 +89,7 @@ export function validateI18n({ repoRoot = REPO_ROOT } = {}) {
   let totalCovered = 0;
 
   for (const ns of manifest.namespaces || []) {
-    const basePathRel = `${I18N_DIR}/${ns.files[base]}`;
+    const basePathRel = `${i18nDir}/${ns.files[base]}`;
     if (!existsSync(absR(basePathRel))) {
       errors.push(`namespace "${ns.id}": falta el fichero base ${basePathRel}`);
       continue;
@@ -96,7 +100,7 @@ export function validateI18n({ repoRoot = REPO_ROOT } = {}) {
 
     const perLocale = [];
     for (const loc of targets) {
-      const rel = ns.files[loc] ? `${I18N_DIR}/${ns.files[loc]}` : null;
+      const rel = ns.files[loc] ? `${i18nDir}/${ns.files[loc]}` : null;
       if (!rel || !existsSync(absR(rel))) {
         errors.push(`namespace "${ns.id}": falta el fichero de locale ${loc} (${rel ?? '—'})`);
         perLocale.push({ locale: loc, file: rel, total: 0, covered: 0, missing: ['<file-missing>'], extra: [], empty: [] });
@@ -118,7 +122,7 @@ export function validateI18n({ repoRoot = REPO_ROOT } = {}) {
 
   const coverage = totalKeys ? Math.round((totalCovered / totalKeys) * 10000) / 100 : 100;
   return {
-    contract: I18N_CONTRACT,
+    contract: expectedContract,
     production: { is_production: false, activates_production_gate: false, contains_secrets: false },
     base_locale: base,
     target_locales: targets,
@@ -131,8 +135,19 @@ export function validateI18n({ repoRoot = REPO_ROOT } = {}) {
 
 // --- CLI --------------------------------------------------------------------
 function main() {
-  const json = process.argv.slice(2).includes('--json');
-  const report = validateI18n();
+  const argv = process.argv.slice(2);
+  const json = argv.includes('--json');
+  const opts = {};
+  for (const a of argv) {
+    if (a.startsWith('--') && a.includes('=')) {
+      const [k, v] = a.slice(2).split('=');
+      opts[k] = v;
+    }
+  }
+  const report = validateI18n({
+    manifestRel: opts.manifest,
+    expectedContract: opts.contract,
+  });
   if (json) {
     process.stdout.write(`${JSON.stringify(report, null, 2)}\n`);
     return report.ok ? 0 : 1;

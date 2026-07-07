@@ -1,0 +1,26 @@
+{
+  "locale": "es",
+  "namespace": "dashboard",
+  "title": "Panel docente agregado",
+  "subtitle": "Vista agregada y anónima: sin seguimiento individual ni datos personales.",
+  "sections": {
+    "overview": "Resumen de la cohorte",
+    "bands": "Distribución por banda",
+    "criteria_weak": "Criterios más débiles",
+    "criteria_strong": "Criterios más fuertes",
+    "review_needed": "Casos con mayor necesidad de revisión",
+    "validity": "Evaluaciones válidas y rechazadas",
+    "i18n": "Estado de cobertura i18n",
+    "causal": "Estado causal agregado"
+  },
+  "labels": {
+    "submitted": "Enviadas",
+    "valid": "Válidas",
+    "rejected": "Rechazadas",
+    "coverage": "Cobertura",
+    "band": "Banda",
+    "criterion": "Criterio",
+    "status": "Estado",
+    "priority": "Prioridad"
+  }
+}

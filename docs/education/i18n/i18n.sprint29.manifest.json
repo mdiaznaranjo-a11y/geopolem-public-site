@@ -1,0 +1,14 @@
+{
+  "contract": "sprint-29-education-i18n-v1",
+  "notice": "Internacionalización AMPLIADA de paquetes docentes clave GEOPÓLEM (Sprint 29). Extiende el patrón escalable ES/EN del Sprint 28 a nuevos espacios de nombres (syllabus de los paquetes y etiquetas del panel docente), reutilizando los namespaces existentes. El locale base 'es' es canónico; 'en' debe cubrir sus claves. No duplica datos geopolíticos: los identificadores de conflicto/caso/paquete permanecen canónicos y se referencian por clave.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "base_locale": "es",
+  "locales": ["es", "en"],
+  "namespaces": [
+    { "id": "glossary", "title": "Glosario educativo y taxonómico", "files": { "es": "glossary.es.json", "en": "glossary.en.json" } },
+    { "id": "feedback", "title": "Plantillas de feedback por banda y nivel", "files": { "es": "feedback.es.json", "en": "feedback.en.json" } },
+    { "id": "instructor_guide", "title": "Guía de instructor", "files": { "es": "instructor-guide.es.json", "en": "instructor-guide.en.json" } },
+    { "id": "syllabus", "title": "Syllabus de paquetes docentes clave", "files": { "es": "syllabus.es.json", "en": "syllabus.en.json" } },
+    { "id": "dashboard", "title": "Etiquetas del panel docente agregado", "files": { "es": "dashboard.es.json", "en": "dashboard.en.json" } }
+  ]
+}

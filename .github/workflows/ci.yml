@@ -120,6 +120,15 @@ jobs:
       - name: ADR SCORM vs mapping portable completo y sin producción (Sprint 28)
         run: npm run education:adr:check
 
+      - name: Cola editorial causal normalizada al día, sin producción (Sprint 29)
+        run: npm run education:queue:check
+      - name: Cobertura i18n ES/EN ampliada de paquetes clave (Sprint 29)
+        run: npm run education:i18n:scale:check
+      - name: Panel docente agregado no individualizado al día (Sprint 29)
+        run: npm run education:dashboard:check
+      - name: Preparación del cierre maestro Sprint 30 al día, sin producción (Sprint 29)
+        run: npm run education:close-prep:check
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest
