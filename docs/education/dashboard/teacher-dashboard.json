@@ -1,0 +1,152 @@
+{
+  "contract": "sprint-29-education-teacher-dashboard-v1",
+  "notice": "Panel docente AGREGADO no individualizado (Sprint 29). Compone outputs deterministas de la capa educativa: sin seguimiento individual, sin datos personales. No activa producción ni contiene secretos.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "source_stage": "rc",
+  "cohort": {
+    "submitted": 5,
+    "valid": 5,
+    "rejected": 0,
+    "mean_percentage": 53,
+    "median_percentage": 58.33,
+    "reject_reasons": []
+  },
+  "by_band": [
+    {
+      "band": "insuficiente",
+      "count": 2,
+      "percentage": 40
+    },
+    {
+      "band": "notable",
+      "count": 1,
+      "percentage": 20
+    },
+    {
+      "band": "suficiente",
+      "count": 2,
+      "percentage": 40
+    }
+  ],
+  "weakest_criteria": [
+    {
+      "rubric_id": "rubrica-uso-mapa",
+      "criterion_id": "deeplinks",
+      "title": "Deep-links",
+      "normalized": 0,
+      "mean_points": 1
+    },
+    {
+      "rubric_id": "rubrica-causalidad",
+      "criterion_id": "evidencia",
+      "title": "Evidencia de soporte",
+      "normalized": 0.17,
+      "mean_points": 1.5
+    },
+    {
+      "rubric_id": "rubrica-uso-mapa",
+      "criterion_id": "localizacion",
+      "title": "Localización de focos",
+      "normalized": 0.33,
+      "mean_points": 2
+    }
+  ],
+  "strongest_criteria": [
+    {
+      "rubric_id": "rubrica-analisis-geopolitico",
+      "criterion_id": "trazabilidad",
+      "title": "Trazabilidad al dato v1",
+      "normalized": 1,
+      "mean_points": 4
+    },
+    {
+      "rubric_id": "rubrica-analisis-geopolitico",
+      "criterion_id": "contexto",
+      "title": "Contexto y encuadre",
+      "normalized": 1,
+      "mean_points": 4
+    },
+    {
+      "rubric_id": "rubrica-validacion-fuentes",
+      "criterion_id": "verificacion",
+      "title": "Verificación",
+      "normalized": 0.67,
+      "mean_points": 3
+    }
+  ],
+  "i18n": {
+    "contract": "sprint-29-education-i18n-v1",
+    "base_locale": "es",
+    "target_locales": [
+      "en"
+    ],
+    "coverage_percentage": 100,
+    "ok": true,
+    "namespaces": [
+      "glossary",
+      "feedback",
+      "instructor_guide",
+      "syllabus",
+      "dashboard"
+    ]
+  },
+  "causal": {
+    "conflicts": 10,
+    "by_status": {
+      "checked": 10,
+      "divergent": 0,
+      "pending_matrix": 0,
+      "not_applicable": 0
+    },
+    "coverage_percentage": 100,
+    "queue_items": 11,
+    "queue_blocking": 0,
+    "queue_by_priority": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 11
+    }
+  },
+  "review_needed": [
+    {
+      "conflict_id": "ia-narrativa",
+      "open_actions": 3,
+      "blocking": 0,
+      "top_priority": "P3"
+    },
+    {
+      "conflict_id": "stablecoins",
+      "open_actions": 3,
+      "blocking": 0,
+      "top_priority": "P3"
+    },
+    {
+      "conflict_id": "rearme-global",
+      "open_actions": 2,
+      "blocking": 0,
+      "top_priority": "P3"
+    },
+    {
+      "conflict_id": "asia-agua",
+      "open_actions": 1,
+      "blocking": 0,
+      "top_priority": "P3"
+    },
+    {
+      "conflict_id": "mena-agua",
+      "open_actions": 1,
+      "blocking": 0,
+      "top_priority": "P3"
+    },
+    {
+      "conflict_id": "sahel",
+      "open_actions": 1,
+      "blocking": 0,
+      "top_priority": "P3"
+    }
+  ]
+}

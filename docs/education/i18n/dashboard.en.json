@@ -1,0 +1,26 @@
+{
+  "locale": "en",
+  "namespace": "dashboard",
+  "title": "Aggregated teacher dashboard",
+  "subtitle": "Aggregated, anonymous view: no individual tracking or personal data.",
+  "sections": {
+    "overview": "Cohort overview",
+    "bands": "Distribution by band",
+    "criteria_weak": "Weakest criteria",
+    "criteria_strong": "Strongest criteria",
+    "review_needed": "Cases needing most review",
+    "validity": "Valid and rejected evaluations",
+    "i18n": "i18n coverage status",
+    "causal": "Aggregated causal status"
+  },
+  "labels": {
+    "submitted": "Submitted",
+    "valid": "Valid",
+    "rejected": "Rejected",
+    "coverage": "Coverage",
+    "band": "Band",
+    "criterion": "Criterion",
+    "status": "Status",
+    "priority": "Priority"
+  }
+}

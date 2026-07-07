@@ -1,0 +1,33 @@
+{
+  "contract": "sprint-29-education-manifest-v1",
+  "notice": "Manifiesto del paquete técnico-educativo del Sprint 29 (panel docente agregado no individualizado, expansión i18n ES/EN de paquetes clave, cola editorial causal normalizada y preparación del cierre maestro Sprint 30). Material de formación: no activa producción ni maneja datos personales.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "teacher_dashboard": {
+    "script": "scripts/build-teacher-dashboard.mjs",
+    "report_json": "docs/education/dashboard/teacher-dashboard.json",
+    "report_md": "docs/education/dashboard/teacher-dashboard.md",
+    "guarantees": ["aggregated_only", "no_pii", "no_individual_tracking", "composes_existing_outputs", "deterministic"]
+  },
+  "i18n_scale": {
+    "manifest": "docs/education/i18n/i18n.sprint29.manifest.json",
+    "base_locale": "es",
+    "locales": ["es", "en"],
+    "namespaces": ["glossary", "feedback", "instructor_guide", "syllabus", "dashboard"],
+    "validator": "scripts/validate-i18n-coverage.mjs",
+    "expected_contract": "sprint-29-education-i18n-v1"
+  },
+  "causal_queue": {
+    "script": "scripts/build-causal-queue.mjs",
+    "queue_json": "docs/education/causal-queue/queue.json",
+    "queue_md": "docs/education/causal-queue/queue.md",
+    "fields": ["id", "conflict_id", "origin", "editorial_status", "priority", "action_type", "blocking", "requires_source", "suggested_owner"],
+    "guarantees": ["deterministic", "no_invented_data", "human_reviewable"]
+  },
+  "master_close_prep": {
+    "script": "scripts/build-master-close-prep.mjs",
+    "checklist_json": "docs/education/close-prep/sprint-30-close-checklist.json",
+    "checklist_md": "docs/education/close-prep/sprint-30-close-checklist.md",
+    "series": { "from_sprint": 3, "to_sprint": 30 },
+    "guarantees": ["prepares_not_executes", "no_production", "deterministic", "risks_declared"]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "locale": "en",
+  "namespace": "syllabus",
+  "common": {
+    "learning_outcomes_title": "Learning outcomes",
+    "sessions_title": "Session structure",
+    "cases_title": "Included cases",
+    "assessment_title": "Assessment",
+    "anonymity_note": "The entry assessment is anonymous: no personal data or real grades are recorded.",
+    "training_note": "Training material. It does not replace final editorial review nor enable production."
+  },
+  "packages": {
+    "curso-corto": {
+      "title": "Short course — Geopolitical analysis of energy hotspots",
+      "audience": "undergraduate students / continuing education",
+      "duration": "4 sessions of 2 h",
+      "summary": "Introduces the analysis framework, causal-matrix construction and source validation over real cases from the v1 contract."
+    },
+    "seminario-ejecutivo": {
+      "title": "Executive seminar — Geoeconomic risk and decision-making",
+      "audience": "executives / senior analysts",
+      "duration": "1 intensive day (6 h)",
+      "summary": "Moves causal analysis toward decision-making under uncertainty and executive communication of geoeconomic risk."
+    }
+  }
+}
