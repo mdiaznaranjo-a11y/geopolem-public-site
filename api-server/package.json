@@ -11,7 +11,9 @@
     "start": "node server.mjs",
     "dev": "node --watch server.mjs",
     "test": "node --test test/",
-    "smoke": "node scripts/smoke.mjs"
+    "smoke": "node scripts/smoke.mjs",
+    "validate:staging": "node scripts/validate-staging.mjs",
+    "healthcheck": "node scripts/healthcheck.mjs"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"
