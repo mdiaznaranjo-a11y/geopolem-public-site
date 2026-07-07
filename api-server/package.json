@@ -78,7 +78,11 @@
     "go-no-go": "node ../scripts/build-go-no-go.mjs",
     "go-no-go:json": "node ../scripts/build-go-no-go.mjs --json",
     "go-no-go:write": "node ../scripts/build-go-no-go.mjs --write",
-    "go-no-go:check": "node ../scripts/build-go-no-go.mjs --check"
+    "go-no-go:check": "node ../scripts/build-go-no-go.mjs --check",
+    "resolution:build": "node ../scripts/build-blocker-resolution.mjs",
+    "resolution:build:json": "node ../scripts/build-blocker-resolution.mjs --json",
+    "resolution:build:write": "node ../scripts/build-blocker-resolution.mjs --write",
+    "resolution:build:check": "node ../scripts/build-blocker-resolution.mjs --check"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

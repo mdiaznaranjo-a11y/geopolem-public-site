@@ -42,6 +42,8 @@ const CHECKS = [
   // Sprint 20: gobernanza editorial (read-only): evidencia y go/no-go.
   { name: 'evidence:build --check', cmd: ['node', '../scripts/build-evidence-packages.mjs', '--check'] },
   { name: 'go-no-go --check', cmd: ['node', '../scripts/build-go-no-go.mjs', '--check'] },
+  // Sprint 21: resolución técnica de bloqueos (read-only): cola resuelta + evidencia + go/no-go.
+  { name: 'resolution:build --check', cmd: ['node', '../scripts/build-blocker-resolution.mjs', '--check'] },
 ];
 
 function main() {

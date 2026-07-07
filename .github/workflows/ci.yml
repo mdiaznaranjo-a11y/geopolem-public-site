@@ -92,6 +92,9 @@ jobs:
       - name: Reporte GO/NO-GO del RC al día y sin producción (Sprint 20)
         run: npm run go-no-go:check
 
+      - name: Resolución técnica de bloqueos del RC al día, sin producción (Sprint 21)
+        run: npm run resolution:build:check
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest
