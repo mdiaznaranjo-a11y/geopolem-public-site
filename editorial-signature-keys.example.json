@@ -1,0 +1,28 @@
+{
+  "contract": "sprint-23-editorial-signature-keys-v1",
+  "is_example": true,
+  "notice": "EJEMPLO NO PRODUCTIVO de registro de claves PÚBLICAS para la firma criptográfica OPCIONAL (Sprint 23). SÓLO contiene claves PÚBLICAS Ed25519 (SPKI DER en base64); NUNCA debe contener claves privadas ni secretos (el validador las rechaza). Estas claves de ejemplo NO corresponden a personas reales y NO habilitan producción. Para un registro real: copia esta estructura a editorial-signature-keys.json (o inyéctalo), sustituye las claves públicas por las reales de reviewer/editor/owner y guarda las claves PRIVADAS fuera del repo. Verificar una firma jamás abre el gate de producción (PRODUCTION_PUBLISH_ENABLED=false).",
+  "keys": [
+    {
+      "key_id": "reviewer-example-2026",
+      "role": "reviewer",
+      "algorithm": "ed25519",
+      "public_key_spki_b64": "MCowBQYDK2VwAyEAjA4ehW6eEcKu+DwVe4xeaKVU0Siq8dIiv7duSM7jV+g=",
+      "owner": "EJEMPLO — clave pública de demostración; sin titular real"
+    },
+    {
+      "key_id": "editor-example-2026",
+      "role": "editor",
+      "algorithm": "ed25519",
+      "public_key_spki_b64": "MCowBQYDK2VwAyEAeSIExUv5T45yIaszhFT/6KjZcmNL5uaFDOeJb5CBRK8=",
+      "owner": "EJEMPLO — clave pública de demostración; sin titular real"
+    },
+    {
+      "key_id": "owner-example-2026",
+      "role": "owner",
+      "algorithm": "ed25519",
+      "public_key_spki_b64": "MCowBQYDK2VwAyEAZT7A4m/6Ad7sNaOg+fTd2xhbMl0dzLHj1eRgCaS+OBA=",
+      "owner": "EJEMPLO — clave pública de demostración; sin titular real"
+    }
+  ]
+}

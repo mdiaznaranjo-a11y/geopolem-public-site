@@ -87,7 +87,11 @@
     "decisions:json": "node ../scripts/evaluate-editorial-decisions.mjs --json",
     "decisions:hash": "node ../scripts/evaluate-editorial-decisions.mjs --hash",
     "decisions:write": "node ../scripts/evaluate-editorial-decisions.mjs --write",
-    "decisions:check": "node ../scripts/evaluate-editorial-decisions.mjs --check"
+    "decisions:check": "node ../scripts/evaluate-editorial-decisions.mjs --check",
+    "gate": "node ../scripts/evaluate-production-gate.mjs",
+    "gate:json": "node ../scripts/evaluate-production-gate.mjs --json",
+    "gate:write": "node ../scripts/evaluate-production-gate.mjs --write",
+    "gate:check": "node ../scripts/evaluate-production-gate.mjs --check"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

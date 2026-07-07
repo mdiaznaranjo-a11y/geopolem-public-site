@@ -16,3 +16,9 @@ api/v1/staging/.rollback/
 .editorial-signoff.json
 # Sprint 22: decisiones editoriales humanas reales (NO versionar, sin secretos; el ejemplo .editorial-decisions.example.json sí se versiona)
 .editorial-decisions.json
+# Sprint 23: registro de claves PÚBLICAS reales de firma (NO versionar; el ejemplo editorial-signature-keys.example.json sí se versiona). NUNCA versionar claves privadas.
+editorial-signature-keys.json
+# Sprint 23: material de firma PRIVADO local (NO versionar jamás)
+*.ed25519.key
+*.private.pem
+.editorial-signatures/
