@@ -68,12 +68,22 @@ export async function listConflicts(filters, pageOpts) {
   return { items, total: all.length, source: 'static' };
 }
 
-export async function getConflict(idOrSlug) {
+export async function getConflict(idOrSlug, opts = {}) {
   if (await useDb()) {
     try {
       const found = await queryLayer.getConflict(idOrSlug);
-      if (found) return { conflict: buildDetail(found), source: 'database' };
-      return { conflict: null, source: 'database' };
+      if (!found) return { conflict: null, source: 'database' };
+      // Detalle enriquecido: relaciones (actores/recursos/chokepoints/causal)
+      // sólo desde la DB, donde existe el esquema relacional. Nunca inventadas.
+      let relations = null;
+      if (opts.withRelations && queryLayer.getConflictRelations) {
+        try {
+          relations = await queryLayer.getConflictRelations(found.id);
+        } catch (err) {
+          logFallback('getConflictRelations', err);
+        }
+      }
+      return { conflict: buildDetail(found, relations), source: 'database' };
     } catch (err) {
       logFallback('getConflict', err);
     }
@@ -155,8 +165,9 @@ export async function health() {
 }
 
 // Detalle: expande un ConflictListItem al shape de ficha del contrato.
-// Sin relaciones en el puente estático → arrays vacíos (no se inventan datos).
-function buildDetail(c) {
+// `relations` (opcional, sólo DB) rellena actores/recursos/chokepoints/causal;
+// sin él (puente estático) → arrays vacíos (no se inventan datos).
+function buildDetail(c, relations = null) {
   return {
     id: c.id,
     slug: c.slug,
@@ -176,11 +187,11 @@ function buildDetail(c) {
       external_involvement: Boolean(c.external_involvement),
     },
     location: c.location,
-    actors: { state: [], non_state: [] },
-    resources: [],
-    chokepoints: [],
-    causal_links: [],
-    sources: [],
+    actors: relations?.actors ?? { state: [], non_state: [] },
+    resources: relations?.resources ?? [],
+    chokepoints: relations?.chokepoints ?? [],
+    causal_links: relations?.causal_links ?? [],
+    sources: relations?.sources ?? [],
     updated_at: c.updated_at,
   };
 }

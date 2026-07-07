@@ -67,6 +67,34 @@ export const CONFIG = {
   // (database|static|error). Desactivable en tests/entornos ruidosos.
   obsLog: bool(process.env.GEOP_OBS_LOG, true),
 
+  // --- Métricas duraderas / Prometheus (Sprint 6) ------------------------
+  // Expone GET /api/v1/metrics en formato de exposición Prometheus (texto)
+  // con contadores acumulados (requests, errores, latencia, auth denials,
+  // ratio de origen). Cero dependencias: se construye el texto a mano.
+  // /metrics queda SIEMPRE público (scraping del recolector), igual que health.
+  metricsEnabled: bool(process.env.GEOP_METRICS_ENABLED, true),
+
+  // --- Rate limiting simple (Sprint 6) -----------------------------------
+  // Ventana fija en memoria (cero dependencias). Pensado para endpoints de
+  // datos cuando la auth está activa; NO afecta al modo public por defecto
+  // (rateLimitMax=0 → desactivado). /health y /metrics quedan siempre exentos.
+  //   GEOP_RATE_LIMIT_MAX        → nº máx. de peticiones por ventana (0 = off).
+  //   GEOP_RATE_LIMIT_WINDOW_MS  → tamaño de la ventana en ms (por defecto 60s).
+  rateLimitMax: num(process.env.GEOP_RATE_LIMIT_MAX, 0),
+  rateLimitWindowMs: num(process.env.GEOP_RATE_LIMIT_WINDOW_MS, 60000),
+
+  // --- Scopes/roles JWT (Sprint 6) ---------------------------------------
+  // Claim de scopes admitido en el JWT: string separada por espacios (estilo
+  // OAuth2 `scope`) y/o array `scopes`. Diferencia lectura pública, CMS futuro
+  // y administración sin bloquear el diseño actual:
+  //   • Endpoints de lectura v1: por defecto NO exigen scope (lectura abierta).
+  //     Si GEOP_SCOPE_READ se define y la auth está activa con token, ese scope
+  //     pasa a ser obligatorio en los endpoints de datos.
+  //   • Endpoints CMS/Admin (Sprint 7): mapa ROUTE_SCOPES ya preparado.
+  scopeRead: process.env.GEOP_SCOPE_READ || '',
+  scopeCms: process.env.GEOP_SCOPE_CMS || 'cms:write',
+  scopeAdmin: process.env.GEOP_SCOPE_ADMIN || 'admin',
+
   // Rutas del puente estático (Sprint 2) usadas como respaldo permanente.
   staticConflictsPath: resolve(REPO_ROOT, 'api/v1/conflicts.json'),
   staticMapPath: resolve(REPO_ROOT, 'api/v1/conflicts/active/map.json'),

@@ -1,0 +1,107 @@
+name: Static bridge refresh (DB → JSON)
+
+# GEOPÓLEM — Regeneración programada del puente estático desde PostgreSQL/PostGIS.
+# ---------------------------------------------------------------------------
+# Ejecuta el exportador del Sprint 5 (api-server/scripts/export-static-bridge.mjs)
+# contra la base de STAGING usando SECRETS (nunca credenciales hardcodeadas),
+# valida el JSON generado y, si hay cambios en api/v1/*.json, abre un Pull
+# Request automático. NUNCA hace push directo a `main` ni acciones destructivas:
+# el cambio queda propuesto para revisión humana.
+#
+# Requisitos (Settings → Secrets and variables → Actions):
+#   • Secret  DATABASE_URL   → cadena de conexión de STAGING (postgres://...).
+#   • Secret  PG_SSL         → "true" para proveedores gestionados (opcional).
+# Si DATABASE_URL no está definido, el job se salta de forma limpia (no falla),
+# de modo que el workflow es seguro incluso antes de configurar el staging.
+# ---------------------------------------------------------------------------
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Sólo validar contra la DB, sin escribir ni abrir PR"
+        type: boolean
+        default: false
+  schedule:
+    # Conservador: una vez al día a las 05:17 UTC (minuto no redondo para no
+    # coincidir con el pico de cron de GitHub). Ajustable según necesidad.
+    - cron: "17 5 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: static-bridge-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Regenerar y proponer PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Comprobar configuración de secretos
+        id: guard
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::DATABASE_URL no configurado; se omite la regeneración (comportamiento seguro)."
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Instalar driver pg
+        if: steps.guard.outputs.run == 'true'
+        working-directory: api-server
+        run: npm install --no-audit --no-fund
+
+      - name: Regenerar puente (dry-run)
+        if: steps.guard.outputs.run == 'true' && inputs.dry_run == true
+        working-directory: api-server
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          PG_SSL: ${{ secrets.PG_SSL }}
+        run: npm run export:static:dry
+
+      - name: Regenerar puente (escritura atómica + validación)
+        if: steps.guard.outputs.run == 'true' && inputs.dry_run != true
+        working-directory: api-server
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          PG_SSL: ${{ secrets.PG_SSL }}
+        run: npm run export:static
+
+      - name: Validar JSON en disco (contrato Sprint 5)
+        if: steps.guard.outputs.run == 'true' && inputs.dry_run != true
+        working-directory: api-server
+        run: npm run export:static:check
+
+      - name: Crear Pull Request si hay cambios
+        if: steps.guard.outputs.run == 'true' && inputs.dry_run != true
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(data): regenerar puente estático desde PostgreSQL (staging)"
+          branch: automation/static-bridge-refresh
+          delete-branch: true
+          title: "Regeneración automática del puente estático (DB → api/v1/*.json)"
+          body: |
+            Regeneración programada del puente estático desde la base de datos de staging
+            (workflow `static-bridge-refresh`).
+
+            - Origen: PostgreSQL/PostGIS (staging), vía `scripts/export-static-bridge.mjs`.
+            - Escritura atómica + validación de contrato (Sprint 5).
+            - No toca `data.js`/FOCOS ni el fallback de la PWA.
+
+            Revisar el diff de `api/v1/conflicts.json` y `api/v1/conflicts/active/map.json`
+            antes de fusionar. Este PR NO se aprueba ni fusiona automáticamente.
+          add-paths: |
+            api/v1/conflicts.json
+            api/v1/conflicts/active/map.json

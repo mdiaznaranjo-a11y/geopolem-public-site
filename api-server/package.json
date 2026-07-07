@@ -13,6 +13,7 @@
     "test": "node --test test/",
     "smoke": "node scripts/smoke.mjs",
     "validate:staging": "node scripts/validate-staging.mjs",
+    "verify:staging": "node scripts/staging-verify.mjs",
     "healthcheck": "node scripts/healthcheck.mjs",
     "export:static": "node scripts/export-static-bridge.mjs",
     "export:static:dry": "node scripts/export-static-bridge.mjs --dry-run",

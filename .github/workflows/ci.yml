@@ -102,6 +102,13 @@ jobs:
         env:
           API_BASE: http://127.0.0.1:8787
         run: npm run validate:staging
+      - name: Verificación de promoción (staging-verify contra DB real, Sprint 6)
+        working-directory: api-server
+        env:
+          API_BASE: http://127.0.0.1:8787
+          EXPECT_SOURCE: database
+          MIN_DB_RATIO: "0.5"
+        run: npm run verify:staging
       - name: Detener api-server
         if: always()
         run: kill "$SERVER_PID" || true
