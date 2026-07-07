@@ -12,3 +12,5 @@ api/v1/staging/.rollback/
 # Sprint 19: screenshots del QA visual opt-in y salidas del RC (regenerables)
 .rc-qa/
 .rc-package/
+# Sprint 20: sign-off editorial real (NO versionar, sin secretos; el ejemplo .editorial-signoff.example.json sí se versiona)
+.editorial-signoff.json

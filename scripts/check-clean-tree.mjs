@@ -39,6 +39,9 @@ const CHECKS = [
   { name: 'promote:check', cmd: ['node', '../scripts/promote-canonical-staging.mjs', '--check'] },
   { name: 'promote dry-run', cmd: ['node', '../scripts/promote-canonical-staging.mjs', '--dry-run', '--json'] },
   { name: 'validate:staging-artifacts', cmd: ['node', '../scripts/validate-staging-artifacts.mjs'] },
+  // Sprint 20: gobernanza editorial (read-only): evidencia y go/no-go.
+  { name: 'evidence:build --check', cmd: ['node', '../scripts/build-evidence-packages.mjs', '--check'] },
+  { name: 'go-no-go --check', cmd: ['node', '../scripts/build-go-no-go.mjs', '--check'] },
 ];
 
 function main() {

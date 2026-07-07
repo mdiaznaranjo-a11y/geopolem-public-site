@@ -71,7 +71,14 @@
     "rc:build:check": "node ../scripts/build-rc-package.mjs --check",
     "qa:rc": "node ../scripts/qa-rc-routes.mjs",
     "qa:rc:json": "node ../scripts/qa-rc-routes.mjs --json",
-    "qa:rc:visual": "node ../scripts/qa-visual-rc.mjs"
+    "qa:rc:visual": "node ../scripts/qa-visual-rc.mjs",
+    "evidence:build": "node ../scripts/build-evidence-packages.mjs",
+    "evidence:build:write": "node ../scripts/build-evidence-packages.mjs --write",
+    "evidence:build:check": "node ../scripts/build-evidence-packages.mjs --check",
+    "go-no-go": "node ../scripts/build-go-no-go.mjs",
+    "go-no-go:json": "node ../scripts/build-go-no-go.mjs --json",
+    "go-no-go:write": "node ../scripts/build-go-no-go.mjs --write",
+    "go-no-go:check": "node ../scripts/build-go-no-go.mjs --check"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

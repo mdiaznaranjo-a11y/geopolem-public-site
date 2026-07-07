@@ -87,6 +87,11 @@ jobs:
       - name: QA funcional del RC (rutas + PWA/offline, sin navegador) (Sprint 19)
         run: npm run qa:rc:json
 
+      - name: Paquetes de evidencia editorial al día (Sprint 20)
+        run: npm run evidence:build:check
+      - name: Reporte GO/NO-GO del RC al día y sin producción (Sprint 20)
+        run: npm run go-no-go:check
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest
