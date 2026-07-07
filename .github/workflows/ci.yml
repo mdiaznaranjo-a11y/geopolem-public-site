@@ -65,6 +65,9 @@ jobs:
       - name: Gate de promoción canónica a staging (Sprint 15)
         run: npm run promote:check
 
+      - name: Validación E2E de artefactos de staging y separación canónica (Sprint 16)
+        run: npm run validate:staging-artifacts
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest
