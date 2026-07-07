@@ -1,0 +1,12 @@
+{
+  "locale": "en",
+  "namespace": "instructor_guide",
+  "sections": {
+    "intro": "This guide helps the instructor use the GEOPÓLEM teaching materials with real cases from the v1 contract.",
+    "objectives": "By the end, learners will be able to build and validate causal links backed by verified sources.",
+    "session_flow": "1) Case context, 2) reading the fiche, 3) building the causal matrix, 4) rubric assessment, 5) feedback by band.",
+    "assessment": "Use the canonical rubrics; scoring is aggregated and anonymous, with no real grades or identities.",
+    "sources_policy": "Every causal claim must cite verified (non-demo) sources; if missing, flag the field as pending.",
+    "anonymity_policy": "Do not collect learners' personal data; assessments must be anonymous or synthetic."
+  }
+}

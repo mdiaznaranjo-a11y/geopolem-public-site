@@ -1,0 +1,11 @@
+{
+  "contract": "sprint-28-causal-crosscheck-scale-v1",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "source_stage": "rc",
+  "total_items": 0,
+  "items": []
+}

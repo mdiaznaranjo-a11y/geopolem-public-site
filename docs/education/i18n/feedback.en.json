@@ -1,0 +1,28 @@
+{
+  "locale": "en",
+  "namespace": "feedback",
+  "bands": {
+    "insuficiente": {
+      "headline": "Foundations to consolidate",
+      "recommendation": "Revisit the fundamentals of the case and rebuild the analysis from verified evidence before moving on."
+    },
+    "suficiente": {
+      "headline": "In progress",
+      "recommendation": "There is a correct base; reinforce justification and the traceability of claims to move up a band."
+    },
+    "notable": {
+      "headline": "Solid",
+      "recommendation": "Solid analysis; polish the weakest criteria and make limits and alternatives explicit to reach excellence."
+    },
+    "excelente": {
+      "headline": "Excellent",
+      "recommendation": "Excellent level; keep the rigour and use this work as a reference to review cases with pending data."
+    }
+  },
+  "levels": {
+    "insuficiente": "Prioritise this criterion: start from a case-bank example and rebuild it with verified evidence.",
+    "suficiente": "Meets the basics: add explicit justification and cite the sources supporting each claim.",
+    "notable": "Good level: contrast with alternatives and flag pending fields to close the gap towards excellent.",
+    "excelente": "Top level: document the criterion and its limits so it serves as a reference for other reviews."
+  }
+}

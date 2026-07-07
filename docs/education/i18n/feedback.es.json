@@ -1,0 +1,28 @@
+{
+  "locale": "es",
+  "namespace": "feedback",
+  "bands": {
+    "insuficiente": {
+      "headline": "Base por consolidar",
+      "recommendation": "Retomar los fundamentos del caso y reconstruir el análisis desde la evidencia verificada antes de avanzar."
+    },
+    "suficiente": {
+      "headline": "En progreso",
+      "recommendation": "Hay una base correcta; reforzar la justificación y la trazabilidad de las afirmaciones para subir de banda."
+    },
+    "notable": {
+      "headline": "Sólido",
+      "recommendation": "Análisis sólido; pulir los criterios más débiles y explicitar límites y alternativas para alcanzar la excelencia."
+    },
+    "excelente": {
+      "headline": "Excelente",
+      "recommendation": "Nivel excelente; mantener el rigor y usar este trabajo como referencia para revisar casos con datos pendientes."
+    }
+  },
+  "levels": {
+    "insuficiente": "Prioriza este criterio: parte de un ejemplo del banco de casos y reconstrúyelo con evidencia verificada.",
+    "suficiente": "Cumple lo básico: añade justificación explícita y cita las fuentes que sustentan cada afirmación.",
+    "notable": "Buen nivel: contrasta con alternativas y marca los campos pendientes para cerrar la brecha hacia excelente.",
+    "excelente": "Nivel máximo: documenta el criterio y los límites para que sirva de referencia a otras revisiones."
+  }
+}

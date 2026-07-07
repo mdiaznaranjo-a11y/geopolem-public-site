@@ -111,6 +111,15 @@ jobs:
       - name: Mapeo opcional xAPI/SCORM coherente y portable (Sprint 27)
         run: npm run education:xapi:check
 
+      - name: Analítica pedagógica agregada y anónima al día, sin PII (Sprint 28)
+        run: npm run education:analytics:check
+      - name: Cobertura i18n ES/EN de materiales docentes clave (Sprint 28)
+        run: npm run education:i18n:check
+      - name: Cross-check causal ampliado a todos los conflictos al día (Sprint 28)
+        run: npm run education:causal-scale:check
+      - name: ADR SCORM vs mapping portable completo y sin producción (Sprint 28)
+        run: npm run education:adr:check
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest

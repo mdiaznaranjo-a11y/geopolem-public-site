@@ -1,0 +1,66 @@
+{
+  "locale": "en",
+  "namespace": "glossary",
+  "terms": {
+    "conflicto": {
+      "term": "Conflict",
+      "definition": "Central unit of the GEOPÓLEM taxonomy; each geopolitical focus analysed with its canonical identifier (slug)."
+    },
+    "chokepoint": {
+      "term": "Chokepoint",
+      "definition": "Critical geographic passage whose control conditions flows of energy, trade or forces."
+    },
+    "causal_link": {
+      "term": "Causal link",
+      "definition": "Explicit relationship between two nodes (actors, resources or chokepoints) backed by evidence and verified sources."
+    },
+    "actor_estatal": {
+      "term": "State actor",
+      "definition": "State or government body involved in the conflict, identified by its canonical slug."
+    },
+    "actor_no_estatal": {
+      "term": "Non-state actor",
+      "definition": "Armed group, organisation or entity without state sovereignty that participates in the conflict dynamics."
+    },
+    "recurso": {
+      "term": "Resource",
+      "definition": "Strategic asset in dispute or dependency (energy, water, minerals) referenced by its slug."
+    },
+    "evidencia": {
+      "term": "Evidence",
+      "definition": "Documentary basis supporting a claim or a causal link; it must be traceable to sources."
+    },
+    "fuente_verificada": {
+      "term": "Verified source",
+      "definition": "Checked reference (not flagged as demo) required by the causal_links-require-source rule."
+    },
+    "rubrica": {
+      "term": "Rubric",
+      "definition": "Assessment instrument with weighted criteria and levels that yields an achievement band."
+    },
+    "banda_logro": {
+      "term": "Achievement band",
+      "definition": "Outcome category (insufficient, sufficient, good, excellent) derived from the weighted percentage."
+    },
+    "matriz_causalidad": {
+      "term": "Causality matrix",
+      "definition": "Teaching representation of a conflict's causal nodes and links, validated against the v1 contract."
+    },
+    "escalada": {
+      "term": "Escalation risk",
+      "definition": "Metric of the likelihood that the conflict increases in intensity."
+    },
+    "dimension_energetica": {
+      "term": "Energy dimension",
+      "definition": "Analytical axis weighting the role of energy in the conflict dynamics."
+    },
+    "region_primaria": {
+      "term": "Primary region",
+      "definition": "Canonical main region of the conflict (mena, eastern_europe, sahel, eurasia, south_asia, global)."
+    },
+    "taxonomia": {
+      "term": "Taxonomy",
+      "definition": "System of canonical categories and fields aligning teaching materials with the GEOPÓLEM database."
+    }
+  }
+}

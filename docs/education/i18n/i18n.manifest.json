@@ -1,0 +1,12 @@
+{
+  "contract": "sprint-28-education-i18n-v1",
+  "notice": "Internacionalización de materiales docentes clave GEOPÓLEM (Sprint 28). Patrón escalable ES/EN por espacios de nombres. El locale base 'es' es canónico; 'en' debe cubrir sus claves. No duplica datos geopolíticos: los identificadores taxonómicos permanecen canónicos.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "base_locale": "es",
+  "locales": ["es", "en"],
+  "namespaces": [
+    { "id": "glossary", "title": "Glosario educativo y taxonómico", "files": { "es": "glossary.es.json", "en": "glossary.en.json" } },
+    { "id": "feedback", "title": "Plantillas de feedback por banda y nivel", "files": { "es": "feedback.es.json", "en": "feedback.en.json" } },
+    { "id": "instructor_guide", "title": "Guía de instructor", "files": { "es": "instructor-guide.es.json", "en": "instructor-guide.en.json" } }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "contract": "sprint-28-education-manifest-v1",
+  "notice": "Manifiesto del paquete técnico-educativo del Sprint 28 (analítica pedagógica agregada y anónima, i18n ES/EN de materiales docentes clave, cross-check causal ampliado a todos los conflictos y decisión SCORM vs mapping portable). Material de formación: no activa producción ni maneja datos personales.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "analytics": {
+    "script": "scripts/education-analytics.mjs",
+    "source_fixtures": "docs/education/batch/fixtures",
+    "report_json": "docs/education/analytics/analytics-report.json",
+    "report_md": "docs/education/analytics/analytics-report.md",
+    "report_csv": "docs/education/analytics/analytics-criteria.csv",
+    "guarantees": ["aggregated_only", "rejects_pii", "no_individual_tracking", "deterministic"]
+  },
+  "i18n": {
+    "manifest": "docs/education/i18n/i18n.manifest.json",
+    "base_locale": "es",
+    "locales": ["es", "en"],
+    "namespaces": ["glossary", "feedback", "instructor_guide"],
+    "validator": "scripts/validate-i18n-coverage.mjs"
+  },
+  "causal_scale": {
+    "script": "scripts/causal-crosscheck-scale.mjs",
+    "report_json": "docs/education/causal-scale/crosscheck-scale.json",
+    "backlog_json": "docs/education/causal-scale/crosscheck-scale.backlog.json",
+    "report_md": "docs/education/causal-scale/crosscheck-scale.md",
+    "statuses": ["checked", "divergent", "pending_matrix", "not_applicable"]
+  },
+  "scorm_decision": {
+    "adr": "docs/education/adr/ADR-0001-scorm-vs-portable-mapping.md",
+    "validator": "scripts/validate-adr.mjs",
+    "decision": "portable-mapping"
+  }
+}

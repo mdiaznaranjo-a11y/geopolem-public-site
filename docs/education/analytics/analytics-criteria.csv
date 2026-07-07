@@ -1,0 +1,17 @@
+rubric_id,criterion_id,title,n,mean_points,normalized
+rubrica-uso-mapa,deeplinks,Deep-links,1,1,0
+rubrica-causalidad,evidencia,Evidencia de soporte,2,1.5,0.17
+rubrica-uso-mapa,localizacion,Localización de focos,1,2,0.33
+rubrica-uso-mapa,offline,Trabajo offline / PWA,1,2,0.33
+rubrica-validacion-fuentes,trazabilidad,Trazabilidad,1,2,0.33
+rubrica-causalidad,confianza,Nivel de confianza y pendientes,2,2.5,0.5
+rubrica-causalidad,nodos,Definición de nodos,2,2.5,0.5
+rubrica-analisis-geopolitico,actores,Identificación de actores,1,3,0.67
+rubrica-analisis-geopolitico,intereses,Intereses y dinámicas de poder,1,3,0.67
+rubrica-causalidad,enlaces,Enlaces y tipo causal,2,3,0.67
+rubrica-uso-mapa,filtros,Uso de filtros,1,3,0.67
+rubrica-validacion-fuentes,identificacion,Identificación de la fuente,1,3,0.67
+rubrica-validacion-fuentes,sesgo,Sesgo y OSINT responsable,1,3,0.67
+rubrica-validacion-fuentes,verificacion,Verificación,1,3,0.67
+rubrica-analisis-geopolitico,contexto,Contexto y encuadre,1,4,1
+rubrica-analisis-geopolitico,trazabilidad,Trazabilidad al dato v1,1,4,1
