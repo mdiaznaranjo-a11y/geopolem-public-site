@@ -15,18 +15,37 @@
 // no se toca. Aquí sólo vive la superficie de escritura administrativa.
 // ---------------------------------------------------------------------------
 
-import { CONFIG } from './config.mjs';
+import { CONFIG, adminWritesConfigState } from './config.mjs';
 import { cmsStatusToDbStatus } from './validation.mjs';
 
-// ¿Podemos escribir de verdad? Requiere el interruptor explícito y DB viva.
-export async function writesEnabled() {
-  if (!CONFIG.adminWritesEnabled) return false;
+// Resuelve el estado EFECTIVO de la escritura en tiempo de ejecución,
+// combinando la configuración (adminWritesConfigState) con la alcanzabilidad
+// real de la DB (Sprint 9, fail-closed):
+//   'prepared'     → escritura deshabilitada (por defecto): sólo valida contrato.
+//   'misconfigured'→ escritura ACTIVADA por el operador pero falta DATABASE_URL.
+//   'unavailable'  → escritura ACTIVADA y con DATABASE_URL, pero la DB no es
+//                    alcanzable (o falta el paquete "pg").
+//   'database'     → escritura ACTIVADA y DB alcanzable: se persiste de verdad.
+//
+// La diferencia clave frente a Sprint 7/8: cuando el operador PIDE escritura
+// real y el entorno está incompleto, NO degradamos silenciosamente a 'prepared'
+// (que devolvía 200 fingiendo éxito). En su lugar señalamos el problema para que
+// el handler responda 503 y el guardado no se dé por hecho.
+export async function writesConfigState() {
+  const cfg = adminWritesConfigState();
+  if (cfg !== 'enabled') return cfg; // 'prepared' | 'misconfigured'
   try {
     const { writeLayer } = await import('./db.mjs');
-    return await writeLayer.available();
+    return (await writeLayer.available()) ? 'database' : 'unavailable';
   } catch {
-    return false;
+    return 'unavailable';
   }
+}
+
+// ¿Podemos escribir de verdad? Requiere el interruptor explícito y DB viva.
+// Se mantiene por compatibilidad; delega en writesConfigState().
+export async function writesEnabled() {
+  return (await writesConfigState()) === 'database';
 }
 
 // Respuesta uniforme del repositorio: { conflict, persisted, mode, note? }.
@@ -37,7 +56,16 @@ function persistedResult(conflict) {
   return { conflict, persisted: true, mode: 'database' };
 }
 
-const PREPARED_NOTE = 'Escritura no habilitada (GEOP_ADMIN_WRITES=false o sin DB): '
+// Resultado fail-closed cuando la escritura fue solicitada pero el entorno está
+// incompleto. `mode` distingue el motivo para diagnóstico del operador.
+function unavailableResult(state) {
+  const reason = state === 'misconfigured'
+    ? 'GEOP_ADMIN_WRITES=true pero falta DATABASE_URL: escritura no persistida (fail-closed).'
+    : 'GEOP_ADMIN_WRITES=true pero la base de datos no es alcanzable: escritura no persistida (fail-closed).';
+  return { conflict: null, persisted: false, mode: 'unavailable', state, reason };
+}
+
+const PREPARED_NOTE = 'Escritura no habilitada (GEOP_ADMIN_WRITES=false): '
   + 'contrato validado, entidad NO persistida.';
 
 // Crea un conflicto (o devuelve la entidad preparada sin persistir).
@@ -45,7 +73,10 @@ export async function createConflict(input) {
   const cmsStatus = input.status || 'draft';
   const dbStatus = cmsStatusToDbStatus(cmsStatus);
 
-  if (await writesEnabled()) {
+  const state = await writesConfigState();
+  if (state === 'misconfigured' || state === 'unavailable') return unavailableResult(state);
+
+  if (state === 'database') {
     const { writeLayer } = await import('./db.mjs');
     const conflict = await writeLayer.createConflict(input, dbStatus);
     return persistedResult({ ...conflict, cms_status: cmsStatus });
@@ -80,7 +111,10 @@ export async function updateConflict(idOrSlug, patch) {
   const cmsStatus = patch.status;
   const dbStatus = cmsStatus ? cmsStatusToDbStatus(cmsStatus) : null;
 
-  if (await writesEnabled()) {
+  const state = await writesConfigState();
+  if (state === 'misconfigured' || state === 'unavailable') return unavailableResult(state);
+
+  if (state === 'database') {
     const { writeLayer } = await import('./db.mjs');
     const conflict = await writeLayer.updateConflict(idOrSlug, patch, dbStatus);
     if (!conflict) return { conflict: null, persisted: false, mode: 'database' };
@@ -100,7 +134,10 @@ export async function updateConflict(idOrSlug, patch) {
 export async function setConflictStatus(idOrSlug, toCmsStatus) {
   const dbStatus = cmsStatusToDbStatus(toCmsStatus);
 
-  if (await writesEnabled()) {
+  const state = await writesConfigState();
+  if (state === 'misconfigured' || state === 'unavailable') return unavailableResult(state);
+
+  if (state === 'database') {
     const { writeLayer } = await import('./db.mjs');
     const conflict = await writeLayer.setStatus(idOrSlug, dbStatus);
     if (!conflict) return { conflict: null, persisted: false, mode: 'database' };

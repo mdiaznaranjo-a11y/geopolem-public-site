@@ -32,12 +32,24 @@ function writeMeta(result) {
   };
 }
 
+// Fail-closed (Sprint 9): la escritura se solicitó (GEOP_ADMIN_WRITES=true) pero
+// el entorno está incompleto (sin DATABASE_URL) o la DB no es alcanzable. NO se
+// finge un guardado: se responde 503 con el motivo. Devuelve null si el
+// resultado no es de tipo 'unavailable'.
+function unavailableError(result) {
+  if (result.mode !== 'unavailable') return null;
+  const e = apiError('service_unavailable', result.reason, { state: result.state });
+  return { status: e.status, body: e.body };
+}
+
 // POST /api/v1/admin/conflicts
 export async function handleCreateConflict(body) {
   const { valid, errors, value } = validateConflictInput(body, { partial: false });
   if (!valid) return validationError(errors);
 
   const result = await admin.createConflict(value);
+  const unavailable = unavailableError(result);
+  if (unavailable) return unavailable;
   const status = result.persisted ? 201 : 200;
   return { status, body: ok(result.conflict, writeMeta(result)) };
 }
@@ -56,6 +68,8 @@ export async function handleUpdateConflict(idOrSlug, body) {
   }
 
   const result = await admin.updateConflict(idOrSlug, value);
+  const unavailable = unavailableError(result);
+  if (unavailable) return unavailable;
   if (result.mode === 'database' && !result.conflict) {
     const e = apiError('not_found', 'No existe un conflicto con ese id/slug.', { field: 'id', value: idOrSlug });
     return { status: e.status, body: e.body };
@@ -75,6 +89,8 @@ export async function handleSetConflictStatus(idOrSlug, body) {
   if (!t.valid) return validationError(t.errors);
 
   const result = await admin.setConflictStatus(idOrSlug, to);
+  const unavailable = unavailableError(result);
+  if (unavailable) return unavailable;
   if (result.mode === 'database' && !result.conflict) {
     const e = apiError('not_found', 'No existe un conflicto con ese id/slug.', { field: 'id', value: idOrSlug });
     return { status: e.status, body: e.body };

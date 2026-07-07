@@ -41,6 +41,10 @@ jobs:
           node-version: "20"
       - name: Tests de contrato (node:test, sin DB)
         run: npm test
+      - name: Lint estático de migraciones (Sprint 9, sin DB)
+        run: npm run migrate:check
+      - name: E2E flujo editorial (Sprint 8, sin DB)
+        run: npm run e2e:editorial
       - name: Smoke HTTP end-to-end (sin DB)
         run: npm run smoke
       - name: Validación de staging en modo fallback (sin DB)
@@ -77,11 +81,25 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y postgresql-client
       - name: Aplicar esquema (PostGIS)
         run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f api-server/db/schema.sql
+      - name: Aplicar migraciones relacionales idempotentes (Sprint 9)
+        run: |
+          for f in api-server/db/migrations/*.sql; do
+            echo "psql -f $f"
+            psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f "$f"
+          done
+      - name: Reaplicar migraciones (verifica idempotencia)
+        run: |
+          for f in api-server/db/migrations/*.sql; do
+            psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f "$f"
+          done
       - name: Aplicar semilla
         run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f api-server/db/seed.sql
       - name: Instalar driver pg
         working-directory: api-server
         run: npm install --no-audit --no-fund
+      - name: Aplicar migraciones vía runner (Sprint 9, requiere pg)
+        working-directory: api-server
+        run: npm run migrate
       - name: Validar DB directamente (PostGIS + esquema + semilla)
         working-directory: api-server
         run: npm run validate:staging

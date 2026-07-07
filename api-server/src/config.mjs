@@ -123,3 +123,19 @@ export function hasDatabase() {
 export function authEnabled() {
   return CONFIG.authMode === 'optional' || CONFIG.authMode === 'required';
 }
+
+// Estado de CONFIGURACIÓN de la escritura CMS/Admin (Sprint 9). Sólo evalúa el
+// entorno (no comprueba la conexión real a la DB, que es responsabilidad de la
+// capa de escritura en tiempo de ejecución). Sirve para aplicar la política
+// "fail-closed": si un operador ACTIVA la escritura pero el entorno está
+// incompleto, la superficie admin NO debe fingir un guardado ("prepared") sino
+// señalar la mala configuración.
+//   'prepared'      → GEOP_ADMIN_WRITES=false (por defecto, seguro): sólo valida.
+//   'misconfigured' → GEOP_ADMIN_WRITES=true pero falta DATABASE_URL.
+//   'enabled'       → GEOP_ADMIN_WRITES=true y hay DATABASE_URL (la alcanzabilidad
+//                     de la DB se verifica aparte al ejecutar la escritura).
+export function adminWritesConfigState() {
+  if (!CONFIG.adminWritesEnabled) return 'prepared';
+  if (!CONFIG.databaseUrl) return 'misconfigured';
+  return 'enabled';
+}

@@ -49,6 +49,33 @@ export function dbStatusToCmsStatus(dbStatus) {
   }
 }
 
+// --- Regla de publicación (Sprint 9) ---------------------------------------
+// Sólo el estado editorial `published` alimenta las vistas públicas y el export
+// estático. Esto es coherente con el resto de la arquitectura:
+//   • cmsStatusToDbStatus('published') === 'active'.
+//   • La vista v_active_conflicts_map filtra WHERE status = 'active'.
+//   • export-static-bridge sólo emite features con status === 'active'.
+// Se centralizan aquí como funciones PURAS para poder testear la regla y para
+// que el export/consumidores compartan una única fuente de verdad.
+export const PUBLISHABLE_CMS_STATUSES = ['published'];
+
+// ¿Un estado editorial es visible públicamente?
+export function isPubliclyVisible(cmsStatus) {
+  return PUBLISHABLE_CMS_STATUSES.includes(cmsStatus);
+}
+
+// Enum(s) persistentes considerados públicos. Con el mapeo por defecto es
+// 'active'; si se aplica la migración aditiva 0001 y se persiste 'published'
+// tal cual, ese valor también cuenta como público.
+export function publicDbStatuses() {
+  return ['active', 'published'];
+}
+
+// ¿Un valor del enum persistente `geopolem_status` es público?
+export function dbStatusIsPublic(dbStatus) {
+  return publicDbStatuses().includes(dbStatus);
+}
+
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function isPlainObject(v) {
