@@ -82,7 +82,12 @@
     "resolution:build": "node ../scripts/build-blocker-resolution.mjs",
     "resolution:build:json": "node ../scripts/build-blocker-resolution.mjs --json",
     "resolution:build:write": "node ../scripts/build-blocker-resolution.mjs --write",
-    "resolution:build:check": "node ../scripts/build-blocker-resolution.mjs --check"
+    "resolution:build:check": "node ../scripts/build-blocker-resolution.mjs --check",
+    "decisions": "node ../scripts/evaluate-editorial-decisions.mjs",
+    "decisions:json": "node ../scripts/evaluate-editorial-decisions.mjs --json",
+    "decisions:hash": "node ../scripts/evaluate-editorial-decisions.mjs --hash",
+    "decisions:write": "node ../scripts/evaluate-editorial-decisions.mjs --write",
+    "decisions:check": "node ../scripts/evaluate-editorial-decisions.mjs --check"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"
