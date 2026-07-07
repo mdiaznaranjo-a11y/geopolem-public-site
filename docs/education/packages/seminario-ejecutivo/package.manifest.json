@@ -1,0 +1,28 @@
+{
+  "contract": "sprint-26-education-package-v1",
+  "id": "seminario-ejecutivo",
+  "title": "Seminario ejecutivo — Riesgo geoeconómico y decisión",
+  "audience": "directivos / analistas senior",
+  "duration": "1 jornada intensiva (6 h)",
+  "notice": "Paquete docente distribuible (Sprint 26). Material de FORMACIÓN: no sustituye la revisión editorial ni activa producción.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "syllabus": "docs/education/packages/seminario-ejecutivo/syllabus.md",
+  "lab_guide": "docs/education/packages/seminario-ejecutivo/guia-laboratorio.md",
+  "cases": [
+    {
+      "id": "stablecoins",
+      "fiche": "docs/education/case-bank/fichas/stablecoins.rc.md",
+      "matrix": "docs/education/case-bank/matrices/stablecoins.matrix.json"
+    },
+    {
+      "id": "rearme-global",
+      "fiche": "docs/education/case-bank/fichas/rearme-global.rc.md",
+      "matrix": "docs/education/case-bank/matrices/rearme-global.matrix.json"
+    }
+  ],
+  "rubrics": [
+    "docs/education/rubrics/rubrica-politica-energetica.json",
+    "docs/education/rubrics/rubrica-causalidad.json",
+    "docs/education/rubrics/rubrica-comunicacion.json"
+  ]
+}

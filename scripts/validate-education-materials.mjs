@@ -22,6 +22,8 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { exportFiche } from './export-education-fiches.mjs';
 import { validateRubric } from './validate-education-rubrics.mjs';
+import { scoreRubric, sampleEvaluation } from './score-rubric.mjs';
+import { crosscheckAll } from './validate-causal-crosscheck.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, '..');
@@ -299,6 +301,49 @@ if (existsSync(abs(SPRINT25_MANIFEST_REL))) {
   }
   check('sprint25: artefactos sin secretos embebidos', s25Secrets.length === 0, s25Secrets.join('; '));
   check('sprint25: artefactos sin activación de producción', s25Prod.length === 0, s25Prod.join('; '));
+
+  // --- 7. Sprint 26: puntuación de rúbricas + validación cruzada causal -----
+  // 7.1 El motor de puntuación puntúa cada rúbrica con una evaluación sintética.
+  const rIndexRel26 = s25.rubrics.index;
+  if (existsSync(abs(rIndexRel26))) {
+    let scoringOk = true, scoringBad = [];
+    for (const entry of readJson(rIndexRel26).rubrics || []) {
+      if (!existsSync(abs(entry.file))) continue;
+      const rubric = readJson(entry.file);
+      try {
+        const result = scoreRubric(rubric, sampleEvaluation(rubric));
+        if (!(result.percentage >= 0 && result.percentage <= 100)) { scoringOk = false; scoringBad.push(`${entry.id}: % fuera de rango`); }
+        if (result.total > result.max_total + 1e-9) { scoringOk = false; scoringBad.push(`${entry.id}: total > max`); }
+        if (result.production.is_production !== false) { scoringOk = false; scoringBad.push(`${entry.id}: activa producción`); }
+      } catch (e) {
+        scoringOk = false; scoringBad.push(`${entry.id}: ${e.message}`);
+      }
+    }
+    check('sprint26: motor de puntuación válido para todas las rúbricas', scoringOk, scoringBad.join('; '));
+  }
+
+  // 7.2 Validación cruzada matrices ↔ causal_links (RC): sin errores de severidad.
+  const cross = crosscheckAll({ stage: 'rc' });
+  check('sprint26: validación cruzada matrices↔causal_links sin errores', cross.totals.by_severity.error === 0,
+    `errores=${cross.totals.by_severity.error} avisos=${cross.totals.by_severity.warning}`);
+  check('sprint26: validación cruzada no activa producción', cross.production.is_production === false);
+
+  // 7.3 Paquetes docentes distribuibles (curso corto + seminario ejecutivo).
+  const PACKAGES_INDEX_REL = 'docs/education/packages/packages.index.json';
+  if (existsSync(abs(PACKAGES_INDEX_REL))) {
+    const pkgIdx = readJson(PACKAGES_INDEX_REL);
+    check('sprint26: índice de paquetes contrato', pkgIdx.contract === 'sprint-26-education-packages-v1', pkgIdx.contract);
+    check('sprint26: >=2 paquetes declarados', Array.isArray(pkgIdx.packages) && pkgIdx.packages.length >= 2, `${pkgIdx.packages?.length}`);
+    let pkgOk = true, pkgBad = [];
+    for (const p of pkgIdx.packages || []) {
+      if (!existsSync(abs(p.manifest))) { pkgOk = false; pkgBad.push(`falta manifest: ${p.id}`); continue; }
+      const man = readJson(p.manifest);
+      for (const rel of [man.syllabus, ...(man.rubrics || []), ...(man.cases || []).map((c) => c.matrix), man.lab_guide]) {
+        if (rel && !existsSync(abs(rel))) { pkgOk = false; pkgBad.push(`${p.id}: falta ${rel}`); }
+      }
+    }
+    check('sprint26: paquetes docentes completos (syllabus, rúbricas, casos, laboratorio)', pkgOk, pkgBad.join('; '));
+  }
 }
 
 finish();

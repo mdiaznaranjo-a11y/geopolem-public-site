@@ -1,0 +1,264 @@
+{
+  "contract": "sprint-26-lms-manifest-v1",
+  "notice": "Paquete LMS portable GEOPÓLEM (Sprint 26). Formato independiente de plataforma: referencias + texto, sin binarios. Material de FORMACIÓN: no sustituye la revisión editorial ni activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "source": {
+    "education_manifest": "docs/education/education.manifest.json",
+    "sprint25_manifest": "docs/education/education.sprint25.manifest.json",
+    "case_bank_index": "docs/education/case-bank/case-bank.index.json",
+    "rubrics_index": "docs/education/rubrics/rubrics.index.json"
+  },
+  "totals": {
+    "modules": 6,
+    "cases": 10,
+    "rubrics": 6
+  },
+  "modules": [
+    {
+      "id": "curso-corto",
+      "title": "Curso corto GEOPÓLEM",
+      "file": "docs/education/formatos/curso-corto.md"
+    },
+    {
+      "id": "seminario-ejecutivo",
+      "title": "Seminario ejecutivo",
+      "file": "docs/education/formatos/seminario-ejecutivo.md"
+    },
+    {
+      "id": "dossier-docente",
+      "title": "Dossier docente",
+      "file": "docs/education/formatos/dossier-docente.md"
+    },
+    {
+      "id": "laboratorio-mapa-interactivo",
+      "title": "Laboratorio de mapa interactivo",
+      "file": "docs/education/formatos/laboratorio-mapa-interactivo.md"
+    },
+    {
+      "id": "caso-de-estudio",
+      "title": "Formato de caso de estudio",
+      "file": "docs/education/formatos/caso-de-estudio.md"
+    },
+    {
+      "id": "guia-de-evaluacion",
+      "title": "Guía de evaluación",
+      "file": "docs/education/formatos/guia-de-evaluacion.md"
+    }
+  ],
+  "rubrics": [
+    {
+      "id": "rubrica-analisis-geopolitico",
+      "dimension": "analisis-geopolitico",
+      "file": "docs/education/rubrics/rubrica-analisis-geopolitico.json",
+      "title": "Rúbrica de análisis geopolítico",
+      "criteria": [
+        "contexto",
+        "actores",
+        "intereses",
+        "trazabilidad"
+      ],
+      "levels": [
+        "insuficiente",
+        "suficiente",
+        "notable",
+        "excelente"
+      ]
+    },
+    {
+      "id": "rubrica-politica-energetica",
+      "dimension": "politica-energetica",
+      "file": "docs/education/rubrics/rubrica-politica-energetica.json",
+      "title": "Rúbrica de política energética",
+      "criteria": [
+        "recursos",
+        "chokepoints",
+        "impacto",
+        "trazabilidad"
+      ],
+      "levels": [
+        "insuficiente",
+        "suficiente",
+        "notable",
+        "excelente"
+      ]
+    },
+    {
+      "id": "rubrica-validacion-fuentes",
+      "dimension": "validacion-fuentes",
+      "file": "docs/education/rubrics/rubrica-validacion-fuentes.json",
+      "title": "Rúbrica de validación de fuentes",
+      "criteria": [
+        "identificacion",
+        "verificacion",
+        "trazabilidad",
+        "sesgo"
+      ],
+      "levels": [
+        "insuficiente",
+        "suficiente",
+        "notable",
+        "excelente"
+      ]
+    },
+    {
+      "id": "rubrica-causalidad",
+      "dimension": "causalidad",
+      "file": "docs/education/rubrics/rubrica-causalidad.json",
+      "title": "Rúbrica de razonamiento causal",
+      "criteria": [
+        "nodos",
+        "enlaces",
+        "evidencia",
+        "confianza"
+      ],
+      "levels": [
+        "insuficiente",
+        "suficiente",
+        "notable",
+        "excelente"
+      ]
+    },
+    {
+      "id": "rubrica-uso-mapa",
+      "dimension": "uso-mapa",
+      "file": "docs/education/rubrics/rubrica-uso-mapa.json",
+      "title": "Rúbrica de uso del mapa interactivo",
+      "criteria": [
+        "localizacion",
+        "filtros",
+        "deeplinks",
+        "offline"
+      ],
+      "levels": [
+        "insuficiente",
+        "suficiente",
+        "notable",
+        "excelente"
+      ]
+    },
+    {
+      "id": "rubrica-comunicacion",
+      "dimension": "comunicacion",
+      "file": "docs/education/rubrics/rubrica-comunicacion.json",
+      "title": "Rúbrica de comunicación analítica",
+      "criteria": [
+        "claridad",
+        "estructura",
+        "evidencia",
+        "honestidad"
+      ],
+      "levels": [
+        "insuficiente",
+        "suficiente",
+        "notable",
+        "excelente"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "asia-agua",
+      "title": "Asia del Sur — Glaciares e Indo",
+      "conflict_type": "agua",
+      "region": "asia_del_sur",
+      "fiche_md": "docs/education/case-bank/fichas/asia-agua.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/asia-agua.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/asia-agua.matrix.json",
+      "causal_links": 1
+    },
+    {
+      "id": "ia-narrativa",
+      "title": "IA / Riesgo narrativo global",
+      "conflict_type": "ia",
+      "region": "global",
+      "fiche_md": "docs/education/case-bank/fichas/ia-narrativa.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/ia-narrativa.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/ia-narrativa.matrix.json",
+      "causal_links": 1
+    },
+    {
+      "id": "isr-gaza-irn",
+      "title": "Israel – Gaza – Irán",
+      "conflict_type": "conflicto",
+      "region": "mena",
+      "fiche_md": "docs/education/case-bank/fichas/isr-gaza-irn.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/isr-gaza-irn.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/isr-gaza-irn.matrix.json",
+      "causal_links": 1
+    },
+    {
+      "id": "istanbul",
+      "title": "Canal de Estambul / Bósforo",
+      "conflict_type": "chokepoint",
+      "region": "eurasia",
+      "fiche_md": "docs/education/case-bank/fichas/istanbul.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/istanbul.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/istanbul.matrix.json",
+      "causal_links": 1
+    },
+    {
+      "id": "mena-agua",
+      "title": "MENA — Estrés hídrico estructural",
+      "conflict_type": "agua",
+      "region": "mena",
+      "fiche_md": "docs/education/case-bank/fichas/mena-agua.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/mena-agua.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/mena-agua.matrix.json",
+      "causal_links": 1
+    },
+    {
+      "id": "rearme-global",
+      "title": "Rearme global — gasto militar récord",
+      "conflict_type": "defensa",
+      "region": "global",
+      "fiche_md": "docs/education/case-bank/fichas/rearme-global.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/rearme-global.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/rearme-global.matrix.json",
+      "causal_links": 1
+    },
+    {
+      "id": "red-sea",
+      "title": "Mar Rojo / Bab el-Mandeb",
+      "conflict_type": "chokepoint",
+      "region": "mena",
+      "fiche_md": "docs/education/case-bank/fichas/red-sea.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/red-sea.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/red-sea.matrix.json",
+      "causal_links": 1
+    },
+    {
+      "id": "sahel",
+      "title": "Sahel — Juntas militares y yihadismo",
+      "conflict_type": "conflicto",
+      "region": "sahel",
+      "fiche_md": "docs/education/case-bank/fichas/sahel.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/sahel.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/sahel.matrix.json",
+      "causal_links": 1
+    },
+    {
+      "id": "stablecoins",
+      "title": "Stablecoins / desinformación financiera",
+      "conflict_type": "ia",
+      "region": "global",
+      "fiche_md": "docs/education/case-bank/fichas/stablecoins.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/stablecoins.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/stablecoins.matrix.json",
+      "causal_links": 1
+    },
+    {
+      "id": "ukr-rus",
+      "title": "Ucrania – Rusia",
+      "conflict_type": "conflicto",
+      "region": "europa_del_este",
+      "fiche_md": "docs/education/case-bank/fichas/ukr-rus.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/ukr-rus.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/ukr-rus.matrix.json",
+      "causal_links": 1
+    }
+  ]
+}

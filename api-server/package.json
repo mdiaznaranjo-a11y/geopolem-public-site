@@ -100,7 +100,15 @@
     "education:casebank:write": "node ../scripts/build-case-bank.mjs --write",
     "education:casebank:check": "node ../scripts/build-case-bank.mjs --check",
     "education:rubrics:validate": "node ../scripts/validate-education-rubrics.mjs",
-    "education:rubrics:validate:json": "node ../scripts/validate-education-rubrics.mjs --json"
+    "education:rubrics:validate:json": "node ../scripts/validate-education-rubrics.mjs --json",
+    "education:score": "node ../scripts/score-rubric.mjs",
+    "education:crosscheck": "node ../scripts/validate-causal-crosscheck.mjs",
+    "education:crosscheck:json": "node ../scripts/validate-causal-crosscheck.mjs --json",
+    "education:crosscheck:check": "node ../scripts/validate-causal-crosscheck.mjs",
+    "education:lms": "node ../scripts/export-lms.mjs",
+    "education:lms:json": "node ../scripts/export-lms.mjs --json",
+    "education:lms:write": "node ../scripts/export-lms.mjs --write",
+    "education:lms:check": "node ../scripts/export-lms.mjs --check"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

@@ -1,0 +1,97 @@
+rubric_id,criterion_id,criterion_title,weight,level_id,level_points,descriptor
+rubrica-analisis-geopolitico,contexto,Contexto y encuadre,0.25,insuficiente,1,No sitúa el foco en su contexto regional ni temporal.
+rubrica-analisis-geopolitico,contexto,Contexto y encuadre,0.25,suficiente,2,Describe el contexto básico con imprecisiones.
+rubrica-analisis-geopolitico,contexto,Contexto y encuadre,0.25,notable,3,"Encuadra el foco con región, actores y temporalidad correctas."
+rubrica-analisis-geopolitico,contexto,Contexto y encuadre,0.25,excelente,4,"Encuadre riguroso que integra región, actores, recursos y evolución."
+rubrica-analisis-geopolitico,actores,Identificación de actores,0.25,insuficiente,1,Omite actores clave o los confunde.
+rubrica-analisis-geopolitico,actores,Identificación de actores,0.25,suficiente,2,Identifica actores estatales pero ignora no estatales relevantes.
+rubrica-analisis-geopolitico,actores,Identificación de actores,0.25,notable,3,Identifica actores estatales y no estatales con sus roles.
+rubrica-analisis-geopolitico,actores,Identificación de actores,0.25,excelente,4,"Mapea actores, roles y alineaciones y justifica su relevancia."
+rubrica-analisis-geopolitico,intereses,Intereses y dinámicas de poder,0.25,insuficiente,1,No explica los intereses en juego.
+rubrica-analisis-geopolitico,intereses,Intereses y dinámicas de poder,0.25,suficiente,2,Menciona intereses de forma genérica.
+rubrica-analisis-geopolitico,intereses,Intereses y dinámicas de poder,0.25,notable,3,Explica intereses y tensiones de los principales actores.
+rubrica-analisis-geopolitico,intereses,Intereses y dinámicas de poder,0.25,excelente,4,"Analiza intereses, incentivos y escenarios de escalada/desescalada."
+rubrica-analisis-geopolitico,trazabilidad,Trazabilidad al dato v1,0.25,insuficiente,1,No referencia campos ni fuentes del contrato v1.
+rubrica-analisis-geopolitico,trazabilidad,Trazabilidad al dato v1,0.25,suficiente,2,Cita algún campo pero sin trazabilidad clara.
+rubrica-analisis-geopolitico,trazabilidad,Trazabilidad al dato v1,0.25,notable,3,"Ancla el análisis en campos reales (actors, metrics, causal_links)."
+rubrica-analisis-geopolitico,trazabilidad,Trazabilidad al dato v1,0.25,excelente,4,Cada afirmación se ancla a campos/fuentes verificadas y marca lo pendiente.
+rubrica-politica-energetica,recursos,Recursos energéticos,0.3,insuficiente,1,No identifica recursos energéticos relevantes.
+rubrica-politica-energetica,recursos,Recursos energéticos,0.3,suficiente,2,Identifica recursos pero sin conectar con el foco.
+rubrica-politica-energetica,recursos,Recursos energéticos,0.3,notable,3,Relaciona recursos (`resources`) con el foco y su relevancia.
+rubrica-politica-energetica,recursos,Recursos energéticos,0.3,excelente,4,"Analiza recursos, criticidad y su papel en la seguridad energética."
+rubrica-politica-energetica,chokepoints,Chokepoints y flujos,0.3,insuficiente,1,Ignora los chokepoints o su relevancia energética.
+rubrica-politica-energetica,chokepoints,Chokepoints y flujos,0.3,suficiente,2,Menciona chokepoints sin analizar flujos.
+rubrica-politica-energetica,chokepoints,Chokepoints y flujos,0.3,notable,3,Vincula chokepoints con `energy_flow_relevance` y rutas.
+rubrica-politica-energetica,chokepoints,Chokepoints y flujos,0.3,excelente,4,Modela el impacto de los chokepoints sobre flujos y precios.
+rubrica-politica-energetica,impacto,Impacto sistémico,0.2,insuficiente,1,No explica impactos energéticos.
+rubrica-politica-energetica,impacto,Impacto sistémico,0.2,suficiente,2,Describe impactos de forma vaga.
+rubrica-politica-energetica,impacto,Impacto sistémico,0.2,notable,3,Explica impactos energéticos con encadenamientos plausibles.
+rubrica-politica-energetica,impacto,Impacto sistémico,0.2,excelente,4,Cuantifica o acota impactos y escenarios de sustitución.
+rubrica-politica-energetica,trazabilidad,Trazabilidad al dato v1,0.2,insuficiente,1,No referencia campos energéticos del contrato v1.
+rubrica-politica-energetica,trazabilidad,Trazabilidad al dato v1,0.2,suficiente,2,Cita `dimensions.energy` sin más soporte.
+rubrica-politica-energetica,trazabilidad,Trazabilidad al dato v1,0.2,notable,3,Ancla el análisis en `resources`/`chokepoints` reales.
+rubrica-politica-energetica,trazabilidad,Trazabilidad al dato v1,0.2,excelente,4,Traza cada afirmación a campos/fuentes verificadas y marca pendientes.
+rubrica-validacion-fuentes,identificacion,Identificación de la fuente,0.25,insuficiente,1,"No identifica editor, URL ni fecha de acceso."
+rubrica-validacion-fuentes,identificacion,Identificación de la fuente,0.25,suficiente,2,Identifica la fuente de forma incompleta.
+rubrica-validacion-fuentes,identificacion,Identificación de la fuente,0.25,notable,3,"Registra `slug`, `publisher`, `url` y `accessed_at`."
+rubrica-validacion-fuentes,identificacion,Identificación de la fuente,0.25,excelente,4,Registro completo y distingue fuente primaria de secundaria.
+rubrica-validacion-fuentes,verificacion,Verificación,0.3,insuficiente,1,Usa fuentes sin verificar o marcadas como demo.
+rubrica-validacion-fuentes,verificacion,Verificación,0.3,suficiente,2,Verifica parcialmente sin criterio explícito.
+rubrica-validacion-fuentes,verificacion,Verificación,0.3,notable,3,Confirma `verification=verified` y descarta demo.
+rubrica-validacion-fuentes,verificacion,Verificación,0.3,excelente,4,Verifica y triangula con al menos dos fuentes independientes.
+rubrica-validacion-fuentes,trazabilidad,Trazabilidad,0.25,insuficiente,1,No conecta afirmaciones con fuentes.
+rubrica-validacion-fuentes,trazabilidad,Trazabilidad,0.25,suficiente,2,Conecta algunas afirmaciones con fuentes.
+rubrica-validacion-fuentes,trazabilidad,Trazabilidad,0.25,notable,3,Cada afirmación remite a `source_slugs` concretos.
+rubrica-validacion-fuentes,trazabilidad,Trazabilidad,0.25,excelente,4,"Trazabilidad total, incluida la marca de campos `pending`."
+rubrica-validacion-fuentes,sesgo,Sesgo y OSINT responsable,0.2,insuficiente,1,Ignora sesgos y riesgos éticos.
+rubrica-validacion-fuentes,sesgo,Sesgo y OSINT responsable,0.2,suficiente,2,Menciona sesgos sin mitigarlos.
+rubrica-validacion-fuentes,sesgo,Sesgo y OSINT responsable,0.2,notable,3,Identifica sesgos y aplica prácticas OSINT responsables.
+rubrica-validacion-fuentes,sesgo,Sesgo y OSINT responsable,0.2,excelente,4,"Gestiona sesgos, contrasta y documenta límites de la evidencia."
+rubrica-causalidad,nodos,Definición de nodos,0.2,insuficiente,1,Nodos ausentes o irrelevantes.
+rubrica-causalidad,nodos,Definición de nodos,0.2,suficiente,2,Nodos básicos sin tipar.
+rubrica-causalidad,nodos,Definición de nodos,0.2,notable,3,Nodos derivados de actores/recursos/chokepoints reales.
+rubrica-causalidad,nodos,Definición de nodos,0.2,excelente,4,"Nodos completos, tipados y justificados."
+rubrica-causalidad,enlaces,Enlaces y tipo causal,0.3,insuficiente,1,"No distingue tipos de enlace (`causes`, `escalates`...)."
+rubrica-causalidad,enlaces,Enlaces y tipo causal,0.3,suficiente,2,Asigna tipos sin justificar.
+rubrica-causalidad,enlaces,Enlaces y tipo causal,0.3,notable,3,Usa `link_type` coherente con la evidencia.
+rubrica-causalidad,enlaces,Enlaces y tipo causal,0.3,excelente,4,Justifica cada `link_type` frente a alternativas.
+rubrica-causalidad,evidencia,Evidencia de soporte,0.3,insuficiente,1,Enlaces sin evidencia.
+rubrica-causalidad,evidencia,Evidencia de soporte,0.3,suficiente,2,Evidencia parcial o sin fuente.
+rubrica-causalidad,evidencia,Evidencia de soporte,0.3,notable,3,Cada enlace cita `source_slugs` verificados.
+rubrica-causalidad,evidencia,Evidencia de soporte,0.3,excelente,4,"Evidencia sólida, triangulada y con límites explícitos."
+rubrica-causalidad,confianza,Nivel de confianza y pendientes,0.2,insuficiente,1,No valora la confianza ni marca pendientes.
+rubrica-causalidad,confianza,Nivel de confianza y pendientes,0.2,suficiente,2,Asigna confianza sin criterio.
+rubrica-causalidad,confianza,Nivel de confianza y pendientes,0.2,notable,3,Asigna confianza y marca campos `pending`.
+rubrica-causalidad,confianza,Nivel de confianza y pendientes,0.2,excelente,4,Confianza calibrada con criterio explícito y plan de cierre de pendientes.
+rubrica-uso-mapa,localizacion,Localización de focos,0.25,insuficiente,1,No localiza focos en el mapa.
+rubrica-uso-mapa,localizacion,Localización de focos,0.25,suficiente,2,Localiza focos con ayuda.
+rubrica-uso-mapa,localizacion,Localización de focos,0.25,notable,3,Localiza focos por `location` y los relaciona con el inventario.
+rubrica-uso-mapa,localizacion,Localización de focos,0.25,excelente,4,Localiza y contrasta focos entre regiones con criterio analítico.
+rubrica-uso-mapa,filtros,Uso de filtros,0.25,insuficiente,1,No aplica filtros correctamente.
+rubrica-uso-mapa,filtros,Uso de filtros,0.25,suficiente,2,Aplica un filtro simple.
+rubrica-uso-mapa,filtros,Uso de filtros,0.25,notable,3,"Combina filtros (`region`, `type`, `severity`) coherentes."
+rubrica-uso-mapa,filtros,Uso de filtros,0.25,excelente,4,Diseña combinaciones de filtros para responder preguntas analíticas.
+rubrica-uso-mapa,deeplinks,Deep-links,0.25,insuficiente,1,No usa deep-links.
+rubrica-uso-mapa,deeplinks,Deep-links,0.25,suficiente,2,Genera un deep-link simple (`#foco=`).
+rubrica-uso-mapa,deeplinks,Deep-links,0.25,notable,3,Construye deep-links con foco y filtros combinados.
+rubrica-uso-mapa,deeplinks,Deep-links,0.25,excelente,4,Comparte estados reproducibles y verifica su degradación limpia.
+rubrica-uso-mapa,offline,Trabajo offline / PWA,0.25,insuficiente,1,No consigue trabajar sin red.
+rubrica-uso-mapa,offline,Trabajo offline / PWA,0.25,suficiente,2,Trabaja offline de forma parcial.
+rubrica-uso-mapa,offline,Trabajo offline / PWA,0.25,notable,3,Completa el laboratorio offline con la PWA.
+rubrica-uso-mapa,offline,Trabajo offline / PWA,0.25,excelente,4,Diagnostica el precache y propone mejoras de disponibilidad offline.
+rubrica-comunicacion,claridad,Claridad y precisión,0.3,insuficiente,1,Mensaje confuso o impreciso.
+rubrica-comunicacion,claridad,Claridad y precisión,0.3,suficiente,2,Se entiende con esfuerzo.
+rubrica-comunicacion,claridad,Claridad y precisión,0.3,notable,3,Comunicación clara y precisa.
+rubrica-comunicacion,claridad,Claridad y precisión,0.3,excelente,4,Claridad ejemplar adaptada a la audiencia.
+rubrica-comunicacion,estructura,Estructura y síntesis,0.25,insuficiente,1,Sin estructura ni jerarquía.
+rubrica-comunicacion,estructura,Estructura y síntesis,0.25,suficiente,2,Estructura básica.
+rubrica-comunicacion,estructura,Estructura y síntesis,0.25,notable,3,Estructura lógica con síntesis adecuada.
+rubrica-comunicacion,estructura,Estructura y síntesis,0.25,excelente,4,Estructura y síntesis que priorizan lo relevante para decidir.
+rubrica-comunicacion,evidencia,Uso de evidencia,0.25,insuficiente,1,Afirmaciones sin soporte.
+rubrica-comunicacion,evidencia,Uso de evidencia,0.25,suficiente,2,Evidencia escasa o mal citada.
+rubrica-comunicacion,evidencia,Uso de evidencia,0.25,notable,3,Afirmaciones respaldadas por fuentes verificadas.
+rubrica-comunicacion,evidencia,Uso de evidencia,0.25,excelente,4,"Evidencia integrada, citada y con límites explicitados."
+rubrica-comunicacion,honestidad,Honestidad epistémica,0.2,insuficiente,1,Oculta incertidumbre o exagera conclusiones.
+rubrica-comunicacion,honestidad,Honestidad epistémica,0.2,suficiente,2,Reconoce incertidumbre de forma genérica.
+rubrica-comunicacion,honestidad,Honestidad epistémica,0.2,notable,3,Distingue hechos de inferencias y marca pendientes.
+rubrica-comunicacion,honestidad,Honestidad epistémica,0.2,excelente,4,Calibra incertidumbre y comunica riesgos de error con transparencia.
