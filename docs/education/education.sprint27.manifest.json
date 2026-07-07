@@ -1,0 +1,32 @@
+{
+  "contract": "sprint-27-education-manifest-v1",
+  "notice": "Manifiesto del paquete técnico-educativo del Sprint 27 (revisión de instructor, scoring por lotes, plantillas de feedback, backlog causal accionable y mapeo opcional xAPI/SCORM). Material de formación: no activa producción ni maneja datos personales.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "instructor_review": {
+    "manifest": "docs/education/instructor-review/instructor-review.manifest.json"
+  },
+  "batch_scoring": {
+    "script": "scripts/score-rubric-batch.mjs",
+    "fixtures_dir": "docs/education/batch/fixtures",
+    "report_json": "docs/education/batch/batch-report.json",
+    "report_md": "docs/education/batch/batch-report.md",
+    "report_csv": "docs/education/batch/batch-report.csv"
+  },
+  "feedback_templates": {
+    "json": "docs/education/feedback-templates/feedback.template.json",
+    "markdown": "docs/education/feedback-templates/feedback.template.md",
+    "render_script": "scripts/render-feedback.mjs"
+  },
+  "causal_backlog": {
+    "script": "scripts/build-causal-backlog.mjs",
+    "json": "docs/education/causal-backlog/backlog.json",
+    "markdown": "docs/education/causal-backlog/backlog.md"
+  },
+  "xapi_scorm_mapping": {
+    "optional": true,
+    "platform_independent": true,
+    "readme": "docs/education/xapi-scorm-mapping/README.md",
+    "mapping": "docs/education/xapi-scorm-mapping/mapping.json",
+    "validator": "scripts/xapi-scorm-mapping.mjs"
+  }
+}

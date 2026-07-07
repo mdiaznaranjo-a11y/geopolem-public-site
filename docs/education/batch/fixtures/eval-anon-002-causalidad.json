@@ -1,0 +1,7 @@
+{
+  "contract": "sprint-26-rubric-evaluation-v1",
+  "rubric_id": "rubrica-causalidad",
+  "notice": "Evaluación SINTÉTICA y anónima (Sprint 27). No corresponde a ninguna persona ni nota real.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "scores": { "nodos": "suficiente", "enlaces": "suficiente", "evidencia": "insuficiente", "confianza": "suficiente" }
+}

@@ -1,0 +1,6 @@
+id,rubric_id,total,max_total,percentage,overall_level
+eval-anon-001-causalidad,rubrica-causalidad,3,4,66.67,suficiente
+eval-anon-002-causalidad,rubrica-causalidad,1.7,4,23.33,insuficiente
+eval-anon-003-analisis,rubrica-analisis-geopolitico,3.5,4,83.33,notable
+eval-anon-004-fuentes,rubrica-validacion-fuentes,2.75,4,58.33,suficiente
+eval-anon-005-mapa,rubrica-uso-mapa,2,4,33.33,insuficiente

@@ -1,0 +1,66 @@
+{
+  "contract": "sprint-27-xapi-scorm-mapping-v1",
+  "notice": "Mapeo CONCEPTUAL opcional del manifiesto LMS portable GEOPÓLEM hacia xAPI y SCORM. Es OPCIONAL y NO depende de ninguna plataforma propietaria: describe correspondencias, no genera paquetes cerrados.",
+  "optional": true,
+  "platform_independent": true,
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "source_manifest": "docs/education/lms-export/lms.manifest.json",
+  "identity": {
+    "actor_policy": "anonymous",
+    "notice": "Los `actor` de xAPI deben ser cuentas ANÓNIMAS/sintéticas (p. ej. account con homePage local y name sintético). Nunca mbox ni datos personales."
+  },
+  "xapi": {
+    "verbs": {
+      "experienced": "http://adlnet.gov/expapi/verbs/experienced",
+      "completed": "http://adlnet.gov/expapi/verbs/completed",
+      "scored": "http://adlnet.gov/expapi/verbs/scored",
+      "answered": "http://adlnet.gov/expapi/verbs/answered"
+    },
+    "activity_types": {
+      "module": "http://adlnet.gov/expapi/activities/module",
+      "case": "http://adlnet.gov/expapi/activities/lesson",
+      "rubric": "http://adlnet.gov/expapi/activities/assessment",
+      "criterion": "http://adlnet.gov/expapi/activities/question"
+    },
+    "mappings": [
+      {
+        "source_concept": "modules",
+        "source_field": "modules[].id",
+        "verb": "experienced",
+        "activity_type": "module",
+        "activity_id_template": "geopolem/module/{id}"
+      },
+      {
+        "source_concept": "cases",
+        "source_field": "cases[].id",
+        "verb": "completed",
+        "activity_type": "case",
+        "activity_id_template": "geopolem/case/{id}"
+      },
+      {
+        "source_concept": "rubrics",
+        "source_field": "rubrics[].id",
+        "verb": "scored",
+        "activity_type": "rubric",
+        "activity_id_template": "geopolem/rubric/{id}",
+        "result": { "score_scaled_from": "score-rubric percentage / 100", "note": "usar `percentage` del motor de puntuación, normalizado 0..1" }
+      },
+      {
+        "source_concept": "rubrics.criteria",
+        "source_field": "rubrics[].criteria[]",
+        "verb": "answered",
+        "activity_type": "criterion",
+        "activity_id_template": "geopolem/rubric/{rubric_id}/criterion/{criterion_id}"
+      }
+    ]
+  },
+  "scorm": {
+    "note": "Correspondencia conceptual con SCORM 2004 CMI. No genera imsmanifest.xml ni empaqueta ZIP: sólo indica qué elemento CMI representa cada concepto.",
+    "cmi": [
+      { "source_concept": "cases", "cmi_element": "cmi.completion_status", "note": "completed → completed; en progreso → incomplete" },
+      { "source_concept": "rubrics", "cmi_element": "cmi.score.scaled", "note": "percentage/100 (0..1)" },
+      { "source_concept": "rubrics", "cmi_element": "cmi.success_status", "note": "banda notable/excelente → passed; suficiente/insuficiente → failed (criterio del instructor)" },
+      { "source_concept": "rubrics.criteria", "cmi_element": "cmi.interactions", "note": "cada criterio como interaction de tipo other/choice; sin datos personales" }
+    ]
+  }
+}

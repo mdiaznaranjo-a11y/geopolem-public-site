@@ -24,6 +24,10 @@ import { exportFiche } from './export-education-fiches.mjs';
 import { validateRubric } from './validate-education-rubrics.mjs';
 import { scoreRubric, sampleEvaluation } from './score-rubric.mjs';
 import { crosscheckAll } from './validate-causal-crosscheck.mjs';
+import { buildBatchPackage } from './score-rubric-batch.mjs';
+import { renderFeedback } from './render-feedback.mjs';
+import { buildBacklogPackage } from './build-causal-backlog.mjs';
+import { loadMapping, validateMapping } from './xapi-scorm-mapping.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, '..');
@@ -344,6 +348,120 @@ if (existsSync(abs(SPRINT25_MANIFEST_REL))) {
     }
     check('sprint26: paquetes docentes completos (syllabus, rúbricas, casos, laboratorio)', pkgOk, pkgBad.join('; '));
   }
+}
+
+// --- 8. Sprint 27: revisión instructor, batch, feedback, backlog, xAPI/SCORM -
+const S27_MANIFEST_REL = 'docs/education/education.sprint27.manifest.json';
+if (existsSync(abs(S27_MANIFEST_REL))) {
+  const s27 = readJson(S27_MANIFEST_REL);
+  check('sprint27: contrato del manifiesto', s27.contract === 'sprint-27-education-manifest-v1', s27.contract);
+  check('sprint27: no activa producción', s27.production?.is_production === false && s27.production?.activates_production_gate === false && s27.production?.contains_secrets === false);
+
+  // 8.1 Paquete de revisión de instructor: manifest + documentos con secciones.
+  const irManRel = s27.instructor_review.manifest;
+  const irOk = existsSync(abs(irManRel));
+  check('sprint27: manifiesto de revisión de instructor existe', irOk, irManRel);
+  if (irOk) {
+    const ir = readJson(irManRel);
+    check('sprint27: contrato revisión instructor', ir.contract === 'sprint-27-instructor-review-v1', ir.contract);
+    check('sprint27: índice de revisión existe', existsSync(abs(ir.index_file)), ir.index_file);
+    for (const d of ir.documents || []) {
+      const dok = existsSync(abs(d.file));
+      check(`sprint27: documento revisión existe: ${d.id}`, dok, d.file);
+      if (!dok) continue;
+      const headings = headingSet(readText(d.file));
+      const missing = (d.required_sections || []).filter((sname) => !headings.has(sname));
+      check(`sprint27: documento revisión completo: ${d.id}`, missing.length === 0, missing.join(', '));
+    }
+  }
+
+  // 8.2 Scoring por lotes: fixtures anónimos, informe al día, sin PII.
+  const bs = s27.batch_scoring;
+  check('sprint27: script de scoring por lotes existe', existsSync(abs(bs.script)), bs.script);
+  try {
+    const pkg = buildBatchPackage({ dir: bs.fixtures_dir });
+    check('sprint27: batch procesa >=1 evaluación', pkg.report.totals.submitted >= 1, `${pkg.report.totals.submitted}`);
+    check('sprint27: batch no rechaza fixtures sintéticos por PII', pkg.report.rejected.every((r) => r.reason !== 'pii'), pkg.report.rejected.map((r) => r.id).join(', '));
+    check('sprint27: informe batch al día',
+      existsSync(abs(bs.report_json)) && readText(bs.report_json) === `${JSON.stringify(pkg.report, null, 2)}\n`
+      && existsSync(abs(bs.report_md)) && readText(bs.report_md) === pkg.markdown
+      && existsSync(abs(bs.report_csv)) && readText(bs.report_csv) === pkg.csv,
+      'ejecuta npm run education:batch:write');
+    check('sprint27: informe batch no activa producción', pkg.report.production.is_production === false);
+  } catch (e) {
+    check('sprint27: batch ejecuta sin error', false, String(e && e.message));
+  }
+
+  // 8.3 Plantillas de feedback: JSON con bandas y recomendaciones por nivel.
+  const ft = s27.feedback_templates;
+  const ftOk = existsSync(abs(ft.json));
+  check('sprint27: plantilla de feedback JSON existe', ftOk, ft.json);
+  check('sprint27: plantilla de feedback Markdown existe', existsSync(abs(ft.markdown)), ft.markdown);
+  if (ftOk) {
+    const tpl = readJson(ft.json);
+    check('sprint27: contrato de plantilla de feedback', tpl.contract === 'sprint-27-feedback-template-v1', tpl.contract);
+    const bandsOk = ['insuficiente', 'suficiente', 'notable', 'excelente'].every((b) => tpl.bands && tpl.bands[b] && tpl.bands[b].recommendation);
+    check('sprint27: plantilla cubre las 4 bandas con recomendación', bandsOk);
+    const levelsOk = ['insuficiente', 'suficiente', 'notable', 'excelente'].every((l) => tpl.level_recommendations && tpl.level_recommendations[l]);
+    check('sprint27: plantilla cubre recomendaciones por nivel', levelsOk);
+    // Integración con el motor de puntuación: render sin error para la rúbrica de causalidad.
+    try {
+      const rubric = readJson('docs/education/rubrics/rubrica-causalidad.json');
+      const md = renderFeedback(rubric, sampleEvaluation(rubric), tpl);
+      check('sprint27: feedback renderiza banda y criterios', /Banda global/.test(md) && /Por criterio/.test(md));
+    } catch (e) {
+      check('sprint27: feedback renderiza sin error', false, String(e && e.message));
+    }
+  }
+
+  // 8.4 Backlog causal accionable: al día, sin severidad error inventada.
+  const cbk = s27.causal_backlog;
+  check('sprint27: script de backlog causal existe', existsSync(abs(cbk.script)), cbk.script);
+  try {
+    const bpkg = buildBacklogPackage({ stage: 'rc' });
+    check('sprint27: backlog causal contrato', bpkg.backlog.contract === 'sprint-27-causal-backlog-v1', bpkg.backlog.contract);
+    check('sprint27: backlog causal al día',
+      existsSync(abs(cbk.json)) && readText(cbk.json) === `${JSON.stringify(bpkg.backlog, null, 2)}\n`
+      && existsSync(abs(cbk.markdown)) && readText(cbk.markdown) === bpkg.markdown,
+      'ejecuta npm run education:backlog:write');
+    // Coherencia con el crosscheck: los ítems de crosscheck no superan sus divergencias.
+    const cross = crosscheckAll({ stage: 'rc' });
+    const crossItems = bpkg.backlog.items.filter((i) => i.source === 'crosscheck').length;
+    check('sprint27: backlog no inventa divergencias causales', crossItems === cross.totals.divergences, `${crossItems} vs ${cross.totals.divergences}`);
+    check('sprint27: backlog no activa producción', bpkg.backlog.production.is_production === false);
+  } catch (e) {
+    check('sprint27: backlog ejecuta sin error', false, String(e && e.message));
+  }
+
+  // 8.5 Mapeo opcional xAPI/SCORM coherente con el manifiesto LMS.
+  const xm = s27.xapi_scorm_mapping;
+  check('sprint27: mapeo xAPI/SCORM declarado opcional', xm.optional === true && xm.platform_independent === true);
+  check('sprint27: README del mapeo existe', existsSync(abs(xm.readme)), xm.readme);
+  const mapOk = existsSync(abs(xm.mapping));
+  check('sprint27: mapping.json existe', mapOk, xm.mapping);
+  if (mapOk && existsSync(abs('docs/education/lms-export/lms.manifest.json'))) {
+    const mapping = loadMapping();
+    const lms = readJson('docs/education/lms-export/lms.manifest.json');
+    const errs = validateMapping(mapping, lms);
+    check('sprint27: mapeo xAPI/SCORM coherente con el manifiesto LMS', errs.length === 0, errs.join('; '));
+  }
+
+  // 8.6 Barrido de secretos/producción sobre artefactos Sprint 27.
+  const s27Files = [
+    S27_MANIFEST_REL,
+    s27.instructor_review.manifest,
+    ...(existsSync(abs(s27.instructor_review.manifest)) ? readJson(s27.instructor_review.manifest).documents.map((d) => d.file) : []),
+    ft.json, ft.markdown, cbk.json, cbk.markdown, xm.readme, xm.mapping,
+    bs.report_json, bs.report_csv,
+  ].filter((rel) => rel && existsSync(abs(rel)));
+  let s27Secrets = [], s27Prod = [];
+  for (const rel of s27Files) {
+    const text = readText(rel);
+    for (const p of SECRET_PATTERNS) if (p.re.test(text)) s27Secrets.push(`${rel}: ${p.name}`);
+    for (const p of PROD_PATTERNS) if (p.re.test(text)) s27Prod.push(`${rel}: ${p.name}`);
+  }
+  check('sprint27: artefactos sin secretos embebidos', s27Secrets.length === 0, s27Secrets.join('; '));
+  check('sprint27: artefactos sin activación de producción', s27Prod.length === 0, s27Prod.join('; '));
 }
 
 finish();

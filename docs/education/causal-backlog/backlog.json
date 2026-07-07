@@ -1,0 +1,133 @@
+{
+  "contract": "sprint-27-causal-backlog-v1",
+  "notice": "Backlog accionable de advertencias causales (Sprint 27). Derivado determinísticamente de la validación cruzada y del banco de casos: NO inventa datos causales. Material de formación: no activa producción ni contiene secretos.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "source_stage": "rc",
+  "totals": {
+    "items": 11,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 11
+    },
+    "by_status": {
+      "pendiente": 11
+    }
+  },
+  "items": [
+    {
+      "case": "asia-agua",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"chokepoints\" pendiente de evidencia en el caso \"asia-agua\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"chokepoints\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "ia-narrativa",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"actors\" pendiente de evidencia en el caso \"ia-narrativa\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"actors\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "ia-narrativa",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"chokepoints\" pendiente de evidencia en el caso \"ia-narrativa\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"chokepoints\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "ia-narrativa",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"resources\" pendiente de evidencia en el caso \"ia-narrativa\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"resources\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "mena-agua",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"chokepoints\" pendiente de evidencia en el caso \"mena-agua\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"chokepoints\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "rearme-global",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"chokepoints\" pendiente de evidencia en el caso \"rearme-global\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"chokepoints\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "rearme-global",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"resources\" pendiente de evidencia en el caso \"rearme-global\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"resources\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "sahel",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"chokepoints\" pendiente de evidencia en el caso \"sahel\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"chokepoints\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "stablecoins",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"actors\" pendiente de evidencia en el caso \"stablecoins\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"actors\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "stablecoins",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"chokepoints\" pendiente de evidencia en el caso \"stablecoins\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"chokepoints\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    },
+    {
+      "case": "stablecoins",
+      "source": "case_bank",
+      "warning_type": "pending_field",
+      "severity": "info",
+      "detail": "campo \"resources\" pendiente de evidencia en el caso \"stablecoins\"",
+      "recommended_action": "Revisar y, si hay fuente verificada, completar el campo \"resources\"; no inferir sin evidencia.",
+      "suggested_owner": "equipo de datos",
+      "status": "pendiente"
+    }
+  ]
+}
