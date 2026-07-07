@@ -2998,6 +2998,11 @@ function PlanZ({ lang }) {
               ${a.title} <span class="text-slate-400 font-semibold text-[14px] block lg:inline">${a.subtitle}</span>
             </h4>
             <p class="text-[12.5px] text-slate-300 leading-relaxed mt-2">${en?a.thesisEn:a.thesis}</p>
+            ${a.disclaimer ? html`
+            <div class="mt-2.5 flex items-start gap-2 rounded-md border border-alert/40 bg-alert/10 px-3 py-2">
+              <span class="font-mono text-[11px] text-alert-soft shrink-0">⚠</span>
+              <p class="text-[11px] text-alert-soft leading-snug font-mono uppercase tracking-wide">${en?a.disclaimerEn:a.disclaimer}</p>
+            </div>` : ''}
             <div class="mt-2.5 pl-3 border-l-2" style=${{borderColor:`${dColor}66`}}>
               <div class="font-mono text-[9.5px] uppercase tracking-widest mb-0.5" style=${{color:dColor}}>${en?dc.labelEn:dc.label}</div>
               <p class="text-[12px] text-slate-300 leading-snug italic">${a.claim}</p>
