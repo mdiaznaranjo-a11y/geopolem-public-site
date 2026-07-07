@@ -1,0 +1,14 @@
+{
+  "contract": "sprint-25-rubrics-index-v1",
+  "notice": "Índice de rúbricas máquina-legibles GEOPÓLEM (Sprint 25). Material docente: no activa producción ni contiene secretos.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "scale_levels": ["insuficiente", "suficiente", "notable", "excelente"],
+  "rubrics": [
+    { "id": "rubrica-analisis-geopolitico", "file": "docs/education/rubrics/rubrica-analisis-geopolitico.json", "dimension": "analisis-geopolitico" },
+    { "id": "rubrica-politica-energetica", "file": "docs/education/rubrics/rubrica-politica-energetica.json", "dimension": "politica-energetica" },
+    { "id": "rubrica-validacion-fuentes", "file": "docs/education/rubrics/rubrica-validacion-fuentes.json", "dimension": "validacion-fuentes" },
+    { "id": "rubrica-causalidad", "file": "docs/education/rubrics/rubrica-causalidad.json", "dimension": "causalidad" },
+    { "id": "rubrica-uso-mapa", "file": "docs/education/rubrics/rubrica-uso-mapa.json", "dimension": "uso-mapa" },
+    { "id": "rubrica-comunicacion", "file": "docs/education/rubrics/rubrica-comunicacion.json", "dimension": "comunicacion" }
+  ]
+}

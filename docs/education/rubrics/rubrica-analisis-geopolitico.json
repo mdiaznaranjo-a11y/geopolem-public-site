@@ -1,0 +1,61 @@
+{
+  "contract": "sprint-25-rubric-v1",
+  "id": "rubrica-analisis-geopolitico",
+  "title": "Rúbrica de análisis geopolítico",
+  "description": "Evalúa la calidad del análisis geopolítico de un foco/conflicto del contrato v1 GEOPÓLEM.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "scale": {
+    "levels": [
+      { "id": "insuficiente", "label": "Insuficiente", "points": 1 },
+      { "id": "suficiente", "label": "Suficiente", "points": 2 },
+      { "id": "notable", "label": "Notable", "points": 3 },
+      { "id": "excelente", "label": "Excelente", "points": 4 }
+    ]
+  },
+  "criteria": [
+    {
+      "id": "contexto",
+      "title": "Contexto y encuadre",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "No sitúa el foco en su contexto regional ni temporal.",
+        "suficiente": "Describe el contexto básico con imprecisiones.",
+        "notable": "Encuadra el foco con región, actores y temporalidad correctas.",
+        "excelente": "Encuadre riguroso que integra región, actores, recursos y evolución."
+      }
+    },
+    {
+      "id": "actores",
+      "title": "Identificación de actores",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "Omite actores clave o los confunde.",
+        "suficiente": "Identifica actores estatales pero ignora no estatales relevantes.",
+        "notable": "Identifica actores estatales y no estatales con sus roles.",
+        "excelente": "Mapea actores, roles y alineaciones y justifica su relevancia."
+      }
+    },
+    {
+      "id": "intereses",
+      "title": "Intereses y dinámicas de poder",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "No explica los intereses en juego.",
+        "suficiente": "Menciona intereses de forma genérica.",
+        "notable": "Explica intereses y tensiones de los principales actores.",
+        "excelente": "Analiza intereses, incentivos y escenarios de escalada/desescalada."
+      }
+    },
+    {
+      "id": "trazabilidad",
+      "title": "Trazabilidad al dato v1",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "No referencia campos ni fuentes del contrato v1.",
+        "suficiente": "Cita algún campo pero sin trazabilidad clara.",
+        "notable": "Ancla el análisis en campos reales (actors, metrics, causal_links).",
+        "excelente": "Cada afirmación se ancla a campos/fuentes verificadas y marca lo pendiente."
+      }
+    }
+  ]
+}

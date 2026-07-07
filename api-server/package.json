@@ -93,7 +93,14 @@
     "gate:write": "node ../scripts/evaluate-production-gate.mjs --write",
     "gate:check": "node ../scripts/evaluate-production-gate.mjs --check",
     "education:validate": "node ../scripts/validate-education-materials.mjs",
-    "education:validate:json": "node ../scripts/validate-education-materials.mjs --json"
+    "education:validate:json": "node ../scripts/validate-education-materials.mjs --json",
+    "education:export": "node ../scripts/export-education-fiches.mjs",
+    "education:export:all": "node ../scripts/export-education-fiches.mjs --all --stage=rc --write --out=docs/education/case-bank/fichas",
+    "education:casebank": "node ../scripts/build-case-bank.mjs",
+    "education:casebank:write": "node ../scripts/build-case-bank.mjs --write",
+    "education:casebank:check": "node ../scripts/build-case-bank.mjs --check",
+    "education:rubrics:validate": "node ../scripts/validate-education-rubrics.mjs",
+    "education:rubrics:validate:json": "node ../scripts/validate-education-rubrics.mjs --json"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

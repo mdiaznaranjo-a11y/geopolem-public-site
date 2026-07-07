@@ -1,0 +1,55 @@
+{
+  "contract": "sprint-25-causal-matrix-v1",
+  "conflict_id": "istanbul",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Matriz causal pre-rellenada desde `causal_links` verificados (Sprint 25). Material docente: el nivel de confianza y los nodos/enlaces faltantes quedan `pending` para su completado analítico. No activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "nodes": [
+    {
+      "id": "turquia",
+      "label": "Turquía",
+      "kind": "actor_state"
+    },
+    {
+      "id": "petroleo",
+      "label": "Petróleo",
+      "kind": "resource"
+    },
+    {
+      "id": "grano",
+      "label": "Grano",
+      "kind": "resource"
+    },
+    {
+      "id": "estrecho-del-bosforo",
+      "label": "Estrecho del Bósforo",
+      "kind": "chokepoint"
+    },
+    {
+      "id": "dardanelos",
+      "label": "Dardanelos",
+      "kind": "chokepoint"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "link_type": "contributes_to",
+      "title": "Régimen del Bósforo y tránsito por los Estrechos",
+      "evidence": "La Convención de Montreux (1936) rige el régimen de los Estrechos Turcos (Bósforo y Dardanelos) y es, según el Ministerio de Exteriores turco, el elemento esencial para la seguridad y estabilidad del Mar Negro; la afirmación causal concreta sobre el impacto en flujos de energía y grano requiere verificación editorial adicional.",
+      "source_slugs": [
+        "turkiye-mfa-montreux"
+      ],
+      "confidence": null,
+      "pending": true
+    }
+  ],
+  "pending_fields": [
+    "confidence"
+  ]
+}

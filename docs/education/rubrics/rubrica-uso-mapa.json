@@ -1,0 +1,61 @@
+{
+  "contract": "sprint-25-rubric-v1",
+  "id": "rubrica-uso-mapa",
+  "title": "Rúbrica de uso del mapa interactivo",
+  "description": "Evalúa la competencia en el uso del mapa GEOPÓLEM: filtros, deep-links y trabajo offline.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "scale": {
+    "levels": [
+      { "id": "insuficiente", "label": "Insuficiente", "points": 1 },
+      { "id": "suficiente", "label": "Suficiente", "points": 2 },
+      { "id": "notable", "label": "Notable", "points": 3 },
+      { "id": "excelente", "label": "Excelente", "points": 4 }
+    ]
+  },
+  "criteria": [
+    {
+      "id": "localizacion",
+      "title": "Localización de focos",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "No localiza focos en el mapa.",
+        "suficiente": "Localiza focos con ayuda.",
+        "notable": "Localiza focos por `location` y los relaciona con el inventario.",
+        "excelente": "Localiza y contrasta focos entre regiones con criterio analítico."
+      }
+    },
+    {
+      "id": "filtros",
+      "title": "Uso de filtros",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "No aplica filtros correctamente.",
+        "suficiente": "Aplica un filtro simple.",
+        "notable": "Combina filtros (`region`, `type`, `severity`) coherentes.",
+        "excelente": "Diseña combinaciones de filtros para responder preguntas analíticas."
+      }
+    },
+    {
+      "id": "deeplinks",
+      "title": "Deep-links",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "No usa deep-links.",
+        "suficiente": "Genera un deep-link simple (`#foco=`).",
+        "notable": "Construye deep-links con foco y filtros combinados.",
+        "excelente": "Comparte estados reproducibles y verifica su degradación limpia."
+      }
+    },
+    {
+      "id": "offline",
+      "title": "Trabajo offline / PWA",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "No consigue trabajar sin red.",
+        "suficiente": "Trabaja offline de forma parcial.",
+        "notable": "Completa el laboratorio offline con la PWA.",
+        "excelente": "Diagnostica el precache y propone mejoras de disponibilidad offline."
+      }
+    }
+  ]
+}

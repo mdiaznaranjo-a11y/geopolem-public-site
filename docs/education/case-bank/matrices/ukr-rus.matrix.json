@@ -1,0 +1,55 @@
+{
+  "contract": "sprint-25-causal-matrix-v1",
+  "conflict_id": "ukr-rus",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Matriz causal pre-rellenada desde `causal_links` verificados (Sprint 25). Material docente: el nivel de confianza y los nodos/enlaces faltantes quedan `pending` para su completado analítico. No activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "nodes": [
+    {
+      "id": "rusia",
+      "label": "Rusia",
+      "kind": "actor_state"
+    },
+    {
+      "id": "ucrania",
+      "label": "Ucrania",
+      "kind": "actor_state"
+    },
+    {
+      "id": "gas-natural",
+      "label": "Gas natural",
+      "kind": "resource"
+    },
+    {
+      "id": "trigo",
+      "label": "Trigo",
+      "kind": "resource"
+    },
+    {
+      "id": "estrecho-de-kerch",
+      "label": "Estrecho de Kerch",
+      "kind": "chokepoint"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "link_type": "escalates",
+      "title": "Riesgo sobre infraestructura energética (nuclear)",
+      "evidence": "El OIEA documenta pérdidas repetidas de energía externa y daños en líneas eléctricas de la central de Zaporiyia por la actividad militar, con impacto directo en la seguridad de la infraestructura energética.",
+      "source_slugs": [
+        "iaea-ukraine-update-356"
+      ],
+      "confidence": null,
+      "pending": false
+    }
+  ],
+  "pending_fields": [
+    "confidence"
+  ]
+}

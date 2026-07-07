@@ -1,0 +1,50 @@
+{
+  "contract": "sprint-25-causal-matrix-v1",
+  "conflict_id": "red-sea",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Matriz causal pre-rellenada desde `causal_links` verificados (Sprint 25). Material docente: el nivel de confianza y los nodos/enlaces faltantes quedan `pending` para su completado analítico. No activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "nodes": [
+    {
+      "id": "huties",
+      "label": "Hutíes",
+      "kind": "actor_non_state"
+    },
+    {
+      "id": "petroleo",
+      "label": "Petróleo",
+      "kind": "resource"
+    },
+    {
+      "id": "bab-el-mandeb",
+      "label": "Bab el-Mandeb",
+      "kind": "chokepoint"
+    },
+    {
+      "id": "canal-de-suez",
+      "label": "Canal de Suez",
+      "kind": "chokepoint"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "link_type": "causes",
+      "title": "Ataques a navegación y desvío de rutas",
+      "evidence": "UNCTAD documenta caídas del tráfico por el Canal de Suez y el desvío masivo de portacontenedores por el Cabo de Buena Esperanza, con encarecimiento de fletes y emisiones.",
+      "source_slugs": [
+        "unctad-navigating-troubled-waters"
+      ],
+      "confidence": null,
+      "pending": false
+    }
+  ],
+  "pending_fields": [
+    "confidence"
+  ]
+}

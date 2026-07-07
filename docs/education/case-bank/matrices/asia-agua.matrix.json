@@ -1,0 +1,45 @@
+{
+  "contract": "sprint-25-causal-matrix-v1",
+  "conflict_id": "asia-agua",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Matriz causal pre-rellenada desde `causal_links` verificados (Sprint 25). Material docente: el nivel de confianza y los nodos/enlaces faltantes quedan `pending` para su completado analítico. No activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "nodes": [
+    {
+      "id": "india",
+      "label": "India",
+      "kind": "actor_state"
+    },
+    {
+      "id": "pakistan",
+      "label": "Pakistán",
+      "kind": "actor_state"
+    },
+    {
+      "id": "agua-dulce",
+      "label": "Agua dulce",
+      "kind": "resource"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "link_type": "contributes_to",
+      "title": "Marco del Tratado de Aguas del Indo bajo presión",
+      "evidence": "El Tratado de Aguas del Indo (1960, mediado por el Banco Mundial) reparte el sistema del Indo entre India y Pakistán; la afirmación causal concreta sobre deshielo glaciar requiere verificación editorial adicional.",
+      "source_slugs": [
+        "worldbank-indus-waters-treaty"
+      ],
+      "confidence": null,
+      "pending": true
+    }
+  ],
+  "pending_fields": [
+    "confidence"
+  ]
+}

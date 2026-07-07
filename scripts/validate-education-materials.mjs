@@ -20,6 +20,8 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { exportFiche } from './export-education-fiches.mjs';
+import { validateRubric } from './validate-education-rubrics.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, '..');
@@ -200,6 +202,104 @@ for (const rel of eduFiles) {
 }
 check('materiales sin secretos embebidos', secretsFound.length === 0, secretsFound.join('; '));
 check('materiales sin activación de producción', prodFound.length === 0, prodFound.join('; '));
+
+// --- 6. Sprint 25: exportador, banco de casos, laboratorio offline, rúbricas -
+const SPRINT25_MANIFEST_REL = 'docs/education/education.sprint25.manifest.json';
+if (existsSync(abs(SPRINT25_MANIFEST_REL))) {
+  const s25 = readJson(SPRINT25_MANIFEST_REL);
+  check('sprint25: contrato del manifiesto', s25.contract === 'sprint-25-education-manifest-v1', s25.contract);
+  check('sprint25: no activa producción', s25.production?.is_production === false && s25.production?.activates_production_gate === false && s25.production?.contains_secrets === false);
+
+  // 6.1 Exportador: script existe y produce ficha completa marcando pendientes.
+  check('sprint25: exportador existe', existsSync(abs(s25.exporter.script)), s25.exporter.script);
+  try {
+    const firstId = [...inventoryIds][0];
+    const { fiche } = exportFiche(firstId, 'rc');
+    const missing = (s25.exporter.required_fields || []).filter((f) => !(f in fiche));
+    check('sprint25: ficha exportada tiene todos los campos', missing.length === 0, missing.join(', '));
+    check('sprint25: ficha declara pending_fields', Array.isArray(fiche.pending_fields));
+    check('sprint25: ficha no activa producción', fiche.production?.is_production === false);
+    // Verifica marcado de faltantes: canonical suele tener arrays vacíos → pendientes.
+    const { fiche: canon } = exportFiche(firstId, 'canonical');
+    check('sprint25: exportador marca campos faltantes como pending', canon.pending_fields.length > 0, `${canon.conflict_id}`);
+  } catch (e) {
+    check('sprint25: exportador ejecuta sin error', false, String(e && e.message));
+  }
+
+  // 6.2 Banco de casos: índice + fichas + matrices coherentes.
+  const cbIndexRel = s25.case_bank.index;
+  const cbOk = existsSync(abs(cbIndexRel));
+  check('sprint25: índice del banco de casos existe', cbOk, cbIndexRel);
+  if (cbOk) {
+    const cb = readJson(cbIndexRel);
+    check('sprint25: banco de casos contrato', cb.contract === 'sprint-25-case-bank-v1', cb.contract);
+    check('sprint25: banco de casos con >=1 caso', Array.isArray(cb.cases) && cb.cases.length >= 1, `${cb.cases?.length}`);
+    let cbFilesOk = true, cbBad = [];
+    let matrixOk = true, matrixBad = [];
+    for (const c of cb.cases || []) {
+      for (const rel of [c.fiche_md, c.fiche_json, c.matrix_json]) {
+        if (!existsSync(abs(rel))) { cbFilesOk = false; cbBad.push(rel); }
+      }
+      // Caso usa un conflict_id real del inventario.
+      if (!inventoryIds.has(c.id)) { cbFilesOk = false; cbBad.push(`id inexistente: ${c.id}`); }
+      if (existsSync(abs(c.matrix_json))) {
+        const m = readJson(c.matrix_json);
+        if (m.contract !== 'sprint-25-causal-matrix-v1') { matrixOk = false; matrixBad.push(c.id); }
+      }
+    }
+    check('sprint25: ficheros del banco de casos existen y usan IDs reales', cbFilesOk, cbBad.join(', '));
+    check('sprint25: matrices causales usan el contrato correcto', matrixOk, matrixBad.join(', '));
+  }
+
+  // 6.3 Cuaderno de laboratorio offline.
+  const labRel = s25.offline_lab.file;
+  const labOk = existsSync(abs(labRel));
+  check('sprint25: cuaderno de laboratorio offline existe', labOk, labRel);
+  if (labOk) {
+    const labText = readText(labRel);
+    check('sprint25: laboratorio menciona deep-links y offline/PWA', /deep-link/i.test(labText) && /offline/i.test(labText) && /PWA/i.test(labText));
+    const alignedOk = (s25.offline_lab.aligned_modules || []).every((m) => labText.includes(m));
+    check('sprint25: laboratorio referencia módulos alineados', alignedOk);
+    check('sprint25: laboratorio lleva advertencia editorial', /Advertencia editorial/i.test(labText));
+  }
+
+  // 6.4 Rúbricas máquina-legibles.
+  const rIndexRel = s25.rubrics.index;
+  const rOk = existsSync(abs(rIndexRel));
+  check('sprint25: índice de rúbricas existe', rOk, rIndexRel);
+  if (rOk) {
+    const rIdx = readJson(rIndexRel);
+    check('sprint25: 6 rúbricas declaradas', Array.isArray(rIdx.rubrics) && rIdx.rubrics.length === 6, `${rIdx.rubrics?.length}`);
+    const dims = new Set();
+    let rubricsValid = true, rubricsBad = [];
+    for (const entry of rIdx.rubrics || []) {
+      if (!existsSync(abs(entry.file))) { rubricsValid = false; rubricsBad.push(entry.file); continue; }
+      const errs = validateRubric(readJson(entry.file));
+      if (errs.length) { rubricsValid = false; rubricsBad.push(`${entry.id}: ${errs.join('/')}`); }
+      dims.add(entry.dimension);
+    }
+    check('sprint25: todas las rúbricas son válidas (pesos, descriptores)', rubricsValid, rubricsBad.join('; '));
+    const reqDims = s25.rubrics.required_dimensions || [];
+    check('sprint25: rúbricas cubren todas las dimensiones requeridas', reqDims.every((d) => dims.has(d)), reqDims.filter((d) => !dims.has(d)).join(', '));
+  }
+
+  // 6.5 Barrido de secretos/producción sobre artefactos Sprint 25.
+  const s25Files = [
+    SPRINT25_MANIFEST_REL,
+    s25.offline_lab.file,
+    s25.rubrics.index,
+    s25.case_bank.index,
+    ...(existsSync(abs(s25.rubrics.index)) ? readJson(s25.rubrics.index).rubrics.map((r) => r.file) : []),
+  ].filter((rel) => existsSync(abs(rel)));
+  let s25Secrets = [], s25Prod = [];
+  for (const rel of s25Files) {
+    const text = readText(rel);
+    for (const p of SECRET_PATTERNS) if (p.re.test(text)) s25Secrets.push(`${rel}: ${p.name}`);
+    for (const p of PROD_PATTERNS) if (p.re.test(text)) s25Prod.push(`${rel}: ${p.name}`);
+  }
+  check('sprint25: artefactos sin secretos embebidos', s25Secrets.length === 0, s25Secrets.join('; '));
+  check('sprint25: artefactos sin activación de producción', s25Prod.length === 0, s25Prod.join('; '));
+}
 
 finish();
 
