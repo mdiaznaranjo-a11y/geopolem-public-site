@@ -55,8 +55,8 @@ test('data/conflicts.inventory.json en disco está al día y bien formado', () =
   const inv = readJson(p);
   assert.equal(inv.contract, INVENTORY_CONTRACT);
   assert.equal(inv.conflicts.length, 10);
-  // El inventario debe reflejar la semilla verificada (8 con fuente verificada).
-  assert.equal(inv.totals.with_verified_sources, 8);
+  // Sprint 15 cerró los 2 pendientes → 10/10 con fuente verificada.
+  assert.equal(inv.totals.with_verified_sources, 10);
 });
 
 /* -------------------------------------------------------------- isExampleUrl */
@@ -163,14 +163,15 @@ test('validateVerifiedSeed detecta published sin fuente publicable', () => {
 
 /* ----------------------------------------------------- computeVerifiedCoverage */
 
-test('computeVerifiedCoverage sobre la semilla real: 8 con fuente, 4 causal verificados', () => {
+test('computeVerifiedCoverage sobre la semilla real (Sprint 15): 10 con fuente, 5 causal verificados', () => {
   const cov = computeVerifiedCoverage(SEED, LIST.data.map((c) => c.id));
   assert.equal(cov.contract, VERIFIED_SEED_CONTRACT);
   assert.equal(cov.totals.conflicts, 10);
-  assert.equal(cov.totals.with_verified_source, 8);
-  assert.equal(cov.totals.fully_pending, 2);
-  assert.equal(cov.totals.causal_links_verified, 4);
-  assert.equal(cov.totals.verified_sources, 8);
+  assert.equal(cov.totals.with_verified_source, 10);
+  assert.equal(cov.totals.fully_pending, 0);
+  assert.equal(cov.totals.causal_links_verified, 5);
+  assert.equal(cov.totals.verified_sources, 10);
+  assert.equal(cov.coverage_pct, 100);
   assert.deepEqual(cov.missing_from_seed, []); // los 10 del inventario están en la semilla
 });
 
@@ -192,10 +193,12 @@ test('buildVerifiedDetail integra sólo fuentes verificadas y preserva source_sl
   assert.deepEqual(cl.source_slugs, ['unctad-navigating-troubled-waters']);
 });
 
-test('buildVerifiedDetail deja sin fuentes los conflictos pendientes', () => {
+test('buildVerifiedDetail integra la fuente verificada de istanbul (cerrada en Sprint 15)', () => {
   const detail = { data: { id: 'istanbul', slug: 'istanbul', sources: [] } };
   const data = buildVerifiedDetail(detail, SEED.conflicts['istanbul']);
-  assert.equal(data.sources.length, 0);
+  assert.equal(data.sources.length, 1);
+  assert.equal(data.sources[0].slug, 'turkiye-mfa-montreux');
+  assert.equal(data.sources[0].verification, 'verified');
 });
 
 test('preview verificado en disco (si existe) respeta el contrato de detalle v1', () => {
@@ -240,8 +243,8 @@ test('content-health mide fuentes del preview verificado por conflicto', () => {
   if (!existsSync(p)) return;
   const details = readJson(p).data;
   const health = computeContentHealth(LIST.data, details);
-  // 8 conflictos con fuente verificada → 2 sin fuentes en el preview.
+  // Sprint 15: 10/10 conflictos con fuente verificada → 0 sin fuentes en el preview.
   assert.equal(health.by_conflict['red-sea'].sources, 1);
-  assert.equal(health.by_conflict['istanbul'].sources, 0);
-  assert.equal(health.content_gaps.without_sources_count, 2);
+  assert.equal(health.by_conflict['istanbul'].sources, 1);
+  assert.equal(health.content_gaps.without_sources_count, 0);
 });

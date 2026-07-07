@@ -1,8 +1,21 @@
 {
-  "contract": "sprint-14-verified-enriched-v1",
-  "generated_at": "2026-07-07T06:22:27.383Z",
-  "include_demo": false,
-  "notice": "PREVIEW VERIFICADO (Sprint 14). Merge no destructivo de la semilla verificada sobre el detalle v1: SÓLO fuentes verificadas (institucionales/periodísticas). NO es un artefacto canónico; la promoción a producción exige sign-off editorial humano.",
+  "contract": "sprint-15-staging-canonical-v1",
+  "generated_at": "2026-07-07T06:23:51.765Z",
+  "staging": true,
+  "canonical": false,
+  "notice": "STAGING canónico (Sprint 15). Detalles por conflicto derivados del merge verificado (sólo fuentes verified). NO es producción: separado de api/v1/conflicts/{id}.json. La promoción a producción exige sign-off editorial humano.",
+  "authorized": true,
+  "gate": {
+    "ok": true,
+    "coverage_ok": true,
+    "coverage_pct": 100,
+    "blockers": [],
+    "warnings": [
+      "fuente needs_human_review: ukr-rus/iaea-ukraine-update-356 (web-search)",
+      "fuente needs_human_review: isr-gaza-irn/ocha-opt (web-search)",
+      "fuente needs_human_review: sahel/unhcr-sahel-emergency (web-search)"
+    ]
+  },
   "data": {
     "rearme-global": {
       "id": "rearme-global",
@@ -80,10 +93,13 @@
           "source_name": "SIPRI",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-fetch",
+          "relation": "conflict"
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     },
     "ukr-rus": {
       "id": "ukr-rus",
@@ -177,10 +193,15 @@
           "source_name": "IAEA",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-search",
+          "relation": "conflict",
+          "needs_human_review": true,
+          "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 402); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo."
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     },
     "isr-gaza-irn": {
       "id": "isr-gaza-irn",
@@ -282,10 +303,15 @@
           "source_name": "OCHA",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-search",
+          "relation": "conflict",
+          "needs_human_review": true,
+          "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo."
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     },
     "sahel": {
       "id": "sahel",
@@ -386,10 +412,15 @@
           "source_name": "UNHCR",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-search",
+          "relation": "conflict",
+          "needs_human_review": true,
+          "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo."
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     },
     "red-sea": {
       "id": "red-sea",
@@ -476,10 +507,13 @@
           "source_name": "UNCTAD",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-fetch",
+          "relation": "conflict"
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     },
     "istanbul": {
       "id": "istanbul",
@@ -573,10 +607,13 @@
           "source_name": "Türkiye MFA",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-fetch",
+          "relation": "conflict"
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     },
     "mena-agua": {
       "id": "mena-agua",
@@ -655,10 +692,13 @@
           "source_name": "World Bank",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-fetch",
+          "relation": "conflict"
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     },
     "asia-agua": {
       "id": "asia-agua",
@@ -737,10 +777,13 @@
           "source_name": "World Bank",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-fetch",
+          "relation": "conflict"
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     },
     "stablecoins": {
       "id": "stablecoins",
@@ -796,10 +839,13 @@
           "source_name": "FSB",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-fetch",
+          "relation": "conflict"
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     },
     "ia-narrativa": {
       "id": "ia-narrativa",
@@ -855,15 +901,17 @@
           "source_name": "United Nations",
           "accessed_at": "2026-07-07",
           "verification": "verified",
-          "demo": false
+          "demo": false,
+          "accessed_via": "web-fetch",
+          "relation": "conflict"
         }
       ],
-      "updated_at": null
+      "updated_at": null,
+      "editorial_status": "review"
     }
   },
   "meta": {
     "api_version": "v1",
-    "source": "verified-seed-merge (Sprint 14)",
-    "seed_include_demo": false
+    "source": "verified-seed-merge (Sprint 15 staging)"
   }
 }
