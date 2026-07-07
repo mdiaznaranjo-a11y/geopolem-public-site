@@ -806,6 +806,32 @@ export const PLAN_Z = {
     { step: 'IV', key: 'Oro / Deuda',            note: 'Cajas alternativas y soberanía informal.' },
     { step: 'V',  key: 'Escenarios',             note: 'Quién captura el flujo futuro.' },
   ],
+  // Entregas numeradas de la serie Plan Z (orden de publicación; la #1 abre la serie)
+  entregas: [
+    {
+      n: 1,
+      seriesLabel: 'Plan Z · Entrega 01',
+      title: '¿Quién mueve el Orinoco?',
+      description: 'La primera entrega de Plan Z analiza petróleo, deuda, PDVSA, Orinoco y poder como una arquitectura de flujo energético. No es amarillismo: es inteligencia aplicada al tablero.',
+      descriptionEn: 'The first Plan Z release analyses oil, debt, PDVSA, the Orinoco and power as an energy-flow architecture. This is not sensationalism: it is intelligence applied to the board.',
+      doctrine: ['hecho', 'evaluacion', 'hipotesis'],
+      status: 'Publicado en YouTube',
+      statusEn: 'Published on YouTube',
+      published: true,
+      youtube: 'https://youtu.be/SdM8TuhUgvY',
+      cta: 'Ver video completo',
+      ctaEn: 'Watch full video',
+    },
+    {
+      n: 2,
+      seriesLabel: 'Plan Z · Entrega 02',
+      title: 'Cuba entra al tablero',
+      titleEn: 'Cuba enters the board',
+      status: 'Próximamente',
+      statusEn: 'Coming soon',
+      published: false,
+    },
+  ],
   // Actos de guion de la serie Plan Z (orden fijo: Orinoco → Petrocaribe → Madrid → Oro/Deuda → Escenarios)
   acts: [
     {
