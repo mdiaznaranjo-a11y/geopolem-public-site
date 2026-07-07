@@ -13,7 +13,10 @@
     "test": "node --test test/",
     "smoke": "node scripts/smoke.mjs",
     "validate:staging": "node scripts/validate-staging.mjs",
-    "healthcheck": "node scripts/healthcheck.mjs"
+    "healthcheck": "node scripts/healthcheck.mjs",
+    "export:static": "node scripts/export-static-bridge.mjs",
+    "export:static:dry": "node scripts/export-static-bridge.mjs --dry-run",
+    "export:static:check": "node scripts/export-static-bridge.mjs --check"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

@@ -45,6 +45,28 @@ export const CONFIG = {
   defaultPageSize: num(process.env.API_DEFAULT_PAGE_SIZE, 20),
   maxPageSize: num(process.env.API_MAX_PAGE_SIZE, 100),
 
+  // --- Autenticación JWT (Sprint 5) --------------------------------------
+  // Modo de auth de la API v1. Por defecto 'public' para NO romper la PWA ni
+  // GitHub Pages (acceso de lectura anónimo). Activable por entorno:
+  //   public   → sin auth (comportamiento histórico, por defecto).
+  //   optional → si viene Bearer token se valida (401 si es inválido); sin
+  //              token se permite igualmente.
+  //   required → todo endpoint de datos exige Bearer token válido (401 si no).
+  // /api/v1/health queda SIEMPRE público (healthcheck de contenedor/oncall).
+  authMode: (process.env.GEOP_API_AUTH_MODE || 'public').toLowerCase(),
+  // Secreto HS256. NUNCA hardcodear: se lee de entorno. Vacío en modo public.
+  jwtSecret: process.env.JWT_SECRET || '',
+  // Holgura para exp/nbf (segundos) ante desfase de reloj.
+  jwtLeewaySec: num(process.env.JWT_LEEWAY_SEC, 30),
+  // Emisor/audiencia esperados (opcionales; si se definen, se validan).
+  jwtIssuer: process.env.JWT_ISSUER || '',
+  jwtAudience: process.env.JWT_AUDIENCE || '',
+
+  // --- Observabilidad de meta.source (Sprint 5) --------------------------
+  // Emite una línea JSON estructurada por respuesta con el origen de datos
+  // (database|static|error). Desactivable en tests/entornos ruidosos.
+  obsLog: bool(process.env.GEOP_OBS_LOG, true),
+
   // Rutas del puente estático (Sprint 2) usadas como respaldo permanente.
   staticConflictsPath: resolve(REPO_ROOT, 'api/v1/conflicts.json'),
   staticMapPath: resolve(REPO_ROOT, 'api/v1/conflicts/active/map.json'),
@@ -55,4 +77,9 @@ export const CONFIG = {
 
 export function hasDatabase() {
   return Boolean(CONFIG.databaseUrl);
+}
+
+// ¿La auth está activa? (optional|required). En 'public' no se aplica.
+export function authEnabled() {
+  return CONFIG.authMode === 'optional' || CONFIG.authMode === 'required';
 }

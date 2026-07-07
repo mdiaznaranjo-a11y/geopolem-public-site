@@ -45,6 +45,8 @@ jobs:
         run: npm run smoke
       - name: Validación de staging en modo fallback (sin DB)
         run: npm run validate:staging
+      - name: Validar puente estático en disco (Sprint 5, sin DB)
+        run: npm run export:static:check
 
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
@@ -83,6 +85,9 @@ jobs:
       - name: Validar DB directamente (PostGIS + esquema + semilla)
         working-directory: api-server
         run: npm run validate:staging
+      - name: Regenerar puente estático desde la DB (dry-run, Sprint 5)
+        working-directory: api-server
+        run: npm run export:static:dry
       - name: Arrancar api-server contra la DB
         working-directory: api-server
         run: |

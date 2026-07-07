@@ -7,6 +7,7 @@
 import { CONFIG } from './config.mjs';
 import { ok, list, apiError, paginate } from './response.mjs';
 import * as repo from './repository.mjs';
+import { recordSource, snapshot as observabilitySnapshot } from './observability.mjs';
 
 function parseBool(v) {
   if (v == null) return null;
@@ -50,9 +51,10 @@ function parseConflictFilters(sp) {
   return filters;
 }
 
-// GET /api/v1/health
+// GET /api/v1/health  (incluye contadores de observabilidad de meta.source)
 export async function handleHealth() {
   const data = await repo.health();
+  data.observability = observabilitySnapshot();
   return { status: 200, body: ok(data) };
 }
 
@@ -61,10 +63,9 @@ export async function handleConflicts(sp) {
   const filters = parseConflictFilters(sp);
   const pageOpts = parsePageOpts(sp);
   const { items, total, source } = await repo.listConflicts(filters, pageOpts);
-  return {
-    status: 200,
-    body: list(items, paginate(total, pageOpts.page, pageOpts.pageSize), { source }),
-  };
+  const body = list(items, paginate(total, pageOpts.page, pageOpts.pageSize), { source });
+  recordSource('conflicts', source, body.meta.request_id);
+  return { status: 200, body };
 }
 
 // GET /api/v1/conflicts/active/map  (siempre GeoJSON FeatureCollection)
@@ -77,6 +78,7 @@ export async function handleActiveMap(sp) {
   if (energy != null) filters.energy_dimension = energy;
 
   const { features, source } = await repo.activeConflictsMap(filters);
+  recordSource('conflicts_active_map', source, null);
   return {
     status: 200,
     body: {
@@ -94,11 +96,15 @@ export async function handleConflictDetail(idOrSlug) {
     const e = apiError('not_found', 'No existe un conflicto con ese id/slug.', { field: 'id', value: idOrSlug });
     return { status: e.status, body: e.body };
   }
-  return { status: 200, body: ok(conflict, { source }) };
+  const body = ok(conflict, { source });
+  recordSource('conflict_detail', source, body.meta.request_id);
+  return { status: 200, body };
 }
 
 // GET /api/v1/filters
 export async function handleFilters() {
   const { filters, source } = await repo.getFilters();
-  return { status: 200, body: ok(filters, { source }) };
+  const body = ok(filters, { source });
+  recordSource('filters', source, body.meta.request_id);
+  return { status: 200, body };
 }
