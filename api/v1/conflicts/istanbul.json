@@ -1,0 +1,45 @@
+{
+  "data": {
+    "id": "istanbul",
+    "slug": "istanbul",
+    "name": "Canal de Estambul / Bósforo",
+    "summary": "Proyecto canal paralelo TR + Convención de Montreux: cuello de botella crítico para grano y petróleo Mar Negro.",
+    "conflict_type": {
+      "slug": "chokepoint",
+      "label": "Chokepoint"
+    },
+    "primary_region": {
+      "slug": "eurasia",
+      "label": "Eurasia"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 2,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 41,
+      "longitude": 29
+    },
+    "actors": {
+      "state": [],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [],
+    "sources": [],
+    "updated_at": null
+  },
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-07-07T05:15:50.200Z",
+    "source": "static-bridge (derived, Sprint 11)"
+  }
+}

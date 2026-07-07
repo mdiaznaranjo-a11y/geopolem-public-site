@@ -71,18 +71,23 @@ jobs:
           PG_SSL: ${{ secrets.PG_SSL }}
         run: npm run export:static:dry
 
-      - name: Regenerar puente (escritura atómica + validación)
+      - name: Regenerar puente + mapa enriquecido + detalle por conflicto (Sprint 11)
         if: steps.guard.outputs.run == 'true' && inputs.dry_run != true
         working-directory: api-server
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           PG_SSL: ${{ secrets.PG_SSL }}
-        run: npm run export:static
+        run: npm run export:static:details
 
-      - name: Validar JSON en disco (contrato Sprint 5)
+      - name: Validar JSON en disco (contrato Sprint 5 + detalle Sprint 11)
         if: steps.guard.outputs.run == 'true' && inputs.dry_run != true
         working-directory: api-server
         run: npm run export:static:check
+
+      - name: Verificar rutas/detalle estático y deep-links (Sprint 11)
+        if: steps.guard.outputs.run == 'true' && inputs.dry_run != true
+        working-directory: api-server
+        run: npm run verify:static-routes
 
       - name: Crear Pull Request si hay cambios
         if: steps.guard.outputs.run == 'true' && inputs.dry_run != true

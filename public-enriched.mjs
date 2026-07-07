@@ -414,24 +414,42 @@ export async function loadEnrichedDetail(idOrSlug, options = {}) {
 
   const local = () => ({ detail: normalizeEnrichedDetail(localFoco || {}), source: 'local', error: null });
 
-  if (!cfg.useApi || !id) return local();
+  // Sin id no hay nada que buscar. Si además ni la API ni el detalle estático
+  // están configurados, se resuelve directamente con el foco local.
+  if (!id || (!cfg.useApi && !cfg.detailStaticPath)) return local();
 
   let lastError = null;
 
-  try {
-    const url = `${cfg.apiBase}${cfg.detailPath.replace(':id', id)}`;
-    const raw = unwrap(await fetchJson(url, cfg.timeoutMs));
-    if (raw) return { detail: normalizeEnrichedDetail(raw), source: 'api', error: null };
-  } catch (err) {
-    lastError = err;
-    reportFallback('api', err);
+  // Paso API sólo cuando está habilitada (GEOP_USE_API).
+  if (cfg.useApi) {
+    try {
+      const url = `${cfg.apiBase}${cfg.detailPath.replace(':id', id)}`;
+      const raw = unwrap(await fetchJson(url, cfg.timeoutMs));
+      if (raw) return { detail: normalizeEnrichedDetail(raw), source: 'api', error: null };
+    } catch (err) {
+      lastError = err;
+      reportFallback('api', err);
+    }
   }
 
+  // Paso estático (Sprint 11): se intenta aunque la API esté deshabilitada,
+  // porque los archivos por conflicto se publican junto al sitio (GitHub Pages).
   if (cfg.detailStaticPath) {
     try {
       const url = cfg.detailStaticPath.replace(':id', id);
       const raw = unwrap(await fetchJson(url, cfg.timeoutMs));
-      if (raw) return { detail: normalizeEnrichedDetail(raw), source: 'static', error: null };
+      if (raw) {
+        const staticVm = normalizeEnrichedDetail(raw);
+        // No degradar el foco local: si el detalle estático NO trae relaciones
+        // (p. ej. exportado sin DB) pero el foco local SÍ, se prefiere el local
+        // para no perder actores/recursos ya presentes en data.js. En cuanto el
+        // export estático incluya relaciones (DB), gana el estático.
+        const localVm = normalizeEnrichedDetail(localFoco || {});
+        if (hasAnyEnrichment(staticVm) || !hasAnyEnrichment(localVm)) {
+          return { detail: staticVm, source: 'static', error: null };
+        }
+        return { detail: localVm, source: 'local', error: null };
+      }
     } catch (err) {
       lastError = err;
       reportFallback('static', err);
