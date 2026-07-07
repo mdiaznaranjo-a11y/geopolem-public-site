@@ -79,6 +79,9 @@ export function computeContentHealth(listItems, detailsById = {}) {
   const withoutSources = [];
   const withoutRelations = [];
   const missingDetails = [];
+  // Desglose por conflicto (Sprint 13): nº de sources y relaciones por id, para
+  // el reporte editorial/técnico de cobertura. Aditivo (no rompe consumidores).
+  const byConflict = Object.create(null);
 
   for (const item of items) {
     if (!item || typeof item !== 'object') continue;
@@ -95,12 +98,29 @@ export function computeContentHealth(listItems, detailsById = {}) {
       // Sin detalle no podemos afirmar sources/relaciones: se cuentan como carencias.
       withoutSources.push(id);
       withoutRelations.push(id);
+      if (id != null) {
+        byConflict[id] = {
+          detail_present: false, sources: 0,
+          actors: 0, resources: 0, chokepoints: 0, causal_links: 0, relations_total: 0,
+        };
+      }
       continue;
     }
     const src = asArray(detail && detail.sources);
     if (src.length === 0) withoutSources.push(id);
     const rel = countRelations(detail);
     if (rel.total === 0) withoutRelations.push(id);
+    if (id != null) {
+      byConflict[id] = {
+        detail_present: true,
+        sources: src.length,
+        actors: rel.actors,
+        resources: rel.resources,
+        chokepoints: rel.chokepoints,
+        causal_links: rel.causal_links,
+        relations_total: rel.total,
+      };
+    }
   }
 
   const total = items.length;
@@ -128,6 +148,7 @@ export function computeContentHealth(listItems, detailsById = {}) {
       without_relations_pct: pct(withoutRelations.length),
       missing_details: missingDetails,
     },
+    by_conflict: { ...byConflict },
   };
 }
 

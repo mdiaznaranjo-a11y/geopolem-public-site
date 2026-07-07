@@ -28,7 +28,12 @@
     "migrate:check": "node scripts/migrate.mjs --check",
     "migrate:list": "node scripts/migrate.mjs --list",
     "content:health": "node ../scripts/content-health-report.mjs",
-    "content:health:json": "node ../scripts/content-health-report.mjs --json"
+    "content:health:json": "node ../scripts/content-health-report.mjs --json",
+    "seed:report": "node ../scripts/seed-relations-report.mjs",
+    "seed:report:json": "node ../scripts/seed-relations-report.mjs --json",
+    "seed:check": "node ../scripts/seed-relations-report.mjs --check --fail-on-unsourced-published",
+    "seed:enriched": "node ../scripts/seed-relations-report.mjs --write-enriched",
+    "seed:enriched:demo": "node ../scripts/seed-relations-report.mjs --write-enriched --include-demo"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"

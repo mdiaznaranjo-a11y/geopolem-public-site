@@ -54,6 +54,9 @@ jobs:
       - name: Verificar rutas/detalle estático y deep-links (Sprint 11, sin navegador)
         run: npm run verify:static-routes
 
+      - name: Validar semilla relacional y regla published-exige-fuente (Sprint 13)
+        run: npm run seed:check
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest
