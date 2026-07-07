@@ -249,6 +249,11 @@
   /* Mobile bottom-nav safe area */
   .bottom-nav { padding-bottom: env(safe-area-inset-bottom); }
 
+  /* On the boot/initialization screen the floating Dossiers button would overlap
+     the "Inicialización del sistema" panel, so it is hidden there and replaced by
+     an inline CTA inside the boot layout. */
+  body.boot-screen #dossiers-fab { display: none; }
+
   /* Loading shimmer */
   .shimmer {
     background: linear-gradient(90deg, rgba(148,163,184,0.05), rgba(148,163,184,0.15), rgba(148,163,184,0.05));
@@ -262,7 +267,7 @@
   <div id="root"></div>
 
   <!-- Enlace fijo a dossiers técnicos GEOPÓLEM -->
-  <a href="./dossiers/index.html"
+  <a id="dossiers-fab" href="./dossiers/index.html"
      class="fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-cyan-500/15 text-cyan-200 border border-cyan-400/30 hover:bg-cyan-500/25 backdrop-blur font-mono text-[11px] uppercase tracking-widest shadow-lg"
      style="font-family:'JetBrains Mono',ui-monospace,SFMono-Regular;">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>

@@ -1196,6 +1196,10 @@ function EditorialWarning({ t }) {
    Command Boot
    ======================================================================== */
 function CommandBoot({ onEnter }) {
+  useEffect(() => {
+    document.body.classList.add('boot-screen');
+    return () => document.body.classList.remove('boot-screen');
+  }, []);
   const bootLines = [
     ['GEOPÓLEM CORE', 'GEO + PÓLEMOS kernel loaded'],
     ['OSINT LAYER', 'open-source watchlist synchronized'],
@@ -1287,17 +1291,22 @@ function CommandBoot({ onEnter }) {
 
           <div class="mt-5 panel rounded-md p-4 max-w-[560px] mx-auto">
             <div class="heading-mono mb-3">Inicialización del sistema</div>
-            <div class="space-y-2">
+            <div class="space-y-3">
               ${bootLines.map((line, index) => html`
-                <div key=${line[0]} class="boot-line flex items-center justify-between gap-3 border-b border-white/5 pb-2 last:border-b-0 last:pb-0" style=${{animationDelay:`${index * 120}ms`}}>
+                <div key=${line[0]} class="boot-line flex items-center justify-between gap-3 border-b border-white/5 pb-3 last:border-b-0 last:pb-0" style=${{animationDelay:`${index * 120}ms`}}>
                   <div>
                     <div class="font-mono text-[10px] uppercase tracking-widest text-radar">${line[0]}</div>
                     <div class="text-[11.5px] text-slate-500 mt-0.5">${line[1]}</div>
                   </div>
-                  <div class="font-mono text-[10px] text-intel">ONLINE</div>
+                  <div class="font-mono text-[10px] text-intel shrink-0">ONLINE</div>
                 </div>
               `)}
             </div>
+            <a href="./dossiers/index.html"
+              class="mt-4 flex items-center justify-center gap-2 px-3 py-2.5 rounded border border-radar/40 text-radar text-[11px] font-mono uppercase tracking-[0.22em] hover:bg-radar/10 hover:shadow-glow transition">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Dossiers técnicos
+            </a>
           </div>
         </div>
       </section>
