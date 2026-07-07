@@ -19,7 +19,8 @@
     "export:static:dry": "node scripts/export-static-bridge.mjs --dry-run",
     "export:static:check": "node scripts/export-static-bridge.mjs --check",
     "export:static:enriched": "node scripts/export-static-bridge.mjs --with-enriched-map",
-    "issue:jwt": "node scripts/issue-jwt.mjs"
+    "issue:jwt": "node scripts/issue-jwt.mjs",
+    "e2e:editorial": "node scripts/e2e-editorial-flow.mjs"
   },
   "optionalDependencies": {
     "pg": "^8.11.0"
