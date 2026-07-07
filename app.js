@@ -2951,6 +2951,74 @@ function PlanZ({ lang }) {
       </div>
     </div>
 
+    <!-- Mapa de serie · orden narrativo -->
+    <div class="relative panel rounded-md p-4 lg:p-5 border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-br"></span>
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+        <div class="heading-mono">${en?'Series map · narrative order':'Mapa de serie · orden narrativo'}</div>
+        <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">${en?'Do not mix narratives':'No mezclar narrativas'}</div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+        ${p.seriesMap.map((s,i) => html`
+          <div key=${s.step} class="panel-soft rounded-md p-3 border border-white/5 relative">
+            <div class="flex items-center gap-2">
+              <span class="font-mono text-[11px] font-bold text-alert-soft">${s.step}</span>
+              <span class="font-display font-semibold text-[12.5px] text-slate-100 leading-tight">${s.key}</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-1 leading-snug">${s.note}</div>
+            ${i < p.seriesMap.length-1 ? html`<span class="hidden lg:block absolute -right-1.5 top-1/2 text-radar/50 text-xs">→</span>` : ''}
+          </div>`)}
+      </div>
+    </div>
+
+    <!-- Actos de la serie -->
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-alert/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+        <div class="heading-mono">${en?'Series acts · scripts':'Actos de la serie · guiones'}</div>
+        <a href=${p.seriesUrl} target="_blank" rel="noopener"
+           class="text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">YouTube ↗</a>
+      </div>
+      <p class="text-[13px] text-slate-300 max-w-3xl mb-4">${en
+        ? 'Each act is a chapter of the intelligence reading. Fact · Assessment · Hypothesis. Hypotheses are flagged as such, never presented as proven facts.'
+        : 'Cada acto es un capítulo de la lectura de inteligencia. Hecho · Evaluación · Hipótesis. Las hipótesis se señalan como tales, nunca se presentan como hechos probados.'}</p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        ${p.acts.map(a => {
+          const dc = p.doctrine.find(d => d.id === a.doctrine) || p.doctrine[0];
+          const isHyp = a.doctrine === 'hipotesis';
+          const dColor = isHyp ? '#f59e0b' : (a.doctrine==='evaluacion' ? '#22d3ee' : '#10b981');
+          return html`
+          <article key=${a.id} class="relative panel-soft rounded-md p-4 border border-alert/15 flex flex-col">
+            <span class="corner-tl"></span><span class="corner-br"></span>
+            <div class="flex items-center justify-between gap-2">
+              <span class="font-mono text-[10px] uppercase tracking-[0.25em] text-alert-soft">${a.num}</span>
+              <span class="chip" style=${{borderColor:`${dColor}66`, color:dColor, background:`${dColor}12`}}>${en?dc.labelEn:dc.label}</span>
+            </div>
+            <h4 class="font-display font-bold text-[18px] lg:text-[20px] text-slate-50 leading-tight mt-1.5">
+              ${a.title} <span class="text-slate-400 font-semibold text-[14px] block lg:inline">${a.subtitle}</span>
+            </h4>
+            <p class="text-[12.5px] text-slate-300 leading-relaxed mt-2">${en?a.thesisEn:a.thesis}</p>
+            <div class="mt-2.5 pl-3 border-l-2" style=${{borderColor:`${dColor}66`}}>
+              <div class="font-mono text-[9.5px] uppercase tracking-widest mb-0.5" style=${{color:dColor}}>${en?dc.labelEn:dc.label}</div>
+              <p class="text-[12px] text-slate-300 leading-snug italic">${a.claim}</p>
+            </div>
+            <div class="mt-2.5">
+              <div class="heading-mono mb-0.5">${en?'Visual direction':'Dirección visual'}</div>
+              <p class="text-[11.5px] text-slate-400 leading-snug">${a.visual}</p>
+            </div>
+            <div class="flex items-center flex-wrap gap-2 mt-3 pt-3 border-t border-white/5">
+              ${a.shortAvailable ? html`<span class="chip" style=${{borderColor:'rgba(34,211,238,0.4)', color:'#67e8f9'}}>Short / Reel · 9:16</span>` : ''}
+              <span class="chip">${en?'Short':'Short'}: ${a.shortTitle}</span>
+              <a href=${p.seriesUrl} target="_blank" rel="noopener"
+                 class="ml-auto inline-flex items-center gap-1.5 px-3 py-1.5 rounded border border-alert/40 text-alert-soft text-[11px] font-mono uppercase tracking-widest hover:bg-alert/10 hover:shadow-glow transition">
+                ▶ ${en?'Documentary':'Documental'} ↗
+              </a>
+            </div>
+          </article>`;
+        })}
+      </div>
+    </div>
+
     <!-- Activación social · short 9:16 -->
     <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/20">
       <span class="corner-tl"></span><span class="corner-tr"></span>
