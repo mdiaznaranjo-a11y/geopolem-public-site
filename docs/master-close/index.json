@@ -1,0 +1,40 @@
+{
+  "contract": "sprint-30-master-close-v1",
+  "artifact": "index",
+  "notice": "Índice del cierre maestro GEOPÓLEM (serie 1–30). PREPARA, no ejecuta; producción bloqueada.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "artifacts": {
+    "continuity_audit": {
+      "json": "continuity-audit.json",
+      "md": "continuity-audit.md"
+    },
+    "risk_matrix": {
+      "json": "risk-matrix.json",
+      "md": "risk-matrix.md"
+    },
+    "production_checklist": {
+      "json": "production-checklist.json",
+      "md": "production-checklist.md"
+    },
+    "annual_operations_guide": {
+      "md": "annual-operations-guide.md"
+    },
+    "pr_integration_plan": {
+      "md": "pr-integration-plan.md"
+    },
+    "artifact_map": {
+      "md": "artifact-map.md"
+    }
+  },
+  "summary": {
+    "sprints": 30,
+    "rebase_risks": 3,
+    "open_risks": 8,
+    "production_checklist_blocking": 8,
+    "production_state": "blocked"
+  }
+}

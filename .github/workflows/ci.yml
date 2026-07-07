@@ -129,6 +129,11 @@ jobs:
       - name: Preparación del cierre maestro Sprint 30 al día, sin producción (Sprint 29)
         run: npm run education:close-prep:check
 
+      - name: Paquete de cierre maestro (auditoría + riesgos + checklist) al día (Sprint 30)
+        run: npm run master-close:check
+      - name: Guardián NO-PRODUCTION del cierre maestro, sin secretos (Sprint 30)
+        run: npm run verify:no-production
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest
