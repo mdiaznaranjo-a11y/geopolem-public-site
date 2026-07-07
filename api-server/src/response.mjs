@@ -36,6 +36,7 @@ export function apiError(code, message, details = null) {
     validation_error: 422,
     rate_limited: 429,
     internal_error: 500,
+    service_unavailable: 503,
   };
   return {
     status: map[code] || 500,
