@@ -98,6 +98,12 @@ jobs:
       - name: Materiales docentes alineados con taxonomía, sin producción/secrets (Sprint 24)
         run: npm run education:validate
 
+      - name: Validación cruzada matrices↔causal_links del contrato v1 (Sprint 26)
+        run: npm run education:crosscheck:check
+
+      - name: Paquete LMS portable al día (Sprint 26)
+        run: npm run education:lms:check
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest

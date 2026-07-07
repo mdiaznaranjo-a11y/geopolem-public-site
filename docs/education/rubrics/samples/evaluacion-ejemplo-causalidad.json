@@ -1,0 +1,12 @@
+{
+  "contract": "sprint-26-rubric-evaluation-v1",
+  "rubric_id": "rubrica-causalidad",
+  "notice": "Evaluación de EJEMPLO (Sprint 26). Datos sintéticos y anónimos: no corresponde a ninguna persona ni a una nota real. Sólo demuestra el formato de entrada del motor de puntuación.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "scores": {
+    "nodos": "notable",
+    "enlaces": "excelente",
+    "evidencia": "suficiente",
+    "confianza": "notable"
+  }
+}

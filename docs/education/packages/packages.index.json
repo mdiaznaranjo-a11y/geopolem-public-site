@@ -1,0 +1,19 @@
+{
+  "contract": "sprint-26-education-packages-v1",
+  "notice": "Índice de paquetes docentes distribuibles GEOPÓLEM (Sprint 26). Cada paquete agrupa manifest, syllabus, casos (con matriz causal), rúbricas y guía de laboratorio para su distribución académica/profesional. Material de FORMACIÓN: no sustituye la revisión editorial ni activa producción.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "packages": [
+    {
+      "id": "curso-corto",
+      "title": "Curso corto — Análisis geopolítico de focos energéticos",
+      "audience": "estudiantes de grado / formación continua",
+      "manifest": "docs/education/packages/curso-corto/package.manifest.json"
+    },
+    {
+      "id": "seminario-ejecutivo",
+      "title": "Seminario ejecutivo — Riesgo geoeconómico y decisión",
+      "audience": "directivos / analistas senior",
+      "manifest": "docs/education/packages/seminario-ejecutivo/package.manifest.json"
+    }
+  ]
+}
