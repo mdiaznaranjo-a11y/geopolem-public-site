@@ -80,6 +80,13 @@ jobs:
       - name: Simulacro de release GATED end-to-end, sin producción (Sprint 18)
         run: npm run release:simulate:json
 
+      - name: Cola editorial CLASIFICADA para el RC al día (Sprint 19)
+        run: npm run review:rc:check
+      - name: Manifiesto del Release Candidate al día e íntegro (Sprint 19)
+        run: npm run rc:build:check
+      - name: QA funcional del RC (rutas + PWA/offline, sin navegador) (Sprint 19)
+        run: npm run qa:rc:json
+
   api-server-postgis:
     name: API v1 con PostGIS (opcional)
     runs-on: ubuntu-latest
