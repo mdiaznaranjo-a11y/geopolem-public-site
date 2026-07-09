@@ -39,7 +39,7 @@ const I18N = {
   ES: {
     welcome: 'Bienvenido al tablero.',
     tagline: 'GEO + PÓLEMOS · sala situacional editorial',
-    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio' },
+    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio', products:'Productos' },
     kpi: 'Indicadores clave',
     alerts: 'Alertas en vivo',
     selectFoco: 'Selecciona un foco',
@@ -58,7 +58,7 @@ const I18N = {
   EN: {
     welcome: 'Welcome to the board.',
     tagline: 'GEO + PÓLEMOS · editorial situation room',
-    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio' },
+    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio', products:'Products' },
     kpi:'Key indicators',
     alerts:'Live alerts',
     selectFoco:'Select a focus',
@@ -77,7 +77,7 @@ const I18N = {
   FR: {
     welcome:'Bienvenue sur le tableau.',
     tagline:'GEO + PÓLEMOS · salle de situation éditoriale',
-    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio', products:'Produits' },
     kpi:'Indicateurs clés', alerts:'Alertes en direct',
     selectFoco:'Sélectionner un foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Acteurs', risk:'Matrice des risques',
@@ -94,7 +94,7 @@ const I18N = {
   DE: {
     welcome:'Willkommen am Lagebrett.',
     tagline:'GEO + PÓLEMOS · redaktioneller Lageraum',
-    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio' },
+    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio', products:'Produkte' },
     kpi:'Schlüsselindikatoren', alerts:'Live-Warnungen',
     selectFoco:'Brennpunkt auswählen',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteure', risk:'Risikomatrix',
@@ -111,7 +111,7 @@ const I18N = {
   LB: {
     welcome:'Wëllkomm um Tableau.',
     tagline:'GEO + PÓLEMOS · redaktionellen Situatiouns-Raum',
-    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio' },
+    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio', products:'Produkter' },
     kpi:'Haaptindikateuren', alerts:'Live Alarmen',
     selectFoco:'Wielt e Foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteuren', risk:'Risiko-Matrix',
@@ -2878,6 +2878,118 @@ function PlanZTeaser({ lang, onOpen }) {
   </section>`;
 }
 
+/* ========================================================================
+   GEOPÓLEM Intelligence Products — posicionamiento comercial (sin pagos)
+   Arquitectura pública en 5 líneas. CTAs no invasivas: mailto o anchor
+   interno al mapa. No introduce checkout, membresía ni autenticación.
+   ======================================================================== */
+const GEOP_CONTACT = 'contacto@geopolem.com';
+const mailtoCta = (subject) => `mailto:${GEOP_CONTACT}?subject=${encodeURIComponent(subject)}`;
+
+const INTEL_PRODUCTS = [
+  {
+    id: 'reports', code: '01',
+    title: 'Intelligence Reports',
+    desc: 'Informes premium: Venezuela, energía, conflictos, poder, riesgo político y escenarios.',
+    descEn: 'Premium reports: Venezuela, energy, conflicts, power, political risk and scenarios.',
+    cta: 'Solicitar informe', ctaEn: 'Request report',
+    action: { type: 'mail', subject: 'GEOPÓLEM · Solicitud de informe' },
+    tone: 'text-alert border-alert/30',
+  },
+  {
+    id: 'briefings', code: '02',
+    title: 'Strategic Briefings',
+    desc: 'Sesiones privadas de análisis para empresas, inversores, periodistas, académicos o instituciones.',
+    descEn: 'Private analysis sessions for companies, investors, journalists, academics or institutions.',
+    cta: 'Reservar briefing', ctaEn: 'Book briefing',
+    action: { type: 'mail', subject: 'GEOPÓLEM · Reserva de briefing estratégico' },
+    tone: 'text-risk border-risk/30',
+  },
+  {
+    id: 'courses', code: '03',
+    title: 'Webinars & Courses',
+    desc: 'Formación sobre geopolítica, energía, OSINT, análisis de riesgo, escenarios, FODA/SWOT y PESTEL.',
+    descEn: 'Training on geopolitics, energy, OSINT, risk analysis, scenarios, SWOT and PESTEL.',
+    cta: 'Ver cursos/webinars', ctaEn: 'View courses/webinars',
+    action: { type: 'mail', subject: 'GEOPÓLEM · Cursos y webinars' },
+    tone: 'text-intel border-intel/30',
+  },
+  {
+    id: 'maps', code: '04',
+    title: 'Maps & Actor Networks',
+    desc: 'Mapas de poder, actores, rutas energéticas, conflictos, chokepoints y redes de influencia.',
+    descEn: 'Power maps, actors, energy routes, conflicts, chokepoints and influence networks.',
+    cta: 'Explorar mapas', ctaEn: 'Explore maps',
+    action: { type: 'map' },
+    tone: 'text-radar border-radar/30',
+  },
+  {
+    id: 'insights', code: '05',
+    title: 'GEOPÓLEM Insights',
+    desc: 'Contenido para Instagram, LinkedIn, YouTube y newsletter.',
+    descEn: 'Content for Instagram, LinkedIn, YouTube and newsletter.',
+    cta: 'Contactar', ctaEn: 'Contact',
+    action: { type: 'mail', subject: 'GEOPÓLEM · Insights y contenidos' },
+    tone: 'text-radar border-radar/30',
+  },
+];
+
+function IntelligenceProducts({ lang, onOpenMap }) {
+  const en = lang === 'EN';
+  return html`
+  <section class="relative panel rounded-lg overflow-hidden border border-radar/20">
+    <span class="corner-tl"></span><span class="corner-tr"></span>
+    <span class="corner-bl"></span><span class="corner-br"></span>
+    <div class="boot-grid absolute inset-0 opacity-20 pointer-events-none"></div>
+    <div class="scanlines absolute inset-0 pointer-events-none"></div>
+    <div class="relative p-4 lg:p-6 space-y-5">
+      <div class="max-w-3xl space-y-2">
+        <div class="flex items-center gap-2">
+          <span class="relative flex w-2 h-2">
+            <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-radar"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-radar"></span>
+          </span>
+          <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${en?'What is GEOPÓLEM · Intelligence Products':'Qué es GEOPÓLEM · Intelligence Products'}</div>
+        </div>
+        <h2 class="font-display font-bold text-[22px] lg:text-[28px] text-slate-50 leading-tight glow-text">
+          ${en
+            ? 'A geopolitical intelligence platform to understand the international system, anticipate scenarios and read the power behind the headlines.'
+            : 'Una plataforma de inteligencia geopolítica para entender el sistema internacional, anticipar escenarios y leer el poder detrás de los titulares.'}
+        </h2>
+        <p class="text-[13px] text-slate-300 leading-relaxed">
+          ${en
+            ? 'GEOPÓLEM is not only about Venezuela. We analyse the international system, energy, conflicts, power actors, political risk and future scenarios — using OSINT, actor maps, SWOT, PESTEL, risk matrices and prospective analysis.'
+            : 'GEOPÓLEM no se centra solo en Venezuela. Analizamos el sistema internacional, energía, conflictos, actores de poder, riesgo político y escenarios futuros — con OSINT, mapas de actores, FODA/SWOT, PESTEL, matrices de riesgo y análisis prospectivo.'}
+        </p>
+        <p class="text-[12.5px] text-alert-soft font-mono uppercase tracking-widest">
+          ${en?'We don’t follow headlines. We interpret structures. · Welcome to the board.':'No seguimos titulares. Interpretamos estructuras. · Bienvenidos al tablero.'}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+        ${INTEL_PRODUCTS.map(p => {
+          const isMap = p.action.type === 'map';
+          const label = en ? p.ctaEn : p.cta;
+          const inner = html`
+            <span class="corner-tl"></span><span class="corner-br"></span>
+            <div class="flex items-center justify-between gap-2">
+              <span class="font-mono text-[10.5px] uppercase tracking-[0.25em] text-slate-500">GEOP · ${p.code}</span>
+            </div>
+            <h3 class="font-display font-bold text-[17px] lg:text-[18px] text-slate-50 mt-2 leading-tight">${p.title}</h3>
+            <p class="text-[12.5px] text-slate-400 leading-relaxed mt-2 flex-1">${en?p.descEn:p.desc}</p>
+            <span class=${clsx('mt-4 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded border text-[12px] font-mono uppercase tracking-widest transition w-full hover:shadow-glow hover:bg-white/5', p.tone)}>
+              ${isMap ? '▶ ' : '✉ '}${label}${isMap?' →':' ↗'}
+            </span>`;
+          const cardClass = clsx('relative panel-soft rounded-md p-4 border flex flex-col text-left cursor-pointer', p.tone);
+          return isMap
+            ? html`<button key=${p.id} type="button" onClick=${onOpenMap} class=${cardClass}>${inner}</button>`
+            : html`<a key=${p.id} href=${mailtoCta(p.action.subject)} class=${clsx(cardClass, 'no-underline')}>${inner}</a>`;
+        })}
+      </div>
+    </div>
+  </section>`;
+}
+
 function PlanZ({ lang }) {
   const en = lang === 'EN';
   const p = PLAN_Z;
@@ -3458,6 +3570,7 @@ function App() {
           </div>
           <${Analysis} t=${t} foco=${selectedFoco}/>
           <${Scenarios} t=${t} foco=${selectedFoco}/>
+          <${IntelligenceProducts} lang=${lang} onOpenMap=${()=>setView('map')}/>
           <${PlanZTeaser} lang=${lang} onOpen=${()=>setView('planz')}/>
           <${DoctrinaTeaser} lang=${lang} onOpen=${()=>setView('doctrina')}/>
           <${SalaTeaser} lang=${lang} onOpen=${()=>setView('sala')}/>
@@ -3503,6 +3616,8 @@ function App() {
       ${view==='rearm' && html`<${RearmamentModule} t=${t} onOpenFoco=${openFocoOnMap}/>`}
 
       ${view==='monetization' && html`<${MonetizationModule} t=${t}/>`}
+
+      ${view==='products' && html`<${IntelligenceProducts} lang=${lang} onOpenMap=${()=>setView('map')}/>`}
 
       ${view==='editor' && html`<${EditorPanel} t=${t} focos=${allFocos} onCreate=${createFoco} onDelete=${deleteFoco} onPasswordChange=${changePassword} history=${history} attachments=${attachments} users=${users} onCreateUser=${createUser} onDeleteUser=${deleteUser} onUploadAttachment=${uploadAttachment} onDeleteAttachment=${deleteAttachment} getAttachmentUrl=${attachmentUrl} getDossierUrl=${dossierUrl} onRefreshHistory=${()=>loadEditorData(auth?.token)} onOpenFoco=${openFocoOnMap} auth=${auth} onLogin=${loginEditor} authStatus=${authStatus} dbStatus=${dbStatus}/>`}
 
