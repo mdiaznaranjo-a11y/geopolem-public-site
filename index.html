@@ -249,6 +249,11 @@
   /* Mobile bottom-nav safe area */
   .bottom-nav { padding-bottom: env(safe-area-inset-bottom); }
 
+  /* Horizontal-scrollable nav without a visible scrollbar (keeps the header tidy
+     while preventing the desktop nav from forcing horizontal page overflow). */
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+
   /* On the boot/initialization screen the floating Dossiers button would overlap
      the "Inicialización del sistema" panel, so it is hidden there and replaced by
      an inline CTA inside the boot layout. */

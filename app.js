@@ -382,7 +382,7 @@ function Header({ t, lang, setLang, onSitRoom, sitRoom, view, setView }) {
         </div>
       </div>
 
-      <nav class="hidden md:flex items-center gap-0.5 ml-2">
+      <nav class="hidden md:flex items-center gap-0.5 ml-2 min-w-0 flex-1 overflow-x-auto no-scrollbar">
         ${Object.entries(t.nav).map(([k,v]) => html`
           <button key=${k}
             onClick=${() => goView(k)}
