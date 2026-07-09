@@ -3032,32 +3032,42 @@ function PlanZ({ lang }) {
         <div class="heading-mono">${en?'Series releases':'Entregas de la serie'}</div>
         <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">${en?'Publication order':'Orden de publicación'}</div>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
-        ${p.entregas.filter(e=>e.published).map(e => html`
-          <article key=${e.n} class="relative lg:col-span-2 panel-soft rounded-md p-4 lg:p-5 border border-alert/20 flex flex-col">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        ${p.entregas.filter(e=>e.published||e.featured).map(e => html`
+          <article key=${e.n} class="relative panel-soft rounded-md p-4 lg:p-5 border border-alert/20 flex flex-col">
             <span class="corner-tl"></span><span class="corner-br"></span>
             <div class="flex items-center justify-between gap-2 flex-wrap">
               <span class="font-mono text-[10.5px] uppercase tracking-[0.25em] text-alert-soft">${e.seriesLabel}</span>
-              <span class="chip" style=${{borderColor:'rgba(16,185,129,0.4)', color:'#6ee7b7', background:'rgba(16,185,129,0.1)'}}>${en?e.statusEn:e.status}</span>
+              <span class="chip" style=${e.published
+                ? {borderColor:'rgba(16,185,129,0.4)', color:'#6ee7b7', background:'rgba(16,185,129,0.1)'}
+                : {borderColor:'rgba(245,158,11,0.4)', color:'#fbbf24', background:'rgba(245,158,11,0.1)'}}>${en?e.statusEn:e.status}</span>
             </div>
             <h4 class="font-display font-bold text-[20px] lg:text-[24px] text-slate-50 leading-tight mt-2 glow-text">${en?(e.titleEn||e.title):e.title}</h4>
             <p class="text-[13px] text-slate-300 leading-relaxed mt-2">${en?(e.descriptionEn||e.description):e.description}</p>
             <div class="flex flex-wrap gap-1.5 mt-3">
               ${e.doctrine.map(id => { const d = p.doctrine.find(x=>x.id===id) || {label:id,labelEn:id}; return html`<span key=${id} class="chip" style=${{borderColor:'rgba(34,211,238,0.4)', color:'#67e8f9'}}>${en?d.labelEn:d.label}</span>`; })}
             </div>
+            ${(e.chips&&e.chips.length) ? html`
+            <div class="flex flex-wrap gap-1.5 mt-2">
+              ${(en?(e.chipsEn||e.chips):e.chips).map(c => html`<span key=${c} class="chip">${c}</span>`)}
+            </div>` : ''}
+            ${e.published && e.youtube ? html`
             <a href=${e.youtube} target="_blank" rel="noopener"
               class="mt-4 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded border border-alert/40 text-alert-soft text-[12px] font-mono uppercase tracking-widest hover:bg-alert/10 hover:shadow-glow transition w-full lg:w-auto">
               ▶ ${en?(e.ctaEn||e.cta):e.cta} ↗
-            </a>
+            </a>` : html`
+            <div class="mt-4 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded border border-radar/30 text-radar text-[12px] font-mono uppercase tracking-widest w-full lg:w-auto cursor-default">
+              ◷ ${en?(e.ctaEn||e.cta):e.cta}
+            </div>`}
           </article>`)}
-        ${p.entregas.filter(e=>!e.published).slice(0,1).map(e => html`
-          <div key=${e.n} class="relative panel-soft rounded-md p-4 border border-white/5 flex flex-col justify-center">
-            <div class="heading-mono mb-1">${en?'Next release':'Siguiente entrega'}</div>
-            <div class="font-mono text-[10.5px] uppercase tracking-[0.25em] text-slate-400">${e.seriesLabel}</div>
-            <h4 class="font-display font-semibold text-[16px] lg:text-[18px] text-slate-200 leading-tight mt-1">${en?(e.titleEn||e.title):e.title}</h4>
-            <span class="chip mt-3 self-start">${en?e.statusEn:e.status}</span>
-          </div>`)}
       </div>
+      ${p.entregas.filter(e=>!e.published&&!e.featured).slice(0,1).map(e => html`
+        <div key=${e.n} class="relative panel-soft rounded-md p-4 border border-white/5 flex flex-col justify-center mt-3">
+          <div class="heading-mono mb-1">${en?'Next release':'Siguiente entrega'}</div>
+          <div class="font-mono text-[10.5px] uppercase tracking-[0.25em] text-slate-400">${e.seriesLabel}</div>
+          <h4 class="font-display font-semibold text-[16px] lg:text-[18px] text-slate-200 leading-tight mt-1">${en?(e.titleEn||e.title):e.title}</h4>
+          <span class="chip mt-3 self-start">${en?e.statusEn:e.status}</span>
+        </div>`)}
     </div>
 
     <!-- Documental + pregunta analítica -->
