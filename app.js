@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z } from './data.js';
+import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 import { loadWatchlistFocos } from './api-adapter.js';
@@ -39,7 +39,7 @@ const I18N = {
   ES: {
     welcome: 'Bienvenido al tablero.',
     tagline: 'GEO + PÓLEMOS · sala situacional editorial',
-    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio', products:'Productos' },
+    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Ficha', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio', products:'Productos' },
     kpi: 'Indicadores clave',
     alerts: 'Alertas en vivo',
     selectFoco: 'Selecciona un foco',
@@ -58,7 +58,7 @@ const I18N = {
   EN: {
     welcome: 'Welcome to the board.',
     tagline: 'GEO + PÓLEMOS · editorial situation room',
-    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio', products:'Products' },
+    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Brief', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio', products:'Products' },
     kpi:'Key indicators',
     alerts:'Live alerts',
     selectFoco:'Select a focus',
@@ -77,7 +77,7 @@ const I18N = {
   FR: {
     welcome:'Bienvenue sur le tableau.',
     tagline:'GEO + PÓLEMOS · salle de situation éditoriale',
-    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio', products:'Produits' },
+    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio', products:'Produits' },
     kpi:'Indicateurs clés', alerts:'Alertes en direct',
     selectFoco:'Sélectionner un foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Acteurs', risk:'Matrice des risques',
@@ -94,7 +94,7 @@ const I18N = {
   DE: {
     welcome:'Willkommen am Lagebrett.',
     tagline:'GEO + PÓLEMOS · redaktioneller Lageraum',
-    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio', products:'Produkte' },
+    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Notiz', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio', products:'Produkte' },
     kpi:'Schlüsselindikatoren', alerts:'Live-Warnungen',
     selectFoco:'Brennpunkt auswählen',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteure', risk:'Risikomatrix',
@@ -111,7 +111,7 @@ const I18N = {
   LB: {
     welcome:'Wëllkomm um Tableau.',
     tagline:'GEO + PÓLEMOS · redaktionellen Situatiouns-Raum',
-    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio', products:'Produkter' },
+    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio', products:'Produkter' },
     kpi:'Haaptindikateuren', alerts:'Live Alarmen',
     selectFoco:'Wielt e Foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteuren', risk:'Risiko-Matrix',
@@ -2879,6 +2879,134 @@ function PlanZTeaser({ lang, onOpen }) {
 }
 
 /* ========================================================================
+   Ficha editorial · Ventaja estratégica — teaser (dashboard) + vista completa
+   Marco doctrinal (Hecho · Evaluación · Hipótesis) + siete dimensiones.
+   ======================================================================== */
+function FichaTeaser({ lang, onOpen }) {
+  const en = lang === 'EN';
+  const f = FICHA_VENTAJA;
+  return html`
+  <section class="relative panel rounded-lg overflow-hidden border border-radar/25">
+    <span class="corner-tl"></span><span class="corner-tr"></span>
+    <span class="corner-bl"></span><span class="corner-br"></span>
+    <div class="boot-grid absolute inset-0 opacity-25 pointer-events-none"></div>
+    <div class="scanlines absolute inset-0 pointer-events-none"></div>
+    <div class="relative p-4 lg:p-6 flex flex-col lg:flex-row gap-4 lg:items-center justify-between">
+      <div class="space-y-1.5 max-w-2xl">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="relative flex w-2 h-2">
+            <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-radar"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-radar"></span>
+          </span>
+          <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${en?f.eyebrowEn:f.eyebrow}</div>
+          <span class="chip" style=${{borderColor:'rgba(34,211,238,0.4)', color:'#67e8f9', background:'rgba(34,211,238,0.1)'}}>${en?f.statusEn:f.status}</span>
+        </div>
+        <h3 class="font-display font-bold text-[20px] lg:text-[26px] text-slate-50 leading-tight glow-text">${en?f.titleEn:f.title} <span class="text-radar">· ${en?f.subtitleEn:f.subtitle}</span></h3>
+        <p class="text-[13px] text-slate-300">${en?f.summaryEn:f.summary}</p>
+      </div>
+      <button onClick=${onOpen}
+        class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+        ▶ ${en?'Open brief':'Abrir ficha'}
+      </button>
+    </div>
+  </section>`;
+}
+
+function FichaEditorial({ lang }) {
+  const en = lang === 'EN';
+  const f = FICHA_VENTAJA;
+  const date = new Date().toLocaleDateString(en?'en-GB':'es-ES', { day:'2-digit', month:'long', year:'numeric' });
+  const dColor = (id) => id==='hipotesis' ? '#f59e0b' : (id==='evaluacion' ? '#22d3ee' : '#10b981');
+  return html`
+  <section class="space-y-4">
+    <!-- Hero -->
+    <div class="relative panel rounded-lg overflow-hidden border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="boot-grid absolute inset-0 opacity-30 pointer-events-none"></div>
+      <div class="scanlines absolute inset-0 pointer-events-none"></div>
+      <div class="relative p-5 lg:p-7">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="relative flex w-2 h-2">
+              <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-radar"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-radar"></span>
+            </span>
+            <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${en?f.eyebrowEn:f.eyebrow}</div>
+            <span class="chip" style=${{borderColor:'rgba(34,211,238,0.4)', color:'#67e8f9', background:'rgba(34,211,238,0.1)'}}>${en?f.statusEn:f.status}</span>
+          </div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">SITUATION ROOM · ${date}</div>
+        </div>
+        <div class="font-mono text-[10.5px] uppercase tracking-[0.25em] text-slate-500 mt-3">${en?f.categoryLabelEn:f.categoryLabel}</div>
+        <h2 class="font-display font-bold text-[28px] lg:text-[38px] text-slate-50 leading-tight mt-1 glow-text">${en?f.titleEn:f.title}</h2>
+        <p class="font-display font-semibold text-[16px] lg:text-[20px] text-radar leading-snug mt-1">${en?f.subtitleEn:f.subtitle}</p>
+        <p class="text-[14px] lg:text-[15px] text-slate-200 leading-relaxed mt-3 max-w-3xl">${en?f.summaryEn:f.summary}</p>
+        <p class="text-[12.5px] text-alert-soft font-mono uppercase tracking-widest mt-2">${en?f.notNewsEn:f.notNews}</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          ${f.vectors.map(v => html`<span key=${v} class="chip" style=${{borderColor:'rgba(34,211,238,0.35)'}}>${v}</span>`)}
+        </div>
+        <div class="mt-4 flex flex-wrap items-center gap-3">
+          <a href=${f.sourceUrl} target="_blank" rel="noopener"
+            class="inline-flex items-center gap-2 px-3.5 py-2 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+            ${en?'Read source at Global Strategy':'Leer fuente en Global Strategy'} ↗
+          </a>
+          <span class="text-[11px] font-mono uppercase tracking-wider text-slate-500">${en?'Source':'Fuente'}: ${f.source} · ${f.sourceDate}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hecho · Evaluación · Hipótesis -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+      ${f.doctrine.map(d => html`
+        <article key=${d.id} class="relative panel-soft rounded-md p-4 lg:p-5 border flex flex-col" style=${{borderColor:`${dColor(d.id)}44`}}>
+          <span class="corner-tl"></span><span class="corner-br"></span>
+          <span class="chip self-start" style=${{borderColor:`${dColor(d.id)}66`, color:dColor(d.id), background:`${dColor(d.id)}12`}}>${en?d.labelEn:d.label}</span>
+          <p class="text-[13px] text-slate-300 leading-relaxed mt-3">${en?d.bodyEn:d.body}</p>
+        </article>`)}
+    </div>
+
+    <!-- Siete dimensiones de la ventaja estratégica -->
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
+        <div class="heading-mono">${en?'Seven dimensions of strategic advantage':'Siete dimensiones de la ventaja estratégica'}</div>
+        <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">${en?'Learn · Produce · Regenerate':'Aprender · Producir · Regenerar'}</div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+        ${f.dimensions.map(dm => html`
+          <div key=${dm.n} class="relative panel-soft rounded-md p-4 border border-white/5 flex flex-col">
+            <span class="corner-tl"></span>
+            <div class="flex items-center gap-2">
+              <span class="font-mono text-[13px] font-bold text-radar">${String(dm.n).padStart(2,'0')}</span>
+              <h4 class="font-display font-semibold text-[15px] lg:text-[16px] text-slate-100 leading-tight">${en?dm.keyEn:dm.key}</h4>
+            </div>
+            <p class="text-[12px] text-slate-400 leading-snug mt-2">${en?dm.descEn:dm.desc}</p>
+          </div>`)}
+      </div>
+    </div>
+
+    <!-- Línea editorial + tripolaridad -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="lg:col-span-2 relative panel rounded-md p-5 lg:p-6 flex flex-col justify-center border border-alert/20">
+        <span class="corner-tl"></span><span class="corner-br"></span>
+        <div class="heading-mono mb-2">${en?'GEOPÓLEM editorial line':'Frase editorial GEOPÓLEM'}</div>
+        <p class="font-display font-semibold text-[19px] lg:text-[23px] text-slate-100 leading-snug glow-text">“${en?f.editorialLineEn:f.editorialLine}”</p>
+      </div>
+      <div class="relative panel rounded-md p-4 flex flex-col justify-center border border-radar/20">
+        <span class="corner-tl"></span><span class="corner-br"></span>
+        <div class="heading-mono mb-3">${en?'Tripolarity':'Tripolaridad'}</div>
+        <div class="flex flex-wrap gap-1.5">
+          ${f.tripolarity.map(a => html`<span key=${a} class="chip" style=${{borderColor:'rgba(34,211,238,0.4)', color:'#67e8f9'}}>${a}</span>`)}
+        </div>
+        <p class="text-[12.5px] font-mono uppercase tracking-wider text-alert-soft mt-3">${en?f.tripolarityCenterEn:f.tripolarityCenter}</p>
+        <p class="text-[11px] font-mono uppercase tracking-widest text-slate-500 mt-4">${f.close}</p>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ========================================================================
    GEOPÓLEM Intelligence Products — posicionamiento comercial (sin pagos)
    Arquitectura pública en 5 líneas. CTAs no invasivas: mailto o anchor
    interno al mapa. No introduce checkout, membresía ni autenticación.
@@ -3582,6 +3710,7 @@ function App() {
           <${Scenarios} t=${t} foco=${selectedFoco}/>
           <${IntelligenceProducts} lang=${lang} onOpenMap=${()=>setView('map')}/>
           <${PlanZTeaser} lang=${lang} onOpen=${()=>setView('planz')}/>
+          <${FichaTeaser} lang=${lang} onOpen=${()=>setView('ficha')}/>
           <${DoctrinaTeaser} lang=${lang} onOpen=${()=>setView('doctrina')}/>
           <${SalaTeaser} lang=${lang} onOpen=${()=>setView('sala')}/>
         </div>
@@ -3600,6 +3729,8 @@ function App() {
       ${view==='doctrina' && html`<${Doctrina} lang=${lang}/>`}
 
       ${view==='planz' && html`<${PlanZ} lang=${lang}/>`}
+
+      ${view==='ficha' && html`<${FichaEditorial} lang=${lang}/>`}
 
       ${view==='sentinel' && html`<${SentinelBrief} lang=${lang}/>`}
 

@@ -926,3 +926,75 @@ export const PLAN_Z = {
   tags: ['PlanZ', 'Venezuela', 'Geopolítica', 'Petróleo', 'PDVSA', 'Orinoco', 'OSINT', 'Energía', 'Petropoder', 'Cuba', 'Níquel', 'Cobalto'],
   close: 'GEOPÓLEM. Bienvenidos al tablero.',
 };
+
+/* ========================================================================
+   GEOPÓLEM · Ficha editorial — Ventaja estratégica
+   Marco doctrinal (no coyuntura) basado en Samuel Morales / Global Strategy.
+   Estructura de sala situacional: Hecho · Evaluación · Hipótesis + 7 dimensiones.
+   ======================================================================== */
+export const FICHA_VENTAJA = {
+  id: 'ventaja-estrategica',
+  slug: 'las-siete-dimensiones-de-la-ventaja-estrategica',
+  category: 'estrategia',
+  tone: 'cyan',
+  eyebrow: 'Ficha editorial · Marco doctrinal',
+  eyebrowEn: 'Editorial brief · Doctrinal framework',
+  status: 'Ficha editorial · Short listo',
+  statusEn: 'Editorial brief · Short ready',
+  title: 'Ganará quien aprenda antes',
+  titleEn: 'The one who learns first will win',
+  subtitle: 'Las siete dimensiones de la ventaja estratégica',
+  subtitleEn: 'The seven dimensions of strategic advantage',
+  categoryLabel: 'Estrategia · Defensa · Industria',
+  categoryLabelEn: 'Strategy · Defence · Industry',
+  source: 'Global Strategy · Samuel Morales · 2026',
+  sourceUrl: 'https://global-strategy.org/ganara-quien-aprenda-antes-adaptacion-industria-y-las-siete-dimensiones-de-la-ventaja-estrategica/',
+  sourceDate: '3 de julio de 2026',
+  summary: 'Marco doctrinal para leer la guerra contemporánea, la industria de defensa y la competencia tripolar. No es una noticia de coyuntura: es una lectura estratégica sobre quién observa antes, decide antes, produce antes y se regenera antes.',
+  summaryEn: 'A doctrinal framework to read contemporary war, the defence industry and tripolar competition. Not breaking news: a strategic reading of who observes, decides, produces and regenerates first.',
+  notNews: 'Sin amarillismo. Lectura estratégica. Sala situacional.',
+  notNewsEn: 'No sensationalism. Strategic reading. Situation room.',
+  // Doctrina editorial: Hecho · Evaluación · Hipótesis
+  doctrine: [
+    {
+      id: 'hecho',
+      label: 'Hecho',
+      labelEn: 'Fact',
+      body: 'El artículo plantea que la ventaja estratégica contemporánea no depende sólo de poseer plataformas militares avanzadas, sino de aprender, adaptar doctrina, escalar producción y regenerar capacidades antes que el adversario. La tesis central: “la ventaja decisiva no pertenece al actor con la plataforma más avanzada; pertenece al que aprende más rápido”.',
+      bodyEn: 'The article argues that contemporary strategic advantage does not depend only on owning advanced military platforms, but on learning, adapting doctrine, scaling production and regenerating capabilities faster than the adversary. The core thesis: decisive advantage belongs not to the actor with the most advanced platform, but to the one who learns fastest.',
+    },
+    {
+      id: 'evaluacion',
+      label: 'Evaluación',
+      labelEn: 'Assessment',
+      body: 'El marco desplaza el análisis desde la superioridad material estática hacia la velocidad de adaptación sistémica. La industria de defensa, la logística, la narrativa estratégica, la resiliencia social y el mando descentralizado forman parte de la guerra, no de su periferia.',
+      bodyEn: 'The framework shifts analysis from static material superiority towards the speed of systemic adaptation. The defence industry, logistics, strategic narrative, social resilience and decentralised command are part of the war, not its periphery.',
+    },
+    {
+      id: 'hipotesis',
+      label: 'Hipótesis',
+      labelEn: 'Hypothesis',
+      body: 'En la competencia tripolar, la ventaja no será sólo tecnológica ni presupuestaria: será institucional, industrial y cognitiva. Ganará el bloque que observe antes, decida antes, produzca antes, comunique con credibilidad y se regenere antes. Hipótesis señalada como tal, no como hecho probado.',
+      bodyEn: 'In tripolar competition, advantage will not be only technological or budgetary: it will be institutional, industrial and cognitive. The bloc that observes, decides, produces, communicates credibly and regenerates first will win. Flagged as hypothesis, not proven fact.',
+    },
+  ],
+  // Las siete dimensiones de la ventaja estratégica (rejilla visible)
+  dimensions: [
+    { n: 1, key: 'Ver más rápido',              keyEn: 'See faster',            desc: 'Convertir sensores, OSINT, inteligencia y datos en conocimiento accionable.', descEn: 'Turn sensors, OSINT, intelligence and data into actionable knowledge.' },
+    { n: 2, key: 'Decidir con claridad',        keyEn: 'Decide with clarity',   desc: 'Evitar la parálisis burocrática y operar con información incompleta.',        descEn: 'Avoid bureaucratic paralysis and operate with incomplete information.' },
+    { n: 3, key: 'Golpear en el dominio correcto', keyEn: 'Strike in the right domain', desc: 'Integrar efectos cinéticos, cibernéticos, informativos, industriales y diplomáticos.', descEn: 'Integrate kinetic, cyber, informational, industrial and diplomatic effects.' },
+    { n: 4, key: 'Resistir con profundidad',    keyEn: 'Resist in depth',       desc: 'Proteger infraestructura crítica, logística, sociedad y economía.',            descEn: 'Protect critical infrastructure, logistics, society and economy.' },
+    { n: 5, key: 'Producir más rápido',         keyEn: 'Produce faster',        desc: 'Escalar munición, drones, software, repuestos y cadenas críticas.',            descEn: 'Scale munitions, drones, software, spares and critical supply chains.' },
+    { n: 6, key: 'Narrar con credibilidad',     keyEn: 'Narrate credibly',      desc: 'Sostener legitimidad pública sin abandonar la verdad operativa.',              descEn: 'Sustain public legitimacy without abandoning operational truth.' },
+    { n: 7, key: 'Regenerarse antes',           keyEn: 'Regenerate first',      desc: 'Aprender de pérdidas, corregir doctrina y reconstituir capacidades.',          descEn: 'Learn from losses, correct doctrine and reconstitute capabilities.' },
+  ],
+  // Línea editorial GEOPÓLEM
+  editorialLine: 'La guerra contemporánea no premia sólo al más fuerte. Premia al sistema que aprende antes, produce antes y se regenera antes.',
+  editorialLineEn: 'Contemporary war does not reward only the strongest. It rewards the system that learns first, produces first and regenerates first.',
+  vectors: ['Estrategia', 'Defensa', 'Industria', 'Tripolaridad', 'OSINT', 'Adaptación', 'Resiliencia'],
+  tripolarity: ['EE. UU.', 'China', 'Rusia'],
+  tripolarityCenter: 'Velocidad de aprendizaje',
+  tripolarityCenterEn: 'Speed of learning',
+  tags: ['Estrategia', 'Defensa', 'Industria', 'Tripolaridad', 'OSINT', 'GuerraModerna', 'Ventaja estratégica'],
+  close: 'GEOPÓLEM. Bienvenidos al tablero.',
+};
