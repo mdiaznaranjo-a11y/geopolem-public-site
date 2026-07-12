@@ -2904,10 +2904,15 @@ function FichaTeaser({ lang, onOpen }) {
         <h3 class="font-display font-bold text-[20px] lg:text-[26px] text-slate-50 leading-tight glow-text">${en?f.titleEn:f.title} <span class="text-radar">· ${en?f.subtitleEn:f.subtitle}</span></h3>
         <p class="text-[13px] text-slate-300">${en?f.summaryEn:f.summary}</p>
       </div>
-      <button onClick=${onOpen}
-        class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
-        ▶ ${en?'Open brief':'Abrir ficha'}
-      </button>
+      <div class="shrink-0 flex items-center gap-4">
+        ${f.cover ? html`
+        <img src=${f.cover} alt=${f.coverAlt} loading="lazy" decoding="async"
+          class="hidden sm:block w-[54px] rounded border border-radar/30 shadow-glow aspect-[9/16] object-cover" />` : ''}
+        <button onClick=${onOpen}
+          class="inline-flex items-center gap-2 px-4 py-2.5 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+          ▶ ${en?'Open brief':'Abrir ficha'}
+        </button>
+      </div>
     </div>
   </section>`;
 }
@@ -2925,7 +2930,8 @@ function FichaEditorial({ lang }) {
       <span class="corner-bl"></span><span class="corner-br"></span>
       <div class="boot-grid absolute inset-0 opacity-30 pointer-events-none"></div>
       <div class="scanlines absolute inset-0 pointer-events-none"></div>
-      <div class="relative p-5 lg:p-7">
+      <div class="relative p-5 lg:p-7 flex flex-col lg:flex-row lg:items-start gap-5 lg:gap-7">
+        <div class="min-w-0 flex-1 order-2 lg:order-1">
         <div class="flex items-center justify-between flex-wrap gap-2">
           <div class="flex items-center gap-2 flex-wrap">
             <span class="relative flex w-2 h-2">
@@ -2952,6 +2958,18 @@ function FichaEditorial({ lang }) {
           </a>
           <span class="text-[11px] font-mono uppercase tracking-wider text-slate-500">${en?'Source':'Fuente'}: ${f.source} · ${f.sourceDate}</span>
         </div>
+        </div>
+        ${f.cover ? html`
+        <figure class="order-1 lg:order-2 w-full max-w-[190px] sm:max-w-[220px] mx-auto lg:mx-0 shrink-0">
+          <div class="relative rounded-md overflow-hidden border border-radar/30 shadow-glow bg-black/40">
+            <span class="corner-tl"></span><span class="corner-tr"></span>
+            <span class="corner-bl"></span><span class="corner-br"></span>
+            <img src=${f.cover} alt=${f.coverAlt} loading="lazy" decoding="async"
+              class="block w-full h-auto aspect-[9/16] object-cover" />
+            <div class="scanlines absolute inset-0 pointer-events-none opacity-40"></div>
+          </div>
+          <figcaption class="mt-1.5 text-[9.5px] font-mono uppercase tracking-widest text-slate-500 text-center">${en?'Cover · 9:16':'Portada · 9:16'}</figcaption>
+        </figure>` : ''}
       </div>
     </div>
 
