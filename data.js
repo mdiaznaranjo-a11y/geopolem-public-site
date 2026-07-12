@@ -953,6 +953,12 @@ export const FICHA_VENTAJA = {
   cover: './assets/geopolem_siete_dimensiones_cover_9x16.jpg',
   coverAlt: 'Portada GEOPÓLEM: Ganará quien aprenda antes, siete dimensiones de la ventaja estratégica.',
   coverRatio: '9:16',
+  youtube: {
+    id: 'ElGLSWObyoc',
+    url: 'https://youtu.be/ElGLSWObyoc',
+    label: 'Ver análisis en YouTube',
+    labelEn: 'Watch the analysis on YouTube',
+  },
   summary: 'Marco doctrinal para leer la guerra contemporánea, la industria de defensa y la competencia tripolar. No es una noticia de coyuntura: es una lectura estratégica sobre quién observa antes, decide antes, produce antes y se regenera antes.',
   summaryEn: 'A doctrinal framework to read contemporary war, the defence industry and tripolar competition. Not breaking news: a strategic reading of who observes, decides, produces and regenerates first.',
   notNews: 'Sin amarillismo. Lectura estratégica. Sala situacional.',

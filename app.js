@@ -2983,6 +2983,25 @@ function FichaEditorial({ lang }) {
         </article>`)}
     </div>
 
+    <!-- Análisis en vídeo (YouTube) -->
+    ${f.youtube ? html`
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
+        <div class="heading-mono">${en?'Video analysis':'Análisis en vídeo'}</div>
+        <a href=${f.youtube.url} target="_blank" rel="noopener"
+           class="text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">YouTube ↗</a>
+      </div>
+      <div class="max-w-3xl mx-auto">
+        <${YouTubeEmbed} id=${f.youtube.id} title=${`${en?f.titleEn:f.title} · ${en?f.subtitleEn:f.subtitle}`}/>
+        <a href=${f.youtube.url} target="_blank" rel="noopener"
+          class="mt-3 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition w-full lg:w-auto">
+          ▶ ${en?(f.youtube.labelEn||'Watch on YouTube'):(f.youtube.label||'Ver en YouTube')}
+        </a>
+      </div>
+    </div>` : ''}
+
     <!-- Descripción bilingüe (Shorts / paquete de publicación) -->
     ${(f.longDescription && f.longDescriptionEn) ? html`
     <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/15">
