@@ -39,7 +39,7 @@ const I18N = {
   ES: {
     welcome: 'Bienvenido al tablero.',
     tagline: 'GEO + PÓLEMOS · sala situacional editorial',
-    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Ficha', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio', products:'Productos' },
+    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Ficha', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio', products:'Productos', osint:'OSINT Geopolítico' },
     kpi: 'Indicadores clave',
     alerts: 'Alertas en vivo',
     selectFoco: 'Selecciona un foco',
@@ -58,7 +58,7 @@ const I18N = {
   EN: {
     welcome: 'Welcome to the board.',
     tagline: 'GEO + PÓLEMOS · editorial situation room',
-    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Brief', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio', products:'Products' },
+    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Brief', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio', products:'Products', osint:'OSINT Geopolitical' },
     kpi:'Key indicators',
     alerts:'Live alerts',
     selectFoco:'Select a focus',
@@ -77,7 +77,7 @@ const I18N = {
   FR: {
     welcome:'Bienvenue sur le tableau.',
     tagline:'GEO + PÓLEMOS · salle de situation éditoriale',
-    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio', products:'Produits' },
+    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio', products:'Produits', osint:'OSINT Géopolitique' },
     kpi:'Indicateurs clés', alerts:'Alertes en direct',
     selectFoco:'Sélectionner un foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Acteurs', risk:'Matrice des risques',
@@ -94,7 +94,7 @@ const I18N = {
   DE: {
     welcome:'Willkommen am Lagebrett.',
     tagline:'GEO + PÓLEMOS · redaktioneller Lageraum',
-    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Notiz', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio', products:'Produkte' },
+    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Notiz', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio', products:'Produkte', osint:'OSINT Geopolitik' },
     kpi:'Schlüsselindikatoren', alerts:'Live-Warnungen',
     selectFoco:'Brennpunkt auswählen',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteure', risk:'Risikomatrix',
@@ -111,7 +111,7 @@ const I18N = {
   LB: {
     welcome:'Wëllkomm um Tableau.',
     tagline:'GEO + PÓLEMOS · redaktionellen Situatiouns-Raum',
-    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio', products:'Produkter' },
+    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio', products:'Produkter', osint:'OSINT Geopolitik' },
     kpi:'Haaptindikateuren', alerts:'Live Alarmen',
     selectFoco:'Wielt e Foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteuren', risk:'Risiko-Matrix',
@@ -3097,6 +3097,106 @@ const INTEL_PRODUCTS = [
   },
 ];
 
+/* ------------------------------------------------------------------
+   OSINT geopolítico legal — serie de 10 reels (4 semanas).
+   Fuente editorial: calendario_reels_osint_geopolem_4_semanas.md
+   Mensaje central: OSINT no es hackear. Es saber leer fuentes abiertas
+   con método. Contenido de marca, sin pagos ni servicios externos.
+   ------------------------------------------------------------------ */
+const OSINT_REELS_MESSAGE = 'OSINT no es hackear. Es saber leer fuentes abiertas con método.';
+const OSINT_REELS = [
+  {
+    id: 'osint-01', n: 1, week: 'Semana 1 · Fundamentos', code: 'R01',
+    title: 'OSINT no es hackear',
+    hook: 'OSINT no es hackear.',
+    screen: 'NO NECESITAS HACKEAR. NECESITAS MÉTODO.',
+    synthesis: 'OSINT no es entrar en sistemas privados: es analizar fuentes abiertas con método —discursos, mapas, empresas, sanciones, rutas, contratos y datos públicos—. La inteligencia empieza cuando conectas señales dispersas.',
+    cta: 'Aprende OSINT geopolítico legal con GEOPÓLEM.',
+    tone: 'text-radar border-radar/30',
+  },
+  {
+    id: 'osint-02', n: 2, week: 'Semana 1 · Fundamentos', code: 'R02',
+    title: 'El poder deja rastros',
+    hook: 'El poder deja rastros.',
+    screen: 'EL PODER NO SIEMPRE SE ESCONDE. A VECES SOLO HAY QUE SABER MIRAR.',
+    synthesis: 'Los actores de poder dejan rastros en empresas, viajes, contratos, discursos, sanciones, alianzas y rutas críticas. La clave no es mirar más información, sino saber qué señales importan y cómo se conectan.',
+    cta: 'Guarda este video para aprender a leer redes de poder.',
+    tone: 'text-radar border-radar/30',
+  },
+  {
+    id: 'osint-03', n: 3, week: 'Semana 2 · Método GEOPÓLEM', code: 'R03',
+    title: 'No confundas dato con inteligencia',
+    hook: 'Un dato no es inteligencia.',
+    screen: 'DATO ≠ INTELIGENCIA',
+    synthesis: 'Un dato aislado puede ser ruido. La inteligencia aparece cuando validas la fuente, entiendes el contexto, conectas actores y construyes escenarios. GEOPÓLEM no acumula datos: interpreta estructuras.',
+    cta: 'Comenta “INTELIGENCIA” para más contenido sobre método.',
+    tone: 'text-intel border-intel/30',
+  },
+  {
+    id: 'osint-04', n: 4, week: 'Semana 2 · Método GEOPÓLEM', code: 'R04',
+    title: 'Cómo leer una red de actores',
+    hook: 'Para entender una crisis, mira la red.',
+    screen: 'QUIÉN DECIDE. QUIÉN FINANCIA. QUIÉN EJECUTA. QUIÉN SE BENEFICIA.',
+    synthesis: 'Una red de actores no se entiende solo por nombres. Hay que mirar funciones: quién decide, quién financia, quién ejecuta, quién intermedia y quién se beneficia. Ahí empieza el análisis de poder.',
+    cta: 'Sígueme para aprender a mapear actores con GEOPÓLEM.',
+    tone: 'text-intel border-intel/30',
+  },
+  {
+    id: 'osint-05', n: 5, week: 'Semana 2 · Método GEOPÓLEM', code: 'R05',
+    title: 'Cómo analizar una ruta energética',
+    hook: 'La energía también se analiza como poder.',
+    screen: 'PUERTOS. OLEODUCTOS. CHOKEPOINTS. RIESGO POLÍTICO.',
+    synthesis: 'Una ruta energética no es solo infraestructura: es dependencia, presión, vulnerabilidad y poder. Para analizarla miramos puertos, oleoductos, chokepoints, sanciones, actores estatales y riesgo político.',
+    cta: 'Guarda este video si te interesa energía y geopolítica.',
+    tone: 'text-risk border-risk/30',
+  },
+  {
+    id: 'osint-06', n: 6, week: 'Semana 3 · Lectura crítica', code: 'R06',
+    title: 'La geopolítica no está solo en titulares',
+    hook: 'La geopolítica no está solo en los titulares.',
+    screen: 'NO MIRES SOLO EL TITULAR. MIRA LA ESTRUCTURA.',
+    synthesis: 'Los titulares muestran eventos; GEOPÓLEM mira estructuras: rutas, actores, recursos, capacidades, presión, dependencia y escenarios. La noticia es el síntoma. La estructura es el tablero.',
+    cta: 'Comparte este video con alguien que sigue geopolítica.',
+    tone: 'text-radar border-radar/30',
+  },
+  {
+    id: 'osint-07', n: 7, week: 'Semana 3 · Lectura crítica', code: 'R07',
+    title: 'Qué mirar antes de creer una narrativa',
+    hook: 'Antes de creer una narrativa, mira esto.',
+    screen: 'FUENTE. INTERÉS. TIMING. REPETICIÓN. CONTRADICCIÓN.',
+    synthesis: 'Una narrativa no se evalúa solo por lo que dice, sino por la fuente, el interés, el momento, la repetición y las contradicciones. En inteligencia, el contexto importa tanto como el mensaje.',
+    cta: 'Sígueme para lectura estratégica de información.',
+    tone: 'text-radar border-radar/30',
+  },
+  {
+    id: 'osint-08', n: 8, week: 'Semana 3 · Lectura crítica', code: 'R08',
+    title: 'OSINT aplicado a Venezuela',
+    hook: 'Venezuela no se entiende solo como crisis.',
+    screen: 'PODER. ENERGÍA. REDES. INTERMEDIARIOS. ESCENARIOS.',
+    synthesis: 'Para analizar Venezuela hay que mirar más allá de la coyuntura: redes de poder, energía, intermediarios, sanciones, actores externos y escenarios. Eso es OSINT geopolítico aplicado.',
+    cta: 'Escríbenos por DM si quieres conocer nuestros dossiers.',
+    tone: 'text-alert border-alert/30',
+  },
+  {
+    id: 'osint-09', n: 9, week: 'Semana 4 · Conversión y marca', code: 'R09',
+    title: 'Mapa mental de una crisis',
+    hook: 'Así se ordena una crisis.',
+    screen: 'EVENTO → ACTORES → INTERESES → RECURSOS → RUTAS → ESCENARIOS',
+    synthesis: 'Cuando ocurre una crisis, no empieces por opinar. Ordena el tablero: evento, actores, intereses, recursos, rutas críticas y escenarios. Ese mapa mental convierte ruido en análisis.',
+    cta: 'Guarda esta estructura para tu próximo análisis.',
+    tone: 'text-intel border-intel/30',
+  },
+  {
+    id: 'osint-10', n: 10, week: 'Semana 4 · Conversión y marca', code: 'R10',
+    title: 'Cómo piensa GEOPÓLEM',
+    hook: 'Así piensa GEOPÓLEM.',
+    screen: 'NO SEGUIMOS TITULARES. INTERPRETAMOS ESTRUCTURAS.',
+    synthesis: 'GEOPÓLEM analiza poder, energía, conflictos, actores y escenarios con método. No seguimos titulares: leemos estructuras. La inteligencia no está en saber más noticias, sino en entender cómo se mueve el tablero.',
+    cta: 'Sígueme y entra al tablero de GEOPÓLEM.',
+    tone: 'text-radar border-radar/30',
+  },
+];
+
 function IntelligenceProducts({ lang, onOpenMap }) {
   const en = lang === 'EN';
   return html`
@@ -3149,6 +3249,96 @@ function IntelligenceProducts({ lang, onOpenMap }) {
             : html`<a key=${p.id} href=${mailtoCta(p.action.subject)} class=${clsx(cardClass, 'no-underline')}>${inner}</a>`;
         })}
       </div>
+    </div>
+  </section>`;
+}
+
+function OsintReelsTeaser({ lang, onOpen }) {
+  const en = lang === 'EN';
+  return html`
+  <section class="relative panel rounded-lg overflow-hidden border border-radar/20">
+    <span class="corner-tl"></span><span class="corner-tr"></span>
+    <span class="corner-bl"></span><span class="corner-br"></span>
+    <div class="boot-grid absolute inset-0 opacity-25 pointer-events-none"></div>
+    <div class="relative p-4 lg:p-6 flex flex-col lg:flex-row gap-4 lg:items-center justify-between">
+      <div class="space-y-1.5 max-w-2xl">
+        <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${en?'OSINT geopolitical intelligence · Series':'OSINT geopolítico legal · Serie'}</div>
+        <h3 class="font-display font-bold text-[20px] lg:text-[24px] text-slate-50 leading-tight glow-text">OSINT Geopolítico</h3>
+        <p class="text-[13px] text-slate-300 leading-relaxed">${OSINT_REELS_MESSAGE}</p>
+        <p class="text-[11.5px] text-slate-500 font-mono uppercase tracking-widest">${en?'10 pieces · 4 weeks':'10 piezas · 4 semanas'}</p>
+      </div>
+      <button onClick=${onOpen}
+        class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+        ▣ ${en?'Open OSINT series':'Abrir serie OSINT'}
+      </button>
+    </div>
+  </section>`;
+}
+
+function OsintReels({ lang }) {
+  const en = lang === 'EN';
+  const date = new Date().toLocaleDateString(en?'en-GB':'es-ES', { day:'2-digit', month:'long', year:'numeric' });
+  return html`
+  <section class="space-y-4">
+    <!-- Hero -->
+    <div class="relative panel rounded-lg overflow-hidden border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="boot-grid absolute inset-0 opacity-30 pointer-events-none"></div>
+      <div class="scanlines absolute inset-0 pointer-events-none"></div>
+      <div class="relative p-5 lg:p-7">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-2">
+            <span class="relative flex w-2 h-2">
+              <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-radar"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-radar"></span>
+            </span>
+            <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${en?'OSINT geopolitical intelligence · Legal':'OSINT geopolítico legal'}</div>
+          </div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">SITUATION ROOM · ${date}</div>
+        </div>
+        <h2 class="font-display font-bold text-[26px] lg:text-[34px] text-slate-50 leading-tight mt-2 glow-text">OSINT Geopolítico</h2>
+        <p class="font-display font-semibold text-[16px] lg:text-[19px] text-radar-glow leading-snug mt-3 max-w-3xl">${OSINT_REELS_MESSAGE}</p>
+        <p class="text-[13px] text-slate-300 leading-relaxed mt-3 max-w-3xl">
+          ${en
+            ? 'A brand series that positions GEOPÓLEM as serious open-source geopolitical intelligence: power, energy, conflicts, actors and scenarios read with method and ethics. No hacking, no doxxing, no private access.'
+            : 'Una serie de marca que posiciona a GEOPÓLEM como inteligencia geopolítica seria basada en fuentes abiertas: poder, energía, conflictos, actores y escenarios leídos con método y ética. Sin hackeo, sin doxxing, sin acceso a información privada.'}
+        </p>
+        <p class="text-[11.5px] text-slate-500 font-mono uppercase tracking-widest mt-3">${en?'10 pieces · 4 weeks':'10 piezas · 4 semanas'}</p>
+      </div>
+    </div>
+
+    <!-- Reel cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+      ${OSINT_REELS.map(r => html`
+        <article key=${r.id} class=${clsx('relative panel-soft rounded-md p-4 border flex flex-col text-left', r.tone)}>
+          <span class="corner-tl"></span><span class="corner-br"></span>
+          <div class="flex items-center justify-between gap-2 flex-wrap">
+            <span class="font-mono text-[10.5px] uppercase tracking-[0.25em] text-slate-500">GEOP · ${r.code}</span>
+            <span class="chip">${r.week}</span>
+          </div>
+          <h3 class="font-display font-bold text-[17px] lg:text-[18px] text-slate-50 mt-2 leading-tight">${r.title}</h3>
+          <p class="text-[12.5px] text-radar-glow font-medium leading-snug mt-2">“${r.hook}”</p>
+          <div class="mt-3 panel-soft rounded px-3 py-2 border border-white/5">
+            <div class="heading-mono mb-1">${en?'On screen':'En pantalla'}</div>
+            <p class="font-mono text-[11.5px] text-slate-200 leading-snug tracking-wide">${r.screen}</p>
+          </div>
+          <p class="text-[12.5px] text-slate-400 leading-relaxed mt-3 flex-1">${r.synthesis}</p>
+          <div class="mt-4 flex items-start gap-2 text-[11.5px] text-slate-300">
+            <span class="font-mono uppercase tracking-widest text-radar shrink-0">CTA</span>
+            <span class="leading-snug">${r.cta}</span>
+          </div>
+        </article>`)}
+    </div>
+
+    <!-- Nota ética -->
+    <div class="relative panel-soft rounded-md p-4 border border-white/5">
+      <div class="heading-mono mb-1">${en?'Ethics note':'Nota ética'}</div>
+      <p class="text-[12px] text-slate-400 leading-relaxed">
+        ${en
+          ? 'This series avoids any language suggesting hacking, personal persecution, doxxing or access to private information. The approach is open-source research, responsible analysis, source validation and strategic reading.'
+          : 'Esta serie evita cualquier lenguaje que sugiera hackeo, persecución personal, doxxing o acceso a información privada. El enfoque es investigación con fuentes abiertas, análisis responsable, validación de fuentes y lectura estratégica.'}
+      </p>
     </div>
   </section>`;
 }
@@ -3744,6 +3934,7 @@ function App() {
           <${Analysis} t=${t} foco=${selectedFoco}/>
           <${Scenarios} t=${t} foco=${selectedFoco}/>
           <${IntelligenceProducts} lang=${lang} onOpenMap=${()=>setView('map')}/>
+          <${OsintReelsTeaser} lang=${lang} onOpen=${()=>setView('osint')}/>
           <${PlanZTeaser} lang=${lang} onOpen=${()=>setView('planz')}/>
           <${FichaTeaser} lang=${lang} onOpen=${()=>setView('ficha')}/>
           <${DoctrinaTeaser} lang=${lang} onOpen=${()=>setView('doctrina')}/>
@@ -3794,6 +3985,8 @@ function App() {
       ${view==='monetization' && html`<${MonetizationModule} t=${t}/>`}
 
       ${view==='products' && html`<${IntelligenceProducts} lang=${lang} onOpenMap=${()=>setView('map')}/>`}
+
+      ${view==='osint' && html`<${OsintReels} lang=${lang}/>`}
 
       ${view==='editor' && html`<${EditorPanel} t=${t} focos=${allFocos} onCreate=${createFoco} onDelete=${deleteFoco} onPasswordChange=${changePassword} history=${history} attachments=${attachments} users=${users} onCreateUser=${createUser} onDeleteUser=${deleteUser} onUploadAttachment=${uploadAttachment} onDeleteAttachment=${deleteAttachment} getAttachmentUrl=${attachmentUrl} getDossierUrl=${dossierUrl} onRefreshHistory=${()=>loadEditorData(auth?.token)} onOpenFoco=${openFocoOnMap} auth=${auth} onLogin=${loginEditor} authStatus=${authStatus} dbStatus=${dbStatus}/>`}
 
