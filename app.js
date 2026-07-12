@@ -2983,6 +2983,23 @@ function FichaEditorial({ lang }) {
         </article>`)}
     </div>
 
+    <!-- Descripción bilingüe (Shorts / paquete de publicación) -->
+    ${(f.longDescription && f.longDescriptionEn) ? html`
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/15">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="heading-mono mb-4">${en?'Full description · ES / EN':'Descripción completa · ES / EN'}</div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8">
+        ${[{ code:'ES', label:'Español', body:f.longDescription }, { code:'EN', label:'English', body:f.longDescriptionEn }].map(col => html`
+          <div key=${col.code} class="space-y-3">
+            <div class="text-[10px] font-mono uppercase tracking-[0.3em] text-radar/80">${col.code} · ${col.label}</div>
+            ${col.body.map((p, i) => (i === 2)
+              ? html`<p key=${i} class="text-[12.5px] lg:text-[13px] font-mono uppercase tracking-wide text-radar leading-relaxed">${p}</p>`
+              : html`<p key=${i} class="text-[13px] lg:text-[14px] text-slate-300 leading-relaxed">${p}</p>`)}
+          </div>`)}
+      </div>
+    </div>` : ''}
+
     <!-- Siete dimensiones de la ventaja estratégica -->
     <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/20">
       <span class="corner-tl"></span><span class="corner-tr"></span>

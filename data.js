@@ -957,6 +957,19 @@ export const FICHA_VENTAJA = {
   summaryEn: 'A doctrinal framework to read contemporary war, the defence industry and tripolar competition. Not breaking news: a strategic reading of who observes, decides, produces and regenerates first.',
   notNews: 'Sin amarillismo. Lectura estratégica. Sala situacional.',
   notNewsEn: 'No sensationalism. Strategic reading. Situation room.',
+  // Descripción bilingüe (YouTube Shorts / paquetes de publicación)
+  longDescription: [
+    'La guerra del siglo XXI no la gana necesariamente quien tiene el arma más avanzada. La ventaja estratégica empieza antes: en la capacidad de observar, aprender, decidir, producir y regenerarse más rápido que el adversario.',
+    'A partir del marco publicado por Global Strategy sobre las siete dimensiones de la ventaja estratégica, GEOPÓLEM analiza una idea central: la industria ya no es retaguardia, la narrativa ya no es un adorno y la resiliencia social ya forma parte del campo de batalla.',
+    'Ver más rápido. Decidir con claridad. Golpear en el dominio correcto. Resistir con profundidad. Producir más rápido. Narrar con credibilidad. Regenerarse antes.',
+    'Este tema encaja directamente con la mirada GEOPÓLEM: inteligencia, defensa, industria, energía y sistema internacional leídos como un solo tablero.',
+  ],
+  longDescriptionEn: [
+    'Twenty-first-century war is not necessarily won by the actor with the most advanced weapon. Strategic advantage begins earlier: in the ability to observe, learn, decide, produce and regenerate faster than the adversary.',
+    'Based on the framework published by Global Strategy on the seven dimensions of strategic advantage, GEOPÓLEM analyzes one central idea: industry is no longer just the rear, narrative is no longer decorative, and social resilience is already part of the battlefield.',
+    'Seeing faster. Deciding with clarity. Striking in the right domain. Resisting in depth. Producing faster. Narrating with credibility. Regenerating first.',
+    'This subject fits directly into the GEOPÓLEM lens: intelligence, defense, industry, energy and the international system read as one single board.',
+  ],
   // Doctrina editorial: Hecho · Evaluación · Hipótesis
   doctrine: [
     {
