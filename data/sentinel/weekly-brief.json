@@ -1,119 +1,104 @@
 {
-  "generated_at": "2026-07-06T08:02:00+02:00",
+  "generated_at": "2026-07-13T06:13:34.842409Z",
   "brand": "GEOPÓLEM",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
+  "main_status": "sin acople significativo confirmado esta semana",
   "week_window": {
     "timezone": "Europe/Luxembourg",
-    "start_local": "2026-06-29T00:00:00",
-    "end_local": "2026-07-05T23:59:59",
-    "start_utc": "2026-06-28T22:00:00Z",
-    "end_utc": "2026-07-05T21:59:59Z"
+    "start_local": "2026-07-06T00:00:00+02:00",
+    "end_local": "2026-07-12T23:59:59+02:00",
+    "start_utc": "2026-07-05T22:00:00Z",
+    "end_utc": "2026-07-12T21:59:59Z"
   },
-  "method_note": "Se cruzaron eventos de conflicto con fuentes ambientales y humanitarias para identificar acoples conflicto-ambiente de valor geopolítico, no espectacular. Correlación temporal no implica causalidad.",
-  "source_urls": [
-    "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-    "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
-    "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
-    "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-28T22%3A00%3A00&endtime=2026-07-05T21%3A59%3A59&minmagnitude=4.5&orderby=time",
-    "https://www.ochaopt.org/content/humanitarian-situation-report-3-july-2026",
-    "https://reliefweb.int/report/ukraine/people-need-pin-protection-monitoring-report-round-5-enuk",
-    "https://reliefweb.int/report/occupied-palestinian-territory/atrocity-alert-no-489-israel-and-occupied-palestinian-territory-ukraine-and-sudan",
-    "https://reliefweb.int/report/south-sudan/south-sudan-approaching-tipping-point-without-timely-donor-action-millions-risk-sliding-deeper-acute-food-insecurity"
-  ],
-  "source_status": {
-    "sentinel_feed": "available_but_stale_public_feed_only_4_events_seen_on_2026_06_17_outside_window",
-    "nasa_eonet_open_7d": "http_503_unavailable",
-    "nasa_eonet_closed_14d": "http_503_unavailable",
-    "usgs_m45": "available_105_events_no_selected_event_directly_matched_to_conflict_inflection",
-    "institutional_fallback": "used_ocha_reliefweb"
+  "method_note": "Se cruzaron eventos de conflicto SENTINEL/GDELT con NASA EONET, USGS y fuentes institucionales para identificar acoples conflicto-ambiente de valor geopolítico, no espectacular. Correlación temporal no implica causalidad; no se inventaron correlaciones.",
+  "source_urls": {
+    "sentinel": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+    "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=open",
+    "usgs_week": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-05&endtime=2026-07-12&minmagnitude=4.5",
+    "reliefweb_weather": "https://reliefweb.int/report/world/global-weather-hazards-summary-july-2-2026-july-8-2026",
+    "reliefweb_asia_pacific": "https://reliefweb.int/report/afghanistan/asia-pacific-overview-july-2026",
+    "ocha_gaza": "https://www.ochaopt.org/content/reported-impact-snapshot-gaza-strip-8-july-2026"
+  },
+  "data_quality": {
+    "sentinel_events_in_week": 0,
+    "nasa_eonet_week_geometries": 49,
+    "usgs_quakes_m45_in_week": 87,
+    "spatial_matches_500km_7days": 0,
+    "eonet_closed_status": "failed_json_decode",
+    "editorial_conclusion": "sin acople significativo confirmado esta semana"
   },
   "editorial_caveats": [
-    "El feed público SENTINEL/GDELT revisado estaba desfasado: solo cuatro eventos del 17 de junio de 2026, fuera de la ventana; se usó como contexto, no como prueba principal.",
-    "NASA EONET devolvió HTTP 503 para eventos abiertos (7 días) y cerrados (14 días).",
-    "Se activaron fuentes institucionales de respaldo: OCHA, ReliefWeb y USGS.",
-    "Correlación temporal entre conflicto y evento ambiental no implica causalidad; no se inventaron correlaciones."
+    "Estado principal: sin acople significativo confirmado esta semana.",
+    "El feed SENTINEL descargó correctamente, pero tras corregir el parseo de seen_date quedaron 0 eventos de conflicto válidos dentro de la ventana 6–12 de julio de 2026.",
+    "NASA EONET abierto aportó 49 geometrías (incendios, hielo marino); el estado cerrado falló al decodificar JSON.",
+    "USGS entregó 87 sismos de magnitud 4,5+; coincidencias espacio-temporales a 500 km / 7 días: 0.",
+    "Los tres temas se publican como observación/monitoreo, no como inflexiones causales. Correlación temporal no implica causalidad."
   ],
-  "total_candidates": {
-    "conflict_candidates": 7,
-    "sentinel_events_seen": 4,
-    "nasa_eonet_open_events": 0,
-    "nasa_eonet_closed_events_14d": 0,
-    "usgs_m45_plus_events": 105,
+  "total_candidates": 3,
+  "candidate_counts": {
+    "conflict_candidates": 3,
+    "sentinel_events_in_window": 0,
+    "nasa_eonet_week_geometries": 49,
+    "usgs_m45_plus_events": 87,
     "selected_points": 3,
-    "confirmed_significant_couplings": 3,
-    "observation_points": 0
+    "confirmed_significant_couplings": 0,
+    "observation_points": 3
   },
   "selected_inflection_points": [
     {
       "rank": 1,
-      "status": "confirmed",
-      "priority": "Alta",
-      "location": "Gaza, Territorio Palestino Ocupado",
-      "headline": "Gaza: cuando el agua se convierte en tablero",
-      "conflict_event": "Guerra y desplazamiento masivo con presión sobre infraestructura civil y acceso humanitario.",
-      "environmental_event": "Crisis WASH: agua, saneamiento, residuos, plagas y salud ambiental en sitios de desplazamiento.",
-      "coupling_type": "Guerra urbana + colapso WASH + salud ambiental + continuidad humanitaria.",
-      "fact": "OCHA reportó el 3 de julio de 2026 que Gaza mantiene más de 1.600 sitios activos de desplazamiento con aproximadamente 1,7 millones de personas, mientras el agua potable sigue dependiendo en un 74 por ciento del trucking y el agua doméstica en un 28 por ciento del mismo mecanismo. Solo se recoge el 85 por ciento de los residuos sólidos generados, con aguas residuales en calles y agua estancada.",
-      "assessment": "El acople es significativo porque el conflicto convierte el agua, los residuos y las rutas de ayuda en variables de continuidad operacional civil. Con Kerem Shalom como único cruce operativo de carga, el sistema WASH queda condicionado por acceso, seguridad, combustible, logística y control territorial.",
-      "hypothesis": "Si la presión sobre WASH continúa, el tablero humanitario se moverá menos por comunicados diplomáticos y más por capacidad física de sostener agua segura, cloración, saneamiento y residuos.",
-      "why_it_matters": "El agua y el saneamiento funcionan como línea de continuidad operacional civil; si fallan, la presión sanitaria y logística reordena la negociación humanitaria.",
-      "tripolar_reading": {
-        "us_eu": "Presionados por el costo político-humanitario de sostener acceso y ayuda.",
-        "global_south": "Usa Gaza como prueba de doble rasero en el orden internacional.",
-        "russia_china": "Capitalizan el desgaste narrativo occidental."
-      },
+      "status": "observation_not_confirmed",
+      "priority": "Media, observación",
+      "location": "República Democrática del Congo, centro y noreste",
+      "headline": "DRC: estrés hídrico y calor sobre zona de fragilidad",
+      "conflict_event": "Conflicto persistente y presión humanitaria en el este congoleño; no validado por SENTINEL esta semana.",
+      "environmental_event": "Déficits de lluvia, sequedad anormal y calor superior a 35 °C en el noreste de DRC según FEWS NET / ReliefWeb.",
+      "coupling_type": "En observación: estrés hídrico-calor sobre zona de fragilidad, sin evento SENTINEL semanal para confirmar acople.",
+      "fact": "FEWS NET / ReliefWeb registra déficits significativos de lluvia y sequedad anormal en el centro y noreste de la República Democrática del Congo durante 30 días o más, además de temperaturas superiores a 35 °C en el noreste del país.",
+      "assessment": "El dato ambiental es consistente con estrés hídrico y térmico, pero el feed SENTINEL no aportó un evento de conflicto fechado en la ventana 6–12 de julio que permita cerrar un acople espacial-temporal.",
+      "hypothesis": "En entornos de fragilidad estatal y movilidad forzada, calor y sequedad pueden agravar seguridad alimentaria, salud pública y continuidad logística; esta semana es señal de vigilancia, no inflexión confirmada.",
+      "why_it_matters": "Puede afectar movilidad, salud, agricultura y presión logística en un entorno ya frágil.",
+      "tripolar_reading": "Para EE.UU., China, Rusia, UE y Sur Global, DRC sigue siendo un nodo de minerales, corredores humanitarios y capacidad estatal; el dato ambiental añade presión de fondo, no una modificación confirmada del tablero.",
       "sources": [
-        "https://www.ochaopt.org/content/humanitarian-situation-report-3-july-2026",
-        "https://reliefweb.int/report/occupied-palestinian-territory/atrocity-alert-no-489-israel-and-occupied-palestinian-territory-ukraine-and-sudan",
+        "https://reliefweb.int/report/world/global-weather-hazards-summary-july-2-2026-july-8-2026",
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
       ]
     },
     {
       "rank": 2,
-      "status": "confirmed",
-      "priority": "Media-alta",
-      "location": "Ucrania, zonas de frente y evacuación",
-      "headline": "Ucrania: energía y agua como línea de desgaste",
-      "conflict_event": "Aumento de bajas civiles y ataques sostenidos sobre infraestructura energética y civil.",
-      "environmental_event": "Disrupciones de agua, calefacción y electricidad asociadas a seguridad deteriorada e infraestructura dañada.",
-      "coupling_type": "Guerra de infraestructura + energía + agua + acceso civil.",
-      "fact": "People in Need y el Protection Cluster reportaron el 1 de julio de 2026 que las preocupaciones WASH e infraestructura se han vuelto más visibles, vinculando interrupciones en agua, calefacción y electricidad con seguridad deteriorada e infraestructura dañada. Otro reporte en ReliefWeb señaló aumento de bajas civiles ligado a ataques sostenidos contra infraestructura energética.",
-      "assessment": "El acople no es un evento natural puntual de NASA/USGS, sino una capa de infraestructura crítica: energía y agua como multiplicadores del conflicto. La guerra se mueve desde la línea de contacto hacia la resiliencia urbana y la capacidad europea de sostener el frente civil.",
-      "hypothesis": "La presión sobre energía y agua seguirá funcionando como palanca de desgaste estratégico antes del invierno.",
-      "why_it_matters": "La infraestructura energética y WASH se convierte en variable estratégica: afecta evacuación, resiliencia urbana y apoyo europeo.",
-      "tripolar_reading": {
-        "russia": "Intenta convertir infraestructura civil en vector de negociación.",
-        "eu": "Atada al costo de reparación y suministro.",
-        "us": "Conserva peso militar-financiero.",
-        "china": "Observa el precedente sobre vulnerabilidad energética de Estados en guerra prolongada."
-      },
+      "status": "observation_not_confirmed",
+      "priority": "Media, observación",
+      "location": "Myanmar, Rakhine / fronteras Magway-Bago-Ayeyarwady",
+      "headline": "Myanmar: frente de conflicto sin capa ambiental semanal",
+      "conflict_event": "ACLED / ReliefWeb reporta intensificación de combates en junio entre el ejército de Myanmar y el Arakan Army.",
+      "environmental_event": "No se encontró evento NASA/USGS coincidente dentro de la ventana semanal.",
+      "coupling_type": "En observación: conflicto relevante, sin capa ambiental semanal suficiente.",
+      "fact": "ACLED / ReliefWeb reporta que en junio los combates entre el ejército de Myanmar y el Arakan Army fueron el principal motor de violencia y muertes vinculadas al conflicto, con intensificación en Rakhine y sus fronteras con Magway, Bago y Ayeyarwady.",
+      "assessment": "No se identificó un evento NASA EONET o USGS dentro de la semana 6–12 de julio que permita afirmar un acople ambiental significativo con ese frente.",
+      "hypothesis": "Myanmar permanece en observación por la dimensión territorial del conflicto y su relación con rutas, puertos y líneas de suministro; el acople ambiental semanal queda no confirmado.",
+      "why_it_matters": "Frente estratégico por rutas, control territorial y líneas de suministro.",
+      "tripolar_reading": "China observa Myanmar por conectividad estratégica hacia el Índico; EE.UU. y la UE por sanciones, gobernanza y derechos humanos; ASEAN y el Sur Global por estabilidad regional.",
       "sources": [
-        "https://reliefweb.int/report/ukraine/people-need-pin-protection-monitoring-report-round-5-enuk",
-        "https://reliefweb.int/report/occupied-palestinian-territory/atrocity-alert-no-489-israel-and-occupied-palestinian-territory-ukraine-and-sudan",
+        "https://reliefweb.int/report/afghanistan/asia-pacific-overview-july-2026",
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
       ]
     },
     {
       "rank": 3,
-      "status": "confirmed",
-      "priority": "Alta",
-      "location": "Sudán del Sur · Jonglei, Upper Nile, Unity y corredores de retorno desde Sudán",
-      "headline": "Sudán del Sur: cuando el sistema cruza el umbral",
-      "conflict_event": "Conflicto, desplazamiento masivo, reducción de acceso humanitario y presión de retornados/refugiados desde Sudán.",
-      "environmental_event": "Cuatro años consecutivos de inundaciones severas, shocks de producción e inseguridad alimentaria aguda.",
-      "coupling_type": "Conflicto + inundaciones acumuladas + seguridad alimentaria + presión migratoria.",
-      "fact": "ReliefWeb publicó el 3 de julio de 2026 que 7,8 millones de personas —el 55 por ciento de la población— se proyectan en IPC Fase 3 o peor entre abril y julio de 2026, vinculando el deterioro con conflicto, desplazamiento, acceso humanitario reducido, colapso de mercados, fallas productivas y cuatro años consecutivos de inundaciones severas.",
-      "assessment": "El punto de inflexión no está en la inundación aislada, sino en la combinación: conflicto armado, retorno de población desde Sudán, presión sobre recursos locales, acceso humanitario reducido, fallas productivas y mercados dañados. La seguridad alimentaria opera como indicador adelantado de fragilidad estatal.",
-      "hypothesis": "Si el financiamiento humanitario no escala, Sudán del Sur puede entrar en un corredor de crisis donde movilidad humana, inundaciones y conflicto interno produzcan un nuevo foco de inestabilidad regional.",
-      "why_it_matters": "La crisis cruza umbral: el sistema no falla por una sola variable, sino por la simultaneidad de conflicto, agua, producción, mercado y asistencia insuficiente.",
-      "tripolar_reading": {
-        "global_south": "Absorbe el impacto humano directo.",
-        "eu": "Enfrenta presión migratoria y humanitaria indirecta.",
-        "china_russia": "Miran la competencia por acceso, minerales, energía y alineamientos africanos."
-      },
+      "status": "not_confirmed",
+      "priority": "Baja, monitoreo",
+      "location": "Gaza",
+      "headline": "Gaza: snapshot humanitario sin acople ambiental",
+      "conflict_event": "OCHA mantiene snapshot de impacto humanitario al 8 de julio de 2026.",
+      "environmental_event": "Sin evento NASA/USGS de la ventana que permita atribuir acople ambiental.",
+      "coupling_type": "No confirmado: conflicto e infraestructura humanitaria sin señal ambiental institucional asociada.",
+      "fact": "OCHA publicó un snapshot de impacto sobre Gaza con fecha 8 de julio de 2026; las cifras no verificadas por Naciones Unidas se atribuyen a su fuente y las cifras de víctimas proceden del Ministerio de Salud y de las autoridades israelíes.",
+      "assessment": "La página consultada no aporta datos ambientales, de infraestructura ambiental ni de causalidad conflicto-ambiente; Gaza no debe presentarse esta semana como acople ambiental confirmado.",
+      "hypothesis": "La presión humanitaria sigue siendo central, pero el brief SENTINEL debe separar crisis humanitaria de acople ambiental cuando la fuente no sustenta esa relación.",
+      "why_it_matters": "Debe mantenerse en monitoreo, pero no presentarse esta semana como acople conflicto-ambiente.",
+      "tripolar_reading": "EE.UU., UE, actores regionales y Sur Global siguen compitiendo por margen diplomático y legitimidad narrativa; el eje ambiental queda fuera de confirmación esta semana.",
       "sources": [
-        "https://reliefweb.int/report/south-sudan/south-sudan-approaching-tipping-point-without-timely-donor-action-millions-risk-sliding-deeper-acute-food-insecurity",
-        "https://reliefweb.int/report/occupied-palestinian-territory/atrocity-alert-no-489-israel-and-occupied-palestinian-territory-ukraine-and-sudan",
+        "https://www.ochaopt.org/content/reported-impact-snapshot-gaza-strip-8-july-2026",
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
       ]
     }
@@ -121,38 +106,55 @@
   "not_selected_but_relevant": [
     {
       "location": "Sismicidad global · USGS M4.5+",
-      "reason": "USGS entregó 105 sismos de magnitud 4,5+ en la ventana semanal.",
-      "note": "Ningún sismo se acopló directamente a una inflexión de conflicto seleccionada; se conservan como base de vigilancia.",
+      "reason": "USGS entregó 87 sismos de magnitud 4,5+ en la ventana semanal.",
+      "note": "Ningún sismo se acopló espacio-temporalmente a una inflexión de conflicto; se conservan como base de vigilancia.",
       "sources": [
-        "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-28T22%3A00%3A00&endtime=2026-07-05T21%3A59%3A59&minmagnitude=4.5&orderby=time"
+        "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-05&endtime=2026-07-12&minmagnitude=4.5"
+      ]
+    },
+    {
+      "location": "Eventos ambientales abiertos · NASA EONET",
+      "reason": "NASA EONET abierto aportó 49 geometrías en la ventana (principalmente incendios y hielo marino).",
+      "note": "Sin coincidencia espacial-temporal verificable con eventos SENTINEL de la semana; el estado cerrado falló al decodificar JSON.",
+      "sources": [
+        "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=open"
       ]
     }
   ],
   "best_short_candidate": {
     "rank": 1,
-    "title": "Gaza: cuando el agua se convierte en tablero",
-    "location": "Gaza",
-    "duration_seconds": 40,
-    "hook": "Esto no es solo una guerra. Es una guerra sobre agua, residuos y acceso.",
-    "reason": "Es el acople más visual, verificable y pedagógico: conflicto, agua, residuos, desplazamiento y acceso humanitario en una sola escena de inteligencia.",
+    "title": "No todo cruce es una inflexión",
+    "location": "DRC / Myanmar / Gaza",
+    "duration_seconds": 42,
+    "hook": "Esta semana, el dato más importante del tablero es lo que no podemos confirmar.",
+    "reason": "Esta semana el valor GEOPÓLEM no está en forzar una lectura, sino en explicar el método: una sala situacional seria no rellena vacíos, separa señal, ruido y observación.",
+    "structure": {
+      "hecho": "El feed SENTINEL no trajo eventos de conflicto válidos dentro de la semana; NASA y USGS sí registraron eventos ambientales, pero sin coincidencia verificable con el panel de conflicto.",
+      "evaluacion": "DRC, Myanmar y Gaza siguen en observación, pero sin acople espacial-temporal suficientemente fuerte para presentarlo como inflexión.",
+      "hipotesis": "En inteligencia, decir 'no confirmado' también es una conclusión: evita convertir correlación en causalidad y protege la lectura estratégica del tablero."
+    },
+    "subtitles_en": [
+      "The most important signal this week is what cannot be confirmed.",
+      "Conflict data and environmental data did not produce a verified coupling.",
+      "In intelligence, 'not confirmed' is also a conclusion.",
+      "GEOPÓLEM. Welcome to the board."
+    ],
     "closing": "GEOPÓLEM. Bienvenidos al tablero.",
     "hashtags": [
-      "#Geopolem",
+      "#GEOPÓLEM",
       "#OSINT",
-      "#Gaza",
-      "#WaterSecurity",
-      "#Geopolitics",
-      "#HumanitarianAccess"
+      "#Geopolítica",
+      "#Inteligencia",
+      "#ClimaYConflicto"
     ]
   },
-  "disclaimer": "Correlación temporal entre evento de conflicto y evento ambiental no implica causalidad. El feed público SENTINEL estaba desfasado y NASA EONET devolvió HTTP 503; los tres puntos se confirmaron con fuentes institucionales (OCHA, ReliefWeb) y no se inventaron correlaciones.",
+  "disclaimer": "Sin acople significativo confirmado esta semana. El feed SENTINEL descargó correctamente pero quedaron 0 eventos de conflicto válidos en la ventana; NASA EONET y USGS estuvieron activos pero sin match espacial-temporal verificable. Los tres puntos se publican como observación/monitoreo, no como causalidad. Correlación temporal no implica causalidad; no se inventaron correlaciones.",
   "reduced_hashtags": [
-    "#Geopolem",
+    "#GEOPÓLEM",
     "#OSINT",
-    "#Gaza",
-    "#WaterSecurity",
-    "#Geopolitics",
-    "#HumanitarianAccess"
+    "#Geopolítica",
+    "#Inteligencia",
+    "#ClimaYConflicto"
   ],
   "brand_close": "GEOPÓLEM. Bienvenidos al tablero."
 }

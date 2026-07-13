@@ -574,7 +574,7 @@ function SentinelCouplingLayer({ onOpen }) {
           <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-alert"></span>
           <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-alert"></span>
         </span>
-        <span class="font-mono text-[9.5px] uppercase tracking-widest text-alert-soft">Acople ambiental significativo</span>
+        <span class="font-mono text-[9.5px] uppercase tracking-widest text-alert-soft">Cruce conflicto-ambiente · en observación</span>
       </div>
       <span class="font-mono text-[9px] uppercase tracking-wider text-slate-500">SENTINEL</span>
     </div>
