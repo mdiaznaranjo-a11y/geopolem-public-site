@@ -1,142 +1,170 @@
 {
-  "generated_at": "2026-07-13T06:13:34.842409Z",
+  "generated_at": "2026-07-20T08:11:00+02:00",
   "brand": "GEOPÓLEM",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "main_status": "sin acople significativo confirmado esta semana",
+  "main_status": "acoples conflicto-ambiente activos por vía institucional; cruce automático SENTINEL sin match",
   "week_window": {
     "timezone": "Europe/Luxembourg",
-    "start_local": "2026-07-06T00:00:00+02:00",
-    "end_local": "2026-07-12T23:59:59+02:00",
-    "start_utc": "2026-07-05T22:00:00Z",
-    "end_utc": "2026-07-12T21:59:59Z"
+    "start_local": "2026-07-13T00:00:00+02:00",
+    "end_local": "2026-07-19T23:59:59+02:00",
+    "start_utc": "2026-07-12T22:00:00Z",
+    "end_utc": "2026-07-19T21:59:59Z"
   },
-  "method_note": "Se cruzaron eventos de conflicto SENTINEL/GDELT con NASA EONET, USGS y fuentes institucionales para identificar acoples conflicto-ambiente de valor geopolítico, no espectacular. Correlación temporal no implica causalidad; no se inventaron correlaciones.",
+  "method_note": "Se cruzaron eventos de conflicto SENTINEL/GDELT con NASA EONET, USGS y fuentes institucionales (ReliefWeb, IOM/UNHCR, UNFPA, OCHA, FEWS NET) para identificar acoples conflicto-ambiente de valor geopolítico, no espectacular. Correlación temporal no implica causalidad; se distingue acople operativo de causalidad. No se inventaron correlaciones.",
   "source_urls": {
     "sentinel": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
     "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=open",
-    "usgs_week": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-05&endtime=2026-07-12&minmagnitude=4.5",
-    "reliefweb_weather": "https://reliefweb.int/report/world/global-weather-hazards-summary-july-2-2026-july-8-2026",
-    "reliefweb_asia_pacific": "https://reliefweb.int/report/afghanistan/asia-pacific-overview-july-2026",
-    "ocha_gaza": "https://www.ochaopt.org/content/reported-impact-snapshot-gaza-strip-8-july-2026"
+    "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
+    "usgs_week": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-12T22%3A00%3A00Z&endtime=2026-07-19T21%3A59%3A59Z&minmagnitude=4.5&orderby=magnitude",
+    "myanmar_maritime": "https://reliefweb.int/report/myanmar/iom-and-unhcr-deeply-concerned-reports-maritime-incidents-myanmar-coast-over-500-feared-dead",
+    "syria_unfpa": "https://reliefweb.int/report/syrian-arab-republic/unfpa-syria-situation-report-1-may-30-june-2026",
+    "drc_ebola": "https://reliefweb.int/report/democratic-republic-congo/statement-ebola-outbreak-democratic-republic-congo-tom-fletcher-under-secretary-general-humanitarian-affairs-and-emergency-relief-coordinator-9-july-2026",
+    "drc_weather": "https://reliefweb.int/report/world/global-weather-hazards-summary-july-9-2026-july-15-2026"
+  },
+  "data_scan_counts": {
+    "conflicts_in_window_or_undated": 4,
+    "environment_events": 298,
+    "candidate_matches": 0,
+    "usgs_events": 145,
+    "eonet_open_events": 67,
+    "eonet_closed_events": 73
   },
   "data_quality": {
-    "sentinel_events_in_week": 0,
-    "nasa_eonet_week_geometries": 49,
-    "usgs_quakes_m45_in_week": 87,
-    "spatial_matches_500km_7days": 0,
-    "eonet_closed_status": "failed_json_decode",
-    "editorial_conclusion": "sin acople significativo confirmado esta semana"
+    "sentinel_events_in_window": 4,
+    "sentinel_events_usable_for_match": 0,
+    "nasa_eonet_open_events": 67,
+    "nasa_eonet_closed_events": 73,
+    "usgs_quakes_m45_in_week": 145,
+    "automatic_candidate_matches": 0,
+    "editorial_conclusion": "Los acoples de la semana se sostienen con evidencia institucional, no con el cruce geoespacial automático."
   },
-  "editorial_caveats": [
-    "Estado principal: sin acople significativo confirmado esta semana.",
-    "El feed SENTINEL descargó correctamente, pero tras corregir el parseo de seen_date quedaron 0 eventos de conflicto válidos dentro de la ventana 6–12 de julio de 2026.",
-    "NASA EONET abierto aportó 49 geometrías (incendios, hielo marino); el estado cerrado falló al decodificar JSON.",
-    "USGS entregó 87 sismos de magnitud 4,5+; coincidencias espacio-temporales a 500 km / 7 días: 0.",
-    "Los tres temas se publican como observación/monitoreo, no como inflexiones causales. Correlación temporal no implica causalidad."
+  "limitations": [
+    "El feed SENTINEL trajo 4 eventos de conflicto en/sin fecha dentro de la ventana, pero carecían de fecha, latitud y longitud utilizables y correspondían a ítems de ejemplo (dominio tipo example.org).",
+    "Al faltar fecha y coordenadas, el cruce geoespacial automático produjo candidate_matches = 0: ningún acople conflicto-ambiente pudo confirmarse por la vía automática.",
+    "NASA y USGS sí devolvieron datos válidos en la ventana: EONET abierto 67 eventos, EONET cerrado 73, USGS M4.5+ 145 sismos; ninguno se acopló geoespacialmente a un evento SENTINEL utilizable.",
+    "Los tres puntos publicados se seleccionaron y sostienen con fuentes institucionales humanitarias, no con el match automático SENTINEL↔NASA/USGS.",
+    "Correlación y coincidencia temporal no implican causalidad; donde la evidencia solo respalda acople operativo, no se afirma relación causal."
   ],
   "total_candidates": 3,
   "candidate_counts": {
-    "conflict_candidates": 3,
-    "sentinel_events_in_window": 0,
-    "nasa_eonet_week_geometries": 49,
-    "usgs_m45_plus_events": 87,
+    "conflict_candidates_in_window": 4,
+    "sentinel_events_usable_for_match": 0,
+    "environment_events_scanned": 298,
+    "nasa_eonet_open_events": 67,
+    "nasa_eonet_closed_events": 73,
+    "usgs_m45_plus_events": 145,
+    "automatic_candidate_matches": 0,
     "selected_points": 3,
-    "confirmed_significant_couplings": 0,
-    "observation_points": 3
+    "confirmed_by_institutional_source": 1,
+    "operational_with_institutional_evidence": 1,
+    "under_robust_observation": 1
   },
   "selected_inflection_points": [
     {
       "rank": 1,
-      "status": "observation_not_confirmed",
-      "priority": "Media, observación",
-      "location": "República Democrática del Congo, centro y noreste",
-      "headline": "DRC: estrés hídrico y calor sobre zona de fragilidad",
-      "conflict_event": "Conflicto persistente y presión humanitaria en el este congoleño; no validado por SENTINEL esta semana.",
-      "environmental_event": "Déficits de lluvia, sequedad anormal y calor superior a 35 °C en el noreste de DRC según FEWS NET / ReliefWeb.",
-      "coupling_type": "En observación: estrés hídrico-calor sobre zona de fragilidad, sin evento SENTINEL semanal para confirmar acople.",
-      "fact": "FEWS NET / ReliefWeb registra déficits significativos de lluvia y sequedad anormal en el centro y noreste de la República Democrática del Congo durante 30 días o más, además de temperaturas superiores a 35 °C en el noreste del país.",
-      "assessment": "El dato ambiental es consistente con estrés hídrico y térmico, pero el feed SENTINEL no aportó un evento de conflicto fechado en la ventana 6–12 de julio que permita cerrar un acople espacial-temporal.",
-      "hypothesis": "En entornos de fragilidad estatal y movilidad forzada, calor y sequedad pueden agravar seguridad alimentaria, salud pública y continuidad logística; esta semana es señal de vigilancia, no inflexión confirmada.",
-      "why_it_matters": "Puede afectar movilidad, salud, agricultura y presión logística en un entorno ya frágil.",
-      "tripolar_reading": "Para EE.UU., China, Rusia, UE y Sur Global, DRC sigue siendo un nodo de minerales, corredores humanitarios y capacidad estatal; el dato ambiental añade presión de fondo, no una modificación confirmada del tablero.",
+      "status": "confirmado",
+      "priority": "Alta",
+      "best_short_candidate": true,
+      "location": "Myanmar · Rakhine-Ayeyarwady, ruta marítima hacia Cox's Bazar",
+      "headline": "Myanmar: salidas marítimas rohinyás y naufragio con más de 500 desaparecidos",
+      "conflict_event": "Desplazamiento por conflicto y salidas marítimas rohinyás desde Rakhine a finales de junio de 2026.",
+      "environmental_event": "Condiciones marítimas peligrosas fuera de la temporada regular de navegación, con lluvias torrenciales e inundaciones recientes.",
+      "coupling_type": "Acople operativo confirmado por fuente institucional humanitaria: el desplazamiento por conflicto empuja salidas marítimas en un entorno ambiental de alto riesgo; no se afirma causalidad ambiental sobre el conflicto.",
+      "fact": "IOM y UNHCR expresan profunda preocupación por incidentes marítimos frente a la costa de Myanmar. Tras el desplazamiento por conflicto desde Rakhine a finales de junio, una embarcación habría naufragado frente a Ayeyarwady el 8 de julio de 2026 y se teme la muerte de más de 500 personas. La travesía ocurrió fuera de la temporada regular de navegación, con lluvias torrenciales e inundaciones recientes que elevaron el riesgo marítimo.",
+      "assessment": "Es un acople conflicto-ambiente operativo y confirmado por fuente institucional: la violencia y el desplazamiento forzado empujan salidas marítimas, mientras las condiciones ambientales adversas (fuera de temporada, lluvia torrencial, inundaciones) multiplican la letalidad de la ruta. La evidencia respalda acoplamiento operativo, no una relación causal del clima sobre el conflicto.",
+      "hypothesis": "Mientras persista el conflicto en Rakhine y no se abran vías seguras, es previsible que las salidas marítimas continúen chocando con ventanas meteorológicas peligrosas, con nuevos episodios de alta letalidad en la ruta Rakhine-Ayeyarwady-Cox's Bazar.",
+      "why_it_matters": "Conecta conflicto, desplazamiento forzado y riesgo marítimo estacional en una de las rutas de protección más sensibles de Asia; presiona a ACNUR, IOM, Bangladesh y ASEAN.",
+      "tripolar_reading": "China observa Myanmar por conectividad estratégica hacia el Índico; EE.UU. y la UE por sanciones, gobernanza y protección; Bangladesh, ASEAN y el Sur Global cargan el coste humanitario y de estabilidad regional.",
       "sources": [
-        "https://reliefweb.int/report/world/global-weather-hazards-summary-july-2-2026-july-8-2026",
+        "https://reliefweb.int/report/myanmar/iom-and-unhcr-deeply-concerned-reports-maritime-incidents-myanmar-coast-over-500-feared-dead",
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
       ]
     },
     {
       "rank": 2,
-      "status": "observation_not_confirmed",
-      "priority": "Media, observación",
-      "location": "Myanmar, Rakhine / fronteras Magway-Bago-Ayeyarwady",
-      "headline": "Myanmar: frente de conflicto sin capa ambiental semanal",
-      "conflict_event": "ACLED / ReliefWeb reporta intensificación de combates en junio entre el ejército de Myanmar y el Arakan Army.",
-      "environmental_event": "No se encontró evento NASA/USGS coincidente dentro de la ventana semanal.",
-      "coupling_type": "En observación: conflicto relevante, sin capa ambiental semanal suficiente.",
-      "fact": "ACLED / ReliefWeb reporta que en junio los combates entre el ejército de Myanmar y el Arakan Army fueron el principal motor de violencia y muertes vinculadas al conflicto, con intensificación en Rakhine y sus fronteras con Magway, Bago y Ayeyarwady.",
-      "assessment": "No se identificó un evento NASA EONET o USGS dentro de la semana 6–12 de julio que permita afirmar un acople ambiental significativo con ese frente.",
-      "hypothesis": "Myanmar permanece en observación por la dimensión territorial del conflicto y su relación con rutas, puertos y líneas de suministro; el acople ambiental semanal queda no confirmado.",
-      "why_it_matters": "Frente estratégico por rutas, control territorial y líneas de suministro.",
-      "tripolar_reading": "China observa Myanmar por conectividad estratégica hacia el Índico; EE.UU. y la UE por sanciones, gobernanza y derechos humanos; ASEAN y el Sur Global por estabilidad regional.",
+      "status": "operativo",
+      "priority": "Media-alta",
+      "best_short_candidate": false,
+      "location": "Siria · Alepo, noreste y corredor del Éufrates",
+      "headline": "Siria: hostilidades renovadas e inundaciones del Éufrates sobre 1,2 M en necesidad urgente",
+      "conflict_event": "Hostilidades renovadas en Alepo y el noreste sirio.",
+      "environmental_event": "Inundaciones severas a lo largo del Éufrates, con servicios públicos tensionados.",
+      "coupling_type": "Acople operativo con evidencia institucional reciente; señal de arrastre institucional, no un match directo NASA/USGS dentro de la semana.",
+      "fact": "El situation report de UNFPA Siria publicado el 8 de julio de 2026, que cubre mayo-junio, reporta hostilidades renovadas en Alepo y el noreste junto a inundaciones severas en el corredor del Éufrates, con servicios públicos tensionados y 1,2 millones de personas en necesidad urgente.",
+      "assessment": "Conflicto e impacto ambiental (inundación) se superponen sobre la misma población y las mismas infraestructuras, degradando servicios públicos y capacidad de respuesta. Es un acople operativo sostenido por evidencia institucional reciente; se trata de una señal de arrastre institucional (cobertura mayo-junio), no de una coincidencia geoespacial verificada dentro de la ventana 13-19 de julio.",
+      "hypothesis": "Si las hostilidades y la presión hídrica del Éufrates persisten, la combinación puede seguir erosionando servicios básicos y elevar la necesidad humanitaria por encima de la cifra actual, con efecto sobre desplazamiento interno y gobernanza local en el noreste.",
+      "why_it_matters": "El noreste sirio y el Éufrates son nodo de agua, energía, control territorial y presencia de actores externos; el acople conflicto-inundación amplifica la fragilidad de servicios.",
+      "tripolar_reading": "EE.UU. y actores regionales pesan sobre el noreste por seguridad y recursos; Rusia e Irán por influencia y corredores; la UE y el Sur Global por estabilización, agua y retorno de población.",
       "sources": [
-        "https://reliefweb.int/report/afghanistan/asia-pacific-overview-july-2026",
+        "https://reliefweb.int/report/syrian-arab-republic/unfpa-syria-situation-report-1-may-30-june-2026",
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
       ]
     },
     {
       "rank": 3,
-      "status": "not_confirmed",
-      "priority": "Baja, monitoreo",
-      "location": "Gaza",
-      "headline": "Gaza: snapshot humanitario sin acople ambiental",
-      "conflict_event": "OCHA mantiene snapshot de impacto humanitario al 8 de julio de 2026.",
-      "environmental_event": "Sin evento NASA/USGS de la ventana que permita atribuir acople ambiental.",
-      "coupling_type": "No confirmado: conflicto e infraestructura humanitaria sin señal ambiental institucional asociada.",
-      "fact": "OCHA publicó un snapshot de impacto sobre Gaza con fecha 8 de julio de 2026; las cifras no verificadas por Naciones Unidas se atribuyen a su fuente y las cifras de víctimas proceden del Ministerio de Salud y de las autoridades israelíes.",
-      "assessment": "La página consultada no aporta datos ambientales, de infraestructura ambiental ni de causalidad conflicto-ambiente; Gaza no debe presentarse esta semana como acople ambiental confirmado.",
-      "hypothesis": "La presión humanitaria sigue siendo central, pero el brief SENTINEL debe separar crisis humanitaria de acople ambiental cuando la fuente no sustenta esa relación.",
-      "why_it_matters": "Debe mantenerse en monitoreo, pero no presentarse esta semana como acople conflicto-ambiente.",
-      "tripolar_reading": "EE.UU., UE, actores regionales y Sur Global siguen compitiendo por margen diplomático y legitimidad narrativa; el eje ambiental queda fuera de confirmación esta semana.",
+      "status": "en observación",
+      "priority": "Media",
+      "best_short_candidate": false,
+      "location": "R. D. Congo · Ituri y noreste",
+      "headline": "DRC: brote de Ébola en Ituri con calor y sequedad anormales sobre zona de conflicto",
+      "conflict_event": "Conflicto y movilidad forzada en Ituri y el noreste, con acceso humanitario restringido y servicios débiles.",
+      "environmental_event": "Sequedad anormal en el noreste de DRC y pronóstico de calor anormal superior a 35 °C para el 9-15 de julio de 2026 (FEWS NET / ReliefWeb).",
+      "coupling_type": "Acople salud pública-ambiente-conflicto en observación robusta; no es un único evento NASA/USGS confirmado, sino convergencia institucional de tres capas.",
+      "fact": "El Under-Secretary-General Tom Fletcher (OCHA) emitió el 9 de julio de 2026 una declaración sobre el brote de Ébola en la R. D. Congo, centrado en Ituri, con acceso humanitario restringido y servicios débiles. El Global Weather Hazards Summary (FEWS NET / ReliefWeb) para el 9-15 de julio de 2026 señala sequedad anormal en el noreste del país y pronóstico de calor anormal por encima de 35 °C.",
+      "assessment": "Conflicto y movilidad forzada elevan el riesgo de propagación del brote, mientras el estrés térmico e hídrico y la debilidad de servicios degradan la respuesta sanitaria. Es un acople de salud pública, ambiente y conflicto sostenido por convergencia institucional, no por un único evento NASA/USGS confirmado dentro de la ventana.",
+      "hypothesis": "En un entorno de fragilidad estatal, conflicto y calor/sequedad anormales, la contención del brote depende de acceso humanitario y continuidad logística; su deterioro podría acelerar la propagación y ampliar el desplazamiento.",
+      "why_it_matters": "Cruza seguridad sanitaria, conflicto y clima en un nodo de minerales y corredores humanitarios; un brote mal contenido tiene efectos regionales.",
+      "tripolar_reading": "Para EE.UU., China, Rusia, UE y Sur Global, DRC sigue siendo nodo de minerales, corredores humanitarios y capacidad estatal; la capa sanitaria-ambiental añade presión sobre un tablero ya frágil.",
       "sources": [
-        "https://www.ochaopt.org/content/reported-impact-snapshot-gaza-strip-8-july-2026",
+        "https://reliefweb.int/report/democratic-republic-congo/statement-ebola-outbreak-democratic-republic-congo-tom-fletcher-under-secretary-general-humanitarian-affairs-and-emergency-relief-coordinator-9-july-2026",
+        "https://reliefweb.int/report/world/global-weather-hazards-summary-july-9-2026-july-15-2026",
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
       ]
     }
   ],
   "not_selected_but_relevant": [
     {
-      "location": "Sismicidad global · USGS M4.5+",
-      "reason": "USGS entregó 87 sismos de magnitud 4,5+ en la ventana semanal.",
-      "note": "Ningún sismo se acopló espacio-temporalmente a una inflexión de conflicto; se conservan como base de vigilancia.",
+      "location": "Feed SENTINEL · eventos de conflicto en ventana",
+      "reason": "El feed trajo 4 eventos de conflicto en/sin fecha dentro de la ventana (Ucrania, Gaza, Taiwán, Malí).",
+      "note": "Carecían de fecha, latitud y longitud utilizables y correspondían a ítems de ejemplo (dominio tipo example.org); no se pudieron usar para el cruce geoespacial automático (candidate_matches = 0).",
       "sources": [
-        "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-05&endtime=2026-07-12&minmagnitude=4.5"
+        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
       ]
     },
     {
-      "location": "Eventos ambientales abiertos · NASA EONET",
-      "reason": "NASA EONET abierto aportó 49 geometrías en la ventana (principalmente incendios y hielo marino).",
-      "note": "Sin coincidencia espacial-temporal verificable con eventos SENTINEL de la semana; el estado cerrado falló al decodificar JSON.",
+      "location": "Sismicidad global · USGS M4.5+",
+      "reason": "USGS entregó 145 sismos de magnitud 4,5+ en la ventana semanal.",
+      "note": "Ningún sismo se acopló geoespacialmente a una inflexión de conflicto utilizable; se conservan como base de vigilancia.",
       "sources": [
-        "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=open"
+        "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-12T22%3A00%3A00Z&endtime=2026-07-19T21%3A59%3A59Z&minmagnitude=4.5&orderby=magnitude"
+      ]
+    },
+    {
+      "location": "Eventos ambientales · NASA EONET",
+      "reason": "NASA EONET aportó 67 eventos abiertos y 73 cerrados en la ventana (principalmente incendios y hielo marino).",
+      "note": "Sin coincidencia geoespacial verificable con eventos SENTINEL utilizables de la semana.",
+      "sources": [
+        "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=open",
+        "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed"
       ]
     }
   ],
   "best_short_candidate": {
     "rank": 1,
-    "title": "No todo cruce es una inflexión",
-    "location": "DRC / Myanmar / Gaza",
-    "duration_seconds": 42,
-    "hook": "Esta semana, el dato más importante del tablero es lo que no podemos confirmar.",
-    "reason": "Esta semana el valor GEOPÓLEM no está en forzar una lectura, sino en explicar el método: una sala situacional seria no rellena vacíos, separa señal, ruido y observación.",
+    "title": "La ruta que el mar no perdona",
+    "location": "Myanmar · Rakhine-Ayeyarwady",
+    "duration_seconds": 45,
+    "hook": "Más de 500 personas temidas muertas frente a Myanmar. No es solo el mar: es el conflicto empujando a la gente hacia él.",
+    "reason": "Es el acople más nítido de la semana y el único confirmado por fuente institucional humanitaria: conflicto y desplazamiento empujan salidas marítimas hacia una ventana ambiental letal, fuera de temporada y con inundaciones recientes. Acople operativo, sin forzar causalidad.",
     "structure": {
-      "hecho": "El feed SENTINEL no trajo eventos de conflicto válidos dentro de la semana; NASA y USGS sí registraron eventos ambientales, pero sin coincidencia verificable con el panel de conflicto.",
-      "evaluacion": "DRC, Myanmar y Gaza siguen en observación, pero sin acople espacial-temporal suficientemente fuerte para presentarlo como inflexión.",
-      "hipotesis": "En inteligencia, decir 'no confirmado' también es una conclusión: evita convertir correlación en causalidad y protege la lectura estratégica del tablero."
+      "hecho": "Tras el desplazamiento por conflicto desde Rakhine a finales de junio, una embarcación habría naufragado frente a Ayeyarwady el 8 de julio; IOM y UNHCR temen más de 500 muertos. La travesía fue fuera de temporada, con lluvias torrenciales e inundaciones recientes.",
+      "evaluacion": "El conflicto empuja las salidas; el entorno ambiental adverso multiplica la letalidad. Es acople operativo confirmado por fuente institucional, no causalidad del clima sobre el conflicto.",
+      "hipotesis": "Mientras el conflicto persista y no haya vías seguras, las salidas marítimas seguirán chocando con ventanas meteorológicas peligrosas: más episodios de alta letalidad en la ruta hacia Cox's Bazar."
     },
     "subtitles_en": [
-      "The most important signal this week is what cannot be confirmed.",
-      "Conflict data and environmental data did not produce a verified coupling.",
-      "In intelligence, 'not confirmed' is also a conclusion.",
+      "Over 500 feared dead off Myanmar's coast.",
+      "Conflict in Rakhine pushes people onto the sea, out of sailing season, into floods and storms.",
+      "IOM and UNHCR confirm the maritime incidents; the coupling is operational, not a claim of causation.",
       "GEOPÓLEM. Welcome to the board."
     ],
     "closing": "GEOPÓLEM. Bienvenidos al tablero.",
@@ -145,10 +173,11 @@
       "#OSINT",
       "#Geopolítica",
       "#Inteligencia",
-      "#ClimaYConflicto"
+      "#ClimaYConflicto",
+      "#Rohingya"
     ]
   },
-  "disclaimer": "Sin acople significativo confirmado esta semana. El feed SENTINEL descargó correctamente pero quedaron 0 eventos de conflicto válidos en la ventana; NASA EONET y USGS estuvieron activos pero sin match espacial-temporal verificable. Los tres puntos se publican como observación/monitoreo, no como causalidad. Correlación temporal no implica causalidad; no se inventaron correlaciones.",
+  "disclaimer": "Esta semana el cruce automático SENTINEL↔NASA/USGS dio candidate_matches = 0: los 4 eventos de conflicto del feed carecían de fecha y coordenadas utilizables y eran ítems de ejemplo. NASA (EONET abierto 67, cerrado 73) y USGS (145 sismos M4.5+) sí devolvieron datos válidos, pero sin match geoespacial. Los tres puntos publicados se sostienen con fuentes institucionales humanitarias (IOM/UNHCR, UNFPA, OCHA, FEWS NET), no con el match automático. Se distingue acople operativo de causalidad; no se inventaron correlaciones.",
   "reduced_hashtags": [
     "#GEOPÓLEM",
     "#OSINT",
