@@ -1,0 +1,128 @@
+{
+  "contract": "sprint-19-release-candidate-v1",
+  "generated_at": "2026-07-07T06:23:51.765Z",
+  "is_production": false,
+  "notice": "Release Candidate (Sprint 19). Apunta a artefactos de STAGING validados vía checksum sha256; NO es producción y NO modifica canónicos. Reproducible y no destructivo. La promoción real exige doble gate humano y sigue DESHABILITADA por política.",
+  "build": {
+    "artifact_count": 13,
+    "conflict_ids": [
+      "asia-agua",
+      "ia-narrativa",
+      "isr-gaza-irn",
+      "istanbul",
+      "mena-agua",
+      "rearme-global",
+      "red-sea",
+      "sahel",
+      "stablecoins",
+      "ukr-rus"
+    ],
+    "source_tree": "api/v1/staging"
+  },
+  "checksum": {
+    "algo": "sha256",
+    "aggregate": "fa4847dfd9c9933cdbcb75b370fe2d0e1da9d227b06677c95ec6bce4ad99d5a9"
+  },
+  "coverage": {
+    "coverage_pct": 100,
+    "ok": true,
+    "coverage_ok": true
+  },
+  "source_review": {
+    "total": 8,
+    "by_classification": {
+      "resolved": 0,
+      "needs_human_review": 5,
+      "deferred": 0,
+      "blocked_by_source": 3,
+      "blocked_by_policy": 0
+    },
+    "resolved": 0,
+    "blocking_production": 8
+  },
+  "rollback_pointer": {
+    "contract": "sprint-18-canonical-rollback-v1",
+    "count": 14,
+    "files": [
+      "api/v1/conflicts.json",
+      "api/v1/conflicts/active/map.json",
+      "api/v1/conflicts.seed.enriched.json",
+      "api/v1/conflicts.verified.enriched.json",
+      "api/v1/conflicts/rearme-global.json",
+      "api/v1/conflicts/ukr-rus.json",
+      "api/v1/conflicts/isr-gaza-irn.json",
+      "api/v1/conflicts/sahel.json",
+      "api/v1/conflicts/red-sea.json",
+      "api/v1/conflicts/istanbul.json",
+      "api/v1/conflicts/mena-agua.json",
+      "api/v1/conflicts/asia-agua.json",
+      "api/v1/conflicts/stablecoins.json",
+      "api/v1/conflicts/ia-narrativa.json"
+    ],
+    "note": "Plan de respaldo de canónicos de producción para un hipotético rollback. NO se ejecuta en este RC."
+  },
+  "production": {
+    "publish_enabled": false,
+    "ready_for_promotion": false,
+    "blockers": [
+      "8 pendiente/s editorial/es bloquean producción",
+      "publicación a producción DESHABILITADA por política (PRODUCTION_PUBLISH_ENABLED=false)"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "api/v1/staging/conflicts.enriched.json",
+      "sha256": "772929663e0254247af599f7bc947fcc4aed41a556429f4f9801f5325a6d6ec2",
+      "contract": "sprint-15-staging-canonical-v1"
+    },
+    {
+      "path": "api/v1/staging/conflicts/active/map.enriched.json",
+      "sha256": "aec0de5ccafb2bd2690972c6756f728f78b700c98d0b3b95fedf02bb815c3c04",
+      "contract": "sprint-15-staging-map-v1"
+    },
+    {
+      "path": "api/v1/staging/conflicts/asia-agua.json",
+      "sha256": "49066f3da06ff95617cf568f61aeaa40462210859d19bf04ed11d2b3f666243f"
+    },
+    {
+      "path": "api/v1/staging/conflicts/ia-narrativa.json",
+      "sha256": "fa6f9bed6cd46752f5787c15a3d55b80b5c27f8c9d2ab69e413342a4873523a0"
+    },
+    {
+      "path": "api/v1/staging/conflicts/isr-gaza-irn.json",
+      "sha256": "523a2ea64492ad803174009321dca07e22d495d77be337d7d99fdcddf9463686"
+    },
+    {
+      "path": "api/v1/staging/conflicts/istanbul.json",
+      "sha256": "4b645bb23cd21ca223569e2dc70c3c67e57607b9492d05dd7cfc9737096413f6"
+    },
+    {
+      "path": "api/v1/staging/conflicts/mena-agua.json",
+      "sha256": "2015d03105f57a8e3141abb81803b39f7aaf1028cad267dd5368f52760eb01bd"
+    },
+    {
+      "path": "api/v1/staging/conflicts/rearme-global.json",
+      "sha256": "189c5e9c8ad1cbc01e62d60b8ae928f1d0cc05254541aaebe617d8be065e02b3"
+    },
+    {
+      "path": "api/v1/staging/conflicts/red-sea.json",
+      "sha256": "2706409fc68ada19a3da73013432e4128a92ab081d6fa37d4bc241dc99f45926"
+    },
+    {
+      "path": "api/v1/staging/conflicts/sahel.json",
+      "sha256": "42f6ab6825262b79b4b962061dd845a04dbc3701a8ce3171511790a5c285e3d7"
+    },
+    {
+      "path": "api/v1/staging/conflicts/stablecoins.json",
+      "sha256": "e09e79ca635ec0ad14d52c203de06002088aa9e7f40c92e6d12fc209b363c6ab"
+    },
+    {
+      "path": "api/v1/staging/conflicts/ukr-rus.json",
+      "sha256": "c6dfcf8e8abb774d962218a51728346c1b58fb988e8a0748a28c3c8ebff6b19b"
+    },
+    {
+      "path": "api/v1/staging/coverage-report.json",
+      "sha256": "5561896d51dff9b4a3a12dfb21390ee47a08f251136d7c3b9fada93be209e2f3"
+    }
+  ]
+}

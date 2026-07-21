@@ -1,0 +1,107 @@
+{
+  "data": {
+    "id": "istanbul",
+    "slug": "istanbul",
+    "name": "Canal de Estambul / Bósforo",
+    "summary": "Proyecto canal paralelo TR + Convención de Montreux: cuello de botella crítico para grano y petróleo Mar Negro.",
+    "conflict_type": {
+      "slug": "chokepoint",
+      "label": "Chokepoint"
+    },
+    "primary_region": {
+      "slug": "eurasia",
+      "label": "Eurasia"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 2,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 41,
+      "longitude": 29
+    },
+    "actors": {
+      "state": [
+        {
+          "slug": "turquia",
+          "name": "Turquía",
+          "role": "Estado ribereño",
+          "alignment": null,
+          "involvement_level": null
+        }
+      ],
+      "non_state": []
+    },
+    "resources": [
+      {
+        "slug": "petroleo",
+        "name": "Petróleo",
+        "relevance_level": null,
+        "strategic_importance": null,
+        "critical_mineral": false
+      },
+      {
+        "slug": "grano",
+        "name": "Grano",
+        "relevance_level": null,
+        "strategic_importance": null,
+        "critical_mineral": false
+      }
+    ],
+    "chokepoints": [
+      {
+        "slug": "estrecho-del-bosforo",
+        "name": "Estrecho del Bósforo",
+        "risk_level": null,
+        "strategic_importance": null,
+        "energy_flow_relevance": true
+      },
+      {
+        "slug": "dardanelos",
+        "name": "Dardanelos",
+        "risk_level": null,
+        "strategic_importance": null,
+        "energy_flow_relevance": true
+      }
+    ],
+    "causal_links": [
+      {
+        "link_type": "contributes_to",
+        "title": "Régimen del Bósforo y tránsito por los Estrechos",
+        "explanation": "La Convención de Montreux (1936) rige el régimen de los Estrechos Turcos (Bósforo y Dardanelos) y es, según el Ministerio de Exteriores turco, el elemento esencial para la seguridad y estabilidad del Mar Negro; la afirmación causal concreta sobre el impacto en flujos de energía y grano requiere verificación editorial adicional.",
+        "pending": true,
+        "source_slugs": [
+          "turkiye-mfa-montreux"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "slug": "turkiye-mfa-montreux",
+        "title": "Implementation of the Montreux Convention",
+        "url": "https://www.mfa.gov.tr/implementation-of-the-montreux-convention.en.mfa",
+        "publisher": "Republic of Türkiye Ministry of Foreign Affairs",
+        "source_name": "Türkiye MFA",
+        "accessed_at": "2026-07-07",
+        "verification": "verified",
+        "demo": false,
+        "accessed_via": "web-fetch",
+        "relation": "conflict"
+      }
+    ],
+    "updated_at": null,
+    "editorial_status": "review"
+  },
+  "meta": {
+    "api_version": "v1",
+    "staging": true,
+    "source": "verified-seed-merge (Sprint 15 staging)"
+  }
+}

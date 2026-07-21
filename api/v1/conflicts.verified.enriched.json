@@ -1,0 +1,869 @@
+{
+  "contract": "sprint-14-verified-enriched-v1",
+  "generated_at": "2026-07-07T06:22:27.383Z",
+  "include_demo": false,
+  "notice": "PREVIEW VERIFICADO (Sprint 14). Merge no destructivo de la semilla verificada sobre el detalle v1: SÓLO fuentes verificadas (institucionales/periodísticas). NO es un artefacto canónico; la promoción a producción exige sign-off editorial humano.",
+  "data": {
+    "rearme-global": {
+      "id": "rearme-global",
+      "slug": "rearme-global",
+      "name": "Rearme global — gasto militar récord",
+      "summary": "El gasto militar mundial alcanzó 2,887 billones de dólares en 2025, con Europa y Asia-Oceanía como zonas de aceleración y una concentración del 51% en EE.UU., China y Rusia.",
+      "conflict_type": {
+        "slug": "defensa",
+        "label": "Defensa / Rearme"
+      },
+      "primary_region": {
+        "slug": "global",
+        "label": "Global"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 50,
+        "longitude": 10
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "estados-unidos",
+            "name": "Estados Unidos",
+            "role": "Mayor gasto militar mundial",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "china",
+            "name": "China",
+            "role": "Segundo mayor gasto militar",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "rusia",
+            "name": "Rusia",
+            "role": "Aceleración del gasto en defensa",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Carrera de rearme y presión presupuestaria",
+          "explanation": "El gasto militar mundial alcanzó 2.887 billones USD en 2025 (+2,9% real sobre 2024), décimo año consecutivo de subidas, tensionando presupuestos y cadenas industriales.",
+          "pending": false,
+          "source_slugs": [
+            "sipri-milex-2025"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "sipri-milex-2025",
+          "title": "Global military spending rise continues as European and Asian expenditures surge",
+          "url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
+          "publisher": "Stockholm International Peace Research Institute (SIPRI)",
+          "source_name": "SIPRI",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    },
+    "ukr-rus": {
+      "id": "ukr-rus",
+      "slug": "ukr-rus",
+      "name": "Ucrania – Rusia",
+      "summary": "Guerra de desgaste con frente estabilizado, presión sobre infraestructura energética y campañas híbridas (cíber, drones, narrativa).",
+      "conflict_type": {
+        "slug": "conflicto",
+        "label": "Conflictos"
+      },
+      "primary_region": {
+        "slug": "europa_del_este",
+        "label": "Europa del Este"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 5,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 49,
+        "longitude": 32
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "rusia",
+            "name": "Rusia",
+            "role": "Parte beligerante",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "ucrania",
+            "name": "Ucrania",
+            "role": "Parte beligerante",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        {
+          "slug": "gas-natural",
+          "name": "Gas natural",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        },
+        {
+          "slug": "trigo",
+          "name": "Trigo",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [
+        {
+          "slug": "estrecho-de-kerch",
+          "name": "Estrecho de Kerch",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": false
+        }
+      ],
+      "causal_links": [
+        {
+          "link_type": "escalates",
+          "title": "Riesgo sobre infraestructura energética (nuclear)",
+          "explanation": "El OIEA documenta pérdidas repetidas de energía externa y daños en líneas eléctricas de la central de Zaporiyia por la actividad militar, con impacto directo en la seguridad de la infraestructura energética.",
+          "pending": false,
+          "source_slugs": [
+            "iaea-ukraine-update-356"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "iaea-ukraine-update-356",
+          "title": "Update 356 – IAEA Director General Statement on Situation in Ukraine",
+          "url": "https://www.iaea.org/newscenter/pressreleases/update-356-iaea-director-general-statement-on-situation-in-ukraine",
+          "publisher": "International Atomic Energy Agency (IAEA)",
+          "source_name": "IAEA",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    },
+    "isr-gaza-irn": {
+      "id": "isr-gaza-irn",
+      "slug": "isr-gaza-irn",
+      "name": "Israel – Gaza – Irán",
+      "summary": "Crisis humanitaria en Gaza, frentes con Hezbollah y Houthi, intercambio directo Israel–Irán y riesgo de guerra regional.",
+      "conflict_type": {
+        "slug": "conflicto",
+        "label": "Conflictos"
+      },
+      "primary_region": {
+        "slug": "mena",
+        "label": "MENA"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 5,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 31.5,
+        "longitude": 34.5
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "israel",
+            "name": "Israel",
+            "role": "Parte beligerante",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "iran",
+            "name": "Irán",
+            "role": "Parte beligerante",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": [
+          {
+            "slug": "hamas",
+            "name": "Hamás",
+            "role": "Grupo armado",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "hezbollah",
+            "name": "Hezbollah",
+            "role": "Grupo armado",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ]
+      },
+      "resources": [
+        {
+          "slug": "petroleo",
+          "name": "Petróleo",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [
+        {
+          "slug": "estrecho-de-ormuz",
+          "name": "Estrecho de Ormuz",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        }
+      ],
+      "causal_links": [
+        {
+          "link_type": "escalates",
+          "title": "Crisis humanitaria y riesgo de escalada regional",
+          "explanation": "OCHA documenta la crisis humanitaria en Gaza; la afirmación causal concreta sobre escalada regional Israel–Irán y chokepoints energéticos requiere verificación editorial adicional.",
+          "pending": true,
+          "source_slugs": [
+            "ocha-opt"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "ocha-opt",
+          "title": "Occupied Palestinian Territory | OCHA",
+          "url": "https://www.unocha.org/occupied-palestinian-territory",
+          "publisher": "UN Office for the Coordination of Humanitarian Affairs (OCHA)",
+          "source_name": "OCHA",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    },
+    "sahel": {
+      "id": "sahel",
+      "slug": "sahel",
+      "name": "Sahel — Juntas militares y yihadismo",
+      "summary": "Eje Mali–Burkina–Níger consolida AES, salida de Francia/CEDEAO, presencia rusa, expansión yihadista al golfo de Guinea.",
+      "conflict_type": {
+        "slug": "conflicto",
+        "label": "Conflictos"
+      },
+      "primary_region": {
+        "slug": "sahel",
+        "label": "Sahel"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 14.5,
+        "longitude": 0.5
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "mali",
+            "name": "Malí",
+            "role": "Estado afectado",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "niger",
+            "name": "Níger",
+            "role": "Estado afectado",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "burkina-faso",
+            "name": "Burkina Faso",
+            "role": "Estado afectado",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": [
+          {
+            "slug": "jnim",
+            "name": "JNIM",
+            "role": "Grupo yihadista",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ]
+      },
+      "resources": [
+        {
+          "slug": "uranio",
+          "name": "Uranio",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": true
+        },
+        {
+          "slug": "oro",
+          "name": "Oro",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Violencia armada y desplazamiento forzado",
+          "explanation": "ACNUR documenta el desplazamiento forzado a gran escala en Malí, Burkina Faso y Níger impulsado por violencia e inseguridad; la caracterización causal de retroalimentación juntas–yihadismo requiere verificación editorial adicional.",
+          "pending": true,
+          "source_slugs": [
+            "unhcr-sahel-emergency"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "unhcr-sahel-emergency",
+          "title": "Sahel emergency",
+          "url": "https://www.unhcr.org/us/emergencies/sahel-emergency",
+          "publisher": "UNHCR — The UN Refugee Agency",
+          "source_name": "UNHCR",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    },
+    "red-sea": {
+      "id": "red-sea",
+      "slug": "red-sea",
+      "name": "Mar Rojo / Bab el-Mandeb",
+      "summary": "Ataques Houthi a navegación reducen tráfico ~50%, fletes y primas suben, desvíos por Cabo de Buena Esperanza añaden 10-14 días.",
+      "conflict_type": {
+        "slug": "chokepoint",
+        "label": "Chokepoint"
+      },
+      "primary_region": {
+        "slug": "mena",
+        "label": "MENA"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 12.5,
+        "longitude": 43.5
+      },
+      "actors": {
+        "state": [],
+        "non_state": [
+          {
+            "slug": "huties",
+            "name": "Hutíes",
+            "role": "Grupo armado",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ]
+      },
+      "resources": [
+        {
+          "slug": "petroleo",
+          "name": "Petróleo",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [
+        {
+          "slug": "bab-el-mandeb",
+          "name": "Bab el-Mandeb",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        },
+        {
+          "slug": "canal-de-suez",
+          "name": "Canal de Suez",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        }
+      ],
+      "causal_links": [
+        {
+          "link_type": "causes",
+          "title": "Ataques a navegación y desvío de rutas",
+          "explanation": "UNCTAD documenta caídas del tráfico por el Canal de Suez y el desvío masivo de portacontenedores por el Cabo de Buena Esperanza, con encarecimiento de fletes y emisiones.",
+          "pending": false,
+          "source_slugs": [
+            "unctad-navigating-troubled-waters"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "unctad-navigating-troubled-waters",
+          "title": "Navigating troubled waters: Impact to global trade of disruption of shipping routes in the Red Sea, Black Sea and Panama Canal",
+          "url": "https://unctad.org/publication/navigating-troubled-waters-impact-global-trade-disruption-shipping-routes-red-sea-black",
+          "publisher": "UNCTAD — UN Trade and Development",
+          "source_name": "UNCTAD",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    },
+    "istanbul": {
+      "id": "istanbul",
+      "slug": "istanbul",
+      "name": "Canal de Estambul / Bósforo",
+      "summary": "Proyecto canal paralelo TR + Convención de Montreux: cuello de botella crítico para grano y petróleo Mar Negro.",
+      "conflict_type": {
+        "slug": "chokepoint",
+        "label": "Chokepoint"
+      },
+      "primary_region": {
+        "slug": "eurasia",
+        "label": "Eurasia"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 2,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 41,
+        "longitude": 29
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "turquia",
+            "name": "Turquía",
+            "role": "Estado ribereño",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        {
+          "slug": "petroleo",
+          "name": "Petróleo",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        },
+        {
+          "slug": "grano",
+          "name": "Grano",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [
+        {
+          "slug": "estrecho-del-bosforo",
+          "name": "Estrecho del Bósforo",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        },
+        {
+          "slug": "dardanelos",
+          "name": "Dardanelos",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        }
+      ],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Régimen del Bósforo y tránsito por los Estrechos",
+          "explanation": "La Convención de Montreux (1936) rige el régimen de los Estrechos Turcos (Bósforo y Dardanelos) y es, según el Ministerio de Exteriores turco, el elemento esencial para la seguridad y estabilidad del Mar Negro; la afirmación causal concreta sobre el impacto en flujos de energía y grano requiere verificación editorial adicional.",
+          "pending": true,
+          "source_slugs": [
+            "turkiye-mfa-montreux"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "turkiye-mfa-montreux",
+          "title": "Implementation of the Montreux Convention",
+          "url": "https://www.mfa.gov.tr/implementation-of-the-montreux-convention.en.mfa",
+          "publisher": "Republic of Türkiye Ministry of Foreign Affairs",
+          "source_name": "Türkiye MFA",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    },
+    "mena-agua": {
+      "id": "mena-agua",
+      "slug": "mena-agua",
+      "name": "MENA — Estrés hídrico estructural",
+      "summary": "Jordán, Eufrates–Tigris, Nilo, acuíferos fósiles agotándose. 12 de 17 países con mayor estrés hídrico del mundo están en MENA.",
+      "conflict_type": {
+        "slug": "agua",
+        "label": "Agua / Clima"
+      },
+      "primary_region": {
+        "slug": "mena",
+        "label": "MENA"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 30,
+        "longitude": 38
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "egipto",
+            "name": "Egipto",
+            "role": "Estado ribereño (Nilo)",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "etiopia",
+            "name": "Etiopía",
+            "role": "Estado ribereño (Nilo)",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        {
+          "slug": "agua-dulce",
+          "name": "Agua dulce",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Estrés hídrico estructural",
+          "explanation": "El Banco Mundial advierte que la disponibilidad de agua per cápita en MENA caerá por debajo del umbral de escasez absoluta (500 m³/persona/año), agravando tensiones estructurales.",
+          "pending": false,
+          "source_slugs": [
+            "worldbank-mena-water-scarcity"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "worldbank-mena-water-scarcity",
+          "title": "Water Scarcity in MENA Requires Bold Actions, Says World Bank Report",
+          "url": "https://www.worldbank.org/en/news/press-release/2023/04/27/water-scarcity-in-mena-requires-bold-actions-says-world-bank-report",
+          "publisher": "World Bank",
+          "source_name": "World Bank",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    },
+    "asia-agua": {
+      "id": "asia-agua",
+      "slug": "asia-agua",
+      "name": "Asia del Sur — Glaciares e Indo",
+      "summary": "Retroceso de glaciares HKH alimenta Ganges, Indo, Brahmaputra. Tratado del Indo bajo presión IN–PK. Calor extremo y monzón errático.",
+      "conflict_type": {
+        "slug": "agua",
+        "label": "Agua / Clima"
+      },
+      "primary_region": {
+        "slug": "asia_del_sur",
+        "label": "Asia del Sur"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 30,
+        "longitude": 78
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "india",
+            "name": "India",
+            "role": "Estado ribereño (Indo)",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "pakistan",
+            "name": "Pakistán",
+            "role": "Estado ribereño (Indo)",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        {
+          "slug": "agua-dulce",
+          "name": "Agua dulce",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Marco del Tratado de Aguas del Indo bajo presión",
+          "explanation": "El Tratado de Aguas del Indo (1960, mediado por el Banco Mundial) reparte el sistema del Indo entre India y Pakistán; la afirmación causal concreta sobre deshielo glaciar requiere verificación editorial adicional.",
+          "pending": true,
+          "source_slugs": [
+            "worldbank-indus-waters-treaty"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "worldbank-indus-waters-treaty",
+          "title": "Fact Sheet: The Indus Waters Treaty 1960 and the Role of the World Bank",
+          "url": "https://www.worldbank.org/en/region/sar/brief/fact-sheet-the-indus-waters-treaty-1960-and-the-world-bank",
+          "publisher": "World Bank",
+          "source_name": "World Bank",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    },
+    "stablecoins": {
+      "id": "stablecoins",
+      "slug": "stablecoins",
+      "name": "Stablecoins / desinformación financiera",
+      "summary": "Crecimiento de stablecoins USD-pegged como infraestructura paralela, riesgo de corrida + bots/IA amplificando narrativas de pánico.",
+      "conflict_type": {
+        "slug": "ia",
+        "label": "IA / Narrativa"
+      },
+      "primary_region": {
+        "slug": "global",
+        "label": "Global"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 3,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 40.7,
+        "longitude": -74
+      },
+      "actors": {
+        "state": [],
+        "non_state": []
+      },
+      "resources": [],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Riesgo de estabilidad financiera por stablecoins",
+          "explanation": "El FSB emite recomendaciones para regular los arreglos de stablecoins globales por sus riesgos de estabilidad financiera; el vínculo causal concreto con la desinformación financiera requiere verificación editorial adicional.",
+          "pending": true,
+          "source_slugs": [
+            "fsb-global-stablecoin-recommendations"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "fsb-global-stablecoin-recommendations",
+          "title": "High-level Recommendations for the Regulation, Supervision and Oversight of Global Stablecoin Arrangements: Final report",
+          "url": "https://www.fsb.org/2023/07/high-level-recommendations-for-the-regulation-supervision-and-oversight-of-global-stablecoin-arrangements-final-report/",
+          "publisher": "Financial Stability Board (FSB)",
+          "source_name": "FSB",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    },
+    "ia-narrativa": {
+      "id": "ia-narrativa",
+      "slug": "ia-narrativa",
+      "name": "IA / Riesgo narrativo global",
+      "summary": "IA generativa industrializa desinformación: deepfakes electorales, propaganda multilingüe, manipulación de mercados y emocionalización de conflictos.",
+      "conflict_type": {
+        "slug": "ia",
+        "label": "IA / Narrativa"
+      },
+      "primary_region": {
+        "slug": "global",
+        "label": "Global"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 37.4,
+        "longitude": -122
+      },
+      "actors": {
+        "state": [],
+        "non_state": []
+      },
+      "resources": [],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Riesgo narrativo por IA",
+          "explanation": "Naciones Unidas advierte que la desinformación potenciada por IA ya pone en peligro operaciones de paz y humanitarias y amenaza la integridad de la información y las instituciones democráticas, amplificando el riesgo narrativo global.",
+          "pending": false,
+          "source_slugs": [
+            "un-ai-global-issues"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "slug": "un-ai-global-issues",
+          "title": "Artificial Intelligence (AI) | United Nations",
+          "url": "https://www.un.org/en/global-issues/artificial-intelligence",
+          "publisher": "United Nations",
+          "source_name": "United Nations",
+          "accessed_at": "2026-07-07",
+          "verification": "verified",
+          "demo": false
+        }
+      ],
+      "updated_at": null
+    }
+  },
+  "meta": {
+    "api_version": "v1",
+    "source": "verified-seed-merge (Sprint 14)",
+    "seed_include_demo": false
+  }
+}
