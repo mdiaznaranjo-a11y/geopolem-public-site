@@ -1,0 +1,110 @@
+{
+  "contract": "sprint-24-education-manifest-v1",
+  "generated_at": "2026-07-07T00:00:00.000Z",
+  "notice": "Índice máquina-legible de los materiales docentes GEOPÓLEM (Sprint 24). Determinista y versionado. Materiales de FORMACIÓN: no sustituyen la revisión editorial final ni activan producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "taxonomy_source": "data/conflicts.inventory.json",
+  "schema_reference": "api/v1/conflicts/istanbul.json",
+  "formats": [
+    {
+      "id": "curso-corto",
+      "title": "Curso corto GEOPÓLEM",
+      "file": "docs/education/formatos/curso-corto.md",
+      "duration": "12-16 h",
+      "audience": "estudiantes de grado, analistas junior"
+    },
+    {
+      "id": "seminario-ejecutivo",
+      "title": "Seminario ejecutivo",
+      "file": "docs/education/formatos/seminario-ejecutivo.md",
+      "duration": "4-6 h",
+      "audience": "decisores, dirección, riesgo/compliance"
+    },
+    {
+      "id": "dossier-docente",
+      "title": "Dossier docente",
+      "file": "docs/education/formatos/dossier-docente.md",
+      "duration": "material de lectura",
+      "audience": "docentes, formadores"
+    },
+    {
+      "id": "laboratorio-mapa-interactivo",
+      "title": "Laboratorio de mapa interactivo",
+      "file": "docs/education/formatos/laboratorio-mapa-interactivo.md",
+      "duration": "2-3 h",
+      "audience": "estudiantes, analistas OSINT"
+    },
+    {
+      "id": "caso-de-estudio",
+      "title": "Formato de caso de estudio",
+      "file": "docs/education/formatos/caso-de-estudio.md",
+      "duration": "1.5-3 h",
+      "audience": "estudiantes, equipos de análisis"
+    },
+    {
+      "id": "guia-de-evaluacion",
+      "title": "Guía de evaluación",
+      "file": "docs/education/formatos/guia-de-evaluacion.md",
+      "duration": "transversal",
+      "audience": "docentes, evaluadores"
+    }
+  ],
+  "templates": [
+    {
+      "id": "syllabus",
+      "file": "docs/education/plantillas/syllabus.template.md",
+      "required_sections": ["Identificación", "Objetivos de aprendizaje", "Competencias", "Contenidos", "Metodología", "Evaluación", "Bibliografía y fuentes"]
+    },
+    {
+      "id": "caso-de-estudio",
+      "file": "docs/education/plantillas/caso-de-estudio.template.md",
+      "required_sections": ["Identificación del conflicto", "Contexto", "Actores", "Recursos y chokepoints", "Cadena causal", "Fuentes", "Preguntas de análisis", "Advertencia editorial"]
+    },
+    {
+      "id": "ficha-conflicto",
+      "file": "docs/education/plantillas/ficha-conflicto.template.md",
+      "required_sections": ["Identificación", "Clasificación taxonómica", "Métricas", "Dimensiones", "Relaciones", "Fuentes", "Estado editorial"]
+    },
+    {
+      "id": "actividad-mapa",
+      "file": "docs/education/plantillas/actividad-mapa.template.md",
+      "required_sections": ["Objetivo", "Datos de partida", "Consigna", "Pasos", "Entregable", "Rúbrica rápida"]
+    },
+    {
+      "id": "rubrica-evaluacion",
+      "file": "docs/education/plantillas/rubrica-evaluacion.template.md",
+      "required_sections": ["Criterios", "Niveles de desempeño", "Ponderación", "Retroalimentación"]
+    },
+    {
+      "id": "checklist-fuentes",
+      "file": "docs/education/plantillas/checklist-fuentes.template.md",
+      "required_sections": ["Identificación de la fuente", "Verificación", "Trazabilidad", "Sesgo y OSINT responsable", "Decisión"]
+    },
+    {
+      "id": "matriz-causalidad",
+      "file": "docs/education/plantillas/matriz-causalidad.template.md",
+      "required_sections": ["Nodos", "Enlaces causales", "Tipo de enlace", "Evidencia de soporte", "Nivel de confianza"]
+    }
+  ],
+  "case_studies": [
+    {
+      "id": "caso-red-sea-bab-el-mandeb",
+      "file": "docs/education/casos/caso-red-sea-bab-el-mandeb.md",
+      "conflict_id": "red-sea",
+      "data_stage": "rc"
+    },
+    {
+      "id": "caso-ukr-rus-energia",
+      "file": "docs/education/casos/caso-ukr-rus-energia.md",
+      "conflict_id": "ukr-rus",
+      "data_stage": "rc"
+    }
+  ],
+  "taxonomy_alignment_file": "docs/education/taxonomia-alineacion.json",
+  "pedagogical_model_file": "docs/education/modelo-pedagogico.md",
+  "index_file": "docs/education/README.md"
+}

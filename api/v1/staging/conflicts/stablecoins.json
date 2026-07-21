@@ -1,0 +1,69 @@
+{
+  "data": {
+    "id": "stablecoins",
+    "slug": "stablecoins",
+    "name": "Stablecoins / desinformación financiera",
+    "summary": "Crecimiento de stablecoins USD-pegged como infraestructura paralela, riesgo de corrida + bots/IA amplificando narrativas de pánico.",
+    "conflict_type": {
+      "slug": "ia",
+      "label": "IA / Narrativa"
+    },
+    "primary_region": {
+      "slug": "global",
+      "label": "Global"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 3,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 40.7,
+      "longitude": -74
+    },
+    "actors": {
+      "state": [],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [
+      {
+        "link_type": "contributes_to",
+        "title": "Riesgo de estabilidad financiera por stablecoins",
+        "explanation": "El FSB emite recomendaciones para regular los arreglos de stablecoins globales por sus riesgos de estabilidad financiera; el vínculo causal concreto con la desinformación financiera requiere verificación editorial adicional.",
+        "pending": true,
+        "source_slugs": [
+          "fsb-global-stablecoin-recommendations"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "slug": "fsb-global-stablecoin-recommendations",
+        "title": "High-level Recommendations for the Regulation, Supervision and Oversight of Global Stablecoin Arrangements: Final report",
+        "url": "https://www.fsb.org/2023/07/high-level-recommendations-for-the-regulation-supervision-and-oversight-of-global-stablecoin-arrangements-final-report/",
+        "publisher": "Financial Stability Board (FSB)",
+        "source_name": "FSB",
+        "accessed_at": "2026-07-07",
+        "verification": "verified",
+        "demo": false,
+        "accessed_via": "web-fetch",
+        "relation": "conflict"
+      }
+    ],
+    "updated_at": null,
+    "editorial_status": "review"
+  },
+  "meta": {
+    "api_version": "v1",
+    "staging": true,
+    "source": "verified-seed-merge (Sprint 15 staging)"
+  }
+}

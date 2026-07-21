@@ -111,6 +111,29 @@ Requiere iniciar `server.py` en el puerto 8000 antes del despliegue para exponer
 
 ---
 
+## API v1 — migración por capas (Sprints 1–3)
+
+La plataforma migra a una API real **sin romper el sitio estático**. Arquitectura
+reversible por capas: **API PostgreSQL/PostGIS → JSON estático `/api/v1/*.json` →
+`data.js`/FOCOS local**. Ningún fallback se elimina; GitHub Pages sigue igual.
+
+- **Sprint 1 — Adaptador** (`api-adapter.js`): el frontend puede consumir la API
+  o los datos locales sin cambiar la experiencia. Bandera `window.GEOP_USE_API`
+  (por defecto `false`). Ver `SPRINT_1_ADAPTADOR_API.md`.
+- **Sprint 2 — Puente estático** (`api/v1/conflicts.json`,
+  `api/v1/conflicts/active/map.json`): JSON API-compatible generado desde
+  `data.js` con `scripts/generate-conflicts-json.mjs`. Ver `SPRINT_2_PUENTE_ESTATICO.md`.
+- **Sprint 3 — API real** (`api-server/`): servidor REST read-only Node,
+  PostgreSQL/PostGIS-ready, con fallback automático al puente estático cuando no
+  hay `DATABASE_URL`. Endpoints: `/api/v1/health`, `/conflicts`,
+  `/conflicts/active/map`, `/conflicts/:id`, `/filters`. Ver `api-server/README.md`.
+
+El servidor `api-server/` es un proceso Node aparte (se despliega en Render/Fly/
+VPS); **no** forma parte del artefacto de GitHub Pages y no afecta al sitio
+estático.
+
+---
+
 ## Próximos pasos sugeridos
 
 - **Traducir contenido de focos** a EN/FR/DE/LB y conectar el switcher de idioma a esos campos.

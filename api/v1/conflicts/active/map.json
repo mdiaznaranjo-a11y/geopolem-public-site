@@ -1,0 +1,200 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10,
+          50
+        ]
+      },
+      "properties": {
+        "id": "rearme-global",
+        "slug": "rearme-global",
+        "name": "Rearme global — gasto militar récord",
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "Global"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32,
+          49
+        ]
+      },
+      "properties": {
+        "id": "ukr-rus",
+        "slug": "ukr-rus",
+        "name": "Ucrania – Rusia",
+        "intensity_level": 5,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "Europa del Este"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5,
+          31.5
+        ]
+      },
+      "properties": {
+        "id": "isr-gaza-irn",
+        "slug": "isr-gaza-irn",
+        "name": "Israel – Gaza – Irán",
+        "intensity_level": 5,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "MENA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5,
+          14.5
+        ]
+      },
+      "properties": {
+        "id": "sahel",
+        "slug": "sahel",
+        "name": "Sahel — Juntas militares y yihadismo",
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "Sahel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.5,
+          12.5
+        ]
+      },
+      "properties": {
+        "id": "red-sea",
+        "slug": "red-sea",
+        "name": "Mar Rojo / Bab el-Mandeb",
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "MENA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29,
+          41
+        ]
+      },
+      "properties": {
+        "id": "istanbul",
+        "slug": "istanbul",
+        "name": "Canal de Estambul / Bósforo",
+        "intensity_level": 2,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "Eurasia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38,
+          30
+        ]
+      },
+      "properties": {
+        "id": "mena-agua",
+        "slug": "mena-agua",
+        "name": "MENA — Estrés hídrico estructural",
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "MENA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78,
+          30
+        ]
+      },
+      "properties": {
+        "id": "asia-agua",
+        "slug": "asia-agua",
+        "name": "Asia del Sur — Glaciares e Indo",
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "Asia del Sur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74,
+          40.7
+        ]
+      },
+      "properties": {
+        "id": "stablecoins",
+        "slug": "stablecoins",
+        "name": "Stablecoins / desinformación financiera",
+        "intensity_level": 3,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "Global"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122,
+          37.4
+        ]
+      },
+      "properties": {
+        "id": "ia-narrativa",
+        "slug": "ia-narrativa",
+        "name": "IA / Riesgo narrativo global",
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "energy_dimension": false,
+        "primary_region": "Global"
+      }
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-07-06T09:19:50.216Z",
+    "source": "data.js:FOCOS (static bridge, Sprint 2)"
+  }
+}

@@ -1,0 +1,22 @@
+# Contexto de build para api-server/Dockerfile (contexto = raíz del repo).
+# Excluye todo lo pesado/estático del sitio que la API no necesita.
+.git
+node_modules
+api-server/node_modules
+**/*.log
+.env
+.env.*
+assets/
+icons/
+docs/
+data/sentinel/
+*.mp4
+*.png
+*.jpg
+*.svg
+app.js
+videos.js
+worldmap.js
+index.html
+manifest.webmanifest
+service-worker.js

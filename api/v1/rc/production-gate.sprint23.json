@@ -1,0 +1,36 @@
+{
+  "contract": "sprint-23-production-gate-design-v1",
+  "generated_at": "2026-07-07T00:00:00.000Z",
+  "production_enabled": false,
+  "gate_open": false,
+  "ready_to_publish": false,
+  "publish_enabled": false,
+  "require_signatures": false,
+  "decision": "PRODUCTION-DISABLED",
+  "notice": "DISEÑO del gate de habilitación de producción (Sprint 23). Reúne todas las condiciones necesarias para publicar pero NO activa producción: PRODUCTION_PUBLISH_ENABLED=false mantiene el gate CERRADO aunque el resto se cumpla, incluso con firmas de ejemplo. Habilitar producción es una decisión explícita de un sprint futuro.",
+  "conditions": {
+    "decisions_go": false,
+    "decisions_valid": false,
+    "coverage_ok": true,
+    "editorial_signoff": false,
+    "second_confirmation": false,
+    "signatures_ok": true
+  },
+  "blockers": [
+    "decisión editorial no es GO 8/8 (0/8 GO)",
+    "set de decisiones ausente/ inválido (o es un EJEMPLO)",
+    "sign-off editorial ausente/ inválido: sin autorización humana: define GEOP_PROMOTION_SIGNOFF o crea .promotion-signoff.json (no versionado)",
+    "segunda confirmación ausente/ inválida: sin segunda confirmación: define GEOP_RELEASE_CONFIRM o crea .release-confirmation.json (no versionado)",
+    "publicación a producción DESHABILITADA por política (PRODUCTION_PUBLISH_ENABLED=false)"
+  ],
+  "inputs": {
+    "decision_source": "none",
+    "decision_total": 8,
+    "decision_no_go": 8,
+    "signoff_source": "none",
+    "confirmation_source": "none",
+    "signatures_signed": 0,
+    "signatures_verified": 0,
+    "signatures_invalid": 0
+  }
+}

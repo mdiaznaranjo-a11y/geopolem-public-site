@@ -1,0 +1,299 @@
+{
+  "contract": "sprint-22-editorial-decision-v1",
+  "is_example": true,
+  "notice": "EJEMPLO NO PRODUCTIVO. is_example=true garantiza que este archivo NUNCA cuenta como decisión real ni habilita producción. Para decidir de verdad: copia esta estructura a .editorial-decisions.json (NO versionado), pon is_example=false, sustituye los nombres/rationale por firmas reales de reviewer/editor/owner y verifica que evidence_manifest_hash y source_hashes coincidan con la evidencia vigente (npm run decisions:hash). Aun así, la publicación real seguirá DESHABILITADA por política (PRODUCTION_PUBLISH_ENABLED=false).",
+  "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+  "decisions": [
+    {
+      "item_id": "asia-agua::causal::Marco del Tratado de Aguas del Indo bajo presión",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del reviewer basada en la evidencia revisada.",
+      "decided_by_role": "reviewer",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "psi-iwt-2025-pause": "sha256:5228ea7624d027a8b05dbc92661f0f2bdec7ccb7260139c3e951a266157ad6d7"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "asia-agua::causal::Marco del Tratado de Aguas del Indo bajo presión",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del editor basada en la evidencia revisada.",
+      "decided_by_role": "editor",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "psi-iwt-2025-pause": "sha256:5228ea7624d027a8b05dbc92661f0f2bdec7ccb7260139c3e951a266157ad6d7"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "asia-agua::causal::Marco del Tratado de Aguas del Indo bajo presión",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del owner basada en la evidencia revisada.",
+      "decided_by_role": "owner",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "psi-iwt-2025-pause": "sha256:5228ea7624d027a8b05dbc92661f0f2bdec7ccb7260139c3e951a266157ad6d7"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "isr-gaza-irn::causal::Crisis humanitaria y riesgo de escalada regional",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del reviewer basada en la evidencia revisada.",
+      "decided_by_role": "reviewer",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "un-unispal-ocha-update-351": "sha256:b2245a299826e162dbbbdb9c15d5e6b97c8bc6bb95dcf59e2d12a09851050954",
+        "cgep-hormuz-energy-impacts": "sha256:db365703914d5eb8a46648b3fd38738e54e3b903ec15c6df9eeec9d666ccae79"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "isr-gaza-irn::causal::Crisis humanitaria y riesgo de escalada regional",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del editor basada en la evidencia revisada.",
+      "decided_by_role": "editor",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "un-unispal-ocha-update-351": "sha256:b2245a299826e162dbbbdb9c15d5e6b97c8bc6bb95dcf59e2d12a09851050954",
+        "cgep-hormuz-energy-impacts": "sha256:db365703914d5eb8a46648b3fd38738e54e3b903ec15c6df9eeec9d666ccae79"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "isr-gaza-irn::causal::Crisis humanitaria y riesgo de escalada regional",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del owner basada en la evidencia revisada.",
+      "decided_by_role": "owner",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "un-unispal-ocha-update-351": "sha256:b2245a299826e162dbbbdb9c15d5e6b97c8bc6bb95dcf59e2d12a09851050954",
+        "cgep-hormuz-energy-impacts": "sha256:db365703914d5eb8a46648b3fd38738e54e3b903ec15c6df9eeec9d666ccae79"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "isr-gaza-irn::source::ocha-opt",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del reviewer basada en la evidencia revisada.",
+      "decided_by_role": "reviewer",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "un-unispal-ocha-update-351": "sha256:90a3074a18a27602a7a9d5886e95217ce44cb5617d5a8defc181e21e272c5054"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "isr-gaza-irn::source::ocha-opt",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del editor basada en la evidencia revisada.",
+      "decided_by_role": "editor",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "un-unispal-ocha-update-351": "sha256:90a3074a18a27602a7a9d5886e95217ce44cb5617d5a8defc181e21e272c5054"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "isr-gaza-irn::source::ocha-opt",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del owner basada en la evidencia revisada.",
+      "decided_by_role": "owner",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "un-unispal-ocha-update-351": "sha256:90a3074a18a27602a7a9d5886e95217ce44cb5617d5a8defc181e21e272c5054"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "istanbul::causal::Régimen del Bósforo y tránsito por los Estrechos",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del reviewer basada en la evidencia revisada.",
+      "decided_by_role": "reviewer",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "conversation-chokepoints-278329": "sha256:1252305e07e2f5acbebc4be2159236fb25da274997f6f3cee1e97f759234acf2"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "istanbul::causal::Régimen del Bósforo y tránsito por los Estrechos",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del editor basada en la evidencia revisada.",
+      "decided_by_role": "editor",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "conversation-chokepoints-278329": "sha256:1252305e07e2f5acbebc4be2159236fb25da274997f6f3cee1e97f759234acf2"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "istanbul::causal::Régimen del Bósforo y tránsito por los Estrechos",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del owner basada en la evidencia revisada.",
+      "decided_by_role": "owner",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "conversation-chokepoints-278329": "sha256:1252305e07e2f5acbebc4be2159236fb25da274997f6f3cee1e97f759234acf2"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "sahel::causal::Violencia armada y desplazamiento forzado",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del reviewer basada en la evidencia revisada.",
+      "decided_by_role": "reviewer",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "unnews-sahel-1166076": "sha256:98701bfceaab57d51412c04bdf698d8024bccd8f4ee80680e440cc1fb68b92e2"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "sahel::causal::Violencia armada y desplazamiento forzado",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del editor basada en la evidencia revisada.",
+      "decided_by_role": "editor",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "unnews-sahel-1166076": "sha256:98701bfceaab57d51412c04bdf698d8024bccd8f4ee80680e440cc1fb68b92e2"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "sahel::causal::Violencia armada y desplazamiento forzado",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del owner basada en la evidencia revisada.",
+      "decided_by_role": "owner",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "unnews-sahel-1166076": "sha256:98701bfceaab57d51412c04bdf698d8024bccd8f4ee80680e440cc1fb68b92e2"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "sahel::source::unhcr-sahel-emergency",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del reviewer basada en la evidencia revisada.",
+      "decided_by_role": "reviewer",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "unnews-sahel-1166076": "sha256:1cabec2636ca1cfdcd37daff624b44e3b3cfbe27ad0eec9d5a8e06d56c23b671"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "sahel::source::unhcr-sahel-emergency",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del editor basada en la evidencia revisada.",
+      "decided_by_role": "editor",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "unnews-sahel-1166076": "sha256:1cabec2636ca1cfdcd37daff624b44e3b3cfbe27ad0eec9d5a8e06d56c23b671"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "sahel::source::unhcr-sahel-emergency",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del owner basada en la evidencia revisada.",
+      "decided_by_role": "owner",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "unnews-sahel-1166076": "sha256:1cabec2636ca1cfdcd37daff624b44e3b3cfbe27ad0eec9d5a8e06d56c23b671"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "stablecoins::causal::Riesgo de estabilidad financiera por stablecoins",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del reviewer basada en la evidencia revisada.",
+      "decided_by_role": "reviewer",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "fsb-2025-crypto-stablecoin-gaps": "sha256:389ec3765e8277af42d7e704942a3e0277f7db5c9465961a1131fffe1d1b7815"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "stablecoins::causal::Riesgo de estabilidad financiera por stablecoins",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del editor basada en la evidencia revisada.",
+      "decided_by_role": "editor",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "fsb-2025-crypto-stablecoin-gaps": "sha256:389ec3765e8277af42d7e704942a3e0277f7db5c9465961a1131fffe1d1b7815"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "stablecoins::causal::Riesgo de estabilidad financiera por stablecoins",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del owner basada en la evidencia revisada.",
+      "decided_by_role": "owner",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "fsb-2025-crypto-stablecoin-gaps": "sha256:389ec3765e8277af42d7e704942a3e0277f7db5c9465961a1131fffe1d1b7815"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "ukr-rus::source::iaea-ukraine-update-356",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del reviewer basada en la evidencia revisada.",
+      "decided_by_role": "reviewer",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "unnews-znpp-power-1166016": "sha256:0e7462a7a5e471746bdd5d6d0a12c069ca5c069510f76152ffa0038b7dacf170"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "ukr-rus::source::iaea-ukraine-update-356",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del editor basada en la evidencia revisada.",
+      "decided_by_role": "editor",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "unnews-znpp-power-1166016": "sha256:0e7462a7a5e471746bdd5d6d0a12c069ca5c069510f76152ffa0038b7dacf170"
+      },
+      "optional_conditions": []
+    },
+    {
+      "item_id": "ukr-rus::source::iaea-ukraine-update-356",
+      "decision": "approved",
+      "rationale": "EJEMPLO: sustituir por la justificación real del owner basada en la evidencia revisada.",
+      "decided_by_role": "owner",
+      "decided_at": "2026-07-07",
+      "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+      "source_hashes": {
+        "unnews-znpp-power-1166016": "sha256:0e7462a7a5e471746bdd5d6d0a12c069ca5c069510f76152ffa0038b7dacf170"
+      },
+      "optional_conditions": []
+    }
+  ]
+}
