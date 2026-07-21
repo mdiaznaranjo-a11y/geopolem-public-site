@@ -1,0 +1,82 @@
+{
+  "contract": "sprint-24-taxonomy-alignment-v1",
+  "notice": "Alineación de los materiales docentes con la taxonomía y la base de datos GEOPÓLEM. Cada campo/entidad referencia el contrato v1 real (api/v1/conflicts/*.json e inventario). No inventa campos nuevos.",
+  "schema_reference": "api/v1/conflicts/istanbul.json",
+  "inventory_reference": "data/conflicts.inventory.json",
+  "entities": {
+    "conflicts": {
+      "description": "Unidad central de la taxonomía; cada foco geopolítico.",
+      "fields": ["id", "slug", "name", "summary", "status"],
+      "covered_by": ["ficha-conflicto", "caso-de-estudio", "curso-corto", "dossier-docente"]
+    },
+    "conflict_type": {
+      "description": "Categoría taxonómica del conflicto (conflicto, chokepoint, agua, defensa, ia).",
+      "fields": ["conflict_type.slug", "conflict_type.label"],
+      "covered_by": ["ficha-conflicto", "laboratorio-mapa-interactivo", "dossier-docente"]
+    },
+    "primary_region": {
+      "description": "Región primaria (mena, europa_del_este, sahel, eurasia, asia_del_sur, global).",
+      "fields": ["primary_region.slug", "primary_region.label"],
+      "covered_by": ["ficha-conflicto", "laboratorio-mapa-interactivo"]
+    },
+    "metrics": {
+      "description": "Métricas de intensidad y riesgo.",
+      "fields": ["metrics.intensity_level", "metrics.escalation_risk", "metrics.humanitarian_impact"],
+      "covered_by": ["ficha-conflicto", "caso-de-estudio", "guia-de-evaluacion"]
+    },
+    "dimensions": {
+      "description": "Dimensiones analíticas del conflicto.",
+      "fields": ["dimensions.energy", "dimensions.territorial", "dimensions.external_involvement"],
+      "covered_by": ["ficha-conflicto", "dossier-docente", "modelo-pedagogico"]
+    },
+    "location": {
+      "description": "Georreferencia para el mapa interactivo.",
+      "fields": ["location.latitude", "location.longitude"],
+      "covered_by": ["laboratorio-mapa-interactivo", "actividad-mapa"]
+    },
+    "actors": {
+      "description": "Actores estatales y no estatales implicados.",
+      "fields": ["actors.state", "actors.non_state"],
+      "covered_by": ["ficha-conflicto", "caso-de-estudio"]
+    },
+    "resources": {
+      "description": "Recursos estratégicos y minerales críticos.",
+      "fields": ["resources"],
+      "covered_by": ["ficha-conflicto", "caso-de-estudio", "dossier-docente"]
+    },
+    "chokepoints": {
+      "description": "Cuellos de botella y su relevancia para el flujo energético.",
+      "fields": ["chokepoints"],
+      "covered_by": ["ficha-conflicto", "caso-de-estudio", "laboratorio-mapa-interactivo"]
+    },
+    "causal_links": {
+      "description": "Cadena causal (causes/escalates/...) con explicación y fuentes de soporte.",
+      "fields": ["causal_links"],
+      "covered_by": ["matriz-causalidad", "caso-de-estudio", "modelo-pedagogico"]
+    },
+    "sources": {
+      "description": "Fuentes verificadas con URL, editor, fecha de acceso y verificación.",
+      "fields": ["sources"],
+      "covered_by": ["checklist-fuentes", "caso-de-estudio", "modelo-pedagogico"]
+    }
+  },
+  "governance": {
+    "editorial_status": {
+      "description": "Estado editorial (review/approved/...). Los materiales docentes NO promueven ni aprueban contenido.",
+      "reference": "data/conflicts.inventory.json",
+      "field": "editorial_status",
+      "covered_by": ["ficha-conflicto", "guia-de-evaluacion", "checklist-fuentes"]
+    },
+    "verification": {
+      "description": "Marca verified/demo de cada fuente/relación.",
+      "reference": "api/v1/conflicts.verified.enriched.json",
+      "field": "verification",
+      "covered_by": ["checklist-fuentes", "caso-de-estudio"]
+    },
+    "release_candidate": {
+      "description": "Los casos de estudio usan datos del RC/staging, nunca producción.",
+      "reference": "api/v1/rc/manifest.json",
+      "covered_by": ["caso-de-estudio"]
+    }
+  }
+}

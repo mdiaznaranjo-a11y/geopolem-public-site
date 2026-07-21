@@ -1,0 +1,236 @@
+{
+  "contract": "sprint-28-education-analytics-v1",
+  "notice": "Analítica pedagógica AGREGADA (Sprint 28). Entradas anónimas y sintéticas: no corresponde a ninguna persona ni a notas reales. Salida agregada, sin tracking individual ni datos personales.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "totals": {
+    "submitted": 5,
+    "valid": 5,
+    "rejected": 0,
+    "mean_percentage": 53,
+    "median_percentage": 58.33
+  },
+  "reject_reasons": [],
+  "by_band": [
+    {
+      "band": "insuficiente",
+      "count": 2,
+      "percentage": 40
+    },
+    {
+      "band": "notable",
+      "count": 1,
+      "percentage": 20
+    },
+    {
+      "band": "suficiente",
+      "count": 2,
+      "percentage": 40
+    }
+  ],
+  "by_rubric": [
+    {
+      "rubric_id": "rubrica-analisis-geopolitico",
+      "scored": 1,
+      "mean_percentage": 83.33,
+      "median_percentage": 83.33
+    },
+    {
+      "rubric_id": "rubrica-causalidad",
+      "scored": 2,
+      "mean_percentage": 45,
+      "median_percentage": 45
+    },
+    {
+      "rubric_id": "rubrica-uso-mapa",
+      "scored": 1,
+      "mean_percentage": 33.33,
+      "median_percentage": 33.33
+    },
+    {
+      "rubric_id": "rubrica-validacion-fuentes",
+      "scored": 1,
+      "mean_percentage": 58.33,
+      "median_percentage": 58.33
+    }
+  ],
+  "weakest_criteria": [
+    {
+      "rubric_id": "rubrica-uso-mapa",
+      "criterion_id": "deeplinks",
+      "title": "Deep-links",
+      "normalized": 0,
+      "mean_points": 1
+    },
+    {
+      "rubric_id": "rubrica-causalidad",
+      "criterion_id": "evidencia",
+      "title": "Evidencia de soporte",
+      "normalized": 0.17,
+      "mean_points": 1.5
+    },
+    {
+      "rubric_id": "rubrica-uso-mapa",
+      "criterion_id": "localizacion",
+      "title": "Localización de focos",
+      "normalized": 0.33,
+      "mean_points": 2
+    }
+  ],
+  "strongest_criteria": [
+    {
+      "rubric_id": "rubrica-analisis-geopolitico",
+      "criterion_id": "trazabilidad",
+      "title": "Trazabilidad al dato v1",
+      "normalized": 1,
+      "mean_points": 4
+    },
+    {
+      "rubric_id": "rubrica-analisis-geopolitico",
+      "criterion_id": "contexto",
+      "title": "Contexto y encuadre",
+      "normalized": 1,
+      "mean_points": 4
+    },
+    {
+      "rubric_id": "rubrica-validacion-fuentes",
+      "criterion_id": "verificacion",
+      "title": "Verificación",
+      "normalized": 0.67,
+      "mean_points": 3
+    }
+  ],
+  "criteria": [
+    {
+      "rubric_id": "rubrica-uso-mapa",
+      "criterion_id": "deeplinks",
+      "title": "Deep-links",
+      "n": 1,
+      "mean_points": 1,
+      "normalized": 0
+    },
+    {
+      "rubric_id": "rubrica-causalidad",
+      "criterion_id": "evidencia",
+      "title": "Evidencia de soporte",
+      "n": 2,
+      "mean_points": 1.5,
+      "normalized": 0.17
+    },
+    {
+      "rubric_id": "rubrica-uso-mapa",
+      "criterion_id": "localizacion",
+      "title": "Localización de focos",
+      "n": 1,
+      "mean_points": 2,
+      "normalized": 0.33
+    },
+    {
+      "rubric_id": "rubrica-uso-mapa",
+      "criterion_id": "offline",
+      "title": "Trabajo offline / PWA",
+      "n": 1,
+      "mean_points": 2,
+      "normalized": 0.33
+    },
+    {
+      "rubric_id": "rubrica-validacion-fuentes",
+      "criterion_id": "trazabilidad",
+      "title": "Trazabilidad",
+      "n": 1,
+      "mean_points": 2,
+      "normalized": 0.33
+    },
+    {
+      "rubric_id": "rubrica-causalidad",
+      "criterion_id": "confianza",
+      "title": "Nivel de confianza y pendientes",
+      "n": 2,
+      "mean_points": 2.5,
+      "normalized": 0.5
+    },
+    {
+      "rubric_id": "rubrica-causalidad",
+      "criterion_id": "nodos",
+      "title": "Definición de nodos",
+      "n": 2,
+      "mean_points": 2.5,
+      "normalized": 0.5
+    },
+    {
+      "rubric_id": "rubrica-analisis-geopolitico",
+      "criterion_id": "actores",
+      "title": "Identificación de actores",
+      "n": 1,
+      "mean_points": 3,
+      "normalized": 0.67
+    },
+    {
+      "rubric_id": "rubrica-analisis-geopolitico",
+      "criterion_id": "intereses",
+      "title": "Intereses y dinámicas de poder",
+      "n": 1,
+      "mean_points": 3,
+      "normalized": 0.67
+    },
+    {
+      "rubric_id": "rubrica-causalidad",
+      "criterion_id": "enlaces",
+      "title": "Enlaces y tipo causal",
+      "n": 2,
+      "mean_points": 3,
+      "normalized": 0.67
+    },
+    {
+      "rubric_id": "rubrica-uso-mapa",
+      "criterion_id": "filtros",
+      "title": "Uso de filtros",
+      "n": 1,
+      "mean_points": 3,
+      "normalized": 0.67
+    },
+    {
+      "rubric_id": "rubrica-validacion-fuentes",
+      "criterion_id": "identificacion",
+      "title": "Identificación de la fuente",
+      "n": 1,
+      "mean_points": 3,
+      "normalized": 0.67
+    },
+    {
+      "rubric_id": "rubrica-validacion-fuentes",
+      "criterion_id": "sesgo",
+      "title": "Sesgo y OSINT responsable",
+      "n": 1,
+      "mean_points": 3,
+      "normalized": 0.67
+    },
+    {
+      "rubric_id": "rubrica-validacion-fuentes",
+      "criterion_id": "verificacion",
+      "title": "Verificación",
+      "n": 1,
+      "mean_points": 3,
+      "normalized": 0.67
+    },
+    {
+      "rubric_id": "rubrica-analisis-geopolitico",
+      "criterion_id": "contexto",
+      "title": "Contexto y encuadre",
+      "n": 1,
+      "mean_points": 4,
+      "normalized": 1
+    },
+    {
+      "rubric_id": "rubrica-analisis-geopolitico",
+      "criterion_id": "trazabilidad",
+      "title": "Trazabilidad al dato v1",
+      "n": 1,
+      "mean_points": 4,
+      "normalized": 1
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "contract": "sprint-27-feedback-template-v1",
+  "notice": "Plantilla de feedback docente GEOPÓLEM (Sprint 27). Recomendaciones pedagógicas por banda de logro y por nivel de criterio. Material de formación: no activa producción ni maneja datos personales.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "bands": {
+    "insuficiente": {
+      "headline": "Base por consolidar",
+      "recommendation": "Retomar los fundamentos del caso y volver a construir el análisis desde la evidencia verificada antes de avanzar."
+    },
+    "suficiente": {
+      "headline": "En progreso",
+      "recommendation": "Hay una base correcta; reforzar la justificación y la trazabilidad de las afirmaciones para subir de banda."
+    },
+    "notable": {
+      "headline": "Sólido",
+      "recommendation": "Análisis sólido; pulir los criterios más débiles y explicitar límites y alternativas para alcanzar la excelencia."
+    },
+    "excelente": {
+      "headline": "Excelente",
+      "recommendation": "Nivel excelente; mantener el rigor y usar este trabajo como referencia para revisar casos con datos pendientes."
+    }
+  },
+  "level_recommendations": {
+    "insuficiente": "Prioriza este criterio: parte de un ejemplo del banco de casos y reconstrúyelo con evidencia verificada.",
+    "suficiente": "Cumple lo básico: añade justificación explícita y cita las fuentes (`source_slugs`) que sustentan cada afirmación.",
+    "notable": "Buen nivel: contrasta con alternativas y marca los campos `pending` para cerrar la brecha hacia excelente.",
+    "excelente": "Nivel máximo: documenta el criterio y los límites para que sirva de referencia a otras revisiones."
+  }
+}

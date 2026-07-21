@@ -1,0 +1,61 @@
+{
+  "contract": "sprint-25-rubric-v1",
+  "id": "rubrica-politica-energetica",
+  "title": "Rúbrica de política energética",
+  "description": "Evalúa el análisis de la dimensión energética de un foco: recursos, chokepoints y flujos.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "scale": {
+    "levels": [
+      { "id": "insuficiente", "label": "Insuficiente", "points": 1 },
+      { "id": "suficiente", "label": "Suficiente", "points": 2 },
+      { "id": "notable", "label": "Notable", "points": 3 },
+      { "id": "excelente", "label": "Excelente", "points": 4 }
+    ]
+  },
+  "criteria": [
+    {
+      "id": "recursos",
+      "title": "Recursos energéticos",
+      "weight": 0.3,
+      "descriptors": {
+        "insuficiente": "No identifica recursos energéticos relevantes.",
+        "suficiente": "Identifica recursos pero sin conectar con el foco.",
+        "notable": "Relaciona recursos (`resources`) con el foco y su relevancia.",
+        "excelente": "Analiza recursos, criticidad y su papel en la seguridad energética."
+      }
+    },
+    {
+      "id": "chokepoints",
+      "title": "Chokepoints y flujos",
+      "weight": 0.3,
+      "descriptors": {
+        "insuficiente": "Ignora los chokepoints o su relevancia energética.",
+        "suficiente": "Menciona chokepoints sin analizar flujos.",
+        "notable": "Vincula chokepoints con `energy_flow_relevance` y rutas.",
+        "excelente": "Modela el impacto de los chokepoints sobre flujos y precios."
+      }
+    },
+    {
+      "id": "impacto",
+      "title": "Impacto sistémico",
+      "weight": 0.2,
+      "descriptors": {
+        "insuficiente": "No explica impactos energéticos.",
+        "suficiente": "Describe impactos de forma vaga.",
+        "notable": "Explica impactos energéticos con encadenamientos plausibles.",
+        "excelente": "Cuantifica o acota impactos y escenarios de sustitución."
+      }
+    },
+    {
+      "id": "trazabilidad",
+      "title": "Trazabilidad al dato v1",
+      "weight": 0.2,
+      "descriptors": {
+        "insuficiente": "No referencia campos energéticos del contrato v1.",
+        "suficiente": "Cita `dimensions.energy` sin más soporte.",
+        "notable": "Ancla el análisis en `resources`/`chokepoints` reales.",
+        "excelente": "Traza cada afirmación a campos/fuentes verificadas y marca pendientes."
+      }
+    }
+  ]
+}

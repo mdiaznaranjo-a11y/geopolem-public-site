@@ -1,0 +1,146 @@
+{
+  "contract": "sprint-25-case-bank-v1",
+  "generated_at": "2026-07-07T08:50:21.841Z",
+  "notice": "Índice del banco de casos docente GEOPÓLEM (Sprint 25). Casos derivados de conflictos con fuente verificada (RC). Determinista y versionado. No sustituye la revisión editorial ni activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "totals": {
+    "cases": 10,
+    "with_causal_links": 10,
+    "with_pending_fields": 6
+  },
+  "cases": [
+    {
+      "id": "asia-agua",
+      "title": "Asia del Sur — Glaciares e Indo",
+      "conflict_type": "agua",
+      "region": "asia_del_sur",
+      "fiche_md": "docs/education/case-bank/fichas/asia-agua.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/asia-agua.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/asia-agua.matrix.json",
+      "causal_links": 1,
+      "pending_fields": [
+        "chokepoints"
+      ]
+    },
+    {
+      "id": "ia-narrativa",
+      "title": "IA / Riesgo narrativo global",
+      "conflict_type": "ia",
+      "region": "global",
+      "fiche_md": "docs/education/case-bank/fichas/ia-narrativa.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/ia-narrativa.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/ia-narrativa.matrix.json",
+      "causal_links": 1,
+      "pending_fields": [
+        "actors",
+        "resources",
+        "chokepoints"
+      ]
+    },
+    {
+      "id": "isr-gaza-irn",
+      "title": "Israel – Gaza – Irán",
+      "conflict_type": "conflicto",
+      "region": "mena",
+      "fiche_md": "docs/education/case-bank/fichas/isr-gaza-irn.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/isr-gaza-irn.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/isr-gaza-irn.matrix.json",
+      "causal_links": 1,
+      "pending_fields": []
+    },
+    {
+      "id": "istanbul",
+      "title": "Canal de Estambul / Bósforo",
+      "conflict_type": "chokepoint",
+      "region": "eurasia",
+      "fiche_md": "docs/education/case-bank/fichas/istanbul.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/istanbul.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/istanbul.matrix.json",
+      "causal_links": 1,
+      "pending_fields": []
+    },
+    {
+      "id": "mena-agua",
+      "title": "MENA — Estrés hídrico estructural",
+      "conflict_type": "agua",
+      "region": "mena",
+      "fiche_md": "docs/education/case-bank/fichas/mena-agua.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/mena-agua.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/mena-agua.matrix.json",
+      "causal_links": 1,
+      "pending_fields": [
+        "chokepoints"
+      ]
+    },
+    {
+      "id": "rearme-global",
+      "title": "Rearme global — gasto militar récord",
+      "conflict_type": "defensa",
+      "region": "global",
+      "fiche_md": "docs/education/case-bank/fichas/rearme-global.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/rearme-global.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/rearme-global.matrix.json",
+      "causal_links": 1,
+      "pending_fields": [
+        "resources",
+        "chokepoints"
+      ]
+    },
+    {
+      "id": "red-sea",
+      "title": "Mar Rojo / Bab el-Mandeb",
+      "conflict_type": "chokepoint",
+      "region": "mena",
+      "fiche_md": "docs/education/case-bank/fichas/red-sea.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/red-sea.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/red-sea.matrix.json",
+      "causal_links": 1,
+      "pending_fields": []
+    },
+    {
+      "id": "sahel",
+      "title": "Sahel — Juntas militares y yihadismo",
+      "conflict_type": "conflicto",
+      "region": "sahel",
+      "fiche_md": "docs/education/case-bank/fichas/sahel.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/sahel.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/sahel.matrix.json",
+      "causal_links": 1,
+      "pending_fields": [
+        "chokepoints"
+      ]
+    },
+    {
+      "id": "stablecoins",
+      "title": "Stablecoins / desinformación financiera",
+      "conflict_type": "ia",
+      "region": "global",
+      "fiche_md": "docs/education/case-bank/fichas/stablecoins.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/stablecoins.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/stablecoins.matrix.json",
+      "causal_links": 1,
+      "pending_fields": [
+        "actors",
+        "resources",
+        "chokepoints"
+      ]
+    },
+    {
+      "id": "ukr-rus",
+      "title": "Ucrania – Rusia",
+      "conflict_type": "conflicto",
+      "region": "europa_del_este",
+      "fiche_md": "docs/education/case-bank/fichas/ukr-rus.rc.md",
+      "fiche_json": "docs/education/case-bank/fichas/ukr-rus.rc.json",
+      "matrix_json": "docs/education/case-bank/matrices/ukr-rus.matrix.json",
+      "causal_links": 1,
+      "pending_fields": []
+    }
+  ]
+}

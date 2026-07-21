@@ -1,0 +1,92 @@
+{
+  "data": {
+    "id": "asia-agua",
+    "slug": "asia-agua",
+    "name": "Asia del Sur — Glaciares e Indo",
+    "summary": "Retroceso de glaciares HKH alimenta Ganges, Indo, Brahmaputra. Tratado del Indo bajo presión IN–PK. Calor extremo y monzón errático.",
+    "conflict_type": {
+      "slug": "agua",
+      "label": "Agua / Clima"
+    },
+    "primary_region": {
+      "slug": "asia_del_sur",
+      "label": "Asia del Sur"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 30,
+      "longitude": 78
+    },
+    "actors": {
+      "state": [
+        {
+          "slug": "india",
+          "name": "India",
+          "role": "Estado ribereño (Indo)",
+          "alignment": null,
+          "involvement_level": null
+        },
+        {
+          "slug": "pakistan",
+          "name": "Pakistán",
+          "role": "Estado ribereño (Indo)",
+          "alignment": null,
+          "involvement_level": null
+        }
+      ],
+      "non_state": []
+    },
+    "resources": [
+      {
+        "slug": "agua-dulce",
+        "name": "Agua dulce",
+        "relevance_level": null,
+        "strategic_importance": null,
+        "critical_mineral": false
+      }
+    ],
+    "chokepoints": [],
+    "causal_links": [
+      {
+        "link_type": "contributes_to",
+        "title": "Marco del Tratado de Aguas del Indo bajo presión",
+        "explanation": "El Tratado de Aguas del Indo (1960, mediado por el Banco Mundial) reparte el sistema del Indo entre India y Pakistán; la afirmación causal concreta sobre deshielo glaciar requiere verificación editorial adicional.",
+        "pending": true,
+        "source_slugs": [
+          "worldbank-indus-waters-treaty"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "slug": "worldbank-indus-waters-treaty",
+        "title": "Fact Sheet: The Indus Waters Treaty 1960 and the Role of the World Bank",
+        "url": "https://www.worldbank.org/en/region/sar/brief/fact-sheet-the-indus-waters-treaty-1960-and-the-world-bank",
+        "publisher": "World Bank",
+        "source_name": "World Bank",
+        "accessed_at": "2026-07-07",
+        "verification": "verified",
+        "demo": false,
+        "accessed_via": "web-fetch",
+        "relation": "conflict"
+      }
+    ],
+    "updated_at": null,
+    "editorial_status": "review"
+  },
+  "meta": {
+    "api_version": "v1",
+    "staging": true,
+    "source": "verified-seed-merge (Sprint 15 staging)"
+  }
+}

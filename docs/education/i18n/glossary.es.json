@@ -1,0 +1,66 @@
+{
+  "locale": "es",
+  "namespace": "glossary",
+  "terms": {
+    "conflicto": {
+      "term": "Conflicto",
+      "definition": "Unidad central de la taxonomía GEOPÓLEM; cada foco geopolítico analizado con su identificador canónico (slug)."
+    },
+    "chokepoint": {
+      "term": "Punto de estrangulamiento (chokepoint)",
+      "definition": "Paso geográfico crítico cuyo control condiciona flujos de energía, comercio o fuerzas."
+    },
+    "causal_link": {
+      "term": "Enlace causal",
+      "definition": "Relación explícita entre dos nodos (actores, recursos o chokepoints) respaldada por evidencia y fuentes verificadas."
+    },
+    "actor_estatal": {
+      "term": "Actor estatal",
+      "definition": "Estado u órgano de gobierno implicado en el conflicto, identificado por su slug canónico."
+    },
+    "actor_no_estatal": {
+      "term": "Actor no estatal",
+      "definition": "Grupo armado, organización o entidad sin soberanía estatal que participa en la dinámica del conflicto."
+    },
+    "recurso": {
+      "term": "Recurso",
+      "definition": "Bien estratégico en disputa o dependencia (energía, agua, minerales) referenciado por su slug."
+    },
+    "evidencia": {
+      "term": "Evidencia",
+      "definition": "Base documental que sustenta una afirmación o un enlace causal; debe ser trazable a fuentes."
+    },
+    "fuente_verificada": {
+      "term": "Fuente verificada",
+      "definition": "Referencia comprobada (no marcada como demo) exigida por la regla causal_links-exigen-fuente."
+    },
+    "rubrica": {
+      "term": "Rúbrica",
+      "definition": "Instrumento de evaluación con criterios ponderados y niveles que produce una banda de logro."
+    },
+    "banda_logro": {
+      "term": "Banda de logro",
+      "definition": "Categoría de resultado (insuficiente, suficiente, notable, excelente) derivada del porcentaje ponderado."
+    },
+    "matriz_causalidad": {
+      "term": "Matriz de causalidad",
+      "definition": "Representación docente de nodos y enlaces causales de un conflicto, validada contra el contrato v1."
+    },
+    "escalada": {
+      "term": "Riesgo de escalada",
+      "definition": "Métrica de la probabilidad de que el conflicto aumente en intensidad."
+    },
+    "dimension_energetica": {
+      "term": "Dimensión energética",
+      "definition": "Eje analítico que pondera el peso de la energía en la dinámica del conflicto."
+    },
+    "region_primaria": {
+      "term": "Región primaria",
+      "definition": "Región canónica principal del conflicto (mena, europa_del_este, sahel, eurasia, asia_del_sur, global)."
+    },
+    "taxonomia": {
+      "term": "Taxonomía",
+      "definition": "Sistema de categorías y campos canónicos que alinea materiales docentes con la base de datos GEOPÓLEM."
+    }
+  }
+}

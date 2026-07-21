@@ -1,0 +1,45 @@
+{
+  "contract": "sprint-25-causal-matrix-v1",
+  "conflict_id": "mena-agua",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Matriz causal pre-rellenada desde `causal_links` verificados (Sprint 25). Material docente: el nivel de confianza y los nodos/enlaces faltantes quedan `pending` para su completado analítico. No activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "nodes": [
+    {
+      "id": "egipto",
+      "label": "Egipto",
+      "kind": "actor_state"
+    },
+    {
+      "id": "etiopia",
+      "label": "Etiopía",
+      "kind": "actor_state"
+    },
+    {
+      "id": "agua-dulce",
+      "label": "Agua dulce",
+      "kind": "resource"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "link_type": "contributes_to",
+      "title": "Estrés hídrico estructural",
+      "evidence": "El Banco Mundial advierte que la disponibilidad de agua per cápita en MENA caerá por debajo del umbral de escasez absoluta (500 m³/persona/año), agravando tensiones estructurales.",
+      "source_slugs": [
+        "worldbank-mena-water-scarcity"
+      ],
+      "confidence": null,
+      "pending": false
+    }
+  ],
+  "pending_fields": [
+    "confidence"
+  ]
+}

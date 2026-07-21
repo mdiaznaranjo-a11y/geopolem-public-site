@@ -1,0 +1,61 @@
+{
+  "contract": "sprint-25-rubric-v1",
+  "id": "rubrica-comunicacion",
+  "title": "Rúbrica de comunicación analítica",
+  "description": "Evalúa la claridad, estructura y honestidad epistémica de la comunicación de resultados.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "scale": {
+    "levels": [
+      { "id": "insuficiente", "label": "Insuficiente", "points": 1 },
+      { "id": "suficiente", "label": "Suficiente", "points": 2 },
+      { "id": "notable", "label": "Notable", "points": 3 },
+      { "id": "excelente", "label": "Excelente", "points": 4 }
+    ]
+  },
+  "criteria": [
+    {
+      "id": "claridad",
+      "title": "Claridad y precisión",
+      "weight": 0.3,
+      "descriptors": {
+        "insuficiente": "Mensaje confuso o impreciso.",
+        "suficiente": "Se entiende con esfuerzo.",
+        "notable": "Comunicación clara y precisa.",
+        "excelente": "Claridad ejemplar adaptada a la audiencia."
+      }
+    },
+    {
+      "id": "estructura",
+      "title": "Estructura y síntesis",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "Sin estructura ni jerarquía.",
+        "suficiente": "Estructura básica.",
+        "notable": "Estructura lógica con síntesis adecuada.",
+        "excelente": "Estructura y síntesis que priorizan lo relevante para decidir."
+      }
+    },
+    {
+      "id": "evidencia",
+      "title": "Uso de evidencia",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "Afirmaciones sin soporte.",
+        "suficiente": "Evidencia escasa o mal citada.",
+        "notable": "Afirmaciones respaldadas por fuentes verificadas.",
+        "excelente": "Evidencia integrada, citada y con límites explicitados."
+      }
+    },
+    {
+      "id": "honestidad",
+      "title": "Honestidad epistémica",
+      "weight": 0.2,
+      "descriptors": {
+        "insuficiente": "Oculta incertidumbre o exagera conclusiones.",
+        "suficiente": "Reconoce incertidumbre de forma genérica.",
+        "notable": "Distingue hechos de inferencias y marca pendientes.",
+        "excelente": "Calibra incertidumbre y comunica riesgos de error con transparencia."
+      }
+    }
+  ]
+}

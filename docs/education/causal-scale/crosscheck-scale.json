@@ -1,0 +1,142 @@
+{
+  "contract": "sprint-28-causal-crosscheck-scale-v1",
+  "notice": "Cross-check causal ampliado a todos los conflictos del contrato v1 (Sprint 28). No inventa relaciones: reporta estado cuando falta la matriz. No activa producción ni contiene secretos.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "source_stage": "rc",
+  "totals": {
+    "conflicts": 10,
+    "by_status": {
+      "checked": 10,
+      "divergent": 0,
+      "pending_matrix": 0,
+      "not_applicable": 0
+    },
+    "coverage_percentage": 100
+  },
+  "cases": [
+    {
+      "conflict_id": "asia-agua",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/asia-agua.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    },
+    {
+      "conflict_id": "ia-narrativa",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/ia-narrativa.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    },
+    {
+      "conflict_id": "isr-gaza-irn",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/isr-gaza-irn.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    },
+    {
+      "conflict_id": "istanbul",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/istanbul.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    },
+    {
+      "conflict_id": "mena-agua",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/mena-agua.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    },
+    {
+      "conflict_id": "rearme-global",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/rearme-global.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    },
+    {
+      "conflict_id": "red-sea",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/red-sea.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    },
+    {
+      "conflict_id": "sahel",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/sahel.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    },
+    {
+      "conflict_id": "stablecoins",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/stablecoins.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    },
+    {
+      "conflict_id": "ukr-rus",
+      "status": "checked",
+      "severity": "ok",
+      "has_matrix": true,
+      "source_links": 1,
+      "matrix_file": "docs/education/case-bank/matrices/ukr-rus.matrix.json",
+      "source_file": "api/v1/conflicts.verified.enriched.json",
+      "gap_type": "none",
+      "recommended_action": "Sin acción: matriz coherente con la fuente.",
+      "divergences": []
+    }
+  ]
+}

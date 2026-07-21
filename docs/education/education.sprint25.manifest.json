@@ -1,0 +1,33 @@
+{
+  "contract": "sprint-25-education-manifest-v1",
+  "generated_at": "2026-07-07T00:00:00.000Z",
+  "notice": "Índice máquina-legible de los materiales del Sprint 25 (exportador de fichas, banco de casos, cuaderno de laboratorio offline y rúbricas). Determinista y versionado. Material de FORMACIÓN: no sustituye la revisión editorial final ni activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "exporter": {
+    "script": "scripts/export-education-fiches.mjs",
+    "fiche_contract": "sprint-25-education-fiche-v1",
+    "stages": ["canonical", "staging", "rc"],
+    "required_fields": ["title", "region", "actors", "resources", "chokepoints", "causal_links", "sources", "activities", "teaching_questions"]
+  },
+  "case_bank": {
+    "builder": "scripts/build-case-bank.mjs",
+    "index": "docs/education/case-bank/case-bank.index.json",
+    "readme": "docs/education/case-bank/README.md",
+    "fiches_dir": "docs/education/case-bank/fichas",
+    "matrices_dir": "docs/education/case-bank/matrices",
+    "matrix_contract": "sprint-25-causal-matrix-v1"
+  },
+  "offline_lab": {
+    "file": "docs/education/formatos/cuaderno-laboratorio-mapa-offline.md",
+    "aligned_modules": ["deeplinks.mjs", "public-enriched.mjs", "service-worker.js", "worldmap.js"]
+  },
+  "rubrics": {
+    "validator": "scripts/validate-education-rubrics.mjs",
+    "index": "docs/education/rubrics/rubrics.index.json",
+    "required_dimensions": ["analisis-geopolitico", "politica-energetica", "validacion-fuentes", "causalidad", "uso-mapa", "comunicacion"]
+  }
+}

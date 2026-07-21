@@ -1,0 +1,168 @@
+{
+  "contract": "sprint-22-editorial-decision-go-no-go-v1",
+  "generated_at": "2026-07-07T00:00:00.000Z",
+  "is_production": false,
+  "decision": "NO-GO",
+  "evidence_manifest_hash": "sha256:5bc81309a8a70c9b585f5cc61b328c2d026d9928eede032711bafab4f57e33b1",
+  "decision_source": "none",
+  "notice": "Reporte GO/NO-GO del Release Candidate tras la DECISIÓN EDITORIAL HUMANA (Sprint 22). Auditable y determinista; NO publica producción. Cada decisión GO exige las 3 firmas de rol e integridad de hash con la evidencia vigente. El total es NO-GO mientras la publicación esté deshabilitada por política, aunque se firmen todos los pendientes.",
+  "summary": {
+    "total": 8,
+    "go": 0,
+    "no_go": 8,
+    "approved": 0,
+    "rejected": 0,
+    "deferred": 0,
+    "pending": 8,
+    "coverage_ok": true,
+    "decision_ok": false,
+    "publish_enabled": false
+  },
+  "coverage": {
+    "coverage_pct": 100,
+    "ok": true,
+    "coverage_ok": true
+  },
+  "blockers": [
+    "8 pendiente/s sin decisión GO (approved) firmada",
+    "decisiones editoriales ausentes/ inválidas",
+    "publicación a producción DESHABILITADA por política (PRODUCTION_PUBLISH_ENABLED=false)"
+  ],
+  "traceability": {
+    "approved": [],
+    "rejected": [],
+    "deferred": [],
+    "pending": [
+      {
+        "conflict": "asia-agua",
+        "key": "asia-agua::causal::Marco del Tratado de Aguas del Indo bajo presión"
+      },
+      {
+        "conflict": "isr-gaza-irn",
+        "key": "isr-gaza-irn::causal::Crisis humanitaria y riesgo de escalada regional"
+      },
+      {
+        "conflict": "isr-gaza-irn",
+        "key": "isr-gaza-irn::source::ocha-opt"
+      },
+      {
+        "conflict": "istanbul",
+        "key": "istanbul::causal::Régimen del Bósforo y tránsito por los Estrechos"
+      },
+      {
+        "conflict": "sahel",
+        "key": "sahel::causal::Violencia armada y desplazamiento forzado"
+      },
+      {
+        "conflict": "sahel",
+        "key": "sahel::source::unhcr-sahel-emergency"
+      },
+      {
+        "conflict": "stablecoins",
+        "key": "stablecoins::causal::Riesgo de estabilidad financiera por stablecoins"
+      },
+      {
+        "conflict": "ukr-rus",
+        "key": "ukr-rus::source::iaea-ukraine-update-356"
+      }
+    ]
+  },
+  "items": [
+    {
+      "key": "asia-agua::causal::Marco del Tratado de Aguas del Indo bajo presión",
+      "conflict": "asia-agua",
+      "type": "causal-link-pending",
+      "state": "evidence_ready",
+      "decision": null,
+      "go": false,
+      "roles_present": [],
+      "reasons": [
+        "sin decisión (estado: evidence_ready)"
+      ]
+    },
+    {
+      "key": "isr-gaza-irn::causal::Crisis humanitaria y riesgo de escalada regional",
+      "conflict": "isr-gaza-irn",
+      "type": "causal-link-pending",
+      "state": "evidence_ready",
+      "decision": null,
+      "go": false,
+      "roles_present": [],
+      "reasons": [
+        "sin decisión (estado: evidence_ready)"
+      ]
+    },
+    {
+      "key": "isr-gaza-irn::source::ocha-opt",
+      "conflict": "isr-gaza-irn",
+      "type": "source-review",
+      "state": "evidence_ready",
+      "decision": null,
+      "go": false,
+      "roles_present": [],
+      "reasons": [
+        "sin decisión (estado: evidence_ready)"
+      ]
+    },
+    {
+      "key": "istanbul::causal::Régimen del Bósforo y tránsito por los Estrechos",
+      "conflict": "istanbul",
+      "type": "causal-link-pending",
+      "state": "evidence_ready",
+      "decision": null,
+      "go": false,
+      "roles_present": [],
+      "reasons": [
+        "sin decisión (estado: evidence_ready)"
+      ]
+    },
+    {
+      "key": "sahel::causal::Violencia armada y desplazamiento forzado",
+      "conflict": "sahel",
+      "type": "causal-link-pending",
+      "state": "evidence_ready",
+      "decision": null,
+      "go": false,
+      "roles_present": [],
+      "reasons": [
+        "sin decisión (estado: evidence_ready)"
+      ]
+    },
+    {
+      "key": "sahel::source::unhcr-sahel-emergency",
+      "conflict": "sahel",
+      "type": "source-review",
+      "state": "evidence_ready",
+      "decision": null,
+      "go": false,
+      "roles_present": [],
+      "reasons": [
+        "sin decisión (estado: evidence_ready)"
+      ]
+    },
+    {
+      "key": "stablecoins::causal::Riesgo de estabilidad financiera por stablecoins",
+      "conflict": "stablecoins",
+      "type": "causal-link-pending",
+      "state": "evidence_ready",
+      "decision": null,
+      "go": false,
+      "roles_present": [],
+      "reasons": [
+        "sin decisión (estado: evidence_ready)"
+      ]
+    },
+    {
+      "key": "ukr-rus::source::iaea-ukraine-update-356",
+      "conflict": "ukr-rus",
+      "type": "source-review",
+      "state": "evidence_ready",
+      "decision": null,
+      "go": false,
+      "roles_present": [],
+      "reasons": [
+        "sin decisión (estado: evidence_ready)"
+      ]
+    }
+  ]
+}

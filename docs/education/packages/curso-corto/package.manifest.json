@@ -1,0 +1,28 @@
+{
+  "contract": "sprint-26-education-package-v1",
+  "id": "curso-corto",
+  "title": "Curso corto — Análisis geopolítico de focos energéticos",
+  "audience": "estudiantes de grado / formación continua",
+  "duration": "4 sesiones de 2 h",
+  "notice": "Paquete docente distribuible (Sprint 26). Material de FORMACIÓN: no sustituye la revisión editorial ni activa producción.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "syllabus": "docs/education/packages/curso-corto/syllabus.md",
+  "lab_guide": "docs/education/packages/curso-corto/guia-laboratorio.md",
+  "cases": [
+    {
+      "id": "ukr-rus",
+      "fiche": "docs/education/case-bank/fichas/ukr-rus.rc.md",
+      "matrix": "docs/education/case-bank/matrices/ukr-rus.matrix.json"
+    },
+    {
+      "id": "red-sea",
+      "fiche": "docs/education/case-bank/fichas/red-sea.rc.md",
+      "matrix": "docs/education/case-bank/matrices/red-sea.matrix.json"
+    }
+  ],
+  "rubrics": [
+    "docs/education/rubrics/rubrica-analisis-geopolitico.json",
+    "docs/education/rubrics/rubrica-causalidad.json",
+    "docs/education/rubrics/rubrica-validacion-fuentes.json"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "contract": "sprint-27-instructor-review-v1",
+  "notice": "Paquete de revisión de instructor GEOPÓLEM (Sprint 27). Material de formación: no sustituye la revisión editorial, no activa producción y no maneja datos personales.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "index_file": "docs/education/instructor-review/README.md",
+  "documents": [
+    { "id": "checklist", "file": "docs/education/instructor-review/checklist-instructor.md", "required_sections": ["Anonimato y privacidad", "Integridad de la rúbrica", "Coherencia pedagógica", "Salida y feedback", "Garantías finales"] },
+    { "id": "flujo-sesion", "file": "docs/education/instructor-review/flujo-sesion.md", "required_sections": ["Antes de la sesión", "Durante la sesión", "Después de la sesión"] },
+    { "id": "criterios-aceptacion", "file": "docs/education/instructor-review/criterios-aceptacion.md", "required_sections": ["Aceptar", "Rechazar", "Diferir"] }
+  ],
+  "aligned_with": {
+    "rubrics_index": "docs/education/rubrics/rubrics.index.json",
+    "case_bank_index": "docs/education/case-bank/case-bank.index.json",
+    "scoring_engine": "scripts/score-rubric.mjs",
+    "batch_scoring": "scripts/score-rubric-batch.mjs",
+    "feedback_templates": "docs/education/feedback-templates/feedback.template.json",
+    "causal_backlog": "docs/education/causal-backlog/backlog.json"
+  }
+}

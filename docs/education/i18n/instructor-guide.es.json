@@ -1,0 +1,12 @@
+{
+  "locale": "es",
+  "namespace": "instructor_guide",
+  "sections": {
+    "intro": "Esta guía orienta al instructor en el uso de los materiales docentes GEOPÓLEM con casos reales del contrato v1.",
+    "objectives": "Al finalizar, el alumnado sabrá construir y validar enlaces causales respaldados por fuentes verificadas.",
+    "session_flow": "1) Contexto del caso, 2) lectura de la ficha, 3) construcción de la matriz causal, 4) evaluación con rúbrica, 5) feedback por banda.",
+    "assessment": "Usar las rúbricas canónicas; la puntuación es agregada y anónima, sin notas ni identidades reales.",
+    "sources_policy": "Toda afirmación causal debe citar fuentes verificadas (no demo); si faltan, marcar el campo como pendiente.",
+    "anonymity_policy": "No recopilar datos personales del alumnado; las evaluaciones deben ser anónimas o sintéticas."
+  }
+}

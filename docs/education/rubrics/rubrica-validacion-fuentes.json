@@ -1,0 +1,61 @@
+{
+  "contract": "sprint-25-rubric-v1",
+  "id": "rubrica-validacion-fuentes",
+  "title": "Rúbrica de validación de fuentes",
+  "description": "Evalúa la verificación, trazabilidad y uso responsable de fuentes OSINT.",
+  "production": { "is_production": false, "activates_production_gate": false, "contains_secrets": false },
+  "scale": {
+    "levels": [
+      { "id": "insuficiente", "label": "Insuficiente", "points": 1 },
+      { "id": "suficiente", "label": "Suficiente", "points": 2 },
+      { "id": "notable", "label": "Notable", "points": 3 },
+      { "id": "excelente", "label": "Excelente", "points": 4 }
+    ]
+  },
+  "criteria": [
+    {
+      "id": "identificacion",
+      "title": "Identificación de la fuente",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "No identifica editor, URL ni fecha de acceso.",
+        "suficiente": "Identifica la fuente de forma incompleta.",
+        "notable": "Registra `slug`, `publisher`, `url` y `accessed_at`.",
+        "excelente": "Registro completo y distingue fuente primaria de secundaria."
+      }
+    },
+    {
+      "id": "verificacion",
+      "title": "Verificación",
+      "weight": 0.3,
+      "descriptors": {
+        "insuficiente": "Usa fuentes sin verificar o marcadas como demo.",
+        "suficiente": "Verifica parcialmente sin criterio explícito.",
+        "notable": "Confirma `verification=verified` y descarta demo.",
+        "excelente": "Verifica y triangula con al menos dos fuentes independientes."
+      }
+    },
+    {
+      "id": "trazabilidad",
+      "title": "Trazabilidad",
+      "weight": 0.25,
+      "descriptors": {
+        "insuficiente": "No conecta afirmaciones con fuentes.",
+        "suficiente": "Conecta algunas afirmaciones con fuentes.",
+        "notable": "Cada afirmación remite a `source_slugs` concretos.",
+        "excelente": "Trazabilidad total, incluida la marca de campos `pending`."
+      }
+    },
+    {
+      "id": "sesgo",
+      "title": "Sesgo y OSINT responsable",
+      "weight": 0.2,
+      "descriptors": {
+        "insuficiente": "Ignora sesgos y riesgos éticos.",
+        "suficiente": "Menciona sesgos sin mitigarlos.",
+        "notable": "Identifica sesgos y aplica prácticas OSINT responsables.",
+        "excelente": "Gestiona sesgos, contrasta y documenta límites de la evidencia."
+      }
+    }
+  ]
+}

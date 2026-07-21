@@ -1,0 +1,60 @@
+{
+  "contract": "sprint-25-causal-matrix-v1",
+  "conflict_id": "isr-gaza-irn",
+  "data_stage": "rc",
+  "source_file": "api/v1/conflicts.verified.enriched.json",
+  "notice": "Matriz causal pre-rellenada desde `causal_links` verificados (Sprint 25). Material docente: el nivel de confianza y los nodos/enlaces faltantes quedan `pending` para su completado analítico. No activa producción.",
+  "production": {
+    "is_production": false,
+    "activates_production_gate": false,
+    "contains_secrets": false
+  },
+  "nodes": [
+    {
+      "id": "israel",
+      "label": "Israel",
+      "kind": "actor_state"
+    },
+    {
+      "id": "iran",
+      "label": "Irán",
+      "kind": "actor_state"
+    },
+    {
+      "id": "hamas",
+      "label": "Hamás",
+      "kind": "actor_non_state"
+    },
+    {
+      "id": "hezbollah",
+      "label": "Hezbollah",
+      "kind": "actor_non_state"
+    },
+    {
+      "id": "petroleo",
+      "label": "Petróleo",
+      "kind": "resource"
+    },
+    {
+      "id": "estrecho-de-ormuz",
+      "label": "Estrecho de Ormuz",
+      "kind": "chokepoint"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "link_type": "escalates",
+      "title": "Crisis humanitaria y riesgo de escalada regional",
+      "evidence": "OCHA documenta la crisis humanitaria en Gaza; la afirmación causal concreta sobre escalada regional Israel–Irán y chokepoints energéticos requiere verificación editorial adicional.",
+      "source_slugs": [
+        "ocha-opt"
+      ],
+      "confidence": null,
+      "pending": true
+    }
+  ],
+  "pending_fields": [
+    "confidence"
+  ]
+}
