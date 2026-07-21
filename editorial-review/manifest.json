@@ -1,0 +1,321 @@
+{
+  "contract": "sprint-20-editorial-evidence-v1",
+  "generated_at": "2026-07-07T00:00:00.000Z",
+  "source_contract": "sprint-19-editorial-review-rc-v1",
+  "notice": "Paquetes de evidencia revisables por humano para los pendientes del Release Candidate. Derivados sin inventar datos desde la cola RC y los artefactos de staging. NO habilitan producción.",
+  "summary": {
+    "total": 8,
+    "by_state": {
+      "pending": 0,
+      "evidence_ready": 0,
+      "approved": 0,
+      "rejected": 0,
+      "deferred": 0,
+      "blocked_by_source": 3,
+      "needs_human_review": 5
+    },
+    "conflicts_affected": [
+      "asia-agua",
+      "isr-gaza-irn",
+      "istanbul",
+      "sahel",
+      "stablecoins",
+      "ukr-rus"
+    ]
+  },
+  "items": [
+    {
+      "contract": "sprint-20-editorial-evidence-v1",
+      "key": "asia-agua::causal::Marco del Tratado de Aguas del Indo bajo presión",
+      "conflict": "asia-agua",
+      "pending_type": "causal-link-pending",
+      "classification": "needs_human_review",
+      "state": "needs_human_review",
+      "blocking_gate": "editorial-signoff",
+      "title": "Marco del Tratado de Aguas del Indo bajo presión",
+      "source_slug": null,
+      "available_sources": [
+        {
+          "slug": "worldbank-indus-waters-treaty",
+          "title": "Fact Sheet: The Indus Waters Treaty 1960 and the Role of the World Bank",
+          "url": "https://www.worldbank.org/en/region/sar/brief/fact-sheet-the-indus-waters-treaty-1960-and-the-world-bank"
+        }
+      ],
+      "causal_link": {
+        "title": "Marco del Tratado de Aguas del Indo bajo presión",
+        "link_type": "contributes_to",
+        "explanation": "El Tratado de Aguas del Indo (1960, mediado por el Banco Mundial) reparte el sistema del Indo entre India y Pakistán; la afirmación causal concreta sobre deshielo glaciar requiere verificación editorial adicional.",
+        "pending": true,
+        "context_source_slugs": [
+          "worldbank-indus-waters-treaty"
+        ]
+      },
+      "block_reason": "El vínculo causal \"Marco del Tratado de Aguas del Indo bajo presión\" tiene fuente de contexto verificada, pero la afirmación causal concreta exige una fuente específica que la respalde. Aportarla es una decisión editorial humana; no es inventable.",
+      "source_access_evidence": null,
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "decision_required": "Aportar la fuente que respalde específicamente el vínculo causal; luego approve/reject/defer.",
+      "required_roles": [
+        "reviewer",
+        "editor",
+        "owner"
+      ],
+      "evidence_file": "evidence/asia-agua-causal-marco-del-tratado-de-aguas-del-indo-bajo-presi-n.md"
+    },
+    {
+      "contract": "sprint-20-editorial-evidence-v1",
+      "key": "isr-gaza-irn::causal::Crisis humanitaria y riesgo de escalada regional",
+      "conflict": "isr-gaza-irn",
+      "pending_type": "causal-link-pending",
+      "classification": "needs_human_review",
+      "state": "needs_human_review",
+      "blocking_gate": "editorial-signoff",
+      "title": "Crisis humanitaria y riesgo de escalada regional",
+      "source_slug": null,
+      "available_sources": [
+        {
+          "slug": "ocha-opt",
+          "title": "Occupied Palestinian Territory | OCHA",
+          "url": "https://www.unocha.org/occupied-palestinian-territory"
+        }
+      ],
+      "causal_link": {
+        "title": "Crisis humanitaria y riesgo de escalada regional",
+        "link_type": "escalates",
+        "explanation": "OCHA documenta la crisis humanitaria en Gaza; la afirmación causal concreta sobre escalada regional Israel–Irán y chokepoints energéticos requiere verificación editorial adicional.",
+        "pending": true,
+        "context_source_slugs": [
+          "ocha-opt"
+        ]
+      },
+      "block_reason": "El vínculo causal \"Crisis humanitaria y riesgo de escalada regional\" tiene fuente de contexto verificada, pero la afirmación causal concreta exige una fuente específica que la respalde. Aportarla es una decisión editorial humana; no es inventable.",
+      "source_access_evidence": null,
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "decision_required": "Aportar la fuente que respalde específicamente el vínculo causal; luego approve/reject/defer.",
+      "required_roles": [
+        "reviewer",
+        "editor",
+        "owner"
+      ],
+      "evidence_file": "evidence/isr-gaza-irn-causal-crisis-humanitaria-y-riesgo-de-escalada-regional.md"
+    },
+    {
+      "contract": "sprint-20-editorial-evidence-v1",
+      "key": "isr-gaza-irn::source::ocha-opt",
+      "conflict": "isr-gaza-irn",
+      "pending_type": "source-review",
+      "classification": "blocked_by_source",
+      "state": "blocked_by_source",
+      "blocking_gate": "source-access",
+      "title": null,
+      "source_slug": "ocha-opt",
+      "available_sources": [
+        {
+          "slug": "ocha-opt",
+          "title": "Occupied Palestinian Territory | OCHA",
+          "url": "https://www.unocha.org/occupied-palestinian-territory",
+          "publisher": "UN Office for the Coordination of Humanitarian Affairs (OCHA)",
+          "verification": "verified",
+          "accessed_via": "web-search"
+        }
+      ],
+      "causal_link": null,
+      "block_reason": "Fuente ocha-opt accedida vía web-search; el fetch directo sigue bloqueado por el proxy externo, por lo que no es cerrable con el tooling disponible. Requiere revisor humano con acceso directo o fuente equivalente accesible. Evidencia Sprint 19: intento de acceso directo (web-fetch) → HTTP 403.",
+      "source_access_evidence": {
+        "attempted_via": "web-fetch",
+        "result": "HTTP 403",
+        "observed": "unocha.org devolvió 403 Forbidden al fetch directo vía proxy (idéntico a Sprint 15/18)."
+      },
+      "recommended_action": "Reconfirmar la URL con acceso directo (fetch) o sustituir por una fuente equivalente accesible; luego retirar needs_human_review.",
+      "decision_required": "Reconfirmar la URL con acceso directo o sustituir por fuente equivalente accesible; luego approve/reject.",
+      "required_roles": [
+        "reviewer",
+        "editor",
+        "owner"
+      ],
+      "evidence_file": "evidence/isr-gaza-irn-source-ocha-opt.md"
+    },
+    {
+      "contract": "sprint-20-editorial-evidence-v1",
+      "key": "istanbul::causal::Régimen del Bósforo y tránsito por los Estrechos",
+      "conflict": "istanbul",
+      "pending_type": "causal-link-pending",
+      "classification": "needs_human_review",
+      "state": "needs_human_review",
+      "blocking_gate": "editorial-signoff",
+      "title": "Régimen del Bósforo y tránsito por los Estrechos",
+      "source_slug": null,
+      "available_sources": [
+        {
+          "slug": "turkiye-mfa-montreux",
+          "title": "Implementation of the Montreux Convention",
+          "url": "https://www.mfa.gov.tr/implementation-of-the-montreux-convention.en.mfa"
+        }
+      ],
+      "causal_link": {
+        "title": "Régimen del Bósforo y tránsito por los Estrechos",
+        "link_type": "contributes_to",
+        "explanation": "La Convención de Montreux (1936) rige el régimen de los Estrechos Turcos (Bósforo y Dardanelos) y es, según el Ministerio de Exteriores turco, el elemento esencial para la seguridad y estabilidad del Mar Negro; la afirmación causal concreta sobre el impacto en flujos de energía y grano requiere verificación editorial adicional.",
+        "pending": true,
+        "context_source_slugs": [
+          "turkiye-mfa-montreux"
+        ]
+      },
+      "block_reason": "El vínculo causal \"Régimen del Bósforo y tránsito por los Estrechos\" tiene fuente de contexto verificada, pero la afirmación causal concreta exige una fuente específica que la respalde. Aportarla es una decisión editorial humana; no es inventable.",
+      "source_access_evidence": null,
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "decision_required": "Aportar la fuente que respalde específicamente el vínculo causal; luego approve/reject/defer.",
+      "required_roles": [
+        "reviewer",
+        "editor",
+        "owner"
+      ],
+      "evidence_file": "evidence/istanbul-causal-r-gimen-del-b-sforo-y-tr-nsito-por-los-estrechos.md"
+    },
+    {
+      "contract": "sprint-20-editorial-evidence-v1",
+      "key": "sahel::causal::Violencia armada y desplazamiento forzado",
+      "conflict": "sahel",
+      "pending_type": "causal-link-pending",
+      "classification": "needs_human_review",
+      "state": "needs_human_review",
+      "blocking_gate": "editorial-signoff",
+      "title": "Violencia armada y desplazamiento forzado",
+      "source_slug": null,
+      "available_sources": [
+        {
+          "slug": "unhcr-sahel-emergency",
+          "title": "Sahel emergency",
+          "url": "https://www.unhcr.org/us/emergencies/sahel-emergency"
+        }
+      ],
+      "causal_link": {
+        "title": "Violencia armada y desplazamiento forzado",
+        "link_type": "contributes_to",
+        "explanation": "ACNUR documenta el desplazamiento forzado a gran escala en Malí, Burkina Faso y Níger impulsado por violencia e inseguridad; la caracterización causal de retroalimentación juntas–yihadismo requiere verificación editorial adicional.",
+        "pending": true,
+        "context_source_slugs": [
+          "unhcr-sahel-emergency"
+        ]
+      },
+      "block_reason": "El vínculo causal \"Violencia armada y desplazamiento forzado\" tiene fuente de contexto verificada, pero la afirmación causal concreta exige una fuente específica que la respalde. Aportarla es una decisión editorial humana; no es inventable.",
+      "source_access_evidence": null,
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "decision_required": "Aportar la fuente que respalde específicamente el vínculo causal; luego approve/reject/defer.",
+      "required_roles": [
+        "reviewer",
+        "editor",
+        "owner"
+      ],
+      "evidence_file": "evidence/sahel-causal-violencia-armada-y-desplazamiento-forzado.md"
+    },
+    {
+      "contract": "sprint-20-editorial-evidence-v1",
+      "key": "sahel::source::unhcr-sahel-emergency",
+      "conflict": "sahel",
+      "pending_type": "source-review",
+      "classification": "blocked_by_source",
+      "state": "blocked_by_source",
+      "blocking_gate": "source-access",
+      "title": null,
+      "source_slug": "unhcr-sahel-emergency",
+      "available_sources": [
+        {
+          "slug": "unhcr-sahel-emergency",
+          "title": "Sahel emergency",
+          "url": "https://www.unhcr.org/us/emergencies/sahel-emergency",
+          "publisher": "UNHCR — The UN Refugee Agency",
+          "verification": "verified",
+          "accessed_via": "web-search"
+        }
+      ],
+      "causal_link": null,
+      "block_reason": "Fuente unhcr-sahel-emergency accedida vía web-search; el fetch directo sigue bloqueado por el proxy externo, por lo que no es cerrable con el tooling disponible. Requiere revisor humano con acceso directo o fuente equivalente accesible. Evidencia Sprint 19: intento de acceso directo (web-fetch) → HTTP 403.",
+      "source_access_evidence": {
+        "attempted_via": "web-fetch",
+        "result": "HTTP 403",
+        "observed": "unhcr.org devolvió 403 Forbidden al fetch directo vía proxy (idéntico a Sprint 15/18)."
+      },
+      "recommended_action": "Reconfirmar la URL con acceso directo (fetch) o sustituir por una fuente equivalente accesible; luego retirar needs_human_review.",
+      "decision_required": "Reconfirmar la URL con acceso directo o sustituir por fuente equivalente accesible; luego approve/reject.",
+      "required_roles": [
+        "reviewer",
+        "editor",
+        "owner"
+      ],
+      "evidence_file": "evidence/sahel-source-unhcr-sahel-emergency.md"
+    },
+    {
+      "contract": "sprint-20-editorial-evidence-v1",
+      "key": "stablecoins::causal::Riesgo de estabilidad financiera por stablecoins",
+      "conflict": "stablecoins",
+      "pending_type": "causal-link-pending",
+      "classification": "needs_human_review",
+      "state": "needs_human_review",
+      "blocking_gate": "editorial-signoff",
+      "title": "Riesgo de estabilidad financiera por stablecoins",
+      "source_slug": null,
+      "available_sources": [
+        {
+          "slug": "fsb-global-stablecoin-recommendations",
+          "title": "High-level Recommendations for the Regulation, Supervision and Oversight of Global Stablecoin Arrangements: Final report",
+          "url": "https://www.fsb.org/2023/07/high-level-recommendations-for-the-regulation-supervision-and-oversight-of-global-stablecoin-arrangements-final-report/"
+        }
+      ],
+      "causal_link": {
+        "title": "Riesgo de estabilidad financiera por stablecoins",
+        "link_type": "contributes_to",
+        "explanation": "El FSB emite recomendaciones para regular los arreglos de stablecoins globales por sus riesgos de estabilidad financiera; el vínculo causal concreto con la desinformación financiera requiere verificación editorial adicional.",
+        "pending": true,
+        "context_source_slugs": [
+          "fsb-global-stablecoin-recommendations"
+        ]
+      },
+      "block_reason": "El vínculo causal \"Riesgo de estabilidad financiera por stablecoins\" tiene fuente de contexto verificada, pero la afirmación causal concreta exige una fuente específica que la respalde. Aportarla es una decisión editorial humana; no es inventable.",
+      "source_access_evidence": null,
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "decision_required": "Aportar la fuente que respalde específicamente el vínculo causal; luego approve/reject/defer.",
+      "required_roles": [
+        "reviewer",
+        "editor",
+        "owner"
+      ],
+      "evidence_file": "evidence/stablecoins-causal-riesgo-de-estabilidad-financiera-por-stablecoins.md"
+    },
+    {
+      "contract": "sprint-20-editorial-evidence-v1",
+      "key": "ukr-rus::source::iaea-ukraine-update-356",
+      "conflict": "ukr-rus",
+      "pending_type": "source-review",
+      "classification": "blocked_by_source",
+      "state": "blocked_by_source",
+      "blocking_gate": "source-access",
+      "title": null,
+      "source_slug": "iaea-ukraine-update-356",
+      "available_sources": [
+        {
+          "slug": "iaea-ukraine-update-356",
+          "title": "Update 356 – IAEA Director General Statement on Situation in Ukraine",
+          "url": "https://www.iaea.org/newscenter/pressreleases/update-356-iaea-director-general-statement-on-situation-in-ukraine",
+          "publisher": "International Atomic Energy Agency (IAEA)",
+          "verification": "verified",
+          "accessed_via": "web-search"
+        }
+      ],
+      "causal_link": null,
+      "block_reason": "Fuente iaea-ukraine-update-356 accedida vía web-search; el fetch directo sigue bloqueado por el proxy externo, por lo que no es cerrable con el tooling disponible. Requiere revisor humano con acceso directo o fuente equivalente accesible. Evidencia Sprint 19: intento de acceso directo (web-fetch) → HTTP 402.",
+      "source_access_evidence": {
+        "attempted_via": "web-fetch",
+        "result": "HTTP 402",
+        "observed": "iaea.org devolvió 402 Payment Required al fetch directo vía proxy (idéntico a Sprint 15/18)."
+      },
+      "recommended_action": "Reconfirmar la URL con acceso directo (fetch) o sustituir por una fuente equivalente accesible; luego retirar needs_human_review.",
+      "decision_required": "Reconfirmar la URL con acceso directo o sustituir por fuente equivalente accesible; luego approve/reject.",
+      "required_roles": [
+        "reviewer",
+        "editor",
+        "owner"
+      ],
+      "evidence_file": "evidence/ukr-rus-source-iaea-ukraine-update-356.md"
+    }
+  ]
+}

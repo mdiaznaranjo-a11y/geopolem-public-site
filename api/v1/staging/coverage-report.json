@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-07-07T06:23:51.765Z",
+  "before": {
+    "conflicts_with_sources": 0,
+    "total_conflicts": 10
+  },
+  "after": {
+    "conflicts_with_sources": 10,
+    "total_conflicts": 10
+  },
+  "gate": {
+    "ok": true,
+    "coverage_ok": true,
+    "coverage_pct": 100,
+    "authorized": true
+  },
+  "review_flags": [
+    {
+      "conflict": "ukr-rus",
+      "source_slug": "iaea-ukraine-update-356",
+      "accessed_via": "web-search",
+      "reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 402); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo."
+    },
+    {
+      "conflict": "isr-gaza-irn",
+      "source_slug": "ocha-opt",
+      "accessed_via": "web-search",
+      "reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo."
+    },
+    {
+      "conflict": "sahel",
+      "source_slug": "unhcr-sahel-emergency",
+      "accessed_via": "web-search",
+      "reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo."
+    }
+  ]
+}

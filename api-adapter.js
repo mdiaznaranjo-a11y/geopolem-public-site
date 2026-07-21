@@ -71,6 +71,16 @@ const VALID_CATEGORIES = new Set([
   'salud', 'ddhh', 'sistema', 'chokepoint', 'defensa',
 ]);
 
+// Regiones canónicas que hoy usa el frontend (mismo conjunto que data.js REGIONS).
+// Permite que un origen ya alineado con la UI (p.ej. el puente estático
+// `api/v1/conflicts.json` generado desde `data.js`) haga round-trip exacto,
+// sin depender de la heurística por palabras clave. La API real usa labels
+// ricos ("Mar Rojo") que NO están aquí y siguen cayendo al mapeo por keyword.
+const CANONICAL_REGIONS = new Set([
+  'Europa del Este', 'MENA', 'Sahel', 'Cuerno de África', 'Asia del Sur',
+  'Asia-Pacífico', 'América Latina', 'Norteamérica', 'Eurasia', 'Global',
+]);
+
 const REGION_BY_KEYWORD = [
   [/europa del este|europa oriental|eastern europe|ucrania|ukraine/i, 'Europa del Este'],
   [/mena|medio oriente|oriente medio|norte de[ãa]frica|golfo|mar rojo|middle east/i, 'MENA'],
@@ -84,6 +94,12 @@ const REGION_BY_KEYWORD = [
 ];
 
 function mapCategory(conflict) {
+  // Atajo de fidelidad: si `conflict_type.slug` ya es una categoría válida del
+  // frontend, úsala tal cual. El contrato v1 real trae slugs ricos
+  // ("crisis_logistica") que no están en VALID_CATEGORIES y caen a la heurística.
+  const typeSlug = conflict?.conflict_type?.slug;
+  if (typeSlug && VALID_CATEGORIES.has(typeSlug)) return typeSlug;
+
   const hay = [
     conflict?.conflict_type?.slug,
     conflict?.conflict_type?.label,
@@ -96,6 +112,10 @@ function mapCategory(conflict) {
 }
 
 function mapRegion(conflict) {
+  // Atajo de fidelidad: label ya alineado con las regiones canónicas del frontend.
+  const label = conflict?.primary_region?.label;
+  if (label && CANONICAL_REGIONS.has(label)) return label;
+
   const hay = [
     conflict?.primary_region?.label,
     conflict?.primary_region?.slug,

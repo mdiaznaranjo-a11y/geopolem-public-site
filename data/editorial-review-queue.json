@@ -1,0 +1,100 @@
+{
+  "contract": "sprint-18-editorial-review-queue-v1",
+  "generated_at": "2026-07-07T00:00:00.000Z",
+  "notice": "Cola de revisión editorial residual (Sprint 18). Consolidada SIN inventar datos desde data/conflict-relations.verified.seed.json y data/source-research.todo.json. Todos los pendientes requieren acceso/verificación EXTERNA y sign-off humano antes de cualquier promoción a producción.",
+  "summary": {
+    "total": 8,
+    "source_review": 3,
+    "causal_link_pending": 5,
+    "resolvable_in_repo": 0,
+    "blocking_production": 8,
+    "conflicts_affected": [
+      "asia-agua",
+      "isr-gaza-irn",
+      "istanbul",
+      "sahel",
+      "stablecoins",
+      "ukr-rus"
+    ]
+  },
+  "items": [
+    {
+      "type": "causal-link-pending",
+      "conflict": "asia-agua",
+      "title": "Marco del Tratado de Aguas del Indo bajo presión",
+      "status": "pending-causal-confirmation",
+      "reason": "Fuente Banco Mundial verificada (marco del Tratado de Aguas del Indo), pero la afirmación causal 'deshielo glaciar altera el régimen del Indo' requiere fuente climática/hidrológica específica.",
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "resolvable_in_repo": false
+    },
+    {
+      "type": "causal-link-pending",
+      "conflict": "isr-gaza-irn",
+      "title": "Crisis humanitaria y riesgo de escalada regional",
+      "status": "pending-causal-confirmation",
+      "reason": "Fuente OCHA verificada (crisis humanitaria en Gaza), pero la afirmación causal concreta 'riesgo de guerra regional Israel–Irán + chokepoints energéticos' requiere una fuente que respalde ese vínculo específico. NOTA Sprint 15: la fuente OCHA está marcada needs_human_review:true (fetch directo bloqueado, verificada por buscador).",
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "resolvable_in_repo": false
+    },
+    {
+      "type": "source-review",
+      "conflict": "isr-gaza-irn",
+      "source_slug": "ocha-opt",
+      "accessed_via": "web-search",
+      "url": "https://www.unocha.org/occupied-palestinian-territory",
+      "reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo.",
+      "status": "pending-human-review",
+      "recommended_action": "Reconfirmar la URL con acceso directo (fetch) o sustituir por una fuente equivalente accesible; luego retirar needs_human_review.",
+      "resolvable_in_repo": false
+    },
+    {
+      "type": "causal-link-pending",
+      "conflict": "istanbul",
+      "title": "Régimen del Bósforo y tránsito por los Estrechos",
+      "status": "pending-causal-confirmation",
+      "reason": "Sprint 15: fuente Türkiye MFA verificada (implementación de la Convención de Montreux, régimen de los Estrechos Turcos), accessed_via='web-fetch'. La afirmación causal concreta sobre impacto en flujos de energía y grano (y el proyecto Canal de Estambul) requiere una fuente que respalde ese vínculo específico.",
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "resolvable_in_repo": false
+    },
+    {
+      "type": "causal-link-pending",
+      "conflict": "sahel",
+      "title": "Violencia armada y desplazamiento forzado",
+      "status": "pending-causal-confirmation",
+      "reason": "Fuente ACNUR verificada (desplazamiento por violencia), pero la caracterización causal 'retroalimentación juntas militares–yihadismo' requiere fuente específica (p.ej. ACLED, informes de seguridad). NOTA Sprint 15: la fuente ACNUR está marcada needs_human_review:true (fetch directo bloqueado, verificada por buscador).",
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "resolvable_in_repo": false
+    },
+    {
+      "type": "source-review",
+      "conflict": "sahel",
+      "source_slug": "unhcr-sahel-emergency",
+      "accessed_via": "web-search",
+      "url": "https://www.unhcr.org/us/emergencies/sahel-emergency",
+      "reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo.",
+      "status": "pending-human-review",
+      "recommended_action": "Reconfirmar la URL con acceso directo (fetch) o sustituir por una fuente equivalente accesible; luego retirar needs_human_review.",
+      "resolvable_in_repo": false
+    },
+    {
+      "type": "causal-link-pending",
+      "conflict": "stablecoins",
+      "title": "Riesgo de estabilidad financiera por stablecoins",
+      "status": "pending-causal-confirmation",
+      "reason": "Fuente FSB verificada (riesgo de estabilidad financiera de stablecoins), pero el vínculo causal con la 'desinformación financiera' requiere fuente específica que conecte ambos fenómenos.",
+      "recommended_action": "Aportar una fuente que respalde específicamente el vínculo causal; luego marcar pending:false.",
+      "resolvable_in_repo": false
+    },
+    {
+      "type": "source-review",
+      "conflict": "ukr-rus",
+      "source_slug": "iaea-ukraine-update-356",
+      "accessed_via": "web-search",
+      "url": "https://www.iaea.org/newscenter/pressreleases/update-356-iaea-director-general-statement-on-situation-in-ukraine",
+      "reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 402); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo.",
+      "status": "pending-human-review",
+      "recommended_action": "Reconfirmar la URL con acceso directo (fetch) o sustituir por una fuente equivalente accesible; luego retirar needs_human_review.",
+      "resolvable_in_repo": false
+    }
+  ]
+}

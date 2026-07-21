@@ -1,0 +1,45 @@
+{
+  "data": {
+    "id": "ia-narrativa",
+    "slug": "ia-narrativa",
+    "name": "IA / Riesgo narrativo global",
+    "summary": "IA generativa industrializa desinformación: deepfakes electorales, propaganda multilingüe, manipulación de mercados y emocionalización de conflictos.",
+    "conflict_type": {
+      "slug": "ia",
+      "label": "IA / Narrativa"
+    },
+    "primary_region": {
+      "slug": "global",
+      "label": "Global"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 37.4,
+      "longitude": -122
+    },
+    "actors": {
+      "state": [],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [],
+    "sources": [],
+    "updated_at": null
+  },
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-07-07T05:15:50.200Z",
+    "source": "static-bridge (derived, Sprint 11)"
+  }
+}

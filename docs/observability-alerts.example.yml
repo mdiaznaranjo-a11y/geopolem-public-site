@@ -1,0 +1,133 @@
+# GEOPÓLEM — Reglas de alerta de ejemplo (Sprint 7)
+# ---------------------------------------------------------------------------
+# Reglas Prometheus de EJEMPLO sobre las métricas que expone el api-server en
+# GET /api/v1/metrics (Sprint 6). Son SEGURAS y autocontenidas: no requieren
+# servicios externos ni secretos. Cópialas a tu stack de Prometheus y ajusta
+# umbrales/labels según tu entorno (staging vs producción).
+#
+# Métricas de referencia (formato de exposición Prometheus):
+#   geopolem_requests_total                 counter  total de respuestas HTTP
+#   geopolem_errors_total                   counter  respuestas 5xx
+#   geopolem_client_errors_total            counter  respuestas 4xx
+#   geopolem_auth_denials_total             counter  respuestas 401
+#   geopolem_rate_limited_total             counter  respuestas 429
+#   geopolem_request_latency_ms_sum/_count  summary  latencia (media = sum/count)
+#   geopolem_responses_by_source_total      counter  por origen (database|static|error)
+#   geopolem_database_source_ratio          gauge    fracción servida por la DB (0..1)
+#   geopolem_requests_by_endpoint_total     counter  por endpoint
+#
+# Cómo cargarlo:
+#   1) Referencia este archivo en prometheus.yml → rule_files: ["observability-alerts.example.yml"]
+#   2) (Opcional) Enruta las alertas a Alertmanager (ver bloque comentado al final).
+# ---------------------------------------------------------------------------
+
+groups:
+  - name: geopolem-api-availability
+    rules:
+      # La DB dejó de servir: el ratio de origen 'database' cae por debajo del
+      # umbral de promoción. Señal de que el servicio volvió al fallback estático.
+      - alert: GeopolemDatabaseSourceRatioLow
+        expr: geopolem_database_source_ratio < 0.5
+        for: 10m
+        labels:
+          severity: warning
+          service: geopolem-api
+        annotations:
+          summary: "Ratio de origen DB bajo ({{ $value | humanizePercentage }})"
+          description: >
+            geopolem_database_source_ratio < 0.5 durante 10m. La API está
+            sirviendo mayoritariamente desde el puente estático (fallback), no
+            desde PostgreSQL. Revisar DATABASE_URL, conectividad y salud de la DB.
+
+      # En un entorno donde se ESPERA DB (staging/prod promovido), cualquier
+      # respuesta 'static' sostenida es sospechosa. Umbral conservador.
+      - alert: GeopolemUnexpectedStaticFallback
+        expr: rate(geopolem_responses_by_source_total{source="static"}[5m]) > 0
+        for: 15m
+        labels:
+          severity: info
+          service: geopolem-api
+        annotations:
+          summary: "Fallback estático activo de forma sostenida"
+          description: >
+            Se observan respuestas servidas por el puente estático durante 15m.
+            Aceptable en modo sin-DB; investigar si este entorno debería usar DB.
+
+  - name: geopolem-api-errors
+    rules:
+      # Tasa de errores de servidor (5xx) elevada.
+      - alert: GeopolemHighServerErrorRate
+        expr: >
+          rate(geopolem_errors_total[5m])
+          / clamp_min(rate(geopolem_requests_total[5m]), 1) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+          service: geopolem-api
+        annotations:
+          summary: "Tasa de errores 5xx > 5%"
+          description: >
+            Más del 5% de las respuestas son 5xx en los últimos 5m. Revisar logs
+            del api-server (event=api_response, source=error) y estado de la DB.
+
+      # Latencia media alta (derivada del summary).
+      - alert: GeopolemHighLatency
+        expr: >
+          rate(geopolem_request_latency_ms_sum[5m])
+          / clamp_min(rate(geopolem_request_latency_ms_count[5m]), 1) > 750
+        for: 10m
+        labels:
+          severity: warning
+          service: geopolem-api
+        annotations:
+          summary: "Latencia media > 750 ms"
+          description: >
+            La latencia media de respuesta supera 750 ms durante 10m. Posible
+            saturación de la DB, del pool (PG_POOL_MAX) o del proceso.
+
+  - name: geopolem-api-security
+    rules:
+      # Pico de denegaciones de autenticación (401): posible fuerza bruta o
+      # despliegue con secreto/rotación mal configurada.
+      - alert: GeopolemAuthDenialSpike
+        expr: rate(geopolem_auth_denials_total[5m]) > 1
+        for: 10m
+        labels:
+          severity: warning
+          service: geopolem-api
+        annotations:
+          summary: "Pico de denegaciones de auth (401)"
+          description: >
+            Más de 1 denegación 401/s durante 10m. Revisar: rotación de
+            JWT_SECRET en curso (ver docs/jwt-rotation.md), tokens expirados o
+            intentos no autorizados contra endpoints admin/CMS.
+
+      # Rate limiting disparándose de forma sostenida (429).
+      - alert: GeopolemRateLimitingActive
+        expr: rate(geopolem_rate_limited_total[5m]) > 1
+        for: 10m
+        labels:
+          severity: info
+          service: geopolem-api
+        annotations:
+          summary: "Rate limiting activo (429) sostenido"
+          description: >
+            Se están limitando peticiones (429) durante 10m. Revisar clientes
+            abusivos o ajustar GEOP_RATE_LIMIT_MAX / GEOP_RATE_LIMIT_WINDOW_MS.
+
+# ---------------------------------------------------------------------------
+# Ejemplo de enrutado en Alertmanager (alertmanager.yml). No incluye secretos:
+# sustituye el receiver por tu webhook/email real en el entorno correspondiente.
+#
+# route:
+#   receiver: geopolem-default
+#   group_by: ['alertname', 'service']
+#   routes:
+#     - matchers: [ severity="critical" ]
+#       receiver: geopolem-critical
+# receivers:
+#   - name: geopolem-default
+#     # webhook_configs / email_configs / slack_configs …
+#   - name: geopolem-critical
+#     # canal de guardia (oncall)
+# ---------------------------------------------------------------------------

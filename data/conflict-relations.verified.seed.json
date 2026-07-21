@@ -1,0 +1,215 @@
+{
+  "contract": "sprint-14-verified-v1",
+  "version": "1.1.0",
+  "generated_at": "2026-07-07T00:00:00.000Z",
+  "notice": "Semilla editorial VERIFICADA GEOPÓLEM (Sprint 14, ampliada en Sprint 15). Sustituye las fixtures DEMO del Sprint 13 por fuentes reales de instituciones y organismos multilaterales, verificadas por búsqueda + fetch web (accessed_at). Cada 'source' con verification='verified' incluye título exacto, URL http(s), publisher y fecha de acceso. Sprint 15 CIERRA los 2 pendientes con fuentes verificadas fetchables (istanbul → Türkiye MFA / Convención de Montreux; ia-narrativa → Naciones Unidas / IA), llevando la cobertura de fuente verificada al 100% (10/10). Los causal_links con pending=false están respaldados por al menos una fuente verificada (source_slugs); los que siguen pending=true tienen fuente de contexto pero su afirmación causal concreta requiere sign-off editorial humano. Las fuentes con accessed_via='web-search' cuyo fetch directo sigue bloqueado por el proxy quedan marcadas needs_human_review:true (transparencia preservada). Ningún conflicto se marca 'published' ni se promociona a los artefactos canónicos de producción: los artefactos de STAGING (api/v1/staging/**) son derivados y separados, y la publicación exige sign-off editorial humano.",
+  "editorial_rules": {
+    "publishable_source_requires": ["title", "url(http/https)", "source_name|publisher", "verification=verified", "accessed_at"],
+    "real_causal_link_requires": "todo causal_link con pending=false DEBE referenciar (source_slugs) al menos una source publicable del mismo conflicto",
+    "published_conflict_requires": "al menos una source publicable; y todo causal_link no-pending con source",
+    "default_editorial_status": "draft",
+    "verification_method_field": "accessed_via ∈ {web-fetch, web-search}: 'web-fetch' = URL recuperada y contenido confirmado directamente; 'web-search' = existencia y contenido confirmados vía buscador (proxy bloqueó el fetch directo)"
+  },
+  "conflicts": {
+    "rearme-global": {
+      "editorial_status": "review",
+      "actors": {
+        "state": [
+          { "slug": "estados-unidos", "name": "Estados Unidos", "role": "Mayor gasto militar mundial", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" },
+          { "slug": "china", "name": "China", "role": "Segundo mayor gasto militar", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" },
+          { "slug": "rusia", "name": "Rusia", "role": "Aceleración del gasto en defensa", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ],
+        "non_state": []
+      },
+      "resources": [],
+      "chokepoints": [],
+      "causal_links": [
+        { "link_type": "contributes_to", "title": "Carrera de rearme y presión presupuestaria", "explanation": "El gasto militar mundial alcanzó 2.887 billones USD en 2025 (+2,9% real sobre 2024), décimo año consecutivo de subidas, tensionando presupuestos y cadenas industriales.", "evidence": "verified", "pending": false, "source_slugs": ["sipri-milex-2025"] }
+      ],
+      "sources": [
+        { "slug": "sipri-milex-2025", "title": "Global military spending rise continues as European and Asian expenditures surge", "url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge", "source_name": "SIPRI", "publisher": "Stockholm International Peace Research Institute (SIPRI)", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-fetch" }
+      ]
+    },
+    "ukr-rus": {
+      "editorial_status": "review",
+      "actors": {
+        "state": [
+          { "slug": "rusia", "name": "Rusia", "role": "Parte beligerante", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" },
+          { "slug": "ucrania", "name": "Ucrania", "role": "Parte beligerante", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        { "slug": "gas-natural", "name": "Gas natural", "relevance_level": null, "strategic_importance": null, "critical_mineral": false, "evidence": "public-knowledge" },
+        { "slug": "trigo", "name": "Trigo", "relevance_level": null, "strategic_importance": null, "critical_mineral": false, "evidence": "public-knowledge" }
+      ],
+      "chokepoints": [
+        { "slug": "estrecho-de-kerch", "name": "Estrecho de Kerch", "risk_level": null, "strategic_importance": null, "energy_flow_relevance": false, "evidence": "public-knowledge" }
+      ],
+      "causal_links": [
+        { "link_type": "escalates", "title": "Riesgo sobre infraestructura energética (nuclear)", "explanation": "El OIEA documenta pérdidas repetidas de energía externa y daños en líneas eléctricas de la central de Zaporiyia por la actividad militar, con impacto directo en la seguridad de la infraestructura energética.", "evidence": "verified", "pending": false, "source_slugs": ["iaea-ukraine-update-356"] }
+      ],
+      "sources": [
+        { "slug": "iaea-ukraine-update-356", "title": "Update 356 – IAEA Director General Statement on Situation in Ukraine", "url": "https://www.iaea.org/newscenter/pressreleases/update-356-iaea-director-general-statement-on-situation-in-ukraine", "source_name": "IAEA", "publisher": "International Atomic Energy Agency (IAEA)", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-search", "needs_human_review": true, "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 402); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo." }
+      ]
+    },
+    "isr-gaza-irn": {
+      "editorial_status": "review",
+      "actors": {
+        "state": [
+          { "slug": "israel", "name": "Israel", "role": "Parte beligerante", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" },
+          { "slug": "iran", "name": "Irán", "role": "Parte beligerante", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ],
+        "non_state": [
+          { "slug": "hamas", "name": "Hamás", "role": "Grupo armado", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" },
+          { "slug": "hezbollah", "name": "Hezbollah", "role": "Grupo armado", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ]
+      },
+      "resources": [
+        { "slug": "petroleo", "name": "Petróleo", "relevance_level": null, "strategic_importance": null, "critical_mineral": false, "evidence": "public-knowledge" }
+      ],
+      "chokepoints": [
+        { "slug": "estrecho-de-ormuz", "name": "Estrecho de Ormuz", "risk_level": null, "strategic_importance": null, "energy_flow_relevance": true, "evidence": "public-knowledge" }
+      ],
+      "causal_links": [
+        { "link_type": "escalates", "title": "Crisis humanitaria y riesgo de escalada regional", "explanation": "OCHA documenta la crisis humanitaria en Gaza; la afirmación causal concreta sobre escalada regional Israel–Irán y chokepoints energéticos requiere verificación editorial adicional.", "evidence": "pending", "pending": true, "source_slugs": ["ocha-opt"] }
+      ],
+      "sources": [
+        { "slug": "ocha-opt", "title": "Occupied Palestinian Territory | OCHA", "url": "https://www.unocha.org/occupied-palestinian-territory", "source_name": "OCHA", "publisher": "UN Office for the Coordination of Humanitarian Affairs (OCHA)", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-search", "needs_human_review": true, "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo." }
+      ]
+    },
+    "sahel": {
+      "editorial_status": "review",
+      "actors": {
+        "state": [
+          { "slug": "mali", "name": "Malí", "role": "Estado afectado", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" },
+          { "slug": "niger", "name": "Níger", "role": "Estado afectado", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" },
+          { "slug": "burkina-faso", "name": "Burkina Faso", "role": "Estado afectado", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ],
+        "non_state": [
+          { "slug": "jnim", "name": "JNIM", "role": "Grupo yihadista", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ]
+      },
+      "resources": [
+        { "slug": "uranio", "name": "Uranio", "relevance_level": null, "strategic_importance": null, "critical_mineral": true, "evidence": "public-knowledge" },
+        { "slug": "oro", "name": "Oro", "relevance_level": null, "strategic_importance": null, "critical_mineral": false, "evidence": "public-knowledge" }
+      ],
+      "chokepoints": [],
+      "causal_links": [
+        { "link_type": "contributes_to", "title": "Violencia armada y desplazamiento forzado", "explanation": "ACNUR documenta el desplazamiento forzado a gran escala en Malí, Burkina Faso y Níger impulsado por violencia e inseguridad; la caracterización causal de retroalimentación juntas–yihadismo requiere verificación editorial adicional.", "evidence": "pending", "pending": true, "source_slugs": ["unhcr-sahel-emergency"] }
+      ],
+      "sources": [
+        { "slug": "unhcr-sahel-emergency", "title": "Sahel emergency", "url": "https://www.unhcr.org/us/emergencies/sahel-emergency", "source_name": "UNHCR", "publisher": "UNHCR — The UN Refugee Agency", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-search", "needs_human_review": true, "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo." }
+      ]
+    },
+    "red-sea": {
+      "editorial_status": "review",
+      "actors": {
+        "state": [],
+        "non_state": [
+          { "slug": "huties", "name": "Hutíes", "role": "Grupo armado", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ]
+      },
+      "resources": [
+        { "slug": "petroleo", "name": "Petróleo", "relevance_level": null, "strategic_importance": null, "critical_mineral": false, "evidence": "public-knowledge" }
+      ],
+      "chokepoints": [
+        { "slug": "bab-el-mandeb", "name": "Bab el-Mandeb", "risk_level": null, "strategic_importance": null, "energy_flow_relevance": true, "evidence": "public-knowledge" },
+        { "slug": "canal-de-suez", "name": "Canal de Suez", "risk_level": null, "strategic_importance": null, "energy_flow_relevance": true, "evidence": "public-knowledge" }
+      ],
+      "causal_links": [
+        { "link_type": "causes", "title": "Ataques a navegación y desvío de rutas", "explanation": "UNCTAD documenta caídas del tráfico por el Canal de Suez y el desvío masivo de portacontenedores por el Cabo de Buena Esperanza, con encarecimiento de fletes y emisiones.", "evidence": "verified", "pending": false, "source_slugs": ["unctad-navigating-troubled-waters"] }
+      ],
+      "sources": [
+        { "slug": "unctad-navigating-troubled-waters", "title": "Navigating troubled waters: Impact to global trade of disruption of shipping routes in the Red Sea, Black Sea and Panama Canal", "url": "https://unctad.org/publication/navigating-troubled-waters-impact-global-trade-disruption-shipping-routes-red-sea-black", "source_name": "UNCTAD", "publisher": "UNCTAD — UN Trade and Development", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-fetch" }
+      ]
+    },
+    "istanbul": {
+      "editorial_status": "review",
+      "actors": {
+        "state": [
+          { "slug": "turquia", "name": "Turquía", "role": "Estado ribereño", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        { "slug": "petroleo", "name": "Petróleo", "relevance_level": null, "strategic_importance": null, "critical_mineral": false, "evidence": "public-knowledge" },
+        { "slug": "grano", "name": "Grano", "relevance_level": null, "strategic_importance": null, "critical_mineral": false, "evidence": "public-knowledge" }
+      ],
+      "chokepoints": [
+        { "slug": "estrecho-del-bosforo", "name": "Estrecho del Bósforo", "risk_level": null, "strategic_importance": null, "energy_flow_relevance": true, "evidence": "public-knowledge" },
+        { "slug": "dardanelos", "name": "Dardanelos", "risk_level": null, "strategic_importance": null, "energy_flow_relevance": true, "evidence": "public-knowledge" }
+      ],
+      "causal_links": [
+        { "link_type": "contributes_to", "title": "Régimen del Bósforo y tránsito por los Estrechos", "explanation": "La Convención de Montreux (1936) rige el régimen de los Estrechos Turcos (Bósforo y Dardanelos) y es, según el Ministerio de Exteriores turco, el elemento esencial para la seguridad y estabilidad del Mar Negro; la afirmación causal concreta sobre el impacto en flujos de energía y grano requiere verificación editorial adicional.", "evidence": "pending", "pending": true, "source_slugs": ["turkiye-mfa-montreux"] }
+      ],
+      "sources": [
+        { "slug": "turkiye-mfa-montreux", "title": "Implementation of the Montreux Convention", "url": "https://www.mfa.gov.tr/implementation-of-the-montreux-convention.en.mfa", "source_name": "Türkiye MFA", "publisher": "Republic of Türkiye Ministry of Foreign Affairs", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-fetch" }
+      ]
+    },
+    "mena-agua": {
+      "editorial_status": "review",
+      "actors": {
+        "state": [
+          { "slug": "egipto", "name": "Egipto", "role": "Estado ribereño (Nilo)", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" },
+          { "slug": "etiopia", "name": "Etiopía", "role": "Estado ribereño (Nilo)", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        { "slug": "agua-dulce", "name": "Agua dulce", "relevance_level": null, "strategic_importance": null, "critical_mineral": false, "evidence": "public-knowledge" }
+      ],
+      "chokepoints": [],
+      "causal_links": [
+        { "link_type": "contributes_to", "title": "Estrés hídrico estructural", "explanation": "El Banco Mundial advierte que la disponibilidad de agua per cápita en MENA caerá por debajo del umbral de escasez absoluta (500 m³/persona/año), agravando tensiones estructurales.", "evidence": "verified", "pending": false, "source_slugs": ["worldbank-mena-water-scarcity"] }
+      ],
+      "sources": [
+        { "slug": "worldbank-mena-water-scarcity", "title": "Water Scarcity in MENA Requires Bold Actions, Says World Bank Report", "url": "https://www.worldbank.org/en/news/press-release/2023/04/27/water-scarcity-in-mena-requires-bold-actions-says-world-bank-report", "source_name": "World Bank", "publisher": "World Bank", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-fetch" }
+      ]
+    },
+    "asia-agua": {
+      "editorial_status": "review",
+      "actors": {
+        "state": [
+          { "slug": "india", "name": "India", "role": "Estado ribereño (Indo)", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" },
+          { "slug": "pakistan", "name": "Pakistán", "role": "Estado ribereño (Indo)", "alignment": null, "involvement_level": null, "evidence": "public-knowledge" }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        { "slug": "agua-dulce", "name": "Agua dulce", "relevance_level": null, "strategic_importance": null, "critical_mineral": false, "evidence": "public-knowledge" }
+      ],
+      "chokepoints": [],
+      "causal_links": [
+        { "link_type": "contributes_to", "title": "Marco del Tratado de Aguas del Indo bajo presión", "explanation": "El Tratado de Aguas del Indo (1960, mediado por el Banco Mundial) reparte el sistema del Indo entre India y Pakistán; la afirmación causal concreta sobre deshielo glaciar requiere verificación editorial adicional.", "evidence": "pending", "pending": true, "source_slugs": ["worldbank-indus-waters-treaty"] }
+      ],
+      "sources": [
+        { "slug": "worldbank-indus-waters-treaty", "title": "Fact Sheet: The Indus Waters Treaty 1960 and the Role of the World Bank", "url": "https://www.worldbank.org/en/region/sar/brief/fact-sheet-the-indus-waters-treaty-1960-and-the-world-bank", "source_name": "World Bank", "publisher": "World Bank", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-fetch" }
+      ]
+    },
+    "stablecoins": {
+      "editorial_status": "review",
+      "actors": { "state": [], "non_state": [] },
+      "resources": [],
+      "chokepoints": [],
+      "causal_links": [
+        { "link_type": "contributes_to", "title": "Riesgo de estabilidad financiera por stablecoins", "explanation": "El FSB emite recomendaciones para regular los arreglos de stablecoins globales por sus riesgos de estabilidad financiera; el vínculo causal concreto con la desinformación financiera requiere verificación editorial adicional.", "evidence": "pending", "pending": true, "source_slugs": ["fsb-global-stablecoin-recommendations"] }
+      ],
+      "sources": [
+        { "slug": "fsb-global-stablecoin-recommendations", "title": "High-level Recommendations for the Regulation, Supervision and Oversight of Global Stablecoin Arrangements: Final report", "url": "https://www.fsb.org/2023/07/high-level-recommendations-for-the-regulation-supervision-and-oversight-of-global-stablecoin-arrangements-final-report/", "source_name": "FSB", "publisher": "Financial Stability Board (FSB)", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-fetch" }
+      ]
+    },
+    "ia-narrativa": {
+      "editorial_status": "review",
+      "actors": { "state": [], "non_state": [] },
+      "resources": [],
+      "chokepoints": [],
+      "causal_links": [
+        { "link_type": "contributes_to", "title": "Riesgo narrativo por IA", "explanation": "Naciones Unidas advierte que la desinformación potenciada por IA ya pone en peligro operaciones de paz y humanitarias y amenaza la integridad de la información y las instituciones democráticas, amplificando el riesgo narrativo global.", "evidence": "verified", "pending": false, "source_slugs": ["un-ai-global-issues"] }
+      ],
+      "sources": [
+        { "slug": "un-ai-global-issues", "title": "Artificial Intelligence (AI) | United Nations", "url": "https://www.un.org/en/global-issues/artificial-intelligence", "source_name": "United Nations", "publisher": "United Nations", "accessed_at": "2026-07-07", "verification": "verified", "demo": false, "relation": "conflict", "accessed_via": "web-fetch" }
+      ]
+    }
+  }
+}
