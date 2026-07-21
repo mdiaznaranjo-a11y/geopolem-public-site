@@ -1,0 +1,45 @@
+{
+  "data": {
+    "id": "sahel",
+    "slug": "sahel",
+    "name": "Sahel — Juntas militares y yihadismo",
+    "summary": "Eje Mali–Burkina–Níger consolida AES, salida de Francia/CEDEAO, presencia rusa, expansión yihadista al golfo de Guinea.",
+    "conflict_type": {
+      "slug": "conflicto",
+      "label": "Conflictos"
+    },
+    "primary_region": {
+      "slug": "sahel",
+      "label": "Sahel"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 14.5,
+      "longitude": 0.5
+    },
+    "actors": {
+      "state": [],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [],
+    "sources": [],
+    "updated_at": null
+  },
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-07-07T05:15:50.200Z",
+    "source": "static-bridge (derived, Sprint 11)"
+  }
+}

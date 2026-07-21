@@ -1,0 +1,36 @@
+{
+  "name": "geopolem-api-server",
+  "version": "0.1.0",
+  "description": "GEOPÓLEM API v1 (Sprint 3) — servidor REST read-only PostgreSQL/PostGIS-ready con fallback a JSON estático. No rompe GitHub Pages ni la app existente.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test test/",
+    "smoke": "node scripts/smoke.mjs",
+    "validate:staging": "node scripts/validate-staging.mjs",
+    "verify:staging": "node scripts/staging-verify.mjs",
+    "healthcheck": "node scripts/healthcheck.mjs",
+    "export:static": "node scripts/export-static-bridge.mjs",
+    "export:static:dry": "node scripts/export-static-bridge.mjs --dry-run",
+    "export:static:check": "node scripts/export-static-bridge.mjs --check",
+    "export:static:enriched": "node scripts/export-static-bridge.mjs --with-enriched-map",
+    "export:static:details": "node scripts/export-static-bridge.mjs --with-enriched-map --with-details",
+    "export:static:from-static": "node scripts/export-static-bridge.mjs --from-static",
+    "verify:static-routes": "node scripts/verify-static-routes.mjs",
+    "issue:jwt": "node scripts/issue-jwt.mjs",
+    "e2e:editorial": "node scripts/e2e-editorial-flow.mjs",
+    "migrate": "node scripts/migrate.mjs",
+    "migrate:check": "node scripts/migrate.mjs --check",
+    "migrate:list": "node scripts/migrate.mjs --list",
+    "content:health": "node ../scripts/content-health-report.mjs",
+    "content:health:json": "node ../scripts/content-health-report.mjs --json"
+  },
+  "optionalDependencies": {
+    "pg": "^8.11.0"
+  }
+}

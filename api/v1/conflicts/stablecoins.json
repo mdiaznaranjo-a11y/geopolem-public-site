@@ -1,0 +1,45 @@
+{
+  "data": {
+    "id": "stablecoins",
+    "slug": "stablecoins",
+    "name": "Stablecoins / desinformación financiera",
+    "summary": "Crecimiento de stablecoins USD-pegged como infraestructura paralela, riesgo de corrida + bots/IA amplificando narrativas de pánico.",
+    "conflict_type": {
+      "slug": "ia",
+      "label": "IA / Narrativa"
+    },
+    "primary_region": {
+      "slug": "global",
+      "label": "Global"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 3,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 40.7,
+      "longitude": -74
+    },
+    "actors": {
+      "state": [],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [],
+    "sources": [],
+    "updated_at": null
+  },
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-07-07T05:15:50.200Z",
+    "source": "static-bridge (derived, Sprint 11)"
+  }
+}

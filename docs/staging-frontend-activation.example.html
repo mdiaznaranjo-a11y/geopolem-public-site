@@ -1,0 +1,49 @@
+<!--
+  GEOPÓLEM — EJEMPLO de activación controlada del frontend contra la API (Sprint 4).
+  ============================================================================
+  ESTE ARCHIVO ES SÓLO DOCUMENTACIÓN. No lo carga index.html ni GitHub Pages.
+  No activa nada por sí mismo. Muestra el bloque <script> que habría que pegar
+  en index.html ANTES de <script type="module" src="app.js"> para que el
+  frontend consuma la API real en STAGING, conservando todos los fallbacks.
+
+  Regla de oro (arquitectura reversible por capas):
+    API real  →  JSON estático (./api/v1/conflicts.json)  →  FOCOS locales (data.js)
+
+  Por defecto GEOP_USE_API es FALSE: el sitio se comporta EXACTAMENTE como hoy.
+  No activar producción sin autorización humana explícita.
+  ============================================================================
+-->
+
+<!-- STAGING: activar API real con respaldo estático (pegar en index.html). -->
+<script>
+  // Interruptor maestro. true SÓLO en staging. En producción: dejar sin definir
+  // (o false) hasta que haya autorización humana.
+  window.GEOP_USE_API = true;
+
+  // Alias documental del modo de datos del frontend. El interruptor efectivo es
+  // GEOP_USE_API; GEOP_API_MODE se mantiene como etiqueta legible del entorno.
+  //   'static'  → sólo puente estático + FOCOS local (equivale a GEOP_USE_API=false)
+  //   'api'     → intenta API real primero    (equivale a GEOP_USE_API=true)
+  window.GEOP_API_MODE = 'api';
+
+  // Host del api-server desplegado en staging (este servidor Node de Sprint 3).
+  // Reemplaza por el host real de tu proveedor (Render/Fly/Railway/…).
+  window.GEOP_API_BASE = 'https://staging-api.geopolem.com';
+
+  // Respaldo estático si la API cae: el JSON del puente de Sprint 2 en el repo.
+  window.GEOP_CONFLICTS_STATIC = './api/v1/conflicts.json';
+
+  // (Opcional) timeout de red para no colgar la UI si el backend está dormido.
+  window.GEOP_API_TIMEOUT_MS = 8000;
+</script>
+
+<!--
+  PRODUCCIÓN (comportamiento actual, por defecto): NO definir GEOP_USE_API,
+  o dejarlo en false. El sitio sigue sirviéndose 100% estático desde GitHub
+  Pages usando data.js/FOCOS, sin depender de ningún backend.
+
+  <script>
+    window.GEOP_USE_API = false;      // explícito y seguro
+    window.GEOP_API_MODE = 'static';
+  </script>
+-->

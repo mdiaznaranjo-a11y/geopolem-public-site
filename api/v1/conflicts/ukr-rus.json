@@ -1,0 +1,45 @@
+{
+  "data": {
+    "id": "ukr-rus",
+    "slug": "ukr-rus",
+    "name": "Ucrania – Rusia",
+    "summary": "Guerra de desgaste con frente estabilizado, presión sobre infraestructura energética y campañas híbridas (cíber, drones, narrativa).",
+    "conflict_type": {
+      "slug": "conflicto",
+      "label": "Conflictos"
+    },
+    "primary_region": {
+      "slug": "europa_del_este",
+      "label": "Europa del Este"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 5,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 49,
+      "longitude": 32
+    },
+    "actors": {
+      "state": [],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [],
+    "sources": [],
+    "updated_at": null
+  },
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-07-07T05:15:50.200Z",
+    "source": "static-bridge (derived, Sprint 11)"
+  }
+}
