@@ -1,0 +1,45 @@
+{
+  "data": {
+    "id": "mena-agua",
+    "slug": "mena-agua",
+    "name": "MENA — Estrés hídrico estructural",
+    "summary": "Jordán, Eufrates–Tigris, Nilo, acuíferos fósiles agotándose. 12 de 17 países con mayor estrés hídrico del mundo están en MENA.",
+    "conflict_type": {
+      "slug": "agua",
+      "label": "Agua / Clima"
+    },
+    "primary_region": {
+      "slug": "mena",
+      "label": "MENA"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 30,
+      "longitude": 38
+    },
+    "actors": {
+      "state": [],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [],
+    "sources": [],
+    "updated_at": null
+  },
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-07-07T05:15:50.200Z",
+    "source": "static-bridge (derived, Sprint 11)"
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "data": [
+    {
+      "id": "rearme-global",
+      "slug": "rearme-global",
+      "name": "Rearme global — gasto militar récord",
+      "summary": "El gasto militar mundial alcanzó 2,887 billones de dólares en 2025, con Europa y Asia-Oceanía como zonas de aceleración y una concentración del 51% en EE.UU., China y Rusia.",
+      "conflict_type": {
+        "slug": "defensa",
+        "label": "Defensa / Rearme"
+      },
+      "primary_region": {
+        "slug": "global",
+        "label": "Global"
+      },
+      "status": "active",
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 50,
+        "longitude": 10
+      },
+      "updated_at": null
+    },
+    {
+      "id": "ukr-rus",
+      "slug": "ukr-rus",
+      "name": "Ucrania – Rusia",
+      "summary": "Guerra de desgaste con frente estabilizado, presión sobre infraestructura energética y campañas híbridas (cíber, drones, narrativa).",
+      "conflict_type": {
+        "slug": "conflicto",
+        "label": "Conflictos"
+      },
+      "primary_region": {
+        "slug": "europa_del_este",
+        "label": "Europa del Este"
+      },
+      "status": "active",
+      "intensity_level": 5,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 49,
+        "longitude": 32
+      },
+      "updated_at": null
+    },
+    {
+      "id": "isr-gaza-irn",
+      "slug": "isr-gaza-irn",
+      "name": "Israel – Gaza – Irán",
+      "summary": "Crisis humanitaria en Gaza, frentes con Hezbollah y Houthi, intercambio directo Israel–Irán y riesgo de guerra regional.",
+      "conflict_type": {
+        "slug": "conflicto",
+        "label": "Conflictos"
+      },
+      "primary_region": {
+        "slug": "mena",
+        "label": "MENA"
+      },
+      "status": "active",
+      "intensity_level": 5,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 31.5,
+        "longitude": 34.5
+      },
+      "updated_at": null
+    },
+    {
+      "id": "sahel",
+      "slug": "sahel",
+      "name": "Sahel — Juntas militares y yihadismo",
+      "summary": "Eje Mali–Burkina–Níger consolida AES, salida de Francia/CEDEAO, presencia rusa, expansión yihadista al golfo de Guinea.",
+      "conflict_type": {
+        "slug": "conflicto",
+        "label": "Conflictos"
+      },
+      "primary_region": {
+        "slug": "sahel",
+        "label": "Sahel"
+      },
+      "status": "active",
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 14.5,
+        "longitude": 0.5
+      },
+      "updated_at": null
+    },
+    {
+      "id": "red-sea",
+      "slug": "red-sea",
+      "name": "Mar Rojo / Bab el-Mandeb",
+      "summary": "Ataques Houthi a navegación reducen tráfico ~50%, fletes y primas suben, desvíos por Cabo de Buena Esperanza añaden 10-14 días.",
+      "conflict_type": {
+        "slug": "chokepoint",
+        "label": "Chokepoint"
+      },
+      "primary_region": {
+        "slug": "mena",
+        "label": "MENA"
+      },
+      "status": "active",
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 12.5,
+        "longitude": 43.5
+      },
+      "updated_at": null
+    },
+    {
+      "id": "istanbul",
+      "slug": "istanbul",
+      "name": "Canal de Estambul / Bósforo",
+      "summary": "Proyecto canal paralelo TR + Convención de Montreux: cuello de botella crítico para grano y petróleo Mar Negro.",
+      "conflict_type": {
+        "slug": "chokepoint",
+        "label": "Chokepoint"
+      },
+      "primary_region": {
+        "slug": "eurasia",
+        "label": "Eurasia"
+      },
+      "status": "active",
+      "intensity_level": 2,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 41,
+        "longitude": 29
+      },
+      "updated_at": null
+    },
+    {
+      "id": "mena-agua",
+      "slug": "mena-agua",
+      "name": "MENA — Estrés hídrico estructural",
+      "summary": "Jordán, Eufrates–Tigris, Nilo, acuíferos fósiles agotándose. 12 de 17 países con mayor estrés hídrico del mundo están en MENA.",
+      "conflict_type": {
+        "slug": "agua",
+        "label": "Agua / Clima"
+      },
+      "primary_region": {
+        "slug": "mena",
+        "label": "MENA"
+      },
+      "status": "active",
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 30,
+        "longitude": 38
+      },
+      "updated_at": null
+    },
+    {
+      "id": "asia-agua",
+      "slug": "asia-agua",
+      "name": "Asia del Sur — Glaciares e Indo",
+      "summary": "Retroceso de glaciares HKH alimenta Ganges, Indo, Brahmaputra. Tratado del Indo bajo presión IN–PK. Calor extremo y monzón errático.",
+      "conflict_type": {
+        "slug": "agua",
+        "label": "Agua / Clima"
+      },
+      "primary_region": {
+        "slug": "asia_del_sur",
+        "label": "Asia del Sur"
+      },
+      "status": "active",
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 30,
+        "longitude": 78
+      },
+      "updated_at": null
+    },
+    {
+      "id": "stablecoins",
+      "slug": "stablecoins",
+      "name": "Stablecoins / desinformación financiera",
+      "summary": "Crecimiento de stablecoins USD-pegged como infraestructura paralela, riesgo de corrida + bots/IA amplificando narrativas de pánico.",
+      "conflict_type": {
+        "slug": "ia",
+        "label": "IA / Narrativa"
+      },
+      "primary_region": {
+        "slug": "global",
+        "label": "Global"
+      },
+      "status": "active",
+      "intensity_level": 3,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 40.7,
+        "longitude": -74
+      },
+      "updated_at": null
+    },
+    {
+      "id": "ia-narrativa",
+      "slug": "ia-narrativa",
+      "name": "IA / Riesgo narrativo global",
+      "summary": "IA generativa industrializa desinformación: deepfakes electorales, propaganda multilingüe, manipulación de mercados y emocionalización de conflictos.",
+      "conflict_type": {
+        "slug": "ia",
+        "label": "IA / Narrativa"
+      },
+      "primary_region": {
+        "slug": "global",
+        "label": "Global"
+      },
+      "status": "active",
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null,
+      "energy_dimension": false,
+      "territorial_dimension": null,
+      "external_involvement": null,
+      "location": {
+        "latitude": 37.4,
+        "longitude": -122
+      },
+      "updated_at": null
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "page_size": 10,
+    "total": 10,
+    "total_pages": 1
+  },
+  "meta": {
+    "request_id": "static_bridge",
+    "api_version": "v1",
+    "generated_at": "2026-07-06T09:19:50.216Z",
+    "source": "data.js:FOCOS (static bridge, Sprint 2)"
+  }
+}

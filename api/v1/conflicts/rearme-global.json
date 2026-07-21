@@ -1,0 +1,45 @@
+{
+  "data": {
+    "id": "rearme-global",
+    "slug": "rearme-global",
+    "name": "Rearme global — gasto militar récord",
+    "summary": "El gasto militar mundial alcanzó 2,887 billones de dólares en 2025, con Europa y Asia-Oceanía como zonas de aceleración y una concentración del 51% en EE.UU., China y Rusia.",
+    "conflict_type": {
+      "slug": "defensa",
+      "label": "Defensa / Rearme"
+    },
+    "primary_region": {
+      "slug": "global",
+      "label": "Global"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 50,
+      "longitude": 10
+    },
+    "actors": {
+      "state": [],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [],
+    "sources": [],
+    "updated_at": null
+  },
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-07-07T05:15:50.200Z",
+    "source": "static-bridge (derived, Sprint 11)"
+  }
+}
