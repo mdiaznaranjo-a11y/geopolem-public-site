@@ -1,0 +1,839 @@
+{
+  "contract": "sprint-13-seed-enriched-v1",
+  "generated_at": "2026-07-07T05:50:42.687Z",
+  "include_demo": true,
+  "notice": "PREVIEW con fuentes DEMO incluidas. NO publicar: contiene fixtures de ejemplo, no citaciones verificadas.",
+  "data": {
+    "rearme-global": {
+      "id": "rearme-global",
+      "slug": "rearme-global",
+      "name": "Rearme global — gasto militar récord",
+      "summary": "El gasto militar mundial alcanzó 2,887 billones de dólares en 2025, con Europa y Asia-Oceanía como zonas de aceleración y una concentración del 51% en EE.UU., China y Rusia.",
+      "conflict_type": {
+        "slug": "defensa",
+        "label": "Defensa / Rearme"
+      },
+      "primary_region": {
+        "slug": "global",
+        "label": "Global"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 50,
+        "longitude": 10
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "estados-unidos",
+            "name": "Estados Unidos",
+            "role": "Gasto de defensa líder",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "china",
+            "name": "China",
+            "role": "Segundo mayor gasto militar",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "rusia",
+            "name": "Rusia",
+            "role": "Aceleración del gasto en defensa",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Carrera de rearme y presión presupuestaria",
+          "explanation": "El aumento sostenido del gasto militar global tensiona presupuestos y cadenas industriales.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-sipri-milex",
+          "title": "[DEMO] Tendencias del gasto militar mundial",
+          "url": "https://example.org/demo/sipri-milex",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    },
+    "ukr-rus": {
+      "id": "ukr-rus",
+      "slug": "ukr-rus",
+      "name": "Ucrania – Rusia",
+      "summary": "Guerra de desgaste con frente estabilizado, presión sobre infraestructura energética y campañas híbridas (cíber, drones, narrativa).",
+      "conflict_type": {
+        "slug": "conflicto",
+        "label": "Conflictos"
+      },
+      "primary_region": {
+        "slug": "europa_del_este",
+        "label": "Europa del Este"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 5,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 49,
+        "longitude": 32
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "rusia",
+            "name": "Rusia",
+            "role": "Parte beligerante",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "ucrania",
+            "name": "Ucrania",
+            "role": "Parte beligerante",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        {
+          "slug": "gas-natural",
+          "name": "Gas natural",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        },
+        {
+          "slug": "trigo",
+          "name": "Trigo",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [
+        {
+          "slug": "estrecho-de-kerch",
+          "name": "Estrecho de Kerch",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": false
+        }
+      ],
+      "causal_links": [
+        {
+          "link_type": "escalates",
+          "title": "Ataques a infraestructura energética",
+          "explanation": "La presión sobre infraestructura energética afecta suministro y precios regionales.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-ukr-energy",
+          "title": "[DEMO] Impacto en infraestructura energética",
+          "url": "https://example.org/demo/ukr-energy",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    },
+    "isr-gaza-irn": {
+      "id": "isr-gaza-irn",
+      "slug": "isr-gaza-irn",
+      "name": "Israel – Gaza – Irán",
+      "summary": "Crisis humanitaria en Gaza, frentes con Hezbollah y Houthi, intercambio directo Israel–Irán y riesgo de guerra regional.",
+      "conflict_type": {
+        "slug": "conflicto",
+        "label": "Conflictos"
+      },
+      "primary_region": {
+        "slug": "mena",
+        "label": "MENA"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 5,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 31.5,
+        "longitude": 34.5
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "israel",
+            "name": "Israel",
+            "role": "Parte beligerante",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "iran",
+            "name": "Irán",
+            "role": "Parte beligerante",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": [
+          {
+            "slug": "hamas",
+            "name": "Hamás",
+            "role": "Grupo armado",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "hezbollah",
+            "name": "Hezbollah",
+            "role": "Grupo armado",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ]
+      },
+      "resources": [
+        {
+          "slug": "petroleo",
+          "name": "Petróleo",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [
+        {
+          "slug": "estrecho-de-ormuz",
+          "name": "Estrecho de Ormuz",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        }
+      ],
+      "causal_links": [
+        {
+          "link_type": "escalates",
+          "title": "Riesgo de guerra regional",
+          "explanation": "El intercambio directo Israel–Irán eleva el riesgo de escalada regional y sobre chokepoints energéticos.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-isr-irn",
+          "title": "[DEMO] Escalada Israel–Irán y chokepoints",
+          "url": "https://example.org/demo/isr-irn",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    },
+    "sahel": {
+      "id": "sahel",
+      "slug": "sahel",
+      "name": "Sahel — Juntas militares y yihadismo",
+      "summary": "Eje Mali–Burkina–Níger consolida AES, salida de Francia/CEDEAO, presencia rusa, expansión yihadista al golfo de Guinea.",
+      "conflict_type": {
+        "slug": "conflicto",
+        "label": "Conflictos"
+      },
+      "primary_region": {
+        "slug": "sahel",
+        "label": "Sahel"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 14.5,
+        "longitude": 0.5
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "mali",
+            "name": "Malí",
+            "role": "Estado afectado",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "niger",
+            "name": "Níger",
+            "role": "Estado afectado",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "burkina-faso",
+            "name": "Burkina Faso",
+            "role": "Estado afectado",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": [
+          {
+            "slug": "jnim",
+            "name": "JNIM",
+            "role": "Grupo yihadista",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ]
+      },
+      "resources": [
+        {
+          "slug": "uranio",
+          "name": "Uranio",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": true
+        },
+        {
+          "slug": "oro",
+          "name": "Oro",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Inestabilidad institucional y yihadismo",
+          "explanation": "Las juntas militares y la actividad yihadista se retroalimentan en el Sahel.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-sahel",
+          "title": "[DEMO] Dinámicas de seguridad en el Sahel",
+          "url": "https://example.org/demo/sahel",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    },
+    "red-sea": {
+      "id": "red-sea",
+      "slug": "red-sea",
+      "name": "Mar Rojo / Bab el-Mandeb",
+      "summary": "Ataques Houthi a navegación reducen tráfico ~50%, fletes y primas suben, desvíos por Cabo de Buena Esperanza añaden 10-14 días.",
+      "conflict_type": {
+        "slug": "chokepoint",
+        "label": "Chokepoint"
+      },
+      "primary_region": {
+        "slug": "mena",
+        "label": "MENA"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 12.5,
+        "longitude": 43.5
+      },
+      "actors": {
+        "state": [],
+        "non_state": [
+          {
+            "slug": "huties",
+            "name": "Hutíes",
+            "role": "Grupo armado",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ]
+      },
+      "resources": [
+        {
+          "slug": "petroleo",
+          "name": "Petróleo",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [
+        {
+          "slug": "bab-el-mandeb",
+          "name": "Bab el-Mandeb",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        },
+        {
+          "slug": "canal-de-suez",
+          "name": "Canal de Suez",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        }
+      ],
+      "causal_links": [
+        {
+          "link_type": "causes",
+          "title": "Ataques a navegación y desvío de rutas",
+          "explanation": "Los ataques a la navegación reducen tráfico y encarecen fletes por desvío al Cabo de Buena Esperanza.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-red-sea",
+          "title": "[DEMO] Tráfico marítimo en el Mar Rojo",
+          "url": "https://example.org/demo/red-sea",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    },
+    "istanbul": {
+      "id": "istanbul",
+      "slug": "istanbul",
+      "name": "Canal de Estambul / Bósforo",
+      "summary": "Proyecto canal paralelo TR + Convención de Montreux: cuello de botella crítico para grano y petróleo Mar Negro.",
+      "conflict_type": {
+        "slug": "chokepoint",
+        "label": "Chokepoint"
+      },
+      "primary_region": {
+        "slug": "eurasia",
+        "label": "Eurasia"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 2,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 41,
+        "longitude": 29
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "turquia",
+            "name": "Turquía",
+            "role": "Estado ribereño",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        {
+          "slug": "petroleo",
+          "name": "Petróleo",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        },
+        {
+          "slug": "grano",
+          "name": "Grano",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [
+        {
+          "slug": "estrecho-del-bosforo",
+          "name": "Estrecho del Bósforo",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        },
+        {
+          "slug": "dardanelos",
+          "name": "Dardanelos",
+          "risk_level": null,
+          "strategic_importance": null,
+          "energy_flow_relevance": true
+        }
+      ],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Canal de Estambul y tránsito del Bósforo",
+          "explanation": "El proyecto del Canal de Estambul y el régimen del Bósforo afectan el tránsito de energía y grano.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-istanbul",
+          "title": "[DEMO] Tránsito por el Bósforo",
+          "url": "https://example.org/demo/istanbul",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    },
+    "mena-agua": {
+      "id": "mena-agua",
+      "slug": "mena-agua",
+      "name": "MENA — Estrés hídrico estructural",
+      "summary": "Jordán, Eufrates–Tigris, Nilo, acuíferos fósiles agotándose. 12 de 17 países con mayor estrés hídrico del mundo están en MENA.",
+      "conflict_type": {
+        "slug": "agua",
+        "label": "Agua / Clima"
+      },
+      "primary_region": {
+        "slug": "mena",
+        "label": "MENA"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 30,
+        "longitude": 38
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "egipto",
+            "name": "Egipto",
+            "role": "Estado ribereño (Nilo)",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "etiopia",
+            "name": "Etiopía",
+            "role": "Estado ribereño (Nilo)",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        {
+          "slug": "agua-dulce",
+          "name": "Agua dulce",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Estrés hídrico estructural",
+          "explanation": "La escasez hídrica estructural en MENA agrava tensiones transfronterizas.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-mena-agua",
+          "title": "[DEMO] Estrés hídrico en MENA",
+          "url": "https://example.org/demo/mena-agua",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    },
+    "asia-agua": {
+      "id": "asia-agua",
+      "slug": "asia-agua",
+      "name": "Asia del Sur — Glaciares e Indo",
+      "summary": "Retroceso de glaciares HKH alimenta Ganges, Indo, Brahmaputra. Tratado del Indo bajo presión IN–PK. Calor extremo y monzón errático.",
+      "conflict_type": {
+        "slug": "agua",
+        "label": "Agua / Clima"
+      },
+      "primary_region": {
+        "slug": "asia_del_sur",
+        "label": "Asia del Sur"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 30,
+        "longitude": 78
+      },
+      "actors": {
+        "state": [
+          {
+            "slug": "india",
+            "name": "India",
+            "role": "Estado ribereño (Indo)",
+            "alignment": null,
+            "involvement_level": null
+          },
+          {
+            "slug": "pakistan",
+            "name": "Pakistán",
+            "role": "Estado ribereño (Indo)",
+            "alignment": null,
+            "involvement_level": null
+          }
+        ],
+        "non_state": []
+      },
+      "resources": [
+        {
+          "slug": "agua-dulce",
+          "name": "Agua dulce",
+          "relevance_level": null,
+          "strategic_importance": null,
+          "critical_mineral": false
+        }
+      ],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Deshielo glaciar y cuenca del Indo",
+          "explanation": "El retroceso glaciar altera el régimen del Indo y tensiona el reparto del agua.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-asia-agua",
+          "title": "[DEMO] Glaciares y cuenca del Indo",
+          "url": "https://example.org/demo/asia-agua",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    },
+    "stablecoins": {
+      "id": "stablecoins",
+      "slug": "stablecoins",
+      "name": "Stablecoins / desinformación financiera",
+      "summary": "Crecimiento de stablecoins USD-pegged como infraestructura paralela, riesgo de corrida + bots/IA amplificando narrativas de pánico.",
+      "conflict_type": {
+        "slug": "ia",
+        "label": "IA / Narrativa"
+      },
+      "primary_region": {
+        "slug": "global",
+        "label": "Global"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 3,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 40.7,
+        "longitude": -74
+      },
+      "actors": {
+        "state": [],
+        "non_state": []
+      },
+      "resources": [],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Desinformación financiera y stablecoins",
+          "explanation": "La combinación de stablecoins y desinformación financiera introduce riesgos sistémicos y narrativos.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-stablecoins",
+          "title": "[DEMO] Riesgos de stablecoins",
+          "url": "https://example.org/demo/stablecoins",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    },
+    "ia-narrativa": {
+      "id": "ia-narrativa",
+      "slug": "ia-narrativa",
+      "name": "IA / Riesgo narrativo global",
+      "summary": "IA generativa industrializa desinformación: deepfakes electorales, propaganda multilingüe, manipulación de mercados y emocionalización de conflictos.",
+      "conflict_type": {
+        "slug": "ia",
+        "label": "IA / Narrativa"
+      },
+      "primary_region": {
+        "slug": "global",
+        "label": "Global"
+      },
+      "status": "active",
+      "metrics": {
+        "intensity_level": 4,
+        "escalation_risk": null,
+        "humanitarian_impact": null
+      },
+      "dimensions": {
+        "energy": false,
+        "territorial": null,
+        "external_involvement": null
+      },
+      "location": {
+        "latitude": 37.4,
+        "longitude": -122
+      },
+      "actors": {
+        "state": [],
+        "non_state": []
+      },
+      "resources": [],
+      "chokepoints": [],
+      "causal_links": [
+        {
+          "link_type": "contributes_to",
+          "title": "Riesgo narrativo por IA",
+          "explanation": "La generación masiva de contenido por IA amplifica riesgos narrativos y de desinformación global.",
+          "pending": true
+        }
+      ],
+      "sources": [
+        {
+          "slug": "demo-ia-narrativa",
+          "title": "[DEMO] IA y riesgo narrativo",
+          "url": "https://example.org/demo/ia-narrativa",
+          "publisher": "DEMO-Fixture",
+          "source_name": "DEMO-Fixture",
+          "accessed_at": "2026-07-07",
+          "verification": "demo",
+          "demo": true
+        }
+      ],
+      "updated_at": null
+    }
+  },
+  "meta": {
+    "api_version": "v1",
+    "source": "seed-merge (Sprint 13)",
+    "seed_include_demo": true
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "contract": "sprint-20-editorial-signoff-v1",
+  "is_example": true,
+  "notice": "EJEMPLO NO PRODUCTIVO. is_example=true garantiza que este archivo NUNCA cuenta como firma real ni habilita producción. Para firmar de verdad, copia esta estructura a .editorial-signoff.json (NO versionado), pon is_example=false y completa firmas reales. Aun así, la publicación real seguirá deshabilitada por política (PRODUCTION_PUBLISH_ENABLED=false) y exige la segunda confirmación (doble gate).",
+  "date": "2026-07-07",
+  "decisions": [
+    {
+      "key": "asia-agua::causal::Marco del Tratado de Aguas del Indo bajo presión",
+      "decision": "approved",
+      "date": "2026-07-07",
+      "rationale": "EJEMPLO: sustituir por la fuente causal específica aportada por el editor.",
+      "signatures": { "reviewer": "NOMBRE_REVIEWER", "editor": "NOMBRE_EDITOR", "owner": "NOMBRE_OWNER" }
+    },
+    {
+      "key": "isr-gaza-irn::causal::Crisis humanitaria y riesgo de escalada regional",
+      "decision": "approved",
+      "date": "2026-07-07",
+      "rationale": "EJEMPLO: sustituir por la fuente causal específica aportada por el editor.",
+      "signatures": { "reviewer": "NOMBRE_REVIEWER", "editor": "NOMBRE_EDITOR", "owner": "NOMBRE_OWNER" }
+    },
+    {
+      "key": "isr-gaza-irn::source::ocha-opt",
+      "decision": "approved",
+      "date": "2026-07-07",
+      "rationale": "EJEMPLO: sustituir por la reconfirmación de URL con acceso directo o fuente equivalente.",
+      "signatures": { "reviewer": "NOMBRE_REVIEWER", "editor": "NOMBRE_EDITOR", "owner": "NOMBRE_OWNER" }
+    },
+    {
+      "key": "istanbul::causal::Régimen del Bósforo y tránsito por los Estrechos",
+      "decision": "approved",
+      "date": "2026-07-07",
+      "rationale": "EJEMPLO: sustituir por la fuente causal específica aportada por el editor.",
+      "signatures": { "reviewer": "NOMBRE_REVIEWER", "editor": "NOMBRE_EDITOR", "owner": "NOMBRE_OWNER" }
+    },
+    {
+      "key": "sahel::causal::Violencia armada y desplazamiento forzado",
+      "decision": "approved",
+      "date": "2026-07-07",
+      "rationale": "EJEMPLO: sustituir por la fuente causal específica aportada por el editor.",
+      "signatures": { "reviewer": "NOMBRE_REVIEWER", "editor": "NOMBRE_EDITOR", "owner": "NOMBRE_OWNER" }
+    },
+    {
+      "key": "sahel::source::unhcr-sahel-emergency",
+      "decision": "approved",
+      "date": "2026-07-07",
+      "rationale": "EJEMPLO: sustituir por la reconfirmación de URL con acceso directo o fuente equivalente.",
+      "signatures": { "reviewer": "NOMBRE_REVIEWER", "editor": "NOMBRE_EDITOR", "owner": "NOMBRE_OWNER" }
+    },
+    {
+      "key": "stablecoins::causal::Riesgo de estabilidad financiera por stablecoins",
+      "decision": "approved",
+      "date": "2026-07-07",
+      "rationale": "EJEMPLO: sustituir por la fuente causal específica aportada por el editor.",
+      "signatures": { "reviewer": "NOMBRE_REVIEWER", "editor": "NOMBRE_EDITOR", "owner": "NOMBRE_OWNER" }
+    },
+    {
+      "key": "ukr-rus::source::iaea-ukraine-update-356",
+      "decision": "approved",
+      "date": "2026-07-07",
+      "rationale": "EJEMPLO: sustituir por la reconfirmación de URL con acceso directo o fuente equivalente.",
+      "signatures": { "reviewer": "NOMBRE_REVIEWER", "editor": "NOMBRE_EDITOR", "owner": "NOMBRE_OWNER" }
+    }
+  ]
+}

@@ -6,8 +6,21 @@ import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO,
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 import { loadWatchlistFocos } from './api-adapter.js';
+import {
+  normalizeEnrichedDetail, toRelationRows, hasAnyEnrichment,
+  deriveFilterFacets, applyAdvancedFilters, loadEnrichedDetail,
+} from './public-enriched.mjs';
+import { readDeepLink, writeDeepLink, onDeepLinkChange } from './deeplinks.mjs';
+import { analytics } from './analytics.mjs';
 
 const html = htm.bind(React.createElement);
+
+// Sprint 12 — atajo de analítica no invasiva. `analytics` degrada a NO-OP si no
+// hay endpoint configurado (window.GEOP_ANALYTICS_ENDPOINT) o el navegador está
+// offline. `track()` nunca lanza ni bloquea la UI; envolvemos por si acaso.
+function trackEvent(type, props) {
+  try { analytics.track(type, props); } catch { /* telemetría nunca rompe la UI */ }
+}
 const API_BASE = window.GEOP_API_BASE || ('__PORT_8000__'.startsWith('__') ? 'http://127.0.0.1:8000' : '__PORT_8000__');
 
 async function apiRequest(path, options = {}) {
@@ -1178,6 +1191,205 @@ function FocoDetail({ foco }) {
         <div class="font-mono text-[14px]">${[...Array(5)].map((_,i)=>html`<span key=${i} class=${i<foco.intensity?'text-alert':'text-slate-700'}>■</span>`)}</div>
       </div>
     </div>
+  </div>`;
+}
+
+/* ========================================================================
+   Ficha pública enriquecida (Sprint 10)
+   Consume el normalizador PURO `public-enriched.mjs`. Aditivo: no reemplaza a
+   FocoDetail, sólo añade metadatos y relaciones (actor/recurso/chokepoint/
+   causa→efecto) cuando existen. Estados loading/error/empty. Fallback local.
+   ======================================================================== */
+const REL_ACCENT = { actor:'#38bdf8', resource:'#f59e0b', chokepoint:'#fbbf24', causal:'#a78bfa' };
+
+function RelationGroup({ title, kind, rows }) {
+  if (!rows || !rows.length) return null;
+  const accent = REL_ACCENT[kind] || '#94a3b8';
+  return html`
+  <div class="rounded border border-white/5 bg-white/[0.02] p-3">
+    <div class="flex items-center gap-1.5 mb-2">
+      <span class="w-1.5 h-1.5 rounded-full" style=${{background:accent, boxShadow:`0 0 6px ${accent}`}}></span>
+      <span class="font-mono text-[10px] uppercase tracking-widest text-slate-400">${title} · ${rows.length}</span>
+    </div>
+    <ul class="flex flex-col gap-1">
+      ${rows.map((r,i) => html`
+        <li key=${i} class="text-[12px] text-slate-300 leading-snug flex flex-wrap items-baseline gap-x-2">
+          <span>${r.label}</span>
+          ${r.detail && html`<span class="font-mono text-[9.5px] uppercase tracking-wider text-slate-500">${r.detail}</span>`}
+          ${r.meta && html`<span class="font-mono text-[9.5px] text-slate-600">${r.meta}</span>`}
+        </li>`)}
+    </ul>
+  </div>`;
+}
+
+function EnrichedDetail({ foco }) {
+  const [state, setState] = useState({ status: 'idle', vm: null, source: 'local', error: null });
+
+  useEffect(() => {
+    if (!foco) { setState({ status: 'idle', vm: null, source: 'local', error: null }); return; }
+    let cancelled = false;
+    const localVm = normalizeEnrichedDetail(foco);
+    setState({ status: 'loading', vm: localVm, source: 'local', error: null });
+    // Sprint 12 — se está visualizando una ficha de conflicto.
+    trackEvent('view_conflict', { conflict: foco.slug || foco.id });
+    loadEnrichedDetail(foco.slug || foco.id, { localFoco: foco })
+      .then(({ detail, source, error }) => {
+        if (!cancelled) setState({ status: 'ready', vm: detail, source, error });
+        // Origen efectivo del detalle: static → puente JSON; local → fallback.
+        if (source === 'static') trackEvent('load_static_detail', { conflict: foco.slug || foco.id, source });
+        else if (source === 'local') trackEvent('fallback_local', { conflict: foco.slug || foco.id, source, reason: 'detail' });
+        if (error) trackEvent('api_error', { conflict: foco.slug || foco.id, endpoint: 'conflict_detail' });
+      })
+      .catch((err) => {
+        if (!cancelled) setState({ status: 'error', vm: localVm, source: 'local', error: err });
+        trackEvent('api_error', { conflict: foco.slug || foco.id, endpoint: 'conflict_detail' });
+        trackEvent('fallback_local', { conflict: foco.slug || foco.id, source: 'local', reason: 'detail_error' });
+      });
+    return () => { cancelled = true; };
+  }, [foco?.id]);
+
+  if (!foco) return null;
+  const vm = state.vm || normalizeEnrichedDetail(foco);
+  const rel = toRelationRows(vm, vm.name);
+  const enriched = hasAnyEnrichment(vm);
+
+  const meta = [
+    vm.status && ['Estado', vm.status],
+    vm.country && ['País', vm.country],
+    (vm.severity != null) && ['Severidad', `${vm.severity}/5`],
+    vm.coords && ['Coordenadas', `${vm.coords.lat.toFixed(1)}, ${vm.coords.lng.toFixed(1)}`],
+  ].filter(Boolean);
+
+  // Nada extra que aportar sobre FocoDetail: se oculta limpiamente.
+  if (!enriched && !meta.length && !vm.has.sources) return null;
+
+  return html`
+  <div class="panel rounded-md p-4 lg:p-5 space-y-3">
+    <div class="flex items-center justify-between gap-2 flex-wrap">
+      <div class="heading-mono">Detalle enriquecido</div>
+      <div class="flex items-center gap-1.5">
+        ${state.status === 'loading' && html`<span class="font-mono text-[9px] uppercase tracking-widest text-slate-500 animate-pulse">Cargando…</span>`}
+        <span class="font-mono text-[9px] uppercase tracking-widest ${state.source==='api' ? 'text-intel' : state.source==='static' ? 'text-radar' : 'text-slate-500'}">origen: ${state.source}</span>
+      </div>
+    </div>
+
+    ${state.status === 'error' && html`
+      <div class="text-[11px] text-risk-soft font-mono">No se pudo cargar el detalle remoto; mostrando respaldo local.</div>`}
+
+    ${meta.length > 0 && html`
+      <div class="flex flex-wrap gap-x-5 gap-y-1">
+        ${meta.map(([k,v]) => html`
+          <div key=${k} class="leading-tight">
+            <div class="font-mono text-[9px] uppercase tracking-widest text-slate-500">${k}</div>
+            <div class="text-[12.5px] text-slate-200">${v}</div>
+          </div>`)}
+      </div>`}
+
+    ${enriched ? html`
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+        <${RelationGroup} title="Actores ↔ conflicto" kind="actor" rows=${rel.actorLinks}/>
+        <${RelationGroup} title="Recursos energéticos ↔ conflicto" kind="resource" rows=${rel.resourceLinks}/>
+        <${RelationGroup} title="Chokepoints ↔ conflicto" kind="chokepoint" rows=${rel.chokepointLinks}/>
+        <${RelationGroup} title="Causa → efecto" kind="causal" rows=${rel.causalChain}/>
+      </div>
+    ` : html`
+      <div class="text-[11.5px] text-slate-500">Sin relaciones enriquecidas disponibles para este foco.</div>`}
+
+    ${vm.has.sources && html`
+      <div class="pt-1">
+        <div class="font-mono text-[10px] uppercase tracking-widest text-slate-400 mb-1.5">Fuentes · ${vm.sources.length}</div>
+        <ul class="flex flex-col gap-1">
+          ${vm.sources.map((s,i) => html`
+            <li key=${i} class="text-[12px] leading-snug">
+              ${s.url
+                ? html`<a href=${s.url} target="_blank" rel="noreferrer noopener" class="text-radar hover:text-radar-glow underline decoration-dotted">${s.title}</a>`
+                : html`<span class="text-slate-300">${s.title}</span>`}
+              ${s.publisher && html`<span class="font-mono text-[9.5px] text-slate-600 ml-1.5">${s.publisher}</span>`}
+            </li>`)}
+        </ul>
+      </div>`}
+  </div>`;
+}
+
+/* ========================================================================
+   Filtros avanzados del mapa (Sprint 10)
+   Se derivan de los datos: una dimensión sin valores NO se muestra. Ningún
+   filtro es destructivo (los datos locales/JSON quedan intactos).
+   ======================================================================== */
+const FACET_LABELS = { region:'Región', type:'Tipo', severity:'Severidad', status:'Estado', resource:'Recurso', actor:'Actor', chokepoint:'Chokepoint' };
+const FACET_ORDER = ['region', 'type', 'severity', 'status', 'resource', 'actor', 'chokepoint'];
+
+function MapFilters({ facets, selected, onChange, onReset, count, total }) {
+  const dims = FACET_ORDER.filter(d => facets[d]);
+  if (!dims.length) return null;
+  const active = Object.entries(selected || {}).some(([k, v]) => facets[k] && v && v !== 'all');
+  const optionLabel = (dim, value) => {
+    if (dim === 'severity') return `≥ ${value}`;
+    if (dim === 'type') return (CATEGORIES[value] && CATEGORIES[value].label) || value;
+    return value;
+  };
+  return html`
+  <div class="panel rounded-md p-3 lg:p-4">
+    <div class="flex items-center justify-between gap-2 mb-2.5 flex-wrap">
+      <div class="heading-mono">Filtros avanzados</div>
+      <div class="flex items-center gap-2">
+        <span class="font-mono text-[10px] uppercase tracking-widest text-slate-500">${count}/${total} focos</span>
+        ${active && html`<button onClick=${onReset} class="font-mono text-[9.5px] uppercase tracking-widest text-radar hover:text-radar-glow">Limpiar</button>`}
+      </div>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+      ${dims.map(dim => html`
+        <label key=${dim} class="flex flex-col gap-1">
+          <span class="font-mono text-[9px] uppercase tracking-widest text-slate-500">${FACET_LABELS[dim]}</span>
+          <select
+            value=${selected[dim] || 'all'}
+            onChange=${e => onChange(dim, e.target.value)}
+            class="bg-carbon-900/70 border border-white/10 rounded px-2 py-1.5 text-[12px] text-slate-200 focus:border-radar/50 focus:outline-none">
+            <option value="all">Todos</option>
+            ${facets[dim].map(v => html`<option key=${v} value=${String(v)}>${optionLabel(dim, v)}</option>`)}
+          </select>
+        </label>`)}
+    </div>
+  </div>`;
+}
+
+function MapExplorer({ focos, selectedFoco, selectedId, onSelect, filters, onFiltersChange }) {
+  // Filtros CONTROLADOS por el contenedor (deep-link URL). Si no llega el par
+  // controlado, degrada a estado local (compatibilidad con otros usos).
+  const [localSel, setLocalSel] = useState({});
+  const controlled = filters && typeof onFiltersChange === 'function';
+  const selected = controlled ? filters : localSel;
+  const setSelected = controlled
+    ? (updater) => onFiltersChange(typeof updater === 'function' ? updater(filters) : updater)
+    : setLocalSel;
+  const facets = useMemo(() => deriveFilterFacets(focos), [focos]);
+  const visible = useMemo(() => applyAdvancedFilters(focos, selected), [focos, selected]);
+  const shownFoco = visible.find(f => f.id === selectedId) || selectedFoco;
+  const change = (dim, value) => {
+    // Sprint 12 — 'all'/vacío equivale a limpiar esa dimensión.
+    if (!value || value === 'all') trackEvent('clear_filter', { dimension: dim });
+    else trackEvent('select_filter', { dimension: dim, value: String(value) });
+    setSelected(prev => ({ ...prev, [dim]: value }));
+  };
+  const reset = () => { trackEvent('clear_filter', { reason: 'reset_all' }); setSelected({}); };
+  // Sprint 12 — estado vacío del mapa por combinación de filtros (no en carga inicial).
+  const hasActiveFilters = Object.values(selected || {}).some(v => v && v !== 'all');
+  useEffect(() => {
+    if (hasActiveFilters && visible.length === 0) {
+      trackEvent('map_empty_state', { count: 0 });
+    }
+  }, [visible.length, hasActiveFilters]);
+  return html`
+  <div class="space-y-4">
+    <${MapFilters} facets=${facets} selected=${selected} onChange=${change} onReset=${reset}
+      count=${visible.length} total=${focos.length}/>
+    <${WorldMap} focos=${visible} selectedId=${selectedId} onSelect=${onSelect}/>
+    ${visible.length === 0 && html`
+      <div class="panel rounded-md p-4 text-center text-[12px] text-slate-500">
+        Ningún foco coincide con los filtros. <button onClick=${reset} class="text-radar hover:text-radar-glow underline decoration-dotted">Reiniciar</button>
+      </div>`}
+    <${FocoDetail} foco=${shownFoco}/>
+    <${EnrichedDetail} foco=${shownFoco}/>
   </div>`;
 }
 
@@ -3738,10 +3950,21 @@ function SentinelBrief({ lang }) {
 /* ========================================================================
    App root
    ======================================================================== */
+// Vistas navegables por deep-link (Sprint 11). Una `view` desconocida en la URL
+// se ignora (degradación limpia) y se conserva la vista por defecto.
+const KNOWN_VIEWS = [
+  'dashboard', 'map', 'watchlist', 'analysis', 'scenarios', 'rearm', 'editor',
+  'sentinel', 'studio', 'brief', 'doctrina', 'monetization', 'planz', 'sala', 'system',
+];
+
 function App() {
+  // Estado inicial de navegación desde la URL (hash) — no destructivo: si no hay
+  // deep-link, se usan los valores por defecto de siempre.
+  const initialLink = readDeepLink({ knownViews: KNOWN_VIEWS });
   const [lang, setLang] = useState('ES');
-  const [view, setView] = useState('dashboard');
-  const [selectedId, setSelectedId] = useState('ukr-rus');
+  const [view, setView] = useState(initialLink.view || 'dashboard');
+  const [selectedId, setSelectedId] = useState(initialLink.focus || 'ukr-rus');
+  const [mapFilters, setMapFilters] = useState(initialLink.filters || {});
   const [sitRoom, setSitRoom] = useState(false);
   const [bootComplete, setBootComplete] = useState(false);
   const [customFocos, setCustomFocos] = useState([]);
@@ -3761,6 +3984,37 @@ function App() {
     document.body.classList.toggle('sitroom', sitRoom);
   }, [sitRoom]);
 
+  // Sprint 11 — Deep-links por URL (no destructivo, sin almacenamiento).
+  // Refleja el estado navegable (vista/foco/filtros) en el hash y responde a
+  // back/forward. Los valores por defecto se OMITEN para no ensuciar la URL.
+  const deepLinkState = useMemo(() => ({
+    view: view !== 'dashboard' ? view : null,
+    focus: selectedId && selectedId !== 'ukr-rus' ? selectedId : null,
+    filters: mapFilters,
+  }), [view, selectedId, mapFilters]);
+
+  useEffect(() => {
+    writeDeepLink(deepLinkState);
+  }, [deepLinkState]);
+
+  useEffect(() => onDeepLinkChange((next) => {
+    if (next.view && KNOWN_VIEWS.includes(next.view)) setView(next.view);
+    if (next.focus) setSelectedId(next.focus);
+    setMapFilters(next.filters || {});
+  }, { knownViews: KNOWN_VIEWS }), []);
+
+  // Sprint 12 — si la app se ABRE con un deep-link activo (vista/foco/filtros en
+  // el hash), lo registramos una sola vez al montar. NO invasivo: sólo señala
+  // que se llegó por un enlace profundo, sin identificar al usuario.
+  useEffect(() => {
+    if (initialLink.view || initialLink.focus || Object.keys(initialLink.filters || {}).length) {
+      trackEvent('open_deeplink', {
+        view: initialLink.view || undefined,
+        conflict: initialLink.focus || undefined,
+      });
+    }
+  }, []);
+
   // Sprint 1 — carga watchlist vía adaptador (API-first con fallback local).
   // Con USE_API=false devuelve FOCOS locales de inmediato; ante error de API,
   // cae al respaldo local sin romper la UI.
@@ -3771,8 +4025,14 @@ function App() {
         if (cancelled) return;
         if (Array.isArray(focos) && focos.length) setBaseFocos(focos);
         setDataSource(source);
+        // Sprint 12 — observabilidad del origen de la watchlist (api|static|local).
+        if (source === 'local') trackEvent('fallback_local', { source: 'local', reason: 'watchlist' });
       })
-      .catch(() => { if (!cancelled) setDataSource('local'); });
+      .catch(() => {
+        if (!cancelled) setDataSource('local');
+        trackEvent('api_error', { endpoint: 'watchlist' });
+        trackEvent('fallback_local', { source: 'local', reason: 'watchlist_error' });
+      });
     return () => { cancelled = true; };
   }, []);
 
@@ -3947,6 +4207,7 @@ function App() {
             <div class="lg:col-span-2 space-y-4">
               <${WorldMap} focos=${allFocos} selectedId=${selectedId} onSelect=${setSelectedId}/>
               <${FocoDetail} foco=${selectedFoco}/>
+              <${EnrichedDetail} foco=${selectedFoco}/>
             </div>
             <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId} onOpenSentinel=${()=>setView('sentinel')}/>
           </div>
@@ -3963,9 +4224,8 @@ function App() {
 
       ${view==='map' && html`
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <div class="lg:col-span-2 space-y-4">
-            <${WorldMap} focos=${allFocos} selectedId=${selectedId} onSelect=${setSelectedId}/>
-            <${FocoDetail} foco=${selectedFoco}/>
+          <div class="lg:col-span-2">
+            <${MapExplorer} focos=${allFocos} selectedFoco=${selectedFoco} selectedId=${selectedId} onSelect=${setSelectedId} filters=${mapFilters} onFiltersChange=${setMapFilters}/>
           </div>
           <${AlertsPanel} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId} onOpenSentinel=${()=>setView('sentinel')}/>
         </div>

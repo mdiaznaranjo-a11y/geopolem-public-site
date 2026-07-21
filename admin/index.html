@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>GEOPÓLEM · Admin/CMS (staging)</title>
+  <!--
+    GEOPÓLEM Admin/CMS mínimo (Sprint 8).
+    ---------------------------------------------------------------------------
+    Superficie SEPARADA de la experiencia pública (no se enlaza desde index.html
+    ni desde la PWA). Pensada para staging. Garantías:
+      • No usa localStorage/sessionStorage/indexedDB/cookies (token sólo en memoria).
+      • No persiste datos si la API real no está activa (modo DEMO/prepared).
+      • Desactivada por defecto: requiere GEOP_ADMIN_ENABLED=true o un token manual.
+      • No forma parte del service worker / manifest de la PWA pública.
+    Configuración por entorno (inyectable antes de cargar el módulo):
+      window.GEOP_API_BASE       Base de la API admin (p.ej. https://.../).
+      window.GEOP_ADMIN_ENABLED  true para habilitar la UI en este entorno.
+      window.GEOP_ADMIN_TOKEN    (opcional) JWT de staging inyectado por entorno.
+                                 Si no se inyecta, se pide en un campo manual.
+  -->
+  <script>
+    // NO hardcodear secretos. El token sólo llega por inyección de entorno o
+    // por el campo manual del formulario; nunca se guarda en disco/almacenamiento.
+    window.GEOP_API_BASE = window.GEOP_API_BASE || "";
+    window.GEOP_ADMIN_ENABLED = window.GEOP_ADMIN_ENABLED ?? false;
+    window.GEOP_ADMIN_TOKEN = window.GEOP_ADMIN_TOKEN || "";
+  </script>
+  <style>
+    :root { color-scheme: dark; --bg:#0d1117; --panel:#161b22; --border:#30363d; --fg:#e6edf3; --muted:#8b949e; --accent:#2f81f7; --ok:#238636; --err:#da3633; --warn:#9e6a03; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+    header { padding:16px 20px; border-bottom:1px solid var(--border); background:var(--panel); }
+    header h1 { margin:0; font-size:18px; }
+    header p { margin:4px 0 0; color:var(--muted); font-size:13px; }
+    main { max-width:920px; margin:0 auto; padding:20px; }
+    .banner { border:1px solid var(--warn); background:#221a04; color:#f0c674; padding:10px 14px; border-radius:8px; margin-bottom:16px; font-size:13px; }
+    .banner.off { border-color:var(--err); background:#2a0f0f; color:#ff9a9a; }
+    fieldset { border:1px solid var(--border); border-radius:10px; margin:0 0 16px; padding:14px 16px; background:var(--panel); }
+    legend { padding:0 6px; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+    label { display:block; font-size:13px; margin:10px 0 4px; color:var(--muted); }
+    input, select, textarea { width:100%; background:#0d1117; color:var(--fg); border:1px solid var(--border); border-radius:6px; padding:8px 10px; font-size:14px; font-family:inherit; }
+    textarea { min-height:64px; resize:vertical; }
+    .row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+    .check { display:flex; align-items:center; gap:8px; margin-top:14px; }
+    .check input { width:auto; }
+    .actions { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:8px; }
+    button { background:var(--accent); color:#fff; border:0; border-radius:6px; padding:9px 16px; font-size:14px; cursor:pointer; }
+    button.secondary { background:#30363d; }
+    button:disabled { opacity:.5; cursor:not-allowed; }
+    .hint { font-size:12px; color:var(--muted); margin-top:4px; }
+    #status { font-size:13px; margin-left:auto; }
+    pre { background:#0d1117; border:1px solid var(--border); border-radius:8px; padding:12px; overflow:auto; font-size:12.5px; max-height:360px; }
+    .errors { border:1px solid var(--err); background:#2a0f0f; color:#ffb3b3; border-radius:8px; padding:10px 14px; font-size:13px; }
+    .errors ul { margin:6px 0 0; padding-left:18px; }
+    .ok { color:#7ee787; }
+    .muted { color:var(--muted); }
+    code { background:#0d1117; padding:1px 5px; border-radius:4px; border:1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GEOPÓLEM · Admin/CMS <span class="muted">(staging)</span></h1>
+    <p>Editor controlado de conflictos. Modo <strong>prepared/DEMO</strong> por defecto: valida el contrato sin persistir.</p>
+  </header>
+  <main id="app">
+    <div id="gate" class="banner off" hidden></div>
+
+    <fieldset id="conn">
+      <legend>Conexión</legend>
+      <label for="apiBase">API base (opcional)</label>
+      <input id="apiBase" type="url" placeholder="https://geopolem-api.onrender.com" autocomplete="off" />
+      <label for="token">JWT de staging (sólo en memoria — no se guarda)</label>
+      <input id="token" type="password" placeholder="Bearer token con scope admin / cms:write" autocomplete="off" />
+      <p class="hint">Sin API base o sin token → modo <strong>DEMO</strong>: se valida y previsualiza sin llamar a la red ni persistir.</p>
+    </fieldset>
+
+    <form id="form" autocomplete="off">
+      <fieldset>
+        <legend>Identidad</legend>
+        <div class="row">
+          <div><label for="name">Título *</label><input id="name" name="name" required /></div>
+          <div><label for="slug">Slug * (kebab-case)</label><input id="slug" name="slug" placeholder="conflicto-mar-rojo" required /></div>
+        </div>
+        <div class="row3">
+          <div><label for="primary_region">Región (slug)</label><input id="primary_region" name="primary_region" placeholder="mena" /></div>
+          <div><label for="country">País</label><input id="country" name="country" placeholder="Yemen" /></div>
+          <div><label for="conflict_type">Tipo (slug)</label><input id="conflict_type" name="conflict_type" placeholder="energia" /></div>
+        </div>
+        <label for="status">Estado editorial</label>
+        <select id="status" name="status">
+          <option value="draft">draft</option>
+          <option value="review">review</option>
+          <option value="published">published</option>
+          <option value="archived">archived</option>
+        </select>
+        <label for="summary">Resumen</label>
+        <textarea id="summary" name="summary" placeholder="Síntesis del foco…"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Métricas y dimensiones</legend>
+        <div class="row3">
+          <div><label for="intensity_level">Severidad / intensidad (1–5)</label><input id="intensity_level" name="intensity_level" type="number" min="1" max="5" /></div>
+          <div><label for="escalation_risk">Riesgo de escalada (1–5)</label><input id="escalation_risk" name="escalation_risk" type="number" min="1" max="5" /></div>
+          <div><label for="humanitarian_impact">Impacto humanitario (1–5)</label><input id="humanitarian_impact" name="humanitarian_impact" type="number" min="1" max="5" /></div>
+        </div>
+        <div class="row3">
+          <label class="check"><input id="energy_dimension" name="energy_dimension" type="checkbox" /> Energética</label>
+          <label class="check"><input id="territorial_dimension" name="territorial_dimension" type="checkbox" /> Territorial</label>
+          <label class="check"><input id="external_involvement" name="external_involvement" type="checkbox" /> Implicación externa</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Coordenadas</legend>
+        <div class="row">
+          <div><label for="latitude">Latitud (-90…90)</label><input id="latitude" name="latitude" type="number" step="any" /></div>
+          <div><label for="longitude">Longitud (-180…180)</label><input id="longitude" name="longitude" type="number" step="any" /></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Relaciones enriquecidas (metadato editorial · JSON)</legend>
+        <p class="hint">Contrato Sprint 7/8. El servidor Sprint 7 aún no persiste estos campos; se validan y conservan para el detalle enriquecido y Sprint 9.</p>
+        <label for="actors">Actores <code>{ "state": ["…"], "non_state": ["…"] }</code></label>
+        <textarea id="actors" placeholder='{"state":["Estado A"],"non_state":["Grupo B"]}'></textarea>
+        <div class="row">
+          <div><label for="resources">Recursos <code>["petróleo", …]</code></label><textarea id="resources" placeholder='["petróleo","gas"]'></textarea></div>
+          <div><label for="chokepoints">Chokepoints <code>["Ormuz", …]</code></label><textarea id="chokepoints" placeholder='["Bab el-Mandeb"]'></textarea></div>
+        </div>
+        <label for="causal_links">Enlaces causales <code>[{ "from":"…","to":"…","relation":"causes" }]</code></label>
+        <textarea id="causal_links" placeholder='[{"from":"bloqueo","to":"subida-precios","relation":"causes"}]'></textarea>
+        <label for="sources">Fuentes <code>[{ "title":"…","url":"https://…" }]</code></label>
+        <textarea id="sources" placeholder='[{"title":"Informe","url":"https://ejemplo.org/doc"}]'></textarea>
+      </fieldset>
+
+      <div class="actions">
+        <button id="validateBtn" type="button" class="secondary">Validar</button>
+        <button id="submitBtn" type="submit">Crear conflicto</button>
+        <span id="status"></span>
+      </div>
+    </form>
+
+    <div id="errors" class="errors" hidden></div>
+    <h3 class="muted" style="margin-top:20px">Resultado</h3>
+    <pre id="output">—</pre>
+  </main>
+
+  <script type="module" src="./admin-ui.js"></script>
+</body>
+</html>

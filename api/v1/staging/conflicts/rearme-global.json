@@ -1,0 +1,91 @@
+{
+  "data": {
+    "id": "rearme-global",
+    "slug": "rearme-global",
+    "name": "Rearme global — gasto militar récord",
+    "summary": "El gasto militar mundial alcanzó 2,887 billones de dólares en 2025, con Europa y Asia-Oceanía como zonas de aceleración y una concentración del 51% en EE.UU., China y Rusia.",
+    "conflict_type": {
+      "slug": "defensa",
+      "label": "Defensa / Rearme"
+    },
+    "primary_region": {
+      "slug": "global",
+      "label": "Global"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 50,
+      "longitude": 10
+    },
+    "actors": {
+      "state": [
+        {
+          "slug": "estados-unidos",
+          "name": "Estados Unidos",
+          "role": "Mayor gasto militar mundial",
+          "alignment": null,
+          "involvement_level": null
+        },
+        {
+          "slug": "china",
+          "name": "China",
+          "role": "Segundo mayor gasto militar",
+          "alignment": null,
+          "involvement_level": null
+        },
+        {
+          "slug": "rusia",
+          "name": "Rusia",
+          "role": "Aceleración del gasto en defensa",
+          "alignment": null,
+          "involvement_level": null
+        }
+      ],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [
+      {
+        "link_type": "contributes_to",
+        "title": "Carrera de rearme y presión presupuestaria",
+        "explanation": "El gasto militar mundial alcanzó 2.887 billones USD en 2025 (+2,9% real sobre 2024), décimo año consecutivo de subidas, tensionando presupuestos y cadenas industriales.",
+        "pending": false,
+        "source_slugs": [
+          "sipri-milex-2025"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "slug": "sipri-milex-2025",
+        "title": "Global military spending rise continues as European and Asian expenditures surge",
+        "url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
+        "publisher": "Stockholm International Peace Research Institute (SIPRI)",
+        "source_name": "SIPRI",
+        "accessed_at": "2026-07-07",
+        "verification": "verified",
+        "demo": false,
+        "accessed_via": "web-fetch",
+        "relation": "conflict"
+      }
+    ],
+    "updated_at": null,
+    "editorial_status": "review"
+  },
+  "meta": {
+    "api_version": "v1",
+    "staging": true,
+    "source": "verified-seed-merge (Sprint 15 staging)"
+  }
+}

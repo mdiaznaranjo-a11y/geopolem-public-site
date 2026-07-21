@@ -1,0 +1,28 @@
+#!/bin/sh
+# GEOPÓLEM — hook pre-commit OPCIONAL (Sprint 18).
+# ---------------------------------------------------------------------------
+# Ejecuta la garantía NO-WRITE/NO-DIFF (verify:clean-tree) antes de cada commit
+# para atajar diffs accidentales de las validaciones. Es OPT-IN: se instala con
+#   node scripts/setup-hooks.mjs --install
+# y se puede saltar puntualmente con  GEOP_SKIP_HOOKS=1 git commit ...
+#
+# Marcador para que setup-hooks reconozca el hook como "gestionado por GEOPÓLEM".
+# GEOPOLEM-MANAGED-HOOK v1
+# ---------------------------------------------------------------------------
+set -e
+
+if [ "${GEOP_SKIP_HOOKS:-}" = "1" ]; then
+  echo "[pre-commit] GEOP_SKIP_HOOKS=1 → se omite verify:clean-tree."
+  exit 0
+fi
+
+# Localiza la raíz del repo (top-level) para resolver rutas de forma robusta.
+ROOT=$(git rev-parse --show-toplevel 2>/dev/null || echo ".")
+
+if ! command -v node >/dev/null 2>&1; then
+  echo "[pre-commit] aviso: 'node' no disponible; se omite verify:clean-tree." >&2
+  exit 0
+fi
+
+echo "[pre-commit] verify:clean-tree (garantía NO-WRITE/NO-DIFF)…"
+node "$ROOT/scripts/check-clean-tree.mjs"
