@@ -44,17 +44,29 @@
   window.GEOP_API_BASE = window.GEOP_API_BASE || "https://geopolem-api.onrender.com";
 </script>
 <!--
-  GEOPÓLEM — Configuración del adaptador de datos (Sprint 1).
-  La watchlist/mapa siguen usando datos locales (data.js) por defecto.
-  Para activar la carga API-first del contrato /api/v1/conflicts, poner
-  GEOP_USE_API = true cuando la API v1 esté estable (ver Sprint 2).
-  Si la API falla, el adaptador cae automáticamente al respaldo local.
+  GEOPÓLEM — Configuración del adaptador de datos (Sprint 1 + Sprint 2).
+  La watchlist/mapa siguen usando datos locales (data.js) por defecto
+  (GEOP_USE_API = false). Cascada del adaptador cuando GEOP_USE_API = true:
+    API en vivo  →  puente estático (api/v1/conflicts.json)  →  data.js local.
+  Si la API falla, el adaptador cae automáticamente al respaldo local, así que
+  la web nunca se rompe.
+
+  Sprint 2 añade el puente estático `api/v1/conflicts.json`, generado desde
+  data.js con `node scripts/generate-conflicts-json.mjs`. Ya queda cableado en
+  GEOP_CONFLICTS_STATIC para que, al activar el modo API en staging, exista un
+  respaldo compatible con el contrato v1 sin necesidad de backend.
+  Prueba en staging:  window.GEOP_USE_API = true;  (recargar)
 -->
 <script>
   window.GEOP_USE_API = window.GEOP_USE_API ?? false;              // API-first on/off
   window.GEOP_CONFLICTS_PATH = window.GEOP_CONFLICTS_PATH || "/api/v1/conflicts";
-  // Respaldo estático opcional para GitHub Pages sin backend:
-  // window.GEOP_CONFLICTS_STATIC = "./api/v1/conflicts.json";
+  // Respaldo estático (Sprint 2) para GitHub Pages sin backend. Sólo se usa
+  // cuando GEOP_USE_API = true; con la bandera en false no tiene ningún efecto.
+  window.GEOP_CONFLICTS_STATIC = window.GEOP_CONFLICTS_STATIC || "./api/v1/conflicts.json";
+  // Detalle enriquecido estático por conflicto (Sprint 11): `:id` se sustituye
+  // por el slug/id. Se consume aunque GEOP_USE_API = false (los archivos se
+  // publican con el sitio); si falta el archivo, degrada al foco local.
+  window.GEOP_CONFLICT_DETAIL_STATIC = window.GEOP_CONFLICT_DETAIL_STATIC || "./api/v1/conflicts/:id.json";
 </script>
 <script>
   tailwind.config = {

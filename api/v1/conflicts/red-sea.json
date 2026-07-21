@@ -1,0 +1,45 @@
+{
+  "data": {
+    "id": "red-sea",
+    "slug": "red-sea",
+    "name": "Mar Rojo / Bab el-Mandeb",
+    "summary": "Ataques Houthi a navegación reducen tráfico ~50%, fletes y primas suben, desvíos por Cabo de Buena Esperanza añaden 10-14 días.",
+    "conflict_type": {
+      "slug": "chokepoint",
+      "label": "Chokepoint"
+    },
+    "primary_region": {
+      "slug": "mena",
+      "label": "MENA"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 12.5,
+      "longitude": 43.5
+    },
+    "actors": {
+      "state": [],
+      "non_state": []
+    },
+    "resources": [],
+    "chokepoints": [],
+    "causal_links": [],
+    "sources": [],
+    "updated_at": null
+  },
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-07-07T05:15:50.200Z",
+    "source": "static-bridge (derived, Sprint 11)"
+  }
+}

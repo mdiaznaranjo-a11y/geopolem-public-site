@@ -1,0 +1,14 @@
+node_modules/
+*.tmp
+# Sprint 15: respaldos efímeros de la promoción a staging (regenerables)
+api/v1/staging/.rollback/
+# Sprint 17: sign-off humano de promoción a producción (NO versionar, sin secretos)
+.promotion-signoff.json
+# Sprint 18: segunda confirmación de release (NO versionar, sin secretos)
+.release-confirmation.json
+# Sprint 18: respaldos efímeros de canónicos y salidas de simulacro (regenerables)
+.canonical-rollback/
+.release-sim/
+# Sprint 19: screenshots del QA visual opt-in y salidas del RC (regenerables)
+.rc-qa/
+.rc-package/
