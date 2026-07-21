@@ -1,0 +1,116 @@
+{
+  "data": {
+    "id": "sahel",
+    "slug": "sahel",
+    "name": "Sahel — Juntas militares y yihadismo",
+    "summary": "Eje Mali–Burkina–Níger consolida AES, salida de Francia/CEDEAO, presencia rusa, expansión yihadista al golfo de Guinea.",
+    "conflict_type": {
+      "slug": "conflicto",
+      "label": "Conflictos"
+    },
+    "primary_region": {
+      "slug": "sahel",
+      "label": "Sahel"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 14.5,
+      "longitude": 0.5
+    },
+    "actors": {
+      "state": [
+        {
+          "slug": "mali",
+          "name": "Malí",
+          "role": "Estado afectado",
+          "alignment": null,
+          "involvement_level": null
+        },
+        {
+          "slug": "niger",
+          "name": "Níger",
+          "role": "Estado afectado",
+          "alignment": null,
+          "involvement_level": null
+        },
+        {
+          "slug": "burkina-faso",
+          "name": "Burkina Faso",
+          "role": "Estado afectado",
+          "alignment": null,
+          "involvement_level": null
+        }
+      ],
+      "non_state": [
+        {
+          "slug": "jnim",
+          "name": "JNIM",
+          "role": "Grupo yihadista",
+          "alignment": null,
+          "involvement_level": null
+        }
+      ]
+    },
+    "resources": [
+      {
+        "slug": "uranio",
+        "name": "Uranio",
+        "relevance_level": null,
+        "strategic_importance": null,
+        "critical_mineral": true
+      },
+      {
+        "slug": "oro",
+        "name": "Oro",
+        "relevance_level": null,
+        "strategic_importance": null,
+        "critical_mineral": false
+      }
+    ],
+    "chokepoints": [],
+    "causal_links": [
+      {
+        "link_type": "contributes_to",
+        "title": "Violencia armada y desplazamiento forzado",
+        "explanation": "ACNUR documenta el desplazamiento forzado a gran escala en Malí, Burkina Faso y Níger impulsado por violencia e inseguridad; la caracterización causal de retroalimentación juntas–yihadismo requiere verificación editorial adicional.",
+        "pending": true,
+        "source_slugs": [
+          "unhcr-sahel-emergency"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "slug": "unhcr-sahel-emergency",
+        "title": "Sahel emergency",
+        "url": "https://www.unhcr.org/us/emergencies/sahel-emergency",
+        "publisher": "UNHCR — The UN Refugee Agency",
+        "source_name": "UNHCR",
+        "accessed_at": "2026-07-07",
+        "verification": "verified",
+        "demo": false,
+        "accessed_via": "web-search",
+        "relation": "conflict",
+        "needs_human_review": true,
+        "review_reason": "Sprint 15: fetch directo bloqueado por el proxy (HTTP 403); existencia y contenido confirmados vía buscador. Requiere que un revisor humano reconfirme la URL con acceso directo."
+      }
+    ],
+    "updated_at": null,
+    "editorial_status": "review"
+  },
+  "meta": {
+    "api_version": "v1",
+    "staging": true,
+    "source": "verified-seed-merge (Sprint 15 staging)"
+  }
+}

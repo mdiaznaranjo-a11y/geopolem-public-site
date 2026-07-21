@@ -1,0 +1,160 @@
+name: CI
+
+# GEOPÓLEM — Integración continua (Sprint 4).
+# Valida sin infraestructura externa: adaptador (Sprint 1), puente estático
+# (Sprint 2) y api-server (Sprint 3) en modo fallback. Un job opcional levanta
+# PostGIS como service para probar la ruta "API real".
+
+on:
+  push:
+    branches: [main, "sprint-*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-validators:
+    name: Validadores estáticos (Sprint 1 + Sprint 2)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validar adaptador (Sprint 1)
+        run: node scripts/validate-adapter.mjs
+      - name: Validar puente estático de conflictos (Sprint 2)
+        run: node scripts/validate-conflicts-json.mjs
+
+  api-server:
+    name: API v1 sin DB (Sprint 3 — tests + smoke + fallback)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api-server
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Tests de contrato (node:test, sin DB)
+        run: npm test
+      - name: Lint estático de migraciones (Sprint 9, sin DB)
+        run: npm run migrate:check
+      - name: E2E flujo editorial (Sprint 8, sin DB)
+        run: npm run e2e:editorial
+      - name: Smoke HTTP end-to-end (sin DB)
+        run: npm run smoke
+      - name: Validación de staging en modo fallback (sin DB)
+        run: npm run validate:staging
+      - name: Validar puente estático en disco (Sprint 5, sin DB)
+        run: npm run export:static:check
+      - name: Verificar rutas/detalle estático y deep-links (Sprint 11, sin navegador)
+        run: npm run verify:static-routes
+
+      - name: Validar semilla relacional y regla published-exige-fuente (Sprint 13)
+        run: npm run seed:check
+
+      - name: Verificar inventario de conflictos al día (Sprint 14)
+        run: npm run inventory:check
+      - name: Validar semilla verificada y regla causal_links-exigen-fuente (Sprint 14)
+        run: npm run verified:check
+
+      - name: Gate de promoción canónica a staging (Sprint 15)
+        run: npm run promote:check
+
+      - name: Validación E2E de artefactos de staging y separación canónica (Sprint 16)
+        run: npm run validate:staging-artifacts
+
+      - name: Dry-run auditable de promoción (Sprint 17, no-write)
+        run: npm run promote:dry-run
+
+      - name: Garantía NO-WRITE/NO-DIFF de las validaciones (Sprint 17)
+        run: npm run verify:clean-tree
+
+      - name: Cola de revisión editorial residual al día (Sprint 18)
+        run: npm run review:queue:check
+
+      - name: Simulacro de release GATED end-to-end, sin producción (Sprint 18)
+        run: npm run release:simulate:json
+
+  api-server-postgis:
+    name: API v1 con PostGIS (opcional)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgis/postgis:15-3.4
+        env:
+          POSTGRES_USER: geopolem
+          POSTGRES_PASSWORD: geopolem
+          POSTGRES_DB: geopolem
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U geopolem -d geopolem"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 20
+    env:
+      DATABASE_URL: postgres://geopolem:geopolem@localhost:5432/geopolem
+      PG_SSL: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Instalar cliente psql
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+      - name: Aplicar esquema (PostGIS)
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f api-server/db/schema.sql
+      - name: Aplicar migraciones relacionales idempotentes (Sprint 9)
+        run: |
+          for f in api-server/db/migrations/*.sql; do
+            echo "psql -f $f"
+            psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f "$f"
+          done
+      - name: Reaplicar migraciones (verifica idempotencia)
+        run: |
+          for f in api-server/db/migrations/*.sql; do
+            psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f "$f"
+          done
+      - name: Aplicar semilla
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f api-server/db/seed.sql
+      - name: Instalar driver pg
+        working-directory: api-server
+        run: npm install --no-audit --no-fund
+      - name: Aplicar migraciones vía runner (Sprint 9, requiere pg)
+        working-directory: api-server
+        run: npm run migrate
+      - name: Validar DB directamente (PostGIS + esquema + semilla)
+        working-directory: api-server
+        run: npm run validate:staging
+      - name: Regenerar puente estático desde la DB (dry-run, Sprint 5)
+        working-directory: api-server
+        run: npm run export:static:dry
+      - name: Arrancar api-server contra la DB
+        working-directory: api-server
+        run: |
+          node server.mjs &
+          echo "SERVER_PID=$!" >> "$GITHUB_ENV"
+          for i in $(seq 1 40); do
+            curl -sf http://127.0.0.1:8787/api/v1/health >/dev/null && break
+            sleep 0.5
+          done
+      - name: Validar endpoints contra la DB real
+        working-directory: api-server
+        env:
+          API_BASE: http://127.0.0.1:8787
+        run: npm run validate:staging
+      - name: Verificación de promoción (staging-verify contra DB real, Sprint 6)
+        working-directory: api-server
+        env:
+          API_BASE: http://127.0.0.1:8787
+          EXPECT_SOURCE: database
+          MIN_DB_RATIO: "0.5"
+        run: npm run verify:staging
+      - name: Detener api-server
+        if: always()
+        run: kill "$SERVER_PID" || true

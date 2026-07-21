@@ -1,0 +1,52 @@
+# GEOPÓLEM — staging reproducible local: PostgreSQL/PostGIS + api-server.
+# ---------------------------------------------------------------------------
+# Levanta una base PostGIS con el esquema y la semilla oficiales aplicados
+# automáticamente, y el api-server de Sprint 3 conectado a ella. Sirve para
+# validar en local la ruta "API real" ANTES de desplegar en un proveedor.
+#
+#   docker compose -f docker-compose.staging.yml up --build
+#   # health: http://localhost:8787/api/v1/health  (database:"reachable", postgis:true)
+#   docker compose -f docker-compose.staging.yml down -v   # limpia también el volumen
+#
+# No contiene secretos de producción: las credenciales son locales de staging.
+# ---------------------------------------------------------------------------
+
+services:
+  db:
+    image: postgis/postgis:15-3.4
+    environment:
+      POSTGRES_USER: geopolem
+      POSTGRES_PASSWORD: geopolem
+      POSTGRES_DB: geopolem
+    ports:
+      - "5432:5432"
+    volumes:
+      - geopolem_pgdata:/var/lib/postgresql/data
+      # El esquema y la semilla se ejecutan en orden alfabético al inicializar
+      # un volumen vacío. El schema ya incluye CREATE EXTENSION postgis.
+      - ./api-server/db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./api-server/db/seed.sql:/docker-entrypoint-initdb.d/02-seed.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U geopolem -d geopolem"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build:
+      context: .
+      dockerfile: api-server/Dockerfile
+    environment:
+      PORT: "8787"
+      HOST: "0.0.0.0"
+      DATABASE_URL: "postgres://geopolem:geopolem@db:5432/geopolem"
+      PG_SSL: "false"
+      CORS_ORIGIN: "*"
+    ports:
+      - "8787:8787"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  geopolem_pgdata:
