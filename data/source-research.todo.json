@@ -1,0 +1,82 @@
+{
+  "contract": "sprint-14-source-research-v1",
+  "version": "1.1.0",
+  "generated_at": "2026-07-07T00:00:00.000Z",
+  "notice": "Cola de investigación editorial (Sprint 14, actualizada en Sprint 15). Enumera, por conflicto, lo que falta verificar para poder marcar causal_links como no-pending y/o promover a 'published'. NO contiene datos inventados: sólo campos a investigar y el estado actual. Sprint 15 CERRÓ los 2 pendientes de fuente (istanbul, ia-narrativa) con fuentes institucionales fetchables → 0 conflictos sin fuente verificada. Quedan pendientes de sign-off humano: (a) 5 causal_links con fuente de contexto pero afirmación causal por confirmar; (b) 3 fuentes accessed_via='web-search' con needs_human_review:true cuyo fetch directo sigue bloqueado por el proxy.",
+  "verification_environment": {
+    "web_available": true,
+    "method": "WebSearch + WebFetch durante la ejecución del sprint",
+    "caveats": "Algunos dominios (iaea.org, unocha.org, unhcr.org, weforum.org) devolvieron 402/403 al fetch directo vía proxy; su existencia y contenido se confirmaron por buscador (accessed_via='web-search'). El resto se confirmó con fetch directo (accessed_via='web-fetch'). Sprint 15: mfa.gov.tr y un.org SÍ respondieron al fetch directo."
+  },
+  "fields_to_research": [
+    "source.title (exacto)",
+    "source.url (http/https estable)",
+    "source.publisher | source.source_name",
+    "source.accessed_at (fecha ISO)",
+    "causal_link support (¿la fuente respalda la afirmación causal concreta?)"
+  ],
+  "items": [
+    {
+      "id": "istanbul",
+      "status": "sourced-context-pending-causal",
+      "reason": "Sprint 15: fuente Türkiye MFA verificada (implementación de la Convención de Montreux, régimen de los Estrechos Turcos), accessed_via='web-fetch'. La afirmación causal concreta sobre impacto en flujos de energía y grano (y el proyecto Canal de Estambul) requiere una fuente que respalde ese vínculo específico.",
+      "verified_sources": 1,
+      "causal_links_pending": ["Régimen del Bósforo y tránsito por los Estrechos"]
+    },
+    {
+      "id": "isr-gaza-irn",
+      "status": "sourced-context-pending-causal",
+      "reason": "Fuente OCHA verificada (crisis humanitaria en Gaza), pero la afirmación causal concreta 'riesgo de guerra regional Israel–Irán + chokepoints energéticos' requiere una fuente que respalde ese vínculo específico. NOTA Sprint 15: la fuente OCHA está marcada needs_human_review:true (fetch directo bloqueado, verificada por buscador).",
+      "verified_sources": 1,
+      "causal_links_pending": ["Crisis humanitaria y riesgo de escalada regional"]
+    },
+    {
+      "id": "sahel",
+      "status": "sourced-context-pending-causal",
+      "reason": "Fuente ACNUR verificada (desplazamiento por violencia), pero la caracterización causal 'retroalimentación juntas militares–yihadismo' requiere fuente específica (p.ej. ACLED, informes de seguridad). NOTA Sprint 15: la fuente ACNUR está marcada needs_human_review:true (fetch directo bloqueado, verificada por buscador).",
+      "verified_sources": 1,
+      "causal_links_pending": ["Violencia armada y desplazamiento forzado"]
+    },
+    {
+      "id": "asia-agua",
+      "status": "sourced-context-pending-causal",
+      "reason": "Fuente Banco Mundial verificada (marco del Tratado de Aguas del Indo), pero la afirmación causal 'deshielo glaciar altera el régimen del Indo' requiere fuente climática/hidrológica específica.",
+      "verified_sources": 1,
+      "causal_links_pending": ["Marco del Tratado de Aguas del Indo bajo presión"]
+    },
+    {
+      "id": "stablecoins",
+      "status": "sourced-context-pending-causal",
+      "reason": "Fuente FSB verificada (riesgo de estabilidad financiera de stablecoins), pero el vínculo causal con la 'desinformación financiera' requiere fuente específica que conecte ambos fenómenos.",
+      "verified_sources": 1,
+      "causal_links_pending": ["Riesgo de estabilidad financiera por stablecoins"]
+    }
+  ],
+  "needs_human_review": [
+    {
+      "id": "ukr-rus",
+      "source_slug": "iaea-ukraine-update-356",
+      "accessed_via": "web-search",
+      "reason": "Fetch directo bloqueado por el proxy (HTTP 402 en iaea.org). Reconfirmar URL con acceso directo antes de promover a producción."
+    },
+    {
+      "id": "isr-gaza-irn",
+      "source_slug": "ocha-opt",
+      "accessed_via": "web-search",
+      "reason": "Fetch directo bloqueado por el proxy (HTTP 403 en unocha.org). Reconfirmar URL con acceso directo antes de promover a producción."
+    },
+    {
+      "id": "sahel",
+      "source_slug": "unhcr-sahel-emergency",
+      "accessed_via": "web-search",
+      "reason": "Fetch directo bloqueado por el proxy (HTTP 403 en unhcr.org). Reconfirmar URL con acceso directo antes de promover a producción."
+    }
+  ],
+  "verified_complete": [
+    { "id": "rearme-global", "verified_sources": 1, "causal_links_verified": ["Carrera de rearme y presión presupuestaria"] },
+    { "id": "ukr-rus", "verified_sources": 1, "causal_links_verified": ["Riesgo sobre infraestructura energética (nuclear)"] },
+    { "id": "red-sea", "verified_sources": 1, "causal_links_verified": ["Ataques a navegación y desvío de rutas"] },
+    { "id": "mena-agua", "verified_sources": 1, "causal_links_verified": ["Estrés hídrico estructural"] },
+    { "id": "ia-narrativa", "verified_sources": 1, "causal_links_verified": ["Riesgo narrativo por IA"] }
+  ]
+}

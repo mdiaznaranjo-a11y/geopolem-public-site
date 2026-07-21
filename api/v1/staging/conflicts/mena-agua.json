@@ -1,0 +1,92 @@
+{
+  "data": {
+    "id": "mena-agua",
+    "slug": "mena-agua",
+    "name": "MENA — Estrés hídrico estructural",
+    "summary": "Jordán, Eufrates–Tigris, Nilo, acuíferos fósiles agotándose. 12 de 17 países con mayor estrés hídrico del mundo están en MENA.",
+    "conflict_type": {
+      "slug": "agua",
+      "label": "Agua / Clima"
+    },
+    "primary_region": {
+      "slug": "mena",
+      "label": "MENA"
+    },
+    "status": "active",
+    "metrics": {
+      "intensity_level": 4,
+      "escalation_risk": null,
+      "humanitarian_impact": null
+    },
+    "dimensions": {
+      "energy": false,
+      "territorial": null,
+      "external_involvement": null
+    },
+    "location": {
+      "latitude": 30,
+      "longitude": 38
+    },
+    "actors": {
+      "state": [
+        {
+          "slug": "egipto",
+          "name": "Egipto",
+          "role": "Estado ribereño (Nilo)",
+          "alignment": null,
+          "involvement_level": null
+        },
+        {
+          "slug": "etiopia",
+          "name": "Etiopía",
+          "role": "Estado ribereño (Nilo)",
+          "alignment": null,
+          "involvement_level": null
+        }
+      ],
+      "non_state": []
+    },
+    "resources": [
+      {
+        "slug": "agua-dulce",
+        "name": "Agua dulce",
+        "relevance_level": null,
+        "strategic_importance": null,
+        "critical_mineral": false
+      }
+    ],
+    "chokepoints": [],
+    "causal_links": [
+      {
+        "link_type": "contributes_to",
+        "title": "Estrés hídrico estructural",
+        "explanation": "El Banco Mundial advierte que la disponibilidad de agua per cápita en MENA caerá por debajo del umbral de escasez absoluta (500 m³/persona/año), agravando tensiones estructurales.",
+        "pending": false,
+        "source_slugs": [
+          "worldbank-mena-water-scarcity"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "slug": "worldbank-mena-water-scarcity",
+        "title": "Water Scarcity in MENA Requires Bold Actions, Says World Bank Report",
+        "url": "https://www.worldbank.org/en/news/press-release/2023/04/27/water-scarcity-in-mena-requires-bold-actions-says-world-bank-report",
+        "publisher": "World Bank",
+        "source_name": "World Bank",
+        "accessed_at": "2026-07-07",
+        "verification": "verified",
+        "demo": false,
+        "accessed_via": "web-fetch",
+        "relation": "conflict"
+      }
+    ],
+    "updated_at": null,
+    "editorial_status": "review"
+  },
+  "meta": {
+    "api_version": "v1",
+    "staging": true,
+    "source": "verified-seed-merge (Sprint 15 staging)"
+  }
+}
