@@ -746,24 +746,24 @@ export const PLAN_Z = {
   eyebrow: 'Documental de inteligencia',
   eyebrowEn: 'Intelligence documentary',
   title: 'PLAN Z',
-  subtitle: 'la mina, la libreta y la firma',
-  subtitleEn: 'the mine, the ledger and the signature',
-  fullTitle: 'PLAN Z: la mina, la libreta y la firma | GEOPÓLEM',
+  subtitle: 'Plan Z #4 · La ruta oscura',
+  subtitleEn: 'Plan Z #4 · The dark route',
+  fullTitle: 'Plan Z #4 · La ruta oscura | Dubái, Madrid y el flujo estratégico venezolano',
   // Documental completo en YouTube (no se aloja localmente)
   youtube: {
-    id: 'SdM8TuhUgvY',
-    url: 'https://youtu.be/SdM8TuhUgvY',
-    duration: '≈ 37 min',
+    id: 'lthQ_ksRACE',
+    url: 'https://youtu.be/lthQ_ksRACE',
+    duration: '≈ 17 min',
   },
   // Resumen editorial: qué es y qué no es
-  summary: 'Plan Z no es una noticia. Es una lectura de inteligencia sobre petróleo, deuda, poder y rediseño institucional. El documental analiza qué ocurre cuando la arquitectura política, fiscal y diplomática de un Estado depende de un recurso estratégico y ese Estado pierde el control técnico, financiero y operativo sobre él.',
-  summaryEn: 'Plan Z is not breaking news. It is an intelligence reading of oil, debt, power and institutional redesign. The documentary examines what happens when a state whose political, fiscal and diplomatic architecture depends on a strategic resource loses technical, financial and operational control over it.',
+  summary: 'Plan Z #4 no es una sentencia. Es una lectura de inteligencia sobre rutas, sociedades, jurisdicciones y trazabilidad del flujo estratégico venezolano. La entrega ordena una línea de investigación entre Venezuela, Dubái, Madrid y Asia sin convertir indicios en conclusiones cerradas.',
+  summaryEn: 'Plan Z #4 is not a verdict. It is an intelligence reading of routes, companies, jurisdictions and the traceability of Venezuelan strategic flows. This release structures an open line of investigation across Venezuela, Dubai, Madrid and Asia without turning signals into closed conclusions.',
   notNews: 'Sin amarillismo. Sin propaganda. Sala situacional.',
   notNewsEn: 'No sensationalism. No propaganda. Situation room.',
   // Pregunta analítica central
-  question: 'Cuando un petroestado pierde el control sobre su petróleo, ¿quién mueve la palanca energética?',
-  questionEn: 'When a petro-state loses control over its oil, who moves the energy lever?',
-  questionContext: 'Petróleo. Deuda. Oro. PDVSA. Orinoco. Madrid. Roma. Nueva York.',
+  question: 'Si el recurso existe, ¿por dónde intenta moverse el flujo?',
+  questionEn: 'If the resource exists, through which route does the flow try to move?',
+  questionContext: 'Venezuela. Dubái. Madrid. Asia. Sociedades. Cartas de intención. OSINT.',
   // Disciplinas de inteligencia empleadas
   methods: [
     { id:'osint',  label:'OSINT',  desc:'Fuentes abiertas: documentos, registros y prensa.', descEn:'Open sources: documents, records and press.', accent:'#22d3ee' },
@@ -798,10 +798,10 @@ export const PLAN_Z = {
       { id:'linkedin',  label:'LinkedIn',  desc:'Análisis largo',   accent:'#0a66c2' },
       { id:'facebook',  label:'Facebook',  desc:'Reels',            accent:'#1877f2' },
     ],
-    caption: 'Plan Z ya está en YouTube. La pregunta no es sólo quién gobierna: es quién mueve la palanca energética. Documental completo en YouTube.',
+    caption: 'Plan Z #4 ya está en YouTube. No seguimos el escándalo: seguimos el flujo. La ruta oscura se analiza con método de inteligencia: Hecho, Evaluación e Hipótesis.',
   },
   // Enlace canónico del documental para los actos de la serie
-  seriesUrl: 'https://youtu.be/SdM8TuhUgvY',
+  seriesUrl: 'https://youtu.be/lthQ_ksRACE',
   // Orden narrativo de la serie (no mezclar narrativas; preservar secuencia)
   seriesMap: [
     { step: 'I',  key: 'Petróleo / Orinoco',    note: 'La palanca profunda: reserva no equivale a flujo.' },
@@ -843,6 +843,24 @@ export const PLAN_Z = {
       featured: true,
       cta: 'Próxima publicación',
       ctaEn: 'Upcoming release',
+    },
+    {
+      n: 4,
+      seriesLabel: 'Plan Z · Entrega 04',
+      title: 'La ruta oscura',
+      titleEn: 'The dark route',
+      description: 'La cuarta entrega introduce sociedades, jurisdicciones, señales OSINT, nodos financieros y posibles rutas de salida. No presenta una sentencia: ordena una línea de investigación sobre Venezuela, Dubái, Madrid y Asia.',
+      descriptionEn: 'The fourth release introduces companies, jurisdictions, OSINT signals, financial nodes and possible exit routes. It does not present a verdict: it structures an open line of investigation around Venezuela, Dubai, Madrid and Asia.',
+      doctrine: ['hecho', 'evaluacion', 'hipotesis'],
+      chips: ['Dubái', 'Madrid', 'Asia', 'Recursos estratégicos', 'OSINT'],
+      chipsEn: ['Dubai', 'Madrid', 'Asia', 'Strategic resources', 'OSINT'],
+      status: 'Publicado en YouTube',
+      statusEn: 'Published on YouTube',
+      published: true,
+      featured: true,
+      youtube: 'https://youtu.be/lthQ_ksRACE',
+      cta: 'Ver video completo',
+      ctaEn: 'Watch full video',
     },
   ],
   // Actos de guion de la serie Plan Z (orden fijo: Orinoco → Petrocaribe → Madrid → Oro/Deuda → Escenarios)

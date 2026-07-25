@@ -1,0 +1,24 @@
+{
+  "project": "GEOPÓLEM",
+  "collection": "Plan Z",
+  "updated_at": "2026-07-26T00:21:00+02:00",
+  "canonical_youtube_url": "https://youtu.be/lthQ_ksRACE",
+  "items": [
+    {
+      "id": "plan_z_04_la_ruta_oscura",
+      "episode_number": 4,
+      "public_label": "Plan Z #4",
+      "title": "La ruta oscura",
+      "slug": "plan-z-04-la-ruta-oscura",
+      "status": "published",
+      "youtube": {
+        "id": "lthQ_ksRACE",
+        "url": "https://youtu.be/lthQ_ksRACE"
+      },
+      "files": {
+        "web_markdown": "./plan_z_04_la_ruta_oscura_ficha_web.md",
+        "app_json": "./plan_z_04_la_ruta_oscura_ficha_app.json"
+      }
+    }
+  ]
+}

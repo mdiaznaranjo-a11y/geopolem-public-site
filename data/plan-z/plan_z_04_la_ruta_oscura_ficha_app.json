@@ -1,0 +1,219 @@
+{
+  "id": "plan_z_04_la_ruta_oscura",
+  "project": "GEOPÓLEM Plan Z",
+  "series": "Plan Z",
+  "episode_number": 4,
+  "public_label": "Plan Z #4",
+  "title": "La ruta oscura",
+  "subtitle": "Sociedades, jurisdicciones y trazabilidad del flujo",
+  "slug": "plan-z-04-la-ruta-oscura",
+  "language": "es",
+  "status": "published_youtube_ready_for_web_app_distribution",
+  "editorial_risk": "alto_control",
+  "format": {
+    "primary": "video_largo_youtube",
+    "extensions": [
+      "web",
+      "app",
+      "short_reel",
+      "story",
+      "matriz_osint"
+    ],
+    "suggested_duration_long": "8-10 minutos",
+    "suggested_duration_short": "35-45 segundos"
+  },
+  "method": [
+    "Hecho",
+    "Evaluación",
+    "Hipótesis"
+  ],
+  "tone": [
+    "sala_situacional",
+    "osint",
+    "inteligencia",
+    "anti_amarillista",
+    "academico_pero_claro"
+  ],
+  "closing_line": "GEOPÓLEM. Bienvenidos al tablero.",
+  "narrative_function": "Introduce la capa de rutas, sociedades, jurisdicciones, cartas de intención, intermediarios y posibles nodos de salida después del recurso material y antes del nodo Madrid.",
+  "position_in_architecture": {
+    "previous_episode": {
+      "number": 3,
+      "title": "Cuba entra al tablero",
+      "function": "Expande Plan Z hacia níquel, cobalto, energía, deuda e infraestructura regional."
+    },
+    "current_episode": {
+      "number": 4,
+      "title": "La ruta oscura",
+      "function": "Ordena posibles rutas de intermediación, sociedades, jurisdicciones y demanda externa."
+    },
+    "next_episode": {
+      "number": 5,
+      "title": "Madrid, mediación y operadores",
+      "function": "Analiza acceso político, legitimidad, operadores y plataforma europea."
+    }
+  },
+  "executive_summary": "Plan Z #4 no acusa ni sentencia. Ordena una línea de investigación sobre posibles rutas de intermediación vinculadas a recursos estratégicos venezolanos. El episodio trabaja con fuentes abiertas y medios que citan informes policiales, diligencias y documentación intervenida. Dubái aparece como nodo societario y financiero en observación; Madrid queda como puente hacia la siguiente entrega. La tesis operativa es que quien entiende el flujo, entiende el tablero.",
+  "hecho": {
+    "summary": "Medios españoles han publicado informaciones atribuidas a informes policiales, diligencias y documentación intervenida sobre sociedades, operadores y posibles gestiones vinculadas a recursos estratégicos venezolanos.",
+    "claims": [
+      {
+        "claim": "The Objective publicó que la UDEF habría localizado una sociedad con sede en Dubái llamada Amsa Partners, vinculada a empresarios venezolanos relacionados con el entorno de José Luis Rodríguez Zapatero.",
+        "source": "The Objective",
+        "url": "https://theobjective.com/espana/2026-06-30/udef-empresa-fantasma-dubai-venezolanos-zapatero/?amp",
+        "verification_level": "fuente_periodistica_atribuible",
+        "editorial_caution": "No presentar como condena. Atribuir siempre al medio y al marco de investigación policial."
+      },
+      {
+        "claim": "El Independiente publicó que informes de la UDEF incorporados al sumario del caso Plus Ultra describirían gestiones sobre petróleo venezolano, coque, materias primas, compradores chinos, operador suizo y cartas de intención.",
+        "source": "El Independiente",
+        "url": "https://www.elindependiente.com/espana/2026/07/05/petroleo-buques-y-empresas-del-partido-comunista-chino-las-gestiones-de-la-red-de-zapatero-mas-alla-del-rescate-de-plus-ultra/",
+        "verification_level": "fuente_periodistica_atribuible",
+        "editorial_caution": "Atribuir a informes, atestados o diligencias citadas por el medio; no afirmar transacción consumada."
+      },
+      {
+        "claim": "RTVE informó que José Luis Rodríguez Zapatero negó los delitos imputados y que el procedimiento seguía abierto sin condena firme.",
+        "source": "RTVE",
+        "url": "https://amp.rtve.es/noticias/20260617/claves-declaracion-zapatero-expresidente-niega-delitos-juez-mantiene-indicios-criminalidad/17119950.shtml",
+        "verification_level": "contraste_judicial_periodistico",
+        "editorial_caution": "Incluir siempre la negación, la investigación abierta y la ausencia de condena firme."
+      }
+    ]
+  },
+  "evaluacion": {
+    "summary": "Dubái debe tratarse como nodo, no como conclusión. Una sociedad o jurisdicción no prueba una operación, pero sí puede abrir un mapa de verificación cuando se conecta con recursos, intermediarios, cartas de intención y demanda externa.",
+    "sequence": [
+      "recurso_venezolano",
+      "jurisdiccion_dubai",
+      "sociedades_y_cartas_de_intencion",
+      "intermediacion_y_operadores",
+      "madrid_como_posible_acceso_politico",
+      "asia_como_demanda_final"
+    ]
+  },
+  "hipotesis": {
+    "summary": "Si la ruta Dubái se confirma documentalmente, Plan Z cambia de escala: dejaría de ser una colección de episodios y pasaría a leerse como una posible arquitectura de tránsito para recursos estratégicos.",
+    "safe_formulation": "Dubái podría ser una pieza puente entre el recurso venezolano y la red de operadores que aparece después en Madrid.",
+    "forbidden_formulation": "La ruta está probada."
+  },
+  "web_app_cards": [
+    {
+      "label": "HECHO",
+      "title": "Sociedades y recursos",
+      "body": "Medios españoles citan informes policiales y diligencias sobre sociedades, recursos naturales y posibles gestiones de intermediación."
+    },
+    {
+      "label": "EVALUACIÓN",
+      "title": "Dubái como nodo",
+      "body": "La lectura no convierte una jurisdicción en prueba; la trata como nodo societario, financiero y comercial en observación."
+    },
+    {
+      "label": "HIPÓTESIS",
+      "title": "Ruta de arquitectura",
+      "body": "Si la ruta se confirma, el caso puede adquirir escala transnacional: recurso, sociedad, operador, acceso político y demanda final."
+    }
+  ],
+  "visual_layers": [
+    {
+      "scene": "apertura",
+      "visual": "mapa_caracas_dubai_madrid_asia",
+      "overlay": "No seguimos el escándalo. Seguimos el flujo."
+    },
+    {
+      "scene": "hecho_1",
+      "visual": "documento_amsa_partners_dubai",
+      "overlay": "HECHO · Sociedad señalada por medios que citan informes policiales"
+    },
+    {
+      "scene": "hecho_2",
+      "visual": "materias_primas_cartas_intencion_compradores_asia",
+      "overlay": "HECHO · Materia prima · intermediación · comprador final"
+    },
+    {
+      "scene": "evaluacion",
+      "visual": "diagrama_recurso_sociedad_intermediario_comprador_legitimidad",
+      "overlay": "EVALUACIÓN · Un nodo no condena. Un nodo conecta."
+    },
+    {
+      "scene": "contraste",
+      "visual": "dos_columnas_indicios_defensa",
+      "overlay": "CONTRASTE · Investigación abierta · sin condena firme"
+    },
+    {
+      "scene": "hipotesis",
+      "visual": "mapa_hipotesis_arquitectura",
+      "overlay": "HIPÓTESIS · No es episodio. Podría ser arquitectura."
+    }
+  ],
+  "short_reel": {
+    "title": "Plan Z #4 · La ruta oscura",
+    "duration": "35-45 segundos",
+    "hook": "En inteligencia no se empieza por el nombre. Se empieza por el flujo.",
+    "voiceover": "En inteligencia no se empieza por el nombre. Se empieza por el flujo. Plan Z #4 entra en la ruta oscura. Venezuela, Dubái, Madrid y Asia aparecen como nodos de una posible arquitectura de intermediación sobre recursos estratégicos. No es sentencia. Es una línea de investigación. Hecho: sociedades y recursos. Evaluación: nodos y jurisdicciones. Hipótesis: si la ruta se confirma, el caso cambia de escala. Video completo en YouTube. GEOPÓLEM. Bienvenidos al tablero.",
+    "hashtags": [
+      "#GEOPÓLEM",
+      "#PlanZ",
+      "#RutaOscura",
+      "#Venezuela",
+      "#Dubái",
+      "#Madrid",
+      "#China",
+      "#OSINT",
+      "#Geopolítica",
+      "#Inteligencia",
+      "#Energía"
+    ]
+  },
+  "editorial_guardrails": {
+    "use": [
+      "Según medios que citan informes policiales.",
+      "Aparece como línea de investigación.",
+      "No hay condena firme en este punto.",
+      "La hipótesis debe ser verificada documentalmente.",
+      "GEOPÓLEM no acusa; GEOPÓLEM ordena el tablero."
+    ],
+    "avoid": [
+      "La ruta está probada.",
+      "Vendían petróleo.",
+      "Zapatero es culpable.",
+      "Trama confirmada.",
+      "Empresa criminal como afirmación propia sin cita judicial contextualizada."
+    ]
+  },
+  "seo": {
+    "title": "Plan Z #4 · La ruta oscura: Dubái, Madrid y el flujo estratégico venezolano",
+    "description": "GEOPÓLEM analiza Plan Z #4 como una ruta de investigación sobre sociedades, jurisdicciones, petróleo, coque, operadores y posibles nodos de intermediación entre Venezuela, Dubái, Madrid y Asia.",
+    "keywords": [
+      "Plan Z",
+      "GEOPÓLEM",
+      "Venezuela",
+      "Dubái",
+      "Madrid",
+      "petróleo",
+      "coque",
+      "OSINT",
+      "inteligencia geopolítica",
+      "energía",
+      "recursos estratégicos",
+      "Asia",
+      "UDEF",
+      "Plus Ultra"
+    ]
+  },
+  "generated_at": "2026-07-26T00:21:00+02:00",
+  "youtube": {
+    "id": "lthQ_ksRACE",
+    "url": "https://youtu.be/lthQ_ksRACE",
+    "title": "Plan Z #4 · La ruta oscura | Dubái, Madrid y el flujo estratégico venezolano",
+    "duration": "≈ 17 min",
+    "privacy_status": "public",
+    "published_at": "2026-07-25T22:18:41Z"
+  },
+  "web_app_visibility": {
+    "visible_section": "PLAN_Z",
+    "featured": true,
+    "card_label": "Plan Z · Entrega 04",
+    "cta": "Ver video completo",
+    "updated_in_repo": true
+  }
+}
