@@ -42,8 +42,49 @@ Requiere iniciar `server.py` en el puerto 8000 antes del despliegue para exponer
 | `manifest.webmanifest` | ~2 KB | Configuración PWA instalable: nombre, colores, modo standalone, iconos y accesos rápidos. |
 | `service-worker.js` | ~2 KB | Caché básico de app shell para carga rápida y soporte offline parcial. |
 | `icons/` | 3 SVG | Iconos 192, 512 y maskable para instalación móvil/escritorio. |
+| `dossiers/` | — | Sub-página estática con los dossiers técnicos en PDF. |
+| `conflictos-activos/` | ~1,1 MB | Sub-página estática: **maqueta SIMULADA** del dashboard de conflictos activos (ver sección siguiente). Artefacto de build, no editar a mano. |
 
 **Cero dependencias instaladas.** React 18, htm y todas las fuentes vienen por CDN. Tailwind se carga vía Play CDN para conservar el flujo de un solo archivo; el backend usa solo librerías estándar de Python.
+
+---
+
+## Ruta `/conflictos-activos/` — dashboard de conflictos (SIMULADO)
+
+Sub-página estática con la maqueta de sala situacional de conflictos activos
+(Israel-Palestina · Rusia-Ucrania). Se integra igual que `dossiers/`: un directorio
+con su propio `index.html`, servido tal cual por GitHub Pages. **No añade build al
+sitio**: lo que se versiona aquí es únicamente la salida compilada.
+
+- **Entrada**: `./conflictos-activos/index.html` (enlazada desde el FAB "Conflictos
+  activos" y desde el CTA de la pantalla de arranque en `app.js`).
+- **Vuelta al tablero**: enlace "← Sala situacional" en la barra superior del dashboard.
+- **Rutas internas**: hash routing (`#/`, `#/gaza`, `#/ukraine`, `#/regional`,
+  `#/sources`, `#/scenarios`), por lo que no requiere reescrituras del servidor.
+- **Datos**: 100 % simulados y congelados (`SIM_NOW`). Chip `SIMULADO` permanente,
+  banner explicativo y sello por tarjeta. **No consume ninguna API real** — es
+  independiente de `window.GEOP_API_BASE` y del adaptador `api-adapter.js`.
+- **Dependencias externas en runtime**: basemap `basemaps.cartocdn.com` (sin token) y
+  fuentes Fontshare/Google. Si el basemap no responde, el dashboard muestra una
+  retícula de respaldo y el resto del tablero sigue operativo.
+
+### Regenerar la maqueta
+
+El código fuente vive fuera de este repositorio, en el proyecto Vite
+`geopolem-conflict-dashboard` (React 18 + MapLibre GL 4, `base: './'`):
+
+```bash
+cd /home/user/workspace/geopolem-conflict-dashboard
+npm install
+npm run build                     # → dist/
+rm -rf <este-repo>/conflictos-activos
+cp -R dist <este-repo>/conflictos-activos
+```
+
+Los nombres de los assets llevan hash de contenido y cambian en cada build, por eso
+`service-worker.js` sólo precachea la ruta estable `./conflictos-activos/index.html`
+y deja el bundle al caché en tiempo de ejecución. Tras regenerar, **sube la versión de
+`CACHE_NAME`** en `service-worker.js` para invalidar el caché de los visitantes.
 
 ---
 

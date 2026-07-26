@@ -254,10 +254,10 @@
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
 
-  /* On the boot/initialization screen the floating Dossiers button would overlap
-     the "Inicialización del sistema" panel, so it is hidden there and replaced by
-     an inline CTA inside the boot layout. */
-  body.boot-screen #dossiers-fab { display: none; }
+  /* On the boot/initialization screen the floating buttons would overlap the
+     "Inicialización del sistema" panel, so they are hidden there and replaced by
+     inline CTAs inside the boot layout. */
+  body.boot-screen #site-fabs { display: none; }
 
   /* Loading shimmer */
   .shimmer {
@@ -271,13 +271,21 @@
 <body class="dark">
   <div id="root"></div>
 
-  <!-- Enlace fijo a dossiers técnicos GEOPÓLEM -->
-  <a id="dossiers-fab" href="./dossiers/index.html"
-     class="fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-cyan-500/15 text-cyan-200 border border-cyan-400/30 hover:bg-cyan-500/25 backdrop-blur font-mono text-[11px] uppercase tracking-widest shadow-lg"
-     style="font-family:'JetBrains Mono',ui-monospace,SFMono-Regular;">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-    Dossiers
-  </a>
+  <!-- Enlaces fijos a las secciones estáticas GEOPÓLEM -->
+  <div id="site-fabs" class="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-2"
+       style="font-family:'JetBrains Mono',ui-monospace,SFMono-Regular;">
+    <a id="conflictos-fab" href="./conflictos-activos/index.html"
+       class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-amber-500/15 text-amber-200 border border-amber-400/30 hover:bg-amber-500/25 backdrop-blur font-mono text-[11px] uppercase tracking-widest shadow-lg">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>
+      Conflictos activos
+      <span class="px-1 rounded bg-amber-400/20 text-[9px] tracking-[0.18em]">SIM</span>
+    </a>
+    <a id="dossiers-fab" href="./dossiers/index.html"
+       class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-cyan-500/15 text-cyan-200 border border-cyan-400/30 hover:bg-cyan-500/25 backdrop-blur font-mono text-[11px] uppercase tracking-widest shadow-lg">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      Dossiers
+    </a>
+  </div>
 
   <script type="module" src="./app.js"></script>
   <script>

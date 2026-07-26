@@ -1,4 +1,7 @@
-const CACHE_NAME = 'geopolem-command-v1.20.0';
+const CACHE_NAME = 'geopolem-command-v1.21.0';
+// Hashed assets under ./conflictos-activos/assets/ change on every rebuild, so only
+// the stable shell path is precached; the bundle is cached lazily by the fetch handler.
+const CONFLICTS_SHELL = './conflictos-activos/index.html';
 const APP_SHELL = [
   './',
   './index.html',
@@ -10,7 +13,8 @@ const APP_SHELL = [
   './manifest.webmanifest',
   './icons/icon-192.svg',
   './icons/icon-512.svg',
-  './icons/icon-maskable.svg'
+  './icons/icon-maskable.svg',
+  CONFLICTS_SHELL
 ];
 
 self.addEventListener('install', (event) => {
@@ -59,7 +63,9 @@ self.addEventListener('fetch', (event) => {
         })
         .catch(() => {
           if (request.mode === 'navigate') {
-            return caches.match('./index.html');
+            return caches.match(
+              url.pathname.includes('/conflictos-activos/') ? CONFLICTS_SHELL : './index.html'
+            );
           }
           return caches.match(request);
         });
