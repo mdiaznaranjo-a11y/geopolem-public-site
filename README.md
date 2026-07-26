@@ -81,10 +81,18 @@ rm -rf <este-repo>/conflictos-activos
 cp -R dist <este-repo>/conflictos-activos
 ```
 
-Los nombres de los assets llevan hash de contenido y cambian en cada build, por eso
-`service-worker.js` sólo precachea la ruta estable `./conflictos-activos/index.html`
-y deja el bundle al caché en tiempo de ejecución. Tras regenerar, **sube la versión de
-`CACHE_NAME`** en `service-worker.js` para invalidar el caché de los visitantes.
+Tras regenerar, **sube la versión de `CACHE_NAME`** en `service-worker.js` para invalidar
+el caché de los visitantes. Es el único paso manual: **no hay que tocar ninguna lista de
+assets**.
+
+Los nombres de los assets llevan hash de contenido y cambian en cada build, así que
+`service-worker.js` **no los lleva hardcodeados**. En el `install` lee
+`./conflictos-activos/index.html`, extrae de ahí los `src`/`href` de `./assets/…` y los
+precachea. Así el shell nunca queda cacheado sin su bundle (que offline daría página en
+blanco) y la lista no se puede desincronizar con el build. Ese precache es *best effort*:
+si fallara, no impide que se instale el app shell principal, y el fallback offline
+comprueba que el bundle esté en caché antes de servir el shell del dashboard —
+si no lo está, devuelve la sala situacional en vez de una página en blanco.
 
 ---
 
