@@ -1,0 +1,29 @@
+{
+  "project": "GEOPÓLEM",
+  "collection": "Conflictos activos",
+  "updated_at": "2026-07-26T13:40:00+02:00",
+  "canonical_youtube_url": "https://youtu.be/6EKDWIbs0SU",
+  "items": [
+    {
+      "id": "conflictos_activos_dashboard",
+      "public_label": "Conflictos activos",
+      "title": "Sala situacional de conflictos activos",
+      "subtitle": "Israel-Palestina · Rusia-Ucrania",
+      "slug": "conflictos-activos",
+      "status": "published",
+      "data_mode": "simulated",
+      "disclaimer": "Datos simulados. No operativo. No sustituye fuentes oficiales.",
+      "route": "../../conflictos-activos/index.html",
+      "youtube": {
+        "long": {
+          "id": "6EKDWIbs0SU",
+          "url": "https://youtu.be/6EKDWIbs0SU"
+        },
+        "short": {
+          "id": "q-jWUWFbbcY",
+          "url": "https://youtu.be/q-jWUWFbbcY"
+        }
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geopolem-command-v1.22.0';
+const CACHE_NAME = 'geopolem-command-v1.23.0';
 const CONFLICTS_DIR = './conflictos-activos/';
 const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
 const APP_SHELL = [

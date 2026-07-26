@@ -67,6 +67,10 @@ sitio**: lo que se versiona aquí es únicamente la salida compilada.
 - **Dependencias externas en runtime**: basemap `basemaps.cartocdn.com` (sin token) y
   fuentes Fontshare/Google. Si el basemap no responde, el dashboard muestra una
   retícula de respaldo y el resto del tablero sigue operativo.
+- **Vídeo oficial**: versión revisada larga <https://youtu.be/6EKDWIbs0SU> y Short
+  <https://youtu.be/q-jWUWFbbcY>. URL canónica en `data/conflictos-activos/index.json`
+  y en `CONFLICTOS_ACTIVOS` (`data.js`), que alimenta el bloque de publicación del
+  dashboard en el tablero. Al republicar el vídeo, actualiza ambos.
 
 ### Regenerar la maqueta
 
