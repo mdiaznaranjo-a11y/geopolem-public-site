@@ -45,6 +45,13 @@
       "description": "Abrir el brief diario GEOPÓLEM.",
       "url": "./index.html#brief",
       "icons": [{ "src": "./icons/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Conflictos activos (simulado)",
+      "short_name": "Conflictos",
+      "description": "Abrir la maqueta simulada del dashboard de conflictos activos.",
+      "url": "./conflictos-activos/index.html",
+      "icons": [{ "src": "./icons/icon-192.svg", "sizes": "192x192" }]
     }
   ]
 }

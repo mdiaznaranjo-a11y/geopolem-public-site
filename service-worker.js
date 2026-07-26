@@ -1,4 +1,6 @@
-const CACHE_NAME = 'geopolem-command-v1.20.0';
+const CACHE_NAME = 'geopolem-command-v1.22.0';
+const CONFLICTS_DIR = './conflictos-activos/';
+const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
 const APP_SHELL = [
   './',
   './index.html',
@@ -13,11 +15,38 @@ const APP_SHELL = [
   './icons/icon-maskable.svg'
 ];
 
+// The dashboard bundle carries a content hash that changes on every rebuild, so its
+// filenames are read out of the shell at install time rather than hardcoded here —
+// hardcoded hashes would silently go stale and leave the shell cached without its
+// bundle, which renders a blank page offline.
+async function conflictsAssets() {
+  const response = await fetch(CONFLICTS_SHELL, { cache: 'reload' });
+  if (!response.ok) throw new Error(`shell ${response.status}`);
+  const html = await response.text();
+  const assets = [...html.matchAll(/(?:src|href)="\.\/(assets\/[^"]+)"/g)].map((m) => CONFLICTS_DIR + m[1]);
+  return [CONFLICTS_SHELL, ...assets];
+}
+
+async function conflictsBundleCached() {
+  const cache = await caches.open(CACHE_NAME);
+  const keys = await cache.keys();
+  return keys.some((r) => new URL(r.url).pathname.includes('/conflictos-activos/assets/'));
+}
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(APP_SHELL))
-      .then(() => self.skipWaiting())
+    (async () => {
+      const cache = await caches.open(CACHE_NAME);
+      await cache.addAll(APP_SHELL);
+      try {
+        await cache.addAll(await conflictsAssets());
+      } catch (error) {
+        // Best effort: addAll is atomic, so keeping the optional sub-page out of
+        // APP_SHELL stops one missing dashboard file from taking the whole install
+        // — and the site's offline support — down with it.
+      }
+      await self.skipWaiting();
+    })()
   );
 });
 
@@ -57,11 +86,19 @@ self.addEventListener('fetch', (event) => {
           }
           return response;
         })
-        .catch(() => {
-          if (request.mode === 'navigate') {
-            return caches.match('./index.html');
+        .catch(async () => {
+          if (request.mode !== 'navigate') return caches.match(request);
+          if (url.pathname.includes('/conflictos-activos/')) {
+            if (await conflictsBundleCached()) {
+              const shell = await caches.match(CONFLICTS_SHELL);
+              if (shell) return shell;
+            }
+            // The shell is useless without its bundle, and serving the root HTML at
+            // this depth would break its relative paths — so hand the user back to
+            // the situation room by URL instead of rendering a blank page.
+            return Response.redirect(new URL('index.html', self.registration.scope).href, 302);
           }
-          return caches.match(request);
+          return caches.match('./index.html');
         });
     })
   );
