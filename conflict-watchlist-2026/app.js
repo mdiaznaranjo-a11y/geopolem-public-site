@@ -486,7 +486,7 @@
       ["Formulations to avoid", ['"Real-time monitoring" or "live data".','"Definitive map of the conflict."','"Confirmed prediction" or any deterministic reading.','Presenting simulated data as real evidence.']]
     ],
     avCards: [
-      ["Main piece","GEOPÓLEM · Active conflicts: situation room, method and reading the board","Full explanation of the board architecture, layers, risk matrix and the editorial separation between fact, assessment, hypothesis and signal.","Watch on YouTube ↗"],
+      ["Main piece","GEOPÓLEM · Active conflicts: situation room, method and reading the board","Official piece from the active-conflicts situation room: it explains the board architecture, the layers, the risk matrix and the editorial separation between fact, assessment, hypothesis and signal. It is the same method that structures this watchlist.","Watch on YouTube ↗"],
       ["Short piece","We don't opine first. We order the board.","Short version of the situation room. It always links to the full analysis.","Watch short ↗"]
     ]
   };
@@ -524,15 +524,25 @@
   /* ========================================================
      5. Mapa
      ======================================================== */
-  const map = L.map("map", {
+  // El mapa es una capa de lectura más, no el tablero entero. Si Leaflet no cargó, se
+  // degrada a un aviso y el resto —KPIs, lista, tarjetas, matrices, escenarios, fuentes—
+  // sigue operativo, en lugar de abortar el script y dejar la página a medio render.
+  const hasLeaflet = typeof L !== "undefined" && typeof L.map === "function";
+
+  const map = hasLeaflet ? L.map("map", {
     center: [22, 12], zoom: 2, minZoom: 2, maxZoom: 6,
     worldCopyJump: true, zoomControl: true, scrollWheelZoom: false, attributionControl: true
-  });
+  }) : null;
 
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png", {
-    maxZoom: 6, subdomains: "abcd",
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · © <a href="https://carto.com/attributions">CARTO</a>'
-  }).addTo(map);
+  if (map) {
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png", {
+      maxZoom: 6, subdomains: "abcd",
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · © <a href="https://carto.com/attributions">CARTO</a>'
+    }).addTo(map);
+  } else {
+    setHTML("#map", '<div class="map-offline" id="map-offline" role="status">'
+      + 'Mapa no disponible. El resto del tablero sigue operativo.</div>');
+  }
 
   const markers = {};
   const intensityClass = i => i === "alta" ? "cw-marker--high" : i === "media-alta" ? "cw-marker--medhigh" : "cw-marker--med";
@@ -545,7 +555,7 @@
             <div class="popup-meta">${escapeHtml(regionLabel(d.region))} · ${escapeHtml(typeLabel(d.type))} · ${escapeHtml(intensityLabel(d.intensity))}</div>`;
   }
 
-  DATA.forEach(d => {
+  if (map) DATA.forEach(d => {
     const size = intensitySize(d.intensity);
     const icon = L.divIcon({
       className: "",
@@ -1077,8 +1087,10 @@
   });
 
   /* Zoom con rueda sólo tras interacción explícita */
-  map.on("click", () => map.scrollWheelZoom.enable());
-  map.on("mouseout", () => map.scrollWheelZoom.disable());
+  if (map) {
+    map.on("click", () => map.scrollWheelZoom.enable());
+    map.on("mouseout", () => map.scrollWheelZoom.disable());
+  }
 
   /* ========================================================
      16. Init

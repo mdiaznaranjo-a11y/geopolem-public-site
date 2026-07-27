@@ -1,16 +1,20 @@
-const CACHE_NAME = 'geopolem-command-v1.26.0';
+const CACHE_NAME = 'geopolem-command-v1.27.0';
 const CONFLICTS_DIR = './conflictos-activos/';
 const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
 const WATCHLIST_DIR = './conflict-watchlist-2026/';
 const WATCHLIST_SHELL = WATCHLIST_DIR + 'index.html';
 // Hand-authored static page: filenames are stable, so unlike the hashed dashboard
-// bundle they can be listed here.
+// bundle they can be listed here. Leaflet is vendored rather than loaded from a CDN
+// precisely so it can live in this list — an offline shell without it renders a dead
+// board, which is worse than not serving the shell at all.
 const WATCHLIST_ASSETS = [
   WATCHLIST_SHELL,
   WATCHLIST_DIR + 'styles.css',
   WATCHLIST_DIR + 'app.js',
   WATCHLIST_DIR + 'data.js',
-  WATCHLIST_DIR + 'favicon.svg'
+  WATCHLIST_DIR + 'favicon.svg',
+  WATCHLIST_DIR + 'vendor/leaflet-1.9.4/leaflet.css',
+  WATCHLIST_DIR + 'vendor/leaflet-1.9.4/leaflet.js'
 ];
 const APP_SHELL = [
   './',
@@ -112,9 +116,18 @@ self.addEventListener('fetch', (event) => {
             return Response.redirect(new URL('index.html', self.registration.scope).href, 302);
           }
           if (url.pathname.includes('/conflict-watchlist-2026/')) {
-            const shell = await caches.match(WATCHLIST_SHELL);
-            // Serving the root HTML at this depth would break its relative paths.
-            return shell || Response.redirect(new URL('index.html', self.registration.scope).href, 302);
+            // The install precaches the shell and Leaflet together, but the runtime
+            // cache can hold the shell alone if a visitor browsed here after a failed
+            // install — and a shell without Leaflet renders a dead board. Only serve it
+            // once its runtime dependency is there; otherwise hand the user back to the
+            // situation room, since the root HTML at this depth would break its own
+            // relative paths.
+            const [shell, leaflet] = await Promise.all([
+              caches.match(WATCHLIST_SHELL),
+              caches.match(WATCHLIST_DIR + 'vendor/leaflet-1.9.4/leaflet.js')
+            ]);
+            if (shell && leaflet) return shell;
+            return Response.redirect(new URL('index.html', self.registration.scope).href, 302);
           }
           return caches.match('./index.html');
         });

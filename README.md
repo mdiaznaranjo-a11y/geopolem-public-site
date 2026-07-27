@@ -127,21 +127,37 @@ son cinco ficheros escritos a mano (`index.html`, `styles.css`, `app.js`, `data.
   **No consume ninguna API real**: es independiente de `window.GEOP_API_BASE` y del
   adaptador `api-adapter.js`. Las fuentes (ACLED, CFR, CICR, OCHA) figuran como
   **"No conectada"**.
-- **Idiomas**: ES y EN con copy completo; FR/DE/LB traducen la interfaz y recurren a
-  EN en los textos largos.
-- **Dependencias externas en runtime**: Leaflet y basemap `basemaps.cartocdn.com`
-  (sin token) más fuentes Fontshare/Google. Los vídeos usan una fachada de carga
-  bajo demanda contra `youtube-nocookie.com`: **cero peticiones a terceros de vídeo
-  al cargar la página**.
+- **Idiomas**: ES y EN con copy completo. FR/DE/LB traducen **parte** de la interfaz
+  (navegación, chips, ejes de la matriz) y recurren a EN en el resto; algunas
+  etiquetas fijas y `aria-label` siguen en español. Limitación conocida y asumida:
+  la página lo declara en su propia metodología.
+- **Leaflet vendorizado**: `vendor/leaflet-1.9.4/` contiene `leaflet.css` y
+  `leaflet.js` **idénticos** a los de unpkg (verificado contra los SRI que llevaba el
+  paquete: `sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=` y
+  `sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=`). No se sirve desde CDN
+  porque el service worker precachea esta ruta: un shell cacheado sin su Leaflet
+  daba un tablero muerto offline. No se incluyen las imágenes de Leaflet
+  (`marker-icon.png`, `layers.png`): la página usa `divIcon` y no instancia ni el
+  icono por defecto ni el control de capas, y se verificó que no se solicitan.
+- **Dependencias externas en runtime**: solo el basemap `basemaps.cartocdn.com`
+  (sin token) y las fuentes Fontshare/Google, ambas con degradación limpia — sin
+  basemap el mapa queda vacío pero el tablero sigue operativo, y las fuentes tienen
+  familias de respaldo. Los vídeos usan una fachada de carga bajo demanda contra
+  `youtube-nocookie.com`: **cero peticiones a terceros de vídeo al cargar la página**.
+- **Degradación sin Leaflet**: si su fichero no cargara, `app.js` no aborta; el mapa
+  muestra un aviso y KPIs, lista, tarjetas, matrices, escenarios y fuentes siguen
+  renderizando.
 - **Vídeo oficial**: versión revisada larga <https://youtu.be/6EKDWIbs0SU> y Short
   <https://youtu.be/q-jWUWFbbcY>. URL canónica en
   `data/conflict-watchlist-2026/index.json` y en `CONFLICT_WATCHLIST_2026`
   (`data.js`). Al republicar el vídeo, actualiza ambos.
 
-Al modificar cualquiera de los cinco ficheros, **sube la versión de `CACHE_NAME`** en
+Al modificar cualquiera de estos ficheros, **sube la versión de `CACHE_NAME`** en
 `service-worker.js`. A diferencia del dashboard, sus nombres de asset son estables y
 sí están listados en `WATCHLIST_ASSETS`; ese precache es *best effort* y no bloquea la
-instalación del app shell principal.
+instalación del app shell principal. El fallback offline sólo sirve el shell si
+`leaflet.js` también está en caché: servirlo sin su dependencia daría un tablero
+muerto, así que en ese caso redirige a la sala situacional.
 
 Nota editorial: `app.js` traduce los enlaces de `.mainnav` **por índice**, así que no
 deben añadirse ahí enlaces que no sean de sección (el "← Sala situacional" va fuera

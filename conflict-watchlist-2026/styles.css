@@ -337,6 +337,12 @@ p:last-child{ margin-bottom:0; }
 /* Mapa */
 .mapwrap{ position:relative; background: var(--surface-1); min-height:520px; }
 #map{ position:absolute; inset:0; background: var(--bg); }
+.map-offline{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  padding:1rem; text-align:center;
+  font-family: var(--font-mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase;
+  color: var(--muted); background: var(--surface-1);
+}
 .leaflet-container{ background: #070A0D !important; font-family: var(--font-sans); }
 .leaflet-control-attribution{ background: rgba(7,10,13,.8) !important; color: var(--muted) !important; font-size:9px !important; }
 .leaflet-control-attribution a{ color: var(--ink-2) !important; }
