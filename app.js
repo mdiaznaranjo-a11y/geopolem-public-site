@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA } from './data.js';
+import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, CONFLICTOS_ACTIVOS } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 import { loadWatchlistFocos } from './api-adapter.js';
@@ -2852,6 +2852,58 @@ function Doctrina({ lang }) {
 }
 
 /* ========================================================================
+   Conflictos activos — publicación del dashboard (SIMULADO)
+   Vídeo oficial de presentación + acceso a la sub-página ./conflictos-activos/.
+   ======================================================================== */
+function ConflictosActivosTeaser({ lang }) {
+  const en = lang === 'EN';
+  const c = CONFLICTOS_ACTIVOS;
+  return html`
+  <section class="panel rounded-lg p-4 lg:p-5 border border-risk/25 space-y-4">
+    <div class="flex flex-wrap items-start justify-between gap-3">
+      <div class="max-w-2xl space-y-1.5">
+        <div class="flex items-center gap-2">
+          <div class="heading-mono text-risk">${en?c.eyebrowEn:c.eyebrow}</div>
+          <span class="px-1 rounded bg-risk/20 text-risk font-mono text-[9px] tracking-[0.18em]">SIM</span>
+        </div>
+        <h3 class="font-display font-bold text-[20px] lg:text-[24px] text-slate-50 leading-tight">
+          ${en?c.titleEn:c.title} <span class="text-risk">${en?c.subtitleEn:c.subtitle}</span>
+        </h3>
+        <p class="text-[13px] text-slate-300 leading-relaxed">${en?c.summaryEn:c.summary}</p>
+        <p class="text-[11.5px] font-mono uppercase tracking-widest text-slate-500">${en?c.disclaimerEn:c.disclaimer}</p>
+      </div>
+      <a href=${c.route}
+        class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded border border-risk/40 text-risk text-[12px] font-mono uppercase tracking-widest hover:bg-risk/10 transition">
+        ${en?'Open dashboard':'Abrir dashboard'}
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="lg:col-span-2 panel-soft rounded-md p-4 border border-white/5">
+        <div class="flex items-center justify-between mb-2">
+          <div class="heading-mono">${en?c.videos.long.labelEn:c.videos.long.label}</div>
+          <a href=${c.videos.long.url} target="_blank" rel="noopener"
+             class="text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">YouTube ↗</a>
+        </div>
+        <${YouTubeEmbed} id=${c.videos.long.id} title=${`${en?c.titleEn:c.title} · ${en?c.subtitleEn:c.subtitle}`}/>
+      </div>
+      <div class="panel-soft rounded-md p-4 border border-white/5 flex flex-col">
+        <div class="flex items-center justify-between mb-2">
+          <div class="heading-mono">${en?c.videos.short.labelEn:c.videos.short.label}</div>
+          <a href=${c.videos.short.url} target="_blank" rel="noopener"
+             class="text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">Short ↗</a>
+        </div>
+        <${YouTubeEmbed} id=${c.videos.short.id} title=${en?c.videos.short.labelEn:c.videos.short.label}/>
+        <a href=${c.videos.long.url} target="_blank" rel="noopener"
+          class="mt-3 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+          ▶ ${en?'Watch full analysis':'Ver análisis completo'}
+        </a>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ========================================================================
    PLAN Z — Documental de inteligencia (petróleo, deuda, poder)
    Documental completo embebido desde YouTube + activación social 9:16.
    ======================================================================== */
@@ -3958,6 +4010,7 @@ function App() {
           </div>
           <${Analysis} t=${t} foco=${selectedFoco}/>
           <${Scenarios} t=${t} foco=${selectedFoco}/>
+          <${ConflictosActivosTeaser} lang=${lang}/>
           <${IntelligenceProducts} lang=${lang} onOpenMap=${()=>setView('map')}/>
           <${OsintReelsTeaser} lang=${lang} onOpen=${()=>setView('osint')}/>
           <${PlanZTeaser} lang=${lang} onOpen=${()=>setView('planz')}/>

@@ -733,6 +733,33 @@ export const SENTINEL_BRIEF = {
 };
 
 /* ========================================================================
+   CONFLICTOS ACTIVOS — Publicación del dashboard (SIMULADO)
+   Ficha editorial de la sub-página ./conflictos-activos/: qué es, qué no es
+   y el vídeo oficial que la presenta. Los datos del dashboard son simulados.
+   ======================================================================== */
+export const CONFLICTOS_ACTIVOS = {
+  id: 'conflictos-activos',
+  slug: 'conflictos-activos',
+  route: './conflictos-activos/index.html',
+  eyebrow: 'Dashboard de conflictos activos',
+  eyebrowEn: 'Active conflicts dashboard',
+  title: 'Sala situacional de conflictos activos',
+  titleEn: 'Active conflicts situation room',
+  subtitle: 'Israel-Palestina · Rusia-Ucrania',
+  subtitleEn: 'Israel-Palestine · Russia-Ukraine',
+  summary: 'Maqueta de sala situacional con mapa táctico, capas activables, KPIs, matriz de riesgo y timeline OSINT. Los datos son simulados y están congelados: muestran el método de lectura, no la situación en curso.',
+  summaryEn: 'Situation-room mockup with a tactical map, toggleable layers, KPIs, a risk matrix and an OSINT timeline. The data is simulated and frozen: it shows the reading method, not the current situation.',
+  disclaimer: 'Datos simulados. No operativo. No sustituye fuentes oficiales.',
+  disclaimerEn: 'Simulated data. Not operational. Does not replace official sources.',
+  videos: {
+    long:  { id:'6EKDWIbs0SU', url:'https://youtu.be/6EKDWIbs0SU', label:'Análisis completo', labelEn:'Full analysis' },
+    short: { id:'q-jWUWFbbcY', url:'https://youtu.be/q-jWUWFbbcY', label:'Short · teaser',    labelEn:'Short · teaser' },
+  },
+  tags: ['GEOPÓLEM', 'OSINT', 'Conflictos activos', 'Sala situacional', 'Gaza', 'Ucrania'],
+  close: 'GEOPÓLEM. Bienvenidos al tablero.',
+};
+
+/* ========================================================================
    PLAN Z — Documental de inteligencia GEOPÓLEM
    Petróleo, deuda, poder y rediseño institucional en Venezuela.
    Documental completo alojado en YouTube (público, ~37 min).
