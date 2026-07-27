@@ -1,6 +1,25 @@
-const CACHE_NAME = 'geopolem-command-v1.25.0';
+const CACHE_NAME = 'geopolem-command-v1.28.0';
 const CONFLICTS_DIR = './conflictos-activos/';
 const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
+const WATCHLIST_DIR = './conflict-watchlist-2026/';
+const WATCHLIST_SHELL = WATCHLIST_DIR + 'index.html';
+const WATCHLIST_VENDOR = WATCHLIST_DIR + 'vendor/leaflet-1.9.4/';
+// The runtime dependency the shell is useless without, named once so the precache
+// list and the navigation gate below can never drift apart.
+const WATCHLIST_LEAFLET = WATCHLIST_VENDOR + 'leaflet.js';
+// Hand-authored static page: filenames are stable, so unlike the hashed dashboard
+// bundle they can be listed here. Leaflet is vendored rather than loaded from a CDN
+// precisely so it can live in this list — an offline shell without it renders a dead
+// board, which is worse than not serving the shell at all.
+const WATCHLIST_ASSETS = [
+  WATCHLIST_SHELL,
+  WATCHLIST_DIR + 'styles.css',
+  WATCHLIST_DIR + 'app.js',
+  WATCHLIST_DIR + 'data.js',
+  WATCHLIST_DIR + 'favicon.svg',
+  WATCHLIST_VENDOR + 'leaflet.css',
+  WATCHLIST_LEAFLET
+];
 const APP_SHELL = [
   './',
   './index.html',
@@ -33,18 +52,45 @@ async function conflictsBundleCached() {
   return keys.some((r) => new URL(r.url).pathname.includes('/conflictos-activos/assets/'));
 }
 
+function situationRoom() {
+  // Serving the root HTML at the watchlist's depth would break its relative paths,
+  // so hand the user back to the situation room by URL instead.
+  return Response.redirect(new URL('index.html', self.registration.scope).href, 302);
+}
+
+// Every watchlist navigation is answered here, ahead of the generic cache-first
+// branch. That ordering is the point: the directory URL and the shell URL are
+// separate cache keys, so a visitor who browsed here online leaves a runtime-cached
+// entry for whichever one they used, and a plain `caches.match(request)` would hand
+// that shell back offline without checking Leaflet — a dead board. The dependency is
+// checked before any cached HTML is returned, and while it is missing the HTML is not
+// cached either, so the ungated entry never gets created in the first place.
+async function watchlistNavigation(request) {
+  if (await caches.match(WATCHLIST_LEAFLET)) {
+    const cached = (await caches.match(request)) || (await caches.match(WATCHLIST_SHELL));
+    if (cached) return cached;
+  }
+  try {
+    return await fetch(request);
+  } catch (error) {
+    return situationRoom();
+  }
+}
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
       await cache.addAll(APP_SHELL);
+      // Best effort, one try per sub-page: addAll is atomic, so keeping the optional
+      // sub-pages out of APP_SHELL — and apart from each other — stops one missing
+      // file from taking the whole install, and the site's offline support, down.
       try {
         await cache.addAll(await conflictsAssets());
-      } catch (error) {
-        // Best effort: addAll is atomic, so keeping the optional sub-page out of
-        // APP_SHELL stops one missing dashboard file from taking the whole install
-        // — and the site's offline support — down with it.
-      }
+      } catch (error) { /* dashboard stays network-only */ }
+      try {
+        await cache.addAll(WATCHLIST_ASSETS);
+      } catch (error) { /* watchlist stays network-only */ }
       await self.skipWaiting();
     })()
   );
@@ -73,6 +119,11 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  if (request.mode === 'navigate' && url.pathname.includes('/conflict-watchlist-2026/')) {
+    event.respondWith(watchlistNavigation(request));
+    return;
+  }
+
   event.respondWith(
     caches.match(request).then((cached) => {
       if (cached) return cached;
@@ -93,10 +144,9 @@ self.addEventListener('fetch', (event) => {
               const shell = await caches.match(CONFLICTS_SHELL);
               if (shell) return shell;
             }
-            // The shell is useless without its bundle, and serving the root HTML at
-            // this depth would break its relative paths — so hand the user back to
-            // the situation room by URL instead of rendering a blank page.
-            return Response.redirect(new URL('index.html', self.registration.scope).href, 302);
+            // The shell is useless without its bundle, so hand the user back to the
+            // situation room instead of rendering a blank page.
+            return situationRoom();
           }
           return caches.match('./index.html');
         });

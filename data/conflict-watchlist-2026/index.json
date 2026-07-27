@@ -1,0 +1,30 @@
+{
+  "project": "GEOPÓLEM",
+  "collection": "Conflict Watchlist 2026",
+  "updated_at": "2026-07-27T09:00:00+02:00",
+  "canonical_youtube_url": "https://youtu.be/6EKDWIbs0SU",
+  "items": [
+    {
+      "id": "conflict_watchlist_2026",
+      "public_label": "Conflict Watchlist 2026",
+      "title": "Conflict Watchlist 2026",
+      "subtitle": "Sala situacional · 15 focos",
+      "slug": "conflict-watchlist-2026",
+      "status": "published",
+      "data_mode": "simulated",
+      "editorial_method": ["Hecho", "Evaluación", "Hipótesis", "Señal"],
+      "disclaimer": "Datos simulados. No es monitoreo en vivo. No es un parte militar. No es una predicción.",
+      "route": "../../conflict-watchlist-2026/index.html",
+      "youtube": {
+        "long": {
+          "id": "6EKDWIbs0SU",
+          "url": "https://youtu.be/6EKDWIbs0SU"
+        },
+        "short": {
+          "id": "q-jWUWFbbcY",
+          "url": "https://youtu.be/q-jWUWFbbcY"
+        }
+      }
+    }
+  ]
+}

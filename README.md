@@ -44,6 +44,7 @@ Requiere iniciar `server.py` en el puerto 8000 antes del despliegue para exponer
 | `icons/` | 3 SVG | Iconos 192, 512 y maskable para instalación móvil/escritorio. |
 | `dossiers/` | — | Sub-página estática con los dossiers técnicos en PDF. |
 | `conflictos-activos/` | ~1,1 MB | Sub-página estática: **maqueta SIMULADA** del dashboard de conflictos activos (ver sección siguiente). Artefacto de build, no editar a mano. |
+| `conflict-watchlist-2026/` | ~160 KB | Sub-página estática: **sala situacional SIMULADA** Conflict Watchlist 2026 (ver sección siguiente). HTML/CSS/JS a mano, sin build. |
 
 **Cero dependencias instaladas.** React 18, htm y todas las fuentes vienen por CDN. Tailwind se carga vía Play CDN para conservar el flujo de un solo archivo; el backend usa solo librerías estándar de Python.
 
@@ -97,6 +98,79 @@ blanco) y la lista no se puede desincronizar con el build. Ese precache es *best
 si fallara, no impide que se instale el app shell principal, y el fallback offline
 comprueba que el bundle esté en caché antes de servir el shell del dashboard —
 si no lo está, devuelve la sala situacional en vez de una página en blanco.
+
+---
+
+## Ruta `/conflict-watchlist-2026/` — Conflict Watchlist 2026 (SIMULADO)
+
+Sala situacional estática que ordena 15 focos de conflicto activos y emergentes de
+2026. Se integra igual que `dossiers/` y `conflictos-activos/`: un directorio con su
+propio `index.html`, servido tal cual por GitHub Pages. **No añade build al sitio**:
+son cinco ficheros escritos a mano (`index.html`, `styles.css`, `app.js`, `data.js`,
+`favicon.svg`), editables directamente en este repositorio.
+
+- **Entrada**: `./conflict-watchlist-2026/index.html`, enlazada desde el FAB
+  "Conflict Watchlist 2026", desde el CTA de la pantalla de arranque en `app.js`,
+  desde el bloque de publicación del tablero y desde los accesos directos del
+  manifest.
+- **Vuelta al tablero**: enlace "← Sala situacional" en la barra de comando.
+- **Contenido**: mapa operativo (Leaflet 1.9.4), matriz de riesgo 4×4
+  (probabilidad × impacto), escenarios a 30/90/180 días, señales a vigilar,
+  cronología, fuentes declaradas con nivel de fiabilidad y exportación CSV.
+- **Método editorial visible**: cada foco separa **HECHO · EVALUACIÓN · HIPÓTESIS ·
+  SEÑAL**, con la hipótesis marcada en borde discontinuo para señalar su carácter
+  condicional. La sección `#metodo` explica los cuatro registros.
+- **Datos**: 100 % simulados y congelados (corte editorial mayo 2026). Chip
+  `SIMULADO` permanente y cuatro cautelas visibles bajo la cabecera —
+  *Datos simulados · No es monitoreo en vivo · No es un parte militar · No es una
+  predicción*—, repetidas en la metodología, en la cabecera del CSV y en el pie.
+  **No consume ninguna API real**: es independiente de `window.GEOP_API_BASE` y del
+  adaptador `api-adapter.js`. Las fuentes (ACLED, CFR, CICR, OCHA) figuran como
+  **"No conectada"**.
+- **Idiomas**: ES y EN con copy completo. FR/DE/LB traducen **parte** de la interfaz
+  (navegación, chips, ejes de la matriz) y recurren a EN en el resto; algunas
+  etiquetas fijas y `aria-label` siguen en español. Limitación conocida y asumida:
+  la página lo declara en su propia metodología.
+- **Leaflet vendorizado**: `vendor/leaflet-1.9.4/` contiene `leaflet.css` y
+  `leaflet.js` **idénticos** a los de unpkg (verificado contra los SRI que llevaba el
+  paquete: `sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=` y
+  `sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=`). No se sirve desde CDN
+  porque el service worker precachea esta ruta: un shell cacheado sin su Leaflet
+  daba un tablero muerto offline. No se incluyen las imágenes de Leaflet
+  (`marker-icon.png`, `layers.png`): la página usa `divIcon` y no instancia ni el
+  icono por defecto ni el control de capas, y se verificó que no se solicitan.
+- **Dependencias externas en runtime**: solo el basemap `basemaps.cartocdn.com`
+  (sin token) y las fuentes Fontshare/Google, ambas con degradación limpia — sin
+  basemap el mapa queda vacío pero el tablero sigue operativo, y las fuentes tienen
+  familias de respaldo. Los vídeos usan una fachada de carga bajo demanda contra
+  `youtube-nocookie.com`: **cero peticiones a terceros de vídeo al cargar la página**.
+- **Degradación sin Leaflet**: si su fichero no cargara, `app.js` no aborta; el mapa
+  muestra un aviso y KPIs, lista, tarjetas, matrices, escenarios y fuentes siguen
+  renderizando.
+- **Vídeo oficial**: versión revisada larga <https://youtu.be/6EKDWIbs0SU> y Short
+  <https://youtu.be/q-jWUWFbbcY>. URL canónica en
+  `data/conflict-watchlist-2026/index.json` y en `CONFLICT_WATCHLIST_2026`
+  (`data.js`). Al republicar el vídeo, actualiza ambos.
+
+Al modificar cualquiera de estos ficheros, **sube la versión de `CACHE_NAME`** en
+`service-worker.js`. A diferencia del dashboard, sus nombres de asset son estables y
+sí están listados en `WATCHLIST_ASSETS`; ese precache es *best effort* y no bloquea la
+instalación del app shell principal.
+
+**Todas** las navegaciones a esta ruta las resuelve `watchlistNavigation()`, que corre
+**antes** de la rama genérica cache-first. El orden es lo esencial: la URL del
+directorio y la del `index.html` son claves de caché distintas, así que quien navegue
+aquí estando online deja una entrada de runtime para la que usara, y un
+`caches.match(request)` genérico devolvería ese shell offline sin comprobar Leaflet —
+un tablero muerto. La dependencia se comprueba antes de servir cualquier HTML
+cacheado, y mientras falte tampoco se cachea el HTML, así que la entrada sin
+dependencia no llega a crearse. Si no está, se redirige a la sala situacional.
+`WATCHLIST_LEAFLET` nombra esa ruta una sola vez para que la lista de precache y la
+puerta de navegación no puedan desincronizarse.
+
+Nota editorial: `app.js` traduce los enlaces de `.mainnav` **por índice**, así que no
+deben añadirse ahí enlaces que no sean de sección (el "← Sala situacional" va fuera
+del `<nav>`).
 
 ---
 

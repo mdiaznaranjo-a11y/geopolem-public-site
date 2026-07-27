@@ -52,6 +52,13 @@
       "description": "Abrir la maqueta simulada del dashboard de conflictos activos.",
       "url": "./conflictos-activos/index.html",
       "icons": [{ "src": "./icons/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Conflict Watchlist 2026 (simulado)",
+      "short_name": "Watchlist",
+      "description": "Abrir la sala situacional Conflict Watchlist 2026 con datos simulados.",
+      "url": "./conflict-watchlist-2026/index.html",
+      "icons": [{ "src": "./icons/icon-192.svg", "sizes": "192x192" }]
     }
   ]
 }
