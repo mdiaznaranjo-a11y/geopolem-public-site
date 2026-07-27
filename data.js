@@ -782,6 +782,34 @@ export const CONFLICTOS_ACTIVOS = {
 };
 
 /* ========================================================================
+   CONFLICT WATCHLIST 2026 — Publicación de la sala situacional (SIMULADO)
+   Ficha editorial de la sub-página ./conflict-watchlist-2026/: qué es, qué no
+   es y el vídeo oficial que la presenta. Los datos de la maqueta son simulados.
+   ======================================================================== */
+export const CONFLICT_WATCHLIST_2026 = {
+  id: 'conflict-watchlist-2026',
+  slug: 'conflict-watchlist-2026',
+  route: './conflict-watchlist-2026/index.html',
+  eyebrow: 'Conflict Watchlist 2026',
+  eyebrowEn: 'Conflict Watchlist 2026',
+  title: 'Conflict Watchlist 2026',
+  titleEn: 'Conflict Watchlist 2026',
+  subtitle: 'Sala situacional · 15 focos',
+  subtitleEn: 'Situation room · 15 hotspots',
+  summary: 'Sala situacional para ordenar los focos de conflicto activos y emergentes de 2026: mapa operativo, matriz de riesgo 4×4 (probabilidad × impacto), escenarios a 30/90/180 días, señales a vigilar y fuentes declaradas con su nivel de fiabilidad. Cada foco separa de forma explícita el método HECHO · EVALUACIÓN · HIPÓTESIS · SEÑAL.',
+  summaryEn: 'A situation room for structuring the active and emerging conflict hotspots of 2026: an operational map, a 4×4 risk matrix (probability × impact), 30/90/180-day scenarios, signals to watch and declared sources with their reliability level. Each hotspot explicitly separates the FACT · ASSESSMENT · HYPOTHESIS · SIGNAL method.',
+  disclaimer: 'Datos simulados. No es monitoreo en vivo. No es un parte militar. No es una predicción.',
+  disclaimerEn: 'Simulated data. Not live monitoring. Not a military report. Not a prediction.',
+  method: ['Hecho', 'Evaluación', 'Hipótesis', 'Señal'],
+  methodEn: ['Fact', 'Assessment', 'Hypothesis', 'Signal'],
+  videos: {
+    long:  { id:'6EKDWIbs0SU', url:'https://youtu.be/6EKDWIbs0SU', label:'Análisis completo', labelEn:'Full analysis' },
+    short: { id:'q-jWUWFbbcY', url:'https://youtu.be/q-jWUWFbbcY', label:'Short · teaser',    labelEn:'Short · teaser' },
+  },
+  tags: ['GEOPÓLEM', 'OSINT', 'Conflict Watchlist', 'Sala situacional', '2026'],
+};
+
+/* ========================================================================
    PLAN Z — Documental de inteligencia GEOPÓLEM
    Petróleo, deuda, poder y rediseño institucional en Venezuela.
    Documental completo alojado en YouTube (público, ~37 min).

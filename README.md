@@ -44,6 +44,7 @@ Requiere iniciar `server.py` en el puerto 8000 antes del despliegue para exponer
 | `icons/` | 3 SVG | Iconos 192, 512 y maskable para instalación móvil/escritorio. |
 | `dossiers/` | — | Sub-página estática con los dossiers técnicos en PDF. |
 | `conflictos-activos/` | ~1,1 MB | Sub-página estática: **maqueta SIMULADA** del dashboard de conflictos activos (ver sección siguiente). Artefacto de build, no editar a mano. |
+| `conflict-watchlist-2026/` | ~160 KB | Sub-página estática: **sala situacional SIMULADA** Conflict Watchlist 2026 (ver sección siguiente). HTML/CSS/JS a mano, sin build. |
 
 **Cero dependencias instaladas.** React 18, htm y todas las fuentes vienen por CDN. Tailwind se carga vía Play CDN para conservar el flujo de un solo archivo; el backend usa solo librerías estándar de Python.
 
@@ -97,6 +98,54 @@ blanco) y la lista no se puede desincronizar con el build. Ese precache es *best
 si fallara, no impide que se instale el app shell principal, y el fallback offline
 comprueba que el bundle esté en caché antes de servir el shell del dashboard —
 si no lo está, devuelve la sala situacional en vez de una página en blanco.
+
+---
+
+## Ruta `/conflict-watchlist-2026/` — Conflict Watchlist 2026 (SIMULADO)
+
+Sala situacional estática que ordena 15 focos de conflicto activos y emergentes de
+2026. Se integra igual que `dossiers/` y `conflictos-activos/`: un directorio con su
+propio `index.html`, servido tal cual por GitHub Pages. **No añade build al sitio**:
+son cinco ficheros escritos a mano (`index.html`, `styles.css`, `app.js`, `data.js`,
+`favicon.svg`), editables directamente en este repositorio.
+
+- **Entrada**: `./conflict-watchlist-2026/index.html`, enlazada desde el FAB
+  "Conflict Watchlist 2026", desde el CTA de la pantalla de arranque en `app.js`,
+  desde el bloque de publicación del tablero y desde los accesos directos del
+  manifest.
+- **Vuelta al tablero**: enlace "← Sala situacional" en la barra de comando.
+- **Contenido**: mapa operativo (Leaflet 1.9.4), matriz de riesgo 4×4
+  (probabilidad × impacto), escenarios a 30/90/180 días, señales a vigilar,
+  cronología, fuentes declaradas con nivel de fiabilidad y exportación CSV.
+- **Método editorial visible**: cada foco separa **HECHO · EVALUACIÓN · HIPÓTESIS ·
+  SEÑAL**, con la hipótesis marcada en borde discontinuo para señalar su carácter
+  condicional. La sección `#metodo` explica los cuatro registros.
+- **Datos**: 100 % simulados y congelados (corte editorial mayo 2026). Chip
+  `SIMULADO` permanente y cuatro cautelas visibles bajo la cabecera —
+  *Datos simulados · No es monitoreo en vivo · No es un parte militar · No es una
+  predicción*—, repetidas en la metodología, en la cabecera del CSV y en el pie.
+  **No consume ninguna API real**: es independiente de `window.GEOP_API_BASE` y del
+  adaptador `api-adapter.js`. Las fuentes (ACLED, CFR, CICR, OCHA) figuran como
+  **"No conectada"**.
+- **Idiomas**: ES y EN con copy completo; FR/DE/LB traducen la interfaz y recurren a
+  EN en los textos largos.
+- **Dependencias externas en runtime**: Leaflet y basemap `basemaps.cartocdn.com`
+  (sin token) más fuentes Fontshare/Google. Los vídeos usan una fachada de carga
+  bajo demanda contra `youtube-nocookie.com`: **cero peticiones a terceros de vídeo
+  al cargar la página**.
+- **Vídeo oficial**: versión revisada larga <https://youtu.be/6EKDWIbs0SU> y Short
+  <https://youtu.be/q-jWUWFbbcY>. URL canónica en
+  `data/conflict-watchlist-2026/index.json` y en `CONFLICT_WATCHLIST_2026`
+  (`data.js`). Al republicar el vídeo, actualiza ambos.
+
+Al modificar cualquiera de los cinco ficheros, **sube la versión de `CACHE_NAME`** en
+`service-worker.js`. A diferencia del dashboard, sus nombres de asset son estables y
+sí están listados en `WATCHLIST_ASSETS`; ese precache es *best effort* y no bloquea la
+instalación del app shell principal.
+
+Nota editorial: `app.js` traduce los enlaces de `.mainnav` **por índice**, así que no
+deben añadirse ahí enlaces que no sean de sección (el "← Sala situacional" va fuera
+del `<nav>`).
 
 ---
 

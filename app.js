@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, CONFLICTOS_ACTIVOS } from './data.js';
+import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, CONFLICTOS_ACTIVOS, CONFLICT_WATCHLIST_2026 } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 import { loadWatchlistFocos } from './api-adapter.js';
@@ -1313,6 +1313,12 @@ function CommandBoot({ onEnter }) {
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>
               Conflictos activos
               <span class="px-1 rounded bg-risk/20 text-[9px] tracking-[0.18em]">SIM</span>
+            </a>
+            <a href="./conflict-watchlist-2026/index.html"
+              class="mt-2 flex items-center justify-center gap-2 px-3 py-2.5 rounded border border-radar/40 text-radar text-[11px] font-mono uppercase tracking-[0.22em] hover:bg-radar/10 hover:shadow-glow transition">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg>
+              Conflict Watchlist 2026
+              <span class="px-1 rounded bg-radar/20 text-[9px] tracking-[0.18em]">SIM</span>
             </a>
           </div>
         </div>
@@ -2905,6 +2911,51 @@ function ConflictosActivosTeaser({ lang }) {
 }
 
 /* ========================================================================
+   Conflict Watchlist 2026 — sala situacional estática (SIMULADO)
+   Acceso a la sub-página ./conflict-watchlist-2026/ y método editorial.
+   ======================================================================== */
+function ConflictWatchlistTeaser({ lang }) {
+  const en = lang === 'EN';
+  const w = CONFLICT_WATCHLIST_2026;
+  const method = en ? w.methodEn : w.method;
+  return html`
+  <section class="panel rounded-lg p-4 lg:p-5 border border-radar/25 space-y-4">
+    <div class="flex flex-wrap items-start justify-between gap-3">
+      <div class="max-w-2xl space-y-1.5">
+        <div class="flex items-center gap-2">
+          <div class="heading-mono text-radar">${en?w.eyebrowEn:w.eyebrow}</div>
+          <span class="px-1 rounded bg-radar/20 text-radar font-mono text-[9px] tracking-[0.18em]">SIM</span>
+        </div>
+        <h3 class="font-display font-bold text-[20px] lg:text-[24px] text-slate-50 leading-tight">
+          ${en?w.titleEn:w.title} <span class="text-radar">${en?w.subtitleEn:w.subtitle}</span>
+        </h3>
+        <p class="text-[13px] text-slate-300 leading-relaxed">${en?w.summaryEn:w.summary}</p>
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          ${method.map(step => html`
+            <span key=${step} class="chip" style=${{borderColor:'rgba(34,211,238,0.35)', color:'#67e8f9', background:'rgba(34,211,238,0.08)'}}>${step}</span>
+          `)}
+        </div>
+        <p class="text-[11.5px] font-mono uppercase tracking-widest text-slate-500">${en?w.disclaimerEn:w.disclaimer}</p>
+      </div>
+      <div class="shrink-0 flex flex-col gap-2">
+        <a href=${w.route}
+          class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+          ${en?'Open watchlist':'Abrir watchlist'}
+        </a>
+        <a href=${w.videos.long.url} target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded border border-white/10 text-slate-300 text-[11px] font-mono uppercase tracking-widest hover:bg-white/5 transition">
+          ▶ ${en?w.videos.long.labelEn:w.videos.long.label} ↗
+        </a>
+        <a href=${w.videos.short.url} target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded border border-white/10 text-slate-300 text-[11px] font-mono uppercase tracking-widest hover:bg-white/5 transition">
+          ${en?w.videos.short.labelEn:w.videos.short.label} ↗
+        </a>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ========================================================================
    PLAN Z — Documental de inteligencia (petróleo, deuda, poder)
    Documental completo embebido desde YouTube + activación social 9:16.
    ======================================================================== */
@@ -4044,6 +4095,7 @@ function App() {
           <${Analysis} t=${t} foco=${selectedFoco}/>
           <${Scenarios} t=${t} foco=${selectedFoco}/>
           <${ConflictosActivosTeaser} lang=${lang}/>
+          <${ConflictWatchlistTeaser} lang=${lang}/>
           <${IntelligenceProducts} lang=${lang} onOpenMap=${()=>setView('map')}/>
           <${OsintReelsTeaser} lang=${lang} onOpen=${()=>setView('osint')}/>
           <${PlanZTeaser} lang=${lang} onOpen=${()=>setView('planz')}/>

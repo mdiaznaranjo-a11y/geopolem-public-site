@@ -1,6 +1,17 @@
-const CACHE_NAME = 'geopolem-command-v1.25.0';
+const CACHE_NAME = 'geopolem-command-v1.26.0';
 const CONFLICTS_DIR = './conflictos-activos/';
 const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
+const WATCHLIST_DIR = './conflict-watchlist-2026/';
+const WATCHLIST_SHELL = WATCHLIST_DIR + 'index.html';
+// Hand-authored static page: filenames are stable, so unlike the hashed dashboard
+// bundle they can be listed here.
+const WATCHLIST_ASSETS = [
+  WATCHLIST_SHELL,
+  WATCHLIST_DIR + 'styles.css',
+  WATCHLIST_DIR + 'app.js',
+  WATCHLIST_DIR + 'data.js',
+  WATCHLIST_DIR + 'favicon.svg'
+];
 const APP_SHELL = [
   './',
   './index.html',
@@ -38,13 +49,15 @@ self.addEventListener('install', (event) => {
     (async () => {
       const cache = await caches.open(CACHE_NAME);
       await cache.addAll(APP_SHELL);
+      // Best effort, one try per sub-page: addAll is atomic, so keeping the optional
+      // sub-pages out of APP_SHELL — and apart from each other — stops one missing
+      // file from taking the whole install, and the site's offline support, down.
       try {
         await cache.addAll(await conflictsAssets());
-      } catch (error) {
-        // Best effort: addAll is atomic, so keeping the optional sub-page out of
-        // APP_SHELL stops one missing dashboard file from taking the whole install
-        // — and the site's offline support — down with it.
-      }
+      } catch (error) { /* dashboard stays network-only */ }
+      try {
+        await cache.addAll(WATCHLIST_ASSETS);
+      } catch (error) { /* watchlist stays network-only */ }
       await self.skipWaiting();
     })()
   );
@@ -97,6 +110,11 @@ self.addEventListener('fetch', (event) => {
             // this depth would break its relative paths — so hand the user back to
             // the situation room by URL instead of rendering a blank page.
             return Response.redirect(new URL('index.html', self.registration.scope).href, 302);
+          }
+          if (url.pathname.includes('/conflict-watchlist-2026/')) {
+            const shell = await caches.match(WATCHLIST_SHELL);
+            // Serving the root HTML at this depth would break its relative paths.
+            return shell || Response.redirect(new URL('index.html', self.registration.scope).href, 302);
           }
           return caches.match('./index.html');
         });

@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>GEOPÓLEM · Conflict Watchlist 2026 — Sala situacional OSINT</title>
+<meta name="description" content="Maqueta de sala situacional GEOPÓLEM para ordenar focos de conflicto activos y emergentes en 2026: mapa operativo, matriz de riesgo, escenarios, fuentes y método editorial HECHO · EVALUACIÓN · HIPÓTESIS · SEÑAL. Datos simulados: no es monitoreo en vivo." />
+<meta name="author" content="GEOPÓLEM" />
+<meta name="theme-color" content="#070A0D" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="GEOPÓLEM · Conflict Watchlist 2026" />
+<meta property="og:description" content="Sala situacional para ordenar el tablero de conflictos 2026: mapa, matriz de riesgo, escenarios y fuentes visibles. Maqueta con datos simulados." />
+<meta property="og:locale" content="es_ES" />
+
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#mapa">Saltar al mapa operativo</a>
+
+<!-- ============ COMMAND BAR ============ -->
+<header class="commandbar">
+  <div class="commandbar__inner">
+    <a class="brand" href="#top" aria-label="GEOPÓLEM · Conflict Watchlist 2026">
+      <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="29" height="29" rx="1" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M1.5 16h29M16 1.5v29" stroke="currentColor" stroke-width=".7" opacity=".45"/>
+        <circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.1" opacity=".7"/>
+        <circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="1.1"/>
+        <circle cx="23.5" cy="8.5" r="2.4" fill="#FF4D5E"/>
+      </svg>
+      <span class="brand__text">
+        <span class="brand__name">GEOPÓLEM</span>
+        <span class="brand__sub">Conflict Watchlist 2026</span>
+      </span>
+    </a>
+
+    <span class="badge-sim" id="badge-sim">SIMULADO</span>
+
+    <a class="backlink" href="../index.html">← Sala situacional</a>
+
+    <!-- app.js traduce `.mainnav a` por índice: no añadir aquí enlaces que no sean de sección. -->
+    <nav class="mainnav" aria-label="Navegación principal">
+      <a href="#metodo">Método</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#riesgo">Riesgo</a>
+      <a href="#focos">Focos</a>
+      <a href="#senales">Señales</a>
+      <a href="#escenarios">Escenarios</a>
+      <a href="#fuentes">Fuentes</a>
+    </nav>
+
+    <div class="lang" aria-label="Selector de idioma">
+      <button class="lang__btn is-active" type="button" data-lang="es">ES</button>
+      <button class="lang__btn" type="button" data-lang="en">EN</button>
+      <button class="lang__btn" type="button" data-lang="fr">FR</button>
+      <button class="lang__btn" type="button" data-lang="de">DE</button>
+      <button class="lang__btn" type="button" data-lang="lb">LB</button>
+    </div>
+
+    <div class="clock">
+      <span class="pulse" aria-hidden="true"></span>
+      <span id="clock-text">Corte editorial · mayo 2026</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ CAUTELAS ============ -->
+<div class="cautions" role="note" aria-label="Cautelas editoriales">
+  <div class="cautions__inner" id="cautions">
+    <span class="caution caution--hard">Datos simulados</span>
+    <span class="caution caution--hard">No es monitoreo en vivo</span>
+    <span class="caution">No es un parte militar</span>
+    <span class="caution">No es una predicción</span>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="shell hero__inner">
+    <div>
+      <span class="kicker" id="hero-kicker">Sala situacional · Edición 2026</span>
+      <h1 class="hero__title">
+        <small>Conflict Watchlist</small>
+        Ordenar el tablero <span>antes de opinar</span>
+      </h1>
+      <p class="hero__lede" id="hero-lede">Maqueta funcional de sala situacional para leer los focos de conflicto activos y emergentes de 2026. Mapa operativo, matriz de riesgo, escenarios, fuentes visibles y separación editorial explícita entre hecho, evaluación, hipótesis y señal.</p>
+      <p class="hero__note" id="hero-note"><strong>Cautela.</strong> Esta versión utiliza datos simulados para mostrar la arquitectura del producto y su método editorial. No es monitoreo en vivo, no es un parte militar y no es una predicción. Verificar siempre en fuente primaria antes de cualquier uso operativo.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="https://youtu.be/6EKDWIbs0SU" target="_blank" rel="noopener" id="cta-long">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          Ver análisis completo
+        </a>
+        <a class="btn" href="#mapa" id="cta-board">Abrir tablero</a>
+        <button class="btn" type="button" id="download-csv">Descargar CSV</button>
+      </div>
+    </div>
+
+    <aside class="statuspanel" aria-label="Panel de estado global">
+      <div class="statuspanel__head">
+        <span id="sp-title">Estado global</span>
+        <strong id="sp-date">Mayo 2026</strong>
+      </div>
+      <div class="statuspanel__body">
+        <div class="radar" aria-hidden="true">
+          <span style="--x:54%;--y:34%;--s:1.3"></span>
+          <span style="--x:60%;--y:44%;--s:1.2"></span>
+          <span class="is-amber" style="--x:47%;--y:52%;--s:1"></span>
+          <span style="--x:73%;--y:46%;--s:1.15"></span>
+          <span class="is-cyan" style="--x:22%;--y:60%;--s:.9"></span>
+          <span class="is-amber" style="--x:50%;--y:66%;--s:.9"></span>
+          <span class="is-cyan" style="--x:33%;--y:26%;--s:.85"></span>
+          <span class="radar__label">Distribución esquemática · no cartográfica</span>
+        </div>
+        <div class="statuspanel__grid">
+          <div><span id="sp-l1">Alta</span><strong id="hero-high">—</strong></div>
+          <div><span id="sp-l2">Regiones</span><strong id="hero-regions">—</strong></div>
+          <div><span id="sp-l3">Focos</span><strong id="hero-total">—</strong></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ KPI STRIP ============ -->
+<section class="kpis" aria-label="Indicadores del tablero">
+  <div class="kpis__inner">
+    <div class="kpi">
+      <div class="kpi__label">Focos en seguimiento</div>
+      <div class="kpi__value" id="kpi-total">—</div>
+      <div class="kpi__hint">conflictos activos o emergentes</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi__label">Intensidad alta</div>
+      <div class="kpi__value" id="kpi-alta">—</div>
+      <div class="kpi__hint">violencia armada sostenida</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi__label">Regiones cubiertas</div>
+      <div class="kpi__value" id="kpi-regiones">—</div>
+      <div class="kpi__hint">distribución global</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi__label">Confianza agregada</div>
+      <div class="kpi__value kpi__value--text" id="kpi-confianza">—</div>
+      <div class="kpi__hint">densidad y consistencia de fuentes</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTODO ============ -->
+<section id="metodo" class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="kicker" id="metodo-kicker">Método editorial</span>
+      <h2 id="metodo-title">HECHO · EVALUACIÓN · HIPÓTESIS · SEÑAL</h2>
+      <p id="metodo-text">Cada ficha del tablero separa lo confirmado de lo probable, lo analítico de lo especulativo y lo urgente de lo importante. La regla es visible en la interfaz: color, borde y etiqueta indican qué estás leyendo.</p>
+    </div>
+    <div class="method__grid" id="method-grid">
+      <article class="method-card method-card--hecho">
+        <h3>Hecho</h3>
+        <p>Lo verificable y sostenido por fuentes abiertas contrastadas. Sin adjetivos y sin inferencia.</p>
+        <span class="rule">Borde sólido · icono lleno</span>
+      </article>
+      <article class="method-card method-card--evaluacion">
+        <h3>Evaluación</h3>
+        <p>Lectura analítica de GEOPÓLEM sobre ese hecho: qué significa y por qué importa en el tablero.</p>
+        <span class="rule">Borde continuo · atribuida</span>
+      </article>
+      <article class="method-card method-card--hipotesis">
+        <h3>Hipótesis</h3>
+        <p>Escenario plausible y explícitamente no confirmado. Se enuncia como posibilidad, nunca como pronóstico.</p>
+        <span class="rule">Borde discontinuo · condicional</span>
+      </article>
+      <article class="method-card method-card--senal">
+        <h3>Señal</h3>
+        <p>Indicador concreto y observable que confirmaría o descartaría la hipótesis en las próximas semanas.</p>
+        <span class="rule">Marca ámbar · verificable</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBSERVATORIO / MAPA ============ -->
+<section id="mapa" class="section">
+  <div class="shell">
+    <div class="observatory__head">
+      <div>
+        <span class="kicker" id="mapa-kicker">Mapa operativo</span>
+        <h2 id="mapa-title">Observatorio · 15 focos en seguimiento</h2>
+        <p id="mapa-text">Selecciona un foco en el mapa o en la lista para abrir su ficha con hecho, evaluación, hipótesis y señal. El tamaño del marcador refleja una categoría editorial de intensidad, no víctimas ni territorio.</p>
+      </div>
+    </div>
+
+    <div class="board">
+      <aside class="panel" aria-label="Filtros y lista de focos">
+        <div class="panel__title" id="panel-filters-title">Filtros · Lista</div>
+        <div class="filters">
+          <label class="filters__search">
+            <span class="visually-hidden">Buscar foco</span>
+            <input id="search" type="search" placeholder="Buscar país o foco…" autocomplete="off" />
+          </label>
+
+          <fieldset class="filter-group">
+            <legend>Intensidad</legend>
+            <div class="chips" id="filter-intensity">
+              <button class="chip is-active" data-filter="intensity" data-value="all">Todas</button>
+              <button class="chip" data-filter="intensity" data-value="alta"><span class="swatch swatch--high" aria-hidden="true"></span>Alta</button>
+              <button class="chip" data-filter="intensity" data-value="media-alta"><span class="swatch swatch--medhigh" aria-hidden="true"></span>Media-alta</button>
+              <button class="chip" data-filter="intensity" data-value="media"><span class="swatch swatch--med" aria-hidden="true"></span>Media</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend>Región</legend>
+            <div class="chips" id="filter-region">
+              <button class="chip is-active" data-filter="region" data-value="all">Todas</button>
+              <button class="chip" data-filter="region" data-value="Europa">Europa</button>
+              <button class="chip" data-filter="region" data-value="Oriente Medio">Oriente Medio</button>
+              <button class="chip" data-filter="region" data-value="África">África</button>
+              <button class="chip" data-filter="region" data-value="Asia">Asia</button>
+              <button class="chip" data-filter="region" data-value="América">América</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend>Tipo</legend>
+            <div class="chips" id="filter-type">
+              <button class="chip is-active" data-filter="type" data-value="all">Todos</button>
+              <button class="chip" data-filter="type" data-value="Interestatal">Interestatal</button>
+              <button class="chip" data-filter="type" data-value="Guerra civil">Guerra civil</button>
+              <button class="chip" data-filter="type" data-value="Insurgencia">Insurgencia</button>
+              <button class="chip" data-filter="type" data-value="Crimen organizado">Crimen organizado</button>
+              <button class="chip" data-filter="type" data-value="Híbrida/marítima">Híbrida/marítima</button>
+            </div>
+          </fieldset>
+
+          <div class="filters__meta">
+            <span id="result-count">—</span>
+            <button id="reset" class="linklike" type="button">Restablecer</button>
+          </div>
+        </div>
+
+        <div class="list" id="list" role="list" aria-label="Lista de focos"></div>
+      </aside>
+
+      <div class="mapwrap">
+        <div id="map" role="region" aria-label="Mapa mundial de focos de conflicto"></div>
+        <div class="legend" aria-label="Leyenda">
+          <div class="legend__title" id="legend-title">Intensidad</div>
+          <div class="legend__row"><span class="dot dot--high" aria-hidden="true"></span><span>Alta</span></div>
+          <div class="legend__row"><span class="dot dot--medhigh" aria-hidden="true"></span><span>Media-alta</span></div>
+          <div class="legend__row"><span class="dot dot--med" aria-hidden="true"></span><span>Media</span></div>
+          <div class="legend__note" id="legend-note">Categoría editorial comparativa. No refleja víctimas, territorio ni estatus jurídico.</div>
+        </div>
+      </div>
+
+      <article class="panel detail" id="detail" aria-live="polite">
+        <div class="panel__title" id="panel-detail-title">Ficha de foco</div>
+        <div class="detail__body">
+          <div class="detail__placeholder" id="detail-placeholder">
+            <h3>Selecciona un foco</h3>
+            <p>Abre un marcador, una tarjeta o una celda de la matriz de riesgo para ver la ficha con hecho, evaluación, hipótesis, señal y fuentes orientativas.</p>
+          </div>
+          <div class="detail__content" id="detail-content" hidden>
+            <header class="detail__head">
+              <span class="detail__region" id="d-region"></span>
+              <h3 id="d-title"></h3>
+              <div class="detail__tags">
+                <span class="badge" id="d-type"></span>
+                <span class="badge badge--intensity" id="d-intensity"></span>
+                <span class="badge badge--conf" id="d-confianza"></span>
+              </div>
+            </header>
+            <p class="detail__summary" id="d-summary"></p>
+
+            <dl class="intel">
+              <div class="intel__item intel__item--hecho"><dt id="lbl-hecho">Hecho</dt><dd id="d-hecho"></dd></div>
+              <div class="intel__item intel__item--evaluacion"><dt id="lbl-evaluacion">Evaluación</dt><dd id="d-evaluacion"></dd></div>
+              <div class="intel__item intel__item--hipotesis"><dt id="lbl-hipotesis">Hipótesis</dt><dd id="d-hipotesis"></dd></div>
+              <div class="intel__item intel__item--senal"><dt id="lbl-senal">Señal a vigilar</dt><dd id="d-senal"></dd></div>
+            </dl>
+
+            <dl class="detail__grid">
+              <div><dt>Actores principales</dt><dd id="d-actors"></dd></div>
+              <div><dt>Riesgo humanitario</dt><dd id="d-humanitarian"></dd></div>
+              <div><dt>Evolución esperada 2026</dt><dd id="d-outlook"></dd></div>
+            </dl>
+
+            <footer class="detail__foot">
+              <span>Fuentes orientativas:</span>
+              <span id="d-sources"></span>
+            </footer>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MATRIZ DE RIESGO ============ -->
+<section id="riesgo" class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="kicker" id="riesgo-kicker">Panel de riesgo</span>
+      <h2 id="riesgo-title">Matriz de riesgo · probabilidad de escalada × impacto</h2>
+      <p id="riesgo-text">Lectura editorial a 30–90 días. La posición en la matriz es una estimación comparativa e interna del equipo, no una métrica estandarizada ni una probabilidad calculada. Pulsa cualquier foco para abrir su ficha.</p>
+    </div>
+
+    <div class="riskmatrix">
+      <div class="riskmatrix__ylabel" id="risk-ylabel">Impacto</div>
+      <div class="riskyaxis" id="risk-yaxis">
+        <span>Muy alto</span><span>Alto</span><span>Moderado</span><span>Bajo</span>
+      </div>
+      <div class="riskgrid" id="risk-grid"></div>
+      <div class="riskaxis" id="risk-axis">
+        <span>Bajo</span><span>Moderado</span><span>Alto</span><span>Muy alto</span>
+      </div>
+      <div class="riskaxis__title" id="risk-xlabel">Probabilidad de escalada</div>
+    </div>
+
+    <div class="section__head" style="margin-top:2.75rem">
+      <span class="kicker" id="matrix-kicker">Concentración regional</span>
+      <h2 id="matrix-title">Matriz regional · intensidad y volumen</h2>
+      <p id="matrix-text">Lectura comparativa por región para priorizar cobertura y seguimiento editorial.</p>
+    </div>
+    <div class="matrix__grid" id="region-matrix"></div>
+  </div>
+</section>
+
+<!-- ============ FOCOS ============ -->
+<section id="focos" class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="kicker" id="focos-kicker">Fichas</span>
+      <h2 id="focos-title">Focos a vigilar</h2>
+      <p id="focos-text">Síntesis ordenada por intensidad editorial estimada. Cada tarjeta es una ficha de análisis, no un informe oficial.</p>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<!-- ============ SEÑALES ============ -->
+<section id="senales" class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="kicker" id="senales-kicker">Lecturas transversales</span>
+      <h2 id="senales-title">Cinco señales que cruzan varios focos</h2>
+      <p id="senales-text">Patrones que no se explican país a país y conviene seguir durante el año.</p>
+    </div>
+    <div class="signals">
+      <article class="signal">
+        <span class="signal__num">S—01</span>
+        <h3>Presión híbrida marítima en Europa</h3>
+        <p>Incidentes contra cables submarinos y gasoductos en el Báltico y el Mar del Norte han llevado a la OTAN y la UE a tratar la infraestructura crítica subacuática como dominio de seguridad propio, con sospechas recurrentes sobre actores ligados a Rusia (<a href="https://acleddata.com/global-analysis" target="_blank" rel="noopener">ACLED</a>). La atribución formal sigue siendo el punto débil del expediente.</p>
+      </article>
+      <article class="signal">
+        <span class="signal__num">S—02</span>
+        <h3>Violencia yihadista expansiva en África</h3>
+        <p>El Sahel central, la cuenca del Lago Chad, el norte de Mozambique y bolsas en Somalia mantienen violencia sostenida; ACLED señala crecimiento del impacto sobre civiles en 2025–2026 (<a href="https://acleddata.com/global-analysis" target="_blank" rel="noopener">ACLED Global Analysis</a>). El indicador útil es el acceso, no la línea de frente.</p>
+      </article>
+      <article class="signal">
+        <span class="signal__num">S—03</span>
+        <h3>Superposición de guerra y emergencia sanitaria</h3>
+        <p>Brotes en zonas de conflicto del este de la RDC y alerta alimentaria en Sudán elevan la presión sobre el Derecho Internacional Humanitario y sobre la capacidad de respuesta (<a href="https://www.icrc.org" target="_blank" rel="noopener">CICR/ICRC</a>).</p>
+      </article>
+      <article class="signal">
+        <span class="signal__num">S—04</span>
+        <h3>Erosión estatal y actores no estatales</h3>
+        <p>Haití, partes del Sahel, el norte de Mozambique y la frontera colombo-venezolana muestran cómo grupos armados no estatales, pandillas y economías ilícitas erosionan la capacidad del Estado sin producir un frente clásico.</p>
+      </article>
+      <article class="signal">
+        <span class="signal__num">S—05</span>
+        <h3>Frentes acoplados en Oriente Medio</h3>
+        <p>El eje Israel–Gaza–Líbano–Irán y los incidentes en el Mar Rojo siguen articulando una crisis regional con efectos sobre rutas comerciales globales (<a href="https://acleddata.com/global-analysis" target="_blank" rel="noopener">ACLED</a>, <a href="https://www.cfr.org/global-conflict-tracker" target="_blank" rel="noopener">CFR</a>).</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESCENARIOS ============ -->
+<section id="escenarios" class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="kicker" id="esc-kicker">Marco prospectivo</span>
+      <h2 id="esc-title">Escenarios · 30, 90 y 180 días</h2>
+      <p id="esc-text">Marco de análisis para estructurar el seguimiento. No es una predicción: cada escenario se enuncia con el indicador que lo confirmaría o lo descartaría.</p>
+    </div>
+    <div class="scenarios" id="scenarios"></div>
+  </div>
+</section>
+
+<!-- ============ CRONOLOGÍA ============ -->
+<section id="cronologia" class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="kicker" id="crono-kicker">Contexto</span>
+      <h2 id="crono-title">Cronología editorial 2024 – 2026</h2>
+      <p id="crono-text">Hitos abreviados para enmarcar la evolución. No es un registro exhaustivo de hechos.</p>
+    </div>
+    <ol class="timeline__list">
+      <li>
+        <span class="timeline__year">2024</span>
+        <p>Continuidad de la guerra a gran escala en Ucrania; recrudecimiento del conflicto en Gaza con expansión regional hacia Líbano y el Mar Rojo; deterioro de la guerra civil en Sudán.</p>
+      </li>
+      <li>
+        <span class="timeline__year">2025</span>
+        <p>Fracturas internas en las RSF en Sudán; ofensivas insurgentes en Myanmar y expansión de la violencia en el Sahel; aumento de incidentes contra infraestructura submarina en el Báltico.</p>
+      </li>
+      <li>
+        <span class="timeline__year">2026</span>
+        <p><strong>Corte actual.</strong> Crisis de Estado en Haití, debate sobre actores armados en Colombia, Venezuela y México, brotes sanitarios en zonas de conflicto del este de la RDC y revisión periódica de la actividad insurgente en Mozambique.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ AUDIOVISUAL ============ -->
+<section id="audiovisual" class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="kicker" id="av-kicker">Piezas oficiales</span>
+      <h2 id="av-title">Cómo se lee este tablero</h2>
+      <p id="av-text">Piezas audiovisuales oficiales de GEOPÓLEM que explican la sala situacional y el método. Los vídeos se cargan solo al pulsar, para no enviar datos a terceros al abrir la página.</p>
+    </div>
+
+    <div class="av">
+      <article class="avcard">
+        <div class="avcard__media" data-video="6EKDWIbs0SU">
+          <button class="avfacade" type="button" aria-label="Reproducir el vídeo largo oficial revisado">
+            <span class="avfacade__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="avfacade__txt">Vídeo largo oficial revisado · YouTube</span>
+          </button>
+        </div>
+        <div class="avcard__body">
+          <span class="avcard__kicker">Pieza principal</span>
+          <h3>GEOPÓLEM · Conflictos activos: sala situacional, método y lectura del tablero</h3>
+          <p>Explicación completa de la arquitectura del tablero, las capas, la matriz de riesgo y la separación editorial entre hecho, evaluación, hipótesis y señal.</p>
+          <a class="avcard__link" href="https://youtu.be/6EKDWIbs0SU" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+        </div>
+      </article>
+
+      <article class="avcard avcard--short">
+        <div class="avcard__media" data-video="q-jWUWFbbcY">
+          <button class="avfacade" type="button" aria-label="Reproducir el short oficial">
+            <span class="avfacade__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="avfacade__txt">Short · YouTube</span>
+          </button>
+        </div>
+        <div class="avcard__body">
+          <span class="avcard__kicker">Pieza corta</span>
+          <h3>No opinamos primero. Ordenamos el tablero.</h3>
+          <p>Versión breve de la sala situacional. Enlaza siempre al análisis completo.</p>
+          <a class="avcard__link" href="https://youtu.be/q-jWUWFbbcY" target="_blank" rel="noopener">Ver short ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUENTES ============ -->
+<section id="fuentes" class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="kicker" id="src-kicker">Source stack</span>
+      <h2 id="src-title">Fuentes y niveles de confianza</h2>
+      <p id="src-text">Las fuentes son visibles pero no están conectadas a APIs en esta maqueta. La confianza indica densidad y consistencia del material disponible, no certeza sobre los hechos.</p>
+    </div>
+    <div class="sourcegrid" id="source-stack"></div>
+  </div>
+</section>
+
+<!-- ============ METODOLOGÍA ============ -->
+<section id="metodologia" class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="kicker" id="mtd-kicker">Metodología</span>
+      <h2 id="mtd-title">Cómo se construye y cómo no debe usarse</h2>
+    </div>
+
+    <div class="method-cols">
+      <div>
+        <h3>Construcción</h3>
+        <ul>
+          <li>Selección editorial de focos activos o emergentes con cobertura significativa en fuentes abiertas durante 2024–2026.</li>
+          <li>Clasificación por intensidad, región y tipo en términos descriptivos, nunca jurídicos.</li>
+          <li>Probabilidad e impacto son estimaciones comparativas internas en escala 1–4, no probabilidades calculadas.</li>
+          <li>Coordenadas aproximadas para localizar el foco, no para delimitar áreas de operaciones.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Limitaciones</h3>
+        <ul>
+          <li>Maqueta funcional con <strong>datos simulados</strong>: no sustituye bases de datos oficiales ni verificación humana.</li>
+          <li>La intensidad es una categoría comparativa interna, no una métrica estandarizada.</li>
+          <li>Crimen organizado, presión híbrida y ciberoperaciones no encajan limpiamente en categorías clásicas de conflicto armado.</li>
+          <li>La inclusión de un foco no implica equivalencia jurídica ni política con los demás.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Arquitectura</h3>
+        <ul>
+          <li>Sitio estático sin backend: HTML, CSS y JavaScript sin dependencias de build.</li>
+          <li>Preparado para conectar fuentes OSINT y humanitarias en una fase posterior.</li>
+          <li>Exportación CSV del dataset editorial para revisión externa.</li>
+          <li>Cinco idiomas de interfaz; el análisis largo se sirve en español e inglés.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="usage">
+      <div class="usage__box usage__box--ok">
+        <h3>Formulaciones correctas</h3>
+        <ul>
+          <li>«Maqueta funcional con datos simulados.»</li>
+          <li>«Diseñada para integrar fuentes OSINT y humanitarias.»</li>
+          <li>«Separación editorial entre hecho, evaluación, hipótesis y señal.»</li>
+          <li>«No sustituye verificación humana ni fuentes primarias.»</li>
+        </ul>
+      </div>
+      <div class="usage__box usage__box--no">
+        <h3>Formulaciones a evitar</h3>
+        <ul>
+          <li>«Monitoreo en tiempo real» o «datos en vivo».</li>
+          <li>«Mapa definitivo del conflicto.»</li>
+          <li>«Predicción confirmada» o cualquier lectura determinista.</li>
+          <li>Presentar un dato simulado como evidencia real.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__inner">
+    <div class="footer__brandline">GEOPÓLEM. Bienvenidos al tablero.</div>
+    <div class="footer__links">
+      <a href="https://youtu.be/6EKDWIbs0SU" target="_blank" rel="noopener">Vídeo oficial</a>
+      <a href="https://youtu.be/q-jWUWFbbcY" target="_blank" rel="noopener">Short</a>
+      <a href="https://acleddata.com/global-analysis" target="_blank" rel="noopener">ACLED</a>
+      <a href="https://www.cfr.org/global-conflict-tracker" target="_blank" rel="noopener">CFR</a>
+      <a href="https://www.icrc.org" target="_blank" rel="noopener">CICR</a>
+    </div>
+    <div class="footer__note" id="footer-note">
+      GEOPÓLEM · Conflict Watchlist 2026 — maqueta de sala situacional con datos simulados, corte editorial mayo 2026. No es monitoreo en vivo, no es un parte militar y no es una predicción. No sustituye bases de datos oficiales: verificar antes de cualquier uso operativo.
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
