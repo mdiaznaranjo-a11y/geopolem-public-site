@@ -46,8 +46,89 @@
     />
     <script type="module" crossorigin src="./assets/index-CVqbRfEk.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BtYR6WgE.css">
+
+    <!-- Rendered outside #root so it survives every rebuild of the hashed dashboard bundle. -->
+    <style>
+      .gp-video-cta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--sp-3, 12px) var(--sp-5, 24px);
+        padding: var(--sp-3, 12px) var(--sp-4, 16px);
+        background: var(--s1, #0d1117);
+        border-bottom: 1px solid var(--border, #263241);
+        font-family: var(--font-body, system-ui, sans-serif);
+        color: var(--text, #e6edf3);
+      }
+      .gp-video-cta__eyebrow {
+        font-family: var(--font-mono, ui-monospace, monospace);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--cyan, #3dd6d0);
+      }
+      .gp-video-cta__title {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .gp-video-cta__note {
+        font-size: 12px;
+        color: var(--text-3, #8b98a8);
+      }
+      .gp-video-cta__links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--sp-3, 12px);
+        margin-left: auto;
+      }
+      .gp-video-cta__link {
+        border: 1px solid var(--border, #263241);
+        border-radius: var(--r, 8px);
+        padding: 6px 12px;
+        font-size: 13px;
+        color: var(--text, #e6edf3);
+        text-decoration: none;
+      }
+      .gp-video-cta__link:hover,
+      .gp-video-cta__link:focus-visible {
+        border-color: var(--cyan, #3dd6d0);
+        color: var(--cyan, #3dd6d0);
+      }
+      .gp-video-cta__url {
+        font-family: var(--font-mono, ui-monospace, monospace);
+        font-size: 11px;
+        color: var(--text-3, #8b98a8);
+      }
+    </style>
   </head>
   <body>
+    <section class="gp-video-cta" aria-label="Vídeo oficial de la sala situacional">
+      <div>
+        <div class="gp-video-cta__eyebrow">Vídeo oficial revisado</div>
+        <div class="gp-video-cta__title">Sala situacional, método y lectura del tablero</div>
+        <div class="gp-video-cta__note">
+          Datos simulados. No es monitorización en vivo ni sustituye a fuentes oficiales.
+        </div>
+      </div>
+      <div class="gp-video-cta__links">
+        <a
+          class="gp-video-cta__link"
+          href="https://youtu.be/6EKDWIbs0SU"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ver en YouTube</a
+        >
+        <a
+          class="gp-video-cta__link"
+          href="https://youtu.be/q-jWUWFbbcY"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Short · resumen</a
+        >
+        <span class="gp-video-cta__url">https://youtu.be/6EKDWIbs0SU</span>
+      </div>
+    </section>
     <div id="root"></div>
     <noscript>
       Esta maqueta de sala situacional necesita JavaScript activado. Vuelve al
