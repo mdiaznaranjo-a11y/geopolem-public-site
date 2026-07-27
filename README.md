@@ -155,9 +155,18 @@ son cinco ficheros escritos a mano (`index.html`, `styles.css`, `app.js`, `data.
 Al modificar cualquiera de estos ficheros, **sube la versión de `CACHE_NAME`** en
 `service-worker.js`. A diferencia del dashboard, sus nombres de asset son estables y
 sí están listados en `WATCHLIST_ASSETS`; ese precache es *best effort* y no bloquea la
-instalación del app shell principal. El fallback offline sólo sirve el shell si
-`leaflet.js` también está en caché: servirlo sin su dependencia daría un tablero
-muerto, así que en ese caso redirige a la sala situacional.
+instalación del app shell principal.
+
+**Todas** las navegaciones a esta ruta las resuelve `watchlistNavigation()`, que corre
+**antes** de la rama genérica cache-first. El orden es lo esencial: la URL del
+directorio y la del `index.html` son claves de caché distintas, así que quien navegue
+aquí estando online deja una entrada de runtime para la que usara, y un
+`caches.match(request)` genérico devolvería ese shell offline sin comprobar Leaflet —
+un tablero muerto. La dependencia se comprueba antes de servir cualquier HTML
+cacheado, y mientras falte tampoco se cachea el HTML, así que la entrada sin
+dependencia no llega a crearse. Si no está, se redirige a la sala situacional.
+`WATCHLIST_LEAFLET` nombra esa ruta una sola vez para que la lista de precache y la
+puerta de navegación no puedan desincronizarse.
 
 Nota editorial: `app.js` traduce los enlaces de `.mainnav` **por índice**, así que no
 deben añadirse ahí enlaces que no sean de sección (el "← Sala situacional" va fuera
