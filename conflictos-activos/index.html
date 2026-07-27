@@ -100,6 +100,26 @@
         font-size: 11px;
         color: var(--text-3, #8b98a8);
       }
+
+      /* Above 860px the bundle keeps html, body and #root at height:100% and clips
+         .shell with overflow:hidden, so a sibling band before #root would push the
+         viewport-tall app down and cut the timeline off. Letting #root take the
+         remaining space instead of a flat 100% keeps the tablero within one screen.
+         Below 860px the bundle already relaxes those rules and the page scrolls. */
+      @media (min-width: 861px) {
+        body {
+          display: flex;
+          flex-direction: column;
+        }
+        .gp-video-cta {
+          flex: 0 0 auto;
+        }
+        #root {
+          flex: 1 1 auto;
+          min-height: 0;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
@@ -108,7 +128,8 @@
         <div class="gp-video-cta__eyebrow">Vídeo oficial revisado</div>
         <div class="gp-video-cta__title">Sala situacional, método y lectura del tablero</div>
         <div class="gp-video-cta__note">
-          Datos simulados. No es monitorización en vivo ni sustituye a fuentes oficiales.
+          Datos simulados. No operativo. No es monitorización en vivo ni sustituye a
+          fuentes oficiales.
         </div>
       </div>
       <div class="gp-video-cta__links">
@@ -126,7 +147,7 @@
           rel="noopener noreferrer"
           >Short · resumen</a
         >
-        <span class="gp-video-cta__url">https://youtu.be/6EKDWIbs0SU</span>
+        <span class="gp-video-cta__url" aria-hidden="true">https://youtu.be/6EKDWIbs0SU</span>
       </div>
     </section>
     <div id="root"></div>
