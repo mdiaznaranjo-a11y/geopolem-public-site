@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-07-27T08:04:00+02:00",
+  "brand": "GEOPÓLEM",
+  "product": "SENTINEL Weekly Brief",
+  "language": "es",
+  "tone": "serio, táctico, antiamarillista, académico pero claro",
+  "week_window": {
+    "timezone": "Europe/Luxembourg",
+    "local_start": "2026-07-20T00:00:00+02:00",
+    "local_end": "2026-07-26T23:59:59+02:00",
+    "utc_start": "2026-07-19T22:00:00Z",
+    "utc_end": "2026-07-26T21:59:59Z"
+  },
+  "source_urls": [
+    "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+    "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
+    "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
+    "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-19T22:00:00&endtime=2026-07-26T21:59:59&minmagnitude=5",
+    "https://www.ochaopt.org/content/humanitarian-situation-report-23-july-2026",
+    "https://www.un.org/unispal/document/gaza-humanitarians-deliver-water-for-displaced-families-ocha/",
+    "https://news.un.org/en/story/2026/07/1167980",
+    "https://news.un.org/en/story/2026/07/1167979",
+    "https://www.unocha.org/news/todays-top-news-middle-east-syria-afghanistan-venezuela-rwanda-occupied-palestinian-territory"
+  ],
+  "source_status": {
+    "sentinel_feed": {
+      "usable_for_week": false,
+      "reason": "El feed respondió con 4 eventos, pero la metadata indica generated_at 2026-06-17T15:44:19Z y source GDELT 2.0 DOC API (dry-run sample), fuera de la ventana 2026-07-20 a 2026-07-26."
+    },
+    "nasa_eonet_open": {
+      "usable_for_control_layer": true,
+      "selected_direct_couplings": 0,
+      "note": "Eventos abiertos relevantes: Typhoon Noul, Hurricane Genevieve, Tropical Storm Bertha y wildfires de Estados Unidos. No se confirmó acople directo con conflicto armado en la ventana."
+    },
+    "usgs_earthquakes": {
+      "usable_for_control_layer": true,
+      "events_magnitude_5_plus": 40,
+      "selected_direct_couplings": 0,
+      "note": "Incluyó M5.2 cerca de Javānrūd, Irán, pero sin vínculo explícito con conflicto o infraestructura crítica en la metadata."
+    }
+  },
+  "total_candidates": {
+    "sentinel_feed_events_raw": 4,
+    "sentinel_events_usable_in_window": 0,
+    "nasa_eonet_open_events_reviewed": 7,
+    "usgs_magnitude_5_plus_events_reviewed": 40,
+    "institutional_web_sources_reviewed": 5,
+    "selected_inflection_points": 3
+  },
+  "selected_inflection_points": [
+    {
+      "id": "sentinel-2026w30-gaza-wash",
+      "priority": "alta",
+      "location": "Gaza y Cisjordania",
+      "coordinates": null,
+      "conflict_event": "Operaciones militares, desplazamiento, demoliciones y ataques de colonos",
+      "environmental_coupling": "Restricción de agua, daño a infraestructura WASH, saneamiento degradado y riesgo de salud pública",
+      "coupling_type": ["agua", "saneamiento", "salud pública", "continuidad humanitaria"],
+      "why_it_matters": "El agua y el saneamiento pasan de ser servicios civiles a variables operativas de supervivencia, presión humanitaria y negociación.",
+      "evidence": [
+        "OCHA oPt reportó 59 muertos y más de 190 heridos en Gaza entre el 15 y el 22 de julio.",
+        "OCHA oPt reportó 32 estructuras WASH y agrícolas demolidas en Cisjordania durante el periodo.",
+        "OCHA oPt reportó aproximadamente 160 estructuras WASH dañadas, destruidas o confiscadas desde inicios de 2026, más de la mitad tanques de agua.",
+        "UNISPAL/OCHA reportó más de 17.000 metros cúbicos diarios de agua potable entregados por camión y una reducción de 15 a 20 por ciento frente a junio."
+      ],
+      "source_urls": [
+        "https://www.ochaopt.org/content/humanitarian-situation-report-23-july-2026",
+        "https://www.un.org/unispal/document/gaza-humanitarians-deliver-water-for-displaced-families-ocha/"
+      ],
+      "tripolar_reading": {
+        "us": "Actor asociado a mediación y presión regional.",
+        "china": "Puede leer la crisis como evidencia de fragilidad del orden occidental ante el Sur Global.",
+        "russia": "Puede explotar narrativamente el deterioro humanitario para disputar legitimidad occidental.",
+        "eu_global_south": "La UE queda en clave humanitaria y normativa; el Sur Global observa el trato diferencial entre conflictos."
+      }
+    },
+    {
+      "id": "sentinel-2026w30-ukraine-humanitarian-logistics",
+      "priority": "alta",
+      "location": "Ucrania",
+      "coordinates": null,
+      "conflict_event": "Ataques rusos y drones contra zonas urbanas y activos humanitarios",
+      "environmental_coupling": "Daño a almacenes con agua potable, kits de higiene, generadores y tanques de almacenamiento",
+      "coupling_type": ["logística humanitaria", "agua", "higiene", "resiliencia urbana"],
+      "why_it_matters": "La degradación de inventarios de agua, higiene y generadores reduce capacidad de respuesta ante desplazamiento, frío, interrupción energética y presión urbana.",
+      "evidence": [
+        "UN News reportó tres almacenes humanitarios severamente dañados.",
+        "Un almacén contratado por UNICEF contenía más de 106.000 artículos, incluidos generadores, agua potable, kits de higiene y tanques de agua.",
+        "Socios humanitarios entregaron 11 toneladas métricas de ayuda a comunidades de primera línea en Kherson, incluidas agua e higiene."
+      ],
+      "source_urls": [
+        "https://news.un.org/en/story/2026/07/1167980"
+      ],
+      "tripolar_reading": {
+        "us": "Sostén militar y político de la resiliencia ucraniana.",
+        "china": "Observa efectos sistémicos de la guerra prolongada sobre comercio, energía y normas.",
+        "russia": "Presión sobre retaguardia y continuidad civil.",
+        "eu_global_south": "La UE queda como actor de financiación y reconstrucción; el Sur Global mide la consistencia normativa."
+      }
+    },
+    {
+      "id": "sentinel-2026w30-iran-hormuz-water",
+      "priority": "media-alta",
+      "location": "Irán, Golfo y Estrecho de Hormuz",
+      "coordinates": null,
+      "conflict_event": "Escalada militar Estados Unidos-Irán y ataques regionales",
+      "environmental_coupling": "Ataque reportado a planta desalinizadora y presión sobre agua, energía y navegación",
+      "coupling_type": ["agua crítica", "energía", "rutas marítimas", "infraestructura civil"],
+      "why_it_matters": "El daño a desalación convierte una escalada militar en presión sobre continuidad civil y riesgo de rutas estratégicas.",
+      "evidence": [
+        "UN News reportó que una planta desalinizadora en Hormozgan fue alcanzada y que el suministro de agua segura quedó interrumpido para miles de personas.",
+        "OCHA indicó que, según autoridades, el ataque cortó agua potable a 20 aldeas y afectó a unas 10.000 personas.",
+        "UN News vinculó la escalada a preocupaciones sobre protección de civiles, hospitales, agua y libertad de navegación."
+      ],
+      "source_urls": [
+        "https://news.un.org/en/story/2026/07/1167979",
+        "https://www.unocha.org/news/todays-top-news-middle-east-syria-afghanistan-venezuela-rwanda-occupied-palestinian-territory"
+      ],
+      "tripolar_reading": {
+        "us": "Actor directo de escalada y garante de libertad de navegación.",
+        "china": "Exposición energética y comercial a Golfo y Hormuz.",
+        "russia": "Oportunidad diplomática y narrativa contra el orden liderado por Washington.",
+        "eu_global_south": "La UE prioriza desescalada y protección civil; el Sur Global observa el impacto en agua y precios básicos."
+      }
+    }
+  ],
+  "best_short_candidate": {
+    "id": "sentinel-2026w30-gaza-wash",
+    "title": "Gaza: cuando el agua entra al tablero",
+    "hook_3_seconds": "No es solo una línea de frente. Es agua.",
+    "closing_line": "GEOPÓLEM. Bienvenidos al tablero.",
+    "hashtags": ["#GEOPÓLEM", "#SENTINEL", "#Gaza", "#WaterSecurity", "#OSINT", "#Geopolitics"]
+  },
+  "editorial_safety": {
+    "fact_evaluation_hypothesis_separated": true,
+    "no_sensational_language": true,
+    "no_correlation_as_causality": true,
+    "explicit_limitations": [
+      "Feed SENTINEL propio no se usó como fuente de semana por estar desfasado.",
+      "NASA EONET y USGS no generaron acoples directos seleccionables con conflicto armado en esta ventana.",
+      "La selección privilegia acoples ambientales institucionalmente reportados, no espectacularidad."
+    ]
+  }
+}

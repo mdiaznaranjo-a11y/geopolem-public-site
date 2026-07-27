@@ -1,189 +1,191 @@
 {
-  "generated_at": "2026-07-20T08:11:00+02:00",
+  "generated_at": "2026-07-27T08:04:00+02:00",
   "brand": "GEOPÓLEM",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "main_status": "acoples conflicto-ambiente activos por vía institucional; cruce automático SENTINEL sin match",
+  "main_status": "acople ambiental significativo sobre agua e infraestructura civil, verificado por fuentes institucionales; feed SENTINEL desfasado y sin uso para la semana",
   "week_window": {
     "timezone": "Europe/Luxembourg",
-    "start_local": "2026-07-13T00:00:00+02:00",
-    "end_local": "2026-07-19T23:59:59+02:00",
-    "start_utc": "2026-07-12T22:00:00Z",
-    "end_utc": "2026-07-19T21:59:59Z"
+    "start_local": "2026-07-20T00:00:00+02:00",
+    "end_local": "2026-07-26T23:59:59+02:00",
+    "start_utc": "2026-07-19T22:00:00Z",
+    "end_utc": "2026-07-26T21:59:59Z"
   },
-  "method_note": "Se cruzaron eventos de conflicto SENTINEL/GDELT con NASA EONET, USGS y fuentes institucionales (ReliefWeb, IOM/UNHCR, UNFPA, OCHA, FEWS NET) para identificar acoples conflicto-ambiente de valor geopolítico, no espectacular. Correlación temporal no implica causalidad; se distingue acople operativo de causalidad. No se inventaron correlaciones.",
+  "method_note": "Se cruzaron eventos de conflicto SENTINEL/GDELT con NASA EONET, USGS y fuentes institucionales (OCHA oPt, UNISPAL, UN News, OCHA global) para identificar acoples conflicto-ambiente de valor geopolítico, no espectacular. Correlación temporal no implica causalidad; se distingue acople operativo de causalidad. No se inventaron correlaciones.",
   "source_urls": {
     "sentinel": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-    "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=open",
+    "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
     "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
-    "usgs_week": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-12T22%3A00%3A00Z&endtime=2026-07-19T21%3A59%3A59Z&minmagnitude=4.5&orderby=magnitude",
-    "myanmar_maritime": "https://reliefweb.int/report/myanmar/iom-and-unhcr-deeply-concerned-reports-maritime-incidents-myanmar-coast-over-500-feared-dead",
-    "syria_unfpa": "https://reliefweb.int/report/syrian-arab-republic/unfpa-syria-situation-report-1-may-30-june-2026",
-    "drc_ebola": "https://reliefweb.int/report/democratic-republic-congo/statement-ebola-outbreak-democratic-republic-congo-tom-fletcher-under-secretary-general-humanitarian-affairs-and-emergency-relief-coordinator-9-july-2026",
-    "drc_weather": "https://reliefweb.int/report/world/global-weather-hazards-summary-july-9-2026-july-15-2026"
+    "usgs_week": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-19T22:00:00&endtime=2026-07-26T21:59:59&minmagnitude=5",
+    "ocha_opt_sitrep": "https://www.ochaopt.org/content/humanitarian-situation-report-23-july-2026",
+    "unispal_gaza_water": "https://www.un.org/unispal/document/gaza-humanitarians-deliver-water-for-displaced-families-ocha/",
+    "un_news_ukraine": "https://news.un.org/en/story/2026/07/1167980",
+    "un_news_iran": "https://news.un.org/en/story/2026/07/1167979",
+    "ocha_top_news": "https://www.unocha.org/news/todays-top-news-middle-east-syria-afghanistan-venezuela-rwanda-occupied-palestinian-territory"
   },
   "data_scan_counts": {
     "conflicts_in_window_or_undated": 4,
-    "environment_events": 298,
+    "environment_events": 47,
     "candidate_matches": 0,
-    "usgs_events": 145,
-    "eonet_open_events": 67,
-    "eonet_closed_events": 73
+    "usgs_events": 40,
+    "eonet_open_events": 7,
+    "eonet_closed_events": 0
   },
   "data_quality": {
     "sentinel_events_in_window": 4,
     "sentinel_events_usable_for_match": 0,
-    "nasa_eonet_open_events": 67,
-    "nasa_eonet_closed_events": 73,
-    "usgs_quakes_m45_in_week": 145,
+    "nasa_eonet_open_events": 7,
+    "nasa_eonet_closed_events": 0,
+    "usgs_quakes_m5_in_week": 40,
     "automatic_candidate_matches": 0,
-    "editorial_conclusion": "Los acoples de la semana se sostienen con evidencia institucional, no con el cruce geoespacial automático."
+    "editorial_conclusion": "Los acoples de la semana se sostienen con evidencia institucional verificada sobre agua e infraestructura civil, no con el cruce geoespacial automático."
   },
   "limitations": [
-    "El feed SENTINEL trajo 4 eventos de conflicto en/sin fecha dentro de la ventana, pero carecían de fecha, latitud y longitud utilizables y correspondían a ítems de ejemplo (dominio tipo example.org).",
-    "Al faltar fecha y coordenadas, el cruce geoespacial automático produjo candidate_matches = 0: ningún acople conflicto-ambiente pudo confirmarse por la vía automática.",
-    "NASA y USGS sí devolvieron datos válidos en la ventana: EONET abierto 67 eventos, EONET cerrado 73, USGS M4.5+ 145 sismos; ninguno se acopló geoespacialmente a un evento SENTINEL utilizable.",
-    "Los tres puntos publicados se seleccionaron y sostienen con fuentes institucionales humanitarias, no con el match automático SENTINEL↔NASA/USGS.",
+    "El feed SENTINEL respondió con 4 eventos, pero su metadata indica generated_at 2026-06-17T15:44:19Z y source GDELT 2.0 DOC API (dry-run sample), fuera de la ventana 20-26 de julio; no se usó como fuente de semana.",
+    "NASA EONET registró tormentas abiertas relevantes (Typhoon Noul, Hurricane Genevieve, Tropical Storm Bertha) y varios incendios en Estados Unidos, sin acople directo verificado con conflicto armado en la ventana.",
+    "USGS registró 40 sismos de magnitud 5 o superior, incluido un M5.2 al sur de Javānrūd (Irán), pero la metadata no indicó vínculo explícito con conflicto o infraestructura crítica.",
+    "Los tres puntos publicados se seleccionaron y sostienen con fuentes institucionales (OCHA oPt, UNISPAL, UN News, OCHA global), no con el match automático SENTINEL↔NASA/USGS.",
     "Correlación y coincidencia temporal no implican causalidad; donde la evidencia solo respalda acople operativo, no se afirma relación causal."
   ],
   "total_candidates": 3,
   "candidate_counts": {
     "conflict_candidates_in_window": 4,
     "sentinel_events_usable_for_match": 0,
-    "environment_events_scanned": 298,
-    "nasa_eonet_open_events": 67,
-    "nasa_eonet_closed_events": 73,
-    "usgs_m45_plus_events": 145,
+    "environment_events_scanned": 47,
+    "nasa_eonet_open_events": 7,
+    "nasa_eonet_closed_events": 0,
+    "usgs_m5_plus_events": 40,
+    "institutional_web_sources_reviewed": 5,
     "automatic_candidate_matches": 0,
     "selected_points": 3,
-    "confirmed_by_institutional_source": 1,
-    "operational_with_institutional_evidence": 1,
-    "under_robust_observation": 1
+    "confirmed_by_institutional_source": 2,
+    "operational_with_institutional_evidence": 1
   },
   "selected_inflection_points": [
     {
+      "id": "sentinel-2026w30-gaza-wash",
       "rank": 1,
       "status": "confirmado",
       "priority": "Alta",
       "best_short_candidate": true,
-      "location": "Myanmar · Rakhine-Ayeyarwady, ruta marítima hacia Cox's Bazar",
-      "headline": "Myanmar: salidas marítimas rohinyás y naufragio con más de 500 desaparecidos",
-      "conflict_event": "Desplazamiento por conflicto y salidas marítimas rohinyás desde Rakhine a finales de junio de 2026.",
-      "environmental_event": "Condiciones marítimas peligrosas fuera de la temporada regular de navegación, con lluvias torrenciales e inundaciones recientes.",
-      "coupling_type": "Acople operativo confirmado por fuente institucional humanitaria: el desplazamiento por conflicto empuja salidas marítimas en un entorno ambiental de alto riesgo; no se afirma causalidad ambiental sobre el conflicto.",
-      "fact": "IOM y UNHCR expresan profunda preocupación por incidentes marítimos frente a la costa de Myanmar. Tras el desplazamiento por conflicto desde Rakhine a finales de junio, una embarcación habría naufragado frente a Ayeyarwady el 8 de julio de 2026 y se teme la muerte de más de 500 personas. La travesía ocurrió fuera de la temporada regular de navegación, con lluvias torrenciales e inundaciones recientes que elevaron el riesgo marítimo.",
-      "assessment": "Es un acople conflicto-ambiente operativo y confirmado por fuente institucional: la violencia y el desplazamiento forzado empujan salidas marítimas, mientras las condiciones ambientales adversas (fuera de temporada, lluvia torrencial, inundaciones) multiplican la letalidad de la ruta. La evidencia respalda acoplamiento operativo, no una relación causal del clima sobre el conflicto.",
-      "hypothesis": "Mientras persista el conflicto en Rakhine y no se abran vías seguras, es previsible que las salidas marítimas continúen chocando con ventanas meteorológicas peligrosas, con nuevos episodios de alta letalidad en la ruta Rakhine-Ayeyarwady-Cox's Bazar.",
-      "why_it_matters": "Conecta conflicto, desplazamiento forzado y riesgo marítimo estacional en una de las rutas de protección más sensibles de Asia; presiona a ACNUR, IOM, Bangladesh y ASEAN.",
-      "tripolar_reading": "China observa Myanmar por conectividad estratégica hacia el Índico; EE.UU. y la UE por sanciones, gobernanza y protección; Bangladesh, ASEAN y el Sur Global cargan el coste humanitario y de estabilidad regional.",
+      "location": "Gaza y Cisjordania",
+      "headline": "Gaza y Cisjordania: el agua entra al tablero",
+      "conflict_event": "Operaciones militares, desplazamiento, demoliciones y ataques de colonos.",
+      "environmental_event": "Restricción de agua, daño a infraestructura WASH, saneamiento degradado y riesgo de salud pública.",
+      "coupling_type": "Agua, saneamiento, salud pública y continuidad de servicios: acople operativo confirmado por fuente institucional; no se afirma que el agua cause el conflicto.",
+      "fact": "OCHA oPt reportó 59 personas muertas y más de 190 heridas en Gaza entre el 15 y el 22 de julio de 2026, y alrededor de 90 palestinos desplazados en Cisjordania por demoliciones y ataques de colonos, con 61 estructuras demolidas, de las cuales 32 eran WASH y agrícolas.",
+      "assessment": "OCHA oPt indicó que unas 160 estructuras WASH fueron dañadas, destruidas o confiscadas desde inicios de 2026, más de la mitad tanques de agua, y que 69 por ciento de los 181 centros colectivos no-UNRWA analizados presentaban alcantarillado visible dentro del recinto. UNISPAL/OCHA registró más de 17.000 metros cúbicos diarios de agua potable entregados por camión, entre 15 y 20 por ciento menos que en junio. La lectura es de acople operacional, no de causalidad simple.",
+      "hypothesis": "Si la distribución de agua sigue dependiendo de camiones, combustible, repuestos y rutas seguras, la presión sanitaria y de saneamiento seguirá creciendo con el verano y reducirá el margen de maniobra de la población civil, de los operadores humanitarios y de cualquier mediación.",
+      "why_it_matters": "El agua y el saneamiento pasan de ser servicios civiles a variables operativas de supervivencia, presión humanitaria y negociación.",
+      "tripolar_reading": "Estados Unidos queda asociado a la arquitectura de presión y mediación regional; la UE sostiene un perfil humanitario y normativo centrado en acceso, protección civil y derecho internacional humanitario; China y Rusia pueden usar el deterioro humanitario como argumento diplomático ante el Sur Global.",
       "sources": [
-        "https://reliefweb.int/report/myanmar/iom-and-unhcr-deeply-concerned-reports-maritime-incidents-myanmar-coast-over-500-feared-dead",
-        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        "https://www.ochaopt.org/content/humanitarian-situation-report-23-july-2026",
+        "https://www.un.org/unispal/document/gaza-humanitarians-deliver-water-for-displaced-families-ocha/"
       ]
     },
     {
+      "id": "sentinel-2026w30-ukraine-humanitarian-logistics",
       "rank": 2,
+      "status": "confirmado",
+      "priority": "Alta",
+      "best_short_candidate": false,
+      "location": "Ucrania",
+      "headline": "Ucrania: logística humanitaria de agua e higiene bajo fuego",
+      "conflict_event": "Ataques rusos y de drones contra zonas urbanas y activos humanitarios.",
+      "environmental_event": "Daño a almacenes con agua potable, kits de higiene, generadores y tanques de almacenamiento.",
+      "coupling_type": "Logística humanitaria, agua, higiene y resiliencia urbana: acople operativo confirmado por fuente institucional.",
+      "fact": "UN News informó que ataques rusos y de drones mataron al menos a dos niños e hirieron a decenas de personas en los días previos al 20 de julio de 2026, con impactos en Kyiv, Odesa y Zaporizhzhia, y que tres almacenes humanitarios críticos resultaron severamente dañados, incluidos activos de WFP en Dnipro y de WHO en la región de Kyiv.",
+      "assessment": "El almacén contratado por UNICEF en Bilohorodka contenía más de 106.000 artículos con valor estimado de 3,9 millones de dólares, entre ellos generadores, agua potable, kits de higiene y tanques de almacenamiento de agua. El acople relevante no es solo el impacto físico, sino la degradación de la capacidad de respuesta ante interrupción energética, agua cortada, frío y desplazamiento.",
+      "hypothesis": "En una guerra de desgaste, el daño sostenido a inventarios de agua, higiene y generación eléctrica tiene efecto multiplicador sobre la resiliencia urbana; su repetición reduciría la continuidad operacional de la respuesta humanitaria en primera línea.",
+      "why_it_matters": "La degradación de inventarios de agua, higiene y generadores reduce la capacidad de respuesta ante desplazamiento, interrupción energética y presión urbana.",
+      "tripolar_reading": "Rusia mantiene presión sobre infraestructura y retaguardia humanitaria; Estados Unidos y la UE quedan vinculados a la sostenibilidad material de la respuesta; China observa el coste sistémico de una guerra prolongada que tensiona energía, rutas y normas de protección civil.",
+      "sources": [
+        "https://news.un.org/en/story/2026/07/1167980"
+      ]
+    },
+    {
+      "id": "sentinel-2026w30-iran-hormuz-water",
+      "rank": 3,
       "status": "operativo",
       "priority": "Media-alta",
       "best_short_candidate": false,
-      "location": "Siria · Alepo, noreste y corredor del Éufrates",
-      "headline": "Siria: hostilidades renovadas e inundaciones del Éufrates sobre 1,2 M en necesidad urgente",
-      "conflict_event": "Hostilidades renovadas en Alepo y el noreste sirio.",
-      "environmental_event": "Inundaciones severas a lo largo del Éufrates, con servicios públicos tensionados.",
-      "coupling_type": "Acople operativo con evidencia institucional reciente; señal de arrastre institucional, no un match directo NASA/USGS dentro de la semana.",
-      "fact": "El situation report de UNFPA Siria publicado el 8 de julio de 2026, que cubre mayo-junio, reporta hostilidades renovadas en Alepo y el noreste junto a inundaciones severas en el corredor del Éufrates, con servicios públicos tensionados y 1,2 millones de personas en necesidad urgente.",
-      "assessment": "Conflicto e impacto ambiental (inundación) se superponen sobre la misma población y las mismas infraestructuras, degradando servicios públicos y capacidad de respuesta. Es un acople operativo sostenido por evidencia institucional reciente; se trata de una señal de arrastre institucional (cobertura mayo-junio), no de una coincidencia geoespacial verificada dentro de la ventana 13-19 de julio.",
-      "hypothesis": "Si las hostilidades y la presión hídrica del Éufrates persisten, la combinación puede seguir erosionando servicios básicos y elevar la necesidad humanitaria por encima de la cifra actual, con efecto sobre desplazamiento interno y gobernanza local en el noreste.",
-      "why_it_matters": "El noreste sirio y el Éufrates son nodo de agua, energía, control territorial y presencia de actores externos; el acople conflicto-inundación amplifica la fragilidad de servicios.",
-      "tripolar_reading": "EE.UU. y actores regionales pesan sobre el noreste por seguridad y recursos; Rusia e Irán por influencia y corredores; la UE y el Sur Global por estabilización, agua y retorno de población.",
+      "location": "Irán, Golfo y Estrecho de Hormuz",
+      "headline": "Irán: agua crítica, desalación y el corredor de Hormuz",
+      "conflict_event": "Escalada militar Estados Unidos-Irán y ataques regionales.",
+      "environmental_event": "Ataque reportado a una planta desalinizadora en Hormozgan y presión sobre agua, energía y navegación.",
+      "coupling_type": "Agua crítica, energía, rutas marítimas e infraestructura civil: acople reportado por fuente institucional, con cifras atribuidas a autoridades locales.",
+      "fact": "UN News reportó que la escalada Estados Unidos-Irán continuaba por segunda semana, que autoridades sanitarias iraníes indicaron 50 muertos y más de 500 heridos en julio, y que la ONU subrayó la obligación de proteger hospitales, suministros de agua y otros objetos civiles vitales.",
+      "assessment": "UN News señaló un ataque reportado contra una planta desalinizadora en Hormozgan que interrumpió el suministro de agua segura para miles de personas. OCHA precisó que, según autoridades, la instalación fue alcanzada el 19 de julio, cortando agua potable a 20 aldeas y afectando a unas 10.000 personas, con reportes locales de impacto sobre una instalación de producción de agua potable en Dehloran.",
+      "hypothesis": "Si la desalación y la producción de agua potable quedan dentro del inventario de daños, el conflicto deja de ser únicamente militar y pasa a afectar continuidad civil, percepción de riesgo marítimo y presión diplomática regional en torno a Hormuz.",
+      "why_it_matters": "El daño a la desalación convierte una escalada militar en presión sobre continuidad civil y riesgo de rutas estratégicas.",
+      "tripolar_reading": "Estados Unidos aparece como actor directo de la escalada y garante presunto de la libertad de navegación; China tiene una lectura energética y comercial inmediata por su exposición a las rutas del Golfo; Rusia puede capitalizar la crisis como prueba de desgaste del orden de seguridad liderado por Washington; la UE se ubica en la presión por desescalada y protección civil.",
       "sources": [
-        "https://reliefweb.int/report/syrian-arab-republic/unfpa-syria-situation-report-1-may-30-june-2026",
-        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-      ]
-    },
-    {
-      "rank": 3,
-      "status": "en observación",
-      "priority": "Media",
-      "best_short_candidate": false,
-      "location": "R. D. Congo · Ituri y noreste",
-      "headline": "DRC: brote de Ébola en Ituri con calor y sequedad anormales sobre zona de conflicto",
-      "conflict_event": "Conflicto y movilidad forzada en Ituri y el noreste, con acceso humanitario restringido y servicios débiles.",
-      "environmental_event": "Sequedad anormal en el noreste de DRC y pronóstico de calor anormal superior a 35 °C para el 9-15 de julio de 2026 (FEWS NET / ReliefWeb).",
-      "coupling_type": "Acople salud pública-ambiente-conflicto en observación robusta; no es un único evento NASA/USGS confirmado, sino convergencia institucional de tres capas.",
-      "fact": "El Under-Secretary-General Tom Fletcher (OCHA) emitió el 9 de julio de 2026 una declaración sobre el brote de Ébola en la R. D. Congo, centrado en Ituri, con acceso humanitario restringido y servicios débiles. El Global Weather Hazards Summary (FEWS NET / ReliefWeb) para el 9-15 de julio de 2026 señala sequedad anormal en el noreste del país y pronóstico de calor anormal por encima de 35 °C.",
-      "assessment": "Conflicto y movilidad forzada elevan el riesgo de propagación del brote, mientras el estrés térmico e hídrico y la debilidad de servicios degradan la respuesta sanitaria. Es un acople de salud pública, ambiente y conflicto sostenido por convergencia institucional, no por un único evento NASA/USGS confirmado dentro de la ventana.",
-      "hypothesis": "En un entorno de fragilidad estatal, conflicto y calor/sequedad anormales, la contención del brote depende de acceso humanitario y continuidad logística; su deterioro podría acelerar la propagación y ampliar el desplazamiento.",
-      "why_it_matters": "Cruza seguridad sanitaria, conflicto y clima en un nodo de minerales y corredores humanitarios; un brote mal contenido tiene efectos regionales.",
-      "tripolar_reading": "Para EE.UU., China, Rusia, UE y Sur Global, DRC sigue siendo nodo de minerales, corredores humanitarios y capacidad estatal; la capa sanitaria-ambiental añade presión sobre un tablero ya frágil.",
-      "sources": [
-        "https://reliefweb.int/report/democratic-republic-congo/statement-ebola-outbreak-democratic-republic-congo-tom-fletcher-under-secretary-general-humanitarian-affairs-and-emergency-relief-coordinator-9-july-2026",
-        "https://reliefweb.int/report/world/global-weather-hazards-summary-july-9-2026-july-15-2026",
-        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        "https://news.un.org/en/story/2026/07/1167979",
+        "https://www.unocha.org/news/todays-top-news-middle-east-syria-afghanistan-venezuela-rwanda-occupied-palestinian-territory"
       ]
     }
   ],
   "not_selected_but_relevant": [
     {
       "location": "Feed SENTINEL · eventos de conflicto en ventana",
-      "reason": "El feed trajo 4 eventos de conflicto en/sin fecha dentro de la ventana (Ucrania, Gaza, Taiwán, Malí).",
-      "note": "Carecían de fecha, latitud y longitud utilizables y correspondían a ítems de ejemplo (dominio tipo example.org); no se pudieron usar para el cruce geoespacial automático (candidate_matches = 0).",
+      "reason": "El feed respondió con 4 eventos, pero su metadata indica generated_at 2026-06-17T15:44:19Z y source GDELT 2.0 DOC API (dry-run sample).",
+      "note": "Al quedar fuera de la ventana 20-26 de julio, no se consideró usable para la semana sin verificación adicional; el cruce automático dio candidate_matches = 0.",
       "sources": [
         "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
       ]
     },
     {
-      "location": "Sismicidad global · USGS M4.5+",
-      "reason": "USGS entregó 145 sismos de magnitud 4,5+ en la ventana semanal.",
-      "note": "Ningún sismo se acopló geoespacialmente a una inflexión de conflicto utilizable; se conservan como base de vigilancia.",
+      "location": "Tormentas abiertas · NASA EONET",
+      "reason": "NASA EONET registró Typhoon Noul en el Pacífico occidental entre el 23 y el 25 de julio, además de Hurricane Genevieve, Tropical Storm Bertha y varios incendios en Estados Unidos.",
+      "note": "No se verificó afectación operacional directa sobre una zona de conflicto armado durante la ventana; se conservan como capa de control.",
       "sources": [
-        "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-12T22%3A00%3A00Z&endtime=2026-07-19T21%3A59%3A59Z&minmagnitude=4.5&orderby=magnitude"
+        "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
       ]
     },
     {
-      "location": "Eventos ambientales · NASA EONET",
-      "reason": "NASA EONET aportó 67 eventos abiertos y 73 cerrados en la ventana (principalmente incendios y hielo marino).",
-      "note": "Sin coincidencia geoespacial verificable con eventos SENTINEL utilizables de la semana.",
+      "location": "Sismicidad global · USGS M5+",
+      "reason": "USGS registró 40 sismos de magnitud 5 o superior en la ventana UTC consultada, incluido un M5.2 al sur de Javānrūd (Irán).",
+      "note": "La metadata no indicó vínculo explícito con conflicto o infraestructura crítica, por lo que quedó fuera de la selección.",
       "sources": [
-        "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=open",
-        "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed"
+        "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-19T22:00:00&endtime=2026-07-26T21:59:59&minmagnitude=5"
       ]
     }
   ],
   "best_short_candidate": {
     "rank": 1,
-    "title": "La ruta que el mar no perdona",
-    "location": "Myanmar · Rakhine-Ayeyarwady",
+    "id": "sentinel-2026w30-gaza-wash",
+    "title": "Gaza: cuando el agua entra al tablero",
+    "location": "Gaza y Cisjordania",
     "duration_seconds": 45,
-    "hook": "Más de 500 personas temidas muertas frente a Myanmar. No es solo el mar: es el conflicto empujando a la gente hacia él.",
-    "reason": "Es el acople más nítido de la semana y el único confirmado por fuente institucional humanitaria: conflicto y desplazamiento empujan salidas marítimas hacia una ventana ambiental letal, fuera de temporada y con inundaciones recientes. Acople operativo, sin forzar causalidad.",
+    "hook": "No es solo una línea de frente. Es agua.",
+    "reason": "Tiene cifras verificables, presión de agua y saneamiento, continuidad humanitaria, dimensión política y una lectura estratégica clara sin lenguaje sensacionalista. No se afirma que el agua cause el conflicto: se muestra cómo el conflicto absorbe el agua dentro del tablero operativo.",
     "structure": {
-      "hecho": "Tras el desplazamiento por conflicto desde Rakhine a finales de junio, una embarcación habría naufragado frente a Ayeyarwady el 8 de julio; IOM y UNHCR temen más de 500 muertos. La travesía fue fuera de temporada, con lluvias torrenciales e inundaciones recientes.",
-      "evaluacion": "El conflicto empuja las salidas; el entorno ambiental adverso multiplica la letalidad. Es acople operativo confirmado por fuente institucional, no causalidad del clima sobre el conflicto.",
-      "hipotesis": "Mientras el conflicto persista y no haya vías seguras, las salidas marítimas seguirán chocando con ventanas meteorológicas peligrosas: más episodios de alta letalidad en la ruta hacia Cox's Bazar."
+      "hecho": "En Gaza y Cisjordania, OCHA reporta desplazamiento, daños a infraestructura civil y presión sostenida sobre servicios básicos.",
+      "evaluacion": "OCHA reportó estructuras WASH demolidas o dañadas, tanques de agua afectados y centros de desplazamiento con saneamiento visible dentro del recinto. Esto no prueba causalidad; muestra acople operacional.",
+      "hipotesis": "Cuando el agua depende de camiones, combustible, repuestos y rutas seguras, deja de ser un dato humanitario aislado y se convierte en variable del tablero: mediación, legitimidad, presión regional y control de continuidad civil."
     },
     "subtitles_en": [
-      "Over 500 feared dead off Myanmar's coast.",
-      "Conflict in Rakhine pushes people onto the sea, out of sailing season, into floods and storms.",
-      "IOM and UNHCR confirm the maritime incidents; the coupling is operational, not a claim of causation.",
+      "In Gaza and the West Bank, conflict is not measured only by military positions.",
+      "The key variable is water. This is not causality. It is operational coupling.",
+      "When water depends on trucks, fuel, spare parts and safe routes, it becomes a strategic variable.",
       "GEOPÓLEM. Welcome to the board."
     ],
     "closing": "GEOPÓLEM. Bienvenidos al tablero.",
     "hashtags": [
       "#GEOPÓLEM",
+      "#SENTINEL",
+      "#Gaza",
+      "#WaterSecurity",
       "#OSINT",
-      "#Geopolítica",
-      "#Inteligencia",
-      "#ClimaYConflicto",
-      "#Rohingya"
+      "#Geopolitics"
     ]
   },
-  "disclaimer": "Esta semana el cruce automático SENTINEL↔NASA/USGS dio candidate_matches = 0: los 4 eventos de conflicto del feed carecían de fecha y coordenadas utilizables y eran ítems de ejemplo. NASA (EONET abierto 67, cerrado 73) y USGS (145 sismos M4.5+) sí devolvieron datos válidos, pero sin match geoespacial. Los tres puntos publicados se sostienen con fuentes institucionales humanitarias (IOM/UNHCR, UNFPA, OCHA, FEWS NET), no con el match automático. Se distingue acople operativo de causalidad; no se inventaron correlaciones.",
+  "disclaimer": "Esta semana el feed SENTINEL propio no se usó como fuente: respondió con 4 eventos, pero su metadata (generated_at 2026-06-17, dry-run sample) queda fuera de la ventana. NASA EONET y USGS aportaron capa de control válida sin acoples directos seleccionables con conflicto armado. Los tres puntos publicados se sostienen con fuentes institucionales (OCHA oPt, UNISPAL, UN News, OCHA global). Se distingue acople operativo de causalidad; no se inventaron correlaciones.",
   "reduced_hashtags": [
     "#GEOPÓLEM",
+    "#SENTINEL",
     "#OSINT",
-    "#Geopolítica",
-    "#Inteligencia",
-    "#ClimaYConflicto"
+    "#WaterSecurity",
+    "#Geopolitics"
   ],
   "brand_close": "GEOPÓLEM. Bienvenidos al tablero."
 }

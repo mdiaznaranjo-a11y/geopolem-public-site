@@ -5,9 +5,19 @@ GEOPÓLEM con datos de conflicto global frescos, sin intervención manual.
 
 ## Archivos
 
-| Archivo                 | Descripción                                                      |
-| ----------------------- | ---------------------------------------------------------------- |
-| `conflict-events.json`  | Eventos de conflicto puntuados y filtrados. Lo regenera el CI.   |
+| Archivo                                            | Descripción                                                                    |
+| -------------------------------------------------- | ------------------------------------------------------------------------------ |
+| `conflict-events.json`                              | Eventos de conflicto puntuados y filtrados. Lo regenera el CI.                 |
+| `index.json`                                        | Manifiesto de briefs semanales: semana en curso (`latest`) y archivo histórico. |
+| `weekly-brief.json`                                 | Brief semanal en curso. Es el que consume el panel SENTINEL de la app.         |
+| `sentinel_weekly_brief_<inicio>_<fin>.json`         | Archivo estructurado por ventana semanal (no se sobrescribe).                  |
+| `weekly-brief-<fecha-de-generación>.md`             | Versión editorial en Markdown del brief de esa semana.                         |
+
+El brief semanal es **editorial**: se redacta y revisa a mano a partir del feed
+SENTINEL, NASA EONET, USGS y fuentes institucionales. No lo genera el CI. Al
+publicar una semana nueva se actualiza `weekly-brief.json`, se añade el archivo
+`sentinel_weekly_brief_*.json` y el Markdown, y se registra la entrada en
+`index.json`.
 
 La regeneración la hace `scripts/sentinel_gdelt.py`, disparado a diario por el
 workflow `.github/workflows/sentinel-gdelt.yml` (06:17 UTC) y también a demanda

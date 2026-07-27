@@ -574,10 +574,11 @@ function SentinelCouplingLayer({ onOpen }) {
           <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-alert"></span>
           <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-alert"></span>
         </span>
-        <span class="font-mono text-[9.5px] uppercase tracking-widest text-alert-soft">Cruce conflicto-ambiente · en observación</span>
+        <span class="font-mono text-[9.5px] uppercase tracking-widest text-alert-soft">${b.layerLabel}</span>
       </div>
       <span class="font-mono text-[9px] uppercase tracking-wider text-slate-500">SENTINEL</span>
     </div>
+    <div class="font-mono text-[9px] uppercase tracking-wider text-slate-500 mb-1.5">${b.window}</div>
     <div class="flex flex-col gap-1">
       ${b.points.map(p => html`
         <button key=${p.id} onClick=${onOpen}
@@ -3720,6 +3721,32 @@ function SentinelBrief({ lang }) {
       </div>
     </div>
 
+    <!-- Matriz de puntos de inflexión -->
+    <div class="panel rounded-md p-4 overflow-x-auto">
+      <div class="heading-mono mb-2">${en?'Inflection matrix':'Matriz de puntos de inflexión'}</div>
+      <table class="w-full text-left text-[12px] border-collapse min-w-[720px]">
+        <thead>
+          <tr class="font-mono text-[9px] uppercase tracking-wider text-slate-500">
+            <th class="py-1.5 pr-3 font-normal">${en?'Priority':'Prioridad'}</th>
+            <th class="py-1.5 pr-3 font-normal">${en?'Location':'Ubicación'}</th>
+            <th class="py-1.5 pr-3 font-normal">${en?'Conflict event':'Conflicto/evento'}</th>
+            <th class="py-1.5 pr-3 font-normal">${en?'Environmental pressure':'Presión ambiental'}</th>
+            <th class="py-1.5 font-normal">${en?'Coupling type':'Tipo de acople'}</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${b.points.map(p => html`
+            <tr key=${p.id} class="border-t border-white/5 align-top">
+              <td class="py-2 pr-3 font-mono text-[10px] uppercase tracking-wider" style=${{color:p.accent}}>${en?p.priorityEn:p.priority}</td>
+              <td class="py-2 pr-3 text-slate-200">${p.location}</td>
+              <td class="py-2 pr-3 text-slate-400">${en?p.conflictEventEn:p.conflictEvent}</td>
+              <td class="py-2 pr-3 text-slate-400">${en?p.environmentalEventEn:p.environmentalEvent}</td>
+              <td class="py-2 text-slate-400">${(en?p.couplingTypeEn:p.couplingType).join(' · ')}</td>
+            </tr>`)}
+        </tbody>
+      </table>
+    </div>
+
     <!-- Tarjetas de puntos de inflexión -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-4">
       ${b.points.map(p => html`
@@ -3780,10 +3807,16 @@ function SentinelBrief({ lang }) {
       <div class="heading-mono mb-1">${en?'Best short candidate':'Mejor candidato para Short'}</div>
       <h3 class="font-display font-semibold text-[16px] text-slate-100">${b.bestShort.title}</h3>
       <p class="text-[12.5px] text-slate-400 leading-relaxed mt-1.5 max-w-4xl">${b.bestShort.reason}</p>
-      <a href=${b.dataUrl} target="_blank" rel="noopener"
-         class="inline-flex items-center gap-1.5 mt-3 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
-        ${en?'Open structured JSON':'Abrir JSON estructurado'} ↗
-      </a>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <a href=${b.dataUrl} target="_blank" rel="noopener"
+           class="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
+          ${en?'Open structured JSON':'Abrir JSON estructurado'} ↗
+        </a>
+        <a href=${b.archiveUrl} target="_blank" rel="noopener"
+           class="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
+          ${en?'Weekly archive JSON':'JSON de archivo semanal'} ↗
+        </a>
+      </div>
     </div>
 
     <!-- Cierre de marca -->
