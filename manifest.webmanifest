@@ -4,7 +4,7 @@
   "description": "Sala situacional editorial de geopolítica, conflictos, energía, agua, defensa, IA y sistema-mundo.",
   "lang": "es",
   "dir": "ltr",
-  "start_url": "./index.html",
+  "start_url": "./app.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -36,14 +36,14 @@
       "name": "Mapa táctico",
       "short_name": "Mapa",
       "description": "Abrir la vista de mapa situacional.",
-      "url": "./index.html#map",
+      "url": "./app.html#map",
       "icons": [{ "src": "./icons/icon-192.svg", "sizes": "192x192" }]
     },
     {
       "name": "Brief diario",
       "short_name": "Brief",
       "description": "Abrir el brief diario GEOPÓLEM.",
-      "url": "./index.html#brief",
+      "url": "./app.html#brief",
       "icons": [{ "src": "./icons/icon-192.svg", "sizes": "192x192" }]
     },
     {

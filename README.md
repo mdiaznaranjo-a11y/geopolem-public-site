@@ -33,7 +33,8 @@ Requiere iniciar `server.py` en el puerto 8000 antes del despliegue para exponer
 
 | Archivo        | Tamaño | Rol |
 |----------------|--------|-----|
-| `index.html`   | ~7 KB  | Shell HTML + Tailwind CDN + tokens (paleta carbon/radar/alert/risk/intel), fuentes (Inter, Space Grotesk, JetBrains Mono), CSS de la rejilla táctica, animaciones y registro PWA. |
+| `index.html`   | ~18 KB | **Portada del sitio.** Página estática y autocontenida (CSS en línea, sin JS de terceros para pintar): entrada de marca, teatros estratégicos, método editorial y navegación a todas las secciones. Es la raíz que sirve GitHub Pages. |
+| `app.html`     | ~14 KB | Shell HTML de la sala situacional + Tailwind CDN + tokens (paleta carbon/radar/alert/risk/intel), fuentes (Inter, Space Grotesk, JetBrains Mono), CSS de la rejilla táctica, animaciones y registro PWA. Monta `app.js` en `#root`. |
 | `app.js`       | ~70 KB | App React (vía `esm.sh`) con htm para JSX-less. Contiene I18N (ES/EN/FR/DE/LB), todos los módulos: Command Boot, Header, KPI Strip, WorldMap SVG, Alerts Panel, Watchlist, Sistema-Mundo, **Doctrina** (tripolaridad imperfecta: diagrama tripolar, pilares EE.UU./China/Rusia/UE/Sur Global, capa de lectura SENTINEL, embeds YouTube largo + Short), Análisis (FODA / PESTEL / Actores / Matriz de Riesgo), Scenario Lab, Rearme/SIPRI, Monetización, Panel Editor con workflow multiusuario, Brief Diario, Content Studio, modo Sala Situacional. |
 | `data.js`      | ~38 KB | Dataset mock: 10 focos con `title`, `region`, `category`, `intensity`, `coords`, `summary`, `foda`, `pestel`, `actores`, `risks`, `scenarios`. Más KPIs, brief diario, nodos del sistema-mundo y módulo MILEX/SIPRI. |
 | `server.py`    | ~15 KB | Backend HTTP con SQLite, usuarios persistentes, sesiones por token, roles/permisos y endpoints `/api/login`, `/api/session`, `/api/users`, `/api/password`, `/api/focos`, `/api/attachments`, `/api/focos/{id}/dossier`, `/api/history`, `/api/health`. |

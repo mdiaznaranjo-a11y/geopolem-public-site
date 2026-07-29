@@ -132,6 +132,14 @@ p:last-child{ margin-bottom:0; }
 }
 .mainnav a:hover{ color: var(--ink); background: var(--surface-2); border-color: var(--line); }
 
+.sitenav{ display:flex; gap:.15rem; flex-wrap:wrap; }
+.sitenav a{
+  font-family: var(--font-mono); font-size:.62rem; letter-spacing:.09em; text-transform:uppercase;
+  color: var(--muted); text-decoration:none; padding:.32rem .45rem; border-radius:3px;
+  border:1px solid transparent;
+}
+.sitenav a:hover{ color: var(--cyan); background: var(--surface-2); border-color: var(--line); }
+
 .lang{ display:flex; gap:2px; border:1px solid var(--line); border-radius:3px; overflow:hidden; }
 .lang__btn{
   background:transparent; border:0; cursor:pointer; color:var(--muted);

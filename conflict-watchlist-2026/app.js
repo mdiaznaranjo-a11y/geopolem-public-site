@@ -293,14 +293,14 @@
     es: {
       nav:["Método","Mapa","Riesgo","Focos","Señales","Escenarios","Fuentes"],
       badgeSim:"SIMULADO",
-      clock:"Corte editorial · mayo 2026",
+      clock:"Corte editorial · julio 2026",
       cautions:["Datos simulados","No es monitoreo en vivo","No es un parte militar","No es una predicción"],
       heroKicker:"Sala situacional · Edición 2026",
       heroTitle:'<small>Conflict Watchlist</small> Ordenar el tablero <span>antes de opinar</span>',
       heroLede:"Maqueta funcional de sala situacional para leer los focos de conflicto activos y emergentes de 2026. Mapa operativo, matriz de riesgo, escenarios, fuentes visibles y separación editorial explícita entre hecho, evaluación, hipótesis y señal.",
       heroNote:'<strong>Cautela.</strong> Esta versión utiliza datos simulados para mostrar la arquitectura del producto y su método editorial. No es monitoreo en vivo, no es un parte militar y no es una predicción. Verificar siempre en fuente primaria antes de cualquier uso operativo.',
       ctaLong:"Ver análisis completo", ctaBoard:"Abrir tablero", csv:"Descargar CSV",
-      spTitle:"Estado global", spDate:"Mayo 2026", spL1:"Alta", spL2:"Regiones", spL3:"Focos",
+      spTitle:"Estado global", spDate:"Julio 2026", spL1:"Alta", spL2:"Regiones", spL3:"Focos",
       kpi:[["Focos en seguimiento","conflictos activos o emergentes"],["Intensidad alta","violencia armada sostenida"],["Regiones cubiertas","distribución global"],["Confianza agregada","densidad y consistencia de fuentes"]],
       metodoKicker:"Método editorial",
       metodoTitle:"HECHO · EVALUACIÓN · HIPÓTESIS · SEÑAL",
@@ -348,14 +348,14 @@
     en: {
       nav:["Method","Map","Risk","Hotspots","Signals","Scenarios","Sources"],
       badgeSim:"SIMULATED",
-      clock:"Editorial cut-off · May 2026",
+      clock:"Editorial cut-off · July 2026",
       cautions:["Simulated data","Not live monitoring","Not a military report","Not a prediction"],
       heroKicker:"Situation room · 2026 edition",
       heroTitle:'<small>Conflict Watchlist</small> Order the board <span>before forming an opinion</span>',
       heroLede:"A functional situation-room mock-up for reading the active and emerging conflict theatres of 2026. Operational map, risk matrix, scenarios, visible sources and an explicit editorial separation between fact, assessment, hypothesis and signal.",
       heroNote:'<strong>Caution.</strong> This version uses simulated data to show the product architecture and its editorial method. It is not live monitoring, not a military report and not a prediction. Always verify against primary sources before any operational use.',
       ctaLong:"Watch full analysis", ctaBoard:"Open the board", csv:"Download CSV",
-      spTitle:"Global status", spDate:"May 2026", spL1:"High", spL2:"Regions", spL3:"Hotspots",
+      spTitle:"Global status", spDate:"July 2026", spL1:"High", spL2:"Regions", spL3:"Hotspots",
       kpi:[["Tracked hotspots","active or emerging conflicts"],["High intensity","sustained armed violence"],["Regions covered","global distribution"],["Average confidence","source density and consistency"]],
       metodoKicker:"Editorial method",
       metodoTitle:"FACT · ASSESSMENT · HYPOTHESIS · SIGNAL",
@@ -402,10 +402,10 @@
     },
     fr: {
       nav:["Méthode","Carte","Risque","Foyers","Signaux","Scénarios","Sources"],
-      badgeSim:"SIMULÉ", clock:"Arrêt éditorial · mai 2026",
+      badgeSim:"SIMULÉ", clock:"Arrêt éditorial · juillet 2026",
       cautions:["Données simulées","Pas de suivi en direct","Pas un communiqué militaire","Pas une prédiction"],
       ctaLong:"Voir l'analyse complète", ctaBoard:"Ouvrir le tableau", csv:"Télécharger CSV",
-      spTitle:"État global", spDate:"Mai 2026", spL1:"Élevée", spL2:"Régions", spL3:"Foyers",
+      spTitle:"État global", spDate:"Juillet 2026", spL1:"Élevée", spL2:"Régions", spL3:"Foyers",
       panelFilters:"Filtres · Liste", panelDetail:"Fiche du foyer",
       search:"Rechercher pays ou foyer…", intensity:"Intensité", region:"Région", type:"Type",
       allF:"Toutes", allM:"Tous", visible:"foyers visibles", reset:"Réinitialiser", emptyList:"Aucun foyer ne correspond à ces filtres. Ajustez la recherche ou cliquez sur Réinitialiser.",
@@ -417,10 +417,10 @@
     },
     de: {
       nav:["Methode","Karte","Risiko","Brennpunkte","Signale","Szenarien","Quellen"],
-      badgeSim:"SIMULIERT", clock:"Redaktionsschluss · Mai 2026",
+      badgeSim:"SIMULIERT", clock:"Redaktionsschluss · Juli 2026",
       cautions:["Simulierte Daten","Kein Live-Monitoring","Kein Militärbericht","Keine Prognose"],
       ctaLong:"Vollständige Analyse ansehen", ctaBoard:"Dashboard öffnen", csv:"CSV herunterladen",
-      spTitle:"Globaler Status", spDate:"Mai 2026", spL1:"Hoch", spL2:"Regionen", spL3:"Brennpunkte",
+      spTitle:"Globaler Status", spDate:"Juli 2026", spL1:"Hoch", spL2:"Regionen", spL3:"Brennpunkte",
       panelFilters:"Filter · Liste", panelDetail:"Brennpunkt-Profil",
       search:"Land oder Brennpunkt suchen…", intensity:"Intensität", region:"Region", type:"Typ",
       allF:"Alle", allM:"Alle", visible:"sichtbare Brennpunkte", reset:"Zurücksetzen", emptyList:"Kein Brennpunkt entspricht diesen Filtern. Suche anpassen oder Zurücksetzen drücken.",
@@ -432,10 +432,10 @@
     },
     lb: {
       nav:["Method","Kaart","Risiko","Foyeren","Signaler","Szenarien","Quellen"],
-      badgeSim:"SIMULÉIERT", clock:"Redaktiounsschluss · Mee 2026",
+      badgeSim:"SIMULÉIERT", clock:"Redaktiounsschluss · Juli 2026",
       cautions:["Simuléiert Daten","Kee Live-Monitoring","Kee Militärbericht","Keng Prognos"],
       ctaLong:"Ganz Analys kucken", ctaBoard:"Tableau opmaachen", csv:"CSV eroflueden",
-      spTitle:"Globale Status", spDate:"Mee 2026", spL1:"Héich", spL2:"Regiounen", spL3:"Foyeren",
+      spTitle:"Globale Status", spDate:"Juli 2026", spL1:"Héich", spL2:"Regiounen", spL3:"Foyeren",
       panelFilters:"Filteren · Lëscht", panelDetail:"Fiche vum Foyer",
       search:"Land oder Foyer sichen…", intensity:"Intensitéit", region:"Regioun", type:"Typ",
       allF:"All", allM:"All", visible:"siichtbar Foyeren", reset:"Zerécksetzen", emptyList:"Kee Foyer entsprécht dëse Filteren. Passt d'Sich un oder dréckt Zerécksetzen.",
@@ -1040,15 +1040,17 @@
     });
   });
 
-  $("#search").addEventListener("input", e => {
+  const searchInput = $("#search");
+  if (searchInput) searchInput.addEventListener("input", e => {
     state.search = e.target.value.trim();
     renderList();
   });
 
-  $("#reset").addEventListener("click", () => {
+  const resetBtn = $("#reset");
+  if (resetBtn) resetBtn.addEventListener("click", () => {
     state.filters = { intensity:"all", region:"all", type:"all" };
     state.search = "";
-    $("#search").value = "";
+    if (searchInput) searchInput.value = "";
     $$(".chips").forEach(group => {
       group.querySelectorAll(".chip").forEach(c => c.classList.remove("is-active"));
       const all = group.querySelector('.chip[data-value="all"]');
@@ -1095,13 +1097,13 @@
   /* ========================================================
      16. Init
      ======================================================== */
-  captureLongform();
-  updateStaticText();
-  renderKPIs();
-  renderList();
-  renderCards();
-  renderRiskMatrix();
-  renderRegionalMatrix();
-  renderScenarios();
-  renderSources();
+  // Each renderer is isolated: this init runs top-level and synchronously, so a
+  // single throw used to abandon every step after it and leave those panels on their
+  // "—" placeholders. A failure is now contained to its own panel.
+  [captureLongform, updateStaticText, renderKPIs, renderList, renderCards,
+   renderRiskMatrix, renderRegionalMatrix, renderScenarios, renderSources]
+    .forEach(step => {
+      try { step(); }
+      catch (error) { console.error(`GEOPÓLEM · fallo en ${step.name}`, error); }
+    });
 })();

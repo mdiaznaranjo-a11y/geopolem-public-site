@@ -49,7 +49,7 @@
 
     <span class="badge-sim" id="badge-sim">SIMULADO</span>
 
-    <a class="backlink" href="../index.html">← Sala situacional</a>
+    <a class="backlink" href="../app.html">← Sala situacional</a>
 
     <!-- app.js traduce `.mainnav a` por índice: no añadir aquí enlaces que no sean de sección. -->
     <nav class="mainnav" aria-label="Navegación principal">
@@ -62,6 +62,16 @@
       <a href="#fuentes">Fuentes</a>
     </nav>
 
+    <!-- Enlaces a otras líneas GEOPÓLEM. Deliberadamente fuera de `.mainnav`:
+         app.js traduce `.mainnav a` por índice y renombraría estos enlaces. -->
+    <nav class="sitenav" aria-label="Otras líneas GEOPÓLEM">
+      <a href="../app.html#planz">Plan Z</a>
+      <a href="../index.html#talasocracia">Talasocracia</a>
+      <a href="../app.html#sentinel">ONU Sentinel</a>
+      <a href="../index.html#waico">WAICO</a>
+      <a href="../app.html#system">Migración</a>
+    </nav>
+
     <div class="lang" aria-label="Selector de idioma">
       <button class="lang__btn is-active" type="button" data-lang="es">ES</button>
       <button class="lang__btn" type="button" data-lang="en">EN</button>
@@ -72,7 +82,7 @@
 
     <div class="clock">
       <span class="pulse" aria-hidden="true"></span>
-      <span id="clock-text">Corte editorial · mayo 2026</span>
+      <span id="clock-text">Corte editorial · julio 2026</span>
     </div>
   </div>
 </header>
@@ -113,7 +123,7 @@
     <aside class="statuspanel" aria-label="Panel de estado global">
       <div class="statuspanel__head">
         <span id="sp-title">Estado global</span>
-        <strong id="sp-date">Mayo 2026</strong>
+        <strong id="sp-date">Julio 2026</strong>
       </div>
       <div class="statuspanel__body">
         <div class="radar" aria-hidden="true">
@@ -127,9 +137,9 @@
           <span class="radar__label">Distribución esquemática · no cartográfica</span>
         </div>
         <div class="statuspanel__grid">
-          <div><span id="sp-l1">Alta</span><strong id="hero-high">—</strong></div>
-          <div><span id="sp-l2">Regiones</span><strong id="hero-regions">—</strong></div>
-          <div><span id="sp-l3">Focos</span><strong id="hero-total">—</strong></div>
+          <div><span id="sp-l1">Alta</span><strong id="hero-high">7</strong></div>
+          <div><span id="sp-l2">Regiones</span><strong id="hero-regions">5</strong></div>
+          <div><span id="sp-l3">Focos</span><strong id="hero-total">15</strong></div>
         </div>
       </div>
     </aside>
@@ -141,22 +151,22 @@
   <div class="kpis__inner">
     <div class="kpi">
       <div class="kpi__label">Focos en seguimiento</div>
-      <div class="kpi__value" id="kpi-total">—</div>
+      <div class="kpi__value" id="kpi-total">15</div>
       <div class="kpi__hint">conflictos activos o emergentes</div>
     </div>
     <div class="kpi">
       <div class="kpi__label">Intensidad alta</div>
-      <div class="kpi__value" id="kpi-alta">—</div>
+      <div class="kpi__value" id="kpi-alta">7</div>
       <div class="kpi__hint">violencia armada sostenida</div>
     </div>
     <div class="kpi">
       <div class="kpi__label">Regiones cubiertas</div>
-      <div class="kpi__value" id="kpi-regiones">—</div>
+      <div class="kpi__value" id="kpi-regiones">5</div>
       <div class="kpi__hint">distribución global</div>
     </div>
     <div class="kpi">
       <div class="kpi__label">Confianza agregada</div>
-      <div class="kpi__value kpi__value--text" id="kpi-confianza">—</div>
+      <div class="kpi__value kpi__value--text" id="kpi-confianza">Media</div>
       <div class="kpi__hint">densidad y consistencia de fuentes</div>
     </div>
   </div>
@@ -558,7 +568,7 @@
       <a href="https://www.icrc.org" target="_blank" rel="noopener">CICR</a>
     </div>
     <div class="footer__note" id="footer-note">
-      GEOPÓLEM · Conflict Watchlist 2026 — maqueta de sala situacional con datos simulados, corte editorial mayo 2026. No es monitoreo en vivo, no es un parte militar y no es una predicción. No sustituye bases de datos oficiales: verificar antes de cualquier uso operativo.
+      GEOPÓLEM · Conflict Watchlist 2026 — maqueta de sala situacional con datos simulados, corte editorial julio 2026. No es monitoreo en vivo, no es un parte militar y no es una predicción. No sustituye bases de datos oficiales: verificar antes de cualquier uso operativo.
     </div>
   </div>
 </footer>

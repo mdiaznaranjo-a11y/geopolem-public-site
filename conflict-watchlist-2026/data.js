@@ -1,6 +1,6 @@
 /* ============================================================
    GEOPÓLEM · Conflict Watchlist 2026
-   Dataset editorial · corte mayo 2026
+   Dataset editorial · corte julio 2026
 
    AVISO: valores de probabilidad, impacto y confianza son
    estimaciones editoriales SIMULADAS para probar la lectura

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geopolem-command-v1.28.0';
+const CACHE_NAME = 'geopolem-command-v1.29.0';
 const CONFLICTS_DIR = './conflictos-activos/';
 const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
 const WATCHLIST_DIR = './conflict-watchlist-2026/';
@@ -23,6 +23,7 @@ const WATCHLIST_ASSETS = [
 const APP_SHELL = [
   './',
   './index.html',
+  './app.html',
   './app.js',
   './api-adapter.js',
   './data.js',
@@ -55,26 +56,36 @@ async function conflictsBundleCached() {
 function situationRoom() {
   // Serving the root HTML at the watchlist's depth would break its relative paths,
   // so hand the user back to the situation room by URL instead.
-  return Response.redirect(new URL('index.html', self.registration.scope).href, 302);
+  return Response.redirect(new URL('app.html', self.registration.scope).href, 302);
 }
 
-// Every watchlist navigation is answered here, ahead of the generic cache-first
-// branch. That ordering is the point: the directory URL and the shell URL are
-// separate cache keys, so a visitor who browsed here online leaves a runtime-cached
-// entry for whichever one they used, and a plain `caches.match(request)` would hand
-// that shell back offline without checking Leaflet — a dead board. The dependency is
-// checked before any cached HTML is returned, and while it is missing the HTML is not
-// cached either, so the ungated entry never gets created in the first place.
+// Every watchlist navigation is answered here, ahead of the generic branch. The
+// network is tried first so a fresh shell is never withheld, and the cached shell
+// is only served offline. The directory URL and the shell URL are separate cache
+// keys, so a visitor who browsed here online leaves a runtime-cached entry for
+// whichever one they used; Leaflet is checked before any cached HTML is returned,
+// because a shell without it renders a dead board.
 async function watchlistNavigation(request) {
-  if (await caches.match(WATCHLIST_LEAFLET)) {
-    const cached = (await caches.match(request)) || (await caches.match(WATCHLIST_SHELL));
-    if (cached) return cached;
-  }
   try {
-    return await fetch(request);
+    return await cacheThrough(request);
   } catch (error) {
+    if (await caches.match(WATCHLIST_LEAFLET)) {
+      const cached = (await caches.match(request)) || (await caches.match(WATCHLIST_SHELL));
+      if (cached) return cached;
+    }
     return situationRoom();
   }
+}
+
+// Fetch from the network and refresh the cache entry on the way past. Rejects when
+// offline so callers can pick their own fallback.
+async function cacheThrough(request) {
+  const response = await fetch(request);
+  if (response && response.status === 200 && new URL(request.url).origin === self.location.origin) {
+    const copy = response.clone();
+    caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)).catch(() => {});
+  }
+  return response;
 }
 
 self.addEventListener('install', (event) => {
@@ -124,32 +135,25 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Network-first, cache as the offline fallback. Cache-first was pinning the
+  // editorial data indefinitely: the cache name was the only thing that invalidated
+  // it, so any deploy that did not bump it left visitors on a stale data.js while the
+  // HTML around it moved on — which is what left the KPI cards on their placeholders.
   event.respondWith(
-    caches.match(request).then((cached) => {
+    cacheThrough(request).catch(async () => {
+      const cached = await caches.match(request);
       if (cached) return cached;
-
-      return fetch(request)
-        .then((response) => {
-          const isAppAsset = new URL(request.url).origin === self.location.origin;
-          if (isAppAsset && response && response.status === 200) {
-            const copy = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
-          }
-          return response;
-        })
-        .catch(async () => {
-          if (request.mode !== 'navigate') return caches.match(request);
-          if (url.pathname.includes('/conflictos-activos/')) {
-            if (await conflictsBundleCached()) {
-              const shell = await caches.match(CONFLICTS_SHELL);
-              if (shell) return shell;
-            }
-            // The shell is useless without its bundle, so hand the user back to the
-            // situation room instead of rendering a blank page.
-            return situationRoom();
-          }
-          return caches.match('./index.html');
-        });
+      if (request.mode !== 'navigate') return Response.error();
+      if (url.pathname.includes('/conflictos-activos/')) {
+        if (await conflictsBundleCached()) {
+          const shell = await caches.match(CONFLICTS_SHELL);
+          if (shell) return shell;
+        }
+        // The shell is useless without its bundle, so hand the user back to the
+        // situation room instead of rendering a blank page.
+        return situationRoom();
+      }
+      return (await caches.match('./index.html')) || Response.error();
     })
   );
 });

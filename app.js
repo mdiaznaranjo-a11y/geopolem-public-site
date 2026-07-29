@@ -3880,12 +3880,22 @@ function SentinelBrief({ lang }) {
 /* ========================================================================
    App root
    ======================================================================== */
+// Deep links (manifest shortcuts, the static home page) address views by hash.
+// Unknown hashes fall back to the dashboard rather than rendering nothing.
+const VIEW_KEYS = Object.keys(I18N.ES.nav);
+function viewFromHash() {
+  const key = decodeURIComponent((window.location.hash || '').replace(/^#\/?/, '')).trim();
+  return VIEW_KEYS.includes(key) ? key : null;
+}
+
 function App() {
   const [lang, setLang] = useState('ES');
-  const [view, setView] = useState('dashboard');
+  const [view, setView] = useState(() => viewFromHash() || 'dashboard');
   const [selectedId, setSelectedId] = useState('ukr-rus');
   const [sitRoom, setSitRoom] = useState(false);
-  const [bootComplete, setBootComplete] = useState(false);
+  // A visitor arriving on a deep link already chose a destination, so the boot
+  // sequence is skipped rather than replayed in front of it.
+  const [bootComplete, setBootComplete] = useState(() => viewFromHash() !== null);
   const [customFocos, setCustomFocos] = useState([]);
   // Sprint 1 — capa de adaptador API con respaldo local. `baseFocos` arranca
   // con los datos locales (data.js) y sólo se reemplaza si la API v1 responde.
@@ -3902,6 +3912,21 @@ function App() {
   useEffect(() => {
     document.body.classList.toggle('sitroom', sitRoom);
   }, [sitRoom]);
+
+  // Keep the hash and the active view in sync so views are linkable and the
+  // browser back button steps through them.
+  useEffect(() => {
+    const onHashChange = () => setView(viewFromHash() || 'dashboard');
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  useEffect(() => {
+    const target = `#${view}`;
+    if (window.location.hash !== target) {
+      window.history.replaceState(null, '', target);
+    }
+  }, [view]);
 
   // Sprint 1 — carga watchlist vía adaptador (API-first con fallback local).
   // Con USE_API=false devuelve FOCOS locales de inmediato; ante error de API,
