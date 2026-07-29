@@ -43,6 +43,7 @@ Requiere iniciar `server.py` en el puerto 8000 antes del despliegue para exponer
 | `manifest.webmanifest` | ~2 KB | Configuración PWA instalable: nombre, colores, modo standalone, iconos y accesos rápidos. |
 | `service-worker.js` | ~2 KB | Caché básico de app shell para carga rápida y soporte offline parcial. |
 | `icons/` | 3 SVG | Iconos 192, 512 y maskable para instalación móvil/escritorio. |
+| `talasocracia/` | ~60 KB | Sub-página estática del teatro marítimo **T—02 Talasocracia**: fórmula GEOPÓLEM, matriz mar/tierra, fichas de pasos críticos con esquemas SVG en línea, marco Mahan–Mackinder y uso editorial. Autocontenida, sin build ni librería de mapas. |
 | `dossiers/` | — | Sub-página estática con los dossiers técnicos en PDF. |
 | `conflictos-activos/` | ~1,1 MB | Sub-página estática: **maqueta SIMULADA** del dashboard de conflictos activos (ver sección siguiente). Artefacto de build, no editar a mano. |
 | `conflict-watchlist-2026/` | ~160 KB | Sub-página estática: **sala situacional SIMULADA** Conflict Watchlist 2026 (ver sección siguiente). HTML/CSS/JS a mano, sin build. |

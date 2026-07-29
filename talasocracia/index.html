@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Talasocracia — Poder marítimo, rutas y chokepoints · GEOPÓLEM</title>
+<meta name="description" content="Talasocracia: el teatro marítimo de GEOPÓLEM. Rutas, puertos, estrechos y proyección naval frente a la telurocracia continental. Ormuz, Malaca, Suez, Bab el-Mandeb, Panamá y Ártico, con el marco Mahan–Mackinder." />
+<meta name="keywords" content="talasocracia, telurocracia, poder marítimo, chokepoints, Ormuz, Malaca, Suez, Bab el-Mandeb, Panamá, Ártico, cables submarinos, GNL, Mahan, Mackinder, GEOPÓLEM" />
+<meta name="theme-color" content="#05080c" />
+<link rel="canonical" href="https://mdiaznaranjo-a11y.github.io/geopolem-public-site/talasocracia/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="GEOPÓLEM" />
+<meta property="og:title" content="Talasocracia — Poder marítimo, rutas y chokepoints · GEOPÓLEM" />
+<meta property="og:description" content="Mar, flujos, rutas, puertos, estrechos y proyección naval. El teatro marítimo leído frente al poder continental." />
+<meta property="og:image" content="../assets/geopolem_siete_dimensiones_cover_9x16.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Talasocracia — Poder marítimo, rutas y chokepoints · GEOPÓLEM" />
+<meta name="twitter:description" content="Mar, flujos, rutas, puertos, estrechos y proyección naval. El teatro marítimo leído frente al poder continental." />
+<meta name="twitter:image" content="../assets/geopolem_siete_dimensiones_cover_9x16.jpg" />
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2305080c'/><circle cx='32' cy='32' r='22' fill='none' stroke='%2322d3ee' stroke-width='2'/><circle cx='32' cy='32' r='3' fill='%23ef4444'/><line x1='32' y1='4' x2='32' y2='60' stroke='%2322d3ee' stroke-width='1' opacity='.4'/><line x1='4' y1='32' x2='60' y2='32' stroke='%2322d3ee' stroke-width='1' opacity='.4'/></svg>" />
+<link rel="manifest" href="../manifest.webmanifest" />
+<link rel="apple-touch-icon" href="../icons/icon-192.svg" />
+
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.bunny.net/css?family=jetbrains-mono:400,500,600|inter:400,500,600,700,800|space-grotesk:600,700" />
+
+<!--
+  Misma decisión que la portada: página estática y autocontenida, sin build y sin
+  depender de un CDN de JS para pintar. Los esquemas de estrechos son SVG en línea
+  en lugar de una librería de mapas, porque un teatro que sólo se entiende con
+  Leaflet cargado deja de entenderse en cuanto la red falla.
+-->
+<style>
+  :root{
+    color-scheme: dark;
+    --bg:#05080c; --bg-2:#080d13; --panel:#0d141d; --line:rgba(34,211,238,.14);
+    --line-soft:rgba(148,163,184,.12);
+    --ink:#e2e8f0; --ink-2:#cbd5e1; --muted:#94a3b8; --dim:#64748b;
+    --cyan:#22d3ee; --amber:#f59e0b; --red:#ef4444; --green:#10b981;
+    --sea:rgba(34,211,238,.16); --land:rgba(148,163,184,.16);
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --sans:'Inter',system-ui,-apple-system,sans-serif;
+    --display:'Space Grotesk','Inter',system-ui,sans-serif;
+    --max:1180px; --gutter:clamp(1rem,4vw,2.5rem);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--sans); line-height:1.62;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+    background-image:
+      radial-gradient(1100px 640px at 78% -12%, rgba(34,211,238,.08), transparent 62%),
+      radial-gradient(880px 560px at 8% 108%, rgba(59,130,246,.06), transparent 58%);
+  }
+  a{color:inherit}
+  .shell{max-width:var(--max); margin:0 auto; padding-inline:var(--gutter)}
+  .mono{font-family:var(--mono)}
+  .kicker{
+    font-family:var(--mono); font-size:.63rem; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--muted); display:block; margin-bottom:.7rem;
+  }
+  .skip-link{
+    position:absolute; left:-9999px; top:0; background:var(--cyan); color:#04121a;
+    padding:.6rem 1rem; z-index:100; font-family:var(--mono); font-size:.75rem;
+  }
+  .skip-link:focus{left:0}
+  :focus-visible{outline:2px solid var(--cyan); outline-offset:2px}
+
+  /* ---------- Barra superior ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:40;
+    background:rgba(5,8,12,.9); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar__inner{
+    max-width:var(--max); margin:0 auto; padding:.55rem var(--gutter);
+    display:flex; align-items:center; gap:.9rem 1.2rem; flex-wrap:wrap;
+  }
+  .brand{display:flex; align-items:center; gap:.6rem; text-decoration:none; flex:none}
+  .brand svg{width:30px; height:30px; color:var(--cyan); flex:none}
+  .brand__name{font-family:var(--display); font-weight:700; letter-spacing:.06em; font-size:1rem}
+  .brand__sub{
+    font-family:var(--mono); font-size:.57rem; letter-spacing:.17em;
+    text-transform:uppercase; color:var(--muted); display:block; margin-top:-2px;
+  }
+  .mainnav{display:flex; gap:.1rem; flex-wrap:wrap; margin-left:auto}
+  .mainnav a{
+    font-family:var(--mono); font-size:.65rem; letter-spacing:.09em; text-transform:uppercase;
+    color:var(--ink-2); text-decoration:none; padding:.4rem .5rem; border-radius:3px;
+    border:1px solid transparent; white-space:nowrap;
+  }
+  .mainnav a:hover{color:#fff; background:rgba(148,163,184,.09); border-color:var(--line-soft)}
+  .mainnav a.is-key{color:var(--cyan)}
+  .mainnav a[aria-current="page"]{color:#fff; border-color:var(--line); background:rgba(34,211,238,.1)}
+  @media(max-width:899px){
+    .mainnav{
+      flex-wrap:nowrap; overflow-x:auto; width:100%; margin-left:0;
+      scrollbar-width:none; -webkit-overflow-scrolling:touch;
+    }
+    .mainnav::-webkit-scrollbar{display:none}
+  }
+
+  /* ---------- Migas ---------- */
+  .crumbs{
+    font-family:var(--mono); font-size:.62rem; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--dim); padding-top:1.1rem;
+  }
+  .crumbs a{color:var(--muted); text-decoration:none}
+  .crumbs a:hover{color:var(--cyan)}
+  .crumbs span{margin:0 .4rem; opacity:.6}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:clamp(1.8rem,5vw,3.2rem) 0 clamp(2rem,4vw,3rem); border-bottom:1px solid var(--line-soft)}
+  .hero__grid{display:grid; gap:clamp(1.6rem,4vw,3rem); grid-template-columns:1fr}
+  @media(min-width:900px){.hero__grid{grid-template-columns:1.55fr .95fr; align-items:start}}
+  h1{
+    font-family:var(--display); font-weight:700; margin:0 0 1rem;
+    font-size:clamp(1.85rem,5vw,3.1rem); line-height:1.1; letter-spacing:-.01em;
+  }
+  h1 small{
+    display:block; font-family:var(--mono); font-size:.62rem; font-weight:500;
+    letter-spacing:.24em; text-transform:uppercase; color:var(--cyan); margin-bottom:.7rem;
+  }
+  h1 span{color:var(--cyan)}
+  .lede{font-size:clamp(1rem,1.6vw,1.13rem); color:var(--ink-2); margin:0 0 1.1rem; max-width:60ch}
+  .sub{color:var(--muted); font-size:.95rem; margin:0 0 1.7rem; max-width:62ch}
+  .actions{display:flex; gap:.6rem; flex-wrap:wrap}
+  .btn{
+    display:inline-flex; align-items:center; gap:.5rem; text-decoration:none;
+    font-family:var(--mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase;
+    padding:.68rem 1.05rem; border-radius:4px; border:1px solid var(--line-soft);
+    color:var(--ink-2); background:rgba(148,163,184,.05); transition:.15s;
+  }
+  .btn:hover{color:#fff; border-color:var(--line); background:rgba(148,163,184,.12)}
+  .btn--primary{
+    background:rgba(34,211,238,.13); border-color:rgba(34,211,238,.4); color:#a5f3fc; font-weight:600;
+  }
+  .btn--primary:hover{background:rgba(34,211,238,.22); border-color:var(--cyan); color:#fff}
+
+  .defcard{
+    border:1px solid var(--line); border-radius:5px; padding:1.3rem;
+    background:linear-gradient(180deg,rgba(13,20,29,.92),rgba(8,13,19,.92));
+  }
+  .defcard dl{margin:0; display:grid; gap:.85rem}
+  .defcard dt{
+    font-family:var(--mono); font-size:.6rem; letter-spacing:.15em;
+    text-transform:uppercase; color:var(--cyan); margin-bottom:.15rem;
+  }
+  .defcard dd{margin:0; font-size:.88rem; color:var(--ink-2)}
+  .defcard hr{border:0; border-top:1px solid var(--line-soft); margin:.3rem 0}
+  .etymo{font-family:var(--mono); font-size:.75rem; color:var(--muted)}
+
+  /* ---------- Secciones ---------- */
+  section{padding:clamp(2.4rem,5.5vw,4rem) 0}
+  section+section{border-top:1px solid var(--line-soft)}
+  h2{
+    font-family:var(--display); font-weight:700; margin:0 0 .6rem;
+    font-size:clamp(1.3rem,3vw,1.9rem); line-height:1.2;
+  }
+  h3{font-family:var(--display); font-weight:600}
+  .section__lede{color:var(--muted); max-width:70ch; margin:0 0 1.9rem; font-size:.95rem}
+
+  .grid{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.grid--3{grid-template-columns:repeat(3,1fr)}}
+
+  .card{
+    border:1px solid var(--line-soft); border-radius:5px; padding:1.15rem 1.2rem 1.25rem;
+    background:rgba(13,20,29,.6); display:flex; flex-direction:column; gap:.5rem;
+    text-decoration:none; transition:.15s; scroll-margin-top:5.5rem;
+  }
+  a.card:hover{border-color:var(--line); background:rgba(19,28,40,.8); transform:translateY(-1px)}
+  .card__top{display:flex; align-items:center; gap:.5rem; flex-wrap:wrap}
+  .card__num{font-family:var(--mono); font-size:.6rem; color:var(--dim); letter-spacing:.12em}
+  .card h3{margin:0; font-size:1.02rem; line-height:1.25}
+  .card p{margin:0; font-size:.87rem; color:var(--muted)}
+  .card__go{
+    font-family:var(--mono); font-size:.61rem; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--cyan); margin-top:auto; padding-top:.35rem;
+  }
+  .tag{
+    font-family:var(--mono); font-size:.55rem; letter-spacing:.13em; text-transform:uppercase;
+    padding:.15rem .42rem; border-radius:999px; border:1px solid var(--line-soft); color:var(--muted);
+  }
+  .tag--sea{color:#67e8f9; border-color:rgba(34,211,238,.35); background:rgba(34,211,238,.08)}
+  .tag--land{color:#fcd34d; border-color:rgba(245,158,11,.35); background:rgba(245,158,11,.08)}
+  .tag--alert{color:#fca5a5; border-color:rgba(239,68,68,.35); background:rgba(239,68,68,.08)}
+
+  /* ---------- Fórmula ---------- */
+  .formula{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:860px){.formula{grid-template-columns:1fr 1fr}}
+  .eq{
+    border:1px solid var(--line-soft); border-radius:5px; padding:1.15rem 1.2rem;
+    background:rgba(13,20,29,.6);
+  }
+  .eq--sea{border-left:2px solid var(--cyan)}
+  .eq--land{border-left:2px solid var(--amber)}
+  .eq__name{
+    font-family:var(--mono); font-size:.66rem; letter-spacing:.17em; text-transform:uppercase;
+    margin-bottom:.5rem; display:flex; align-items:center; gap:.45rem;
+  }
+  .eq--sea .eq__name{color:#67e8f9}
+  .eq--land .eq__name{color:#fcd34d}
+  .dot{width:7px; height:7px; border-radius:50%; flex:none}
+  .eq__terms{
+    display:flex; flex-wrap:wrap; align-items:center; gap:.35rem;
+    font-family:var(--mono); font-size:.74rem; margin-bottom:.7rem;
+  }
+  .eq__terms b{
+    font-weight:500; padding:.16rem .45rem; border-radius:3px;
+    border:1px solid var(--line-soft); background:rgba(148,163,184,.06); color:var(--ink-2);
+  }
+  .eq--sea .eq__terms b{border-color:rgba(34,211,238,.24); background:rgba(34,211,238,.07)}
+  .eq--land .eq__terms b{border-color:rgba(245,158,11,.24); background:rgba(245,158,11,.06)}
+  .eq__terms i{color:var(--dim); font-style:normal}
+  .eq p{margin:0; font-size:.88rem; color:var(--muted)}
+  .eq__etymo{font-family:var(--mono); font-size:.68rem; color:var(--dim); margin-top:.6rem}
+  .clash{
+    margin-top:1rem; padding:1rem 1.15rem; border:1px solid var(--line); border-radius:5px;
+    background:linear-gradient(90deg,rgba(34,211,238,.07),rgba(245,158,11,.06));
+    font-size:.9rem; color:var(--ink-2);
+  }
+  .clash strong{color:#fff}
+  .clash__modes{
+    display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.75rem;
+    font-family:var(--mono); font-size:.62rem; letter-spacing:.11em; text-transform:uppercase;
+  }
+  .clash__modes span{
+    padding:.22rem .55rem; border-radius:3px; border:1px solid var(--line-soft);
+    background:rgba(5,8,12,.6); color:var(--muted);
+  }
+
+  /* ---------- Matriz ---------- */
+  .matrix-wrap{border:1px solid var(--line-soft); border-radius:5px; overflow:hidden; background:rgba(13,20,29,.5)}
+  table.matrix{width:100%; border-collapse:collapse; font-size:.87rem}
+  table.matrix th, table.matrix td{text-align:left; padding:.8rem .95rem; vertical-align:top}
+  table.matrix thead th{
+    font-family:var(--mono); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--muted); background:rgba(8,13,19,.85); border-bottom:1px solid var(--line);
+  }
+  table.matrix thead th.is-sea{color:#67e8f9}
+  table.matrix thead th.is-land{color:#fcd34d}
+  table.matrix tbody tr+tr{border-top:1px solid var(--line-soft)}
+  table.matrix tbody tr:hover{background:rgba(148,163,184,.04)}
+  table.matrix th[scope="row"]{
+    font-family:var(--mono); font-size:.63rem; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--ink-2); font-weight:500; width:20%;
+  }
+  table.matrix td{color:var(--muted)}
+  table.matrix td.is-sea{color:var(--ink-2); background:rgba(34,211,238,.035)}
+  /* Tres columnas de texto no caben en un teléfono sin volverse ilegibles: por debajo
+     de 780px cada fila se apila y las etiquetas de columna se reinyectan con ::before. */
+  @media(max-width:779px){
+    table.matrix, table.matrix tbody, table.matrix tr, table.matrix td, table.matrix th{display:block; width:auto}
+    table.matrix thead{position:absolute; left:-9999px}
+    table.matrix tbody tr{padding:.35rem 0 .9rem; border-top:1px solid var(--line-soft)}
+    table.matrix th[scope="row"]{
+      width:auto; color:#fff; background:rgba(8,13,19,.75); padding:.55rem .95rem;
+      border-bottom:1px solid var(--line-soft);
+    }
+    table.matrix td{padding:.6rem .95rem .1rem}
+    table.matrix td::before{
+      content:attr(data-col); display:block; font-family:var(--mono); font-size:.56rem;
+      letter-spacing:.15em; text-transform:uppercase; margin-bottom:.2rem;
+    }
+    table.matrix td.is-sea::before{color:#67e8f9}
+    table.matrix td.is-land::before{color:#fcd34d}
+  }
+
+  /* ---------- Chokepoints ---------- */
+  .chokes{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:700px){.chokes{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1060px){.chokes{grid-template-columns:repeat(3,1fr)}}
+  .choke{
+    border:1px solid var(--line-soft); border-radius:5px; background:rgba(13,20,29,.6);
+    display:flex; flex-direction:column; overflow:hidden; transition:.15s; scroll-margin-top:5.5rem;
+  }
+  .choke:hover{border-color:var(--line); background:rgba(19,28,40,.75)}
+  .choke__map{display:block; width:100%; height:auto; background:rgba(5,8,12,.65); border-bottom:1px solid var(--line-soft)}
+  .choke__body{padding:1rem 1.1rem 1.15rem; display:flex; flex-direction:column; gap:.55rem; flex:1}
+  .choke__head{display:flex; align-items:baseline; justify-content:space-between; gap:.6rem; flex-wrap:wrap}
+  .choke h3{margin:0; font-size:1rem}
+  .choke__code{font-family:var(--mono); font-size:.58rem; letter-spacing:.14em; color:var(--dim)}
+  .choke p{margin:0; font-size:.85rem; color:var(--muted)}
+  .choke__data{display:grid; gap:.4rem; margin:.15rem 0 0}
+  .choke__row{display:flex; gap:.6rem; align-items:baseline; font-size:.8rem}
+  .choke__row dt{
+    font-family:var(--mono); font-size:.56rem; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--dim); flex:0 0 5.4rem;
+  }
+  .choke__row dd{margin:0; color:var(--ink-2)}
+  .choke__foot{
+    margin-top:auto; padding-top:.6rem; border-top:1px solid var(--line-soft);
+    font-family:var(--mono); font-size:.58rem; letter-spacing:.1em; color:var(--dim);
+  }
+  .passes{
+    display:flex; gap:.4rem; flex-wrap:wrap; margin-top:1.4rem;
+    font-family:var(--mono); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase;
+  }
+  .passes span{
+    padding:.25rem .6rem; border-radius:999px; border:1px solid var(--line-soft);
+    color:var(--muted); background:rgba(13,20,29,.6);
+  }
+  .passes b{color:var(--dim); font-weight:400; border:0; padding:.25rem 0}
+
+  /* ---------- Marco doctrinal ---------- */
+  .frame{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:860px){.frame{grid-template-columns:repeat(2,1fr)}}
+  .thinker{
+    border:1px solid var(--line-soft); border-radius:5px; padding:1.2rem 1.25rem;
+    background:rgba(13,20,29,.6);
+  }
+  .thinker--sea{border-top:2px solid var(--cyan)}
+  .thinker--land{border-top:2px solid var(--amber)}
+  .thinker__who{
+    font-family:var(--mono); font-size:.6rem; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:.4rem;
+  }
+  .thinker h3{margin:0 0 .5rem; font-size:1.05rem}
+  .thinker p{margin:0 0 .7rem; font-size:.88rem; color:var(--muted)}
+  .thinker blockquote{
+    margin:0; padding:.7rem .9rem; border-left:2px solid var(--line-soft);
+    background:rgba(5,8,12,.5); font-size:.85rem; color:var(--ink-2);
+  }
+  .thinker blockquote cite{display:block; margin-top:.35rem; font-style:normal; font-family:var(--mono); font-size:.58rem; letter-spacing:.12em; color:var(--dim)}
+  .frame__note{
+    margin:1.4rem 0 0; padding:.95rem 1.15rem; border:1px solid var(--line-soft); border-radius:5px;
+    background:rgba(8,13,19,.7); font-size:.88rem; color:var(--ink-2);
+  }
+  .frame__note strong{color:#fff}
+
+  /* ---------- Señales ---------- */
+  .signals{list-style:none; margin:0; padding:0; display:grid; gap:.6rem}
+  .signals li{
+    border:1px solid var(--line-soft); border-left:2px solid var(--amber); border-radius:4px;
+    padding:.75rem .95rem; background:rgba(13,20,29,.55); font-size:.87rem; color:var(--ink-2);
+  }
+  .signals b{
+    display:block; font-family:var(--mono); font-size:.58rem; letter-spacing:.14em;
+    text-transform:uppercase; color:#fcd34d; margin-bottom:.2rem; font-weight:500;
+  }
+
+  /* ---------- Uso editorial ---------- */
+  .use{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:700px){.use{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1050px){.use{grid-template-columns:repeat(4,1fr)}}
+  .use__item{
+    border:1px solid var(--line-soft); border-radius:5px; padding:1.05rem 1.1rem;
+    background:rgba(13,20,29,.55); display:flex; flex-direction:column; gap:.45rem;
+  }
+  .use__item svg{width:18px; height:18px; color:var(--cyan)}
+  .use__item h3{margin:0; font-size:.98rem}
+  .use__item p{margin:0; font-size:.85rem; color:var(--muted)}
+  .use__item ul{margin:.2rem 0 0; padding-left:1.05rem; font-size:.82rem; color:var(--muted)}
+  .use__item li{margin-bottom:.2rem}
+
+  /* ---------- Cautelas y cierre ---------- */
+  .caution-note{
+    margin:1.6rem 0 0; padding:.9rem 1.1rem; border:1px solid var(--line-soft); border-radius:5px;
+    background:rgba(8,13,19,.7); font-size:.85rem; color:var(--muted);
+  }
+  .caution-note strong{color:var(--ink-2)}
+  .close{text-align:center; padding:clamp(2.8rem,6vw,4.5rem) 0}
+  .close__brand{
+    font-family:var(--display); font-weight:700; font-size:clamp(1.3rem,3.4vw,2rem);
+    margin:0 0 .5rem; letter-spacing:.01em;
+  }
+  .close__brand span{color:var(--cyan)}
+  .close p{color:var(--muted); margin:0 auto 1.5rem; max-width:56ch; font-size:.93rem}
+  .close .actions{justify-content:center}
+
+  footer{border-top:1px solid var(--line-soft); padding:2rem 0 2.6rem; color:var(--dim); font-size:.78rem}
+  footer p{margin:0 0 .5rem; max-width:78ch}
+  footer a{color:var(--muted)}
+  .footnav{display:flex; gap:.4rem 1rem; flex-wrap:wrap; margin-bottom:1rem; font-family:var(--mono); font-size:.65rem; letter-spacing:.08em; text-transform:uppercase}
+  .footnav a{text-decoration:none; color:var(--muted)}
+  .footnav a:hover{color:var(--cyan)}
+
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    a.card:hover{transform:none}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#chokepoints">Saltar a los pasos críticos</a>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="../index.html" aria-label="GEOPÓLEM — inicio">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="29" height="29" rx="1" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M1.5 16h29M16 1.5v29" stroke="currentColor" stroke-width=".7" opacity=".45"/>
+        <circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.1" opacity=".7"/>
+        <circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="1.1"/>
+        <circle cx="23.5" cy="8.5" r="2.4" fill="#ef4444"/>
+      </svg>
+      <span>
+        <span class="brand__name">GEOPÓLEM</span>
+        <span class="brand__sub">Inteligencia geopolítica</span>
+      </span>
+    </a>
+
+    <nav class="mainnav" aria-label="Navegación principal">
+      <a href="../index.html#teatros">Teatros</a>
+      <a href="../index.html#metodo">Método</a>
+      <a href="../app.html#planz" class="is-key">Plan Z</a>
+      <a href="./index.html" class="is-key" aria-current="page">Talasocracia</a>
+      <a href="../app.html#sentinel" class="is-key">ONU Sentinel</a>
+      <a href="../index.html#waico" class="is-key">WAICO</a>
+      <a href="../app.html#system" class="is-key">Migración</a>
+      <a href="../app.html">Sala situacional</a>
+      <a href="../conflict-watchlist-2026/index.html">Watchlist</a>
+      <a href="../dossiers/index.html">Dossiers</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="shell">
+  <nav class="crumbs" aria-label="Ruta de navegación">
+    <a href="../index.html">Inicio</a><span aria-hidden="true">/</span>
+    <a href="../index.html#teatros">Teatros estratégicos</a><span aria-hidden="true">/</span>
+    Talasocracia
+  </nav>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="shell hero__grid">
+    <div>
+      <h1>
+        <small>Teatro estratégico T—02 · Poder marítimo</small>
+        Quien controla el paso <span>fija el coste del comercio ajeno</span>
+      </h1>
+      <p class="lede">
+        La talasocracia es la forma de poder que se organiza sobre el mar: rutas, puertos,
+        estrechos, cables y flota. No consiste en ocupar el océano —nadie lo ocupa— sino
+        en decidir bajo qué condiciones circulan los demás.
+      </p>
+      <p class="sub">
+        GEOPÓLEM trata el mar como infraestructura, no como escenario. Un estrecho no es
+        un accidente geográfico: es un punto donde se concentran energía, comercio y datos,
+        y donde una decisión política local se traduce en precio, seguro y plazo a diez mil
+        kilómetros de distancia. Esta página fija el marco conceptual del teatro y sus
+        aplicaciones editoriales.
+      </p>
+      <div class="actions">
+        <a class="btn btn--primary" href="#chokepoints">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg>
+          Ver los pasos críticos
+        </a>
+        <a class="btn" href="#matriz">Matriz mar / tierra</a>
+        <a class="btn" href="#marco">Mahan y Mackinder</a>
+      </div>
+    </div>
+
+    <aside class="defcard" aria-label="Definición de talasocracia">
+      <dl>
+        <div>
+          <dt>Nombre</dt>
+          <dd class="etymo">θάλασσα (<em>thálassa</em>, mar) + κράτος (<em>krátos</em>, poder)</dd>
+        </div>
+        <hr />
+        <div>
+          <dt>Objeto</dt>
+          <dd>Cómo el control de rutas, puertos y estrechos convierte la geografía marítima en capacidad de condicionar a terceros.</dd>
+        </div>
+        <hr />
+        <div>
+          <dt>Unidad de análisis</dt>
+          <dd>El flujo, no el territorio: barriles, cargas de GNL, TEU, ancho de banda y tránsitos diarios.</dd>
+        </div>
+        <hr />
+        <div>
+          <dt>Límite</dt>
+          <dd>Marco analítico con cifras de orden de magnitud de fuentes públicas. No es monitoreo en vivo ni parte militar.</dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ FÓRMULA ============ -->
+<section id="formula">
+  <div class="shell">
+    <span class="kicker">Definición operativa</span>
+    <h2>La fórmula GEOPÓLEM</h2>
+    <p class="section__lede">
+      Dos maneras históricas de acumular poder a partir de la geografía. No son etiquetas
+      morales ni bandos: son lógicas distintas de conversión de posición en influencia, y
+      casi ningún actor real es puro en una de ellas.
+    </p>
+
+    <div class="formula">
+      <div class="eq eq--sea">
+        <div class="eq__name"><span class="dot" style="background:#22d3ee"></span>Talasocracia</div>
+        <div class="eq__terms">
+          <b>mar</b><i>+</i><b>flujos</b><i>+</i><b>rutas</b><i>+</i><b>puertos</b><i>+</i><b>chokepoints</b><i>+</i><b>proyección naval</b>
+        </div>
+        <p>
+          El poder se ejerce sobre el movimiento. Se mide en tránsitos asegurados, escalas
+          disponibles, capacidad de escolta y días de navegación evitados. Su ventaja es la
+          velocidad de reposicionamiento; su fragilidad, que depende de pasos estrechos y de
+          nodos portuarios muy concretos.
+        </p>
+        <p class="eq__etymo">Arquetipos históricos: Atenas, Venecia, Provincias Unidas, Reino Unido, Estados Unidos.</p>
+      </div>
+
+      <div class="eq eq--land">
+        <div class="eq__name"><span class="dot" style="background:#f59e0b"></span>Telurocracia</div>
+        <div class="eq__terms">
+          <b>tierra</b><i>+</i><b>profundidad</b><i>+</i><b>fronteras</b><i>+</i><b>recursos</b><i>+</i><b>corredores</b><i>+</i><b>proyección continental</b>
+        </div>
+        <p>
+          El poder se ejerce sobre el espacio y lo que contiene. Se mide en profundidad
+          estratégica, dotación de recursos, kilómetros de tubo y de vía, y control de
+          fronteras. Su ventaja es que no puede ser bloqueada desde el mar; su fragilidad,
+          el coste del transporte terrestre y la exposición de sus corredores a terceros.
+        </p>
+        <p class="eq__etymo">Arquetipos históricos: Roma continental, Imperio ruso, China interior, Irán.</p>
+      </div>
+    </div>
+
+    <p class="clash">
+      <strong>Competencia.</strong> El tablero no se explica por una de las dos lógicas, sino
+      por la relación entre ambas. La potencia marítima intenta encarecer el interior; la
+      continental intenta salir al mar o prescindir de él. Esa relación adopta tres formas,
+      con frecuencia simultáneas en distintos tramos del mismo teatro.
+      <span class="clash__modes">
+        <span>Choque — bloqueo, interdicción, presencia naval</span>
+        <span>Negociación — acceso, tránsito, tarifas, bases</span>
+        <span>Combinación — corredores mixtos mar-tierra</span>
+      </span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ MATRIZ ============ -->
+<section id="matriz">
+  <div class="shell">
+    <span class="kicker">Comparación</span>
+    <h2>Matriz de poder marítimo y poder terrestre</h2>
+    <p class="section__lede">
+      Misma pregunta, nueve veces, respondida desde cada lógica. La matriz es la
+      herramienta que usamos antes de analizar un episodio concreto: sitúa al actor,
+      identifica de qué depende y anticipa por dónde se le puede presionar.
+    </p>
+
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <caption class="mono" style="caption-side:bottom;text-align:left;padding:.8rem .95rem;font-size:.62rem;letter-spacing:.1em;color:#64748b;text-transform:uppercase">
+          Matriz analítica GEOPÓLEM · Evaluación editorial, no clasificación cerrada
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Dimensión</th>
+            <th scope="col" class="is-sea">Talasocracia</th>
+            <th scope="col" class="is-land">Telurocracia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Base geográfica</th>
+            <td class="is-sea" data-col="Talasocracia">Litoral, archipiélagos, acceso a mar abierto y aguas profundas.</td>
+            <td class="is-land" data-col="Telurocracia">Masa continental, profundidad interior, fronteras terrestres largas.</td>
+          </tr>
+          <tr>
+            <th scope="row">Fuente de poder</th>
+            <td class="is-sea" data-col="Talasocracia">Control del movimiento: quién pasa, cuándo, a qué coste y con qué seguro.</td>
+            <td class="is-land" data-col="Telurocracia">Control del stock: recursos, población, industria y territorio bajo jurisdicción.</td>
+          </tr>
+          <tr>
+            <th scope="row">Instrumento</th>
+            <td class="is-sea" data-col="Talasocracia">Flota de superficie y submarina, bases y escalas, marina mercante, aseguradoras, registro de banderas.</td>
+            <td class="is-land" data-col="Telurocracia">Ejércitos de masa, ferrocarril y carretera, oleoductos y gasoductos, red eléctrica.</td>
+          </tr>
+          <tr>
+            <th scope="row">Lógica de coste</th>
+            <td class="is-sea" data-col="Talasocracia">Transporte barato por unidad, coste fijo alto: construir y sostener flota, puertos y presencia permanente.</td>
+            <td class="is-land" data-col="Telurocracia">Transporte caro por unidad, coste hundido en infraestructura: el tubo o la vía sólo sirven en su trazado.</td>
+          </tr>
+          <tr>
+            <th scope="row">Vulnerabilidad</th>
+            <td class="is-sea" data-col="Talasocracia">Concentración: unos pocos estrechos, canales y cables concentran una parte desproporcionada del flujo.</td>
+            <td class="is-land" data-col="Telurocracia">Dependencia de terceros de tránsito y salida al mar condicionada; el corredor pasa por soberanías ajenas.</td>
+          </tr>
+          <tr>
+            <th scope="row">Horizonte temporal</th>
+            <td class="is-sea" data-col="Talasocracia">Rápido de desplegar, rápido de perder: la presencia se retira en semanas.</td>
+            <td class="is-land" data-col="Telurocracia">Lento de construir, difícil de revertir: una vía férrea o un gasoducto duran décadas.</td>
+          </tr>
+          <tr>
+            <th scope="row">Infraestructura crítica</th>
+            <td class="is-sea" data-col="Talasocracia">Terminales de GNL, refinerías costeras, hubs de contenedores, cables submarinos, astilleros y diques secos.</td>
+            <td class="is-land" data-col="Telurocracia">Estaciones de bombeo, nudos ferroviarios, pasos fronterizos, minas y plantas de proceso, embalses.</td>
+          </tr>
+          <tr>
+            <th scope="row">Forma de disuasión</th>
+            <td class="is-sea" data-col="Talasocracia">Negar el acceso: bloqueo, interdicción, sanción al asegurador y al armador.</td>
+            <td class="is-land" data-col="Telurocracia">Negar el paso o el suministro: cierre de corredor, corte de tubo, cuota de exportación.</td>
+          </tr>
+          <tr>
+            <th scope="row">Qué vigila GEOPÓLEM</th>
+            <td class="is-sea" data-col="Talasocracia">Tránsitos diarios, primas de guerra, desvíos de ruta, escalas nuevas, incidentes en cables y tiempos de espera.</td>
+            <td class="is-land" data-col="Telurocracia">Volúmenes por corredor, obra nueva de tubo y vía, acuerdos de tránsito, cuotas de mineral y niveles de cuenca.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid grid--3" style="margin-top:1.4rem">
+      <div class="card">
+        <div class="card__top"><span class="tag tag--land">Contrapeso terrestre</span></div>
+        <h3>Corredores</h3>
+        <p>Franja y Ruta, Corredor Medio transcaspiano, INSTC norte-sur e IMEC. Se leen como intentos de sustituir tramos marítimos por tramos terrestres, y se evalúan por volumen real transportado, no por anuncio.</p>
+      </div>
+      <div class="card">
+        <div class="card__top"><span class="tag tag--land">Contrapeso terrestre</span></div>
+        <h3>Tubos y minerales</h3>
+        <p>Gasoductos y oleoductos que evitan estrechos, y la cadena de minerales críticos —cobre, litio, tierras raras, grafito— donde el cuello de botella no es el paso, sino el procesamiento concentrado en pocos países.</p>
+      </div>
+      <div class="card">
+        <div class="card__top"><span class="tag tag--land">Contrapeso terrestre</span></div>
+        <h3>Cuencas hídricas</h3>
+        <p>Nilo, Mekong, Indo, Tigris-Éufrates. El agua compartida funciona como chokepoint continental: quien está aguas arriba regula el caudal de quien está aguas abajo, con efectos sobre energía y alimento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHOKEPOINTS ============ -->
+<section id="chokepoints">
+  <div class="shell">
+    <span class="kicker">Aplicación · Energía y rutas</span>
+    <h2>Pasos críticos y rutas energéticas</h2>
+    <p class="section__lede">
+      Seis pasos concentran una parte desproporcionada del comercio de hidrocarburos y de
+      manufacturas. Cada ficha resume qué transita, de qué depende y qué alternativa
+      existe. Los esquemas son diagramas de posición relativa, no cartografía.
+    </p>
+
+    <div class="chokes">
+
+      <!-- ORMUZ -->
+      <article class="choke" id="ormuz">
+        <svg class="choke__map" viewBox="0 0 320 120" role="img" aria-label="Esquema del estrecho de Ormuz: el golfo Pérsico se estrecha hacia el golfo de Omán entre Irán al norte y Omán al sur.">
+          <rect width="320" height="120" fill="none"/>
+          <path d="M0 0h320v46c-46-6-84 4-118 14-30 9-58 12-92 6C74 60 34 52 0 56Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M0 120h320V86c-40 6-78 0-112-8-28-7-56-9-88-2-42 9-84 12-120 8Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M8 68h304" stroke="#22d3ee" stroke-width="1.6" stroke-dasharray="5 4" opacity=".85"/>
+          <path d="M280 68l-12-5v10z" fill="#22d3ee"/>
+          <circle cx="196" cy="70" r="4.5" fill="none" stroke="#ef4444" stroke-width="1.6"/>
+          <text x="12" y="26" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">IRÁN</text>
+          <text x="12" y="110" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">OMÁN · EAU</text>
+          <text x="14" y="64" fill="#67e8f9" font-family="monospace" font-size="8" letter-spacing="1.2">GOLFO PÉRSICO</text>
+          <text x="228" y="64" fill="#67e8f9" font-family="monospace" font-size="8" letter-spacing="1.2">MAR ARÁBIGO</text>
+        </svg>
+        <div class="choke__body">
+          <div class="choke__head">
+            <h3>Estrecho de Ormuz</h3>
+            <span class="choke__code">CP—01</span>
+          </div>
+          <p>El paso sin sustituto. Toda la producción exportable del Golfo, salvo la fracción que sale por oleoducto al mar Rojo o a Fujairah, tiene que atravesar un canal de navegación de pocos kilómetros de ancho útil.</p>
+          <dl class="choke__data">
+            <div class="choke__row"><dt>Flujo</dt><dd>≈20 millones de barriles/día de crudo y derivados; en torno a una quinta parte del consumo mundial de líquidos.</dd></div>
+            <div class="choke__row"><dt>GNL</dt><dd>Salida única del gas catarí: cerca de una quinta parte del comercio mundial de GNL.</dd></div>
+            <div class="choke__row"><dt>Bypass</dt><dd>Petroline saudí al mar Rojo y ADCOP emiratí a Fujairah: capacidad parcial, no sustitutiva.</dd></div>
+          </dl>
+          <div class="choke__foot">Orden de magnitud · fuentes públicas tipo EIA</div>
+        </div>
+      </article>
+
+      <!-- MALACA -->
+      <article class="choke" id="malaca">
+        <svg class="choke__map" viewBox="0 0 320 120" role="img" aria-label="Esquema del estrecho de Malaca: canal diagonal entre la península malaya al norte y Sumatra al sur, con salida al mar de China Meridional.">
+          <rect width="320" height="120" fill="none"/>
+          <path d="M0 0h320v34l-150 40L0 40Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M0 120h300l-16-24L20 66 0 62Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M6 54 L300 76" stroke="#22d3ee" stroke-width="1.6" stroke-dasharray="5 4" opacity=".85"/>
+          <path d="M300 76l-13-6 1 10z" fill="#22d3ee"/>
+          <circle cx="252" cy="72" r="4.5" fill="none" stroke="#ef4444" stroke-width="1.6"/>
+          <text x="12" y="24" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">PENÍNSULA MALAYA</text>
+          <text x="12" y="110" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">SUMATRA</text>
+          <text x="216" y="44" fill="#67e8f9" font-family="monospace" font-size="8" letter-spacing="1.2">SINGAPUR</text>
+        </svg>
+        <div class="choke__body">
+          <div class="choke__head">
+            <h3>Estrecho de Malaca</h3>
+            <span class="choke__code">CP—02</span>
+          </div>
+          <p>La arteria entre el Índico y el Pacífico occidental. Concentra el abastecimiento energético del noreste asiático y explica por qué China describe su exposición aquí como un problema estratégico de primer orden.</p>
+          <dl class="choke__data">
+            <div class="choke__row"><dt>Flujo</dt><dd>Del orden de 23-24 millones de barriles/día, además del grueso del tráfico de contenedores Asia-Europa.</dd></div>
+            <div class="choke__row"><dt>Nodo</dt><dd>Singapur: búnker, refino y transbordo. El paso no es sólo geográfico, también es portuario y financiero.</dd></div>
+            <div class="choke__row"><dt>Bypass</dt><dd>Sonda y Lombok-Macasar: más días, más calado disponible, menos capacidad de servicio.</dd></div>
+          </dl>
+          <div class="choke__foot">Orden de magnitud · fuentes públicas tipo EIA</div>
+        </div>
+      </article>
+
+      <!-- SUEZ -->
+      <article class="choke" id="suez">
+        <svg class="choke__map" viewBox="0 0 320 120" role="img" aria-label="Esquema del canal de Suez: canal vertical que une el Mediterráneo al norte con el mar Rojo al sur a través del istmo egipcio.">
+          <rect width="320" height="120" fill="none"/>
+          <rect x="0" y="0" width="320" height="30" fill="rgba(34,211,238,.1)"/>
+          <rect x="0" y="90" width="320" height="30" fill="rgba(34,211,238,.1)"/>
+          <path d="M0 30h146v60H0Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M166 30h154v60H166Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M156 8v104" stroke="#22d3ee" stroke-width="1.8" stroke-dasharray="5 4" opacity=".9"/>
+          <path d="M156 112l-5-12h10z" fill="#22d3ee"/>
+          <circle cx="156" cy="60" r="4.5" fill="none" stroke="#ef4444" stroke-width="1.6"/>
+          <text x="12" y="20" fill="#67e8f9" font-family="monospace" font-size="8" letter-spacing="1.2">MEDITERRÁNEO</text>
+          <text x="12" y="110" fill="#67e8f9" font-family="monospace" font-size="8" letter-spacing="1.2">MAR ROJO</text>
+          <text x="14" y="64" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">EGIPTO</text>
+          <text x="228" y="64" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">SINAÍ</text>
+        </svg>
+        <div class="choke__body">
+          <div class="choke__head">
+            <h3>Canal de Suez y SUMED</h3>
+            <span class="choke__code">CP—03</span>
+          </div>
+          <p>Atajo artificial entre Europa y Asia y, por eso mismo, prescindible a un precio: la ruta del Cabo existe siempre, pero añade distancia, días, combustible y capital circulante inmovilizado.</p>
+          <dl class="choke__data">
+            <div class="choke__row"><dt>Flujo</dt><dd>Antes de 2024, en torno al 12-15 % del comercio mundial por volumen y cerca del 9 % del petróleo marítimo con el oleoducto SUMED.</dd></div>
+            <div class="choke__row"><dt>Tensión</dt><dd>Desde finales de 2023, la inseguridad en el mar Rojo desvía una parte sustancial del tráfico hacia Buena Esperanza.</dd></div>
+            <div class="choke__row"><dt>Bypass</dt><dd>Cabo de Buena Esperanza: alrededor de diez a catorce días adicionales en la relación Asia-Europa.</dd></div>
+          </dl>
+          <div class="choke__foot">Orden de magnitud · fuentes públicas tipo UNCTAD y autoridad del canal</div>
+        </div>
+      </article>
+
+      <!-- BAB EL-MANDEB -->
+      <article class="choke" id="bab-el-mandeb">
+        <svg class="choke__map" viewBox="0 0 320 120" role="img" aria-label="Esquema de Bab el-Mandeb: paso estrecho entre el Cuerno de África al oeste y la península arábiga al este, puerta sur del mar Rojo.">
+          <rect width="320" height="120" fill="none"/>
+          <path d="M0 0h130l-6 44 22 26-30 50H0Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M320 0H186l10 44-24 26 34 50h114Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M158 6v108" stroke="#22d3ee" stroke-width="1.6" stroke-dasharray="5 4" opacity=".85"/>
+          <path d="M158 8l-5 12h10z" fill="#22d3ee"/>
+          <circle cx="158" cy="70" r="4.5" fill="none" stroke="#ef4444" stroke-width="1.6"/>
+          <text x="10" y="20" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">YIBUTI · ERITREA</text>
+          <text x="216" y="20" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">YEMEN</text>
+          <text x="112" y="112" fill="#67e8f9" font-family="monospace" font-size="8" letter-spacing="1.2">GOLFO DE ADÉN</text>
+        </svg>
+        <div class="choke__body">
+          <div class="choke__head">
+            <h3>Bab el-Mandeb</h3>
+            <span class="choke__code">CP—04</span>
+          </div>
+          <p>Puerta sur del corredor Suez. Un estrecho de veintitantos kilómetros cuya seguridad depende de actores no estatales del litoral y de las marinas que decidan escoltar, con costes de seguro que se trasladan al flete.</p>
+          <dl class="choke__data">
+            <div class="choke__row"><dt>Flujo</dt><dd>Del orden de 8-9 millones de barriles/día antes de la crisis del mar Rojo, además de GNL y contenedores.</dd></div>
+            <div class="choke__row"><dt>Efecto</dt><dd>Cerrar el sur inutiliza el norte: sin Bab el-Mandeb, Suez pierde la mayor parte de su sentido económico.</dd></div>
+            <div class="choke__row"><dt>Bypass</dt><dd>Ninguno marítimo. La alternativa real vuelve a ser la ruta del Cabo.</dd></div>
+          </dl>
+          <div class="choke__foot">Orden de magnitud · fuentes públicas tipo EIA</div>
+        </div>
+      </article>
+
+      <!-- PANAMÁ -->
+      <article class="choke" id="panama">
+        <svg class="choke__map" viewBox="0 0 320 120" role="img" aria-label="Esquema del canal de Panamá: istmo estrecho atravesado por un canal con esclusas que une el Atlántico y el Pacífico.">
+          <rect width="320" height="120" fill="none"/>
+          <path d="M0 34c60-14 110 6 150 26s90 30 170 20v40H0Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M96 4C118 34 150 52 186 116" stroke="#22d3ee" stroke-width="1.8" stroke-dasharray="5 4" fill="none" opacity=".9"/>
+          <path d="M186 116l-9-10 9-3z" fill="#22d3ee"/>
+          <rect x="124" y="46" width="14" height="3" fill="#f59e0b" opacity=".9"/>
+          <rect x="150" y="74" width="14" height="3" fill="#f59e0b" opacity=".9"/>
+          <circle cx="140" cy="60" r="4.5" fill="none" stroke="#ef4444" stroke-width="1.6"/>
+          <text x="10" y="20" fill="#67e8f9" font-family="monospace" font-size="8" letter-spacing="1.2">CARIBE · ATLÁNTICO</text>
+          <text x="212" y="34" fill="#67e8f9" font-family="monospace" font-size="8" letter-spacing="1.2">PACÍFICO</text>
+          <text x="14" y="104" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">ISTMO · LAGO GATÚN</text>
+        </svg>
+        <div class="choke__body">
+          <div class="choke__head">
+            <h3>Canal de Panamá</h3>
+            <span class="choke__code">CP—05</span>
+          </div>
+          <p>El único paso mayor cuya capacidad depende del agua dulce: cada tránsito consume el volumen embalsado del lago Gatún. Es el chokepoint donde el clima entra directamente en la ecuación geopolítica.</p>
+          <dl class="choke__data">
+            <div class="choke__row"><dt>Flujo</dt><dd>Alrededor del 5 % del comercio marítimo mundial; muy relevante para el eje Asia-costa este de Estados Unidos.</dd></div>
+            <div class="choke__row"><dt>Restricción</dt><dd>La sequía de 2023-2024 obligó a recortar tránsitos diarios y a subastar franjas de paso, con impacto en GNL y graneles.</dd></div>
+            <div class="choke__row"><dt>Bypass</dt><dd>Cabo de Hornos, Suez para algunos orígenes, y puente terrestre intermodal norteamericano.</dd></div>
+          </dl>
+          <div class="choke__foot">Orden de magnitud · fuentes públicas tipo ACP y UNCTAD</div>
+        </div>
+      </article>
+
+      <!-- ÁRTICO -->
+      <article class="choke" id="artico">
+        <svg class="choke__map" viewBox="0 0 320 120" role="img" aria-label="Esquema de la ruta ártica: arco de navegación sobre la costa septentrional euroasiática entre Europa y Asia oriental.">
+          <rect width="320" height="120" fill="none"/>
+          <path d="M0 22c70-16 180-16 320 4v18C190 26 78 30 0 46Z" fill="rgba(226,232,240,.14)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M0 78c60 16 130 22 200 18s90-10 120-18v42H0Z" fill="rgba(148,163,184,.16)" stroke="rgba(148,163,184,.3)" stroke-width="1"/>
+          <path d="M26 66C90 44 200 44 296 60" stroke="#22d3ee" stroke-width="1.6" stroke-dasharray="5 4" fill="none" opacity=".85"/>
+          <path d="M296 60l-13-5 1 10z" fill="#22d3ee"/>
+          <circle cx="150" cy="49" r="4.5" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+          <text x="12" y="16" fill="#cbd5e1" font-family="monospace" font-size="8" letter-spacing="1.4">BANQUISA ESTACIONAL</text>
+          <text x="12" y="112" fill="#94a3b8" font-family="monospace" font-size="9" letter-spacing="1.6">COSTA SEPTENTRIONAL EURASIÁTICA</text>
+        </svg>
+        <div class="choke__body">
+          <div class="choke__head">
+            <h3>Rutas árticas</h3>
+            <span class="choke__code">CP—06</span>
+          </div>
+          <p>No es todavía un chokepoint: es una alternativa emergente y estacional que, de consolidarse, reduciría el valor relativo de Suez y Malaca y desplazaría la competencia naval hacia latitudes altas.</p>
+          <dl class="choke__data">
+            <div class="choke__row"><dt>Ventaja</dt><dd>Entre Europa del norte y Asia oriental, la distancia puede caer del orden de un tercio frente a la vía Suez.</dd></div>
+            <div class="choke__row"><dt>Límite</dt><dd>Volumen aún marginal y muy dependiente del cabotaje energético ruso; exige clase de hielo, escolta y seguros caros.</dd></div>
+            <div class="choke__row"><dt>Señal</dt><dd>Tránsitos completos de terceros países, no sólo exportación desde terminales árticas.</dd></div>
+          </dl>
+          <div class="choke__foot">Hipótesis abierta · verificar campaña a campaña</div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="passes" aria-label="Pasos secundarios en seguimiento">
+      <b>También en seguimiento:</b>
+      <span>Bósforo y Dardanelos</span>
+      <span>Estrechos daneses</span>
+      <span>Gibraltar</span>
+      <span>Sonda y Lombok</span>
+      <span>Estrecho de Taiwán</span>
+      <span>Canal de Mozambique</span>
+      <span>Cabo de Buena Esperanza</span>
+    </div>
+
+    <div class="grid grid--3" style="margin-top:1.6rem">
+      <div class="card">
+        <div class="card__top"><span class="tag tag--sea">Infraestructura</span></div>
+        <h3>Cables submarinos</h3>
+        <p>La práctica totalidad del tráfico intercontinental de datos viaja por cable, no por satélite. Los cables comparten corredor con las rutas de navegación y tocan tierra en un puñado de estaciones: el mismo estrecho que concentra barriles concentra ancho de banda.</p>
+      </div>
+      <div class="card">
+        <div class="card__top"><span class="tag tag--sea">Infraestructura</span></div>
+        <h3>Puertos y terminales</h3>
+        <p>Concesiones portuarias, terminales de GNL y capacidad de regasificación. El control accionarial de una terminal no da soberanía, pero sí prioridad de atraque, información comercial y capacidad de fricción administrativa.</p>
+      </div>
+      <div class="card">
+        <div class="card__top"><span class="tag tag--alert">Palanca</span></div>
+        <h3>Seguros y bandera</h3>
+        <p>La capa menos visible del poder marítimo. Prima de riesgo de guerra, cobertura P&amp;I, registro de bandera y clasificación deciden si un buque zarpa. Se puede cerrar una ruta sin disparar, encareciendo su aseguramiento.</p>
+      </div>
+    </div>
+
+    <p class="caution-note">
+      <strong>Cautela sobre las cifras.</strong> Las magnitudes de esta página son órdenes de
+      magnitud tomados de fuentes públicas de referencia —agencias de energía, organismos de
+      comercio y autoridades de canal— y se ofrecen para dimensionar el problema, no como
+      serie estadística. Cambian con el año, la metodología y la coyuntura. Verificar en
+      fuente primaria antes de cualquier uso operativo.
+    </p>
+  </div>
+</section>
+
+<!-- ============ MARCO DOCTRINAL ============ -->
+<section id="marco">
+  <div class="shell">
+    <span class="kicker">Marco doctrinal</span>
+    <h2>Mahan y Mackinder: dos lecturas del mismo mapa</h2>
+    <p class="section__lede">
+      GEOPÓLEM usa ambas como herramientas de encuadre, no como profecías. Las dos fueron
+      escritas para justificar políticas concretas de su época y las dos envejecieron en
+      partes distintas; lo que sigue vigente es la pregunta que cada una obliga a hacerse.
+    </p>
+
+    <div class="frame">
+      <div class="thinker thinker--sea">
+        <div class="thinker__who">Alfred T. Mahan · 1840-1914 · Poder marítimo</div>
+        <h3>El mar como llanura común</h3>
+        <p>
+          Mahan sostuvo que el océano es una gran vía pública y que la prosperidad de una
+          nación depende de su comercio marítimo, de la flota mercante que lo transporta y
+          de la escuadra que lo protege. De ahí su tríada: producción, marina mercante y
+          colonias o bases donde repostar y reparar.
+        </p>
+        <p>
+          Su consecuencia práctica sigue siendo válida: la potencia marítima no se mide en
+          buques, sino en la red de escalas, astilleros y acuerdos de acceso que permite
+          sostener esos buques lejos de casa.
+        </p>
+        <blockquote>
+          Lo que hace fuerte a una potencia marítima no es la batalla, sino la continuidad
+          del tráfico que la batalla protege.
+          <cite>Síntesis editorial GEOPÓLEM de la tesis de Mahan</cite>
+        </blockquote>
+      </div>
+
+      <div class="thinker thinker--land">
+        <div class="thinker__who">Halford J. Mackinder · 1861-1947 · Poder continental</div>
+        <h3>El corazón continental</h3>
+        <p>
+          Mackinder invirtió la mirada: el ferrocarril devolvía movilidad al interior de
+          Eurasia y creaba un espacio —el <em>Heartland</em>— inaccesible al poder naval. Su
+          conclusión fue que quien organizase ese espacio podría desafiar a las potencias
+          marítimas desde una posición que la flota no alcanza.
+        </p>
+        <p>
+          La versión útil hoy no es el determinismo de su fórmula, sino la advertencia que
+          contiene: cada kilómetro de corredor terrestre resta capacidad de presión al
+          bloqueo marítimo, y por eso los corredores se financian con lógica estratégica
+          antes que comercial.
+        </p>
+        <blockquote>
+          Quien domina el corazón continental deja de ser rehén del estrecho ajeno.
+          <cite>Síntesis editorial GEOPÓLEM de la tesis de Mackinder</cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <p class="frame__note">
+      <strong>Cómo lo aplicamos.</strong> El tablero real se juega casi siempre en el borde:
+      la franja costera donde una potencia continental busca puerto y una potencia marítima
+      busca punto de apoyo —lo que Spykman llamó <em>rimland</em>—. Cuando GEOPÓLEM analiza
+      un episodio, la pregunta operativa no es «¿quién es más fuerte?», sino «¿este movimiento
+      aumenta o reduce la dependencia de un paso marítimo?». Un puerto nuevo, un gasoducto,
+      un acuerdo de tránsito y un despliegue naval son respuestas alternativas a la misma
+      pregunta.
+    </p>
+
+    <div style="margin-top:1.8rem">
+      <span class="kicker">Señales observables</span>
+      <ul class="signals">
+        <li><b>Señal · Tránsitos</b>Variación sostenida de tránsitos diarios en un paso durante más de cuatro semanas, distinguiendo estacionalidad de decisión política o restricción física.</li>
+        <li><b>Señal · Coste</b>Movimientos de la prima de riesgo de guerra y del flete spot en una ruta concreta: el seguro reacciona antes que la estadística de comercio.</li>
+        <li><b>Señal · Desvío</b>Aparición estable de rutas alternativas más largas —Cabo, Hornos, terrestres— en el patrón de escalas de las principales navieras.</li>
+        <li><b>Señal · Infraestructura</b>Obra nueva o toma de control en terminales de GNL, concesiones portuarias y estaciones de amarre de cables, especialmente fuera del país inversor.</li>
+        <li><b>Señal · Presencia</b>Cambios en despliegues navales permanentes, acuerdos de acceso a base y ejercicios conjuntos en el entorno de un paso crítico.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USO EDITORIAL ============ -->
+<section id="uso">
+  <div class="shell">
+    <span class="kicker">Producción</span>
+    <h2>Cómo usa GEOPÓLEM la talasocracia</h2>
+    <p class="section__lede">
+      El teatro marítimo no es un artículo suelto: es una capa que atraviesa los cuatro
+      productos del proyecto. Cada uno hereda el mismo marco y el mismo método —Hecho,
+      Evaluación, Hipótesis, Señal— con distinto nivel de detalle.
+    </p>
+
+    <div class="use">
+      <div class="use__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 6l7-3 8 3 7-3v15l-7 3-8-3-7 3z"/><path d="M8 3v15M16 6v15"/></svg>
+        <h3>Mapas</h3>
+        <p>Capas de rutas, pasos y nodos portuarios sobre el mapa operativo de la sala situacional.</p>
+        <ul>
+          <li>Pasos críticos y su estado</li>
+          <li>Rutas de crudo, producto y GNL</li>
+          <li>Corredores terrestres de contraste</li>
+        </ul>
+      </div>
+      <div class="use__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+        <h3>Base de datos</h3>
+        <p>Fichas normalizadas por paso, puerto y ruta, con campos comparables entre sí.</p>
+        <ul>
+          <li>Volumen y tipo de flujo</li>
+          <li>Alternativas y coste del desvío</li>
+          <li>Actores con capacidad de fricción</li>
+        </ul>
+      </div>
+      <div class="use__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M8 13h8M8 17h5"/></svg>
+        <h3>Informes</h3>
+        <p>Dossiers y briefs que aplican la matriz a un episodio concreto, con fuentes citadas.</p>
+        <ul>
+          <li>Impacto energético del cierre de un paso</li>
+          <li>Exposición por país y por sector</li>
+          <li>Escenarios con señal de verificación</li>
+        </ul>
+      </div>
+      <div class="use__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 9l5 3-5 3z"/></svg>
+        <h3>Contenidos</h3>
+        <p>Piezas breves y láminas que explican un paso o una ruta sin perder la cautela editorial.</p>
+        <ul>
+          <li>Fichas de estrecho en formato vertical</li>
+          <li>Brief diario cuando hay movimiento</li>
+          <li>Glosario mar-tierra para lectura rápida</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid--3" style="margin-top:1.6rem">
+      <a class="card" href="../conflict-watchlist-2026/index.html#mapa">
+        <div class="card__top"><span class="card__num">→ 01</span><span class="tag">Maqueta</span></div>
+        <h3>Focos marítimos en la watchlist</h3>
+        <p>Mapa operativo con los focos de 2026, incluidos los que afectan a rutas y estrechos. Datos simulados.</p>
+        <span class="card__go">Abrir el mapa →</span>
+      </a>
+      <a class="card" href="../app.html#planz">
+        <div class="card__top"><span class="card__num">→ 02</span><span class="tag">Serie</span></div>
+        <h3>Plan Z</h3>
+        <p>Flujos opacos de recursos e intermediación: la cara irregular de las mismas rutas y los mismos puertos.</p>
+        <span class="card__go">Abrir en la sala situacional →</span>
+      </a>
+      <a class="card" href="../dossiers/index.html">
+        <div class="card__top"><span class="card__num">→ 03</span><span class="tag">Documentos</span></div>
+        <h3>Dossiers</h3>
+        <p>Informes descargables sobre energía e infraestructura crítica, con el método editorial aplicado.</p>
+        <span class="card__go">Ver dossiers →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CIERRE ============ -->
+<section class="close">
+  <div class="shell">
+    <p class="close__brand">GEOPÓLEM. <span>Bienvenidos al tablero.</span></p>
+    <p>
+      El mar no se ocupa: se administra. Entender quién administra cada paso es el primer
+      paso para leer el resto del tablero.
+    </p>
+    <div class="actions">
+      <a class="btn btn--primary" href="../app.html">Abrir la sala situacional</a>
+      <a class="btn" href="../index.html#teatros">Ver todos los teatros</a>
+      <a class="btn" href="../index.html#metodo">Leer el método</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="shell">
+    <nav class="footnav" aria-label="Navegación de pie">
+      <a href="../index.html">Inicio</a>
+      <a href="../app.html">Sala situacional</a>
+      <a href="../app.html#planz">Plan Z</a>
+      <a href="./index.html">Talasocracia</a>
+      <a href="../app.html#sentinel">ONU Sentinel</a>
+      <a href="../index.html#waico">WAICO</a>
+      <a href="../app.html#system">Migración</a>
+      <a href="../conflict-watchlist-2026/index.html">Watchlist 2026</a>
+      <a href="../conflictos-activos/index.html">Conflictos activos</a>
+      <a href="../dossiers/index.html">Dossiers</a>
+      <a href="../index.html#metodo">Método</a>
+    </nav>
+    <p>
+      GEOPÓLEM — análisis geopolítico editorial a partir de fuentes abiertas. Esta página es
+      un marco conceptual con cifras de orden de magnitud: no es monitoreo en vivo, no es un
+      parte militar y no es una predicción. Verificar en fuente primaria antes de cualquier
+      uso operativo.
+    </p>
+    <p>Sitio estático publicado en GitHub Pages.</p>
+  </div>
+</footer>
+
+<script>
+  // Igual que en la portada: el visitante que entra directamente por esta página
+  // también debe registrar el worker, o se quedaría sin las actualizaciones de caché.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('../service-worker.js', { scope: '../' }).catch(() => {
+        /* Página estática: funciona igual sin service worker. */
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
