@@ -61,11 +61,16 @@ MAX_EVENTS_OUT = 120
 # Consulta GDELT: temas/violencia/seguridad. GDELT indexa por palabras y por
 # "themes" del taxonomy GKG; usamos términos amplios en inglés (idioma base del
 # índice) combinados con OR. Mantener anti-amarillista: términos factuales.
+# NOTA: el DOC 2.0 API de GDELT rechaza queries por longitud con el mensaje de
+# error "Your query was too short or too long." si la cadena de la query supera
+# un umbral (no documentado oficialmente, mesurado empíricamente en producción:
+# el listado original de 21 términos + 2 frases entre comillas, 253 caracteres,
+# era rechazado de forma sistemática). Mantener este bloque OR por debajo de
+# ~180 caracteres para evitar el rechazo.
 GDELT_QUERY = (
-    '(conflict OR war OR warfare OR military OR offensive OR airstrike OR '
-    'airstrikes OR shelling OR clashes OR insurgency OR militants OR ceasefire '
-    'OR "armed forces" OR drone OR missile OR sanctions OR "security forces" '
-    'OR coup OR mobilization OR escalation)'
+    '(conflict OR war OR military OR offensive OR airstrike OR shelling OR '
+    'clashes OR insurgency OR ceasefire OR missile OR sanctions OR coup OR '
+    'escalation)'
 )
 
 # Temas de conflicto/violencia/seguridad → suman al score si aparecen en título.
