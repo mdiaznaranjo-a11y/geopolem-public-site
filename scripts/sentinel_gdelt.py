@@ -32,6 +32,7 @@ import hashlib
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -163,25 +164,93 @@ def build_query_url(window_hours: int) -> str:
     return GDELT_DOC_API + "?" + urllib.parse.urlencode(params)
 
 
+# GDELT pide explícitamente no superar 1 petición cada 5s desde una misma IP.
+# Los runners de GitHub Actions comparten rangos de IP con muchísimos otros
+# consumidores del API, así que es habitual chocar con su rate-limit (HTTP 429,
+# o incluso HTTP 200 con un cuerpo de texto plano avisando del límite) aunque
+# SENTINEL solo haga una petición al día. Reintentamos con backoff exponencial
+# antes de declarar fallo real.
+GDELT_MAX_RETRIES = 6
+GDELT_RETRY_BASE_SECONDS = 15.0
+
+
+def _is_rate_limit_body(raw: str) -> bool:
+    """GDELT a veces devuelve 200 OK pero con un aviso de rate-limit en texto
+    plano en vez de JSON. Lo detectamos por contenido, no solo por status code.
+    """
+    lowered = raw[:300].lower()
+    return "please limit requests" in lowered or "one every" in lowered
+
+
 def fetch_gdelt(window_hours: int) -> list[dict[str, Any]]:
-    """Descarga artículos del DOC API de GDELT. Lanza excepción ante fallo real."""
+    """Descarga artículos del DOC API de GDELT, con reintentos ante rate-limit.
+
+    Lanza excepción ante fallo real (agotados los reintentos o error no
+    recuperable).
+    """
     url = build_query_url(window_hours)
     req = urllib.request.Request(
         url,
         headers={"User-Agent": "GEOPOLEM-SENTINEL/1.0 (+https://geopolem.com)"},
     )
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        raw = resp.read().decode("utf-8", errors="replace")
-    # GDELT a veces devuelve cuerpo vacío cuando no hay coincidencias.
-    raw = raw.strip()
-    if not raw:
-        return []
-    try:
-        payload = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        # Un cuerpo no-JSON con texto suele ser un mensaje de error del API.
-        raise RuntimeError(f"Respuesta GDELT no es JSON válido: {raw[:200]!r}") from exc
-    return payload.get("articles", []) or []
+
+    last_error: Exception | None = None
+    for attempt in range(1, GDELT_MAX_RETRIES + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                raw = resp.read().decode("utf-8", errors="replace")
+        except urllib.error.HTTPError as exc:
+            if exc.code == 429 and attempt < GDELT_MAX_RETRIES:
+                wait = GDELT_RETRY_BASE_SECONDS * (2 ** (attempt - 1))
+                print(
+                    f"[sentinel] GDELT devolvió 429 (intento {attempt}/"
+                    f"{GDELT_MAX_RETRIES}); esperando {wait:.0f}s antes de reintentar",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+                last_error = exc
+                continue
+            raise
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt < GDELT_MAX_RETRIES:
+                wait = GDELT_RETRY_BASE_SECONDS * (2 ** (attempt - 1))
+                print(
+                    f"[sentinel] Error de red con GDELT (intento {attempt}/"
+                    f"{GDELT_MAX_RETRIES}): {exc}; esperando {wait:.0f}s",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+                last_error = exc
+                continue
+            raise
+
+        raw = raw.strip()
+        if not raw:
+            # GDELT a veces devuelve cuerpo vacío cuando no hay coincidencias.
+            return []
+
+        if _is_rate_limit_body(raw):
+            if attempt < GDELT_MAX_RETRIES:
+                wait = GDELT_RETRY_BASE_SECONDS * (2 ** (attempt - 1))
+                print(
+                    f"[sentinel] GDELT devolvió aviso de rate-limit en el cuerpo "
+                    f"(intento {attempt}/{GDELT_MAX_RETRIES}); esperando {wait:.0f}s",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+                last_error = RuntimeError(raw[:200])
+                continue
+            raise RuntimeError(f"GDELT rate-limit persistente tras reintentos: {raw[:200]!r}")
+
+        try:
+            payload = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            # Un cuerpo no-JSON con texto suele ser un mensaje de error del API.
+            raise RuntimeError(f"Respuesta GDELT no es JSON válido: {raw[:200]!r}") from exc
+        return payload.get("articles", []) or []
+
+    # No debería llegarse aquí, pero por seguridad:
+    raise RuntimeError(f"GDELT: reintentos agotados sin éxito ({last_error})")
 
 
 def sample_articles() -> list[dict[str, Any]]:
