@@ -2,731 +2,466 @@
   "events": [
     {
       "actors": [
-        "Syria"
+        "India"
       ],
-      "domain": "sana.sy",
-      "id": "evt_ca4be311e1389e38",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "war",
-        "escalation",
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Syria",
-      "tier": "high",
-      "title": "Qatar , Jordan condemn Iranian attacks on Kuwait , warn of regional escalation",
-      "tone": null,
-      "url": "https://sana.sy/en/international/2333168/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "ksla.com",
-      "id": "evt_bbd5d50fa3d15239",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "missile",
-        "strike",
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 9.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 5.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "US military launches strikes on Iranian targets a day after it foiled missile attack on US forces",
-      "tone": null,
-      "url": "https://www.ksla.com/2026/07/29/iran-launches-renewed-missile-attacks-us-saudis-strike-tehran-backed-militias-iraq/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "aspenpublicradio.org",
-      "id": "evt_70dcf562f2c8d0bc",
+      "domain": "economictimes.indiatimes.com",
+      "id": "evt_19a69eaa2c3b86ee",
       "language": "English",
       "matched_regions": [
         "ukraine",
-        "russia",
-        "russian"
+        "russia"
       ],
       "matched_themes": [
-        "missile",
-        "strike"
+        "war",
+        "killed"
       ],
       "region": "Europa del Este",
-      "score": 8.0,
+      "score": 9.0,
       "score_breakdown": {
         "region": 4.0,
-        "themes": 4.0,
+        "themes": 5.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
+      "seen_date": "20260731T084500Z",
+      "source_country": "India",
       "tier": "high",
-      "title": "Russian strikes across Ukraine kill 10 and a missile falls in Poland",
+      "title": "SC directs Centre to appoint nodal officer , assist families killed or missing in Russia - Ukraine war",
       "tone": null,
-      "url": "https://www.aspenpublicradio.org/2026-07-30/russian-strikes-across-ukraine-kill-10-and-a-missile-falls-in-poland"
+      "url": "https://economictimes.indiatimes.com/nri/latest-updates/sc-directs-centre-to-appoint-nodal-officer-assist-families-killed-or-missing-in-russia-ukraine-war/articleshow/132760964.cms"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "armytimes.com",
-      "id": "evt_078ef2782b14656a",
+      "domain": "coloradostar.com",
+      "id": "evt_4d7aac79ef6e8927",
       "language": "English",
       "matched_regions": [
-        "iran"
+        "iran",
+        "iraq",
+        "saudi"
       ],
       "matched_themes": [
-        "war",
-        "missile"
+        "fighting",
+        "strike"
       ],
       "region": "MENA",
       "score": 7.5,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 5.5,
+        "region": 4.0,
+        "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
+      "seen_date": "20260731T084500Z",
       "source_country": "United States",
       "tier": "high",
-      "title": "Iran war depleted US Patriot missile stockpiles , creating readiness challenges , experts say",
+      "title": "Fighting restarts as US , Saudis strike Iran allies in Iraq",
       "tone": null,
-      "url": "https://www.armytimes.com/news/your-military/2026/07/30/iran-war-depleted-us-patriot-missile-stockpiles-creating-readiness-challenges-experts-say/"
+      "url": "http://www.coloradostar.com/news/279215330/us-saudis-strike-iran-s-allies-in-iraq-as-fighting-resumes"
     },
     {
       "actors": [
-        "United Kingdom"
+        "United States"
       ],
-      "domain": "express.co.uk",
-      "id": "evt_33752a7a395c8053",
+      "domain": "wvlkam.com",
+      "id": "evt_1aec8559f3b1e624",
       "language": "English",
       "matched_regions": [
-        "israel",
         "iran"
       ],
       "matched_themes": [
-        "strike",
-        "attack"
+        "conflict",
+        "strike"
       ],
       "region": "MENA",
-      "score": 7.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "US  to attack Iran tonight  as Israel  told of plans for new strike | World | News",
-      "tone": null,
-      "url": "https://www.express.co.uk/news/world/2234621/us-to-attack-iran-tonight"
-    },
-    {
-      "actors": [
-        "Bangladesh"
-      ],
-      "domain": "weeklyblitz.net",
-      "id": "evt_f08d1bac0b379ba2",
-      "language": "English",
-      "matched_regions": [
-        "russia"
-      ],
-      "matched_themes": [
-        "escalate",
-        "terror"
-      ],
-      "region": "Eurasia",
       "score": 6.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 4.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T191500Z",
-      "source_country": "Bangladesh",
+      "seen_date": "20260731T084500Z",
+      "source_country": "United States",
       "tier": "high",
-      "title": "Russia escalates pressure on Telegram as Pavel Durov faces terrorism charges",
+      "title": "U . S . Strikes Iran as Regional Conflict Expands",
       "tone": null,
-      "url": "https://weeklyblitz.net/2026/07/31/russia-escalates-pressure-on-telegram-as-pavel-durov-faces-terrorism-charges/"
+      "url": "https://www.wvlkam.com/2026/07/31/u-s-strikes-iran-as-regional-conflict-expands/"
     },
     {
       "actors": [
-        "Russia"
+        "Greece"
       ],
-      "domain": "europesun.com",
-      "id": "evt_1d0864e3b2865fb3",
+      "domain": "bankingnews.gr",
+      "id": "evt_03560ef5d5d42866",
       "language": "English",
       "matched_regions": [
-        "russia"
+        "israel",
+        "iran",
+        "iranian"
       ],
       "matched_themes": [
-        "war"
-      ],
-      "region": "Eurasia",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "Russia",
-      "tier": "medium",
-      "title": "Why Erdogan wont fight the West war against Russia",
-      "tone": null,
-      "url": "http://www.europesun.com/news/279216667/why-erdogan-wont-fight-the-west-war-against-russia"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "tribune.com.pk",
-      "id": "evt_c34292ebffba1134",
-      "language": "English",
-      "matched_regions": [
-        "gaza",
-        "hamas"
-      ],
-      "matched_themes": [
-        "ceasefire"
+        "strike"
       ],
       "region": "MENA",
-      "score": 5.0,
+      "score": 5.5,
       "score_breakdown": {
-        "region": 3.5,
+        "region": 4.0,
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Pakistan",
+      "seen_date": "20260731T084500Z",
+      "source_country": "Greece",
       "tier": "medium",
-      "title": "Gaza ceasefire talks show rare progress as Hamas discusses weapons plan , sources say",
+      "title": "US and Israeli intelligence struggle to track Iranian leadership amid base strikes",
       "tone": null,
-      "url": "https://tribune.com.pk/story/2621161/gaza-ceasefire-talks-show-rare-progress-as-hamas-discusses-weapons-plan-sources-say"
+      "url": "https://www.bankingnews.gr/diethni/articles/891470/us-and-israeli-intelligence-struggle-to-track-iranian-leadership-amid-base-strikes"
     },
     {
       "actors": [
-        "United States"
+        "France"
       ],
-      "domain": "kfab.iheart.com",
-      "id": "evt_9b2922fc8d777f4a",
-      "language": "English",
+      "domain": "bfmtv.com",
+      "id": "evt_de45c570a9a314e1",
+      "language": "French",
       "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Economy Slows Amid Iran Conflict Impact | NewsRadio 1110 KFAB",
-      "tone": null,
-      "url": "https://kfab.iheart.com/content/2026-07-30-economy-slows-amid-iran-conflict-impact/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wilm.iheart.com",
-      "id": "evt_759499b6017aca3a",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Economy Slows Amid Iran Conflict Impact | News Radio 1450 WILM",
-      "tone": null,
-      "url": "https://wilm.iheart.com/content/2026-07-30-economy-slows-amid-iran-conflict-impact/"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "newindianexpress.com",
-      "id": "evt_cfc81821105f9b27",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "india"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "Europa del Este",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 3.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "Jaishankar raises safety of Indian seafarers with Ukraine FM , condemns attacks on Black Sea shipping",
-      "tone": null,
-      "url": "https://www.newindianexpress.com/india/2026/Jul/30/jaishankar-raises-safety-of-indian-seafarers-with-ukraine-fm-condemns-attacks-on-black-sea-shipping"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wbap.com",
-      "id": "evt_3529b7a20f2193bf",
-      "language": "English",
-      "matched_regions": [
-        "iran"
+        "ukraine"
       ],
       "matched_themes": [
         "missile"
       ],
-      "region": "MENA",
+      "region": "Europa del Este",
       "score": 4.5,
       "score_breakdown": {
         "region": 2.0,
         "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
+      "seen_date": "20260731T084500Z",
+      "source_country": "France",
       "tier": "medium",
-      "title": "The US and Iran trade missile barrages as hopes dim for a quick resolution",
+      "title": "Nous devons faire preuve dune certaine prudence : Donald Trump  nest pas certain  quil laissera lUkraine produire des missiles Patriot ( alors quil lavait promis il y a trois semaines )",
       "tone": null,
-      "url": "https://www.wbap.com/2026/07/30/the-us-and-iran-trade-missile-barrages-as-hopes-dim-for-a-quick-resolution/"
+      "url": "https://www.bfmtv.com/economie/entreprises/defense/nous-devons-faire-preuve-d-une-certaine-prudence-donald-trump-n-est-pas-certain-qu-il-laissera-l-ukraine-produire-des-missiles-patriot-alors-qu-il-l-avait-promis-il-y-a-trois-semaines_AV-202607310204.html"
     },
     {
       "actors": [
-        "United States"
+        "Indonesia"
       ],
-      "domain": "newstalk1090.iheart.com",
-      "id": "evt_913c789ad3f14170",
-      "language": "English",
+      "domain": "kompas.com",
+      "id": "evt_92dc5a7046dc9d99",
+      "language": "Indonesian",
       "matched_regions": [
         "iran"
       ],
       "matched_themes": [
-        "conflict"
+        "drone"
       ],
       "region": "MENA",
-      "score": 4.5,
+      "score": 4.0,
       "score_breakdown": {
         "region": 2.0,
-        "themes": 2.5,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
+      "seen_date": "20260731T084500Z",
+      "source_country": "Indonesia",
       "tier": "medium",
-      "title": "Economy Slows Amid Iran Conflict Impact | News Talk 1090 WKBZ - AM",
+      "title": "Drone Iran Serbu Kuwait , Hantam Hangar Pesawat hingga Fasilitas Satelit AS",
       "tone": null,
-      "url": "https://newstalk1090.iheart.com/content/2026-07-30-economy-slows-amid-iran-conflict-impact/"
-    },
-    {
-      "actors": [
-        "Iraq"
-      ],
-      "domain": "iraqsun.com",
-      "id": "evt_690aa7021e95d6f8",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "Iraq",
-      "tier": "medium",
-      "title": "Iran claims to destroy three F - 35 jets , damage 3 more in Jordan after US attack",
-      "tone": null,
-      "url": "http://www.iraqsun.com/news/279216861/iran-claims-to-destroy-three-f-35-jets-damage-3-more-in-jordan-after-us-attack"
-    },
-    {
-      "actors": [
-        "Austria"
-      ],
-      "domain": "krone.at",
-      "id": "evt_d74ad2bdc4cc7c6d",
-      "language": "German",
-      "matched_regions": [
-        "iran",
-        "houthi"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "Austria",
-      "tier": "medium",
-      "title": "Vorbild Iran - Houthis erwägen Gebühren für Schiffe im Roten Meer",
-      "tone": null,
-      "url": "https://www.krone.at/4238237"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "thecollegefix.com",
-      "id": "evt_4216d5d85499f80a",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Old Dominion shooting was  terror attack  by student with ISIS ties : report",
-      "tone": null,
-      "url": "https://www.thecollegefix.com/old-dominion-shooting-was-terror-attack-by-student-with-isis-ties-report/"
+      "url": "https://www.kompas.com/global/read/2026/07/31/152100170/drone-iran-serbu-kuwait-hantam-hangar-pesawat-hingga-fasilitas-satelit-as"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "hna.de",
-      "id": "evt_4825e2c93200d589",
+      "domain": "fnp.de",
+      "id": "evt_a3bdc3c41920c712",
       "language": "German",
       "matched_regions": [
-        "ukraine",
-        "nato"
+        "israel",
+        "gaza",
+        "hamas"
       ],
       "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Germany",
+      "tier": "medium",
+      "title": "Hamas - Entwaffnung : Trumps Gaza - Plan sieht Israel - Abzug vor",
+      "tone": null,
+      "url": "http://www.fnp.de/politik/hamas-entwaffnung-trumps-gaza-plan-sieht-israel-abzug-vor-zr-94422876.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "miragenews.com",
+      "id": "evt_dc42f44b8e304172",
+      "language": "English",
+      "matched_regions": [
+        "gaza",
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
       "score": 3.5,
       "score_breakdown": {
         "region": 3.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Germany",
+      "seen_date": "20260731T084500Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "Ukraine - Krieg aktuell : NATO reagiert auf Raketeneinschlag in Polen",
+      "title": "Trump Hails Breakthrough : Will Hamas Disarm in Gaza ?",
       "tone": null,
-      "url": "http://www.hna.de/politik/in-brand-ukraine-krieg-aktuell-drohnen-setzen-in-hinterland-russlands-amazon-zr-94419254.html"
+      "url": "https://www.miragenews.com/trump-hails-breakthrough-will-hamas-disarm-in-1719883/"
     },
     {
       "actors": [
-        "Nigeria"
+        "France"
       ],
-      "domain": "premiumtimesng.com",
-      "id": "evt_0c933d38013ef7b2",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "Nigeria",
-      "tier": "monitor",
-      "title": "Civil War : Ohanaeze commemorates 60th anniversary of Aguiyi - Ironsi , Fajuyi deaths",
-      "tone": null,
-      "url": "https://www.premiumtimesng.com/news/top-news/899534-civil-war-ohanaeze-commemorates-60th-anniversary-of-aguiyi-ironsi-fajuyis-deaths.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "theepochtimes.com",
-      "id": "evt_d0b7a4b741cba2bb",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Multiple US Embassies Issue Warnings to Americans",
-      "tone": null,
-      "url": "https://www.theepochtimes.com/epochtv/multiple-us-embassies-issue-warnings-to-americans-6069424"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "windowscentral.com",
-      "id": "evt_dfba5f9c7d9c52d7",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Congratulations Helldivers 2 , youve finally convinced me to give you a chance once this awesome - looking Warhammer 40 , 000 crossover drops in two weeks",
-      "tone": null,
-      "url": "https://www.windowscentral.com/gaming/congratulations-helldivers-2-youve-finally-convinced-me-to-give-you-a-chance-once-this-awesome-looking-warhammer-40-000-crossover-drops-in-two-weeks"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "640wxsm.com",
-      "id": "evt_148246455663dce2",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Report : No plans for NBA Middle East games due to war",
-      "tone": null,
-      "url": "https://www.640wxsm.com/2026/07/30/report-no-plans-for-nba-middle-east-games-due-to-war/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "640wxsm.com",
-      "id": "evt_fff61caa465ab1f7",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Bengals DE Shemar Stewart ( knee ) avoids major injury after scare",
-      "tone": null,
-      "url": "https://www.640wxsm.com/2026/07/30/bengals-de-shemar-stewart-knee-avoids-major-injury-after-scare/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "crooksandliars.com",
-      "id": "evt_31aeb4bf54668124",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Trump Cant Figure A Way Out Of His Clusterf * ck War And It Driving Him Mad",
-      "tone": null,
-      "url": "https://crooksandliars.com/2026/07/trump-cant-figure-way-out-his-clusterfck"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "lastampa.it",
-      "id": "evt_05633656188f5259",
-      "language": "Italian",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Kiev , missile russo stermina la famiglia Voronov con quattro figli",
-      "tone": null,
-      "url": "https://www.lastampa.it/esteri/2026/07/30/news/kiev_missile_russo_strage_famiglia_voronov-15703168/"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "theconversation.com",
-      "id": "evt_4767b2a4a9e7f1b4",
+      "domain": "afrique-asie.fr",
+      "id": "evt_2781a43dec22c0bd",
       "language": "French",
-      "matched_regions": [],
-      "matched_themes": [
-        "coup"
+      "matched_regions": [
+        "iran",
+        "pakistan"
       ],
-      "region": "Global",
-      "score": 2.5,
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
+        "region": 3.5,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "Vente de la Coupe du monde : le bras de fer entre la FIFA et lEurope",
+      "seen_date": "20260731T084500Z",
+      "source_country": "France",
+      "tier": "medium",
+      "title": "L « axe de sympathie » Iran - Irak - Pakistan annonce un remodelage de lAsie du Sud - Ouest",
       "tone": null,
-      "url": "https://theconversation.com/vente-de-la-coupe-du-monde-le-bras-de-fer-entre-la-fifa-et-leurope-288759"
+      "url": "https://www.afrique-asie.fr/l-axe-de-sympathie-iran-irak-pakistan-annonce-un-remodelage-de-lasie-du-sud-ouest/"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "nypost.com",
-      "id": "evt_3b44b49d6f1746b8",
+      "domain": "tonyskansascity.com",
+      "id": "evt_77495ddb8ac8ce3e",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
+      "matched_regions": [
+        "iran"
       ],
-      "region": "Global",
-      "score": 2.5,
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
+        "region": 2.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
+      "seen_date": "20260731T084500Z",
       "source_country": "United States",
-      "tier": "monitor",
-      "title": "Squad  Rep . Ayanna Pressley hubby still on $2B govt contract as partner pulls out due to conflict of interest",
+      "tier": "medium",
+      "title": "Kansas City Track : Elections Probs , Friends & Iran From Cyberattacks",
       "tone": null,
-      "url": "https://nypost.com/2026/07/30/us-news/squad-rep-ayanna-pressleys-hubby-still-on-2b-govt-contract-as-partner-pulls-out-due-to-conflict-of-interest/"
+      "url": "https://www.tonyskansascity.com/2026/07/kansas-city-track-elections-probs.html"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "english.wafa.ps",
+      "id": "evt_047fcb0de17838ce",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "palestin"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Israeli forces detain ten Palestinians from West Bank",
+      "tone": null,
+      "url": "https://english.wafa.ps/Pages/Details/173062"
+    },
+    {
+      "actors": [
+        "Malaysia"
+      ],
+      "domain": "freemalaysiatoday.com",
+      "id": "evt_c98a4c051f0df96f",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "lebanon"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Malaysia",
+      "tier": "medium",
+      "title": "Israel carries out detonations near Lebanon Beaufort Castle",
+      "tone": null,
+      "url": "https://www.freemalaysiatoday.com/category/world/2026/07/31/israel-carries-out-detonations-near-lebanon-s-beaufort-castle"
     },
     {
       "actors": [
         "India"
       ],
-      "domain": "dailyexcelsior.com",
-      "id": "evt_d5174cc523d70b38",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
+      "domain": "jagran.com",
+      "id": "evt_88d5281011b02dae",
+      "language": "Hindi",
+      "matched_regions": [
+        "china"
       ],
-      "region": "Global",
-      "score": 2.5,
+      "matched_themes": [
+        "deploy"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 3.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
+        "region": 2.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
+      "seen_date": "20260731T084500Z",
       "source_country": "India",
-      "tier": "monitor",
-      "title": "PM Modi Chairs 4th CCS Meeting On West Asia Conflict ; Directs Measures For Energy Security And Seafarer Safety",
+      "tier": "medium",
+      "title": "चीन ने LAC से सटे दो एयरबेस पर तैनात किए 12 J - 20 फाइटर जेट , सैटेलाइट तस्वीरों से हुआ खुलासा - china deploys 12 j20 stealth jets near lac satellite reveals",
       "tone": null,
-      "url": "https://www.dailyexcelsior.com/pm-modi-chairs-4th-ccs-meeting-on-west-asia-conflict-directs-measures-for-energy-security-and-seafarers-safety/"
+      "url": "https://www.jagran.com/news/national-china-deploys-12-j20-stealth-jets-near-lac-satellite-reveals-40324944.html"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "kaltim.tribunnews.com",
+      "id": "evt_8571ac414f6826b1",
+      "language": "Indonesian",
+      "matched_regions": [
+        "iran",
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Indonesia",
+      "tier": "medium",
+      "title": "Di Tengah Konflik AS vs Iran , Transfer Minyak Antar Kapal Kembali Menggeliat di Luar Selat Hormuz",
+      "tone": null,
+      "url": "https://kaltim.tribunnews.com/news/1159330/di-tengah-konflik-as-vs-iran-transfer-minyak-antar-kapal-kembali-menggeliat-di-luar-selat-hormuz"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "naszdziennik.pl",
+      "id": "evt_a9f2a254762aa351",
+      "language": "Polish",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Warszawa : Główne obchody 82 . rocznicy wybuchu Powstania Warszawskiego",
+      "tone": null,
+      "url": "https://naszdziennik.pl/polska-kraj/343133,warszawa-glowne-obchody-82-rocznicy-wybuchu-powstania-warszawskiego.html"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "valledaostaglocal.it",
+      "id": "evt_28d98b4017a06d9a",
+      "language": "Italian",
+      "matched_regions": [],
+      "matched_themes": [
+        "invasion"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Elon Musk e la crisi migratoria di Ceuta :  E  uninvasione , Spagna sarà distrutta",
+      "tone": null,
+      "url": "https://www.valledaostaglocal.it/2026/07/31/leggi-notizia/argomenti/ultimora/articolo/elon-musk-e-la-crisi-migratoria-di-ceuta-e-uninvasione-spagna-sara-distrutta.html"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "cdaction.pl",
+      "id": "evt_6d964801b4dbf6f4",
+      "language": "Polish",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Dynamiczny multiplayer i Metallica na najnowszym zwiastunie Gears of War : E - Day . Microsoft ujawnił szczegóły trybów wieloosobowych",
+      "tone": null,
+      "url": "https://cdaction.pl/newsy/dynamiczny-multiplayer-i-metallica-na-najnowszym-zwiastunie-gears-of-war-e-day-microsoft-ujawnil-szczegoly-trybow-wieloosobowych/"
     },
     {
       "actors": [
         "Spain"
       ],
-      "domain": "laprovincia.es",
-      "id": "evt_5a97a08d26fa0ec3",
+      "domain": "elconfidencial.com",
+      "id": "evt_935128699d013f10",
       "language": "Spanish",
       "matched_regions": [],
       "matched_themes": [
@@ -739,74 +474,48 @@
         "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
+      "seen_date": "20260731T084500Z",
       "source_country": "Spain",
       "tier": "monitor",
-      "title": "Crítica de  El uniforme  ( Filmin ): una serie de policías que cambia la acción explosiva por el conflicto interior",
+      "title": "Amadeus gana 700 millones hasta junio , un 3 , 7 % menos , por el conflicto en Oriente Medio",
       "tone": null,
-      "url": "https://www.laprovincia.es/ocio/tv/criticas/2026/07/30/critica-uniforme-serie-policias-filmin-132962376.html"
+      "url": "https://www.elconfidencial.com/empresas/2026-07-31/amadeus-gana-700-millones-hasta-junio-un-3-7_4398820/"
     },
     {
       "actors": [
-        "Pakistan"
+        "India"
       ],
-      "domain": "samaa.tv",
-      "id": "evt_45a0866b2cc6ae79",
+      "domain": "moneycontrol.com",
+      "id": "evt_4243eae6b52736f7",
       "language": "English",
-      "matched_regions": [
-        "belarus",
-        "pakistan"
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
       ],
-      "matched_themes": [],
-      "region": "Asia del Sur",
+      "region": "Global",
       "score": 2.5,
       "score_breakdown": {
-        "region": 2.5,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Pakistan",
+      "seen_date": "20260731T084500Z",
+      "source_country": "India",
       "tier": "monitor",
-      "title": "Pakistan , Belarus resolve to boost military cooperation",
+      "title": "AI boom powers global trade growth in Q1 2026 despite Middle East conflict , WTO says",
       "tone": null,
-      "url": "https://www.samaa.tv/2087354454-pakistan-belarus-resolve-to-boost-military-cooperation"
+      "url": "https://www.moneycontrol.com/news/business/ai-boom-powers-global-trade-growth-in-q1-2026-despite-middle-east-conflict-wto-says-13990154.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "theyeshivaworld.com",
-      "id": "evt_28b3ff0a7e0a7d8f",
+      "domain": "post-journal.com",
+      "id": "evt_bbcfa46d1e7809ed",
       "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "IRAN CRACKDOWN : Citizens Describe Escalating Repression Following Executions Of Protesters",
-      "tone": null,
-      "url": "https://www.theyeshivaworld.com/news/israel-news/2580825/iran-crackdown-citizens-describe-escalating-repression-following-executions-of-protesters.html"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "elcomercio.es",
-      "id": "evt_87bf234fd63c6d47",
-      "language": "Spanish",
       "matched_regions": [],
       "matched_themes": [
-        "drone"
+        "terror"
       ],
       "region": "Global",
       "score": 2.0,
@@ -815,20 +524,45 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T191500Z",
-      "source_country": "Spain",
+      "seen_date": "20260731T084500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Rusia ataca una fábrica de drones de EE UU en Kiev | El Comercio : Diario de Asturias",
+      "title": "Matar convicted of federal terrorism charges",
       "tone": null,
-      "url": "https://www.elcomercio.es/internacional/europa/rusia-ataca-fabrica-drones-kiev-20260730204549-ntrc.html"
+      "url": "https://www.post-journal.com/news/top-stories/2026/07/matar-convicted-of-federal-terrorism-charges/"
     },
     {
       "actors": [
-        "Albania"
+        "Armenia"
       ],
-      "domain": "sot.com.al",
-      "id": "evt_6f0ce2c02b496168",
-      "language": "Albanian",
+      "domain": "massispost.com",
+      "id": "evt_79c81d9c6a8594aa",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Armenia",
+      "tier": "monitor",
+      "title": "Armenia and China Deepen Strategic Partnership • MassisPost",
+      "tone": null,
+      "url": "https://massispost.com/2026/07/armenia-and-china-deepen-strategic-partnership/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "express.co.uk",
+      "id": "evt_eddc24cee9e72110",
+      "language": "English",
       "matched_regions": [
         "iran"
       ],
@@ -840,19 +574,94 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Albania",
+      "seen_date": "20260731T084500Z",
+      "source_country": "United Kingdom",
       "tier": "monitor",
-      "title": "Tiranë / Punimet me eskavator shkaktojnë zjarr në ullishte ,  shpërthen  konflikti mes dy personave , 1 i arrestuar - Sot News",
+      "title": "British man arrested after being accused of spying on RAF base for Iran",
       "tone": null,
-      "url": "https://sot.com.al/aktualitet/tirane-punimet-me-eskavator-shkaktojne-zjarr-ne-ullishte-shperthen-konflikti-mes-dy-personave-1-i-arrestuar/"
+      "url": "https://www.express.co.uk/news/uk/2234722/british-man-arrested-spying-raf-akrotiri"
     },
     {
       "actors": [
-        "Netherlands"
+        "Croatia"
       ],
-      "domain": "nltimes.nl",
-      "id": "evt_cef7444374fa4521",
+      "domain": "dnevnik.hr",
+      "id": "evt_5e980108ea6102e9",
+      "language": "Bosnian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Croatia",
+      "tier": "monitor",
+      "title": "Britanci razotkrili špijuna u drugoj zemlji : Podatke slao Iranskoj revolucionarnoj gardi",
+      "tone": null,
+      "url": "https://dnevnik.hr/vijesti/svijet/na-cipru-uhicen-muskarac-osumnjicen-za-spijuniranje-britanske-vojne-baze---994027.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "n-tv.de",
+      "id": "evt_2fd18f5abb37569c",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Ukraine - Krieg im Liveticker : +++ 10 : 01 Russischer Onlinehändler Ozon evakuiert Lager +++",
+      "tone": null,
+      "url": "https://www.n-tv.de/politik/10-01-Russischer-Onlinehaendler-Ozon-evakuiert-Lager-id30859357.html"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "20minutes.fr",
+      "id": "evt_58afaef47d96b5ca",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "EN DIRECT Guerre en Ukraine : Kiev frappe à nouveau en Russie , les Panaméens prévenus avant de sengager dans larmée ...",
+      "tone": null,
+      "url": "https://www.20minutes.fr/monde/ukraine/4237142-20260731-guerre-ukraine-kiev-frappe-nouveau-russie-panameens-prevenus-avant-engager-armee"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "nvdaily.com",
+      "id": "evt_b9e29f5818b09fed",
       "language": "English",
       "matched_regions": [
         "israel"
@@ -865,144 +674,19 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Netherlands",
-      "tier": "monitor",
-      "title": "Protesters disrupt Rotterdam Holocaust memorial during Israeli ambassador speech",
-      "tone": null,
-      "url": "https://nltimes.nl/2026/07/30/protesters-disrupt-rotterdam-holocaust-memorial-israeli-ambassadors-speech"
-    },
-    {
-      "actors": [
-        "Mexico"
-      ],
-      "domain": "meganoticias.mx",
-      "id": "evt_56439e9b4008a4fd",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "combat"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Mexico",
-      "tier": "monitor",
-      "title": "Próximo regreso a clases , clave para combatir rezago escolar",
-      "tone": null,
-      "url": "https://www.meganoticias.mx/cdmx/noticia/pr%C3%B3ximo-regreso-a-clases-clave-para-combatir-rezago-escolar/755850"
-    },
-    {
-      "actors": [
-        "Iran"
-      ],
-      "domain": "irannewsupdate.com",
-      "id": "evt_26844bfa08265c93",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Iran",
-      "tier": "monitor",
-      "title": "The 1988 Massacre Was No Sudden Crime : How Iran Regime Planned the Elimination of Political Prisoners",
-      "tone": null,
-      "url": "https://irannewsupdate.com/news/human-rights/the-1988-massacre-was-no-sudden-crime-how-irans-regime-planned-the-elimination-of-political-prisoners/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "ksla.com",
-      "id": "evt_02d52ae685ce141e",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "nuclear"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
+      "seen_date": "20260731T084500Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "Feds pick Louisiana for potential nuclear campus",
+      "title": "Israelis worry about weakening connection with younger Jewish Americans",
       "tone": null,
-      "url": "https://www.ksla.com/2026/07/29/feds-pick-louisiana-potential-nuclear-campus/"
+      "url": "https://www.nvdaily.com/associated_press_national/israelis-worry-about-weakening-connection-with-younger-jewish-americans/article_1a230893-b721-5302-8cae-4c62aaf05939.html"
     },
     {
       "actors": [
-        "Spain"
+        "Germany"
       ],
-      "domain": "eldiadevalladolid.com",
-      "id": "evt_64f8dfca0e618ef8",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "nuclear"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "Burnham anuncia inversiones en submarinos nucleares | Noticias El Día de Valladolid",
-      "tone": null,
-      "url": "https://www.eldiadevalladolid.com/noticia/zb0199836-6ce4-4d91-b7a79a6515c2198e/202607/burnham-anuncia-inversiones-en-submarinos-nucleares"
-    },
-    {
-      "actors": [
-        "China"
-      ],
-      "domain": "french.china.org.cn",
-      "id": "evt_a5efb9b274019efb",
-      "language": "French",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "China",
-      "tier": "monitor",
-      "title": "LUE verse 3 , 47 milliards deuros à lUkraine afin quelle puisse satisfaire à ses besoins en matière de défense",
-      "tone": null,
-      "url": "http://french.china.org.cn/foreign/txt/2026-07/31/content_118626718.htm"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "de.nachrichten.yahoo.com",
-      "id": "evt_a0d2648f500aa8fa",
+      "domain": "t-online.de",
+      "id": "evt_5c8343551d417ccd",
       "language": "German",
       "matched_regions": [
         "ukraine"
@@ -1015,22 +699,47 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
+      "seen_date": "20260731T084500Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Abfangmissionen - Für Ukraine - Abwehr : Die deutsche Apex Recordhunter soll die schnellste Elektro - Drohne der Welt sein",
+      "title": "Ukraine - Krieg aktuell : Ukraine greift Wildberries - Konkurrenten an",
       "tone": null,
-      "url": "https://de.nachrichten.yahoo.com/abfangmissionen-f%C3%BCr-ukraine-abwehr-deutsche-070117075.html"
+      "url": "https://www.t-online.de/nachrichten/ukraine/id_101361284/ukraine-krieg-aktuell-ukraine-greift-wildberries-konkurrenten-an.html"
     },
     {
       "actors": [
-        "Denmark"
+        "United States"
       ],
-      "domain": "npinvestor.dk",
-      "id": "evt_1ed0f67a907814d5",
-      "language": "Danish",
+      "domain": "euronews.com",
+      "id": "evt_c35041271ec789f3",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "UK announces £8 billion investment in nuclear submarines",
+      "tone": null,
+      "url": "https://www.euronews.com/2026/07/31/uk-announces-8-billion-investment-in-nuclear-submarines"
+    },
+    {
+      "actors": [
+        "Austria"
+      ],
+      "domain": "diepresse.com",
+      "id": "evt_72bb81a6d2bfe283",
+      "language": "German",
       "matched_regions": [
-        "iran"
+        "israel"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -1040,197 +749,22 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Denmark",
+      "seen_date": "20260731T084500Z",
+      "source_country": "Austria",
       "tier": "monitor",
-      "title": "USA angriber dusinvis af iranske IRGC - mål efter missilangreb på amerikanske tropper",
+      "title": "Israel zerstört Hisbollah - Tunnel bei Burg Beaufort im Südlibanon",
       "tone": null,
-      "url": "https://npinvestor.dk/nyheder/usa-angriber-dusinvis-af-iranske-irgc-maal-efter-missilangreb-paa-amerikanske-tropper/"
+      "url": "https://www.diepresse.com/40563287/israel-zerstoert-hisbollah-tunnel-bei-burg-beaufort-im-suedlibanon"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "diariolibre.com",
-      "id": "evt_3b7ffae2cd0dc321",
-      "language": "Spanish",
-      "matched_regions": [
-        "venezuela"
-      ],
-      "matched_themes": [],
-      "region": "América Latina",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Delcy Rodríguez no ha cedido soberanía de Venezuela a EE . UU .",
-      "tone": null,
-      "url": "https://www.diariolibre.com/mundo/america-latina/2026/07/30/delcy-rodriguez-no-ha-cedido-soberania-de-venezuela-a-ee-uu/3615083"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "northweststar.com.au",
-      "id": "evt_77f724a61c3ba087",
+      "domain": "mynspr.org",
+      "id": "evt_74e5c5875df10029",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "troops"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T191500Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "Blasts and brains : cutting - edge study of Aussie troops",
-      "tone": null,
-      "url": "https://www.northweststar.com.au/story/9321158/blasts-and-brains-cutting-edge-study-of-aussie-troops/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "isp.netscape.com",
-      "id": "evt_3a392f056d5d19a8",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "deploy"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Spain to deploy military to restore order in Ceuta after thousands of people breach Morocco border",
-      "tone": null,
-      "url": "https://isp.netscape.com:443/news/world/story/0001/20260730/5c864e5f951e2a7cf7a3eac417668e97"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "bunburymail.com.au",
-      "id": "evt_2e01a3592ae0502c",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "troops"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "Blasts and brains : cutting - edge study of Aussie troops",
-      "tone": null,
-      "url": "https://www.bunburymail.com.au/story/9321158/blasts-and-brains-cutting-edge-study-of-aussie-troops/"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "libertatea.ro",
-      "id": "evt_17c12d016acc50c4",
-      "language": "Romanian",
       "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "7 avioane F - 18 , 3 elicoptere și 200 de militari spanioli vin în România pentru a apăra flancul estic al NATO",
-      "tone": null,
-      "url": "https://www.libertatea.ro/stiri/avioane-elicoptere-nato-militari-spanioli-vin-romania-aparare-flan-estiv-doborat-drone-5834851"
-    },
-    {
-      "actors": [
-        "Hungary"
-      ],
-      "domain": "nepszava.hu",
-      "id": "evt_1247890e5f458f07",
-      "language": "Hungarian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Hungary",
-      "tier": "monitor",
-      "title": "A NATO aktiválta légi és szárazföldi védelmi rendszereit az orosz légtérsértés miatt",
-      "tone": null,
-      "url": "https://nepszava.hu/3330062_nato-orosz-legtersertes-vedelmi-rendszer-aktivalas"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "oberonreview.com.au",
-      "id": "evt_e1b0652d7e8c3b5a",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "troops"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "Blasts and brains : cutting - edge study of Aussie troops",
-      "tone": null,
-      "url": "https://www.oberonreview.com.au/story/9321158/blasts-and-brains-cutting-edge-study-of-aussie-troops/"
-    },
-    {
-      "actors": [
-        "Lebanon"
-      ],
-      "domain": "lebanondebate.com",
-      "id": "evt_e4a2500fe8eb02c9",
-      "language": "Arabic",
-      "matched_regions": [
-        "lebanon"
+        "hamas"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -1240,12 +774,262 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260730T190000Z",
-      "source_country": "Lebanon",
+      "seen_date": "20260731T084500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "نتنياهو يصعّد ضد أوروبا : لا تدافع عن نفسها | Lebanon Debate",
+      "title": "Trump announces a deal for Hamas to disarm , but many hurdles and uncertainty remain",
       "tone": null,
-      "url": "https://www.lebanondebate.com/article/864167-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%8A%D8%B5%D8%B9%D8%AF-%D8%B6%D8%AF-%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7-%D9%84%D8%A7-%D8%AA%D8%AF%D8%A7%D9%81%D8%B9-%D8%B9%D9%86-%D9%86%D9%81%D8%B3%D9%87%D8%A7"
+      "url": "https://www.mynspr.org/npr-news/2026-07-30/trump-announces-a-deal-for-hamas-to-disarm-but-many-hurdles-and-uncertainty-remain"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "newsradio1470.iheart.com",
+      "id": "evt_fca46fd2e1ece540",
+      "language": "English",
+      "matched_regions": [
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Trump Announces Hamas Disarmament Deal | News Radio 1470",
+      "tone": null,
+      "url": "https://newsradio1470.iheart.com/content/2026-07-31-trump-announces-hamas-disarmament-deal/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilpost.it",
+      "id": "evt_2dd224c026d91d80",
+      "language": "Italian",
+      "matched_regions": [
+        "crimea"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Perché lUcraina attacca la Crimea",
+      "tone": null,
+      "url": "https://www.ilpost.it/2026/06/26/ucraina-attacca-crimea/?homepagePosition=15.1&referrerPost=3644616"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "hna.de",
+      "id": "evt_124e9362875a35d3",
+      "language": "German",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "NATO will atomare Abschreckung gegen Putins Russland ausbauen",
+      "tone": null,
+      "url": "http://www.hna.de/politik/nato-will-atomare-abschreckung-gegen-putins-russland-ausbauen-zr-94423080.html"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "bankier.pl",
+      "id": "evt_f56809014ad9d29a",
+      "language": "Polish",
+      "matched_regions": [],
+      "matched_themes": [
+        "mobiliz"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Huti zakłócają żeglugę . Arabia Saudyjska mobilizuje międzynarodową koalicję",
+      "tone": null,
+      "url": "https://www.bankier.pl/wiadomosc/Huti-zaklocaja-zegluge-Arabia-Saudyjska-mobilizuje-miedzynarodowa-koalicje-9175966.html"
+    },
+    {
+      "actors": [
+        "Albania"
+      ],
+      "domain": "sot.com.al",
+      "id": "evt_52b752904f5d5de8",
+      "language": "Albanian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Albania",
+      "tier": "monitor",
+      "title": "Raketa ruse bie në Poloni , Varshava i dërgon mesazhin e fortë Moskës se do të përgjigjet me ose pa NATO - n ... - Sot News",
+      "tone": null,
+      "url": "https://sot.com.al/bota/raketa-ruse-bie-ne-poloni-varshava-i-dergon-mesazhin-e-forte-moskes-se-do-te-pergjigjet-me-ose-pa-nato-n/"
+    },
+    {
+      "actors": [
+        "Kosovo"
+      ],
+      "domain": "telegrafi.com",
+      "id": "evt_b5e8a3eeed8389d9",
+      "language": "Albanian",
+      "matched_regions": [
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Kosovo",
+      "tier": "monitor",
+      "title": "Hamasi ka pranuar të çarmatoset , por pasi të plotësohet kushti kryesor i tyre",
+      "tone": null,
+      "url": "https://telegrafi.com/hamasi-ka-pranuar-te-carmatoset-por-pasi-te-plotesohet-kushti-kryesor-i-tyre/"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "premiumtimesng.com",
+      "id": "evt_4f114157c0d050ab",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "A culture of dread : Nigeria post - cosmopolitanism , By Jibrin Ibrahim",
+      "tone": null,
+      "url": "https://www.premiumtimesng.com/opinion/899629-a-culture-of-dread-nigerias-post-cosmopolitanism-by-jibrin-ibrahim.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "kfab.iheart.com",
+      "id": "evt_ad83bee80106f7bf",
+      "language": "English",
+      "matched_regions": [
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Trump Announces Hamas Disarmament Deal | NewsRadio 1110 KFAB",
+      "tone": null,
+      "url": "https://kfab.iheart.com/content/2026-07-31-trump-announces-hamas-disarmament-deal/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "kreiszeitung.de",
+      "id": "evt_2e040e724639fd5b",
+      "language": "German",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "NATO will atomare Abschreckung gegen Putins Russland ausbauen",
+      "tone": null,
+      "url": "http://www.kreiszeitung.de/politik/nato-will-atomare-abschreckung-gegen-putins-russland-ausbauen-zr-94423080.html"
+    },
+    {
+      "actors": [
+        "Switzerland"
+      ],
+      "domain": "tio.ch",
+      "id": "evt_d112ddf2a64d4799",
+      "language": "Italian",
+      "matched_regions": [
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260731T084500Z",
+      "source_country": "Switzerland",
+      "tier": "monitor",
+      "title": "« Il disarmo completo di Hamas ? Un accordo storico »",
+      "tone": null,
+      "url": "https://www.tio.ch/dal-mondo/politica/1941232/gaza-accordo-disarmo-hamas-forza"
     }
   ],
   "filters": {
@@ -1259,13 +1043,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-07-30T19:35:53Z",
+  "generated_at": "2026-07-31T09:15:50Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 6,
+    "high": 3,
     "medium": 11,
-    "monitor": 31
+    "monitor": 26
   },
-  "total_events": 48
+  "total_events": 40
 }
