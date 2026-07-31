@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#07090c" />
+<title>Fuentes abiertas y OSINT de SENTINEL — ACLED, GDELT, UCDP | GEOPÓLEM</title>
+<meta name="description" content="SENTINEL solo usa fuentes abiertas, citables y reproducibles: ACLED, UCDP, GDELT, Natural Earth, USGS, NASA FIRMS, NOAA, ReliefWeb y más." />
+<link rel="canonical" href="https://geopolem.com/fuentes-abiertas/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="GEOPÓLEM" />
+<meta property="og:url" content="https://geopolem.com/fuentes-abiertas/" />
+<meta property="og:title" content="Fuentes abiertas y OSINT de SENTINEL — ACLED, GDELT, UCDP | GEOPÓLEM" />
+<meta property="og:description" content="SENTINEL solo usa fuentes abiertas, citables y reproducibles: ACLED, UCDP, GDELT, Natural Earth, USGS, NASA FIRMS, NOAA, ReliefWeb y más." />
+<meta property="og:image" content="https://geopolem.com/assets/videos/geopolem-launch-poster.jpg" />
+<meta property="og:locale" content="es_ES" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fuentes abiertas y OSINT de SENTINEL — ACLED, GDELT, UCDP | GEOPÓLEM" />
+<meta name="twitter:description" content="SENTINEL solo usa fuentes abiertas, citables y reproducibles: ACLED, UCDP, GDELT, Natural Earth, USGS, NASA FIRMS, NOAA, ReliefWeb y más." />
+<meta name="twitter:image" content="https://geopolem.com/assets/videos/geopolem-launch-poster.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "GEOPÓLEM", "item": "https://geopolem.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Fuentes", "item": "https://geopolem.com/fuentes-abiertas/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Fuentes abiertas y OSINT de SENTINEL — ACLED, GDELT, UCDP | GEOPÓLEM",
+  "description": "SENTINEL solo usa fuentes abiertas, citables y reproducibles: ACLED, UCDP, GDELT, Natural Earth, USGS, NASA FIRMS, NOAA, ReliefWeb y más.",
+  "url": "https://geopolem.com/fuentes-abiertas/",
+  "image": "https://geopolem.com/assets/videos/geopolem-launch-poster.jpg",
+  "inLanguage": "es",
+  "publisher": {
+    "@type": "Organization",
+    "name": "GEOPÓLEM",
+    "url": "https://geopolem.com/"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-scanline"></div>
+</div>
+
+<header class="topnav" role="banner">
+  <a class="brand" href="/" aria-label="SENTINEL">
+    <svg class="brand-mark" viewBox="0 0 32 32" fill="none" role="img" aria-label="SENTINEL logo">
+  <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.25" opacity="0.4" />
+  <circle cx="16" cy="16" r="9" stroke="currentColor" stroke-width="1.5" />
+  <path d="M16 1 L16 5 M16 27 L16 31 M1 16 L5 16 M27 16 L31 16" stroke="currentColor" stroke-width="1.25" stroke-linecap="square" />
+  <path d="M16 9 L16 13 M16 19 L16 23 M9 16 L13 16 M19 16 L23 16" stroke="currentColor" stroke-width="1" opacity="0.7" />
+  <circle cx="16" cy="16" r="2.2" fill="currentColor" />
+</svg>
+    <span class="brand-text">
+      <span class="brand-name">SENTINEL</span>
+      <span class="brand-sub">Geo-intel · v0.6</span>
+    </span>
+  </a>
+  <nav class="topnav-links" aria-label="primary">
+    <a href="/">Inicio</a>
+    <a href="/manifiesto/">Manifiesto</a>
+    <a href="/">Capacidades</a>
+    <a href="/fuentes-abiertas/" aria-current="page">Fuentes</a>
+    <a href="/conflict-watchlist-2026/">Watchlist</a>
+    <a href="/conflictos-activos/">Sala situacional</a>
+    <a href="/dossiers/">Dossier naval</a>
+    <a href="/">Análisis 3D</a>
+    <a href="/metodologia/">Metodología</a>
+    <a href="/glosario/">Glosario</a>
+  </nav>
+  <div class="topnav-actions">
+    <a class="btn btn-primary btn-sm" href="/" >Abrir panel completo</a>
+  </div>
+</header>
+
+<main id="top">
+<nav aria-label="breadcrumb" class="container" style="padding-top:24px;">
+  <span class="mono small dim"><a href="/" style="color:inherit;">GEOPÓLEM</a> / Fuentes</span>
+</nav>
+
+<section class="section section-alt" id="sources">
+<div class="container">
+<div class="section-head">
+<div class="section-tag mono" data-i18n="src.tag">// 02 · FUENTES ABIERTAS</div>
+<h2 class="section-title" data-i18n="src.title">Solo fuentes abiertas, citables y reproducibles</h2>
+<p class="section-lede" data-i18n="src.lede">SENTINEL no depende de mapas propietarios ni de fuentes cerradas. Toda capa proviene de catálogos públicos y reproducibles.</p>
+
+</div>
+<div class="grid grid-2 sources-grid">
+<div class="src-block">
+<h4 data-i18n="src.cat.conflict">Conflictos y violencia política</h4>
+<ul class="src-list">
+<li>ACLED · <span class="dim" data-i18n="src.note.public">catálogo público</span></li>
+<li>UCDP / GED</li>
+<li>GDELT 2.0</li>
+<li>EM-DAT</li>
+</ul>
+</div>
+<div class="src-block">
+<h4 data-i18n="src.cat.geo">Geoespacial abierto</h4>
+<ul class="src-list">
+<li>Natural Earth</li>
+<li>OpenStreetMap</li>
+<li>NASA SEDAC · GPW</li>
+<li>Copernicus EMS</li>
+</ul>
+</div>
+<div class="src-block">
+<h4 data-i18n="src.cat.env">Riesgo ambiental</h4>
+<ul class="src-list">
+<li>USGS Earthquake Catalog</li>
+<li>NASA FIRMS · incendios</li>
+<li>NOAA · clima y atmósfera</li>
+<li>GDACS</li>
+</ul>
+</div>
+<div class="src-block">
+<h4 data-i18n="src.cat.osint">OSINT y media</h4>
+<ul class="src-list">
+<li>ReliefWeb (OCHA)</li>
+<li>ECHO Daily Map</li>
+<li>Wikidata · entidades</li>
+<li>Common Crawl · indexación</li>
+</ul>
+</div>
+</div>
+<p class="footnote mono" data-i18n="src.footnote">Los nombres anteriores se citan a efectos descriptivos. SENTINEL no almacena, redistribuye ni modifica datos protegidos por licencias restrictivas.</p>
+</div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-card">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="cta-content">
+      <div class="eyebrow"><span class="dot"></span><span>Acceso al panel</span></div>
+      <h2 class="cta-title">Ve esta sección dentro del panel SENTINEL completo</h2>
+      <p class="cta-lede">Este contenido forma parte de la plataforma interactiva SENTINEL de GEOPÓLEM: globo 3D, watchlist en vivo y sala situacional.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="/#sources">Abrir experiencia completa</a>
+        <a class="btn btn-ghost btn-lg" href="/">Ir al inicio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" role="img" aria-label="SENTINEL logo">
+  <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.25" opacity="0.4" />
+  <circle cx="16" cy="16" r="9" stroke="currentColor" stroke-width="1.5" />
+  <path d="M16 1 L16 5 M16 27 L16 31 M1 16 L5 16 M27 16 L31 16" stroke="currentColor" stroke-width="1.25" stroke-linecap="square" />
+  <path d="M16 9 L16 13 M16 19 L16 23 M9 16 L13 16 M19 16 L23 16" stroke="currentColor" stroke-width="1" opacity="0.7" />
+  <circle cx="16" cy="16" r="2.2" fill="currentColor" />
+</svg>
+      <div>
+        <div class="brand-name">SENTINEL</div>
+        <div class="mono small dim">Open-source geopolitical intelligence</div>
+      </div>
+    </div>
+    <div class="footer-meta mono small">
+      <span>Build · 2026.05</span>
+      <span class="sep">·</span>
+      <span>Sin cookies · sin almacenamiento</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
