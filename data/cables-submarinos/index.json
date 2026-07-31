@@ -1,0 +1,25 @@
+{
+  "project": "GEOPÓLEM",
+  "collection": "Cables submarinos · Infraestructura crítica",
+  "updated_at": "2026-07-28T00:00:00+02:00",
+  "latest": "./geopolem_cables_submarinos.json",
+  "geo": "./cable-geo.json",
+  "items": [
+    {
+      "id": "cables_submarinos_2026_07",
+      "public_label": "Cables submarinos",
+      "title": "Cables submarinos: guerra híbrida bajo el mar",
+      "subtitle": "Matriz de 12 sistemas críticos · Mar Rojo y Báltico",
+      "slug": "cables-submarinos",
+      "status": "published",
+      "cable_count": 12,
+      "editorial_method": ["Hecho", "Evaluación", "Hipótesis"],
+      "route": "../../dossiers/index.html",
+      "files": {
+        "app_json": "./geopolem_cables_submarinos.json",
+        "geo_json": "./cable-geo.json",
+        "csv": "../../dossiers/geopolem_cables_matriz.csv"
+      }
+    }
+  ]
+}

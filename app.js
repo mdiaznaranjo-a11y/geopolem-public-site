@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, CONFLICTOS_ACTIVOS, CONFLICT_WATCHLIST_2026 } from './data.js';
+import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, CONFLICTOS_ACTIVOS, CONFLICT_WATCHLIST_2026, CABLES_SUBMARINOS } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 import { loadWatchlistFocos } from './api-adapter.js';
@@ -39,7 +39,7 @@ const I18N = {
   ES: {
     welcome: 'Bienvenido al tablero.',
     tagline: 'GEO + PÓLEMOS · sala situacional editorial',
-    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Ficha', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio', products:'Productos', osint:'OSINT Geopolítico' },
+    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', cables:'Cables', planz:'Plan Z', ficha:'Ficha', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio', products:'Productos', osint:'OSINT Geopolítico' },
     kpi: 'Indicadores clave',
     alerts: 'Alertas en vivo',
     selectFoco: 'Selecciona un foco',
@@ -58,7 +58,7 @@ const I18N = {
   EN: {
     welcome: 'Welcome to the board.',
     tagline: 'GEO + PÓLEMOS · editorial situation room',
-    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Brief', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio', products:'Products', osint:'OSINT Geopolitical' },
+    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', cables:'Cables', planz:'Plan Z', ficha:'Brief', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio', products:'Products', osint:'OSINT Geopolitical' },
     kpi:'Key indicators',
     alerts:'Live alerts',
     selectFoco:'Select a focus',
@@ -77,7 +77,7 @@ const I18N = {
   FR: {
     welcome:'Bienvenue sur le tableau.',
     tagline:'GEO + PÓLEMOS · salle de situation éditoriale',
-    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio', products:'Produits', osint:'OSINT Géopolitique' },
+    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', cables:'Câbles', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio', products:'Produits', osint:'OSINT Géopolitique' },
     kpi:'Indicateurs clés', alerts:'Alertes en direct',
     selectFoco:'Sélectionner un foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Acteurs', risk:'Matrice des risques',
@@ -94,7 +94,7 @@ const I18N = {
   DE: {
     welcome:'Willkommen am Lagebrett.',
     tagline:'GEO + PÓLEMOS · redaktioneller Lageraum',
-    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Notiz', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio', products:'Produkte', osint:'OSINT Geopolitik' },
+    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', cables:'Kabel', planz:'Plan Z', ficha:'Notiz', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio', products:'Produkte', osint:'OSINT Geopolitik' },
     kpi:'Schlüsselindikatoren', alerts:'Live-Warnungen',
     selectFoco:'Brennpunkt auswählen',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteure', risk:'Risikomatrix',
@@ -111,7 +111,7 @@ const I18N = {
   LB: {
     welcome:'Wëllkomm um Tableau.',
     tagline:'GEO + PÓLEMOS · redaktionellen Situatiouns-Raum',
-    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio', products:'Produkter', osint:'OSINT Geopolitik' },
+    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', cables:'Kabelen', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio', products:'Produkter', osint:'OSINT Geopolitik' },
     kpi:'Haaptindikateuren', alerts:'Live Alarmen',
     selectFoco:'Wielt e Foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteuren', risk:'Risiko-Matrix',
@@ -2959,6 +2959,178 @@ function ConflictWatchlistTeaser({ lang }) {
    PLAN Z — Documental de inteligencia (petróleo, deuda, poder)
    Documental completo embebido desde YouTube + activación social 9:16.
    ======================================================================== */
+/* ========================================================================
+   Cables submarinos · Infraestructura crítica — teaser (dashboard) + vista completa
+   Matriz de 12 cables submarinos críticos (Mar Rojo / Báltico). Fuente:
+   ./data/cables-submarinos/geopolem_cables_submarinos.json
+   ======================================================================== */
+function CablesSubmarinosTeaser({ lang, onOpen }) {
+  const en = lang === 'EN';
+  const c = CABLES_SUBMARINOS;
+  return html`
+  <section class="relative panel rounded-lg overflow-hidden border border-radar/25">
+    <span class="corner-tl"></span><span class="corner-tr"></span>
+    <span class="corner-bl"></span><span class="corner-br"></span>
+    <div class="boot-grid absolute inset-0 opacity-25 pointer-events-none"></div>
+    <div class="scanlines absolute inset-0 pointer-events-none"></div>
+    <div class="relative p-4 lg:p-6 flex flex-col lg:flex-row gap-4 lg:items-center justify-between">
+      <div class="space-y-1.5 max-w-2xl">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="relative flex w-2 h-2">
+            <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-radar"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-radar"></span>
+          </span>
+          <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${en?c.eyebrowEn:c.eyebrow}</div>
+          <span class="chip" style=${{borderColor:'rgba(34,211,238,0.4)', color:'#67e8f9', background:'rgba(34,211,238,0.1)'}}>${c.cables.length} ${en?'cables':'cables'}</span>
+        </div>
+        <h3 class="font-display font-bold text-[20px] lg:text-[26px] text-slate-50 leading-tight glow-text">${en?c.titleEn:c.title}</h3>
+        <p class="text-[13px] text-slate-300">${en?c.summaryEn:c.summary}</p>
+      </div>
+      <button onClick=${onOpen}
+        class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+        ▶ ${en?'Open cables panel':'Abrir panel de cables'}
+      </button>
+    </div>
+  </section>`;
+}
+
+function CablesSubmarinos({ lang }) {
+  const en = lang === 'EN';
+  const c = CABLES_SUBMARINOS;
+  const riskColor = (level) => {
+    if (!level) return {borderColor:'rgba(255,255,255,0.15)', color:'#cbd5e1'};
+    if (level.startsWith('Alto')) return {borderColor:'rgba(255,45,37,0.4)', color:'#fca5a1', background:'rgba(255,45,37,0.08)'};
+    if (level.startsWith('Medio')) return {borderColor:'rgba(245,158,11,0.4)', color:'#fbbf24', background:'rgba(245,158,11,0.08)'};
+    return {borderColor:'rgba(61,214,208,0.4)', color:'#3DD6D0', background:'rgba(61,214,208,0.08)'};
+  };
+  return html`
+  <section class="space-y-4">
+    <!-- Hero -->
+    <div class="relative panel rounded-lg overflow-hidden border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="boot-grid absolute inset-0 opacity-30 pointer-events-none"></div>
+      <div class="scanlines absolute inset-0 pointer-events-none"></div>
+      <div class="relative p-5 lg:p-7">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-2">
+            <span class="relative flex w-2 h-2">
+              <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-radar"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-radar"></span>
+            </span>
+            <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${en?c.eyebrowEn:c.eyebrow}</div>
+          </div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">${en?'Compiled':'Compilación'}: ${c.compilado}</div>
+        </div>
+        <h2 class="font-display font-bold text-[28px] lg:text-[38px] text-slate-50 leading-tight mt-2 glow-text">
+          ${en?c.titleEn:c.title}
+        </h2>
+        <p class="text-[13px] text-radar font-mono uppercase tracking-widest mt-1">${en?c.subtitleEn:c.subtitle}</p>
+        <p class="text-[14px] lg:text-[15px] text-slate-200 leading-relaxed mt-3 max-w-3xl">${en?c.summaryEn:c.summary}</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          ${c.tags.map(tag => html`<span key=${tag} class="chip" style=${{borderColor:'rgba(61,214,208,0.35)'}}>${tag}</span>`)}
+        </div>
+        <div class="flex flex-wrap gap-3 mt-5">
+          <a href=${c.csvUrl} download
+            class="inline-flex items-center gap-2 px-3.5 py-2 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+            ⭳ ${en?'Download CSV':'Descargar CSV'}
+          </a>
+          <a href=${c.dataUrl} target="_blank" rel="noopener"
+            class="inline-flex items-center gap-2 px-3.5 py-2 rounded border border-white/15 text-slate-300 text-[12px] font-mono uppercase tracking-widest hover:bg-white/5 transition">
+            { } ${en?'Full JSON dataset':'Dataset JSON completo'}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Matriz de 12 cables -->
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/20 overflow-x-auto">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+        <div class="heading-mono">${en?'12-cable matrix':'Matriz de 12 cables'}</div>
+        <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">${en?'Dashboard-ready':'Dashboard-ready'}</div>
+      </div>
+      <table class="w-full text-left border-collapse text-[12.5px]">
+        <thead>
+          <tr class="font-mono text-[10.5px] uppercase tracking-widest text-radar border-b border-white/15">
+            <th class="py-2 pr-3">${en?'Cable':'Cable'}</th>
+            <th class="py-2 pr-3">RFS</th>
+            <th class="py-2 pr-3">${en?'Status':'Estado'}</th>
+            <th class="py-2 pr-3">Km</th>
+            <th class="py-2 pr-3">${en?'Risk':'Riesgo'}</th>
+            <th class="py-2 pr-3">${en?'Supplier':'Proveedor'}</th>
+            <th class="py-2 pr-3">Tbps</th>
+          </tr>
+        </thead>
+        <tbody class="text-slate-300">
+          ${c.cables.map(cb => html`
+            <tr key=${cb.cableId} class="border-b border-white/5 hover:bg-white/[0.03]">
+              <td class="py-2 pr-3 font-semibold text-slate-100">${cb.nombreCompleto}</td>
+              <td class="py-2 pr-3">${cb.rfsYear}</td>
+              <td class="py-2 pr-3">${cb.estado}</td>
+              <td class="py-2 pr-3">${cb.lengthKm ? cb.lengthKm.toLocaleString(en?'en-US':'es-ES') : '—'}</td>
+              <td class="py-2 pr-3"><span class="chip" style=${riskColor(cb.riskLevel)}>${cb.riskLevel}</span></td>
+              <td class="py-2 pr-3">${cb.supplier}</td>
+              <td class="py-2 pr-3">${cb.capacityTbps ?? 'n.a.'}</td>
+            </tr>`)}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Incidentes documentados -->
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-alert/20">
+      <span class="corner-tl"></span><span class="corner-br"></span>
+      <div class="heading-mono mb-3">${en?'Documented incidents':'Incidentes documentados'}</div>
+      <div class="space-y-2.5">
+        ${c.incidentes.map((i,idx) => html`
+          <div key=${idx} class="panel-soft rounded-md p-3 border border-white/5">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="font-mono text-[11px] font-bold text-alert-soft">${i.cableId}</span>
+              <span class="font-mono text-[10.5px] text-slate-500">${i.fecha}</span>
+            </div>
+            <div class="text-[12.5px] text-slate-200 leading-snug">${i.evento}</div>
+            <div class="text-[11.5px] text-slate-500 mt-1 leading-snug">${en?'Suspected cause':'Causa presunta'}: ${i.causaPresunta}</div>
+            <a href=${i.fuente} target="_blank" rel="noopener" class="text-[10.5px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">${en?'Source':'Fuente'} ↗</a>
+          </div>`)}
+      </div>
+    </div>
+
+    <!-- Contexto estratégico -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div class="panel rounded-md p-4">
+        <div class="heading-mono mb-2">${en?'Red Sea corridor':'Corredor Mar Rojo'}</div>
+        <p class="text-[12.5px] text-slate-300 leading-relaxed">${c.contextoEstrategico.corredor_mar_rojo}</p>
+      </div>
+      <div class="panel rounded-md p-4">
+        <div class="heading-mono mb-2">${en?'Baltic corridor':'Corredor Báltico'}</div>
+        <p class="text-[12.5px] text-slate-300 leading-relaxed">${c.contextoEstrategico.corredor_baltico}</p>
+      </div>
+      <div class="panel rounded-md p-4">
+        <div class="heading-mono mb-2">${en?'NATO response':'Respuesta OTAN'}</div>
+        <p class="text-[12.5px] text-slate-300 leading-relaxed">${c.contextoEstrategico.respuesta_otan}</p>
+      </div>
+      <div class="panel rounded-md p-4">
+        <div class="heading-mono mb-2">${en?'Matsu, Taiwan · comparative pattern':'Matsu, Taiwán · patrón comparativo'}</div>
+        <p class="text-[12.5px] text-slate-300 leading-relaxed">${c.contextoEstrategico.matsu_taiwan_comparativo}</p>
+      </div>
+    </div>
+
+    <!-- Conclusiones del tablero -->
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <div class="heading-mono mb-3">${en?'GEOPÓLEM board assessment':'Evaluación GEOPÓLEM'}</div>
+      <div class="space-y-2">
+        ${c.conclusionesTablero.map((t,idx) => html`
+          <div key=${idx} class="flex gap-2 text-[12.5px] leading-snug">
+            <span class="font-mono text-radar shrink-0">${idx+1}.</span>
+            <span class="text-slate-300">${t}</span>
+          </div>`)}
+      </div>
+      <p class="text-[11px] text-slate-500 mt-4 font-mono uppercase tracking-widest">${c.criterioFuentes}</p>
+    </div>
+  </section>`;
+}
+
 function PlanZTeaser({ lang, onOpen }) {
   const en = lang === 'EN';
   const p = PLAN_Z;
@@ -4124,6 +4296,7 @@ function App() {
           <${IntelligenceProducts} lang=${lang} onOpenMap=${()=>setView('map')}/>
           <${OsintReelsTeaser} lang=${lang} onOpen=${()=>setView('osint')}/>
           <${PlanZTeaser} lang=${lang} onOpen=${()=>setView('planz')}/>
+          <${CablesSubmarinosTeaser} lang=${lang} onOpen=${()=>setView('cables')}/>
           <${FichaTeaser} lang=${lang} onOpen=${()=>setView('ficha')}/>
           <${DoctrinaTeaser} lang=${lang} onOpen=${()=>setView('doctrina')}/>
           <${SalaTeaser} lang=${lang} onOpen=${()=>setView('sala')}/>
@@ -4147,6 +4320,8 @@ function App() {
       ${view==='ficha' && html`<${FichaEditorial} lang=${lang}/>`}
 
       ${view==='sentinel' && html`<${SentinelBrief} lang=${lang}/>`}
+
+      ${view==='cables' && html`<${CablesSubmarinos} lang=${lang}/>`}
 
       ${view==='watchlist' && html`<${Watchlist} t=${t} focos=${allFocos} onSelect=${setSelectedId} selectedId=${selectedId}/>`}
 

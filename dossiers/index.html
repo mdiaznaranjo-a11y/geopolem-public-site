@@ -101,6 +101,162 @@
           </div>
         </div>
       </article>
+
+      <!-- Dossier cables submarinos -->
+      <article class="border border-white/10 rounded-xl overflow-hidden bg-white/[0.02]">
+        <div class="p-6 md:p-8">
+          <div class="flex items-start justify-between gap-6 flex-wrap">
+            <div class="flex-1 min-w-[280px]">
+              <div class="mono text-xs uppercase tracking-widest text-red-400/90 mb-2">Infraestructura crítica · Guerra híbrida · Mar Rojo · Báltico</div>
+              <h2 class="display text-2xl md:text-3xl font-bold tracking-tight mb-3">Cables submarinos: guerra híbrida bajo el mar<br/>Matriz de 12 sistemas críticos</h2>
+              <p class="text-white/70 mb-4">Matriz de inteligencia de 12 cables submarinos que sostienen el tráfico intercontinental de datos, con foco en los corredores del Mar Rojo–Bab el-Mandeb–Suez y del Báltico. Nueve de los doce sistemas cruzan el embudo egipcio, por donde transita más del 90 % del tráfico Europa-Asia; los otros dos —bálticos— han sufrido cortes atribuidos a arrastres de ancla con jurisdicción legal desmoronada bajo UNCLOS. La evaluación GEOPÓLEM: la guerra híbrida contra los cables no rompe, retrasa.</p>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="mono text-[11px] uppercase tracking-wider px-2 py-1 rounded bg-red-500/10 text-red-300 border border-red-500/20">12 cables</span>
+                <span class="mono text-[11px] uppercase tracking-wider px-2 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">Mar Rojo</span>
+                <span class="mono text-[11px] uppercase tracking-wider px-2 py-1 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Báltico</span>
+                <span class="mono text-[11px] uppercase tracking-wider px-2 py-1 rounded bg-white/5 text-white/70 border border-white/10">UNCLOS</span>
+                <span class="mono text-[11px] uppercase tracking-wider px-2 py-1 rounded bg-white/5 text-white/70 border border-white/10">Bab el-Mandeb</span>
+                <span class="mono text-[11px] uppercase tracking-wider px-2 py-1 rounded bg-white/5 text-white/70 border border-white/10">Baltic Sentry</span>
+              </div>
+              <div class="flex gap-3 flex-wrap">
+                <a href="./geopolem_cables_matriz.csv" download
+                   class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/15 text-white/80 hover:bg-white/5 transition">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Descargar CSV
+                </a>
+                <a href="../app.html" 
+                   class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500/20 transition">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  Ver en el dashboard
+                </a>
+              </div>
+            </div>
+            <div class="mono text-xs text-white/50 text-right">
+              <div>Publicado</div>
+              <div class="text-white/80">28 · JUL · 2026</div>
+              <div class="mt-3">Autora</div>
+              <div class="text-white/80">M. Díaz Naranjo</div>
+            </div>
+          </div>
+
+          <!-- Tabla de la matriz de 12 cables -->
+          <div class="mt-8 pt-6 border-t border-white/10 overflow-x-auto">
+            <div class="mono text-[11px] uppercase tracking-widest text-white/50 mb-4">Matriz dashboard-ready · 12 cables</div>
+            <table class="w-full text-left border-collapse text-[12.5px]">
+              <thead>
+                <tr class="mono text-[10.5px] uppercase tracking-widest text-cyan-300/90 border-b border-white/15">
+                  <th class="py-2 pr-3">Cable</th>
+                  <th class="py-2 pr-3">Año RFS</th>
+                  <th class="py-2 pr-3">Estado</th>
+                  <th class="py-2 pr-3">Longitud (km)</th>
+                  <th class="py-2 pr-3">Riesgo</th>
+                  <th class="py-2 pr-3">Proveedor</th>
+                </tr>
+              </thead>
+              <tbody class="text-white/80">
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">SEA-ME-WE 3 (SMW3)</td>
+                  <td class="py-2 pr-3">1999</td>
+                  <td class="py-2 pr-3">Retirado 2024-12-02</td>
+                  <td class="py-2 pr-3">39.000</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto (histórico)</span></td>
+                  <td class="py-2 pr-3">ASN + Fujitsu</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">SEA-ME-WE 4 (SMW4)</td>
+                  <td class="py-2 pr-3">2005</td>
+                  <td class="py-2 pr-3">Activo</td>
+                  <td class="py-2 pr-3">18.800</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">ASN + Fujitsu</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">SEA-ME-WE 5 (SMW5)</td>
+                  <td class="py-2 pr-3">2016</td>
+                  <td class="py-2 pr-3">Activo</td>
+                  <td class="py-2 pr-3">20.000</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">ASN + NEC</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">SEA-ME-WE 6 (SMW6)</td>
+                  <td class="py-2 pr-3">2026 (esperado)</td>
+                  <td class="py-2 pr-3">En despliegue</td>
+                  <td class="py-2 pr-3">21.700</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">SubCom</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">Asia-Africa-Europe 1 (AAE-1)</td>
+                  <td class="py-2 pr-3">2017</td>
+                  <td class="py-2 pr-3">Activo</td>
+                  <td class="py-2 pr-3">25.000</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">NEC + SubCom</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">India-Middle East-Western Europe (IMEWE)</td>
+                  <td class="py-2 pr-3">2010</td>
+                  <td class="py-2 pr-3">Activo</td>
+                  <td class="py-2 pr-3">12.091</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">ASN + NEC</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">Europe India Gateway (EIG)</td>
+                  <td class="py-2 pr-3">2011</td>
+                  <td class="py-2 pr-3">Activo</td>
+                  <td class="py-2 pr-3">15.000</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">TE SubCom + ASN</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">SEACOM / Tata TGN-Eurasia</td>
+                  <td class="py-2 pr-3">2009</td>
+                  <td class="py-2 pr-3">Activo</td>
+                  <td class="py-2 pr-3">17.000</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">SubCom</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">2Africa (consorcio Meta)</td>
+                  <td class="py-2 pr-3">2025-11 (núcleo)</td>
+                  <td class="py-2 pr-3">Operativo; Mar Rojo pendiente</td>
+                  <td class="py-2 pr-3">45.000</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20 text-[11px]">Medio</span></td>
+                  <td class="py-2 pr-3">ASN</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">Pakistan East Africa Connecting Europe (PEACE)</td>
+                  <td class="py-2 pr-3">2022</td>
+                  <td class="py-2 pr-3">Activo</td>
+                  <td class="py-2 pr-3">25.000</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">HMN Tech</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">BCS East-West Interlink (BCS-EWI)</td>
+                  <td class="py-2 pr-3">1997</td>
+                  <td class="py-2 pr-3">Activo</td>
+                  <td class="py-2 pr-3">218</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">Ericsson</td>
+                </tr>
+                <tr class="hover:bg-white/[0.03]">
+                  <td class="py-2 pr-3 font-semibold text-white">C-Lion1</td>
+                  <td class="py-2 pr-3">2016</td>
+                  <td class="py-2 pr-3">Activo</td>
+                  <td class="py-2 pr-3">1.173</td>
+                  <td class="py-2 pr-3"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-300 border border-red-500/20 text-[11px]">Alto</span></td>
+                  <td class="py-2 pr-3">ASN</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="mono text-[11px] text-white/40 mt-4">Fuente: matriz GEOPÓLEM de cables submarinos, compilación julio 2026. Cada dato procede de una URL verificada (TeleGeography, SubmarineNetworks, CSIS, AP, Reuters, BBC, operadores primarios). <a href="./geopolem_cables_matriz.csv" download class="underline hover:text-cyan-300">Descargar CSV completo</a>.</div>
+          </div>
+        </div>
+      </article>
+
     </section>
 
     <footer class="mt-16 pt-8 border-t border-white/10 text-xs text-white/40 mono uppercase tracking-widest">
