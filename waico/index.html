@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>WAICO — Organización Mundial de Cooperación en IA · GEOPÓLEM</title>
+<meta name="description" content="WAICO: 29 países fundadores, sede en Shanghái, firma del 16 julio 2026. Lectura editorial GEOPÓLEM sobre gobernanza global de la IA, composición Sur Global, ausencia G7/UE y cuatro hipótesis en observación." />
+<meta name="keywords" content="WAICO, World Artificial Intelligence Cooperation Organization, gobernanza IA, Shanghái, Wang Yi, Xi Jinping, Guterres, 29 países, Sur Global, BRICS, OCS, GEOPÓLEM" />
+<meta name="theme-color" content="#05080c" />
+<link rel="canonical" href="https://mdiaznaranjo-a11y.github.io/geopolem-public-site/waico/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="GEOPÓLEM" />
+<meta property="og:title" content="WAICO — Organización Mundial de Cooperación en IA · GEOPÓLEM" />
+<meta property="og:description" content="29 países fundan en Shanghái la primera organización intergubernamental de gobernanza de la IA sin miembros del G7 ni de la UE. Lectura tripolar GEOPÓLEM." />
+<meta property="og:image" content="../assets/geopolem_siete_dimensiones_cover_9x16.jpg" />
+<meta property="og:url" content="https://mdiaznaranjo-a11y.github.io/geopolem-public-site/waico/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="WAICO — Organización Mundial de Cooperación en IA · GEOPÓLEM" />
+<meta name="twitter:description" content="29 países fundadores, sede en Shanghái, ningún G7. La gobernanza de la IA se fragmenta. Lectura editorial GEOPÓLEM." />
+<meta name="twitter:image" content="../assets/geopolem_siete_dimensiones_cover_9x16.jpg" />
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2305080c'/><circle cx='32' cy='32' r='22' fill='none' stroke='%2322d3ee' stroke-width='2'/><circle cx='32' cy='32' r='3' fill='%23ef4444'/><line x1='32' y1='4' x2='32' y2='60' stroke='%2322d3ee' stroke-width='1' opacity='.4'/><line x1='4' y1='32' x2='60' y2='32' stroke='%2322d3ee' stroke-width='1' opacity='.4'/></svg>" />
+<link rel="manifest" href="../manifest.webmanifest" />
+<link rel="apple-touch-icon" href="../icons/icon-192.svg" />
+
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.bunny.net/css?family=jetbrains-mono:400,500,600|inter:400,500,600,700,800|space-grotesk:600,700" />
+
+<!-- JSON-LD estructurado: DefinedTerm + Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/waico/#definicion",
+      "name": "WAICO",
+      "alternateName": ["World Artificial Intelligence Cooperation Organization", "Organización Mundial de Cooperación en IA"],
+      "description": "Organización intergubernamental independiente fundada el 16 de julio de 2026 en Shanghái por 29 países del Sur Global y Eurasia post-soviética, con sede en Shanghái y mandato de coordinar cooperación internacional y gobernanza de la inteligencia artificial.",
+      "inDefinedTermSet": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/#glosario",
+      "termCode": "GPL-T04",
+      "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/waico/"
+    },
+    {
+      "@type": "Article",
+      "headline": "WAICO — Organización Mundial de Cooperación en IA",
+      "description": "Análisis editorial GEOPÓLEM sobre la fundación de WAICO: 29 países firmantes, ausencia del G7 y UE, marco doctrinal, cuatro hipótesis en observación.",
+      "author": {
+        "@type": "Person",
+        "name": "María del Carmen Díaz Naranjo",
+        "affiliation": {"@type": "Organization", "name": "GEOPÓLEM"}
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "GEOPÓLEM",
+        "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/"
+      },
+      "datePublished": "2026-08-01",
+      "inLanguage": "es",
+      "about": [
+        {"@type": "Thing", "name": "Gobernanza global de la inteligencia artificial"},
+        {"@type": "Thing", "name": "Sistema tripolar internacional"},
+        {"@type": "Thing", "name": "Sur Global"},
+        {"@type": "Organization", "name": "World Artificial Intelligence Cooperation Organization"}
+      ],
+      "mainEntityOfPage": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/waico/"
+    }
+  ]
+}
+</script>
+
+<!--
+  Página estática y autocontenida, misma decisión que /talasocracia/: sin build ni
+  dependencia de CDN de JS para pintar. Reutiliza tokens de diseño de la portada y
+  del teatro marítimo.
+-->
+<style>
+  :root{
+    color-scheme: dark;
+    --bg:#05080c; --bg-2:#080d13; --panel:#0d141d; --line:rgba(34,211,238,.14);
+    --line-soft:rgba(148,163,184,.12);
+    --ink:#e2e8f0; --ink-2:#cbd5e1; --muted:#94a3b8; --dim:#64748b;
+    --cyan:#22d3ee; --amber:#f59e0b; --red:#ef4444; --green:#10b981; --violet:#a78bfa;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --sans:'Inter',system-ui,-apple-system,sans-serif;
+    --display:'Space Grotesk','Inter',system-ui,sans-serif;
+    --max:1180px; --gutter:clamp(1rem,4vw,2.5rem);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--sans); line-height:1.62;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+    background-image:
+      radial-gradient(1100px 640px at 78% -12%, rgba(34,211,238,.08), transparent 62%),
+      radial-gradient(880px 560px at 8% 108%, rgba(167,139,250,.06), transparent 58%);
+  }
+  a{color:inherit}
+  .shell{max-width:var(--max); margin:0 auto; padding-inline:var(--gutter)}
+  .mono{font-family:var(--mono)}
+  .kicker{
+    font-family:var(--mono); font-size:.63rem; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--muted); display:block; margin-bottom:.7rem;
+  }
+  .skip-link{position:absolute; left:-9999px; top:0; background:var(--cyan); color:#04121a; padding:.6rem 1rem; z-index:100; font-family:var(--mono); font-size:.75rem}
+  .skip-link:focus{left:0}
+  :focus-visible{outline:2px solid var(--cyan); outline-offset:2px}
+
+  /* ---------- Barra superior ---------- */
+  .topbar{position:sticky; top:0; z-index:40; background:rgba(5,8,12,.9); backdrop-filter:blur(8px); border-bottom:1px solid var(--line)}
+  .topbar__inner{max-width:var(--max); margin:0 auto; padding:.55rem var(--gutter); display:flex; align-items:center; gap:.9rem 1.2rem; flex-wrap:wrap}
+  .brand{display:flex; align-items:center; gap:.6rem; text-decoration:none; flex:none}
+  .brand svg{width:30px; height:30px; color:var(--cyan); flex:none}
+  .brand__name{font-family:var(--display); font-weight:700; letter-spacing:.06em; font-size:1rem}
+  .brand__sub{font-family:var(--mono); font-size:.57rem; letter-spacing:.17em; text-transform:uppercase; color:var(--muted); display:block; margin-top:-2px}
+  .mainnav{display:flex; gap:.1rem; flex-wrap:wrap; margin-left:auto}
+  .mainnav a{font-family:var(--mono); font-size:.65rem; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-2); text-decoration:none; padding:.4rem .5rem; border-radius:3px; border:1px solid transparent; white-space:nowrap}
+  .mainnav a:hover{color:#fff; background:rgba(148,163,184,.09); border-color:var(--line-soft)}
+  .mainnav a.is-key{color:var(--cyan)}
+  .mainnav a[aria-current="page"]{color:#fff; border-color:var(--line); background:rgba(34,211,238,.1)}
+  @media(max-width:899px){
+    .mainnav{flex-wrap:nowrap; overflow-x:auto; width:100%; margin-left:0; scrollbar-width:none; -webkit-overflow-scrolling:touch}
+    .mainnav::-webkit-scrollbar{display:none}
+  }
+
+  /* ---------- Migas ---------- */
+  .crumbs{font-family:var(--mono); font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:var(--dim); padding-top:1.1rem}
+  .crumbs a{color:var(--muted); text-decoration:none}
+  .crumbs a:hover{color:var(--cyan)}
+  .crumbs span{margin:0 .4rem; opacity:.6}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:clamp(1.8rem,5vw,3.2rem) 0 clamp(2rem,4vw,3rem); border-bottom:1px solid var(--line-soft)}
+  .hero__grid{display:grid; gap:clamp(1.6rem,4vw,3rem); grid-template-columns:1fr}
+  @media(min-width:900px){.hero__grid{grid-template-columns:1.55fr .95fr; align-items:start}}
+  h1{font-family:var(--display); font-weight:700; margin:0 0 1rem; font-size:clamp(1.85rem,5vw,3.1rem); line-height:1.1; letter-spacing:-.01em}
+  h1 small{display:block; font-family:var(--mono); font-size:.62rem; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:var(--cyan); margin-bottom:.7rem}
+  h1 span{color:var(--cyan)}
+  .lede{font-size:clamp(1rem,1.6vw,1.13rem); color:var(--ink-2); margin:0 0 1.1rem; max-width:60ch}
+  .sub{color:var(--muted); font-size:.95rem; margin:0 0 1.7rem; max-width:62ch}
+  .actions{display:flex; gap:.6rem; flex-wrap:wrap}
+  .btn{display:inline-flex; align-items:center; gap:.5rem; text-decoration:none; font-family:var(--mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; padding:.68rem 1.05rem; border-radius:4px; border:1px solid var(--line-soft); color:var(--ink-2); background:rgba(148,163,184,.05); transition:.15s}
+  .btn:hover{color:#fff; border-color:var(--line); background:rgba(148,163,184,.12)}
+  .btn--primary{background:rgba(34,211,238,.13); border-color:rgba(34,211,238,.4); color:#a5f3fc; font-weight:600}
+  .btn--primary:hover{background:rgba(34,211,238,.22); border-color:var(--cyan); color:#fff}
+
+  .defcard{border:1px solid var(--line); border-radius:5px; padding:1.3rem; background:linear-gradient(180deg,rgba(13,20,29,.92),rgba(8,13,19,.92))}
+  .defcard dl{margin:0; display:grid; gap:.85rem}
+  .defcard dt{font-family:var(--mono); font-size:.6rem; letter-spacing:.15em; text-transform:uppercase; color:var(--cyan); margin-bottom:.15rem}
+  .defcard dd{margin:0; font-size:.88rem; color:var(--ink-2)}
+  .defcard hr{border:0; border-top:1px solid var(--line-soft); margin:.3rem 0}
+
+  /* ---------- Secciones ---------- */
+  section{padding:clamp(2.4rem,5.5vw,4rem) 0}
+  section+section{border-top:1px solid var(--line-soft)}
+  h2{font-family:var(--display); font-weight:700; margin:0 0 .6rem; font-size:clamp(1.3rem,3vw,1.9rem); line-height:1.2}
+  h3{font-family:var(--display); font-weight:600}
+  .section__lede{color:var(--muted); max-width:70ch; margin:0 0 1.9rem; font-size:.95rem}
+
+  .grid{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.grid--3{grid-template-columns:repeat(3,1fr)}}
+
+  /* ---------- Bloques regionales (29 países) ---------- */
+  .blocks{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:700px){.blocks{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1050px){.blocks{grid-template-columns:repeat(3,1fr)}}
+  .block{
+    border:1px solid var(--line-soft); border-radius:5px; padding:1.15rem 1.2rem 1.25rem;
+    background:rgba(13,20,29,.6); display:flex; flex-direction:column; gap:.5rem;
+  }
+  .block--africa{border-left:2px solid var(--amber)}
+  .block--asia{border-left:2px solid var(--cyan)}
+  .block--europa{border-left:2px solid var(--red)}
+  .block--latam{border-left:2px solid var(--green)}
+  .block--golfo{border-left:2px solid var(--violet)}
+  .block__head{display:flex; justify-content:space-between; align-items:baseline; gap:.6rem; flex-wrap:wrap}
+  .block h3{margin:0; font-size:1rem}
+  .block__count{font-family:var(--mono); font-size:.6rem; letter-spacing:.14em; color:var(--dim)}
+  .block ul{list-style:none; margin:.5rem 0 0; padding:0; display:flex; flex-wrap:wrap; gap:.35rem}
+  .block li{
+    font-family:var(--mono); font-size:.72rem; padding:.22rem .55rem; border-radius:3px;
+    background:rgba(5,8,12,.6); border:1px solid var(--line-soft); color:var(--ink-2);
+  }
+
+  /* ---------- Tarjetas de hechos ---------- */
+  .facts{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:700px){.facts{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1050px){.facts{grid-template-columns:repeat(4,1fr)}}
+  .fact{border:1px solid var(--line-soft); border-radius:5px; padding:1rem 1.1rem; background:rgba(13,20,29,.55)}
+  .fact dt{font-family:var(--mono); font-size:.58rem; letter-spacing:.15em; text-transform:uppercase; color:var(--cyan); margin-bottom:.3rem}
+  .fact dd{margin:0; font-size:.9rem; color:var(--ink-2)}
+  .fact dd b{color:#fff; font-weight:600}
+
+  /* ---------- Evaluación (párrafos etiquetados) ---------- */
+  .evals{display:grid; gap:.85rem}
+  .eval{border:1px solid var(--line-soft); border-radius:5px; padding:1rem 1.15rem; background:rgba(13,20,29,.6)}
+  .eval__tag{font-family:var(--mono); font-size:.58rem; letter-spacing:.14em; text-transform:uppercase; color:#67e8f9; margin-bottom:.35rem; display:block; font-weight:500}
+  .eval p{margin:0; font-size:.9rem; color:var(--ink-2)}
+
+  /* ---------- Hipótesis ---------- */
+  .hypos{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:900px){.hypos{grid-template-columns:repeat(2,1fr)}}
+  .hypo{
+    border:1px solid var(--line-soft); border-left:2px solid var(--amber); border-radius:5px;
+    padding:1.1rem 1.2rem; background:rgba(13,20,29,.55); display:flex; flex-direction:column; gap:.55rem;
+  }
+  .hypo__head{display:flex; align-items:baseline; justify-content:space-between; gap:.6rem; flex-wrap:wrap}
+  .hypo__num{font-family:var(--mono); font-size:.58rem; letter-spacing:.14em; color:#fcd34d}
+  .hypo__conf{font-family:var(--mono); font-size:.56rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); padding:.16rem .5rem; border-radius:3px; border:1px solid var(--line-soft); background:rgba(5,8,12,.6)}
+  .hypo__conf--alta{color:#fca5a5; border-color:rgba(239,68,68,.4)}
+  .hypo__conf--media-alta{color:#fcd34d; border-color:rgba(245,158,11,.4)}
+  .hypo__conf--media{color:#93c5fd; border-color:rgba(59,130,246,.4)}
+  .hypo h3{margin:0; font-size:1.02rem}
+  .hypo p{margin:0; font-size:.87rem; color:var(--muted)}
+  .hypo__signals{
+    margin:.2rem 0 0; padding:.6rem .8rem; border-top:1px solid var(--line-soft);
+    font-size:.82rem; color:var(--ink-2);
+  }
+  .hypo__signals b{display:block; font-family:var(--mono); font-size:.56rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:.25rem; font-weight:500}
+
+  /* ---------- Tabla comparativa ---------- */
+  .comp-wrap{border:1px solid var(--line-soft); border-radius:5px; overflow:hidden; background:rgba(13,20,29,.5)}
+  table.comp{width:100%; border-collapse:collapse; font-size:.87rem}
+  table.comp th, table.comp td{text-align:left; padding:.8rem .95rem; vertical-align:top}
+  table.comp thead th{font-family:var(--mono); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); background:rgba(8,13,19,.85); border-bottom:1px solid var(--line)}
+  table.comp thead th.is-waico{color:#67e8f9}
+  table.comp thead th.is-oecd{color:#fcd34d}
+  table.comp tbody tr+tr{border-top:1px solid var(--line-soft)}
+  table.comp tbody tr:hover{background:rgba(148,163,184,.04)}
+  table.comp th[scope="row"]{font-family:var(--mono); font-size:.63rem; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-2); font-weight:500; width:22%}
+  table.comp td{color:var(--muted)}
+  @media(max-width:779px){
+    table.comp, table.comp tbody, table.comp tr, table.comp td, table.comp th{display:block; width:auto}
+    table.comp thead{position:absolute; left:-9999px}
+    table.comp tbody tr{padding:.35rem 0 .9rem; border-top:1px solid var(--line-soft)}
+    table.comp th[scope="row"]{width:auto; color:#fff; background:rgba(8,13,19,.75); padding:.55rem .95rem}
+    table.comp td{padding:.6rem .95rem .1rem}
+    table.comp td::before{content:attr(data-col); display:block; font-family:var(--mono); font-size:.56rem; letter-spacing:.15em; text-transform:uppercase; color:var(--muted); margin-bottom:.2rem}
+  }
+
+  /* ---------- Fuentes ---------- */
+  .use{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:700px){.use{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1050px){.use{grid-template-columns:repeat(3,1fr)}}
+  .use__item{border:1px solid var(--line-soft); border-radius:5px; padding:1.05rem 1.1rem; background:rgba(13,20,29,.55); display:flex; flex-direction:column; gap:.45rem}
+  .use__item h3{margin:0; font-size:.98rem}
+  .use__item ul{margin:.2rem 0 0; padding-left:1.05rem; font-size:.82rem; color:var(--muted)}
+  .use__item li{margin-bottom:.35rem}
+  .use__item a{color:var(--ink-2); text-decoration:underline; text-decoration-color:rgba(34,211,238,.4); text-underline-offset:2px}
+  .use__item a:hover{color:var(--cyan)}
+
+  /* ---------- Ausencias notables ---------- */
+  .absences{margin-top:1.4rem; padding:1rem 1.15rem; border:1px solid var(--line); border-left:2px solid var(--red); border-radius:5px; background:linear-gradient(90deg,rgba(239,68,68,.06),rgba(13,20,29,.6)); font-size:.9rem; color:var(--ink-2)}
+  .absences strong{color:#fff}
+  .absences__list{display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.7rem; font-family:var(--mono); font-size:.66rem; letter-spacing:.08em; text-transform:uppercase}
+  .absences__list span{padding:.22rem .55rem; border-radius:3px; border:1px solid rgba(239,68,68,.3); background:rgba(239,68,68,.06); color:#fca5a5}
+
+  /* ---------- Cautelas y cierre ---------- */
+  .caution-note{margin:1.6rem 0 0; padding:.9rem 1.1rem; border:1px solid var(--line-soft); border-radius:5px; background:rgba(8,13,19,.7); font-size:.85rem; color:var(--muted)}
+  .caution-note strong{color:var(--ink-2)}
+  .frame__note{margin:1.4rem 0 0; padding:.95rem 1.15rem; border:1px solid var(--line-soft); border-radius:5px; background:rgba(8,13,19,.7); font-size:.88rem; color:var(--ink-2)}
+  .frame__note strong{color:#fff}
+
+  .close{text-align:center; padding:clamp(2.8rem,6vw,4.5rem) 0}
+  .close__brand{font-family:var(--display); font-weight:700; font-size:clamp(1.3rem,3.4vw,2rem); margin:0 0 .5rem; letter-spacing:.01em}
+  .close__brand span{color:var(--cyan)}
+  .close p{color:var(--muted); margin:0 auto 1.5rem; max-width:56ch; font-size:.93rem}
+  .close .actions{justify-content:center}
+
+  footer{border-top:1px solid var(--line-soft); padding:2rem 0 2.6rem; color:var(--dim); font-size:.78rem}
+  footer p{margin:0 0 .5rem; max-width:78ch}
+  footer a{color:var(--muted)}
+  .footnav{display:flex; gap:.4rem 1rem; flex-wrap:wrap; margin-bottom:1rem; font-family:var(--mono); font-size:.65rem; letter-spacing:.08em; text-transform:uppercase}
+  .footnav a{text-decoration:none; color:var(--muted)}
+  .footnav a:hover{color:var(--cyan)}
+
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#paises">Saltar a los 29 países fundadores</a>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="../index.html" aria-label="GEOPÓLEM — inicio">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="29" height="29" rx="1" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M1.5 16h29M16 1.5v29" stroke="currentColor" stroke-width=".7" opacity=".45"/>
+        <circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.1" opacity=".7"/>
+        <circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="1.1"/>
+        <circle cx="23.5" cy="8.5" r="2.4" fill="#ef4444"/>
+      </svg>
+      <span>
+        <span class="brand__name">GEOPÓLEM</span>
+        <span class="brand__sub">Sala situacional</span>
+      </span>
+    </a>
+
+    <nav class="mainnav" aria-label="Navegación principal">
+      <a href="../index.html#teatros">Teatros</a>
+      <a href="../index.html#metodo">Método</a>
+      <a href="../app.html#planz" class="is-key">Plan Z</a>
+      <a href="../talasocracia/index.html" class="is-key">Talasocracia</a>
+      <a href="../app.html#sentinel" class="is-key">ONU Sentinel</a>
+      <a href="./index.html" class="is-key" aria-current="page">WAICO</a>
+      <a href="../app.html#system" class="is-key">Migración</a>
+      <a href="../app.html">Sala situacional</a>
+      <a href="../conflict-watchlist-2026/index.html">Watchlist</a>
+      <a href="../dossiers/index.html">Dossiers</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<nav class="shell crumbs" aria-label="Migas de pan">
+  <a href="../index.html">Inicio</a> <span>›</span>
+  <a href="../index.html#teatros">Teatros</a> <span>›</span>
+  <span>WAICO</span>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="shell hero__grid">
+    <div>
+      <h1>
+        <small>T—04 · Teatro tecnológico</small>
+        WAICO: la gobernanza global de la <span>IA se fragmenta</span>
+      </h1>
+      <p class="lede">
+        El 16 de julio de 2026, veintinueve países firmaron en Shanghái la creación de la
+        World Artificial Intelligence Cooperation Organization. Es la primera organización
+        intergubernamental de gobernanza tecnológica global sin ningún miembro del G7 ni
+        de la Unión Europea.
+      </p>
+      <p class="sub">
+        China firmó por Wang Yi, canciller y miembro del Buró Político. Rusia firmó por su
+        ministro de Desarrollo Digital. El Secretario General de la ONU, António Guterres,
+        estuvo presente en la ceremonia. Al día siguiente, Xi Jinping formalizó el
+        anuncio en el discurso de apertura del WAIC 2026.
+      </p>
+      <div class="actions">
+        <a class="btn btn--primary" href="#paises">Ver los 29 países fundadores</a>
+        <a class="btn" href="#hipotesis">Cuatro hipótesis en observación</a>
+        <a class="btn" href="#fuentes">Fuentes primarias</a>
+      </div>
+    </div>
+
+    <aside class="defcard" aria-label="Ficha de identidad WAICO">
+      <dl>
+        <div>
+          <dt>Nombre</dt>
+          <dd>World Artificial Intelligence Cooperation Organization (WAICO)</dd>
+        </div>
+        <hr />
+        <div>
+          <dt>Firma</dt>
+          <dd>Shanghái, 16 julio 2026</dd>
+        </div>
+        <hr />
+        <div>
+          <dt>Sede</dt>
+          <dd>Shanghái, China</dd>
+        </div>
+        <hr />
+        <div>
+          <dt>Naturaleza</dt>
+          <dd>Organización intergubernamental independiente</dd>
+        </div>
+        <hr />
+        <div>
+          <dt>Fundadores</dt>
+          <dd>29 Estados soberanos</dd>
+        </div>
+        <hr />
+        <div>
+          <dt>Propuesta original</dt>
+          <dd>26 julio 2025 (China)</dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ QUÉ ES ============ -->
+<section id="que-es">
+  <div class="shell">
+    <span class="kicker">Definición</span>
+    <h2>Qué es WAICO</h2>
+    <p class="section__lede">
+      Un tratado intergubernamental firmado en la víspera del World AI Conference 2026.
+      Su mandato declarado: promover cooperación internacional y gobernanza global de la
+      inteligencia artificial que sea beneficiosa, segura y justa. Su membresía está
+      abierta a todo Estado soberano sin test de valores, sin filtro de régimen y sin
+      umbral económico. Esta cláusula es lo que la diferencia estructuralmente del modelo
+      europeo de gobernanza de la IA.
+    </p>
+
+    <dl class="facts">
+      <div class="fact">
+        <dt>Firmante por China</dt>
+        <dd><b>Wang Yi</b> — canciller, miembro del Buró Político del PCCh. Firma diplomática, no técnica.</dd>
+      </div>
+      <div class="fact">
+        <dt>Firmante por Rusia</dt>
+        <dd><b>Maksut Shadayev</b> — ministro de Desarrollo Digital, Comunicaciones y Medios.</dd>
+      </div>
+      <div class="fact">
+        <dt>Firmante por Pakistán</dt>
+        <dd><b>Ishaq Dar</b> — Viceprimer Ministro y ministro de Exteriores.</dd>
+      </div>
+      <div class="fact">
+        <dt>Testigo multilateral</dt>
+        <dd><b>António Guterres</b> — Secretario General de Naciones Unidas, presente en la ceremonia.</dd>
+      </div>
+    </dl>
+
+    <div class="frame__note">
+      <strong>Detalle editorial GEOPÓLEM.</strong> China firmó al máximo nivel diplomático
+      posible sin implicar al Presidente. La elección de Wang Yi en lugar del ministro
+      de Ciencia y Tecnología o del titular del CAC posiciona WAICO como
+      <em>statecraft</em>, no como marco regulatorio sectorial. Es la diferencia entre
+      una organización tratado y un foro técnico.
+    </div>
+  </div>
+</section>
+
+<!-- ============ 29 PAÍSES ============ -->
+<section id="paises">
+  <div class="shell">
+    <span class="kicker">Composición</span>
+    <h2>Los 29 países fundadores por bloque geopolítico</h2>
+    <p class="section__lede">
+      Composición confirmada por Wikipedia, The Diplomat, Reuters y Xinhua. GEOPÓLEM
+      agrupa los firmantes en cinco bloques geopolíticos para leer la geografía real
+      de la iniciativa: Sur Global asiático y africano, Eurasia post-soviética, América
+      Latina no alineada y una entrada del Golfo. Ningún miembro del G7 ni de la UE.
+    </p>
+
+    <div class="blocks">
+
+      <div class="block block--africa">
+        <div class="block__head">
+          <h3>África</h3>
+          <span class="block__count">10 países</span>
+        </div>
+        <p style="margin:0; font-size:.85rem; color:var(--muted)">Peso decisivo en la composición: África norte, sub-sahariana y austral concentrada.</p>
+        <ul>
+          <li>Argelia</li><li>Camerún</li><li>Congo</li><li>Etiopía</li>
+          <li>Kenia</li><li>Lesoto</li><li>Mozambique</li><li>Senegal</li>
+          <li>Sudáfrica</li><li>Zambia</li>
+        </ul>
+      </div>
+
+      <div class="block block--asia">
+        <div class="block__head">
+          <h3>Asia</h3>
+          <span class="block__count">11 países</span>
+        </div>
+        <p style="margin:0; font-size:.85rem; color:var(--muted)">Bloque mayor. Núcleo OCS + ASEAN parcial. China firma en casa.</p>
+        <ul>
+          <li>Camboya</li><li>China</li><li>Indonesia</li><li>Kazajistán</li>
+          <li>Kirguistán</li><li>Laos</li><li>Malasia</li><li>Myanmar</li>
+          <li>Pakistán</li><li>Tayikistán</li><li>Uzbekistán</li>
+        </ul>
+      </div>
+
+      <div class="block block--europa">
+        <div class="block__head">
+          <h3>Europa</h3>
+          <span class="block__count">3 países</span>
+        </div>
+        <p style="margin:0; font-size:.85rem; color:var(--muted)">Únicamente Europa no-UE alineada con Moscú. Ningún Estado miembro de la Unión.</p>
+        <ul>
+          <li>Bielorrusia</li><li>Rusia</li><li>Serbia</li>
+        </ul>
+      </div>
+
+      <div class="block block--latam">
+        <div class="block__head">
+          <h3>América Latina</h3>
+          <span class="block__count">4 países</span>
+        </div>
+        <p style="margin:0; font-size:.85rem; color:var(--muted)">Brasil como potencia BRICS; tres economías bajo sanciones estadounidenses.</p>
+        <ul>
+          <li>Brasil</li><li>Cuba</li><li>Nicaragua</li><li>Venezuela</li>
+        </ul>
+      </div>
+
+      <div class="block block--golfo">
+        <div class="block__head">
+          <h3>Golfo</h3>
+          <span class="block__count">1 país</span>
+        </div>
+        <p style="margin:0; font-size:.85rem; color:var(--muted)">Única entrada del Golfo. Arabia Saudí, EAU y Qatar no firmaron.</p>
+        <ul>
+          <li>Omán</li>
+        </ul>
+      </div>
+
+      <div class="block" style="border-left:2px solid var(--line); background:rgba(5,8,12,.6)">
+        <div class="block__head">
+          <h3>Total</h3>
+          <span class="block__count">29 firmantes</span>
+        </div>
+        <p style="margin:0; font-size:.85rem; color:var(--ink-2)">10 África · 11 Asia · 3 Europa · 4 América Latina · 1 Golfo. Sin G7. Sin UE. Sin India.</p>
+      </div>
+
+    </div>
+
+    <div class="absences">
+      <strong>Ausencias que definen la iniciativa tanto como las presencias.</strong>
+      Ningún país del G7 firmó. Ningún Estado miembro de la Unión Europea firmó. India,
+      presidencia BRICS 2026, no firmó, lo que expone la primera fractura interna de
+      BRICS en el dominio tecnológico. Arabia Saudita, Emiratos, Turquía y Vietnam
+      tampoco están entre los fundadores.
+      <div class="absences__list">
+        <span>G7 · 0/7</span>
+        <span>UE · 0/27</span>
+        <span>India · no firma</span>
+        <span>Golfo Arábigo · 1/6</span>
+        <span>OCDE · 0 miembros plenos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVALUACIÓN ============ -->
+<section id="evaluacion">
+  <div class="shell">
+    <span class="kicker">Evaluación GEOPÓLEM</span>
+    <h2>Cómo leer WAICO en el tablero</h2>
+    <p class="section__lede">
+      Aplicando el método editorial: separar lo que sabemos (HECHO) de lo que
+      interpretamos (EVALUACIÓN) y de lo que aún no podemos afirmar (HIPÓTESIS).
+    </p>
+
+    <div class="evals">
+      <div class="eval">
+        <span class="eval__tag">Evaluación · Composición geopolítica</span>
+        <p>
+          El bloque fundador se concentra en Sur Global. Es la primera organización
+          intergubernamental de gobernanza tecnológica global sin participación occidental
+          estructural. La combinación África (10) + Asia Central OCS (5) + América Latina
+          no alineada (4) es una geografía que ya se articula en Belt and Road, OCS y BRICS
+          ampliado. WAICO extiende esa geografía al dominio de la IA.
+        </p>
+      </div>
+
+      <div class="eval">
+        <span class="eval__tag">Evaluación · Firma diplomática vs. técnica</span>
+        <p>
+          China elevó la firma a nivel de canciller-Politburó. Rusia mantuvo firma
+          técnica (Digital). Esta divergencia sugiere división del trabajo: China lidera
+          la lectura política y estratégica; otros socios pueden operar la ejecución
+          técnica. Un tratado firmado por cancilleres no se administra como estándar
+          técnico: se administra como política exterior.
+        </p>
+      </div>
+
+      <div class="eval">
+        <span class="eval__tag">Evaluación · Presencia de Guterres</span>
+        <p>
+          La asistencia del Secretario General ONU otorga legitimación multilateral sin
+          comprometer al sistema ONU. Es simétrica a la asistencia de Guterres a
+          cumbres de otras organizaciones regionales: valida sin adherirse. Que WAICO
+          declare adhesión a la Carta de las Naciones Unidas facilita esta lectura.
+        </p>
+      </div>
+
+      <div class="eval">
+        <span class="eval__tag">Evaluación · Solapamiento con OCS</span>
+        <p>
+          De los 29 firmantes, al menos ocho son miembros u observadores de la
+          Organización de Cooperación de Shanghái: China, Rusia, Pakistán, Kazajistán,
+          Kirguistán, Tayikistán, Uzbekistán y Bielorrusia. WAICO extiende la lógica
+          OCS al dominio tecnológico global, con anclas en África y América Latina que
+          la OCS no tenía.
+        </p>
+      </div>
+
+      <div class="eval">
+        <span class="eval__tag">Evaluación · Fractura BRICS</span>
+        <p>
+          India, presidencia BRICS 2026, no firmó. La lectura más plausible: India no
+          acepta institucionalidad de gobernanza IA liderada por China cuando ella misma
+          proyecta su propio marco (IndiaAI Mission, GPAI). Marca fractura BRICS interna
+          en el dominio tecnológico y confirma que BRICS no es un bloque monolítico ante
+          la IA.
+        </p>
+      </div>
+
+      <div class="eval">
+        <span class="eval__tag">Evaluación · Efecto regulatorio inmediato</span>
+        <p>
+          Ninguno. WAICO no crea obligaciones de cumplimiento hoy. El impacto es
+          diplomático-cartográfico, no normativo. El marco regulatorio real de los
+          firmantes seguirá siendo nacional o vía otras organizaciones. La pregunta
+          útil no es qué obliga WAICO en agosto de 2026, sino qué habilita a
+          coordinar hasta 2028.
+        </p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:2.2rem; font-size:1.1rem">Modelo WAICO frente al modelo UE/OCDE</h3>
+    <p class="section__lede">
+      Los dos modelos coexisten. No compiten frontalmente porque no regulan los mismos
+      objetos: WAICO regula cooperación entre Estados; la UE regula productos y
+      servicios de IA colocados en su mercado.
+    </p>
+
+    <div class="comp-wrap">
+      <table class="comp">
+        <thead>
+          <tr>
+            <th scope="col">Dimensión</th>
+            <th scope="col" class="is-waico">Modelo WAICO</th>
+            <th scope="col" class="is-oecd">Modelo UE / OCDE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Principio rector</th>
+            <td data-col="WAICO">Soberanía primero — cada país conduce cooperación según sus condiciones nacionales.</td>
+            <td data-col="UE/OCDE">Derechos primero — enfoque basado en riesgos y derechos fundamentales.</td>
+          </tr>
+          <tr>
+            <th scope="row">Filtro de entrada</th>
+            <td data-col="WAICO">Ninguno: abierto a todo Estado soberano, sin test de valores.</td>
+            <td data-col="UE/OCDE">Adhesión a valores democráticos (OCDE, GPAI, G7 Hiroshima).</td>
+          </tr>
+          <tr>
+            <th scope="row">Objeto regulado</th>
+            <td data-col="WAICO">Cooperación intergubernamental, transferencia de capacidades, formación.</td>
+            <td data-col="UE/OCDE">Productos y servicios de IA en el mercado (AI Act).</td>
+          </tr>
+          <tr>
+            <th scope="row">Sanciones</th>
+            <td data-col="WAICO">No previstas hoy. Marco de cooperación, no de <em>enforcement</em>.</td>
+            <td data-col="UE/OCDE">Multas hasta 7% de facturación global (AI Act).</td>
+          </tr>
+          <tr>
+            <th scope="row">Anclaje geográfico</th>
+            <td data-col="WAICO">Sur Global, Eurasia post-soviética, América Latina no alineada.</td>
+            <td data-col="UE/OCDE">OCDE, G7 y aliados del Atlántico + Pacífico.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 HIPÓTESIS ============ -->
+<section id="hipotesis">
+  <div class="shell">
+    <span class="kicker">Señales en observación</span>
+    <h2>Cuatro hipótesis en observación</h2>
+    <p class="section__lede">
+      Cada hipótesis es explícita, con nivel de confianza declarado y señales
+      concretas a monitorear. GEOPÓLEM no predice: identifica qué observar para saber
+      si una hipótesis se refuerza o se descarta.
+    </p>
+
+    <div class="hypos">
+
+      <article class="hypo">
+        <div class="hypo__head">
+          <span class="hypo__num">H—01</span>
+          <span class="hypo__conf hypo__conf--media">Confianza media</span>
+        </div>
+        <h3>WAICO como plataforma de estándares técnicos alineados con la industria china</h3>
+        <p>
+          Si en 2027 WAICO publica primeras recomendaciones técnicas, es plausible que
+          reflejen arquitecturas y prácticas de campeones chinos: Alibaba, Baidu, Huawei,
+          iFlytek, DeepSeek, Moonshot.
+        </p>
+        <div class="hypo__signals">
+          <b>Señales a monitorear</b>
+          Participación de estas empresas en grupos técnicos WAICO. Referencia a normas
+          GB (guobiao) y a los borradores del NITSC en documentos oficiales.
+        </div>
+      </article>
+
+      <article class="hypo">
+        <div class="hypo__head">
+          <span class="hypo__num">H—02</span>
+          <span class="hypo__conf hypo__conf--media-alta">Confianza media-alta</span>
+        </div>
+        <h3>WAICO como vehículo de despliegue de infraestructura IA china en el Sur Global</h3>
+        <p>
+          Los 5.000 puestos de formación anunciados por Xi y los centros de cooperación
+          aplicada con ASEAN, Unión Africana, Liga Árabe, CELAC y OCS pueden operar
+          como canal de despliegue de datacenters, modelos base y chips Ascend de Huawei
+          en economías del Sur Global, dentro del marco Belt and Road Digital.
+        </p>
+        <div class="hypo__signals">
+          <b>Señales a monitorear</b>
+          Acuerdos bilaterales de datacenters. Contratos de suministro de chips. Licencias
+          de modelos base entre miembros WAICO. Anuncios de centros de cooperación.
+        </div>
+      </article>
+
+      <article class="hypo">
+        <div class="hypo__head">
+          <span class="hypo__num">H—03</span>
+          <span class="hypo__conf hypo__conf--alta">Confianza alta</span>
+        </div>
+        <h3>Contra-institución al bloque G7/OCDE de gobernanza IA</h3>
+        <p>
+          WAICO opera como contra-institución al conjunto G7 Hiroshima AI Process,
+          OCDE AI Principles y Cumbre de Seguridad IA (Bletchley/Seúl/París). No
+          sustituye: coexiste. Se instala un régimen dual de gobernanza IA — uno
+          <em>rights-based</em> (UE/OCDE), otro <em>sovereignty-first</em> (WAICO).
+        </p>
+        <div class="hypo__signals">
+          <b>Señales a monitorear</b>
+          Adhesión o no de países pivote (Brasil, Sudáfrica, Indonesia) a marcos
+          G7/OCDE simultáneamente. Coordinación cruzada entre AI Safety Summit y
+          reuniones WAICO.
+        </div>
+      </article>
+
+      <article class="hypo">
+        <div class="hypo__head">
+          <span class="hypo__num">H—04</span>
+          <span class="hypo__conf hypo__conf--media">Confianza media</span>
+        </div>
+        <h3>Expansión geográfica hacia bisagras estratégicas</h3>
+        <p>
+          Firmantes pendientes probables en 12–24 meses: Emiratos Árabes Unidos (activa
+          cooperación con China vía G42), Arabia Saudita (Vision 2030), Egipto, Turquía,
+          Vietnam, Tailandia (asistió a la apertura pero no firmó), Argentina bajo
+          eventual cambio de política exterior. Menos probable: India, México, Chile,
+          Colombia, mayoría de África occidental francófona.
+        </p>
+        <div class="hypo__signals">
+          <b>Señales a monitorear</b>
+          Anuncios de adhesión en cumbres bilaterales con China. Visitas de Wang Yi a
+          candidatos. Comunicados MFA China con referencia a WAICO. Trimestre a
+          trimestre.
+        </div>
+      </article>
+
+    </div>
+
+    <div class="frame__note">
+      <strong>Regla operativa GEOPÓLEM.</strong> Las cuatro hipótesis no son excluyentes.
+      La expansión H-04 refuerza H-02; H-03 se refuerza si H-01 se materializa. La
+      confirmación de una eleva la probabilidad del resto.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUENTES ============ -->
+<section id="fuentes">
+  <div class="shell">
+    <span class="kicker">Fuentes verificables</span>
+    <h2>Fuentes primarias y secundarias autoritativas</h2>
+    <p class="section__lede">
+      Todo lo declarado como HECHO en esta página está sostenido por al menos una fuente
+      primaria oficial y una secundaria autoritativa convergente. Las URLs se
+      preservan verbatim para replicación editorial y verificación.
+    </p>
+
+    <div class="use">
+
+      <div class="use__item">
+        <h3>Fuentes primarias oficiales</h3>
+        <ul>
+          <li><a href="https://english.news.cn/20260716/2d364f232dd7456c8edf1d67d5125d37/c.html" target="_blank" rel="noopener">Xinhua · Dispatch original 16 julio 2026</a> — cifra confirmada 29 países.</li>
+          <li><a href="http://en.cppcc.gov.cn/2026-07/20/c_1198497.htm" target="_blank" rel="noopener">CPPCC · Discurso Xi Jinping WAIC 2026</a> — anuncio formal de WAICO.</li>
+          <li><a href="https://english.shanghai.gov.cn/en-WAICHighlights/20260721/37feb75ae75f49d588a7cb76400e5b89.html" target="_blank" rel="noopener">Gobierno de Shanghái · Resultados WAIC 2026</a> — resumen oficial.</li>
+          <li><a href="https://german.xinhuanet.com/20260717/4e84f815f2614915aefbb7b1ccc8680c/c.html" target="_blank" rel="noopener">Xinhuanet DE · Firma Wang Yi</a> — cobertura en alemán.</li>
+        </ul>
+      </div>
+
+      <div class="use__item">
+        <h3>Fuentes secundarias autoritativas</h3>
+        <ul>
+          <li><a href="https://www.reuters.com/world/china/twenty-nine-countries-sign-agreement-establish-global-ai-cooperation-body-2026-07-16/" target="_blank" rel="noopener">Reuters · Cobertura de la firma</a></li>
+          <li><a href="https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it" target="_blank" rel="noopener">Al Jazeera · Contexto Sur Global</a></li>
+          <li><a href="https://thediplomat.com/2026/07/with-new-ai-governance-organization-china-seeks-to-formalize-its-global-ai-influence/" target="_blank" rel="noopener">The Diplomat · Desglose regional de firmantes</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/World_Artificial_Intelligence_Cooperation_Organization" target="_blank" rel="noopener">Wikipedia · Lista completa de los 29 países</a></li>
+        </ul>
+      </div>
+
+      <div class="use__item">
+        <h3>Análisis y contexto BRICS</h3>
+        <ul>
+          <li><a href="https://bricscouncil.ru/en/analytics/waico-and-brics-chto-novaya-vsemirnaya-organizatsiya-v-sfere-ii-oznachaet-dlya-obyedineniya" target="_blank" rel="noopener">BRICS Council · WAICO y BRICS</a> — análisis ausencia India.</li>
+          <li><a href="https://socialistchina.org/2026/07/30/the-world-artificial-intelligence-cooperation-organisation-is-tailor-made-for-the-global-south/" target="_blank" rel="noopener">Socialist China · Reunión Xi–Tokayev</a></li>
+          <li><a href="https://www.techtimes.com/articles/320812/20260717/china-launches-rival-ai-governance-bloc-waic-2026-opens-300-product-debuts.htm" target="_blank" rel="noopener">Tech Times · Lectura como bloque rival</a></li>
+          <li><a href="https://www.youtube.com/watch?v=QF_I4dlshTM" target="_blank" rel="noopener">Xinhua · Video oficial ceremonia</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="caution-note">
+      <strong>Método GEOPÓLEM.</strong> Toda cifra y toda cita de esta página es verificable
+      contra al menos una de las fuentes listadas. Cuando dos fuentes discrepan (por ejemplo,
+      la clasificación regional de Omán), GEOPÓLEM adopta la desagregación más granular y
+      lo declara explícitamente en la sección correspondiente.
+    </p>
+  </div>
+</section>
+
+<!-- ============ CIERRE ============ -->
+<section class="close">
+  <div class="shell">
+    <p class="close__brand">GEOPÓLEM. <span>Bienvenidos al tablero.</span></p>
+    <p>
+      La gobernanza global de la inteligencia artificial ya no se juega en un solo foro.
+      Dos regímenes coexisten: uno regula productos, otro regula cooperación. Saber
+      leerlos juntos es leer el tablero.
+    </p>
+    <div class="actions">
+      <a class="btn btn--primary" href="../app.html">Abrir la sala situacional</a>
+      <a class="btn" href="../talasocracia/index.html">Ver Talasocracia</a>
+      <a class="btn" href="../index.html#teatros">Todos los teatros</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="shell">
+    <nav class="footnav" aria-label="Navegación de pie">
+      <a href="../index.html">Inicio</a>
+      <a href="../app.html">Sala situacional</a>
+      <a href="../app.html#planz">Plan Z</a>
+      <a href="../talasocracia/index.html">Talasocracia</a>
+      <a href="../app.html#sentinel">ONU Sentinel</a>
+      <a href="./index.html">WAICO</a>
+      <a href="../app.html#system">Migración</a>
+      <a href="../conflict-watchlist-2026/index.html">Watchlist 2026</a>
+      <a href="../conflictos-activos/index.html">Conflictos activos</a>
+      <a href="../dossiers/index.html">Dossiers</a>
+      <a href="../index.html#metodo">Método</a>
+    </nav>
+    <p>
+      GEOPÓLEM — análisis geopolítico editorial a partir de fuentes abiertas. Esta página
+      documenta un hecho verificado (la firma del acuerdo WAICO el 16 de julio de 2026)
+      y ofrece evaluación e hipótesis explícitamente etiquetadas. No es un parte oficial
+      ni una predicción; es lectura editorial. Verificar en fuente primaria antes de
+      cualquier uso operativo.
+    </p>
+    <p>Sitio estático publicado en GitHub Pages y espejado en Netlify (geopolem.com).</p>
+  </div>
+</footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('../service-worker.js', { scope: '../' }).catch(() => {
+        /* Página estática: funciona igual sin service worker. */
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
