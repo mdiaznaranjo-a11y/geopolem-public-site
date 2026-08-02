@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, CONFLICTOS_ACTIVOS, CONFLICT_WATCHLIST_2026, CABLES_SUBMARINOS } from './data.js';
+import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, WAICO_INVESTIGACION, CONFLICTOS_ACTIVOS, CONFLICT_WATCHLIST_2026, CABLES_SUBMARINOS } from './data.js';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js';
 import { loadWatchlistFocos } from './api-adapter.js';
@@ -39,7 +39,7 @@ const I18N = {
   ES: {
     welcome: 'Bienvenido al tablero.',
     tagline: 'GEO + PÓLEMOS · sala situacional editorial',
-    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', cables:'Cables', planz:'Plan Z', ficha:'Ficha', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio', products:'Productos', osint:'OSINT Geopolítico' },
+    nav: { dashboard:'Tablero', map:'Mapa', doctrina:'Doctrina', sentinel:'SENTINEL', cables:'Cables', planz:'Plan Z', ficha:'Ficha', waico:'WAICO', watchlist:'Watchlist', system:'Sistema-mundo', analysis:'Análisis', scenarios:'Escenarios', sala:'Sala audiovisual', rearm:'Rearme', monetization:'Monetización', editor:'Editor', brief:'Brief diario', studio:'Studio', products:'Productos', osint:'OSINT Geopolítico' },
     kpi: 'Indicadores clave',
     alerts: 'Alertas en vivo',
     selectFoco: 'Selecciona un foco',
@@ -58,7 +58,7 @@ const I18N = {
   EN: {
     welcome: 'Welcome to the board.',
     tagline: 'GEO + PÓLEMOS · editorial situation room',
-    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', cables:'Cables', planz:'Plan Z', ficha:'Brief', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio', products:'Products', osint:'OSINT Geopolitical' },
+    nav: { dashboard:'Dashboard', map:'Map', doctrina:'Doctrine', sentinel:'SENTINEL', cables:'Cables', planz:'Plan Z', ficha:'Brief', waico:'WAICO', watchlist:'Watchlist', system:'World-system', analysis:'Analysis', scenarios:'Scenarios', sala:'Video intelligence', rearm:'Rearmament', monetization:'Monetization', editor:'Editor', brief:'Daily brief', studio:'Studio', products:'Products', osint:'OSINT Geopolitical' },
     kpi:'Key indicators',
     alerts:'Live alerts',
     selectFoco:'Select a focus',
@@ -77,7 +77,7 @@ const I18N = {
   FR: {
     welcome:'Bienvenue sur le tableau.',
     tagline:'GEO + PÓLEMOS · salle de situation éditoriale',
-    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', cables:'Câbles', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio', products:'Produits', osint:'OSINT Géopolitique' },
+    nav:{ dashboard:'Tableau', map:'Carte', doctrina:'Doctrine', sentinel:'SENTINEL', cables:'Câbles', planz:'Plan Z', ficha:'Fiche', waico:'WAICO', watchlist:'Watchlist', system:'Système-monde', analysis:'Analyse', scenarios:'Scénarios', sala:'Salle audiovisuelle', rearm:'Réarmement', monetization:'Monétisation', editor:'Éditeur', brief:'Brief quotidien', studio:'Studio', products:'Produits', osint:'OSINT Géopolitique' },
     kpi:'Indicateurs clés', alerts:'Alertes en direct',
     selectFoco:'Sélectionner un foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Acteurs', risk:'Matrice des risques',
@@ -94,7 +94,7 @@ const I18N = {
   DE: {
     welcome:'Willkommen am Lagebrett.',
     tagline:'GEO + PÓLEMOS · redaktioneller Lageraum',
-    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', cables:'Kabel', planz:'Plan Z', ficha:'Notiz', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio', products:'Produkte', osint:'OSINT Geopolitik' },
+    nav:{ dashboard:'Dashboard', map:'Karte', doctrina:'Doktrin', sentinel:'SENTINEL', cables:'Kabel', planz:'Plan Z', ficha:'Notiz', waico:'WAICO', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Lage-Videos', rearm:'Aufrüstung', monetization:'Monetarisierung', editor:'Editor', brief:'Tagesbrief', studio:'Studio', products:'Produkte', osint:'OSINT Geopolitik' },
     kpi:'Schlüsselindikatoren', alerts:'Live-Warnungen',
     selectFoco:'Brennpunkt auswählen',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteure', risk:'Risikomatrix',
@@ -111,7 +111,7 @@ const I18N = {
   LB: {
     welcome:'Wëllkomm um Tableau.',
     tagline:'GEO + PÓLEMOS · redaktionellen Situatiouns-Raum',
-    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', cables:'Kabelen', planz:'Plan Z', ficha:'Fiche', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio', products:'Produkter', osint:'OSINT Geopolitik' },
+    nav:{ dashboard:'Tableau', map:'Kaart', doctrina:'Doktrin', sentinel:'SENTINEL', cables:'Kabelen', planz:'Plan Z', ficha:'Fiche', waico:'WAICO', watchlist:'Watchlist', system:'Weltsystem', analysis:'Analyse', scenarios:'Szenarien', sala:'Audiovisuell Sall', rearm:'Oprüstung', monetization:'Monetiséierung', editor:'Editor', brief:'Deeglechen Brief', studio:'Studio', products:'Produkter', osint:'OSINT Geopolitik' },
     kpi:'Haaptindikateuren', alerts:'Live Alarmen',
     selectFoco:'Wielt e Foyer',
     foda:'SWOT', pestel:'PESTEL', actors:'Akteuren', risk:'Risiko-Matrix',
@@ -3343,6 +3343,154 @@ function FichaEditorial({ lang }) {
 }
 
 /* ========================================================================
+   WAICO · Investigación especial — teaser (dashboard) + vista completa
+   Ficha del episodio largo. El expediente completo (29 fundadores, hipótesis
+   y fuentes primarias) vive en la página estática ./waico/index.html.
+   ======================================================================== */
+function WaicoTeaser({ lang, onOpen }) {
+  const en = lang === 'EN';
+  const w = WAICO_INVESTIGACION;
+  return html`
+  <section class="relative panel rounded-lg overflow-hidden border border-radar/25">
+    <span class="corner-tl"></span><span class="corner-tr"></span>
+    <span class="corner-bl"></span><span class="corner-br"></span>
+    <div class="boot-grid absolute inset-0 opacity-25 pointer-events-none"></div>
+    <div class="scanlines absolute inset-0 pointer-events-none"></div>
+    <div class="relative p-4 lg:p-6 flex flex-col lg:flex-row gap-4 lg:items-center justify-between">
+      <div class="space-y-1.5 max-w-2xl">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="relative flex w-2 h-2">
+            <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-radar"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-radar"></span>
+          </span>
+          <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${en?w.eyebrowEn:w.eyebrow}</div>
+          <span class="chip" style=${{borderColor:'rgba(34,211,238,0.4)', color:'#67e8f9', background:'rgba(34,211,238,0.1)'}}>${en?w.statusEn:w.status}</span>
+        </div>
+        <h3 class="font-display font-bold text-[20px] lg:text-[26px] text-slate-50 leading-tight glow-text">${en?w.titleEn:w.title}</h3>
+        <p class="text-[13px] text-slate-300">${en?w.summaryEn:w.summary}</p>
+        <p class="text-[12.5px] font-mono uppercase tracking-widest text-alert-soft pt-1">${en?w.phraseEn:w.phrase}</p>
+      </div>
+      <div class="shrink-0 flex items-center gap-4">
+        <img src=${`https://i.ytimg.com/vi/${w.youtube.id}/hqdefault.jpg`} alt="" loading="lazy" decoding="async"
+          class="hidden sm:block w-[104px] rounded border border-radar/30 shadow-glow aspect-video object-cover" />
+        <button onClick=${onOpen}
+          class="inline-flex items-center gap-2 px-4 py-2.5 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+          ▶ ${en?'Open investigation':'Abrir investigación'}
+        </button>
+      </div>
+    </div>
+  </section>`;
+}
+
+function WaicoInvestigacion({ lang }) {
+  const en = lang === 'EN';
+  const w = WAICO_INVESTIGACION;
+  const date = new Date().toLocaleDateString(en?'en-GB':'es-ES', { day:'2-digit', month:'long', year:'numeric' });
+  return html`
+  <section class="space-y-4">
+    <!-- Hero -->
+    <div class="relative panel rounded-lg overflow-hidden border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="boot-grid absolute inset-0 opacity-30 pointer-events-none"></div>
+      <div class="scanlines absolute inset-0 pointer-events-none"></div>
+      <div class="relative p-5 lg:p-7">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="relative flex w-2 h-2">
+              <span class="absolute inline-flex h-full w-full rounded-full opacity-70 animate-ping-ring bg-radar"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-radar"></span>
+            </span>
+            <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-radar">${en?w.eyebrowEn:w.eyebrow}</div>
+            <span class="chip" style=${{borderColor:'rgba(34,211,238,0.4)', color:'#67e8f9', background:'rgba(34,211,238,0.1)'}}>${en?w.statusEn:w.status}</span>
+          </div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">SITUATION ROOM · ${date}</div>
+        </div>
+        <div class="font-mono text-[10.5px] uppercase tracking-[0.25em] text-slate-500 mt-3">${en?w.categoryLabelEn:w.categoryLabel}</div>
+        <h2 class="font-display font-bold text-[28px] lg:text-[38px] text-slate-50 leading-tight mt-1 glow-text">${en?w.titleEn:w.title}</h2>
+        <p class="font-display font-semibold text-[15px] lg:text-[18px] text-radar leading-snug mt-2 max-w-4xl">${en?w.subtitleEn:w.subtitle}</p>
+        <p class="text-[14px] lg:text-[15px] text-slate-200 leading-relaxed mt-3 max-w-3xl">${en?w.summaryEn:w.summary}</p>
+        <p class="text-[12.5px] text-alert-soft font-mono uppercase tracking-widest mt-2">${en?w.notNewsEn:w.notNews}</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          ${w.vectors.map(v => html`<span key=${v} class="chip" style=${{borderColor:'rgba(34,211,238,0.35)'}}>${v}</span>`)}
+        </div>
+      </div>
+    </div>
+
+    <!-- Episodio completo (YouTube) -->
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
+        <div class="heading-mono">${en?'Full episode':'Episodio completo'}</div>
+        <a href=${w.youtube.url} target="_blank" rel="noopener"
+           class="text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition">YouTube ↗</a>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div class="lg:col-span-2">
+          <${YouTubeEmbed} id=${w.youtube.id} title=${w.youtube.videoTitle}/>
+          <p class="text-[12px] text-slate-400 mt-2">${w.youtube.videoTitle}</p>
+          <a href=${w.youtube.url} target="_blank" rel="noopener"
+            class="mt-3 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition w-full lg:w-auto">
+            ▶ ${en?w.youtube.labelEn:w.youtube.label}
+          </a>
+        </div>
+        <div>
+          <div class="heading-mono mb-3">${en?'Chapters':'Capítulos'}</div>
+          <ol class="space-y-1.5">
+            ${w.chapters.map(c => html`
+              <li key=${c.t} class="flex gap-3 text-[12.5px] text-slate-300">
+                <span class="font-mono text-radar shrink-0">${c.t}</span>
+                <span>${en?c.labelEn:c.label}</span>
+              </li>`)}
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Juicios clave -->
+    <div class="relative panel rounded-md p-4 lg:p-6 border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-tr"></span>
+      <span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="heading-mono mb-4">${en?'Key judgments':'Juicios clave'}</div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        ${w.judgments.map((j, i) => html`
+          <article key=${i} class="relative panel-soft rounded-md p-4 border border-radar/20 flex gap-3">
+            <span class="corner-tl"></span>
+            <span class="font-mono text-[13px] font-bold text-radar shrink-0">${String(i+1).padStart(2,'0')}</span>
+            <p class="text-[13px] text-slate-300 leading-relaxed">${en?j.bodyEn:j.body}</p>
+          </article>`)}
+      </div>
+    </div>
+
+    <!-- Tres capas + nota editorial -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="lg:col-span-2 relative panel rounded-md p-4 lg:p-6 border border-radar/20">
+        <span class="corner-tl"></span><span class="corner-br"></span>
+        <div class="heading-mono mb-4">${en?'Three layers of the board':'Las tres capas del tablero'}</div>
+        <div class="space-y-2.5">
+          ${w.layers.map(l => html`
+            <div key=${l.label} class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 panel-soft rounded-md px-4 py-3 border border-white/5">
+              <span class="font-mono text-[10.5px] uppercase tracking-[0.2em] text-radar sm:w-44 shrink-0">${en?l.labelEn:l.label}</span>
+              <span class="text-[13px] text-slate-300">${en?l.bodyEn:l.body}</span>
+            </div>`)}
+        </div>
+      </div>
+      <div class="relative panel rounded-md p-5 flex flex-col justify-center border border-alert/20">
+        <span class="corner-tl"></span><span class="corner-br"></span>
+        <p class="font-display font-semibold text-[20px] lg:text-[24px] text-slate-100 leading-snug glow-text">“${en?w.phraseEn:w.phrase}”</p>
+        <p class="text-[12px] text-slate-400 leading-relaxed mt-3">${en?w.editorialNoteEn:w.editorialNote}</p>
+        <a href=${w.dossierUrl}
+          class="mt-4 inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+          ${en?'Full WAICO dossier':'Expediente WAICO completo'} ↗
+        </a>
+        <p class="text-[11px] font-mono uppercase tracking-widest text-slate-500 mt-4">${w.close}</p>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ========================================================================
    GEOPÓLEM Intelligence Products — posicionamiento comercial (sin pagos)
    Arquitectura pública en 5 líneas. CTAs no invasivas: mailto o anchor
    interno al mapa. No introduce checkout, membresía ni autenticación.
@@ -4297,6 +4445,7 @@ function App() {
           <${OsintReelsTeaser} lang=${lang} onOpen=${()=>setView('osint')}/>
           <${PlanZTeaser} lang=${lang} onOpen=${()=>setView('planz')}/>
           <${CablesSubmarinosTeaser} lang=${lang} onOpen=${()=>setView('cables')}/>
+          <${WaicoTeaser} lang=${lang} onOpen=${()=>setView('waico')}/>
           <${FichaTeaser} lang=${lang} onOpen=${()=>setView('ficha')}/>
           <${DoctrinaTeaser} lang=${lang} onOpen=${()=>setView('doctrina')}/>
           <${SalaTeaser} lang=${lang} onOpen=${()=>setView('sala')}/>
@@ -4318,6 +4467,7 @@ function App() {
       ${view==='planz' && html`<${PlanZ} lang=${lang}/>`}
 
       ${view==='ficha' && html`<${FichaEditorial} lang=${lang}/>`}
+      ${view==='waico' && html`<${WaicoInvestigacion} lang=${lang}/>`}
 
       ${view==='sentinel' && html`<${SentinelBrief} lang=${lang}/>`}
 

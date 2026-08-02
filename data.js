@@ -1472,3 +1472,79 @@ export const CABLES_SUBMARINOS = {
   tags: ['Cables submarinos', '12 cables', 'Mar Rojo', 'Bab el-Mandeb', 'Báltico', 'UNCLOS', 'Baltic Sentry', 'Infraestructura crítica'],
   close: 'GEOPÓLEM. Bienvenidos al tablero.',
 };
+
+/* ========================================================================
+   WAICO · Investigación especial — la arquitectura física de la IA
+   Ficha del episodio largo de la Sala Situacional. La página estática
+   ./waico/index.html mantiene el expediente completo (29 fundadores,
+   hipótesis y fuentes); aquí vive la ficha del episodio para la app.
+   ======================================================================== */
+export const WAICO_INVESTIGACION = {
+  id: 'waico-arquitectura-ia',
+  slug: 'waico-la-arquitectura-fisica-de-la-inteligencia-artificial',
+  category: 'tecnologia',
+  tone: 'cyan',
+  eyebrow: 'Sala Situacional · Investigación especial',
+  eyebrowEn: 'Situation Room · Special investigation',
+  status: 'Episodio publicado',
+  statusEn: 'Episode published',
+  title: 'WAICO: la arquitectura física de la inteligencia artificial',
+  titleEn: 'WAICO: the physical architecture of artificial intelligence',
+  subtitle: 'Una investigación GEOPÓLEM sobre el cruce entre inteligencia artificial, cables submarinos, energía, chips, Ormuz, cripto, remesas y gobernanza global.',
+  subtitleEn: 'A GEOPÓLEM investigation into the intersection of artificial intelligence, submarine cables, energy, chips, Hormuz, crypto, remittances and global governance.',
+  categoryLabel: 'Tecnología · Infraestructura · Gobernanza',
+  categoryLabelEn: 'Technology · Infrastructure · Governance',
+  phrase: 'No es conspiración. Es arquitectura.',
+  phraseEn: 'This is not conspiracy. It is architecture.',
+  youtube: {
+    id: '3w6nY_b_1-Y',
+    url: 'https://www.youtube.com/watch?v=3w6nY_b_1-Y',
+    videoTitle: 'WAICO: la jugada de China que nadie está mirando',
+    label: 'Ver episodio completo en YouTube',
+    labelEn: 'Watch the full episode on YouTube',
+  },
+  dossierUrl: './waico/index.html',
+  summary: 'WAICO importa porque desplaza la discusión sobre inteligencia artificial desde los modelos hacia la infraestructura que los sostiene. La IA depende de cables submarinos, electricidad, chips, centros de datos, minerales, pagos y reglas. El movimiento de China debe leerse junto a la competencia por la conectividad, la energía y la gobernanza global.',
+  summaryEn: 'WAICO matters because it shifts the debate on artificial intelligence away from models and towards the infrastructure that sustains them. AI depends on submarine cables, electricity, chips, data centres, minerals, payments and rules. China’s move must be read alongside the competition over connectivity, energy and global governance.',
+  notNews: 'No es conspiración. Es arquitectura.',
+  notNewsEn: 'Not conspiracy. Architecture.',
+  judgments: [
+    {
+      body: 'WAICO no debe analizarse solo como una organización de IA, sino como una pieza de arquitectura geopolítica.',
+      bodyEn: 'WAICO should not be analysed only as an AI organisation, but as a piece of geopolitical architecture.',
+    },
+    {
+      body: 'La infraestructura física de internet —cables submarinos, energía y centros de datos— se vuelve central en la competencia tecnológica.',
+      bodyEn: 'The physical infrastructure of the internet — submarine cables, energy and data centres — becomes central to technological competition.',
+    },
+    {
+      body: 'La conexión con Ormuz, pagos, cripto y remesas revela que el tablero no es solo digital: es energético, financiero y marítimo.',
+      bodyEn: 'The link to Hormuz, payments, crypto and remittances reveals a board that is not only digital: it is energy-based, financial and maritime.',
+    },
+    {
+      body: 'La disputa real no es únicamente por mejores modelos, sino por quién controla las condiciones materiales de la inteligencia artificial.',
+      bodyEn: 'The real dispute is not only about better models, but about who controls the material conditions of artificial intelligence.',
+    },
+  ],
+  layers: [
+    { label: 'Infraestructura', labelEn: 'Infrastructure',   body: 'Cables submarinos · centros de datos · energía', bodyEn: 'Submarine cables · data centres · energy' },
+    { label: 'Poder económico', labelEn: 'Economic power',   body: 'Chips · minerales · pagos · remesas',            bodyEn: 'Chips · minerals · payments · remittances' },
+    { label: 'Gobernanza',      labelEn: 'Governance',       body: 'WAICO · Pax Silica · reglas globales',          bodyEn: 'WAICO · Pax Silica · global rules' },
+  ],
+  chapters: [
+    { t: '00:00', label: 'La IA no vive en la nube',            labelEn: 'AI does not live in the cloud' },
+    { t: '01:00', label: 'Por qué WAICO importa ahora',         labelEn: 'Why WAICO matters now' },
+    { t: '02:30', label: 'Cables submarinos: el internet físico', labelEn: 'Submarine cables: the physical internet' },
+    { t: '04:00', label: 'Energía, chips y centros de datos',   labelEn: 'Energy, chips and data centres' },
+    { t: '05:30', label: 'Ormuz, cripto, remesas y pagos',      labelEn: 'Hormuz, crypto, remittances and payments' },
+    { t: '07:00', label: 'Pax Silica y la respuesta estadounidense', labelEn: 'Pax Silica and the US response' },
+    { t: '09:00', label: 'Noopolitik: quién fija las reglas',   labelEn: 'Noopolitik: who sets the rules' },
+    { t: '11:00', label: 'No es conspiración. Es arquitectura', labelEn: 'Not conspiracy. Architecture' },
+    { t: '12:00', label: 'Cierre GEOPÓLEM',                     labelEn: 'GEOPÓLEM close' },
+  ],
+  editorialNote: 'Esta investigación no plantea un plan oculto. Describe una arquitectura: infraestructura física, energía, cadenas de suministro y reglas que ya existen y pueden observarse en fuentes abiertas.',
+  editorialNoteEn: 'This investigation does not posit a hidden plan. It describes an architecture: physical infrastructure, energy, supply chains and rules that already exist and can be observed in open sources.',
+  vectors: ['Inteligencia artificial', 'Cables submarinos', 'Energía', 'Chips', 'Ormuz', 'Gobernanza global'],
+  tags: ['WAICO', 'Inteligencia artificial', 'China', 'Cables submarinos', 'Ormuz', 'Energía', 'Semiconductores', 'Pax Silica', 'OSINT'],
+  close: 'GEOPÓLEM. Bienvenidos al tablero.',
+};
