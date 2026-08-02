@@ -2,159 +2,425 @@
   "events": [
     {
       "actors": [
-        "India"
+        "United States"
       ],
-      "domain": "economictimes.indiatimes.com",
-      "id": "evt_19a69eaa2c3b86ee",
+      "domain": "theintelligencer.net",
+      "id": "evt_c5dfe0c7e343bc28",
       "language": "English",
       "matched_regions": [
-        "ukraine",
+        "gaza",
+        "iran",
+        "hormuz"
+      ],
+      "matched_themes": [
+        "war",
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 8.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Trump threatens more strikes on Iran . Tensions from Hormuz to Kuwait and Gaza lead to more warnings",
+      "tone": null,
+      "url": "https://www.theintelligencer.net/news/top-headlines/2026/08/trump-threatens-more-strikes-on-iran-tensions-from-hormuz-to-kuwait-and-gaza-lead-to-more-warnings/"
+    },
+    {
+      "actors": [
+        "Japan"
+      ],
+      "domain": "nuclear-news.net",
+      "id": "evt_3759105dd3022e5d",
+      "language": "English",
+      "matched_regions": [
         "russia"
+      ],
+      "matched_themes": [
+        "war",
+        "warfare",
+        "nuclear"
+      ],
+      "region": "Eurasia",
+      "score": 8.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 6.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Japan",
+      "tier": "high",
+      "title": "Russia Starlink killers showcase new era of electronic battlefield warfare . « nuclear - news",
+      "tone": null,
+      "url": "https://nuclear-news.net/2026/08/02/3-b1-russias-starlink-killers-showcase-new-era-of-electronic-battlefield-warfare/"
+    },
+    {
+      "actors": [
+        "Guyana"
+      ],
+      "domain": "kaieteurnewsonline.com",
+      "id": "evt_7ed0d8652b6d15d7",
+      "language": "English",
+      "matched_regions": [
+        "iran"
       ],
       "matched_themes": [
         "war",
         "killed"
       ],
-      "region": "Europa del Este",
-      "score": 9.0,
+      "region": "MENA",
+      "score": 7.0,
       "score_breakdown": {
-        "region": 4.0,
+        "region": 2.0,
         "themes": 5.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "India",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Guyana",
       "tier": "high",
-      "title": "SC directs Centre to appoint nodal officer , assist families killed or missing in Russia - Ukraine war",
+      "title": "Prayer & Candlelight Vigil for Rampersad in Queens killed in Iran war",
       "tone": null,
-      "url": "https://economictimes.indiatimes.com/nri/latest-updates/sc-directs-centre-to-appoint-nodal-officer-assist-families-killed-or-missing-in-russia-ukraine-war/articleshow/132760964.cms"
+      "url": "https://kaieteurnewsonline.com/2026/08/02/prayer-candlelight-vigil-for-rampersad-in-queens-killed-in-iran-war/"
     },
     {
       "actors": [
-        "United States"
+        "Japan"
       ],
-      "domain": "coloradostar.com",
-      "id": "evt_4d7aac79ef6e8927",
+      "domain": "nuclear-news.net",
+      "id": "evt_d4efa2101bc6560e",
       "language": "English",
-      "matched_regions": [
-        "iran",
-        "iraq",
-        "saudi"
-      ],
-      "matched_themes": [
-        "fighting",
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 7.5,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 3.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Fighting restarts as US , Saudis strike Iran allies in Iraq",
-      "tone": null,
-      "url": "http://www.coloradostar.com/news/279215330/us-saudis-strike-iran-s-allies-in-iraq-as-fighting-resumes"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wvlkam.com",
-      "id": "evt_1aec8559f3b1e624",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "conflict",
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "U . S . Strikes Iran as Regional Conflict Expands",
-      "tone": null,
-      "url": "https://www.wvlkam.com/2026/07/31/u-s-strikes-iran-as-regional-conflict-expands/"
-    },
-    {
-      "actors": [
-        "Greece"
-      ],
-      "domain": "bankingnews.gr",
-      "id": "evt_03560ef5d5d42866",
-      "language": "English",
-      "matched_regions": [
-        "israel",
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.5,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Greece",
-      "tier": "medium",
-      "title": "US and Israeli intelligence struggle to track Iranian leadership amid base strikes",
-      "tone": null,
-      "url": "https://www.bankingnews.gr/diethni/articles/891470/us-and-israeli-intelligence-struggle-to-track-iranian-leadership-amid-base-strikes"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "bfmtv.com",
-      "id": "evt_de45c570a9a314e1",
-      "language": "French",
       "matched_regions": [
         "ukraine"
       ],
       "matched_themes": [
-        "missile"
+        "escalation",
+        "nuclear"
       ],
       "region": "Europa del Este",
-      "score": 4.5,
+      "score": 6.5,
       "score_breakdown": {
         "region": 2.0,
-        "themes": 2.5,
+        "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "France",
-      "tier": "medium",
-      "title": "Nous devons faire preuve dune certaine prudence : Donald Trump  nest pas certain  quil laissera lUkraine produire des missiles Patriot ( alors quil lavait promis il y a trois semaines )",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Japan",
+      "tier": "high",
+      "title": "Diplomacy Without De - Escalation : The Manila Talks and Ukraine Escalation Strategy « nuclear - news",
       "tone": null,
-      "url": "https://www.bfmtv.com/economie/entreprises/defense/nous-devons-faire-preuve-d-une-certaine-prudence-donald-trump-n-est-pas-certain-qu-il-laissera-l-ukraine-produire-des-missiles-patriot-alors-qu-il-l-avait-promis-il-y-a-trois-semaines_AV-202607310204.html"
+      "url": "https://nuclear-news.net/2026/08/02/4-b1-diplomacy-without-de-escalation-the-manila-talks-and-ukraines-escalation-strategy/"
     },
     {
       "actors": [
-        "Indonesia"
+        "United States"
       ],
-      "domain": "kompas.com",
-      "id": "evt_92dc5a7046dc9d99",
-      "language": "Indonesian",
+      "domain": "hngnews.com",
+      "id": "evt_bf6c47e6ecd7262f",
+      "language": "English",
       "matched_regions": [
         "iran"
       ],
       "matched_themes": [
-        "drone"
+        "war",
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Trump says he will order halt to Iran strikes after parameters reached for deal to end war",
+      "tone": null,
+      "url": "http://www.hngnews.com/nation_world/trump-says-he-will-order-halt-to-iran-strikes-after-parameters-reached-for-deal-to/article_0662aad3-1f9d-534a-a052-cf68af3345eb.html"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "oneindia.com",
+      "id": "evt_c843889b3ac03e31",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "saudi"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 6.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "India",
+      "tier": "high",
+      "title": "Iran - US War Updates : Trump Deal Plan , Saudi Concerns and Iran Latest Warning in 10 Points",
+      "tone": null,
+      "url": "https://www.oneindia.com/international/iran-us-war-updates-trumps-deal-plan-saudi-concerns-and-irans-latest-warning-in-10-points-8164407.html"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "deshbandhu.co.in",
+      "id": "evt_b1cac8b0f6d24fc3",
+      "language": "Hindi",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "ट्रंप ने किया ईरान युद्ध खत्म होने का दावा , बोले - पश्चिम एशिया में शांति समझौते पर बनी सहमति , फिलहाल नहीं होंगे नए हमले | donald - trump - claims - iran - war - ending - middle - east - peace - agreement",
+      "tone": null,
+      "url": "https://www.deshbandhu.co.in/featured-news/donald-trump-claims-iran-war-ending-middle-east-peace-agreement-313356"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "timesofindia.indiatimes.com",
+      "id": "evt_93e7de7645e25005",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "US advanced interceptor stockpiles strained by Iran war , commander warns",
+      "tone": null,
+      "url": "https://timesofindia.indiatimes.com/defence/international/us-advanced-interceptor-stockpiles-strained-by-iran-war-commander-warns/articleshow/132802533.cms"
+    },
+    {
+      "actors": [
+        "Canada"
+      ],
+      "domain": "stcatharinesstandard.ca",
+      "id": "evt_ed05099ac657b1a4",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Canada",
+      "tier": "medium",
+      "title": "Iran leaders show a united front over the war but are divided over what the goal is",
+      "tone": null,
+      "url": "https://www.stcatharinesstandard.ca/news/world/middle-east/irans-leaders-show-a-united-front-over-the-war-but-are-divided-over-what-the-goal-is/article_37c21839-e03c-505c-8799-0c45bfaa7e1a.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "keyt.com",
+      "id": "evt_00ecf33a8161eded",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Iran allied militias prove their value in Tehran widening war",
+      "tone": null,
+      "url": "https://keyt.com/news/national-world/cnn-world/2026/08/01/irans-allied-militias-prove-their-value-in-tehrans-widening-war/"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "deshbandhu.co.in",
+      "id": "evt_7daa759c904969c7",
+      "language": "Hindi",
+      "matched_regions": [
+        "iran",
+        "hormuz"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "डोनाल्ड ट्रंप ने ईरान पर हमले रोकने को लेकर जताई सहमति ;  होर्मुज  को फिर से खोलने का दिया हवाला | trump - agrees - to - stop - attacks - on - iran - cites - reopening - strait - of - hormuz",
+      "tone": null,
+      "url": "https://www.deshbandhu.co.in/world/trump-agrees-to-stop-attacks-on-iran-cites-reopening-strait-of-hormuz-313364"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "bursa.ro",
+      "id": "evt_494c8ac06a4b9cd9",
+      "language": "Romanian",
+      "matched_regions": [
+        "israel",
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Romania",
+      "tier": "medium",
+      "title": "AFP : Trump afirmă că SUA şi Israelul suspendă loviturile asupra Iranului",
+      "tone": null,
+      "url": "https://www.bursa.ro/afp-trump-afirma-ca-sua-si-israelul-suspenda-loviturile-asupra-iranului-83557954"
+    },
+    {
+      "actors": [
+        "Mexico"
+      ],
+      "domain": "elmanana.com",
+      "id": "evt_bcaef403b9399550",
+      "language": "Spanish",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Mexico",
+      "tier": "medium",
+      "title": "Tensión en Oriente Medio : ofensiva israelí en Gaza",
+      "tone": null,
+      "url": "http://www.elmanana.com/noticias/internacional/tension-en-oriente-medio-ofensiva-israeli-en-gaza/6168223"
+    },
+    {
+      "actors": [],
+      "domain": "jornaleconomico.sapo.pt",
+      "id": "evt_4f35a60eae6524a5",
+      "language": "Portuguese",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "",
+      "tier": "medium",
+      "title": "Forças israelitas matam oito pessoas em ataques noturnos em Gaza",
+      "tone": null,
+      "url": "https://jornaleconomico.sapo.pt/noticias/forcas-israelitas-matam-oito-pessoas-em-ataques-noturnos-em-gaza/"
+    },
+    {
+      "actors": [
+        "Portugal"
+      ],
+      "domain": "observador.pt",
+      "id": "evt_156f54b3ccdc9d19",
+      "language": "Portuguese",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Portugal",
+      "tier": "medium",
+      "title": "6h . Gaza : Ataques israelitas fazem pelo menos oito mortos – Observador",
+      "tone": null,
+      "url": "https://observador.pt/programas/noticiario/as-noticias-das-6h-2452/"
+    },
+    {
+      "actors": [
+        "Japan"
+      ],
+      "domain": "nuclear-news.net",
+      "id": "evt_7c5d4592b85461f6",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [
+        "nuclear"
       ],
       "region": "MENA",
       "score": 4.0,
@@ -163,24 +429,24 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Indonesia",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Japan",
       "tier": "medium",
-      "title": "Drone Iran Serbu Kuwait , Hantam Hangar Pesawat hingga Fasilitas Satelit AS",
+      "title": "Is It Just About AIPAC Money , or Does the US - Israel Rot Run Far Deeper ? « nuclear - news",
       "tone": null,
-      "url": "https://www.kompas.com/global/read/2026/07/31/152100170/drone-iran-serbu-kuwait-hantam-hangar-pesawat-hingga-fasilitas-satelit-as"
+      "url": "https://nuclear-news.net/2026/08/02/4-b1-is-it-just-about-aipacs-money-or-does-the-us-israel-rot-run-far-deeper/"
     },
     {
       "actors": [
-        "Germany"
+        "Denmark"
       ],
-      "domain": "fnp.de",
-      "id": "evt_a3bdc3c41920c712",
-      "language": "German",
+      "domain": "jyllands-posten.dk",
+      "id": "evt_f430a927d3fdcf60",
+      "language": "Danish",
       "matched_regions": [
         "israel",
-        "gaza",
-        "hamas"
+        "iran",
+        "united states"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -190,71 +456,73 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Germany",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Denmark",
       "tier": "medium",
-      "title": "Hamas - Entwaffnung : Trumps Gaza - Plan sieht Israel - Abzug vor",
+      "title": "Trump : united states og Israel vil droppe planlagt angreb mod Iran",
       "tone": null,
-      "url": "http://www.fnp.de/politik/hamas-entwaffnung-trumps-gaza-plan-sieht-israel-abzug-vor-zr-94422876.html"
+      "url": "https://jyllands-posten.dk/international/ECE19510909/trump-usa-og-israel-vil-droppe-planlagt-angreb-mod-iran/?fp-exp=60740012&fp-alg=607400121"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "miragenews.com",
-      "id": "evt_dc42f44b8e304172",
+      "domain": "ksmu.org",
+      "id": "evt_3ef0442ecdded020",
       "language": "English",
       "matched_regions": [
-        "gaza",
-        "hamas"
+        "iran"
       ],
-      "matched_themes": [],
+      "matched_themes": [
+        "strike"
+      ],
       "region": "MENA",
       "score": 3.5,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
+        "region": 2.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
+      "seen_date": "20260802T081500Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "Trump Hails Breakthrough : Will Hamas Disarm in Gaza ?",
+      "title": "Trump says he cancelling Iran strikes , deal pending",
       "tone": null,
-      "url": "https://www.miragenews.com/trump-hails-breakthrough-will-hamas-disarm-in-1719883/"
+      "url": "https://www.ksmu.org/2026-08-02/trump-says-hes-cancelling-iran-strikes-deal-pending"
     },
     {
       "actors": [
-        "France"
+        "India"
       ],
-      "domain": "afrique-asie.fr",
-      "id": "evt_2781a43dec22c0bd",
-      "language": "French",
+      "domain": "oneindia.com",
+      "id": "evt_02ccdbad8075e802",
+      "language": "English",
       "matched_regions": [
-        "iran",
-        "pakistan"
+        "iran"
       ],
-      "matched_themes": [],
+      "matched_themes": [
+        "strike"
+      ],
       "region": "MENA",
       "score": 3.5,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
+        "region": 2.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "France",
+      "seen_date": "20260802T081500Z",
+      "source_country": "India",
       "tier": "medium",
-      "title": "L « axe de sympathie » Iran - Irak - Pakistan annonce un remodelage de lAsie du Sud - Ouest",
+      "title": "Locked And Loaded : Trump Says US Cancelled Planned Iran Strike After Tehran Sought More Time for Deal",
       "tone": null,
-      "url": "https://www.afrique-asie.fr/l-axe-de-sympathie-iran-irak-pakistan-annonce-un-remodelage-de-lasie-du-sud-ouest/"
+      "url": "https://www.oneindia.com/international/locked-and-loaded-trump-says-us-cancelled-planned-iran-strike-after-tehran-sought-more-time-for-deal-8164339.html"
     },
     {
       "actors": [
-        "United States"
+        "Pakistan"
       ],
-      "domain": "tonyskansascity.com",
-      "id": "evt_77495ddb8ac8ce3e",
+      "domain": "tribune.com.pk",
+      "id": "evt_2f739b322a5fdecd",
       "language": "English",
       "matched_regions": [
         "iran"
@@ -269,253 +537,416 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "United States",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Pakistan",
       "tier": "medium",
-      "title": "Kansas City Track : Elections Probs , Friends & Iran From Cyberattacks",
+      "title": "Trump says he will hold off on fresh Iran attack in hope of quick deal",
       "tone": null,
-      "url": "https://www.tonyskansascity.com/2026/07/kansas-city-track-elections-probs.html"
+      "url": "https://tribune.com.pk/story/2621639/trump-says-he-will-hold-off-on-fresh-iran-attack-in-hope-of-quick-deal"
     },
     {
       "actors": [
-        "Israel"
+        "United States"
       ],
-      "domain": "english.wafa.ps",
-      "id": "evt_047fcb0de17838ce",
+      "domain": "hppr.org",
+      "id": "evt_d6759b786825b078",
       "language": "English",
       "matched_regions": [
-        "israel",
-        "palestin"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Israel",
-      "tier": "medium",
-      "title": "Israeli forces detain ten Palestinians from West Bank",
-      "tone": null,
-      "url": "https://english.wafa.ps/Pages/Details/173062"
-    },
-    {
-      "actors": [
-        "Malaysia"
-      ],
-      "domain": "freemalaysiatoday.com",
-      "id": "evt_c98a4c051f0df96f",
-      "language": "English",
-      "matched_regions": [
-        "israel",
-        "lebanon"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Malaysia",
-      "tier": "medium",
-      "title": "Israel carries out detonations near Lebanon Beaufort Castle",
-      "tone": null,
-      "url": "https://www.freemalaysiatoday.com/category/world/2026/07/31/israel-carries-out-detonations-near-lebanon-s-beaufort-castle"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "jagran.com",
-      "id": "evt_88d5281011b02dae",
-      "language": "Hindi",
-      "matched_regions": [
-        "china"
+        "iran"
       ],
       "matched_themes": [
-        "deploy"
+        "strike"
       ],
-      "region": "Asia-Pacífico",
+      "region": "MENA",
       "score": 3.5,
       "score_breakdown": {
         "region": 2.0,
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "India",
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "चीन ने LAC से सटे दो एयरबेस पर तैनात किए 12 J - 20 फाइटर जेट , सैटेलाइट तस्वीरों से हुआ खुलासा - china deploys 12 j20 stealth jets near lac satellite reveals",
+      "title": "Trump says he cancelling Iran strikes , deal pending",
       "tone": null,
-      "url": "https://www.jagran.com/news/national-china-deploys-12-j20-stealth-jets-near-lac-satellite-reveals-40324944.html"
-    },
-    {
-      "actors": [
-        "Indonesia"
-      ],
-      "domain": "kaltim.tribunnews.com",
-      "id": "evt_8571ac414f6826b1",
-      "language": "Indonesian",
-      "matched_regions": [
-        "iran",
-        "hormuz"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Indonesia",
-      "tier": "medium",
-      "title": "Di Tengah Konflik AS vs Iran , Transfer Minyak Antar Kapal Kembali Menggeliat di Luar Selat Hormuz",
-      "tone": null,
-      "url": "https://kaltim.tribunnews.com/news/1159330/di-tengah-konflik-as-vs-iran-transfer-minyak-antar-kapal-kembali-menggeliat-di-luar-selat-hormuz"
-    },
-    {
-      "actors": [
-        "Poland"
-      ],
-      "domain": "naszdziennik.pl",
-      "id": "evt_a9f2a254762aa351",
-      "language": "Polish",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Poland",
-      "tier": "monitor",
-      "title": "Warszawa : Główne obchody 82 . rocznicy wybuchu Powstania Warszawskiego",
-      "tone": null,
-      "url": "https://naszdziennik.pl/polska-kraj/343133,warszawa-glowne-obchody-82-rocznicy-wybuchu-powstania-warszawskiego.html"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "valledaostaglocal.it",
-      "id": "evt_28d98b4017a06d9a",
-      "language": "Italian",
-      "matched_regions": [],
-      "matched_themes": [
-        "invasion"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Elon Musk e la crisi migratoria di Ceuta :  E  uninvasione , Spagna sarà distrutta",
-      "tone": null,
-      "url": "https://www.valledaostaglocal.it/2026/07/31/leggi-notizia/argomenti/ultimora/articolo/elon-musk-e-la-crisi-migratoria-di-ceuta-e-uninvasione-spagna-sara-distrutta.html"
-    },
-    {
-      "actors": [
-        "Poland"
-      ],
-      "domain": "cdaction.pl",
-      "id": "evt_6d964801b4dbf6f4",
-      "language": "Polish",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Poland",
-      "tier": "monitor",
-      "title": "Dynamiczny multiplayer i Metallica na najnowszym zwiastunie Gears of War : E - Day . Microsoft ujawnił szczegóły trybów wieloosobowych",
-      "tone": null,
-      "url": "https://cdaction.pl/newsy/dynamiczny-multiplayer-i-metallica-na-najnowszym-zwiastunie-gears-of-war-e-day-microsoft-ujawnil-szczegoly-trybow-wieloosobowych/"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "elconfidencial.com",
-      "id": "evt_935128699d013f10",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "Amadeus gana 700 millones hasta junio , un 3 , 7 % menos , por el conflicto en Oriente Medio",
-      "tone": null,
-      "url": "https://www.elconfidencial.com/empresas/2026-07-31/amadeus-gana-700-millones-hasta-junio-un-3-7_4398820/"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "moneycontrol.com",
-      "id": "evt_4243eae6b52736f7",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "AI boom powers global trade growth in Q1 2026 despite Middle East conflict , WTO says",
-      "tone": null,
-      "url": "https://www.moneycontrol.com/news/business/ai-boom-powers-global-trade-growth-in-q1-2026-despite-middle-east-conflict-wto-says-13990154.html"
+      "url": "https://www.hppr.org/npr-news/2026-08-02/trump-says-hes-cancelling-iran-strikes-deal-pending"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "post-journal.com",
-      "id": "evt_bbcfa46d1e7809ed",
+      "domain": "790waeb.iheart.com",
+      "id": "evt_9099e82d1f65f76f",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump Says Attack On Iran Paused For Negotiations",
+      "tone": null,
+      "url": "https://790waeb.iheart.com/content/2026-08-02-trump-says-attack-on-iran-paused-for-negotiations/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "ktxs.com",
+      "id": "evt_16743626bd7542e4",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump says he agreed to cancel planned attack on Iran due to pending deal",
+      "tone": null,
+      "url": "https://ktxs.com/news/nation-world/trump-says-he-agreed-to-cancel-planned-attack-on-iran-due-to-pending-deal-peace-strait-of-hormuz-gasoline-gas-oil-fuel-nuclear-weapon-israel-united-states-military-troops-president-donald-trump"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "woc1420.iheart.com",
+      "id": "evt_2a1877b410719b5f",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump Says Attack On Iran Paused For Negotiations",
+      "tone": null,
+      "url": "https://woc1420.iheart.com/content/2026-08-02-trump-says-attack-on-iran-paused-for-negotiations/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "kunm.org",
+      "id": "evt_2d24ca515381d9d9",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump says he cancelling Iran strikes , deal pending",
+      "tone": null,
+      "url": "https://www.kunm.org/npr-news/2026-08-02/trump-says-hes-cancelling-iran-strikes-deal-pending"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wuft.org",
+      "id": "evt_98b55a27313b981f",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump says he cancelling Iran strikes , deal pending",
+      "tone": null,
+      "url": "https://www.wuft.org/2026-08-02/trump-says-hes-cancelling-iran-strikes-deal-pending"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "newsradio1410.iheart.com",
+      "id": "evt_4eab3957909f44aa",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump Says Attack On Iran Paused For Negotiations | News Radio 1410 AM & 100 . 9 FM",
+      "tone": null,
+      "url": "https://newsradio1410.iheart.com/content/2026-08-02-trump-says-attack-on-iran-paused-for-negotiations/"
+    },
+    {
+      "actors": [
+        "Azerbaijan"
+      ],
+      "domain": "azernews.az",
+      "id": "evt_35d5f0922e423d91",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Azerbaijan",
+      "tier": "medium",
+      "title": "Trump agreed to cancel Iran attack if deal made",
+      "tone": null,
+      "url": "https://www.azernews.az/region/261886.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "abc7amarillo.com",
+      "id": "evt_8d71b1edbcc00400",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump says he agreed to cancel planned attack on Iran due to pending deal",
+      "tone": null,
+      "url": "https://abc7amarillo.com/news/nation-world/trump-says-he-agreed-to-cancel-planned-attack-on-iran-due-to-pending-deal-peace-strait-of-hormuz-gasoline-gas-oil-fuel-nuclear-weapon-israel-united-states-military-troops-president-donald-trump"
+    },
+    {
+      "actors": [
+        "Finland"
+      ],
+      "domain": "keski-uusimaa.fi",
+      "id": "evt_19348f2486ee5528",
+      "language": "Finnish",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Finland",
+      "tier": "monitor",
+      "title": "Yön uutiskooste | Ammattikorkeakoulujen työriitaa sovitellaan tänn , Tekoälysisällön tunnistaminen helpottuu Euroopassa , Yli sadan ihmisen jnnökset löytyivät raunioista Gazassa",
+      "tone": null,
+      "url": "https://www.keski-uusimaa.fi/uutissuomalainen/9665498"
+    },
+    {
+      "actors": [
+        "Serbia"
+      ],
+      "domain": "blic.rs",
+      "id": "evt_02af9f5fb1d707ae",
+      "language": "Serbian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Serbia",
+      "tier": "monitor",
+      "title": "Tramp otkazao napad na Iran : Dogovor u poslednjem trenutku",
+      "tone": null,
+      "url": "https://www.blic.rs/vesti/svet/tramp-otkazao-napad-na-iran-dogovor-u-poslednjem-trenutku/nrwk7lf"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "lecourrier.vn",
+      "id": "evt_f1c56a43995bac73",
+      "language": "French",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Huit morts dans des frappes israéliennes nocturnes sur Gaza après laccord annoncé",
+      "tone": null,
+      "url": "https://lecourrier.vn/huit-morts-dans-des-frappes-israeliennes-nocturnes-sur-gaza-apres-laccord-annonce/1352579.html"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ossolanews.it",
+      "id": "evt_a9fbab8fff7912fa",
+      "language": "Italian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Iran , Trump  Ritiro attacco su richiesta di Teheran e altri Paesi , ora accordo    - Ossolanews . it",
+      "tone": null,
+      "url": "https://www.ossolanews.it/2026/08/02/leggi-notizia/argomenti/top-news-1/articolo/iran-trump-ritiro-attacco-su-richiesta-di-teheran-e-altri-paesi-ora-accordo.html"
+    },
+    {
+      "actors": [
+        "Mexico"
+      ],
+      "domain": "razon.com.mx",
+      "id": "evt_f60641271940ec52",
+      "language": "Spanish",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Mexico",
+      "tier": "monitor",
+      "title": "Aspirantes seleccionados convocan marcha en la UNAM contra examen de control",
+      "tone": null,
+      "url": "https://www.razon.com.mx:443/mexico/2026/08/01/aspirantes-seleccionados-convocan-marcha-en-la-unam-contra-examen-de-control/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "zazoom.it",
+      "id": "evt_5d9a436686d570ae",
+      "language": "Italian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Trump dice di aver accettato di ritirare lattacco sullIran su richiesta degli alleati in Medio Oriente",
+      "tone": null,
+      "url": "https://www.zazoom.it/2026-08-02/trump-dice-di-aver-accettato-di-ritirare-lattacco-sulliran-su-richiesta-degli-alleati-in-medio-oriente/19528151/"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_03152726e4bef023",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "terror"
+        "combat"
       ],
       "region": "Global",
       "score": 2.0,
@@ -524,19 +955,19 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "United States",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Matar convicted of federal terrorism charges",
+      "title": "IDF set to open combat processing program for Givati soldiers",
       "tone": null,
-      "url": "https://www.post-journal.com/news/top-stories/2026/07/matar-convicted-of-federal-terrorism-charges/"
+      "url": "https://www.jpost.com/israel-news/article-904295"
     },
     {
       "actors": [
-        "Armenia"
+        "United States"
       ],
-      "domain": "massispost.com",
-      "id": "evt_79c81d9c6a8594aa",
+      "domain": "keyt.com",
+      "id": "evt_b8f13a1f527526b8",
       "language": "English",
       "matched_regions": [
         "china"
@@ -549,20 +980,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Armenia",
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Armenia and China Deepen Strategic Partnership • MassisPost",
+      "title": "A young Tibetan flees his homeland – and reveals how China is eroding his culture",
       "tone": null,
-      "url": "https://massispost.com/2026/07/armenia-and-china-deepen-strategic-partnership/"
+      "url": "https://keyt.com/news/national-world/cnn-world/2026/08/01/a-young-tibetan-flees-his-homeland-and-reveals-how-china-is-eroding-his-culture/"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Italy"
       ],
-      "domain": "express.co.uk",
-      "id": "evt_eddc24cee9e72110",
-      "language": "English",
+      "domain": "ansa.it",
+      "id": "evt_9614cf3646af86af",
+      "language": "Italian",
       "matched_regions": [
         "iran"
       ],
@@ -574,97 +1005,22 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "British man arrested after being accused of spying on RAF base for Iran",
+      "title": "Araghchi ,  lIran è pronto a salvaguardare la propria sicurezza e sovranità  - Notizie",
       "tone": null,
-      "url": "https://www.express.co.uk/news/uk/2234722/british-man-arrested-spying-raf-akrotiri"
-    },
-    {
-      "actors": [
-        "Croatia"
-      ],
-      "domain": "dnevnik.hr",
-      "id": "evt_5e980108ea6102e9",
-      "language": "Bosnian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Croatia",
-      "tier": "monitor",
-      "title": "Britanci razotkrili špijuna u drugoj zemlji : Podatke slao Iranskoj revolucionarnoj gardi",
-      "tone": null,
-      "url": "https://dnevnik.hr/vijesti/svijet/na-cipru-uhicen-muskarac-osumnjicen-za-spijuniranje-britanske-vojne-baze---994027.html"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "n-tv.de",
-      "id": "evt_2fd18f5abb37569c",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Ukraine - Krieg im Liveticker : +++ 10 : 01 Russischer Onlinehändler Ozon evakuiert Lager +++",
-      "tone": null,
-      "url": "https://www.n-tv.de/politik/10-01-Russischer-Onlinehaendler-Ozon-evakuiert-Lager-id30859357.html"
+      "url": "https://www.ansa.it/sito/notizie/mondo/2026/08/02/araghchi-liran-e-pronto-a-salvaguardare-la-propria-sicurezza-e-sovranita_7121f844-ae05-4299-88c6-90c37f2b18fd.html"
     },
     {
       "actors": [
         "France"
       ],
-      "domain": "20minutes.fr",
-      "id": "evt_58afaef47d96b5ca",
+      "domain": "dna.fr",
+      "id": "evt_b6320ba13f355fc6",
       "language": "French",
       "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "France",
-      "tier": "monitor",
-      "title": "EN DIRECT Guerre en Ukraine : Kiev frappe à nouveau en Russie , les Panaméens prévenus avant de sengager dans larmée ...",
-      "tone": null,
-      "url": "https://www.20minutes.fr/monde/ukraine/4237142-20260731-guerre-ukraine-kiev-frappe-nouveau-russie-panameens-prevenus-avant-engager-armee"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "nvdaily.com",
-      "id": "evt_b9e29f5818b09fed",
-      "language": "English",
-      "matched_regions": [
-        "israel"
+        "iran"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -674,44 +1030,19 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "United States",
+      "seen_date": "20260802T081500Z",
+      "source_country": "France",
       "tier": "monitor",
-      "title": "Israelis worry about weakening connection with younger Jewish Americans",
+      "title": "Guerre au Moyen - Orient . Donald Trump annonce suspendre les frappes américaines contre lIran",
       "tone": null,
-      "url": "https://www.nvdaily.com/associated_press_national/israelis-worry-about-weakening-connection-with-younger-jewish-americans/article_1a230893-b721-5302-8cae-4c62aaf05939.html"
+      "url": "https://www.dna.fr/defense-guerre-conflit/2026/08/02/donald-trump-annonce-suspendre-les-frappes-americaines-contre-l-iran"
     },
     {
       "actors": [
-        "Germany"
+        "Japan"
       ],
-      "domain": "t-online.de",
-      "id": "evt_5c8343551d417ccd",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Ukraine - Krieg aktuell : Ukraine greift Wildberries - Konkurrenten an",
-      "tone": null,
-      "url": "https://www.t-online.de/nachrichten/ukraine/id_101361284/ukraine-krieg-aktuell-ukraine-greift-wildberries-konkurrenten-an.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "euronews.com",
-      "id": "evt_c35041271ec789f3",
+      "domain": "nuclear-news.net",
+      "id": "evt_686ab8e086ad7d00",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -724,22 +1055,72 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "United States",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Japan",
       "tier": "monitor",
-      "title": "UK announces £8 billion investment in nuclear submarines",
+      "title": "US Navy nuclear battleship plan raises questions for carriers , submarines and AUKUS « nuclear - news",
       "tone": null,
-      "url": "https://www.euronews.com/2026/07/31/uk-announces-8-billion-investment-in-nuclear-submarines"
+      "url": "https://nuclear-news.net/2026/08/02/3-b1-us-navys-nuclear-battleship-plan-raises-questions-for-carriers-submarines-and-aukus/"
     },
     {
       "actors": [
-        "Austria"
+        "Germany"
       ],
-      "domain": "diepresse.com",
-      "id": "evt_72bb81a6d2bfe283",
+      "domain": "kreisbote.de",
+      "id": "evt_933639625a9d96bc",
       "language": "German",
       "matched_regions": [
-        "israel"
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Trump rudert bei Versprechen zu Patriot - Lizenzen für die Ukraine zurück",
+      "tone": null,
+      "url": "http://www.kreisbote.de/politik/trump-rudert-bei-versprechen-zu-patriot-bauplaenen-fuer-die-ukraine-zurueck-zr-94424978.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "dw.com",
+      "id": "evt_6979bc8cb07c7073",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "front line"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "On the front line of Europe battle against wildfires",
+      "tone": null,
+      "url": "https://www.dw.com/en/on-the-front-line-of-europes-battle-against-wildfires/a-78204324"
+    },
+    {
+      "actors": [
+        "Serbia"
+      ],
+      "domain": "naslovi.net",
+      "id": "evt_8c915d6adc681005",
+      "language": "Bosnian",
+      "matched_regions": [
+        "iran"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -749,197 +1130,97 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Austria",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Serbia",
       "tier": "monitor",
-      "title": "Israel zerstört Hisbollah - Tunnel bei Burg Beaufort im Südlibanon",
+      "title": "Svet bio na ivici rata , pa usledio preokret : Oglasio se Tramp povodom sukoba sa Iranom , doneo radikalnu odluku",
       "tone": null,
-      "url": "https://www.diepresse.com/40563287/israel-zerstoert-hisbollah-tunnel-bei-burg-beaufort-im-suedlibanon"
+      "url": "https://naslovi.net/2026-08-02/mondo/svet-bio-na-ivici-rata-pa-usledio-preokret-oglasio-se-tramp-povodom-sukoba-sa-iranom-doneo-radikalnu-odluku/42168181"
     },
     {
       "actors": [
-        "United States"
+        "Greece"
       ],
-      "domain": "mynspr.org",
-      "id": "evt_74e5c5875df10029",
-      "language": "English",
-      "matched_regions": [
-        "hamas"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Trump announces a deal for Hamas to disarm , but many hurdles and uncertainty remain",
-      "tone": null,
-      "url": "https://www.mynspr.org/npr-news/2026-07-30/trump-announces-a-deal-for-hamas-to-disarm-but-many-hurdles-and-uncertainty-remain"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "newsradio1470.iheart.com",
-      "id": "evt_fca46fd2e1ece540",
-      "language": "English",
-      "matched_regions": [
-        "hamas"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Trump Announces Hamas Disarmament Deal | News Radio 1470",
-      "tone": null,
-      "url": "https://newsradio1470.iheart.com/content/2026-07-31-trump-announces-hamas-disarmament-deal/"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "ilpost.it",
-      "id": "evt_2dd224c026d91d80",
-      "language": "Italian",
-      "matched_regions": [
-        "crimea"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Perché lUcraina attacca la Crimea",
-      "tone": null,
-      "url": "https://www.ilpost.it/2026/06/26/ucraina-attacca-crimea/?homepagePosition=15.1&referrerPost=3644616"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "hna.de",
-      "id": "evt_124e9362875a35d3",
-      "language": "German",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "NATO will atomare Abschreckung gegen Putins Russland ausbauen",
-      "tone": null,
-      "url": "http://www.hna.de/politik/nato-will-atomare-abschreckung-gegen-putins-russland-ausbauen-zr-94423080.html"
-    },
-    {
-      "actors": [
-        "Poland"
-      ],
-      "domain": "bankier.pl",
-      "id": "evt_f56809014ad9d29a",
-      "language": "Polish",
+      "domain": "kathimerini.gr",
+      "id": "evt_2e033c96b53c509e",
+      "language": "Greek",
       "matched_regions": [],
       "matched_themes": [
-        "mobiliz"
+        "drone"
       ],
       "region": "Global",
-      "score": 1.5,
+      "score": 2.0,
       "score_breakdown": {
         "region": 0.0,
-        "themes": 1.5,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Poland",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Greece",
       "tier": "monitor",
-      "title": "Huti zakłócają żeglugę . Arabia Saudyjska mobilizuje międzynarodową koalicję",
+      "title": "Ρωσία : Δύο νεκροί από πλήγμα ουκρανικού drone",
       "tone": null,
-      "url": "https://www.bankier.pl/wiadomosc/Huti-zaklocaja-zegluge-Arabia-Saudyjska-mobilizuje-miedzynarodowa-koalicje-9175966.html"
+      "url": "https://www.kathimerini.gr/world/564380446/rosia-dyo-nekroi-apo-pligma-oykranikoy-drone/"
     },
     {
       "actors": [
-        "Albania"
+        "Japan"
       ],
-      "domain": "sot.com.al",
-      "id": "evt_52b752904f5d5de8",
-      "language": "Albanian",
-      "matched_regions": [
-        "nato"
+      "domain": "nuclear-news.net",
+      "id": "evt_8a29d24ff0381b27",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
       ],
-      "matched_themes": [],
       "region": "Global",
-      "score": 1.5,
+      "score": 2.0,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Albania",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Japan",
       "tier": "monitor",
-      "title": "Raketa ruse bie në Poloni , Varshava i dërgon mesazhin e fortë Moskës se do të përgjigjet me ose pa NATO - n ... - Sot News",
+      "title": "Nuclear revival needs $250bn a year , industry says",
       "tone": null,
-      "url": "https://sot.com.al/bota/raketa-ruse-bie-ne-poloni-varshava-i-dergon-mesazhin-e-forte-moskes-se-do-te-pergjigjet-me-ose-pa-nato-n/"
+      "url": "https://nuclear-news.net/2026/08/02/3-b1-nuclear-revival-needs-250bn-a-year-industry-says/"
     },
     {
       "actors": [
-        "Kosovo"
+        "United States"
       ],
-      "domain": "telegrafi.com",
-      "id": "evt_b5e8a3eeed8389d9",
-      "language": "Albanian",
-      "matched_regions": [
-        "hamas"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Kosovo",
-      "tier": "monitor",
-      "title": "Hamasi ka pranuar të çarmatoset , por pasi të plotësohet kushti kryesor i tyre",
-      "tone": null,
-      "url": "https://telegrafi.com/hamasi-ka-pranuar-te-carmatoset-por-pasi-te-plotesohet-kushti-kryesor-i-tyre/"
-    },
-    {
-      "actors": [
-        "Nigeria"
-      ],
-      "domain": "premiumtimesng.com",
-      "id": "evt_4f114157c0d050ab",
+      "domain": "ksmu.org",
+      "id": "evt_ed35358237953927",
       "language": "English",
       "matched_regions": [
-        "niger"
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260802T081500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Avalanche in Pakistan kills famed mountaineer Nirmal Purja and his fellow climbers",
+      "tone": null,
+      "url": "https://www.ksmu.org/2026-08-01/avalanche-in-pakistan-kills-famed-mountaineer-nirmal-purja-and-his-fellow-climbers"
+    },
+    {
+      "actors": [
+        "Mexico"
+      ],
+      "domain": "razon.com.mx",
+      "id": "evt_af11ee0e0f4b53e0",
+      "language": "Spanish",
+      "matched_regions": [
+        "mali"
       ],
       "matched_themes": [],
       "region": "Sahel",
@@ -949,87 +1230,87 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Nigeria",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Mexico",
       "tier": "monitor",
-      "title": "A culture of dread : Nigeria post - cosmopolitanism , By Jibrin Ibrahim",
+      "title": "España instala barrera marítima en la frontera con Marruecos ; Ceuta vuelve a la  normalidad",
       "tone": null,
-      "url": "https://www.premiumtimesng.com/opinion/899629-a-culture-of-dread-nigerias-post-cosmopolitanism-by-jibrin-ibrahim.html"
+      "url": "https://www.razon.com.mx:443/mundo/2026/08/01/espana-instala-barrera-maritima-en-la-frontera-con-marruecos-ceuta-vuelve-a-la-normalidad/"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "kfab.iheart.com",
-      "id": "evt_ad83bee80106f7bf",
+      "domain": "hppr.org",
+      "id": "evt_e7b940347fe38068",
       "language": "English",
       "matched_regions": [
-        "hamas"
+        "pakistan"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Asia del Sur",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
+      "seen_date": "20260802T081500Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "Trump Announces Hamas Disarmament Deal | NewsRadio 1110 KFAB",
+      "title": "Avalanche in Pakistan kills famed mountaineer Nirmal Purja and his fellow climbers",
       "tone": null,
-      "url": "https://kfab.iheart.com/content/2026-07-31-trump-announces-hamas-disarmament-deal/"
+      "url": "https://www.hppr.org/npr-news/2026-08-01/avalanche-in-pakistan-kills-famed-mountaineer-nirmal-purja-and-his-fellow-climbers"
     },
     {
       "actors": [
-        "Germany"
+        "Ireland"
       ],
-      "domain": "kreiszeitung.de",
-      "id": "evt_2e040e724639fd5b",
-      "language": "German",
+      "domain": "breakingnews.ie",
+      "id": "evt_8c93fc8e6a4334f5",
+      "language": "English",
       "matched_regions": [
-        "nato"
+        "pakistan"
       ],
       "matched_themes": [],
-      "region": "Global",
+      "region": "Asia del Sur",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Germany",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Ireland",
       "tier": "monitor",
-      "title": "NATO will atomare Abschreckung gegen Putins Russland ausbauen",
+      "title": "Former British Army soldier Nirmal Purja confirmed dead in Pakistan avalanche",
       "tone": null,
-      "url": "http://www.kreiszeitung.de/politik/nato-will-atomare-abschreckung-gegen-putins-russland-ausbauen-zr-94423080.html"
+      "url": "https://www.breakingnews.ie/world/former-british-army-soldier-nirmal-purja-confirmed-dead-in-pakistan-avalanche-1935043.html"
     },
     {
       "actors": [
-        "Switzerland"
+        "Turkey"
       ],
-      "domain": "tio.ch",
-      "id": "evt_d112ddf2a64d4799",
-      "language": "Italian",
+      "domain": "haksozhaber.net",
+      "id": "evt_cd71f2773e6c8eff",
+      "language": "Turkish",
       "matched_regions": [
-        "hamas"
+        "mali"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Sahel",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260731T084500Z",
-      "source_country": "Switzerland",
+      "seen_date": "20260802T081500Z",
+      "source_country": "Turkey",
       "tier": "monitor",
-      "title": "« Il disarmo completo di Hamas ? Un accordo storico »",
+      "title": "Rus hava saldırıları Malide sivilleri hedef alıyor",
       "tone": null,
-      "url": "https://www.tio.ch/dal-mondo/politica/1941232/gaza-accordo-disarmo-hamas-forza"
+      "url": "https://www.haksozhaber.net/rus-hava-saldirilari-malide-sivilleri-hedef-aliyor-257830h.htm"
     }
   ],
   "filters": {
@@ -1043,13 +1324,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-07-31T09:15:50Z",
+  "generated_at": "2026-08-02T08:38:23Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 3,
-    "medium": 11,
-    "monitor": 26
+    "high": 6,
+    "medium": 23,
+    "monitor": 21
   },
-  "total_events": 40
+  "total_events": 50
 }
