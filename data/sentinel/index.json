@@ -1,14 +1,27 @@
 {
   "project": "GEOPÓLEM",
   "collection": "SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "updated_at": "2026-07-27T08:04:00+02:00",
+  "updated_at": "2026-08-03T08:08:00+02:00",
   "latest": "./weekly-brief.json",
   "feed": "./conflict-events.json",
   "items": [
     {
+      "id": "sentinel_weekly_brief_2026-07-27_2026-08-02",
+      "week_iso": "2026-W31",
+      "status": "published",
+      "generated_at": "2026-08-03T08:08:00+02:00",
+      "window_local": "2026-07-27T00:00:00+02:00 / 2026-08-02T23:59:59+02:00",
+      "main_status": "Tres acoples operativos confirmados · NASA/USGS sin match geoespacial directo",
+      "files": {
+        "app_json": "./sentinel_weekly_brief_2026-07-27_2026-08-02.json",
+        "web_json": "./weekly-brief.json",
+        "web_markdown": "./weekly-brief-2026-08-03.md"
+      }
+    },
+    {
       "id": "sentinel_weekly_brief_2026-07-20_2026-07-26",
       "week_iso": "2026-W30",
-      "status": "published",
+      "status": "archived",
       "generated_at": "2026-07-27T08:04:00+02:00",
       "window_local": "2026-07-20T00:00:00+02:00 / 2026-07-26T23:59:59+02:00",
       "main_status": "Acople ambiental significativo · agua e infraestructura civil",
