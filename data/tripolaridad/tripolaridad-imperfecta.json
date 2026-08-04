@@ -171,6 +171,102 @@
       "pressure": "Presión estadounidense y presencia portuaria china vía Hutchison.",
       "poles": ["us", "china"],
       "why_it_matters": "No domina el petróleo, pero sí condensa infraestructura, percepción de soberanía y competencia portuaria."
+    },
+    {
+      "id": "taiwan",
+      "name": "Estrecho de Taiwán",
+      "lat": 24,
+      "lng": 120.5,
+      "risk": "crítico",
+      "flow": "Ruta crítica de semiconductores y comercio Asia-Pacífico",
+      "trade_share": "Nodo de alta exposición tecnológica por TSMC y cadenas de chips",
+      "pressure": "Fricción directa China-EE. UU.; Rusia observa y explota la presión sobre el orden marítimo.",
+      "poles": ["china", "us", "russia"],
+      "why_it_matters": "Es el chokepoint que conecta WAICO con semiconductores, disuasión naval, IA y legitimidad del orden internacional."
+    },
+    {
+      "id": "gibraltar",
+      "name": "Estrecho de Gibraltar",
+      "lat": 36,
+      "lng": -5.4,
+      "risk": "bajo",
+      "flow": "≈100.000 buques/año",
+      "trade_share": "Paso atlántico-mediterráneo de alto volumen",
+      "pressure": "Alto tránsito, baja fricción tripolar directa; control y vigilancia euroatlántica.",
+      "poles": ["us", "eu"],
+      "why_it_matters": "Funciona como contraejemplo de Ormuz: mucha densidad logística, pero baja presión geopolítica directa."
+    },
+    {
+      "id": "korea",
+      "name": "Estrecho de Corea",
+      "lat": 34.5,
+      "lng": 129.5,
+      "risk": "medio",
+      "flow": "Ruta energética e industrial para Japón y Corea del Sur",
+      "trade_share": "Conecta aliados estadounidenses clave con flujos de energía y manufactura avanzada",
+      "pressure": "Tensión Corea del Norte, China, Japón y arquitectura de alianzas de EE. UU. en Asia Oriental.",
+      "poles": ["us", "china"],
+      "why_it_matters": "Es un punto de continuidad operacional para dos aliados tecnológicos centrales de Washington."
+    },
+    {
+      "id": "lombok",
+      "name": "Estrecho de Lombok",
+      "lat": -8.5,
+      "lng": 115.8,
+      "risk": "medio",
+      "flow": "Ruta alternativa profunda para superpetroleros",
+      "trade_share": "Vía de escape ante el Dilema de Malaca",
+      "pressure": "China busca resiliencia de rutas; Indonesia concentra valor geográfico sin alineamiento automático.",
+      "poles": ["china"],
+      "why_it_matters": "Si Malaca se encarece o se bloquea, Lombok se convierte en válvula de continuidad energética para China."
+    },
+    {
+      "id": "sunda",
+      "name": "Estrecho de la Sonda",
+      "lat": -6,
+      "lng": 105.8,
+      "risk": "bajo-medio",
+      "flow": "Ruta alternativa regional de menor capacidad que Lombok",
+      "trade_share": "Segunda vía de escape del arco indonesio",
+      "pressure": "Resiliencia logística china y control geográfico indonesio.",
+      "poles": ["china"],
+      "why_it_matters": "No sustituye a Malaca, pero amplía la matriz de rutas alternativas ante presión marítima."
+    },
+    {
+      "id": "florida",
+      "name": "Estrecho de Florida",
+      "lat": 24.5,
+      "lng": -80.5,
+      "risk": "bajo",
+      "flow": "Paso caribeño bajo predominio estadounidense",
+      "trade_share": "Nodo regional de navegación, seguridad y vigilancia",
+      "pressure": "Control estadounidense casi absoluto, con baja fricción tripolar directa.",
+      "poles": ["us"],
+      "why_it_matters": "Es el chokepoint del set que muestra control soberano estable, no disputa sistémica abierta."
+    },
+    {
+      "id": "windward",
+      "name": "Paso del Viento",
+      "lat": 20,
+      "lng": -74,
+      "risk": "bajo",
+      "flow": "Paso menor Caribe-Atlántico",
+      "trade_share": "Volumen inferior, valor geopolítico histórico",
+      "pressure": "Eco estratégico Cuba-Rusia dentro del Caribe estadounidense.",
+      "poles": ["us", "russia"],
+      "why_it_matters": "Su importancia no está en el volumen, sino en la memoria geopolítica del Caribe como zona sensible de EE. UU."
+    },
+    {
+      "id": "northern_sea_route",
+      "name": "Ruta Marítima del Norte (Ártico)",
+      "lat": 73,
+      "lng": 100,
+      "risk": "emergente",
+      "flow": "Ruta ártica emergente por deshielo",
+      "trade_share": "Potencial corredor alternativo Asia-Europa",
+      "pressure": "Rusia controla litoral e infraestructura; China busca acceso polar; EE. UU. vigila militarización ártica.",
+      "poles": ["russia", "china", "us"],
+      "why_it_matters": "Es el único chokepoint ampliado del tablero con control territorial ruso directo y relevancia creciente por clima, energía y rutas."
     }
   ],
   "corridors": [
