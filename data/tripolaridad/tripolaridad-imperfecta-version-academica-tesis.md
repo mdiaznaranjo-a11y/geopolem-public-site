@@ -20,6 +20,12 @@ La expresión “tripolaridad imperfecta” se usa aquí como marco analítico p
 
 La hipótesis GEOPÓLEM es que la competencia por IA está entrando en una fase de “territorialización infraestructural”. En esta fase, el poder no se expresa solo en quién produce mejores modelos o chips, sino en quién controla, interrumpe, asegura o regula los corredores físicos y normativos que sostienen la nube: energía, rutas marítimas, cables, minerales, pagos, centros de datos y estándares.
 
+### Tesis geoestratégica 2017-2026
+
+El análisis geoestratégico del período 2017-2026 demuestra que la tripolaridad imperfecta es inherentemente inestable, no por un exceso de confrontación directa, sino por un déficit de contención normativa. Esta inestabilidad se expresa en tres mecanismos interdependientes.
+
+Primero, la asimetría funcional consolida el desplazamiento normativo. La división de roles —“Rusia rompe, China absorbe”— permite que el eje sino-ruso desafíe la hegemonía estadounidense de manera más eficiente que si actuara como un bloque homogéneo. Segundo, el poder se materializa en la infraestructura: la competencia por la inteligencia artificial y la supremacía tecnológica —Pax Silica frente a WAICO— es indisociable del control físico sobre minerales críticos, cables submarinos y rutas marítimas como Taiwán y Malaca. Tercero, el silencio estratégico frente a transgresiones del derecho internacional normaliza tácticas híbridas y coerción económica, desplazando la Ventana de Overton hacia un sistema de bloques fragmentados y reglas incompatibles.
+
 ## Marco conceptual
 
 ### Tripolaridad imperfecta

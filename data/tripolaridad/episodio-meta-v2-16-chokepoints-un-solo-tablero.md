@@ -25,6 +25,12 @@ Fecha: 4 de agosto de 2026 · **Versión post-fact-check OSINT**
 
 GEOPÓLEM propone leer 2026 como una **tripolaridad imperfecta**: EE.UU., China y Rusia concentran poder sistémico, pero no con pesos equivalentes ni con la misma función. Confianza: **Media-Alta** para la lectura sistémica; **Alta** para la asimetría militar, nuclear y económica. La hipótesis central no es que exista un plan maestro, sino que la ausencia de un árbitro único permite que ciertos límites se desplacen con menos alarma pública: cuando un polo rompe una norma, los otros calculan si conviene denunciar, callar o convertir la ruptura en arquitectura. **Este patrón no se limita a Ormuz**: GEOPÓLEM selecciona 16 chokepoints para mostrar cómo energía, comercio, cables, chips, seguros, pagos y reglas forman un solo tablero.
 
+### Síntesis geoestratégica 2017-2026
+
+El análisis geoestratégico del período 2017-2026 demuestra que la tripolaridad imperfecta es inherentemente inestable, no por un exceso de confrontación directa, sino por un **déficit de contención normativa**. La asimetría funcional consolida el desplazamiento normativo: la división de roles —"Rusia rompe, China absorbe"— permite que el eje sino-ruso desafíe la hegemonía estadounidense de manera más eficiente que si actuara como un bloque homogéneo.
+
+El poder se materializa en la infraestructura. La competencia por la inteligencia artificial y la supremacía tecnológica —Pax Silica frente a WAICO— es indisociable del control físico sobre minerales críticos, cables submarinos y rutas marítimas como Taiwán y Malaca. El riesgo principal es el silencio estratégico: la falta de condena mutua entre polos frente a transgresiones del derecho internacional normaliza tácticas híbridas y coerción económica, desplazando la Ventana de Overton hacia un sistema de bloques fragmentados y reglas incompatibles.
+
 ## 2. Juicios Clave
 
 - **[JC-1]** La tripolaridad debe tratarse como **tesis de lectura**, no como categoría consensual del sistema internacional. Confianza: Media. Base: CARI la describe como configuración emergente y difusa; la tipología estándar sigue hablando de unipolaridad, bipolaridad y multipolaridad.
