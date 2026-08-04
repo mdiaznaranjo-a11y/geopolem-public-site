@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://geopolem.com/waico/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://geopolem.com/waico/" />
@@ -35,6 +35,18 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://geopolem.com/waico/" />
     <xhtml:link rel="alternate" hreflang="lb" href="https://geopolem.com/waico/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://geopolem.com/waico/" />
+  </url>
+  <url>
+    <loc>https://geopolem.com/tripolaridad/</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geopolem.com/tripolaridad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geopolem.com/tripolaridad/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://geopolem.com/tripolaridad/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://geopolem.com/tripolaridad/" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://geopolem.com/tripolaridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geopolem.com/tripolaridad/" />
   </url>
   <url>
     <loc>https://geopolem.com/dossiers/</loc>

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geopolem-command-v1.32.0';
+const CACHE_NAME = 'geopolem-command-v1.33.0';
 const CONFLICTS_DIR = './conflictos-activos/';
 const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
 const WATCHLIST_DIR = './conflict-watchlist-2026/';
@@ -25,6 +25,8 @@ const APP_SHELL = [
   './index.html',
   './talasocracia/index.html',
   './waico/index.html',
+  './tripolaridad/index.html',
+  './data/tripolaridad/tripolaridad-imperfecta.json',
   './app.html',
   './app.js',
   './api-adapter.js',

@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "id": "tripolaridad-imperfecta-mapa",
+    "title": "Mapa interactivo de la tripolaridad imperfecta",
+    "brand": "GEOPÓLEM",
+    "author": "María del Carmen Díaz Naranjo",
+    "generated_at": "2026-08-04T12:24:00+02:00",
+    "language": "es",
+    "editorial_status": "Mapa doctrinal y tablero interactivo. Algunas cifras proceden de la especificación técnica Manus y deben tratarse como base de trabajo pendiente de fact-check OSINT antes de convertirlas en afirmaciones audiovisuales definitivas.",
+    "source_url": "https://manus.im/share/file/5f897997-580c-4945-9333-0c58aa74ee43",
+    "youtube_long": "https://www.youtube.com/watch?v=3w6nY_b_1-Y",
+    "youtube_short": "https://www.youtube.com/shorts/bvHB8WvL_WA",
+    "close": "GEOPÓLEM. Bienvenidos al tablero."
+  },
+  "visual_code": {
+    "background": "#0A1628",
+    "us": "#1E6FD9",
+    "china": "#C0392B",
+    "russia": "#E67E22",
+    "risk_high": "#FF4444",
+    "risk_medium": "#FF8C00",
+    "risk_low": "#2ECC71",
+    "routes": "#5DADE2",
+    "disrupted": "#E74C3C",
+    "alternatives": "#F1C40F",
+    "geopolem": "#00B4A6",
+    "text": "#FFFFFF",
+    "muted": "#BDC3C7"
+  },
+  "editorial_thesis": {
+    "bluf": "El mapa no presenta un plan maestro. Presenta una arquitectura observable: tres potencias estructuran el tablero, las rutas críticas elevan el coste del movimiento, y la inteligencia artificial depende de energía, cables, chips, minerales, pagos y reglas.",
+    "formula": "Dato shock + ancla narrativa concreta + lectura de arquitectura, no conspiración.",
+    "connection_to_waico": "WAICO se entiende mejor cuando se coloca sobre el mismo tablero que Ormuz, cables submarinos, semiconductores, helio, remesas, cripto y minerales críticos.",
+    "why_now": "La disputa por IA se desplazó desde los modelos hacia la infraestructura que permite entrenarlos, conectarlos, alimentarlos y gobernarlos."
+  },
+  "poles": [
+    {
+      "id": "us",
+      "name": "Estados Unidos",
+      "color": "#1E6FD9",
+      "function": "Estructura alianzas, finanzas, sanciones, arquitectura militar y capacidad de mando global.",
+      "strengths": ["Alianzas NATO/G7/Quad/AUKUS", "dólar como reserva global", "poder naval", "ecosistema tecnológico"],
+      "vulnerabilities": ["dependencia de minerales críticos", "fractura interna", "deuda elevada", "exposición logística global"]
+    },
+    {
+      "id": "china",
+      "name": "China",
+      "color": "#C0392B",
+      "function": "Estructura producción, infraestructura, deuda, cadenas industriales, manufactura y gobernanza alternativa.",
+      "strengths": ["escala manufacturera", "BRI", "AIIB", "SCO", "BRICS+", "WAICO", "minerales críticos"],
+      "vulnerabilities": ["dilema de Malaca", "dependencia energética marítima", "presión tecnológica occidental", "desaceleración interna"]
+    },
+    {
+      "id": "russia",
+      "name": "Rusia",
+      "color": "#E67E22",
+      "function": "Acelera disrupción, presión militar, energía, veto estratégico y guerra híbrida.",
+      "strengths": ["arsenal nuclear", "hidrocarburos", "ciberoperaciones", "capacidad de sabotaje", "veto ONU"],
+      "vulnerabilities": ["sanciones", "dependencia de China", "coste de Ucrania", "flota sombra", "acceso a chokepoints"]
+    },
+    {
+      "id": "eu",
+      "name": "Unión Europea",
+      "color": "#A78BFA",
+      "function": "Regula, fija estándares, financia resiliencia y disputa legitimidad normativa.",
+      "strengths": ["poder regulatorio", "mercado", "normas técnicas", "capacidad sancionatoria"],
+      "vulnerabilities": ["dependencia energética y tecnológica", "fragmentación política", "brecha defensa-industria"]
+    },
+    {
+      "id": "global_south",
+      "name": "Sur Global",
+      "color": "#10B981",
+      "function": "Maniobra entre potencias, arbitra recursos, acepta o rechaza arquitecturas y busca autonomía estratégica.",
+      "strengths": ["recursos", "demografía", "voto multilateral", "rutas y territorios críticos"],
+      "vulnerabilities": ["deuda", "brecha tecnológica", "presión de financiación", "fragilidad estatal"]
+    }
+  ],
+  "chokepoints": [
+    {
+      "id": "hormuz",
+      "name": "Estrecho de Ormuz",
+      "lat": 26.5,
+      "lng": 56.3,
+      "risk": "crítico",
+      "flow": "20.9 Mb/d en 1H25",
+      "trade_share": "≈26% del comercio marítimo de petróleo",
+      "pressure": "Irán y proxies presionan; EE. UU. e Israel responden; China y Rusia observan con silencio estratégico.",
+      "poles": ["china", "us", "russia"],
+      "why_it_matters": "No es solo petróleo: Ormuz conecta energía, seguros, pagos, cripto, remesas y continuidad operacional de la IA."
+    },
+    {
+      "id": "malacca",
+      "name": "Estrecho de Malaca",
+      "lat": 1.3,
+      "lng": 103.8,
+      "risk": "alto",
+      "flow": "23.2 Mb/d",
+      "trade_share": "≈29% del petróleo marítimo",
+      "pressure": "Presencia naval estadounidense y dependencia energética china.",
+      "poles": ["china", "us"],
+      "why_it_matters": "Es el dilema marítimo central de China: crecimiento industrial con vulnerabilidad de paso."
+    },
+    {
+      "id": "suez",
+      "name": "Suez + SUMED",
+      "lat": 30,
+      "lng": 32.5,
+      "risk": "alto",
+      "flow": "4.9 Mb/d, reducido por crisis del Mar Rojo",
+      "trade_share": "≈23% del comercio global",
+      "pressure": "Disrupción 2023-2025 por ataques en el corredor Mar Rojo.",
+      "poles": ["us", "china", "russia"],
+      "why_it_matters": "Cuando Suez se encarece, Europa, Asia y la logística energética recalculan rutas."
+    },
+    {
+      "id": "bab-el-mandeb",
+      "name": "Bab el-Mandeb",
+      "lat": 12.5,
+      "lng": 43.3,
+      "risk": "crítico",
+      "flow": "4.2 Mb/d, reducido cerca de 50% frente a 2023",
+      "trade_share": "≈12% del comercio global",
+      "pressure": "Houthis/Iran presionan; EE. UU. sostiene Operation Guardian.",
+      "poles": ["us", "china", "russia"],
+      "why_it_matters": "Es el punto donde conflicto local, navegación global y coste energético se fusionan."
+    },
+    {
+      "id": "cape",
+      "name": "Cabo de Buena Esperanza",
+      "lat": -34.4,
+      "lng": 18.5,
+      "risk": "medio-alto",
+      "flow": "9.1 Mb/d por rerouting del Mar Rojo",
+      "trade_share": "Ruta alternativa crítica",
+      "pressure": "Aumento de tráfico por desvíos desde Suez/Bab el-Mandeb.",
+      "poles": ["us", "china", "eu"],
+      "why_it_matters": "La alternativa no elimina el riesgo: lo transforma en tiempo, coste, seguros y capacidad portuaria."
+    },
+    {
+      "id": "danish",
+      "name": "Estrechos Daneses",
+      "lat": 57,
+      "lng": 10,
+      "risk": "medio",
+      "flow": "4.9 Mb/d",
+      "trade_share": "≈6% del comercio",
+      "pressure": "Flota sombra rusa, sanciones y vigilancia OTAN.",
+      "poles": ["russia", "eu", "us"],
+      "why_it_matters": "El Báltico concentra energía, sanciones, cables, puertos y vigilancia híbrida."
+    },
+    {
+      "id": "turkish",
+      "name": "Estrechos Turcos",
+      "lat": 41,
+      "lng": 29,
+      "risk": "medio",
+      "flow": "3.7 Mb/d",
+      "trade_share": "≈7% del comercio",
+      "pressure": "Exportaciones energéticas rusas y control turco del paso.",
+      "poles": ["russia", "eu"],
+      "why_it_matters": "Turquía convierte geografía en arbitraje estratégico entre Rusia, OTAN, energía y Mar Negro."
+    },
+    {
+      "id": "panama",
+      "name": "Canal de Panamá",
+      "lat": 9,
+      "lng": -79.5,
+      "risk": "medio",
+      "flow": "2.3 Mb/d",
+      "trade_share": "≈1% del petróleo, alto valor simbólico/logístico",
+      "pressure": "Presión estadounidense y presencia portuaria china vía Hutchison.",
+      "poles": ["us", "china"],
+      "why_it_matters": "No domina el petróleo, pero sí condensa infraestructura, percepción de soberanía y competencia portuaria."
+    }
+  ],
+  "corridors": [
+    { "id": "south_china_sea", "name": "Mar de China Meridional", "lat": 15, "lng": 114, "risk": "alto", "trade_share": "≈37% del comercio global", "pressure": "Reclamaciones chinas, FONOP estadounidenses y narrativa rusa favorable a China.", "poles": ["china", "us", "russia"] },
+    { "id": "east_china_sea", "name": "Mar de China Oriental", "lat": 30, "lng": 125, "risk": "medio-alto", "trade_share": "≈26% del comercio global", "pressure": "Taiwán, Japón, Corea, rutas de chips y presión naval.", "poles": ["china", "us"] },
+    { "id": "gibraltar", "name": "Gibraltar", "lat": 36, "lng": -5.4, "risk": "bajo", "trade_share": "≈28% del comercio global en tránsito ampliado", "pressure": "Paso atlántico-mediterráneo de valor logístico estructural.", "poles": ["eu", "us"] },
+    { "id": "english_channel", "name": "Canal de la Mancha", "lat": 51, "lng": 1.5, "risk": "bajo", "trade_share": "≈24% del comercio global en corredor europeo", "pressure": "Densidad logística, energía, migración y seguridad marítima europea.", "poles": ["eu"] }
+  ],
+  "routes": [
+    {
+      "id": "persian-gulf-asia",
+      "type": "trade",
+      "name": "Golfo Pérsico → Asia",
+      "volume": "alto",
+      "points": [[56.3, 26.5], [70, 18], [80, 8], [95, 3], [103.8, 1.3], [114, 15]]
+    },
+    {
+      "id": "red-sea-europe",
+      "type": "disrupted",
+      "name": "Mar Rojo → Suez → Europa",
+      "volume": "alto",
+      "points": [[43.3, 12.5], [38, 20], [32.5, 30], [18, 36], [5, 40], [-5.4, 36]]
+    },
+    {
+      "id": "cape-rerouting",
+      "type": "alternative",
+      "name": "Desvío Cabo de Buena Esperanza",
+      "volume": "alto",
+      "points": [[56.3, 26.5], [60, 5], [45, -15], [18.5, -34.4], [0, -28], [-5.4, 36]]
+    },
+    {
+      "id": "pacific-panama",
+      "type": "trade",
+      "name": "Pacífico → Panamá → Atlántico",
+      "volume": "medio",
+      "points": [[-125, 35], [-105, 20], [-79.5, 9], [-65, 20], [-40, 35]]
+    },
+    {
+      "id": "baltic-black-sea",
+      "type": "disrupted",
+      "name": "Báltico / Mar Negro bajo presión",
+      "volume": "medio",
+      "points": [[10, 57], [20, 55], [29, 41], [35, 44]]
+    }
+  ],
+  "theaters": [
+    { "id": "red_sea", "name": "Mar Rojo / Golfo de Adén", "lat": 17, "lng": 42, "radius": 38, "risk": "crítico", "label": "navegación y energía" },
+    { "id": "hormuz_theater", "name": "Ormuz / Golfo Pérsico", "lat": 26, "lng": 54, "radius": 28, "risk": "crítico", "label": "petróleo, pagos, IA" },
+    { "id": "south_china_theater", "name": "Mar de China Meridional", "lat": 15, "lng": 114, "radius": 44, "risk": "alto", "label": "chips, rutas, disuasión" },
+    { "id": "baltic_theater", "name": "Báltico", "lat": 58, "lng": 20, "radius": 28, "risk": "medio", "label": "flota sombra y cables" }
+  ],
+  "minerals": [
+    { "mineral": "Galio", "china_share": "98.7%", "strategic_use": "semiconductores, radares, defensa, IA" },
+    { "mineral": "Magnesio", "china_share": "95%", "strategic_use": "aleaciones, autos, aeroespacial" },
+    { "mineral": "Niobio", "china_share": "dependencia de importación", "strategic_use": "acero avanzado, defensa" },
+    { "mineral": "Tungsteno", "china_share": "alta", "strategic_use": "munición, herramientas, industria pesada" },
+    { "mineral": "Bismuto", "china_share": "alta", "strategic_use": "metalurgia, farmacéutica, defensa" },
+    { "mineral": "Grafito", "china_share": "dominante en procesamiento", "strategic_use": "baterías, almacenamiento energético" },
+    { "mineral": "Silicio", "china_share": "alta en producción", "strategic_use": "solar, semiconductores" },
+    { "mineral": "Cobalto", "china_share": "dominante en refinado", "strategic_use": "baterías, defensa, aeroespacial" },
+    { "mineral": "Tierras raras", "china_share": "69.2%", "strategic_use": "imanes, defensa, electrónica, IA" },
+    { "mineral": "Antimonio", "china_share": "alta", "strategic_use": "retardantes, munición, baterías" },
+    { "mineral": "Aluminio", "china_share": "muy alta", "strategic_use": "industria, energía, transporte" },
+    { "mineral": "Litio", "china_share": "dominante en refinado", "strategic_use": "baterías, movilidad, centros de datos" }
+  ],
+  "normative_erosion": [
+    { "year": "2017", "event": "Retirada estadounidense del TPP y anuncio de salida del Acuerdo de París", "layer": "normas y comercio" },
+    { "year": "2018-2019", "event": "Guerra comercial EE. UU.-China", "layer": "tecnología y aranceles" },
+    { "year": "2020", "event": "Ley de Seguridad Nacional en Hong Kong", "layer": "soberanía y legitimidad" },
+    { "year": "2021", "event": "Salida de Afganistán", "layer": "credibilidad y alianzas" },
+    { "year": "2022", "event": "Ucrania y Nord Stream", "layer": "energía, guerra, infraestructura" },
+    { "year": "2023-2025", "event": "Crisis del Mar Rojo y ataques Houthi", "layer": "rutas críticas" },
+    { "year": "2023-2026", "event": "Restricciones chinas sobre minerales críticos", "layer": "cadenas de suministro" },
+    { "year": "2025", "event": "Aranceles universales y expansión BRICS+", "layer": "fragmentación económica" },
+    { "year": "2026", "event": "Crisis de Ormuz y presión sobre cables / rutas", "layer": "energía y conectividad" },
+    { "year": "2026", "event": "WAICO como arquitectura alternativa de gobernanza IA", "layer": "noopolitik y reglas" }
+  ]
+}

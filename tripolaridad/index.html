@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Mapa interactivo de la tripolaridad imperfecta · GEOPÓLEM</title>
+<meta name="description" content="Mapa interactivo GEOPÓLEM de la tripolaridad imperfecta: chokepoints, rutas, teatros activos, minerales críticos, WAICO, Ormuz, cables submarinos y arquitectura de poder." />
+<meta name="theme-color" content="#0A1628" />
+<link rel="canonical" href="https://geopolem.com/tripolaridad/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="GEOPÓLEM" />
+<meta property="og:title" content="Mapa interactivo de la tripolaridad imperfecta · GEOPÓLEM" />
+<meta property="og:description" content="No es conspiración. Es arquitectura: poder, rutas, energía, cables, minerales y gobernanza IA en un mismo tablero." />
+<meta property="og:url" content="https://geopolem.com/tripolaridad/" />
+<meta property="og:image" content="https://i.ytimg.com/vi/3w6nY_b_1-Y/maxresdefault.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mapa interactivo de la tripolaridad imperfecta · GEOPÓLEM" />
+<meta name="twitter:description" content="WAICO, Ormuz, cables submarinos, minerales críticos y rutas estratégicas leídos como arquitectura de poder." />
+<meta name="twitter:image" content="https://i.ytimg.com/vi/3w6nY_b_1-Y/maxresdefault.jpg" />
+<link rel="manifest" href="../manifest.webmanifest" />
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.bunny.net/css?family=jetbrains-mono:400,500,600|inter:400,500,600,700,800|space-grotesk:600,700" />
+<style>
+  :root{
+    color-scheme:dark;
+    --bg:#0A1628; --bg2:#05080c; --panel:#0d1828; --panel2:#101d31;
+    --line:rgba(0,180,166,.24); --line-soft:rgba(189,195,199,.14);
+    --ink:#fff; --muted:#BDC3C7; --dim:#8291a3;
+    --geo:#00B4A6; --us:#1E6FD9; --china:#C0392B; --russia:#E67E22;
+    --high:#FF4444; --medium:#FF8C00; --low:#2ECC71; --route:#5DADE2; --alt:#F1C40F;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --sans:'Inter',system-ui,-apple-system,sans-serif;
+    --display:'Space Grotesk','Inter',system-ui,sans-serif;
+    --max:1240px; --gutter:clamp(1rem,4vw,2.5rem);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;background-image:radial-gradient(900px 520px at 82% -8%,rgba(0,180,166,.16),transparent 65%),radial-gradient(680px 460px at 12% 112%,rgba(192,57,43,.12),transparent 62%)}
+  a{color:inherit}
+  .shell{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--geo);color:#031018;padding:.6rem 1rem;z-index:100;font-family:var(--mono)}
+  .skip-link:focus{left:0}
+  :focus-visible{outline:2px solid var(--geo);outline-offset:3px}
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(10,22,40,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .topbar__inner{max-width:var(--max);margin:0 auto;padding:.6rem var(--gutter);display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+  .brand svg{width:30px;height:30px;color:var(--geo)}
+  .brand b{font-family:var(--display);letter-spacing:.06em}
+  .brand span{display:block;font-family:var(--mono);font-size:.56rem;color:var(--muted);letter-spacing:.17em;text-transform:uppercase;margin-top:-3px}
+  nav{margin-left:auto;display:flex;gap:.2rem;flex-wrap:wrap}
+  nav a{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted);border:1px solid transparent;border-radius:4px;padding:.38rem .52rem}
+  nav a:hover,nav a[aria-current="page"]{color:#fff;border-color:var(--line);background:rgba(0,180,166,.1)}
+  @media(max-width:840px){nav{width:100%;margin-left:0;overflow:auto;flex-wrap:nowrap;scrollbar-width:none}nav::-webkit-scrollbar{display:none}}
+  .hero{padding:clamp(2rem,6vw,4.6rem) 0 2.6rem;border-bottom:1px solid var(--line-soft)}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:1.6rem}
+  @media(min-width:940px){.hero-grid{grid-template-columns:1.35fr .8fr;align-items:end}}
+  .kicker{font-family:var(--mono);font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--geo);display:block;margin-bottom:.75rem}
+  h1{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);line-height:1.05;margin:0 0 1rem;letter-spacing:-.02em}
+  h1 span{color:var(--geo)}
+  .lede{font-size:clamp(1rem,1.5vw,1.15rem);color:#d8eef1;max-width:70ch;margin:0}
+  .sub{color:var(--muted);max-width:70ch;margin:.85rem 0 0}
+  .actions{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:1.35rem}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;text-decoration:none;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line-soft);border-radius:4px;padding:.72rem 1rem;color:#dce7ee;background:rgba(255,255,255,.04)}
+  .btn:hover{border-color:var(--geo);background:rgba(0,180,166,.12);color:#fff}
+  .btn--primary{border-color:rgba(0,180,166,.5);color:#a8fff7;background:rgba(0,180,166,.12)}
+  .brief-card{border:1px solid var(--line);background:linear-gradient(180deg,rgba(13,24,40,.92),rgba(5,8,12,.94));border-radius:8px;padding:1.2rem}
+  .brief-card dl{margin:0;display:grid;gap:.75rem}
+  .brief-card dt{font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--geo)}
+  .brief-card dd{margin:.1rem 0 0;color:var(--muted);font-size:.9rem}
+  section{padding:clamp(2.4rem,5vw,4rem) 0}
+  section+section{border-top:1px solid var(--line-soft)}
+  h2{font-family:var(--display);font-size:clamp(1.35rem,3vw,2.15rem);line-height:1.15;margin:0 0 .65rem}
+  h3{font-family:var(--display);margin:0 0 .4rem}
+  .section-lede{color:var(--muted);max-width:76ch;margin:0 0 1.5rem}
+  .map-shell{display:grid;grid-template-columns:1fr;gap:1rem}
+  @media(min-width:1050px){.map-shell{grid-template-columns:minmax(0,1.5fr) .75fr}}
+  .map-card,.panel{border:1px solid var(--line);background:rgba(13,24,40,.72);border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.18)}
+  .map-card{overflow:hidden}
+  .map-toolbar{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.85rem 1rem;border-bottom:1px solid var(--line-soft)}
+  .toggles{display:flex;gap:.4rem;flex-wrap:wrap}
+  .toggle{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line-soft);background:rgba(255,255,255,.03);border-radius:999px;padding:.38rem .6rem;cursor:pointer}
+  .toggle[aria-pressed="true"]{color:#fff;border-color:var(--geo);background:rgba(0,180,166,.16)}
+  svg#tripolar-map{display:block;width:100%;height:auto;min-height:360px;background:radial-gradient(circle at 50% 50%,rgba(0,180,166,.08),transparent 58%),#071220}
+  .continent{fill:#16243a;stroke:#29496c;stroke-width:1;opacity:.9}
+  .graticule{stroke:rgba(189,195,199,.08);stroke-width:.65}
+  .route{fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;opacity:.88}
+  .route.trade{stroke:var(--route)}
+  .route.disrupted{stroke:var(--high);stroke-dasharray:8 7}
+  .route.alternative{stroke:var(--alt);stroke-dasharray:3 7}
+  .theater{fill:rgba(255,68,68,.13);stroke:rgba(255,68,68,.35);stroke-width:1.1}
+  .point{cursor:pointer}
+  .point circle.core{stroke:#fff;stroke-width:1.5}
+  .point text{font-family:var(--mono);font-size:10px;fill:#d9eef1;text-shadow:0 1px 5px #000;pointer-events:none}
+  .pulse{opacity:.18;animation:pulse 1.9s infinite ease-out}
+  @keyframes pulse{0%{transform:scale(.8);opacity:.28}100%{transform:scale(2);opacity:0}}
+  @media(prefers-reduced-motion:reduce){.pulse{animation:none}}
+  .details{padding:1.15rem;min-height:100%}
+  .risk{display:inline-flex;font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line-soft);border-radius:999px;padding:.22rem .55rem;margin-bottom:.75rem}
+  .risk.high{color:#ffcaca;border-color:rgba(255,68,68,.42);background:rgba(255,68,68,.1)}
+  .risk.medium{color:#ffd7a7;border-color:rgba(255,140,0,.42);background:rgba(255,140,0,.1)}
+  .risk.low{color:#c6f8d9;border-color:rgba(46,204,113,.42);background:rgba(46,204,113,.08)}
+  .details h3{font-size:1.45rem}
+  .details p{color:var(--muted);margin:.55rem 0}
+  .mini{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin:1rem 0}
+  .mini div{border:1px solid var(--line-soft);border-radius:5px;padding:.7rem;background:rgba(5,8,12,.42)}
+  .mini span{display:block;font-family:var(--mono);font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+  .mini b{font-size:.86rem;color:#fff}
+  .chips{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.8rem}
+  .chip{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;border:1px solid var(--line-soft);border-radius:3px;padding:.24rem .48rem;color:#c9d6e2}
+  .grid{display:grid;grid-template-columns:1fr;gap:1rem}
+  @media(min-width:760px){.grid--3{grid-template-columns:repeat(3,1fr)}.grid--2{grid-template-columns:repeat(2,1fr)}}
+  .card{border:1px solid var(--line-soft);background:rgba(13,24,40,.58);border-radius:8px;padding:1rem}
+  .card p{color:var(--muted);margin:.35rem 0 0;font-size:.92rem}
+  .pole-us{border-left:3px solid var(--us)}.pole-china{border-left:3px solid var(--china)}.pole-russia{border-left:3px solid var(--russia)}
+  .table-wrap{overflow:auto;border:1px solid var(--line-soft);border-radius:8px;background:rgba(13,24,40,.5)}
+  table{border-collapse:collapse;width:100%;min-width:760px;font-size:.88rem}
+  th,td{text-align:left;vertical-align:top;padding:.78rem .9rem;border-bottom:1px solid var(--line-soft)}
+  th{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--geo);background:rgba(5,8,12,.48)}
+  td{color:var(--muted)}
+  footer{border-top:1px solid var(--line-soft);padding:2rem 0;color:var(--muted)}
+  .note{border:1px solid rgba(255,140,0,.28);background:rgba(255,140,0,.08);border-radius:8px;padding:1rem;color:#f2d8bd}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="../index.html" aria-label="GEOPÓLEM inicio">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="5" fill="currentColor"/><path d="M32 4v12M32 48v12M4 32h12M48 32h12M15 15l8 8M41 41l8 8M49 15l-8 8M23 41l-8 8" stroke="currentColor" stroke-width="1.4"/></svg>
+      <span><b>GEOPÓLEM</b><span>Mapa doctrinal</span></span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a href="../waico/index.html">WAICO</a>
+      <a href="../talasocracia/index.html">Talasocracia</a>
+      <a href="../app.html">App</a>
+      <a href="./" aria-current="page">Tripolaridad</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div>
+        <span class="kicker">GEOPÓLEM · Tripolaridad imperfecta</span>
+        <h1>El tablero no es multipolar: es <span>tripolar, imperfecto y físico</span>.</h1>
+        <p class="lede">Este mapa coloca WAICO, Ormuz, cables submarinos, minerales críticos y rutas marítimas en una misma arquitectura de poder. No dice que exista un plan oculto. Muestra cómo la infraestructura vuelve visible la competencia.</p>
+        <p class="sub">La pregunta editorial es directa: ¿por qué WAICO ahora, justo cuando el tablero energético, digital y marítimo se mueve al mismo tiempo?</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="#mapa">Abrir mapa interactivo</a>
+          <a class="btn" href="../waico/index.html">Ver expediente WAICO</a>
+          <a class="btn" href="https://www.youtube.com/watch?v=3w6nY_b_1-Y" target="_blank" rel="noopener">Video largo YouTube ↗</a>
+          <a class="btn" href="https://www.youtube.com/shorts/bvHB8WvL_WA" target="_blank" rel="noopener">Short ↗</a>
+          <a class="btn" href="https://manus.im/share/file/5f897997-580c-4945-9333-0c58aa74ee43" target="_blank" rel="noopener">Paquete Manus / tesis ↗</a>
+        </div>
+      </div>
+      <aside class="brief-card" aria-label="Síntesis editorial">
+        <dl>
+          <div><dt>Lectura</dt><dd>Arquitectura, no conspiración.</dd></div>
+          <div><dt>Fórmula</dt><dd>Dato shock + ancla concreta + mapa de poder.</dd></div>
+          <div><dt>Uso</dt><dd>Web/app, YouTube, redes, Manus y tesis.</dd></div>
+          <div><dt>Estado</dt><dd>Mapa doctrinal con datos base; cifras sensibles requieren fact-check OSINT antes de informe final.</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section id="mapa">
+    <div class="shell">
+      <span class="kicker">Mapa operativo</span>
+      <h2>Chokepoints, rutas y teatros activos</h2>
+      <p class="section-lede">Activa y desactiva capas. Haz clic sobre cada punto para leer el acople estratégico: energía, comercio, conectividad, pagos, IA y poder.</p>
+      <div class="map-shell">
+        <div class="map-card">
+          <div class="map-toolbar">
+            <div class="toggles" aria-label="Capas del mapa">
+              <button class="toggle" type="button" data-layer="routes" aria-pressed="true">Rutas</button>
+              <button class="toggle" type="button" data-layer="theaters" aria-pressed="true">Teatros</button>
+              <button class="toggle" type="button" data-layer="chokepoints" aria-pressed="true">Chokepoints</button>
+              <button class="toggle" type="button" data-layer="corridors" aria-pressed="true">Corredores</button>
+            </div>
+            <span class="kicker" style="margin:0;color:var(--dim)">Risk layer · 2026 working board</span>
+          </div>
+          <svg id="tripolar-map" viewBox="0 0 1000 500" role="img" aria-label="Mapa interactivo de chokepoints y rutas de la tripolaridad imperfecta"></svg>
+        </div>
+        <aside class="panel details" id="details" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shell">
+      <span class="kicker">Lectura de poder</span>
+      <h2>Quién estructura, quién acelera, quién maniobra</h2>
+      <div class="grid grid--3" id="poles"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shell">
+      <span class="kicker">Cadenas materiales</span>
+      <h2>Minerales críticos: la IA también es industria</h2>
+      <p class="section-lede">La gobernanza de IA no puede separarse de semiconductores, baterías, defensa, energía y refinado. Esta tabla queda como capa de trabajo para el informe posterior.</p>
+      <div class="table-wrap">
+        <table id="minerals">
+          <thead><tr><th>Mineral</th><th>Posición china / dependencia</th><th>Uso estratégico</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shell">
+      <span class="kicker">Línea de tiempo</span>
+      <h2>Erosión normativa y fragmentación del tablero</h2>
+      <p class="section-lede">Esta cronología no sustituye el fact-check; organiza los hitos que ayudan a explicar por qué WAICO aparece cuando la infraestructura crítica vuelve al centro.</p>
+      <div class="grid grid--2" id="timeline"></div>
+      <div class="note" style="margin-top:1rem"><strong>Nota metodológica.</strong> Las cifras de la especificación Manus quedan etiquetadas como base de trabajo. Antes de publicarlas en un informe académico definitivo, aplicar la metodología OSINT GEOPÓLEM: fuente primaria, segunda fuente independiente, contra-búsqueda y nivel de confianza.</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="shell">
+    <p>GEOPÓLEM · María del Carmen Díaz Naranjo · Mapa interactivo de la tripolaridad imperfecta.</p>
+    <p>GEOPÓLEM. Bienvenidos al tablero.</p>
+  </div>
+</footer>
+
+<script type="module">
+import { CONTINENTS, project } from '../worldmap.js';
+
+const svg = document.getElementById('tripolar-map');
+const details = document.getElementById('details');
+const active = { routes:true, theaters:true, chokepoints:true, corridors:true };
+let data;
+
+const ns = 'http://www.w3.org/2000/svg';
+const el = (name, attrs = {}) => {
+  const node = document.createElementNS(ns, name);
+  Object.entries(attrs).forEach(([k,v]) => node.setAttribute(k, v));
+  return node;
+};
+const riskClass = (risk = '') => risk.includes('crítico') || risk.includes('alto') ? 'high' : risk.includes('medio') ? 'medium' : 'low';
+const riskColor = (risk = '') => riskClass(risk) === 'high' ? '#FF4444' : riskClass(risk) === 'medium' ? '#FF8C00' : '#2ECC71';
+const routePath = points => points.map(([lng,lat], i) => {
+  const [x,y] = project(lng, lat);
+  return `${i ? 'L' : 'M'} ${x.toFixed(1)} ${y.toFixed(1)}`;
+}).join(' ');
+
+function drawBase() {
+  for (let lng = -180; lng <= 180; lng += 30) {
+    const [x1,y1] = project(lng, -80);
+    const [x2,y2] = project(lng, 80);
+    svg.appendChild(el('line', { x1, y1, x2, y2, class:'graticule' }));
+  }
+  for (let lat = -60; lat <= 60; lat += 30) {
+    const [x1,y1] = project(-180, lat);
+    const [x2,y2] = project(180, lat);
+    svg.appendChild(el('line', { x1, y1, x2, y2, class:'graticule' }));
+  }
+  CONTINENTS.forEach(c => svg.appendChild(el('path', { d:c.d, class:'continent' })));
+}
+
+function drawRoutes() {
+  const group = el('g', { 'data-group':'routes' });
+  data.routes.forEach(r => group.appendChild(el('path', { d: routePath(r.points), class:`route ${r.type}` })));
+  svg.appendChild(group);
+}
+
+function drawTheaters() {
+  const group = el('g', { 'data-group':'theaters' });
+  data.theaters.forEach(t => {
+    const [x,y] = project(t.lng, t.lat);
+    group.appendChild(el('circle', { cx:x, cy:y, r:t.radius, class:'theater' }));
+  });
+  svg.appendChild(group);
+}
+
+function makePoint(item, type) {
+  const [x,y] = project(item.lng, item.lat);
+  const g = el('g', { class:'point', tabindex:'0', role:'button', 'aria-label': item.name, 'data-id':item.id });
+  const color = riskColor(item.risk);
+  g.appendChild(el('circle', { cx:x, cy:y, r: type === 'corridor' ? 7 : 10, fill:color, class:'pulse', style:`transform-origin:${x}px ${y}px` }));
+  g.appendChild(el('circle', { cx:x, cy:y, r: type === 'corridor' ? 5 : 7, fill:color, class:'core' }));
+  g.appendChild(el('text', { x:x + 10, y:y - 10 })).textContent = item.name;
+  g.addEventListener('click', () => select(item, type));
+  g.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(item, type); } });
+  return g;
+}
+
+function drawPoints() {
+  const chok = el('g', { 'data-group':'chokepoints' });
+  data.chokepoints.forEach(item => chok.appendChild(makePoint(item, 'chokepoint')));
+  svg.appendChild(chok);
+  const cor = el('g', { 'data-group':'corridors' });
+  data.corridors.forEach(item => cor.appendChild(makePoint(item, 'corridor')));
+  svg.appendChild(cor);
+}
+
+function select(item, type) {
+  const poles = (item.poles || []).map(p => `<span class="chip">${p}</span>`).join('');
+  details.innerHTML = `
+    <span class="risk ${riskClass(item.risk)}">${type === 'corridor' ? 'Corredor' : 'Chokepoint'} · ${item.risk}</span>
+    <h3>${item.name}</h3>
+    <p>${item.why_it_matters || item.pressure}</p>
+    <div class="mini">
+      <div><span>Flujo</span><b>${item.flow || 'n/d'}</b></div>
+      <div><span>Comercio</span><b>${item.trade_share || 'n/d'}</b></div>
+    </div>
+    <p><strong>Presión:</strong> ${item.pressure}</p>
+    <div class="chips">${poles}</div>
+  `;
+}
+
+function renderPoles() {
+  const wrap = document.getElementById('poles');
+  wrap.innerHTML = data.poles.map(p => `
+    <article class="card pole-${p.id === 'global_south' ? '' : p.id}">
+      <h3 style="color:${p.color}">${p.name}</h3>
+      <p>${p.function}</p>
+      <p><strong>Fortalezas:</strong> ${p.strengths.join(' · ')}</p>
+      <p><strong>Vulnerabilidades:</strong> ${p.vulnerabilities.join(' · ')}</p>
+    </article>`).join('');
+}
+
+function renderMinerals() {
+  document.querySelector('#minerals tbody').innerHTML = data.minerals.map(m => `
+    <tr><td>${m.mineral}</td><td>${m.china_share}</td><td>${m.strategic_use}</td></tr>`).join('');
+}
+
+function renderTimeline() {
+  document.getElementById('timeline').innerHTML = data.normative_erosion.map(e => `
+    <article class="card"><span class="kicker">${e.year}</span><h3>${e.event}</h3><p>${e.layer}</p></article>`).join('');
+}
+
+function applyLayers() {
+  Object.entries(active).forEach(([layer, isOn]) => {
+    document.querySelectorAll(`[data-group="${layer}"]`).forEach(node => node.style.display = isOn ? '' : 'none');
+  });
+}
+
+document.querySelectorAll('.toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const layer = btn.dataset.layer;
+    active[layer] = !active[layer];
+    btn.setAttribute('aria-pressed', String(active[layer]));
+    applyLayers();
+  });
+});
+
+try {
+  data = await fetch('../data/tripolaridad/tripolaridad-imperfecta.json', { cache:'no-store' }).then(r => {
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return r.json();
+  });
+  drawBase();
+  drawRoutes();
+  drawTheaters();
+  drawPoints();
+  renderPoles();
+  renderMinerals();
+  renderTimeline();
+  select(data.chokepoints[0], 'chokepoint');
+} catch (error) {
+  details.innerHTML = '<span class="risk high">Error</span><h3>No se pudo cargar el tablero</h3><p>Revisa el archivo JSON de datos de tripolaridad.</p>';
+  console.error(error);
+}
+</script>
+</body>
+</html>

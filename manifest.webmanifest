@@ -59,6 +59,13 @@
       "description": "Abrir la sala situacional Conflict Watchlist 2026 con datos simulados.",
       "url": "./conflict-watchlist-2026/index.html",
       "icons": [{ "src": "./icons/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Mapa de tripolaridad imperfecta",
+      "short_name": "Tripolaridad",
+      "description": "Abrir el mapa interactivo de chokepoints, rutas, WAICO, Ormuz, cables y minerales críticos.",
+      "url": "./tripolaridad/index.html",
+      "icons": [{ "src": "./icons/icon-192.svg", "sizes": "192x192" }]
     }
   ]
 }
