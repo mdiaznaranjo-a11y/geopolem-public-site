@@ -3,6 +3,7 @@
 Autora: María del Carmen Díaz Naranjo  
 Fecha: 4 agosto 2026  
 Uso: versión académica para tesis, Manus y archivo doctrinal GEOPÓLEM  
+Anexo Manus doctrinal: https://manus.im/share/file/88b3bf0c-0d88-4268-84ac-139fa7745294  
 
 ---
 
@@ -25,6 +26,8 @@ La hipótesis GEOPÓLEM es que la competencia por IA está entrando en una fase 
 El análisis geoestratégico del período 2017-2026 demuestra que la tripolaridad imperfecta es inherentemente inestable, no por un exceso de confrontación directa, sino por un déficit de contención normativa. Esta inestabilidad se expresa en tres mecanismos interdependientes.
 
 Primero, la asimetría funcional consolida el desplazamiento normativo. La división de roles —“Rusia rompe, China absorbe”— permite que el eje sino-ruso desafíe la hegemonía estadounidense de manera más eficiente que si actuara como un bloque homogéneo. Segundo, el poder se materializa en la infraestructura: la competencia por la inteligencia artificial y la supremacía tecnológica —Pax Silica frente a WAICO— es indisociable del control físico sobre minerales críticos, cables submarinos y rutas marítimas como Taiwán y Malaca. Tercero, el silencio estratégico frente a transgresiones del derecho internacional normaliza tácticas híbridas y coerción económica, desplazando la Ventana de Overton hacia un sistema de bloques fragmentados y reglas incompatibles.
+
+**Precisión metodológica:** el silencio estratégico no se atribuye a los chokepoints como categoría. Se atribuye a la tripolaridad imperfecta: los chokepoints son la superficie empírica donde se observan costes, rutas, evasiones, interrupciones y silencios, pero la hipótesis causal pertenece al déficit de contención normativa entre polos.
 
 ## Marco conceptual
 

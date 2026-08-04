@@ -21,6 +21,7 @@ Este paquete convierte la especificación del “Mapa Interactivo de la Tripolar
 - Episodio WAICO largo: https://www.youtube.com/watch?v=3w6nY_b_1-Y
 - Short WAICO: https://www.youtube.com/shorts/bvHB8WvL_WA
 - Documento Manus de origen: https://manus.im/share/file/5f897997-580c-4945-9333-0c58aa74ee43
+- Documento Manus doctrinal — Ventana de Overton bajo tripolaridad imperfecta: https://manus.im/share/file/88b3bf0c-0d88-4268-84ac-139fa7745294
 - Repositorio público: https://github.com/mdiaznaranjo-a11y/geopolem-public-site
 
 ## Tesis editorial
@@ -60,6 +61,7 @@ Usar como fuente canónica el archivo:
 La versión publicada ya contiene el JSON maestro completo con:
 
 - `metadata` con enlaces a YouTube largo, YouTube Short, Manus y GEOPÓLEM.
+- `metadata.manus_overton_analysis_url` con el anexo doctrinal sobre Ventana de Overton y tripolaridad imperfecta.
 - `visual_code` para coherencia estética del mapa.
 - `editorial_thesis` para tesis WAICO-Ormuz-cables-IA.
 - `poles` con EE. UU., China, Rusia, UE y Sur Global.
@@ -68,8 +70,20 @@ La versión publicada ya contiene el JSON maestro completo con:
 - Guion editorial largo asociado: `data/tripolaridad/episodio-meta-v2-16-chokepoints-un-solo-tablero.md`.
 - Versión académica asociada: `data/tripolaridad/tripolaridad-imperfecta-version-academica-tesis.md`.
 - Fact-check OSINT asociado: `data/tripolaridad/fact-check-osint-16-chokepoints.md`.
+- Anexo Manus doctrinal asociado: `data/tripolaridad/anexo-manus-ventana-overton-tripolaridad.md`.
 
-No se requiere cambiar la estructura del mapa si el frontend ya consume las claves existentes. Si Manus quiere exponer las capas doctrinales nuevas, puede leer directamente `editorial_thesis`, `visual_code`, `metadata.youtube_long`, `metadata.youtube_short` y `normative_erosion`.
+No se requiere cambiar la estructura del mapa si el frontend ya consume las claves existentes. Si Manus quiere exponer las capas doctrinales nuevas, puede leer directamente `editorial_thesis`, `visual_code`, `metadata.youtube_long`, `metadata.youtube_short`, `metadata.manus_overton_analysis_url` y `normative_erosion`.
+
+### Anexo doctrinal Manus — Ventana de Overton
+
+El documento Manus adicional se integra como anexo interpretativo, no como reemplazo del JSON. Su tesis operativa es que el silencio estratégico debe explicar la **tripolaridad imperfecta**, no los chokepoints en sí mismos. Los chokepoints son el tablero empírico donde se observa la fricción; la categoría teórica es la falta de contención normativa entre polos.
+
+Resumen de uso:
+
+1. **Para el mapa:** usarlo como capa doctrinal de contexto.
+2. **Para el guion:** introducirlo cuando se explique por qué la Ventana de Overton se desplaza sin alarma pública suficiente.
+3. **Para la tesis:** tratarlo como hipótesis GEOPÓLEM verificable por casos, no como causalidad cerrada.
+4. **Para Manus:** mantener separado el documento técnico del mapa y el documento doctrinal de Overton.
 
 ### Verificación de integración
 
@@ -144,6 +158,9 @@ https://geopolem.com/data/tripolaridad/tripolaridad-imperfecta-version-academica
 
 Fact-check OSINT:
 https://geopolem.com/data/tripolaridad/fact-check-osint-16-chokepoints.md
+
+Anexo Manus doctrinal — Ventana de Overton bajo tripolaridad imperfecta:
+https://manus.im/share/file/88b3bf0c-0d88-4268-84ac-139fa7745294
 
 ## Nota metodológica
 
