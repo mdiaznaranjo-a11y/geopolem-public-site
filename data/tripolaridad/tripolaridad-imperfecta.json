@@ -6,8 +6,10 @@
     "author": "María del Carmen Díaz Naranjo",
     "generated_at": "2026-08-04T12:24:00+02:00",
     "language": "es",
-    "editorial_status": "Mapa doctrinal y tablero interactivo. Algunas cifras proceden de la especificación técnica Manus y deben tratarse como base de trabajo pendiente de fact-check OSINT antes de convertirlas en afirmaciones audiovisuales definitivas.",
+    "editorial_status": "Mapa doctrinal y tablero interactivo. Versión ajustada con fact-check OSINT del 4 de agosto de 2026: las cifras sensibles de Ormuz, Malaca, Taiwán, Panamá, Ruta Marítima del Norte, mares de China y minerales críticos fueron corregidas o matizadas para publicación.",
     "source_url": "https://manus.im/share/file/5f897997-580c-4945-9333-0c58aa74ee43",
+    "fact_check_url": "https://geopolem.com/data/tripolaridad/fact-check-osint-16-chokepoints.md",
+    "academic_version_url": "https://geopolem.com/data/tripolaridad/tripolaridad-imperfecta-version-academica-tesis.md",
     "youtube_long": "https://www.youtube.com/watch?v=3w6nY_b_1-Y",
     "youtube_short": "https://www.youtube.com/shorts/bvHB8WvL_WA",
     "close": "GEOPÓLEM. Bienvenidos al tablero."
@@ -136,8 +138,8 @@
       "lat": 26.5,
       "lng": 56.3,
       "risk": "crítico",
-      "flow": "20.9 Mb/d en 1H25",
-      "trade_share": "≈26% del comercio marítimo de petróleo",
+      "flow": "14.6 Mb/d en 1T2026; 20.9 Mb/d hasta 1S2025",
+      "trade_share": "Más de una cuarta parte del petróleo comerciado por mar; en torno al 21% del consumo mundial de líquidos",
       "pressure": "Irán y proxies presionan; EE. UU. e Israel responden; China y Rusia observan con silencio estratégico.",
       "poles": [
         "china",
@@ -152,7 +154,7 @@
       "lat": 1.3,
       "lng": 103.8,
       "risk": "alto",
-      "flow": "23.2 Mb/d",
+      "flow": "20.9 Mb/d en 1T2026; 23.2 Mb/d en 1S2025",
       "trade_share": "≈29% del petróleo marítimo",
       "pressure": "Presencia naval estadounidense y dependencia energética china.",
       "poles": [
@@ -247,7 +249,7 @@
       "lng": -79.5,
       "risk": "medio",
       "flow": "2.3 Mb/d",
-      "trade_share": "≈1% del petróleo, alto valor simbólico/logístico",
+      "trade_share": "≈3% del petróleo marítimo mundial; 4–6% del comercio mundial general según estimaciones logísticas",
       "pressure": "Presión estadounidense y presencia portuaria china vía Hutchison.",
       "poles": [
         "us",
@@ -262,7 +264,7 @@
       "lng": 119.5,
       "risk": "crítico",
       "flow": "N/D (no es ruta petrolera primaria)",
-      "trade_share": "≈20% del comercio marítimo mundial por valor (incluye cadena de semiconductores)",
+      "trade_share": "≈21% del comercio marítimo mundial por valor y ≈10% del comercio mundial total; incluye cadenas de semiconductores",
       "pressure": "China reclama soberanía y presiona militarmente; EE. UU. mantiene compromiso de defensa y patrullas; Rusia respalda diplomáticamente la posición china.",
       "poles": [
         "china",
@@ -364,8 +366,8 @@
       "lat": 75.0,
       "lng": 100.0,
       "risk": "emergente",
-      "flow": "N/D — en expansión por deshielo",
-      "trade_share": "Alternativa emergente a Suez, aún estacional",
+      "flow": "37,02 Mt en 2025; segundo descenso anual consecutivo",
+      "trade_share": "Ruta estratégicamente emergente, pero con volumen material aún marginal frente a Suez",
       "pressure": "Rusia controla la costa norte completa; China invierte como ruta alternativa; EE. UU. observa con interés ártico creciente.",
       "poles": [
         "russia",
@@ -382,7 +384,7 @@
       "lat": 15,
       "lng": 114,
       "risk": "alto",
-      "trade_share": "≈37% del comercio global",
+      "trade_share": "Aproximadamente un tercio del transporte marítimo mundial; no equivale a comercio global total",
       "pressure": "Reclamaciones chinas, FONOP estadounidenses y narrativa rusa favorable a China.",
       "poles": [
         "china",
@@ -396,7 +398,7 @@
       "lat": 30,
       "lng": 125,
       "risk": "medio-alto",
-      "trade_share": "≈26% del comercio global",
+      "trade_share": "n.a. — sin cifra pública comparable verificada; relevancia por Taiwán, Japón, Corea y chips",
       "pressure": "Taiwán, Japón, Corea, rutas de chips y presión naval.",
       "poles": [
         "china",
@@ -409,7 +411,7 @@
       "lat": 36,
       "lng": -5.4,
       "risk": "bajo",
-      "trade_share": "≈28% del comercio global en tránsito ampliado",
+      "trade_share": "n.a. — acceso Atlántico-Mediterráneo tratado cualitativamente",
       "pressure": "Paso atlántico-mediterráneo de valor logístico estructural.",
       "poles": [
         "eu",
@@ -620,62 +622,86 @@
   "minerals": [
     {
       "mineral": "Galio",
-      "china_share": "98.7%",
+      "china_share": "≈99%",
+      "eslabon": "producción primaria de baja pureza",
+      "source": "USGS MCS 2026",
       "strategic_use": "semiconductores, radares, defensa, IA"
     },
     {
       "mineral": "Magnesio",
-      "china_share": "95%",
+      "china_share": "≈86%",
+      "eslabon": "producción de horno / magnesium metal",
+      "source": "USGS MCS 2026",
       "strategic_use": "aleaciones, autos, aeroespacial"
     },
     {
       "mineral": "Niobio",
-      "china_share": "dependencia de importación",
+      "china_share": "Brasil ≈93% de la producción global; China depende de importación",
+      "eslabon": "minado",
+      "source": "USGS MCS 2026",
       "strategic_use": "acero avanzado, defensa"
     },
     {
       "mineral": "Tungsteno",
-      "china_share": "alta",
+      "china_share": "≈79%",
+      "eslabon": "minado",
+      "source": "USGS MCS 2026",
       "strategic_use": "munición, herramientas, industria pesada"
     },
     {
       "mineral": "Bismuto",
-      "china_share": "alta",
+      "china_share": "≈88%",
+      "eslabon": "minado",
+      "source": "USGS MCS 2026",
       "strategic_use": "metalurgia, farmacéutica, defensa"
     },
     {
       "mineral": "Grafito",
-      "china_share": "dominante en procesamiento",
+      "china_share": "≈82% en grafito natural; dominante en procesamiento",
+      "eslabon": "minado/procesamiento",
+      "source": "USGS MCS 2026 / IEA Critical Minerals Outlook 2025",
       "strategic_use": "baterías, almacenamiento energético"
     },
     {
       "mineral": "Silicio",
-      "china_share": "alta en producción",
+      "china_share": "≈80%",
+      "eslabon": "materiales de silicio",
+      "source": "USGS MCS 2026",
       "strategic_use": "solar, semiconductores"
     },
     {
       "mineral": "Cobalto",
-      "china_share": "dominante en refinado",
+      "china_share": "RDC ≈73% de minería; China ≈79% de refinado",
+      "eslabon": "minado/refinado",
+      "source": "USGS MCS 2026 / Cobalt Institute 2025",
       "strategic_use": "baterías, defensa, aeroespacial"
     },
     {
       "mineral": "Tierras raras",
       "china_share": "69.2%",
+      "eslabon": "minado",
+      "source": "USGS MCS 2026",
       "strategic_use": "imanes, defensa, electrónica, IA"
     },
     {
       "mineral": "Antimonio",
-      "china_share": "alta",
+      "china_share": "≈36% de minería; cuota mayor posible en óxido/refinado",
+      "eslabon": "minado / óxido-refinado",
+      "source": "USGS MCS 2026",
       "strategic_use": "retardantes, munición, baterías"
     },
     {
       "mineral": "Aluminio",
-      "china_share": "muy alta",
+      "china_share": "≈61%",
+      "eslabon": "producción primaria",
+      "source": "USGS MCS 2026",
       "strategic_use": "industria, energía, transporte"
     },
     {
       "mineral": "Litio",
-      "china_share": "dominante en refinado",
+      "china_share": "≈21% de minería; ≈60-65% de refinado",
+      "eslabon": "minado/refinado",
+      "source": "USGS MCS 2026 / IEA Critical Minerals Outlook 2025",
       "strategic_use": "baterías, movilidad, centros de datos"
     }
   ],

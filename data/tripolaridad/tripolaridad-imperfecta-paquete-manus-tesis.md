@@ -16,6 +16,8 @@ Este paquete convierte la especificación del “Mapa Interactivo de la Tripolar
 - Web/app GEOPÓLEM: https://geopolem.com/tripolaridad/
 - JSON maestro publicado: https://geopolem.com/data/tripolaridad/tripolaridad-imperfecta.json
 - Episodio meta v2 — 16 Chokepoints, un solo tablero: https://geopolem.com/data/tripolaridad/episodio-meta-v2-16-chokepoints-un-solo-tablero.md
+- Versión académica para tesis: https://geopolem.com/data/tripolaridad/tripolaridad-imperfecta-version-academica-tesis.md
+- Fact-check OSINT: https://geopolem.com/data/tripolaridad/fact-check-osint-16-chokepoints.md
 - Episodio WAICO largo: https://www.youtube.com/watch?v=3w6nY_b_1-Y
 - Short WAICO: https://www.youtube.com/shorts/bvHB8WvL_WA
 - Documento Manus de origen: https://manus.im/share/file/5f897997-580c-4945-9333-0c58aa74ee43
@@ -64,6 +66,8 @@ La versión publicada ya contiene el JSON maestro completo con:
 - `chokepoints` con 16 entradas únicas.
 - `corridors`, `routes`, `theaters`, `minerals` y `normative_erosion`.
 - Guion editorial largo asociado: `data/tripolaridad/episodio-meta-v2-16-chokepoints-un-solo-tablero.md`.
+- Versión académica asociada: `data/tripolaridad/tripolaridad-imperfecta-version-academica-tesis.md`.
+- Fact-check OSINT asociado: `data/tripolaridad/fact-check-osint-16-chokepoints.md`.
 
 No se requiere cambiar la estructura del mapa si el frontend ya consume las claves existentes. Si Manus quiere exponer las capas doctrinales nuevas, puede leer directamente `editorial_thesis`, `visual_code`, `metadata.youtube_long`, `metadata.youtube_short` y `normative_erosion`.
 
@@ -88,7 +92,7 @@ No se requiere cambiar la estructura del mapa si el frontend ya consume las clav
 
 Acabo de publicar en GEOPÓLEM el mapa interactivo de la tripolaridad imperfecta: una lectura visual del sistema internacional donde IA, energía, cables submarinos, chokepoints marítimos, minerales críticos, pagos y reglas no aparecen como piezas aisladas, sino como una misma arquitectura de poder.
 
-El mapa integra 16 chokepoints estratégicos —de Ormuz y Malaca al Estrecho de Taiwán y la Ruta Marítima del Norte— y los cruza con los polos de presión actuales: Estados Unidos, China, Rusia, la Unión Europea y el Sur Global.
+El mapa integra 16 chokepoints, un solo tablero: de Ormuz y Malaca al Estrecho de Taiwán y la Ruta Marítima del Norte. Los cruza con los polos de presión actuales: Estados Unidos, China, Rusia, la Unión Europea y el Sur Global.
 
 La pregunta central es simple: si la inteligencia artificial depende de energía, semiconductores, cables, minerales, rutas marítimas y centros de datos, entonces la competencia por IA no ocurre solo en la nube. Ocurre en el tablero físico que permite que la nube exista.
 
@@ -102,7 +106,7 @@ La IA no vive en la nube.
 
 Vive sobre cables submarinos, energía, chips, minerales críticos, rutas marítimas, pagos y reglas.
 
-Por eso publiqué este mapa interactivo de la tripolaridad imperfecta: 16 chokepoints donde la geografía se convierte en poder.
+Por eso publiqué este mapa interactivo de la tripolaridad imperfecta: 16 chokepoints, un solo tablero donde la geografía se convierte en poder.
 
 Ormuz. Malaca. Taiwán. Bab el-Mandeb. Suez. El Ártico.
 
@@ -116,13 +120,13 @@ GEOPÓLEM. Bienvenidos al tablero.
 
 La IA no vive en la nube. Vive sobre energía, chips, cables submarinos, minerales críticos y chokepoints marítimos.
 
-Publiqué el mapa interactivo GEOPÓLEM de la tripolaridad imperfecta: 16 puntos donde la geografía se convierte en poder.
+Publiqué el mapa interactivo GEOPÓLEM de la tripolaridad imperfecta: 16 chokepoints, un solo tablero donde la geografía se convierte en poder.
 
 https://geopolem.com/tripolaridad/
 
 ### Versión para enviar a Manus / tesis
 
-Este es el mapa interactivo GEOPÓLEM de la tripolaridad imperfecta. Integra 16 chokepoints estratégicos, polos de presión, rutas, minerales críticos y la tesis WAICO-Ormuz-cables-IA dentro de un mismo tablero visual. Puede usarse como base de análisis, apoyo de tesis y capa interactiva para explicar cómo la competencia por inteligencia artificial depende de infraestructura física, rutas marítimas, energía, semiconductores, cables submarinos y reglas.
+Este es el mapa interactivo GEOPÓLEM de la tripolaridad imperfecta. Integra 16 chokepoints, un solo tablero: polos de presión, rutas, minerales críticos y la tesis WAICO-Ormuz-cables-IA dentro de una misma capa visual. Puede usarse como base de análisis, apoyo de tesis y recurso interactivo para explicar cómo la competencia por inteligencia artificial depende de infraestructura física, rutas marítimas, energía, semiconductores, cables submarinos y reglas.
 
 Mapa público: https://geopolem.com/tripolaridad/
 
@@ -135,8 +139,14 @@ Short WAICO-Ormuz: https://www.youtube.com/shorts/bvHB8WvL_WA
 Episodio meta v2 — 16 Chokepoints, un solo tablero:
 https://geopolem.com/data/tripolaridad/episodio-meta-v2-16-chokepoints-un-solo-tablero.md
 
+Versión académica para tesis:
+https://geopolem.com/data/tripolaridad/tripolaridad-imperfecta-version-academica-tesis.md
+
+Fact-check OSINT:
+https://geopolem.com/data/tripolaridad/fact-check-osint-16-chokepoints.md
+
 ## Nota metodológica
 
-Este paquete es una capa doctrinal y visual. Las cifras que proceden de la especificación Manus deben tratarse como base de trabajo y verificarse con metodología OSINT antes de convertirse en afirmaciones definitivas dentro de un informe académico o audiovisual. La pieza sirve como mapa de lectura, no como sustituto del fact-check.
+Este paquete es una capa doctrinal y visual. La versión actual ya incorpora los ajustes principales del fact-check OSINT del 4 de agosto de 2026, pero la pieza debe seguir tratándose como mapa de lectura y no como sustituto del expediente completo de verificación.
 
 — GEOPÓLEM · María del Carmen Díaz Naranjo

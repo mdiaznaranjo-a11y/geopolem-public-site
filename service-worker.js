@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geopolem-command-v1.34.0';
+const CACHE_NAME = 'geopolem-command-v1.35.0';
 const CONFLICTS_DIR = './conflictos-activos/';
 const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
 const WATCHLIST_DIR = './conflict-watchlist-2026/';
@@ -27,6 +27,10 @@ const APP_SHELL = [
   './waico/index.html',
   './tripolaridad/index.html',
   './data/tripolaridad/tripolaridad-imperfecta.json',
+  './data/tripolaridad/episodio-meta-v2-16-chokepoints-un-solo-tablero.md',
+  './data/tripolaridad/fact-check-osint-16-chokepoints.md',
+  './data/tripolaridad/tripolaridad-imperfecta-version-academica-tesis.md',
+  './data/tripolaridad/tripolaridad-imperfecta-paquete-manus-tesis.md',
   './app.html',
   './app.js',
   './api-adapter.js',
