@@ -15,6 +15,7 @@ Este paquete convierte la especificación del “Mapa Interactivo de la Tripolar
 
 - Web/app GEOPÓLEM: https://geopolem.com/tripolaridad/
 - JSON maestro publicado: https://geopolem.com/data/tripolaridad/tripolaridad-imperfecta.json
+- Episodio meta v2 — 16 Chokepoints, un solo tablero: https://geopolem.com/data/tripolaridad/episodio-meta-v2-16-chokepoints-un-solo-tablero.md
 - Episodio WAICO largo: https://www.youtube.com/watch?v=3w6nY_b_1-Y
 - Short WAICO: https://www.youtube.com/shorts/bvHB8WvL_WA
 - Documento Manus de origen: https://manus.im/share/file/5f897997-580c-4945-9333-0c58aa74ee43
@@ -62,6 +63,7 @@ La versión publicada ya contiene el JSON maestro completo con:
 - `poles` con EE. UU., China, Rusia, UE y Sur Global.
 - `chokepoints` con 16 entradas únicas.
 - `corridors`, `routes`, `theaters`, `minerals` y `normative_erosion`.
+- Guion editorial largo asociado: `data/tripolaridad/episodio-meta-v2-16-chokepoints-un-solo-tablero.md`.
 
 No se requiere cambiar la estructura del mapa si el frontend ya consume las claves existentes. Si Manus quiere exponer las capas doctrinales nuevas, puede leer directamente `editorial_thesis`, `visual_code`, `metadata.youtube_long`, `metadata.youtube_short` y `normative_erosion`.
 
@@ -129,6 +131,9 @@ JSON maestro: https://geopolem.com/data/tripolaridad/tripolaridad-imperfecta.jso
 Video largo WAICO-Ormuz: https://www.youtube.com/watch?v=3w6nY_b_1-Y
 
 Short WAICO-Ormuz: https://www.youtube.com/shorts/bvHB8WvL_WA
+
+Episodio meta v2 — 16 Chokepoints, un solo tablero:
+https://geopolem.com/data/tripolaridad/episodio-meta-v2-16-chokepoints-un-solo-tablero.md
 
 ## Nota metodológica
 
