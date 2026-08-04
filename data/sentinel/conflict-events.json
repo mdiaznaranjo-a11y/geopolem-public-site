@@ -2,724 +2,328 @@
   "events": [
     {
       "actors": [
-        "Syria"
+        "United Kingdom"
       ],
-      "domain": "globalsecurity.org",
-      "id": "evt_9f8b8f1299b54e7e",
+      "domain": "redditchadvertiser.co.uk",
+      "id": "evt_9fb83abf523c9e02",
       "language": "English",
       "matched_regions": [
-        "russia",
-        "russian",
-        "moscow"
+        "iran"
       ],
       "matched_themes": [
-        "killed",
-        "wounded"
+        "war"
       ],
-      "region": "Eurasia",
-      "score": 7.5,
+      "region": "MENA",
+      "score": 5.0,
       "score_breakdown": {
-        "region": 4.0,
-        "themes": 3.5,
+        "region": 2.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Syria",
-      "tier": "high",
-      "title": "At Least 3 Killed , 21 Wounded In Moscow Restaurant Bombing , Russian Authorities Say",
+      "seen_date": "20260804T084500Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "BP profits soar to four - year high after boost from Iran war",
       "tone": null,
-      "url": "https://www.globalsecurity.org/wmd/library/news/russia/2026/08/russia-260802-rferl01.htm"
+      "url": "https://www.redditchadvertiser.co.uk/news/national/26433908.bp-profits-soar-four-year-high-boost-iran-war/"
     },
     {
       "actors": [
-        "India"
+        "Egypt"
       ],
-      "domain": "calcuttanews.net",
-      "id": "evt_c2a7cec2c8550cbf",
+      "domain": "egyptindependent.com",
+      "id": "evt_50da45c4e23a1871",
       "language": "English",
       "matched_regions": [
-        "russia",
-        "moscow"
+        "iran"
       ],
       "matched_themes": [
-        "drone",
-        "attack"
+        "war"
       ],
-      "region": "Eurasia",
-      "score": 7.0,
+      "region": "MENA",
+      "score": 5.0,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 3.5,
+        "region": 2.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "At least 8 dead in overnight Ukrainian attack on Russia ; Moscow says 635 drones intercepted",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Egypt",
+      "tier": "medium",
+      "title": "This is a last chance  for Iran to sign a deal , Trump warns",
       "tone": null,
-      "url": "http://www.calcuttanews.net/news/279220448/at-least-8-dead-in-overnight-ukrainian-attack-on-russia-moscow-says-635-drones-intercepted"
+      "url": "https://www.egyptindependent.com/this-is-a-last-chance-for-iran-to-sign-a-deal-trump-warns/"
     },
     {
       "actors": [
-        "India"
+        "Israel"
       ],
-      "domain": "hindustantimes.com",
-      "id": "evt_d5b765656c0d304f",
+      "domain": "middleeastmonitor.com",
+      "id": "evt_180be0a15d3a5ab7",
       "language": "English",
       "matched_regions": [
-        "india",
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Trump criticises oil companies for profiting from Iran war",
+      "tone": null,
+      "url": "https://www.middleeastmonitor.com/20260804-trump-criticises-oil-companies-for-profiting-from-iran-war/"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "samaa.tv",
+      "id": "evt_3ac68e9bfbbb3a40",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "escalation"
+      ],
+      "region": "MENA",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Pakistan",
+      "tier": "medium",
+      "title": "Iran doesnt seek escalation in regional tensions : President",
+      "tone": null,
+      "url": "https://www.samaa.tv/2087354653-iran-president-says-tehran-seeks-no-escalation-in-regional-tensions"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "saharareporters.com",
+      "id": "evt_40b8d26f3c7aedcd",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Nigeria",
+      "tier": "medium",
+      "title": "Trump Insists Iran  Will Never Have A Nuclear Weapon , Claims Tehran Secretly Seeking Talks",
+      "tone": null,
+      "url": "https://saharareporters.com/2026/08/03/trump-insists-iran-will-never-have-nuclear-weapon-claims-tehran-secretly-seeking-talks"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "pakobserver.net",
+      "id": "evt_60095718a1193548",
+      "language": "English",
+      "matched_regions": [
+        "iran",
         "pakistan",
         "nato"
       ],
-      "matched_themes": [
-        "deploy"
-      ],
-      "region": "Asia del Sur",
-      "score": 5.5,
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
       "score_breakdown": {
         "region": 4.0,
-        "themes": 1.5,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "India",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Pakistan",
       "tier": "medium",
-      "title": "Pakistan deploys 250 Chinese SH - 15 howitzers along India border ; can fire NATO - compatible ammunition : Report",
+      "title": "Iran proposes NATO - style Islamic security alliance including Pakistan amid Mideast tensions",
       "tone": null,
-      "url": "https://www.hindustantimes.com/world-news/pakistan-deploys-250-china-made-sh-15-self-propelled-gun-howitzers-along-its-border-with-india-report-101785746408484.html"
+      "url": "https://pakobserver.net/iran-proposes-nato-style-islamic-security-alliance-including-pakistan-amid-mideast-tensions/"
     },
     {
       "actors": [
         "United Kingdom"
       ],
-      "domain": "barryanddistrictnews.co.uk",
-      "id": "evt_6b21b9fcee11db04",
+      "domain": "ibtimes.co.uk",
+      "id": "evt_a41c8ada92a3706f",
       "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
+      "matched_regions": [],
       "matched_themes": [
-        "war"
+        "strike",
+        "killed"
       ],
-      "region": "MENA",
-      "score": 5.0,
+      "region": "Global",
+      "score": 3.5,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
+        "region": 0.0,
+        "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
+      "seen_date": "20260804T084500Z",
       "source_country": "United Kingdom",
       "tier": "medium",
-      "title": "Almost £200 , 000 of fuel stolen from united kingdom forecourts each day during Iran war",
+      "title": "US Killed 221 in Drug Boat Strikes Despite Officials Not Always Knowing Who Was On Board",
       "tone": null,
-      "url": "https://www.barryanddistrictnews.co.uk/news/national/26430200.almost-gbp200-000-fuel-stolen-uk-forecourts-day-iran-war/"
+      "url": "https://www.ibtimes.co.uk/us-killed-221-drug-boat-strikes-despite-officials-not-always-knowing-who-was-board-1812277"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Indonesia"
       ],
-      "domain": "oxfordmail.co.uk",
-      "id": "evt_ac2302d954a73704",
-      "language": "English",
+      "domain": "kompas.com",
+      "id": "evt_809b3f0015daa5f7",
+      "language": "Indonesian",
       "matched_regions": [
+        "kyiv",
         "iran"
       ],
-      "matched_themes": [
-        "war"
-      ],
+      "matched_themes": [],
       "region": "MENA",
-      "score": 5.0,
+      "score": 3.5,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
+        "region": 3.5,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Indonesia",
       "tier": "medium",
-      "title": "Almost £200 , 000 of fuel stolen from united kingdom forecourts each day during Iran war",
+      "title": "Iran Akui Nyaris Serang Ukraina , Batal Usai Kyiv Minta Maaf",
       "tone": null,
-      "url": "https://www.oxfordmail.co.uk/news/national/26430200.almost-gbp200-000-fuel-stolen-uk-forecourts-day-iran-war/"
+      "url": "https://www.kompas.com/global/read/2026/08/04/150625570/iran-akui-nyaris-serang-ukraina-batal-usai-kyiv-minta-maaf"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Netherlands"
       ],
-      "domain": "andoveradvertiser.co.uk",
-      "id": "evt_e2d7429ebc0c5265",
-      "language": "English",
+      "domain": "welingelichtekringen.nl",
+      "id": "evt_f7517b3f3559645f",
+      "language": "Dutch",
       "matched_regions": [
-        "iran"
+        "iran",
+        "hormuz"
       ],
-      "matched_themes": [
-        "war"
-      ],
+      "matched_themes": [],
       "region": "MENA",
-      "score": 5.0,
+      "score": 3.5,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
+        "region": 3.5,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Netherlands",
       "tier": "medium",
-      "title": "Almost £200 , 000 of fuel stolen from united kingdom forecourts each day during Iran war",
+      "title": "Iran en Oman stevenen af op deal over Straat van Hormuz",
       "tone": null,
-      "url": "https://www.andoveradvertiser.co.uk/news/national/26430200.almost-gbp200-000-fuel-stolen-uk-forecourts-day-iran-war/"
+      "url": "https://www.welingelichtekringen.nl/samenleving/iran-en-oman-stevenen-af-op-deal-over-straat-van-hormuz"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Pakistan"
       ],
-      "domain": "echo-news.co.uk",
-      "id": "evt_0dabcbc8402f58e8",
+      "domain": "samaa.tv",
+      "id": "evt_b10753d0c5f85e5c",
       "language": "English",
       "matched_regions": [
-        "iran"
+        "iran",
+        "hormuz"
       ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Pakistan",
+      "tier": "medium",
+      "title": "Status of US - Iran talks uncertain as ship struck in Hormuz",
+      "tone": null,
+      "url": "https://www.samaa.tv/2087354651-status-of-us-iran-talks-uncertain-as-ship-struck-in-hormuz"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "thueringer-allgemeine.de",
+      "id": "evt_ed2e9672b85b5a63",
+      "language": "German",
+      "matched_regions": [],
       "matched_themes": [
         "war"
       ],
-      "region": "MENA",
-      "score": 5.0,
+      "region": "Global",
+      "score": 3.0,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 0.0,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Almost £200 , 000 of fuel stolen from united kingdom forecourts each day during Iran war",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Historikerin Katja Hoyer warnt vor NS - Vergleichen : „ Kein konstruktiver Ansatz , um aus der Geschichte zu lernen",
       "tone": null,
-      "url": "https://www.echo-news.co.uk/news/national/26430200.almost-gbp200-000-fuel-stolen-uk-forecourts-day-iran-war/"
+      "url": "https://www.thueringer-allgemeine.de/politik/article412751127/historikerin-katja-hoyer-warnt-vor-ns-vergleichen-kein-konstruktiver-ansatz-um-aus-der-geschichte-zu-lernen.html"
     },
     {
       "actors": [
         "Italy"
       ],
-      "domain": "ansa.it",
-      "id": "evt_d47902a6ccebef6c",
+      "domain": "ilriformista.it",
+      "id": "evt_18ad663c840ebfed",
       "language": "Italian",
       "matched_regions": [
-        "israel",
-        "gaza",
+        "iran",
         "united states"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 4.0,
+      "score": 3.0,
       "score_breakdown": {
-        "region": 4.0,
+        "region": 3.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
+      "seen_date": "20260804T084500Z",
       "source_country": "Italy",
-      "tier": "medium",
-      "title": "Israele esprime agli united states le proprie  preoccupazioni  sul piano per Gaza - Notizie",
-      "tone": null,
-      "url": "https://www.ansa.it/sito/notizie/mondo/2026/08/03/israele-esprime-agli-usa-le-proprie-preoccupazioni-sul-piano-per-gaza_e1bf06c4-fa51-4bf7-bbc7-983d91234d2d.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "bignewsnetwork.com",
-      "id": "evt_ad8b998772549292",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "saudi",
-        "pakistan"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran , Saudi Arabia , Pakistan discuss diplomatic efforts to ensure regional stability , security",
-      "tone": null,
-      "url": "http://www.bignewsnetwork.com/news/279220498/iran-saudi-arabia-pakistan-discuss-diplomatic-efforts-to-ensure-regional-stability-security"
-    },
-    {
-      "actors": [
-        "Malaysia"
-      ],
-      "domain": "utusan.com.my",
-      "id": "evt_3cf512bcf6c67f56",
-      "language": "Malay",
-      "matched_regions": [
-        "israel",
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Malaysia",
-      "tier": "medium",
-      "title": "Trump tidak beritahu Netanyahu AS - Israel batal serang Iran",
-      "tone": null,
-      "url": "https://www.utusan.com.my/luar-negara/2026/08/trump-tidak-beritahu-netanyahu-as-israel-batal-serang-iran/"
-    },
-    {
-      "actors": [
-        "Vietnam"
-      ],
-      "domain": "baochinhphu.vn",
-      "id": "evt_818db5ebc2ec7d15",
-      "language": "Vietnamese",
-      "matched_regions": [
-        "gaza",
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Vietnam",
-      "tier": "medium",
-      "title": "Mỹ thúc đẩy ngoại giao tại Gaza và tìm kiếm thỏa thuận với Iran",
-      "tone": null,
-      "url": "https://baochinhphu.vn/my-thuc-day-ngoai-giao-tai-gaza-va-tim-kiem-thoa-thuan-voi-iran-102260803160430849.htm"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wdiy.org",
-      "id": "evt_61cdce8affd6e246",
-      "language": "English",
-      "matched_regions": [
-        "israel",
-        "hamas"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Israel says it has serious concerns with Hamas disarmament deal",
-      "tone": null,
-      "url": "https://www.wdiy.org/npr-news/2026-08-03/israel-says-it-has-serious-concerns-with-hamas-disarmament-deal"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "globalsecurity.org",
-      "id": "evt_f2491296157006e5",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Syria",
-      "tier": "medium",
-      "title": "FSB Nabs Two Russian Citizens Over Ties to Ukrainian Intelligence",
-      "tone": null,
-      "url": "https://www.globalsecurity.org/intell/library/news/2026/intell-260801-sputnik02.htm"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "globalsecurity.org",
-      "id": "evt_14056218a93faf83",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Syria",
-      "tier": "medium",
-      "title": "Trump says U . S . to hold off attack on Iran",
-      "tone": null,
-      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260802-pdo01.htm"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "globalsecurity.org",
-      "id": "evt_a4d2d518c6118f77",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Syria",
-      "tier": "medium",
-      "title": "Trump Says Iran Talks To Resume August 3 After Calling Off  Biggest Attack Since WWII",
-      "tone": null,
-      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260803-rferl01.htm"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wkms.org",
-      "id": "evt_82f30696982030b9",
-      "language": "English",
-      "matched_regions": [
-        "israel",
-        "hamas"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Israel says it has serious concerns with Hamas disarmament deal",
-      "tone": null,
-      "url": "https://www.wkms.org/npr-news/2026-08-03/israel-says-it-has-serious-concerns-with-hamas-disarmament-deal"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "globalsecurity.org",
-      "id": "evt_82663b82822c4c2a",
-      "language": "English",
-      "matched_regions": [
-        "saudi"
-      ],
-      "matched_themes": [
-        "escalation"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Syria",
-      "tier": "medium",
-      "title": "Saudi PM Urges De - Escalation In Call With Trump",
-      "tone": null,
-      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260802-rferl08.htm"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "houstonpublicmedia.org",
-      "id": "evt_7c86feb0bcae2fbd",
-      "language": "English",
-      "matched_regions": [
-        "israel",
-        "hamas"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Israel says it has serious concerns with Hamas disarmament deal",
-      "tone": null,
-      "url": "https://www.houstonpublicmedia.org/npr/2026/08/03/g-s1-136877/israel-says-it-has-serious-concerns-with-hamas-disarmament-deal/"
-    },
-    {
-      "actors": [],
-      "domain": "abcnews.al",
-      "id": "evt_5fbcb856160f74e6",
-      "language": "Albanian",
-      "matched_regions": [
-        "iran",
-        "hormuz"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "",
-      "tier": "medium",
-      "title": "Iran - Oman në bisedime për Ngushticën e Hormuzit , rriten përpjekjet për rikthimin e lundrimit të sigurt",
-      "tone": null,
-      "url": "https://abcnews.al/iran-oman-ne-bisedime-per-ngushticen-e-hormuzit-rriten-perpjekjet-per-rikthimin-e-lundrimit-te-sigurt/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wgcu.org",
-      "id": "evt_09094caf59a020e0",
-      "language": "English",
-      "matched_regions": [
-        "israel",
-        "hamas"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Israel says it has serious concerns with Hamas disarmament deal",
-      "tone": null,
-      "url": "https://www.wgcu.org/2026-08-03/israel-says-it-has-serious-concerns-with-hamas-disarmament-deal"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "globalsecurity.org",
-      "id": "evt_8267f2c711c61953",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "hormuz"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Syria",
-      "tier": "medium",
-      "title": "No Agreement Exists Between Iran , US on Opening Strait of Hormuz",
-      "tone": null,
-      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260802-sputnik01.htm"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "theguardian.com",
-      "id": "evt_0ff5e1f19995b855",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United Kingdom",
       "tier": "monitor",
-      "title": "Suspected mass bird flu deaths found in second state as Murray Watt warns  this is the beginning  | Bird flu",
+      "title": "Guerra united states - Iran , le giravolte di Trump rafforzano gli avversari : il piano dei pasdaran",
       "tone": null,
-      "url": "https://www.theguardian.com/world/2026/aug/03/suspected-mass-bird-flu-deaths-found-in-second-state-as-murray-watt-warns-this-is-the-beginning"
+      "url": "https://www.ilriformista.it/guerra-usa-iran-le-giravolte-di-trump-rafforzano-gli-avversari-il-piano-dei-pasdaran-525184/"
     },
     {
       "actors": [
-        "Syria"
+        "Indonesia"
       ],
-      "domain": "globalsecurity.org",
-      "id": "evt_6cd9e72cd00e55ac",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Syria",
-      "tier": "monitor",
-      "title": "PLA celebrates 99th founding anniversary in march toward world - class military , with peace as enduring mission",
-      "tone": null,
-      "url": "https://www.globalsecurity.org/wmd/library/news/china/2026/08/china-260802-pdo01.htm"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "heraldscotland.com",
-      "id": "evt_b68b955813811427",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Second World War bomb found in the Danube amid low water level",
-      "tone": null,
-      "url": "https://www.heraldscotland.com/news/26430228.second-world-war-bomb-found-danube-amid-low-water-level/"
-    },
-    {
-      "actors": [
-        "Niue"
-      ],
-      "domain": "samtiden.nu",
-      "id": "evt_b632103e3c506183",
-      "language": "Swedish",
-      "matched_regions": [],
-      "matched_themes": [
-        "invasion"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Niue",
-      "tier": "monitor",
-      "title": "Migrantinvasionen i Ceuta avslöjar sossarnas sanna migrationspolitik",
-      "tone": null,
-      "url": "https://samtiden.nu/2026/08/migrantinvasionen-i-ceuta-avslojar-sossarnas-sanna-migrationspolitik/"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "globalsecurity.org",
-      "id": "evt_81242cd02cd3f253",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "escalation"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Syria",
-      "tier": "monitor",
-      "title": "HRH the Crown Prince Urges De - escalation and Diplomacy in Phone Call with US President",
-      "tone": null,
-      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260802-spa01.htm"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "mediafax.ro",
-      "id": "evt_f99097b8d30bc538",
-      "language": "Romanian",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "ANI : 122 de persoane , sub interdicția de trei ani pentru conflict de interese sau incompatibilitate",
-      "tone": null,
-      "url": "https://www.mediafax.ro/politic/ani-122-de-persoane-sub-interdictia-de-trei-ani-pentru-conflict-de-interese-sau-incompatibilitate-23783471"
-    },
-    {
-      "actors": [
-        "Vietnam"
-      ],
-      "domain": "baomoi.com",
-      "id": "evt_36524d3ee3305d50",
-      "language": "Vietnamese",
+      "domain": "tribunnews.com",
+      "id": "evt_30a548402aba2dee",
+      "language": "Indonesian",
       "matched_regions": [
         "iran"
       ],
@@ -731,19 +335,144 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Vietnam",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Indonesia",
       "tier": "monitor",
-      "title": "Giá dầu giảm sau khi Mỹ hoãn tấn công Iran",
+      "title": "AS Mulai Kewalahan Hadapi Iran , Minta Pasukan untuk  Beri Ide  demi Kalahkan Teheran",
       "tone": null,
-      "url": "https://baomoi.com/gia-dau-giam-sau-khi-my-hoan-tan-cong-iran-c55752808.epi"
+      "url": "https://www.tribunnews.com/internasional/7863671/as-mulai-kewalahan-hadapi-iran-minta-pasukan-untuk-beri-ide-demi-kalahkan-teheran"
     },
     {
       "actors": [
-        "Serbia"
+        "United Kingdom"
       ],
-      "domain": "naslovi.net",
-      "id": "evt_2a9c6dca0f6f6abb",
+      "domain": "redditchadvertiser.co.uk",
+      "id": "evt_dd984938eeae846f",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Cargo ship  hit by projectile  as Iran and US argue over talks",
+      "tone": null,
+      "url": "https://www.redditchadvertiser.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/"
+    },
+    {
+      "actors": [
+        "Belgium"
+      ],
+      "domain": "dhnet.be",
+      "id": "evt_2a4c297298463d94",
+      "language": "French",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Belgium",
+      "tier": "monitor",
+      "title": "Six mois de guerre , zéro victoire  : comment un Trump affaibli et sous pression des élections multiplie les volte - face face à lIran",
+      "tone": null,
+      "url": "https://www.dhnet.be/actu/monde/2026/08/04/six-mois-de-guerre-zero-victoire-comment-un-trump-affaibli-et-sous-pression-des-elections-multiplie-les-volte-face-face-a-liran-FSF3MVJT5JGO7GB6BZPAYFOTVY/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "wharfedaleobserver.co.uk",
+      "id": "evt_bbb183666fdffefd",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Cargo ship  hit by projectile  as Iran and US argue over talks",
+      "tone": null,
+      "url": "https://www.wharfedaleobserver.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "gazetteandherald.co.uk",
+      "id": "evt_81bb0b1e43d9165c",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Cargo ship  hit by projectile  as Iran and US argue over talks | The Wiltshire Gazette and Herald",
+      "tone": null,
+      "url": "https://www.gazetteandherald.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "tg.la7.it",
+      "id": "evt_d928ca4a815794a4",
+      "language": "Italian",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Guerra Russia - Ucraina , droni su Mosca e raid a Sumy : morti , feriti e ultime notizie",
+      "tone": null,
+      "url": "https://tg.la7.it/esteri/guerra-russia-ucraina-droni-mosca-raid-sumy-odessa-04-08-2026-260627"
+    },
+    {
+      "actors": [
+        "Bosnia-Herzegovina"
+      ],
+      "domain": "avaz.ba",
+      "id": "evt_c942f675bf4ccc45",
       "language": "Bosnian",
       "matched_regions": [
         "iran"
@@ -756,23 +485,21 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Serbia",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Bosnia-Herzegovina",
       "tier": "monitor",
-      "title": "Budala , ostao je bez goriva  Dok Tramp okolo priča da je na korak od dogovora , Iran ima svoje planove",
+      "title": "Projektil pogodio teretni brod u Hormuškom moreuzu : SAD i Iran različito o pregovorima",
       "tone": null,
-      "url": "https://naslovi.net/2026-08-03/blic/budala-ostao-je-bez-goriva-dok-tramp-okolo-prica-da-je-na-korak-od-dogovora-iran-ima-svoje-planove/42172009"
+      "url": "https://avaz.ba/vijesti/globus/1062239/projektil-pogodio-teretni-brod-u-hormuskom-moreuzu-sad-i-iran-razlicito-o-pregovorima"
     },
     {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wgcu.org",
-      "id": "evt_73a1464b7822e1d7",
-      "language": "English",
+      "actors": [],
+      "domain": "noticiabrasil.net.br",
+      "id": "evt_6e9b0e84ccb0fbf5",
+      "language": "Portuguese",
       "matched_regions": [],
       "matched_themes": [
-        "nuclear"
+        "terror"
       ],
       "region": "Global",
       "score": 2.0,
@@ -781,20 +508,20 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United States",
+      "seen_date": "20260804T084500Z",
+      "source_country": "",
       "tier": "monitor",
-      "title": "South Korea ditches  denuclearization - first  strategy . What will Pyongyang do next ?",
+      "title": "Autoridades russas classificam ataque de Kiev a praia no sul da Rússia como  ato terrorista genuíno",
       "tone": null,
-      "url": "https://www.wgcu.org/2026-08-03/south-korea-ditches-denuclearization-first-strategy-what-will-pyongyang-do-next"
+      "url": "https://noticiabrasil.net.br/20260804/autoridades-russas-classificam-ataque-de-kiev-a-praia-no-sul-da-russia-como-ato-terrorista-genuino-52876533.html"
     },
     {
       "actors": [
-        "Syria"
+        "Indonesia"
       ],
-      "domain": "globalsecurity.org",
-      "id": "evt_39479ce4796bb281",
-      "language": "English",
+      "domain": "aceh.tribunnews.com",
+      "id": "evt_96a436e7a4703a5c",
+      "language": "Indonesian",
       "matched_regions": [
         "iran"
       ],
@@ -806,44 +533,69 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Syria",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Indonesia",
       "tier": "monitor",
-      "title": "Trump announces talks with Iran on Monday",
+      "title": "Trump kepada Iran : Buat Kesepakatan atau Menyerah",
       "tone": null,
-      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260803-pdo02.htm"
+      "url": "https://aceh.tribunnews.com/news/1037199/trump-kepada-iran-buat-kesepakatan-atau-menyerah"
+    },
+    {
+      "actors": [
+        "Croatia"
+      ],
+      "domain": "index.hr",
+      "id": "evt_6ca26a243c896749",
+      "language": "Croatian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Croatia",
+      "tier": "monitor",
+      "title": "Iran ima plan koji bi mogao uzdrmati svjetsko gospodarstvo . Ugroženi su bilijuni",
+      "tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/iran-ima-plan-koji-bi-mogao-uzdrmati-svjetsko-gospodarstvo-ugrozeni-su-bilijuni/2820547.aspx?index_tid=1111501&index_ref=naslovnica_vijesti_najnovije_d"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "soester-anzeiger.de",
-      "id": "evt_90b5f02175159274",
+      "domain": "tz.de",
+      "id": "evt_64de6311d393e94f",
       "language": "German",
       "matched_regions": [
-        "ukraine"
+        "israel"
       ],
       "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "MENA",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
+      "seen_date": "20260804T084500Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "Ukraine - Krieg vor Moskaus Toren : Kiew schlägt 2026 schon öfter zu als im ganzen Vorjahr",
+      "title": "Israel und Libanon verhandeln über Hisbollah - Tunnel in Rom",
       "tone": null,
-      "url": "http://www.soester-anzeiger.de/politik/karte-zeigt-wie-der-drohnenkrieg-der-ukraine-sich-moskau-naehert-zr-94426190.html"
+      "url": "http://www.tz.de/politik/israel-und-libanon-verhandeln-ueber-hisbollah-tunnel-in-rom-zr-94427843.html"
     },
     {
       "actors": [
-        "United States"
+        "United Kingdom"
       ],
-      "domain": "1450wkip.iheart.com",
-      "id": "evt_568afdd3d7388173",
+      "domain": "countytimes.co.uk",
+      "id": "evt_80dbf784421e81e6",
       "language": "English",
       "matched_regions": [
         "iran"
@@ -856,212 +608,308 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United States",
+      "seen_date": "20260804T084500Z",
+      "source_country": "United Kingdom",
       "tier": "monitor",
-      "title": "Trump : Iran Talks Starting Today | NewsRadio 1450 / 1370 WKIP",
+      "title": "Cargo ship  hit by projectile  as Iran and US argue over talks",
       "tone": null,
-      "url": "https://1450wkip.iheart.com/content/2026-08-03-trump-iran-talks-starting-today/"
+      "url": "https://www.countytimes.co.uk/news/national/26433940.cargo-ship-hit-projectile-iran-us-argue-talks/"
     },
     {
       "actors": [
-        "United States"
+        "Germany"
       ],
-      "domain": "wkms.org",
-      "id": "evt_84afb8f37830bd99",
+      "domain": "merkur.de",
+      "id": "evt_ed134e831b482df7",
+      "language": "German",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Israel und Libanon verhandeln über Hisbollah - Tunnel in Rom",
+      "tone": null,
+      "url": "http://www.merkur.de/politik/israel-und-libanon-verhandeln-ueber-hisbollah-tunnel-in-rom-zr-94427843.html"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "dantri.com.vn",
+      "id": "evt_f30b960ce00c2d7f",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Vũ khí mạnh nhất  của Iran trong cuộc đối đầu sống còn với Mỹ",
+      "tone": null,
+      "url": "https://dantri.com.vn/the-gioi/vu-khi-manh-nhat-cua-iran-trong-cuoc-doi-dau-song-con-voi-my-20260804144524984.htm"
+    },
+    {
+      "actors": [],
+      "domain": "evropaelire.org",
+      "id": "evt_1845bf0ce76b72b3",
+      "language": "Albanian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "SHBA - ja po e nënvlerëson boshtin Iran - Rusi - Kinë - Kore e Veriut , paralajmëron admirali i pensionuar amerikan",
+      "tone": null,
+      "url": "https://www.evropaelire.org/a/shba-boshti-irani-kina-rusia-koreja-veriut/33821504.html"
+    },
+    {
+      "actors": [],
+      "domain": "thenationalnews.com",
+      "id": "evt_fc5aa3d1fdad389b",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "nuclear"
+      "matched_regions": [
+        "iran"
       ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Behind the denials : What really happening in US - Iran talks",
+      "tone": null,
+      "url": "https://www.thenationalnews.com/news/mena/2026/08/04/behind-the-denials-whats-really-happening-in-us-iran-talks/"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "nigeriasun.com",
+      "id": "evt_1841b7c288a757f8",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "China targets strong World Cup run as building block for LA 2028 : coach Gong",
+      "tone": null,
+      "url": "http://www.nigeriasun.com/news/279221603/china-targets-strong-world-cup-run-as-building-block-for-la-2028-coach-gong"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "middleeastmonitor.com",
+      "id": "evt_5091b5c1aa1871ac",
+      "language": "English",
+      "matched_regions": [
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "Turkish intelligence chief meets Hamas delegation in Istanbul",
+      "tone": null,
+      "url": "https://www.middleeastmonitor.com/20260804-turkish-intelligence-chief-meets-hamas-delegation-in-istanbul/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "brindisireport.it",
+      "id": "evt_3296078755587b6f",
+      "language": "Italian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
       "region": "Global",
-      "score": 2.0,
+      "score": 1.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "South Korea ditches  denuclearization - first  strategy . What will Pyongyang do next ?",
-      "tone": null,
-      "url": "https://www.wkms.org/npr-news/2026-08-03/south-korea-ditches-denuclearization-first-strategy-what-will-pyongyang-do-next"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "finanzen.net",
-      "id": "evt_9203104241fa9c21",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
+        "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Germany",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "Aktien von TUI und Lufthansa heute : Iran - Verhandlungen sorgen für Kursplus",
+      "title": "Dalle scarpe alle conversazioni captate : come si è arrivati ai presunti rapinatori",
       "tone": null,
-      "url": "https://www.finanzen.net/nachricht/aktien/sorgen-werden-kleiner-aktien-von-tui-und-lufthansa-unter-den-kursgewinnern-angekuendigte-iran-gespraeche-geben-schub-00-15842807"
+      "url": "https://www.brindisireport.it/cronaca/brindisi-scarpe-conversazioni-captate-dettagli-arresto-rapina-mcdonalds.html"
     },
     {
       "actors": [
-        "Singapore"
+        "Romania"
       ],
-      "domain": "beritaharian.sg",
-      "id": "evt_fe4c2280fef486d1",
-      "language": "Malay",
+      "domain": "digi24.ro",
+      "id": "evt_089a08064a76eebb",
+      "language": "Romanian",
       "matched_regions": [
-        "iran"
+        "nato"
       ],
       "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
+      "region": "Global",
+      "score": 1.5,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Singapore",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Romania",
       "tier": "monitor",
-      "title": "AS & Iran mula rundingan 3 Ogos : Trump umum",
+      "title": "„ Măsuri care nu o să vă placă : Un fost ambasador al SUA afirmă că NATO ar trebui să avertizeze Moscova cu privire la incursiunile ruse",
       "tone": null,
-      "url": "https://www.beritaharian.sg/dunia/trump-rundingan-iran-bermula-3-ogos"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "soester-anzeiger.de",
-      "id": "evt_efb754d0cd90540d",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Iran - Krieg : Trump stoppt Angriffe und kündigt neue Verhandlungen an",
-      "tone": null,
-      "url": "http://www.soester-anzeiger.de/politik/iran-krieg-trump-stoppt-angriffe-und-kuendigt-neue-verhandlungen-an-zr-94426100.html"
+      "url": "https://www.digi24.ro/stiri/externe/masuri-care-nu-o-sa-va-placa-un-fost-ambasador-al-sua-afirma-ca-nato-ar-trebui-sa-avertizeze-moscova-cu-privire-la-incursiunile-ruse-3891789"
     },
     {
       "actors": [
         "Poland"
       ],
-      "domain": "wiadomosci.dziennik.pl",
-      "id": "evt_071483867b4c1248",
+      "domain": "forsal.pl",
+      "id": "evt_92efced25cd7bb53",
       "language": "Polish",
       "matched_regions": [
-        "iran"
+        "nato"
       ],
       "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Poland",
-      "tier": "monitor",
-      "title": "Nowy ruch Trumpa w sprawie Iranu . W poniedziałek ruszają rozmowy",
-      "tone": null,
-      "url": "https://wiadomosci.dziennik.pl/swiat/artykuly/11283889,nowy-ruch-trumpa-w-sprawie-iranu-w-poniedzialek-ruszaja-rozmowy.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wincountry.com",
-      "id": "evt_f8acceec278e4365",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "attack"
-      ],
       "region": "Global",
       "score": 1.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
+        "region": 1.5,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "United States",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Poland",
       "tier": "monitor",
-      "title": "Massive Attack band says Singapore police detained , questioned them after concert",
+      "title": "Ukraina w NATO ? Były naczelny dowódca ukraińskiej armii ma wątpliwości",
       "tone": null,
-      "url": "https://wincountry.com/2026/08/03/massive-attack-band-says-singapore-police-detained-questioned-them-after-concert/"
+      "url": "https://forsal.pl/swiat/bezpieczenstwo/artykuly/11284337,ukraina-w-nato-byly-naczelny-dowodca-ukrainskiej-armii-ma-watpliwosci.html"
     },
     {
       "actors": [
-        "Moldova"
+        "Slovak Republic"
       ],
-      "domain": "tribuna.md",
-      "id": "evt_a9b02d573c5acea8",
-      "language": "Romanian",
+      "domain": "pravda.sk",
+      "id": "evt_6e0d92787b81790e",
+      "language": "Slovak",
       "matched_regions": [
-        "kyiv"
+        "nato"
       ],
       "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "Global",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Moldova",
+      "seen_date": "20260804T084500Z",
+      "source_country": "Slovak Republic",
       "tier": "monitor",
-      "title": "Vicepremierul Popșoi , la Kyiv : „ Suntem solidari cu Ucraina și rămânem uniți în apărarea păcii",
+      "title": "Zalužnyj udrel do citlivého miesta : Ukrajina do NATO nikdy nevstúpi - Svet - Správy",
       "tone": null,
-      "url": "https://tribuna.md/2026/08/03/vicepremierul-popsoi-la-kyiv-suntem-solidari-cu-ucraina-si-ramanem-uniti-in-apararea-pacii/"
+      "url": "https://www.pravda.sk/spravy/svet/clanok/2018257-vojna-na-ukrajine-valerij-zaluznyj-nato-vojaci-front-hlavny-velitel-britania"
     },
     {
       "actors": [
-        "Saudi Arabia"
+        "India"
       ],
-      "domain": "arabnews.com",
-      "id": "evt_2a7f48e4a86ea85f",
+      "domain": "news.webindia123.com",
+      "id": "evt_ea38052632429a76",
       "language": "English",
       "matched_regions": [
-        "lebanon"
+        "venezuela"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "América Latina",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260803T093000Z",
-      "source_country": "Saudi Arabia",
+      "seen_date": "20260804T084500Z",
+      "source_country": "India",
       "tier": "monitor",
-      "title": "Lebanon president urges judiciary to issue Beirut port blast indictment",
+      "title": "US resumes deportation flights to Venezuela after twin earthquakes ; death toll crosses 6000",
       "tone": null,
-      "url": "https://www.arabnews.com/node/2653207/middle-east"
+      "url": "https://news.webindia123.com/news/Articles/World/20260804/4482989.html"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "napoli.repubblica.it",
+      "id": "evt_9b549e6a10348355",
+      "language": "Italian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260804T084500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Pensionato devasta il desk di un centro radiologico : convinto di avere frattura non evidenziata",
+      "tone": null,
+      "url": "https://napoli.repubblica.it/cronaca/2026/08/04/news/pensionato_devasta_il_desk_di_un_centro_radiologico_convinto_di_avere_frattura_non_evidenziata-425511012/"
     }
   ],
   "filters": {
@@ -1075,13 +923,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-03T10:04:35Z",
+  "generated_at": "2026-08-04T09:07:16Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 2,
-    "medium": 19,
-    "monitor": 20
+    "high": 0,
+    "medium": 10,
+    "monitor": 26
   },
-  "total_events": 41
+  "total_events": 36
 }
