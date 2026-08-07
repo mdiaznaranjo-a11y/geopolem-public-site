@@ -1,0 +1,63 @@
+{
+  "id": "africa-tripolaridad-imperfecta",
+  "title": "África: el tablero donde China avanza, Rusia golpea y Occidente retrocede",
+  "slug": "africa",
+  "url": "https://geopolem.com/africa/",
+  "status": "en_revision_editorial",
+  "updated_at": "2026-08-07",
+  "author": "María del Carmen Díaz Naranjo",
+  "brand": "GEOPÓLEM",
+  "framework": "Tripolaridad Imperfecta",
+  "method": ["HECHO", "EVALUACIÓN", "HIPÓTESIS", "SEÑAL"],
+  "bluf": "África es el teatro donde la Tripolaridad Imperfecta se vuelve visible: China avanza económicamente, Rusia entra por seguridad coercitiva y Occidente reduce presencia física mientras intenta volver por corredores estratégicos.",
+  "video": {
+    "youtube_status": "pendiente_de_confirmacion",
+    "youtube_url": null,
+    "short_cta": "Video completo en YouTube · geopolem.com/africa"
+  },
+  "anchor_metrics": [
+    {
+      "label": "Comercio China-África 2025",
+      "value": "348.050 M USD",
+      "source": "https://www.ntu.edu.sg/cas/news-events/news/detail/china-africa-trade-hits-record-us-348bn-as-deficit-balloons"
+    },
+    {
+      "label": "Cobalto mundial producido por RDC",
+      "value": "73%",
+      "source": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cobalt.pdf"
+    },
+    {
+      "label": "Militares franceses en África subsahariana",
+      "value": "10.700 → 2.280",
+      "source": "https://www.aa.com.tr/fr/afrique/consid%C3%A9rablement-r%C3%A9duits-les-effectifs-de-la-france-en-afrique-subsaharienne-reculent-%C3%A0-2-280-hommes/3489065"
+    },
+    {
+      "label": "Préstamos chinos a África en 2024",
+      "value": "-46%",
+      "source": "https://www.bu.edu/gdp/files/2026/01/GCI-PB-28-CLA-2026-EN.pdf"
+    },
+    {
+      "label": "Coste acumulado de Agadez desde 2016",
+      "value": "250 M USD",
+      "source": "https://www.airandspaceforces.com/us-closes-last-drone-base-niger/"
+    }
+  ],
+  "actor_layers": [
+    {
+      "actor": "China",
+      "layer": "Económica y logística",
+      "assessment": "Infraestructura, comercio, minerales, deuda y base confirmada en Yibuti."
+    },
+    {
+      "actor": "Rusia",
+      "layer": "Coercitiva",
+      "assessment": "Africa Corps/Wagner y acuerdos de seguridad en Estados con presión interna o ruptura con Occidente."
+    },
+    {
+      "actor": "Occidente",
+      "layer": "Repliegue y corredores",
+      "assessment": "Retirada militar francesa y estadounidense en el Sahel, compensada parcialmente por corredores como Lobito."
+    }
+  ],
+  "closing": "GEOPÓLEM. Bienvenidos al tablero."
+}
