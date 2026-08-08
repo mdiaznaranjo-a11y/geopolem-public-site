@@ -2,93 +2,125 @@
   "events": [
     {
       "actors": [
-        "Israel"
+        "Australia"
       ],
-      "domain": "jpost.com",
-      "id": "evt_309f6ef0c48b89a3",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [
-        "war",
-        "coup"
-      ],
-      "region": "MENA",
-      "score": 7.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 5.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Israel",
-      "tier": "high",
-      "title": "A young Israeli couple reflects a generation shaped by war",
-      "tone": null,
-      "url": "https://www.jpost.com/opinion/article-904815"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "bhaskar.com",
-      "id": "evt_b35932bd477beb72",
-      "language": "Hindi",
-      "matched_regions": [
-        "russia",
-        "china"
-      ],
-      "matched_themes": [
-        "nuclear"
-      ],
-      "region": "Eurasia",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "US Nuclear Policy Update | Russia - China Tension & Tactical Weapons",
-      "tone": null,
-      "url": "https://www.bhaskar.com/g/international/news/us-nuclear-policy-update-russia-china-tactical-weapons-strategy-138655532.html"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "arabherald.com",
-      "id": "evt_4d77f8bc766a0aba",
+      "domain": "yasstribune.com.au",
+      "id": "evt_1d016185f383f8dd",
       "language": "English",
       "matched_regions": [
         "yemen",
-        "houthi",
-        "saudi"
+        "houthi"
       ],
       "matched_themes": [
+        "war",
+        "conflict",
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 9.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 6.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Australia",
+      "tier": "high",
+      "title": "Houthis strike as UN warns Yemen nearing wider conflict",
+      "tone": null,
+      "url": "https://www.yasstribune.com.au/story/9326370/houthis-strike-as-un-warns-yemen-nearing-wider-conflict/"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "thecourier.com.au",
+      "id": "evt_313d8f8a83f9792b",
+      "language": "English",
+      "matched_regions": [
+        "yemen",
+        "houthi"
+      ],
+      "matched_themes": [
+        "war",
+        "conflict",
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 9.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 6.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Australia",
+      "tier": "high",
+      "title": "Houthis strike as UN warns Yemen nearing wider conflict",
+      "tone": null,
+      "url": "https://www.thecourier.com.au/story/9326370/houthis-strike-as-un-warns-yemen-nearing-wider-conflict/"
+    },
+    {
+      "actors": [
+        "Saudi Arabia"
+      ],
+      "domain": "en.shafaqna.com",
+      "id": "evt_86ee2684fc2e7de1",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "lebanon"
+      ],
+      "matched_themes": [
+        "killed",
         "attack"
       ],
       "region": "MENA",
-      "score": 5.5,
+      "score": 7.0,
       "score_breakdown": {
-        "region": 4.0,
-        "themes": 1.5,
+        "region": 3.5,
+        "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Syria",
-      "tier": "medium",
-      "title": "Yemens Houthis launch major attack on Saudi - backed forces",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Saudi Arabia",
+      "tier": "high",
+      "title": "Lebanon : Over 4 , 000 people killed in ongoing Israeli attacks – Shafaqna English",
       "tone": null,
-      "url": "http://www.arabherald.com/news/279225631/yemens-houthis-launch-major-attack-on-saudi-backed-forces"
+      "url": "https://en.shafaqna.com/469337/lebanon-over-4000-people-killed-in-ongoing-israeli-attacks/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "npr.org",
+      "id": "evt_5b12ecf0c6d1527e",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Eurasia",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Senate passes Russia sanctions bill that was long championed by Lindsey Graham",
+      "tone": null,
+      "url": "https://www.npr.org/transcripts/nx-s1-5924914"
     },
     {
       "actors": [],
-      "domain": "kathmandupost.com",
-      "id": "evt_632eb69d550e3638",
+      "domain": "english.news.cn",
+      "id": "evt_40b5fabf5da0200f",
       "language": "English",
       "matched_regions": [
         "iran"
@@ -103,80 +135,78 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
+      "seen_date": "20260808T070000Z",
       "source_country": "",
       "tier": "medium",
-      "title": "Trump Iran dilemma : He stuck in war with no exit in sight",
+      "title": "U . S . top general looking for off - ramp from war with Iran : media - Xinhua",
       "tone": null,
-      "url": "https://kathmandupost.com/world/2026/08/07/trump-s-iran-dilemma-he-s-stuck-in-war-with-no-exit-in-sight"
+      "url": "https://english.news.cn/northamerica/20260808/11170eb14af5425b9355b19c9d07b35a/c.html"
     },
     {
       "actors": [
-        "India"
+        "Argentina"
       ],
-      "domain": "madhyamam.com",
-      "id": "evt_eebb93694fc815f8",
-      "language": "Malayalam",
-      "matched_regions": [
-        "yemen",
-        "houthi"
-      ],
+      "domain": "infobae.com",
+      "id": "evt_2d84b3782e9ceec6",
+      "language": "Spanish",
+      "matched_regions": [],
       "matched_themes": [
-        "attack"
+        "bombard",
+        "drone"
       ],
-      "region": "MENA",
-      "score": 4.5,
+      "region": "Global",
+      "score": 5.0,
       "score_breakdown": {
-        "region": 3.0,
-        "themes": 1.5,
+        "region": 0.0,
+        "themes": 5.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "India",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Argentina",
       "tier": "medium",
-      "title": "യമനിലെ സൈനിക ക്യാമ്പുകൾക്ക് നേരെ ഹൂതി ആക്രമണം ; 30 സൈനികർ കൊല്ലപ്പെട്ടു , നിരവധി പേർക്ക് പരിക്ക് | Houthi attacks on Yemeni government forces kill at least 30",
+      "title": "Rusia bombardeó con drones y misiles balísticos infraestructura civil en Kiev : al menos tres muertos y siete heridos",
       "tone": null,
-      "url": "https://www.madhyamam.com/world/houthi-attacks-on-yemeni-government-forces-kill-at-least-30-1543880"
+      "url": "https://www.infobae.com/america/mundo/2026/08/08/rusia-bombardeo-con-drones-y-misiles-balisticos-infraestructura-civil-en-kiev-al-menos-tres-muertos-y-siete-heridos/"
     },
     {
       "actors": [
-        "Sweden"
+        "Australia"
       ],
-      "domain": "thelocal.se",
-      "id": "evt_54b8e9a6cffc5f3e",
+      "domain": "thecourier.com.au",
+      "id": "evt_2cede4bb39fb3754",
       "language": "English",
       "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Sweden",
-      "tier": "medium",
-      "title": "Sweden to hand over seized Russian  shadow fleet  ship to Ukraine",
-      "tone": null,
-      "url": "https://www.thelocal.se/20260807/sweden-to-hand-over-seized-russian-shadow-fleet-ship-to-ukraine"
-    },
-    {
-      "actors": [
-        "Iran"
-      ],
-      "domain": "irannewsupdate.com",
-      "id": "evt_ad320f1a74213a1a",
-      "language": "English",
-      "matched_regions": [
-        "iran"
+        "taiwan"
       ],
       "matched_themes": [
-        "fighting"
+        "war"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Australia",
+      "tier": "medium",
+      "title": "Taiwan president oversees war games military drill",
+      "tone": null,
+      "url": "https://www.thecourier.com.au/story/9326347/taiwan-president-oversees-war-games-military-drill/"
+    },
+    {
+      "actors": [
+        "Japan"
+      ],
+      "domain": "nuclear-news.net",
+      "id": "evt_44b80de1579800f5",
+      "language": "English",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [
+        "nuclear"
       ],
       "region": "MENA",
       "score": 4.0,
@@ -185,78 +215,209 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Iran",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Japan",
       "tier": "medium",
-      "title": "When Loyalists Turn on Each Other : Iran Clerical Infighting Exposes Mojtaba Khamenei Fragile Grip on Power",
+      "title": "Gaza  Peace Plan  Is Written in Blood « nuclear - news",
       "tone": null,
-      "url": "https://irannewsupdate.com/news/infightings/when-loyalists-turn-on-each-other-irans-clerical-infighting-exposes-mojtaba-khameneis-fragile-grip-on-power/"
+      "url": "https://nuclear-news.net/2026/08/08/8-a-gazas-peace-plan-is-written-in-blood/"
     },
     {
       "actors": [
-        "Vietnam"
+        "India"
       ],
-      "domain": "dantri.com.vn",
-      "id": "evt_85cb4bc4260c3149",
-      "language": "Vietnamese",
+      "domain": "hindustantimes.com",
+      "id": "evt_d7586f966d0f3b17",
+      "language": "English",
       "matched_regions": [
-        "israel",
+        "russia",
+        "russian",
+        "india"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "How US bill proposing 100 % tariffs over Russian oil purchase could hurt India",
+      "tone": null,
+      "url": "https://www.hindustantimes.com/india-news/how-us-bill-proposing-100-tariffs-over-russian-oil-purchase-could-hurt-india-101786165019791.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "nashvilleherald.com",
+      "id": "evt_2b482b1247a1dd64",
+      "language": "English",
+      "matched_regions": [
         "iran",
         "hormuz"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 4.0,
+      "score": 3.5,
       "score_breakdown": {
-        "region": 4.0,
+        "region": 3.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Vietnam",
+      "seen_date": "20260808T070000Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "Iran cân nhắc cấm tàu của Mỹ , Israel qua eo biển Hormuz",
+      "title": "Breakthrough possible on Strait of Hormuz as Iran finalizes deal",
       "tone": null,
-      "url": "https://dantri.com.vn/the-gioi/iran-can-nhac-cam-tau-cua-my-israel-qua-eo-bien-hormuz-20260807134555651.htm"
+      "url": "http://www.nashvilleherald.com/news/279225268/iran-nears-strait-of-hormuz-deal-as-trump-signals-announcement"
     },
     {
       "actors": [
-        "Syria"
+        "Thailand"
       ],
-      "domain": "arabherald.com",
-      "id": "evt_f9385716f001dbd9",
+      "domain": "thailandnews.net",
+      "id": "evt_c3f379a7c1e0f1e1",
       "language": "English",
       "matched_regions": [
-        "israel",
-        "iran"
+        "iran",
+        "hormuz"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 4.0,
+      "score": 3.5,
       "score_breakdown": {
-        "region": 4.0,
+        "region": 3.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Syria",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Thailand",
       "tier": "medium",
-      "title": "Mossad chief removes two senior officials linked to Iran regime - change plan , reports Israeli media",
+      "title": "Breakthrough possible on Strait of Hormuz as Iran finalizes deal",
       "tone": null,
-      "url": "http://www.arabherald.com/news/279225738/mossad-chief-removes-two-senior-officials-linked-to-iran-regime-change-plan-reports-israeli-media"
+      "url": "http://www.thailandnews.net/news/279225268/iran-oman-strait-of-hormuz-agreement-close-u-s-too-hints-at-deal"
     },
     {
       "actors": [
-        "Nigeria"
+        "North Korea"
       ],
-      "domain": "allafrica.com",
-      "id": "evt_5a9904e5757a5dca",
+      "domain": "northkoreatimes.com",
+      "id": "evt_5eb3a2284f54fb14",
       "language": "English",
+      "matched_regions": [
+        "iran",
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "North Korea",
+      "tier": "medium",
+      "title": "Breakthrough possible on Strait of Hormuz as Iran finalizes deal",
+      "tone": null,
+      "url": "http://www.northkoreatimes.com/news/279225268/iran-nears-strait-of-hormuz-deal-as-trump-signals-announcement"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "saltlakecitysun.com",
+      "id": "evt_a68d07f5597ae4de",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Breakthrough possible on Strait of Hormuz as Iran finalizes deal",
+      "tone": null,
+      "url": "http://www.saltlakecitysun.com/news/279225268/iran-nears-strait-of-hormuz-deal-as-trump-signals-announcement"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "mathrubhumi.com",
+      "id": "evt_ff91d86f56cecb8e",
+      "language": "Malayalam",
+      "matched_regions": [
+        "saudi",
+        "india",
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "പാകിസ്താന്‍ - തുര്‍ക്കി - സൗദി പ്രതിരോധ കരാര്‍ 2026 : ഇന്ത്യയുടെ സുരക്ഷാ വെല്ലുവിളികളും തന്ത്രങ്ങളും | Pakistan - Turkey - Saudi Defense Pact 2026 : Geopolitical Shifts & India Strategy",
+      "tone": null,
+      "url": "https://www.mathrubhumi.com/news/news-plus/pakistan-turkey-saudi-defense-pact-2026-india-geopolitics-eq9uogkf"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "antaranews.com",
+      "id": "evt_b664692748837fcf",
+      "language": "Indonesian",
+      "matched_regions": [
+        "iran",
+        "houthi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Indonesia",
+      "tier": "medium",
+      "title": "Serangan Houthi di Yaman Picu kekhawatiran eskalasi konflik",
+      "tone": null,
+      "url": "https://www.antaranews.com/berita/5685533/serangan-houthi-di-yaman-picu-kekhawatiran-eskalasi-konflik"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "mediafax.ro",
+      "id": "evt_46e47e9815a37338",
+      "language": "Romanian",
       "matched_regions": [
         "niger"
       ],
       "matched_themes": [
-        "terror"
+        "nuclear"
       ],
       "region": "Sahel",
       "score": 3.5,
@@ -265,282 +426,277 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Nigeria",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Romania",
       "tier": "medium",
-      "title": "Nigeria , Benin Deepen Defence Cooperation to Tackle Terrorism , Cross - Border Crime",
+      "title": "România intră în lupta pentru uraniul Nigerului . Nuclearelectrica vrea să cumpere 300 de tone din stocul blocat la Niamey , râvnit și de Rusia",
       "tone": null,
-      "url": "https://allafrica.com/stories/202608070038.html"
+      "url": "https://www.mediafax.ro/stirile-zilei/romania-intra-in-lupta-pentru-uraniul-nigerului-nuclearelectrica-vrea-sa-cumpere-300-de-tone-din-stocul-blocat-la-niamey-ravnit-si-de-rusia-23787160"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "defenseone.com",
-      "id": "evt_d888077e0ecabf19",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Rough waters help firm demo  expeditionary manufacturing  aboard warship",
-      "tone": null,
-      "url": "https://www.defenseone.com/technology/2026/08/rough-waters-help-firm-demo-expeditionary-manufacturing-aboard-warship/415275/"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "economictimes.indiatimes.com",
-      "id": "evt_cfcf2c5e2b17c135",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "Telegram founder warns of new AI - powered threat that can force apps like Instagram removed from Playstore ; calls it  takedown extortion",
-      "tone": null,
-      "url": "https://economictimes.indiatimes.com/news/new-updates/telegram-founder-warns-of-new-ai-powered-threat-that-can-force-apps-like-instagram-removed-from-playstore-calls-it-takedown-extortion/articleshow/133024825.cms"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "dailyexcelsior.com",
-      "id": "evt_19ecaf3d15ca8ccd",
+      "domain": "laosnews.net",
+      "id": "evt_9ae619607a05f497",
       "language": "English",
       "matched_regions": [
-        "india",
-        "china"
+        "iran",
+        "hormuz"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 3.0,
+      "region": "MENA",
+      "score": 3.5,
       "score_breakdown": {
-        "region": 3.0,
+        "region": 3.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "India , China Reviewed Situation Along LAC During Diplomatic Talks : MEA",
+      "seen_date": "20260808T070000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Breakthrough possible on Strait of Hormuz as Iran finalizes deal",
       "tone": null,
-      "url": "https://www.dailyexcelsior.com/india-china-reviewed-situation-along-lac-during-diplomatic-talks-mea/"
+      "url": "http://www.laosnews.net/news/279225268/iran-oman-strait-of-hormuz-agreement-close-u-s-too-hints-at-deal"
     },
     {
       "actors": [
-        "Nigeria"
+        "Bangladesh"
       ],
-      "domain": "blueprint.ng",
-      "id": "evt_c333e45395bd89ac",
+      "domain": "bangladeshsun.com",
+      "id": "evt_4781cb658292aca6",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "sanction",
-        "sanctions"
+      "matched_regions": [
+        "iran",
+        "hormuz"
       ],
-      "region": "Global",
-      "score": 3.0,
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
+        "region": 3.5,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Nigeria",
-      "tier": "monitor",
-      "title": "NCoS sanctions officers , recovers phone after inmate TikTok live - stream",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Bangladesh",
+      "tier": "medium",
+      "title": "Breakthrough possible on Strait of Hormuz as Iran finalizes deal",
       "tone": null,
-      "url": "https://blueprint.ng/ncos-sanctions-officers-recovers-phone-after-inmates-tiktok-live-stream/"
+      "url": "http://www.bangladeshsun.com/news/279225268/iran-nears-strait-of-hormuz-deal-as-trump-signals-announcement"
     },
     {
       "actors": [
         "Indonesia"
       ],
-      "domain": "jawapos.com",
-      "id": "evt_fbdd06893653191a",
+      "domain": "jabar.tribunnews.com",
+      "id": "evt_ae952fc543a26d00",
       "language": "Indonesian",
-      "matched_regions": [
-        "iran",
-        "saudi"
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
       ],
-      "matched_themes": [],
-      "region": "MENA",
+      "region": "Global",
       "score": 3.0,
       "score_breakdown": {
-        "region": 3.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
+      "seen_date": "20260808T070000Z",
       "source_country": "Indonesia",
       "tier": "monitor",
-      "title": "Iran dan Proksi Diduga Siapkan Serangan ke Arab Saudi , Targetkan Fasilitas Energi hingga Bandara",
+      "title": "Konflik di Sukajaya Bogor Jadi Sorotan , Kanwil HAM Jabar Turun Langsung Temui Warga",
       "tone": null,
-      "url": "https://www.jawapos.com/internasional/2608070133/iran-dan-proksi-diduga-siapkan-serangan-ke-arab-saudi-targetkan-fasilitas-energi-hingga-bandara"
-    },
-    {
-      "actors": [
-        "Nigeria"
-      ],
-      "domain": "allafrica.com",
-      "id": "evt_9d94a83aa4453c5c",
-      "language": "English",
-      "matched_regions": [
-        "niger"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "Sahel",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Nigeria",
-      "tier": "monitor",
-      "title": "Nigeria : 2Baba Visits Attacked Benue Community , Calls for End to Killings",
-      "tone": null,
-      "url": "https://allafrica.com/stories/202608070075.html"
+      "url": "https://jabar.tribunnews.com/jabar-region/1180888/konflik-di-sukajaya-bogor-jadi-sorotan-kanwil-ham-jabar-turun-langsung-temui-warga"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "harzkurier.de",
-      "id": "evt_3fce8a7cca1ed60e",
+      "domain": "soester-anzeiger.de",
+      "id": "evt_184d97d6e04485ed",
       "language": "German",
-      "matched_regions": [
-        "iran",
-        "saudi"
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
       ],
-      "matched_themes": [],
-      "region": "MENA",
+      "region": "Global",
       "score": 3.0,
       "score_breakdown": {
-        "region": 3.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
+      "seen_date": "20260808T070000Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "Iran - Krieg News : Huthis planen wohl koordinierte Angriffe auf Saudi - Arabien",
+      "title": "Drohne mit Sprengstoff am Flughafen - War es Russland ?",
       "tone": null,
-      "url": "https://www.harzkurier.de/politik/article412152244/huthis-sollen-koordinierte-angriffe-auf-saudi-arabien-planen.html"
+      "url": "http://www.soester-anzeiger.de/politik/drohne-mit-sprengstoff-am-flughafen-war-es-russland-zr-94434441.html"
     },
     {
       "actors": [
-        "Pakistan"
+        "Germany"
       ],
-      "domain": "arynews.tv",
-      "id": "evt_723a44d2fe0439bd",
+      "domain": "op-online.de",
+      "id": "evt_16275370e90ad0a6",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Drohne mit Sprengstoff am Flughafen - War es Russland ?",
+      "tone": null,
+      "url": "http://www.op-online.de/politik/drohne-mit-sprengstoff-am-flughafen-war-es-russland-zr-94434441.html"
+    },
+    {
+      "actors": [
+        "Japan"
+      ],
+      "domain": "nuclear-news.net",
+      "id": "evt_20f6a974e50043e0",
       "language": "English",
       "matched_regions": [
-        "saudi",
-        "pakistan"
+        "mexico"
       ],
-      "matched_themes": [],
-      "region": "Asia del Sur",
-      "score": 2.5,
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "América Latina",
+      "score": 3.0,
       "score_breakdown": {
-        "region": 2.5,
-        "themes": 0.0,
+        "region": 1.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Pakistan",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Japan",
       "tier": "monitor",
-      "title": "Saudi Arabia , Turkey , Pakistan to sign defence pact on Friday",
+      "title": "The Next Weapons Frontier : New Mexico Expanding Military Industrial Ecosystem « nuclear - news",
       "tone": null,
-      "url": "https://arynews.tv/saudi-arabia-turkey-pakistan-to-sign-defence-pact-on-friday"
+      "url": "https://nuclear-news.net/2026/08/08/8-b1-the-next-weapons-frontier-new-mexicos-expanding-military-industrial-ecosystem/"
     },
     {
       "actors": [
-        "Israel"
+        "Germany"
       ],
-      "domain": "middleeasteye.net",
-      "id": "evt_835cb38c06076364",
-      "language": "English",
-      "matched_regions": [
-        "saudi",
-        "pakistan"
+      "domain": "tageblatt.de",
+      "id": "evt_162c833cb6c4814d",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
       ],
-      "matched_themes": [],
-      "region": "Asia del Sur",
-      "score": 2.5,
+      "region": "Global",
+      "score": 3.0,
       "score_breakdown": {
-        "region": 2.5,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Israel",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Turkey , Saudi Arabia , Pakistan to sign defense pact on Friday , sources say",
+      "title": "Drohne mit Sprengstoff am Flughafen - War es Russland ?",
       "tone": null,
-      "url": "https://www.middleeasteye.net/news/turkey-saudi-arabia-pakistan-sign-defense-pact-sources-say"
+      "url": "https://www.tageblatt.de/Nachrichten/Drohne-mit-Sprengstoff-am-Flughafen-War-es-Russland-761381.html"
     },
     {
       "actors": [
-        "Finland"
+        "United States"
       ],
-      "domain": "lansi-savo.fi",
-      "id": "evt_ab322be0629d246d",
-      "language": "Finnish",
-      "matched_regions": [
-        "saudi",
-        "pakistan"
-      ],
-      "matched_themes": [],
-      "region": "Asia del Sur",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 2.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Finland",
-      "tier": "monitor",
-      "title": "Uutistoimistot : Saudi - Arabia , Turkki ja Pakistan allekirjoittavat tänn yhteisen puolustussopimuksen",
-      "tone": null,
-      "url": "https://www.lansi-savo.fi/uutissuomalainen/9678575"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "maitlandmercury.com.au",
-      "id": "evt_785a0fefbd0b878c",
+      "domain": "nbc16.com",
+      "id": "evt_de9c47e87a7310e9",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "missile"
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Trump debuts $800 million war chest as details emerge on GOP midterm convention",
+      "tone": null,
+      "url": "https://nbc16.com/news/nation-world/trump-debuts-800-million-war-chest-as-details-emerge-on-gop-midterm-convention-republicans"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "die-glocke.de",
+      "id": "evt_ab4506d0bcde259e",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Drohne mit Sprengstoff am Flughafen - War es Russland ?",
+      "tone": null,
+      "url": "https://www.die-glocke.de/blick-in-die-welt/politik/artikel/drohne-mit-sprengstoff-am-flughafen-war-es-russland-1786160102"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "come-on.de",
+      "id": "evt_811734b22a3b38e1",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Drohne mit Sprengstoff am Flughafen - War es Russland ?",
+      "tone": null,
+      "url": "http://www.come-on.de/politik/drohne-mit-sprengstoff-am-flughafen-war-es-russland-zr-94434441.html"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "elperiodico.cat",
+      "id": "evt_dcb6b321cc4e2d8e",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
       ],
       "region": "Global",
       "score": 2.5,
@@ -549,219 +705,69 @@
         "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "No Pacific consensus on missile test condemnation",
-      "tone": null,
-      "url": "https://www.maitlandmercury.com.au/story/9325789/no-pacific-consensus-on-missile-test-condemnation/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "isp.netscape.com",
-      "id": "evt_c27057951047ce76",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "China exports slow slightly in July despite robust demand for high - tech products",
-      "tone": null,
-      "url": "https://isp.netscape.com:443/pf/story/0001/20260807/8bd433d388d143ba2d37a10aefdc5629"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "lasprovincias.es",
-      "id": "evt_6f4ae4e4e228bd20",
-      "language": "Spanish",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
+      "seen_date": "20260808T070000Z",
       "source_country": "Spain",
       "tier": "monitor",
-      "title": "Lo que cuentan las heridas en Gaza | Las Provincias",
+      "title": "Guerra dUcraïna , en DIRECTE | Última hora del conflicte i les negociacions",
       "tone": null,
-      "url": "https://www.lasprovincias.es/xlsemanal/gaza-disparos-selectivos-israelies-en-cabeza-y-cuerpo-de-ninos-20260803141542-ntrc.html"
+      "url": "https://www.elperiodico.cat/internacional/20260808/guerra-ucraina-russia-en-directe-ultima-126605559"
     },
     {
       "actors": [
-        "Indonesia"
+        "Romania"
       ],
-      "domain": "jawapos.com",
-      "id": "evt_14c028f7e9275b57",
-      "language": "Indonesian",
-      "matched_regions": [
-        "iran"
+      "domain": "ziare.com",
+      "id": "evt_b8c6f8d6a76baef3",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
       ],
-      "matched_themes": [],
-      "region": "MENA",
+      "region": "Global",
       "score": 2.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Indonesia",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Romania",
       "tier": "monitor",
-      "title": "Rencana Rahasia Gulingkan Pemerintah Iran Berujung Gagal , Mossad Pecat 2 Pejabat Seniornya",
+      "title": "Ucraina nu mai vrea să aștepte după dronele americane Patriot . Noua rachetă FP - 7X ar costa de peste cinci ori mai puțin",
       "tone": null,
-      "url": "https://www.jawapos.com/internasional/2608070134/rencana-rahasia-gulingkan-pemerintah-iran-berujung-gagal-mossad-pecat-2-pejabat-seniornya"
+      "url": "https://ziare.com/razboi-ucraina/drone-ucraina-productie-2028775"
     },
     {
       "actors": [
-        "Germany"
+        "Moldova"
       ],
-      "domain": "n-tv.de",
-      "id": "evt_6b872c91bf224740",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
+      "domain": "zdg.md",
+      "id": "evt_e0f2e18921e03bc7",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
       ],
-      "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "Global",
       "score": 2.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Germany",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Moldova",
       "tier": "monitor",
-      "title": "Ukraine fehlen Patriot - Raketen – Selenskyj vermutet politische Motive hinter Lieferengpässen",
+      "title": "LIVE TEXT / Forțele lui Putin au lansat un atac cu drone asupra regiunii Herson : două persoane au murit , iar cel puțin 24 au fost rănite . Război în Ucraina , ziua 1627",
       "tone": null,
-      "url": "https://www.n-tv.de/politik/Ukraine-fehlen-Patriot-Raketen-Selenskyj-vermutet-politische-Motive-hinter-Lieferengpaessen-id31164283.html"
+      "url": "https://www.zdg.md/stiri/stiri-externe/live-text-fortele-lui-putin-au-lansat-un-atac-cu-drone-asupra-regiunii-herson-doua-persoane-au-murit-iar-cel-putin-24-au-fost-ranite-razboi-in-ucraina-ziua-1627/"
     },
     {
       "actors": [
-        "Israel"
+        "Bosnia-Herzegovina"
       ],
-      "domain": "middleeasteye.net",
-      "id": "evt_3ee884221cea3e29",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "Why is Latin America becoming a breeding ground for  fanatics of Israel ?",
-      "tone": null,
-      "url": "https://www.middleeasteye.net/opinion/why-is-latin-america-a-breeding-ground-for-israel"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "dailyexcelsior.com",
-      "id": "evt_e0d9e4611de8fd3c",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "China exports slow slightly in July despite robust demand for high - tech products",
-      "tone": null,
-      "url": "https://www.dailyexcelsior.com/chinas-exports-slow-slightly-in-july-despite-robust-demand-for-high-tech-products/"
-    },
-    {
-      "actors": [
-        "Iran"
-      ],
-      "domain": "irannewsupdate.com",
-      "id": "evt_88c7a1a32becf2d1",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Iran",
-      "tier": "monitor",
-      "title": "From the Constitutional Revolution to Today : Iran Unfinished Struggle Against Dictatorship",
-      "tone": null,
-      "url": "https://irannewsupdate.com/news/general/from-the-constitutional-revolution-to-today-irans-unfinished-struggle-against-dictatorship/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "harzkurier.de",
-      "id": "evt_05cbc91726eba5fd",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Ukraine News : Selenskyj verkündet neue Kriegsziele – Angriffsbefehl",
-      "tone": null,
-      "url": "https://www.harzkurier.de/politik/article412317251/ukraine-krieg-news-aktuell-russland-ruestung-selenskyj-wirtschaft-kriegsziel-operation.html"
-    },
-    {
-      "actors": [
-        "Serbia"
-      ],
-      "domain": "naslovi.net",
-      "id": "evt_56f42521de6b4be1",
+      "domain": "avaz.ba",
+      "id": "evt_7cc7d75df9d2d00d",
       "language": "Bosnian",
       "matched_regions": [
         "iran"
@@ -774,20 +780,70 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Serbia",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Bosnia-Herzegovina",
       "tier": "monitor",
-      "title": "Advokat Rajić o Miliću i Kričku : Međusobno pozicioniranje u kriminalnoj grupi koju vodi Vučić",
+      "title": "Prvi čovjek američke vojske upozorava da zračni napadi nisu dovoljni za rat s Iranom",
       "tone": null,
-      "url": "https://naslovi.net/2026-08-07/danas/advokat-rajic-o-milicu-i-kricku-medjusobno-pozicioniranje-u-kriminalnoj-grupi-koju-vodi-vucic/42189849"
+      "url": "https://avaz.ba/vijesti/globus/1063363/prvi-covjek-americke-vojske-upozorava-da-zracni-napadi-nisu-dovoljni-za-rat-s-iranom"
     },
     {
       "actors": [
-        "Germany"
+        "United States"
       ],
-      "domain": "rhein-zeitung.de",
-      "id": "evt_e8fd39ba56ef73b1",
-      "language": "German",
+      "domain": "townhall.com",
+      "id": "evt_75efde08097a5179",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Naftali Bennett Vision for Israel : Bold Reforms and National Renewal",
+      "tone": null,
+      "url": "https://townhall.com/columnists/jonathanfeldstein/2026/08/08/naftali-bennetts-vision-for-israel-bold-reforms-and-national-renewal-n2680906"
+    },
+    {
+      "actors": [
+        "Mexico"
+      ],
+      "domain": "lajornadadeoriente.com.mx",
+      "id": "evt_92ed83f0d20ea304",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "militant"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Mexico",
+      "tier": "monitor",
+      "title": "Militantes de Morena denuncian ante la CNHJ a Salvatori y Palomares - Puebla La Jornada de Oriente",
+      "tone": null,
+      "url": "https://www.lajornadadeoriente.com.mx/puebla/militantes-de-morena-denuncian-ante-la-cnhj-a-salvatori-y-palomares/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "mankatofreepress.com",
+      "id": "evt_19ba2a9de232431d",
+      "language": "English",
       "matched_regions": [
         "iran"
       ],
@@ -799,45 +855,218 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
+      "seen_date": "20260808T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Iran leaders believe a victory is within reach , and that time is on their side | National News",
+      "tone": null,
+      "url": "https://www.mankatofreepress.com/news/state_national_news/iran-s-leaders-believe-a-victory-is-within-reach-and-that-time-is-on-their/article_68ca01ac-9ee9-54e2-80d6-0804016bc389.html"
+    },
+    {
+      "actors": [
+        "Japan"
+      ],
+      "domain": "nuclear-news.net",
+      "id": "evt_ab563942dcbe442e",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Japan",
+      "tier": "monitor",
+      "title": "Time to build a Scotland without nuclear weapons",
+      "tone": null,
+      "url": "https://nuclear-news.net/2026/08/08/8-b1-time-to-build-a-scotland-without-nuclear-weapons/"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "rtl.fr",
+      "id": "evt_5edfc2ef3ef0fe64",
+      "language": "French",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "États - Unis : plusieurs États touchés par des cyberattaques sur des réseaux deau potable , la piste iranienne nest pas exclue",
+      "tone": null,
+      "url": "https://www.rtl.fr/actu/international/etats-unis-plusieurs-etats-touches-par-des-cyberattaques-sur-des-reseaux-d-eau-potable-la-piste-iranienne-n-est-pas-exclue-7900660628"
+    },
+    {
+      "actors": [
+        "Japan"
+      ],
+      "domain": "nuclear-news.net",
+      "id": "evt_06a0cf146b44188f",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Japan",
+      "tier": "monitor",
+      "title": "Japan  cannot avoid  nuclear weapons debate , defense chief Koizumi says « nuclear - news",
+      "tone": null,
+      "url": "https://nuclear-news.net/2026/08/08/8-b1-japan-cannot-avoid-nuclear-weapons-debate-defense-chief-koizumi-says/"
+    },
+    {
+      "actors": [],
+      "domain": "news.yam.md",
+      "id": "evt_53391308dc8eae15",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "LIVE TEXT / Forțele lui Putin au lansat un atac cu drone asupra regiunii Herson : două persoane au murit , iar cel puțin 24 au fost rănite . Război în Ucraina , ziua 1627",
+      "tone": null,
+      "url": "https://news.yam.md/ro/story/51460002"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "finanzen.net",
+      "id": "evt_3294ce5f4f61a64b",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "Lage im Überblick : Neue Hypothek für Iran - Gespräche : Jemen - Konflikt eskaliert - Politik",
+      "title": "Sprengstoff - Drohne schockt Deutschland : Ist das die neue Chance für die DroneShield - Aktie ?",
       "tone": null,
-      "url": "https://www.rhein-zeitung.de/deutschland-welt/politik/neue-hypothek-fuer-iran-gespraeche-jemen-konflikt-eskaliert_arid-4145790.html"
+      "url": "https://www.finanzen.net/nachricht/aktien/drohnenabwehr-im-fokus-drohnenalarm-an-deutschen-flughaefen-startet-die-droneshield-aktie-jetzt-durch-00-15858181"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wral.com",
+      "id": "evt_eb60c9aa1ca0e351",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Iran leaders believe a victory is within reach , and that time is on their side :: WRAL . com",
+      "tone": null,
+      "url": "https://www.wral.com/news/ap/77d91-iran-s-leaders-believe-a-victory-is-within-reach-and-that-time-is-on-their-side/"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "journaldeleconomie.fr",
+      "id": "evt_a7b6ea5db85cd5f2",
+      "language": "French",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Un drone explosif découvert à Leipzig se trouvait à quelques mètres dun avion ukrainien chargé de munitions : la catastrophe nest pas passée loin",
+      "tone": null,
+      "url": "https://www.journaldeleconomie.fr/un-drone-explosif-decouvert-a-leipzig-se-trouvait-a-quelques-metres-dun-avion-ukrainien-charge-de-munitions-la-catastrophe-nest-pas-passee-loin/"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "sudouest.fr",
+      "id": "evt_23b55d7cb63ea330",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Guerre en Ukraine  : une nouvelle attaque russe sur Kiev et sa région fait trois morts , dont un enfant",
+      "tone": null,
+      "url": "https://www.sudouest.fr/international/europe/ukraine/volodymyr-zelensky/guerre-en-ukraine-une-nouvelle-attaque-russe-sur-kiev-et-sa-region-fait-trois-morts-dont-un-enfant-30195821.php"
     },
     {
       "actors": [
         "Spain"
       ],
-      "domain": "elperiodico.com",
-      "id": "evt_a5be34720f99bc7c",
+      "domain": "europapress.es",
+      "id": "evt_89fd30171a06dc73",
       "language": "Spanish",
-      "matched_regions": [
-        "venezuela"
-      ],
-      "matched_themes": [],
-      "region": "América Latina",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "El Gobierno provisional y un sector de la oposición de Venezuela sientan las bases para negociar bajo la mirada de EEUU",
-      "tone": null,
-      "url": "https://www.elperiodico.com/es/internacional/20260807/gobierno-provisional-sector-oposicion-venezuela-133160428"
-    },
-    {
-      "actors": [
-        "Turkey"
-      ],
-      "domain": "evrensel.net",
-      "id": "evt_3d87dffe6f82acce",
-      "language": "Turkish",
       "matched_regions": [
         "yemen"
       ],
@@ -849,70 +1078,45 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Turkey",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Spain",
       "tier": "monitor",
-      "title": "Yemende Husilerin saldırısında 17 asker öldü",
+      "title": "El Ejército de Yemen anuncia una operación contra posiciones hutíes y promete responder a nuevos ataques",
       "tone": null,
-      "url": "https://www.evrensel.net/haber/5995404/yemen-de-husilerin-saldirisinda-17-asker-oldu"
+      "url": "https://www.europapress.es/internacional/noticia-ejercito-yemen-anuncia-operacion-contra-posiciones-huties-promete-responder-nuevos-ataques-20260808061631.html"
     },
     {
       "actors": [
-        "Nigeria"
+        "Australia"
       ],
-      "domain": "allafrica.com",
-      "id": "evt_213eb928d0041e9e",
+      "domain": "irrigator.com.au",
+      "id": "evt_deca2e645de20d82",
       "language": "English",
-      "matched_regions": [
-        "niger"
+      "matched_regions": [],
+      "matched_themes": [
+        "strike"
       ],
-      "matched_themes": [],
-      "region": "Sahel",
+      "region": "Global",
       "score": 1.5,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Nigeria",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Australia",
       "tier": "monitor",
-      "title": "Nigeria : Reps Defence Committee Hails Tinubu Military Pay Rise , Army Expansion",
+      "title": "Two - day strike hits BHP iron ore exports in Pilbara",
       "tone": null,
-      "url": "https://allafrica.com/stories/202608070077.html"
+      "url": "https://www.irrigator.com.au/story/9326323/two-day-strike-hits-bhps-iron-ore-exports-in-pilbara/"
     },
     {
       "actors": [
         "Italy"
       ],
-      "domain": "bresciaoggi.it",
-      "id": "evt_f02949131b2a435f",
+      "domain": "zazoom.it",
+      "id": "evt_15fac8f3a19597fa",
       "language": "Italian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Wsj ,  Putin potrebbe testare la determinazione Nato con attacco limitato",
-      "tone": null,
-      "url": "https://www.bresciaoggi.it/news/mondo/wsj-putin-potrebbe-testare-la-determinazione-nato-con-attacco-limitato-1.13091803"
-    },
-    {
-      "actors": [
-        "Lithuania"
-      ],
-      "domain": "vz.lt",
-      "id": "evt_0975044288336fe0",
-      "language": "Lithuanian",
       "matched_regions": [
         "pakistan"
       ],
@@ -924,69 +1128,119 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Lithuania",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "Didėjant įtampai regione Saudo Arabija , Turkija ir Pakistanas pasirašys gynybos paktą",
+      "title": "Islamabad rafforza lasse con Pechino | lesercito pakistano abbandona WhatsApp per lapp di messagistica cinese WeChat",
       "tone": null,
-      "url": "https://www.vz.lt/verslo-aplinka/2026/08/07/saudo-arabija-turkija-ir-pakistanas-pasirasys-bendra-gynybos-pakta-didejant-itampai-regione-588453"
+      "url": "https://www.zazoom.it/2026-08-08/islamabad-rafforza-lasse-con-pechino-lesercito-pakistano-abbandona-whatsapp-per-lapp-di-messagistica-cinese-wechat/19548371/"
     },
     {
       "actors": [
-        "Suriname"
+        "Australia"
       ],
-      "domain": "starnieuws.com",
-      "id": "evt_998b0355d9f01349",
-      "language": "Dutch",
-      "matched_regions": [
-        "venezuela"
+      "domain": "yasstribune.com.au",
+      "id": "evt_0235c1264b83764a",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "strike"
       ],
-      "matched_themes": [],
-      "region": "América Latina",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Suriname",
-      "tier": "monitor",
-      "title": "Starnieuws - Politieke overgangsgesprekken Venezuela beginnen zonder Machado",
-      "tone": null,
-      "url": "https://www.starnieuws.com/index.php/welcome/index/nieuwsitem/93296"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "hotnews.ro",
-      "id": "evt_27fd9ce941904e85",
-      "language": "Romanian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
       "region": "Global",
       "score": 1.5,
       "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Two - day strike hits BHP iron ore exports in Pilbara",
+      "tone": null,
+      "url": "https://www.yasstribune.com.au/story/9326323/two-day-strike-hits-bhps-iron-ore-exports-in-pilbara/"
+    },
+    {
+      "actors": [
+        "Albania"
+      ],
+      "domain": "gazetatema.net",
+      "id": "evt_40c4c8c53adac260",
+      "language": "Albanian",
+      "matched_regions": [
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
-      "source_country": "Romania",
+      "seen_date": "20260808T070000Z",
+      "source_country": "Albania",
       "tier": "monitor",
-      "title": "Aceleași servicii secrete care au anunțat exact când Rusia va ataca Ucraina susțin acum că Putin are un plan de a ataca un stat NATO . Termenul e mai rapid decât se credea",
+      "title": "Pasiguria për Ngushticën e Hormuzit mban nën presion tregjet",
       "tone": null,
-      "url": "https://hotnews.ro/planul-lui-putin-pentru-un-atac-asupra-nato-anticipat-de-serviciile-secrete-americane-2319195"
+      "url": "https://www.gazetatema.net/bota/pasiguria-per-ngushticen-e-hormuzit-mban-nen-presion-tregjet-i578418"
+    },
+    {
+      "actors": [
+        "Kosovo"
+      ],
+      "domain": "zeri.info",
+      "id": "evt_d457df32787b343f",
+      "language": "Albanian",
+      "matched_regions": [
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Kosovo",
+      "tier": "monitor",
+      "title": "Pasiguria për Ngushticën e Hormuzit mban nën presion tregjet",
+      "tone": null,
+      "url": "https://www.zeri.info/bota/632817/pasiguria-per-ngushticen-e-hormuzit-mban-nen-presion-tregjet/"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "thecourier.com.au",
+      "id": "evt_15a37beac07e4d9f",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Two - day strike hits BHP iron ore exports in Pilbara",
+      "tone": null,
+      "url": "https://www.thecourier.com.au/story/9326323/two-day-strike-hits-bhps-iron-ore-exports-in-pilbara/"
     },
     {
       "actors": [
         "Italy"
       ],
-      "domain": "notizie.it",
-      "id": "evt_423ad9c4a50367cd",
+      "domain": "viveresanbenedetto.it",
+      "id": "evt_f1eebf4f3ba7bad8",
       "language": "Italian",
       "matched_regions": [
         "nato"
@@ -999,12 +1253,108 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260807T071500Z",
+      "seen_date": "20260808T070000Z",
       "source_country": "Italy",
       "tier": "monitor",
-      "title": "Vladimir Putin potrebbe testare la resistenza della Nato con un attacco mirato",
+      "title": "Marcinelle , 70 anni fa la strage di 262 minatori . L  8 agosto diventa giornata vittime sul lavoro • Vivere San Benedetto notizie per la città e il territorio",
       "tone": null,
-      "url": "https://www.notizie.it/vladimir-putin-potrebbe-testare-la-resistenza-della-nato-con-un-attacco-mirato/"
+      "url": "https://www.viveresanbenedetto.it/altrigiornali/14/139933-2026"
+    },
+    {
+      "actors": [],
+      "domain": "thecatholicherald.com",
+      "id": "evt_f5eded392d5a60a9",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "The Week in Review : Ceuta , traditional Mass , church attacks and more",
+      "tone": null,
+      "url": "https://thecatholicherald.com/article/the-week-in-review-ceuta-traditional-mass-church-attacks-and-more"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "gloucesteradvocate.com.au",
+      "id": "evt_e7eea262d3b6e392",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Two - day strike hits BHP iron ore exports in Pilbara",
+      "tone": null,
+      "url": "https://www.gloucesteradvocate.com.au/story/9326323/two-day-strike-hits-bhps-iron-ore-exports-in-pilbara/"
+    },
+    {
+      "actors": [],
+      "domain": "syri.net",
+      "id": "evt_1f862b5b8f20bbea",
+      "language": "Albanian",
+      "matched_regions": [
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Pasiguria për Ngushticën e Hormuzit mban nën pr - Syri",
+      "tone": null,
+      "url": "https://www.syri.net/bote/908505/pasiguria-per-ngushticen-e-hormuzit-mban-nen-presion-tregjet/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "grandforksherald.com",
+      "id": "evt_1cda36b8d26bfda8",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "mobiliz"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260808T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Today in History : August 8 , 1917 - Examination of candidates for new army begins here ; mobilization plans now up",
+      "tone": null,
+      "url": "https://www.grandforksherald.com/community/today-in-history-august-8-1917-examination-of-candidates-for-new-army-begins-here-mobilization-plans-now-up"
     }
   ],
   "filters": {
@@ -1018,13 +1368,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-07T07:44:25Z",
+  "generated_at": "2026-08-08T07:22:36Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 2,
-    "medium": 8,
-    "monitor": 29
+    "high": 3,
+    "medium": 15,
+    "monitor": 35
   },
-  "total_events": 39
+  "total_events": 53
 }
