@@ -1,7 +1,7 @@
 {
   "project": "GEOPÓLEM",
   "collection": "Plan Z",
-  "updated_at": "2026-07-26T00:21:00+02:00",
+  "updated_at": "2026-08-09T14:45:00+02:00",
   "canonical_youtube_url": "https://youtu.be/lthQ_ksRACE",
   "items": [
     {
@@ -18,6 +18,19 @@
       "files": {
         "web_markdown": "./plan_z_04_la_ruta_oscura_ficha_web.md",
         "app_json": "./plan_z_04_la_ruta_oscura_ficha_app.json"
+      }
+    },
+    {
+      "id": "plan_z_pdvsa_colapso",
+      "episode_number": 7,
+      "public_label": "Plan Z · PDVSA",
+      "title": "El vaciamiento de PDVSA",
+      "slug": "plan-z-pdvsa-colapso",
+      "status": "editorial_review",
+      "route": "https://geopolem.com/pdvsa/",
+      "files": {
+        "web_markdown": "./plan_z_pdvsa_colapso_ficha_web.md",
+        "app_json": "./plan_z_pdvsa_colapso_ficha_app.json"
       }
     }
   ]

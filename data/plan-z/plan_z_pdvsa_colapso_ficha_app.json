@@ -1,0 +1,104 @@
+{
+  "id": "plan-z-pdvsa-colapso",
+  "series": "Plan Z",
+  "title": "El vaciamiento de PDVSA: corrupción sistémica y colapso energético",
+  "slug": "plan-z-pdvsa-colapso",
+  "route": "/pdvsa/",
+  "status": "editorial_review",
+  "prepared_at": "2026-08-09",
+  "author": "María del Carmen Díaz Naranjo",
+  "brand": "GEOPÓLEM",
+  "method": ["HECHO", "EVALUACIÓN", "HIPÓTESIS GEOPÓLEM", "SEÑAL"],
+  "format": {
+    "long_video": "YouTube 12-15 min",
+    "short": "9:16 60-75 sec",
+    "web": "geopolem.com ficha",
+    "app": "JSON card"
+  },
+  "bluf": "PDVSA no colapsó por una sola causa. La evidencia apunta a una combinación de mala gestión, crisis económica, sanciones, descapitalización, deuda, deterioro técnico, opacidad y captura institucional. La hipótesis GEOPÓLEM es que ese vaciamiento abrió el tablero de Plan Z: quien controle operación, licencias, deuda, contratos y narrativa podrá capturar el flujo futuro.",
+  "key_numbers": [
+    {
+      "label": "Reservas probadas de crudo",
+      "value": "303.000 millones de barriles",
+      "source": "EIA",
+      "url": "https://www.eia.gov/international/content/analysis/countries_long/Venezuela/pdf/venezuela_2024.pdf"
+    },
+    {
+      "label": "Participación en reservas globales",
+      "value": "cerca de 17%",
+      "source": "EIA",
+      "url": "https://www.eia.gov/international/content/analysis/countries_long/Venezuela/pdf/venezuela_2024.pdf"
+    },
+    {
+      "label": "Producción 2023",
+      "value": "742.000 b/d",
+      "source": "EIA",
+      "url": "https://www.eia.gov/international/content/analysis/countries_long/Venezuela/pdf/venezuela_2024.pdf"
+    },
+    {
+      "label": "Caída acumulada vs. 2013",
+      "value": "70%",
+      "source": "EIA",
+      "url": "https://www.eia.gov/international/content/analysis/countries_long/Venezuela/pdf/venezuela_2024.pdf"
+    },
+    {
+      "label": "Producción 2024 OPEP fuentes secundarias",
+      "value": "874.000 b/d",
+      "source": "OPEC Annual Report 2024",
+      "url": "https://www.opec.org/assets/assetdb/annual-report-2024.pdf"
+    },
+    {
+      "label": "Producción 2024 OPEP comunicación directa",
+      "value": "921.000 b/d",
+      "source": "OPEC Annual Report 2024",
+      "url": "https://www.opec.org/assets/assetdb/annual-report-2024.pdf"
+    },
+    {
+      "label": "Pasivos totales estimados",
+      "value": "más de 150.000 millones USD",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/energy/venezuela-starts-sovereign-pdvsa-debt-overhaul-liabilities-seen-above-150-bln-2026-05-13/"
+    }
+  ],
+  "analysis_layers": [
+    {
+      "layer": "HECHO",
+      "summary": "PDVSA perdió producción, refinación, capacidad de transporte, inversión y acceso financiero."
+    },
+    {
+      "layer": "EVALUACIÓN",
+      "summary": "La fusión de regulador y operador y la extracción fiscal redujeron la capacidad de reinversión y control interno."
+    },
+    {
+      "layer": "HIPÓTESIS GEOPÓLEM",
+      "summary": "El vaciamiento institucional permite que el futuro del flujo petrolero sea capturado por actores que controlen operación, licencias, deuda, contratos y narrativa."
+    },
+    {
+      "layer": "SEÑAL",
+      "summary": "BPA, Andorra, el informe AN 2016, sanciones, deuda y procesos inconclusos muestran una arquitectura de rendición de cuentas fragmentada."
+    }
+  ],
+  "legal_guardrails": [
+    "GEOPÓLEM no acusa a ninguna persona.",
+    "Toda persona mencionada conserva la presunción de inocencia.",
+    "No consta sentencia condenatoria firme contra Rafael Ramírez en ninguna jurisdicción.",
+    "Rafael Ramírez ha negado públicamente las acusaciones y sostiene que es víctima de persecución política.",
+    "FinCEN emitió una determinación administrativa sobre BPA en 2015, no una sentencia judicial.",
+    "La determinación de FinCEN sobre BPA fue retirada el 29 de febrero de 2016.",
+    "El informe de la Asamblea Nacional de 2016 fue un informe político, no una condena penal."
+  ],
+  "sources": [
+    "https://www.eia.gov/international/content/analysis/countries_long/Venezuela/pdf/venezuela_2024.pdf",
+    "https://www.opec.org/assets/assetdb/annual-report-2024.pdf",
+    "https://www.congress.gov/crs_external_products/IN/PDF/IN12637/IN12637.2.pdf",
+    "https://www.fincen.gov/system/files/shared/BPA_NOF.pdf",
+    "https://www.fincen.gov/resources/statutes-and-regulations/special-measures",
+    "https://home.treasury.gov/news/press-releases/sm594",
+    "https://www.reuters.com/business/energy/venezuela-starts-sovereign-pdvsa-debt-overhaul-liabilities-seen-above-150-bln-2026-05-13/",
+    "https://www.reuters.com/business/energy/venezuelan-oil-industry-worlds-largest-reserves-decaying-infrastructure-2026-01-03/",
+    "https://transparenciave.org/wp-content/uploads/2016/10/Informe-Final-Expediente-1648-PDVSA.pdf",
+    "https://armando.info/el-oro-negro-venezolano-colmo-las-bovedas-bancarias-de-suiza/"
+  ],
+  "cta": "Ver el episodio completo en YouTube y seguir el tablero Plan Z en geopolem.com.",
+  "closing": "GEOPÓLEM. Bienvenidos al tablero."
+}

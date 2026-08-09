@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geopolem-command-v1.35.4';
+const CACHE_NAME = 'geopolem-command-v1.35.5';
 const CONFLICTS_DIR = './conflictos-activos/';
 const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
 const WATCHLIST_DIR = './conflict-watchlist-2026/';
@@ -26,6 +26,10 @@ const APP_SHELL = [
   './talasocracia/index.html',
   './waico/index.html',
   './tripolaridad/index.html',
+  './pdvsa/index.html',
+  './data/plan-z/index.json',
+  './data/plan-z/plan_z_pdvsa_colapso_ficha_app.json',
+  './data/plan-z/plan_z_pdvsa_colapso_ficha_web.md',
   './data/tripolaridad/tripolaridad-imperfecta.json',
   './data/tripolaridad/episodio-meta-v2-16-chokepoints-un-solo-tablero.md',
   './data/tripolaridad/fact-check-osint-16-chokepoints.md',
