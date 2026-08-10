@@ -625,125 +625,232 @@ export const DOCTRINA = {
    IMPORTANTE: correlación temporal no implica causalidad.
    ======================================================================== */
 export const SENTINEL_BRIEF = {
-  brand: 'GEOPÓLEM',
-  eyebrow: 'GEOPÓLEM SENTINEL',
-  eyebrowEn: 'GEOPÓLEM SENTINEL',
-  title: 'Brief semanal de inflexiones conflicto-ambiente',
-  titleEn: 'Weekly conflict-environment inflection brief',
-  generatedAt: '2026-08-03T08:08:00+02:00',
-  window: '27 de julio – 2 de agosto de 2026 · Europe/Luxembourg',
-  windowEn: 'July 27 – August 2, 2026 · Europe/Luxembourg',
-  dataUrl: './data/sentinel/weekly-brief.json',
-  archiveUrl: './data/sentinel/sentinel_weekly_brief_2026-07-27_2026-08-02.json',
-  indexUrl: './data/sentinel/index.json',
-  // Etiqueta de la capa que se muestra dentro del monitor de alertas
-  layerLabel: 'Acople ambiental significativo',
-  layerLabelEn: 'Significant environmental coupling',
-  status: 'Tres acoples operativos confirmados · NASA/USGS sin match geoespacial directo',
-  statusEn: 'Three confirmed operational couplings · no direct NASA/USGS geospatial match',
-  summary: 'Estado principal de la semana: el feed SENTINEL elevó la señal MENA por Irán, Ormuz y Gaza, y mantuvo una segunda capa sobre Ucrania/Rusia. NASA EONET devolvió 21 eventos abiertos y USGS 153 sismos M4.5+, pero ninguno produjo un match geoespacial directo con las zonas prioritarias del feed. Por eso la selección no fuerza causalidad climática: se publican tres acoples operativos verificados por fuentes institucionales. Ormuz concentra el punto energético: la guerra cerró efectivamente el estrecho y dejó fuera cerca de 20 millones de barriles diarios de crudo y productos refinados. Gaza concentra el acople humanitario-ambiental: agua, saneamiento, nutrición y acceso siguen bajo presión. Ucrania concentra el acople de infraestructura crítica: ataques, cortes de electricidad y agua, y preparación invernal sobre comunidades ya dañadas.',
-  summaryEn: 'Main status this week: SENTINEL raised the MENA signal around Iran, Hormuz and Gaza, while keeping a second layer around Ukraine/Russia. NASA EONET returned 21 open events and USGS returned 153 M4.5+ earthquakes, but none produced a direct geospatial match with the feed’s priority zones. The selection therefore does not force climate causality: it publishes three operational couplings verified by institutional sources. Hormuz is the energy point: war effectively closed the strait and cut off roughly 20 million barrels per day of crude and refined products. Gaza is the humanitarian-environmental point: water, sanitation, nutrition and access remain under pressure. Ukraine is the critical-infrastructure point: attacks, electricity and water cuts, and winter preparations overlay already damaged communities.',
-  caveat: 'NASA EONET y USGS no arrojaron un evento natural acoplado directamente a Irán/Ormuz, Gaza o Ucrania/Crimea. La edición usa fuentes institucionales para acoples operativos conflicto-ambiente: energía y chokepoint, WASH y salud pública, infraestructura crítica y continuidad de servicios. Correlación no implica causalidad.',
-  caveatEn: 'NASA EONET and USGS did not return a natural event directly coupled to Iran/Hormuz, Gaza or Ukraine/Crimea. This edition uses institutional sources for operational conflict-environment couplings: energy chokepoint, WASH and public health, critical infrastructure and service continuity. Correlation does not imply causation.',
-  stats: [
-    { label: 'Eventos SENTINEL en ventana', labelEn: 'SENTINEL events in window', value: '50' },
-    { label: 'Coincidencias automáticas', labelEn: 'Automatic candidate matches', value: '0' },
-    { label: 'Sismos USGS M4.5+', labelEn: 'USGS M4.5+ quakes', value: '153' },
-    { label: 'NASA EONET abiertos', labelEn: 'NASA EONET open', value: '21' },
+  "brand": "GEOPÓLEM",
+  "eyebrow": "GEOPÓLEM SENTINEL",
+  "eyebrowEn": "GEOPÓLEM SENTINEL",
+  "title": "Brief semanal de inflexiones conflicto-ambiente",
+  "titleEn": "Weekly conflict-environment inflection brief",
+  "generatedAt": "2026-08-10T08:09:00+02:00",
+  "window": "3 de agosto – 9 de agosto de 2026 · Europe/Luxembourg",
+  "windowEn": "August 3 – August 9, 2026 · Europe/Luxembourg",
+  "dataUrl": "./data/sentinel/weekly-brief.json",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-08-03_2026-08-09.json",
+  "indexUrl": "./data/sentinel/index.json",
+  "layerLabel": "Acople ambiental significativo",
+  "layerLabelEn": "Significant environmental coupling",
+  "status": "Un acople confirmado · dos señales de vigilancia · sin causalidad forzada",
+  "statusEn": "One confirmed coupling · two watch signals · no forced causality",
+  "summary": "Estado principal de la semana: SENTINEL registró 51 eventos y siete de prioridad alta; NASA EONET aportó eventos ambientales abiertos y cerrados, y USGS registró 27 sismos M5+ en la ventana UTC equivalente. No se identifican tres causalidades ambientales confirmadas. Se publica un acople confirmado, Gaza WASH, y dos señales de vigilancia: Ormuz-Suez como ruta crítica bajo presión y Taiwán-Dolphin como vigilancia meteorológica-operacional en Asia-Pacífico.",
+  "summaryEn": "Main weekly status: SENTINEL recorded 51 events and seven high-tier events; NASA EONET contributed open and closed environmental events, and USGS recorded 27 M5+ earthquakes in the equivalent UTC window. Three confirmed environmental causalities were not identified. This edition publishes one confirmed coupling, Gaza WASH, and two watch signals: Hormuz-Suez as a critical-route pressure stack and Taiwan-Dolphin as a meteorological-operational watch in Asia-Pacific.",
+  "caveat": "No se afirma causalidad entre Ormuz y el sismo de Suez, ni entre Dolphin y una escalada militar en Taiwán. La capa distingue HECHO, EVALUACIÓN, HIPÓTESIS y SEÑAL.",
+  "caveatEn": "No causality is claimed between Hormuz and the Suez earthquake, nor between Dolphin and military escalation around Taiwan. The layer distinguishes FACT, ASSESSMENT, HYPOTHESIS and SIGNAL.",
+  "stats": [
+    {
+      "label": "Eventos SENTINEL",
+      "labelEn": "SENTINEL events",
+      "value": "51"
+    },
+    {
+      "label": "Sismos USGS M5+",
+      "labelEn": "USGS M5+ quakes",
+      "value": "27"
+    },
+    {
+      "label": "NASA EONET abiertos",
+      "labelEn": "NASA EONET open",
+      "value": "14"
+    },
+    {
+      "label": "Acoples confirmados",
+      "labelEn": "Confirmed couplings",
+      "value": "1"
+    }
   ],
-  points: [
+  "points": [
     {
-      id: 'hormuz-energia-chokepoint',
-      rank: 1,
-      status: 'confirmado',
-      statusEn: 'confirmed',
-      priority: 'alta',
-      priorityEn: 'high',
-      accent: '#f87171',
-      location: 'Estrecho de Ormuz · Golfo Pérsico',
-      headline: 'Ormuz: cuando un chokepoint energético se convierte en variable macro',
-      headlineEn: 'Hormuz: when an energy chokepoint becomes a macro variable',
-      fact: 'El FMI describe la guerra como el cierre efectivo del Estrecho de Ormuz, con unos 20 millones de barriles diarios de crudo y productos refinados fuera del flujo normal, aproximadamente una quinta parte del consumo mundial. La misma fuente señala que más de 1.100 millones de barriles no habían llegado al mercado hacia finales de mayo, una escala superior a choques históricos comparables en la misma etapa de la disrupción.',
-      coupling: 'Acople operativo confirmado: conflicto militar, entorno marítimo de riesgo, seguro/transporte, inventarios y continuidad energética global. No es un evento natural NASA/USGS, sino un acople conflicto-ruta crítica-mercado físico.',
-      couplingType: ['Conflicto militar', 'Ruta marítima crítica', 'Mercado energético'],
-      couplingTypeEn: ['Military conflict', 'Critical maritime route', 'Energy market'],
-      couplingEn: 'Confirmed operational coupling: military conflict, maritime risk environment, insurance/shipping, inventories and global energy continuity. This is not a NASA/USGS natural event; it is a conflict-critical-route-physical-market coupling.',
-      implication: 'El punto crítico no es solo el precio del petróleo: es la pérdida de margen del sistema. Las rutas alternativas por Yanbu y Fujairah compensan solo una fracción; si se reduce la confianza de operadores y aseguradoras, la reapertura formal no equivale a normalización real.',
-      tripolar: 'EE.UU. intenta sostener libertad de navegación y arquitectura energética; China depende de continuidad de flujos hacia Asia; Rusia gana margen narrativo y de mercado como productor alternativo; UE y Sur Global absorben inflación energética y riesgo logístico.',
-      sources: [
-        { label: 'IMF · Oil Market Shock', url: 'https://www.imf.org/en/blogs/articles/2026/07/15/the-oil-market-absorbed-the-war-shock-but-buffers-are-running-low' },
-        { label: 'IEA · Oil Market Report', url: 'https://www.iea.org/reports/oil-market-report-july-2026' },
-        { label: 'GEOPÓLEM SENTINEL', url: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json' },
+      "id": "ormuz-suez-ruta-critica",
+      "rank": 1,
+      "status": "en observación",
+      "statusEn": "under observation",
+      "priority": "alta",
+      "priorityEn": "high",
+      "accent": "#ff2d25",
+      "location": "Ormuz + Suez · Golfo Pérsico / Egipto",
+      "headline": "Ormuz y Suez: dos cuellos de botella bajo vigilancia simultánea",
+      "headlineEn": "Hormuz and Suez: two chokepoints under simultaneous watch",
+      "fact": "HECHO: Ormuz se mantuvo como señal prioritaria por las condiciones iraníes de reapertura y por avisos UKMTO en tránsito del estrecho; USGS registró un sismo M5.0 cerca de Suez dentro de la misma ventana semanal.",
+      "coupling": "Vigilancia ruta crítica-geofísica-conflicto; no causalidad confirmada.",
+      "couplingType": [
+        "Ruta crítica",
+        "Sismo M5+",
+        "Presión geopolítica"
       ],
+      "couplingTypeEn": [
+        "Critical route",
+        "M5+ earthquake",
+        "Geopolitical pressure"
+      ],
+      "couplingEn": "Vigilancia ruta crítica-geofísica-conflicto; no causalidad confirmada.",
+      "implication": "EVALUACIÓN: No hay evidencia de que el sismo haya afectado el Canal de Suez ni de que exista causalidad con Ormuz. La relevancia está en la superposición de dos rutas críticas en una misma semana: un estrecho politizado y un corredor geofísicamente observado.",
+      "tripolar": "EE.UU. intenta preservar libertad de navegación y credibilidad de seguridad marítima; China necesita continuidad de flujos hacia Asia; Rusia obtiene margen narrativo y de mercado si sube el coste energético; UE y Sur Global absorben coste logístico e inflación importada.",
+      "sources": [
+        {
+          "label": "RTE · Iran issues demands for reopening of Strait of Hormuz",
+          "url": "https://www.rte.ie/news/middle-east/2026/0809/1587118-iran-issues-demands-for-reopening-of-strait-of-hormuz/"
+        },
+        {
+          "label": "USGS · M 5.0 near Suez",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thpb"
+        },
+        {
+          "label": "UKMTO · Recent incidents",
+          "url": "https://www.ukmto.org/indian-ocean/recent-incidents"
+        },
+        {
+          "label": "GEOPÓLEM SENTINEL",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        }
+      ]
     },
     {
-      id: 'gaza-wash-nutricion',
-      rank: 2,
-      status: 'confirmado',
-      statusEn: 'confirmed',
-      priority: 'alta',
-      priorityEn: 'high',
-      accent: '#38bdf8',
-      location: 'Gaza · agua, saneamiento, nutrición y acceso',
-      headline: 'Gaza: la crisis ya no es solo alimentos, es agua, saneamiento y enfermedad',
-      headlineEn: 'Gaza: the crisis is no longer only food; it is water, sanitation and disease',
-      fact: 'UNICEF, FAO y WFP advierten que las mejoras alimentarias siguen siendo frágiles: las familias carecen de agua, saneamiento y medicinas, persisten brotes de enfermedad, el acceso a agua segura y saneamiento es limitado, y unas 74.000 niñas y niños aún necesitarían tratamiento por malnutrición aguda durante el próximo año. OCHA oPt reportó que 63% de los hogares tenía menos de seis litros de agua potable por persona al día y que 60% estaba expuesto a aguas residuales o desechos humanos cerca de sus refugios.',
-      coupling: 'Acople operativo confirmado: conflicto, acceso restringido, WASH, salud pública y seguridad alimentaria. La degradación ambiental-sanitaria no causa el conflicto; aumenta su coste humano y reduce la capacidad de recuperación.',
-      couplingType: ['Conflicto', 'WASH', 'Salud pública', 'Seguridad alimentaria'],
-      couplingTypeEn: ['Conflict', 'WASH', 'Public health', 'Food security'],
-      couplingEn: 'Confirmed operational coupling: conflict, restricted access, WASH, public health and food security. The environmental-sanitary degradation does not cause the conflict; it increases human cost and reduces recovery capacity.',
-      implication: 'El riesgo de Gaza no es solo hambre como evento aislado: es el bucle agua-saneamiento-enfermedad-nutrición. Si el acceso humanitario y comercial no se sostiene, las mejoras pueden revertirse en meses.',
-      tripolar: 'EE.UU. conserva peso diplomático y militar sobre Israel; la UE absorbe presión normativa y humanitaria; actores regionales compiten por mediación; China y el Sur Global explotan la narrativa de doble rasero y gobernanza internacional.',
-      sources: [
-        { label: 'UNICEF · Gaza food and nutrition', url: 'https://www.unicef.org/press-releases/food-security-and-child-nutrition-crises-persist-gaza-despite-fragile-gains-due' },
-        { label: 'OCHA oPt · Situation Report', url: 'https://www.ochaopt.org/content/humanitarian-situation-report-16-july-2026' },
-        { label: 'GEOPÓLEM SENTINEL', url: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json' },
+      "id": "gaza-wash-salud-publica",
+      "rank": 2,
+      "status": "confirmado",
+      "statusEn": "confirmed",
+      "priority": "alta",
+      "priorityEn": "high",
+      "accent": "#3dd6d0",
+      "location": "Gaza · agua, saneamiento y salud pública",
+      "headline": "Gaza: el acople confirmado es agua, saneamiento y gobernanza humanitaria",
+      "headlineEn": "Gaza: the confirmed coupling is water, sanitation and humanitarian governance",
+      "fact": "HECHO: OCHA reportó sobre Gaza daños masivos de vivienda e infraestructura, interrupciones de servicios esenciales y restricciones operativas; su snapshot del 5 de agosto registró 84% de hogares evaluados con inseguridad hídrica moderada a alta y 86% con dificultades para acceder a saneamiento seguro y limpio.",
+      "coupling": "Acople confirmado conflicto-WASH-salud pública-capacidad estatal/humanitaria.",
+      "couplingType": [
+        "WASH",
+        "Salud pública",
+        "Gobernanza humanitaria"
       ],
+      "couplingTypeEn": [
+        "WASH",
+        "Public health",
+        "Humanitarian governance"
+      ],
+      "couplingEn": "Acople confirmado conflicto-WASH-salud pública-capacidad estatal/humanitaria.",
+      "implication": "EVALUACIÓN: El agua y el saneamiento ya no son solo variables humanitarias: son continuidad operacional, salud pública, control territorial y legitimidad de gobernanza.",
+      "tripolar": "EE.UU. conserva influencia militar y diplomática sobre Israel; la UE enfrenta presión normativa y humanitaria; actores regionales compiten por mediación; China y el Sur Global utilizan la crisis para cuestionar la arquitectura occidental de legitimidad.",
+      "sources": [
+        {
+          "label": "OCHA oPt · Humanitarian Situation Report 7 August 2026",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-7-august-2026"
+        },
+        {
+          "label": "OCHA oPt · Gaza Reported Impact Snapshot 5 August 2026",
+          "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_5_August_2026.pdf"
+        },
+        {
+          "label": "GEOPÓLEM SENTINEL",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        }
+      ]
     },
     {
-      id: 'ukraine-energy-water-winter',
-      rank: 3,
-      status: 'operativo',
-      statusEn: 'operational',
-      priority: 'media-alta',
-      priorityEn: 'medium-high',
-      accent: '#22d3ee',
-      location: 'Ucrania · Odesa, Mykolaiv, Kharkiv, Dnipro, Sumy, Zaporizhzhia',
-      headline: 'Ucrania: ataques, cortes de agua y electricidad antes del invierno',
-      headlineEn: 'Ukraine: attacks, water and electricity cuts before winter',
-      fact: 'OCHA informó al Consejo de Seguridad que, desde la reunión anterior, hubo civiles muertos y heridos, viviendas destruidas, cortes de electricidad y agua, y daños a almacenes de Naciones Unidas y otras instalaciones humanitarias. También señaló impactos sobre infraestructura energética en Odesa y Mykolaiv, ataques recurrentes en Kharkiv, Dnipro, Sumy y Zaporizhzhia, y preparación humanitaria para el invierno.',
-      coupling: 'Acople operativo confirmado: conflicto, infraestructura energética, agua, logística humanitaria y estacionalidad invernal. No es un desastre natural puntual, sino una degradación de continuidad operacional bajo guerra.',
-      couplingType: ['Conflicto', 'Infraestructura energética', 'Agua', 'Logística humanitaria'],
-      couplingTypeEn: ['Conflict', 'Energy infrastructure', 'Water', 'Humanitarian logistics'],
-      couplingEn: 'Confirmed operational coupling: conflict, energy infrastructure, water, humanitarian logistics and winter seasonality. This is not a discrete natural disaster; it is degradation of operational continuity under war.',
-      implication: 'La presión estratégica apunta a la resiliencia civil: cada corte de electricidad y agua erosiona recuperación, movilidad y confianza antes del invierno. El daño a almacenes y rutas humanitarias convierte la logística en parte del tablero.',
-      tripolar: 'EE.UU. y la UE sostienen apoyo energético y militar a Kyiv; Rusia presiona infraestructura para imponer desgaste; China observa el coste de sostener guerras largas; el Sur Global lee el precedente sobre infraestructura civil e interdependencia energética.',
-      sources: [
-        { label: 'OCHA · Ukraine Security Council briefing', url: 'https://www.unocha.org/news/civilian-suffering-ukraine-must-never-become-normal-acting-un-deputy-relief-chief-tells' },
-        { label: 'IAEA · Ukraine nuclear safety update', url: 'https://reliefweb.int/report/ukraine/update-358-iaea-director-general-statement-situation-ukraine' },
-        { label: 'GEOPÓLEM SENTINEL', url: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json' },
+      "id": "taiwan-dolphin-asia-pacifico",
+      "rank": 3,
+      "status": "en observación",
+      "statusEn": "under observation",
+      "priority": "media-alta",
+      "priorityEn": "medium-high",
+      "accent": "#fbbf24",
+      "location": "Estrecho de Taiwán / costa oriental de China",
+      "headline": "Dolphin: meteorología severa sobre una zona de fricción tecnológica y militar",
+      "headlineEn": "Dolphin: severe weather over a technological and military friction zone",
+      "fact": "HECHO: NASA EONET registró Super Typhoon Dolphin como evento abierto de tormenta severa durante la semana; el mismo barrido SENTINEL mantuvo señal de seguridad Asia-Pacífico.",
+      "coupling": "Vigilancia meteorológica-operacional sobre corredor industrial y militar sensible; sin disrupción geopolítica confirmada.",
+      "couplingType": [
+        "Tormenta severa",
+        "Corredor industrial",
+        "Vigilancia militar"
       ],
-    },
+      "couplingTypeEn": [
+        "Severe storm",
+        "Industrial corridor",
+        "Military watch"
+      ],
+      "couplingEn": "Vigilancia meteorológica-operacional sobre corredor industrial y militar sensible; sin disrupción geopolítica confirmada.",
+      "implication": "EVALUACIÓN: El punto no es afirmar que el tifón alteró la disuasión. El punto es vigilar una zona donde puertos, aviación, semiconductores, cables y patrullas operan bajo ventanas meteorológicas estrechas.",
+      "tripolar": "China prioriza continuidad costera e industrial; EE.UU. y Japón vigilan disuasión y acceso marítimo; Rusia observa la presión sobre el frente Indo-Pacífico; la UE y el Sur Global quedan expuestos por cadenas de suministro tecnológicas.",
+      "sources": [
+        {
+          "label": "NASA EONET · Open events",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
+        },
+        {
+          "label": "GEOPÓLEM SENTINEL",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        }
+      ]
+    }
   ],
-  notSelected: {
-    location: 'SENTINEL, NASA EONET, USGS',
-    label: 'Estado de fuentes · calidad del dato',
-    labelEn: 'Source status · data quality',
-    note: 'Limitación de la semana: el feed SENTINEL trajo 50 eventos y seis de prioridad alta, pero sin coordenadas. NASA EONET aportó 21 eventos abiertos —principalmente incendios en EE.UU., ciclones del Pacífico e icebergs antárticos— y USGS entregó 153 sismos M4.5+; ninguno se acopló directamente con Irán/Ormuz, Gaza o Ucrania. Los tres puntos publicados se sostienen por fuentes institucionales y se clasifican como acoples operativos, no causalidad ambiental.',
-    source: { label: 'USGS Earthquakes M4.5+', url: 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-07-26T22%3A00%3A00Z&endtime=2026-08-02T21%3A59%3A59Z&minmagnitude=4.5&orderby=magnitude' },
+  "notSelected": [
+    {
+      "location": "Ucrania / Mar Negro",
+      "reason": "Alta relevancia de guerra logística, pero sin evento NASA/USGS directamente acoplado esta semana.",
+      "sources": [
+        {
+          "label": "Reuters · Ukraine logistics strikes",
+          "url": "https://www.reuters.com/business/aerospace-defense/russia-says-it-struck-7-ukrainian-warehouses-storing-drone-components-2026-08-05/"
+        }
+      ]
+    }
+  ],
+  "bestShort": {
+    "rank": 1,
+    "title": "Ormuz y Suez: cuando el tablero se estrecha",
+    "location": "Ormuz + Suez",
+    "duration_seconds": 60,
+    "hook": "Dos estrechos. Una misma pregunta: ¿qué pasa si las rutas críticas fallan a la vez?",
+    "reason": "Tiene el mejor equilibrio entre dato verificable, tensión estratégica y disciplina editorial: se puede explicar el riesgo sistémico sin afirmar causalidad.",
+    "structure": {
+      "hecho": "Irán condicionó la reapertura de Ormuz; USGS registró un sismo M5.0 cerca de Suez en la misma ventana semanal.",
+      "evaluacion": "No es causalidad. Es vigilancia de rutas críticas: seguridad marítima, geofísica, seguros y energía en el mismo tablero.",
+      "hipotesis": "Si Ormuz sigue condicionado y Suez recibe cualquier estrés operacional, el coste se traslada a energía, seguros, rutas alternativas y margen político."
+    },
+    "visuals": [
+      "Mapa oscuro MENA: Ormuz y Suez iluminados con línea cian.",
+      "Tarjeta HECHO: Ormuz condicionado por demandas iraníes.",
+      "Tarjeta SEÑAL: USGS M5.0 cerca de Suez, sin impacto operacional confirmado.",
+      "Tablero tripolar: EE.UU., China, Rusia, UE/Sur Global."
+    ],
+    "subtitles_en": [
+      "Two straits. One question: what happens if critical routes fail at the same time?",
+      "Iran made Hormuz conditional. USGS recorded an M5.0 quake near Suez.",
+      "This is not causality. It is route-risk surveillance.",
+      "The board is energy, insurance, shipping and power.",
+      "GEOPÓLEM. Welcome to the board."
+    ],
+    "closing": "GEOPÓLEM. Bienvenidos al tablero.",
+    "hashtags": [
+      "#GEOPÓLEM",
+      "#SENTINEL",
+      "#OSINT",
+      "#Geopolítica",
+      "#Ormuz",
+      "#Suez"
+    ]
   },
-  bestShort: {
-    title: 'El estrecho que mueve una quinta parte del petróleo',
-    reason: 'Es el punto con mayor valor geopolítico y pedagógico: un solo chokepoint conecta guerra, energía, inflación, seguros marítimos, rutas alternativas y margen de maniobra de potencias.',
-    hook: 'Una quinta parte del petróleo mundial pasa por aquí. Y cuando Ormuz se cierra, no sube solo el precio: se estrecha todo el tablero.',
-    hecho: 'El FMI estima que el cierre efectivo de Ormuz dejó fuera cerca de 20 millones de barriles diarios de crudo y productos refinados: alrededor de una quinta parte del consumo mundial.',
-    evaluacion: 'El acople no es climático: es conflicto, mar, seguro, energía e inventarios. Las rutas alternativas solo compensan una fracción y la confianza de operadores no vuelve de forma automática.',
-    hipotesis: 'Si la normalización de Ormuz tarda más que la reapertura formal, el próximo shock energético encontrará menos inventarios, menos margen y más presión sobre Europa y el Sur Global.',
-    close: 'GEOPÓLEM. Bienvenidos al tablero.',
-  },
-  tags: ['GEOPÓLEM', 'OSINT', 'Geopolítica', 'Energía', 'Ormuz', 'Gaza', 'Ucrania', 'BienvenidosAlTablero'],
-  close: 'GEOPÓLEM. Bienvenidos al tablero.',
+  "tags": [
+    "sentinel",
+    "osint",
+    "ormuz",
+    "suez",
+    "gaza",
+    "taiwan",
+    "dolphin",
+    "tripolaridad"
+  ],
+  "close": "GEOPÓLEM. Bienvenidos al tablero."
 };
+
 
 /* ========================================================================
    CONFLICTOS ACTIVOS — Publicación del dashboard (SIMULADO)
