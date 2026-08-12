@@ -4,629 +4,586 @@
       "actors": [
         "United States"
       ],
-      "domain": "kxl.com",
-      "id": "evt_3e0a4149641200b1",
+      "domain": "decaturdaily.com",
+      "id": "evt_6504cd46b0b0fa44",
       "language": "English",
       "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war",
-        "sanction",
-        "sanctions"
-      ],
-      "region": "MENA",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Trump pivots back to sanctions for Iran as other strategies to end his war fizzle",
-      "tone": null,
-      "url": "https://www.kxl.com/trump-pivots-back-to-sanctions-for-iran-as-other-strategies-to-end-his-war-fizzle/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kmuw.org",
-      "id": "evt_2914312b8e88811c",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war",
-        "sanction",
-        "sanctions"
-      ],
-      "region": "MENA",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Trump pivots back to sanctions for Iran as other strategies to end his war fizzle",
-      "tone": null,
-      "url": "https://www.kmuw.org/2026-08-11/trump-pivots-back-to-sanctions-for-iran-as-other-strategies-to-end-his-war-fizzle"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "ksat.com",
-      "id": "evt_6b52d31cd00d2833",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war",
-        "sanction",
-        "sanctions"
-      ],
-      "region": "MENA",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Trump pivots back to sanctions for Iran as other strategies to end his war fizzle",
-      "tone": null,
-      "url": "https://www.ksat.com/news/world/2026/08/11/trump-pivots-back-to-sanctions-for-iran-as-other-strategies-to-end-his-war-fizzle/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "houstonpublicmedia.org",
-      "id": "evt_19f4202eeae7c51d",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war",
-        "sanction",
-        "sanctions"
-      ],
-      "region": "MENA",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Trump pivots back to sanctions for Iran as other strategies to end his war fizzle",
-      "tone": null,
-      "url": "https://www.houstonpublicmedia.org/npr/2026/08/11/g-s1-138160/trump-pivots-back-to-sanctions-for-iran-as-other-strategies-to-end-his-war-fizzle/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wvtf.org",
-      "id": "evt_974dc013c721f827",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war",
-        "sanction",
-        "sanctions"
-      ],
-      "region": "MENA",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Trump pivots back to sanctions for Iran as other strategies to end his war fizzle",
-      "tone": null,
-      "url": "https://www.wvtf.org/2026-08-11/trump-pivots-back-to-sanctions-for-iran-as-other-strategies-to-end-his-war-fizzle"
-    },
-    {
-      "actors": [
-        "New Zealand"
-      ],
-      "domain": "home.nzcity.co.nz",
-      "id": "evt_31c975edb2c4d610",
-      "language": "English",
-      "matched_regions": [
+        "ukraine",
         "russia",
-        "north korea"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Eurasia",
-      "score": 6.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "New Zealand",
-      "tier": "high",
-      "title": "Volodymyr Zelenskyy warns of North Korea - Russia alliance after family death - 11 - Aug - 2026",
-      "tone": null,
-      "url": "https://home.nzcity.co.nz/news/article.aspx?id=451739&fm=psp,tst"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "hngn.com",
-      "id": "evt_5587e9c5a38151f6",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "north korea"
-      ],
-      "matched_themes": [
-        "deploy",
-        "troops"
-      ],
-      "region": "Eurasia",
-      "score": 6.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Zelensky Says Russia Has Decided To Deploy Up To 50 , 000 North Korean Troops To Fight",
-      "tone": null,
-      "url": "https://www.hngn.com/articles/272606/20260810/north-korean-missile-unit-deploys-russia-ballistic-strike-kills-ukrainian-family.htm"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wdbo.com",
-      "id": "evt_15ae8019d5545954",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "sanction",
-        "sanctions"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "After talks with Iran fizzle , Trump turns back to sanctions",
-      "tone": null,
-      "url": "https://www.wdbo.com/news/world/trump-pivots-back/GJYT7AYJHQ77ZE2K74WEE4LRMU/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "news.de",
-      "id": "evt_9a973580d6455d0b",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
+        "kyiv"
       ],
       "matched_themes": [
         "war"
       ],
       "region": "Europa del Este",
-      "score": 5.0,
+      "score": 7.0,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 4.0,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T070000Z",
-      "source_country": "Germany",
-      "tier": "medium",
-      "title": "Ukraine - Krieg aktuell : Selenskyj warnt vor Putin - Täuschung und geheimer Nordkorea - Mobilisierung",
+      "seen_date": "20260812T073000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Trump told Ukraine it had no cards . Then Kyiv took the war to Russia",
       "tone": null,
-      "url": "https://www.news.de/politik/859893261/wolodymyr-selenskyj-warnt-vor-wladimir-putins-geheim-mobilisierung-nordkorea-soldaten-im-ukraine-krieg-kremlchef-will-russland-taeuschen/1/"
+      "url": "https://www.decaturdaily.com/news/other_news/international/trump-told-ukraine-it-had-no-cards-then-kyiv-took-the-war-to-russia/article_4f23b0d6-40c2-418b-861d-ba3d598be614.html"
     },
     {
       "actors": [
-        "Ukraine"
+        "Philippines"
       ],
-      "domain": "kyivpost.com",
-      "id": "evt_3978edca9fe53e5f",
+      "domain": "rappler.com",
+      "id": "evt_763418ef0337f839",
       "language": "English",
       "matched_regions": [
-        "ukraine"
+        "iran"
       ],
       "matched_themes": [
-        "war"
+        "war",
+        "attack"
       ],
-      "region": "Europa del Este",
-      "score": 5.0,
+      "region": "MENA",
+      "score": 6.5,
       "score_breakdown": {
         "region": 2.0,
-        "themes": 3.0,
+        "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20260811T070000Z",
-      "source_country": "Ukraine",
-      "tier": "medium",
-      "title": "Trump - Putin Alaska Summit Fails to End Ukraine War One Year On",
+      "seen_date": "20260812T071500Z",
+      "source_country": "Philippines",
+      "tier": "high",
+      "title": "New attacks on shipping as Iran war talks hit fresh impasse",
       "tone": null,
-      "url": "https://www.kyivpost.com/post/82103"
+      "url": "https://www.rappler.com/world/middle-east/usa-iran-war-updates-august-11-2026/"
     },
     {
       "actors": [
-        "India"
+        "France"
       ],
-      "domain": "hindustantimes.com",
-      "id": "evt_86129d6395853e88",
-      "language": "English",
+      "domain": "sudouest.fr",
+      "id": "evt_7a920508b6640d1e",
+      "language": "French",
       "matched_regions": [
-        "saudi",
-        "pakistan"
+        "iran",
+        "afghan"
       ],
       "matched_themes": [
-        "terror"
+        "combat"
       ],
-      "region": "Asia del Sur",
-      "score": 4.5,
+      "region": "MENA",
+      "score": 5.0,
       "score_breakdown": {
-        "region": 2.5,
+        "region": 3.0,
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T070000Z",
-      "source_country": "India",
+      "seen_date": "20260812T071500Z",
+      "source_country": "France",
       "tier": "medium",
-      "title": "How Saudi - Pakistan - Turkey pact casts a terror shadow over Delhi",
+      "title": "Je pleure en cachette  : le combat déchirant de pères afghans pour l  éducation de leurs filles",
       "tone": null,
-      "url": "https://www.hindustantimes.com/india-news/how-saudi-pakistan-turkey-pact-casts-a-terror-shadow-over-delhi-101786425650053.html"
+      "url": "https://www.sudouest.fr/international/asie/afghanistan/je-pleure-en-cachette-le-combat-dechirant-de-peres-afghans-pour-l-education-de-leurs-filles-30227712.php"
     },
     {
       "actors": [
-        "United States"
+        "Australia"
       ],
-      "domain": "wemu.org",
-      "id": "evt_fe53bda1bd3bfd3e",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "militant",
-        "militants"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Turkey parliament approves a pardon - like bill for thousands of PKK militants",
-      "tone": null,
-      "url": "https://www.wemu.org/npr-national-news/2026-08-11/turkeys-parliament-approves-a-pardon-like-bill-for-thousands-of-pkk-militants"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "houstonpublicmedia.org",
-      "id": "evt_77fc1ecf589274e3",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "militant",
-        "militants"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Turkey parliament approves a pardon - like bill for thousands of PKK militants",
-      "tone": null,
-      "url": "https://www.houstonpublicmedia.org/npr/2026/08/11/g-s1-138162/turkeys-parliament-approves-a-pardon-like-bill-for-thousands-of-pkk-militants/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kcbx.org",
-      "id": "evt_68921f6a0db8bb46",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "militant",
-        "militants"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Turkey parliament approves a pardon - like bill for thousands of PKK militants",
-      "tone": null,
-      "url": "https://www.kcbx.org/npr-top-news/2026-08-10/turkeys-parliament-approves-a-pardon-like-bill-for-thousands-of-pkk-militants"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kmuw.org",
-      "id": "evt_7a6020d9a3f40575",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "militant",
-        "militants"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Turkey parliament approves a pardon - like bill for thousands of PKK militants",
-      "tone": null,
-      "url": "https://www.kmuw.org/2026-08-11/turkeys-parliament-approves-a-pardon-like-bill-for-thousands-of-pkk-militants"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "northernpublicradio.org",
-      "id": "evt_3e179c98a786e19d",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "militant",
-        "militants"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Turkey parliament approves a pardon - like bill for thousands of PKK militants",
-      "tone": null,
-      "url": "https://www.northernpublicradio.org/2026-08-11/turkeys-parliament-approves-a-pardon-like-bill-for-thousands-of-pkk-militants"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wsiu.org",
-      "id": "evt_e1e927b8dd892e0d",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "militant",
-        "militants"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Turkey parliament approves a pardon - like bill for thousands of PKK militants",
-      "tone": null,
-      "url": "https://www.wsiu.org/2026-08-11/turkeys-parliament-approves-a-pardon-like-bill-for-thousands-of-pkk-militants"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "khaskhabar.com",
-      "id": "evt_86fb535f656e2bb2",
-      "language": "Hindi",
-      "matched_regions": [
-        "iran",
-        "hormuz"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "US control over the Strait of Hormuz remains , option for military action against Iran remains open : Trump",
-      "tone": null,
-      "url": "https://www.khaskhabar.com/news/world-news/news-us-control-over-the-strait-of-hormuz-remains-option-for-military-action-against-iran-remains-open-trump-news-hindi-1-835613-KKN.html"
-    },
-    {
-      "actors": [
-        "China"
-      ],
-      "domain": "global.chinadaily.com.cn",
-      "id": "evt_fd15a3d412ac6663",
+      "domain": "hardenexpress.com.au",
+      "id": "evt_bc677edd1f0c94f5",
       "language": "English",
       "matched_regions": [
-        "mali",
         "china"
+      ],
+      "matched_themes": [
+        "missile"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Australia",
+      "tier": "medium",
+      "title": "China told to respect Pacific sovereignty after missile",
+      "tone": null,
+      "url": "https://www.hardenexpress.com.au/story/9328805/china-told-to-respect-pacific-sovereignty-after-missile/"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "albawaba.com",
+      "id": "evt_595a05c32b053397",
+      "language": "English",
+      "matched_regions": [
+        "houthi",
+        "pakistan"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Houthi attack on commercial vessel kills 3 Pakistanis",
+      "tone": null,
+      "url": "https://www.albawaba.com/news/houthi-attack-commercial-vessel-kills-3-1634899"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "naroomanewsonline.com.au",
+      "id": "evt_21ac4bd7ed48042c",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [
+        "missile"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Australia",
+      "tier": "medium",
+      "title": "China told to respect Pacific sovereignty after missile",
+      "tone": null,
+      "url": "https://www.naroomanewsonline.com.au/story/9328805/china-told-to-respect-pacific-sovereignty-after-missile/"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "financiarul.ro",
+      "id": "evt_f5eae3e85ea5075d",
+      "language": "Romanian",
+      "matched_regions": [
+        "china",
+        "taiwan"
       ],
       "matched_themes": [],
       "region": "Asia-Pacífico",
-      "score": 3.5,
+      "score": 4.0,
       "score_breakdown": {
-        "region": 3.5,
+        "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T070000Z",
-      "source_country": "China",
+      "seen_date": "20260812T073000Z",
+      "source_country": "Romania",
       "tier": "medium",
-      "title": "China to send new naval escort fleet to Gulf of Aden , Somali waters",
+      "title": "Exercițiu naval China - Indonezia : Tensiuni în Taiwan",
       "tone": null,
-      "url": "http://global.chinadaily.com.cn/a/202608/11/WS6a7ab9e7a310986e2b46a217.html"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "hellomagazine.com",
-      "id": "evt_85b548764f36791a",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Victoria and David Beckham  declaration of war  that triggered family feud - and the peacemaker who could save them",
-      "tone": null,
-      "url": "https://www.hellomagazine.com/celebrities/916959/brand-beckham-feud-book-alison-boshoff/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "express.co.uk",
-      "id": "evt_f951f0bbbda23b49",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Chilling migrant crisis warning as Spain  risks repeating 2015 chao | World | News",
-      "tone": null,
-      "url": "https://www.express.co.uk/news/world/2237923/european-union-migrant-crisis-warning-over-spain-amnesty"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "come-on.de",
-      "id": "evt_0fc1a3a5d4d93613",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Selenskyj warnt vor neuer Unterstützung für Russland",
-      "tone": null,
-      "url": "http://www.come-on.de/politik/nordkoreanische-soldaten-selenskyj-warnt-vor-neuer-unterstuetzung-fuer-russland-putin-zr-94437675.html"
+      "url": "https://financiarul.ro/externe/china-si-indonezia-desfasoara-un-exercitiu-naval-la-est-de-taiwan/"
     },
     {
       "actors": [
         "Italy"
       ],
-      "domain": "teleborsa.it",
-      "id": "evt_46a2f8f9bd473cb2",
+      "domain": "ilmessaggero.it",
+      "id": "evt_b621216d76fd1be0",
       "language": "Italian",
       "matched_regions": [
-        "houthi",
-        "hormuz"
+        "nato"
+      ],
+      "matched_themes": [
+        "missile"
+      ],
+      "region": "Global",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T073000Z",
+      "source_country": "Italy",
+      "tier": "medium",
+      "title": "Trump , lipotesi del missile contro lAir Force One e la fuga dal vertice Nato ad Ankara : così è scattato il piano segreto",
+      "tone": null,
+      "url": "https://www.ilmessaggero.it:443/persone/trump_piano_segreto_fuga_vertice_nato_attacco_iran_cosa_e_successo-9703870.html"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "greekherald.com",
+      "id": "evt_43fa73f19aae7ae0",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T073000Z",
+      "source_country": "Greece",
+      "tier": "medium",
+      "title": "PM Modi and President Trump will work out Russian - oil related 100 per cent tariff issue : Senior US official",
+      "tone": null,
+      "url": "http://www.greekherald.com/news/279235562/pm-modi-and-president-trump-will-work-out-russian-oil-related-100-per-cent-tariff-issue-senior-us-official"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "newyorkstatesman.com",
+      "id": "evt_4f67ed3b1e8da5f9",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T073000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "PM Modi and President Trump will work out Russian - oil related 100 per cent tariff issue : Senior US official",
+      "tone": null,
+      "url": "http://www.newyorkstatesman.com/news/279235562/pm-modi-and-president-trump-will-work-out-russian-oil-related-100-per-cent-tariff-issue-senior-us-official"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "unternehmen-heute.de",
+      "id": "evt_537e766d1b896a38",
+      "language": "German",
+      "matched_regions": [
+        "iran",
+        "nato"
       ],
       "matched_themes": [],
       "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Germany",
+      "tier": "medium",
+      "title": "Iran - Trump bestätigt heimlichen Flugzeugwechsel bei Abflug von Nato - Gipfel in Ankara",
+      "tone": null,
+      "url": "https://unternehmen-heute.de/news.php?newsid=6707718"
+    },
+    {
+      "actors": [],
+      "domain": "sputnikglobe.com",
+      "id": "evt_7ee0296ea6376dae",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "",
+      "tier": "medium",
+      "title": "Germany & Japan Reembrace Mass Surveillance - Russian MFA Spox",
+      "tone": null,
+      "url": "https://sputnikglobe.com/20260812/germany--japan-reembrace-mass-surveillance---russian-mfa-spox-1124564085.html"
+    },
+    {
+      "actors": [],
+      "domain": "bitlysdowssl-aws.com",
+      "id": "evt_76b6cee3eb73ba17",
+      "language": "Spanish",
+      "matched_regions": [
+        "israel",
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "",
+      "tier": "medium",
+      "title": "Venezuela e Israel : 17 años de ruptura al acuerdo consular",
+      "tone": null,
+      "url": "https://bitlysdowssl-aws.com/2026/08/de-la-condena-de-chavez-a-la-diplomacia-de-delcy-rodriguez-los-17-anos-que-transformaron-la-relacion-entre-venezuela-e-israel/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "utahindependent.com",
+      "id": "evt_7a99af3a36f3addf",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "PM Modi and President Trump will work out Russian - oil related 100 per cent tariff issue : Senior US official",
+      "tone": null,
+      "url": "http://www.utahindependent.com/news/279235562/pm-modi-and-president-trump-will-work-out-russian-oil-related-100-per-cent-tariff-issue-senior-us-official"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilpost.it",
+      "id": "evt_100605629271c2d5",
+      "language": "Italian",
+      "matched_regions": [
+        "iran",
+        "iranian"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Italy",
+      "tier": "medium",
+      "title": "Il presunto piano iraniano per attaccare laereo di Trump",
+      "tone": null,
+      "url": "https://www.ilpost.it/2026/07/25/trump-cambio-aereo-turchia-minaccia/?homepagePosition=20.1&referrerPost=3652653"
+    },
+    {
+      "actors": [
+        "Argentina"
+      ],
+      "domain": "infobae.com",
+      "id": "evt_28fef188a3961818",
+      "language": "Spanish",
+      "matched_regions": [
+        "venezuela",
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
       "score": 3.0,
       "score_breakdown": {
         "region": 3.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T070000Z",
+      "seen_date": "20260812T073000Z",
+      "source_country": "Argentina",
+      "tier": "monitor",
+      "title": "La ONG Provea reportó el asesinato de un jefe indígena secuestrado por presuntas disidencias de las FARC en Venezuela",
+      "tone": null,
+      "url": "https://www.infobae.com/venezuela/2026/08/12/la-ong-provea-reporto-el-asesinato-de-un-jefe-indigena-secuestrado-por-presuntas-disidencias-de-las-farc-en-venezuela/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "kdhnews.com",
+      "id": "evt_f41c1c680864023b",
+      "language": "English",
+      "matched_regions": [
+        "mali",
+        "somalia"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T073000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Thousands flee yearslong drought in Somalia as hunger deepens and aid shrinks",
+      "tone": null,
+      "url": "https://kdhnews.com/news/world/thousands-flee-yearslong-drought-in-somalia-as-hunger-deepens-and-aid-shrinks/article_4706f1f0-8105-5ad9-900f-55df5fe0951d.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "de.euronews.com",
+      "id": "evt_5149502f6d1f24cb",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T073000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Überreste der beiden Wehrmachtsoldaten aus der Donau : Einer war bei der Waffen - SS",
+      "tone": null,
+      "url": "https://de.euronews.com/kultur/2026/08/12/wehrmachtsoldaten-motorrad-donau-waffen-ss"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "clickorlando.com",
+      "id": "evt_7415d07df0719d1e",
+      "language": "English",
+      "matched_regions": [
+        "mali",
+        "somalia"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T073000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Thousands flee yearslong drought in Somalia as hunger deepens and aid shrinks",
+      "tone": null,
+      "url": "https://www.clickorlando.com/news/world/2026/08/12/thousands-flee-yearslong-drought-in-somalia-as-hunger-deepens-and-aid-shrinks/"
+    },
+    {
+      "actors": [
+        "Russia"
+      ],
+      "domain": "dekoder.org",
+      "id": "evt_c403b3b8ed4cfd1d",
+      "language": "German",
+      "matched_regions": [
+        "ukraine",
+        "belarus"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T073000Z",
+      "source_country": "Russia",
+      "tier": "monitor",
+      "title": "Ukrainer in belarussischen Gefängnissen - дekoder",
+      "tone": null,
+      "url": "https://www.dekoder.org/de/article/ukrainer-belarus-gefangnis/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "finanzen.net",
+      "id": "evt_f9e3a6ddbc37f00b",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Vom Juli - Tief zur August - Wende ? Warum sich das Blatt für die NASDAQ - Aktie Micron jetzt wenden könnte",
+      "tone": null,
+      "url": "https://www.finanzen.net/nachricht/aktien/speicherchip-sektor-im-blick-nach-28-prozent-kurssturz-im-juli-warum-bei-der-micron-aktie-jetzt-die-zuversicht-zurueckkehrt-00-15868150"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilpost.it",
+      "id": "evt_a7363bf2cd1fc6ba",
+      "language": "Italian",
+      "matched_regions": [
+        "russia",
+        "india"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
       "source_country": "Italy",
       "tier": "monitor",
-      "title": "Petrolio , il Brent consolida i rialzi intorno a 88 dollari con stallo su Hormuz e attacchi Houthi",
+      "title": "La Russia sta comprando carburante dallIndia",
       "tone": null,
-      "url": "https://www.teleborsa.it/News/2026/08/11/petrolio-il-brent-consolida-i-rialzi-intorno-a-88-dollari-con-stallo-su-hormuz-e-attacchi-houthi-5.html"
+      "url": "https://www.ilpost.it/2026/08/12/russia-ora-importa-carburante-india/"
     },
     {
       "actors": [
         "Australia"
       ],
-      "domain": "sydneysun.com",
-      "id": "evt_4d3824cb6cb35b2d",
+      "domain": "illawarramercury.com.au",
+      "id": "evt_5a5a1a1ef06d2792",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -639,23 +596,23 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T070000Z",
+      "seen_date": "20260812T071500Z",
       "source_country": "Australia",
       "tier": "monitor",
-      "title": "Senate moves crypto regulation bill toward September vote",
+      "title": "Sally Stevenson warns AUKUS base brings sexual violence risk | Illawarra Mercury",
       "tone": null,
-      "url": "http://www.sydneysun.com/news/279227792/senate-moves-crypto-regulation-bill-toward-september-vote"
+      "url": "https://www.illawarramercury.com.au/story/9328997/sally-stevenson-warns-aukus-base-brings-sexual-violence-risk/"
     },
     {
       "actors": [
-        "United States"
+        "Italy"
       ],
-      "domain": "floridastatesman.com",
-      "id": "evt_560cd545f43f8ba2",
-      "language": "English",
+      "domain": "ilmessaggero.it",
+      "id": "evt_0b0f56ba4ed737e6",
+      "language": "Italian",
       "matched_regions": [],
       "matched_themes": [
-        "conflict"
+        "missile"
       ],
       "region": "Global",
       "score": 2.5,
@@ -664,95 +621,96 @@
         "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
+      "seen_date": "20260812T073000Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "Middle East conflict fears weigh on wall street as energy prices surge",
+      "title": "Corea del Nord , nuovo missile balistico percorre oltre 700 chilometri : Seul convoca una riunione demergenza",
       "tone": null,
-      "url": "http://www.floridastatesman.com/news/279233699/middle-east-conflict-fears-weigh-on-wall-street-as-energy-prices-surge"
+      "url": "https://www.ilmessaggero.it/salute/mondo/corea_nord_missile_balistico_700_km_seul_stati_uniti-9703887.html"
     },
     {
       "actors": [
-        "United States"
+        "Hungary"
       ],
-      "domain": "sandiegosun.com",
-      "id": "evt_46191c8cd0f4ee28",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
+      "domain": "vg.hu",
+      "id": "evt_384853baa29dcbd9",
+      "language": "Hungarian",
+      "matched_regions": [
+        "hormuz",
+        "united states"
       ],
-      "region": "Global",
+      "matched_themes": [],
+      "region": "MENA",
       "score": 2.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
+        "region": 2.5,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
+      "seen_date": "20260812T071500Z",
+      "source_country": "Hungary",
       "tier": "monitor",
-      "title": "Middle East conflict fears weigh on wall street as energy prices surge",
+      "title": "Kész , vége , ennyi volt az iráni béke : Donald Trump bejelentette , az united states ellenőrzése alá vonja a Hormuzi - szorost – Teljes ellelnőrzés alatt tartjuk",
       "tone": null,
-      "url": "http://www.sandiegosun.com/news/279233699/middle-east-conflict-fears-weigh-on-wall-street-as-energy-prices-surge"
+      "url": "https://www.vg.hu/nemzetkozi-gazdasag/2026/08/donald-trump-hormuzi-szoros-ellenorzes"
     },
     {
       "actors": [
         "Israel"
       ],
-      "domain": "israelherald.com",
-      "id": "evt_5c74c51f4ad6b936",
+      "domain": "jns.org",
+      "id": "evt_e3ddfed1aa534909",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
+      "matched_regions": [
+        "israel"
       ],
-      "region": "Global",
-      "score": 2.5,
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
+        "region": 2.0,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T071500Z",
+      "seen_date": "20260812T073000Z",
       "source_country": "Israel",
       "tier": "monitor",
-      "title": "Middle East conflict fears weigh on wall street as energy prices surge",
+      "title": "Progressive who accuses Israel of  genocide  wins Minnesota Dem Senate primary - Israel & Jewish News",
       "tone": null,
-      "url": "http://www.israelherald.com/news/279233699/middle-east-conflict-fears-weigh-on-wall-street-as-energy-prices-surge"
+      "url": "https://www.jns.org/news/u-s-news/progressive-who-accuses-israel-of-genocide-wins-minnesota-dem-senate-primary"
     },
     {
       "actors": [
-        "Iran"
+        "Austria"
       ],
-      "domain": "iranherald.com",
-      "id": "evt_95759ef7514ba800",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
+      "domain": "krone.at",
+      "id": "evt_c89907e92c89c7f5",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
       ],
-      "region": "Global",
-      "score": 2.5,
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
+        "region": 2.0,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T071500Z",
-      "source_country": "Iran",
+      "seen_date": "20260812T073000Z",
+      "source_country": "Austria",
       "tier": "monitor",
-      "title": "Middle East conflict fears weigh on wall street as energy prices surge",
+      "title": "Wettlauf gegen die Uhr - Raketenmangel : Ukraine baut Abwehrwaffen selbst",
       "tone": null,
-      "url": "http://www.iranherald.com/news/279233699/middle-east-conflict-fears-weigh-on-wall-street-as-energy-prices-surge"
+      "url": "https://www.krone.at/4252026"
     },
     {
       "actors": [
-        "India"
+        "United States"
       ],
-      "domain": "khaskhabar.com",
-      "id": "evt_4cbcde3738bd698a",
-      "language": "Hindi",
+      "domain": "peakoil.com",
+      "id": "evt_1e2917e3cc5dcf49",
+      "language": "English",
       "matched_regions": [
         "iran"
       ],
@@ -764,19 +722,144 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T071500Z",
-      "source_country": "India",
+      "seen_date": "20260812T073000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Iran military command expands , Supreme Leader Mojtaba Khamenei appoints new commanders to six top positions",
+      "title": "Oil Rises as Doubts Over US - Iran Deal Heighten Supply Concerns  | Peak Oil News and Message Boards",
       "tone": null,
-      "url": "https://www.khaskhabar.com/news/world-news/news-iran-military-command-expands-supreme-leader-mojtaba-khamenei-appoints-new-commanders-to-six-top-positions-news-hindi-1-835610-KKN.html"
+      "url": "https://peakoil.com/publicpolicy/oil-rises-as-doubts-over-us-iran-deal-heighten-supply-concerns"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "de.euronews.com",
+      "id": "evt_bcbd2f2d4deb5463",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T073000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Pro Tag 1000 neue Soldaten : So funktioniert Putins Mobilmachung für den Ukraine - Krieg",
+      "tone": null,
+      "url": "https://de.euronews.com/my-europe/2026/08/12/putins-mobilmachung-ukraine-krieg"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilpost.it",
+      "id": "evt_6bec67de7bd9c53c",
+      "language": "Italian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "In Iran comandano i militari",
+      "tone": null,
+      "url": "https://www.ilpost.it/2026/04/24/iran-governato-guardiani-della-rivoluzione/?homepagePosition=11.2&referrerPost=3652915"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wuwf.org",
+      "id": "evt_9769e08e7cb9780a",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Former U . S . Marine held in Russia on disputed charges has been released",
+      "tone": null,
+      "url": "https://www.wuwf.org/2026-08-12/former-u-s-marine-held-in-russia-on-disputed-charges-has-been-released"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "knpr.org",
+      "id": "evt_218225c80ec79ca0",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Former U . S . Marine held in Russia on disputed charges has been released",
+      "tone": null,
+      "url": "https://knpr.org/npr/2026-08-11/former-u-s-marine-held-in-russia-on-disputed-charges-has-been-released"
+    },
+    {
+      "actors": [
+        "Ghana"
+      ],
+      "domain": "graphic.com.gh",
+      "id": "evt_78a01aaf53c2cc11",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Ghana",
+      "tier": "monitor",
+      "title": "President Trump secretly swapped planes , hiding in a catering truck over Iran threat , reports say",
+      "tone": null,
+      "url": "https://www.graphic.com.gh/international/international-news/president-trump-hid-in-catering-truck-in-secret-plane-swap-over-iran-threat-reports-say.html"
     },
     {
       "actors": [
         "Germany"
       ],
       "domain": "n-tv.de",
-      "id": "evt_d2daed29ff564bdd",
+      "id": "evt_dadb8b14573c3ae8",
       "language": "German",
       "matched_regions": [
         "ukraine"
@@ -789,20 +872,45 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T071500Z",
+      "seen_date": "20260812T071500Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "Ukraine - Krieg im Liveticker : +++ 08 : 52 Russland : 13 Drohnen bei Angriff aus Moskau abgeschossen  +++",
+      "title": "Ukraine - Krieg im Liveticker : +++ 08 : 31 Sprintmangel in Putins Reich ? Russland importiert Treibstoff aus Indien +++",
       "tone": null,
-      "url": "https://www.n-tv.de/politik/08-52-Russland-13-Drohnen-bei-Angriff-aus-Moskau-abgeschossen-id30859357.html"
+      "url": "https://www.n-tv.de/politik/08-31-Sprintmangel-in-Putins-Reich-Russland-importiert-Treibstoff-aus-Indien-id30859357.html"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Indonesia"
       ],
-      "domain": "theguardian.com",
-      "id": "evt_8d8acce3e46654cb",
-      "language": "English",
+      "domain": "jawapos.com",
+      "id": "evt_383526b28429ba62",
+      "language": "Indonesian",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Indonesia",
+      "tier": "monitor",
+      "title": "Wibawa Donald Trump Dipertanyakan , Netanyahu Tolak Rencana Gaza",
+      "tone": null,
+      "url": "https://www.jawapos.com/internasional/2608120180/wibawa-donald-trump-dipertanyakan-netanyahu-tolak-rencana-gaza"
+    },
+    {
+      "actors": [
+        "Syria"
+      ],
+      "domain": "hispantv.com",
+      "id": "evt_dd8aab43c326d55a",
+      "language": "Spanish",
       "matched_regions": [
         "iran"
       ],
@@ -814,273 +922,98 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20260812T071500Z",
+      "source_country": "Syria",
       "tier": "monitor",
-      "title": "Oil prices rise and gold hits two - month high after Trump makes new deal demands on Iran – business live",
+      "title": "Presidente iraní felicita a nuevos comandantes y realza la  preparación total",
       "tone": null,
-      "url": "https://www.theguardian.com/business/live/2026/aug/11/oil-prices-rise-gold-hits-two-month-high-trump-makes-new-deal-demands-iran-live-updates"
+      "url": "https://www.hispantv.com/noticias/politica/648612/presidente-iran--preparacion-total-felicita-nuevos-comandantes"
+    },
+    {
+      "actors": [
+        "Bosnia-Herzegovina"
+      ],
+      "domain": "avaz.ba",
+      "id": "evt_789fe0579b585c07",
+      "language": "Bosnian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Bosnia-Herzegovina",
+      "tier": "monitor",
+      "title": "Iran iscrpljuje Amerikance : Potrošeno 200 miliona dolara na presretače",
+      "tone": null,
+      "url": "https://avaz.ba/vijesti/globus/1064315/iran-iscrpljuje-amerikance-potroseno-200-miliona-dolara-na-presretace"
+    },
+    {
+      "actors": [
+        "Serbia"
+      ],
+      "domain": "danas.rs",
+      "id": "evt_5682ecc3fcc8625e",
+      "language": "Serbian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Serbia",
+      "tier": "monitor",
+      "title": "Vučićevo poentiranje Zelenskim",
+      "tone": null,
+      "url": "https://www.danas.rs/dijalog/licni-stavovi/vucicevo-poentiranje-zelenskim/"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "sandiegosun.com",
-      "id": "evt_0baaa90fc00b0ac3",
+      "domain": "1430kasi.iheart.com",
+      "id": "evt_69f539425cad3208",
       "language": "English",
       "matched_regions": [
-        "iran"
+        "syria"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Trump took secret flight out of Turkiye amid Iran threat : Report",
-      "tone": null,
-      "url": "http://www.sandiegosun.com/news/279233752/trump-took-secret-flight-out-of-turkiye-amid-iran-threat-report"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "khaskhabar.com",
-      "id": "evt_e7494b89fb191a0b",
-      "language": "Hindi",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "MiG - 29 fighter jet crashes in Ukraine Odessa region , catches fire during mission",
-      "tone": null,
-      "url": "https://www.khaskhabar.com/news/world-news/news-mig-29-fighter-jet-crashes-in-ukraine-odessa-region-catches-fire-during-mission-news-hindi-1-835619-KKN.html"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "wa.de",
-      "id": "evt_bc5ecdcab8ec08cd",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Trump - Täuschungsmanöver nach Morddrohungen aus dem Iran enthüllt",
-      "tone": null,
-      "url": "http://www.wa.de/politik/praesident-trump-trick-usa-nach-morddrohungen-aus-dem-iran-enthuellt-flugzeug-air-force-zr-94437671.html"
-    },
-    {
-      "actors": [
-        "Ukraine"
-      ],
-      "domain": "kyivpost.com",
-      "id": "evt_2ddfcf3e2ce17cb9",
-      "language": "English",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "Ukraine",
-      "tier": "monitor",
-      "title": "US  Doing its Homework  On Risks of Ukraine Patriot Interceptor Production",
-      "tone": null,
-      "url": "https://www.kyivpost.com/post/82115"
-    },
-    {
-      "actors": [
-        "Ukraine"
-      ],
-      "domain": "kyivpost.com",
-      "id": "evt_27e0f321484223b3",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "Ukraine",
-      "tier": "monitor",
-      "title": "Germany Doubles Anti - Drone Unit After Leipzig Airport Drone Incident",
-      "tone": null,
-      "url": "https://www.kyivpost.com/post/82104"
-    },
-    {
-      "actors": [
-        "Japan"
-      ],
-      "domain": "japanherald.com",
-      "id": "evt_ab60e2dbbce26d52",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "Japan",
-      "tier": "monitor",
-      "title": "Trump took secret flight out of Turkiye amid Iran threat : Report",
-      "tone": null,
-      "url": "http://www.japanherald.com/news/279233752/trump-took-secret-flight-out-of-turkiye-amid-iran-threat-report"
-    },
-    {
-      "actors": [
-        "Saint Vincent and the Grenadines"
-      ],
-      "domain": "searchlight.vc",
-      "id": "evt_4f105ee7d1a0954b",
-      "language": "English",
-      "matched_regions": [
-        "taiwan"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "Saint Vincent and the Grenadines",
-      "tier": "monitor",
-      "title": "Prime Minister Friday heads SVG delegation to Taiwan",
-      "tone": null,
-      "url": "https://www.searchlight.vc/front-page/2026/08/11/prime-minister-friday-heads-svg-delegation-taiwan/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "econotimes.com",
-      "id": "evt_c1e97b843aa86b6d",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T070000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Oil Prices Rise as US - Iran Talks Stall , Inflation Risks Grow",
-      "tone": null,
-      "url": "http://www.econotimes.com/Oil-Prices-Rise-as-US-Iran-Talks-Stall-Inflation-Risks-Grow-1749140"
-    },
-    {
-      "actors": [
-        "Czech Republic"
-      ],
-      "domain": "denik.cz",
-      "id": "evt_9557b1a7b797d813",
-      "language": "Czech",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T071500Z",
-      "source_country": "Czech Republic",
+      "seen_date": "20260812T073000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Trump se při odletu ze summitu NATO ukrýval v kontejneru na jídlo",
+      "title": "Former Syrian Leader Bashar al - Assad Sentenced To Death",
       "tone": null,
-      "url": "https://www.denik.cz/svet/trump-se-pri-odletu-ze-summitu-nato-ukryval-v-kontejneru-na-jidlo/"
+      "url": "https://1430kasi.iheart.com/content/2026-08-12-former-syrian-leader-bashar-al-assad-sentenced-to-death/"
     },
     {
       "actors": [
-        "India"
+        "Serbia"
       ],
-      "domain": "timesofindia.indiatimes.com",
-      "id": "evt_15a263912298f350",
-      "language": "English",
-      "matched_regions": [
-        "pakistan"
-      ],
-      "matched_themes": [],
-      "region": "Asia del Sur",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260811T071500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "Operation Safed Sagar : How IAF took the fight to Pakistan at 18 , 000 feet in Kargil",
-      "tone": null,
-      "url": "https://timesofindia.indiatimes.com/defence/news/operation-safed-sagar-how-iaf-took-the-fight-to-pakistan-at-18000-feet-in-kargil/articleshow/133144288.cms"
-    },
-    {
-      "actors": [
-        "South Africa"
-      ],
-      "domain": "jacarandafm.com",
-      "id": "evt_a0c3994d34d8ae8a",
-      "language": "English",
+      "domain": "informer.rs",
+      "id": "evt_215ba12cfc3e52f0",
+      "language": "Serbian",
       "matched_regions": [],
       "matched_themes": [
-        "attack"
+        "mobiliz"
       ],
       "region": "Global",
       "score": 1.5,
@@ -1089,22 +1022,22 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260811T070000Z",
-      "source_country": "South Africa",
+      "seen_date": "20260812T073000Z",
+      "source_country": "Serbia",
       "tier": "monitor",
-      "title": "Fire breaks out after attack on major Libya gasoline tank",
+      "title": "Rusija se sprema na mobilizaciju posle parlamentarnih izbora na jesen",
       "tone": null,
-      "url": "https://www.jacarandafm.com/news/news/fire-breaks-out-after-attack-on-libya-gasoline-tank/"
+      "url": "https://informer.rs/planeta/vesti/1141085/rusija-mobilizacija-volodimir-zelenski"
     },
     {
       "actors": [
-        "Oman"
+        "Italy"
       ],
-      "domain": "omanobserver.om",
-      "id": "evt_3988ce2e4b6e3f56",
-      "language": "English",
+      "domain": "ilgazzettino.it",
+      "id": "evt_8850b69335de0ff1",
+      "language": "Italian",
       "matched_regions": [
-        "hormuz"
+        "houthi"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -1114,12 +1047,62 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260811T070000Z",
-      "source_country": "Oman",
+      "seen_date": "20260812T073000Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "Oil prices rise as hopes for Hormuz deal fade",
+      "title": "Sale la tensione negli Stretti : attacco Houthi a una nave",
       "tone": null,
-      "url": "https://www.omanobserver.om/article/1194294/business/energy/oil-prices-rise-as-hopes-for-hormuz-deal-fade"
+      "url": "https://www.ilgazzettino.it/esteri/stretti_tensione_attacco_houthi_nave_cosa_e_successo-9703027.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "de.euronews.com",
+      "id": "evt_bfe3f3dccf729c52",
+      "language": "German",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T073000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Weniger Regeln : Europa entstand aus Kohle und Stahl . Nicht aus Aktenordnern .",
+      "tone": null,
+      "url": "https://de.euronews.com/my-europe/2026/08/12/europa-kohle-stahl-kmu"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "mansethaber.com",
+      "id": "evt_28452d18b7cdf88d",
+      "language": "Turkish",
+      "matched_regions": [
+        "yemen"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260812T071500Z",
+      "source_country": "Turkey",
+      "tier": "monitor",
+      "title": "Yemende Husilerden balistik füze ve İHA saldırısı iddiası",
+      "tone": null,
+      "url": "https://mansethaber.com/dunya/husiler-marib-ve-muhadaki-askeri-noktalari-vurdugunu-iddia-etti"
     }
   ],
   "filters": {
@@ -1133,13 +1116,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-11T07:35:54Z",
+  "generated_at": "2026-08-12T07:51:24Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 7,
-    "medium": 12,
-    "monitor": 24
+    "high": 2,
+    "medium": 13,
+    "monitor": 28
   },
   "total_events": 43
 }
