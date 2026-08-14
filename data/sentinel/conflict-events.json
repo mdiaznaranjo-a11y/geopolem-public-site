@@ -2,292 +2,148 @@
   "events": [
     {
       "actors": [
-        "Philippines"
+        "Afghanistan"
       ],
-      "domain": "philippinetimes.com",
-      "id": "evt_c727ef0de0619a5e",
+      "domain": "afghanistansun.com",
+      "id": "evt_3fe2b0cc55b32827",
       "language": "English",
-      "matched_regions": [
-        "russia",
-        "kyiv"
-      ],
+      "matched_regions": [],
       "matched_themes": [
-        "war",
-        "attack"
-      ],
-      "region": "Eurasia",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 4.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Philippines",
-      "tier": "high",
-      "title": "Russia : Cluster Munition Attack on Kyiv a Potential War Crime",
-      "tone": null,
-      "url": "http://www.philippinetimes.com/news/279237982/russia-cluster-munition-attack-on-kyiv-a-potential-war-crime"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "advocate-news.com",
-      "id": "evt_cb6b14b186bfee09",
-      "language": "English",
-      "matched_regions": [
-        "yemen",
-        "houthi"
-      ],
-      "matched_themes": [
+        "conflict",
+        "drone",
         "strike",
-        "killed"
-      ],
-      "region": "MENA",
-      "score": 6.5,
-      "score_breakdown": {
-        "region": 3.0,
-        "themes": 3.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "US strikes targeting Houthis killed 153 civilians in Yemen : Pentagon",
-      "tone": null,
-      "url": "https://www.advocate-news.com/2026/08/12/pentagon-yemen-civilian-deaths/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "independent.co.uk",
-      "id": "evt_143e5a40bbf9a5b7",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war",
         "attack"
       ],
-      "region": "MENA",
-      "score": 6.5,
+      "region": "Global",
+      "score": 6.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 4.5,
+        "region": 0.0,
+        "themes": 6.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20260814T071500Z",
+      "source_country": "Afghanistan",
       "tier": "high",
-      "title": "Iran - US war latest : Tehran threatens to prolong war until Trump term ends so  enemy never dares attack us again",
+      "title": "CENTCOM unveils plans for first multinational attack drone task force  Falcon Strike  amid West Asia conflict",
       "tone": null,
-      "url": "https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-trump-hormuz-oil-updates-b3032264.html"
+      "url": "http://www.afghanistansun.com/news/279240735/centcom-unveils-plans-for-first-multinational-attack-drone-task-force-falcon-strike-amid-west-asia-conflict"
     },
     {
       "actors": [
-        "United States"
+        "Sri Lanka"
       ],
-      "domain": "aljazeera.com",
-      "id": "evt_d42c7502e44f4086",
+      "domain": "slguardian.org",
+      "id": "evt_768d70282110e26d",
       "language": "English",
       "matched_regions": [
-        "iran",
-        "hormuz"
+        "mali",
+        "afghan"
       ],
       "matched_themes": [
         "war"
       ],
-      "region": "MENA",
-      "score": 6.5,
+      "region": "Sahel",
+      "score": 5.5,
       "score_breakdown": {
-        "region": 3.5,
+        "region": 2.5,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Iran war live : US , Tehran exchange opposing claims over Hormuz control | Donald Trump News",
+      "seen_date": "20260814T071500Z",
+      "source_country": "Sri Lanka",
+      "tier": "medium",
+      "title": "UN Experts Warn Against Normalising Taliban Rule in Afghanistan",
       "tone": null,
-      "url": "https://www.aljazeera.com/news/liveblog/2026/8/13/iran-war-live-us-and-iran-exchange-opposing-claims-over-hormuz-control?update=4850927"
+      "url": "https://slguardian.org/un-experts-warn-against-normalising-taliban-rule-in-afghanistan/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "aspenpublicradio.org",
+      "id": "evt_8ff4ca6896f17e62",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war",
+        "deploy"
+      ],
+      "region": "Global",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "New aircraft carrier heads toward Mideast after reports of issues on long - deployed USS Lincoln",
+      "tone": null,
+      "url": "https://www.aspenpublicradio.org/2026-08-14/new-aircraft-carrier-heads-toward-mideast-after-reports-of-issues-on-long-deployed-uss-lincoln"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "krcu.org",
+      "id": "evt_f06c62591b35760e",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war",
+        "deploy"
+      ],
+      "region": "Global",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "New aircraft carrier heads toward Mideast after reports of issues on long - deployed USS Lincoln",
+      "tone": null,
+      "url": "https://www.krcu.org/2026-08-14/new-aircraft-carrier-heads-toward-mideast-after-reports-of-issues-on-long-deployed-uss-lincoln"
     },
     {
       "actors": [
         "India"
       ],
-      "domain": "economictimes.indiatimes.com",
-      "id": "evt_44811dffd4cc7807",
+      "domain": "thehindu.com",
+      "id": "evt_e1c3c1d116b9d6b2",
       "language": "English",
-      "matched_regions": [
-        "taiwan"
-      ],
+      "matched_regions": [],
       "matched_themes": [
         "war",
-        "assault"
-      ],
-      "region": "Asia-Pacífico",
-      "score": 6.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 4.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "Taiwan simulates repelling Chinese assault , to slow mobile internet in annual war games",
-      "tone": null,
-      "url": "https://economictimes.indiatimes.com/news/defence/taiwan-simulates-repelling-chinese-assault-to-slow-mobile-internet-in-annual-war-games/articleshow/133202809.cms"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "unionleader.com",
-      "id": "evt_4802c4abdd61563f",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Letter : Iran creates risk of wider war",
-      "tone": null,
-      "url": "https://www.unionleader.com/opinion/letters_to_editor/letter-iran-creates-risk-of-wider-war/article_9771789e-1c8e-43ff-a380-22133b890100.html"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "swindonadvertiser.co.uk",
-      "id": "evt_101bb552039dc292",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "World Cup and June hot weather help united kingdom economy withstand Iran war pressures",
-      "tone": null,
-      "url": "https://www.swindonadvertiser.co.uk/news/national/26459896.world-cup-junes-hot-weather-help-uk-economy-withstand-iran-war-pressures/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "dunfermlinepress.com",
-      "id": "evt_35d7335e77e0311f",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "World Cup and June hot weather help united kingdom economy withstand Iran war pressures",
-      "tone": null,
-      "url": "https://www.dunfermlinepress.com/news/national/26459896.world-cup-junes-hot-weather-help-uk-economy-withstand-iran-war-pressures/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "news.de",
-      "id": "evt_d09f75bd0bff8b45",
-      "language": "German",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [
-        "war"
+        "deploy"
       ],
       "region": "Global",
       "score": 4.5,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.0,
+        "region": 0.0,
+        "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Germany",
+      "seen_date": "20260814T071500Z",
+      "source_country": "India",
       "tier": "medium",
-      "title": "Alarmierende Geheimdienste - Warnung : Beginnt Wladimir Putin seinen Nato - Angriffskrieg schon in wenigen Wochen ?",
+      "title": "New aircraft carrier heads toward West Asia after reports of issues on long - deployed USS Lincoln",
       "tone": null,
-      "url": "https://www.news.de/politik/859887171/wladimir-putin-koennte-nato-krieg-im-herbst-2026-beginnen-us-geheimdienste-warnen-vor-russlands-angriff-gegen-den-westen/1/"
+      "url": "https://www.thehindu.com/news/international/new-aircraft-carrier-heads-toward-west-asia-after-reports-of-issues-on-long-deployed-uss-lincoln/article71344117.ece"
     },
     {
       "actors": [
-        "Italy"
+        "Singapore"
       ],
-      "domain": "zazoom.it",
-      "id": "evt_858eda1719e6c8b7",
-      "language": "Italian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "combat"
-      ],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Italy",
-      "tier": "medium",
-      "title": "LIran si fa beffe di Trump | Possiamo combattere fino alla fine del suo mandato",
-      "tone": null,
-      "url": "https://www.zazoom.it/2026-08-13/liran-si-fa-beffe-di-trump-possiamo-combattere-fino-alla-fine-del-suo-mandato/19564377/"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "middleeasteye.net",
-      "id": "evt_1accdd1804f71ba0",
-      "language": "English",
+      "domain": "beritaharian.sg",
+      "id": "evt_8a331f7e11676eb5",
+      "language": "Malay",
       "matched_regions": [
         "israel",
-        "iran",
-        "iranian"
+        "gaza"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -297,148 +153,124 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Israel",
+      "seen_date": "20260814T071500Z",
+      "source_country": "Singapore",
       "tier": "medium",
-      "title": "CIA had  low confidence  in Israel claims of Iranian threat to Trump : Report",
+      "title": "Kushner ke Israel , Mesir bincang pelan damai Gaza",
       "tone": null,
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/cia-had-low-confidence-israels-claims-iranian-threat-trump-report"
+      "url": "https://www.beritaharian.sg/dunia/utusan-as-israel-mesir-bincang-langkah-seterusnya-pelan-damai-gaza"
     },
     {
       "actors": [
-        "Spain"
+        "United States"
       ],
-      "domain": "infodefensa.com",
-      "id": "evt_80b6cc3d484085ec",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "combat",
-        "nuclear"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Spain",
-      "tier": "medium",
-      "title": "Australia confía a Lockheed Martin la integración de los sistemas de combate de sus futuros submarinos nucleares Virginia",
-      "tone": null,
-      "url": "https://www.infodefensa.com/texto-diario/mostrar/5981495/lockheed-martin-creara-australia-capacidad-soberana-integrar-sistemas-combate-futuros-submarinos-virginia"
-    },
-    {
-      "actors": [
-        "Philippines"
-      ],
-      "domain": "philstar.com",
-      "id": "evt_56a69f20cf149d99",
+      "domain": "abcnews.com",
+      "id": "evt_20e7219e6eebd4bb",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Philippines",
-      "tier": "monitor",
-      "title": "Eurovision to bar countries at war from hosting",
-      "tone": null,
-      "url": "https://www.philstar.com/entertainment/music/2026/08/13/2549042/eurovision-bar-countries-war-hosting"
-    },
-    {
-      "actors": [
-        "South Korea"
-      ],
-      "domain": "koreatimes.co.kr",
-      "id": "evt_2fc2e730e9897884",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "South Korea",
-      "tier": "monitor",
-      "title": "Why is 2007 Korean monster film  D - War  suddenly a Netflix hit in Europe ?",
-      "tone": null,
-      "url": "https://www.koreatimes.co.kr/entertainment/films/20260813/why-is-2007-korean-monster-film-d-war-suddenly-a-netflix-hit-in-europe"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "come-on.de",
-      "id": "evt_c80e1b2d8361d0b9",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "CIA zweifelte an Attentat - Warnung – Trump floh trotzdem",
-      "tone": null,
-      "url": "http://www.come-on.de/politik/cia-zweifelte-an-attentat-warnung-trump-floh-trotzdem-zr-94441267.html"
-    },
-    {
-      "actors": [
-        "Philippines"
-      ],
-      "domain": "philstar.com",
-      "id": "evt_f08d24ff7ac39e61",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Philippines",
-      "tier": "monitor",
-      "title": "Eurovision to bar countries at war from hosting",
-      "tone": null,
-      "url": "https://www.philstar.com/music/2026/08/13/2549042/eurovision-bar-countries-war-hosting"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "wiwo.de",
-      "id": "evt_5e177e86a3c97027",
-      "language": "German",
       "matched_regions": [
         "israel",
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Jared Kushner to visit Israel and Egypt next week with Board of Peace officials to talk Gaza",
+      "tone": null,
+      "url": "https://abcnews.com/Politics/wireStory/jared-kushner-visit-israel-egypt-week-board-peace-135629094"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "openthemagazine.com",
+      "id": "evt_d250bce3adb069e8",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Iran Blames Foreign Aggression for Qeshm Oil Spill as Trackers Claim Self - Inflicted Strait of Hormuz Incident",
+      "tone": null,
+      "url": "https://openthemagazine.com/world/iran-blames-foreign-aggression-for-qeshm-oil-spill-trackers-say-it-was-self-inflicted"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wgiram.iheart.com",
+      "id": "evt_202e4af091b0f0cc",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Vance : Keeping Gas Prices Down Is War Number One Goal",
+      "tone": null,
+      "url": "https://wgiram.iheart.com/content/2026-08-14-vance-keeping-gas-prices-down-is-wars-number-one-goal/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "woodradio.iheart.com",
+      "id": "evt_0c2dce3003479c70",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Vance : Keeping Gas Prices Down Is War Number One Goal | Newsradio WOOD 1300 and 106 . 9 FM",
+      "tone": null,
+      "url": "https://woodradio.iheart.com/content/2026-08-14-vance-keeping-gas-prices-down-is-wars-number-one-goal/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "zazoom.it",
+      "id": "evt_e0dc2f16f596f05f",
+      "language": "Italian",
+      "matched_regions": [
+        "iran",
         "united states"
       ],
       "matched_themes": [],
@@ -449,20 +281,146 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Germany",
+      "seen_date": "20260814T071500Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "Liveblog : united states gegen Israels Pläne für Verbleib von Truppen im Libanon",
+      "title": "Iran WP | gli united states hanno perso il 25 % dei droni Reaper",
       "tone": null,
-      "url": "https://www.wiwo.de/politik/ausland/liveblog-usa-gegen-israels-plaene-fuer-verbleib-von-truppen-im-libanon/100205197.html"
+      "url": "https://www.zazoom.it/2026-08-14/iran-wp-gli-usa-hanno-perso-il-25-dei-droni-reaper/19567790/"
     },
     {
       "actors": [
-        "Austria"
+        "United States"
       ],
-      "domain": "derstandard.at",
-      "id": "evt_9a843dc187c83fa8",
-      "language": "German",
+      "domain": "bozemandailychronicle.com",
+      "id": "evt_6c7a040771536577",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "A look at the history and beliefs behind Japan controversial shrine to the war dead",
+      "tone": null,
+      "url": "http://www.bozemandailychronicle.com/wire/news/a-look-at-the-history-and-beliefs-behind-japan-s-controversial-shrine-to-the-war/article_c74e356a-e96a-5de3-8b59-dee5e094db32.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "1190talkradio.iheart.com",
+      "id": "evt_45f944b99b1d1a26",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Vance : Keeping Gas Prices Down Is War Number One Goal",
+      "tone": null,
+      "url": "https://1190talkradio.iheart.com/content/2026-08-14-vance-keeping-gas-prices-down-is-wars-number-one-goal/"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "openthemagazine.com",
+      "id": "evt_ca04e7ec77837443",
+      "language": "English",
+      "matched_regions": [
+        "india",
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "The Ides of August : How India , Pakistan and Singapore Redefine Freedom and National Identity",
+      "tone": null,
+      "url": "https://openthemagazine.com/india/the-ides-of-august-the-idea-of-freedom"
+    },
+    {
+      "actors": [],
+      "domain": "thenationalnews.com",
+      "id": "evt_47434d3e856f872f",
+      "language": "English",
+      "matched_regions": [
+        "colombia"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "América Latina",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Adnoc ship attacks condemned , Centcom denies aircraft carrier deaths , and UAE sends aid to Colombia",
+      "tone": null,
+      "url": "https://www.thenationalnews.com/podcasts/trending-middle-east/2026/08/14/adnoc-ship-attacks-condemned-centcom-denies-aircraft-carrier-deaths-and-uae-sends-aid-to-colombia/"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "dantri.com.vn",
+      "id": "evt_63e66b3f7f97a004",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Mỹ cảnh báo  cô lập kinh tế  Iran",
+      "tone": null,
+      "url": "https://dantri.com.vn/the-gioi/my-canh-bao-co-lap-kinh-te-iran-20260814120742937.htm"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "lynnnews.co.uk",
+      "id": "evt_a01603da52d2e751",
+      "language": "English",
       "matched_regions": [
         "ukraine"
       ],
@@ -474,20 +432,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Austria",
+      "seen_date": "20260814T071500Z",
+      "source_country": "United Kingdom",
       "tier": "monitor",
-      "title": "Mul . e : Ukraine baut militärisches E - Motorrad mit Allradantrieb",
+      "title": "Car show and fun day at Pentney to raise funds for humanitarian aid in Ukraine",
       "tone": null,
-      "url": "https://www.derstandard.at/consent/tcf/story/3000000335232/mule-ukraine-baut-militaerisches-e-motorrad-mit-allradantrieb"
+      "url": "https://www.lynnnews.co.uk/whats-on/car-show-and-fun-day-to-benefit-humanitarian-aid-in-ukraine-9478174/"
     },
     {
       "actors": [
-        "Italy"
+        "Vietnam"
       ],
-      "domain": "ottopagine.it",
-      "id": "evt_bc0101b9537a2265",
-      "language": "Italian",
+      "domain": "baomoi.com",
+      "id": "evt_fffa508e4148eab8",
+      "language": "Vietnamese",
       "matched_regions": [
         "iran"
       ],
@@ -499,22 +457,72 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Italy",
+      "seen_date": "20260814T071500Z",
+      "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "Iran , allarme sulla portaerei Lincoln : i democratici chiedono uninchiesta",
+      "title": "Mỹ cảnh báo cô lập kinh tế Iran ở mức  chưa từng thấy",
       "tone": null,
-      "url": "https://www.ottopagine.it/mondo/attualita/435559/iran-allarme-sulla-portaerei-lincoln-i-democratici-chiedono-un-inchiesta.shtml"
+      "url": "https://baomoi.com/my-canh-bao-co-lap-kinh-te-iran-o-muc-chua-tung-thay-c55832218.epi"
     },
     {
       "actors": [
-        "Singapore"
+        "Vietnam"
       ],
-      "domain": "asiaone.com",
-      "id": "evt_79eab442bb1843a4",
+      "domain": "soha.vn",
+      "id": "evt_c862340c40f8c4f1",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Lần đầu trong một chiến dịch duy nhất : 15 vũ khí  Made in Ukraine  cùng xuất kích",
+      "tone": null,
+      "url": "https://soha.vn/lan-dau-trong-mot-chien-dich-duy-nhat-15-vu-khi-made-in-ukraine-cung-xuat-kich-cang-nga-rung-chuyen-198260814112115596.htm"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "902.gr",
+      "id": "evt_d380dc1a9ae5d6b7",
+      "language": "Greek",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Greece",
+      "tier": "monitor",
+      "title": "Το ΝΑΤΟ κατέρριψε drone που εισήλθε στον εναέριο χώρο της Λετονίας",
+      "tone": null,
+      "url": "https://www.902.gr/eidisi/kosmos/426674/nato-katerripse-drone-poy-eisilthe-ston-enaerio-horo-tis-letonias"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "katu.com",
+      "id": "evt_9a9b4c8fe940074b",
       "language": "English",
       "matched_regions": [
-        "taiwan"
+        "china"
       ],
       "matched_themes": [],
       "region": "Asia-Pacífico",
@@ -524,20 +532,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Singapore",
+      "seen_date": "20260814T071500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Taiwan says it was targeted last month in AI - driven hacking campaign",
+      "title": "Harvard & China ties exposed in new House report , allegations surround university research",
       "tone": null,
-      "url": "https://www.asiaone.com:443/asia/taiwan-says-it-was-targeted-last-month-ai-driven-hacking-campaign"
+      "url": "https://katu.com/news/nation-world/harvard-china-ties-exposed-in-new-house-report-allegations-surround-university-research-national-security-political-system-pete-hegseth"
     },
     {
       "actors": [
-        "India"
+        "Vietnam"
       ],
-      "domain": "scroll.in",
-      "id": "evt_363a160f4a940bb1",
-      "language": "English",
+      "domain": "kienthuc.net.vn",
+      "id": "evt_98c036ba7b164019",
+      "language": "Vietnamese",
       "matched_regions": [
         "iran"
       ],
@@ -549,23 +557,123 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "India",
+      "seen_date": "20260814T071500Z",
+      "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "Assam move to reduce Kaziranga eco - sensitive zone to 1 km from 10 km as per SC ruling : CM Sarma",
+      "title": "Bộ trưởng Hegseth nói Mỹ có thể phong tỏa cảng biển Iran  vô thời hạn",
       "tone": null,
-      "url": "https://scroll.in/latest/1094993/assam-reducing-kaziranga-eco-sensitive-zone-to-1-km-from-10-km-in-line-with-sc-order-claims-cm"
+      "url": "https://kienthuc.net.vn/bo-truong-hegseth-noi-my-co-the-phong-toa-cang-bien-iran-vo-thoi-han-post1628406.html"
     },
     {
       "actors": [
-        "India"
+        "Germany"
       ],
-      "domain": "newindianexpress.com",
-      "id": "evt_9785d011868a2f4d",
+      "domain": "merkur.de",
+      "id": "evt_5c78ba8d5769b353",
+      "language": "German",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Hormus - Angriff : Emirate werfen Iran „ Piraterie  vor",
+      "tone": null,
+      "url": "https://www.merkur.de/politik/hormus-angriff-emirate-werfen-iran-piraterie-vor-zr-94443126.html"
+    },
+    {
+      "actors": [
+        "Philippines"
+      ],
+      "domain": "interaksyon.philstar.com",
+      "id": "evt_f0124f1eb5403799",
       "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Philippines",
+      "tier": "monitor",
+      "title": "Marcos confident on economic cooperation with China , despite rows",
+      "tone": null,
+      "url": "https://interaksyon.philstar.com/politics-issues/2026/08/14/317791/marcos-confident-on-economic-cooperation-with-china-despite-rows/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wpde.com",
+      "id": "evt_516083396a418fca",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Harvard & China ties exposed in new House report , allegations surround university research",
+      "tone": null,
+      "url": "https://wpde.com/news/nation-world/harvard-china-ties-exposed-in-new-house-report-allegations-surround-university-research-national-security-political-system-pete-hegseth"
+    },
+    {
+      "actors": [
+        "Kosovo"
+      ],
+      "domain": "gazetaexpress.com",
+      "id": "evt_e0079a62702cf795",
+      "language": "Albanian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Kosovo",
+      "tier": "monitor",
+      "title": "Sekretari i Thesarit thotë se SHBA - të do të zbatojnë masa  të papara kurrë  ndaj Iranit",
+      "tone": null,
+      "url": "https://www.gazetaexpress.com/sekretari-i-thesarit-thote-se-shba-te-do-te-zbatojne-masa-te-papara-kurre-ndaj-iranit/"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "protagon.gr",
+      "id": "evt_07f48d365a883451",
+      "language": "Greek",
       "matched_regions": [],
       "matched_themes": [
-        "killed"
+        "drone"
       ],
       "region": "Global",
       "score": 2.0,
@@ -574,94 +682,19 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "India",
+      "seen_date": "20260814T071500Z",
+      "source_country": "Greece",
       "tier": "monitor",
-      "title": "US : Two killed in military helicopter crash near Fort Hood base in Texas",
+      "title": "Λετονία : Το ΝΑΤΟ κατέρριψε απειλητικό drone άγνωστης προέλευσης",
       "tone": null,
-      "url": "https://www.newindianexpress.com/world/2026/Aug/13/us-two-killed-in-military-helicopter-crash-near-fort-hood-base-in-texas"
+      "url": "https://www.protagon.gr/epikairotita/letonia-to-nato-katerripse-apeilitiko-drone-agnwstis-proelefsis-44343422137"
     },
     {
       "actors": [
-        "Mexico"
+        "Nigeria"
       ],
-      "domain": "intoleranciadiario.com",
-      "id": "evt_ac36ed7647dd44da",
-      "language": "Spanish",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Mexico",
-      "tier": "monitor",
-      "title": "Sobran aspirantes en el PAN",
-      "tone": null,
-      "url": "https://intoleranciadiario.com/blog/2026/08/13/1056522-sobran-aspirantes-en-el-pan.html"
-    },
-    {
-      "actors": [
-        "Latvia"
-      ],
-      "domain": "diena.lv",
-      "id": "evt_7451805bfa8c9cb7",
-      "language": "Latvian",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Latvia",
-      "tier": "monitor",
-      "title": "Iestrēdzis Gazas joslas miera plāns",
-      "tone": null,
-      "url": "https://diena.lv/raksts/pasaule/tuvie-austrumi/iestredzis-gazas-joslas-miera-plans"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "aninews.in",
-      "id": "evt_49ffab6b2e20c862",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260813T073000Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "Hypocrisy is blatant , embarrassing : Araghchi slams France over condemnation of alleged protester executions in Iran",
-      "tone": null,
-      "url": "https://aninews.in/news/world/middle-east/hypocrisy-is-blatant-embarrassing-araghchi-slams-france-over-condemnation-of-alleged-protester-executions-in-iran20260813110049/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "aljazeera.com",
-      "id": "evt_99925b53a0f0261b",
+      "domain": "tribuneonlineng.com",
+      "id": "evt_4892cde9074293f1",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -674,69 +707,240 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "United States",
+      "seen_date": "20260814T071500Z",
+      "source_country": "Nigeria",
       "tier": "monitor",
-      "title": "The US is now using the  terrorist  label to interfere in Brazil election | The Far Right",
+      "title": "SEC orders fresh asset freeze over alleged terrorism financing , names nine more",
       "tone": null,
-      "url": "https://www.aljazeera.com/opinions/2026/8/13/the-us-is-now-using-the-terrorist-label-to-interfere-in-brazils-election"
+      "url": "https://tribuneonlineng.com/sec-orders-fresh-asset-freeze-over-alleged-terrorism-financing-names-nine-more/"
     },
     {
       "actors": [
-        "France"
+        "Austria"
       ],
-      "domain": "rtl.fr",
-      "id": "evt_7c2ef40525ac9491",
-      "language": "French",
+      "domain": "boerse-express.com",
+      "id": "evt_5b1e72eecf2ad588",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Austria",
+      "tier": "monitor",
+      "title": "DroneShield Aktie : 206 Millionen AUD kontrahiert für 2026",
+      "tone": null,
+      "url": "https://www.boerse-express.com/news/articles/droneshield-aktie-206-millionen-aud-kontrahiert-fuer-2026-938510"
+    },
+    {
+      "actors": [
+        "Malaysia"
+      ],
+      "domain": "freemalaysiatoday.com",
+      "id": "evt_dfbc933bd85e375a",
+      "language": "English",
       "matched_regions": [
-        "iran"
+        "china"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Asia-Pacífico",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "France",
+      "seen_date": "20260814T071500Z",
+      "source_country": "Malaysia",
       "tier": "monitor",
-      "title": "Iran : plus de 30 pays , dont la France , le Royaume - Uni et le Canada , condamnent les exécutions de manifestants",
+      "title": "Philippine Marcos confident on economic cooperation with China , despite rows",
       "tone": null,
-      "url": "https://www.rtl.fr/actu/international/iran-plus-de-30-pays-dont-la-france-le-royaume-uni-et-le-canada-condamnent-les-executions-de-manifestants-7900661798"
+      "url": "https://www.freemalaysiatoday.com/category/world/2026/08/14/philippines-marcos-confident-on-economic-cooperation-with-china-despite-rows"
     },
     {
       "actors": [
-        "United States"
+        "Italy"
       ],
-      "domain": "finance.yahoo.com",
-      "id": "evt_6a252e4b7de97c10",
-      "language": "English",
+      "domain": "ottopagine.it",
+      "id": "evt_2004fdbd886ed3cc",
+      "language": "Italian",
       "matched_regions": [],
       "matched_themes": [
-        "attack"
+        "terror"
       ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Sequestra per due giorni la compagna e il suo bambino : terrore nel napoletano",
+      "tone": null,
+      "url": "https://www.ottopagine.it/na/cronaca/435652/sequestra-per-due-giorni-la-compagna-e-il-suo-bambino-terrore-nel-napoletano.shtml"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "timesofindia.indiatimes.com",
+      "id": "evt_52e3ff24f9869c55",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "China stopped our army from patrolling several places in Arunachal : Rahul Gandhi slams Centre",
+      "tone": null,
+      "url": "https://timesofindia.indiatimes.com/india/china-stopped-our-army-from-patrolling-several-places-in-arunachal-rahul-gandhi-slams-centre/articleshow/133230905.cms"
+    },
+    {
+      "actors": [],
+      "domain": "drenicapress.org",
+      "id": "evt_f7f2fc18647ad652",
+      "language": "Albanian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
       "region": "Global",
       "score": 1.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
+        "region": 1.5,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "United States",
+      "seen_date": "20260814T071500Z",
+      "source_country": "",
       "tier": "monitor",
-      "title": "ExxonMobil Holdings Corporation ( XOM ) vs . Chevron Corporation ( CVX ): Trump Attacks the Oil Giants for Making  Too Much Money",
+      "title": "NATO ngre avionët luftarakë pas hyrjes së një droni në hapësirën ajrore të Letonisë",
       "tone": null,
-      "url": "https://finance.yahoo.com/energy/articles/exxonmobil-holdings-corporation-xom-vs-201258308.html"
+      "url": "https://drenicapress.org/nato-ngre-avionet-luftarake-pas-hyrjes-se-nje-droni-ne-hapesiren-ajrore-te-letonise/"
+    },
+    {
+      "actors": [],
+      "domain": "indeksonline.net",
+      "id": "evt_4b18b9fa37b47e45",
+      "language": "Albanian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "NATO ngre avionët luftarakë pas hyrjes së një droni në hapësirën ajrore të Letonisë",
+      "tone": null,
+      "url": "https://indeksonline.net/nato-ngre-avionet-luftarake-pas-hyrjes-se-nje-droni-ne-hapesiren-ajrore-te-letonise/"
     },
     {
       "actors": [
-        "Pakistan"
+        "Indonesia"
       ],
-      "domain": "tribune.com.pk",
-      "id": "evt_fa4bb78407d3576b",
+      "domain": "koran-jakarta.com",
+      "id": "evt_af1d39c4bcb56076",
+      "language": "Indonesian",
+      "matched_regions": [
+        "sudan"
+      ],
+      "matched_themes": [],
+      "region": "Cuerno de África",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Indonesia",
+      "tier": "monitor",
+      "title": "Saat Sudan Dilanda Kekerasan Sipil yang Kian Tak Terkendali",
+      "tone": null,
+      "url": "https://koran-jakarta.com/2026-08-14/saat-sudan-dilanda-kekerasan-sipil-yang-kian-tak-terkendali"
+    },
+    {
+      "actors": [
+        "Kosovo"
+      ],
+      "domain": "gazetaexpress.com",
+      "id": "evt_29d80dbbc7bf08a9",
+      "language": "Albanian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Kosovo",
+      "tier": "monitor",
+      "title": "NATO ngre avionët luftarakë pas hyrjes së një droni në hapësirën ajrore të Letonisë",
+      "tone": null,
+      "url": "https://www.gazetaexpress.com/nato-ngre-avionet-luftarake-pas-hyrjes-se-nje-droni-ne-hapesiren-ajrore-te-letonise/"
+    },
+    {
+      "actors": [
+        "Albania"
+      ],
+      "domain": "balkanweb.com",
+      "id": "evt_0e6f83c6b1492b91",
+      "language": "Albanian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "Albania",
+      "tier": "monitor",
+      "title": "Incident në hapësirën ajrore të Letonisë / Avionët e NATO - s rrëzojnë dronin rus , rritet vigjilenca",
+      "tone": null,
+      "url": "https://www.balkanweb.com/incident-ne-hapesiren-ajrore-te-letonise-avionet-e-nato-s-rrezojne-dronin-rus-rritet-vigjilenca/"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "hindustantimes.com",
+      "id": "evt_526a7e8dbb3d44ec",
       "language": "English",
       "matched_regions": [
         "pakistan"
@@ -749,12 +953,85 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260813T073000Z",
-      "source_country": "Pakistan",
+      "seen_date": "20260814T071500Z",
+      "source_country": "India",
       "tier": "monitor",
-      "title": "Pakistan alliance power",
+      "title": "Every single drop of water our red line : Pakistan PM Sharif fresh Indus Waters Treaty threat",
       "tone": null,
-      "url": "https://tribune.com.pk/story/2623551/pakistans-alliance-power"
+      "url": "https://www.hindustantimes.com/world-news/every-single-drop-our-red-line-pakistan-pm-shehbaz-sharifs-fresh-indus-water-treaty-threat-101786684986331.html"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "energy-pedia.com",
+      "id": "evt_57893d8c7c2c3803",
+      "language": "English",
+      "matched_regions": [
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Venezuela : XRG advances global gas strategy with entry into Venezuela",
+      "tone": null,
+      "url": "https://www.energy-pedia.com/news/venezuela/xrg-advances-global-gas-strategy-with-entry-into-venezuela-204962"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "metro.co.uk",
+      "id": "evt_5f8d917dab305c93",
+      "language": "English",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Fighter jets scrambled to shoot down done that entered Nato airspace",
+      "tone": null,
+      "url": "https://metro.co.uk/2026/08/14/fighter-jets-scrambled-shoot-done-entered-nato-airspace-29374841/"
+    },
+    {
+      "actors": [],
+      "domain": "thenationalnews.com",
+      "id": "evt_d71edb595fec2e13",
+      "language": "English",
+      "matched_regions": [
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260814T071500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "AD Ports Group Q2 profit surges on boost from trade through Hormuz alternatives",
+      "tone": null,
+      "url": "https://www.thenationalnews.com/business/economy/2026/08/14/ad-ports-group-q2-profit-surges-on-boost-from-trade-through-hormuz-alternatives/"
     }
   ],
   "filters": {
@@ -768,13 +1045,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-13T07:52:47Z",
+  "generated_at": "2026-08-14T07:49:29Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 5,
+    "high": 1,
     "medium": 7,
-    "monitor": 17
+    "monitor": 33
   },
-  "total_events": 29
+  "total_events": 41
 }
