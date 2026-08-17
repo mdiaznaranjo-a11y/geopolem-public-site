@@ -625,86 +625,75 @@ export const DOCTRINA = {
    IMPORTANTE: correlación temporal no implica causalidad.
    ======================================================================== */
 export const SENTINEL_BRIEF = {
-  "brand": "GEOPÓLEM",
-  "eyebrow": "GEOPÓLEM SENTINEL",
-  "eyebrowEn": "GEOPÓLEM SENTINEL",
-  "title": "Brief semanal de inflexiones conflicto-ambiente",
-  "titleEn": "Weekly conflict-environment inflection brief",
-  "generatedAt": "2026-08-10T08:09:00+02:00",
-  "window": "3 de agosto – 9 de agosto de 2026 · Europe/Luxembourg",
-  "windowEn": "August 3 – August 9, 2026 · Europe/Luxembourg",
+  "eyebrow": "SENTINEL WEEKLY BRIEF",
+  "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
+  "generatedAt": "2026-08-17T08:07:00+02:00",
+  "window": "10-16 agosto 2026 · Europe/Luxembourg",
   "dataUrl": "./data/sentinel/weekly-brief.json",
-  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-08-03_2026-08-09.json",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-08-10_2026-08-16.json",
   "indexUrl": "./data/sentinel/index.json",
   "layerLabel": "Acople ambiental significativo",
-  "layerLabelEn": "Significant environmental coupling",
-  "status": "Un acople confirmado · dos señales de vigilancia · sin causalidad forzada",
-  "statusEn": "One confirmed coupling · two watch signals · no forced causality",
-  "summary": "Estado principal de la semana: SENTINEL registró 51 eventos y siete de prioridad alta; NASA EONET aportó eventos ambientales abiertos y cerrados, y USGS registró 27 sismos M5+ en la ventana UTC equivalente. No se identifican tres causalidades ambientales confirmadas. Se publica un acople confirmado, Gaza WASH, y dos señales de vigilancia: Ormuz-Suez como ruta crítica bajo presión y Taiwán-Dolphin como vigilancia meteorológica-operacional en Asia-Pacífico.",
-  "summaryEn": "Main weekly status: SENTINEL recorded 51 events and seven high-tier events; NASA EONET contributed open and closed environmental events, and USGS recorded 27 M5+ earthquakes in the equivalent UTC window. Three confirmed environmental causalities were not identified. This edition publishes one confirmed coupling, Gaza WASH, and two watch signals: Hormuz-Suez as a critical-route pressure stack and Taiwan-Dolphin as a meteorological-operational watch in Asia-Pacific.",
-  "caveat": "No se afirma causalidad entre Ormuz y el sismo de Suez, ni entre Dolphin y una escalada militar en Taiwán. La capa distingue HECHO, EVALUACIÓN, HIPÓTESIS y SEÑAL.",
-  "caveatEn": "No causality is claimed between Hormuz and the Suez earthquake, nor between Dolphin and military escalation around Taiwan. The layer distinguishes FACT, ASSESSMENT, HYPOTHESIS and SIGNAL.",
-  "stats": [
-    {
-      "label": "Eventos SENTINEL",
-      "labelEn": "SENTINEL events",
-      "value": "51"
-    },
-    {
-      "label": "Sismos USGS M5+",
-      "labelEn": "USGS M5+ quakes",
-      "value": "27"
-    },
-    {
-      "label": "NASA EONET abiertos",
-      "labelEn": "NASA EONET open",
-      "value": "14"
-    },
-    {
-      "label": "Acoples confirmados",
-      "labelEn": "Confirmed couplings",
-      "value": "1"
-    }
+  "status": "dos acoples confirmados y una señal en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
+  "summary": [
+    "Dos acoples quedan confirmados: Gaza WASH y Colombia sismo-capacidad estatal.",
+    "Indonesia queda en observación: el evento geofísico es mayor, pero no se verificó un acople directo de conflicto.",
+    "Ormuz/Yemen mantiene señal geopolítica alta, pero sin evento ambiental NASA/USGS acoplado esta semana."
+  ],
+  "caveat": "Correlación y coincidencia temporal no implican causalidad. SENTINEL separa hecho, evaluación, hipótesis y señal.",
+  "stats": {
+    "sentinelEvents": 39,
+    "nasaOpenEvents": 24,
+    "usgsM55Plus": 16,
+    "confirmedCouplings": 2,
+    "watchSignals": 1
+  },
+  "tags": [
+    "#GEOPÓLEM",
+    "#SENTINEL",
+    "#OSINT",
+    "#Gaza",
+    "#WASH",
+    "#Geopolítica"
   ],
   "points": [
     {
-      "id": "ormuz-suez-ruta-critica",
+      "id": "gaza-wash-operational-continuity",
       "rank": 1,
-      "status": "en observación",
-      "statusEn": "under observation",
-      "priority": "alta",
-      "priorityEn": "high",
-      "accent": "#ff2d25",
-      "location": "Ormuz + Suez · Golfo Pérsico / Egipto",
-      "headline": "Ormuz y Suez: dos cuellos de botella bajo vigilancia simultánea",
-      "headlineEn": "Hormuz and Suez: two chokepoints under simultaneous watch",
-      "fact": "HECHO: Ormuz se mantuvo como señal prioritaria por las condiciones iraníes de reapertura y por avisos UKMTO en tránsito del estrecho; USGS registró un sismo M5.0 cerca de Suez dentro de la misma ventana semanal.",
-      "coupling": "Vigilancia ruta crítica-geofísica-conflicto; no causalidad confirmada.",
+      "status": "confirmado",
+      "statusEn": "confirmed",
+      "priority": "Alta",
+      "priorityEn": "High",
+      "accent": "#FF2D25",
+      "location": "Gaza",
+      "headline": "Gaza: agua, saneamiento y continuidad operacional",
+      "headlineEn": "Gaza: water, sanitation and operational continuity",
+      "fact": "OCHA informó que 90% de la población encuestada experimentaba interrupciones frecuentes o impredecibles en el acceso a agua segura, limpia y fiable, y que socios WASH no podían acceder a unas 5.000 personas en seis sitios de desplazamiento en el norte de Rafah por inseguridad y disparos perdidos.",
+      "coupling": "El acople queda confirmado porque el conflicto no aparece como contexto separado del agua: condiciona acceso, distribución, higiene, salud pública y continuidad de la respuesta humanitaria.",
+      "couplingEn": "The coupling is confirmed because conflict is not separate from water: it shapes access, distribution, hygiene, public health and continuity of humanitarian response.",
       "couplingType": [
-        "Ruta crítica",
-        "Sismo M5+",
-        "Presión geopolítica"
+        "conflicto",
+        "agua",
+        "saneamiento",
+        "salud pública",
+        "acceso humanitario"
       ],
       "couplingTypeEn": [
-        "Critical route",
-        "M5+ earthquake",
-        "Geopolitical pressure"
+        "conflict",
+        "water",
+        "sanitation",
+        "public health",
+        "humanitarian access"
       ],
-      "couplingEn": "Vigilancia ruta crítica-geofísica-conflicto; no causalidad confirmada.",
-      "implication": "EVALUACIÓN: No hay evidencia de que el sismo haya afectado el Canal de Suez ni de que exista causalidad con Ormuz. La relevancia está en la superposición de dos rutas críticas en una misma semana: un estrecho politizado y un corredor geofísicamente observado.",
-      "tripolar": "EE.UU. intenta preservar libertad de navegación y credibilidad de seguridad marítima; China necesita continuidad de flujos hacia Asia; Rusia obtiene margen narrativo y de mercado si sube el coste energético; UE y Sur Global absorben coste logístico e inflación importada.",
+      "implication": "La variable estratégica no es solo militar. Cuando agua, saneamiento, residuos, cruces de entrada y seguridad se bloquean a la vez, se reduce el margen de supervivencia civil y aumenta la presión sobre mediadores, donantes y actores regionales.",
+      "tripolar": "EE. UU. conserva peso diplomático y militar sobre Israel; la UE enfrenta presión normativa y humanitaria; actores regionales compiten por mediación; China y el Sur Global usan la crisis como argumento sobre legitimidad del orden occidental.",
+      "conflictEvent": "Guerra, desplazamiento, restricciones de acceso humanitario y presión sobre servicios esenciales.",
+      "conflictEventEn": "War, displacement, humanitarian-access constraints and pressure on essential services.",
+      "environmentalEvent": "OCHA reportó interrupciones frecuentes o impredecibles del acceso a agua segura para 90% de la población encuestada.",
+      "environmentalEventEn": "OCHA reported frequent or unpredictable interruptions to safe water access for 90% of the surveyed population.",
       "sources": [
         {
-          "label": "RTE · Iran issues demands for reopening of Strait of Hormuz",
-          "url": "https://www.rte.ie/news/middle-east/2026/0809/1587118-iran-issues-demands-for-reopening-of-strait-of-hormuz/"
-        },
-        {
-          "label": "USGS · M 5.0 near Suez",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thpb"
-        },
-        {
-          "label": "UKMTO · Recent incidents",
-          "url": "https://www.ukmto.org/indian-ocean/recent-incidents"
+          "label": "OCHA oPt",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-14-august-2026"
         },
         {
           "label": "GEOPÓLEM SENTINEL",
@@ -713,141 +702,127 @@ export const SENTINEL_BRIEF = {
       ]
     },
     {
-      "id": "gaza-wash-salud-publica",
+      "id": "colombia-earthquake-humanitarian-pressure",
       "rank": 2,
       "status": "confirmado",
       "statusEn": "confirmed",
-      "priority": "alta",
-      "priorityEn": "high",
-      "accent": "#3dd6d0",
-      "location": "Gaza · agua, saneamiento y salud pública",
-      "headline": "Gaza: el acople confirmado es agua, saneamiento y gobernanza humanitaria",
-      "headlineEn": "Gaza: the confirmed coupling is water, sanitation and humanitarian governance",
-      "fact": "HECHO: OCHA reportó sobre Gaza daños masivos de vivienda e infraestructura, interrupciones de servicios esenciales y restricciones operativas; su snapshot del 5 de agosto registró 84% de hogares evaluados con inseguridad hídrica moderada a alta y 86% con dificultades para acceder a saneamiento seguro y limpio.",
-      "coupling": "Acople confirmado conflicto-WASH-salud pública-capacidad estatal/humanitaria.",
+      "priority": "Alta",
+      "priorityEn": "High",
+      "accent": "#F59E0B",
+      "location": "Colombia occidental: Chocó, Valle del Cauca y eje cafetero",
+      "headline": "Colombia: sismo mayor sobre capacidad estatal y territorio ya tensionado",
+      "headlineEn": "Colombia: major earthquake over state capacity and already stressed territory",
+      "fact": "USGS situó el sismo en M7.4, a 5 km al sur de San José del Palmar, con profundidad de 110,3 km y exposición de aproximadamente 10,5 millones de personas a sacudidas fuertes o muy fuertes.",
+      "coupling": "El acople no es causal: el conflicto no causó el sismo. El acople es operacional, porque un desastre mayor cayó sobre departamentos con necesidades humanitarias previas, cierre temporal de aeropuertos, daño de salud, vivienda y transporte.",
+      "couplingEn": "The coupling is not causal: conflict did not cause the earthquake. It is operational because a major disaster hit departments with pre-existing humanitarian needs, temporary airport closures and damage to health, housing and transport.",
       "couplingType": [
-        "WASH",
-        "Salud pública",
-        "Gobernanza humanitaria"
+        "sismo",
+        "capacidad estatal",
+        "transporte",
+        "salud",
+        "seguridad alimentaria"
       ],
       "couplingTypeEn": [
-        "WASH",
-        "Public health",
-        "Humanitarian governance"
+        "earthquake",
+        "state capacity",
+        "transport",
+        "health",
+        "food security"
       ],
-      "couplingEn": "Acople confirmado conflicto-WASH-salud pública-capacidad estatal/humanitaria.",
-      "implication": "EVALUACIÓN: El agua y el saneamiento ya no son solo variables humanitarias: son continuidad operacional, salud pública, control territorial y legitimidad de gobernanza.",
-      "tripolar": "EE.UU. conserva influencia militar y diplomática sobre Israel; la UE enfrenta presión normativa y humanitaria; actores regionales compiten por mediación; China y el Sur Global utilizan la crisis para cuestionar la arquitectura occidental de legitimidad.",
+      "implication": "El punto de inflexión es la capacidad estatal: respuesta humanitaria, conectividad del Pacífico, logística médica y seguridad alimentaria pasan a competir por recursos en un espacio donde el margen institucional ya era limitado.",
+      "tripolar": "EE. UU. y la UE operan sobre la dimensión de asistencia y resiliencia; China observa infraestructura y reconstrucción; Rusia no es el actor central, pero cualquier fragilidad estatal en América Latina alimenta narrativas de declive occidental.",
+      "conflictEvent": "Áreas del Pacífico colombiano y Chocó ya presentaban necesidades humanitarias por conflicto, desplazamiento y acceso limitado a servicios básicos.",
+      "conflictEventEn": "Colombia's Pacific region and Chocó already had humanitarian needs linked to conflict, displacement and limited access to basic services.",
+      "environmentalEvent": "USGS registró un sismo M7.4 cerca de San José del Palmar el 10 de agosto de 2026, con alerta roja en la consulta semanal.",
+      "environmentalEventEn": "USGS recorded a magnitude 7.4 earthquake near San José del Palmar on 10 August 2026, with red alert in the weekly query.",
       "sources": [
         {
-          "label": "OCHA oPt · Humanitarian Situation Report 7 August 2026",
-          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-7-august-2026"
+          "label": "USGS Colombia",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2/executive"
         },
         {
-          "label": "OCHA oPt · Gaza Reported Impact Snapshot 5 August 2026",
-          "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_5_August_2026.pdf"
+          "label": "UN News Colombia",
+          "url": "https://news.un.org/en/story/2026/08/1168112"
         },
         {
-          "label": "GEOPÓLEM SENTINEL",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+          "label": "GDACS Colombia",
+          "url": "https://www.gdacs.org/Earthquakes/report_shakemap.aspx?eventid=1557236&episodeid=1724218&eventtype=EQ"
+        },
+        {
+          "label": "UNifeed Colombia",
+          "url": "https://media.un.org/unifeed/en/asset/d361/d3616884"
         }
       ]
     },
     {
-      "id": "taiwan-dolphin-asia-pacifico",
+      "id": "indonesia-flores-earthquake-maritime-observation",
       "rank": 3,
       "status": "en observación",
       "statusEn": "under observation",
-      "priority": "media-alta",
-      "priorityEn": "medium-high",
-      "accent": "#fbbf24",
-      "location": "Estrecho de Taiwán / costa oriental de China",
-      "headline": "Dolphin: meteorología severa sobre una zona de fricción tecnológica y militar",
-      "headlineEn": "Dolphin: severe weather over a technological and military friction zone",
-      "fact": "HECHO: NASA EONET registró Super Typhoon Dolphin como evento abierto de tormenta severa durante la semana; el mismo barrido SENTINEL mantuvo señal de seguridad Asia-Pacífico.",
-      "coupling": "Vigilancia meteorológica-operacional sobre corredor industrial y militar sensible; sin disrupción geopolítica confirmada.",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#3DD6D0",
+      "location": "Indonesia: mar de Flores y Nusa Tenggara Oriental",
+      "headline": "Indonesia: sismo mayor en archipiélago estratégico, sin acople de conflicto confirmado",
+      "headlineEn": "Indonesia: major earthquake in a strategic archipelago, no confirmed conflict coupling",
+      "fact": "USGS registró M7.7 a 68 km al NNO de Ende, con profundidad de 10 km y exposición estimada de unos 2 millones de personas a sacudidas fuertes a violentas.",
+      "coupling": "El punto queda en observación: la señal geofísica es significativa y GDACS la clasificó en alerta roja, pero no hay evidencia suficiente para afirmar un acople conflicto-ambiente esta semana.",
+      "couplingEn": "This point remains under observation: the geophysical signal is significant and GDACS classified it as red alert, but there is not enough evidence to claim a conflict-environment coupling this week.",
       "couplingType": [
-        "Tormenta severa",
-        "Corredor industrial",
-        "Vigilancia militar"
+        "geofísica",
+        "archipiélago",
+        "rutas marítimas",
+        "continuidad operacional",
+        "vigilancia"
       ],
       "couplingTypeEn": [
-        "Severe storm",
-        "Industrial corridor",
-        "Military watch"
+        "geophysics",
+        "archipelago",
+        "maritime routes",
+        "operational continuity",
+        "watch signal"
       ],
-      "couplingEn": "Vigilancia meteorológica-operacional sobre corredor industrial y militar sensible; sin disrupción geopolítica confirmada.",
-      "implication": "EVALUACIÓN: El punto no es afirmar que el tifón alteró la disuasión. El punto es vigilar una zona donde puertos, aviación, semiconductores, cables y patrullas operan bajo ventanas meteorológicas estrechas.",
-      "tripolar": "China prioriza continuidad costera e industrial; EE.UU. y Japón vigilan disuasión y acceso marítimo; Rusia observa la presión sobre el frente Indo-Pacífico; la UE y el Sur Global quedan expuestos por cadenas de suministro tecnológicas.",
+      "implication": "Indonesia importa por su posición entre rutas alternativas de Malaca, Lombok y la Sonda. Un sismo mayor no equivale a crisis geopolítica, pero obliga a vigilar puertos, ayuda, conectividad interinsular y continuidad logística.",
+      "tripolar": "China depende de rutas marítimas del Sudeste Asiático; EE. UU. y aliados vigilan resiliencia regional; Rusia queda periférica; ASEAN y el Sur Global concentran el coste humano y logístico inmediato.",
+      "conflictEvent": "No se verificó un evento de conflicto acoplado en el feed SENTINEL para Indonesia durante la ronda.",
+      "conflictEventEn": "No conflict event coupled to Indonesia was verified in the SENTINEL feed during this round.",
+      "environmentalEvent": "USGS registró un sismo M7.7 al NNO de Ende, Indonesia, el 14 de agosto de 2026.",
+      "environmentalEventEn": "USGS recorded a magnitude 7.7 earthquake NNW of Ende, Indonesia, on 14 August 2026.",
       "sources": [
         {
-          "label": "NASA EONET · Open events",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
+          "label": "USGS Indonesia",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2/executive"
         },
         {
-          "label": "GEOPÓLEM SENTINEL",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-        }
-      ]
-    }
-  ],
-  "notSelected": [
-    {
-      "location": "Ucrania / Mar Negro",
-      "reason": "Alta relevancia de guerra logística, pero sin evento NASA/USGS directamente acoplado esta semana.",
-      "sources": [
+          "label": "GDACS Indonesia",
+          "url": "https://www.gdacs.org/Earthquakes/report_shakemap.aspx?eventid=1558059&episodeid=1725109&eventtype=EQ"
+        },
         {
-          "label": "Reuters · Ukraine logistics strikes",
-          "url": "https://www.reuters.com/business/aerospace-defense/russia-says-it-struck-7-ukrainian-warehouses-storing-drone-components-2026-08-05/"
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
         }
       ]
     }
   ],
+  "notSelected": {
+    "label": "Ormuz/Yemen",
+    "labelEn": "Hormuz/Yemen",
+    "location": "Golfo Pérsico, Yemen y rutas energéticas",
+    "note": "Señal geopolítica alta en SENTINEL, pero sin acople ambiental NASA/USGS confirmado esta semana.",
+    "source": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+  },
   "bestShort": {
-    "rank": 1,
-    "title": "Ormuz y Suez: cuando el tablero se estrecha",
-    "location": "Ormuz + Suez",
-    "duration_seconds": 60,
-    "hook": "Dos estrechos. Una misma pregunta: ¿qué pasa si las rutas críticas fallan a la vez?",
-    "reason": "Tiene el mejor equilibrio entre dato verificable, tensión estratégica y disciplina editorial: se puede explicar el riesgo sistémico sin afirmar causalidad.",
-    "structure": {
-      "hecho": "Irán condicionó la reapertura de Ormuz; USGS registró un sismo M5.0 cerca de Suez en la misma ventana semanal.",
-      "evaluacion": "No es causalidad. Es vigilancia de rutas críticas: seguridad marítima, geofísica, seguros y energía en el mismo tablero.",
-      "hipotesis": "Si Ormuz sigue condicionado y Suez recibe cualquier estrés operacional, el coste se traslada a energía, seguros, rutas alternativas y margen político."
-    },
-    "visuals": [
-      "Mapa oscuro MENA: Ormuz y Suez iluminados con línea cian.",
-      "Tarjeta HECHO: Ormuz condicionado por demandas iraníes.",
-      "Tarjeta SEÑAL: USGS M5.0 cerca de Suez, sin impacto operacional confirmado.",
-      "Tablero tripolar: EE.UU., China, Rusia, UE/Sur Global."
-    ],
-    "subtitles_en": [
-      "Two straits. One question: what happens if critical routes fail at the same time?",
-      "Iran made Hormuz conditional. USGS recorded an M5.0 quake near Suez.",
-      "This is not causality. It is route-risk surveillance.",
-      "The board is energy, insurance, shipping and power.",
+    "title": "Gaza: el agua en el tablero",
+    "reason": "Es el acople confirmado más sólido entre conflicto, ambiente operativo, salud pública y presión estratégica.",
+    "hook": "Cuando una guerra corta el agua, el tablero cambia sin mover una frontera.",
+    "subtitlesEn": [
+      "When war disrupts water, the board changes without moving a border.",
+      "OCHA reports that 90% of Gaza's surveyed population faces frequent or unpredictable interruptions to safe water.",
+      "This is not only a humanitarian variable. It is operational continuity.",
+      "Water, sanitation, health, waste and access now shape pressure on the board.",
       "GEOPÓLEM. Welcome to the board."
-    ],
-    "closing": "GEOPÓLEM. Bienvenidos al tablero.",
-    "hashtags": [
-      "#GEOPÓLEM",
-      "#SENTINEL",
-      "#OSINT",
-      "#Geopolítica",
-      "#Ormuz",
-      "#Suez"
     ]
   },
-  "tags": [
-    "sentinel",
-    "osint",
-    "ormuz",
-    "suez",
-    "gaza",
-    "taiwan",
-    "dolphin",
-    "tripolaridad"
-  ],
   "close": "GEOPÓLEM. Bienvenidos al tablero."
 };
 
