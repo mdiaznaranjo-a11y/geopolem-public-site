@@ -2,248 +2,568 @@
   "events": [
     {
       "actors": [
-        "United States"
+        "China"
       ],
-      "domain": "edition.cnn.com",
-      "id": "evt_96120e4273c0b7dd",
+      "domain": "global.chinadaily.com.cn",
+      "id": "evt_24310dd09db40d6b",
       "language": "English",
       "matched_regions": [
-        "iran",
-        "yemen",
-        "hormuz"
+        "ukraine",
+        "russia"
       ],
       "matched_themes": [
-        "war"
+        "missile",
+        "drone",
+        "strike"
       ],
-      "region": "MENA",
-      "score": 7.0,
+      "region": "Europa del Este",
+      "score": 10.0,
       "score_breakdown": {
         "region": 4.0,
-        "themes": 3.0,
+        "themes": 6.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T063000Z",
-      "source_country": "United States",
+      "seen_date": "20260817T063000Z",
+      "source_country": "China",
       "tier": "high",
-      "title": "Live updates : US - Iran war ; Yemen port suspends operations as Hormuz stalemate continues",
+      "title": "Russia , Ukraine trade drone , missile strikes",
       "tone": null,
-      "url": "https://edition.cnn.com/2026/08/16/world/live-news/iran-war-trump"
+      "url": "http://global.chinadaily.com.cn/a/202608/17/WS6a826e68a31073853ec53a1b.html"
     },
     {
       "actors": [
-        "India"
+        "United States"
       ],
-      "domain": "aninews.in",
-      "id": "evt_77bdc4016411d06c",
+      "domain": "dailygazette.com",
+      "id": "evt_204f4e6cfe8dd22e",
       "language": "English",
       "matched_regions": [
-        "iran",
-        "iranian",
-        "hormuz"
+        "ukraine",
+        "russia"
       ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Europa del Este",
+      "score": 5.5,
       "score_breakdown": {
         "region": 4.0,
-        "themes": 0.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260816T061500Z",
-      "source_country": "India",
+      "seen_date": "20260817T064500Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "Oman negotiations , reopening of Hormuz are two separate issues : Iranian FM Araghchi",
+      "title": "Ukraine takes aim at Russia economy and morale by attacking online retailer | Business",
       "tone": null,
-      "url": "https://aninews.in/news/world/middle-east/oman-negotiations-reopening-of-hormuz-are-two-separate-issues-iranian-fm-araghchi20260816111920/"
+      "url": "https://www.dailygazette.com/leader_herald/ap/business/ukraine-takes-aim-at-russia-s-economy-and-morale-by-attacking-online-retailer/article_c96b652d-0cd2-5f2b-adde-fcc9f1ce184d.html"
     },
     {
       "actors": [
-        "India"
+        "Romania"
       ],
-      "domain": "navbharattimes.indiatimes.com",
-      "id": "evt_faf3be3e589a60da",
-      "language": "Hindi",
+      "domain": "romania-insider.com",
+      "id": "evt_09302bbaa323698c",
+      "language": "English",
       "matched_regions": [
-        "israel",
-        "saudi",
-        "pakistan"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "Mecca Defence Agreement , पाकिस्तान का मक्का पैक्ट बनाम UAE - इजरायल , दोनों गठबंधनों की क्या है हकीकत , कौन कितना ताकतवर - mecca defence agreement saudi arabia turkey pakistan alliance impact uae israel analysis - Asian countries News",
-      "tone": null,
-      "url": "https://navbharattimes.indiatimes.com/world/asian-countries/mecca-defence-agreement-saudi-arabia-turkey-pakistan-alliance-impact-uae-israel-analysis/articleshow/133270066.cms"
-    },
-    {
-      "actors": [],
-      "domain": "nyheder.dk",
-      "id": "evt_0aa41d2ab47a2435",
-      "language": "Danish",
-      "matched_regions": [
-        "kyiv"
+        "russia",
+        "russian"
       ],
       "matched_themes": [
         "drone"
       ],
-      "region": "Europa del Este",
-      "score": 3.5,
+      "region": "Eurasia",
+      "score": 5.5,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 3.5,
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T063000Z",
-      "source_country": "",
+      "seen_date": "20260817T064500Z",
+      "source_country": "Romania",
       "tier": "medium",
-      "title": "Kvinde dræbt i russisk angreb på Kryvyj Rih nær Kyiv og Moskva ramt af droner",
+      "title": "Romania shoots down fourth Russian drone on national territory",
       "tone": null,
-      "url": "https://www.nyheder.dk/udland/kvinde-meldes-draebt-i-russisk-angreb-pa-zelenskyjs-hjemby/2480809"
+      "url": "https://www.romania-insider.com/fourth-drone-shot-down-romania-august-2026"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "hindustantimes.com",
+      "id": "evt_b9114e8d33ac7339",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "killed",
+        "attack",
+        "assault"
+      ],
+      "region": "Global",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 5.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Bihar tiger attack : Farmer killed near Valmiki reserve , mob assaults forest staff",
+      "tone": null,
+      "url": "https://www.hindustantimes.com/india-news/bihar-tiger-attack-farmer-killed-near-valmiki-reserve-mob-assaults-forest-staff-101786942262628.html"
     },
     {
       "actors": [
         "Indonesia"
       ],
-      "domain": "tribunnews.com",
-      "id": "evt_70810bbed17874aa",
+      "domain": "aceh.tribunnews.com",
+      "id": "evt_46aed9f311946bde",
+      "language": "Indonesian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "Indonesia",
+      "tier": "medium",
+      "title": "Iran Tawarkan Hadiah Rp500 Juta untuk Tangkap atau Bunuh Tentara AS",
+      "tone": null,
+      "url": "https://aceh.tribunnews.com/news/1039159/iran-tawarkan-hadiah-rp500-juta-untuk-tangkap-atau-bunuh-tentara-as"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "theepochtimes.com",
+      "id": "evt_18a724196bf49697",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war",
+        "drone"
+      ],
+      "region": "Global",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 5.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T063000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Nearly 150 Drone Breaches : Analysts Warn Defence Responding Too Slow After Latest Base Incursion",
+      "tone": null,
+      "url": "https://www.theepochtimes.com/world/nearly-150-drone-breaches-analysts-warn-defence-too-slow-to-respond-after-latest-base-incursion-6075065"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "aceh.tribunnews.com",
+      "id": "evt_80a406f75d87c464",
       "language": "Indonesian",
       "matched_regions": [
         "israel",
-        "lebanon"
+        "gaza",
+        "hamas"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 3.5,
+      "score": 4.0,
       "score_breakdown": {
-        "region": 3.5,
+        "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T063000Z",
+      "seen_date": "20260817T064500Z",
       "source_country": "Indonesia",
       "tier": "medium",
-      "title": "Serangan Israel di Lebanon Selatan Tewaskan 15 Orang , Gencatan Senjata Kembali Terancam",
+      "title": "Hamas Terima Peta Jalan Fase Kedua Gencatan Senjata Gaza , Desak Israel Angkat Kaki",
       "tone": null,
-      "url": "https://www.tribunnews.com/internasional/7869275/serangan-israel-di-lebanon-selatan-tewaskan-15-orang-gencatan-senjata-kembali-terancam"
+      "url": "https://aceh.tribunnews.com/news/1039174/hamas-terima-peta-jalan-fase-kedua-gencatan-senjata-gaza-desak-israel-angkat-kaki"
     },
     {
       "actors": [
-        "Pakistan"
+        "Indonesia"
       ],
-      "domain": "samaa.tv",
-      "id": "evt_237acca2dfa38d5a",
-      "language": "English",
+      "domain": "aceh.tribunnews.com",
+      "id": "evt_5b98b2f14626ae1c",
+      "language": "Indonesian",
       "matched_regions": [
-        "iran",
-        "iranian"
+        "israel",
+        "gaza"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 3.5,
+      "score": 4.0,
       "score_breakdown": {
-        "region": 3.5,
+        "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Pakistan",
+      "seen_date": "20260817T064500Z",
+      "source_country": "Indonesia",
       "tier": "medium",
-      "title": "Qatar rejects Tehran claim of secretly holding three Iranian pilots",
+      "title": "Israel Tolak Peta Jalan Gaza , 8 Negara Peringatkan Ancaman Gagalnya Perdamaian",
       "tone": null,
-      "url": "https://www.samaa.tv/2087355271-qatar-rejects-tehran-s-claim-of-secretly-holding-three-iranian-pilots"
+      "url": "https://aceh.tribunnews.com/news/1039169/israel-tolak-peta-jalan-gaza-8-negara-peringatkan-ancaman-gagalnya-perdamaian"
     },
     {
       "actors": [
-        "Pakistan"
+        "Syria"
       ],
-      "domain": "samaa.tv",
-      "id": "evt_c7d2f0c42b67bc14",
+      "domain": "english.aawsat.com",
+      "id": "evt_1d0ad91b6817461c",
+      "language": "English",
+      "matched_regions": [
+        "ethiopia"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Cuerno de África",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T063000Z",
+      "source_country": "Syria",
+      "tier": "medium",
+      "title": "Egypt Warns Ethiopia against Plans to Control Nile River Flows",
+      "tone": null,
+      "url": "https://english.aawsat.com/arab-world/5307849-egypt-warns-ethiopia-against-plans-control-nile-river-flows"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "allafrica.com",
+      "id": "evt_48f5d5a3e5eb7921",
+      "language": "English",
+      "matched_regions": [
+        "ethiopia"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Cuerno de África",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T063000Z",
+      "source_country": "Nigeria",
+      "tier": "medium",
+      "title": "Ethiopia : Wars , Strategic Rivalries and a Deepening Humanitarian Strain",
+      "tone": null,
+      "url": "https://allafrica.com/stories/202608170107.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "twincitiesnewstalk.iheart.com",
+      "id": "evt_371b81dcaf3626a3",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "ceasefire"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "U . S .- Iran Ceasefire MOU Set To Expire Amid Tensions | Twin Cities News Talk",
+      "tone": null,
+      "url": "https://twincitiesnewstalk.iheart.com/content/2026-08-17-us-iran-ceasefire-mou-set-to-expire-amid-tensions/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wspd.iheart.com",
+      "id": "evt_94776e957a11a6fe",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "ceasefire"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "U . S .- Iran Ceasefire MOU Set To Expire Amid Tensions | NewsRadio 1370 AM & 92 . 9 FM WSPD",
+      "tone": null,
+      "url": "https://wspd.iheart.com/content/2026-08-17-us-iran-ceasefire-mou-set-to-expire-amid-tensions/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "1150wima.iheart.com",
+      "id": "evt_d0c9a3a9099e20b0",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "ceasefire"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "U . S .- Iran Ceasefire MOU Set To Expire Amid Tensions",
+      "tone": null,
+      "url": "https://1150wima.iheart.com/content/2026-08-17-us-iran-ceasefire-mou-set-to-expire-amid-tensions/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "politicaldog101.com",
+      "id": "evt_35f7a4106acfa070",
       "language": "English",
       "matched_regions": [
         "russia",
-        "north korea"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Pakistan",
-      "tier": "medium",
-      "title": "Kim Jong Un , Putin pledge to deepen North Korea - Russia ties",
-      "tone": null,
-      "url": "https://www.samaa.tv/2087355273-kim-jong-un-putin-pledge-to-deepen-north-korea-russia-ties"
-    },
-    {
-      "actors": [
-        "Philippines"
-      ],
-      "domain": "rappler.com",
-      "id": "evt_0070b4be813b56ed",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "north korea"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Philippines",
-      "tier": "medium",
-      "title": "North Korea Kim , Russia Putin reaffirm ties on Korean Liberation Day",
-      "tone": null,
-      "url": "https://www.rappler.com/world/asia-pacific/north-koreas-russia-reaffirm-ties/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "welt.de",
-      "id": "evt_9c041fd24d4e18b2",
-      "language": "German",
-      "matched_regions": [
-        "ukraine",
         "nato"
       ],
       "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "Eurasia",
       "score": 3.5,
       "score_breakdown": {
         "region": 3.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Germany",
+      "seen_date": "20260817T063000Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "Ukraine - Krieg : Nato - Jet schießt Drohne über Rumänien ab – massiver Drohnenangriff auf Moskau gemeldet",
+      "title": "NATO / Russia / Trump",
       "tone": null,
-      "url": "https://www.welt.de/politik/ausland/article6a810e3ba87e8142c31d1677/ukraine-krieg-nato-jet-schiesst-drohne-ueber-rumaenien-ab-massiver-drohnenangriff-auf-moskau-gemeldet.html"
+      "url": "https://politicaldog101.com/tag/nato-russia-trump/"
+    },
+    {
+      "actors": [
+        "Singapore"
+      ],
+      "domain": "police.gov.sg",
+      "id": "evt_91c391a35858d155",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "Singapore",
+      "tier": "monitor",
+      "title": "SPF | SPF - CSA Joint Advisory On Cryptocurrency Scams Involving Fake Job Offers And Compromised Software Systems",
+      "tone": null,
+      "url": "https://www.police.gov.sg/Media-Hub/News/2026/08/20260814_spf_csa_joint_advisory_on_cryptocurrency_scams_involving_fake_job_offers"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "rediff.com",
+      "id": "evt_fdc1d9d1f3ecfb81",
+      "language": "English",
+      "matched_regions": [
+        "india",
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "China Hydropower Plants : Why India Must Be Concerned",
+      "tone": null,
+      "url": "https://www.rediff.com/news/special/chinas-hydropower-plants-why-india-must-be-concerned/20260817.htm"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "edenmagnet.com.au",
+      "id": "evt_a5947c8cb77ba7f1",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Vietnam veterans reveal war lasting trauma after returning home | Magnet",
+      "tone": null,
+      "url": "https://www.edenmagnet.com.au/story/9331489/vietnam-veterans-reveal-wars-lasting-trauma-after-returning-home/"
+    },
+    {
+      "actors": [
+        "Chile"
+      ],
+      "domain": "elclarin.cl",
+      "id": "evt_efc8ae1276a3bbae",
+      "language": "Spanish",
+      "matched_regions": [
+        "gaza",
+        "cuba"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "Chile",
+      "tier": "monitor",
+      "title": "Cuba bajo presión : sanciones , apagones y el riesgo de una  Gaza silenciosa  en el Caribe",
+      "tone": null,
+      "url": "https://www.elclarin.cl/2026/08/17/cuba-sanciones-eeuu-crisis-humanitaria-onu/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "news.de",
+      "id": "evt_f556d75dd447f25a",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Leon Panetta : Alarmierende Vorhersage – Ex - CIA - Chef warnt vor Putin - Angriff auf Deutschland",
+      "tone": null,
+      "url": "https://www.news.de/politik/859909491/wladimir-putin-koennte-deutschland-angreifen-laut-leon-panetta-ex-cia-chef-warnt-vor-kreml-angriff-nato-muss-aeusserst-wachsam-sein/1/"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "allafrica.com",
+      "id": "evt_56f376a81d01af49",
+      "language": "English",
+      "matched_regions": [
+        "mali",
+        "somalia"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "Somalia : Former Somali Prime Minister Accuses Government of Worsening Economic and Social Conditions",
+      "tone": null,
+      "url": "https://allafrica.com/stories/202608170115.html"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "bangka.tribunnews.com",
+      "id": "evt_2229bddd0b71023c",
+      "language": "Indonesian",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "Indonesia",
+      "tier": "monitor",
+      "title": "1 . 806 Warga Binaan di Babel Dapat Remisi HUT ke - 81 RI , 40 Orang Langsung Bebas",
+      "tone": null,
+      "url": "https://bangka.tribunnews.com/lokal/1693252/1806-warga-binaan-di-babel-dapat-remisi-hut-ke-81-ri-40-orang-langsung-bebas"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "dailymail.com",
-      "id": "evt_fd03f5bc70d15018",
+      "domain": "prnewswire.com",
+      "id": "evt_9d2dc4bfecee05bd",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -256,218 +576,18 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T063000Z",
+      "seen_date": "20260817T063000Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "How low can you go ! Ricki - Lee Coulter Deborah Knight and other stars wear daring plunging gowns at the 2026 Logie Awards",
+      "title": "transcosmos receives Special Award for Digital Utilization in JiIT Best Customer Support of The Year 2026",
       "tone": null,
-      "url": "https://www.dailymail.com/tvshowbiz/article-16055771/logie-awards-2026-red-carpet-nominees-ricki-lee-deborah-knight.html"
-    },
-    {
-      "actors": [
-        "Philippines"
-      ],
-      "domain": "rappler.com",
-      "id": "evt_003eec5dc2ba2b8c",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Philippines",
-      "tier": "monitor",
-      "title": "At first truth hearing , mother recounts PWD son death in Duterte drug war",
-      "tone": null,
-      "url": "https://www.rappler.com/philippines/raymart-siapo-drug-war-truth-commission-session-august-2026/"
-    },
-    {
-      "actors": [
-        "China"
-      ],
-      "domain": "global.chinadaily.com.cn",
-      "id": "evt_5bacce7d9277f60c",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "China",
-      "tier": "monitor",
-      "title": "Chinese embassy condemns Japanese politician Yasukuni Shrine moves as serious challenge to postwar intl order",
-      "tone": null,
-      "url": "http://global.chinadaily.com.cn/a/202608/16/WS6a81036ea31073853ec53858.html"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "schwarzwaelder-bote.de",
-      "id": "evt_085c2f2037294950",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "DAA Albstadt : Die Notlösung war am Ende gar keine",
-      "tone": null,
-      "url": "https://www.schwarzwaelder-bote.de/lokales/albstadt/daa-albstadt-die-notloesung-war-am-ende-gar-keine-79373566.html"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "infooggi.it",
-      "id": "evt_2713322b79c3d6fe",
-      "language": "Italian",
-      "matched_regions": [
-        "russia"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Guerra Ucraina Russia oggi raid su Kiev e Kryvyi Rih una vittima e sette feriti",
-      "tone": null,
-      "url": "https://www.infooggi.it/articolo/guerra-ucraina-russia-oggi-raid-su-kiev-e-kryvyi-rih-una-vittima-e-sette-feriti/154612"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "lexpress.fr",
-      "id": "evt_c1aa4eeb060ff382",
-      "language": "French",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "France",
-      "tier": "monitor",
-      "title": "Guerre en Ukraine , 173 jours dans la  kill zone  : le récit glaçant dun soldat en première ligne face aux Russes",
-      "tone": null,
-      "url": "https://www.lexpress.fr/monde/europe/guerre-en-ukraine-173-jours-dans-la-kill-zone-le-recit-glacant-dun-soldat-en-premiere-ligne-face-aux-KMEWZ4Q22VH7DK6LJOWYW3BC64/"
-    },
-    {
-      "actors": [
-        "Poland"
-      ],
-      "domain": "wiadomosci.wp.pl",
-      "id": "evt_ea64a9e55fe0c30f",
-      "language": "Polish",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "Poland",
-      "tier": "monitor",
-      "title": "Ostra riposta ambasady Iranu . Poszło o wpis Tarczyńskiego",
-      "tone": null,
-      "url": "https://wiadomosci.wp.pl/ostra-riposta-ambasady-iranu-poszlo-o-wpis-tarczynskiego-7318970908977280a"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "rnz.de",
-      "id": "evt_721cc6a51d6b4e67",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Krieg in der Ukraine : Bürgermeister : Ukraine greift Moskau mit 600 Drohnen an - Politik",
-      "tone": null,
-      "url": "https://www.rnz.de/politik/nachrichten_artikel,-Krieg-in-der-Ukraine-Buergermeister-Ukraine-greift-Moskau-mit-600-Drohnen-an-_arid,2404055.html"
+      "url": "https://www.prnewswire.com/news-releases/transcosmos-receives-special-award-for-digital-utilization-in-jiits-best-customer-support-of-the-year-2026-302852496.html"
     },
     {
       "actors": [],
-      "domain": "noticiabrasil.net.br",
-      "id": "evt_caedfbcf35b05d5e",
-      "language": "Portuguese",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "",
-      "tier": "monitor",
-      "title": "Israel lança fósforo branco contra o sul do Líbano",
-      "tone": null,
-      "url": "https://noticiabrasil.net.br/20260815/israel-lanca-fosforo-branco-contra-o-sul-do-libano-53242517.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "dailyadvance.com",
-      "id": "evt_7d9e3b889764d508",
-      "language": "English",
+      "domain": "salkunrakentaja.fi",
+      "id": "evt_bc4c8e9f6c677cb8",
+      "language": "Finnish",
       "matched_regions": [
         "iran"
       ],
@@ -479,23 +599,48 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T063000Z",
-      "source_country": "United States",
+      "seen_date": "20260817T064500Z",
+      "source_country": "",
       "tier": "monitor",
-      "title": "US pulls last aircraft carrier in Asia as Trump focuses on Iran and the Western Hemisphere",
+      "title": "Iran vahvisti asevoimiaan neuvottelutauon aikana – öljyn hinta nousussa jälleen",
       "tone": null,
-      "url": "http://www.dailyadvance.com/news/national/us-pulls-last-aircraft-carrier-in-asia-as-trump-focuses-on-iran-and-the-western/article_b4a58dfc-8dc7-5cd7-a1a4-e61caa15d9e5.html"
+      "url": "https://www.salkunrakentaja.fi/2026/08/iran-asevoimat-oljy/"
     },
     {
       "actors": [
-        "United States"
+        "Spain"
       ],
-      "domain": "mynews4.com",
-      "id": "evt_aa03b80a9e252ca4",
-      "language": "English",
+      "domain": "ultimahora.es",
+      "id": "evt_9e20c0acc3f82f97",
+      "language": "Spanish",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "Spain",
+      "tier": "monitor",
+      "title": "El jefe del Ejército iraní ofrece más de 20 . 000 euros por matar o capturar a soldados estadounidenses",
+      "tone": null,
+      "url": "https://www.ultimahora.es/noticias/internacional/2026/08/17/2690461/jefe-del-ejercito-irani-ofrece-mas-20000-euros-por-matar-capturar-soldados-estadounidenses.html"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "trthaber.com",
+      "id": "evt_4a41bbbb1830f1a0",
+      "language": "Turkish",
       "matched_regions": [],
       "matched_themes": [
-        "killed"
+        "drone"
       ],
       "region": "Global",
       "score": 2.0,
@@ -504,20 +649,20 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T063000Z",
-      "source_country": "United States",
+      "seen_date": "20260817T064500Z",
+      "source_country": "Turkey",
       "tier": "monitor",
-      "title": "Motorcyclist killed in crash on Military Road in Reno",
+      "title": "Rusya , Ukraynanın 2026 yılındaki en büyük drone saldırısında en az yedi kişinin öldüğünü açıkladı",
       "tone": null,
-      "url": "https://mynews4.com/news/local/fatal-crash-closes-military-road-in-both-directions"
+      "url": "https://www.trthaber.com/haber/dunya/rusya-ukraynanin-2026-yilindaki-en-buyuk-drone-saldirisinda-en-az-yedi-kisinin-oldugunu-acikladi-954118.html"
     },
     {
       "actors": [
-        "United States"
+        "Indonesia"
       ],
-      "domain": "aljazeera.com",
-      "id": "evt_b0ff40bfa45e2d7c",
-      "language": "English",
+      "domain": "antaranews.com",
+      "id": "evt_9aa2ab98251efbe4",
+      "language": "Indonesian",
       "matched_regions": [
         "gaza"
       ],
@@ -529,120 +674,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T063000Z",
-      "source_country": "United States",
+      "seen_date": "20260817T064500Z",
+      "source_country": "Indonesia",
       "tier": "monitor",
-      "title": "How a simple lighter has become the backbone of life in Gaza",
+      "title": "Presiden Mesir , menantu Trump bahas Timur Tengah dan Kesepakatan Gaza",
       "tone": null,
-      "url": "https://www.aljazeera.com/economy/2026/8/16/struggle-for-a-spark-gaza-lighter-crisis-makes-cooking-an-expensive-chore"
+      "url": "https://www.antaranews.com/berita/5698048/presiden-mesir-menantu-trump-bahas-timur-tengah-dan-kesepakatan-gaza"
     },
     {
       "actors": [
-        "United States"
+        "Romania"
       ],
-      "domain": "aljazeera.com",
-      "id": "evt_982d486583950a90",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "A nation divided : What do Israelis want in October elections ? | Benjamin Netanyahu News",
-      "tone": null,
-      "url": "https://www.aljazeera.com/news/2026/8/16/a-nation-divided-what-do-israelis-want-in-octobers-elections"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "finanzen.net",
-      "id": "evt_e2b57a319ddb5c2d",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Bürgermeister : Ukraine greift Moskau mit 600 Drohnen an",
-      "tone": null,
-      "url": "https://www.finanzen.net/nachricht/aktien/buergermeister-ukraine-greift-moskau-mit-600-drohnen-an-15880937"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "muensterschezeitung.de",
-      "id": "evt_b710e1cc30fe169c",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Russland greift erneut Kiew an - Ukraine zielt auf Moskau",
-      "tone": null,
-      "url": "https://www.muensterschezeitung.de/nachrichten/politik/russland-greift-erneut-kiew-an-ukraine-zielt-auf-moskau-3620171"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "gea.de",
-      "id": "evt_153dc74df699059f",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Russland greift erneut Kiew an - Ukraine zielt auf Moskau - Politik - Nachrichten - Reutlinger General - Anzeiger",
-      "tone": null,
-      "url": "https://www.gea.de/welt/politik_artikel,-russland-greift-erneut-kiew-an-ukraine-zielt-auf-moskau-_arid,7164843.html"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "samaa.tv",
-      "id": "evt_611dbb2a3c086d9a",
-      "language": "English",
+      "domain": "ziuanews.ro",
+      "id": "evt_d916acbfc4437983",
+      "language": "Romanian",
       "matched_regions": [
         "iran"
       ],
@@ -654,69 +699,19 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Pakistan",
+      "seen_date": "20260817T064500Z",
+      "source_country": "Romania",
       "tier": "monitor",
-      "title": "Iran claims Karoline Leavitt resigned after falling out with Trump",
+      "title": "Situaţia din Orientul Mijlociu dă să bubuie :  Iranul a petrecut perioada memorandumului de înțelegere pentru a se pregăti să extindă războiul",
       "tone": null,
-      "url": "https://www.samaa.tv/2087355275-iran-claims-karoline-leavitt-resigned-after-falling-out-with-trump"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kake.com",
-      "id": "evt_33cf07ed221d2d2a",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "US pulls last aircraft carrier in Asia as Trump focuses on Iran , Western Hemisphere",
-      "tone": null,
-      "url": "https://www.kake.com/news/national/us-pulls-last-aircraft-carrier-in-asia-as-trump-focuses-on-iran-western-hemisphere/article_f77bb4b4-3dfb-4dcb-bb6e-46fce99ea65d.html"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "thenational.scot",
-      "id": "evt_f0b85003b811d4b2",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Files reveal Scottish Government grants to Israel - linked arms firms",
-      "tone": null,
-      "url": "https://www.thenational.scot/news/26466487.files-reveal-scottish-government-grants-israel-linked-arms-firms/"
+      "url": "https://www.ziuanews.ro/externe/situatia-din-orientul-mijlociu-da-sa-bubuie-iranul-a-petrecut-perioada-memorandumului-de-in-elegere-pentru-a-se-pregati-sa-extinda-razboiul-1595857"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "welt.de",
-      "id": "evt_047b2a36e856b46f",
+      "domain": "merkur.de",
+      "id": "evt_3c60cf3b336f1304",
       "language": "German",
       "matched_regions": [
         "ukraine"
@@ -729,23 +724,48 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T061500Z",
+      "seen_date": "20260817T064500Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "Bürgermeister : Ukraine greift Moskau mit 600 Drohnen an",
+      "title": "Ex - Marineoffizier auf Krim getötet : Russland beschuldigt Ukraine",
       "tone": null,
-      "url": "https://www.welt.de/newsticker/dpa_nt/afxline/topthemen/article6a814076169e8e32c0ae9bda/buergermeister-ukraine-greift-moskau-mit-600-drohnen-an.html"
+      "url": "http://www.merkur.de/politik/schwarzmeerflotte-ex-marineoffizier-auf-krim-getoetet-russland-beschuldigt-ukraine-krieg-zr-94446128.html"
     },
     {
       "actors": [
-        "Pakistan"
+        "Germany"
       ],
-      "domain": "samaa.tv",
-      "id": "evt_2628c79859f0590e",
-      "language": "English",
+      "domain": "pz-news.de",
+      "id": "evt_fa50fd7d97151da3",
+      "language": "German",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T063000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "US - Rahmenabkommen mit Iran läuft aus : Was hat es gebracht ? - Politik",
+      "tone": null,
+      "url": "https://www.pz-news.de/politik_artikel,-US-Rahmenabkommen-mit-Iran-laeuft-aus-Was-hat-es-gebracht-_arid,2364499.html"
+    },
+    {
+      "actors": [
+        "Venezuela"
+      ],
+      "domain": "entornointeligente.com",
+      "id": "evt_e9dd347e31b1a06b",
+      "language": "Spanish",
       "matched_regions": [],
       "matched_themes": [
-        "terror"
+        "drone"
       ],
       "region": "Global",
       "score": 2.0,
@@ -754,237 +774,185 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Pakistan",
+      "seen_date": "20260817T063000Z",
+      "source_country": "Venezuela",
       "tier": "monitor",
-      "title": "Security forces eliminate seven terrorists in Kharan operation",
+      "title": "Ucrania lanza uno de sus mayores ataques con drones contra Moscú en dos años – EntornoInteligente . com",
       "tone": null,
-      "url": "https://www.samaa.tv/2087355274-security-forces-eliminate-seven-terrorists-in-kharan-operation"
+      "url": "https://www.entornointeligente.com/ucrania-lanza-uno-de-sus-mayores-ataques-con-drones-contra-moscu-en-dos-anos/"
     },
     {
       "actors": [
-        "Germany"
+        "Nepal"
       ],
-      "domain": "nordkurier.de",
-      "id": "evt_6ef6bca5afe63690",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Bürgermeister : Ukraine greift Moskau mit 600 Drohnen an",
-      "tone": null,
-      "url": "https://www.nordkurier.de/politik/buergermeister-ukraine-greift-moskau-mit-600-drohnen-an-4787886"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "come-on.de",
-      "id": "evt_8fa54ba7200a557b",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Bürgermeister : Ukraine greift Moskau mit 600 Drohnen an",
-      "tone": null,
-      "url": "http://www.come-on.de/politik/buergermeister-ukraine-greift-moskau-mit-600-drohnen-an-zr-94445284.html"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "gea.de",
-      "id": "evt_f18bb2f8d8ee8892",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Bürgermeister : Ukraine greift Moskau mit 600 Drohnen an - Politik - Nachrichten - Reutlinger General - Anzeiger",
-      "tone": null,
-      "url": "https://www.gea.de/welt/politik_artikel,-b%C3%BCrgermeister-ukraine-greift-moskau-mit-600-drohnen-an-_arid,7164852.html"
-    },
-    {
-      "actors": [
-        "Norway"
-      ],
-      "domain": "vg.no",
-      "id": "evt_974fca3571d7c702",
-      "language": "Norwegian",
-      "matched_regions": [
-        "kyiv"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "Norway",
-      "tier": "monitor",
-      "title": "Russiske missilangrep ryster Kyiv natt etter natt",
-      "tone": null,
-      "url": "https://www.vg.no/nyheter/i/OklA0E/russiske-missilangrep-ryster-kyiv-natt-etter-natt"
-    },
-    {
-      "actors": [
-        "Lebanon"
-      ],
-      "domain": "lebanondebate.com",
-      "id": "evt_289b235c326de3e7",
-      "language": "Arabic",
-      "matched_regions": [
-        "lebanon"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "Lebanon",
-      "tier": "monitor",
-      "title": "هل تنفجر جبهة لبنان ؟ | Lebanon Debate",
-      "tone": null,
-      "url": "https://www.lebanondebate.com/article/869437-%D9%87%D9%84-%D8%AA%D9%86%D9%81%D8%AC%D8%B1-%D8%AC%D8%A8%D9%87%D8%A9-%D9%84%D8%A8%D9%86%D8%A7%D9%86"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "kashmirlife.net",
-      "id": "evt_e866fdb8ea0fd5f0",
+      "domain": "reviewnepal.com",
+      "id": "evt_f9a9fff2f6e73135",
       "language": "English",
       "matched_regions": [
-        "kashmir"
+        "north korea"
       ],
       "matched_themes": [],
-      "region": "Asia del Sur",
+      "region": "Asia-Pacífico",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T063000Z",
-      "source_country": "India",
+      "seen_date": "20260817T064500Z",
+      "source_country": "Nepal",
       "tier": "monitor",
-      "title": "Sunil Sharma Slams Omar I - Day Speech , Says It Seeks To Create Confusion In Kashmir | Kashmir Life - Latest News & Breaking News from Kashmir",
+      "title": "Trump Decision to Scale Back South Korea Drills Puts U . S . Alliance and North Korea Strategy Under New Test",
       "tone": null,
-      "url": "https://kashmirlife.net/sunil-sharma-slams-omars-i-day-speech-says-it-seeks-to-create-confusion-in-kashmir-448067/"
+      "url": "https://www.reviewnepal.com/trumps-decision-to-scale-back-south-korea-drills-puts-us-alliance-and-north-korea-strategy-under-new-test/"
     },
     {
       "actors": [
-        "Spain"
+        "Malaysia"
       ],
-      "domain": "lahaine.org",
-      "id": "evt_830a8fc910389d47",
-      "language": "Spanish",
-      "matched_regions": [
-        "palestin"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T063000Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "Desde el territorio - cuerpo : por qué la liberación palestina es una cuestión feminista",
-      "tone": null,
-      "url": "https://www.lahaine.org/mundo.php/desde-el-territorio-cuerpo-por-que-la"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "granadahoy.com",
-      "id": "evt_abb92e3cdcdbd58d",
-      "language": "Spanish",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "Granada homenajeará a Federico García Lorca en el 90 aniversario de su asesinato",
-      "tone": null,
-      "url": "https://www.granadahoy.com/granada/granada-homenajeara-federico-garcia-lorca-90-aniversario-asesinato_0_2007713947.html"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "dw.com",
-      "id": "evt_c4e5861c33e83ac5",
+      "domain": "malaysiasun.com",
+      "id": "evt_03d8b1cb18f85b1c",
       "language": "English",
       "matched_regions": [
-        "hormuz"
+        "north korea"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Asia-Pacífico",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260816T061500Z",
-      "source_country": "Germany",
+      "seen_date": "20260817T064500Z",
+      "source_country": "Malaysia",
       "tier": "monitor",
-      "title": "Africa low - key high - stakes Strait of Hormuz diplomacy",
+      "title": "South Korean president calls for talks with North Korea",
       "tone": null,
-      "url": "https://www.dw.com/en/africas-low-key-high-stakes-strait-of-hormuz-diplomacy/a-78376699"
+      "url": "http://www.malaysiasun.com/news/279243899/south-korean-president-lee-urges-north-korea-to-resume-dialogue"
+    },
+    {
+      "actors": [],
+      "domain": "thesun.ng",
+      "id": "evt_eb0cbd3c038ac61e",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Nigerian Newspapers : Major stories on Monday morning – The Sun Nigeria",
+      "tone": null,
+      "url": "https://thesun.ng/nigerian-newspapers-major-stories-on-monday-morning-4/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "clevelandstar.com",
+      "id": "evt_944443e610f16191",
+      "language": "English",
+      "matched_regions": [
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "South Korean president calls for talks with North Korea",
+      "tone": null,
+      "url": "http://www.clevelandstar.com/news/279243899/south-korean-president-lee-urges-north-korea-to-resume-dialogue"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "phoenixherald.com",
+      "id": "evt_bf04383475505802",
+      "language": "English",
+      "matched_regions": [
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "South Korean president calls for talks with North Korea",
+      "tone": null,
+      "url": "http://www.phoenixherald.com/news/279243899/south-korean-president-lee-urges-north-korea-to-resume-dialogue"
+    },
+    {
+      "actors": [
+        "Syria"
+      ],
+      "domain": "english.aawsat.com",
+      "id": "evt_ac10faceb5c15279",
+      "language": "English",
+      "matched_regions": [
+        "sudan"
+      ],
+      "matched_themes": [],
+      "region": "Cuerno de África",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T063000Z",
+      "source_country": "Syria",
+      "tier": "monitor",
+      "title": "Al - Burhan Agreement to Conditional Dialogue Sparks Debate in Sudan",
+      "tone": null,
+      "url": "https://english.aawsat.com/arab-world/5307862-al-burhan%E2%80%99s-agreement-conditional-dialogue-sparks-debate-sudan"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "massachusettssun.com",
+      "id": "evt_a583d4c9bafb42b7",
+      "language": "English",
+      "matched_regions": [
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260817T063000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "South Korean president calls for talks with North Korea",
+      "tone": null,
+      "url": "http://www.massachusettssun.com/news/279243899/south-korean-president-lee-urges-north-korea-to-resume-dialogue"
     }
   ],
   "filters": {
@@ -998,13 +966,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-16T06:58:15Z",
+  "generated_at": "2026-08-17T07:17:39Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
     "high": 1,
-    "medium": 8,
-    "monitor": 30
+    "medium": 13,
+    "monitor": 23
   },
-  "total_events": 39
+  "total_events": 37
 }
