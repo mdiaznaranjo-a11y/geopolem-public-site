@@ -627,23 +627,23 @@ export const DOCTRINA = {
 export const SENTINEL_BRIEF = {
   "eyebrow": "SENTINEL WEEKLY BRIEF",
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "generatedAt": "2026-08-17T08:07:00+02:00",
-  "window": "10-16 agosto 2026 · Europe/Luxembourg",
+  "generatedAt": "2026-08-24T08:07:00+02:00",
+  "window": "17-23 agosto 2026 · Europe/Luxembourg",
   "dataUrl": "./data/sentinel/weekly-brief.json",
-  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-08-10_2026-08-16.json",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-08-17_2026-08-23.json",
   "indexUrl": "./data/sentinel/index.json",
   "layerLabel": "Acople ambiental significativo",
   "status": "dos acoples confirmados y una señal en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
   "summary": [
-    "Dos acoples quedan confirmados: Gaza WASH y Colombia sismo-capacidad estatal.",
-    "Indonesia queda en observación: el evento geofísico es mayor, pero no se verificó un acople directo de conflicto.",
-    "Ormuz/Yemen mantiene señal geopolítica alta, pero sin evento ambiental NASA/USGS acoplado esta semana."
+    "Sudán y Myanmar quedan como acoples confirmados: conflicto, clima, desplazamiento y acceso humanitario se superponen de forma documentada.",
+    "Ucrania queda como señal en observación: ataques energéticos, presión térmica y demanda eléctrica coinciden, pero sin detección NASA/USGS directa en la semana.",
+    "SENTINEL mantiene la regla editorial: no convertir coincidencia temporal en causalidad geopolítica."
   ],
   "caveat": "Correlación y coincidencia temporal no implican causalidad. SENTINEL separa hecho, evaluación, hipótesis y señal.",
   "stats": {
-    "sentinelEvents": 39,
-    "nasaOpenEvents": 24,
-    "usgsM55Plus": 16,
+    "sentinelEvents": 43,
+    "nasaOpenEvents": 22,
+    "usgsM55Plus": 15,
     "confirmedCouplings": 2,
     "watchSignals": 1
   },
@@ -651,49 +651,45 @@ export const SENTINEL_BRIEF = {
     "#GEOPÓLEM",
     "#SENTINEL",
     "#OSINT",
-    "#Gaza",
-    "#WASH",
+    "#Sudán",
+    "#Myanmar",
     "#Geopolítica"
   ],
   "points": [
     {
-      "id": "gaza-wash-operational-continuity",
+      "id": "sudan-floods-war-aid-access",
       "rank": 1,
       "status": "confirmado",
       "statusEn": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#FF2D25",
-      "location": "Gaza",
-      "headline": "Gaza: agua, saneamiento y continuidad operacional",
-      "headlineEn": "Gaza: water, sanitation and operational continuity",
-      "fact": "OCHA informó que 90% de la población encuestada experimentaba interrupciones frecuentes o impredecibles en el acceso a agua segura, limpia y fiable, y que socios WASH no podían acceder a unas 5.000 personas en seis sitios de desplazamiento en el norte de Rafah por inseguridad y disparos perdidos.",
-      "coupling": "El acople queda confirmado porque el conflicto no aparece como contexto separado del agua: condiciona acceso, distribución, higiene, salud pública y continuidad de la respuesta humanitaria.",
-      "couplingEn": "The coupling is confirmed because conflict is not separate from water: it shapes access, distribution, hygiene, public health and continuity of humanitarian response.",
+      "location": "Sudán: Darfur, Kordofán, Nilo Azul y corredores de ayuda",
+      "headline": "Sudán: guerra, inundaciones y acceso humanitario",
+      "headlineEn": "Sudan: war, floods and humanitarian access",
+      "fact": "Naciones Unidas informó el 19 de agosto de 2026 que la intensificación de los combates desplazó al menos a 200.000 personas desde finales de 2025 y que las inundaciones estacionales están agravando la emergencia humanitaria.",
+      "coupling": "El acople es operativo: las lluvias dañan refugios y desplazan familias mientras los ataques y cortes de electricidad interrumpen bombeo de agua, centros sanitarios y telecomunicaciones.",
+      "couplingEn": null,
       "couplingType": [
         "conflicto",
+        "inundaciones",
+        "desplazamiento",
         "agua",
-        "saneamiento",
-        "salud pública",
-        "acceso humanitario"
+        "electricidad",
+        "salud",
+        "cadenas de suministro"
       ],
-      "couplingTypeEn": [
-        "conflict",
-        "water",
-        "sanitation",
-        "public health",
-        "humanitarian access"
-      ],
-      "implication": "La variable estratégica no es solo militar. Cuando agua, saneamiento, residuos, cruces de entrada y seguridad se bloquean a la vez, se reduce el margen de supervivencia civil y aumenta la presión sobre mediadores, donantes y actores regionales.",
-      "tripolar": "EE. UU. conserva peso diplomático y militar sobre Israel; la UE enfrenta presión normativa y humanitaria; actores regionales compiten por mediación; China y el Sur Global usan la crisis como argumento sobre legitimidad del orden occidental.",
-      "conflictEvent": "Guerra, desplazamiento, restricciones de acceso humanitario y presión sobre servicios esenciales.",
-      "conflictEventEn": "War, displacement, humanitarian-access constraints and pressure on essential services.",
-      "environmentalEvent": "OCHA reportó interrupciones frecuentes o impredecibles del acceso a agua segura para 90% de la población encuestada.",
-      "environmentalEventEn": "OCHA reported frequent or unpredictable interruptions to safe water access for 90% of the surveyed population.",
+      "couplingTypeEn": [],
+      "implication": "Sudán muestra cómo un conflicto interno puede proyectarse sobre rutas y cadenas de suministro cuando la ayuda depende de pasos vulnerables por Mar Rojo y Ormuz.",
+      "tripolar": "EE. UU. y la UE se mueven sobre asistencia y presión diplomática; los actores del Golfo y África oriental pesan sobre corredores y negociación; China y Rusia observan el deterioro de la autoridad occidental en una crisis donde infraestructura, ayuda y legitimidad se superponen.",
+      "conflictEvent": "La intensificación de los combates desplazó al menos a 200.000 personas desde finales de 2025, dentro de una guerra que ha expulsado a 8,6 millones desde abril de 2023.",
+      "conflictEventEn": null,
+      "environmentalEvent": "Inundaciones estacionales destruyeron o dañaron cerca de 1.350 refugios en Tawila y desplazaron a más de 1.000 familias durante la semana previa al reporte de Naciones Unidas.",
+      "environmentalEventEn": null,
       "sources": [
         {
-          "label": "OCHA oPt",
-          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-14-august-2026"
+          "label": "UN News Sudan",
+          "url": "https://news.un.org/en/story/2026/08/1168165"
         },
         {
           "label": "GEOPÓLEM SENTINEL",
@@ -702,125 +698,157 @@ export const SENTINEL_BRIEF = {
       ]
     },
     {
-      "id": "colombia-earthquake-humanitarian-pressure",
+      "id": "myanmar-monsoon-war-displacement",
       "rank": 2,
       "status": "confirmado",
       "statusEn": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
-      "accent": "#F59E0B",
-      "location": "Colombia occidental: Chocó, Valle del Cauca y eje cafetero",
-      "headline": "Colombia: sismo mayor sobre capacidad estatal y territorio ya tensionado",
-      "headlineEn": "Colombia: major earthquake over state capacity and already stressed territory",
-      "fact": "USGS situó el sismo en M7.4, a 5 km al sur de San José del Palmar, con profundidad de 110,3 km y exposición de aproximadamente 10,5 millones de personas a sacudidas fuertes o muy fuertes.",
-      "coupling": "El acople no es causal: el conflicto no causó el sismo. El acople es operacional, porque un desastre mayor cayó sobre departamentos con necesidades humanitarias previas, cierre temporal de aeropuertos, daño de salud, vivienda y transporte.",
-      "couplingEn": "The coupling is not causal: conflict did not cause the earthquake. It is operational because a major disaster hit departments with pre-existing humanitarian needs, temporary airport closures and damage to health, housing and transport.",
+      "accent": "#FF8A3D",
+      "location": "Myanmar: Sagaing, Ayeyarwady, Magway y Mandalay",
+      "headline": "Myanmar: monzón sobre población ya desplazada por la guerra",
+      "headlineEn": "Myanmar: monsoon pressure on war-displaced communities",
+      "fact": "ACAPS informó que las inundaciones afectaron a más de 440.000 personas, dañaron más de 40.000 acres de tierras agrícolas y obligaron a personas desplazadas por el conflicto a reubicarse de nuevo.",
+      "coupling": "El acople es humanitario y territorial: la inundación corta carreteras, reduce acceso a alimentos y agua segura, y deja la respuesta en manos de grupos comunitarios en zonas con conflicto activo.",
+      "couplingEn": null,
       "couplingType": [
-        "sismo",
-        "capacidad estatal",
-        "transporte",
-        "salud",
-        "seguridad alimentaria"
+        "conflicto",
+        "inundaciones",
+        "seguridad alimentaria",
+        "acceso humanitario",
+        "desplazamiento secundario"
       ],
-      "couplingTypeEn": [
-        "earthquake",
-        "state capacity",
-        "transport",
-        "health",
-        "food security"
-      ],
-      "implication": "El punto de inflexión es la capacidad estatal: respuesta humanitaria, conectividad del Pacífico, logística médica y seguridad alimentaria pasan a competir por recursos en un espacio donde el margen institucional ya era limitado.",
-      "tripolar": "EE. UU. y la UE operan sobre la dimensión de asistencia y resiliencia; China observa infraestructura y reconstrucción; Rusia no es el actor central, pero cualquier fragilidad estatal en América Latina alimenta narrativas de declive occidental.",
-      "conflictEvent": "Áreas del Pacífico colombiano y Chocó ya presentaban necesidades humanitarias por conflicto, desplazamiento y acceso limitado a servicios básicos.",
-      "conflictEventEn": "Colombia's Pacific region and Chocó already had humanitarian needs linked to conflict, displacement and limited access to basic services.",
-      "environmentalEvent": "USGS registró un sismo M7.4 cerca de San José del Palmar el 10 de agosto de 2026, con alerta roja en la consulta semanal.",
-      "environmentalEventEn": "USGS recorded a magnitude 7.4 earthquake near San José del Palmar on 10 August 2026, with red alert in the weekly query.",
+      "couplingTypeEn": [],
+      "implication": "Myanmar confirma que el clima monzónico no opera como desastre aislado cuando el territorio ya está militarizado y fragmentado: altera rescate, alimentos, agua, movilidad y control local.",
+      "tripolar": "China observa estabilidad fronteriza, corredores e influencia regional; EE. UU. y la UE operan más en sanciones y ayuda; ASEAN y el Sur Global cargan con el coste operativo inmediato de la crisis.",
+      "conflictEvent": "Myanmar mantiene una crisis de conflicto posterior al golpe de 2021, con zonas de acceso humanitario restringido y control territorial fragmentado.",
+      "conflictEventEn": null,
+      "environmentalEvent": "ACAPS reportó que lluvias monzónicas, descargas de presas y el colapso de un terraplén habían causado al menos 25 muertes y afectado a más de 440.000 personas en 17 municipios hasta el 12 de agosto.",
+      "environmentalEventEn": null,
       "sources": [
         {
-          "label": "USGS Colombia",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2/executive"
-        },
-        {
-          "label": "UN News Colombia",
-          "url": "https://news.un.org/en/story/2026/08/1168112"
-        },
-        {
-          "label": "GDACS Colombia",
-          "url": "https://www.gdacs.org/Earthquakes/report_shakemap.aspx?eventid=1557236&episodeid=1724218&eventtype=EQ"
-        },
-        {
-          "label": "UNifeed Colombia",
-          "url": "https://media.un.org/unifeed/en/asset/d361/d3616884"
+          "label": "ACAPS Myanmar",
+          "url": "https://www.acaps.org/en/countries/myanmar"
         }
       ]
     },
     {
-      "id": "indonesia-flores-earthquake-maritime-observation",
+      "id": "ukraine-heat-energy-attacks-watch",
       "rank": 3,
       "status": "en observación",
-      "statusEn": "under observation",
+      "statusEn": "watch",
       "priority": "Media-alta",
       "priorityEn": "Medium-high",
       "accent": "#3DD6D0",
-      "location": "Indonesia: mar de Flores y Nusa Tenggara Oriental",
-      "headline": "Indonesia: sismo mayor en archipiélago estratégico, sin acople de conflicto confirmado",
-      "headlineEn": "Indonesia: major earthquake in a strategic archipelago, no confirmed conflict coupling",
-      "fact": "USGS registró M7.7 a 68 km al NNO de Ende, con profundidad de 10 km y exposición estimada de unos 2 millones de personas a sacudidas fuertes a violentas.",
-      "coupling": "El punto queda en observación: la señal geofísica es significativa y GDACS la clasificó en alerta roja, pero no hay evidencia suficiente para afirmar un acople conflicto-ambiente esta semana.",
-      "couplingEn": "This point remains under observation: the geophysical signal is significant and GDACS classified it as red alert, but there is not enough evidence to claim a conflict-environment coupling this week.",
+      "location": "Ucrania: infraestructura energética y regiones bajo ataques",
+      "headline": "Ucrania: calor, demanda eléctrica y ataques a infraestructura",
+      "headlineEn": "Ukraine: heat, electricity demand and infrastructure strikes",
+      "fact": "AP reportó 13 ataques contra instalaciones de Naftogaz en la semana previa al 17 de agosto; la señal de calor y consumo eléctrico procede de reportes energéticos ucranianos fechados justo antes de la ventana.",
+      "coupling": "No se afirma causalidad ambiental. Se observa una superposición operacional entre ataques energéticos, presión térmica, consumo eléctrico y capacidad de reparación.",
+      "couplingEn": null,
       "couplingType": [
-        "geofísica",
-        "archipiélago",
-        "rutas marítimas",
-        "continuidad operacional",
-        "vigilancia"
+        "conflicto",
+        "energía",
+        "calor",
+        "red eléctrica",
+        "continuidad operacional"
       ],
-      "couplingTypeEn": [
-        "geophysics",
-        "archipelago",
-        "maritime routes",
-        "operational continuity",
-        "watch signal"
-      ],
-      "implication": "Indonesia importa por su posición entre rutas alternativas de Malaca, Lombok y la Sonda. Un sismo mayor no equivale a crisis geopolítica, pero obliga a vigilar puertos, ayuda, conectividad interinsular y continuidad logística.",
-      "tripolar": "China depende de rutas marítimas del Sudeste Asiático; EE. UU. y aliados vigilan resiliencia regional; Rusia queda periférica; ASEAN y el Sur Global concentran el coste humano y logístico inmediato.",
-      "conflictEvent": "No se verificó un evento de conflicto acoplado en el feed SENTINEL para Indonesia durante la ronda.",
-      "conflictEventEn": "No conflict event coupled to Indonesia was verified in the SENTINEL feed during this round.",
-      "environmentalEvent": "USGS registró un sismo M7.7 al NNO de Ende, Indonesia, el 14 de agosto de 2026.",
-      "environmentalEventEn": "USGS recorded a magnitude 7.7 earthquake NNW of Ende, Indonesia, on 14 August 2026.",
+      "couplingTypeEn": [],
+      "implication": "Si la presión térmica se combina con ataques energéticos, el frente civil puede convertirse en un vector de desgaste antes del invierno.",
+      "tripolar": "Rusia usa presión energética como instrumento de guerra; EE. UU. y la UE sostienen resiliencia energética ucraniana; China observa el precedente sobre infraestructura crítica y coerción híbrida.",
+      "conflictEvent": "AP reportó el 17 de agosto que Naftogaz afirmó haber recibido 13 ataques rusos contra sus instalaciones durante la semana previa, con daños graves en equipos y capacidad de producción.",
+      "conflictEventEn": null,
+      "environmentalEvent": "La señal meteorológica disponible indica que una ola de calor elevó la demanda eléctrica y que ataques rusos provocaron nuevos cortes en varias regiones, pero no hay detección NASA/USGS directa para elevarla a acople confirmado.",
+      "environmentalEventEn": null,
       "sources": [
         {
-          "label": "USGS Indonesia",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2/executive"
+          "label": "Associated Press",
+          "url": "https://apnews.com/article/russia-ukraine-war-energy-facilities-winter-strikes-8cec7f6dacd1bc0508b8365d62e0d436"
         },
         {
-          "label": "GDACS Indonesia",
-          "url": "https://www.gdacs.org/Earthquakes/report_shakemap.aspx?eventid=1558059&episodeid=1725109&eventtype=EQ"
-        },
-        {
-          "label": "NASA EONET",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
+          "label": "Energy Business Ukraine",
+          "url": "https://e-b.com.ua/en/heat-wave-drives-up-power-consumption-new-outages-reported-in-several-regions-due-to-shelling-9865"
         }
       ]
     }
   ],
-  "notSelected": {
-    "label": "Ormuz/Yemen",
-    "labelEn": "Hormuz/Yemen",
-    "location": "Golfo Pérsico, Yemen y rutas energéticas",
-    "note": "Señal geopolítica alta en SENTINEL, pero sin acople ambiental NASA/USGS confirmado esta semana.",
-    "source": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-  },
+  "notSelected": [
+    {
+      "id": "typhoon-saudel-western-pacific",
+      "reason": "NASA EONET y GDACS confirman el ciclón tropical Saudel-26, pero no se verificó acople con conflicto, coerción o ruta crítica alterada durante la semana."
+    },
+    {
+      "id": "peru-earthquake",
+      "reason": "USGS registró un sismo M6.7 en Perú, pero no se verificó un acople conflicto-ambiente relevante para el top 3."
+    },
+    {
+      "id": "drc-wildfires",
+      "reason": "NASA EONET registró incendios en la República Democrática del Congo, pero la evidencia localizada no mostró impacto suficiente sobre conflicto, desplazamiento o minerales críticos para elevarlo."
+    },
+    {
+      "id": "senegal-flood",
+      "reason": "NASA EONET registró inundación en Senegal, pero no se verificó acople significativo con conflicto o competencia geopolítica en la ventana."
+    }
+  ],
   "bestShort": {
-    "title": "Gaza: el agua en el tablero",
-    "reason": "Es el acople confirmado más sólido entre conflicto, ambiente operativo, salud pública y presión estratégica.",
-    "hook": "Cuando una guerra corta el agua, el tablero cambia sin mover una frontera.",
+    "title": "Sudán: cuando la lluvia corta la ayuda",
+    "reason": "Es el acople más claro de la semana entre guerra, inundaciones, desplazamiento, agua, electricidad, salud y cadenas de suministro.",
+    "hook": "No todas las rutas críticas están en el mar. Algunas se vuelven barro.",
+    "technicalScript": [
+      {
+        "timecode": "0:00-0:03",
+        "scene": "Mapa oscuro de Sudán, Mar Rojo y corredores de ayuda. Pulso rojo sobre Darfur.",
+        "voice_es": "No todas las rutas críticas están en el mar. Algunas se vuelven barro.",
+        "subtitle_en": "Not every critical route is at sea. Some turn into mud."
+      },
+      {
+        "timecode": "0:03-0:18",
+        "scene": "Etiqueta HECHO. Capa de desplazamiento y lluvia sobre Darfur, Kordofán y Nilo Azul.",
+        "voice_es": "Esta semana, Naciones Unidas reportó que la intensificación de los combates en Sudán desplazó al menos a 200.000 personas desde finales de 2025.",
+        "subtitle_en": "This week, the UN reported that intensified fighting in Sudan has displaced at least 200,000 people since late 2025."
+      },
+      {
+        "timecode": "0:18-0:35",
+        "scene": "Etiqueta DATO DE ACOPLE. Refugios dañados, bombas de agua, red eléctrica y ruta humanitaria.",
+        "voice_es": "Pero el punto de inflexión no es solo militar. Las inundaciones dañaron refugios, desplazaron familias y coincidieron con ataques que cortaron electricidad, bombeo de agua, salud y telecomunicaciones.",
+        "subtitle_en": "But the inflection point is not only military. Floods damaged shelters, displaced families and overlapped with attacks disrupting power, water pumping, health services and telecoms."
+      },
+      {
+        "timecode": "0:35-0:58",
+        "scene": "Etiqueta SEÑAL. Flechas hacia Mar Rojo y Ormuz; capa de ayuda, rutas y legitimidad internacional.",
+        "voice_es": "En una guerra prolongada, el clima no es un evento externo. Puede convertirse en continuidad operacional: quién recibe agua, quién recibe ayuda y qué ruta sigue abierta.",
+        "subtitle_en": "In a prolonged war, climate is not external. It can become operational continuity: who gets water, who gets aid and which route remains open."
+      },
+      {
+        "timecode": "0:58-1:12",
+        "scene": "Sala situacional GEOPÓLEM. Tres etiquetas: guerra, clima, acceso.",
+        "voice_es": "Sudán muestra el tablero real: conflicto, ambiente y capacidad estatal ya no pueden analizarse por separado. GEOPÓLEM. Bienvenidos al tablero.",
+        "subtitle_en": "Sudan shows the real board: conflict, environment and state capacity can no longer be analyzed separately. GEOPÓLEM. Welcome to the board."
+      }
+    ],
+    "visuals": [
+      "Mapa 9:16 de Sudán con foco en Darfur, Kordofán, Nilo Azul y corredor hacia Mar Rojo.",
+      "Iconos sobrios: inundación, refugio, agua, electricidad, salud y ruta logística.",
+      "Etiquetas en pantalla: HECHO, DATO DE ACOPLE, SEÑAL.",
+      "Paleta GEOPÓLEM: fondo #07090C, cian #3DD6D0, rojo #FF2D25."
+    ],
     "subtitlesEn": [
-      "When war disrupts water, the board changes without moving a border.",
-      "OCHA reports that 90% of Gaza's surveyed population faces frequent or unpredictable interruptions to safe water.",
-      "This is not only a humanitarian variable. It is operational continuity.",
-      "Water, sanitation, health, waste and access now shape pressure on the board.",
+      "Not every critical route is at sea. Some turn into mud.",
+      "This week, the UN reported that intensified fighting in Sudan has displaced at least 200,000 people since late 2025.",
+      "But the inflection point is not only military.",
+      "Floods damaged shelters, displaced families and overlapped with attacks disrupting power, water pumping, health services and telecoms.",
+      "In a prolonged war, climate is not external.",
+      "It can become operational continuity: who gets water, who gets aid and which route remains open.",
+      "Sudan shows the real board: conflict, environment and state capacity can no longer be analyzed separately.",
       "GEOPÓLEM. Welcome to the board."
+    ],
+    "hashtags": [
+      "#GEOPÓLEM",
+      "#SENTINEL",
+      "#Sudán",
+      "#OSINT",
+      "#Geopolítica",
+      "#CrisisHumanitaria"
     ]
   },
   "close": "GEOPÓLEM. Bienvenidos al tablero."
