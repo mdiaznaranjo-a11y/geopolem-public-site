@@ -4060,7 +4060,7 @@ function SentinelStatusChip({ status, accent }) {
     </span>`;
 }
 
-function SentinelBrief({ lang }) {
+function SentinelBriefLegacy({ lang }) {
   const en = lang === 'EN';
   const b = SENTINEL_BRIEF;
   const summaryValue = en && b.summaryEn ? b.summaryEn : b.summary;
