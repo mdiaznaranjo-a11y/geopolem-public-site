@@ -4182,6 +4182,29 @@ function SentinelBrief({ lang }) {
       <div class="heading-mono mb-1">${en?'Best short candidate':'Mejor candidato para Short'}</div>
       <h3 class="font-display font-semibold text-[16px] text-slate-100">${b.bestShort.title}</h3>
       <p class="text-[12.5px] text-slate-400 leading-relaxed mt-1.5 max-w-4xl">${b.bestShort.reason}</p>
+      ${b.mediaPublication ? html`
+        <div class="mt-4 grid md:grid-cols-2 gap-3">
+          <div class="rounded-md border border-radar/20 bg-slate-950/50 p-3">
+            <div class="heading-mono mb-1">${en?'Full video':'Video largo'}</div>
+            <h4 class="font-display font-semibold text-[14px] text-slate-100 leading-snug">${b.mediaPublication.youtubeLong.title}</h4>
+            <p class="text-[11px] text-slate-500 mt-1">${b.mediaPublication.youtubeLong.format} · ${b.mediaPublication.youtubeLong.duration}</p>
+            <a href=${b.mediaPublication.youtubeLong.url} target="_blank" rel="noopener"
+               class="inline-flex mt-2 items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
+              ▶ ${en?'Watch full analysis':'Ver análisis completo'} ↗
+            </a>
+          </div>
+          <div class="rounded-md border border-radar/20 bg-slate-950/50 p-3">
+            <div class="heading-mono mb-1">${en?'Short / Reel':'Short / Reel'}</div>
+            <h4 class="font-display font-semibold text-[14px] text-slate-100 leading-snug">${b.mediaPublication.youtubeShort.title}</h4>
+            <p class="text-[11px] text-slate-500 mt-1">${en?'Promotes':'Promociona'}: ${b.mediaPublication.youtubeLong.url}</p>
+            <a href=${b.mediaPublication.youtubeShort.url} target="_blank" rel="noopener"
+               class="inline-flex mt-2 items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
+              ▶ ${en?'Open Short':'Abrir Short'} ↗
+            </a>
+          </div>
+        </div>
+        <p class="text-[11.5px] text-slate-500 leading-relaxed mt-3 max-w-4xl">${b.mediaPublication.editorialNote}</p>
+      ` : null}
       <div class="flex flex-wrap gap-2 mt-3">
         <a href=${b.dataUrl} target="_blank" rel="noopener"
            class="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">

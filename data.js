@@ -851,6 +851,28 @@ export const SENTINEL_BRIEF = {
       "#CrisisHumanitaria"
     ]
   },
+  "mediaPublication": {
+    "status": "published",
+    "publishedAt": "2026-08-27T09:43:48Z",
+    "youtubeLong": {
+      "title": "Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL",
+      "videoId": "TRp6iaLneQU",
+      "url": "https://youtu.be/TRp6iaLneQU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/TRp6iaLneQU",
+      "format": "16:9",
+      "duration": "6:46"
+    },
+    "youtubeShort": {
+      "title": "Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL #Shorts",
+      "videoId": "fu3QHCGJefo",
+      "url": "https://youtu.be/fu3QHCGJefo",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/fu3QHCGJefo",
+      "format": "9:16",
+      "duration": "1:00",
+      "promotes": "https://youtu.be/TRp6iaLneQU"
+    },
+    "editorialNote": "La publicación mantiene la formulación segura: acople operativo entre conflicto, inundaciones, desplazamiento, infraestructura degradada y rutas humanitarias vulnerables; no afirma causalidad climática directa."
+  },
   "close": "GEOPÓLEM. Bienvenidos al tablero."
 };
 
