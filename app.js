@@ -4256,6 +4256,119 @@ function SentinelBrief({ lang }) {
   </section>`;
 }
 
+// SENTINEL safe renderer override.
+// Keeps the public web/app view stable across the static data schema and the
+// generated weekly JSON schema used by the Monday automation.
+function SentinelBrief({ lang }) {
+  const en = lang === 'EN';
+  const b = SENTINEL_BRIEF || {};
+  const points = b.points || b.selectedInflectionPoints || b.selected_inflection_points || [];
+  const media = b.mediaPublication || b.media_publication || {};
+  const long = media.youtubeLong || media.youtube_long || {
+    title: 'Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL',
+    url: 'https://youtu.be/TRp6iaLneQU',
+    format: '16:9',
+    duration: '6:46'
+  };
+  const short = media.youtubeShort || media.youtube_short || {
+    title: 'Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL #Shorts',
+    url: 'https://youtu.be/fu3QHCGJefo',
+    format: '9:16',
+    duration: '1:00'
+  };
+  const summary = Array.isArray(b.summary) ? b.summary : (b.summary ? [b.summary] : []);
+  const statsObj = b.stats || b.dataScanCounts || b.data_scan_counts || {};
+  const stats = Array.isArray(statsObj) ? statsObj : Object.entries(statsObj).slice(0, 6).map(([key, value]) => ({
+    label: key.replace(/_/g, ' '),
+    value
+  }));
+
+  return html`
+  <section class="space-y-4 lg:space-y-6">
+    <div class="relative panel rounded-md p-5 lg:p-6 overflow-hidden">
+      <span class="corner-tl"></span><span class="corner-tr"></span><span class="corner-bl"></span><span class="corner-br"></span>
+      <div class="scanlines absolute inset-0"></div>
+      <div class="relative">
+        <div class="font-mono text-[10.5px] uppercase tracking-[0.3em] text-alert-soft">SENTINEL WEEKLY BRIEF</div>
+        <h2 class="font-display font-bold text-[24px] lg:text-[32px] text-slate-50 leading-tight mt-2 glow-text">
+          ${b.title || b.brief_title || 'GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente'}
+        </h2>
+        <div class="text-[12px] font-mono uppercase tracking-widest text-slate-500 mt-1">${b.window || b.week_window || ''}</div>
+        <div class="text-[14px] lg:text-[15px] text-slate-200 leading-relaxed mt-3 max-w-4xl">
+          ${summary.length ? html`<ul class="space-y-1">${summary.map((line, idx) => html`<li key=${idx}>${line}</li>`)}</ul>` : (b.main_status || b.status || '')}
+        </div>
+        <p class="text-[12px] text-risk-soft italic leading-relaxed mt-2 max-w-4xl">
+          ⚠ ${b.caveat || b.method_note || 'SENTINEL separa hecho, evaluación, hipótesis y señal. No convierte coincidencia temporal en causalidad.'}
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
+          ${stats.map((s, idx) => html`
+            <div key=${s.label || idx} class="panel-soft rounded p-3 text-center">
+              <div class="font-display font-bold text-[22px] text-slate-100">${s.value}</div>
+              <div class="font-mono text-[9px] uppercase tracking-wider text-slate-500 mt-0.5">${s.label}</div>
+            </div>`)}
+        </div>
+      </div>
+    </div>
+
+    <div class="relative panel rounded-md p-4 lg:p-5">
+      <span class="corner-tl"></span><span class="corner-br"></span>
+      <div class="heading-mono mb-2">${en ? 'Published media' : 'Video publicado'}</div>
+      <div class="grid md:grid-cols-2 gap-3">
+        <div class="rounded-md border border-radar/20 bg-slate-950/50 p-3">
+          <div class="heading-mono mb-1">${en ? 'Full analysis' : 'Video largo'}</div>
+          <h3 class="font-display font-semibold text-[15px] text-slate-100 leading-snug">${long.title}</h3>
+          <p class="text-[11px] text-slate-500 mt-1">${long.format || '16:9'} · ${long.duration || ''}</p>
+          <a href=${long.url} target="_blank" rel="noopener"
+             class="inline-flex mt-2 items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
+            ▶ ${en ? 'Watch on YouTube' : 'Ver en YouTube'} ↗
+          </a>
+        </div>
+        <div class="rounded-md border border-radar/20 bg-slate-950/50 p-3">
+          <div class="heading-mono mb-1">${en ? 'Short / Reel' : 'Short / Reel'}</div>
+          <h3 class="font-display font-semibold text-[15px] text-slate-100 leading-snug">${short.title}</h3>
+          <p class="text-[11px] text-slate-500 mt-1">${en ? 'Promotes' : 'Promociona'}: ${long.url}</p>
+          <a href=${short.url} target="_blank" rel="noopener"
+             class="inline-flex mt-2 items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
+            ▶ ${en ? 'Open Short' : 'Abrir Short'} ↗
+          </a>
+        </div>
+      </div>
+      <p class="text-[11.5px] text-slate-500 leading-relaxed mt-3 max-w-4xl">
+        ${media.editorialNote || media.editorial_note || 'Formulación segura: acople operativo entre conflicto, inundaciones, desplazamiento, infraestructura degradada y rutas humanitarias vulnerables; no causalidad climática directa.'}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+      ${points.map((p, idx) => html`
+        <article key=${p.id || idx} class="relative panel rounded-md p-4 flex flex-col border-t-2" style=${{borderTopColor:p.accent || '#3DD6D0'}}>
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <${SentinelStatusChip} status=${p.status || 'observación'} accent=${p.accent || '#3DD6D0'}/>
+            <span class="font-mono text-[9px] uppercase tracking-widest text-slate-500">${en?'PRIORITY':'PRIORIDAD'} ${p.priorityEn || p.priority || 'n.a.'}</span>
+          </div>
+          <div class="text-[10px] font-mono uppercase tracking-wider mt-0.5" style=${{color:p.accent || '#3DD6D0'}}>${p.location || p.country || ''}</div>
+          <h3 class="font-display font-semibold text-[16px] text-slate-100 leading-snug mt-1">${p.headlineEn && en ? p.headlineEn : (p.headline || p.title || p.conflict_event || '')}</h3>
+          <div class="mt-3 space-y-2.5 text-[12.5px] leading-relaxed">
+            <div><div class="heading-mono mb-0.5">${en?'Fact':'Hecho'}</div><p class="text-slate-300">${p.fact || p.conflictEvent || p.conflict_event || ''}</p></div>
+            <div><div class="heading-mono mb-0.5">${en?'Coupling':'Acople'}</div><p class="text-slate-300">${p.coupling || p.coupling_type || p.environmentalEvent || p.environmental_event || ''}</p></div>
+            <div><div class="heading-mono mb-0.5">${en?'Strategic implication':'Implicación estratégica'}</div><p class="text-slate-300">${p.implication || p.why_it_matters || ''}</p></div>
+            <div><div class="heading-mono mb-0.5">${en?'Tri-polar reading':'Lectura tripolar'}</div><p class="text-slate-400 italic">${p.tripolar || p.tripolar_reading || ''}</p></div>
+          </div>
+          <div class="mt-auto pt-3 flex flex-wrap gap-1.5">
+            ${(p.sources || []).filter(s => s && s.url).map(s => html`
+              <a key=${s.url} href=${s.url} target="_blank" rel="noopener"
+                 class="text-[10px] font-mono uppercase tracking-wider text-radar hover:text-radar-glow transition border border-radar/20 rounded px-1.5 py-0.5">
+                ${s.label || s.name || 'Fuente'} ↗
+              </a>`)}
+          </div>
+        </article>`)}
+    </div>
+
+    <div class="text-center py-2">
+      <div class="font-display font-semibold text-[15px] text-violet-300 glow-text tracking-wide">${b.close || 'GEOPÓLEM. Bienvenidos al tablero.'}</div>
+    </div>
+  </section>`;
+}
+
 /* ========================================================================
    App root
    ======================================================================== */
