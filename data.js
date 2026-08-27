@@ -609,6 +609,22 @@ export const DOCTRINA = {
     note: 'Los eventos de conflicto de SENTINEL se leen con esta doctrina: quién estructura el incidente, quién lo aprovecha para maniobrar y quién lo acelera.',
     noteEn: 'SENTINEL conflict events are read through this doctrine: who structures the incident, who exploits it to maneuver, and who accelerates it.',
   },
+  trilogy: {
+    eyebrow: 'Trilogía doctrinal GEOPÓLEM',
+    eyebrowEn: 'GEOPÓLEM doctrinal trilogy',
+    title: 'Las tres claves del tablero',
+    titleEn: 'The three keys to the board',
+    status: 'Episodio 1 listo para producción',
+    statusEn: 'Episode 1 ready for production',
+    summary: 'La serie explica la arquitectura que hace única la lectura GEOPÓLEM: tripolaridad imperfecta como sistema, silencio estratégico como conducta y Ventana de Overton como desplazamiento de lo aceptable.',
+    summaryEn: 'The series explains the architecture behind GEOPÓLEM’s reading: imperfect tripolarity as system, strategic silence as conduct, and the Overton Window as the displacement of what becomes acceptable.',
+    dataUrl: './data/tripolaridad/trilogia-doctrinal-geopolem.json',
+    episodes: [
+      { n: '01', title: 'Tripolaridad imperfecta', titleEn: 'Imperfect tripolarity', function: 'Sistema internacional', functionEn: 'International system', status: 'Paquete listo' },
+      { n: '02', title: 'Silencio estratégico', titleEn: 'Strategic silence', function: 'Conducta de los polos', functionEn: 'Conduct of the poles', status: 'Planificado' },
+      { n: '03', title: 'Ventana de Overton', titleEn: 'Overton Window', function: 'Desplazamiento de legitimidad', functionEn: 'Legitimacy shift', status: 'Planificado' },
+    ],
+  },
   videos: {
     long:  { id:'ii_PIdlupZE', url:'https://www.youtube.com/watch?v=ii_PIdlupZE', label:'Análisis completo', labelEn:'Full analysis' },
     short: { id:'tLni47YWTDw', url:'https://www.youtube.com/watch?v=tLni47YWTDw', label:'Short · teaser', labelEn:'Short · teaser' },

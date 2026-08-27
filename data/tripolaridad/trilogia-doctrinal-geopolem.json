@@ -1,0 +1,49 @@
+{
+  "id": "geopolem_trilogia_doctrinal",
+  "title": "GEOPÓLEM · Las tres claves del tablero",
+  "generated_at": "2026-08-27T18:59:00+02:00",
+  "status": "approved_for_production",
+  "publication_authorization": true,
+  "author": "María del Carmen Díaz Naranjo",
+  "brand": "GEOPÓLEM",
+  "editorial_method": ["HECHO", "EVALUACIÓN", "HIPÓTESIS", "SEÑAL"],
+  "summary": "Serie doctrinal de GEOPÓLEM para explicar por qué la marca interpreta el sistema internacional a partir de una estructura de poder, una conducta estratégica y un desplazamiento de legitimidad.",
+  "episodes": [
+    {
+      "number": 1,
+      "id": "tripolaridad_imperfecta",
+      "title": "Tripolaridad imperfecta",
+      "subtitle": "Por qué el mundo ya no encaja en un mapa bipolar",
+      "function": "Sistema internacional",
+      "status": "package_ready",
+      "url_slug": "/tripolaridad/",
+      "thesis": "GEOPÓLEM interpreta el sistema internacional actual como una tripolaridad imperfecta: tres polos desiguales con capacidades distintas para alterar el tablero."
+    },
+    {
+      "number": 2,
+      "id": "silencio_estrategico",
+      "title": "Silencio estratégico",
+      "subtitle": "Cuando callar también mueve el tablero",
+      "function": "Conducta de los polos",
+      "status": "planned",
+      "thesis": "El silencio estratégico no es ausencia de respuesta; es una conducta calculada cuando el coste de confrontar una transgresión supera el coste de absorberla."
+    },
+    {
+      "number": 3,
+      "id": "ventana_overton",
+      "title": "Ventana de Overton",
+      "subtitle": "Cómo una excepción entra en el campo de lo aceptable",
+      "function": "Desplazamiento de legitimidad",
+      "status": "planned",
+      "thesis": "Una transgresión repetida, tolerada o absorbida puede desplazar el límite de lo políticamente aceptable dentro del sistema internacional."
+    }
+  ],
+  "source_urls": [
+    "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=US-CN-RU",
+    "https://www.sipri.org/databases/milex",
+    "https://www.imf.org/en/Publications/WEO/weo-database/2025/April",
+    "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+    "https://www.mackinac.org/OvertonWindow"
+  ],
+  "close": "GEOPÓLEM. Bienvenidos al tablero."
+}

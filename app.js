@@ -2827,6 +2827,31 @@ function Doctrina({ lang }) {
       <p class="text-[12px] text-slate-500 italic leading-relaxed mt-1 max-w-3xl">${d.sentinel.noteEn}</p>
     </div>
 
+    ${d.trilogy && html`
+    <div class="relative panel rounded-md p-4 border border-radar/20">
+      <span class="corner-tl"></span><span class="corner-br"></span>
+      <div class="flex items-center justify-between flex-wrap gap-3">
+        <div class="max-w-3xl">
+          <div class="heading-mono text-radar">${en?d.trilogy.eyebrowEn:d.trilogy.eyebrow}</div>
+          <h3 class="font-display font-bold text-[20px] lg:text-[24px] text-slate-50 leading-tight mt-1">${en?d.trilogy.titleEn:d.trilogy.title}</h3>
+          <p class="text-[13px] text-slate-300 leading-relaxed mt-2">${en?d.trilogy.summaryEn:d.trilogy.summary}</p>
+        </div>
+        <a href=${d.trilogy.dataUrl} target="_blank" rel="noopener"
+          class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
+          JSON
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
+        ${d.trilogy.episodes.map(ep => html`
+          <div key=${ep.n} class="panel-soft rounded p-3 border border-white/5">
+            <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-radar">${ep.n} · ${en?ep.functionEn:ep.function}</div>
+            <div class="font-display font-semibold text-[15px] text-slate-100 mt-1">${en?ep.titleEn:ep.title}</div>
+            <div class="text-[11px] font-mono uppercase tracking-widest text-slate-500 mt-2">${ep.status}</div>
+          </div>
+        `)}
+      </div>
+    </div>`}
+
     <!-- Vídeos: largo + short -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <div class="lg:col-span-2 panel rounded-md p-4">
