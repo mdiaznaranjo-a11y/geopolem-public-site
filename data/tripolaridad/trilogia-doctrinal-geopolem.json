@@ -2,7 +2,15 @@
   "id": "geopolem_trilogia_doctrinal",
   "title": "GEOPÓLEM · Las tres claves del tablero",
   "generated_at": "2026-08-27T18:59:00+02:00",
-  "status": "approved_for_production",
+  "status": "teaser_published",
+  "youtube_teaser": {
+    "id": "9esCDwyt58o",
+    "url": "https://youtu.be/9esCDwyt58o",
+    "title": "GEOPÓLEM: las tres claves del tablero #Shorts",
+    "published_at": "2026-08-27T17:22:09Z",
+    "format": "9:16",
+    "duration_seconds": 61.891
+  },
   "publication_authorization": true,
   "author": "María del Carmen Díaz Naranjo",
   "brand": "GEOPÓLEM",
@@ -15,7 +23,7 @@
       "title": "Tripolaridad imperfecta",
       "subtitle": "Por qué el mundo ya no encaja en un mapa bipolar",
       "function": "Sistema internacional",
-      "status": "package_ready",
+      "status": "teaser_published",
       "url_slug": "/tripolaridad/",
       "thesis": "GEOPÓLEM interpreta el sistema internacional actual como una tripolaridad imperfecta: tres polos desiguales con capacidades distintas para alterar el tablero."
     },

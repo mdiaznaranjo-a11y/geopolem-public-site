@@ -2840,6 +2840,11 @@ function Doctrina({ lang }) {
           class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded border border-radar/40 text-radar text-[12px] font-mono uppercase tracking-widest hover:bg-radar/10 hover:shadow-glow transition">
           JSON
         </a>
+        ${d.trilogy.teaser && html`
+        <a href=${d.trilogy.teaser.url} target="_blank" rel="noopener"
+          class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded bg-radar/15 border border-radar/50 text-radar-glow text-[12px] font-mono uppercase tracking-widest hover:bg-radar/25 hover:shadow-glow transition">
+          ${en?d.trilogy.teaser.labelEn:d.trilogy.teaser.label} ↗
+        </a>`}
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
         ${d.trilogy.episodes.map(ep => html`
