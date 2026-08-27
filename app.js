@@ -4063,6 +4063,31 @@ function SentinelStatusChip({ status, accent }) {
 function SentinelBrief({ lang }) {
   const en = lang === 'EN';
   const b = SENTINEL_BRIEF;
+  const summaryValue = en && b.summaryEn ? b.summaryEn : b.summary;
+  const summaryBlock = Array.isArray(summaryValue)
+    ? html`<ul class="space-y-1">${summaryValue.map((line, idx) => html`<li key=${idx}>${line}</li>`)}</ul>`
+    : summaryValue;
+  const statLabels = {
+    sentinelEvents: ['Eventos SENTINEL', 'SENTINEL events'],
+    nasaOpenEvents: ['NASA abiertos', 'NASA open events'],
+    usgsM55Plus: ['USGS M5.5+', 'USGS M5.5+'],
+    confirmedCouplings: ['Acoples confirmados', 'Confirmed couplings'],
+    watchSignals: ['Señales en observación', 'Watch signals'],
+    totalCandidates: ['Candidatos revisados', 'Candidates reviewed'],
+    selectedConfirmedCouplings: ['Acoples confirmados', 'Confirmed couplings'],
+    selectedWatchSignals: ['Señales en observación', 'Watch signals'],
+    sentinel_events_latest_feed: ['Eventos SENTINEL', 'SENTINEL events'],
+    nasa_eonet_open_events_reviewed: ['NASA abiertos', 'NASA open events'],
+    usgs_m55_plus_events_in_week: ['USGS M5.5+', 'USGS M5.5+'],
+    total_candidates: ['Candidatos revisados', 'Candidates reviewed'],
+    selected_confirmed_couplings: ['Acoples confirmados', 'Confirmed couplings'],
+    selected_watch_signals: ['Señales en observación', 'Watch signals']
+  };
+  const statsSource = Array.isArray(b.stats) ? b.stats : Object.entries(b.stats || b.dataScanCounts || b.data_scan_counts || {}).map(([key, value]) => ({
+    label: statLabels[key]?.[0] || key.replace(/_/g, ' '),
+    labelEn: statLabels[key]?.[1] || key.replace(/_/g, ' '),
+    value
+  }));
   return html`
   <section class="space-y-4 lg:space-y-6">
     <!-- Cabecera -->
@@ -4081,17 +4106,17 @@ function SentinelBrief({ lang }) {
           ${en?b.titleEn:b.title}
         </h2>
         <div class="text-[12px] font-mono uppercase tracking-widest text-slate-500 mt-1">${en?b.windowEn:b.window}</div>
-        <p class="text-[14px] lg:text-[15px] text-slate-200 leading-relaxed mt-3 max-w-4xl">${en?b.summaryEn:b.summary}</p>
+        <div class="text-[14px] lg:text-[15px] text-slate-200 leading-relaxed mt-3 max-w-4xl">${summaryBlock}</div>
         <p class="text-[12px] text-risk-soft italic leading-relaxed mt-2 max-w-4xl">⚠ ${en?b.caveatEn:b.caveat}</p>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
-          ${b.stats.map(s => html`
+          ${statsSource.map(s => html`
             <div key=${s.label} class="panel-soft rounded p-3 text-center">
               <div class="font-display font-bold text-[22px] text-slate-100">${s.value}</div>
               <div class="font-mono text-[9px] uppercase tracking-wider text-slate-500 mt-0.5">${en?s.labelEn:s.label}</div>
             </div>`)}
         </div>
         <div class="flex flex-wrap gap-1.5 mt-4">
-          ${b.tags.map(tag => html`<span key=${tag} class="chip">#${tag}</span>`)}
+          ${(b.tags || []).map(tag => html`<span key=${tag} class="chip">${String(tag).startsWith('#') ? tag : `#${tag}`}</span>`)}
         </div>
       </div>
     </div>
