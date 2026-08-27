@@ -105,4 +105,12 @@ Visual: Logo GEOPÓLEM, fondo #07090C, URL geopolem.com/sentinel.
 
 #GEOPÓLEM #SENTINEL #Sudán #OSINT #Geopolítica #CrisisHumanitaria
 
+## Video publicado
+
+**Video largo YouTube:** [Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL](https://youtu.be/TRp6iaLneQU)
+
+**Short promocional YouTube:** [Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL #Shorts](https://youtu.be/fu3QHCGJefo)
+
+**Nota editorial:** la pieza mantiene la formulación segura de GEOPÓLEM: acople operativo entre conflicto, inundaciones, desplazamiento, infraestructura degradada y rutas humanitarias vulnerables. No afirma causalidad climática directa.
+
 GEOPÓLEM. Bienvenidos al tablero.

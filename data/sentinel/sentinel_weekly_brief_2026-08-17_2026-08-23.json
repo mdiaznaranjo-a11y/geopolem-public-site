@@ -220,5 +220,25 @@
       "#Geopolítica",
       "#CrisisHumanitaria"
     ]
+  },
+  "media_publication": {
+    "status": "published",
+    "published_at": "2026-08-27T09:43:48Z",
+    "youtube_long": {
+      "title": "Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL",
+      "video_id": "TRp6iaLneQU",
+      "url": "https://youtu.be/TRp6iaLneQU",
+      "format": "16:9",
+      "duration": "6:46"
+    },
+    "youtube_short": {
+      "title": "Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL #Shorts",
+      "video_id": "fu3QHCGJefo",
+      "url": "https://youtu.be/fu3QHCGJefo",
+      "format": "9:16",
+      "duration": "1:00",
+      "promotes": "https://youtu.be/TRp6iaLneQU"
+    },
+    "editorial_note": "La publicación mantiene la formulación segura: acople operativo entre conflicto, inundaciones, desplazamiento, infraestructura degradada y rutas humanitarias vulnerables; no afirma causalidad climática directa."
   }
 }
