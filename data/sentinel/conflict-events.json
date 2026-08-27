@@ -2,45 +2,73 @@
   "events": [
     {
       "actors": [
-        "India"
+        "Pakistan"
       ],
-      "domain": "business-standard.com",
-      "id": "evt_2070eea97e6bbf6c",
+      "domain": "thenews.com.pk",
+      "id": "evt_5cb895fd4330dc5d",
       "language": "English",
       "matched_regions": [
         "russia",
-        "russian",
-        "india"
+        "nato"
       ],
       "matched_themes": [
-        "attack"
+        "escalate"
       ],
       "region": "Eurasia",
       "score": 5.5,
       "score_breakdown": {
-        "region": 4.0,
-        "themes": 1.5,
+        "region": 3.5,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T064500Z",
-      "source_country": "India",
+      "seen_date": "20260827T170000Z",
+      "source_country": "Pakistan",
       "tier": "medium",
-      "title": "Indian refiners widen oil search as Ukrainian attacks hurt Russian flows",
+      "title": "Russia threatens retaliation against united kingdom as tensions with NATO escalate",
       "tone": null,
-      "url": "https://www.business-standard.com/economy/news/indian-refiners-widen-oil-search-as-ukrainian-attacks-hurt-russian-flows-126082600339_1.html"
+      "url": "https://www.thenews.com.pk/latest/1413878-russia-threatens-retaliation-against-uk-as-tensions-with-nato-escalate"
     },
     {
       "actors": [
-        "Iran"
+        "Israel"
       ],
-      "domain": "iranherald.com",
-      "id": "evt_b131fc944e7b91d8",
+      "domain": "middleeastmonitor.com",
+      "id": "evt_05ca30f285c78dc5",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "iranian"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Iranian president urges Muslim states to prevent attacks from their soil",
+      "tone": null,
+      "url": "https://www.middleeastmonitor.com/20260827-iranian-president-urges-muslim-states-to-prevent-attacks-from-their-soil/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "floridastatesman.com",
+      "id": "evt_0977bac0512f767c",
       "language": "English",
       "matched_regions": [
         "iran"
       ],
       "matched_themes": [
-        "war"
+        "sanction",
+        "sanctions"
       ],
       "region": "MENA",
       "score": 5.0,
@@ -49,22 +77,77 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
-      "source_country": "Iran",
+      "seen_date": "20260827T170000Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "Iran war drives US farmers into worst crisis in 40 years FT",
+      "title": "Washingtons new Iran sanctions reveal more than America would like",
       "tone": null,
-      "url": "http://www.iranherald.com/news/279265507/iran-war-drives-us-farmers-into-worst-crisis-in-40-years-ft"
+      "url": "http://www.floridastatesman.com/news/279268992/washingtons-new-iran-sanctions-reveal-more-than-america-would-like"
     },
     {
-      "actors": [],
-      "domain": "editorialedomani.it",
-      "id": "evt_1d359740b05810c6",
-      "language": "Italian",
+      "actors": [
+        "Russia"
+      ],
+      "domain": "europesun.com",
+      "id": "evt_b284b51e734653da",
+      "language": "English",
       "matched_regions": [
-        "iran",
-        "hormuz",
-        "united states"
+        "russia"
+      ],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "Russia",
+      "tier": "medium",
+      "title": "Russia - bound Turkish ship hit by drones",
+      "tone": null,
+      "url": "http://www.europesun.com/news/279268991/russia-bound-turkish-ship-hit-by-drones-media"
+    },
+    {
+      "actors": [
+        "Russia"
+      ],
+      "domain": "europesun.com",
+      "id": "evt_58a8aa87f041e3e0",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "Russia",
+      "tier": "medium",
+      "title": "Russia - bound Turkish ship hit by drones media",
+      "tone": null,
+      "url": "http://www.europesun.com/news/279268979/russia-bound-turkish-ship-hit-by-drones-media"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "middleeastmonitor.com",
+      "id": "evt_b6998fc7ffe7bf86",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -74,177 +157,211 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T064500Z",
-      "source_country": "",
+      "seen_date": "20260827T171500Z",
+      "source_country": "Israel",
       "tier": "medium",
-      "title": "Iran , Hormuz resta chiuso mentre proseguono i colloqui con lOman . Gli united states frenano sui nuovi attacchi",
+      "title": "Israeli soldiers refuse to carry out  urgent  mission in Gaza – Middle East Monitor",
       "tone": null,
-      "url": "https://www.editorialedomani.it/politica/mondo/guerra-stati-uniti-iran-ultime-notizie-oggi-26-agosto-cd6opjsb"
+      "url": "https://www.middleeastmonitor.com/20260827-israeli-soldiers-refuse-to-carry-out-urgent-mission-in-gaza/"
     },
     {
       "actors": [
-        "France"
+        "Ireland"
       ],
-      "domain": "midilibre.fr",
-      "id": "evt_7df68bbe912bc373",
-      "language": "French",
-      "matched_regions": [],
+      "domain": "irishsun.com",
+      "id": "evt_7a5816106c565d3b",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
       "matched_themes": [
-        "combat",
         "drone"
       ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "France",
-      "tier": "medium",
-      "title": "Lhumain est irremplaçable  : drones , tranchées , combat … le 2e Régiment étranger dinfanterie adapte ses légionnaires à la guerre moderne",
-      "tone": null,
-      "url": "https://www.midilibre.fr/2026/08/26/lhumain-est-irremplacable-drones-tranchees-combat-le-2e-regiment-etranger-dinfanterie-adapte-ses-legionnaires-a-la-guerre-moderne-13522238.php"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "midilibre.fr",
-      "id": "evt_92030c28a1854401",
-      "language": "French",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [
-        "combat"
-      ],
-      "region": "Europa del Este",
+      "region": "Eurasia",
       "score": 4.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
-      "source_country": "France",
+      "seen_date": "20260827T171500Z",
+      "source_country": "Ireland",
       "tier": "medium",
-      "title": "Le 2e Régiment étranger dinfanterie transforme les leçons de lUkraine en nouveau module de combat",
+      "title": "Russia - bound Turkish ship hit by drones media",
       "tone": null,
-      "url": "https://www.midilibre.fr/2026/08/26/le-2e-regiment-etranger-dinfanterie-transforme-les-lecons-de-lukraine-en-nouveau-module-de-combat-13522549.php"
+      "url": "http://www.irishsun.com/news/279268979/russia-bound-turkish-ship-hit-by-drones-media"
     },
     {
       "actors": [
-        "Israel"
+        "United Kingdom"
       ],
-      "domain": "al-monitor.com",
-      "id": "evt_c8f1b8e2c9fda001",
+      "domain": "londonmercury.com",
+      "id": "evt_5e7c5e0e75003d4f",
       "language": "English",
       "matched_regions": [
-        "iran",
-        "hormuz"
+        "russia"
       ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Eurasia",
+      "score": 4.0,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
+        "region": 2.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Israel",
+      "seen_date": "20260827T170000Z",
+      "source_country": "United Kingdom",
       "tier": "medium",
-      "title": "Iran says Hormuz strait still closed despite transit corridor talks",
+      "title": "Russia - bound Turkish ship hit by drones media",
       "tone": null,
-      "url": "https://www.al-monitor.com/originals/2026/08/iran-says-hormuz-strait-still-closed-despite-transit-corridor-talks"
+      "url": "http://www.londonmercury.com/news/279268979/russia-bound-turkish-ship-hit-by-drones-media"
     },
     {
       "actors": [
-        "Tunisia"
+        "Zimbabwe"
       ],
-      "domain": "africanmanager.com",
-      "id": "evt_39f8163a2606d0c3",
-      "language": "French",
-      "matched_regions": [
-        "iran",
-        "hormuz"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Tunisia",
-      "tier": "medium",
-      "title": "LIran et Oman discutent dun corridor temporaire à Hormuz et du déminage",
-      "tone": null,
-      "url": "https://africanmanager.com/liran-et-oman-discutent-dun-corridor-temporaire-a-hormuz-et-du-deminage/"
-    },
-    {
-      "actors": [],
-      "domain": "en.gmw.cn",
-      "id": "evt_4d2bd344b7d004e5",
+      "domain": "zimbabwestar.com",
+      "id": "evt_74363b1dc32ee414",
       "language": "English",
       "matched_regions": [
-        "israel",
-        "syria"
+        "russia"
       ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Eurasia",
+      "score": 4.0,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
+        "region": 2.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
-      "source_country": "",
+      "seen_date": "20260827T170000Z",
+      "source_country": "Zimbabwe",
       "tier": "medium",
-      "title": "Syria condemns Israeli DM visit to S . Syria _ Guangming Online",
+      "title": "Russia - bound Turkish ship hit by drones media",
       "tone": null,
-      "url": "https://en.gmw.cn/2026-08/26/content_38965246.htm"
+      "url": "http://www.zimbabwestar.com/news/279268979/russia-bound-turkish-ship-hit-by-drones-media"
+    },
+    {
+      "actors": [
+        "China"
+      ],
+      "domain": "chinanationalnews.com",
+      "id": "evt_f49b4250d0bdec1f",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T170000Z",
+      "source_country": "China",
+      "tier": "medium",
+      "title": "Russia - bound Turkish ship hit by drones media",
+      "tone": null,
+      "url": "http://www.chinanationalnews.com/news/279268979/russia-bound-turkish-ship-hit-by-drones-media"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "wsws.org",
-      "id": "evt_d5a954a6c5448a84",
+      "domain": "ktsa.com",
+      "id": "evt_44f36d6f06f6f91d",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "sanction"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Iran scrambles to sustain trade as US threatens to sanction countries that refuse to break ties",
+      "tone": null,
+      "url": "https://www.ktsa.com/iran-scrambles-to-sustain-trade-as-us-threatens-to-sanction-countries-that-refuse-to-break-ties/"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "thehindu.com",
+      "id": "evt_bff24d7018c21f40",
+      "language": "English",
+      "matched_regions": [
+        "palestin"
+      ],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "U . S . designates U . K .- based Palestine Action as foreign  terrorist group",
+      "tone": null,
+      "url": "https://www.thehindu.com/news/international/us-designates-uk-based-palestine-action-as-foreign-terrorist-group/article71397639.ece"
+    },
+    {
+      "actors": [
+        "Canada"
+      ],
+      "domain": "torontosun.com",
+      "id": "evt_ab3ce6cfcb1b8af7",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "war"
+        "terror",
+        "attack"
       ],
       "region": "Global",
-      "score": 3.0,
+      "score": 3.5,
       "score_breakdown": {
         "region": 0.0,
-        "themes": 3.0,
+        "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20260826T064500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Oppose the US - Canada trade war ! Unite the workers of the Americas against tariffs , war and dictatorship !",
+      "seen_date": "20260827T170000Z",
+      "source_country": "Canada",
+      "tier": "medium",
+      "title": "Social media reacts to CBC 9 / 11  terrorist attack policy",
       "tone": null,
-      "url": "https://www.wsws.org/en/articles/2026/08/26/pwwx-a26.html"
+      "url": "https://torontosun.com/news/world/social-media-reacts-cbc-directive-9-11-terrorist-attacks"
     },
     {
       "actors": [
         "Israel"
       ],
-      "domain": "al-monitor.com",
-      "id": "evt_e1af6c3cf2043beb",
+      "domain": "jpost.com",
+      "id": "evt_26739f7bc606cc5b",
       "language": "English",
       "matched_regions": [
-        "iran",
-        "iraq"
+        "palestin",
+        "hamas"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -254,19 +371,46 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T064500Z",
+      "seen_date": "20260827T171500Z",
       "source_country": "Israel",
       "tier": "monitor",
-      "title": "Iraq may show how U . S . can squeeze Iran trade partners",
+      "title": "US recommends debarment of three UNRWA staff over Hamas , Palestinian Islamic Jihad ties",
       "tone": null,
-      "url": "https://www.al-monitor.com/originals/2026/08/iraq-may-show-how-us-can-squeeze-irans-trade-partners"
+      "url": "http://www.jpost.com/middle-east/article-906799"
     },
     {
       "actors": [
-        "Malawi"
+        "Nigeria"
       ],
-      "domain": "maravipost.com",
-      "id": "evt_d5833523dbd81cb1",
+      "domain": "dailypost.ng",
+      "id": "evt_f177de2fbf44c8ba",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Sahel",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "Dekkara Attacks : Niger govt says no relief until security forces clear communities",
+      "tone": null,
+      "url": "https://dailypost.ng/2026/08/27/dekkara-attacks-niger-govt-says-no-relief-until-security-forces-clear-communities/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "warontherocks.com",
+      "id": "evt_eba07e1919589798",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -279,20 +423,20 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Malawi",
+      "seen_date": "20260827T171500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "MEC in crisis : Airport denial , sealed warehouses , and police arrests raise questions on leadership",
+      "title": "Would Wartime Elections Save Democracy or End It ?",
       "tone": null,
-      "url": "https://www.maravipost.com/mec-in-crisis-airport-denial-sealed-warehouses-and-police-arrests-raise-questions-on-leadership/"
+      "url": "https://warontherocks.com/would-wartime-elections-save-democracy-or-end-it/"
     },
     {
       "actors": [
-        "Poland"
+        "United States"
       ],
-      "domain": "pch24.pl",
-      "id": "evt_e6aa0d4f0d27749e",
-      "language": "Polish",
+      "domain": "publicradiotulsa.org",
+      "id": "evt_f590a5ecce48cb9f",
+      "language": "English",
       "matched_regions": [],
       "matched_themes": [
         "war"
@@ -304,158 +448,148 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
-      "source_country": "Poland",
-      "tier": "monitor",
-      "title": "Powstanie system antydronowy w Warszawie . Ma być odpowiedzią na incydenty",
-      "tone": null,
-      "url": "https://pch24.pl/wiadomosci/powstanie-system-antydronowy-w-warszawie-ma-byc-odpowiedzia-na-incydenty,731897"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "upr.org",
-      "id": "evt_df275088a59e3873",
-      "language": "English",
-      "matched_regions": [
-        "haiti"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "América Latina",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
+      "seen_date": "20260827T171500Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "More than 50 kidnapped as violent gang attack in Haiti leaves 47 dead",
+      "title": "Ratko Mladic , ex - Bosnian Serb warlord who oversaw atrocities , has died at 84",
       "tone": null,
-      "url": "https://www.upr.org/npr-news/2026-08-25/more-than-50-kidnapped-as-violent-gang-attack-in-haiti-leaves-47-dead"
+      "url": "https://www.publicradiotulsa.org/npr-national-news/2026-08-27/ratko-mladic-ex-bosnian-serb-warlord-who-oversaw-atrocities-has-died-at-84"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "kvpr.org",
-      "id": "evt_ada7b6bb10c3b533",
-      "language": "English",
-      "matched_regions": [
-        "haiti"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "América Latina",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "More than 50 kidnapped as violent gang attack in Haiti leaves 47 dead",
-      "tone": null,
-      "url": "https://www.kvpr.org/npr-news/2026-08-25/more-than-50-kidnapped-as-violent-gang-attack-in-haiti-leaves-47-dead"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kyuk.org",
-      "id": "evt_3bc50a4c84fd1305",
-      "language": "English",
-      "matched_regions": [
-        "haiti"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "América Latina",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "More than 50 kidnapped as violent gang attack in Haiti leaves 47 dead",
-      "tone": null,
-      "url": "https://www.kyuk.org/2026-08-25/more-than-50-kidnapped-as-violent-gang-attack-in-haiti-leaves-47-dead"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "interlochenpublicradio.org",
-      "id": "evt_74774140e61397f5",
-      "language": "English",
-      "matched_regions": [
-        "haiti"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "América Latina",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "More than 50 kidnapped as violent gang attack in Haiti leaves 47 dead",
-      "tone": null,
-      "url": "https://www.interlochenpublicradio.org/2026-08-26/more-than-50-kidnapped-as-violent-gang-attack-in-haiti-leaves-47-dead"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "northcountrypublicradio.org",
-      "id": "evt_88aac86a55eb3130",
-      "language": "English",
-      "matched_regions": [
-        "haiti"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "América Latina",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "More than 50 kidnapped as violent gang attack in Haiti leaves 47 dead",
-      "tone": null,
-      "url": "https://www.northcountrypublicradio.org/news/npr/nx-s1-5944787/more-than-50-kidnapped-as-violent-gang-attack-in-haiti-leaves-47-dead"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "nypost.com",
-      "id": "evt_59318d1fefebfd99",
+      "domain": "wclk.com",
+      "id": "evt_99f1916df9bc222e",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "offensive"
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T170000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Ratko Mladic , ex - Bosnian Serb warlord who oversaw atrocities , has died at 84",
+      "tone": null,
+      "url": "https://www.wclk.com/2026-08-27/ratko-mladic-ex-bosnian-serb-warlord-who-oversaw-atrocities-has-died-at-84"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "beritajatim.com",
+      "id": "evt_2e34182e9b3271d5",
+      "language": "Indonesian",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T170000Z",
+      "source_country": "Indonesia",
+      "tier": "monitor",
+      "title": "Konflik Ahli Waris dan PD Muhammadiyah Pamekasan soal Penyegelan TK ABA IV Berujung Saling Lapor",
+      "tone": null,
+      "url": "https://beritajatim.com/konflik-ahli-waris-dan-pd-muhammadiyah-pamekasan-soal-penyegelan-tk-aba-iv-berujung-saling-lapor"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "soester-anzeiger.de",
+      "id": "evt_810e948d1c170799",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T170000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Warum jetzt ? Islands plötzlicher Sinneswandel zur Europäischen Union",
+      "tone": null,
+      "url": "http://www.soester-anzeiger.de/politik/warum-jetzt-islands-ploetzlicher-sinneswandel-zur-europaeischen-union-zr-94462720.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "mlb.com",
+      "id": "evt_2b0f2587d6c64a96",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T170000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Looking at Sal Stewart competition for NL Rookie of the Year",
+      "tone": null,
+      "url": "https://www.mlb.com/reds/news/looking-at-sal-stewart-s-competition-for-nl-rookie-of-the-year"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wapt.com",
+      "id": "evt_19fbcb34c460c738",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T170000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Ratko Mladic , ex - warlord who oversaw atrocities , dies , reports say",
+      "tone": null,
+      "url": "https://www.wapt.com/article/ratko-mladic-ex-bosnian-serb-warlord-atrocities-dies-prison/73543510"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "adevarul.ro",
+      "id": "evt_447690498de762a5",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
       ],
       "region": "Global",
       "score": 2.5,
@@ -464,271 +598,47 @@
         "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
-      "source_country": "United States",
+      "seen_date": "20260827T170000Z",
+      "source_country": "Romania",
       "tier": "monitor",
-      "title": "NJ diner Antonia Sinbaldi outraged after upscale restaurant serves her dessert with offensive birthday message",
+      "title": "Dominic Fritz , în conflict deschis cu PSD şi cu Nicuşor Dan , după adoptarea Legii integrității : „ Nu plec de la Primăria Timișoara",
       "tone": null,
-      "url": "https://nypost.com/2026/08/26/us-news/nj-diner-antonia-sinbaldi-outraged-after-upscale-restaurant-serves-her-dessert-with-offensive-birthday-message/"
+      "url": "https://adevarul.ro/politica/dominic-fritz-in-conflict-deschis-cu-psd-si-cu-2552464.html"
     },
     {
       "actors": [
-        "Norway"
+        "India"
       ],
-      "domain": "aftenposten.no",
-      "id": "evt_032cf171de8b7301",
-      "language": "Norwegian",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Norway",
-      "tier": "monitor",
-      "title": "Ingen stilt til ansvar etter angrepet på Nasser - sykehuset i Gaza",
-      "tone": null,
-      "url": "https://www.aftenposten.no/verden/i/8p7g1E/ingen-stilt-til-ansvar-etter-angrepet-paa-nasser-sykehuset-i-gaza"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "negocios.com",
-      "id": "evt_7e3f7488dcd85b03",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "Rusia derriba 10 drones rumbo a Moscú y cierra aeropuertos",
-      "tone": null,
-      "url": "https://www.negocios.com/articulo/geopolitica/rusia-derriba-10-drones-rumbo-moscu-cierra-aeropuertos/20260826065245492696.html"
-    },
-    {
-      "actors": [
-        "China"
-      ],
-      "domain": "french.xinhuanet.com",
-      "id": "evt_5d749e834241f42c",
-      "language": "French",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T064500Z",
-      "source_country": "China",
-      "tier": "monitor",
-      "title": "Les Etats - Unis et lIran trouvent un accord de cessez - le - feu ( RIA Novosti ) - Xinhua",
-      "tone": null,
-      "url": "http://french.xinhuanet.com/20260826/7f6faaceb1894c69a30a27e5b0b6e9bb/c.html"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "expansion.com",
-      "id": "evt_3f9233c3c5d5202d",
-      "language": "Spanish",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "Operación Paria Económico : así es el plan de EEUU contra Irán que ha puesto en alerta a China",
-      "tone": null,
-      "url": "https://www.expansion.com/economia/politica/2026/08/26/6a8e876a468aeb016d8b4595.html"
-    },
-    {
-      "actors": [
-        "Mexico"
-      ],
-      "domain": "lavozdemichoacan.com.mx",
-      "id": "evt_a5520ab8e6cfb7ce",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Mexico",
-      "tier": "monitor",
-      "title": "Ataque con explosivos desde drones en Parácuaro",
-      "tone": null,
-      "url": "https://www.lavozdemichoacan.com.mx/seguridad/narcoviolencia/ataque-explosivos-drones-paracuaro/"
-    },
-    {
-      "actors": [
-        "Montenegro"
-      ],
-      "domain": "dan.co.me",
-      "id": "evt_e9e48d0f9f08f654",
-      "language": "Bosnian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Montenegro",
-      "tier": "monitor",
-      "title": "ДАН - ( UŽIVO ) Iran i Oman dogovorili privremenu rutu za prolaz kroz Ormuz ; Tramp : Uništićemo svaki brod koji postavlja mine",
-      "tone": null,
-      "url": "https://www.dan.co.me/globus/svijet/uzivo-tramp-ormuz-ociscen-od-mina-iran-i-oman-predlazu-privremeni-plovni-koridor-kroz-moreuz/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "noz.de",
-      "id": "evt_ff16b807c3c24f3e",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Sechs Monate Iran - Krieg : Die Bilanz aus der Straße von Hormus",
-      "tone": null,
-      "url": "https://www.noz.de/deutschland-welt/politik/artikel/sechs-monate-iran-krieg-die-bilanz-aus-der-strasse-von-hormus-51221469"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "eldiariomontanes.es",
-      "id": "evt_6240a5b4bccb2b7e",
-      "language": "Spanish",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "Trump se arriesga a enfrentarse a China para imponer la asfixia económica a Irán",
-      "tone": null,
-      "url": "https://www.eldiariomontanes.es/internacional/eeuu/trump-arriesga-enfrentarse-china-imponer-asfixia-economica-20260825074746-ntrc.html"
-    },
-    {
-      "actors": [
-        "Finland"
-      ],
-      "domain": "aamuposti.fi",
-      "id": "evt_32699a6530f7c6a6",
-      "language": "Finnish",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "Finland",
-      "tier": "monitor",
-      "title": "Axios : Yhdysvallat ei aio tehdä uusi iskuja Iraniin toistaiseksi",
-      "tone": null,
-      "url": "https://www.aamuposti.fi/uutissuomalainen/9738779"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "spiegel.de",
-      "id": "evt_1bc6e2af579f7b46",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Irankrieg : Weltwirtschaft verkraftet Energie - Schock besser als befürchtet",
-      "tone": null,
-      "url": "https://www.spiegel.de/wirtschaft/soziales/irankrieg-weltwirtschaft-verkraftet-energie-schock-besser-als-befuerchtet-a-fee46684-e70d-47cc-ab0f-d8dd7c569488"
-    },
-    {
-      "actors": [
-        "Iran"
-      ],
-      "domain": "iranherald.com",
-      "id": "evt_f807378552503d34",
+      "domain": "moneycontrol.com",
+      "id": "evt_6690c62f9b320fcf",
       "language": "English",
       "matched_regions": [
+        "saudi",
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T170000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Pakistan signs defence agreement with Kuwait , days after joining Saudi - Turkey military pact",
+      "tone": null,
+      "url": "https://www.moneycontrol.com/world/pakistan-signs-defence-agreement-with-kuwait-days-after-joining-saudi-turkey-military-pact-article-14017134.html"
+    },
+    {
+      "actors": [
+        "Albania"
+      ],
+      "domain": "sot.com.al",
+      "id": "evt_df856b92b51b03d5",
+      "language": "Albanian",
+      "matched_regions": [
         "iran"
       ],
       "matched_themes": [],
@@ -739,19 +649,144 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
-      "source_country": "Iran",
+      "seen_date": "20260827T171500Z",
+      "source_country": "Albania",
       "tier": "monitor",
-      "title": "Opinion : Squeezing Iran , Spilling the Costs",
+      "title": "Jo negociata pa angazhim domethënës / SHBA konfirmon ndërprerjen e bisedimeve me Iranin : Kjo do të vazhdojë derisa ...",
       "tone": null,
-      "url": "http://www.iranherald.com/news/279265532/opinion-squeezing-iran-spilling-the-costs"
+      "url": "http://www.sot.com.al/jo-negociata-pa-angazhim-domethenes-shba-konfirmon-nderprerjen-e-bisedimeve-me-iranin-kjo-do-te-vazhdoje-derisa-i5180602"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "kdon.iheart.com",
+      "id": "evt_28a75d781043d6be",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Ye Shows In Russia Canceled After Venue Says Agreement Was Never Signed",
+      "tone": null,
+      "url": "https://kdon.iheart.com/content/2026-08-27-yes-shows-in-russia-canceled-after-venue-says-agreement-was-never-signed/"
     },
     {
       "actors": [
         "Italy"
       ],
-      "domain": "ansa.it",
-      "id": "evt_c43122dba17f954a",
+      "domain": "ilpost.it",
+      "id": "evt_cedd89e904768196",
+      "language": "Italian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Come fa la Cina a comprare il petrolio dellIran",
+      "tone": null,
+      "url": "https://www.ilpost.it/2026/08/27/cina-petrolio-iran-raffinerie-teiera/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "1035thebeat.iheart.com",
+      "id": "evt_0de8d8d147a86c6d",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Ye Shows In Russia Canceled After Venue Says Agreement Was Never Signed",
+      "tone": null,
+      "url": "https://1035thebeat.iheart.com/content/2026-08-27-yes-shows-in-russia-canceled-after-venue-says-agreement-was-never-signed/"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "infomoney.com.br",
+      "id": "evt_587a2caed03b2a1c",
+      "language": "Portuguese",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Investigao dos EUA mira rota clandestina de chips Nvidia para a China",
+      "tone": null,
+      "url": "https://www.infomoney.com.br/mundo/investigacao-dos-eua-mira-rota-clandestina-de-chips-nvidia-para-a-china/"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "stirileprotv.ro",
+      "id": "evt_022d2b6ebfc28ec9",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Nou mesaj RO - Alert în Tulcea . Populația din nordul județului , avertizată asupra riscului de cădere a dronelor",
+      "tone": null,
+      "url": "https://stirileprotv.ro/stiri/actualitate/nou-mesaj-ro-alert-in-tulcea-populatia-din-nordul-judetului-avertizata-asupra-riscului-de-cadere-a-dronelor.html"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "tuttomercatoweb.com",
+      "id": "evt_bc907f4a1a878941",
       "language": "Italian",
       "matched_regions": [
         "russia"
@@ -764,44 +799,19 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
+      "seen_date": "20260827T171500Z",
       "source_country": "Italy",
       "tier": "monitor",
-      "title": "Nuovo attacco ucraino a un sito di Wildberries in Russia - Europa",
+      "title": "Luca Reggiani scatena il derby , Milan e Inter si sfidano per il difensore del Borussia Dortmund",
       "tone": null,
-      "url": "https://www.ansa.it/sito/notizie/mondo/europa/2026/08/26/nuovo-attacco-ucraino-a-un-sito-di-wildberries-in-russia_225d09c4-ac59-4471-b9d6-2ecf16e3584e.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "euronews.com",
-      "id": "evt_2bf8b2fd2ab82034",
-      "language": "English",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Ukraine €23 billion funding gap puts EU in a bind as Zelenskyy seeks fast cash",
-      "tone": null,
-      "url": "https://www.euronews.com/my-europe/2026/08/26/ukraines-23-billion-funding-gap-puts-eu-in-a-bind-as-zelenskyy-seeks-fast-cash"
+      "url": "https://www.tuttomercatoweb.com/calciomercato/luca-reggiani-scatena-derby-milano-milan-inter-sfidano-difensore-borussia-dortmund-2267138"
     },
     {
       "actors": [
         "Finland"
       ],
-      "domain": "karjalainen.fi",
-      "id": "evt_8b1c33dc353c2919",
+      "domain": "savonsanomat.fi",
+      "id": "evt_031879f88a57d200",
       "language": "Finnish",
       "matched_regions": [
         "iran"
@@ -814,19 +824,69 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
+      "seen_date": "20260827T170000Z",
       "source_country": "Finland",
       "tier": "monitor",
-      "title": "Axios : Yhdysvallat ei aio tehdä uusi iskuja Iraniin toistaiseksi",
+      "title": "Ihmisoikeusjärjestö : Iran on teloittanut tänä vuonna yli 500 ihmistä",
       "tone": null,
-      "url": "https://www.karjalainen.fi/uutissuomalainen/9738779"
+      "url": "https://www.savonsanomat.fi/uutissuomalainen/9745005"
     },
     {
       "actors": [
-        "Israel"
+        "United States"
       ],
-      "domain": "jpost.com",
-      "id": "evt_9ae7e97bf3de4e08",
+      "domain": "wjbt.iheart.com",
+      "id": "evt_43977a208c8f66c0",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T170000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Ye Shows In Russia Canceled After Venue Says Agreement Was Never Signed",
+      "tone": null,
+      "url": "https://wjbt.iheart.com/content/2026-08-27-yes-shows-in-russia-canceled-after-venue-says-agreement-was-never-signed/"
+    },
+    {
+      "actors": [
+        "Albania"
+      ],
+      "domain": "rtsh.al",
+      "id": "evt_4d1958aae64a1d29",
+      "language": "Albanian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T170000Z",
+      "source_country": "Albania",
+      "tier": "monitor",
+      "title": "Shtëpia e Bardhë : Ska negociata për momentin me Iranin",
+      "tone": null,
+      "url": "https://rtsh.al/shtepia-e-bardhe-ska-negociata-per-momentin-me-iranin/"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "dailythepatriot.com",
+      "id": "evt_f7ed6f07081ac05e",
       "language": "English",
       "matched_regions": [
         "iran"
@@ -839,22 +899,22 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
-      "source_country": "Israel",
+      "seen_date": "20260827T170000Z",
+      "source_country": "Pakistan",
       "tier": "monitor",
-      "title": "Some oil companies to avoid using ships on Iran blacklist , sources say",
+      "title": "There are currently no talks between the US and Iran , White House spokesman says",
       "tone": null,
-      "url": "https://www.jpost.com/middle-east/iran-news/article-906606"
+      "url": "https://dailythepatriot.com/there-are-currently-no-talks-between-the-us-and-iran-white-house-spokesman-says/"
     },
     {
       "actors": [
-        "Norway"
+        "Israel"
       ],
-      "domain": "dagsavisen.no",
-      "id": "evt_f0ae3e85416e42ce",
-      "language": "Norwegian",
+      "domain": "thejc.com",
+      "id": "evt_87108d46538da2e6",
+      "language": "English",
       "matched_regions": [
-        "syria"
+        "palestin"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -864,19 +924,44 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Norway",
+      "seen_date": "20260827T171500Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Eide roser Syrias nye leder : – Langsiktig blikk",
+      "title": "Female Palestinian activists in West Bank face growing Islamist extremist threat",
       "tone": null,
-      "url": "https://www.dagsavisen.no/nyheter/eide-roser-syrias-nye-leder-langsiktig-blikk/10495909"
+      "url": "https://www.thejc.com/news/world/palestinian-women-activists-in-west-bank-face-growing-islamist-extremist-threat-qee9wvjv"
     },
     {
       "actors": [
-        "Pakistan"
+        "Macedonia"
       ],
-      "domain": "samaa.tv",
-      "id": "evt_4f6fb9c01252134c",
+      "domain": "alsat.mk",
+      "id": "evt_4f799fe016ef4ef5",
+      "language": "Albanian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "Macedonia",
+      "tier": "monitor",
+      "title": "Shefi i CIA - s në Moskë , paralajmërim Rusisë për vendet e NATO - s",
+      "tone": null,
+      "url": "https://alsat.mk/shefi-i-cia-s-ne-moske-paralajmerim-rusise-per-vendet-e-nato-s/"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_0cd036ba05bb15d9",
       "language": "English",
       "matched_regions": [
         "syria"
@@ -889,95 +974,95 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Pakistan",
+      "seen_date": "20260827T171500Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Kurdish - led SDF announces dissolution after merging with Syria military",
+      "title": "SDF dissolution reshapes Syria , but key questions remain",
       "tone": null,
-      "url": "https://www.samaa.tv/2087355799-kurdish-led-sdf-announces-dissolution-after-merging-with-syria-s-military"
-    },
-    {
-      "actors": [
-        "Greece"
-      ],
-      "domain": "bankingnews.gr",
-      "id": "evt_4453b462d0bc5fed",
-      "language": "Greek",
-      "matched_regions": [
-        "hormuz"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Greece",
-      "tier": "monitor",
-      "title": "Ιράν και Ομάν συμφώνησαν για το Hormuz – Θα δημιουργηθεί ένας ναυτικός διάδρομος πλάτους 7 μιλίων ή 13 χλμ",
-      "tone": null,
-      "url": "https://www.bankingnews.gr/diethni/articles/895661/iran-kai-oman-symfonisan-gia-to-hormuz-tha-dimiourgithei-enas-naftikos-diadromos-platous-7-milion-i-13-xlm"
+      "url": "http://www.jpost.com/middle-east/article-906803"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "thegazette.com",
-      "id": "evt_4dcd0695cabfc2b5",
+      "domain": "wdbo.com",
+      "id": "evt_4d18224088e15144",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "deploy"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T064500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "USS Abraham Lincoln heads to Thailand for a brief stop after lengthy deployment at sea",
-      "tone": null,
-      "url": "http://www.thegazette.com/news/world/uss-abraham-lincoln-heads-to-thailand-for-a-brief-stop-after-lengthy-deployment-at-sea/article_cc410e59-f2c4-56cb-8835-83dcda5723e8.html"
-    },
-    {
-      "actors": [
-        "Greece"
-      ],
-      "domain": "bankingnews.gr",
-      "id": "evt_41d1024947e10cd6",
-      "language": "Greek",
       "matched_regions": [
-        "hormuz"
+        "nato"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Global",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T064500Z",
-      "source_country": "Greece",
+      "seen_date": "20260827T171500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Al - Wefaq ( ιρανική εφημερίδα ): Οι συνομιλίες Ιράν - Ομάν για Hormuz δεν σημαίνουν επαναλειτουργία",
+      "title": "Democratic senators call on ICE to cancel plan for shock gloves",
       "tone": null,
-      "url": "https://www.bankingnews.gr/diethni/articles/895669/al-wefaq-iraniki-efimerida-oi-synomilies-iran-oman-gia-hormuz-den-simainoun-epanaleitourgia"
+      "url": "https://www.wdbo.com/news/politics/group-democratic/HNP4EMQOVEZV5IKJG7JKD66CEI/"
     },
     {
       "actors": [
-        "Slovak Republic"
+        "United States"
       ],
-      "domain": "teraz.sk",
-      "id": "evt_8ef21848c095918f",
-      "language": "Slovak",
+      "domain": "militarytimes.com",
+      "id": "evt_f01aa4a80e04fa02",
+      "language": "English",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Pentagon NATO review preparing troop options for Hegseth by November 6",
+      "tone": null,
+      "url": "https://www.militarytimes.com/news/pentagon-congress/2026/08/27/pentagons-nato-review-preparing-troop-options-for-hegseth-by-november-6/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "channelnewsasia.com",
+      "id": "evt_94918b4b95376464",
+      "language": "English",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260827T171500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "US sounds out NATO allies over Europe force review",
+      "tone": null,
+      "url": "https://www.channelnewsasia.com/world/us-nato-europe-force-review-defence-6345406"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_5b7fb537f85e98a0",
+      "language": "English",
       "matched_regions": [
         "hamas"
       ],
@@ -989,62 +1074,37 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
-      "source_country": "Slovak Republic",
+      "seen_date": "20260827T171500Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Trumpova Rada mieru varovala Hamas pred vypúšťaním šarkanov z Gazy",
+      "title": "They didnt ruin everything : Evyatar David rebuilds after Hamas captivity",
       "tone": null,
-      "url": "https://www.teraz.sk/zahranicie/trumpova-rada-mieru-varovala-hamas-pred/987466-clanok.html"
+      "url": "http://www.jpost.com/israel-news/article-906787"
     },
     {
       "actors": [
-        "France"
+        "Canada"
       ],
-      "domain": "agoravox.fr",
-      "id": "evt_01cf97ec60c27694",
-      "language": "French",
-      "matched_regions": [
-        "mali"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260826T063000Z",
-      "source_country": "France",
-      "tier": "monitor",
-      "title": "Ils sont de retour : les pirates somaliens sont devenus encore plus rusés et dangereux",
-      "tone": null,
-      "url": "https://www.agoravox.fr/tribune-libre/article/ils-sont-de-retour-les-pirates-271532"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "thehindu.com",
-      "id": "evt_0a405caeeddfe962",
+      "domain": "torontosun.com",
+      "id": "evt_0a58f2b40ba49890",
       "language": "English",
-      "matched_regions": [
-        "hormuz"
+      "matched_regions": [],
+      "matched_themes": [
+        "attack"
       ],
-      "matched_themes": [],
-      "region": "MENA",
+      "region": "Global",
       "score": 1.5,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260826T063000Z",
-      "source_country": "India",
+      "seen_date": "20260827T170000Z",
+      "source_country": "Canada",
       "tier": "monitor",
-      "title": "Gulf ship traffic via the Strait of Hormuz hovers below 10 - day average , data shows",
+      "title": "Alleged architect behind 9 / 11 attacks set for 2028 military trial",
       "tone": null,
-      "url": "https://www.thehindu.com/news/international/gulf-ship-traffic-via-the-strait-of-hormuz-hovers-below-10-day-average-data-shows/article71391591.ece"
+      "url": "https://torontosun.com/news/world/alleged-9-11-architect-khalid-sheikh-mohammed-2028-military-trial"
     }
   ],
   "filters": {
@@ -1058,13 +1118,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-26T07:14:07Z",
+  "generated_at": "2026-08-27T17:38:45Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
     "high": 0,
-    "medium": 8,
-    "monitor": 33
+    "medium": 13,
+    "monitor": 30
   },
-  "total_events": 41
+  "total_events": 43
 }
