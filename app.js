@@ -4088,6 +4088,11 @@ function SentinelBrief({ lang }) {
     labelEn: statLabels[key]?.[1] || key.replace(/_/g, ' '),
     value
   }));
+  const notSelectedItems = Array.isArray(b.notSelected) ? b.notSelected : Array.isArray(b.not_selected) ? b.not_selected : b.notSelected ? [b.notSelected] : [];
+  const mediaPublication = b.mediaPublication || b.media_publication || null;
+  const youtubeLong = mediaPublication?.youtubeLong || mediaPublication?.youtube_long || null;
+  const youtubeShort = mediaPublication?.youtubeShort || mediaPublication?.youtube_short || null;
+  const editorialNote = mediaPublication?.editorialNote || mediaPublication?.editorial_note || '';
   return html`
   <section class="space-y-4 lg:space-y-6">
     <!-- Cabecera -->
@@ -4179,7 +4184,7 @@ function SentinelBrief({ lang }) {
           </div>
 
           <div class="mt-auto pt-3 flex flex-wrap gap-1.5">
-            ${p.sources.map(s => html`
+            ${(p.sources || []).filter(s => s && s.url).map(s => html`
               <a key=${s.url} href=${s.url} target="_blank" rel="noopener"
                  class="text-[10px] font-mono uppercase tracking-wider text-radar hover:text-radar-glow transition border border-radar/20 rounded px-1.5 py-0.5">
                 ${s.label} ↗
@@ -4188,18 +4193,20 @@ function SentinelBrief({ lang }) {
         </article>`)}
     </div>
 
-    <!-- Línea no seleccionada · Ucrania energía estratégica -->
-    <div class="relative panel-soft rounded-md p-4 border border-risk/25">
+    <!-- Líneas no seleccionadas / en observación -->
+    ${notSelectedItems.length ? html`<div class="relative panel-soft rounded-md p-4 border border-risk/25">
       <div class="flex items-center gap-2">
         <span class="w-1.5 h-1.5 rounded-full bg-risk" style=${{boxShadow:'0 0 6px #f59e0b'}}></span>
-        <div class="heading-mono text-risk-soft">${en?b.notSelected.labelEn:b.notSelected.label} · ${b.notSelected.location}</div>
+        <div class="heading-mono text-risk-soft">${en?'Not selected / watch lines':'No seleccionado / en observación'}</div>
       </div>
-      <p class="text-[12.5px] text-slate-300 leading-relaxed mt-2 max-w-4xl">${b.notSelected.note}</p>
-      <a href=${b.notSelected.source.url} target="_blank" rel="noopener"
-         class="inline-block mt-2 text-[10px] font-mono uppercase tracking-wider text-radar hover:text-radar-glow transition border border-radar/20 rounded px-1.5 py-0.5">
-        ${b.notSelected.source.label} ↗
-      </a>
-    </div>
+      <div class="mt-2 space-y-1.5">
+        ${notSelectedItems.map((item, idx) => html`
+          <p key=${item.id || idx} class="text-[12.5px] text-slate-300 leading-relaxed max-w-4xl">
+            ${item.location ? `${item.location}: ` : ''}${item.note || item.reason || item.label || ''}
+          </p>
+        `)}
+      </div>
+    </div>` : null}
 
     <!-- Mejor candidato para Short -->
     <div class="relative panel rounded-md p-4">
@@ -4207,28 +4214,28 @@ function SentinelBrief({ lang }) {
       <div class="heading-mono mb-1">${en?'Best short candidate':'Mejor candidato para Short'}</div>
       <h3 class="font-display font-semibold text-[16px] text-slate-100">${b.bestShort.title}</h3>
       <p class="text-[12.5px] text-slate-400 leading-relaxed mt-1.5 max-w-4xl">${b.bestShort.reason}</p>
-      ${b.mediaPublication ? html`
+      ${mediaPublication && youtubeLong && youtubeShort ? html`
         <div class="mt-4 grid md:grid-cols-2 gap-3">
           <div class="rounded-md border border-radar/20 bg-slate-950/50 p-3">
             <div class="heading-mono mb-1">${en?'Full video':'Video largo'}</div>
-            <h4 class="font-display font-semibold text-[14px] text-slate-100 leading-snug">${b.mediaPublication.youtubeLong.title}</h4>
-            <p class="text-[11px] text-slate-500 mt-1">${b.mediaPublication.youtubeLong.format} · ${b.mediaPublication.youtubeLong.duration}</p>
-            <a href=${b.mediaPublication.youtubeLong.url} target="_blank" rel="noopener"
+            <h4 class="font-display font-semibold text-[14px] text-slate-100 leading-snug">${youtubeLong.title}</h4>
+            <p class="text-[11px] text-slate-500 mt-1">${youtubeLong.format} · ${youtubeLong.duration}</p>
+            <a href=${youtubeLong.url} target="_blank" rel="noopener"
                class="inline-flex mt-2 items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
               ▶ ${en?'Watch full analysis':'Ver análisis completo'} ↗
             </a>
           </div>
           <div class="rounded-md border border-radar/20 bg-slate-950/50 p-3">
             <div class="heading-mono mb-1">${en?'Short / Reel':'Short / Reel'}</div>
-            <h4 class="font-display font-semibold text-[14px] text-slate-100 leading-snug">${b.mediaPublication.youtubeShort.title}</h4>
-            <p class="text-[11px] text-slate-500 mt-1">${en?'Promotes':'Promociona'}: ${b.mediaPublication.youtubeLong.url}</p>
-            <a href=${b.mediaPublication.youtubeShort.url} target="_blank" rel="noopener"
+            <h4 class="font-display font-semibold text-[14px] text-slate-100 leading-snug">${youtubeShort.title}</h4>
+            <p class="text-[11px] text-slate-500 mt-1">${en?'Promotes':'Promociona'}: ${youtubeLong.url}</p>
+            <a href=${youtubeShort.url} target="_blank" rel="noopener"
                class="inline-flex mt-2 items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
               ▶ ${en?'Open Short':'Abrir Short'} ↗
             </a>
           </div>
         </div>
-        <p class="text-[11.5px] text-slate-500 leading-relaxed mt-3 max-w-4xl">${b.mediaPublication.editorialNote}</p>
+        <p class="text-[11.5px] text-slate-500 leading-relaxed mt-3 max-w-4xl">${editorialNote}</p>
       ` : null}
       <div class="flex flex-wrap gap-2 mt-3">
         <a href=${b.dataUrl} target="_blank" rel="noopener"
