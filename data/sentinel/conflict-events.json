@@ -2,124 +2,185 @@
   "events": [
     {
       "actors": [
-        "Turkey"
+        "United States"
       ],
-      "domain": "aa.com.tr",
-      "id": "evt_85268416a7124949",
+      "domain": "aljazeera.com",
+      "id": "evt_d27e06533b99439c",
       "language": "English",
       "matched_regions": [
-        "israel",
-        "gaza",
-        "palestin"
+        "iran"
       ],
       "matched_themes": [
-        "truce",
-        "killed"
+        "war",
+        "sanction",
+        "sanctions"
       ],
       "region": "MENA",
-      "score": 7.5,
+      "score": 8.0,
       "score_breakdown": {
-        "region": 4.0,
-        "themes": 3.5,
+        "region": 2.0,
+        "themes": 6.0,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Turkey",
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
       "tier": "high",
-      "title": "4 Palestinians killed in Gaza amid ongoing Israeli truce violations",
+      "title": "Iran war live : Tehran pledges to stand firm against  unjust  US sanctions | Donald Trump News",
       "tone": null,
-      "url": "https://aa.com.tr/en/world/4-palestinians-killed-in-gaza-amid-ongoing-israeli-truce-violations/4039967"
-    },
-    {
-      "actors": [
-        "Nigeria"
-      ],
-      "domain": "saharareporters.com",
-      "id": "evt_601a99e16a048347",
-      "language": "English",
-      "matched_regions": [
-        "niger"
-      ],
-      "matched_themes": [
-        "terror",
-        "attack",
-        "troops"
-      ],
-      "region": "Sahel",
-      "score": 6.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Nigeria",
-      "tier": "high",
-      "title": "US To Withdraw 200 Troops From Nigeria Amid Ongoing Terrorist Attacks",
-      "tone": null,
-      "url": "https://saharareporters.com/2026/08/28/us-withdraw-200-troops-nigeria-amid-ongoing-terrorist-attacks"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "freepressjournal.in",
-      "id": "evt_8f00c7da6a9abeb8",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "nuclear"
-      ],
-      "region": "Europa del Este",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "Russian President Vladimir Putin Could Use Tactical Nuclear Weapons In Ukraine As Last Resort : Report",
-      "tone": null,
-      "url": "https://www.freepressjournal.in/world/russian-president-vladimir-putin-could-use-tactical-nuclear-weapons-in-ukraine-as-last-resort-report"
-    },
-    {
-      "actors": [],
-      "domain": "eng.kavkaz-uzel.eu",
-      "id": "evt_5b3455e86b474e01",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "Eurasia",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "",
-      "tier": "high",
-      "title": "Caucasian Knot | Residents of central Tbilisi spoke about the conflict that preceded the murder of the Russian .",
-      "tone": null,
-      "url": "https://www.eng.kavkaz-uzel.eu/articles/78108"
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade?update=4896371"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "washingtonexaminer.com",
-      "id": "evt_e16fd65c8ebed63f",
+      "domain": "aljazeera.com",
+      "id": "evt_f4a43086579dff98",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war",
+        "sanction",
+        "sanctions"
+      ],
+      "region": "MENA",
+      "score": 8.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 6.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Iran war live : Tehran pledges to stand firm against  unjust  US sanctions | Donald Trump News",
+      "tone": null,
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade?update=4896171"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "aljazeera.com",
+      "id": "evt_0b799cbb9ba1350f",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Iran leaders acknowledge economic toll of war , pledge diplomacy , defence | US - Israel war on Iran News",
+      "tone": null,
+      "url": "https://www.aljazeera.com/news/2026/8/29/irans-leaders-acknowledge-economic-toll-of-war-pledge-diplomacy-defence"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "abcnews.com",
+      "id": "evt_d81437f3e1f47eff",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia",
+        "russian",
+        "kyiv"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Europa del Este",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Russian attack hits Ukraine Kyiv region , killing at least 27",
+      "tone": null,
+      "url": "https://abcnews.com/International/wireStory/russian-attack-hits-ukraines-kyiv-region-killing-27-136052346"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "sitkasentinel.com",
+      "id": "evt_e16021c76ee4d488",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia",
+        "russian",
+        "kyiv"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Europa del Este",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "A Russian attack hits Ukraine Kyiv region , killing at least 27",
+      "tone": null,
+      "url": "http://www.sitkasentinel.com/stories/a-russian-attack-hits-ukraines-kyiv-region-killing-at-least-27,167293"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "economictimes.indiatimes.com",
+      "id": "evt_f8e70a7a0e00cb6d",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian",
+        "kyiv"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Eurasia",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Death toll following Russian attack on Kyiv region rises to 37 , officials say",
+      "tone": null,
+      "url": "https://economictimes.indiatimes.com/news/defence/death-toll-following-russian-attack-on-kyiv-region-rises-to-37-officials-say/articleshow/133610647.cms"
+    },
+    {
+      "actors": [
+        "Russia"
+      ],
+      "domain": "europesun.com",
+      "id": "evt_02a07a337eac3b73",
       "language": "English",
       "matched_regions": [
         "iran"
@@ -134,577 +195,349 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
+      "seen_date": "20260829T121500Z",
+      "source_country": "Russia",
       "tier": "medium",
-      "title": "Gas prices remain above $4 six months into Iran war",
+      "title": "Six Months Into The Iran War , These 4 Issues Could Shape What Next",
       "tone": null,
-      "url": "https://www.washingtonexaminer.com/policy/finance-and-economy/4704173/six-months-iran-war-gas-prices-above-4-dollars/"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "canberratimes.com.au",
-      "id": "evt_d64c849362b62bc3",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Australia",
-      "tier": "medium",
-      "title": "Ukraine official expects Russian  technical talk soon",
-      "tone": null,
-      "url": "https://www.canberratimes.com.au/story/9339660/ukraine-official-expects-russian-technical-talks-soon/"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "indiablooms.com",
-      "id": "evt_02158697f65a3b96",
-      "language": "English",
-      "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "Either they will stay , or we will : Suvendu Adhikari warning to Jadavpur students over  Azadi  slogans | Indiablooms",
-      "tone": null,
-      "url": "https://www.indiablooms.com/news/either-they-will-stay-or-we-will-suvendu-adhikaris-warning-to-jadavpur-students-over-azadi-slogans/details"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "fox56.com",
-      "id": "evt_cb5edf4d4370c45e",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Canadian Broadcasting Corporation tells staff not to refer to 9 / 11 as  terrorist attacks",
-      "tone": null,
-      "url": "https://fox56.com/news/nation-world/canadian-broadcasting-corporation-tells-staff-not-to-refer-to-911-as-terrorist-attacks-news-coverage-world-trade-center"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "cbs6albany.com",
-      "id": "evt_66f0f8675d9a0a85",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Canadian Broadcasting Corporation tells staff not to refer to 9 / 11 as  terrorist attacks",
-      "tone": null,
-      "url": "https://cbs6albany.com/news/nation-world/canadian-broadcasting-corporation-tells-staff-not-to-refer-to-911-as-terrorist-attacks-news-coverage-world-trade-center"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "kidderminstershuttle.co.uk",
-      "id": "evt_227b595644f08bb9",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Russia not seeking direct confrontation with Nato – Western officials",
-      "tone": null,
-      "url": "https://www.kidderminstershuttle.co.uk/news/national/26505756.russia-not-seeking-direct-confrontation-nato---western-officials/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "peoplesworld.org",
-      "id": "evt_c6235a10f48bd08d",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "invade"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "ICE agents invade airport passenger lines",
-      "tone": null,
-      "url": "https://www.peoplesworld.org/article/ice-agents-invade-airport-passenger-lines/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "nypost.com",
-      "id": "evt_253d3d08b975af48",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Persian Gulf oil exports rebound to two - thirds of pre - war levels -- could keep oil below $90 mark",
-      "tone": null,
-      "url": "https://nypost.com/2026/08/28/business/persian-gulf-oil-exports-rebound-to-two-thirds-of-pre-war-levels-could-keep-oil-below-90-mark/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "foxbusiness.com",
-      "id": "evt_0a2899ced3ff7a8c",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Fed Warsh delivers first Jackson Hole keynote amid economic uncertainty",
-      "tone": null,
-      "url": "https://www.foxbusiness.com/economy/fed-chair-kevin-warsh-delivers-first-keynote-jackson-hole-conference-amid-economic-uncertainty"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "stepstone.de",
-      "id": "evt_1e7a5ed23956cd2f",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Embedded Software Entwickler C++ ( w / m / d ) - Feste Anstellung , Vollzeit Job in Oberkochen , Aalen",
-      "tone": null,
-      "url": "https://www.stepstone.de/stellenangebote--embedded-software-entwickler-c-w-m-d-oberkochen-aalen-hensoldt--14435836-inline.html"
-    },
-    {
-      "actors": [
-        "Canada"
-      ],
-      "domain": "theglobeandmail.com",
-      "id": "evt_0f664ba296d2fb52",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Canada",
-      "tier": "monitor",
-      "title": "Defying Trump came with no loud cheers from world leaders . They will reward Carney in other ways",
-      "tone": null,
-      "url": "https://www.theglobeandmail.com/business/commentary/article-carney-tariffs-defying-donald-trump/"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "eldiariomontanes.es",
-      "id": "evt_21a678eda8490249",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "Warsh abre la puerta a subidas de tipos frente a las presiones de Trump",
-      "tone": null,
-      "url": "https://www.eldiariomontanes.es/economia/frente-presiones-trump-warsh-abre-puerta-subidas-20260828182517-ntrc.html"
-    },
-    {
-      "actors": [
-        "China"
-      ],
-      "domain": "hellenicshippingnews.com",
-      "id": "evt_f4bf28b2a978a7ff",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "China",
-      "tier": "monitor",
-      "title": "US Consumer Sentiment Weakens Despite Upward Revision | Hellenic Shipping News Worldwide",
-      "tone": null,
-      "url": "https://www.hellenicshippingnews.com/us-consumer-sentiment-weakens-despite-upward-revision/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "cnnespanol.cnn.com",
-      "id": "evt_585c9b322b44f8f7",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "El presidente de la Fed , Kevin Warsh , guarda silencio sobre las tasas de interés , pero dice que la inflación es  preocupante",
-      "tone": null,
-      "url": "https://cnnespanol.cnn.com/2026/08/28/economia/fed-warsh-tasas-inflacion-trax"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "canberratimes.com.au",
-      "id": "evt_e26c5e25484e3bf7",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "Warsh signals willingness to raise US interest rates",
-      "tone": null,
-      "url": "https://www.canberratimes.com.au/story/9339661/warsh-signals-willingness-to-raise-us-interest-rates/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wokv.com",
-      "id": "evt_6f3affef52f37fc3",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "US rolls out next moves as it tries to force Iran economic isolation",
-      "tone": null,
-      "url": "https://www.wokv.com/news/business/us-targets-egyptian/DCKWM5BGHE4IFKY4XJDWDLMKYY/"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "livemint.com",
-      "id": "evt_7099f084cfa7e5b6",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "Iran urges nations not to yield to US threats as it keeps door open to diplomacy",
-      "tone": null,
-      "url": "https://www.livemint.com/news/us-news/iran-urges-nations-not-to-yield-to-us-threats-as-it-keeps-door-open-to-diplomacy-11787922579921.html"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "eastlothiancourier.com",
-      "id": "evt_8b9537622b801977",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Seven charged over Trump Turnberry damage face  terrorism connection  accusation",
-      "tone": null,
-      "url": "https://www.eastlothiancourier.com/news/national/26505890.seven-charged-trump-turnberry-damage-face-terrorism-connection-accusation/"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "jagran.com",
-      "id": "evt_7029db6ba8e71809",
-      "language": "Hindi",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "चीन में बड़ा सैन्य फेरबदल , शीर्ष जनरलों को स्टेट सेंट्रल कमीशन से हटाया - china removes top generals zhang youxia liu zhenli from state cmc",
-      "tone": null,
-      "url": "https://www.jagran.com/world/china-china-removes-top-generals-zhang-youxia-liu-zhenli-from-state-cmc-40355377.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "eastoregonian.com",
-      "id": "evt_4633d58cda1db207",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "fighting"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Gov . Kotek visits Pendleton for aerial wildland firefighting update",
-      "tone": null,
-      "url": "https://eastoregonian.com/2026/08/28/gov-kotek-visits-pendleton-for-aerial-wildland-firefighting-update/"
-    },
-    {
-      "actors": [
-        "Taiwan"
-      ],
-      "domain": "taipeitimes.com",
-      "id": "evt_6b50f8d04a90c974",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Taiwan",
-      "tier": "monitor",
-      "title": "Ministry decries new drone legislation",
-      "tone": null,
-      "url": "https://www.taipeitimes.com/News/biz/archives/2026/08/29/2003863303"
-    },
-    {
-      "actors": [
-        "Albania"
-      ],
-      "domain": "gazeta-shqip.com",
-      "id": "evt_c50460f57d976516",
-      "language": "Albanian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Albania",
-      "tier": "monitor",
-      "title": "Kush e mori Bashkinë e Tiranës ? Vendimi i Veliajt për Ristanin hap debatin mbi drejtimin real të kryeqytetit",
-      "tone": null,
-      "url": "https://gazeta-shqip.com/aktualiteti/kush-e-mori-bashkine-e-tiranes-vendimi-i-veliajt-per-ristanin-hap-debatin-mbi-drejtimin-real-te-kryeqytetit/"
+      "url": "http://www.europesun.com/news/279272826/six-months-into-the-iran-war-these-4-issues-could-shape-what-next"
     },
     {
       "actors": [
         "France"
       ],
-      "domain": "agoravox.fr",
-      "id": "evt_8f4226069aa1cb14",
+      "domain": "republicain-lorrain.fr",
+      "id": "evt_ed9e57bcc0b2c482",
       "language": "French",
-      "matched_regions": [],
-      "matched_themes": [
-        "combat"
+      "matched_regions": [
+        "ukraine"
       ],
-      "region": "Global",
-      "score": 2.0,
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Europa del Este",
+      "score": 4.0,
       "score_breakdown": {
-        "region": 0.0,
+        "region": 2.0,
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
+      "seen_date": "20260829T121500Z",
+      "source_country": "France",
+      "tier": "medium",
+      "title": "Guerre en Ukraine . 37 morts après une frappe de drone russe sur un entrepôt près de Kiev",
+      "tone": null,
+      "url": "https://www.republicain-lorrain.fr/defense-guerre-conflit/2026/08/29/au-moins-27-morts-apres-une-frappe-de-drone-russe-sur-un-entrepot-pres-de-kiev"
+    },
+    {
+      "actors": [
+        "Switzerland"
+      ],
+      "domain": "rts.ch",
+      "id": "evt_0409bae56960ecba",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Europa del Este",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Switzerland",
+      "tier": "medium",
+      "title": "Guerre en Ukraine : 37 morts dans une frappe de drone près de Kiev",
+      "tone": null,
+      "url": "https://www.rts.ch/info/monde/2026/article/guerre-en-ukraine-27-morts-dans-une-frappe-de-drone-pres-de-kiev-29341389.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wfmd.com",
+      "id": "evt_e30d638a32297461",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Viral Dearborn pastor delivers blunt warning on El - Sayed Senate bid :  Can you imagine ?",
+      "tone": null,
+      "url": "https://www.wfmd.com/2026/08/29/viral-dearborn-pastor-delivers-blunt-warning-on-el-sayed-senate-bid-can-you-imagine/"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "wiadomosci.dziennik.pl",
+      "id": "evt_5ed3f04ffad63275",
+      "language": "Polish",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Plecak ewakuacyjny na czas kryzysu warto mieć . To trzeba włożyć do takiego plecaka",
+      "tone": null,
+      "url": "https://wiadomosci.dziennik.pl/wydarzenia/artykuly/11296190,plecak-ewakuacyjny-na-czas-kryzysu-warto-miec-to-trzeba-wlozyc-do-plecaka-ewakuacyjnego.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "finance.yahoo.com",
+      "id": "evt_6dcea7870531cb07",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "S & P Futures Tread Water Ahead of Warsh Jackson Hole Speech ; Marvell Sinks After Earnings",
+      "tone": null,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/p-futures-tread-water-ahead-103253116.html"
+    },
+    {
+      "actors": [
+        "South Africa"
+      ],
+      "domain": "sowetan.co.za",
+      "id": "evt_81909d0e6fdaa67a",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Sahel",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "South Africa",
+      "tier": "monitor",
+      "title": "Mutinous soldiers attack airport , presidency in Niger capital , sources say",
+      "tone": null,
+      "url": "https://www.sowetan.co.za/news/africa/2026-08-29-mutinous-soldiers-attack-airport-presidency-in-niger-capital-sources-say/"
+    },
+    {
+      "actors": [
+        "Austria"
+      ],
+      "domain": "diepresse.com",
+      "id": "evt_b8795f93f2910421",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "coup"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Austria",
+      "tier": "monitor",
+      "title": "Nach Millionencoup im MAK : Besucher müssen nun durch einen Körperscanner – DiePresse . com",
+      "tone": null,
+      "url": "https://www.diepresse.com/41213572/nach-millionencoup-im-mak-besucher-muessen-nun-durch-einen"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "leparisien.fr",
+      "id": "evt_13d88f599e93916b",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
       "source_country": "France",
       "tier": "monitor",
-      "title": "Révéler la Shoah au monde : limpossible combat du capitaine SS Kurt Gerstein",
+      "title": "Guerre en Ukraine :  une frappe suivie dune détonation  , 37 morts dans une attaque russe sur un entrepôt près de Kiev",
       "tone": null,
-      "url": "https://www.agoravox.fr/tribune-libre/article/reveler-la-shoah-au-monde-l-271609"
+      "url": "https://www.leparisien.fr/international/ukraine/guerre-en-ukraine-une-frappe-russe-sur-un-entrepot-fait-au-moins-27-morts-pres-de-kiev-29-08-2026-43LHPO6XFZF5NBRGUOSCSKUSXE.php"
+    },
+    {
+      "actors": [
+        "Senegal"
+      ],
+      "domain": "leral.net",
+      "id": "evt_29167f6dd9a9f53f",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Senegal",
+      "tier": "monitor",
+      "title": "Ukraine : une frappe russe sur un entrepôt près de Kiev fait 27 morts",
+      "tone": null,
+      "url": "https://www.leral.net/Ukraine-une-frappe-russe-sur-un-entrepot-pres-de-Kiev-fait-27-morts_a404903.html"
+    },
+    {
+      "actors": [],
+      "domain": "inquirer.com",
+      "id": "evt_cbabf9271acfa21b",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Six months in , Iran regime stands , U . S . goals remain unmet",
+      "tone": null,
+      "url": "https://www.inquirer.com/news/nation-world/iran-us-war-stalemate-six-months-military-attacks-economic-sanctions-trump-khamenei-bessent-20260828.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "n-tv.de",
+      "id": "evt_50caa6e20ac9c8c0",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Ukraine - Krieg im Liveticker : +++ 13 : 51 Zahl der Opfer nach verheerendem Angriff bei Kiew steigt immer weiter +++",
+      "tone": null,
+      "url": "https://www.n-tv.de/politik/13-51-Zahl-der-Opfer-nach-verheerendem-Angriff-bei-Kiew-steigt-immer-weiter-id30859357.html"
     },
     {
       "actors": [
         "Turkey"
       ],
-      "domain": "aa.com.tr",
-      "id": "evt_1531f474c7b32ca5",
+      "domain": "dailysabah.com",
+      "id": "evt_1ede3fa9f253dc9b",
       "language": "English",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Turkey",
+      "tier": "monitor",
+      "title": "Gaza death toll reaches 73 , 449 as thousands remain missing",
+      "tone": null,
+      "url": "https://www.dailysabah.com/world/mid-east/gaza-death-toll-reaches-73449-as-thousands-remain-missing"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "laseyne.maville.com",
+      "id": "evt_57da34b587d7f657",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Guerre en Ukraine  : au moins 27 morts dans une frappe russe sur un entrepôt près de Kiev",
+      "tone": null,
+      "url": "https://laseyne.maville.com/actu/actudet_-guerre-en-ukraine-au-moins-27-morts-dans-une-frappe-russe-sur-un-entrepot-pres-de-kiev_fil-7455635_actu.Htm"
+    },
+    {
+      "actors": [
+        "Finland"
+      ],
+      "domain": "yle.fi",
+      "id": "evt_5881dc9dd4ea5c5f",
+      "language": "Swedish",
       "matched_regions": [
         "israel"
       ],
@@ -716,45 +549,45 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Turkey",
+      "seen_date": "20260829T121500Z",
+      "source_country": "Finland",
       "tier": "monitor",
-      "title": "German Left Party opposes Volkswagen planned defense deal with Israeli firm",
+      "title": "Finland och Israel undertecknade avtal om försvars­samarbete fram till 2034 | Inrikes",
       "tone": null,
-      "url": "https://aa.com.tr/en/europe/german-left-party-opposes-volkswagen-s-planned-defense-deal-with-israeli-firm/4040530"
+      "url": "https://yle.fi/a/7-10104380"
     },
     {
       "actors": [
-        "Taiwan"
+        "Germany"
       ],
-      "domain": "taipeitimes.com",
-      "id": "evt_dbfc1c1f80678849",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
+      "domain": "wiwo.de",
+      "id": "evt_d584897a1d71bd64",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
       ],
-      "region": "Global",
+      "matched_themes": [],
+      "region": "Europa del Este",
       "score": 2.0,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
+        "region": 2.0,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Taiwan",
+      "seen_date": "20260829T121500Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "A reliable framework could solve drone issue",
+      "title": "Ukraine - Krieg : Viele Tote bei Angriff auf Munitionslager bei Kiew",
       "tone": null,
-      "url": "https://www.taipeitimes.com/News/editorials/archives/2026/08/29/2003863312"
+      "url": "https://www.wiwo.de/politik/ausland/ukraine-krieg-viele-tote-bei-angriff-auf-munitionslager-bei-kiew/100250522.html"
     },
     {
       "actors": [
-        "Honduras"
+        "United States"
       ],
-      "domain": "proceso.hn",
-      "id": "evt_47921eccb57bf8ce",
-      "language": "Spanish",
+      "domain": "4029tv.com",
+      "id": "evt_085a0519476f35af",
+      "language": "English",
       "matched_regions": [
         "china"
       ],
@@ -766,95 +599,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Honduras",
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Riada en Nepal : casi 600 muertos , 2 . 500 desaparecidos y China retoma labores de rescate",
+      "title": "Nepal - China families await news of nearly 3 , 000 missing",
       "tone": null,
-      "url": "https://proceso.hn/riada-en-nepal-casi-600-muertos-2-500-desaparecidos-y-china-retoma-labores-de-rescate/"
+      "url": "https://www.4029tv.com/article/nepal-china-flood-survivors-families-missing-dead/73559257"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Canada"
       ],
-      "domain": "dissexpress.co.uk",
-      "id": "evt_95be052fe0e0bc31",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Seven charged over Trump Turnberry damage face  terrorism connection  accusation",
-      "tone": null,
-      "url": "https://www.dissexpress.co.uk/national/seven-charged-over-trump-turnberry-damage-face-terrorism-connection-accusation-171075/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "kidderminstershuttle.co.uk",
-      "id": "evt_ea963d126778d47c",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Seven charged over Trump Turnberry damage face  terrorism connection  accusation",
-      "tone": null,
-      "url": "https://www.kidderminstershuttle.co.uk/news/national/26505890.seven-charged-trump-turnberry-damage-face-terrorism-connection-accusation/"
-    },
-    {
-      "actors": [
-        "Taiwan"
-      ],
-      "domain": "taipeitimes.com",
-      "id": "evt_d76bfa2549e05f9f",
-      "language": "English",
-      "matched_regions": [
-        "taiwan"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Taiwan",
-      "tier": "monitor",
-      "title": "International experts affirm Taiwan anti - corruption efforts , offer recommendations",
-      "tone": null,
-      "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/08/29/2003863326"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wapa.tv",
-      "id": "evt_00e8508522bd98c4",
-      "language": "Spanish",
+      "domain": "journaldemontreal.com",
+      "id": "evt_dac92251c3ebea77",
+      "language": "French",
       "matched_regions": [
         "iran"
       ],
@@ -866,44 +624,419 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
-      "source_country": "United States",
+      "seen_date": "20260829T121500Z",
+      "source_country": "Canada",
       "tier": "monitor",
-      "title": "Retiran a rescatistas en Nepal por salida de cauce de río formado tras desastre",
+      "title": "Iran : le président appelle la population à « accepter » limpact économique de la guerre",
       "tone": null,
-      "url": "https://wapa.tv/noticias/internacionales/retiran-a-rescatistas-en-nepal-por-salida-de-cauce-de-r-o-formado-tras-desastre/article_baab920a-95a2-45bd-9a73-f03a5b2bcf72.html"
+      "url": "https://www.journaldemontreal.com/2026/08/29/iran-le-president-appelle-la-population-a-accepter-limpact-economique-de-la-guerre"
     },
     {
       "actors": [
-        "Lithuania"
+        "Romania"
       ],
-      "domain": "lrt.lt",
-      "id": "evt_45d3756aefd9f7b1",
-      "language": "Lithuanian",
+      "domain": "antena3.ro",
+      "id": "evt_0ee92f63f468feb2",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Panică la Zaporojie . Cea mai mare centrală nucleară din Europa e fără curent de 7 zile . Generatoarele mai au motorină pentru 9 zile",
+      "tone": null,
+      "url": "https://www.antena3.ro/externe/panica-la-zaporojie-cea-mai-mare-centrala-nucleara-din-europa-e-fara-curent-de-7-zile-generatoarele-mai-au-motorina-pentru-9-zile-801287.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "n-tv.de",
+      "id": "evt_059c9fb4632721aa",
+      "language": "German",
       "matched_regions": [
-        "hormuz"
+        "iran"
       ],
       "matched_themes": [],
       "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Kein Einlenken im Konflikt : Iran räumt Kriegsfolgen für Wirtschaft ein",
+      "tone": null,
+      "url": "https://www.n-tv.de/politik/Iran-raeumt-Kriegsfolgen-fuer-Wirtschaft-ein-id31245907.html"
+    },
+    {
+      "actors": [
+        "Switzerland"
+      ],
+      "domain": "lematin.ch",
+      "id": "evt_580f08dd04ee7d64",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Switzerland",
+      "tier": "monitor",
+      "title": "Guerre en Ukraine : Au moins 37 morts après une frappe sur un entrepôt",
+      "tone": null,
+      "url": "https://www.lematin.ch/story/guerre-en-ukraine-au-moins-27-morts-apres-une-frappe-sur-un-entrepot-103624314"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "rhein-zeitung.de",
+      "id": "evt_490996fe16f954f6",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Ukraine - Krieg : Viele Tote bei Angriff auf Munitionslager bei Kiew - Politik",
+      "tone": null,
+      "url": "https://www.rhein-zeitung.de/deutschland-welt/politik/viele-tote-bei-angriff-auf-munitionslager-bei-kiew_arid-4151105.html"
+    },
+    {
+      "actors": [
+        "Croatia"
+      ],
+      "domain": "index.hr",
+      "id": "evt_8f3979a5c4b4230c",
+      "language": "Croatian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Croatia",
+      "tier": "monitor",
+      "title": "400 brodova i 6000 pomoraca već pola godine blokirano u Perzijskom zaljevu",
+      "tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/400-brodova-i-6000-pomoraca-vec-pola-godine-blokirano-u-perzijskom-zaljevu/2828927.aspx"
+    },
+    {
+      "actors": [
+        "Canada"
+      ],
+      "domain": "brandonsun.com",
+      "id": "evt_045e9342f2788fe7",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
+      "seen_date": "20260829T121500Z",
+      "source_country": "Canada",
+      "tier": "monitor",
+      "title": "Niger defense minister says soldiers attempted predawn mutiny – Brandon Sun",
+      "tone": null,
+      "url": "https://www.brandonsun.com/world/2026/08/29/gunfire-and-explosions-reported-in-nigers-capital-local-media-and-witness-say"
+    },
+    {
+      "actors": [
+        "Austria"
+      ],
+      "domain": "diepresse.com",
+      "id": "evt_7e34c4a0d1ebbbbf",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Austria",
+      "tier": "monitor",
+      "title": "Massive gegenseitige Angriffe gehen weiter : 37 Tote bei russischer Attacke in Region Kiew – DiePresse . com",
+      "tone": null,
+      "url": "https://www.diepresse.com/41213540/massive-gegenseitige-angriffe-gehen-weiter-27-tote-bei-russischer-in"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "newsday.com",
+      "id": "evt_9082177f5acf9318",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Niger defense minister says soldiers attempted predawn mutiny",
+      "tone": null,
+      "url": "https://www.newsday.com/news/nation/niger-niamey-gunfire-explosions-airport-presidential-district-d53828"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "pressdemocrat.com",
+      "id": "evt_f4f2d24abe7880b5",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Today in History : August 29 , Hurricane Katrina strikes Louisiana",
+      "tone": null,
+      "url": "https://www.pressdemocrat.com/2026/08/29/today-in-history-august-29-hurricane-katrina-strikes-louisiana/"
+    },
+    {
+      "actors": [
+        "Kosovo"
+      ],
+      "domain": "telegrafi.com",
+      "id": "evt_5f9968c741c64b1f",
+      "language": "Albanian",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Kosovo",
+      "tier": "monitor",
+      "title": "Të shtëna në kryeqytetin e Nigerit , raportohet për sulm ndaj pallatit presidencial",
+      "tone": null,
+      "url": "https://telegrafi.com/te-shtena-ne-kryeqytetin-e-nigerit-raportohet-per-sulm-ndaj-pallatit-presidencial/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "dialessandria.it",
+      "id": "evt_552d696b9e03dc72",
+      "language": "Italian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Palermo , Carta  Libero Grassi ha insegnato a tenere alte la testa e la guardia",
+      "tone": null,
+      "url": "https://www.dialessandria.it/featured/palermo-carta-libero-grassi-ha-insegnato-a-tenere-alte-la-testa-e-la-guardia/296772.html"
+    },
+    {
+      "actors": [
+        "Lithuania"
+      ],
+      "domain": "15min.lt",
+      "id": "evt_21a847252a981a5d",
+      "language": "Lithuanian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
       "source_country": "Lithuania",
       "tier": "monitor",
-      "title": "JK agentūra : Hormuzo sąsiaurį perplaukia daugiau laivų , nei rodo duomenys",
+      "title": "6 scenarijai : „ The Telegraph  įvardijo , kaip Putinas gali sužlugdyti NATO",
       "tone": null,
-      "url": "https://www.lrt.lt/naujienos/verslas/4/3035386/jk-agentura-hormuzo-sasiauri-perplaukia-daugiau-laivu-nei-rodo-duomenys"
+      "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/6-scenarijai-the-telegraph-ivardijo-kaip-putinas-gali-suzlugdyti-nato-57-2752912"
+    },
+    {
+      "actors": [
+        "Norway"
+      ],
+      "domain": "nettavisen.no",
+      "id": "evt_a2e662e85543984f",
+      "language": "Norwegian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Norway",
+      "tier": "monitor",
+      "title": "Nato , Norsk forsvarspolitikk | Robert Mood om norsk forsvarsevne og avhengigheten av Nato",
+      "tone": null,
+      "url": "https://www.nettavisen.no/norsk-debatt/robert-mood-om-norsk-forsvarsevne-og-avhengigheten-av-nato/o/80-95-8081"
+    },
+    {
+      "actors": [
+        "Finland"
+      ],
+      "domain": "kouvolansanomat.fi",
+      "id": "evt_c3bbbd2a60a9bcdf",
+      "language": "Finnish",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Finland",
+      "tier": "monitor",
+      "title": "Puolustusvoimain komentaja Ylellä : Ruotsi - yhteistyö askel kohti Naton yhteistä ilmapuolustusta",
+      "tone": null,
+      "url": "https://www.kouvolansanomat.fi/uutissuomalainen/9749596"
+    },
+    {
+      "actors": [
+        "Nepal"
+      ],
+      "domain": "nepalnational.com",
+      "id": "evt_fd9098e3bf00a92a",
+      "language": "English",
+      "matched_regions": [
+        "kashmir"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Nepal",
+      "tier": "monitor",
+      "title": "Threats to Kashmiri Pandits result of Pak Govt and ISI",
+      "tone": null,
+      "url": "http://www.nepalnational.com/news/279272990/threats-to-kashmiri-pandits-result-of-pak-govt-and-isi-collusion-himachal-governor-warns-of-befitting-response"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "sitkasentinel.com",
+      "id": "evt_9cd4c7cc885f65c7",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Gunfire and explosions reported in Niger capital , local media and witness say",
+      "tone": null,
+      "url": "http://www.sitkasentinel.com/stories/gunfire-and-explosions-reported-in-nigers-capital-local-media-and-witness-say,167294"
     },
     {
       "actors": [
         "Sweden"
       ],
-      "domain": "dagensps.se",
-      "id": "evt_59e793b3cbea7425",
+      "domain": "tv4.se",
+      "id": "evt_fe121b17407c7813",
       "language": "Swedish",
       "matched_regions": [],
       "matched_themes": [
@@ -916,97 +1049,22 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
+      "seen_date": "20260829T121500Z",
       "source_country": "Sweden",
       "tier": "monitor",
-      "title": "Vetepriset når nya rekordnivåer – stor oro över attacker vid Svarta havet",
+      "title": "37 döda efter ryska drönarattacken :  Ovanligt högt",
       "tone": null,
-      "url": "https://www.dagensps.se/bors-finans/vetepriset-nar-nya-rekordnivaer-stor-oro-over-attacker-vid-svarta-havet/"
+      "url": "https://www.tv4.se/artikel/vUUc9a0oZdenz76CvqK6O/27-doeda-efter-ryska-droenarattacken-ovanligt-hoegt"
     },
     {
       "actors": [
-        "Lithuania"
+        "Turkey"
       ],
-      "domain": "lrt.lt",
-      "id": "evt_e952ed5b49cef2a2",
-      "language": "Lithuanian",
+      "domain": "dailysabah.com",
+      "id": "evt_b536e5a206d66fd1",
+      "language": "English",
       "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Lithuania",
-      "tier": "monitor",
-      "title": "Landsbergis : artėja momentas , kai Putinas privers NATO įrodyti , ar jis dar gyvas",
-      "tone": null,
-      "url": "https://www.lrt.lt/mediateka/irasas/2000846130/landsbergis-arteja-momentas-kai-putinas-privers-nato-irodyti-ar-jis-dar-gyvas"
-    },
-    {
-      "actors": [
-        "Lithuania"
-      ],
-      "domain": "kauno.diena.lt",
-      "id": "evt_6d388c51d41d2fce",
-      "language": "Lithuanian",
-      "matched_regions": [
-        "hormuz"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Lithuania",
-      "tier": "monitor",
-      "title": "JK agentūra : Hormuzo sąsiaurį perplaukia daugiau laivų , nei rodo duomenys",
-      "tone": null,
-      "url": "https://kauno.diena.lt/naujienos/pasaulis/konfliktai-nelaimes/jk-agentura-hormuzo-sasiauri-perplaukia-daugiau-laivu-nei-rodo-duomenys-1772307"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "come-on.de",
-      "id": "evt_35eccf030284e65a",
-      "language": "German",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Putin - Angriff auf die NATO ? US - Geheimdienste mit brisanten Infos",
-      "tone": null,
-      "url": "http://www.come-on.de/politik/brisanten-infos-putin-angriff-auf-die-nato-us-geheimdienste-mit-zr-94462387.html"
-    },
-    {
-      "actors": [
-        "Mali"
-      ],
-      "domain": "maliactu.net",
-      "id": "evt_9048eeb7e39af75e",
-      "language": "French",
-      "matched_regions": [
-        "mali"
+        "niger"
       ],
       "matched_themes": [],
       "region": "Sahel",
@@ -1016,12 +1074,62 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260828T181500Z",
-      "source_country": "Mali",
+      "seen_date": "20260829T121500Z",
+      "source_country": "Turkey",
       "tier": "monitor",
-      "title": "LUEFA sapprête à porter plainte contre Gianni Infantino – Mali Actu",
+      "title": "Gunfire erupts in Niger capital , state TV goes off air",
       "tone": null,
-      "url": "https://maliactu.net/luefa-sapprete-a-porter-plainte-contre-gianni-infantino/"
+      "url": "https://www.dailysabah.com/world/africa/gunfire-erupts-in-niger-capital-state-tv-goes-off-air"
+    },
+    {
+      "actors": [
+        "Switzerland"
+      ],
+      "domain": "suedostschweiz.ch",
+      "id": "evt_d8c39c8fce1233f9",
+      "language": "German",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Switzerland",
+      "tier": "monitor",
+      "title": "Militärquelle : Angreifer nehmen Flughafen und TV - Sender im Niger ein",
+      "tone": null,
+      "url": "https://www.suedostschweiz.ch/schweiz-und-welt/militaerquelle-angreifer-nehmen-flughafen-und-tv-sender-im-niger-ein-2-2140983"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "bologna2000.com",
+      "id": "evt_2733a916ab4ddc46",
+      "language": "Italian",
+      "matched_regions": [
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260829T121500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Trump  Con il Venezuela il più grande accordo sul petrolio della storia",
+      "tone": null,
+      "url": "https://www.bologna2000.com/2026/08/29/trump-con-il-venezuela-il-piu-grande-accordo-sul-petrolio-della-storia/"
     }
   ],
   "filters": {
@@ -1035,13 +1143,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-08-28T18:41:55Z",
+  "generated_at": "2026-08-29T12:40:30Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 4,
+    "high": 3,
     "medium": 6,
-    "monitor": 30
+    "monitor": 35
   },
-  "total_events": 40
+  "total_events": 44
 }
