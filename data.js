@@ -647,254 +647,330 @@ export const DOCTRINA = {
    IMPORTANTE: correlación temporal no implica causalidad.
    ======================================================================== */
 export const SENTINEL_BRIEF = {
-  "eyebrow": "SENTINEL WEEKLY BRIEF",
+  "eyebrow": "SENTINEL",
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "generatedAt": "2026-08-24T08:07:00+02:00",
-  "window": "17-23 agosto 2026 · Europe/Luxembourg",
-  "dataUrl": "./data/sentinel/weekly-brief.json",
-  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-08-17_2026-08-23.json",
-  "indexUrl": "./data/sentinel/index.json",
-  "layerLabel": "Acople ambiental significativo",
-  "status": "dos acoples confirmados y una señal en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
-  "summary": [
-    "Sudán y Myanmar quedan como acoples confirmados: conflicto, clima, desplazamiento y acceso humanitario se superponen de forma documentada.",
-    "Ucrania queda como señal en observación: ataques energéticos, presión térmica y demanda eléctrica coinciden, pero sin detección NASA/USGS directa en la semana.",
-    "SENTINEL mantiene la regla editorial: no convertir coincidencia temporal en causalidad geopolítica."
-  ],
-  "caveat": "Correlación y coincidencia temporal no implican causalidad. SENTINEL separa hecho, evaluación, hipótesis y señal.",
-  "stats": {
-    "sentinelEvents": 43,
-    "nasaOpenEvents": 22,
-    "usgsM55Plus": 15,
-    "confirmedCouplings": 2,
-    "watchSignals": 1
+  "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
+  "main_status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
+  "generated_at": "2026-08-31T08:04:00+02:00",
+  "window": "24-30 AGOSTO 2026 · EUROPE/LUXEMBOURG",
+  "week_window": {
+    "local": {
+      "start": "2026-08-24T00:00:00+02:00",
+      "end": "2026-08-30T23:59:59+02:00",
+      "timezone": "Europe/Luxembourg"
+    },
+    "utc": {
+      "start": "2026-08-23T22:00:00Z",
+      "end": "2026-08-30T21:59:59Z"
+    }
   },
-  "tags": [
-    "#GEOPÓLEM",
-    "#SENTINEL",
-    "#OSINT",
-    "#Sudán",
-    "#Myanmar",
-    "#Geopolítica"
+  "summary": [
+    "SENTINEL revisó 41 eventos de conflicto del feed público disponible para la ventana semanal.",
+    "NASA EONET registró 25 eventos abiertos recientes y 309 eventos cerrados recientes; USGS registró 118 sismos de magnitud 4,5+ dentro de la ventana.",
+    "No se verificaron tres acoples conflicto-ambiente suficientemente fuertes para publicarlos como confirmados.",
+    "Las señales con mayor valor de vigilancia se concentran en Sudán, Nepal/Kodari y Taiwán, pero todas quedan etiquetadas como observación.",
+    "La lectura GEOPÓLEM prioriza rutas, capacidad estatal y continuidad operacional, sin presentar correlación temporal como causalidad."
+  ],
+  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y enlaces institucionales derivados de NASA/GDACS/USGS. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, capacidad estatal y presión sobre ayuda o infraestructura. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
+  "source_urls": {
+    "sentinel": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+    "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
+    "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
+    "usgs_week_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-23T22:00:00&endtime=2026-08-30T21:59:59&minmagnitude=4.5&orderby=magnitude",
+    "usgs_week_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-23T22:00:00&endtime=2026-08-30T21:59:59&minmagnitude=5.5&orderby=magnitude",
+    "nasa_sudan_wildfire": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_23592",
+    "gdacs_sudan_wildfire": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031330",
+    "gdacs_nepal_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104124",
+    "usgs_nepal_landslide": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tbwb",
+    "usgs_taiwan_earthquake": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tnbm",
+    "usgs_somalia_earthquake": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tcf3"
+  },
+  "data_scan_counts": {
+    "sentinel_events_latest_feed": 41,
+    "sentinel_high_tier_events_latest_feed": 0,
+    "nasa_eonet_open_events_reviewed": 25,
+    "nasa_eonet_closed_events_reviewed": 309,
+    "nasa_eonet_events_reviewed_total": 334,
+    "usgs_m45_plus_events_in_week": 118,
+    "usgs_m55_plus_events_in_week": 7,
+    "total_candidates": 6,
+    "selected_confirmed_couplings": 0,
+    "selected_watch_signals": 3
+  },
+  "limitations": [
+    "El feed SENTINEL público de esta ejecución concentra señales mediáticas y no ofrece cobertura histórica exhaustiva de todos los teatros de conflicto.",
+    "NASA EONET y USGS verifican eventos físicos; no prueban por sí solos impacto sobre acceso humanitario, rutas críticas o conducta de actores armados.",
+    "No se verificó esta semana un acople ambiental significativo con evidencia suficiente para etiquetarlo como confirmado.",
+    "Las tres señales seleccionadas son puntos de vigilancia: pueden afectar rutas, capacidad estatal o continuidad operacional, pero no se presentan como causalidad."
+  ],
+  "selected_inflection_points": [
+    {
+      "id": "sudan-wildfire-blue-nile-watch",
+      "rank": 1,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media-alta",
+      "priority_en": "Medium-high",
+      "accent": "#FF8A3D",
+      "location": "Sudán / eje Nilo Azul-Sudán central",
+      "headline": "Sudán: conflicto activo y estrés ambiental localizado",
+      "headline_en": "Sudan: active conflict and localized environmental stress",
+      "conflict_event": "SENTINEL registró durante la ventana una señal sobre desplazamiento por escalada de combates en el Nilo Azul.",
+      "environmental_event": "NASA EONET registró un incendio en Sudán el 24 de agosto de 2026, con magnitud reportada de 5.038 hectáreas y fuente GDACS.",
+      "coupling_type": [
+        "conflicto",
+        "incendio",
+        "desplazamiento",
+        "capacidad estatal",
+        "acceso humanitario"
+      ],
+      "why_it_matters": "Importa como vigilancia porque Sudán combina guerra, desplazamiento y baja capacidad estatal; el evento ambiental añade presión, pero no se verifica impacto directo sobre la dinámica militar.",
+      "fact": "SENTINEL registró una señal de desplazamiento por combates en el Nilo Azul y NASA EONET registró un incendio en Sudán dentro de la ventana semanal.",
+      "coupling": "El acople es espacial-temporal débil: mismo país y misma semana, pero sin evidencia institucional suficiente de afectación directa sobre rutas de ayuda o conducta armada.",
+      "strategic_implication": "La señal exige seguimiento porque en Sudán los eventos ambientales pueden degradar movilidad, refugios y acceso humanitario en un conflicto ya fragmentado.",
+      "tripolarity_reading": "EE. UU. y la UE operan sobre asistencia y presión diplomática; actores del Golfo y África oriental pesan en corredores regionales; China y Rusia observan un teatro donde la erosión estatal reduce margen occidental.",
+      "confidence": "Media",
+      "source_keys": [
+        "sentinel",
+        "nasa_sudan_wildfire",
+        "gdacs_sudan_wildfire"
+      ]
+    },
+    {
+      "id": "nepal-kodari-flood-landslide-watch",
+      "rank": 2,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media",
+      "priority_en": "Medium",
+      "accent": "#3DD6D0",
+      "location": "Nepal / corredor Kodari-Himalaya central",
+      "headline": "Nepal: inundación y deslizamiento cerca de corredor transfronterizo",
+      "headline_en": "Nepal: flood and landslide near a transborder corridor",
+      "conflict_event": "No hay evento de conflicto armado en el feed SENTINEL para elevar esta señal a acople confirmado.",
+      "environmental_event": "NASA EONET registró una inundación en Nepal el 25 de agosto y USGS registró un deslizamiento M5.2 a 55 km al noroeste de Kodari ese mismo día.",
+      "coupling_type": [
+        "inundación",
+        "deslizamiento",
+        "ruta crítica",
+        "frontera",
+        "capacidad estatal"
+      ],
+      "why_it_matters": "Importa como observación geopolítica porque Kodari conecta logística, frontera y dependencia de infraestructura en el eje Nepal-China.",
+      "fact": "NASA EONET/GDACS registró una inundación en Nepal y USGS registró un deslizamiento M5.2 cerca de Kodari dentro de la ventana semanal.",
+      "coupling": "El acople no es de conflicto armado, sino de ruta y capacidad estatal: agua, ladera y conectividad fronteriza coinciden temporalmente.",
+      "strategic_implication": "En el Himalaya, los eventos ambientales pueden convertir infraestructura de paso en vulnerabilidad diplomática, comercial y de respuesta estatal.",
+      "tripolarity_reading": "China observa continuidad fronteriza y conectividad; India vigila estabilidad del Himalaya y vecindario; la UE y organismos multilaterales entran por resiliencia climática y reducción de riesgo.",
+      "confidence": "Media",
+      "source_keys": [
+        "gdacs_nepal_flood",
+        "usgs_nepal_landslide"
+      ]
+    },
+    {
+      "id": "taiwan-earthquake-operational-resilience-watch",
+      "rank": 3,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media",
+      "priority_en": "Medium",
+      "accent": "#B794F4",
+      "location": "Taiwán / sur de la isla y entorno del Estrecho",
+      "headline": "Taiwán: sismo moderado y continuidad operacional estratégica",
+      "headline_en": "Taiwan: moderate earthquake and strategic operational continuity",
+      "conflict_event": "No se registró un evento de conflicto directo en el feed SENTINEL para esta señal dentro de la ventana.",
+      "environmental_event": "USGS registró un sismo M5.5 a 108 km al noreste de Hengchun, Taiwán, el 25 de agosto de 2026.",
+      "coupling_type": [
+        "sismo",
+        "infraestructura crítica",
+        "continuidad operacional",
+        "semiconductores",
+        "ruta marítima"
+      ],
+      "why_it_matters": "Importa por exposición estratégica, no por daño confirmado: Taiwán combina infraestructura crítica, rutas marítimas y presión militar latente.",
+      "fact": "USGS registró un sismo M5.5 cerca del sur de Taiwán dentro de la ventana semanal.",
+      "coupling": "El acople queda en observación: evento geofísico moderado en un espacio de alta sensibilidad estratégica, sin evidencia de interrupción militar, logística o industrial esta semana.",
+      "strategic_implication": "El valor analítico está en la resiliencia: cualquier choque físico sobre Taiwán se evalúa por continuidad industrial, rutas y cálculo de actores, no por espectacularidad.",
+      "tripolarity_reading": "EE. UU. y China interpretan Taiwán como nodo estratégico; la UE depende de continuidad tecnológica; el Sur Global absorbe efectos indirectos si se tensionan cadenas de suministro.",
+      "confidence": "Media-baja",
+      "source_keys": [
+        "usgs_taiwan_earthquake"
+      ]
+    }
   ],
   "points": [
     {
-      "id": "sudan-floods-war-aid-access",
+      "id": "sudan-wildfire-blue-nile-watch",
       "rank": 1,
-      "status": "confirmado",
-      "statusEn": "confirmed",
-      "priority": "Alta",
-      "priorityEn": "High",
-      "accent": "#FF2D25",
-      "location": "Sudán: Darfur, Kordofán, Nilo Azul y corredores de ayuda",
-      "headline": "Sudán: guerra, inundaciones y acceso humanitario",
-      "headlineEn": "Sudan: war, floods and humanitarian access",
-      "fact": "Naciones Unidas informó el 19 de agosto de 2026 que la intensificación de los combates desplazó al menos a 200.000 personas desde finales de 2025 y que las inundaciones estacionales están agravando la emergencia humanitaria.",
-      "coupling": "El acople es operativo: las lluvias dañan refugios y desplazan familias mientras los ataques y cortes de electricidad interrumpen bombeo de agua, centros sanitarios y telecomunicaciones.",
-      "couplingEn": null,
-      "couplingType": [
-        "conflicto",
-        "inundaciones",
-        "desplazamiento",
-        "agua",
-        "electricidad",
-        "salud",
-        "cadenas de suministro"
-      ],
-      "couplingTypeEn": [],
-      "implication": "Sudán muestra cómo un conflicto interno puede proyectarse sobre rutas y cadenas de suministro cuando la ayuda depende de pasos vulnerables por Mar Rojo y Ormuz.",
-      "tripolar": "EE. UU. y la UE se mueven sobre asistencia y presión diplomática; los actores del Golfo y África oriental pesan sobre corredores y negociación; China y Rusia observan el deterioro de la autoridad occidental en una crisis donde infraestructura, ayuda y legitimidad se superponen.",
-      "conflictEvent": "La intensificación de los combates desplazó al menos a 200.000 personas desde finales de 2025, dentro de una guerra que ha expulsado a 8,6 millones desde abril de 2023.",
-      "conflictEventEn": null,
-      "environmentalEvent": "Inundaciones estacionales destruyeron o dañaron cerca de 1.350 refugios en Tawila y desplazaron a más de 1.000 familias durante la semana previa al reporte de Naciones Unidas.",
-      "environmentalEventEn": null,
-      "sources": [
-        {
-          "label": "UN News Sudan",
-          "url": "https://news.un.org/en/story/2026/08/1168165"
-        },
-        {
-          "label": "GEOPÓLEM SENTINEL",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-        }
-      ]
-    },
-    {
-      "id": "myanmar-monsoon-war-displacement",
-      "rank": 2,
-      "status": "confirmado",
-      "statusEn": "confirmed",
-      "priority": "Alta",
-      "priorityEn": "High",
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media-alta",
+      "priority_en": "Medium-high",
       "accent": "#FF8A3D",
-      "location": "Myanmar: Sagaing, Ayeyarwady, Magway y Mandalay",
-      "headline": "Myanmar: monzón sobre población ya desplazada por la guerra",
-      "headlineEn": "Myanmar: monsoon pressure on war-displaced communities",
-      "fact": "ACAPS informó que las inundaciones afectaron a más de 440.000 personas, dañaron más de 40.000 acres de tierras agrícolas y obligaron a personas desplazadas por el conflicto a reubicarse de nuevo.",
-      "coupling": "El acople es humanitario y territorial: la inundación corta carreteras, reduce acceso a alimentos y agua segura, y deja la respuesta en manos de grupos comunitarios en zonas con conflicto activo.",
-      "couplingEn": null,
-      "couplingType": [
+      "location": "Sudán / eje Nilo Azul-Sudán central",
+      "headline": "Sudán: conflicto activo y estrés ambiental localizado",
+      "headline_en": "Sudan: active conflict and localized environmental stress",
+      "conflict_event": "SENTINEL registró durante la ventana una señal sobre desplazamiento por escalada de combates en el Nilo Azul.",
+      "environmental_event": "NASA EONET registró un incendio en Sudán el 24 de agosto de 2026, con magnitud reportada de 5.038 hectáreas y fuente GDACS.",
+      "coupling_type": [
         "conflicto",
-        "inundaciones",
-        "seguridad alimentaria",
-        "acceso humanitario",
-        "desplazamiento secundario"
+        "incendio",
+        "desplazamiento",
+        "capacidad estatal",
+        "acceso humanitario"
       ],
-      "couplingTypeEn": [],
-      "implication": "Myanmar confirma que el clima monzónico no opera como desastre aislado cuando el territorio ya está militarizado y fragmentado: altera rescate, alimentos, agua, movilidad y control local.",
-      "tripolar": "China observa estabilidad fronteriza, corredores e influencia regional; EE. UU. y la UE operan más en sanciones y ayuda; ASEAN y el Sur Global cargan con el coste operativo inmediato de la crisis.",
-      "conflictEvent": "Myanmar mantiene una crisis de conflicto posterior al golpe de 2021, con zonas de acceso humanitario restringido y control territorial fragmentado.",
-      "conflictEventEn": null,
-      "environmentalEvent": "ACAPS reportó que lluvias monzónicas, descargas de presas y el colapso de un terraplén habían causado al menos 25 muertes y afectado a más de 440.000 personas en 17 municipios hasta el 12 de agosto.",
-      "environmentalEventEn": null,
-      "sources": [
-        {
-          "label": "ACAPS Myanmar",
-          "url": "https://www.acaps.org/en/countries/myanmar"
-        }
+      "why_it_matters": "Importa como vigilancia porque Sudán combina guerra, desplazamiento y baja capacidad estatal; el evento ambiental añade presión, pero no se verifica impacto directo sobre la dinámica militar.",
+      "fact": "SENTINEL registró una señal de desplazamiento por combates en el Nilo Azul y NASA EONET registró un incendio en Sudán dentro de la ventana semanal.",
+      "coupling": "El acople es espacial-temporal débil: mismo país y misma semana, pero sin evidencia institucional suficiente de afectación directa sobre rutas de ayuda o conducta armada.",
+      "strategic_implication": "La señal exige seguimiento porque en Sudán los eventos ambientales pueden degradar movilidad, refugios y acceso humanitario en un conflicto ya fragmentado.",
+      "tripolarity_reading": "EE. UU. y la UE operan sobre asistencia y presión diplomática; actores del Golfo y África oriental pesan en corredores regionales; China y Rusia observan un teatro donde la erosión estatal reduce margen occidental.",
+      "confidence": "Media",
+      "source_keys": [
+        "sentinel",
+        "nasa_sudan_wildfire",
+        "gdacs_sudan_wildfire"
       ]
     },
     {
-      "id": "ukraine-heat-energy-attacks-watch",
+      "id": "nepal-kodari-flood-landslide-watch",
+      "rank": 2,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media",
+      "priority_en": "Medium",
+      "accent": "#3DD6D0",
+      "location": "Nepal / corredor Kodari-Himalaya central",
+      "headline": "Nepal: inundación y deslizamiento cerca de corredor transfronterizo",
+      "headline_en": "Nepal: flood and landslide near a transborder corridor",
+      "conflict_event": "No hay evento de conflicto armado en el feed SENTINEL para elevar esta señal a acople confirmado.",
+      "environmental_event": "NASA EONET registró una inundación en Nepal el 25 de agosto y USGS registró un deslizamiento M5.2 a 55 km al noroeste de Kodari ese mismo día.",
+      "coupling_type": [
+        "inundación",
+        "deslizamiento",
+        "ruta crítica",
+        "frontera",
+        "capacidad estatal"
+      ],
+      "why_it_matters": "Importa como observación geopolítica porque Kodari conecta logística, frontera y dependencia de infraestructura en el eje Nepal-China.",
+      "fact": "NASA EONET/GDACS registró una inundación en Nepal y USGS registró un deslizamiento M5.2 cerca de Kodari dentro de la ventana semanal.",
+      "coupling": "El acople no es de conflicto armado, sino de ruta y capacidad estatal: agua, ladera y conectividad fronteriza coinciden temporalmente.",
+      "strategic_implication": "En el Himalaya, los eventos ambientales pueden convertir infraestructura de paso en vulnerabilidad diplomática, comercial y de respuesta estatal.",
+      "tripolarity_reading": "China observa continuidad fronteriza y conectividad; India vigila estabilidad del Himalaya y vecindario; la UE y organismos multilaterales entran por resiliencia climática y reducción de riesgo.",
+      "confidence": "Media",
+      "source_keys": [
+        "gdacs_nepal_flood",
+        "usgs_nepal_landslide"
+      ]
+    },
+    {
+      "id": "taiwan-earthquake-operational-resilience-watch",
       "rank": 3,
       "status": "en observación",
-      "statusEn": "watch",
-      "priority": "Media-alta",
-      "priorityEn": "Medium-high",
-      "accent": "#3DD6D0",
-      "location": "Ucrania: infraestructura energética y regiones bajo ataques",
-      "headline": "Ucrania: calor, demanda eléctrica y ataques a infraestructura",
-      "headlineEn": "Ukraine: heat, electricity demand and infrastructure strikes",
-      "fact": "AP reportó 13 ataques contra instalaciones de Naftogaz en la semana previa al 17 de agosto; la señal de calor y consumo eléctrico procede de reportes energéticos ucranianos fechados justo antes de la ventana.",
-      "coupling": "No se afirma causalidad ambiental. Se observa una superposición operacional entre ataques energéticos, presión térmica, consumo eléctrico y capacidad de reparación.",
-      "couplingEn": null,
-      "couplingType": [
-        "conflicto",
-        "energía",
-        "calor",
-        "red eléctrica",
-        "continuidad operacional"
+      "status_en": "watch",
+      "priority": "Media",
+      "priority_en": "Medium",
+      "accent": "#B794F4",
+      "location": "Taiwán / sur de la isla y entorno del Estrecho",
+      "headline": "Taiwán: sismo moderado y continuidad operacional estratégica",
+      "headline_en": "Taiwan: moderate earthquake and strategic operational continuity",
+      "conflict_event": "No se registró un evento de conflicto directo en el feed SENTINEL para esta señal dentro de la ventana.",
+      "environmental_event": "USGS registró un sismo M5.5 a 108 km al noreste de Hengchun, Taiwán, el 25 de agosto de 2026.",
+      "coupling_type": [
+        "sismo",
+        "infraestructura crítica",
+        "continuidad operacional",
+        "semiconductores",
+        "ruta marítima"
       ],
-      "couplingTypeEn": [],
-      "implication": "Si la presión térmica se combina con ataques energéticos, el frente civil puede convertirse en un vector de desgaste antes del invierno.",
-      "tripolar": "Rusia usa presión energética como instrumento de guerra; EE. UU. y la UE sostienen resiliencia energética ucraniana; China observa el precedente sobre infraestructura crítica y coerción híbrida.",
-      "conflictEvent": "AP reportó el 17 de agosto que Naftogaz afirmó haber recibido 13 ataques rusos contra sus instalaciones durante la semana previa, con daños graves en equipos y capacidad de producción.",
-      "conflictEventEn": null,
-      "environmentalEvent": "La señal meteorológica disponible indica que una ola de calor elevó la demanda eléctrica y que ataques rusos provocaron nuevos cortes en varias regiones, pero no hay detección NASA/USGS directa para elevarla a acople confirmado.",
-      "environmentalEventEn": null,
-      "sources": [
-        {
-          "label": "Associated Press",
-          "url": "https://apnews.com/article/russia-ukraine-war-energy-facilities-winter-strikes-8cec7f6dacd1bc0508b8365d62e0d436"
-        },
-        {
-          "label": "Energy Business Ukraine",
-          "url": "https://e-b.com.ua/en/heat-wave-drives-up-power-consumption-new-outages-reported-in-several-regions-due-to-shelling-9865"
-        }
+      "why_it_matters": "Importa por exposición estratégica, no por daño confirmado: Taiwán combina infraestructura crítica, rutas marítimas y presión militar latente.",
+      "fact": "USGS registró un sismo M5.5 cerca del sur de Taiwán dentro de la ventana semanal.",
+      "coupling": "El acople queda en observación: evento geofísico moderado en un espacio de alta sensibilidad estratégica, sin evidencia de interrupción militar, logística o industrial esta semana.",
+      "strategic_implication": "El valor analítico está en la resiliencia: cualquier choque físico sobre Taiwán se evalúa por continuidad industrial, rutas y cálculo de actores, no por espectacularidad.",
+      "tripolarity_reading": "EE. UU. y China interpretan Taiwán como nodo estratégico; la UE depende de continuidad tecnológica; el Sur Global absorbe efectos indirectos si se tensionan cadenas de suministro.",
+      "confidence": "Media-baja",
+      "source_keys": [
+        "usgs_taiwan_earthquake"
       ]
     }
   ],
-  "notSelected": [
+  "not_selected": [
     {
-      "id": "typhoon-saudel-western-pacific",
-      "reason": "NASA EONET y GDACS confirman el ciclón tropical Saudel-26, pero no se verificó acople con conflicto, coerción o ruta crítica alterada durante la semana."
+      "id": "hormuz-conflict-no-environmental-event",
+      "reason": "SENTINEL registró señales sobre Ormuz e Irán, pero no se verificó evento NASA/USGS ambiental o geofísico acoplado en la ventana."
     },
     {
-      "id": "peru-earthquake",
-      "reason": "USGS registró un sismo M6.7 en Perú, pero no se verificó un acople conflicto-ambiente relevante para el top 3."
+      "id": "haiti-gang-violence-no-environmental-event",
+      "reason": "SENTINEL registró violencia de bandas en Haití, pero no se verificó evento ambiental NASA/USGS coincidente que altere rutas, migración o capacidad estatal en esta ventana."
     },
     {
-      "id": "drc-wildfires",
-      "reason": "NASA EONET registró incendios en la República Democrática del Congo, pero la evidencia localizada no mostró impacto suficiente sobre conflicto, desplazamiento o minerales críticos para elevarlo."
-    },
-    {
-      "id": "senegal-flood",
-      "reason": "NASA EONET registró inundación en Senegal, pero no se verificó acople significativo con conflicto o competencia geopolítica en la ventana."
+      "id": "somalia-m60-gulf-of-aden-watch",
+      "reason": "USGS registró un sismo M6.0 al norte de Caluula, Somalia; se revisó por proximidad estratégica al Golfo de Adén, pero no se verificó impacto operacional o conflicto acoplado."
     }
   ],
-  "bestShort": {
-    "title": "Sudán: cuando la lluvia corta la ayuda",
-    "reason": "Es el acople más claro de la semana entre guerra, inundaciones, desplazamiento, agua, electricidad, salud y cadenas de suministro.",
-    "hook": "No todas las rutas críticas están en el mar. Algunas se vuelven barro.",
-    "technicalScript": [
+  "best_short_candidate": {
+    "id": "sudan-wildfire-blue-nile-watch",
+    "title": "Sudán: cuando el ambiente añade presión a la guerra",
+    "hook_es": "Esta semana, el dato importante no es el incendio. Es lo que revela sobre el Estado.",
+    "reason": "Es la señal más cercana al mandato SENTINEL: conflicto activo, desplazamiento, presión ambiental y capacidad estatal vulnerable, aunque queda en observación.",
+    "technical_script": [
       {
         "timecode": "0:00-0:03",
-        "scene": "Mapa oscuro de Sudán, Mar Rojo y corredores de ayuda. Pulso rojo sobre Darfur.",
-        "voice_es": "No todas las rutas críticas están en el mar. Algunas se vuelven barro.",
-        "subtitle_en": "Not every critical route is at sea. Some turn into mud."
+        "scene": "Mapa oscuro de Sudán; pulso sobre Nilo Azul y marcador ambiental sobrio.",
+        "voice_es": "Esta semana, el dato importante no es el incendio. Es lo que revela sobre el Estado.",
+        "subtitle_en": "This week, the key data point is not the fire. It is what it reveals about the state."
       },
       {
-        "timecode": "0:03-0:18",
-        "scene": "Etiqueta HECHO. Capa de desplazamiento y lluvia sobre Darfur, Kordofán y Nilo Azul.",
-        "voice_es": "Esta semana, Naciones Unidas reportó que la intensificación de los combates en Sudán desplazó al menos a 200.000 personas desde finales de 2025.",
-        "subtitle_en": "This week, the UN reported that intensified fighting in Sudan has displaced at least 200,000 people since late 2025."
+        "timecode": "0:03-0:17",
+        "scene": "Etiqueta HECHO. Feed SENTINEL y capa de conflicto/desplazamiento.",
+        "voice_es": "SENTINEL registró una señal de desplazamiento por escalada de combates en Sudán durante la ventana semanal. Es conflicto, movilidad forzada y presión territorial.",
+        "subtitle_en": "SENTINEL registered a displacement signal linked to escalating fighting in Sudan during the weekly window. This is conflict, forced mobility and territorial pressure."
       },
       {
-        "timecode": "0:18-0:35",
-        "scene": "Etiqueta DATO DE ACOPLE. Refugios dañados, bombas de agua, red eléctrica y ruta humanitaria.",
-        "voice_es": "Pero el punto de inflexión no es solo militar. Las inundaciones dañaron refugios, desplazaron familias y coincidieron con ataques que cortaron electricidad, bombeo de agua, salud y telecomunicaciones.",
-        "subtitle_en": "But the inflection point is not only military. Floods damaged shelters, displaced families and overlapped with attacks disrupting power, water pumping, health services and telecoms."
+        "timecode": "0:17-0:33",
+        "scene": "Etiqueta DATO AMBIENTAL. Capa NASA EONET/GDACS: incendio en Sudán, 24 de agosto, 5.038 hectáreas.",
+        "voice_es": "NASA EONET registró además un incendio en Sudán el 24 de agosto, con 5.038 hectáreas reportadas por GDACS. No afirmamos causalidad. Marcamos una coincidencia operacional que debe vigilarse.",
+        "subtitle_en": "NASA EONET also registered a wildfire in Sudan on August 24, with 5,038 hectares reported by GDACS. We do not claim causality. We mark an operational coincidence to monitor."
       },
       {
-        "timecode": "0:35-0:58",
-        "scene": "Etiqueta SEÑAL. Flechas hacia Mar Rojo y Ormuz; capa de ayuda, rutas y legitimidad internacional.",
-        "voice_es": "En una guerra prolongada, el clima no es un evento externo. Puede convertirse en continuidad operacional: quién recibe agua, quién recibe ayuda y qué ruta sigue abierta.",
-        "subtitle_en": "In a prolonged war, climate is not external. It can become operational continuity: who gets water, who gets aid and which route remains open."
+        "timecode": "0:33-0:52",
+        "scene": "Etiqueta LECTURA. Rutas, ayuda, capacidad estatal y tablero regional.",
+        "voice_es": "En un país fragmentado por la guerra, cada presión ambiental puede afectar movilidad, refugio, ayuda y legitimidad estatal. Ahí está el tablero: no en el desastre aislado, sino en el acople.",
+        "subtitle_en": "In a country fragmented by war, each environmental pressure can affect mobility, shelter, aid and state legitimacy. That is the board: not the isolated disaster, but the coupling."
       },
       {
-        "timecode": "0:58-1:12",
-        "scene": "Sala situacional GEOPÓLEM. Tres etiquetas: guerra, clima, acceso.",
-        "voice_es": "Sudán muestra el tablero real: conflicto, ambiente y capacidad estatal ya no pueden analizarse por separado. GEOPÓLEM. Bienvenidos al tablero.",
-        "subtitle_en": "Sudan shows the real board: conflict, environment and state capacity can no longer be analyzed separately. GEOPÓLEM. Welcome to the board."
+        "timecode": "0:52-1:00",
+        "scene": "Cierre en sala situacional GEOPÓLEM: HECHO / EVALUACIÓN / HIPÓTESIS.",
+        "voice_es": "Esta semana, SENTINEL no confirma tres acoples. Confirma la necesidad de mirar mejor. GEOPÓLEM. Bienvenidos al tablero.",
+        "subtitle_en": "This week, SENTINEL does not confirm three couplings. It confirms the need to look better. GEOPÓLEM. Welcome to the board."
       }
     ],
     "visuals": [
-      "Mapa 9:16 de Sudán con foco en Darfur, Kordofán, Nilo Azul y corredor hacia Mar Rojo.",
-      "Iconos sobrios: inundación, refugio, agua, electricidad, salud y ruta logística.",
-      "Etiquetas en pantalla: HECHO, DATO DE ACOPLE, SEÑAL.",
-      "Paleta GEOPÓLEM: fondo #07090C, cian #3DD6D0, rojo #FF2D25."
+      "Mapa 9:16 de Sudán con capas discretas: conflicto, ambiente, acceso humanitario.",
+      "Marcadores sobrios para Nilo Azul y punto ambiental EONET/GDACS.",
+      "Etiquetas en pantalla: HECHO, DATO AMBIENTAL, OBSERVACIÓN, NO CAUSALIDAD.",
+      "Paleta GEOPÓLEM: fondo #07090C, rojo #FF2D25, cian #3DD6D0, violeta #B794F4."
     ],
-    "subtitlesEn": [
-      "Not every critical route is at sea. Some turn into mud.",
-      "This week, the UN reported that intensified fighting in Sudan has displaced at least 200,000 people since late 2025.",
-      "But the inflection point is not only military.",
-      "Floods damaged shelters, displaced families and overlapped with attacks disrupting power, water pumping, health services and telecoms.",
-      "In a prolonged war, climate is not external.",
-      "It can become operational continuity: who gets water, who gets aid and which route remains open.",
-      "Sudan shows the real board: conflict, environment and state capacity can no longer be analyzed separately.",
+    "subtitles_en": [
+      "This week, the key data point is not the fire. It is what it reveals about the state.",
+      "SENTINEL registered a displacement signal linked to escalating fighting in Sudan during the weekly window.",
+      "NASA EONET also registered a wildfire in Sudan on August 24, with 5,038 hectares reported by GDACS.",
+      "We do not claim causality. We mark an operational coincidence to monitor.",
+      "In a country fragmented by war, each environmental pressure can affect mobility, shelter, aid and state legitimacy.",
+      "This week, SENTINEL does not confirm three couplings. It confirms the need to look better.",
       "GEOPÓLEM. Welcome to the board."
     ],
+    "cta": "GEOPÓLEM. Bienvenidos al tablero.",
     "hashtags": [
       "#GEOPÓLEM",
       "#SENTINEL",
       "#Sudán",
       "#OSINT",
       "#Geopolítica",
-      "#CrisisHumanitaria"
+      "#ClimaYConflicto"
     ]
   },
-  "mediaPublication": {
-    "status": "published",
-    "publishedAt": "2026-08-27T09:43:48Z",
-    "youtubeLong": {
-      "title": "Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL",
-      "videoId": "TRp6iaLneQU",
-      "url": "https://youtu.be/TRp6iaLneQU",
-      "embedUrl": "https://www.youtube-nocookie.com/embed/TRp6iaLneQU",
-      "format": "16:9",
-      "duration": "6:46"
-    },
-    "youtubeShort": {
-      "title": "Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL #Shorts",
-      "videoId": "fu3QHCGJefo",
-      "url": "https://youtu.be/fu3QHCGJefo",
-      "embedUrl": "https://www.youtube-nocookie.com/embed/fu3QHCGJefo",
-      "format": "9:16",
-      "duration": "1:00",
-      "promotes": "https://youtu.be/TRp6iaLneQU"
-    },
-    "editorialNote": "La publicación mantiene la formulación segura: acople operativo entre conflicto, inundaciones, desplazamiento, infraestructura degradada y rutas humanitarias vulnerables; no afirma causalidad climática directa."
-  },
+  "dataUrl": "./data/sentinel/weekly-brief.json",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-08-24_2026-08-30.json",
   "close": "GEOPÓLEM. Bienvenidos al tablero."
 };
 
