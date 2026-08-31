@@ -1,10 +1,17 @@
 {
   "project": "GEOPÓLEM",
   "collection": "SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "updated_at": "2026-08-24T08:07:00+02:00",
+  "updated_at": "2026-08-31T08:04:00+02:00",
   "latest": "./weekly-brief.json",
   "feed": "./conflict-events.json",
   "items": [
+    {
+      "date": "2026-08-31",
+      "window": "2026-08-24/2026-08-30",
+      "json": "data/sentinel/weekly-brief.json",
+      "markdown": "data/sentinel/weekly-brief-2026-08-31.md",
+      "status": "sin acople significativo confirmado; tres señales en observación"
+    },
     {
       "id": "sentinel_weekly_brief_2026-08-17_2026-08-23",
       "week_iso": "2026-W34",
@@ -81,5 +88,12 @@
         "web_markdown": "./weekly-brief-2026-07-20.md"
       }
     }
-  ]
+  ],
+  "latest_meta": {
+    "date": "2026-08-31",
+    "window": "2026-08-24/2026-08-30",
+    "json": "data/sentinel/weekly-brief.json",
+    "markdown": "data/sentinel/weekly-brief-2026-08-31.md",
+    "status": "sin acople significativo confirmado; tres señales en observación"
+  }
 }
