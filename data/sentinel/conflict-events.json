@@ -2,154 +2,65 @@
   "events": [
     {
       "actors": [
-        "Germany"
+        "Russia"
       ],
-      "domain": "dw.com",
-      "id": "evt_eb24ee69376e3dbb",
+      "domain": "europesun.com",
+      "id": "evt_e3719afdc382fad3",
       "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
+      "matched_regions": [],
       "matched_themes": [
-        "war",
-        "sanction",
-        "sanctions"
-      ],
-      "region": "MENA",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Germany",
-      "tier": "high",
-      "title": "Iran fuel crisis deepens amid war and sanctions",
-      "tone": null,
-      "url": "https://www.dw.com/en/iran-fuel-crisis-deepens-amid-war-and-sanctions/a-78636429"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "patrika.com",
-      "id": "evt_82399f373e7b9eed",
-      "language": "Hindi",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed"
-      ],
-      "region": "MENA",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "US - Iran War : अमेरिकी हमलों में IRGC और बासिज के 7 लड़ाके ढेर , ईरानी संसद स्पीकर बोले - अमेरिका शैतान की तरह कर रहा कत्लेआम | Us Iran War Us Strikes Lavan Island Killed Irgc Basij Fighter",
-      "tone": null,
-      "url": "https://www.patrika.com/world-news/us-iran-war-us-strikes-lavan-island-killed-irgc-basij-fighter-20877719"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "rockymounttelegram.com",
-      "id": "evt_185ec780ec75b442",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
+        "missile",
         "drone",
-        "terror"
-      ],
-      "region": "Eurasia",
-      "score": 7.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "EU Kallas calls alleged Russian drone plot  state sponsored terrorism  as Europe mulls a response",
-      "tone": null,
-      "url": "http://www.rockymounttelegram.com/news/world/eus-kallas-calls-alleged-russian-drone-plot-state-sponsored-terrorism-as-europe-mulls-a-response/article_79d39b6b-c70c-5001-a06c-aecabe1d1674.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wsls.com",
-      "id": "evt_475a641369de9aa8",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "drone",
-        "terror"
-      ],
-      "region": "Eurasia",
-      "score": 7.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "EU Kallas calls alleged Russian drone plot  state sponsored terrorism  as Europe mulls a response",
-      "tone": null,
-      "url": "https://www.wsls.com/news/world/2026/09/02/eus-kallas-calls-alleged-russian-drone-plot-state-sponsored-terrorism-as-europe-mulls-a-response/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kfab.iheart.com",
-      "id": "evt_c1652be93ddcf081",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "killed",
         "attack"
       ],
-      "region": "MENA",
-      "score": 5.5,
+      "region": "Global",
+      "score": 6.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.5,
+        "region": 0.0,
+        "themes": 6.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T104500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran Claims U . S . Attack Killed Civilians At Wedding",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Russia",
+      "tier": "high",
+      "title": "Kuwait Says Air Defenses Intercept Missile , Drone Attacks",
       "tone": null,
-      "url": "https://kfab.iheart.com/content/2026-09-02-iran-claims-us-attack-killed-civilians-at-wedding/"
+      "url": "http://www.europesun.com/news/279283042/kuwait-says-air-defenses-intercept-missile-drone-attacks"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "adn.com",
-      "id": "evt_8837616abaa7789a",
+      "domain": "idahostatejournal.com",
+      "id": "evt_11e5203ff273b688",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "moscow"
+      ],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Eurasia",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Russia to close German cultural centers after Berlin blames Moscow for airport drone plot",
+      "tone": null,
+      "url": "http://www.idahostatejournal.com/news/national/russia-to-close-german-cultural-centers-after-berlin-blames-moscow-for-airport-drone-plot/article_82e4ff20-5072-56d3-ba19-ddd28dac21e0.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "globalpost.com",
+      "id": "evt_242c64d4742b1b5b",
       "language": "English",
       "matched_regions": [
         "russia"
@@ -165,103 +76,77 @@
         "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
+      "seen_date": "20260903T104500Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "Germany blames Russia for drone attack on airport ; EU considers countermeasures",
+      "title": "German Accuses Russia of Leipzig Drone Attack",
       "tone": null,
-      "url": "https://www.adn.com/nation-world/2026/09/02/germany-blames-russia-for-drone-attack-on-airport-eu-considers-countermeasures/"
+      "url": "https://globalpost.com/stories/german-accusation-over-leipzig-drone-attack-escalates-eu-russia-tensions/"
     },
     {
       "actors": [
-        "India"
+        "Germany"
       ],
-      "domain": "hindustantimes.com",
-      "id": "evt_dd8c57e085226c8a",
-      "language": "English",
+      "domain": "kreiszeitung.de",
+      "id": "evt_3ff7da8d1c10483c",
+      "language": "German",
       "matched_regions": [
-        "ukraine"
+        "nato"
       ],
       "matched_themes": [
         "war"
       ],
-      "region": "Europa del Este",
-      "score": 5.0,
+      "region": "Global",
+      "score": 4.5,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 1.5,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "India",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Germany",
       "tier": "medium",
-      "title": "The Ukraine war is intensifying , expanding and stuck",
+      "title": "Experte warnt : NATO nach Sprengstoff - Drohne in Leipzig unvorbereitet",
       "tone": null,
-      "url": "https://www.hindustantimes.com/world-news/the-ukraine-war-is-intensifying-expanding-and-stuck-101788337967627.html"
-    },
-    {
-      "actors": [
-        "Ukraine"
-      ],
-      "domain": "en.interfax.com.ua",
-      "id": "evt_e26f44e7bd75b7fe",
-      "language": "English",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Europa del Este",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T104500Z",
-      "source_country": "Ukraine",
-      "tier": "medium",
-      "title": "Ukraine urges partners to allocate funds for Ukrainian drone purchases from national budgets – Defense Ministry",
-      "tone": null,
-      "url": "https://en.interfax.com.ua/news/general/1197818.html"
+      "url": "http://www.kreiszeitung.de/politik/experte-warnt-nato-nach-sprengstoff-drohne-in-leipzig-unvorbereitet-zr-94473216.html"
     },
     {
       "actors": [
         "India"
       ],
-      "domain": "countercurrents.org",
-      "id": "evt_f83b50ce267f634e",
-      "language": "English",
+      "domain": "prabhasakshi.com",
+      "id": "evt_505ffcf9a17734a9",
+      "language": "Hindi",
       "matched_regions": [
-        "israel",
-        "gaza"
+        "india",
+        "pakistan",
+        "china"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Asia-Pacífico",
       "score": 4.0,
       "score_breakdown": {
         "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T104500Z",
+      "seen_date": "20260903T104500Z",
       "source_country": "India",
       "tier": "medium",
-      "title": "How Israeli propagandists twist UN findings on Gaza hunger",
+      "title": "khagantak 243 india long range glide bomb iaf test china pakistan",
       "tone": null,
-      "url": "https://countercurrents.org/2026/09/how-israeli-propagandists-twist-un-findings-on-gaza-hunger/"
+      "url": "https://www.prabhasakshi.com/currentaffairs/khagantak-243-india-long-range-glide-bomb-iaf-test-china-pakistan"
     },
     {
       "actors": [
-        "Dominican Republic"
+        "Pakistan"
       ],
-      "domain": "acento.com.do",
-      "id": "evt_d4acb94e160e7f55",
-      "language": "Spanish",
+      "domain": "samaa.tv",
+      "id": "evt_12eec34f09adbf24",
+      "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "drone",
+        "killed",
         "terror"
       ],
       "region": "Global",
@@ -271,78 +156,25 @@
         "themes": 4.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Dominican Republic",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Pakistan",
       "tier": "medium",
-      "title": "Putin califica de  terrorismo  advertencia de Zelenski sobre  drones ucranianos en cielo ruso",
+      "title": "15 terrorists killed in North Waziristan operation",
       "tone": null,
-      "url": "https://acento.com.do/rfi/putin-califica-de-terrorismo-advertencia-de-zelenski-sobre-drones-ucranianos-en-cielo-ruso-9746448.html"
+      "url": "https://www.samaa.tv/2087356205-15-terrorists-killed-as-forces-foil-infiltration-bid-in-north-waziristan"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "kaok.com",
-      "id": "evt_ff519119264905c9",
+      "domain": "mankatofreepress.com",
+      "id": "evt_86c0cbda1882d434",
       "language": "English",
       "matched_regions": [
         "iran"
       ],
       "matched_themes": [
-        "fighting"
-      ],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran Fires on Gulf Nations as Fighting With US Intensifies",
-      "tone": null,
-      "url": "https://www.kaok.com/2026/09/02/iran-fires-on-gulf-nations-as-fighting-with-us-intensifies/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "aol.co.uk",
-      "id": "evt_dace59acaaa18008",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T104500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Russian airspace becoming unsafe for commercial airlines , Zelenskyy says",
-      "tone": null,
-      "url": "https://www.aol.co.uk/articles/russian-airspace-becoming-unsafe-commercial-101810000.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wncw.org",
-      "id": "evt_bd39e0e659dcb3f8",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "strike"
+        "attack"
       ],
       "region": "MENA",
       "score": 3.5,
@@ -351,50 +183,23 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
+      "seen_date": "20260903T104500Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "U . S . military strikes Iran , while Trump vows more for Tehran retaliation",
+      "title": "Iran targets US allies in Gulf after overnight attacks , and other Mideast news",
       "tone": null,
-      "url": "https://www.wncw.org/2026-09-02/u-s-military-strikes-iran-while-trump-vows-more-for-tehrans-retaliation"
+      "url": "https://www.mankatofreepress.com/news/state_national_news/iran-targets-us-allies-in-gulf-after-overnight-attacks-and-other-mideast-news/article_fec2b7d2-1e84-5675-ac27-3f381b2865e6.html"
     },
     {
       "actors": [
-        "United States"
+        "Turkey"
       ],
-      "domain": "wsls.com",
-      "id": "evt_85ef8e10cbb93127",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran fires on its Gulf neighbors after US military strikes Iran after a monthlong lull",
-      "tone": null,
-      "url": "https://www.wsls.com/news/world/2026/09/02/iran-fires-on-gulf-neighbors-despite-trumps-threats-to-escalate-us-attacks/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wdiy.org",
-      "id": "evt_07d8f7c4246e37fc",
+      "domain": "aa.com.tr",
+      "id": "evt_ab18a8f70cb81730",
       "language": "English",
       "matched_regions": [
         "israel",
-        "palestin"
+        "lebanon"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -404,25 +209,25 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United States",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Turkey",
       "tier": "medium",
-      "title": "Israel bars U . S . citizens over criticism and ties to Palestinian activists , lawyers say",
+      "title": "Israeli forces shell southern Lebanon , stage incursions with tanks , bulldozers",
       "tone": null,
-      "url": "https://www.wdiy.org/npr-news/2026-09-02/israel-bars-u-s-citizens-over-criticism-and-ties-to-palestinian-activists-lawyers-say"
+      "url": "https://aa.com.tr/en/middle-east/israeli-forces-shell-southern-lebanon-stage-incursions-with-tanks-bulldozers/4045981"
     },
     {
       "actors": [
-        "United States"
+        "Russia"
       ],
-      "domain": "adn.com",
-      "id": "evt_f9619a90421ec9e1",
+      "domain": "europesun.com",
+      "id": "evt_28f3f148ba58398d",
       "language": "English",
       "matched_regions": [
         "iran"
       ],
       "matched_themes": [
-        "strike"
+        "attack"
       ],
       "region": "MENA",
       "score": 3.5,
@@ -431,195 +236,150 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United States",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Russia",
       "tier": "medium",
-      "title": "Iran fires on Gulf neighbors after fresh US military strikes",
+      "title": "Iran Claims Attacks On US Bases In Kuwait , UAE",
       "tone": null,
-      "url": "https://www.adn.com/nation-world/2026/09/02/iran-fires-on-gulf-neighbors-after-fresh-us-military-strikes/"
+      "url": "http://www.europesun.com/news/279283322/iran-claims-attacks-on-us-bases-in-kuwait-uae"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "la-croix.com",
+      "id": "evt_42585da3066990ec",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [
+        "sanction"
+      ],
+      "region": "Europa del Este",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "France",
+      "tier": "medium",
+      "title": "Guerre en Ukraine  : Moscou sanctionne Berlin  ; lONU appelle à protéger les avions civils",
+      "tone": null,
+      "url": "https://www.la-croix.com/international/ukraine-russie-jour-1650-point-conflit-ukrainien-poutine-aujourdhui-20260903"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "houstonpublicmedia.org",
-      "id": "evt_8290bd88d16d2be2",
+      "domain": "oklahomastar.com",
+      "id": "evt_49d9799c2ee663ec",
       "language": "English",
       "matched_regions": [
-        "israel",
-        "palestin"
+        "iran"
       ],
-      "matched_themes": [],
+      "matched_themes": [
+        "attack"
+      ],
       "region": "MENA",
       "score": 3.5,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
+        "region": 2.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
+      "seen_date": "20260903T104500Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "Israel bars U . S . citizens over criticism and ties to Palestinian activists , lawyers say",
+      "title": "Iran Claims Attacks On US Bases In Kuwait , UAE",
       "tone": null,
-      "url": "https://www.houstonpublicmedia.org/npr/2026/09/02/nx-s1-5950449/israel-bars-u-s-citizens-over-criticism-and-ties-to-palestinian-activists-lawyers-say/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "bucksfreepress.co.uk",
-      "id": "evt_2e1a405f0cae64fb",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Some airlines will  struggle to survive  if oil prices stay high , warns Ryanair",
-      "tone": null,
-      "url": "https://www.bucksfreepress.co.uk/news/national/26514107.airlines-will-struggle-survive-oil-prices-stay-high-warns-ryanair/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "thecomet.net",
-      "id": "evt_435c8e8d7113beb8",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Some airlines will  struggle to survive  if oil prices stay high , warns Ryanair",
-      "tone": null,
-      "url": "https://www.thecomet.net/news/national/26514107.airlines-will-struggle-survive-oil-prices-stay-high-warns-ryanair/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "midweekherald.co.uk",
-      "id": "evt_c36f3a6245688457",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Some airlines will  struggle to survive  if oil prices stay high , warns Ryanair",
-      "tone": null,
-      "url": "https://www.midweekherald.co.uk/news/national/26514107.airlines-will-struggle-survive-oil-prices-stay-high-warns-ryanair/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "somersetlive.co.uk",
-      "id": "evt_8703f1be6ba611ef",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "When to quit a relationship - six warning signs the romance is fading",
-      "tone": null,
-      "url": "https://www.somersetlive.co.uk/news/uk-world-news/warning-signs-relationship-trouble-tendendo-11138287"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "southwalesargus.co.uk",
-      "id": "evt_34b476663d657d72",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Some airlines will  struggle to survive  if oil prices stay high , warns Ryanair",
-      "tone": null,
-      "url": "https://www.southwalesargus.co.uk/news/national/26514107.airlines-will-struggle-survive-oil-prices-stay-high-warns-ryanair/"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "oneindia.com",
-      "id": "evt_2a0ad0384bb17910",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "From Defeated Power to Missile Power : Why Japan Is Rebuilding Its Military",
-      "tone": null,
-      "url": "https://www.oneindia.com/featured/from-defeated-power-to-missile-power-why-japan-is-rebuilding-its-military-8193589.html"
+      "url": "http://www.oklahomastar.com/news/279283322/iran-claims-attacks-on-us-bases-in-kuwait-uae"
     },
     {
       "actors": [
         "Syria"
       ],
-      "domain": "naharnet.com",
-      "id": "evt_997d22e1d83d9bf8",
+      "domain": "sana.sy",
+      "id": "evt_7d49c267093903f2",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "Syria",
+      "tier": "medium",
+      "title": "Guterres voices deep concern over renewed U . S .- Iran strikes , urges immediate halt",
+      "tone": null,
+      "url": "https://sana.sy/en/international/2340126/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "theguardian.com",
+      "id": "evt_b94052b3f874f20b",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Housebuilder Crest Nicholson warns of annual loss in  subdued  property market | Construction industry",
+      "tone": null,
+      "url": "https://www.theguardian.com/business/2026/sep/03/housebuilder-crest-nicholson-warns-of-annual-loss-subdued-property-market"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "aa.com.tr",
+      "id": "evt_5b9184d61d8129b8",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "Turkey",
+      "tier": "monitor",
+      "title": "Russia to shut Goethe - Institut branches in response to German move : Lavrov",
+      "tone": null,
+      "url": "https://aa.com.tr/en/eurasia/russia-to-shut-goethe-institut-branches-in-response-to-german-move-lavrov/4045965"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wbaltv.com",
+      "id": "evt_edb68d27f466fdc5",
       "language": "English",
       "matched_regions": [
         "china"
@@ -632,44 +392,44 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T104500Z",
-      "source_country": "Syria",
+      "seen_date": "20260903T104500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Bessent says 19 ministers agreed to address  cheap export but China dissented",
+      "title": "US journalist sentenced for acting as an illegal agent for China",
       "tone": null,
-      "url": "https://www.naharnet.com:443/stories/en/322208-bessent-says-19-ministers-agreed-to-address-cheap-exports-but-china-dissented"
+      "url": "https://www.wbaltv.com/article/american-journalist-sentenced-foreign-agent-chinese-government/73602262"
     },
     {
       "actors": [
-        "Germany"
+        "Indonesia"
       ],
-      "domain": "kreiszeitung.de",
-      "id": "evt_d111d37f6c4b7ea2",
-      "language": "German",
+      "domain": "antaranews.com",
+      "id": "evt_8d6aa0ef471ffda4",
+      "language": "Indonesian",
       "matched_regions": [
-        "china"
+        "iran"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
+      "region": "MENA",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T104500Z",
-      "source_country": "Germany",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Indonesia",
       "tier": "monitor",
-      "title": "Spionieren COSCO - Schiffe Militärsignale für China aus ?",
+      "title": "AS desak negara - negara hentikan perdagangan dengan Iran",
       "tone": null,
-      "url": "http://www.kreiszeitung.de/politik/spionieren-cosco-schiffe-militaersignale-fuer-china-aus-zr-94471325.html"
+      "url": "https://www.antaranews.com/berita/5724549/as-desak-negara-negara-hentikan-perdagangan-dengan-iran"
     },
     {
       "actors": [
-        "Romania"
+        "Moldova"
       ],
-      "domain": "cursdeguvernare.ro",
-      "id": "evt_119fa8cf09a606ca",
+      "domain": "moldova-suverana.md",
+      "id": "evt_c5bfa45ec9c0b0b0",
       "language": "Romanian",
       "matched_regions": [],
       "matched_themes": [
@@ -682,19 +442,94 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T104500Z",
-      "source_country": "Romania",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Moldova",
       "tier": "monitor",
-      "title": "Germania nominalizează oficial Rusia pentru tentativa de atentat cu drone de pe aeroportul Leipzig și închide consulatul rus de la Bonn . Ministrul de interne : „ Nu este un eveniment izolat",
+      "title": "ATACURILE DIN MAREA NEAGRĂ DETERMINĂ NAVELE SĂ IA MĂSURI DE APĂRARE IMPROVIZATE ÎMPOTRIVA DRONELOR",
       "tone": null,
-      "url": "https://cursdeguvernare.ro/germania-acuzatie-rusia-responsabilitate-incident-drone-aeroport-leipzig.html"
+      "url": "https://moldova-suverana.md/article/atacurile-din-marea-neagr-determin-navele-s-ia-msuri-de-aprare-improvizate-mpotriva-dronelor_56738"
     },
     {
       "actors": [
-        "Israel"
+        "United States"
       ],
-      "domain": "forward.com",
-      "id": "evt_622855f992684c5e",
+      "domain": "kmbc.com",
+      "id": "evt_afb6a6af5ce1bbaf",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "US journalist sentenced for acting as an illegal agent for China",
+      "tone": null,
+      "url": "https://www.kmbc.com/article/american-journalist-sentenced-foreign-agent-chinese-government/73602262"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wgal.com",
+      "id": "evt_5c94a0295eca290c",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "US journalist sentenced for acting as an illegal agent for China",
+      "tone": null,
+      "url": "https://www.wgal.com/article/american-journalist-sentenced-foreign-agent-chinese-government/73602262"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "la-croix.com",
+      "id": "evt_b675abbcf971f0fd",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Guerre en Ukraine  : Volodymyr Zelensky peut - il fermer le ciel russe  ?",
+      "tone": null,
+      "url": "https://www.la-croix.com/international/guerre-en-ukraine-volodymyr-zelensky-peut-il-fermer-le-ciel-russe-20260903"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "aa.com.tr",
+      "id": "evt_a5e723cbd6e6c72d",
       "language": "English",
       "matched_regions": [
         "israel"
@@ -707,20 +542,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T104500Z",
-      "source_country": "Israel",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Turkey",
       "tier": "monitor",
-      "title": "Vance meets with Temple Israel rabbi on Michigan visit",
+      "title": "Military production cannot be the answer : Critics slam Volkswagen defense plan with Israel Rafael",
       "tone": null,
-      "url": "https://forward.com/fast-forward/847964/vance-meets-with-temple-israel-rabbi-on-michigan-visit/"
+      "url": "https://aa.com.tr/en/europe/-military-production-cannot-be-the-answer-critics-slam-volkswagen-s-defense-plan-with-israel-s-rafael/4046077"
     },
     {
       "actors": [
-        "Bangladesh"
+        "Albania"
       ],
-      "domain": "bssnews.net",
-      "id": "evt_0663290db316b7b7",
-      "language": "English",
+      "domain": "botasot.info",
+      "id": "evt_0cb390d03fc8f86e",
+      "language": "Albanian",
       "matched_regions": [
         "iran"
       ],
@@ -732,20 +567,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T104500Z",
-      "source_country": "Bangladesh",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Albania",
       "tier": "monitor",
-      "title": "Dhaka Mecca Pact stance doesnt worry Iran : envoy",
+      "title": "Irani synon shtrëngimin e kontrollit mbi internetin",
       "tone": null,
-      "url": "https://www.bssnews.net/news/420354"
+      "url": "https://www.botasot.info/azia-bota/2523756/irani-synon-shtrengimin-e-kontrollit-mbi-internetin/"
     },
     {
       "actors": [
-        "Germany"
+        "United Kingdom"
       ],
-      "domain": "finanzen.net",
-      "id": "evt_f45590835878f0d2",
-      "language": "German",
+      "domain": "huffingtonpost.co.uk",
+      "id": "evt_3b382bef79988345",
+      "language": "English",
       "matched_regions": [
         "russia"
       ],
@@ -757,20 +592,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Germany",
+      "seen_date": "20260903T104500Z",
+      "source_country": "United Kingdom",
       "tier": "monitor",
-      "title": "BVB - Aktie dennoch schwächer : Borussia Dortmund startet mit 5 : 0 in den DFB - Pokal",
+      "title": "Diane Abbott Keeps Labour Whip After Russia Comments",
       "tone": null,
-      "url": "https://www.finanzen.net/nachricht/aktien/medienbericht-bvb-aktie-dennoch-tiefer-5-0-sieg-im-pokal-dortmund-macht-erste-huerde-sicher-15913066"
+      "url": "https://www.huffingtonpost.co.uk/entry/diane-abbott-will-not-lose-labour-whip_uk_6a992db6e4b0e51a2d916651"
     },
     {
       "actors": [
-        "Tunisia"
+        "Vietnam"
       ],
-      "domain": "africanmanager.com",
-      "id": "evt_d96e6b841e8b0b5f",
-      "language": "French",
+      "domain": "anninhthudo.vn",
+      "id": "evt_aa6228271c28a378",
+      "language": "Vietnamese",
       "matched_regions": [
         "iran"
       ],
@@ -782,219 +617,44 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Tunisia",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "LIran promet une riposte décisive à de nouvelles frappes américaines , mardi",
+      "title": "Iran tập kích Kuwait để trả đũa Mỹ trong căng thẳng Trung Đông",
       "tone": null,
-      "url": "https://africanmanager.com/liran-promet-une-riposte-decisive-a-de-nouvelles-frappes-americaines-mardi/"
+      "url": "https://anninhthudo.vn/iran-phong-ten-lua-uav-tap-kich-kuwait-de-tra-dua-my-post665866.antd"
     },
     {
       "actors": [
-        "Romania"
+        "Austria"
       ],
-      "domain": "jurnalul.ro",
-      "id": "evt_b31447334dc3c740",
-      "language": "Romanian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "Alianță periculoasă : cum a ajutat Rusia , în secret , Iranul să construiască rachete de croazieră supersonice",
-      "tone": null,
-      "url": "https://jurnalul.ro/stiri/externe/alianta-periculoasa-ajutat-rusia-secret-iran-constructie-rachete-croaziera-supersonice-1043153.html"
-    },
-    {
-      "actors": [
-        "China"
-      ],
-      "domain": "german.china.org.cn",
-      "id": "evt_fbde6754aea3294f",
+      "domain": "sn.at",
+      "id": "evt_fab72de4eaac6712",
       "language": "German",
       "matched_regions": [
-        "china"
+        "venezuela"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
+      "region": "América Latina",
+      "score": 1.5,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "China",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Austria",
       "tier": "monitor",
-      "title": "China stärkt die Stimme des Globalen Südens <span style=  color : rgb ( 247 , 150 , 70 ); font - size : 14px ; ><em><strong>Exklusiv< / strong>< / em>< / span> _ China . org . cn",
+      "title": "US - Energieminister nennt Öl - Deals mit Venezuela  historisch",
       "tone": null,
-      "url": "http://german.china.org.cn/txt/2026-09/02/content_118677229.htm"
+      "url": "https://www.sn.at/wirtschaft/welt/us-energieminister-nennt-oel-deals-mit-venezuela-historisch-art-670964"
     },
     {
       "actors": [
-        "Indonesia"
+        "United States"
       ],
-      "domain": "liputan6.com",
-      "id": "evt_b68f6fb7865e1197",
-      "language": "Indonesian",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Indonesia",
-      "tier": "monitor",
-      "title": "Menkeu AS : China Keberatan Soal Ekspor Murah Tak Berkelanjutan",
-      "tone": null,
-      "url": "https://www.liputan6.com/bisnis/read/8283156/menkeu-as-china-keberatan-soal-ekspor-murah-tak-berkelanjutan"
-    },
-    {
-      "actors": [
-        "Tunisia"
-      ],
-      "domain": "africanmanager.com",
-      "id": "evt_114aa4629b9ae8fa",
-      "language": "French",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Tunisia",
-      "tier": "monitor",
-      "title": "Guerre en Iran : Trump narrive pas à faire plier la Chine",
-      "tone": null,
-      "url": "https://africanmanager.com/guerre-en-iran-trump-narrive-pas-a-faire-plier-la-chine/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "handelsblatt.com",
-      "id": "evt_0e4a03c567788df6",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Iran - Krieg : Zwei Tanker fahren auf Seeminen , meldet der Iran",
-      "tone": null,
-      "url": "https://www.handelsblatt.com/politik/international/iran-krieg-zwei-tanker-fahren-auf-seeminen-meldet-der-iran/100136895.html"
-    },
-    {
-      "actors": [
-        "Serbia"
-      ],
-      "domain": "novosti.rs",
-      "id": "evt_382937f0258c20ed",
-      "language": "Bosnian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Serbia",
-      "tier": "monitor",
-      "title": "Iran nastavlja napade dronovima na američke baze u Bahreinu i UAE",
-      "tone": null,
-      "url": "https://www.novosti.rs/planeta/svet/1644215/iran-staje-meti-americke-baze-uae-bahreinu-najavljeni-novi-napadi"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "merkur.de",
-      "id": "evt_dff56fe6db9eae30",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Ukraine - Krieg : Modi fordert Putin zum Ende des Krieges auf",
-      "tone": null,
-      "url": "http://www.merkur.de/politik/putins-verbuendeter-modi-fordert-ihn-auf-den-endlosen-krieg-im-namen-der-menschheit-zu-beenden-zr-94471296.html"
-    },
-    {
-      "actors": [
-        "Switzerland"
-      ],
-      "domain": "gmx.ch",
-      "id": "evt_74ff2aad1cfe218d",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Switzerland",
-      "tier": "monitor",
-      "title": "Ermittlungen wegen Terrorismus nach Angriff auf Umspannwerk in Brandenburg",
-      "tone": null,
-      "url": "https://www.gmx.ch/magazine/politik/inland/ermittlungen-terrorismus-angriff-umspannwerk-brandenburg-42679692"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "moneycontrol.com",
-      "id": "evt_d32234ef0bc4be67",
+      "domain": "wflaorlando.iheart.com",
+      "id": "evt_5d2fcecec8d81759",
       "language": "English",
       "matched_regions": [
         "venezuela"
@@ -1007,45 +667,45 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "India",
+      "seen_date": "20260903T104500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "ONGC reviews assets in Venezuela after US green light",
+      "title": "Chevron To Double Oil Production In Venezuela | Newsradio WFLA Orlando",
       "tone": null,
-      "url": "https://www.moneycontrol.com/news/business/companies/ongc-reviews-assets-in-venezuela-after-us-green-light-14020895.html"
+      "url": "https://wflaorlando.iheart.com/content/2026-09-03-chevron-to-double-oil-production-in-venezuela/"
     },
     {
       "actors": [
-        "Serbia"
+        "Nigeria"
       ],
-      "domain": "novosti.rs",
-      "id": "evt_433cc8775ef43825",
-      "language": "Serbian",
+      "domain": "fr.allafrica.com",
+      "id": "evt_3c3ffce8c62fdae1",
+      "language": "French",
       "matched_regions": [
-        "nato"
+        "niger"
       ],
       "matched_themes": [],
-      "region": "Global",
+      "region": "Sahel",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Serbia",
+      "seen_date": "20260903T104500Z",
+      "source_country": "Nigeria",
       "tier": "monitor",
-      "title": "NATO planira udare na ruske aerodrome , fabrike i železnicu",
+      "title": "Niger : Les États de la sous - région et la France soupçonnés davoir soutenu la mutinerie",
       "tone": null,
-      "url": "https://www.novosti.rs/planeta/svet/1644190/moskva-upozorava-opasnu-eskalaciju-nato-sprema-udar-rusiju-evo-sta-sve-nisanu"
+      "url": "https://fr.allafrica.com/stories/202609030201.html"
     },
     {
       "actors": [
-        "Dominican Republic"
+        "United States"
       ],
-      "domain": "acento.com.do",
-      "id": "evt_a7c5b97e7dc95deb",
-      "language": "Spanish",
+      "domain": "wtam.iheart.com",
+      "id": "evt_83560d4fb93f6e57",
+      "language": "English",
       "matched_regions": [
         "venezuela"
       ],
@@ -1057,12 +717,87 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260902T101500Z",
-      "source_country": "Dominican Republic",
+      "seen_date": "20260903T104500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Venezuela : el secretario de Energía de EEUU , en Caracas para negociar el acuerdo petrolero",
+      "title": "Chevron To Double Oil Production In Venezuela | Newsradio WTAM 1100",
       "tone": null,
-      "url": "https://acento.com.do/rfi/venezuela-el-secretario-de-energia-de-eeuu-en-caracas-para-negociar-el-acuerdo-petrolero-9746454.html"
+      "url": "https://wtam.iheart.com/content/2026-09-03-chevron-to-double-oil-production-in-venezuela/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "theguardian.com",
+      "id": "evt_6f29629920307b04",
+      "language": "English",
+      "matched_regions": [
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "The US and Venezuela : a century - old relationship drenched in oil",
+      "tone": null,
+      "url": "https://www.theguardian.com/world/2026/sep/03/us-venezuela-visual-look-century-old-relationship-drenched-in-oil"
+    },
+    {
+      "actors": [
+        "Sweden"
+      ],
+      "domain": "dagensps.se",
+      "id": "evt_6c00f6a1a3e8c8c4",
+      "language": "Swedish",
+      "matched_regions": [
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "Sweden",
+      "tier": "monitor",
+      "title": "Glädjefnatt i bortglömda aktier i Hormuzkrisen – är du vinnare ?",
+      "tone": null,
+      "url": "https://www.dagensps.se/varlden/gladjefnatt-i-bortglomda-aktier-i-hormuzkrisen-ar-du-vinnare/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "jewishworldreview.com",
+      "id": "evt_764c9e405c58d8dd",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260903T104500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Abdul El - Sayed unlimited attack potential",
+      "tone": null,
+      "url": "https://jewishworldreview.com/0926/phillips090326.php"
     }
   ],
   "filters": {
@@ -1076,13 +811,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-09-02T11:23:53Z",
+  "generated_at": "2026-09-03T11:16:23Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 4,
-    "medium": 13,
-    "monitor": 24
+    "high": 1,
+    "medium": 11,
+    "monitor": 19
   },
-  "total_events": 41
+  "total_events": 31
 }
