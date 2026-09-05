@@ -2,152 +2,463 @@
   "events": [
     {
       "actors": [
-        "Russia"
+        "Turkey"
       ],
-      "domain": "europesun.com",
-      "id": "evt_e3719afdc382fad3",
+      "domain": "aa.com.tr",
+      "id": "evt_ff15017a98b54c74",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "drone",
-        "attack"
+      "matched_regions": [
+        "iran",
+        "iranian"
       ],
-      "region": "Global",
+      "matched_themes": [
+        "missile"
+      ],
+      "region": "MENA",
       "score": 6.0,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 6.0,
+        "region": 3.5,
+        "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Russia",
+      "seen_date": "20260905T100000Z",
+      "source_country": "Turkey",
       "tier": "high",
-      "title": "Kuwait Says Air Defenses Intercept Missile , Drone Attacks",
+      "title": "US missile hits Iranian oil tanker near Kharg Island : Report",
       "tone": null,
-      "url": "http://www.europesun.com/news/279283042/kuwait-says-air-defenses-intercept-missile-drone-attacks"
+      "url": "https://aa.com.tr/en/middle-east/us-missile-hits-iranian-oil-tanker-near-kharg-island-report/4047983"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "idahostatejournal.com",
-      "id": "evt_11e5203ff273b688",
+      "domain": "bozemandailychronicle.com",
+      "id": "evt_63b306c581203a2d",
       "language": "English",
       "matched_regions": [
+        "ukraine",
         "russia",
+        "russian",
+        "kyiv",
         "moscow"
       ],
       "matched_themes": [
-        "drone"
+        "attack"
       ],
-      "region": "Eurasia",
+      "region": "Europa del Este",
       "score": 5.5,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 2.0,
+        "region": 4.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
+      "seen_date": "20260905T100000Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "Russia to close German cultural centers after Berlin blames Moscow for airport drone plot",
+      "title": "Russian attacks kill 4 in Ukraine as Moscow and Kyiv prepare for visit by US envoys",
       "tone": null,
-      "url": "http://www.idahostatejournal.com/news/national/russia-to-close-german-cultural-centers-after-berlin-blames-moscow-for-airport-drone-plot/article_82e4ff20-5072-56d3-ba19-ddd28dac21e0.html"
+      "url": "http://www.bozemandailychronicle.com/wire/news/russian-attacks-kill-4-in-ukraine-as-moscow-and-kyiv-prepare-for-visit-by-us/article_f6c63098-2c1d-5c54-96ff-388543112da3.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "globalpost.com",
-      "id": "evt_242c64d4742b1b5b",
+      "domain": "postregister.com",
+      "id": "evt_aac335e6f89cc7ce",
       "language": "English",
       "matched_regions": [
-        "russia"
+        "ukraine",
+        "russia",
+        "russian",
+        "kyiv",
+        "moscow"
       ],
       "matched_themes": [
-        "drone",
         "attack"
       ],
-      "region": "Eurasia",
+      "region": "Europa del Este",
       "score": 5.5,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.5,
+        "region": 4.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
+      "seen_date": "20260905T100000Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "German Accuses Russia of Leipzig Drone Attack",
+      "title": "Russian attacks kill 4 in Ukraine as Moscow and Kyiv prepare for visit by US envoys",
       "tone": null,
-      "url": "https://globalpost.com/stories/german-accusation-over-leipzig-drone-attack-escalates-eu-russia-tensions/"
+      "url": "http://www.postregister.com/news/national/russian-attacks-kill-4-in-ukraine-as-moscow-and-kyiv-prepare-for-visit-by-us/article_21f24417-fb9a-5038-a5be-fb3f7b953609.html"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "wiltshiretimes.co.uk",
+      "id": "evt_699402435d5a6eb6",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Europa del Este",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "More deadly Russian attacks in Ukraine ahead of US envoy visit",
+      "tone": null,
+      "url": "https://www.wiltshiretimes.co.uk/news/national/26524777.deadly-russian-attacks-ukraine-ahead-us-envoys-visit/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "wimbledonguardian.co.uk",
+      "id": "evt_cdb4c9c5b85a17e2",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Europa del Este",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "More deadly Russian attacks in Ukraine ahead of US envoy visit",
+      "tone": null,
+      "url": "https://www.wimbledonguardian.co.uk/news/national/26524777.deadly-russian-attacks-ukraine-ahead-us-envoys-visit/"
+    },
+    {
+      "actors": [
+        "Canada"
+      ],
+      "domain": "wellandtribune.ca",
+      "id": "evt_ca22485158820280",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "lebanon",
+        "hezbollah"
+      ],
+      "matched_themes": [
+        "ceasefire"
+      ],
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Canada",
+      "tier": "medium",
+      "title": "Months after ceasefire , Israel and Hezbollah battle over a strategic hill in Lebanon",
+      "tone": null,
+      "url": "https://www.wellandtribune.ca/news/world/middle-east/months-after-ceasefire-israel-and-hezbollah-battle-over-a-strategic-hill-in-lebanon/article_29fa6926-fec6-5249-8545-8e3fe8640f5b.html"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "cambstimes.co.uk",
+      "id": "evt_466d8b346617204e",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Chancellor warns of tough Budget because of economic impact of Iran war",
+      "tone": null,
+      "url": "https://www.cambstimes.co.uk/news/national/26524674.chancellor-warns-tough-budget-economic-impact-iran-war/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "burnhamandhighbridgeweeklynews.co.uk",
+      "id": "evt_7bdab7b37291ffcd",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Chancellor warns of tough Budget because of economic impact of Iran war",
+      "tone": null,
+      "url": "https://www.burnhamandhighbridgeweeklynews.co.uk/news/national/26524674.chancellor-warns-tough-budget-economic-impact-iran-war/"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "kreiszeitung.de",
-      "id": "evt_3ff7da8d1c10483c",
+      "domain": "drweb.de",
+      "id": "evt_b4434f0e0a6f3db2",
       "language": "German",
       "matched_regions": [
-        "nato"
+        "china"
       ],
       "matched_themes": [
         "war"
       ],
-      "region": "Global",
-      "score": 4.5,
+      "region": "Asia-Pacífico",
+      "score": 5.0,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 2.0,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
+      "seen_date": "20260905T100000Z",
       "source_country": "Germany",
       "tier": "medium",
-      "title": "Experte warnt : NATO nach Sprengstoff - Drohne in Leipzig unvorbereitet",
+      "title": "Chinas Autoexporte : Warum reguliert Peking die Preise ?",
       "tone": null,
-      "url": "http://www.kreiszeitung.de/politik/experte-warnt-nato-nach-sprengstoff-drohne-in-leipzig-unvorbereitet-zr-94473216.html"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "prabhasakshi.com",
-      "id": "evt_505ffcf9a17734a9",
-      "language": "Hindi",
-      "matched_regions": [
-        "india",
-        "pakistan",
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "khagantak 243 india long range glide bomb iaf test china pakistan",
-      "tone": null,
-      "url": "https://www.prabhasakshi.com/currentaffairs/khagantak-243-india-long-range-glide-bomb-iaf-test-china-pakistan"
+      "url": "https://www.drweb.de/china-autoexporte-preiskrieg-regeln/"
     },
     {
       "actors": [
         "Pakistan"
       ],
-      "domain": "samaa.tv",
-      "id": "evt_12eec34f09adbf24",
+      "domain": "arynews.tv",
+      "id": "evt_dc6228c91ad5e6b2",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Pakistan",
+      "tier": "medium",
+      "title": "Iran War 2026 - LIVE UPDATES",
+      "tone": null,
+      "url": "https://arynews.tv/news/liveblog/iran-war-2026-live-updates-trump-us-israel?update=05-Sep-2026-13-59-00"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "hertsad.co.uk",
+      "id": "evt_d0fd36a44768ba57",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Chancellor warns of tough Budget because of economic impact of Iran war",
+      "tone": null,
+      "url": "https://www.hertsad.co.uk/news/national/26524674.chancellor-warns-tough-budget-economic-impact-iran-war/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "bicesteradvertiser.net",
+      "id": "evt_1b2b7793d67bbbda",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Chancellor warns of tough Budget because of economic impact of Iran war",
+      "tone": null,
+      "url": "https://www.bicesteradvertiser.net/news/national/26524674.chancellor-warns-tough-budget-economic-impact-iran-war/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "swindonadvertiser.co.uk",
+      "id": "evt_bd97a366046b4491",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Chancellor warns of tough Budget because of economic impact of Iran war",
+      "tone": null,
+      "url": "https://www.swindonadvertiser.co.uk/news/national/26524674.chancellor-warns-tough-budget-economic-impact-iran-war/"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "rtl.fr",
+      "id": "evt_1f6ebec342ca859c",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [
+        "coup"
+      ],
+      "region": "Europa del Este",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "France",
+      "tier": "medium",
+      "title": "Couper le robinet  de laide à lUkraine : le RN dans lembarras après la proposition polémique de Louis Aliot",
+      "tone": null,
+      "url": "https://www.rtl.fr/actu/politique/couper-le-robinet-de-l-aide-a-l-ukraine-le-rn-dans-l-embarras-apres-la-proposition-polemique-de-louis-aliot-7900669145"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "orovillemr.com",
+      "id": "evt_e6f7ab24b7c5e2fc",
+      "language": "English",
+      "matched_regions": [
+        "cuba"
+      ],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "América Latina",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "US hits Cuba with new sanctions as island crises multiply",
+      "tone": null,
+      "url": "https://www.orovillemr.com/2026/09/03/cuba-new-sanctions/"
+    },
+    {
+      "actors": [
+        "Canada"
+      ],
+      "domain": "lapresse.ca",
+      "id": "evt_5a06315c14bafd1a",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Europa del Este",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Canada",
+      "tier": "medium",
+      "title": "Ukraine |  Sous les drones sans répit",
+      "tone": null,
+      "url": "https://www.lapresse.ca/international/europe/2026-09-05/ukraine/sous-les-drones-sans-repit.php"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "aninews.in",
+      "id": "evt_d6f7fda395e74143",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "killed",
-        "terror"
+        "clash",
+        "blockade"
       ],
       "region": "Global",
       "score": 4.0,
@@ -156,180 +467,45 @@
         "themes": 4.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Pakistan",
+      "seen_date": "20260905T100000Z",
+      "source_country": "India",
       "tier": "medium",
-      "title": "15 terrorists killed in North Waziristan operation",
+      "title": "Tripura blockade turns violent : Protesters clash with police over sick patient passage",
       "tone": null,
-      "url": "https://www.samaa.tv/2087356205-15-terrorists-killed-as-forces-foil-infiltration-bid-in-north-waziristan"
+      "url": "https://aninews.in/news/national/general-news/tripura-blockade-turns-violent-protesters-clash-with-police-over-sick-patients-passage20260905145757/"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "leadership.ng",
+      "id": "evt_78eb42455bd6d743",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror",
+        "troops"
+      ],
+      "region": "Global",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Nigeria",
+      "tier": "medium",
+      "title": "Troops Destroy Terrorist Health Facility , Neutralise 1 , Recover 4 Motorcycles In North West Forest",
+      "tone": null,
+      "url": "https://leadership.ng/troops-destroy-terrorists-health-facility-neutralise-1-recover-4-motorcycles-in-north-west-forest/"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "mankatofreepress.com",
-      "id": "evt_86c0cbda1882d434",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran targets US allies in Gulf after overnight attacks , and other Mideast news",
-      "tone": null,
-      "url": "https://www.mankatofreepress.com/news/state_national_news/iran-targets-us-allies-in-gulf-after-overnight-attacks-and-other-mideast-news/article_fec2b7d2-1e84-5675-ac27-3f381b2865e6.html"
-    },
-    {
-      "actors": [
-        "Turkey"
-      ],
-      "domain": "aa.com.tr",
-      "id": "evt_ab18a8f70cb81730",
-      "language": "English",
-      "matched_regions": [
-        "israel",
-        "lebanon"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Turkey",
-      "tier": "medium",
-      "title": "Israeli forces shell southern Lebanon , stage incursions with tanks , bulldozers",
-      "tone": null,
-      "url": "https://aa.com.tr/en/middle-east/israeli-forces-shell-southern-lebanon-stage-incursions-with-tanks-bulldozers/4045981"
-    },
-    {
-      "actors": [
-        "Russia"
-      ],
-      "domain": "europesun.com",
-      "id": "evt_28f3f148ba58398d",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Russia",
-      "tier": "medium",
-      "title": "Iran Claims Attacks On US Bases In Kuwait , UAE",
-      "tone": null,
-      "url": "http://www.europesun.com/news/279283322/iran-claims-attacks-on-us-bases-in-kuwait-uae"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "la-croix.com",
-      "id": "evt_42585da3066990ec",
-      "language": "French",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [
-        "sanction"
-      ],
-      "region": "Europa del Este",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "France",
-      "tier": "medium",
-      "title": "Guerre en Ukraine  : Moscou sanctionne Berlin  ; lONU appelle à protéger les avions civils",
-      "tone": null,
-      "url": "https://www.la-croix.com/international/ukraine-russie-jour-1650-point-conflit-ukrainien-poutine-aujourdhui-20260903"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "oklahomastar.com",
-      "id": "evt_49d9799c2ee663ec",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran Claims Attacks On US Bases In Kuwait , UAE",
-      "tone": null,
-      "url": "http://www.oklahomastar.com/news/279283322/iran-claims-attacks-on-us-bases-in-kuwait-uae"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "sana.sy",
-      "id": "evt_7d49c267093903f2",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Syria",
-      "tier": "medium",
-      "title": "Guterres voices deep concern over renewed U . S .- Iran strikes , urges immediate halt",
-      "tone": null,
-      "url": "https://sana.sy/en/international/2340126/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "theguardian.com",
-      "id": "evt_b94052b3f874f20b",
+      "domain": "reflector.com",
+      "id": "evt_8509dcc23aa373de",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -342,70 +518,173 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20260905T100000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Housebuilder Crest Nicholson warns of annual loss in  subdued  property market | Construction industry",
+      "title": "Serbian club Red Star Belgrade fined by UEFA for fan chants in honor of war criminal Ratko Mladic",
       "tone": null,
-      "url": "https://www.theguardian.com/business/2026/sep/03/housebuilder-crest-nicholson-warns-of-annual-loss-subdued-property-market"
-    },
-    {
-      "actors": [
-        "Turkey"
-      ],
-      "domain": "aa.com.tr",
-      "id": "evt_5b9184d61d8129b8",
-      "language": "English",
-      "matched_regions": [
-        "russia"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Turkey",
-      "tier": "monitor",
-      "title": "Russia to shut Goethe - Institut branches in response to German move : Lavrov",
-      "tone": null,
-      "url": "https://aa.com.tr/en/eurasia/russia-to-shut-goethe-institut-branches-in-response-to-german-move-lavrov/4045965"
+      "url": "http://www.reflector.com/news/national/serbian-club-red-star-belgrade-fined-by-uefa-for-fan-chants-in-honor-of-war/article_5f9a4729-ce28-5797-9792-ceec1c2f33b3.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "wbaltv.com",
-      "id": "evt_edb68d27f466fdc5",
+      "domain": "lockhaven.com",
+      "id": "evt_ce46f2564a3d5845",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Central PA Civil War Round Table to meet Sept . 22",
+      "tone": null,
+      "url": "https://www.lockhaven.com/news/community/2026/09/central-pa-civil-war-round-table-to-meet-sept-22/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "die-glocke.de",
+      "id": "evt_83de4739611e5d11",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Tausende zu Kundgebungen vor Wahl in Sachsen - Anhalt erwartet",
+      "tone": null,
+      "url": "https://www.die-glocke.de/blick-in-die-welt/politik/artikel/tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-1788581402"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "drweb.de",
+      "id": "evt_640d299272192785",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "SMIC 2026 : Warum verdoppelt sich der Gewinn ?",
+      "tone": null,
+      "url": "https://www.drweb.de/smic-gewinn-verdoppelt-ki-chips/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "mittelstandcafe.de",
+      "id": "evt_be1c39f05d77885f",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Haushalt 2027 : Weiterbildung in der Warteschleife / Gilt der Koalitionsvertrag noch ?",
+      "tone": null,
+      "url": "https://www.mittelstandcafe.de/haushalt-2027-weiterbildung-in-der-warteschleife-gilt-der-koalitionsvertrag-noch-2270956.html"
+    },
+    {
+      "actors": [
+        "Sri Lanka"
+      ],
+      "domain": "slguardian.org",
+      "id": "evt_dbe5be9a4af91771",
       "language": "English",
       "matched_regions": [
+        "india",
         "china"
       ],
       "matched_themes": [],
       "region": "Asia-Pacífico",
-      "score": 2.0,
+      "score": 3.0,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 3.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United States",
+      "seen_date": "20260905T100000Z",
+      "source_country": "Sri Lanka",
       "tier": "monitor",
-      "title": "US journalist sentenced for acting as an illegal agent for China",
+      "title": "India and China Prepare for New Border Commander Talks",
       "tone": null,
-      "url": "https://www.wbaltv.com/article/american-journalist-sentenced-foreign-agent-chinese-government/73602262"
+      "url": "https://slguardian.org/india-and-china-prepare-for-new-border-commander-talks/"
     },
     {
       "actors": [
-        "Indonesia"
+        "Spain"
       ],
-      "domain": "antaranews.com",
-      "id": "evt_8d6aa0ef471ffda4",
-      "language": "Indonesian",
+      "domain": "elperiodico.com",
+      "id": "evt_f55056a348dffc1f",
+      "language": "Spanish",
+      "matched_regions": [
+        "colombia"
+      ],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "América Latina",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Spain",
+      "tier": "monitor",
+      "title": "Dos militares mueren en el ataque con drones a una guarnición en el noreste de Colombia",
+      "tone": null,
+      "url": "https://www.elperiodico.com/es/internacional/20260905/militares-mueren-ataque-drones-guarnicion-noreste-colombia-133978199"
+    },
+    {
+      "actors": [
+        "United Arab Emirates"
+      ],
+      "domain": "gulfnews.com",
+      "id": "evt_ee6896bc547572ab",
+      "language": "English",
       "matched_regions": [
         "iran"
       ],
@@ -417,20 +696,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Indonesia",
+      "seen_date": "20260905T100000Z",
+      "source_country": "United Arab Emirates",
       "tier": "monitor",
-      "title": "AS desak negara - negara hentikan perdagangan dengan Iran",
+      "title": "UAE Flights Disrupted : Emirates , Etihad , Air Arabia , flydubai Delays and Cancellations as Air France Extends Dubai Suspension Amid US - Iran Tensions",
       "tone": null,
-      "url": "https://www.antaranews.com/berita/5724549/as-desak-negara-negara-hentikan-perdagangan-dengan-iran"
+      "url": "https://gulfnews.com/business/aviation/uae-flights-emirates-etihad-air-arabia-and-flydubai-delays-and-cancellations-as-air-france-extends-dubai-suspension-1.500663921"
     },
     {
       "actors": [
-        "Moldova"
+        "Spain"
       ],
-      "domain": "moldova-suverana.md",
-      "id": "evt_c5bfa45ec9c0b0b0",
-      "language": "Romanian",
+      "domain": "larazon.es",
+      "id": "evt_76bd0d920ca53eff",
+      "language": "Spanish",
       "matched_regions": [],
       "matched_themes": [
         "drone"
@@ -442,94 +721,44 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Moldova",
+      "seen_date": "20260905T100000Z",
+      "source_country": "Spain",
       "tier": "monitor",
-      "title": "ATACURILE DIN MAREA NEAGRĂ DETERMINĂ NAVELE SĂ IA MĂSURI DE APĂRARE IMPROVIZATE ÎMPOTRIVA DRONELOR",
+      "title": "El Ejército acelera su activación para la guerra de drones por la presión de Rabat",
       "tone": null,
-      "url": "https://moldova-suverana.md/article/atacurile-din-marea-neagr-determin-navele-s-ia-msuri-de-aprare-improvizate-mpotriva-dronelor_56738"
+      "url": "https://www.larazon.es/espana/ejercito-acelera-activacion-guerra-drones-presion-rabat_202609056a9be2a64941316b1e78aad7.html"
     },
     {
       "actors": [
-        "United States"
+        "Algeria"
       ],
-      "domain": "kmbc.com",
-      "id": "evt_afb6a6af5ce1bbaf",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "US journalist sentenced for acting as an illegal agent for China",
-      "tone": null,
-      "url": "https://www.kmbc.com/article/american-journalist-sentenced-foreign-agent-chinese-government/73602262"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wgal.com",
-      "id": "evt_5c94a0295eca290c",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "US journalist sentenced for acting as an illegal agent for China",
-      "tone": null,
-      "url": "https://www.wgal.com/article/american-journalist-sentenced-foreign-agent-chinese-government/73602262"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "la-croix.com",
-      "id": "evt_b675abbcf971f0fd",
+      "domain": "lnr-dz.com",
+      "id": "evt_b24591fe36170d8a",
       "language": "French",
-      "matched_regions": [
-        "ukraine"
+      "matched_regions": [],
+      "matched_themes": [
+        "occupation"
       ],
-      "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "Global",
       "score": 2.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "France",
+      "seen_date": "20260905T100000Z",
+      "source_country": "Algeria",
       "tier": "monitor",
-      "title": "Guerre en Ukraine  : Volodymyr Zelensky peut - il fermer le ciel russe  ?",
+      "title": "Résistance héroïque des moudjahidine face à loccupation française - La Nouvelle République Algérie",
       "tone": null,
-      "url": "https://www.la-croix.com/international/guerre-en-ukraine-volodymyr-zelensky-peut-il-fermer-le-ciel-russe-20260903"
+      "url": "https://www.lnr-dz.com/2026/09/05/resistance-heroique-des-moudjahidine-face-a-loccupation-francaise/"
     },
     {
       "actors": [
         "Turkey"
       ],
       "domain": "aa.com.tr",
-      "id": "evt_a5e723cbd6e6c72d",
+      "id": "evt_e3473267b18ae5d9",
       "language": "English",
       "matched_regions": [
         "israel"
@@ -542,145 +771,221 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
+      "seen_date": "20260905T100000Z",
       "source_country": "Turkey",
       "tier": "monitor",
-      "title": "Military production cannot be the answer : Critics slam Volkswagen defense plan with Israel Rafael",
+      "title": "Life returned to me : Lebanese father welcomes son home after release from Israeli detention",
       "tone": null,
-      "url": "https://aa.com.tr/en/europe/-military-production-cannot-be-the-answer-critics-slam-volkswagen-s-defense-plan-with-israel-s-rafael/4046077"
-    },
-    {
-      "actors": [
-        "Albania"
-      ],
-      "domain": "botasot.info",
-      "id": "evt_0cb390d03fc8f86e",
-      "language": "Albanian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Albania",
-      "tier": "monitor",
-      "title": "Irani synon shtrëngimin e kontrollit mbi internetin",
-      "tone": null,
-      "url": "https://www.botasot.info/azia-bota/2523756/irani-synon-shtrengimin-e-kontrollit-mbi-internetin/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "huffingtonpost.co.uk",
-      "id": "evt_3b382bef79988345",
-      "language": "English",
-      "matched_regions": [
-        "russia"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Diane Abbott Keeps Labour Whip After Russia Comments",
-      "tone": null,
-      "url": "https://www.huffingtonpost.co.uk/entry/diane-abbott-will-not-lose-labour-whip_uk_6a992db6e4b0e51a2d916651"
-    },
-    {
-      "actors": [
-        "Vietnam"
-      ],
-      "domain": "anninhthudo.vn",
-      "id": "evt_aa6228271c28a378",
-      "language": "Vietnamese",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Vietnam",
-      "tier": "monitor",
-      "title": "Iran tập kích Kuwait để trả đũa Mỹ trong căng thẳng Trung Đông",
-      "tone": null,
-      "url": "https://anninhthudo.vn/iran-phong-ten-lua-uav-tap-kich-kuwait-de-tra-dua-my-post665866.antd"
-    },
-    {
-      "actors": [
-        "Austria"
-      ],
-      "domain": "sn.at",
-      "id": "evt_fab72de4eaac6712",
-      "language": "German",
-      "matched_regions": [
-        "venezuela"
-      ],
-      "matched_themes": [],
-      "region": "América Latina",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Austria",
-      "tier": "monitor",
-      "title": "US - Energieminister nennt Öl - Deals mit Venezuela  historisch",
-      "tone": null,
-      "url": "https://www.sn.at/wirtschaft/welt/us-energieminister-nennt-oel-deals-mit-venezuela-historisch-art-670964"
+      "url": "https://aa.com.tr/en/middle-east/-life-returned-to-me-lebanese-father-welcomes-son-home-after-release-from-israeli-detention/4047913"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "wflaorlando.iheart.com",
-      "id": "evt_5d2fcecec8d81759",
+      "domain": "de.euronews.com",
+      "id": "evt_45047fae0ccd6013",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "blockade"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "EU - Verwahrstelle für russische Vermögen : Chance auf Ende der Blockade",
+      "tone": null,
+      "url": "https://de.euronews.com/my-europe/2026/09/05/eu-verwahrstelle-fur-russische-vermogen-chance-auf-ende-der-blockade"
+    },
+    {
+      "actors": [
+        "Oman"
+      ],
+      "domain": "timesofoman.com",
+      "id": "evt_b2dd44c0975b7834",
       "language": "English",
       "matched_regions": [
-        "venezuela"
+        "india",
+        "myanmar"
       ],
       "matched_themes": [],
-      "region": "América Latina",
+      "region": "Asia del Sur",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Oman",
+      "tier": "monitor",
+      "title": "India turns to Myanmar for supply of critical minerals",
+      "tone": null,
+      "url": "https://timesofoman.com/article/176478-india-turns-to-myanmar-for-supply-of-critical-minerals"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "sardegnalive.net",
+      "id": "evt_110c873eb8e1fc5d",
+      "language": "Italian",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Terrore nel centro di Olbia , fa irruzione in un ristorante e accoltella quattro persone",
+      "tone": null,
+      "url": "https://www.sardegnalive.net/in-sardegna/gallura/terrore-nel-centro-di-olbia-fa-irruzione-in-un-ristorante-e-accoltella-quattro-persone-mexm9qld"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "theintermountain.com",
+      "id": "evt_63517cf2209667fc",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Terroristic threats case going to grand jury",
+      "tone": null,
+      "url": "https://www.theintermountain.com/news/local-news/2026/09/terroristic-threats-case-going-to-grand-jury/"
+    },
+    {
+      "actors": [
+        "Mexico"
+      ],
+      "domain": "jornada.com.mx",
+      "id": "evt_8250b7fe2453bd25",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Mexico",
+      "tier": "monitor",
+      "title": "La Jornada : Operamos 165 equipos antidrones a lo largo de la frontera con EU : Trevilla",
+      "tone": null,
+      "url": "https://www.jornada.com.mx/2026/09/05/politica/003n1pol"
+    },
+    {
+      "actors": [
+        "Lebanon"
+      ],
+      "domain": "cedarnews.net",
+      "id": "evt_d9a3cdb645bbad09",
+      "language": "Italian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "Lebanon",
+      "tier": "monitor",
+      "title": "Guerra in Iran , la diretta | Esplosioni nei pressi dell  isola",
+      "tone": null,
+      "url": "https://cedarnews.net/italian/965221/guerra-iran-diretta-esplosioni-nei-pressi-dellisola/"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "northeasttoday.in",
+      "id": "evt_52be10137b3661c5",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "militant"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260905T100000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Tripura : Surrendered Militant Agitation Intensifies on Day 2 at Baramura ; Ambulances Stopped , Patients Forced to Walk",
+      "tone": null,
+      "url": "https://northeasttoday.in/northeast/tripura-surrendered-militants-agitation-intensifies-on-day-2-at-baramura-ambulances-stopped-patients-forced-to-walk/"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "elmercuriodigital.net",
+      "id": "evt_2625467402f64361",
+      "language": "Spanish",
+      "matched_regions": [
+        "palestin"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United States",
+      "seen_date": "20260905T100000Z",
+      "source_country": "Spain",
       "tier": "monitor",
-      "title": "Chevron To Double Oil Production In Venezuela | Newsradio WFLA Orlando",
+      "title": "ONU Derechos Humanos denuncia el desplazamiento forzoso de miles de personas palestinas",
       "tone": null,
-      "url": "https://wflaorlando.iheart.com/content/2026-09-03-chevron-to-double-oil-production-in-venezuela/"
+      "url": "https://www.elmercuriodigital.net/2026/09/onu-derechos-humanos-denuncia-el.html"
     },
     {
       "actors": [
-        "Nigeria"
+        "Germany"
       ],
-      "domain": "fr.allafrica.com",
-      "id": "evt_3c3ffce8c62fdae1",
-      "language": "French",
+      "domain": "zeit.de",
+      "id": "evt_3e1bd17dc061911e",
+      "language": "German",
       "matched_regions": [
         "niger"
       ],
@@ -692,98 +997,23 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Nigeria",
+      "seen_date": "20260905T100000Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Niger : Les États de la sous - région et la France soupçonnés davoir soutenu la mutinerie",
+      "title": "Niger : Ministerrat im Niger gibt Frankreich Schuld an Putschversuch",
       "tone": null,
-      "url": "https://fr.allafrica.com/stories/202609030201.html"
+      "url": "https://www.zeit.de/politik/ausland/2026-09/niger-frankreich-jean-noel-barrot-abdourahmane-tiani-aufstand-russland"
     },
     {
       "actors": [
-        "United States"
+        "India"
       ],
-      "domain": "wtam.iheart.com",
-      "id": "evt_83560d4fb93f6e57",
-      "language": "English",
-      "matched_regions": [
-        "venezuela"
-      ],
-      "matched_themes": [],
-      "region": "América Latina",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Chevron To Double Oil Production In Venezuela | Newsradio WTAM 1100",
-      "tone": null,
-      "url": "https://wtam.iheart.com/content/2026-09-03-chevron-to-double-oil-production-in-venezuela/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "theguardian.com",
-      "id": "evt_6f29629920307b04",
-      "language": "English",
-      "matched_regions": [
-        "venezuela"
-      ],
-      "matched_themes": [],
-      "region": "América Latina",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "The US and Venezuela : a century - old relationship drenched in oil",
-      "tone": null,
-      "url": "https://www.theguardian.com/world/2026/sep/03/us-venezuela-visual-look-century-old-relationship-drenched-in-oil"
-    },
-    {
-      "actors": [
-        "Sweden"
-      ],
-      "domain": "dagensps.se",
-      "id": "evt_6c00f6a1a3e8c8c4",
-      "language": "Swedish",
-      "matched_regions": [
-        "hormuz"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260903T104500Z",
-      "source_country": "Sweden",
-      "tier": "monitor",
-      "title": "Glädjefnatt i bortglömda aktier i Hormuzkrisen – är du vinnare ?",
-      "tone": null,
-      "url": "https://www.dagensps.se/varlden/gladjefnatt-i-bortglomda-aktier-i-hormuzkrisen-ar-du-vinnare/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "jewishworldreview.com",
-      "id": "evt_764c9e405c58d8dd",
+      "domain": "aninews.in",
+      "id": "evt_71d53637c28ad11f",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "attack"
+        "deploy"
       ],
       "region": "Global",
       "score": 1.5,
@@ -792,12 +1022,12 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260903T104500Z",
-      "source_country": "United States",
+      "seen_date": "20260905T100000Z",
+      "source_country": "India",
       "tier": "monitor",
-      "title": "Abdul El - Sayed unlimited attack potential",
+      "title": "Nepal floods : Army builds rope bridge , deploys 20 helicopters as rescue operations intensify",
       "tone": null,
-      "url": "https://jewishworldreview.com/0926/phillips090326.php"
+      "url": "https://aninews.in/news/world/asia/nepal-floods-army-builds-rope-bridge-deploys-20-helicopters-as-rescue-operations-intensify20260905140046/"
     }
   ],
   "filters": {
@@ -811,13 +1041,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-09-03T11:16:23Z",
+  "generated_at": "2026-09-05T10:33:38Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
     "high": 1,
-    "medium": 11,
-    "monitor": 19
+    "medium": 17,
+    "monitor": 21
   },
-  "total_events": 31
+  "total_events": 39
 }
