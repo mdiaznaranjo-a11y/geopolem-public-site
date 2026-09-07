@@ -651,327 +651,366 @@ export const SENTINEL_BRIEF = {
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "main_status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
-  "generated_at": "2026-08-31T08:04:00+02:00",
-  "window": "24-30 AGOSTO 2026 · EUROPE/LUXEMBOURG",
+  "generated_at": "2026-09-07T08:03:00+02:00",
+  "window": "31 AGOSTO-6 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
   "week_window": {
     "local": {
-      "start": "2026-08-24T00:00:00+02:00",
-      "end": "2026-08-30T23:59:59+02:00",
+      "start": "2026-08-31T00:00:00+02:00",
+      "end": "2026-09-06T23:59:59+02:00",
       "timezone": "Europe/Luxembourg"
     },
     "utc": {
-      "start": "2026-08-23T22:00:00Z",
-      "end": "2026-08-30T21:59:59Z"
+      "start": "2026-08-30T22:00:00Z",
+      "end": "2026-09-06T21:59:59Z"
     }
   },
   "summary": [
-    "SENTINEL revisó 41 eventos de conflicto del feed público disponible para la ventana semanal.",
-    "NASA EONET registró 25 eventos abiertos recientes y 309 eventos cerrados recientes; USGS registró 118 sismos de magnitud 4,5+ dentro de la ventana.",
+    "SENTINEL revisó 46 eventos de conflicto del feed público disponible para la ventana semanal.",
+    "NASA EONET registró 18 eventos abiertos recientes y 379 eventos cerrados recientes; USGS registró 110 sismos de magnitud 4,5+ dentro de la ventana UTC.",
     "No se verificaron tres acoples conflicto-ambiente suficientemente fuertes para publicarlos como confirmados.",
-    "Las señales con mayor valor de vigilancia se concentran en Sudán, Nepal/Kodari y Taiwán, pero todas quedan etiquetadas como observación.",
-    "La lectura GEOPÓLEM prioriza rutas, capacidad estatal y continuidad operacional, sin presentar correlación temporal como causalidad."
+    "Las señales con mayor valor de vigilancia se concentran en Irán/Ormuz, Taiwán y Ucrania/Rusia, pero todas quedan etiquetadas como observación.",
+    "La lectura GEOPÓLEM prioriza rutas críticas, continuidad operacional y capacidad estatal, sin presentar correlación espacial o temporal como causalidad."
   ],
-  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y enlaces institucionales derivados de NASA/GDACS/USGS. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, capacidad estatal y presión sobre ayuda o infraestructura. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
+  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y enlaces institucionales derivados de NASA/GDACS/USGS. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, energía, capacidad estatal y presión sobre infraestructura. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
   "source_urls": {
     "sentinel": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
     "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
     "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
-    "usgs_week_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-23T22:00:00&endtime=2026-08-30T21:59:59&minmagnitude=4.5&orderby=magnitude",
-    "usgs_week_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-23T22:00:00&endtime=2026-08-30T21:59:59&minmagnitude=5.5&orderby=magnitude",
-    "nasa_sudan_wildfire": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_23592",
-    "gdacs_sudan_wildfire": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031330",
-    "gdacs_nepal_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104124",
-    "usgs_nepal_landslide": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tbwb",
-    "usgs_taiwan_earthquake": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tnbm",
-    "usgs_somalia_earthquake": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tcf3"
+    "usgs_week_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-30T22:00:00&endtime=2026-09-06T21:59:59&minmagnitude=4.5&orderby=magnitude",
+    "usgs_week_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-30T22:00:00&endtime=2026-09-06T21:59:59&minmagnitude=5.5&orderby=magnitude",
+    "hormuz_conflict": "https://www.thehindubusinessline.com/news/world/iran-claims-strike-on-us-ship-in-strait-of-hormuz-as-fighting-escalates/article71434847.ece",
+    "hormuz_oil_market": "https://www.thehindubusinessline.com/markets/west-asia-conflict-crude-oil-prices-us-inflation-data-to-drive-markets-next-week/article71434864.ece",
+    "usgs_iran_yasuj": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tda7",
+    "taiwan_pla": "https://www.globalsecurity.org/wmd/library/news/taiwan/2026/taiwan-260906-roc-mnd01.htm",
+    "usgs_taiwan_donggang": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teqz",
+    "ukraine_talks": "https://www.globalsecurity.org/wmd/library/news/ukraine/2026/09/ukraine-260906-globaltimes01.htm",
+    "nato_ukraine_training": "https://www.globalsecurity.org/wmd/library/news/ukraine/2026/09/ukraine-260904-nato01.htm",
+    "gdacs_russia_wildfire": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031547",
+    "usgs_kuril_earthquake": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tefx",
+    "gdacs_haiti_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104142",
+    "gdacs_japan_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104140"
   },
   "data_scan_counts": {
-    "sentinel_events_latest_feed": 41,
-    "sentinel_high_tier_events_latest_feed": 0,
-    "nasa_eonet_open_events_reviewed": 25,
-    "nasa_eonet_closed_events_reviewed": 309,
-    "nasa_eonet_events_reviewed_total": 334,
-    "usgs_m45_plus_events_in_week": 118,
-    "usgs_m55_plus_events_in_week": 7,
-    "total_candidates": 6,
+    "sentinel_events_latest_feed": 46,
+    "sentinel_high_tier_events_latest_feed": 9,
+    "nasa_eonet_open_events_reviewed": 18,
+    "nasa_eonet_closed_events_reviewed": 379,
+    "nasa_eonet_events_reviewed_total": 397,
+    "environment_events_normalized_for_matching": 264,
+    "usgs_m45_plus_events_in_week": 110,
+    "usgs_m55_plus_events_in_week": 12,
+    "total_candidates": 8,
     "selected_confirmed_couplings": 0,
     "selected_watch_signals": 3
   },
   "limitations": [
     "El feed SENTINEL público de esta ejecución concentra señales mediáticas y no ofrece cobertura histórica exhaustiva de todos los teatros de conflicto.",
-    "NASA EONET y USGS verifican eventos físicos; no prueban por sí solos impacto sobre acceso humanitario, rutas críticas o conducta de actores armados.",
+    "NASA EONET y USGS verifican eventos físicos; no prueban por sí solos impacto sobre acceso humanitario, rutas críticas, conducta militar o decisiones de actores estatales.",
     "No se verificó esta semana un acople ambiental significativo con evidencia suficiente para etiquetarlo como confirmado.",
-    "Las tres señales seleccionadas son puntos de vigilancia: pueden afectar rutas, capacidad estatal o continuidad operacional, pero no se presentan como causalidad."
+    "Las tres señales seleccionadas son puntos de vigilancia: pueden afectar rutas, resiliencia o continuidad operacional, pero no se presentan como causalidad."
   ],
   "selected_inflection_points": [
     {
-      "id": "sudan-wildfire-blue-nile-watch",
+      "id": "iran-hormuz-geophysical-route-watch",
       "rank": 1,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media-alta",
       "priority_en": "Medium-high",
       "accent": "#FF8A3D",
-      "location": "Sudán / eje Nilo Azul-Sudán central",
-      "headline": "Sudán: conflicto activo y estrés ambiental localizado",
-      "headline_en": "Sudan: active conflict and localized environmental stress",
-      "conflict_event": "SENTINEL registró durante la ventana una señal sobre desplazamiento por escalada de combates en el Nilo Azul.",
-      "environmental_event": "NASA EONET registró un incendio en Sudán el 24 de agosto de 2026, con magnitud reportada de 5.038 hectáreas y fuente GDACS.",
+      "location": "Irán / Estrecho de Ormuz y Golfo de Omán",
+      "headline": "Ormuz: presión militar sobre ruta crítica sin acople ambiental confirmado",
+      "headline_en": "Hormuz: military pressure on a critical route without confirmed environmental coupling",
+      "conflict_event": "SENTINEL registró señales de alta prioridad sobre escalada militar en torno a Irán y el Estrecho de Ormuz, incluida la reclamación iraní de un ataque contra un buque estadounidense y una señal de hundimiento de petrolero iraní.",
+      "environmental_event": "USGS registró un sismo M4.5 a 13 km al NNW de Yasuj, Irán, el 1 de septiembre de 2026.",
       "coupling_type": [
-        "conflicto",
-        "incendio",
-        "desplazamiento",
-        "capacidad estatal",
-        "acceso humanitario"
+        "ruta crítica",
+        "energía",
+        "conflicto interestatal",
+        "sismo menor",
+        "observación sin causalidad"
       ],
-      "why_it_matters": "Importa como vigilancia porque Sudán combina guerra, desplazamiento y baja capacidad estatal; el evento ambiental añade presión, pero no se verifica impacto directo sobre la dinámica militar.",
-      "fact": "SENTINEL registró una señal de desplazamiento por combates en el Nilo Azul y NASA EONET registró un incendio en Sudán dentro de la ventana semanal.",
-      "coupling": "El acople es espacial-temporal débil: mismo país y misma semana, pero sin evidencia institucional suficiente de afectación directa sobre rutas de ayuda o conducta armada.",
-      "strategic_implication": "La señal exige seguimiento porque en Sudán los eventos ambientales pueden degradar movilidad, refugios y acceso humanitario en un conflicto ya fragmentado.",
-      "tripolarity_reading": "EE. UU. y la UE operan sobre asistencia y presión diplomática; actores del Golfo y África oriental pesan en corredores regionales; China y Rusia observan un teatro donde la erosión estatal reduce margen occidental.",
+      "why_it_matters": "Ormuz importa por energía y escalada interestatal; el dato geofísico existe en el mismo país y ventana, pero no hay evidencia de afectación directa sobre navegación, petróleo o conducta militar.",
+      "fact": "SENTINEL capturó múltiples señales sobre Irán/Ormuz y USGS registró un sismo M4.5 en Irán dentro de la ventana semanal.",
+      "coupling": "El acople es débil: mismo país y semana, pero sin proximidad suficiente al estrecho ni evidencia institucional de interrupción logística, energética o militar atribuible al evento físico.",
+      "strategic_implication": "La señal exige vigilancia porque Ormuz convierte cualquier escalada en variable energética global; la disciplina editorial exige separar riesgo de ruta crítica de acople ambiental confirmado.",
+      "tripolarity_reading": "EE. UU. aparece como actor militar y garante de rutas; China observa el riesgo de seguridad energética; Rusia puede beneficiarse de tensión sobre precios y distracción occidental; la UE queda expuesta por inflación energética y seguridad marítima.",
       "confidence": "Media",
       "source_keys": [
         "sentinel",
-        "nasa_sudan_wildfire",
-        "gdacs_sudan_wildfire"
+        "hormuz_conflict",
+        "hormuz_oil_market",
+        "usgs_iran_yasuj"
       ]
     },
     {
-      "id": "nepal-kodari-flood-landslide-watch",
+      "id": "taiwan-pla-earthquake-resilience-watch",
       "rank": 2,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media",
       "priority_en": "Medium",
       "accent": "#3DD6D0",
-      "location": "Nepal / corredor Kodari-Himalaya central",
-      "headline": "Nepal: inundación y deslizamiento cerca de corredor transfronterizo",
-      "headline_en": "Nepal: flood and landslide near a transborder corridor",
-      "conflict_event": "No hay evento de conflicto armado en el feed SENTINEL para elevar esta señal a acople confirmado.",
-      "environmental_event": "NASA EONET registró una inundación en Nepal el 25 de agosto y USGS registró un deslizamiento M5.2 a 55 km al noroeste de Kodari ese mismo día.",
+      "location": "Taiwán / sur de la isla y entorno del Estrecho",
+      "headline": "Taiwán: actividad del EPL y resiliencia operacional ante sismo moderado",
+      "headline_en": "Taiwan: PLA activity and operational resilience after a moderate quake",
+      "conflict_event": "SENTINEL registró una señal de monitoreo sobre actividades del Ejército Popular de Liberación en aguas y espacio aéreo alrededor de Taiwán.",
+      "environmental_event": "USGS registró un sismo M4.5 a 98 km al ENE de Donggang, Taiwán, el 6 de septiembre de 2026.",
       "coupling_type": [
-        "inundación",
-        "deslizamiento",
-        "ruta crítica",
-        "frontera",
-        "capacidad estatal"
+        "presión militar",
+        "sismo moderado",
+        "infraestructura crítica",
+        "resiliencia operacional",
+        "observación"
       ],
-      "why_it_matters": "Importa como observación geopolítica porque Kodari conecta logística, frontera y dependencia de infraestructura en el eje Nepal-China.",
-      "fact": "NASA EONET/GDACS registró una inundación en Nepal y USGS registró un deslizamiento M5.2 cerca de Kodari dentro de la ventana semanal.",
-      "coupling": "El acople no es de conflicto armado, sino de ruta y capacidad estatal: agua, ladera y conectividad fronteriza coinciden temporalmente.",
-      "strategic_implication": "En el Himalaya, los eventos ambientales pueden convertir infraestructura de paso en vulnerabilidad diplomática, comercial y de respuesta estatal.",
-      "tripolarity_reading": "China observa continuidad fronteriza y conectividad; India vigila estabilidad del Himalaya y vecindario; la UE y organismos multilaterales entran por resiliencia climática y reducción de riesgo.",
+      "why_it_matters": "Taiwán concentra valor geoeconómico, rutas sensibles y semiconductores; un evento físico moderado no prueba interrupción, pero sí justifica vigilancia de continuidad operacional.",
+      "fact": "SENTINEL registró actividad del EPL alrededor de Taiwán y USGS registró un sismo M4.5 en el entorno de la isla dentro de la misma semana.",
+      "coupling": "El acople es temporal y geográfico amplio, no causal: no hay evidencia de interrupción portuaria, industrial, militar o de semiconductores esta semana.",
+      "strategic_implication": "La señal sirve para monitorear resiliencia de un nodo donde presión militar y fragilidad física pueden acumularse aunque no estén causalmente conectadas en esta ventana.",
+      "tripolarity_reading": "China mantiene presión en el entorno del Estrecho; EE. UU. y aliados observan disuasión y continuidad de cadenas críticas; la UE queda indirectamente expuesta por tecnología, comercio y dependencia industrial.",
       "confidence": "Media",
       "source_keys": [
-        "gdacs_nepal_flood",
-        "usgs_nepal_landslide"
+        "taiwan_pla",
+        "usgs_taiwan_donggang"
       ]
     },
     {
-      "id": "taiwan-earthquake-operational-resilience-watch",
+      "id": "ukraine-russia-periphery-environment-watch",
       "rank": 3,
       "status": "en observación",
       "status_en": "watch",
-      "priority": "Media",
-      "priority_en": "Medium",
+      "priority": "Media-baja",
+      "priority_en": "Medium-low",
       "accent": "#B794F4",
-      "location": "Taiwán / sur de la isla y entorno del Estrecho",
-      "headline": "Taiwán: sismo moderado y continuidad operacional estratégica",
-      "headline_en": "Taiwan: moderate earthquake and strategic operational continuity",
-      "conflict_event": "No se registró un evento de conflicto directo en el feed SENTINEL para esta señal dentro de la ventana.",
-      "environmental_event": "USGS registró un sismo M5.5 a 108 km al noreste de Hengchun, Taiwán, el 25 de agosto de 2026.",
+      "location": "Ucrania/Rusia y periferia rusa del Pacífico",
+      "headline": "Ucrania/Rusia: conflicto sostenido y señales ambientales periféricas sin impacto directo",
+      "headline_en": "Ukraine/Russia: sustained conflict and peripheral environmental signals without direct impact",
+      "conflict_event": "SENTINEL registró señales de alta y media prioridad sobre la guerra Rusia-Ucrania, incluidas negociaciones, costes políticos del conflicto y asistencia OTAN a Ucrania.",
+      "environmental_event": "NASA/GDACS registró un incendio en la Federación Rusa de 5.514 hectáreas el 1 de septiembre, y USGS registró un sismo M5.5 al ESE de Kuril’sk, Rusia, el 4 de septiembre.",
       "coupling_type": [
-        "sismo",
-        "infraestructura crítica",
-        "continuidad operacional",
-        "semiconductores",
-        "ruta marítima"
-      ],
-      "why_it_matters": "Importa por exposición estratégica, no por daño confirmado: Taiwán combina infraestructura crítica, rutas marítimas y presión militar latente.",
-      "fact": "USGS registró un sismo M5.5 cerca del sur de Taiwán dentro de la ventana semanal.",
-      "coupling": "El acople queda en observación: evento geofísico moderado en un espacio de alta sensibilidad estratégica, sin evidencia de interrupción militar, logística o industrial esta semana.",
-      "strategic_implication": "El valor analítico está en la resiliencia: cualquier choque físico sobre Taiwán se evalúa por continuidad industrial, rutas y cálculo de actores, no por espectacularidad.",
-      "tripolarity_reading": "EE. UU. y China interpretan Taiwán como nodo estratégico; la UE depende de continuidad tecnológica; el Sur Global absorbe efectos indirectos si se tensionan cadenas de suministro.",
-      "confidence": "Media-baja",
-      "source_keys": [
-        "usgs_taiwan_earthquake"
-      ]
-    }
-  ],
-  "points": [
-    {
-      "id": "sudan-wildfire-blue-nile-watch",
-      "rank": 1,
-      "status": "en observación",
-      "status_en": "watch",
-      "priority": "Media-alta",
-      "priority_en": "Medium-high",
-      "accent": "#FF8A3D",
-      "location": "Sudán / eje Nilo Azul-Sudán central",
-      "headline": "Sudán: conflicto activo y estrés ambiental localizado",
-      "headline_en": "Sudan: active conflict and localized environmental stress",
-      "conflict_event": "SENTINEL registró durante la ventana una señal sobre desplazamiento por escalada de combates en el Nilo Azul.",
-      "environmental_event": "NASA EONET registró un incendio en Sudán el 24 de agosto de 2026, con magnitud reportada de 5.038 hectáreas y fuente GDACS.",
-      "coupling_type": [
-        "conflicto",
+        "guerra prolongada",
         "incendio",
-        "desplazamiento",
+        "sismo M5.5",
         "capacidad estatal",
-        "acceso humanitario"
+        "periferia estratégica"
       ],
-      "why_it_matters": "Importa como vigilancia porque Sudán combina guerra, desplazamiento y baja capacidad estatal; el evento ambiental añade presión, pero no se verifica impacto directo sobre la dinámica militar.",
-      "fact": "SENTINEL registró una señal de desplazamiento por combates en el Nilo Azul y NASA EONET registró un incendio en Sudán dentro de la ventana semanal.",
-      "coupling": "El acople es espacial-temporal débil: mismo país y misma semana, pero sin evidencia institucional suficiente de afectación directa sobre rutas de ayuda o conducta armada.",
-      "strategic_implication": "La señal exige seguimiento porque en Sudán los eventos ambientales pueden degradar movilidad, refugios y acceso humanitario en un conflicto ya fragmentado.",
-      "tripolarity_reading": "EE. UU. y la UE operan sobre asistencia y presión diplomática; actores del Golfo y África oriental pesan en corredores regionales; China y Rusia observan un teatro donde la erosión estatal reduce margen occidental.",
-      "confidence": "Media",
-      "source_keys": [
-        "sentinel",
-        "nasa_sudan_wildfire",
-        "gdacs_sudan_wildfire"
-      ]
-    },
-    {
-      "id": "nepal-kodari-flood-landslide-watch",
-      "rank": 2,
-      "status": "en observación",
-      "status_en": "watch",
-      "priority": "Media",
-      "priority_en": "Medium",
-      "accent": "#3DD6D0",
-      "location": "Nepal / corredor Kodari-Himalaya central",
-      "headline": "Nepal: inundación y deslizamiento cerca de corredor transfronterizo",
-      "headline_en": "Nepal: flood and landslide near a transborder corridor",
-      "conflict_event": "No hay evento de conflicto armado en el feed SENTINEL para elevar esta señal a acople confirmado.",
-      "environmental_event": "NASA EONET registró una inundación en Nepal el 25 de agosto y USGS registró un deslizamiento M5.2 a 55 km al noroeste de Kodari ese mismo día.",
-      "coupling_type": [
-        "inundación",
-        "deslizamiento",
-        "ruta crítica",
-        "frontera",
-        "capacidad estatal"
-      ],
-      "why_it_matters": "Importa como observación geopolítica porque Kodari conecta logística, frontera y dependencia de infraestructura en el eje Nepal-China.",
-      "fact": "NASA EONET/GDACS registró una inundación en Nepal y USGS registró un deslizamiento M5.2 cerca de Kodari dentro de la ventana semanal.",
-      "coupling": "El acople no es de conflicto armado, sino de ruta y capacidad estatal: agua, ladera y conectividad fronteriza coinciden temporalmente.",
-      "strategic_implication": "En el Himalaya, los eventos ambientales pueden convertir infraestructura de paso en vulnerabilidad diplomática, comercial y de respuesta estatal.",
-      "tripolarity_reading": "China observa continuidad fronteriza y conectividad; India vigila estabilidad del Himalaya y vecindario; la UE y organismos multilaterales entran por resiliencia climática y reducción de riesgo.",
-      "confidence": "Media",
-      "source_keys": [
-        "gdacs_nepal_flood",
-        "usgs_nepal_landslide"
-      ]
-    },
-    {
-      "id": "taiwan-earthquake-operational-resilience-watch",
-      "rank": 3,
-      "status": "en observación",
-      "status_en": "watch",
-      "priority": "Media",
-      "priority_en": "Medium",
-      "accent": "#B794F4",
-      "location": "Taiwán / sur de la isla y entorno del Estrecho",
-      "headline": "Taiwán: sismo moderado y continuidad operacional estratégica",
-      "headline_en": "Taiwan: moderate earthquake and strategic operational continuity",
-      "conflict_event": "No se registró un evento de conflicto directo en el feed SENTINEL para esta señal dentro de la ventana.",
-      "environmental_event": "USGS registró un sismo M5.5 a 108 km al noreste de Hengchun, Taiwán, el 25 de agosto de 2026.",
-      "coupling_type": [
-        "sismo",
-        "infraestructura crítica",
-        "continuidad operacional",
-        "semiconductores",
-        "ruta marítima"
-      ],
-      "why_it_matters": "Importa por exposición estratégica, no por daño confirmado: Taiwán combina infraestructura crítica, rutas marítimas y presión militar latente.",
-      "fact": "USGS registró un sismo M5.5 cerca del sur de Taiwán dentro de la ventana semanal.",
-      "coupling": "El acople queda en observación: evento geofísico moderado en un espacio de alta sensibilidad estratégica, sin evidencia de interrupción militar, logística o industrial esta semana.",
-      "strategic_implication": "El valor analítico está en la resiliencia: cualquier choque físico sobre Taiwán se evalúa por continuidad industrial, rutas y cálculo de actores, no por espectacularidad.",
-      "tripolarity_reading": "EE. UU. y China interpretan Taiwán como nodo estratégico; la UE depende de continuidad tecnológica; el Sur Global absorbe efectos indirectos si se tensionan cadenas de suministro.",
+      "why_it_matters": "La señal no altera el frente ucraniano, pero recuerda que Rusia combina guerra sostenida con presiones ambientales y geofísicas en su periferia territorial.",
+      "fact": "SENTINEL registró señales sobre Ucrania/Rusia; NASA/GDACS y USGS registraron eventos físicos en territorio ruso durante la misma ventana.",
+      "coupling": "El acople es periférico y no confirmado: no hay evidencia de afectación sobre logística militar, energía, movilización o negociación atribuible a esos eventos ambientales.",
+      "strategic_implication": "La utilidad analítica está en vigilar capacidad estatal y continuidad territorial rusa, no en convertir eventos ambientales remotos en explicación del conflicto.",
+      "tripolarity_reading": "Rusia sostiene presión militar y narrativa; EE. UU./OTAN sostienen asistencia a Ucrania; China observa costes y oportunidad diplomática; la UE mide resiliencia energética, defensa y fatiga política.",
       "confidence": "Media-baja",
       "source_keys": [
-        "usgs_taiwan_earthquake"
+        "ukraine_talks",
+        "nato_ukraine_training",
+        "gdacs_russia_wildfire",
+        "usgs_kuril_earthquake"
       ]
     }
   ],
   "not_selected": [
     {
-      "id": "hormuz-conflict-no-environmental-event",
-      "reason": "SENTINEL registró señales sobre Ormuz e Irán, pero no se verificó evento NASA/USGS ambiental o geofísico acoplado en la ventana."
+      "location": "Yemen / Mar Rojo",
+      "reason": "Conflicto relevante en SENTINEL, pero sin evento NASA/USGS coincidente en la selección regional de esta semana.",
+      "source_keys": [
+        "sentinel"
+      ]
     },
     {
-      "id": "haiti-gang-violence-no-environmental-event",
-      "reason": "SENTINEL registró violencia de bandas en Haití, pero no se verificó evento ambiental NASA/USGS coincidente que altere rutas, migración o capacidad estatal en esta ventana."
+      "location": "Haití",
+      "reason": "NASA/GDACS registró inundación, pero el feed SENTINEL de la ventana no mostró evento de conflicto coincidente para elevarlo.",
+      "source_keys": [
+        "gdacs_haiti_flood"
+      ]
     },
     {
-      "id": "somalia-m60-gulf-of-aden-watch",
-      "reason": "USGS registró un sismo M6.0 al norte de Caluula, Somalia; se revisó por proximidad estratégica al Golfo de Adén, pero no se verificó impacto operacional o conflicto acoplado."
+      "location": "Indonesia/Timor",
+      "reason": "Alta actividad ambiental y sísmica, sin evento de conflicto coincidente en el feed semanal.",
+      "source_keys": [
+        "nasa_eonet_closed",
+        "usgs_week_m45"
+      ]
+    },
+    {
+      "location": "Japón/Kuriles",
+      "reason": "Actividad ambiental y geofísica relevante, pero sin señal de conflicto directa salvo la lectura periférica rusa incorporada como observación baja.",
+      "source_keys": [
+        "gdacs_japan_flood",
+        "usgs_kuril_earthquake"
+      ]
     }
   ],
   "best_short_candidate": {
-    "id": "sudan-wildfire-blue-nile-watch",
-    "title": "Sudán: cuando el ambiente añade presión a la guerra",
-    "hook_es": "Esta semana, el dato importante no es el incendio. Es lo que revela sobre el Estado.",
-    "reason": "Es la señal más cercana al mandato SENTINEL: conflicto activo, desplazamiento, presión ambiental y capacidad estatal vulnerable, aunque queda en observación.",
+    "id": "iran-hormuz-no-forzar-acople",
+    "title": "Ormuz: cuando no hay que forzar el acople",
+    "platform": "Short/Reel 9:16",
+    "duration_target": "60 segundos",
+    "why_selected": "Es el caso con mayor densidad geopolítica y mejor valor pedagógico: muestra una ruta crítica bajo presión militar, pero obliga a separar hecho ambiental débil de causalidad no demostrada.",
+    "hook_3s": "La señal clave de esta semana es una ausencia: Ormuz no confirma acople ambiental.",
     "technical_script": [
       {
         "timecode": "0:00-0:03",
-        "scene": "Mapa oscuro de Sudán; pulso sobre Nilo Azul y marcador ambiental sobrio.",
-        "voice_es": "Esta semana, el dato importante no es el incendio. Es lo que revela sobre el Estado.",
-        "subtitle_en": "This week, the key data point is not the fire. It is what it reveals about the state."
+        "scene": "Hook sobre mapa oscuro de Ormuz",
+        "voice_es": "La señal clave de esta semana es una ausencia: Ormuz no confirma acople ambiental.",
+        "subtitle_en": "This week’s key signal is an absence: Hormuz does not confirm environmental coupling."
       },
       {
-        "timecode": "0:03-0:17",
-        "scene": "Etiqueta HECHO. Feed SENTINEL y capa de conflicto/desplazamiento.",
-        "voice_es": "SENTINEL registró una señal de desplazamiento por escalada de combates en Sudán durante la ventana semanal. Es conflicto, movilidad forzada y presión territorial.",
-        "subtitle_en": "SENTINEL registered a displacement signal linked to escalating fighting in Sudan during the weekly window. This is conflict, forced mobility and territorial pressure."
+        "timecode": "0:03-0:16",
+        "scene": "Capa HECHO: titulares SENTINEL Irán/Ormuz y ruta energética",
+        "voice_es": "SENTINEL detectó señales de escalada militar en torno a Irán y el Estrecho de Ormuz, una ruta crítica para energía y seguridad marítima.",
+        "subtitle_en": "SENTINEL detected military escalation signals around Iran and the Strait of Hormuz, a critical route for energy and maritime security."
       },
       {
-        "timecode": "0:17-0:33",
-        "scene": "Etiqueta DATO AMBIENTAL. Capa NASA EONET/GDACS: incendio en Sudán, 24 de agosto, 5.038 hectáreas.",
-        "voice_es": "NASA EONET registró además un incendio en Sudán el 24 de agosto, con 5.038 hectáreas reportadas por GDACS. No afirmamos causalidad. Marcamos una coincidencia operacional que debe vigilarse.",
-        "subtitle_en": "NASA EONET also registered a wildfire in Sudan on August 24, with 5,038 hectares reported by GDACS. We do not claim causality. We mark an operational coincidence to monitor."
+        "timecode": "0:16-0:30",
+        "scene": "Capa DATO AMBIENTAL: marcador USGS en Yasuj, lejos del estrecho",
+        "voice_es": "USGS registró un sismo M4.5 cerca de Yasuj, en Irán. Pero ese dato no prueba interrupción de navegación, petróleo ni conducta militar.",
+        "subtitle_en": "USGS recorded a M4.5 earthquake near Yasuj, Iran. But that does not prove disruption to shipping, oil, or military conduct."
       },
       {
-        "timecode": "0:33-0:52",
-        "scene": "Etiqueta LECTURA. Rutas, ayuda, capacidad estatal y tablero regional.",
-        "voice_es": "En un país fragmentado por la guerra, cada presión ambiental puede afectar movilidad, refugio, ayuda y legitimidad estatal. Ahí está el tablero: no en el desastre aislado, sino en el acople.",
-        "subtitle_en": "In a country fragmented by war, each environmental pressure can affect mobility, shelter, aid and state legitimacy. That is the board: not the isolated disaster, but the coupling."
+        "timecode": "0:30-0:46",
+        "scene": "Capa MÉTODO: línea roja entre correlación y causalidad",
+        "voice_es": "Aquí está la disciplina SENTINEL: vigilar la coincidencia, pero no convertirla en causalidad. Una ruta crítica puede estar bajo presión sin que el ambiente sea el detonante.",
+        "subtitle_en": "This is SENTINEL discipline: monitor the coincidence, but do not turn it into causality. A critical route can be under pressure without the environment being the trigger."
       },
       {
-        "timecode": "0:52-1:00",
-        "scene": "Cierre en sala situacional GEOPÓLEM: HECHO / EVALUACIÓN / HIPÓTESIS.",
-        "voice_es": "Esta semana, SENTINEL no confirma tres acoples. Confirma la necesidad de mirar mejor. GEOPÓLEM. Bienvenidos al tablero.",
-        "subtitle_en": "This week, SENTINEL does not confirm three couplings. It confirms the need to look better. GEOPÓLEM. Welcome to the board."
+        "timecode": "0:46-0:57",
+        "scene": "Lectura tripolar: EE. UU., China, Rusia, UE en tablero minimalista",
+        "voice_es": "En la tripolaridad imperfecta, Ormuz expone a todos: EE. UU. por seguridad marítima, China por energía, Rusia por precios, Europa por inflación.",
+        "subtitle_en": "In imperfect tripolarity, Hormuz exposes everyone: the U.S. through maritime security, China through energy, Russia through prices, and Europe through inflation."
+      },
+      {
+        "timecode": "0:57-1:00",
+        "scene": "Cierre marca GEOPÓLEM",
+        "voice_es": "GEOPÓLEM. Bienvenidos al tablero.",
+        "subtitle_en": "GEOPÓLEM. Welcome to the board."
       }
     ],
     "visuals": [
-      "Mapa 9:16 de Sudán con capas discretas: conflicto, ambiente, acceso humanitario.",
-      "Marcadores sobrios para Nilo Azul y punto ambiental EONET/GDACS.",
-      "Etiquetas en pantalla: HECHO, DATO AMBIENTAL, OBSERVACIÓN, NO CAUSALIDAD.",
+      "Mapa 9:16 de Ormuz con fondo negro y rutas marítimas discretas.",
+      "Marcador USGS en Yasuj separado visualmente del estrecho para mostrar distancia conceptual.",
+      "Tres etiquetas fijas: HECHO, DATO AMBIENTAL, NO CAUSALIDAD.",
       "Paleta GEOPÓLEM: fondo #07090C, rojo #FF2D25, cian #3DD6D0, violeta #B794F4."
     ],
     "subtitles_en": [
-      "This week, the key data point is not the fire. It is what it reveals about the state.",
-      "SENTINEL registered a displacement signal linked to escalating fighting in Sudan during the weekly window.",
-      "NASA EONET also registered a wildfire in Sudan on August 24, with 5,038 hectares reported by GDACS.",
-      "We do not claim causality. We mark an operational coincidence to monitor.",
-      "In a country fragmented by war, each environmental pressure can affect mobility, shelter, aid and state legitimacy.",
-      "This week, SENTINEL does not confirm three couplings. It confirms the need to look better.",
+      "This week’s key signal is an absence: Hormuz does not confirm environmental coupling.",
+      "SENTINEL detected military escalation signals around Iran and the Strait of Hormuz, a critical route for energy and maritime security.",
+      "USGS recorded a M4.5 earthquake near Yasuj, Iran. But that does not prove disruption to shipping, oil, or military conduct.",
+      "This is SENTINEL discipline: monitor the coincidence, but do not turn it into causality.",
+      "In imperfect tripolarity, Hormuz exposes everyone: the U.S. through maritime security, China through energy, Russia through prices, and Europe through inflation.",
       "GEOPÓLEM. Welcome to the board."
     ],
     "cta": "GEOPÓLEM. Bienvenidos al tablero.",
     "hashtags": [
       "#GEOPÓLEM",
       "#SENTINEL",
-      "#Sudán",
+      "#Ormuz",
       "#OSINT",
       "#Geopolítica",
-      "#ClimaYConflicto"
+      "#Energía"
     ]
   },
-  "dataUrl": "./data/sentinel/weekly-brief.json",
-  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-08-24_2026-08-30.json",
-  "close": "GEOPÓLEM. Bienvenidos al tablero."
+  "dataUrl": "data/sentinel/weekly-brief.json",
+  "archiveUrl": "data/sentinel/sentinel_weekly_brief_2026-08-31_2026-09-06.json",
+  "media_publication": null,
+  "points": [
+    {
+      "id": "iran-hormuz-geophysical-route-watch",
+      "rank": 1,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media-alta",
+      "priority_en": "Medium-high",
+      "accent": "#FF8A3D",
+      "location": "Irán / Estrecho de Ormuz y Golfo de Omán",
+      "headline": "Ormuz: presión militar sobre ruta crítica sin acople ambiental confirmado",
+      "headline_en": "Hormuz: military pressure on a critical route without confirmed environmental coupling",
+      "conflict_event": "SENTINEL registró señales de alta prioridad sobre escalada militar en torno a Irán y el Estrecho de Ormuz, incluida la reclamación iraní de un ataque contra un buque estadounidense y una señal de hundimiento de petrolero iraní.",
+      "environmental_event": "USGS registró un sismo M4.5 a 13 km al NNW de Yasuj, Irán, el 1 de septiembre de 2026.",
+      "coupling_type": [
+        "ruta crítica",
+        "energía",
+        "conflicto interestatal",
+        "sismo menor",
+        "observación sin causalidad"
+      ],
+      "why_it_matters": "Ormuz importa por energía y escalada interestatal; el dato geofísico existe en el mismo país y ventana, pero no hay evidencia de afectación directa sobre navegación, petróleo o conducta militar.",
+      "fact": "SENTINEL capturó múltiples señales sobre Irán/Ormuz y USGS registró un sismo M4.5 en Irán dentro de la ventana semanal.",
+      "coupling": "El acople es débil: mismo país y semana, pero sin proximidad suficiente al estrecho ni evidencia institucional de interrupción logística, energética o militar atribuible al evento físico.",
+      "strategic_implication": "La señal exige vigilancia porque Ormuz convierte cualquier escalada en variable energética global; la disciplina editorial exige separar riesgo de ruta crítica de acople ambiental confirmado.",
+      "tripolarity_reading": "EE. UU. aparece como actor militar y garante de rutas; China observa el riesgo de seguridad energética; Rusia puede beneficiarse de tensión sobre precios y distracción occidental; la UE queda expuesta por inflación energética y seguridad marítima.",
+      "confidence": "Media",
+      "source_keys": [
+        "sentinel",
+        "hormuz_conflict",
+        "hormuz_oil_market",
+        "usgs_iran_yasuj"
+      ]
+    },
+    {
+      "id": "taiwan-pla-earthquake-resilience-watch",
+      "rank": 2,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media",
+      "priority_en": "Medium",
+      "accent": "#3DD6D0",
+      "location": "Taiwán / sur de la isla y entorno del Estrecho",
+      "headline": "Taiwán: actividad del EPL y resiliencia operacional ante sismo moderado",
+      "headline_en": "Taiwan: PLA activity and operational resilience after a moderate quake",
+      "conflict_event": "SENTINEL registró una señal de monitoreo sobre actividades del Ejército Popular de Liberación en aguas y espacio aéreo alrededor de Taiwán.",
+      "environmental_event": "USGS registró un sismo M4.5 a 98 km al ENE de Donggang, Taiwán, el 6 de septiembre de 2026.",
+      "coupling_type": [
+        "presión militar",
+        "sismo moderado",
+        "infraestructura crítica",
+        "resiliencia operacional",
+        "observación"
+      ],
+      "why_it_matters": "Taiwán concentra valor geoeconómico, rutas sensibles y semiconductores; un evento físico moderado no prueba interrupción, pero sí justifica vigilancia de continuidad operacional.",
+      "fact": "SENTINEL registró actividad del EPL alrededor de Taiwán y USGS registró un sismo M4.5 en el entorno de la isla dentro de la misma semana.",
+      "coupling": "El acople es temporal y geográfico amplio, no causal: no hay evidencia de interrupción portuaria, industrial, militar o de semiconductores esta semana.",
+      "strategic_implication": "La señal sirve para monitorear resiliencia de un nodo donde presión militar y fragilidad física pueden acumularse aunque no estén causalmente conectadas en esta ventana.",
+      "tripolarity_reading": "China mantiene presión en el entorno del Estrecho; EE. UU. y aliados observan disuasión y continuidad de cadenas críticas; la UE queda indirectamente expuesta por tecnología, comercio y dependencia industrial.",
+      "confidence": "Media",
+      "source_keys": [
+        "taiwan_pla",
+        "usgs_taiwan_donggang"
+      ]
+    },
+    {
+      "id": "ukraine-russia-periphery-environment-watch",
+      "rank": 3,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media-baja",
+      "priority_en": "Medium-low",
+      "accent": "#B794F4",
+      "location": "Ucrania/Rusia y periferia rusa del Pacífico",
+      "headline": "Ucrania/Rusia: conflicto sostenido y señales ambientales periféricas sin impacto directo",
+      "headline_en": "Ukraine/Russia: sustained conflict and peripheral environmental signals without direct impact",
+      "conflict_event": "SENTINEL registró señales de alta y media prioridad sobre la guerra Rusia-Ucrania, incluidas negociaciones, costes políticos del conflicto y asistencia OTAN a Ucrania.",
+      "environmental_event": "NASA/GDACS registró un incendio en la Federación Rusa de 5.514 hectáreas el 1 de septiembre, y USGS registró un sismo M5.5 al ESE de Kuril’sk, Rusia, el 4 de septiembre.",
+      "coupling_type": [
+        "guerra prolongada",
+        "incendio",
+        "sismo M5.5",
+        "capacidad estatal",
+        "periferia estratégica"
+      ],
+      "why_it_matters": "La señal no altera el frente ucraniano, pero recuerda que Rusia combina guerra sostenida con presiones ambientales y geofísicas en su periferia territorial.",
+      "fact": "SENTINEL registró señales sobre Ucrania/Rusia; NASA/GDACS y USGS registraron eventos físicos en territorio ruso durante la misma ventana.",
+      "coupling": "El acople es periférico y no confirmado: no hay evidencia de afectación sobre logística militar, energía, movilización o negociación atribuible a esos eventos ambientales.",
+      "strategic_implication": "La utilidad analítica está en vigilar capacidad estatal y continuidad territorial rusa, no en convertir eventos ambientales remotos en explicación del conflicto.",
+      "tripolarity_reading": "Rusia sostiene presión militar y narrativa; EE. UU./OTAN sostienen asistencia a Ucrania; China observa costes y oportunidad diplomática; la UE mide resiliencia energética, defensa y fatiga política.",
+      "confidence": "Media-baja",
+      "source_keys": [
+        "ukraine_talks",
+        "nato_ukraine_training",
+        "gdacs_russia_wildfire",
+        "usgs_kuril_earthquake"
+      ]
+    }
+  ]
 };
 
 

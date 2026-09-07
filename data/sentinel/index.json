@@ -6,6 +6,13 @@
   "feed": "./conflict-events.json",
   "items": [
     {
+      "date": "2026-09-07",
+      "window": "31 AGOSTO-6 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+      "status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
+      "json": "./sentinel_weekly_brief_2026-08-31_2026-09-06.json",
+      "markdown": "./weekly-brief-2026-09-07.md"
+    },
+    {
       "date": "2026-08-31",
       "window": "2026-08-24/2026-08-30",
       "json": "data/sentinel/weekly-brief.json",
@@ -90,10 +97,10 @@
     }
   ],
   "latest_meta": {
-    "date": "2026-08-31",
-    "window": "2026-08-24/2026-08-30",
-    "json": "data/sentinel/weekly-brief.json",
-    "markdown": "data/sentinel/weekly-brief-2026-08-31.md",
-    "status": "sin acople significativo confirmado; tres señales en observación"
+    "date": "2026-09-07",
+    "window": "31 AGOSTO-6 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+    "status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
+    "archive": "./sentinel_weekly_brief_2026-08-31_2026-09-06.json",
+    "markdown": "./weekly-brief-2026-09-07.md"
   }
 }
