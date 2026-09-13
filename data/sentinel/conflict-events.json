@@ -4,444 +4,104 @@
       "actors": [
         "United States"
       ],
-      "domain": "wral.com",
-      "id": "evt_7ccc46ba1566250e",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Europa del Este",
-      "score": 10.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "3 killed in Russian strikes on Ukraine as Putin warns Europe against sending troops",
-      "tone": null,
-      "url": "https://www.wral.com/news/ap/839f5-3-killed-in-russian-strikes-on-ukraine-as-putin-warns-europe-against-sending-troops/"
-    },
-    {
-      "actors": [
-        "Canada"
-      ],
-      "domain": "winnipegfreepress.com",
-      "id": "evt_8ae4e03ec86f3bf9",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Europa del Este",
-      "score": 10.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Canada",
-      "tier": "high",
-      "title": "3 killed in Russian strikes on Ukraine as Putin warns Europe against sending troops – Winnipeg Free Press",
-      "tone": null,
-      "url": "https://www.winnipegfreepress.com/world/2026/09/12/3-killed-in-russian-strikes-on-ukraine-as-putin-warns-europe-against-sending-troops"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "lancashiretelegraph.co.uk",
-      "id": "evt_0b1550a01cc1dfd5",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Eurasia",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Three killed in Russian strikes as Putin warns Europe against sending troops",
-      "tone": null,
-      "url": "https://www.lancashiretelegraph.co.uk/news/national/26544732.three-killed-russian-strikes-putin-warns-europe-sending-troops/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "peeblesshirenews.com",
-      "id": "evt_2bbbba97002ec081",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Eurasia",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Three killed in Russian strikes as Putin warns Europe against sending troops",
-      "tone": null,
-      "url": "https://www.peeblesshirenews.com/news/national/26544732.three-killed-russian-strikes-putin-warns-europe-sending-troops/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "thetottenhamindependent.co.uk",
-      "id": "evt_9d8caeef7616fe07",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Eurasia",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Three killed in Russian strikes as Putin warns Europe against sending troops",
-      "tone": null,
-      "url": "https://www.thetottenhamindependent.co.uk/news/national/26544732.three-killed-russian-strikes-putin-warns-europe-sending-troops/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "thewestonmercury.co.uk",
-      "id": "evt_11055f759dd56a70",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Eurasia",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Three killed in Russian strikes as Putin warns Europe against sending troops",
-      "tone": null,
-      "url": "https://www.thewestonmercury.co.uk/news/national/26544732.three-killed-russian-strikes-putin-warns-europe-sending-troops/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "braintreeandwithamtimes.co.uk",
-      "id": "evt_aee3baa147a29291",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Eurasia",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Three killed in Russian strikes as Putin warns Europe against sending troops",
-      "tone": null,
-      "url": "https://www.braintreeandwithamtimes.co.uk/news/national/26544732.three-killed-russian-strikes-putin-warns-europe-sending-troops/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "malverngazette.co.uk",
-      "id": "evt_b973c0748819ebe2",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Eurasia",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Three killed in Russian strikes as Putin warns Europe against sending troops",
-      "tone": null,
-      "url": "https://www.malverngazette.co.uk/news/national/26544732.three-killed-russian-strikes-putin-warns-europe-sending-troops/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "newsandstar.co.uk",
-      "id": "evt_e529941a10382f80",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Eurasia",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T100000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Three killed in Russian strikes as Putin warns Europe against sending troops",
-      "tone": null,
-      "url": "https://www.newsandstar.co.uk/news/national/26544732.three-killed-russian-strikes-putin-warns-europe-sending-troops/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "stroudnewsandjournal.co.uk",
-      "id": "evt_53e6486277244e10",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "war",
-        "strike",
-        "killed",
-        "troops"
-      ],
-      "region": "Eurasia",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T100000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Three killed in Russian strikes as Putin warns Europe against sending troops",
-      "tone": null,
-      "url": "https://www.stroudnewsandjournal.co.uk/news/national/26544732.three-killed-russian-strikes-putin-warns-europe-sending-troops/"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "timesofindia.indiatimes.com",
-      "id": "evt_230d59703e38317a",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia"
-      ],
-      "matched_themes": [
-        "war",
-        "troops"
-      ],
-      "region": "Europa del Este",
-      "score": 8.5,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 4.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "Western troops in Ukraine would mean war with Russia : Putin ahead of Brics meet",
-      "tone": null,
-      "url": "https://timesofindia.indiatimes.com/world/europe/western-troops-in-ukraine-would-mean-war-with-russia-putin-ahead-of-brics-meet/articleshow/134115367.cms"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "naharnet.com",
-      "id": "evt_e62bc951511b351b",
+      "domain": "dailygazette.com",
+      "id": "evt_88f12d77612a74a8",
       "language": "English",
       "matched_regions": [
         "iran",
-        "yemen",
-        "saudi"
+        "iranian",
+        "hormuz"
       ],
       "matched_themes": [
-        "rebel",
-        "blockade"
+        "strike",
+        "killed"
       ],
       "region": "MENA",
-      "score": 8.0,
+      "score": 7.5,
       "score_breakdown": {
         "region": 4.0,
-        "themes": 4.0,
+        "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Syria",
+      "seen_date": "20260913T091500Z",
+      "source_country": "United States",
       "tier": "high",
-      "title": "Iran seeks end to Saudi blockade of Yemen after rebels take key port",
+      "title": "Iranian media say 1 killed in ship strike on the Strait of Hormuz , and other Mideast developments",
       "tone": null,
-      "url": "https://naharnet.com/stories/en/322415-iran-seeks-end-to-saudi-blockade-of-yemen-after-rebels-take-key-port"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "navbharattimes.indiatimes.com",
-      "id": "evt_b9caa7f4a55b33c2",
-      "language": "Hindi",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "missile",
-        "nuclear"
-      ],
-      "region": "Eurasia",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 4.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "Russian Submarine Satellite , जर्मनी के लिए रूस ने जब तबाही के हथियार को बना दिया स्पेस रॉकेट , न्यूक्लियर मिसाइल से सैटेलाइट को पहुंचाया अंतरिक्ष - russian rsm 54 nuclear missile repurposed to launch german tubsat n satellite from barents sea in 199...",
-      "tone": null,
-      "url": "https://navbharattimes.indiatimes.com/world/rest-of-europe/russian-rsm-54-nuclear-missile-repurposed-to-launch-german-tubsat-n-satellite-from-barents-sea-in-1998/articleshow/134122691.cms"
+      "url": "https://www.dailygazette.com/the_recorder/ap/national/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other/article_9ce92b35-ac4f-5948-8935-e7261851539c.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "newsweek.com",
-      "id": "evt_17f884d19635c994",
-      "language": "English",
-      "matched_regions": [
-        "yemen",
-        "houthi"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 3.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Yemen Houthis Are the Smallest Force With the Biggest Say in Trump War",
-      "tone": null,
-      "url": "https://www.newsweek.com/houthis-yemen-saudi-arabia-middle-east-iran-war-trump-12433106"
-    },
-    {
-      "actors": [
-        "Canada"
-      ],
-      "domain": "winnipegfreepress.com",
-      "id": "evt_ef999f8d38234677",
+      "domain": "ksat.com",
+      "id": "evt_93f544e02a85db31",
       "language": "English",
       "matched_regions": [
         "iran",
-        "iraq",
-        "saudi"
+        "iranian",
+        "hormuz"
       ],
       "matched_themes": [
-        "attack"
+        "strike",
+        "killed"
+      ],
+      "region": "MENA",
+      "score": 7.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Iranian media say 1 killed in ship strike on the Strait of Hormuz , and other Mideast developments",
+      "tone": null,
+      "url": "https://www.ksat.com/news/world/2026/09/13/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other-mideast-developments/"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "europapress.es",
+      "id": "evt_8a386fe0b83878da",
+      "language": "Spanish",
+      "matched_regions": [
+        "israel",
+        "gaza",
+        "palestin"
+      ],
+      "matched_themes": [
+        "bombard"
+      ],
+      "region": "MENA",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T090000Z",
+      "source_country": "Spain",
+      "tier": "high",
+      "title": "Mueren dos palestinos en un nuevo bombardeo de Israel contra el norte de Gaza pese al alto el fuego",
+      "tone": null,
+      "url": "https://www.europapress.es/internacional/noticia-mueren-dos-palestinos-nuevo-bombardeo-israel-contra-norte-gaza-pese-alto-fuego-20260913102336.html"
+    },
+    {
+      "actors": [
+        "Singapore"
+      ],
+      "domain": "straitstimes.com",
+      "id": "evt_21981518bde83481",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [
+        "strike"
       ],
       "region": "MENA",
       "score": 5.5,
@@ -450,188 +110,134 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Canada",
+      "seen_date": "20260913T091500Z",
+      "source_country": "Singapore",
       "tier": "medium",
-      "title": "Iraq races to contain fallout after local Iran - backed militias accused of attacking Saudi pipeline – Winnipeg Free Press",
+      "title": "Israeli strike kills two people in Gaza , medics say",
       "tone": null,
-      "url": "https://www.winnipegfreepress.com/world/2026/09/12/iraq-races-to-contain-fallout-after-local-iran-backed-militias-accused-of-attacking-saudi-pipeline"
+      "url": "https://www.straitstimes.com/world/middle-east/israeli-strike-kills-two-people-in-gaza-medics-say2"
     },
     {
       "actors": [
-        "Syria"
+        "Iran"
       ],
-      "domain": "naharnet.com",
-      "id": "evt_fe5ca7feee08dd8a",
+      "domain": "iranherald.com",
+      "id": "evt_79ad54fe8bb28d92",
       "language": "English",
       "matched_regions": [
-        "yemen",
-        "red sea"
+        "houthi",
+        "hormuz"
       ],
       "matched_themes": [
-        "missile"
+        "strike"
       ],
       "region": "MENA",
-      "score": 5.5,
+      "score": 4.5,
       "score_breakdown": {
         "region": 3.0,
-        "themes": 2.5,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Syria",
+      "seen_date": "20260913T084500Z",
+      "source_country": "Iran",
       "tier": "medium",
-      "title": "Six missiles hit Yemen Red Sea Mocha port",
+      "title": "Fresh strike on vessel in Hormuz , Houthi takeover of Bab el - Mandeb Strait sees West Asia simmer as BRICS calls for peace",
       "tone": null,
-      "url": "https://naharnet.com/stories/en/322425-six-missiles-hit-yemen-s-red-sea-mocha-port"
+      "url": "http://www.iranherald.com/news/279304105/fresh-strike-on-vessel-in-hormuz-houthi-takeover-of-bab-el-mandeb-strait-sees-west-asia-simmer-as-brics-calls-for-peace"
     },
     {
       "actors": [
-        "Germany"
+        "Singapore"
       ],
-      "domain": "berliner-zeitung.de",
-      "id": "evt_fee5eae7331425b7",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Europa del Este",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Germany",
-      "tier": "medium",
-      "title": "Putin warnt Europa : Truppen in der Ukraine bedeuten Krieg mit Russland",
-      "tone": null,
-      "url": "https://www.berliner-zeitung.de:443/article/putin-europa-truppen-ukraine-krieg-russland-10385873"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "aninews.in",
-      "id": "evt_78a35e5c8bf9aefb",
+      "domain": "straitstimes.com",
+      "id": "evt_70280ae9c19338c3",
       "language": "English",
       "matched_regions": [
-        "pakistan"
+        "russia",
+        "india",
+        "china"
       ],
-      "matched_themes": [
-        "killed",
-        "attack"
-      ],
-      "region": "Asia del Sur",
-      "score": 5.0,
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 4.0,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.5,
+        "region": 4.0,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "India",
+      "seen_date": "20260913T091500Z",
+      "source_country": "Singapore",
       "tier": "medium",
-      "title": "BLF claims over 12 Pakistani military personnel , police officer killed in 11 Balochistan attacks",
+      "title": "China , Russia , India seek economic cooperation at BRICS",
       "tone": null,
-      "url": "https://aninews.in/news/world/asia/blf-claims-over-12-pakistani-military-personnel-police-officer-killed-in-11-balochistan-attacks20260912152811/"
+      "url": "https://www.straitstimes.com/asia/south-asia/china-russia-india-seek-economic-cooperation-at-brics"
+    },
+    {
+      "actors": [
+        "Ireland"
+      ],
+      "domain": "rte.ie",
+      "id": "evt_e04765a075cf5656",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "Ireland",
+      "tier": "medium",
+      "title": "Russia accuses Ukraine of jeopardising power plant safety",
+      "tone": null,
+      "url": "https://www.rte.ie/news/2026/0913/1591343-ukraine-russia/"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "newsweek.com",
-      "id": "evt_fb90ca0cf36a2cb5",
+      "domain": "stardem.com",
+      "id": "evt_b7e7d1f18c89b2e7",
       "language": "English",
       "matched_regions": [
-        "iran"
+        "iran",
+        "iranian",
+        "hormuz"
       ],
-      "matched_themes": [
-        "war"
-      ],
+      "matched_themes": [],
       "region": "MENA",
-      "score": 5.0,
+      "score": 4.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
+        "region": 4.0,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
+      "seen_date": "20260913T091500Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "Deepening US - Iran War Spells Political Trouble for Trump and Pezeshkian",
+      "title": "An Iranian commercial ship is struck near Strait of Hormuz with 1 dead , Iranian media say",
       "tone": null,
-      "url": "https://www.newsweek.com/deepening-us-iran-war-spells-political-trouble-for-trump-and-pezeshkian-12415932"
-    },
-    {
-      "actors": [],
-      "domain": "chelmsfordcitynews.co.uk",
-      "id": "evt_adabeb19c6d346ec",
-      "language": "English",
-      "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "",
-      "tier": "medium",
-      "title": "Brics leaders meet in India as wars and US tensions test the bloc",
-      "tone": null,
-      "url": "https://www.chelmsfordcitynews.co.uk/news/national/26544472.brics-leaders-meet-india-wars-us-tensions-test-bloc/"
+      "url": "http://www.stardem.com/ap/world/an-iranian-commercial-ship-is-struck-near-strait-of-hormuz-with-1-dead-iranian-media/article_7b7994df-d263-5fa0-ba4d-eb8d6ea21f22.html"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Afghanistan"
       ],
-      "domain": "britainnews.net",
-      "id": "evt_b365c213abc30737",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "nuclear"
-      ],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "IAEA accuses Iran of non - cooperation over nuclear activities",
-      "tone": null,
-      "url": "http://www.britainnews.net/news/279299211/iaea-accuses-iran-of-non-cooperation-over-nuclear-activities"
-    },
-    {
-      "actors": [
-        "Saudi Arabia"
-      ],
-      "domain": "arabnews.com",
-      "id": "evt_80cade8d13a2e939",
+      "domain": "afghanistansun.com",
+      "id": "evt_8935350d0405f97c",
       "language": "English",
       "matched_regions": [
         "houthi",
         "saudi"
       ],
       "matched_themes": [
-        "attack"
+        "strike"
       ],
       "region": "MENA",
       "score": 4.0,
@@ -640,426 +246,47 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Saudi Arabia",
+      "seen_date": "20260913T091500Z",
+      "source_country": "Afghanistan",
       "tier": "medium",
-      "title": "Arab News | Japan condemns the Houthis attacks on Saudi Arabia",
+      "title": "Houthis continue strike at Saudi Arabian border , tighten grip on oil route",
       "tone": null,
-      "url": "https://www.arabnews.com/world/japan-condemns-the-houthis-attacks-on-saudi-arabia-3001444"
+      "url": "http://www.afghanistansun.com/news/279304011/houthis-continue-strike-at-saudi-arabian-border-tighten-grip-on-oil-route"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Israel"
       ],
-      "domain": "peeblesshirenews.com",
-      "id": "evt_ed3dcd407289abe3",
+      "domain": "israelherald.com",
+      "id": "evt_35421e189074307e",
       "language": "English",
       "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Brics leaders meet in India as wars and US tensions test the bloc",
-      "tone": null,
-      "url": "https://www.peeblesshirenews.com/news/national/26544472.brics-leaders-meet-india-wars-us-tensions-test-bloc/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kjzz.org",
-      "id": "evt_bb64e670ae2af1a2",
-      "language": "English",
-      "matched_regions": [
-        "yemen",
         "houthi",
-        "red sea"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Yemen Houthis capture a Red Sea island in threat to shipping",
-      "tone": null,
-      "url": "https://www.kjzz.org/npr-top-stories/2026-09-11/yemens-houthis-capture-a-red-sea-island-in-threat-to-shipping"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "oklahomacitysun.com",
-      "id": "evt_33a4e0aaedfa4297",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "nuclear"
-      ],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran faces new nuclear pressure from IAEA",
-      "tone": null,
-      "url": "http://www.oklahomacitysun.com/news/279299211/iran-faces-new-nuclear-pressure-from-iaea"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kuaf.com",
-      "id": "evt_8c166ef1e151f6e1",
-      "language": "English",
-      "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "BRICS leaders meet in India as wars and US tensions test the bloc",
-      "tone": null,
-      "url": "https://www.kuaf.com/npr-news/2026-09-12/brics-leaders-meet-in-india-as-wars-and-us-tensions-test-the-bloc"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "wandsworthguardian.co.uk",
-      "id": "evt_ee33e7a6bd3baea9",
-      "language": "English",
-      "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Brics leaders meet in India as wars and US tensions test the bloc",
-      "tone": null,
-      "url": "https://www.wandsworthguardian.co.uk/news/national/26544472.brics-leaders-meet-india-wars-us-tensions-test-bloc/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "krcu.org",
-      "id": "evt_746a89bc27a28431",
-      "language": "English",
-      "matched_regions": [
-        "yemen",
-        "houthi",
-        "red sea"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Yemen Houthis capture a Red Sea island in threat to shipping",
-      "tone": null,
-      "url": "https://www.krcu.org/2026-09-12/yemens-houthis-capture-a-red-sea-island-in-threat-to-shipping"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wrvo.org",
-      "id": "evt_c0a717c1fce63a7a",
-      "language": "English",
-      "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "BRICS leaders meet in India as wars and US tensions test the bloc",
-      "tone": null,
-      "url": "https://www.wrvo.org/2026-09-12/brics-leaders-meet-in-india-as-wars-and-us-tensions-test-the-bloc"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "malverngazette.co.uk",
-      "id": "evt_9fbdb56966961dda",
-      "language": "English",
-      "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Brics leaders meet in India as wars and US tensions test the bloc",
-      "tone": null,
-      "url": "https://www.malverngazette.co.uk/news/national/26544472.brics-leaders-meet-india-wars-us-tensions-test-bloc/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wcsufm.org",
-      "id": "evt_4ed846695e0226d7",
-      "language": "English",
-      "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "BRICS leaders meet in India as wars and US tensions test the bloc",
-      "tone": null,
-      "url": "https://www.wcsufm.org/latest-from-npr/2026-09-12/brics-leaders-meet-in-india-as-wars-and-us-tensions-test-the-bloc"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "leaderlive.co.uk",
-      "id": "evt_cb19fd8355ebf844",
-      "language": "English",
-      "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Brics leaders meet in India as wars and US tensions test the bloc",
-      "tone": null,
-      "url": "https://www.leaderlive.co.uk/news/national/26544472.brics-leaders-meet-india-wars-us-tensions-test-bloc/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kalw.org",
-      "id": "evt_abbef19696c49e40",
-      "language": "English",
-      "matched_regions": [
-        "yemen",
-        "houthi",
-        "red sea"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Yemen Houthis capture a Red Sea island in threat to shipping",
-      "tone": null,
-      "url": "https://www.kalw.org/npr-news/2026-09-11/yemens-houthis-capture-a-red-sea-island-in-threat-to-shipping"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "naharnet.com",
-      "id": "evt_2962c29518ad95a6",
-      "language": "English",
-      "matched_regions": [
-        "yemen",
-        "houthi",
-        "red sea"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Syria",
-      "tier": "medium",
-      "title": "Houthis seize Yemen entire Red Sea coast",
-      "tone": null,
-      "url": "https://naharnet.com/stories/en/322437-houthis-seize-yemen-s-entire-red-sea-coast"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "eadt.co.uk",
-      "id": "evt_8878b8cc9c0b8c33",
-      "language": "English",
-      "matched_regions": [
-        "india"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T100000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Brics leaders meet in India as wars and US tensions test the bloc",
-      "tone": null,
-      "url": "https://www.eadt.co.uk/news/national/26544472.brics-leaders-meet-india-wars-us-tensions-test-bloc/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "lancashiretelegraph.co.uk",
-      "id": "evt_96b9d9acd1f0473b",
-      "language": "English",
-      "matched_regions": [
-        "iraq",
         "saudi"
       ],
       "matched_themes": [
-        "attack"
+        "strike"
       ],
       "region": "MENA",
-      "score": 3.5,
+      "score": 4.0,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 2.5,
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20260913T084500Z",
+      "source_country": "Israel",
       "tier": "medium",
-      "title": "Iraq tries to contain fallout after militias accused of attacking Saudi pipeline",
+      "title": "Houthis continue strike at Saudi Arabian border , tighten grip on oil route",
       "tone": null,
-      "url": "https://www.lancashiretelegraph.co.uk/news/national/26544769.iraq-tries-contain-fallout-militias-accused-attacking-saudi-pipeline/"
+      "url": "http://www.israelherald.com/news/279304011/houthis-continue-strike-at-saudi-arabian-border-tighten-grip-on-oil-route"
     },
     {
       "actors": [
-        "United States"
+        "Ireland"
       ],
-      "domain": "wral.com",
-      "id": "evt_b47150875725d829",
-      "language": "English",
-      "matched_regions": [
-        "iraq",
-        "saudi"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iraq confirms attacks on Saudi pipeline originated from Iraqi territory and other Mideast news",
-      "tone": null,
-      "url": "https://www.wral.com/news/ap/32448-iraq-confirms-attacks-on-saudi-pipeline-originated-from-iraqi-territory-and-other-mideast-news/"
-    },
-    {
-      "actors": [
-        "Syria"
-      ],
-      "domain": "naharnet.com",
-      "id": "evt_9aafa5210103f3ef",
+      "domain": "rte.ie",
+      "id": "evt_d736153096ddb367",
       "language": "English",
       "matched_regions": [
         "iran",
@@ -1073,79 +300,23 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Syria",
+      "seen_date": "20260913T091500Z",
+      "source_country": "Ireland",
       "tier": "medium",
-      "title": "Iran says to discuss Hormuz with Gulf states in Oman on Monday",
+      "title": "Iran authorities say one dead after ship struck in Hormuz",
       "tone": null,
-      "url": "https://naharnet.com/stories/en/322438-iran-says-to-discuss-hormuz-with-gulf-states-in-oman-on-monday"
+      "url": "https://www.rte.ie/news/2026/0913/1591336-iran-war/"
     },
     {
       "actors": [
-        "United States"
+        "India"
       ],
-      "domain": "sitkasentinel.com",
-      "id": "evt_c3402b355147e958",
-      "language": "English",
-      "matched_regions": [
-        "iraq",
-        "saudi"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iraq confirms attacks on Saudi pipeline originated from Iraqi territory and other Mideast news",
-      "tone": null,
-      "url": "http://www.sitkasentinel.com/stories/iraq-confirms-attacks-on-saudi-pipeline-originated-from-iraqi-territory-and-other-mideast-news,170342"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "leaderlive.co.uk",
-      "id": "evt_34ef9d1766bf5599",
-      "language": "English",
-      "matched_regions": [
-        "iraq",
-        "saudi"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Iraq tries to contain fallout after militias accused of attacking Saudi pipeline",
-      "tone": null,
-      "url": "https://www.leaderlive.co.uk/news/national/26544769.iraq-tries-contain-fallout-militias-accused-attacking-saudi-pipeline/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "weirtondailytimes.com",
-      "id": "evt_169e793de12ab75b",
+      "domain": "deccanchronicle.com",
+      "id": "evt_9a0d771325f0dae9",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "terror",
+        "nuclear",
         "attack"
       ],
       "region": "Global",
@@ -1155,45 +326,171 @@
         "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
+      "seen_date": "20260913T091500Z",
+      "source_country": "India",
       "tier": "medium",
-      "title": "Blue Mass marks anniversary of terror attacks",
+      "title": "BRICS Leaders Raise Concern Over Attacks On Civilian , Nuclear Facilities",
       "tone": null,
-      "url": "https://www.weirtondailytimes.com/news/local-news/2026/09/blue-mass-marks-anniversary-of-terror-attacks/"
+      "url": "https://www.deccanchronicle.com/nation/current-affairs/brics-leaders-raise-concern-over-attacks-on-civilian-nuclear-facilities-1987183"
     },
     {
       "actors": [
-        "United States"
+        "Lithuania"
       ],
-      "domain": "postregister.com",
-      "id": "evt_4f3eb49df3542190",
-      "language": "English",
+      "domain": "klaipeda.diena.lt",
+      "id": "evt_b47755e44195284a",
+      "language": "Lithuanian",
       "matched_regions": [
         "iran",
-        "saudi"
+        "hormuz"
       ],
       "matched_themes": [],
       "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "Lithuania",
+      "tier": "medium",
+      "title": "Irano pareigūnai praneša , kad Hormuzo sąsiauryje smogta į laivą , žuvo žmogus",
+      "tone": null,
+      "url": "https://klaipeda.diena.lt/naujienos/pasaulis/konfliktai-nelaimes/irano-pareigunai-pranesa-kad-hormuzo-sasiauryje-smogta-i-laiva-zuvo-zmogus-1774507"
+    },
+    {
+      "actors": [
+        "Malaysia"
+      ],
+      "domain": "freemalaysiatoday.com",
+      "id": "evt_c64f8288f563c8f3",
+      "language": "Malay",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "Malaysia",
+      "tier": "monitor",
+      "title": "Malaysia pertimbang peroleh peluru berpandu BrahMos , kata Anwar",
+      "tone": null,
+      "url": "https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/09/13/malaysia-pertimbang-peroleh-peluru-berpandu-brahmos-kata-anwar"
+    },
+    {
+      "actors": [
+        "Switzerland"
+      ],
+      "domain": "derbund.ch",
+      "id": "evt_a29a7bb5e3c047b8",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "Switzerland",
+      "tier": "monitor",
+      "title": "F - 35A : Fixpreis war nie ein Fixpreis",
+      "tone": null,
+      "url": "https://www.derbund.ch/f-35a-fixpreis-war-nie-ein-fixpreis-125950104678"
+    },
+    {
+      "actors": [
+        "Zimbabwe"
+      ],
+      "domain": "zimbabwestar.com",
+      "id": "evt_993012bf1867a9e5",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "Zimbabwe",
+      "tier": "monitor",
+      "title": "A new Arab cold war is dividing North Africa . How did it come to this ?",
+      "tone": null,
+      "url": "http://www.zimbabwestar.com/news/279304284/a-new-arab-cold-war-is-dividing-north-africa-how-did-it-come-to-this"
+    },
+    {
+      "actors": [
+        "Afghanistan"
+      ],
+      "domain": "afghanistansun.com",
+      "id": "evt_2a86e60ebc1abddc",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "Afghanistan",
+      "tier": "monitor",
+      "title": "Rahul Gandhi meets Malaysian PM Anwar Ibrahim for breakfast meeting on sidelines of BRICS Summit",
+      "tone": null,
+      "url": "http://www.afghanistansun.com/news/279304246/rahul-gandhi-meets-malaysian-pm-anwar-ibrahim-for-breakfast-meeting-on-sidelines-of-brics-summit"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "dailypioneer.com",
+      "id": "evt_fcd1b3521e3a9253",
+      "language": "English",
+      "matched_regions": [
+        "india",
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
       "score": 3.0,
       "score_breakdown": {
         "region": 3.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
+      "seen_date": "20260913T090000Z",
+      "source_country": "India",
       "tier": "monitor",
-      "title": "Saudi Arabia has few options as it faces mounting threats from Iran and its allies",
+      "title": "Modi - Xi Talks at BRICS Summit : India - China Ties Enter Pragmatic Phase",
       "tone": null,
-      "url": "http://www.postregister.com/businessreport/business/saudi-arabia-has-few-options-as-it-faces-mounting-threats-from-iran-and-its-allies/article_fa24a098-eee8-5c49-b37c-b2f8fe2f89e8.html"
+      "url": "https://dailypioneer.com/news/xis-india-return-signals-thaw-in-ties"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "wiznation.com",
-      "id": "evt_7439e0d992691baa",
+      "domain": "collegian.com",
+      "id": "evt_58c938d5d515b978",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -1206,72 +503,22 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
+      "seen_date": "20260913T084500Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "15 Brands Were Looking Forward To At Fashion Week 2026",
+      "title": "Kekua Richards anchors CSU volleyball in Border War win over Wyoming",
       "tone": null,
-      "url": "https://wiznation.com/4167679/fashion-brands-nyfw-2026/"
+      "url": "https://collegian.com/articles/featured/2026/09/kekua-richards-anchors-csu-volleyball-in-border-war-win-over-wyoming/"
     },
     {
       "actors": [
-        "United States"
+        "Syria"
       ],
-      "domain": "sanantoniopost.com",
-      "id": "evt_9f3950b6b3b14839",
+      "domain": "english.aawsat.com",
+      "id": "evt_c1bdf1f3f8d31067",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Top 25 roundup : Austin Simmons , No . 23 Mizzou win Border War vs . Kansas",
-      "tone": null,
-      "url": "http://www.sanantoniopost.com/news/279302325/top-25-roundup-austin-simmons-no-23-mizzou-win-border-war-vs-kansas"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "dailymail.com",
-      "id": "evt_e4a8bb22ee7245c6",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Call in the cavalry ! British army brings back war horses as it tests camouflaged steeds in summer training camp",
-      "tone": null,
-      "url": "https://www.dailymail.com/news/article-16125485/British-army-brings-war-horses-tests-camouflaged-steeds-summer-training-camp.html"
-    },
-    {
-      "actors": [
-        "Denmark"
-      ],
-      "domain": "jyllands-posten.dk",
-      "id": "evt_74abfb6bd27be54d",
-      "language": "Danish",
       "matched_regions": [
-        "saudi"
+        "iraq"
       ],
       "matched_themes": [
         "drone"
@@ -1283,144 +530,143 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Denmark",
+      "seen_date": "20260913T084500Z",
+      "source_country": "Syria",
       "tier": "monitor",
-      "title": "Saudi - Arabien lukker olierørledning efter droneangreb fra Irak",
+      "title": "Iraq Seizes Drones , Projectiles in Western Desert",
       "tone": null,
-      "url": "https://jyllands-posten.dk/international/ECE19636660/saudiarabien-lukker-olieroerledning-efter-droneangreb-fra-irak/?fp-exp=60671012&fp-alg=606710121"
+      "url": "https://english.aawsat.com/arab-world/5317677-iraq-seizes-drones-projectiles-western-desert"
     },
     {
       "actors": [
-        "Germany"
+        "United Kingdom"
       ],
-      "domain": "onvista.de",
-      "id": "evt_31dfa78e7278a537",
-      "language": "German",
+      "domain": "eastlothiancourier.com",
+      "id": "evt_d953f2e1a9422349",
+      "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "war"
+        "offensive"
       ],
       "region": "Global",
-      "score": 3.0,
+      "score": 2.5,
       "score_breakdown": {
         "region": 0.0,
-        "themes": 3.0,
+        "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260912T100000Z",
-      "source_country": "Germany",
+      "seen_date": "20260913T091500Z",
+      "source_country": "United Kingdom",
       "tier": "monitor",
-      "title": "Fed - Entscheidung live : Zinsschock voraus ? Warsh vor der härtesten Entscheidung seiner Amtszeit",
+      "title": "Man tracked partner movements and sent offensive messages",
       "tone": null,
-      "url": "https://www.onvista.de/news/2026/09-12-fed-entscheidung-live-zinsschock-voraus-warsh-vor-der-haertesten-entscheidung-seiner-amtszeit-0-67-26552753"
+      "url": "https://www.eastlothiancourier.com/news/26532495.man-tracked-partners-movements-sent-offensive-messages/"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "en.dailypakistan.com.pk",
+      "id": "evt_56303032ff148137",
+      "language": "English",
+      "matched_regions": [
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T090000Z",
+      "source_country": "Pakistan",
+      "tier": "monitor",
+      "title": "World braces for Big Jump in Oil Prices after Saudi Pipeline Shutdown due to Houthi Threats",
+      "tone": null,
+      "url": "https://en.dailypakistan.com.pk/13-Sep-2026/world-braces-for-big-jump-in-oil-prices-after-saudi-pipeline-shutdown-due-to-houthi-threats"
+    },
+    {
+      "actors": [],
+      "domain": "news.yam.md",
+      "id": "evt_faa8ca4ecd2cecff",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "LIVE TEXT / Armata rusă a atacat regiunea Odesa cu rachete și drone peste noapte . Război în Ucraina , ziua 1663",
+      "tone": null,
+      "url": "https://news.yam.md/ro/story/63676369"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "lbc.co.uk",
+      "id": "evt_68d1a676e806874d",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Real hardship and difficultie lie ahead in fight for Ukraine , says PM top security adviser",
+      "tone": null,
+      "url": "https://www.lbc.co.uk/article/hardships-difficulties-ukraine-russia-uk-5HjdhLG_2/"
     },
     {
       "actors": [
         "Vietnam"
       ],
-      "domain": "baomoi.com",
-      "id": "evt_d3ea73f74e9d209e",
+      "domain": "vietgiaitri.com",
+      "id": "evt_c12a766769fcbd71",
       "language": "Vietnamese",
       "matched_regions": [
-        "iran"
+        "ukraine"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Europa del Este",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
+      "seen_date": "20260913T091500Z",
       "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "Xăng tăng giá , người dân Iran mắc kẹt trong vòng xoáy nghèo khó",
+      "title": "Một sự kiện bất ngờ đã xảy ra ở Ukraine : Ông Zelensky khẩn cấp yêu cầu gặp ông Putin",
       "tone": null,
-      "url": "https://baomoi.com/xang-tang-gia-nguoi-dan-iran-mac-ket-trong-vong-xoay-ngheo-kho-c56034668.epi"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "cotidianul.ro",
-      "id": "evt_ae0e8cb29d62c0f4",
-      "language": "Romanian",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "Cine este Asaf Avidan , cântărețul francez născut în Israel care a dobândit cetățenia română",
-      "tone": null,
-      "url": "https://www.cotidianul.ro/cine-este-asaf-avidan-cantaretul-francez-nascut-in-israel-care-a-dobandit-cetatenia-romana/"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "jpost.com",
-      "id": "evt_b22d38720a393119",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "No . 40 : David Barnea : Mossad head who took Israel fight into enemy territory",
-      "tone": null,
-      "url": "https://www.jpost.com/influencers-26/50jews-26/article-907930"
+      "url": "https://vietgiaitri.com/mot-su-kien-bat-ngo-da-xay-ra-o-ukraine-ong-zelensky-khan-cap-yeu-cau-gap-ong-putin-20260913i7770612/"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "berliner-zeitung.de",
-      "id": "evt_ecb3f91dfc687531",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Brics - Gipfel 2026 startet : Streit um Iran und erstes Treffen von Xi und Modi in Indien seit 2019",
-      "tone": null,
-      "url": "https://www.berliner-zeitung.de:443/article/brics-gipfel-2026-in-neu-delhi-streit-um-iran-und-mit-spannung-erwartetes-treffen-zwischen-xi-und-modi-10386071"
-    },
-    {
-      "actors": [
-        "Switzerland"
-      ],
-      "domain": "gmx.ch",
-      "id": "evt_c6d4227f07519102",
+      "domain": "rnz.de",
+      "id": "evt_12fc43ea6cd9d7c8",
       "language": "German",
       "matched_regions": [
         "ukraine"
@@ -1433,20 +679,70 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Switzerland",
+      "seen_date": "20260913T091500Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Neue russische Luftangriffe auf die Ukraine",
+      "title": "Ukraine - Krieg : Zwei Tote in Russland nach ukrainischen Angriffen",
       "tone": null,
-      "url": "https://www.gmx.ch/magazine/politik/russland-krieg-ukraine/russische-luftangriffe-ukraine-42717426"
+      "url": "https://www.rnz.de/politik/nachrichten_artikel,-Ukraine-Krieg-Zwei-Tote-in-Russland-nach-ukrainischen-Angriffen-_arid,2428005.html"
     },
     {
       "actors": [
-        "Spain"
+        "Venezuela"
       ],
-      "domain": "rtve.es",
-      "id": "evt_073841f479814d36",
+      "domain": "entornointeligente.com",
+      "id": "evt_02bafbc5a3d0fd11",
       "language": "Spanish",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "Venezuela",
+      "tier": "monitor",
+      "title": "El Reino Unido e Israel se sumen en una crisis que rompe décadas de alianza – EntornoInteligente . com",
+      "tone": null,
+      "url": "https://www.entornointeligente.com/el-reino-unido-e-israel-se-sumen-en-una-crisis-que-rompe-decadas-de-alianza/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "zazoom.it",
+      "id": "evt_9dd88ee9361db60d",
+      "language": "Italian",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Ucraina Russia | Xi e Modi disponibili a mediare per accordo pace",
+      "tone": null,
+      "url": "https://www.zazoom.it/2026-09-13/ucraina-russia-xi-e-modi-disponibili-a-mediare-per-accordo-pace/19675599/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "rnz.de",
+      "id": "evt_815b3d297c9dab3a",
+      "language": "German",
       "matched_regions": [
         "iran"
       ],
@@ -1458,92 +754,119 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T100000Z",
-      "source_country": "Spain",
+      "seen_date": "20260913T091500Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Cumbre BRICS : asisten Putin , Xi y el primer ministro iraní",
+      "title": "Iran - Krieg : Ein Toter nach Angriff auf iranisches Containerschiff",
       "tone": null,
-      "url": "https://www.rtve.es/noticias/20260912/cumbre-brics-india-putin-xi-iran/17222368.shtml"
+      "url": "https://www.rnz.de/politik/nachrichten_artikel,-Iran-Krieg-Ein-Toter-nach-Angriff-auf-iranisches-Containerschiff-_arid,2428015.html"
     },
     {
-      "actors": [],
-      "domain": "mesabitribune.com",
-      "id": "evt_17f8c472ae371bd0",
+      "actors": [
+        "Sweden"
+      ],
+      "domain": "svd.se",
+      "id": "evt_ee7b5b18035b63c8",
+      "language": "Swedish",
+      "matched_regions": [],
+      "matched_themes": [
+        "rebel"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "Sweden",
+      "tier": "monitor",
+      "title": "Huthirebeller bygger vapen med hjälp av AI",
+      "tone": null,
+      "url": "https://www.svd.se/a/3p3lgX/huthirebeller-bygger-vapen-med-hjalp-av-ai"
+    },
+    {
+      "actors": [
+        "South Korea"
+      ],
+      "domain": "koreatimes.co.kr",
+      "id": "evt_003fbd2a29156328",
       "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T091500Z",
+      "source_country": "South Korea",
+      "tier": "monitor",
+      "title": "Korea nuclear - powered submarines could take on broader Indo - Pacific role",
+      "tone": null,
+      "url": "https://www.koreatimes.co.kr/southkorea/defense/20260913/koreas-nuclear-powered-submarines-could-take-on-broader-indo-pacific-role"
+    },
+    {
+      "actors": [
+        "Bosnia-Herzegovina"
+      ],
+      "domain": "24sata.info",
+      "id": "evt_67b083e2deca62c9",
+      "language": "Serbian",
       "matched_regions": [
-        "china"
+        "iran"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
+      "region": "MENA",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T100000Z",
-      "source_country": "",
+      "seen_date": "20260913T090000Z",
+      "source_country": "Bosnia-Herzegovina",
       "tier": "monitor",
-      "title": "U . S .- China Summit Will Hinge on Critical Minerals",
+      "title": "Novi incident u Hormuškom moreuzu : Pogođen iranski brod , strahuje se od novog skoka cijena nafte",
       "tone": null,
-      "url": "https://www.mesabitribune.com/opinion/letters/u-s--china-summit-will-hinge-on-critical-minerals/article_be55e82b-367d-4c02-9831-67aa1b9a4e8a.html"
+      "url": "https://24sata.info/novi-incident-u-hormuskom-moreuzu-pogodjen-iranski-brod-strahuje-se-od-novog-skoka-cijena-nafte/"
     },
     {
       "actors": [
-        "Syria"
+        "Germany"
       ],
-      "domain": "naharnet.com",
-      "id": "evt_d03ff1783f86fb21",
-      "language": "English",
+      "domain": "gea.de",
+      "id": "evt_7e6a6f625db282f3",
+      "language": "German",
       "matched_regions": [
-        "yemen"
+        "iran"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 1.5,
+      "score": 2.0,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Syria",
+      "seen_date": "20260913T090000Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Anthropic says Yemen fighters used AI to seek guided weapons",
+      "title": "Ein Toter nach Angriff auf iranisches Containerschiff - Weltnachrichten - Reutlinger General - Anzeiger",
       "tone": null,
-      "url": "https://naharnet.com/stories/en/322427-anthropic-says-yemen-fighters-used-ai-to-seek-guided-weapons"
+      "url": "https://www.gea.de/welt_artikel,-ein-toter-nach-angriff-auf-iranisches-containerschiff-_arid,7168034.html"
     },
     {
       "actors": [
-        "Saudi Arabia"
+        "Australia"
       ],
-      "domain": "arabnews.com",
-      "id": "evt_76374f9f33d4e908",
-      "language": "English",
-      "matched_regions": [
-        "houthi"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Saudi Arabia",
-      "tier": "monitor",
-      "title": "Arab News | How can the Houthis be challenged ?",
-      "tone": null,
-      "url": "https://www.arabnews.com/opinion/how-can-the-houthis-be-challenged-3001445"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "fox4beaumont.com",
-      "id": "evt_02871f3c409b60ee",
+      "domain": "cessnockadvertiser.com.au",
+      "id": "evt_69484216262279de",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -1556,95 +879,45 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "United States",
+      "seen_date": "20260913T091500Z",
+      "source_country": "Australia",
       "tier": "monitor",
-      "title": "Never forgotten : Southeast Texans reflect 25 years after 9 / 11 attacks",
+      "title": "Out of her league : PM defends mum after Hanson attack",
       "tone": null,
-      "url": "https://fox4beaumont.com/news/never-forgotten-southeast-texans-reflect-25-years-after-911-attacks"
+      "url": "https://www.cessnockadvertiser.com.au/story/9349124/out-of-her-league-pm-defends-mum-after-hanson-attack/"
     },
     {
       "actors": [
-        "France"
+        "Venezuela"
       ],
-      "domain": "lopinion.fr",
-      "id": "evt_34001889f60cb662",
-      "language": "French",
+      "domain": "entornointeligente.com",
+      "id": "evt_1412f2d78a8f25fc",
+      "language": "Spanish",
       "matched_regions": [
-        "houthi"
+        "venezuela"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "América Latina",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "France",
+      "seen_date": "20260913T091500Z",
+      "source_country": "Venezuela",
       "tier": "monitor",
-      "title": "Yémen : les houthistes semparent de tout le littoral de la mer Rouge",
+      "title": "Samuel Bravo : Los venezolanos somos expertos en votar < El Informador Venezuela – EntornoInteligente . com",
       "tone": null,
-      "url": "https://www.lopinion.fr/international/yemen-les-houthistes-semparent-de-tout-le-littoral-de-la-mer-rouge"
+      "url": "https://www.entornointeligente.com/samuel-bravo-los-venezolanos-somos-expertos-en-votar-el-informador-venezuela/"
     },
     {
       "actors": [
-        "Portugal"
+        "Germany"
       ],
-      "domain": "rtp.pt",
-      "id": "evt_828bdb57e9efa010",
-      "language": "Portuguese",
-      "matched_regions": [
-        "houthi"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Portugal",
-      "tier": "monitor",
-      "title": "Forças governamentais atacaram houthis na costa ocidental do Iémen",
-      "tone": null,
-      "url": "https://www.rtp.pt/noticias/mundo/forcas-governamentais-atacaram-houthis-na-costa-ocidental-do-iemen_n1764984"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "perugiatoday.it",
-      "id": "evt_d2ab41210013c0ee",
-      "language": "Italian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Portate 1 secchio e 4 muratori : la protesta dei cittadini di Ripa per il cimitero abbandonato",
-      "tone": null,
-      "url": "https://www.perugiatoday.it/attualita/protesta-cittadini-ripa-cimitero-perugia.html"
-    },
-    {
-      "actors": [
-        "Albania"
-      ],
-      "domain": "sot.com.al",
-      "id": "evt_767836a932f4b025",
-      "language": "Albanian",
+      "domain": "hna.de",
+      "id": "evt_80e621db5f5f6c70",
+      "language": "German",
       "matched_regions": [
         "mali"
       ],
@@ -1656,12 +929,62 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260912T101500Z",
-      "source_country": "Albania",
+      "seen_date": "20260913T091500Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "I mituri nuk shfaqi pendesë / Vrasja e 14 - vjeçarit në Maliq , Gjykata e Kors vendos 12 vite burg për Enedjos Gurin",
+      "title": "Prinzessin Amalia wechselt von der Luftwaffe zur Marine",
       "tone": null,
-      "url": "http://www.sot.com.al/i-mituri-nuk-shfaqi-pendese-vrasja-e-14-vjecarit-ne-maliq-gjykata-e-korces-vendos-12-vite-burg-per-enedjos-gurin-i5182917"
+      "url": "http://www.hna.de/leute/prinzessin-amalia-wechselt-von-der-luftwaffe-zur-marine-zr-94489530.html"
+    },
+    {
+      "actors": [
+        "Venezuela"
+      ],
+      "domain": "talcualdigital.com",
+      "id": "evt_e7550e03cafcc2e9",
+      "language": "Spanish",
+      "matched_regions": [
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T090000Z",
+      "source_country": "Venezuela",
+      "tier": "monitor",
+      "title": "Venezuela exige servicios públicos continuos y de calidad , por Stalin González",
+      "tone": null,
+      "url": "https://talcualdigital.com/venezuela-exige-servicios-publicos-continuos-y-de-calidad-por-stalin-gonzalez/"
+    },
+    {
+      "actors": [
+        "Slovak Republic"
+      ],
+      "domain": "topky.sk",
+      "id": "evt_23cb9f77b207695b",
+      "language": "Slovak",
+      "matched_regions": [
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260913T084500Z",
+      "source_country": "Slovak Republic",
+      "tier": "monitor",
+      "title": "V Hormuzskom prielive dopadol na loď projektil , hlásia obeť",
+      "tone": null,
+      "url": "https://www.topky.sk/cl/11/9492503/Eskalacia-v-Hormuzskom-prielive--Na-obchodnu-lod-dopadol-projektil--hlasia-prvu-obet"
     }
   ],
   "filters": {
@@ -1675,13 +998,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-09-12T10:44:44Z",
+  "generated_at": "2026-09-13T11:51:12Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 14,
-    "medium": 27,
-    "monitor": 20
+    "high": 3,
+    "medium": 10,
+    "monitor": 25
   },
-  "total_events": 61
+  "total_events": 38
 }
