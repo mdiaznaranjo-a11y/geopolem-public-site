@@ -651,366 +651,521 @@ export const SENTINEL_BRIEF = {
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "main_status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
-  "generated_at": "2026-09-07T08:03:00+02:00",
-  "window": "31 AGOSTO-6 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+  "generated_at": "2026-09-14T08:14:00+02:00",
+  "window": "7-13 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
   "week_window": {
     "local": {
-      "start": "2026-08-31T00:00:00+02:00",
-      "end": "2026-09-06T23:59:59+02:00",
+      "start": "2026-09-07T00:00:00+02:00",
+      "end": "2026-09-13T23:59:59+02:00",
       "timezone": "Europe/Luxembourg"
     },
     "utc": {
-      "start": "2026-08-30T22:00:00Z",
-      "end": "2026-09-06T21:59:59Z"
+      "start": "2026-09-06T22:00:00Z",
+      "end": "2026-09-13T21:59:59Z"
     }
   },
   "summary": [
-    "SENTINEL revisó 46 eventos de conflicto del feed público disponible para la ventana semanal.",
-    "NASA EONET registró 18 eventos abiertos recientes y 379 eventos cerrados recientes; USGS registró 110 sismos de magnitud 4,5+ dentro de la ventana UTC.",
+    "SENTINEL revisó 38 eventos de conflicto del feed público dentro de la ventana semanal.",
+    "NASA EONET registró 14 eventos abiertos recientes y 224 cerrados recientes; USGS registró 74 sismos M4,5+ y 3 sismos M5,5+ dentro de la ventana UTC.",
     "No se verificaron tres acoples conflicto-ambiente suficientemente fuertes para publicarlos como confirmados.",
-    "Las señales con mayor valor de vigilancia se concentran en Irán/Ormuz, Taiwán y Ucrania/Rusia, pero todas quedan etiquetadas como observación.",
-    "La lectura GEOPÓLEM prioriza rutas críticas, continuidad operacional y capacidad estatal, sin presentar correlación espacial o temporal como causalidad."
+    "Las señales con mayor valor de vigilancia se concentran en Sudán, Ucrania y Ormuz, todas etiquetadas como observación.",
+    "La lectura GEOPÓLEM prioriza acceso humanitario, seguridad nuclear-energética y rutas críticas, sin convertir correlación en causalidad."
   ],
-  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y enlaces institucionales derivados de NASA/GDACS/USGS. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, energía, capacidad estatal y presión sobre infraestructura. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
+  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y fuentes institucionales de contraste. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, energía, capacidad estatal y presión sobre infraestructura. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
+  "caveat": "No se publica acople significativo confirmado esta semana: los tres puntos son señales de vigilancia y no inferencias causales.",
   "source_urls": {
     "sentinel": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
     "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
     "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
-    "usgs_week_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-30T22:00:00&endtime=2026-09-06T21:59:59&minmagnitude=4.5&orderby=magnitude",
-    "usgs_week_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-30T22:00:00&endtime=2026-09-06T21:59:59&minmagnitude=5.5&orderby=magnitude",
-    "hormuz_conflict": "https://www.thehindubusinessline.com/news/world/iran-claims-strike-on-us-ship-in-strait-of-hormuz-as-fighting-escalates/article71434847.ece",
-    "hormuz_oil_market": "https://www.thehindubusinessline.com/markets/west-asia-conflict-crude-oil-prices-us-inflation-data-to-drive-markets-next-week/article71434864.ece",
-    "usgs_iran_yasuj": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tda7",
-    "taiwan_pla": "https://www.globalsecurity.org/wmd/library/news/taiwan/2026/taiwan-260906-roc-mnd01.htm",
-    "usgs_taiwan_donggang": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teqz",
-    "ukraine_talks": "https://www.globalsecurity.org/wmd/library/news/ukraine/2026/09/ukraine-260906-globaltimes01.htm",
-    "nato_ukraine_training": "https://www.globalsecurity.org/wmd/library/news/ukraine/2026/09/ukraine-260904-nato01.htm",
-    "gdacs_russia_wildfire": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031547",
-    "usgs_kuril_earthquake": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tefx",
-    "gdacs_haiti_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104142",
-    "gdacs_japan_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104140"
+    "usgs_week_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-06T22:00:00&endtime=2026-09-13T21:59:59&minmagnitude=4.5&orderby=magnitude",
+    "usgs_week_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-06T22:00:00&endtime=2026-09-13T21:59:59&minmagnitude=5.5&orderby=magnitude",
+    "nasa_sudan_wildfire": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24277",
+    "gdacs_sudan_wildfire": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031926",
+    "govuk_sudan_humanitarian": "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-humanitarian-situation-sudan-september-2026-accessible",
+    "un_news_sudan": "https://news.un.org/en/audio/2026/09/1168289",
+    "rte_ukraine_power_safety": "https://www.rte.ie/news/2026/0913/1591343-ukraine-russia/",
+    "iaea_ukraine_update_249": "https://www.iaea.org/newscenter/pressreleases/update-249-iaea-director-general-statement-on-situation-in-ukraine",
+    "eeas_ukraine_iaea_statement": "https://www.eeas.europa.eu/delegations/ukraine/board-governors-international-atomic-energy-agency-eu-statement-agenda-item-7-nuclear-safety_en",
+    "dailygazette_hormuz": "https://www.dailygazette.com/the_recorder/ap/national/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other/article_9ce92b35-ac4f-5948-8935-e7261851539c.html",
+    "ksat_hormuz": "https://www.ksat.com/news/world/2026/09/13/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other-mideast-developments/",
+    "rte_hormuz": "https://www.rte.ie/news/2026/0913/1591336-iran-war/",
+    "reuters_hormuz_traffic": "https://www.reuters.com/world/middle-east/hormuz-traffic-dips-lowest-since-may-after-us-iranian-strikes-ships-2026-09-06/",
+    "ndma_pakistan_sitreps": "https://ndma.gov.pk/sitreps?cat_id=3"
   },
   "data_scan_counts": {
-    "sentinel_events_latest_feed": 46,
-    "sentinel_high_tier_events_latest_feed": 9,
-    "nasa_eonet_open_events_reviewed": 18,
-    "nasa_eonet_closed_events_reviewed": 379,
-    "nasa_eonet_events_reviewed_total": 397,
-    "environment_events_normalized_for_matching": 264,
-    "usgs_m45_plus_events_in_week": 110,
-    "usgs_m55_plus_events_in_week": 12,
-    "total_candidates": 8,
+    "sentinel_events_reviewed": 38,
+    "nasa_open_events": 14,
+    "nasa_closed_events": 224,
+    "usgs_m45_plus": 74,
+    "usgs_m55_plus": 3,
+    "total_candidates": 10,
     "selected_confirmed_couplings": 0,
     "selected_watch_signals": 3
   },
+  "stats": [
+    {
+      "label": "SentinelEvents",
+      "value": 38
+    },
+    {
+      "label": "NasaOpenEvents",
+      "value": 14
+    },
+    {
+      "label": "NasaClosedEvents",
+      "value": 224
+    },
+    {
+      "label": "UsgsM45Plus",
+      "value": 74
+    },
+    {
+      "label": "ConfirmedCouplings",
+      "value": 0
+    },
+    {
+      "label": "WatchSignals",
+      "value": 3
+    }
+  ],
   "limitations": [
-    "El feed SENTINEL público de esta ejecución concentra señales mediáticas y no ofrece cobertura histórica exhaustiva de todos los teatros de conflicto.",
-    "NASA EONET y USGS verifican eventos físicos; no prueban por sí solos impacto sobre acceso humanitario, rutas críticas, conducta militar o decisiones de actores estatales.",
-    "No se verificó esta semana un acople ambiental significativo con evidencia suficiente para etiquetarlo como confirmado.",
-    "Las tres señales seleccionadas son puntos de vigilancia: pueden afectar rutas, resiliencia o continuidad operacional, pero no se presentan como causalidad."
+    "El feed SENTINEL público concentra señales mediáticas y no sustituye una base ACLED o parte militar completo.",
+    "NASA EONET y USGS verifican eventos físicos; no prueban por sí solos impacto sobre rutas, conducta militar, acceso humanitario o decisiones estatales.",
+    "Sudán se apoya en cruce institucional externo porque el feed semanal no capturó suficientes eventos locales de conflicto dentro del mismo set.",
+    "Ormuz se conserva por impacto geopolítico y valor metodológico, no por acople ambiental confirmado."
   ],
   "selected_inflection_points": [
     {
-      "id": "iran-hormuz-geophysical-route-watch",
+      "id": "sudan-humanitarian-fire-access-watch",
       "rank": 1,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media-alta",
-      "priority_en": "Medium-high",
-      "accent": "#FF8A3D",
-      "location": "Irán / Estrecho de Ormuz y Golfo de Omán",
-      "headline": "Ormuz: presión militar sobre ruta crítica sin acople ambiental confirmado",
-      "headline_en": "Hormuz: military pressure on a critical route without confirmed environmental coupling",
-      "conflict_event": "SENTINEL registró señales de alta prioridad sobre escalada militar en torno a Irán y el Estrecho de Ormuz, incluida la reclamación iraní de un ataque contra un buque estadounidense y una señal de hundimiento de petrolero iraní.",
-      "environmental_event": "USGS registró un sismo M4.5 a 13 km al NNW de Yasuj, Irán, el 1 de septiembre de 2026.",
+      "priorityEn": "Medium-high",
+      "accent": "#F59E0B",
+      "location": "Sudán / Kordofan, Nilo Azul y Sudán central",
+      "headline": "Sudán: guerra de acceso humanitario bajo presión ambiental",
+      "headlineEn": "Sudan: humanitarian-access war under environmental pressure",
+      "conflict_event": "Fuentes institucionales describen una guerra en expansión con ataques contra infraestructura civil, mercados, hospitales y zonas de riesgo inminente en Kordofan, Nilo Azul, Darfur Norte y Darfur Oeste.",
+      "environmental_event": "NASA EONET/GDACS registró un incendio en Sudán el 7 de septiembre, con magnitud reportada de 5.663 hectáreas; el análisis humanitario oficial también advierte que la temporada de lluvias, inundaciones, incendios y malas condiciones viales restringen asistencia y elevan riesgos sanitarios.",
       "coupling_type": [
-        "ruta crítica",
-        "energía",
-        "conflicto interestatal",
-        "sismo menor",
-        "observación sin causalidad"
+        "acceso humanitario",
+        "temporada de lluvias",
+        "incendio",
+        "desplazamiento",
+        "capacidad estatal",
+        "observación sin causalidad directa"
       ],
-      "why_it_matters": "Ormuz importa por energía y escalada interestatal; el dato geofísico existe en el mismo país y ventana, pero no hay evidencia de afectación directa sobre navegación, petróleo o conducta militar.",
-      "fact": "SENTINEL capturó múltiples señales sobre Irán/Ormuz y USGS registró un sismo M4.5 en Irán dentro de la ventana semanal.",
-      "coupling": "El acople es débil: mismo país y semana, pero sin proximidad suficiente al estrecho ni evidencia institucional de interrupción logística, energética o militar atribuible al evento físico.",
-      "strategic_implication": "La señal exige vigilancia porque Ormuz convierte cualquier escalada en variable energética global; la disciplina editorial exige separar riesgo de ruta crítica de acople ambiental confirmado.",
-      "tripolarity_reading": "EE. UU. aparece como actor militar y garante de rutas; China observa el riesgo de seguridad energética; Rusia puede beneficiarse de tensión sobre precios y distracción occidental; la UE queda expuesta por inflación energética y seguridad marítima.",
-      "confidence": "Media",
+      "why_it_matters": "La señal importa porque en Sudán el evento físico no necesita ser espectacular para agravar una guerra de logística humanitaria: carreteras, combustible, agua, refugio y electricidad ya operan bajo presión extrema.",
+      "fact": "Hecho: el conflicto sudanés mantiene presión sobre civiles e infraestructura, mientras EONET/GDACS registró un incendio en Sudán dentro de la ventana semanal.",
+      "coupling": "Dato de acople: existe coincidencia temporal y de teatro nacional entre guerra, restricciones de acceso y evento ambiental, pero no hay prueba pública de que el incendio haya alterado directamente una operación militar o una ruta humanitaria concreta.",
+      "implication": "Implicación estratégica: Sudán queda como señal fuerte de vigilancia por capacidad estatal, seguridad alimentaria, desplazamiento y acceso humanitario, no como causalidad ambiental confirmada.",
+      "strategic_implication": "Sudán queda como señal fuerte de vigilancia por capacidad estatal, seguridad alimentaria, desplazamiento y acceso humanitario, no como causalidad ambiental confirmada.",
+      "tripolar": "Lectura tripolar: EE. UU. y la UE quedan en clave humanitaria y diplomática; Rusia y actores regionales observan márgenes de influencia indirecta; China prioriza estabilidad de rutas, recursos y no interferencia; el Sur Global aparece como espacio donde guerra, clima y asistencia se acoplan sin instituciones suficientes.",
+      "tripolar_reading": "EE. UU. y la UE quedan en clave humanitaria y diplomática; Rusia y actores regionales observan márgenes de influencia indirecta; China prioriza estabilidad de rutas, recursos y no interferencia; el Sur Global aparece como espacio donde guerra, clima y asistencia se acoplan sin instituciones suficientes.",
+      "confidence": "Media-alta",
+      "sources": [
+        {
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24277"
+        },
+        {
+          "label": "GDACS",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031926"
+        },
+        {
+          "label": "GOV.UK/OCHA",
+          "url": "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-humanitarian-situation-sudan-september-2026-accessible"
+        },
+        {
+          "label": "UN News",
+          "url": "https://news.un.org/en/audio/2026/09/1168289"
+        }
+      ],
       "source_keys": [
-        "sentinel",
-        "hormuz_conflict",
-        "hormuz_oil_market",
-        "usgs_iran_yasuj"
+        "nasa_sudan_wildfire",
+        "gdacs_sudan_wildfire",
+        "govuk_sudan_humanitarian",
+        "un_news_sudan"
       ]
     },
     {
-      "id": "taiwan-pla-earthquake-resilience-watch",
+      "id": "ukraine-nuclear-grid-safety-watch",
       "rank": 2,
       "status": "en observación",
       "status_en": "watch",
-      "priority": "Media",
-      "priority_en": "Medium",
-      "accent": "#3DD6D0",
-      "location": "Taiwán / sur de la isla y entorno del Estrecho",
-      "headline": "Taiwán: actividad del EPL y resiliencia operacional ante sismo moderado",
-      "headline_en": "Taiwan: PLA activity and operational resilience after a moderate quake",
-      "conflict_event": "SENTINEL registró una señal de monitoreo sobre actividades del Ejército Popular de Liberación en aguas y espacio aéreo alrededor de Taiwán.",
-      "environmental_event": "USGS registró un sismo M4.5 a 98 km al ENE de Donggang, Taiwán, el 6 de septiembre de 2026.",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#60A5FA",
+      "location": "Ucrania / Zaporizhzhia, red eléctrica y entorno nuclear",
+      "headline": "Ucrania: guerra, red eléctrica y seguridad nuclear como acople crítico",
+      "headlineEn": "Ukraine: war, electricity grid and nuclear safety as a critical coupling",
+      "conflict_event": "SENTINEL registró una señal sobre acusaciones cruzadas de riesgo para seguridad de centrales, y la IAEA/UE documentaron actividad militar cerca de instalaciones nucleares y presión sobre la red eléctrica ucraniana.",
+      "environmental_event": "No se identificó un evento NASA/USGS decisivo sobre el frente ucraniano en la semana; el acople observado proviene del riesgo tecnológico-ambiental asociado a seguridad nuclear, incendios, suministro eléctrico externo y generadores diésel.",
       "coupling_type": [
-        "presión militar",
-        "sismo moderado",
-        "infraestructura crítica",
-        "resiliencia operacional",
+        "guerra prolongada",
+        "red eléctrica",
+        "seguridad nuclear",
+        "riesgo tecnológico-ambiental",
         "observación"
       ],
-      "why_it_matters": "Taiwán concentra valor geoeconómico, rutas sensibles y semiconductores; un evento físico moderado no prueba interrupción, pero sí justifica vigilancia de continuidad operacional.",
-      "fact": "SENTINEL registró actividad del EPL alrededor de Taiwán y USGS registró un sismo M4.5 en el entorno de la isla dentro de la misma semana.",
-      "coupling": "El acople es temporal y geográfico amplio, no causal: no hay evidencia de interrupción portuaria, industrial, militar o de semiconductores esta semana.",
-      "strategic_implication": "La señal sirve para monitorear resiliencia de un nodo donde presión militar y fragilidad física pueden acumularse aunque no estén causalmente conectadas en esta ventana.",
-      "tripolarity_reading": "China mantiene presión en el entorno del Estrecho; EE. UU. y aliados observan disuasión y continuidad de cadenas críticas; la UE queda indirectamente expuesta por tecnología, comercio y dependencia industrial.",
-      "confidence": "Media",
+      "why_it_matters": "La señal importa porque la seguridad nuclear depende de continuidad eléctrica, acceso técnico y reducción de actividad militar cerca de instalaciones; el fallo no sería solo militar sino sistémico.",
+      "fact": "Hecho: la IAEA calificó la seguridad nuclear en Ucrania como frágil y la UE señaló afectación recurrente de la red y de los siete pilares de seguridad nuclear.",
+      "coupling": "Dato de acople: no es un acople NASA/USGS clásico, sino un acople conflicto-infraestructura-riesgo ambiental; la evidencia sostiene vigilancia, no atribución causal nueva.",
+      "implication": "Implicación estratégica: Ucrania mantiene una vulnerabilidad donde la guerra puede convertirse en crisis energética, radiológica o de gobernanza técnica sin necesidad de un nuevo evento natural detonante.",
+      "strategic_implication": "Ucrania mantiene una vulnerabilidad donde la guerra puede convertirse en crisis energética, radiológica o de gobernanza técnica sin necesidad de un nuevo evento natural detonante.",
+      "tripolar": "Lectura tripolar: EE. UU. y la UE concentran apoyo militar, energético e institucional; Rusia usa presión operacional sobre infraestructura como palanca estratégica; China sostiene una posición de equilibrio diplomático evitando asumir costo directo; el Sur Global observa precedentes para seguridad nuclear en zonas de guerra.",
+      "tripolar_reading": "EE. UU. y la UE concentran apoyo militar, energético e institucional; Rusia usa presión operacional sobre infraestructura como palanca estratégica; China sostiene una posición de equilibrio diplomático evitando asumir costo directo; el Sur Global observa precedentes para seguridad nuclear en zonas de guerra.",
+      "confidence": "Media-alta",
+      "sources": [
+        {
+          "label": "SENTINEL/GDELT",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        },
+        {
+          "label": "RTE",
+          "url": "https://www.rte.ie/news/2026/0913/1591343-ukraine-russia/"
+        },
+        {
+          "label": "IAEA",
+          "url": "https://www.iaea.org/newscenter/pressreleases/update-249-iaea-director-general-statement-on-situation-in-ukraine"
+        },
+        {
+          "label": "EEAS",
+          "url": "https://www.eeas.europa.eu/delegations/ukraine/board-governors-international-atomic-energy-agency-eu-statement-agenda-item-7-nuclear-safety_en"
+        }
+      ],
       "source_keys": [
-        "taiwan_pla",
-        "usgs_taiwan_donggang"
+        "sentinel",
+        "rte_ukraine_power_safety",
+        "iaea_ukraine_update_249",
+        "eeas_ukraine_iaea_statement"
       ]
     },
     {
-      "id": "ukraine-russia-periphery-environment-watch",
+      "id": "hormuz-route-critical-no-environment-watch",
       "rank": 3,
       "status": "en observación",
       "status_en": "watch",
-      "priority": "Media-baja",
-      "priority_en": "Medium-low",
-      "accent": "#B794F4",
-      "location": "Ucrania/Rusia y periferia rusa del Pacífico",
-      "headline": "Ucrania/Rusia: conflicto sostenido y señales ambientales periféricas sin impacto directo",
-      "headline_en": "Ukraine/Russia: sustained conflict and peripheral environmental signals without direct impact",
-      "conflict_event": "SENTINEL registró señales de alta y media prioridad sobre la guerra Rusia-Ucrania, incluidas negociaciones, costes políticos del conflicto y asistencia OTAN a Ucrania.",
-      "environmental_event": "NASA/GDACS registró un incendio en la Federación Rusa de 5.514 hectáreas el 1 de septiembre, y USGS registró un sismo M5.5 al ESE de Kuril’sk, Rusia, el 4 de septiembre.",
+      "priority": "Media",
+      "priorityEn": "Medium",
+      "accent": "#F97316",
+      "location": "Irán / Estrecho de Ormuz y Golfo de Omán",
+      "headline": "Ormuz: ruta crítica bajo presión, sin acople ambiental confirmado",
+      "headlineEn": "Hormuz: critical route under pressure, without confirmed environmental coupling",
+      "conflict_event": "SENTINEL registró múltiples señales sobre un buque golpeado cerca del Estrecho de Ormuz y tensión militar en torno a Irán, con cobertura internacional durante el 13 de septiembre.",
+      "environmental_event": "NASA EONET y USGS no registraron un evento ambiental o geofísico en el teatro Ormuz-Golfo de Omán que permita sostener un acople conflicto-ambiente esta semana.",
       "coupling_type": [
-        "guerra prolongada",
-        "incendio",
-        "sismo M5.5",
-        "capacidad estatal",
-        "periferia estratégica"
+        "ruta crítica",
+        "energía",
+        "seguridad marítima",
+        "ausencia de acople ambiental",
+        "observación metodológica"
       ],
-      "why_it_matters": "La señal no altera el frente ucraniano, pero recuerda que Rusia combina guerra sostenida con presiones ambientales y geofísicas en su periferia territorial.",
-      "fact": "SENTINEL registró señales sobre Ucrania/Rusia; NASA/GDACS y USGS registraron eventos físicos en territorio ruso durante la misma ventana.",
-      "coupling": "El acople es periférico y no confirmado: no hay evidencia de afectación sobre logística militar, energía, movilización o negociación atribuible a esos eventos ambientales.",
-      "strategic_implication": "La utilidad analítica está en vigilar capacidad estatal y continuidad territorial rusa, no en convertir eventos ambientales remotos en explicación del conflicto.",
-      "tripolarity_reading": "Rusia sostiene presión militar y narrativa; EE. UU./OTAN sostienen asistencia a Ucrania; China observa costes y oportunidad diplomática; la UE mide resiliencia energética, defensa y fatiga política.",
-      "confidence": "Media-baja",
+      "why_it_matters": "La señal importa porque Ormuz puede mover energía, seguros, inflación y cálculo militar global; precisamente por eso no debe confundirse una ruta crítica con un acople ambiental si la evidencia física no aparece.",
+      "fact": "Hecho: el feed semanal muestra alta densidad de señales sobre Ormuz, incluida información de medios sobre un buque alcanzado cerca del estrecho.",
+      "coupling": "Dato de acople: no hay acople ambiental confirmado; la observación se conserva por impacto geopolítico de la ruta y por valor metodológico.",
+      "implication": "Implicación estratégica: Ormuz debe vigilarse como punto de presión energética global, pero el brief evita forzar una causalidad ambiental inexistente.",
+      "strategic_implication": "Ormuz debe vigilarse como punto de presión energética global, pero el brief evita forzar una causalidad ambiental inexistente.",
+      "tripolar": "Lectura tripolar: EE. UU. aparece como garante y actor militar de rutas; China como importador expuesto a disrupciones energéticas; Rusia puede ganar margen por tensión de precios; la UE queda vulnerable a inflación energética y riesgos de aseguramiento marítimo.",
+      "tripolar_reading": "EE. UU. aparece como garante y actor militar de rutas; China como importador expuesto a disrupciones energéticas; Rusia puede ganar margen por tensión de precios; la UE queda vulnerable a inflación energética y riesgos de aseguramiento marítimo.",
+      "confidence": "Media",
+      "sources": [
+        {
+          "label": "SENTINEL/GDELT",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        },
+        {
+          "label": "Daily Gazette/AP",
+          "url": "https://www.dailygazette.com/the_recorder/ap/national/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other/article_9ce92b35-ac4f-5948-8935-e7261851539c.html"
+        },
+        {
+          "label": "KSAT/AP",
+          "url": "https://www.ksat.com/news/world/2026/09/13/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other-mideast-developments/"
+        },
+        {
+          "label": "RTE",
+          "url": "https://www.rte.ie/news/2026/0913/1591336-iran-war/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/middle-east/hormuz-traffic-dips-lowest-since-may-after-us-iranian-strikes-ships-2026-09-06/"
+        }
+      ],
       "source_keys": [
-        "ukraine_talks",
-        "nato_ukraine_training",
-        "gdacs_russia_wildfire",
-        "usgs_kuril_earthquake"
+        "sentinel",
+        "dailygazette_hormuz",
+        "ksat_hormuz",
+        "rte_hormuz",
+        "reuters_hormuz_traffic"
       ]
     }
   ],
-  "not_selected": [
+  "points": [
     {
-      "location": "Yemen / Mar Rojo",
-      "reason": "Conflicto relevante en SENTINEL, pero sin evento NASA/USGS coincidente en la selección regional de esta semana.",
+      "id": "sudan-humanitarian-fire-access-watch",
+      "rank": 1,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#F59E0B",
+      "location": "Sudán / Kordofan, Nilo Azul y Sudán central",
+      "headline": "Sudán: guerra de acceso humanitario bajo presión ambiental",
+      "headlineEn": "Sudan: humanitarian-access war under environmental pressure",
+      "conflict_event": "Fuentes institucionales describen una guerra en expansión con ataques contra infraestructura civil, mercados, hospitales y zonas de riesgo inminente en Kordofan, Nilo Azul, Darfur Norte y Darfur Oeste.",
+      "environmental_event": "NASA EONET/GDACS registró un incendio en Sudán el 7 de septiembre, con magnitud reportada de 5.663 hectáreas; el análisis humanitario oficial también advierte que la temporada de lluvias, inundaciones, incendios y malas condiciones viales restringen asistencia y elevan riesgos sanitarios.",
+      "coupling_type": [
+        "acceso humanitario",
+        "temporada de lluvias",
+        "incendio",
+        "desplazamiento",
+        "capacidad estatal",
+        "observación sin causalidad directa"
+      ],
+      "why_it_matters": "La señal importa porque en Sudán el evento físico no necesita ser espectacular para agravar una guerra de logística humanitaria: carreteras, combustible, agua, refugio y electricidad ya operan bajo presión extrema.",
+      "fact": "Hecho: el conflicto sudanés mantiene presión sobre civiles e infraestructura, mientras EONET/GDACS registró un incendio en Sudán dentro de la ventana semanal.",
+      "coupling": "Dato de acople: existe coincidencia temporal y de teatro nacional entre guerra, restricciones de acceso y evento ambiental, pero no hay prueba pública de que el incendio haya alterado directamente una operación militar o una ruta humanitaria concreta.",
+      "implication": "Implicación estratégica: Sudán queda como señal fuerte de vigilancia por capacidad estatal, seguridad alimentaria, desplazamiento y acceso humanitario, no como causalidad ambiental confirmada.",
+      "strategic_implication": "Sudán queda como señal fuerte de vigilancia por capacidad estatal, seguridad alimentaria, desplazamiento y acceso humanitario, no como causalidad ambiental confirmada.",
+      "tripolar": "Lectura tripolar: EE. UU. y la UE quedan en clave humanitaria y diplomática; Rusia y actores regionales observan márgenes de influencia indirecta; China prioriza estabilidad de rutas, recursos y no interferencia; el Sur Global aparece como espacio donde guerra, clima y asistencia se acoplan sin instituciones suficientes.",
+      "tripolar_reading": "EE. UU. y la UE quedan en clave humanitaria y diplomática; Rusia y actores regionales observan márgenes de influencia indirecta; China prioriza estabilidad de rutas, recursos y no interferencia; el Sur Global aparece como espacio donde guerra, clima y asistencia se acoplan sin instituciones suficientes.",
+      "confidence": "Media-alta",
+      "sources": [
+        {
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24277"
+        },
+        {
+          "label": "GDACS",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031926"
+        },
+        {
+          "label": "GOV.UK/OCHA",
+          "url": "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-humanitarian-situation-sudan-september-2026-accessible"
+        },
+        {
+          "label": "UN News",
+          "url": "https://news.un.org/en/audio/2026/09/1168289"
+        }
+      ],
       "source_keys": [
-        "sentinel"
+        "nasa_sudan_wildfire",
+        "gdacs_sudan_wildfire",
+        "govuk_sudan_humanitarian",
+        "un_news_sudan"
       ]
     },
     {
-      "location": "Haití",
-      "reason": "NASA/GDACS registró inundación, pero el feed SENTINEL de la ventana no mostró evento de conflicto coincidente para elevarlo.",
+      "id": "ukraine-nuclear-grid-safety-watch",
+      "rank": 2,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#60A5FA",
+      "location": "Ucrania / Zaporizhzhia, red eléctrica y entorno nuclear",
+      "headline": "Ucrania: guerra, red eléctrica y seguridad nuclear como acople crítico",
+      "headlineEn": "Ukraine: war, electricity grid and nuclear safety as a critical coupling",
+      "conflict_event": "SENTINEL registró una señal sobre acusaciones cruzadas de riesgo para seguridad de centrales, y la IAEA/UE documentaron actividad militar cerca de instalaciones nucleares y presión sobre la red eléctrica ucraniana.",
+      "environmental_event": "No se identificó un evento NASA/USGS decisivo sobre el frente ucraniano en la semana; el acople observado proviene del riesgo tecnológico-ambiental asociado a seguridad nuclear, incendios, suministro eléctrico externo y generadores diésel.",
+      "coupling_type": [
+        "guerra prolongada",
+        "red eléctrica",
+        "seguridad nuclear",
+        "riesgo tecnológico-ambiental",
+        "observación"
+      ],
+      "why_it_matters": "La señal importa porque la seguridad nuclear depende de continuidad eléctrica, acceso técnico y reducción de actividad militar cerca de instalaciones; el fallo no sería solo militar sino sistémico.",
+      "fact": "Hecho: la IAEA calificó la seguridad nuclear en Ucrania como frágil y la UE señaló afectación recurrente de la red y de los siete pilares de seguridad nuclear.",
+      "coupling": "Dato de acople: no es un acople NASA/USGS clásico, sino un acople conflicto-infraestructura-riesgo ambiental; la evidencia sostiene vigilancia, no atribución causal nueva.",
+      "implication": "Implicación estratégica: Ucrania mantiene una vulnerabilidad donde la guerra puede convertirse en crisis energética, radiológica o de gobernanza técnica sin necesidad de un nuevo evento natural detonante.",
+      "strategic_implication": "Ucrania mantiene una vulnerabilidad donde la guerra puede convertirse en crisis energética, radiológica o de gobernanza técnica sin necesidad de un nuevo evento natural detonante.",
+      "tripolar": "Lectura tripolar: EE. UU. y la UE concentran apoyo militar, energético e institucional; Rusia usa presión operacional sobre infraestructura como palanca estratégica; China sostiene una posición de equilibrio diplomático evitando asumir costo directo; el Sur Global observa precedentes para seguridad nuclear en zonas de guerra.",
+      "tripolar_reading": "EE. UU. y la UE concentran apoyo militar, energético e institucional; Rusia usa presión operacional sobre infraestructura como palanca estratégica; China sostiene una posición de equilibrio diplomático evitando asumir costo directo; el Sur Global observa precedentes para seguridad nuclear en zonas de guerra.",
+      "confidence": "Media-alta",
+      "sources": [
+        {
+          "label": "SENTINEL/GDELT",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        },
+        {
+          "label": "RTE",
+          "url": "https://www.rte.ie/news/2026/0913/1591343-ukraine-russia/"
+        },
+        {
+          "label": "IAEA",
+          "url": "https://www.iaea.org/newscenter/pressreleases/update-249-iaea-director-general-statement-on-situation-in-ukraine"
+        },
+        {
+          "label": "EEAS",
+          "url": "https://www.eeas.europa.eu/delegations/ukraine/board-governors-international-atomic-energy-agency-eu-statement-agenda-item-7-nuclear-safety_en"
+        }
+      ],
       "source_keys": [
-        "gdacs_haiti_flood"
+        "sentinel",
+        "rte_ukraine_power_safety",
+        "iaea_ukraine_update_249",
+        "eeas_ukraine_iaea_statement"
       ]
     },
     {
-      "location": "Indonesia/Timor",
-      "reason": "Alta actividad ambiental y sísmica, sin evento de conflicto coincidente en el feed semanal.",
+      "id": "hormuz-route-critical-no-environment-watch",
+      "rank": 3,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media",
+      "priorityEn": "Medium",
+      "accent": "#F97316",
+      "location": "Irán / Estrecho de Ormuz y Golfo de Omán",
+      "headline": "Ormuz: ruta crítica bajo presión, sin acople ambiental confirmado",
+      "headlineEn": "Hormuz: critical route under pressure, without confirmed environmental coupling",
+      "conflict_event": "SENTINEL registró múltiples señales sobre un buque golpeado cerca del Estrecho de Ormuz y tensión militar en torno a Irán, con cobertura internacional durante el 13 de septiembre.",
+      "environmental_event": "NASA EONET y USGS no registraron un evento ambiental o geofísico en el teatro Ormuz-Golfo de Omán que permita sostener un acople conflicto-ambiente esta semana.",
+      "coupling_type": [
+        "ruta crítica",
+        "energía",
+        "seguridad marítima",
+        "ausencia de acople ambiental",
+        "observación metodológica"
+      ],
+      "why_it_matters": "La señal importa porque Ormuz puede mover energía, seguros, inflación y cálculo militar global; precisamente por eso no debe confundirse una ruta crítica con un acople ambiental si la evidencia física no aparece.",
+      "fact": "Hecho: el feed semanal muestra alta densidad de señales sobre Ormuz, incluida información de medios sobre un buque alcanzado cerca del estrecho.",
+      "coupling": "Dato de acople: no hay acople ambiental confirmado; la observación se conserva por impacto geopolítico de la ruta y por valor metodológico.",
+      "implication": "Implicación estratégica: Ormuz debe vigilarse como punto de presión energética global, pero el brief evita forzar una causalidad ambiental inexistente.",
+      "strategic_implication": "Ormuz debe vigilarse como punto de presión energética global, pero el brief evita forzar una causalidad ambiental inexistente.",
+      "tripolar": "Lectura tripolar: EE. UU. aparece como garante y actor militar de rutas; China como importador expuesto a disrupciones energéticas; Rusia puede ganar margen por tensión de precios; la UE queda vulnerable a inflación energética y riesgos de aseguramiento marítimo.",
+      "tripolar_reading": "EE. UU. aparece como garante y actor militar de rutas; China como importador expuesto a disrupciones energéticas; Rusia puede ganar margen por tensión de precios; la UE queda vulnerable a inflación energética y riesgos de aseguramiento marítimo.",
+      "confidence": "Media",
+      "sources": [
+        {
+          "label": "SENTINEL/GDELT",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        },
+        {
+          "label": "Daily Gazette/AP",
+          "url": "https://www.dailygazette.com/the_recorder/ap/national/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other/article_9ce92b35-ac4f-5948-8935-e7261851539c.html"
+        },
+        {
+          "label": "KSAT/AP",
+          "url": "https://www.ksat.com/news/world/2026/09/13/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other-mideast-developments/"
+        },
+        {
+          "label": "RTE",
+          "url": "https://www.rte.ie/news/2026/0913/1591336-iran-war/"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/world/middle-east/hormuz-traffic-dips-lowest-since-may-after-us-iranian-strikes-ships-2026-09-06/"
+        }
+      ],
       "source_keys": [
-        "nasa_eonet_closed",
-        "usgs_week_m45"
-      ]
-    },
-    {
-      "location": "Japón/Kuriles",
-      "reason": "Actividad ambiental y geofísica relevante, pero sin señal de conflicto directa salvo la lectura periférica rusa incorporada como observación baja.",
-      "source_keys": [
-        "gdacs_japan_flood",
-        "usgs_kuril_earthquake"
+        "sentinel",
+        "dailygazette_hormuz",
+        "ksat_hormuz",
+        "rte_hormuz",
+        "reuters_hormuz_traffic"
       ]
     }
   ],
   "best_short_candidate": {
-    "id": "iran-hormuz-no-forzar-acople",
-    "title": "Ormuz: cuando no hay que forzar el acople",
-    "platform": "Short/Reel 9:16",
-    "duration_target": "60 segundos",
-    "why_selected": "Es el caso con mayor densidad geopolítica y mejor valor pedagógico: muestra una ruta crítica bajo presión militar, pero obliga a separar hecho ambiental débil de causalidad no demostrada.",
-    "hook_3s": "La señal clave de esta semana es una ausencia: Ormuz no confirma acople ambiental.",
+    "id": "hormuz-route-critical-no-environment-watch",
+    "title": "Ormuz: cuando el dato importante es la ausencia",
+    "reason": "Es el mejor punto para Short porque combina alto interés público con una enseñanza metodológica central: no todo punto crítico permite afirmar acople ambiental.",
+    "duration": "60s",
+    "hook_3s": "La señal de esta semana no es un acople: es una advertencia metodológica.",
     "technical_script": [
       {
-        "timecode": "0:00-0:03",
-        "scene": "Hook sobre mapa oscuro de Ormuz",
-        "voice_es": "La señal clave de esta semana es una ausencia: Ormuz no confirma acople ambiental.",
-        "subtitle_en": "This week’s key signal is an absence: Hormuz does not confirm environmental coupling."
+        "time": "0:00-0:03",
+        "scene": "Hook",
+        "voiceover": "La señal de esta semana no es un acople: es una advertencia metodológica.",
+        "subtitle_en": "This week’s signal is not a coupling. It is a methodological warning."
       },
       {
-        "timecode": "0:03-0:16",
-        "scene": "Capa HECHO: titulares SENTINEL Irán/Ormuz y ruta energética",
-        "voice_es": "SENTINEL detectó señales de escalada militar en torno a Irán y el Estrecho de Ormuz, una ruta crítica para energía y seguridad marítima.",
-        "subtitle_en": "SENTINEL detected military escalation signals around Iran and the Strait of Hormuz, a critical route for energy and maritime security."
+        "time": "0:03-0:15",
+        "scene": "Hecho",
+        "voiceover": "SENTINEL detectó presión sobre el Estrecho de Ormuz: buques, tensión militar y una ruta energética que puede mover precios globales.",
+        "subtitle_en": "SENTINEL detected pressure around Hormuz: vessels, military tension, and an energy route that can move global prices."
       },
       {
-        "timecode": "0:16-0:30",
-        "scene": "Capa DATO AMBIENTAL: marcador USGS en Yasuj, lejos del estrecho",
-        "voice_es": "USGS registró un sismo M4.5 cerca de Yasuj, en Irán. Pero ese dato no prueba interrupción de navegación, petróleo ni conducta militar.",
-        "subtitle_en": "USGS recorded a M4.5 earthquake near Yasuj, Iran. But that does not prove disruption to shipping, oil, or military conduct."
+        "time": "0:15-0:28",
+        "scene": "Dato ambiental",
+        "voiceover": "Pero NASA y USGS no muestran un evento ambiental o geofísico que explique esa presión esta semana. Y eso también es inteligencia.",
+        "subtitle_en": "But NASA and USGS do not show an environmental or geophysical event explaining that pressure this week. That is intelligence too."
       },
       {
-        "timecode": "0:30-0:46",
-        "scene": "Capa MÉTODO: línea roja entre correlación y causalidad",
-        "voice_es": "Aquí está la disciplina SENTINEL: vigilar la coincidencia, pero no convertirla en causalidad. Una ruta crítica puede estar bajo presión sin que el ambiente sea el detonante.",
-        "subtitle_en": "This is SENTINEL discipline: monitor the coincidence, but do not turn it into causality. A critical route can be under pressure without the environment being the trigger."
+        "time": "0:28-0:43",
+        "scene": "Implicación",
+        "voiceover": "Ormuz importa por energía, seguros, inflación y cálculo militar. Pero una ruta crítica no debe convertirse en causalidad ambiental si la evidencia no existe.",
+        "subtitle_en": "Hormuz matters for energy, insurance, inflation, and military calculation. But a critical route must not become environmental causality without evidence."
       },
       {
-        "timecode": "0:46-0:57",
-        "scene": "Lectura tripolar: EE. UU., China, Rusia, UE en tablero minimalista",
-        "voice_es": "En la tripolaridad imperfecta, Ormuz expone a todos: EE. UU. por seguridad marítima, China por energía, Rusia por precios, Europa por inflación.",
-        "subtitle_en": "In imperfect tripolarity, Hormuz exposes everyone: the U.S. through maritime security, China through energy, Russia through prices, and Europe through inflation."
+        "time": "0:43-0:57",
+        "scene": "Tripolaridad",
+        "voiceover": "Estados Unidos protege rutas, China mide seguridad energética, Rusia puede ganar margen por precios, y Europa queda expuesta a la inflación. Ese es el tablero.",
+        "subtitle_en": "The United States secures routes, China reads energy security, Russia may gain price leverage, and Europe remains exposed to inflation. That is the board."
       },
       {
-        "timecode": "0:57-1:00",
-        "scene": "Cierre marca GEOPÓLEM",
-        "voice_es": "GEOPÓLEM. Bienvenidos al tablero.",
+        "time": "0:57-1:00",
+        "scene": "Cierre",
+        "voiceover": "GEOPÓLEM. Bienvenidos al tablero.",
         "subtitle_en": "GEOPÓLEM. Welcome to the board."
       }
     ],
     "visuals": [
-      "Mapa 9:16 de Ormuz con fondo negro y rutas marítimas discretas.",
-      "Marcador USGS en Yasuj separado visualmente del estrecho para mostrar distancia conceptual.",
-      "Tres etiquetas fijas: HECHO, DATO AMBIENTAL, NO CAUSALIDAD.",
-      "Paleta GEOPÓLEM: fondo #07090C, rojo #FF2D25, cian #3DD6D0, violeta #B794F4."
+      "Mapa sobrio del Golfo con Ormuz resaltado",
+      "Capa de tráfico marítimo/energía sin animación alarmista",
+      "Sello visual: SIN ACOPLE CONFIRMADO",
+      "Triángulo tripolar EE. UU.-China-Rusia con UE como exposición energética"
     ],
-    "subtitles_en": [
-      "This week’s key signal is an absence: Hormuz does not confirm environmental coupling.",
-      "SENTINEL detected military escalation signals around Iran and the Strait of Hormuz, a critical route for energy and maritime security.",
-      "USGS recorded a M4.5 earthquake near Yasuj, Iran. But that does not prove disruption to shipping, oil, or military conduct.",
-      "This is SENTINEL discipline: monitor the coincidence, but do not turn it into causality.",
-      "In imperfect tripolarity, Hormuz exposes everyone: the U.S. through maritime security, China through energy, Russia through prices, and Europe through inflation.",
-      "GEOPÓLEM. Welcome to the board."
-    ],
-    "cta": "GEOPÓLEM. Bienvenidos al tablero.",
     "hashtags": [
       "#GEOPÓLEM",
       "#SENTINEL",
       "#Ormuz",
-      "#OSINT",
       "#Geopolítica",
-      "#Energía"
+      "#Energía",
+      "#OSINT"
     ]
   },
-  "dataUrl": "data/sentinel/weekly-brief.json",
-  "archiveUrl": "data/sentinel/sentinel_weekly_brief_2026-08-31_2026-09-06.json",
-  "media_publication": null,
-  "points": [
+  "media_publication": {
+    "status": "draft_ready",
+    "published_at": null,
+    "youtube_long": {
+      "title": "Brief web/app publicado · video no subido automáticamente",
+      "url": "./data/sentinel/weekly-brief-2026-09-14.md",
+      "format": "Web/App",
+      "duration": "lectura"
+    },
+    "youtube_short": {
+      "title": "Short del martes listo para aprobación · Ormuz",
+      "url": "./data/sentinel/weekly-brief-2026-09-14.md#short-del-martes",
+      "format": "9:16 · guion",
+      "duration": "60s"
+    },
+    "editorial_note": "No se publicó video en YouTube ni redes: el Short queda listo para aprobación conforme a la tarea programada."
+  },
+  "not_selected": [
     {
-      "id": "iran-hormuz-geophysical-route-watch",
-      "rank": 1,
-      "status": "en observación",
-      "status_en": "watch",
-      "priority": "Media-alta",
-      "priority_en": "Medium-high",
-      "accent": "#FF8A3D",
-      "location": "Irán / Estrecho de Ormuz y Golfo de Omán",
-      "headline": "Ormuz: presión militar sobre ruta crítica sin acople ambiental confirmado",
-      "headline_en": "Hormuz: military pressure on a critical route without confirmed environmental coupling",
-      "conflict_event": "SENTINEL registró señales de alta prioridad sobre escalada militar en torno a Irán y el Estrecho de Ormuz, incluida la reclamación iraní de un ataque contra un buque estadounidense y una señal de hundimiento de petrolero iraní.",
-      "environmental_event": "USGS registró un sismo M4.5 a 13 km al NNW de Yasuj, Irán, el 1 de septiembre de 2026.",
-      "coupling_type": [
-        "ruta crítica",
-        "energía",
-        "conflicto interestatal",
-        "sismo menor",
-        "observación sin causalidad"
-      ],
-      "why_it_matters": "Ormuz importa por energía y escalada interestatal; el dato geofísico existe en el mismo país y ventana, pero no hay evidencia de afectación directa sobre navegación, petróleo o conducta militar.",
-      "fact": "SENTINEL capturó múltiples señales sobre Irán/Ormuz y USGS registró un sismo M4.5 en Irán dentro de la ventana semanal.",
-      "coupling": "El acople es débil: mismo país y semana, pero sin proximidad suficiente al estrecho ni evidencia institucional de interrupción logística, energética o militar atribuible al evento físico.",
-      "strategic_implication": "La señal exige vigilancia porque Ormuz convierte cualquier escalada en variable energética global; la disciplina editorial exige separar riesgo de ruta crítica de acople ambiental confirmado.",
-      "tripolarity_reading": "EE. UU. aparece como actor militar y garante de rutas; China observa el riesgo de seguridad energética; Rusia puede beneficiarse de tensión sobre precios y distracción occidental; la UE queda expuesta por inflación energética y seguridad marítima.",
-      "confidence": "Media",
-      "source_keys": [
-        "sentinel",
-        "hormuz_conflict",
-        "hormuz_oil_market",
-        "usgs_iran_yasuj"
-      ]
+      "area": "Pakistán/India",
+      "reason": "hay estrés hídrico e inundaciones reportadas, pero no se verificó con suficiente precisión un acople NASA/USGS-conflicto dentro del set semanal"
     },
     {
-      "id": "taiwan-pla-earthquake-resilience-watch",
-      "rank": 2,
-      "status": "en observación",
-      "status_en": "watch",
-      "priority": "Media",
-      "priority_en": "Medium",
-      "accent": "#3DD6D0",
-      "location": "Taiwán / sur de la isla y entorno del Estrecho",
-      "headline": "Taiwán: actividad del EPL y resiliencia operacional ante sismo moderado",
-      "headline_en": "Taiwan: PLA activity and operational resilience after a moderate quake",
-      "conflict_event": "SENTINEL registró una señal de monitoreo sobre actividades del Ejército Popular de Liberación en aguas y espacio aéreo alrededor de Taiwán.",
-      "environmental_event": "USGS registró un sismo M4.5 a 98 km al ENE de Donggang, Taiwán, el 6 de septiembre de 2026.",
-      "coupling_type": [
-        "presión militar",
-        "sismo moderado",
-        "infraestructura crítica",
-        "resiliencia operacional",
-        "observación"
-      ],
-      "why_it_matters": "Taiwán concentra valor geoeconómico, rutas sensibles y semiconductores; un evento físico moderado no prueba interrupción, pero sí justifica vigilancia de continuidad operacional.",
-      "fact": "SENTINEL registró actividad del EPL alrededor de Taiwán y USGS registró un sismo M4.5 en el entorno de la isla dentro de la misma semana.",
-      "coupling": "El acople es temporal y geográfico amplio, no causal: no hay evidencia de interrupción portuaria, industrial, militar o de semiconductores esta semana.",
-      "strategic_implication": "La señal sirve para monitorear resiliencia de un nodo donde presión militar y fragilidad física pueden acumularse aunque no estén causalmente conectadas en esta ventana.",
-      "tripolarity_reading": "China mantiene presión en el entorno del Estrecho; EE. UU. y aliados observan disuasión y continuidad de cadenas críticas; la UE queda indirectamente expuesta por tecnología, comercio y dependencia industrial.",
-      "confidence": "Media",
-      "source_keys": [
-        "taiwan_pla",
-        "usgs_taiwan_donggang"
-      ]
+      "area": "Indonesia/Timor",
+      "reason": "actividad sísmica e incendios relevantes, sin conflicto asociado suficiente en el feed semanal"
     },
     {
-      "id": "ukraine-russia-periphery-environment-watch",
-      "rank": 3,
-      "status": "en observación",
-      "status_en": "watch",
-      "priority": "Media-baja",
-      "priority_en": "Medium-low",
-      "accent": "#B794F4",
-      "location": "Ucrania/Rusia y periferia rusa del Pacífico",
-      "headline": "Ucrania/Rusia: conflicto sostenido y señales ambientales periféricas sin impacto directo",
-      "headline_en": "Ukraine/Russia: sustained conflict and peripheral environmental signals without direct impact",
-      "conflict_event": "SENTINEL registró señales de alta y media prioridad sobre la guerra Rusia-Ucrania, incluidas negociaciones, costes políticos del conflicto y asistencia OTAN a Ucrania.",
-      "environmental_event": "NASA/GDACS registró un incendio en la Federación Rusa de 5.514 hectáreas el 1 de septiembre, y USGS registró un sismo M5.5 al ESE de Kuril’sk, Rusia, el 4 de septiembre.",
-      "coupling_type": [
-        "guerra prolongada",
-        "incendio",
-        "sismo M5.5",
-        "capacidad estatal",
-        "periferia estratégica"
-      ],
-      "why_it_matters": "La señal no altera el frente ucraniano, pero recuerda que Rusia combina guerra sostenida con presiones ambientales y geofísicas en su periferia territorial.",
-      "fact": "SENTINEL registró señales sobre Ucrania/Rusia; NASA/GDACS y USGS registraron eventos físicos en territorio ruso durante la misma ventana.",
-      "coupling": "El acople es periférico y no confirmado: no hay evidencia de afectación sobre logística militar, energía, movilización o negociación atribuible a esos eventos ambientales.",
-      "strategic_implication": "La utilidad analítica está en vigilar capacidad estatal y continuidad territorial rusa, no en convertir eventos ambientales remotos en explicación del conflicto.",
-      "tripolarity_reading": "Rusia sostiene presión militar y narrativa; EE. UU./OTAN sostienen asistencia a Ucrania; China observa costes y oportunidad diplomática; la UE mide resiliencia energética, defensa y fatiga política.",
-      "confidence": "Media-baja",
-      "source_keys": [
-        "ukraine_talks",
-        "nato_ukraine_training",
-        "gdacs_russia_wildfire",
-        "usgs_kuril_earthquake"
-      ]
+      "area": "Yemen/Mar Rojo",
+      "reason": "señal de ruta crítica y conflicto, sin evento ambiental NASA/USGS asociado"
+    },
+    {
+      "area": "Gaza/Israel",
+      "reason": "conflicto activo, sin evento ambiental NASA/USGS asociado en la ventana"
     }
-  ]
+  ],
+  "dataUrl": "data/sentinel/weekly-brief.json",
+  "archiveUrl": "data/sentinel/sentinel_weekly_brief_2026-09-07_2026-09-13.json",
+  "markdownUrl": "data/sentinel/weekly-brief-2026-09-14.md",
+  "close": "GEOPÓLEM. Bienvenidos al tablero."
 };
 
 

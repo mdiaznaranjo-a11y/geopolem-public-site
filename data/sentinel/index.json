@@ -1,10 +1,17 @@
 {
   "project": "GEOPÓLEM",
   "collection": "SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "updated_at": "2026-08-31T08:04:00+02:00",
+  "updated_at": "2026-09-14T08:14:00+02:00",
   "latest": "./weekly-brief.json",
   "feed": "./conflict-events.json",
   "items": [
+    {
+      "date": "2026-09-14",
+      "window": "7-13 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+      "status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
+      "json": "./sentinel_weekly_brief_2026-09-07_2026-09-13.json",
+      "markdown": "./weekly-brief-2026-09-14.md"
+    },
     {
       "date": "2026-09-07",
       "window": "31 AGOSTO-6 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
@@ -97,10 +104,10 @@
     }
   ],
   "latest_meta": {
-    "date": "2026-09-07",
-    "window": "31 AGOSTO-6 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+    "date": "2026-09-14",
+    "window": "7-13 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
     "status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
-    "archive": "./sentinel_weekly_brief_2026-08-31_2026-09-06.json",
-    "markdown": "./weekly-brief-2026-09-07.md"
+    "archive": "./sentinel_weekly_brief_2026-09-07_2026-09-13.json",
+    "markdown": "./weekly-brief-2026-09-14.md"
   }
 }
