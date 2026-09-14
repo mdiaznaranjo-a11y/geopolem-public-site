@@ -4306,6 +4306,14 @@ function SentinelBrief({ lang }) {
     format: '9:16',
     duration: '1:00'
   };
+  const mediaIsDraft = ['draft', 'draft_ready', 'prepared'].includes(media.status);
+  const isYouTubeUrl = (url) => /^https?:\/\/(www\.)?(youtube\.com|youtu\.be)\//i.test(url || '');
+  const mediaHeading = mediaIsDraft ? (en ? 'Prepared media' : 'Material listo') : (en ? 'Published media' : 'Video publicado');
+  const longCta = isYouTubeUrl(long.url) ? (en ? 'Watch on YouTube' : 'Ver en YouTube') : (en ? 'Open brief' : 'Abrir brief');
+  const shortCta = isYouTubeUrl(short.url) ? (en ? 'Open Short' : 'Abrir Short') : (en ? 'Open script' : 'Abrir guion');
+  const mediaNote = media.editorialNote || media.editorial_note || (mediaIsDraft
+    ? (en ? 'No social video was published automatically; the short script is ready for editorial approval.' : 'No se publicó video en YouTube ni redes automáticamente; el guion del Short queda listo para aprobación editorial.')
+    : 'Formulación segura: acople operativo entre conflicto, inundaciones, desplazamiento, infraestructura degradada y rutas humanitarias vulnerables; no causalidad climática directa.');
   const summary = Array.isArray(b.summary) ? b.summary : (b.summary ? [b.summary] : []);
   const statsObj = b.stats || b.dataScanCounts || b.data_scan_counts || {};
   const stats = Array.isArray(statsObj) ? statsObj : Object.entries(statsObj).slice(0, 6).map(([key, value]) => ({
@@ -4342,7 +4350,7 @@ function SentinelBrief({ lang }) {
 
     <div class="relative panel rounded-md p-4 lg:p-5">
       <span class="corner-tl"></span><span class="corner-br"></span>
-      <div class="heading-mono mb-2">${en ? 'Published media' : 'Video publicado'}</div>
+      <div class="heading-mono mb-2">${mediaHeading}</div>
       <div class="grid md:grid-cols-2 gap-3">
         <div class="rounded-md border border-radar/20 bg-slate-950/50 p-3">
           <div class="heading-mono mb-1">${en ? 'Full analysis' : 'Video largo'}</div>
@@ -4350,21 +4358,21 @@ function SentinelBrief({ lang }) {
           <p class="text-[11px] text-slate-500 mt-1">${long.format || '16:9'} · ${long.duration || ''}</p>
           <a href=${long.url} target="_blank" rel="noopener"
              class="inline-flex mt-2 items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
-            ▶ ${en ? 'Watch on YouTube' : 'Ver en YouTube'} ↗
+            ▶ ${longCta} ↗
           </a>
         </div>
         <div class="rounded-md border border-radar/20 bg-slate-950/50 p-3">
           <div class="heading-mono mb-1">${en ? 'Short / Reel' : 'Short / Reel'}</div>
           <h3 class="font-display font-semibold text-[15px] text-slate-100 leading-snug">${short.title}</h3>
-          <p class="text-[11px] text-slate-500 mt-1">${en ? 'Promotes' : 'Promociona'}: ${long.url}</p>
+          <p class="text-[11px] text-slate-500 mt-1">${mediaIsDraft ? (en ? 'Prepared for' : 'Preparado para') : (en ? 'Promotes' : 'Promociona')}: ${long.url}</p>
           <a href=${short.url} target="_blank" rel="noopener"
              class="inline-flex mt-2 items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-radar hover:text-radar-glow transition border border-radar/30 rounded px-2 py-1">
-            ▶ ${en ? 'Open Short' : 'Abrir Short'} ↗
+            ▶ ${shortCta} ↗
           </a>
         </div>
       </div>
       <p class="text-[11.5px] text-slate-500 leading-relaxed mt-3 max-w-4xl">
-        ${media.editorialNote || media.editorial_note || 'Formulación segura: acople operativo entre conflicto, inundaciones, desplazamiento, infraestructura degradada y rutas humanitarias vulnerables; no causalidad climática directa.'}
+        ${mediaNote}
       </p>
     </div>
 
