@@ -651,73 +651,71 @@ export const SENTINEL_BRIEF = {
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "main_status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
-  "generated_at": "2026-09-14T08:14:00+02:00",
-  "window": "7-13 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+  "generated_at": "2026-09-21T08:04:00+02:00",
+  "window": "14-20 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
   "week_window": {
     "local": {
-      "start": "2026-09-07T00:00:00+02:00",
-      "end": "2026-09-13T23:59:59+02:00",
+      "start": "2026-09-14T00:00:00+02:00",
+      "end": "2026-09-20T23:59:59+02:00",
       "timezone": "Europe/Luxembourg"
     },
     "utc": {
-      "start": "2026-09-06T22:00:00Z",
-      "end": "2026-09-13T21:59:59Z"
+      "start": "2026-09-13T22:00:00Z",
+      "end": "2026-09-20T21:59:59Z"
     }
   },
   "summary": [
-    "SENTINEL revisó 38 eventos de conflicto del feed público dentro de la ventana semanal.",
-    "NASA EONET registró 14 eventos abiertos recientes y 224 cerrados recientes; USGS registró 74 sismos M4,5+ y 3 sismos M5,5+ dentro de la ventana UTC.",
+    "SENTINEL revisó el feed público de conflicto y encontró que no contenía eventos filtrables dentro de la ventana 14-20 de septiembre; por protocolo se contrastó con fuentes abiertas institucionales y medios reconocidos.",
+    "NASA EONET registró 25 eventos abiertos recientes y 361 cerrados recientes; USGS registró 113 sismos M4,5+ y 6 sismos M5,5+ en la ventana UTC consultada.",
     "No se verificaron tres acoples conflicto-ambiente suficientemente fuertes para publicarlos como confirmados.",
-    "Las señales con mayor valor de vigilancia se concentran en Sudán, Ucrania y Ormuz, todas etiquetadas como observación.",
-    "La lectura GEOPÓLEM prioriza acceso humanitario, seguridad nuclear-energética y rutas críticas, sin convertir correlación en causalidad."
+    "Las señales con mayor valor de vigilancia se concentran en Filipinas/Sabina Shoal, Somalia/Mogadiscio y Camboya/Banteay Meanchey.",
+    "La lectura GEOPÓLEM separa hecho, evaluación e hipótesis: se vigilan rutas, capacidad estatal y fronteras sin convertir coincidencia temporal en causalidad."
   ],
-  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y fuentes institucionales de contraste. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, energía, capacidad estatal y presión sobre infraestructura. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
+  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y fuentes institucionales o periodísticas verificables. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, seguridad alimentaria, capacidad estatal y presión sobre infraestructura. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
   "caveat": "No se publica acople significativo confirmado esta semana: los tres puntos son señales de vigilancia y no inferencias causales.",
   "source_urls": {
-    "sentinel": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+    "sentinel_feed": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
     "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
-    "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
-    "usgs_week_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-06T22:00:00&endtime=2026-09-13T21:59:59&minmagnitude=4.5&orderby=magnitude",
-    "usgs_week_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-06T22:00:00&endtime=2026-09-13T21:59:59&minmagnitude=5.5&orderby=magnitude",
-    "nasa_sudan_wildfire": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24277",
-    "gdacs_sudan_wildfire": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031926",
-    "govuk_sudan_humanitarian": "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-humanitarian-situation-sudan-september-2026-accessible",
-    "un_news_sudan": "https://news.un.org/en/audio/2026/09/1168289",
-    "rte_ukraine_power_safety": "https://www.rte.ie/news/2026/0913/1591343-ukraine-russia/",
-    "iaea_ukraine_update_249": "https://www.iaea.org/newscenter/pressreleases/update-249-iaea-director-general-statement-on-situation-in-ukraine",
-    "eeas_ukraine_iaea_statement": "https://www.eeas.europa.eu/delegations/ukraine/board-governors-international-atomic-energy-agency-eu-statement-agenda-item-7-nuclear-safety_en",
-    "dailygazette_hormuz": "https://www.dailygazette.com/the_recorder/ap/national/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other/article_9ce92b35-ac4f-5948-8935-e7261851539c.html",
-    "ksat_hormuz": "https://www.ksat.com/news/world/2026/09/13/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other-mideast-developments/",
-    "rte_hormuz": "https://www.rte.ie/news/2026/0913/1591336-iran-war/",
-    "reuters_hormuz_traffic": "https://www.reuters.com/world/middle-east/hormuz-traffic-dips-lowest-since-may-after-us-iranian-strikes-ships-2026-09-06/",
-    "ndma_pakistan_sitreps": "https://ndma.gov.pk/sitreps?cat_id=3"
+    "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=closed",
+    "usgs_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-13T22:00:00Z&endtime=2026-09-20T21:59:59Z&minmagnitude=4.5",
+    "usgs_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-13T22:00:00Z&endtime=2026-09-20T21:59:59Z&minmagnitude=5.5",
+    "nasa_modis_dujuan": "https://modis.gsfc.nasa.gov/gallery/individual.php?db_date=2026-09-19",
+    "gdacs_philippines_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104176",
+    "reuters_philippines_sabina": "https://www.reuters.com/world/china/china-vessel-rams-damages-philippine-fishing-boat-coast-guard-says-2026-09-18/",
+    "gdacs_somalia_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104170",
+    "irc_somalia_flood": "https://www.rescue.org/press-release/el-nino-rains-flood-mogadishu-disrupting-health-clinic-operations",
+    "trt_somalia_flood": "https://www.trtafrika.com/english/article/25d2f41af92d",
+    "dawan_somalia_nisa": "https://www.dawan.africa/news/somali-intelligence-agency-says-11-suspected-al-shabaab-operatives-arrested-in-mogadishu-afgoye",
+    "gdacs_cambodia_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104174",
+    "cambodianess_border": "https://cambodianess.com/article/cambodia-rejects-thai-claims-says-ceasefire-cannot-create-territorial-rights",
+    "nation_thailand_border": "https://www.nationthailand.com/news/general/40055691"
   },
   "data_scan_counts": {
-    "sentinel_events_reviewed": 38,
-    "nasa_open_events": 14,
-    "nasa_closed_events": 224,
-    "usgs_m45_plus": 74,
-    "usgs_m55_plus": 3,
-    "total_candidates": 10,
+    "sentinel_events_reviewed": 0,
+    "nasa_open_events": 25,
+    "nasa_closed_events": 361,
+    "usgs_m45_plus": 113,
+    "usgs_m55_plus": 6,
+    "total_candidates": 9,
     "selected_confirmed_couplings": 0,
     "selected_watch_signals": 3
   },
   "stats": [
     {
       "label": "SentinelEvents",
-      "value": 38
+      "value": 0
     },
     {
       "label": "NasaOpenEvents",
-      "value": 14
+      "value": 25
     },
     {
       "label": "NasaClosedEvents",
-      "value": 224
+      "value": 361
     },
     {
       "label": "UsgsM45Plus",
-      "value": 74
+      "value": 113
     },
     {
       "label": "ConfirmedCouplings",
@@ -729,451 +727,288 @@ export const SENTINEL_BRIEF = {
     }
   ],
   "limitations": [
-    "El feed SENTINEL público concentra señales mediáticas y no sustituye una base ACLED o parte militar completo.",
-    "NASA EONET y USGS verifican eventos físicos; no prueban por sí solos impacto sobre rutas, conducta militar, acceso humanitario o decisiones estatales.",
-    "Sudán se apoya en cruce institucional externo porque el feed semanal no capturó suficientes eventos locales de conflicto dentro del mismo set.",
-    "Ormuz se conserva por impacto geopolítico y valor metodológico, no por acople ambiental confirmado."
+    "El feed SENTINEL/GDELT público consultado estaba desincronizado para la ventana semanal y no devolvió eventos filtrados de 14-20 de septiembre; se aplicó el mecanismo alternativo de búsqueda abierta previsto en la tarea.",
+    "NASA EONET, GDACS y USGS verifican eventos físicos; por sí solos no demuestran efecto sobre operaciones militares, rutas, seguridad alimentaria o decisiones estatales.",
+    "Los tres puntos seleccionados son vigilancia editorial: no se afirma causalidad entre clima/geofísica y conflicto cuando las fuentes no la sostienen.",
+    "Se descartaron señales con errores temporales o evidencia insuficiente, incluyendo DRC/Uvira como evento actual de septiembre, pese a su valor contextual."
   ],
   "selected_inflection_points": [
     {
-      "id": "sudan-humanitarian-fire-access-watch",
+      "id": "philippines-sabina-dujuan-watch",
       "rank": 1,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media-alta",
       "priorityEn": "Medium-high",
       "accent": "#F59E0B",
-      "location": "Sudán / Kordofan, Nilo Azul y Sudán central",
-      "headline": "Sudán: guerra de acceso humanitario bajo presión ambiental",
-      "headlineEn": "Sudan: humanitarian-access war under environmental pressure",
-      "conflict_event": "Fuentes institucionales describen una guerra en expansión con ataques contra infraestructura civil, mercados, hospitales y zonas de riesgo inminente en Kordofan, Nilo Azul, Darfur Norte y Darfur Oeste.",
-      "environmental_event": "NASA EONET/GDACS registró un incendio en Sudán el 7 de septiembre, con magnitud reportada de 5.663 hectáreas; el análisis humanitario oficial también advierte que la temporada de lluvias, inundaciones, incendios y malas condiciones viales restringen asistencia y elevan riesgos sanitarios.",
+      "location": "Filipinas / Sabina Shoal, Palawan y mar de Filipinas",
+      "headline": "Sabina Shoal: fricción marítima bajo presión meteorológica regional",
+      "headlineEn": "Sabina Shoal: maritime friction under regional weather pressure",
+      "conflict_event": "Reuters verificó que el 18 de septiembre una embarcación de la Guardia Costera china colisionó o embistió al BRP Datu Magat Salamat, buque filipino que llevaba combustible a pescadores cerca de Sabina Shoal, a unas 54 millas náuticas de Palawan; no se reportaron heridos.",
+      "environmental_event": "NASA MODIS observó el tifón Dujuan sobre el mar de Filipinas el 18 de septiembre, con vientos sostenidos estimados de 75 mph, y GDACS registró una inundación verde en Cotabato, Filipinas, entre el 18 y el 19 de septiembre.",
       "coupling_type": [
-        "acceso humanitario",
-        "temporada de lluvias",
-        "incendio",
-        "desplazamiento",
-        "capacidad estatal",
+        "ruta crítica",
+        "seguridad marítima",
+        "meteorología regional",
+        "pesca y abastecimiento",
         "observación sin causalidad directa"
       ],
-      "why_it_matters": "La señal importa porque en Sudán el evento físico no necesita ser espectacular para agravar una guerra de logística humanitaria: carreteras, combustible, agua, refugio y electricidad ya operan bajo presión extrema.",
-      "fact": "Hecho: el conflicto sudanés mantiene presión sobre civiles e infraestructura, mientras EONET/GDACS registró un incendio en Sudán dentro de la ventana semanal.",
-      "coupling": "Dato de acople: existe coincidencia temporal y de teatro nacional entre guerra, restricciones de acceso y evento ambiental, pero no hay prueba pública de que el incendio haya alterado directamente una operación militar o una ruta humanitaria concreta.",
-      "implication": "Implicación estratégica: Sudán queda como señal fuerte de vigilancia por capacidad estatal, seguridad alimentaria, desplazamiento y acceso humanitario, no como causalidad ambiental confirmada.",
-      "strategic_implication": "Sudán queda como señal fuerte de vigilancia por capacidad estatal, seguridad alimentaria, desplazamiento y acceso humanitario, no como causalidad ambiental confirmada.",
-      "tripolar": "Lectura tripolar: EE. UU. y la UE quedan en clave humanitaria y diplomática; Rusia y actores regionales observan márgenes de influencia indirecta; China prioriza estabilidad de rutas, recursos y no interferencia; el Sur Global aparece como espacio donde guerra, clima y asistencia se acoplan sin instituciones suficientes.",
-      "tripolar_reading": "EE. UU. y la UE quedan en clave humanitaria y diplomática; Rusia y actores regionales observan márgenes de influencia indirecta; China prioriza estabilidad de rutas, recursos y no interferencia; el Sur Global aparece como espacio donde guerra, clima y asistencia se acoplan sin instituciones suficientes.",
-      "confidence": "Media-alta",
+      "why_it_matters": "La señal importa porque una misión civil de combustible para pescadores se produjo en una zona disputada mientras el entorno marítimo regional estaba afectado por tormenta e inundaciones; el valor está en la continuidad operacional, no en afirmar que el tifón causó el incidente.",
+      "fact": "Hecho: el incidente de Sabina Shoal ocurrió el 18 de septiembre y dañó estructuras de cubierta del buque filipino, sin heridos reportados.",
+      "coupling": "Dato de acople: existe coincidencia temporal regional entre fricción marítima y presión meteorológica, pero ninguna fuente verificada atribuye la colisión a Dujuan ni a la inundación de Cotabato.",
+      "implication": "Implicación estratégica: el Mar del Sur de China muestra cómo rutas, pesca, coerción gris y clima pueden comprimir márgenes operativos aunque cada factor mantenga causalidad separada.",
+      "strategic_implication": "La zona debe vigilarse por continuidad operacional, seguridad alimentaria local y riesgo de escalada de baja intensidad en una ruta crítica Indo-Pacífica.",
+      "tripolar": "Lectura tripolar: EE. UU. aparece como garante político de Manila; China sostiene presión marítima de zona gris; la ASEAN queda tensionada entre negociación y exposición; la UE observa por libertad de navegación y cadenas logísticas.",
+      "confidence": "Media",
       "sources": [
-        {
-          "label": "NASA EONET",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24277"
-        },
-        {
-          "label": "GDACS",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031926"
-        },
-        {
-          "label": "GOV.UK/OCHA",
-          "url": "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-humanitarian-situation-sudan-september-2026-accessible"
-        },
-        {
-          "label": "UN News",
-          "url": "https://news.un.org/en/audio/2026/09/1168289"
-        }
-      ],
-      "source_keys": [
-        "nasa_sudan_wildfire",
-        "gdacs_sudan_wildfire",
-        "govuk_sudan_humanitarian",
-        "un_news_sudan"
+        "https://www.reuters.com/world/china/china-vessel-rams-damages-philippine-fishing-boat-coast-guard-says-2026-09-18/",
+        "https://modis.gsfc.nasa.gov/gallery/individual.php?db_date=2026-09-19",
+        "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104176"
       ]
     },
     {
-      "id": "ukraine-nuclear-grid-safety-watch",
+      "id": "somalia-mogadishu-flood-security-watch",
       "rank": 2,
-      "status": "en observación",
-      "status_en": "watch",
-      "priority": "Media-alta",
-      "priorityEn": "Medium-high",
-      "accent": "#60A5FA",
-      "location": "Ucrania / Zaporizhzhia, red eléctrica y entorno nuclear",
-      "headline": "Ucrania: guerra, red eléctrica y seguridad nuclear como acople crítico",
-      "headlineEn": "Ukraine: war, electricity grid and nuclear safety as a critical coupling",
-      "conflict_event": "SENTINEL registró una señal sobre acusaciones cruzadas de riesgo para seguridad de centrales, y la IAEA/UE documentaron actividad militar cerca de instalaciones nucleares y presión sobre la red eléctrica ucraniana.",
-      "environmental_event": "No se identificó un evento NASA/USGS decisivo sobre el frente ucraniano en la semana; el acople observado proviene del riesgo tecnológico-ambiental asociado a seguridad nuclear, incendios, suministro eléctrico externo y generadores diésel.",
-      "coupling_type": [
-        "guerra prolongada",
-        "red eléctrica",
-        "seguridad nuclear",
-        "riesgo tecnológico-ambiental",
-        "observación"
-      ],
-      "why_it_matters": "La señal importa porque la seguridad nuclear depende de continuidad eléctrica, acceso técnico y reducción de actividad militar cerca de instalaciones; el fallo no sería solo militar sino sistémico.",
-      "fact": "Hecho: la IAEA calificó la seguridad nuclear en Ucrania como frágil y la UE señaló afectación recurrente de la red y de los siete pilares de seguridad nuclear.",
-      "coupling": "Dato de acople: no es un acople NASA/USGS clásico, sino un acople conflicto-infraestructura-riesgo ambiental; la evidencia sostiene vigilancia, no atribución causal nueva.",
-      "implication": "Implicación estratégica: Ucrania mantiene una vulnerabilidad donde la guerra puede convertirse en crisis energética, radiológica o de gobernanza técnica sin necesidad de un nuevo evento natural detonante.",
-      "strategic_implication": "Ucrania mantiene una vulnerabilidad donde la guerra puede convertirse en crisis energética, radiológica o de gobernanza técnica sin necesidad de un nuevo evento natural detonante.",
-      "tripolar": "Lectura tripolar: EE. UU. y la UE concentran apoyo militar, energético e institucional; Rusia usa presión operacional sobre infraestructura como palanca estratégica; China sostiene una posición de equilibrio diplomático evitando asumir costo directo; el Sur Global observa precedentes para seguridad nuclear en zonas de guerra.",
-      "tripolar_reading": "EE. UU. y la UE concentran apoyo militar, energético e institucional; Rusia usa presión operacional sobre infraestructura como palanca estratégica; China sostiene una posición de equilibrio diplomático evitando asumir costo directo; el Sur Global observa precedentes para seguridad nuclear en zonas de guerra.",
-      "confidence": "Media-alta",
-      "sources": [
-        {
-          "label": "SENTINEL/GDELT",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-        },
-        {
-          "label": "RTE",
-          "url": "https://www.rte.ie/news/2026/0913/1591343-ukraine-russia/"
-        },
-        {
-          "label": "IAEA",
-          "url": "https://www.iaea.org/newscenter/pressreleases/update-249-iaea-director-general-statement-on-situation-in-ukraine"
-        },
-        {
-          "label": "EEAS",
-          "url": "https://www.eeas.europa.eu/delegations/ukraine/board-governors-international-atomic-energy-agency-eu-statement-agenda-item-7-nuclear-safety_en"
-        }
-      ],
-      "source_keys": [
-        "sentinel",
-        "rte_ukraine_power_safety",
-        "iaea_ukraine_update_249",
-        "eeas_ukraine_iaea_statement"
-      ]
-    },
-    {
-      "id": "hormuz-route-critical-no-environment-watch",
-      "rank": 3,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
-      "accent": "#F97316",
-      "location": "Irán / Estrecho de Ormuz y Golfo de Omán",
-      "headline": "Ormuz: ruta crítica bajo presión, sin acople ambiental confirmado",
-      "headlineEn": "Hormuz: critical route under pressure, without confirmed environmental coupling",
-      "conflict_event": "SENTINEL registró múltiples señales sobre un buque golpeado cerca del Estrecho de Ormuz y tensión militar en torno a Irán, con cobertura internacional durante el 13 de septiembre.",
-      "environmental_event": "NASA EONET y USGS no registraron un evento ambiental o geofísico en el teatro Ormuz-Golfo de Omán que permita sostener un acople conflicto-ambiente esta semana.",
+      "accent": "#60A5FA",
+      "location": "Somalia / Mogadiscio, Banaadir y eje Afgoye",
+      "headline": "Mogadiscio: inundación urbana y presión de seguridad sobre capacidad estatal",
+      "headlineEn": "Mogadishu: urban flooding and security pressure on state capacity",
+      "conflict_event": "El 15 de septiembre, Dawan informó que NISA anunció la detención de 11 presuntos operativos de Al-Shabaab en Mogadiscio y Afgoye, con armas y materiales incautados, dentro de operaciones preventivas de seguridad.",
+      "environmental_event": "GDACS registró inundaciones en Banaadir/Mogadiscio entre el 16 y el 18 de septiembre; IRC reportó el 17 de septiembre que lluvias vinculadas a El Niño afectaron el centro de salud Ariif en Mogadiscio y obligaron a evaluar daños y continuidad de servicio.",
       "coupling_type": [
-        "ruta crítica",
-        "energía",
-        "seguridad marítima",
-        "ausencia de acople ambiental",
-        "observación metodológica"
+        "capacidad estatal",
+        "salud pública",
+        "seguridad urbana",
+        "acceso operativo",
+        "observación sin causalidad directa"
       ],
-      "why_it_matters": "La señal importa porque Ormuz puede mover energía, seguros, inflación y cálculo militar global; precisamente por eso no debe confundirse una ruta crítica con un acople ambiental si la evidencia física no aparece.",
-      "fact": "Hecho: el feed semanal muestra alta densidad de señales sobre Ormuz, incluida información de medios sobre un buque alcanzado cerca del estrecho.",
-      "coupling": "Dato de acople: no hay acople ambiental confirmado; la observación se conserva por impacto geopolítico de la ruta y por valor metodológico.",
-      "implication": "Implicación estratégica: Ormuz debe vigilarse como punto de presión energética global, pero el brief evita forzar una causalidad ambiental inexistente.",
-      "strategic_implication": "Ormuz debe vigilarse como punto de presión energética global, pero el brief evita forzar una causalidad ambiental inexistente.",
-      "tripolar": "Lectura tripolar: EE. UU. aparece como garante y actor militar de rutas; China como importador expuesto a disrupciones energéticas; Rusia puede ganar margen por tensión de precios; la UE queda vulnerable a inflación energética y riesgos de aseguramiento marítimo.",
-      "tripolar_reading": "EE. UU. aparece como garante y actor militar de rutas; China como importador expuesto a disrupciones energéticas; Rusia puede ganar margen por tensión de precios; la UE queda vulnerable a inflación energética y riesgos de aseguramiento marítimo.",
+      "why_it_matters": "La señal importa porque la seguridad urbana y la respuesta sanitaria compiten por la misma capacidad estatal en una capital donde Al-Shabaab sigue siendo amenaza; las lluvias no explican la amenaza, pero sí pueden degradar servicios críticos.",
+      "fact": "Hecho: NISA comunicó detenciones de presuntos miembros de redes de Al-Shabaab el 15 de septiembre; al día siguiente, las lluvias e inundaciones afectaron operaciones urbanas y una instalación sanitaria.",
+      "coupling": "Dato de acople: el acople es operativo, no causal: inundación y seguridad se superponen en la misma ciudad y semana, pero las fuentes no dicen que una haya provocado la otra.",
+      "implication": "Implicación estratégica: Somalia queda como señal de vigilancia por el umbral bajo en que clima, salud pública y seguridad interna pueden saturar capacidad estatal.",
+      "strategic_implication": "La prioridad no es el evento físico aislado, sino el estrés compuesto sobre servicios, movilidad urbana y prevención de ataques.",
+      "tripolar": "Lectura tripolar: EE. UU. conserva presencia antiterrorista indirecta; la UE y actores humanitarios sostienen capacidad civil; China y el Golfo observan estabilidad de rutas del Índico occidental; el Sur Global absorbe el coste humano de choques simultáneos.",
       "confidence": "Media",
       "sources": [
-        {
-          "label": "SENTINEL/GDELT",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-        },
-        {
-          "label": "Daily Gazette/AP",
-          "url": "https://www.dailygazette.com/the_recorder/ap/national/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other/article_9ce92b35-ac4f-5948-8935-e7261851539c.html"
-        },
-        {
-          "label": "KSAT/AP",
-          "url": "https://www.ksat.com/news/world/2026/09/13/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other-mideast-developments/"
-        },
-        {
-          "label": "RTE",
-          "url": "https://www.rte.ie/news/2026/0913/1591336-iran-war/"
-        },
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/middle-east/hormuz-traffic-dips-lowest-since-may-after-us-iranian-strikes-ships-2026-09-06/"
-        }
+        "https://www.dawan.africa/news/somali-intelligence-agency-says-11-suspected-al-shabaab-operatives-arrested-in-mogadishu-afgoye",
+        "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104170",
+        "https://www.rescue.org/press-release/el-nino-rains-flood-mogadishu-disrupting-health-clinic-operations",
+        "https://www.trtafrika.com/english/article/25d2f41af92d"
+      ]
+    },
+    {
+      "id": "cambodia-banteay-border-flood-watch",
+      "rank": 3,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media-baja",
+      "priorityEn": "Medium-low",
+      "accent": "#10B981",
+      "location": "Camboya / Banteay Meanchey y frontera con Tailandia",
+      "headline": "Banteay Meanchey: frontera militarizada y lluvias en zona de desplazamiento",
+      "headlineEn": "Banteay Meanchey: militarized border and rains in a displacement zone",
+      "conflict_event": "Fuentes camboyanas y tailandesas describen durante septiembre una disputa fronteriza con posiciones militares, cercas, exigencias de retirada y población civil desplazada o con retorno condicionado en Banteay Meanchey/Sa Kaeo.",
+      "environmental_event": "GDACS registró una inundación verde en Banteay Meanchey, Camboya, entre el 17 y el 19 de septiembre, con cero muertes reportadas y sin cifra de desplazados publicada.",
+      "coupling_type": [
+        "frontera terrestre",
+        "desplazamiento",
+        "lluvias",
+        "control territorial",
+        "observación débil"
       ],
-      "source_keys": [
-        "sentinel",
-        "dailygazette_hormuz",
-        "ksat_hormuz",
-        "rte_hormuz",
-        "reuters_hormuz_traffic"
+      "why_it_matters": "La señal importa porque las fronteras disputadas vuelven más sensible cualquier evento de movilidad, retorno o drenaje local; aun así, la evidencia de esta semana no prueba que la inundación alterara una decisión militar o diplomática.",
+      "fact": "Hecho: GDACS registró inundación en Banteay Meanchey dentro de la ventana y las fuentes regionales muestran que el área está cargada por disputa fronteriza y demandas de reubicación o retirada.",
+      "coupling": "Dato de acople: la coincidencia espacial es clara, pero la relación causal es débil; por eso se mantiene como vigilancia, no como acople confirmado.",
+      "implication": "Implicación estratégica: en fronteras militarizadas, una inundación menor puede adquirir relevancia si afecta campamentos, pasos, cercas o narrativas de soberanía, aunque esta semana no haya prueba pública de interrupción decisiva.",
+      "strategic_implication": "El caso sirve como alerta temprana de cómo fenómenos locales pueden amplificar disputas territoriales cuando el retorno civil y la demarcación están politizados.",
+      "tripolar": "Lectura tripolar: EE. UU. aparece como referencia indirecta por el marco de paz regional; China observa estabilidad continental del Sudeste Asiático; ASEAN queda expuesta a la prueba de gestión fronteriza; la UE pesa más como actor normativo que operativo.",
+      "confidence": "Media-baja",
+      "sources": [
+        "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104174",
+        "https://cambodianess.com/article/cambodia-rejects-thai-claims-says-ceasefire-cannot-create-territorial-rights",
+        "https://www.nationthailand.com/news/general/40055691"
       ]
     }
   ],
   "points": [
     {
-      "id": "sudan-humanitarian-fire-access-watch",
+      "id": "philippines-sabina-dujuan-watch",
       "rank": 1,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media-alta",
       "priorityEn": "Medium-high",
       "accent": "#F59E0B",
-      "location": "Sudán / Kordofan, Nilo Azul y Sudán central",
-      "headline": "Sudán: guerra de acceso humanitario bajo presión ambiental",
-      "headlineEn": "Sudan: humanitarian-access war under environmental pressure",
-      "conflict_event": "Fuentes institucionales describen una guerra en expansión con ataques contra infraestructura civil, mercados, hospitales y zonas de riesgo inminente en Kordofan, Nilo Azul, Darfur Norte y Darfur Oeste.",
-      "environmental_event": "NASA EONET/GDACS registró un incendio en Sudán el 7 de septiembre, con magnitud reportada de 5.663 hectáreas; el análisis humanitario oficial también advierte que la temporada de lluvias, inundaciones, incendios y malas condiciones viales restringen asistencia y elevan riesgos sanitarios.",
+      "location": "Filipinas / Sabina Shoal, Palawan y mar de Filipinas",
+      "headline": "Sabina Shoal: fricción marítima bajo presión meteorológica regional",
+      "headlineEn": "Sabina Shoal: maritime friction under regional weather pressure",
+      "conflict_event": "Reuters verificó que el 18 de septiembre una embarcación de la Guardia Costera china colisionó o embistió al BRP Datu Magat Salamat, buque filipino que llevaba combustible a pescadores cerca de Sabina Shoal, a unas 54 millas náuticas de Palawan; no se reportaron heridos.",
+      "environmental_event": "NASA MODIS observó el tifón Dujuan sobre el mar de Filipinas el 18 de septiembre, con vientos sostenidos estimados de 75 mph, y GDACS registró una inundación verde en Cotabato, Filipinas, entre el 18 y el 19 de septiembre.",
       "coupling_type": [
-        "acceso humanitario",
-        "temporada de lluvias",
-        "incendio",
-        "desplazamiento",
-        "capacidad estatal",
+        "ruta crítica",
+        "seguridad marítima",
+        "meteorología regional",
+        "pesca y abastecimiento",
         "observación sin causalidad directa"
       ],
-      "why_it_matters": "La señal importa porque en Sudán el evento físico no necesita ser espectacular para agravar una guerra de logística humanitaria: carreteras, combustible, agua, refugio y electricidad ya operan bajo presión extrema.",
-      "fact": "Hecho: el conflicto sudanés mantiene presión sobre civiles e infraestructura, mientras EONET/GDACS registró un incendio en Sudán dentro de la ventana semanal.",
-      "coupling": "Dato de acople: existe coincidencia temporal y de teatro nacional entre guerra, restricciones de acceso y evento ambiental, pero no hay prueba pública de que el incendio haya alterado directamente una operación militar o una ruta humanitaria concreta.",
-      "implication": "Implicación estratégica: Sudán queda como señal fuerte de vigilancia por capacidad estatal, seguridad alimentaria, desplazamiento y acceso humanitario, no como causalidad ambiental confirmada.",
-      "strategic_implication": "Sudán queda como señal fuerte de vigilancia por capacidad estatal, seguridad alimentaria, desplazamiento y acceso humanitario, no como causalidad ambiental confirmada.",
-      "tripolar": "Lectura tripolar: EE. UU. y la UE quedan en clave humanitaria y diplomática; Rusia y actores regionales observan márgenes de influencia indirecta; China prioriza estabilidad de rutas, recursos y no interferencia; el Sur Global aparece como espacio donde guerra, clima y asistencia se acoplan sin instituciones suficientes.",
-      "tripolar_reading": "EE. UU. y la UE quedan en clave humanitaria y diplomática; Rusia y actores regionales observan márgenes de influencia indirecta; China prioriza estabilidad de rutas, recursos y no interferencia; el Sur Global aparece como espacio donde guerra, clima y asistencia se acoplan sin instituciones suficientes.",
-      "confidence": "Media-alta",
+      "why_it_matters": "La señal importa porque una misión civil de combustible para pescadores se produjo en una zona disputada mientras el entorno marítimo regional estaba afectado por tormenta e inundaciones; el valor está en la continuidad operacional, no en afirmar que el tifón causó el incidente.",
+      "fact": "Hecho: el incidente de Sabina Shoal ocurrió el 18 de septiembre y dañó estructuras de cubierta del buque filipino, sin heridos reportados.",
+      "coupling": "Dato de acople: existe coincidencia temporal regional entre fricción marítima y presión meteorológica, pero ninguna fuente verificada atribuye la colisión a Dujuan ni a la inundación de Cotabato.",
+      "implication": "Implicación estratégica: el Mar del Sur de China muestra cómo rutas, pesca, coerción gris y clima pueden comprimir márgenes operativos aunque cada factor mantenga causalidad separada.",
+      "strategic_implication": "La zona debe vigilarse por continuidad operacional, seguridad alimentaria local y riesgo de escalada de baja intensidad en una ruta crítica Indo-Pacífica.",
+      "tripolar": "Lectura tripolar: EE. UU. aparece como garante político de Manila; China sostiene presión marítima de zona gris; la ASEAN queda tensionada entre negociación y exposición; la UE observa por libertad de navegación y cadenas logísticas.",
+      "confidence": "Media",
       "sources": [
-        {
-          "label": "NASA EONET",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24277"
-        },
-        {
-          "label": "GDACS",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031926"
-        },
-        {
-          "label": "GOV.UK/OCHA",
-          "url": "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-humanitarian-situation-sudan-september-2026-accessible"
-        },
-        {
-          "label": "UN News",
-          "url": "https://news.un.org/en/audio/2026/09/1168289"
-        }
-      ],
-      "source_keys": [
-        "nasa_sudan_wildfire",
-        "gdacs_sudan_wildfire",
-        "govuk_sudan_humanitarian",
-        "un_news_sudan"
+        "https://www.reuters.com/world/china/china-vessel-rams-damages-philippine-fishing-boat-coast-guard-says-2026-09-18/",
+        "https://modis.gsfc.nasa.gov/gallery/individual.php?db_date=2026-09-19",
+        "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104176"
       ]
     },
     {
-      "id": "ukraine-nuclear-grid-safety-watch",
+      "id": "somalia-mogadishu-flood-security-watch",
       "rank": 2,
-      "status": "en observación",
-      "status_en": "watch",
-      "priority": "Media-alta",
-      "priorityEn": "Medium-high",
-      "accent": "#60A5FA",
-      "location": "Ucrania / Zaporizhzhia, red eléctrica y entorno nuclear",
-      "headline": "Ucrania: guerra, red eléctrica y seguridad nuclear como acople crítico",
-      "headlineEn": "Ukraine: war, electricity grid and nuclear safety as a critical coupling",
-      "conflict_event": "SENTINEL registró una señal sobre acusaciones cruzadas de riesgo para seguridad de centrales, y la IAEA/UE documentaron actividad militar cerca de instalaciones nucleares y presión sobre la red eléctrica ucraniana.",
-      "environmental_event": "No se identificó un evento NASA/USGS decisivo sobre el frente ucraniano en la semana; el acople observado proviene del riesgo tecnológico-ambiental asociado a seguridad nuclear, incendios, suministro eléctrico externo y generadores diésel.",
-      "coupling_type": [
-        "guerra prolongada",
-        "red eléctrica",
-        "seguridad nuclear",
-        "riesgo tecnológico-ambiental",
-        "observación"
-      ],
-      "why_it_matters": "La señal importa porque la seguridad nuclear depende de continuidad eléctrica, acceso técnico y reducción de actividad militar cerca de instalaciones; el fallo no sería solo militar sino sistémico.",
-      "fact": "Hecho: la IAEA calificó la seguridad nuclear en Ucrania como frágil y la UE señaló afectación recurrente de la red y de los siete pilares de seguridad nuclear.",
-      "coupling": "Dato de acople: no es un acople NASA/USGS clásico, sino un acople conflicto-infraestructura-riesgo ambiental; la evidencia sostiene vigilancia, no atribución causal nueva.",
-      "implication": "Implicación estratégica: Ucrania mantiene una vulnerabilidad donde la guerra puede convertirse en crisis energética, radiológica o de gobernanza técnica sin necesidad de un nuevo evento natural detonante.",
-      "strategic_implication": "Ucrania mantiene una vulnerabilidad donde la guerra puede convertirse en crisis energética, radiológica o de gobernanza técnica sin necesidad de un nuevo evento natural detonante.",
-      "tripolar": "Lectura tripolar: EE. UU. y la UE concentran apoyo militar, energético e institucional; Rusia usa presión operacional sobre infraestructura como palanca estratégica; China sostiene una posición de equilibrio diplomático evitando asumir costo directo; el Sur Global observa precedentes para seguridad nuclear en zonas de guerra.",
-      "tripolar_reading": "EE. UU. y la UE concentran apoyo militar, energético e institucional; Rusia usa presión operacional sobre infraestructura como palanca estratégica; China sostiene una posición de equilibrio diplomático evitando asumir costo directo; el Sur Global observa precedentes para seguridad nuclear en zonas de guerra.",
-      "confidence": "Media-alta",
-      "sources": [
-        {
-          "label": "SENTINEL/GDELT",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-        },
-        {
-          "label": "RTE",
-          "url": "https://www.rte.ie/news/2026/0913/1591343-ukraine-russia/"
-        },
-        {
-          "label": "IAEA",
-          "url": "https://www.iaea.org/newscenter/pressreleases/update-249-iaea-director-general-statement-on-situation-in-ukraine"
-        },
-        {
-          "label": "EEAS",
-          "url": "https://www.eeas.europa.eu/delegations/ukraine/board-governors-international-atomic-energy-agency-eu-statement-agenda-item-7-nuclear-safety_en"
-        }
-      ],
-      "source_keys": [
-        "sentinel",
-        "rte_ukraine_power_safety",
-        "iaea_ukraine_update_249",
-        "eeas_ukraine_iaea_statement"
-      ]
-    },
-    {
-      "id": "hormuz-route-critical-no-environment-watch",
-      "rank": 3,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
-      "accent": "#F97316",
-      "location": "Irán / Estrecho de Ormuz y Golfo de Omán",
-      "headline": "Ormuz: ruta crítica bajo presión, sin acople ambiental confirmado",
-      "headlineEn": "Hormuz: critical route under pressure, without confirmed environmental coupling",
-      "conflict_event": "SENTINEL registró múltiples señales sobre un buque golpeado cerca del Estrecho de Ormuz y tensión militar en torno a Irán, con cobertura internacional durante el 13 de septiembre.",
-      "environmental_event": "NASA EONET y USGS no registraron un evento ambiental o geofísico en el teatro Ormuz-Golfo de Omán que permita sostener un acople conflicto-ambiente esta semana.",
+      "accent": "#60A5FA",
+      "location": "Somalia / Mogadiscio, Banaadir y eje Afgoye",
+      "headline": "Mogadiscio: inundación urbana y presión de seguridad sobre capacidad estatal",
+      "headlineEn": "Mogadishu: urban flooding and security pressure on state capacity",
+      "conflict_event": "El 15 de septiembre, Dawan informó que NISA anunció la detención de 11 presuntos operativos de Al-Shabaab en Mogadiscio y Afgoye, con armas y materiales incautados, dentro de operaciones preventivas de seguridad.",
+      "environmental_event": "GDACS registró inundaciones en Banaadir/Mogadiscio entre el 16 y el 18 de septiembre; IRC reportó el 17 de septiembre que lluvias vinculadas a El Niño afectaron el centro de salud Ariif en Mogadiscio y obligaron a evaluar daños y continuidad de servicio.",
       "coupling_type": [
-        "ruta crítica",
-        "energía",
-        "seguridad marítima",
-        "ausencia de acople ambiental",
-        "observación metodológica"
+        "capacidad estatal",
+        "salud pública",
+        "seguridad urbana",
+        "acceso operativo",
+        "observación sin causalidad directa"
       ],
-      "why_it_matters": "La señal importa porque Ormuz puede mover energía, seguros, inflación y cálculo militar global; precisamente por eso no debe confundirse una ruta crítica con un acople ambiental si la evidencia física no aparece.",
-      "fact": "Hecho: el feed semanal muestra alta densidad de señales sobre Ormuz, incluida información de medios sobre un buque alcanzado cerca del estrecho.",
-      "coupling": "Dato de acople: no hay acople ambiental confirmado; la observación se conserva por impacto geopolítico de la ruta y por valor metodológico.",
-      "implication": "Implicación estratégica: Ormuz debe vigilarse como punto de presión energética global, pero el brief evita forzar una causalidad ambiental inexistente.",
-      "strategic_implication": "Ormuz debe vigilarse como punto de presión energética global, pero el brief evita forzar una causalidad ambiental inexistente.",
-      "tripolar": "Lectura tripolar: EE. UU. aparece como garante y actor militar de rutas; China como importador expuesto a disrupciones energéticas; Rusia puede ganar margen por tensión de precios; la UE queda vulnerable a inflación energética y riesgos de aseguramiento marítimo.",
-      "tripolar_reading": "EE. UU. aparece como garante y actor militar de rutas; China como importador expuesto a disrupciones energéticas; Rusia puede ganar margen por tensión de precios; la UE queda vulnerable a inflación energética y riesgos de aseguramiento marítimo.",
+      "why_it_matters": "La señal importa porque la seguridad urbana y la respuesta sanitaria compiten por la misma capacidad estatal en una capital donde Al-Shabaab sigue siendo amenaza; las lluvias no explican la amenaza, pero sí pueden degradar servicios críticos.",
+      "fact": "Hecho: NISA comunicó detenciones de presuntos miembros de redes de Al-Shabaab el 15 de septiembre; al día siguiente, las lluvias e inundaciones afectaron operaciones urbanas y una instalación sanitaria.",
+      "coupling": "Dato de acople: el acople es operativo, no causal: inundación y seguridad se superponen en la misma ciudad y semana, pero las fuentes no dicen que una haya provocado la otra.",
+      "implication": "Implicación estratégica: Somalia queda como señal de vigilancia por el umbral bajo en que clima, salud pública y seguridad interna pueden saturar capacidad estatal.",
+      "strategic_implication": "La prioridad no es el evento físico aislado, sino el estrés compuesto sobre servicios, movilidad urbana y prevención de ataques.",
+      "tripolar": "Lectura tripolar: EE. UU. conserva presencia antiterrorista indirecta; la UE y actores humanitarios sostienen capacidad civil; China y el Golfo observan estabilidad de rutas del Índico occidental; el Sur Global absorbe el coste humano de choques simultáneos.",
       "confidence": "Media",
       "sources": [
-        {
-          "label": "SENTINEL/GDELT",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-        },
-        {
-          "label": "Daily Gazette/AP",
-          "url": "https://www.dailygazette.com/the_recorder/ap/national/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other/article_9ce92b35-ac4f-5948-8935-e7261851539c.html"
-        },
-        {
-          "label": "KSAT/AP",
-          "url": "https://www.ksat.com/news/world/2026/09/13/iranian-media-say-1-killed-in-ship-strike-on-the-strait-of-hormuz-and-other-mideast-developments/"
-        },
-        {
-          "label": "RTE",
-          "url": "https://www.rte.ie/news/2026/0913/1591336-iran-war/"
-        },
-        {
-          "label": "Reuters",
-          "url": "https://www.reuters.com/world/middle-east/hormuz-traffic-dips-lowest-since-may-after-us-iranian-strikes-ships-2026-09-06/"
-        }
+        "https://www.dawan.africa/news/somali-intelligence-agency-says-11-suspected-al-shabaab-operatives-arrested-in-mogadishu-afgoye",
+        "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104170",
+        "https://www.rescue.org/press-release/el-nino-rains-flood-mogadishu-disrupting-health-clinic-operations",
+        "https://www.trtafrika.com/english/article/25d2f41af92d"
+      ]
+    },
+    {
+      "id": "cambodia-banteay-border-flood-watch",
+      "rank": 3,
+      "status": "en observación",
+      "status_en": "watch",
+      "priority": "Media-baja",
+      "priorityEn": "Medium-low",
+      "accent": "#10B981",
+      "location": "Camboya / Banteay Meanchey y frontera con Tailandia",
+      "headline": "Banteay Meanchey: frontera militarizada y lluvias en zona de desplazamiento",
+      "headlineEn": "Banteay Meanchey: militarized border and rains in a displacement zone",
+      "conflict_event": "Fuentes camboyanas y tailandesas describen durante septiembre una disputa fronteriza con posiciones militares, cercas, exigencias de retirada y población civil desplazada o con retorno condicionado en Banteay Meanchey/Sa Kaeo.",
+      "environmental_event": "GDACS registró una inundación verde en Banteay Meanchey, Camboya, entre el 17 y el 19 de septiembre, con cero muertes reportadas y sin cifra de desplazados publicada.",
+      "coupling_type": [
+        "frontera terrestre",
+        "desplazamiento",
+        "lluvias",
+        "control territorial",
+        "observación débil"
       ],
-      "source_keys": [
-        "sentinel",
-        "dailygazette_hormuz",
-        "ksat_hormuz",
-        "rte_hormuz",
-        "reuters_hormuz_traffic"
+      "why_it_matters": "La señal importa porque las fronteras disputadas vuelven más sensible cualquier evento de movilidad, retorno o drenaje local; aun así, la evidencia de esta semana no prueba que la inundación alterara una decisión militar o diplomática.",
+      "fact": "Hecho: GDACS registró inundación en Banteay Meanchey dentro de la ventana y las fuentes regionales muestran que el área está cargada por disputa fronteriza y demandas de reubicación o retirada.",
+      "coupling": "Dato de acople: la coincidencia espacial es clara, pero la relación causal es débil; por eso se mantiene como vigilancia, no como acople confirmado.",
+      "implication": "Implicación estratégica: en fronteras militarizadas, una inundación menor puede adquirir relevancia si afecta campamentos, pasos, cercas o narrativas de soberanía, aunque esta semana no haya prueba pública de interrupción decisiva.",
+      "strategic_implication": "El caso sirve como alerta temprana de cómo fenómenos locales pueden amplificar disputas territoriales cuando el retorno civil y la demarcación están politizados.",
+      "tripolar": "Lectura tripolar: EE. UU. aparece como referencia indirecta por el marco de paz regional; China observa estabilidad continental del Sudeste Asiático; ASEAN queda expuesta a la prueba de gestión fronteriza; la UE pesa más como actor normativo que operativo.",
+      "confidence": "Media-baja",
+      "sources": [
+        "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104174",
+        "https://cambodianess.com/article/cambodia-rejects-thai-claims-says-ceasefire-cannot-create-territorial-rights",
+        "https://www.nationthailand.com/news/general/40055691"
       ]
     }
   ],
   "best_short_candidate": {
-    "id": "hormuz-route-critical-no-environment-watch",
-    "title": "Ormuz: cuando el dato importante es la ausencia",
-    "reason": "Es el mejor punto para Short porque combina alto interés público con una enseñanza metodológica central: no todo punto crítico permite afirmar acople ambiental.",
-    "duration": "60s",
-    "hook_3s": "La señal de esta semana no es un acople: es una advertencia metodológica.",
-    "technical_script": [
-      {
-        "time": "0:00-0:03",
-        "scene": "Hook",
-        "voiceover": "La señal de esta semana no es un acople: es una advertencia metodológica.",
-        "subtitle_en": "This week’s signal is not a coupling. It is a methodological warning."
-      },
-      {
-        "time": "0:03-0:15",
-        "scene": "Hecho",
-        "voiceover": "SENTINEL detectó presión sobre el Estrecho de Ormuz: buques, tensión militar y una ruta energética que puede mover precios globales.",
-        "subtitle_en": "SENTINEL detected pressure around Hormuz: vessels, military tension, and an energy route that can move global prices."
-      },
-      {
-        "time": "0:15-0:28",
-        "scene": "Dato ambiental",
-        "voiceover": "Pero NASA y USGS no muestran un evento ambiental o geofísico que explique esa presión esta semana. Y eso también es inteligencia.",
-        "subtitle_en": "But NASA and USGS do not show an environmental or geophysical event explaining that pressure this week. That is intelligence too."
-      },
-      {
-        "time": "0:28-0:43",
-        "scene": "Implicación",
-        "voiceover": "Ormuz importa por energía, seguros, inflación y cálculo militar. Pero una ruta crítica no debe convertirse en causalidad ambiental si la evidencia no existe.",
-        "subtitle_en": "Hormuz matters for energy, insurance, inflation, and military calculation. But a critical route must not become environmental causality without evidence."
-      },
-      {
-        "time": "0:43-0:57",
-        "scene": "Tripolaridad",
-        "voiceover": "Estados Unidos protege rutas, China mide seguridad energética, Rusia puede ganar margen por precios, y Europa queda expuesta a la inflación. Ese es el tablero.",
-        "subtitle_en": "The United States secures routes, China reads energy security, Russia may gain price leverage, and Europe remains exposed to inflation. That is the board."
-      },
-      {
-        "time": "0:57-1:00",
-        "scene": "Cierre",
-        "voiceover": "GEOPÓLEM. Bienvenidos al tablero.",
-        "subtitle_en": "GEOPÓLEM. Welcome to the board."
-      }
-    ],
-    "visuals": [
-      "Mapa sobrio del Golfo con Ormuz resaltado",
-      "Capa de tráfico marítimo/energía sin animación alarmista",
-      "Sello visual: SIN ACOPLE CONFIRMADO",
-      "Triángulo tripolar EE. UU.-China-Rusia con UE como exposición energética"
-    ],
-    "hashtags": [
-      "#GEOPÓLEM",
-      "#SENTINEL",
-      "#Ormuz",
-      "#Geopolítica",
-      "#Energía",
-      "#OSINT"
-    ]
+    "id": "philippines-sabina-dujuan-watch",
+    "title": "Sabina Shoal: cuando clima, combustible y coerción comparten el mismo tablero",
+    "reason": "Es el mejor Short porque tiene un hecho fechado y verificable, un entorno ambiental regional confirmado por NASA/GDACS y una lección metodológica clara: vigilancia no es causalidad.",
+    "script": {
+      "title": "Sabina Shoal: clima, combustible y zona gris",
+      "hook_3s": "Una colisión en el mar. Un tifón en la región. Y una ruta crítica donde cada margen cuenta.",
+      "scene_1": "Hecho: el 18 de septiembre, un buque filipino que llevaba combustible a pescadores fue dañado tras contacto con una embarcación de la Guardia Costera china cerca de Sabina Shoal.",
+      "scene_2": "Dato ambiental: ese mismo día, NASA observó el tifón Dujuan sobre el mar de Filipinas, mientras GDACS registraba inundación verde en Cotabato. La evidencia no dice que el clima causó la colisión.",
+      "scene_3": "Implicación estratégica: cuando coerción marítima, pesca, combustible y meteorología coinciden, el tablero se estrecha. No es causalidad automática; es presión operacional acumulada.",
+      "closing": "GEOPÓLEM. Bienvenidos al tablero.",
+      "visuals": [
+        "Mapa 9:16: Palawan, Sabina Shoal y trayectoria regional de Dujuan",
+        "Overlay sobrio: “HECHO / DATO AMBIENTAL / EVALUACIÓN”",
+        "Detalle de ruta pesquera y misión de combustible",
+        "Cierre con placa GEOPÓLEM SENTINEL"
+      ],
+      "english_subtitles": [
+        "A collision at sea. A typhoon in the region. And a critical route where every margin matters.",
+        "Fact: on September 18, a Philippine vessel carrying fuel to fishermen was damaged after contact with a China Coast Guard vessel near Sabina Shoal.",
+        "Environmental datum: the same day, NASA observed Typhoon Dujuan over the Philippine Sea, while GDACS registered a green flood alert in Cotabato. The evidence does not say weather caused the collision.",
+        "Strategic implication: when maritime coercion, fishing, fuel and weather coincide, the board narrows. This is not automatic causality; it is accumulated operational pressure.",
+        "GEOPÓLEM. Welcome to the board."
+      ],
+      "hashtags": [
+        "#GEOPÓLEM",
+        "#SENTINEL",
+        "#SouthChinaSea",
+        "#Filipinas",
+        "#China",
+        "#OSINT",
+        "#Geopolítica",
+        "#SeguridadMarítima"
+      ]
+    }
   },
   "media_publication": {
     "status": "draft_ready",
     "published_at": null,
     "youtube_long": {
       "title": "Brief web/app publicado · video no subido automáticamente",
-      "url": "./data/sentinel/weekly-brief-2026-09-14.md",
+      "url": "./data/sentinel/weekly-brief-2026-09-21.md",
       "format": "Web/App",
       "duration": "lectura"
     },
     "youtube_short": {
-      "title": "Short del martes listo para aprobación · Ormuz",
-      "url": "./data/sentinel/weekly-brief-2026-09-14.md#short-del-martes",
+      "title": "Short del martes listo para aprobación · Sabina Shoal",
+      "url": "./data/sentinel/weekly-brief-2026-09-21.md#short-del-martes",
       "format": "9:16 · guion",
       "duration": "60s"
     },
-    "editorial_note": "No se publicó video en YouTube ni redes: el Short queda listo para aprobación conforme a la tarea programada."
+    "editorial_note": "No se publicó video en YouTube ni en redes: solo se deja guion técnico y paquete editorial listo para aprobación."
   },
   "not_selected": [
     {
-      "area": "Pakistán/India",
-      "reason": "hay estrés hídrico e inundaciones reportadas, pero no se verificó con suficiente precisión un acople NASA/USGS-conflicto dentro del set semanal"
+      "topic": "DRC / Uvira",
+      "reason": "El resultado de búsqueda relevante aparece con cabecera de septiembre, pero el contenido verificado describe diciembre de 2025 y marzo-abril de 2026; no se usa como punto actual."
     },
     {
-      "area": "Indonesia/Timor",
-      "reason": "actividad sísmica e incendios relevantes, sin conflicto asociado suficiente en el feed semanal"
+      "topic": "Ormuz",
+      "reason": "Sigue siendo ruta crítica, pero la evidencia disponible en la ventana no aporta evento NASA/USGS o ambiental asociado."
     },
     {
-      "area": "Yemen/Mar Rojo",
-      "reason": "señal de ruta crítica y conflicto, sin evento ambiental NASA/USGS asociado"
-    },
-    {
-      "area": "Gaza/Israel",
-      "reason": "conflicto activo, sin evento ambiental NASA/USGS asociado en la ventana"
+      "topic": "Taiwán",
+      "reason": "Se detectaron señales sísmicas y ejercicios, pero no una afectación directa y específica a continuidad operacional esta semana."
     }
   ],
-  "dataUrl": "data/sentinel/weekly-brief.json",
-  "archiveUrl": "data/sentinel/sentinel_weekly_brief_2026-09-07_2026-09-13.json",
-  "markdownUrl": "data/sentinel/weekly-brief-2026-09-14.md",
+  "dataUrl": "./data/sentinel/weekly-brief.json",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-09-14_2026-09-20.json",
+  "markdownUrl": "./data/sentinel/weekly-brief-2026-09-21.md",
   "close": "GEOPÓLEM. Bienvenidos al tablero."
 };
 
-
-/* ========================================================================
-   CONFLICTOS ACTIVOS — Publicación del dashboard (SIMULADO)
-   Ficha editorial de la sub-página ./conflictos-activos/: qué es, qué no es
-   y el vídeo oficial que la presenta. Los datos del dashboard son simulados.
-   ======================================================================== */
 export const CONFLICTOS_ACTIVOS = {
   id: 'conflictos-activos',
   slug: 'conflictos-activos',

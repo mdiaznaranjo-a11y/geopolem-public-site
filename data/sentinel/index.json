@@ -1,7 +1,7 @@
 {
   "project": "GEOPÓLEM",
   "collection": "SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "updated_at": "2026-09-14T08:14:00+02:00",
+  "updated_at": "2026-09-21T08:04:00+02:00",
   "latest": "./weekly-brief.json",
   "feed": "./conflict-events.json",
   "items": [
@@ -109,5 +109,19 @@
     "status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
     "archive": "./sentinel_weekly_brief_2026-09-07_2026-09-13.json",
     "markdown": "./weekly-brief-2026-09-14.md"
-  }
+  },
+  "briefs": [
+    {
+      "date": "2026-09-21",
+      "window": "14-20 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+      "json": "./sentinel_weekly_brief_2026-09-14_2026-09-20.json",
+      "markdown": "./weekly-brief-2026-09-21.md",
+      "status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
+      "points": [
+        "Sabina Shoal: fricción marítima bajo presión meteorológica regional",
+        "Mogadiscio: inundación urbana y presión de seguridad sobre capacidad estatal",
+        "Banteay Meanchey: frontera militarizada y lluvias en zona de desplazamiento"
+      ]
+    }
+  ]
 }
