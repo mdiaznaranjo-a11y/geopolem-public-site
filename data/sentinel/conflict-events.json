@@ -4,476 +4,315 @@
       "actors": [
         "United States"
       ],
-      "domain": "wfmd.com",
-      "id": "evt_3673b248d50b736d",
+      "domain": "cbsnews.com",
+      "id": "evt_b70977ea47026c00",
       "language": "English",
       "matched_regions": [
-        "red sea",
-        "china"
+        "ukraine",
+        "gaza",
+        "iran"
       ],
       "matched_themes": [
-        "war"
+        "conflict"
       ],
-      "region": "Asia-Pacífico",
+      "region": "Europa del Este",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Trump to address U . N . General Assembly and meet with world leaders as he navigates Iran , Gaza , Ukraine conflicts",
+      "tone": null,
+      "url": "https://www.cbsnews.com/news/trump-address-united-nations-general-assembly-meetings-world-leaders-iran-ukraine/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "bignewsnetwork.com",
+      "id": "evt_8952e4b655b54469",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Eurasia",
       "score": 6.5,
       "score_breakdown": {
         "region": 3.5,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T114500Z",
+      "seen_date": "20260922T110000Z",
       "source_country": "United States",
       "tier": "high",
-      "title": "China  wiretapped Red Sea  with spy hub 6 miles from US base : ex Pentagon official warns",
+      "title": "EU split over Russian tycoon pushes entire sanctions regime to the edge",
       "tone": null,
-      "url": "https://www.wfmd.com/2026/09/21/china-wiretapped-red-sea-with-spy-hub-6-miles-from-us-base-ex-pentagon-official-warns/"
+      "url": "http://www.bignewsnetwork.com/news/279322984/eu-split-over-russian-tycoon-pushes-entire-sanctions-regime-to-the-edge"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "euronews.com",
-      "id": "evt_10585ccdf4efe349",
+      "domain": "nakedcapitalism.com",
+      "id": "evt_2bd089aa79f3e980",
       "language": "English",
       "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian",
-        "kyiv"
-      ],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Europa del Este",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T114500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Russian drones slam southern Ukraine city after Kyiv 1 , 000 - drone weekend barrage",
-      "tone": null,
-      "url": "https://www.euronews.com/my-europe/2026/09/21/russian-drones-slam-southern-ukraine-city-after-kyivs-1000-drone-weekend-barrage"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "isp.netscape.com",
-      "id": "evt_6722d404df5d7a34",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian",
-        "kyiv"
-      ],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Europa del Este",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T114500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Russian drones slam a southern Ukraine city after Kyiv 1 , 000 - drone weekend barrage",
-      "tone": null,
-      "url": "https://isp.netscape.com:443/news/world/story/0001/20260921/445b619fc9b2d002df1edaac8b320d09"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wisn.com",
-      "id": "evt_df8f46d1448dffa2",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian",
-        "kyiv"
-      ],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Europa del Este",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T114500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Russian drones slam a southern Ukraine city after Kyiv 1 , 000 - drone weekend barrage",
-      "tone": null,
-      "url": "https://www.wisn.com/article/russian-drones-ukraine/73817826"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wlky.com",
-      "id": "evt_96e6b613ff7724a8",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian",
-        "kyiv"
-      ],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Europa del Este",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T114500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Russian drones slam a southern Ukraine city after Kyiv 1 , 000 - drone weekend barrage",
-      "tone": null,
-      "url": "https://www.wlky.com/article/russian-drones-ukraine/73817826"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "thetrucker.com",
-      "id": "evt_d25c2c9ea7a8e594",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Rising gas prices frustrate voters . Trump says it an  inexpensive price to pay  for the Iran war",
-      "tone": null,
-      "url": "https://www.thetrucker.com/trucking-news/the-nation/rising-gas-prices-frustrate-voters-trump-says-its-an-inexpensive-price-to-pay-for-the-iran-war"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "moneycontrol.com",
-      "id": "evt_4d981e0955192095",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "World will be astonished : Iran warns US of new weapons , wider targets if Trump resumes military action",
-      "tone": null,
-      "url": "https://www.moneycontrol.com/world/world-will-be-astonished-iran-warns-us-of-new-weapons-wider-targets-if-trump-resumes-military-action-article-14034615.html"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "ilfordrecorder.co.uk",
-      "id": "evt_a2352c552b7d3b56",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Chancellor headroom  to halve because of Iran war inflation and weak growth",
-      "tone": null,
-      "url": "https://www.ilfordrecorder.co.uk/news/national/26566336.chancellors-headroom-to-halve-iran-war-inflation-weak-growth/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "euronews.com",
-      "id": "evt_6d34cecc7d25ca6d",
-      "language": "English",
-      "matched_regions": [
-        "yemen",
-        "houthi"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 3.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T114500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Yemen Houthis pledge not to target US ships after Trump cancels strikes",
-      "tone": null,
-      "url": "https://www.euronews.com/2026/09/21/yemens-houthis-pledge-not-to-target-us-ships-after-trump-cancels-strikes"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "moneycontrol.com",
-      "id": "evt_2b3a63b84ace6bb6",
-      "language": "English",
-      "matched_regions": [
-        "india",
-        "pakistan"
-      ],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Asia del Sur",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 2.5,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "Trump - linked Powerus signs drone deals in India and Pakistan : Why India pact is detailed but Pakistan order remains under wraps",
-      "tone": null,
-      "url": "https://www.moneycontrol.com/world/trump-linked-powerus-signs-drone-deals-in-india-and-pakistan-why-india-pact-is-detailed-but-pakistan-order-remains-under-wraps-article-14034573.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "whyn.iheart.com",
-      "id": "evt_0011fbd450f4a672",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T114500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Pro - Putin Party Wins Russian Election | NewsRadio 560 WHYN",
-      "tone": null,
-      "url": "https://whyn.iheart.com/content/2026-09-21-pro-putin-party-wins-russian-election/"
-    },
-    {
-      "actors": [
-        "Azerbaijan"
-      ],
-      "domain": "news.az",
-      "id": "evt_8cf5cf75668ae8a1",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Azerbaijan",
-      "tier": "medium",
-      "title": "Georgia denies granting international protection to Russian army deserter",
-      "tone": null,
-      "url": "https://news.az/news/georgia-denies-granting-international-protection-to-russian-army-deserter"
-    },
-    {
-      "actors": [
-        "Oman"
-      ],
-      "domain": "omanobserver.om",
-      "id": "evt_3093ac039c8de4f7",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Oman",
-      "tier": "medium",
-      "title": "Iran Guards threaten to hit new targets if US attacks",
-      "tone": null,
-      "url": "https://www.omanobserver.om/article/1196548/world/region/irans-guards-threaten-to-hit-new-targets-if-us-attacks"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "idahostatejournal.com",
-      "id": "evt_ab3706a6fc3a105e",
-      "language": "English",
-      "matched_regions": [
+        "iran",
         "hormuz"
       ],
       "matched_themes": [
-        "strike"
+        "war"
       ],
       "region": "MENA",
-      "score": 3.0,
+      "score": 6.5,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 3.5,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Iran War : Trump Signs of Desperation Increase as Bessent Seeks to Bar Iran Airline Flights Right Before Official UN Visits ; More on Strait of Hormuz Fuel Transits",
+      "tone": null,
+      "url": "https://www.nakedcapitalism.com/2026/09/iran-war-trump-signs-of-desperation-increase-as-bessent-seeks-to-bar-iran-airline-flights-right-before-official-un-visits-more-on-strait-of-hormuz-fuel-transits.html"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "dailyadvertiser.com.au",
+      "id": "evt_0ed49828194d6d8c",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "Europa del Este",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260921T114500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "A projectile strikes a tanker as it sails into the Strait of Hormuz , and other Mideast developments",
+      "seen_date": "20260922T110000Z",
+      "source_country": "Australia",
+      "tier": "medium",
+      "title": "Russia , Ukraine strikes as Zelenskiy set to meet Trump",
       "tone": null,
-      "url": "http://www.idahostatejournal.com/news/national/a-projectile-strikes-a-tanker-as-it-sails-into-the-strait-of-hormuz-and-other/article_077e4b94-5723-53bd-b9b4-4eb76c4384f8.html"
+      "url": "https://www.dailyadvertiser.com.au/story/9355577/russia-ukraine-strikes-as-zelenskiy-set-to-meet-trump/"
     },
     {
-      "actors": [],
-      "domain": "capitalfm.africa",
-      "id": "evt_b6975a79ea9577c6",
+      "actors": [
+        "Australia"
+      ],
+      "domain": "edenmagnet.com.au",
+      "id": "evt_2f96efcc024283cd",
       "language": "English",
       "matched_regions": [
-        "ethiopia"
+        "ukraine",
+        "russia"
       ],
       "matched_themes": [
-        "rebel"
+        "strike"
       ],
-      "region": "Cuerno de África",
-      "score": 3.0,
+      "region": "Europa del Este",
+      "score": 5.5,
       "score_breakdown": {
-        "region": 1.0,
-        "themes": 2.0,
+        "region": 4.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260921T114500Z",
-      "source_country": "",
-      "tier": "monitor",
-      "title": "Seven Ethiopian rebel groups form new alliance",
+      "seen_date": "20260922T110000Z",
+      "source_country": "Australia",
+      "tier": "medium",
+      "title": "Russia , Ukraine strikes as Zelenskiy set to meet Trump",
       "tone": null,
-      "url": "https://capitalfm.africa/seven-ethiopian-rebel-groups-form-new-alliance/"
+      "url": "https://www.edenmagnet.com.au/story/9355577/russia-ukraine-strikes-as-zelenskiy-set-to-meet-trump/"
     },
     {
       "actors": [
-        "India"
+        "United States"
       ],
-      "domain": "indiagazette.com",
-      "id": "evt_29d7de815124416e",
+      "domain": "bignewsnetwork.com",
+      "id": "evt_51388e842d0ec115",
       "language": "English",
       "matched_regions": [
-        "india",
-        "china"
+        "iran",
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "G7 strongly condemns Houthi strikes on Saudi , calls on Iran to end support",
+      "tone": null,
+      "url": "http://www.bignewsnetwork.com/news/279323060/g7-strongly-condemns-houthi-strikes-on-saudi-calls-on-iran-to-end-support"
+    },
+    {
+      "actors": [
+        "Canada"
+      ],
+      "domain": "therecord.com",
+      "id": "evt_1090181ac8930124",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "Europa del Este",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Canada",
+      "tier": "medium",
+      "title": "Russia and Ukraine trade deadly strikes as Zelenskyy prepares to meet Trump",
+      "tone": null,
+      "url": "https://www.therecord.com/business/russia-and-ukraine-trade-deadly-strikes-as-zelenskyy-prepares-to-meet-trump/article_96624044-6abb-59a5-8ebc-1d5bfe1284d7.html"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "la-croix.com",
+      "id": "evt_10470351e637e61e",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Europa del Este",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "France",
+      "tier": "medium",
+      "title": "Guerre en Ukraine  : débat à lUE sur les sanctions  ; frappes russes sur Dnipro",
+      "tone": null,
+      "url": "https://www.la-croix.com/international/ukraine-russie-jour-1668-point-conflit-ukrainien-poutine-aujourdhui-20260922"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "bignewsnetwork.com",
+      "id": "evt_f74e194885e42085",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [
+        "sanction"
+      ],
+      "region": "Eurasia",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Wider Europe Briefing : EU To Sanction Russian Military With New Focus",
+      "tone": null,
+      "url": "http://www.bignewsnetwork.com/news/279323036/wider-europe-briefing-eu-to-sanction-russian-military-with-new-focus"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "diariosigloxxi.com",
+      "id": "evt_1cae3e5651f0d2c6",
+      "language": "Spanish",
+      "matched_regions": [
+        "israel",
+        "gaza"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 3.0,
+      "region": "MENA",
+      "score": 4.0,
       "score_breakdown": {
-        "region": 3.0,
+        "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "India exports to BRICS jump as China drives growth",
+      "seen_date": "20260922T110000Z",
+      "source_country": "Spain",
+      "tier": "medium",
+      "title": "Israel acusa a Hamás de  planear nuevos secuestros  y amenaza con  arrasar  la ciudad de Gaza",
       "tone": null,
-      "url": "http://www.indiagazette.com/news/279320683/india-exports-to-brics-jump-as-china-drives-growth"
+      "url": "https://www.diariosigloxxi.com/texto-ep/mostrar/20260922120009/israel-acusa-hamas-planear-nuevos-secuestros-amenaza-arrasar-ciudad-gaza"
     },
     {
       "actors": [
-        "Sierra Leone"
+        "United States"
       ],
-      "domain": "sierraleonetimes.com",
-      "id": "evt_518ba3e57189afd2",
+      "domain": "aol.com",
+      "id": "evt_98742eb4f4511d01",
       "language": "English",
       "matched_regions": [
-        "india",
-        "china"
+        "iran",
+        "hormuz"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 3.0,
+      "region": "MENA",
+      "score": 3.5,
       "score_breakdown": {
-        "region": 3.0,
+        "region": 3.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Sierra Leone",
-      "tier": "monitor",
-      "title": "Indias exports to BRICS jump as China drives growth",
+      "seen_date": "20260922T110000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Sterling steady after report says Iran may reopen Hormuz",
       "tone": null,
-      "url": "http://www.sierraleonetimes.com/news/279320637/indias-exports-to-brics-jump-as-china-drives-growth"
+      "url": "https://www.aol.com/articles/sterling-steady-report-says-iran-102009000.html"
     },
     {
       "actors": [
-        "India"
+        "United States"
       ],
-      "domain": "moneycontrol.com",
-      "id": "evt_378a893092eef160",
+      "domain": "dailymail.com",
+      "id": "evt_06889e6b46123596",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -486,46 +325,171 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
+      "seen_date": "20260922T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Im a European expat in Sydney and agree with the warning Aussie men gave me about the women here :  Genuinely confused",
+      "tone": null,
+      "url": "https://www.dailymail.com/lifestyle/love-sex/article-16149933/european-expat-dating-australian-women-culture-difference.html"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilpost.it",
+      "id": "evt_bf886364f5bcc7f8",
+      "language": "Italian",
+      "matched_regions": [
+        "yemen",
+        "houthi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Da dove arrivano gli Houthi , e come cominciò la guerra civile in Yemen",
+      "tone": null,
+      "url": "https://www.ilpost.it/2026/09/19/houthi-yemen-guerra-civile-storia/?homepagePosition=8.1&referrerPost=3684925"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "mathrubhumi.com",
+      "id": "evt_f1be7c3eb1d7423d",
+      "language": "Malayalam",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
       "source_country": "India",
       "tier": "monitor",
-      "title": "Im begging everyone ...: War - weary Qatar PM says no  peace  since FIFA World Cup",
+      "title": "Rameshwar Nath Kao : life , career , and intelligence legacy",
       "tone": null,
-      "url": "https://www.moneycontrol.com/world/i-m-begging-everyone-war-weary-qatar-pm-says-no-peace-since-fifa-world-cup-article-14034624.html"
+      "url": "https://www.mathrubhumi.com/movies-music/features/rameshwar-nath-kao-life-and-career-jgtoe0n0"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "dagospia.com",
+      "id": "evt_482fab4e53ce3bb7",
+      "language": "Italian",
+      "matched_regions": [
+        "yemen",
+        "houthi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Niente aiuti contro gli houthi – donald trump frena sui raid contro i ribelli yemeniti foraggiati da",
+      "tone": null,
+      "url": "https://www.dagospia.com/cronache/niente-aiuti-contro-gli-houthi-donald-trump-frena-sui-raid-contro-i-487706"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "union-bulletin.com",
-      "id": "evt_641017e7e5e6d449",
+      "domain": "euronews.com",
+      "id": "evt_cd8d75804f519d23",
       "language": "English",
-      "matched_regions": [
-        "hormuz"
-      ],
+      "matched_regions": [],
       "matched_themes": [
-        "strike"
+        "war"
       ],
-      "region": "MENA",
+      "region": "Global",
       "score": 3.0,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 1.5,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
+      "seen_date": "20260922T110000Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "A projectile strikes a tanker as it sails into the Strait of Hormuz , and other Mideast developments",
+      "title": "Archaeology at Troy : 2 , 800 - year - old agora found , city was not abandoned after war",
       "tone": null,
-      "url": "https://www.union-bulletin.com/news/national/a-projectile-strikes-a-tanker-as-it-sails-into-the-strait-of-hormuz-and-other/article_d7a658f0-ad98-5e7a-83cc-c68e378c0554.html"
+      "url": "https://www.euronews.com/culture/2026/09/22/archaeology-at-troy-2800-year-old-agora-found-city-was-not-abandoned-after-war"
     },
     {
       "actors": [
-        "Austria"
+        "Nigeria"
       ],
-      "domain": "boerse-express.com",
-      "id": "evt_0cbf34a512fa31bf",
+      "domain": "allafrica.com",
+      "id": "evt_85839f3226e20ca1",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "Africa : Conflict Coltan , AI Demand and the Risk of Runaway Harm",
+      "tone": null,
+      "url": "https://allafrica.com/stories/202609220079.html"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "riotimesonline.com",
+      "id": "evt_7f3d73b92e04ff71",
+      "language": "English",
+      "matched_regions": [
+        "colombia"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "América Latina",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "La Macarena Attack Kills Three Colombian Soldiers",
+      "tone": null,
+      "url": "https://www.riotimesonline.com/la-macarena-attack-kills-three-colombian-soldiers-2026/"
+    },
+    {
+      "actors": [],
+      "domain": "mz.de",
+      "id": "evt_b3631001bbcd67b4",
       "language": "German",
       "matched_regions": [
         "iran"
@@ -538,70 +502,45 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T114500Z",
-      "source_country": "Austria",
+      "seen_date": "20260922T110000Z",
+      "source_country": "",
       "tier": "monitor",
-      "title": "Shell Aktie : LNG - Diversifizierung nach Iran - Krieg",
+      "title": "Iran - Krieg : Iran stellt neuen diplomatischen Anlauf in Aussicht",
       "tone": null,
-      "url": "https://www.boerse-express.com/news/articles/shell-aktie-lng-diversifizierung-nach-iran-krieg-948149"
+      "url": "https://www.mz.de/deutschland-und-welt/politik/iran-stellt-neuen-diplomatischen-anlauf-in-aussicht-4324387"
     },
     {
       "actors": [
-        "Chile"
+        "Russia"
       ],
-      "domain": "t13.cl",
-      "id": "evt_6424ba3596783c07",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T114500Z",
-      "source_country": "Chile",
-      "tier": "monitor",
-      "title": "Con drones , francotiradores y municiones : así es el arco de triunfo que Trump planea construir en Washington",
-      "tone": null,
-      "url": "https://www.t13.cl/noticia/ex-ante/mundo/con-drones-francotiradores-municiones-asi-arco-triunfo-trump-planea-construir-w-21-9-2026"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "leonoticias.com",
-      "id": "evt_44543e080e61d1ad",
-      "language": "Spanish",
+      "domain": "thebarentsobserver.com",
+      "id": "evt_c46f2e80cba12d69",
+      "language": "English",
       "matched_regions": [
-        "gaza"
+        "russia"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Eurasia",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T114500Z",
-      "source_country": "Spain",
+      "seen_date": "20260922T110000Z",
+      "source_country": "Russia",
       "tier": "monitor",
-      "title": "Ed Sheeran reconoce « errores » por la expulsión de Macklemore y tilda de « injustificable » la situación en Gaza",
+      "title": "Anyone but United Russia : How Kirkenes residents voted in the State Duma  election",
       "tone": null,
-      "url": "https://www.leonoticias.com/gente-estilo/sheeran-reconoce-errores-expulsion-macklemore-tilda-injustificable-20260920113928-ntrc.html"
+      "url": "https://www.thebarentsobserver.com/news/anyone-but-united-russia-how-kirkenes-residents-voted-in-the-state-duma-election/458522"
     },
     {
       "actors": [
-        "Spain"
+        "Germany"
       ],
-      "domain": "larioja.com",
-      "id": "evt_0f670bea5bfc2eee",
-      "language": "Spanish",
+      "domain": "t-online.de",
+      "id": "evt_6ddba28dd5fcd5c4",
+      "language": "German",
       "matched_regions": [
         "israel"
       ],
@@ -613,142 +552,119 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Spain",
+      "seen_date": "20260922T110000Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "La Audiencia Nacional amplía a torturas y lesiones la causa por el abordaje israelí de la flotilla",
+      "title": "Linke weist Vorhaltungen von Israels Botschafter zurück",
       "tone": null,
-      "url": "https://www.larioja.com/nacional/audiencia-nacional-amplia-torturas-lesiones-causa-abordaje-20260921115637-ntrc.html"
+      "url": "https://www.t-online.de/nachrichten/deutschland/id_101446214/linke-weist-vorhaltungen-von-israels-botschafter-zurueck.html"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "dantri.com.vn",
+      "id": "evt_6bf2af4061239738",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "42 UAV Nga đánh vào hầm trú ẩn trong 24h :  Tử địa  tại chiến trường Ukraine",
+      "tone": null,
+      "url": "https://dantri.com.vn/the-gioi/42-uav-nga-danh-vao-ham-tru-an-trong-24h-tu-dia-tai-chien-truong-ukraine-20260922164834125.htm"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "riotimesonline.com",
+      "id": "evt_74e4d76033eb6077",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Equatorial Guinea Opposition Coalition Branded Terrorist",
+      "tone": null,
+      "url": "https://www.riotimesonline.com/equatorial-guinea-opposition-cored-terrorist-bounties-2026/"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "handelsblatt.com",
-      "id": "evt_0ae993df4f8907e0",
+      "domain": "come-on.de",
+      "id": "evt_6c800f4a636b8c4e",
       "language": "German",
       "matched_regions": [
-        "ukraine"
+        "israel"
       ],
       "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "MENA",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
+      "seen_date": "20260922T110000Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "Verteidigung : Die Ukraine sucht den „ Schahed - Killer",
+      "title": "Linke weist Vorhaltungen von Israels Botschafter zurück",
       "tone": null,
-      "url": "https://www.handelsblatt.com/unternehmen/industrie/verteidigung-die-ukraine-sucht-den-schahed-killer/100254951.html"
+      "url": "http://www.come-on.de/politik/linke-weist-vorhaltungen-von-israels-botschafter-zurueck-zr-94503787.html"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "diariosur.es",
+      "id": "evt_467cbcd2a1884111",
+      "language": "Spanish",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Spain",
+      "tier": "monitor",
+      "title": "El déficit comercial de España se dispara por la factura energética y el desequilibrio con China",
+      "tone": null,
+      "url": "https://www.diariosur.es/economia/deficit-comercial-espana-dispara-305-pesar-record-20260922113628-ntrc.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "newsroomamerica.com",
-      "id": "evt_bf85e0a1d1a2c145",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Tag : iran newsroomamerica . com",
-      "tone": null,
-      "url": "https://newsroomamerica.com/tag/iran"
-    },
-    {
-      "actors": [
-        "Vietnam"
-      ],
-      "domain": "baomoi.com",
-      "id": "evt_ba8e7ad65ceec0ea",
-      "language": "Vietnamese",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Vietnam",
-      "tier": "monitor",
-      "title": "Iran cảnh báo sẽ dùng vũ khí mới nếu Mỹ nối lại tấn công",
-      "tone": null,
-      "url": "https://baomoi.com/iran-canh-bao-se-dung-vu-khi-moi-neu-my-noi-lai-tan-cong-c56098941.epi"
-    },
-    {
-      "actors": [
-        "Vietnam"
-      ],
-      "domain": "baomoi.com",
-      "id": "evt_9231ce7c69be37dd",
-      "language": "Vietnamese",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Vietnam",
-      "tier": "monitor",
-      "title": "Nga - Ukraine dựng lưới phòng thủ : Phá sóng , cắt GPS , mang súng săn diệt UAV",
-      "tone": null,
-      "url": "https://baomoi.com/nga-ukraine-dung-luoi-phong-thu-pha-song-cat-gps-mang-sung-san-diet-uav-c56098815.epi"
-    },
-    {
-      "actors": [],
-      "domain": "abcnews.al",
-      "id": "evt_6a5d9b1e82cdd829",
-      "language": "Albanian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "",
-      "tier": "monitor",
-      "title": "Nis në Tiranë Konferenca e 42 - të e FBI - së / Hita : Besimi i partnerëve vërteton transformimin e Policisë së Shtetit",
-      "tone": null,
-      "url": "https://abcnews.al/nis-ne-tirane-konferenca-e-42-te-e-fbi-se-hita-besimi-i-partnereve-verteton-transformimin-e-policise-se-shtetit/"
-    },
-    {
-      "actors": [
-        "China"
-      ],
-      "domain": "strategypage.com",
-      "id": "evt_8c154b969d7513f3",
+      "domain": "cbsnews.com",
+      "id": "evt_6701dbc2be1ad4a3",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -761,95 +677,70 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
-      "source_country": "China",
+      "seen_date": "20260922T110000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Air Defense : Pulsar Lite Downs Drones",
+      "title": "Fishing boat reels in large U . S . military drone off Florida coast",
       "tone": null,
-      "url": "http://www.strategypage.com/htmw/htada/articles/2026092162553.aspx"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "merkur.de",
-      "id": "evt_834e7a33c3695c84",
-      "language": "German",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T114500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Sabotage in Europa : Szenario skizziert Putin - Plan gegen NATO",
-      "tone": null,
-      "url": "http://www.merkur.de/politik/drei-geheimdienstchefs-schlagen-alarm-russland-plant-offenbar-angriffe-auf-nato-territorium-zr-94502667.html"
-    },
-    {
-      "actors": [
-        "Czech Republic"
-      ],
-      "domain": "denik.cz",
-      "id": "evt_81f59365473c23d5",
-      "language": "Czech",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T114500Z",
-      "source_country": "Czech Republic",
-      "tier": "monitor",
-      "title": "Zbabělec , lhář a zrádce , reaguje tisk na Ficovy výroky o závazcích vůči NATO",
-      "tone": null,
-      "url": "https://www.denik.cz/evropa/zbabelec-lhar-a-zradce-reaguje-tisk-na-ficovy-vyroky-o-zavazcich-vuci-nato/"
+      "url": "https://www.cbsnews.com/news/fishing-boat-catches-us-military-drone-florida-coast/"
     },
     {
       "actors": [],
-      "domain": "aia.al",
-      "id": "evt_2c87bac9892f5810",
-      "language": "Albanian",
+      "domain": "mz.de",
+      "id": "evt_ea56369241454e36",
+      "language": "German",
       "matched_regions": [
-        "nato"
+        "israel"
       ],
       "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
+      "region": "MENA",
+      "score": 2.0,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
+      "seen_date": "20260922T110000Z",
       "source_country": "",
       "tier": "monitor",
-      "title": "Alarm në Europë / Shefat e spiunazhit baltik : Rusia po përgatit veprime më të ashpra ndaj NATO - s",
+      "title": "Nach scharfer Kritik : Linke weist Vorhaltungen von Israels Botschafter zurück",
       "tone": null,
-      "url": "https://aia.al/alarm-ne-europe-spiunazhi-baltik-rusia-veprime-ndaj-nato/"
+      "url": "https://www.mz.de/deutschland-und-welt/deutschland/linke-weist-vorhaltungen-von-israels-botschafter-zuruck-4324177"
     },
     {
       "actors": [
-        "Oman"
+        "Israel"
       ],
-      "domain": "omanobserver.om",
-      "id": "evt_e7a981bbf445ab2a",
+      "domain": "gatestoneinstitute.org",
+      "id": "evt_e03f6f51d74ba20b",
       "language": "English",
       "matched_regions": [
-        "hormuz"
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "China Is Not Our Friend",
+      "tone": null,
+      "url": "https://www.gatestoneinstitute.org/22871/china-is-not-our-friend"
+    },
+    {
+      "actors": [
+        "Lebanon"
+      ],
+      "domain": "lebanondebate.com",
+      "id": "evt_4f0ef0890399e098",
+      "language": "Arabic",
+      "matched_regions": [
+        "lebanon"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -859,145 +750,70 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Oman",
+      "seen_date": "20260922T110000Z",
+      "source_country": "Lebanon",
       "tier": "monitor",
-      "title": "Hormuz shuttles keep oil flowing , but at a high cost",
+      "title": "إنفانتينو يفتح باب الإصلاح | Lebanon Debate",
       "tone": null,
-      "url": "https://www.omanobserver.om/article/1196543/business/hormuz-shuttles-keep-oil-flowing-but-at-a-high-cost"
+      "url": "https://www.lebanondebate.com/article/881014-%D8%A5%D9%86%D9%81%D8%A7%D9%86%D8%AA%D9%8A%D9%86%D9%88-%D9%8A%D9%81%D8%AA%D8%AD-%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D8%A5%D8%B5%D9%84%D8%A7%D8%AD"
+    },
+    {
+      "actors": [
+        "Argentina"
+      ],
+      "domain": "comercioyjusticia.info",
+      "id": "evt_0784231b7cf4889e",
+      "language": "Spanish",
+      "matched_regions": [
+        "palestin"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Argentina",
+      "tier": "monitor",
+      "title": "La Corte Penal Internacional , bajo asedio : el caso Palestina y los límites del derecho frente al poder",
+      "tone": null,
+      "url": "https://comercioyjusticia.info/justicia/la-corte-penal-internacional-bajo-asedio-el-caso-palestina-y-los-limites-del-derecho-frente-al-poder/"
     },
     {
       "actors": [
         "Turkey"
       ],
-      "domain": "haksozhaber.net",
-      "id": "evt_d14655f0e9945d57",
+      "domain": "mersinhaber.com",
+      "id": "evt_132dec1193dd7de0",
       "language": "Turkish",
       "matched_regions": [
-        "nato"
+        "mali"
       ],
       "matched_themes": [],
-      "region": "Global",
+      "region": "Sahel",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
+      "seen_date": "20260922T110000Z",
       "source_country": "Turkey",
       "tier": "monitor",
-      "title": "Moskova : NATOnun Arktik tatbikatları silahlı çatışma riskini artırıyor",
+      "title": "İngiltere , Suudi Arabistan jetlerine yakıt ikmali yaparak Husi saldırılarına karşı destek verecek .",
       "tone": null,
-      "url": "https://www.haksozhaber.net/moskova-natonun-arktik-tatbikatlari-silahli-catisma-riskini-artiriyor-261185h.htm"
+      "url": "https://www.mersinhaber.com/haber-ingiltere-suudi-arabistan-jetlerine-yakit-ikmali-yaparak-husi-saldirilarina-karsi-destek-verecek/782037"
     },
     {
       "actors": [
-        "Slovak Republic"
+        "Vietnam"
       ],
-      "domain": "24hod.sk",
-      "id": "evt_6afe2a433634c4c3",
-      "language": "Slovak",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Slovak Republic",
-      "tier": "monitor",
-      "title": "Pavel kritizuje Ficov postoj k článku 5 NATO . Premiér podľa českého prezidenta nepochopil , čo je solidarita",
-      "tone": null,
-      "url": "https://www.24hod.sk/pavel-kritizuje-ficov-postoj-k-clanku-5-nato-premier-podla-ceskeho-prezidenta-nepochopil-co-je-solidarita-cl831337.html"
-    },
-    {
-      "actors": [
-        "Nigeria"
-      ],
-      "domain": "thisdaylive.com",
-      "id": "evt_10445c92211efbfb",
-      "language": "English",
-      "matched_regions": [
-        "niger"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Nigeria",
-      "tier": "monitor",
-      "title": "Group Berates FG over Coastal Erosion Ravaging Niger Delta – THISDAYLIVE",
-      "tone": null,
-      "url": "https://www.thisdaylive.com/2026/09/21/group-berates-fg-over-coastal-erosion-ravaging-niger-delta/"
-    },
-    {
-      "actors": [
-        "South Africa"
-      ],
-      "domain": "zalebs.com",
-      "id": "evt_de34d6fc190afe04",
-      "language": "English",
-      "matched_regions": [
-        "niger"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "South Africa",
-      "tier": "monitor",
-      "title": "Oil slide intensifies calls for lower petrol prices in Nigeria",
-      "tone": null,
-      "url": "https://zalebs.com/business/oil-slide-intensifies-calls-for-lower-petrol-prices-in-nigeria/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "dw.com",
-      "id": "evt_9cc32971c01dc52c",
-      "language": "Swahili",
-      "matched_regions": [
-        "pakistan"
-      ],
-      "matched_themes": [],
-      "region": "Asia del Sur",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260921T111500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Kimataifa : Ndugu wa Khan wakamatwa Pakistan",
-      "tone": null,
-      "url": "https://www.dw.com/sw/kukamatwa-kwa-dada-za-imran-khan-kwazua-mijadala-pakistan/live-79343846"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "fr.euronews.com",
-      "id": "evt_2e4268b64d794458",
-      "language": "French",
+      "domain": "vietgiaitri.com",
+      "id": "evt_198b205d7edc92e5",
+      "language": "Vietnamese",
       "matched_regions": [
         "houthi"
       ],
@@ -1009,12 +825,156 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260921T111500Z",
-      "source_country": "United States",
+      "seen_date": "20260922T110000Z",
+      "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "Les Houthis promettent ne pas viser les navires américains après lannulation des frappes de Trump",
+      "title": "Houthi điều quân tới loạt cao điểm chiến lược , siết chặt yết hầu biển Đỏ - Thế giới",
       "tone": null,
-      "url": "https://fr.euronews.com/2026/09/21/les-houthis-promettent-ne-pas-viser-les-navires-americains-apres-lannulation-des-frappes-d"
+      "url": "https://vietgiaitri.com/houthi-dieu-quan-toi-loat-cao-diem-chien-luoc-siet-chat-yet-hau-bien-do-20260922i7777135/"
+    },
+    {
+      "actors": [],
+      "domain": "thesun.ng",
+      "id": "evt_0c01efda73796172",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Plateau killings : Mutfwang imposes curfew on three LGAs – The Sun Nigeria",
+      "tone": null,
+      "url": "https://thesun.ng/plateau-killings-mutfwang-imposes-curfew-on-three-lgas/"
+    },
+    {
+      "actors": [],
+      "domain": "abcnews.al",
+      "id": "evt_8e3d704753fb89cd",
+      "language": "Albanian",
+      "matched_regions": [
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Macron takon Trump / Presidenti francez : Biseda konstruktive për Hormuzin , Detin e Kuq dhe Ukrainën",
+      "tone": null,
+      "url": "https://abcnews.al/macron-takon-trump-presidenti-francez-biseda-konstruktive-per-hormuzin-detin-e-kuq-dhe-ukrainen/"
+    },
+    {
+      "actors": [
+        "Nepal"
+      ],
+      "domain": "nepalnational.com",
+      "id": "evt_80ee34ee884f4387",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "truce"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Nepal",
+      "tier": "monitor",
+      "title": "Trade truce key to Xi - Trump Summit",
+      "tone": null,
+      "url": "http://www.nepalnational.com/news/279321893/trade-truce-key-to-xi-trump-summit"
+    },
+    {
+      "actors": [
+        "Syria"
+      ],
+      "domain": "middleeaststar.com",
+      "id": "evt_f43a790d595675f9",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "truce"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Syria",
+      "tier": "monitor",
+      "title": "Trade truce key to Xi - Trump Summit",
+      "tone": null,
+      "url": "http://www.middleeaststar.com/news/279321893/trade-truce-key-to-xi-trump-summit"
+    },
+    {
+      "actors": [],
+      "domain": "pudhari.news",
+      "id": "evt_65457f15872ab14f",
+      "language": "Marathi",
+      "matched_regions": [],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Nanded Umarkhed bus stand attack - उमरखेड बसस्थानक परिसरात चाकू - लोखंडी रॉडने हल्ला ; परस्परांविरुद्ध गुन्हे दाखल",
+      "tone": null,
+      "url": "https://pudhari.news/maharashtra/marathwada/nanded/umarkhed-bus-stand-knife-rod-attack-cross-cases-ss88"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "dagospia.com",
+      "id": "evt_0df5f42883771e27",
+      "language": "Italian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260922T110000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "in germania nessuno viene espropriato  - il cancelliere tedesco friedrich merz , intenzionato ad ...",
+      "tone": null,
+      "url": "https://www.dagospia.com/politica/in-germania-nessuno-viene-espropriato-cancelliere-tedesco-friedrich-487720"
     }
   ],
   "filters": {
@@ -1028,13 +988,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-09-21T12:46:58Z",
+  "generated_at": "2026-09-22T11:37:21Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 5,
+    "high": 3,
     "medium": 8,
-    "monitor": 26
+    "monitor": 27
   },
-  "total_events": 39
+  "total_events": 38
 }
