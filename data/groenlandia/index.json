@@ -1,0 +1,58 @@
+{
+  "id": "groenlandia-2026-cuasi-soberania-funcional",
+  "generated_at": "2026-09-24T04:37:13Z",
+  "title": "Groenlandia 2026 · la cuasi-soberanía funcional que redefine el Ártico",
+  "dek": "Trump no compró Groenlandia ni la anexó. Pero el acuerdo firmado por Estados Unidos, Dinamarca y Groenlandia reordena el tablero ártico: soberanía formal, control operativo ampliado y arquitectura de seguridad sin fecha de expiración.",
+  "status": "publicado",
+  "language": "es",
+  "editorial_frame": {
+    "hecho": "El acuerdo fue firmado el 22 de septiembre de 2026 y modifica/complementa el acuerdo de defensa de 1951.",
+    "evaluacion": "El texto preserva la soberanía formal danesa y el derecho de autodeterminación groenlandés, pero amplía funciones militares y de seguridad de Estados Unidos.",
+    "hipotesis_geopolem": "El resultado estratégico no es anexión territorial, sino cuasi-soberanía funcional: captura de funciones críticas sin cambio de bandera."
+  },
+  "youtube": {
+    "long_video": {
+      "id": "rI6cBqDIl_s",
+      "url": "https://youtu.be/rI6cBqDIl_s",
+      "title": "Groenlandia 2026: Trump no la compró, capturó el tablero ártico",
+      "duration": "04:52"
+    },
+    "short": {
+      "id": "HT1klTFoHoc",
+      "url": "https://youtu.be/HT1klTFoHoc",
+      "title": "Groenlandia: Trump no la compró, capturó el tablero ártico #Shorts",
+      "duration": "00:40"
+    }
+  },
+  "web": {
+    "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/groenlandia/",
+    "app_url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala"
+  },
+  "sources": [
+    {
+      "label": "Reuters · Trump, Denmark, Greenland sign deal",
+      "url": "https://www.reuters.com/world/europe/trump-denmark-greenland-sign-deal-bid-end-arctic-standoff-2026-09-22/"
+    },
+    {
+      "label": "White House · Agreement text",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/09/agreement-between-the-government-of-the-united-states-of-america-and-the-government-of-the-kingdom-of-denmark-together-with-the-government-of-greenland-to-amend-and-supplement-the-agreement-of-27-apri/"
+    },
+    {
+      "label": "Al Jazeera · Arctic security deal",
+      "url": "https://www.aljazeera.com/news/2026/9/22/us-signs-tremendous-arctic-security-deal-with-denmark-greenland"
+    },
+    {
+      "label": "BBC Mundo · contexto en español",
+      "url": "https://www.bbc.com/mundo/articles/cvzez9yz6766o"
+    },
+    {
+      "label": "Foreign Policy · Arctic Council",
+      "url": "https://foreignpolicy.com/2026/04/16/arctic-council-trump-greenland-denmark/"
+    },
+    {
+      "label": "Atlantic Council · US and allied strategy for Greenland",
+      "url": "https://www.atlanticcouncil.org/content-series/atlantic-council-strategy-paper-series/a-us-and-allied-strategy-for-greenland/"
+    }
+  ],
+  "tags": ["Groenlandia", "Ártico", "Trump", "Dinamarca", "Golden Dome", "Pituffik", "OTAN", "Tripolaridad imperfecta", "Cuasi-soberanía funcional", "OSINT"]
+}

@@ -345,4 +345,12 @@
     <xhtml:link rel="alternate" hreflang="lb" href="https://geopolem.com/glosario/zona-economica-exclusiva/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://geopolem.com/glosario/zona-economica-exclusiva/" />
   </url>
+  <url>
+    <loc>https://geopolem.com/groenlandia/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geopolem.com/groenlandia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geopolem.com/groenlandia/" />
+  </url>
 </urlset>
