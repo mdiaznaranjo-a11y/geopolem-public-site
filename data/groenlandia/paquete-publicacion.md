@@ -1,8 +1,8 @@
 # GEOPÓLEM · Groenlandia 2026 · Paquete final de publicación
 
-**Estado:** publicado en YouTube, preparado para web, app y redes.  
+**Estado:** video largo publicado en YouTube con voz en off limpia y sin música; Short reemplazado por versión limpia sin subtítulos en inglés incrustados para preservar la legibilidad del texto español; preparado para web, app y redes.  
 **Video largo:** https://youtu.be/9MVBBwvNzHw  
-**Short:** https://youtu.be/Hf_O_1rLvCM  
+**Short corregido:** https://youtu.be/Wldrz_CwzNg  
 **Web:** https://mdiaznaranjo-a11y.github.io/geopolem-public-site/groenlandia/  
 **App:** https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala  
 
@@ -16,7 +16,7 @@ Groenlandia no cambió de bandera. Pero el acuerdo firmado por Estados Unidos, D
 En este análisis GEOPÓLEM explicamos qué dice el texto, qué no debe exagerarse y por qué la clave no es la anexión sino la cuasi-soberanía funcional: soberanía formal, control operativo ampliado y una arquitectura de seguridad sin fecha de expiración.
 
 Video completo: https://youtu.be/9MVBBwvNzHw  
-Short corregido: https://youtu.be/Hf_O_1rLvCM  
+Short corregido: https://youtu.be/Wldrz_CwzNg  
 Web GEOPÓLEM: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/groenlandia/  
 App GEOPÓLEM: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala  
 
