@@ -2368,6 +2368,7 @@ function VideoCard({ video, copy, onOpen }) {
   const subs = (video.subtitles && video.subtitles.length)
     ? video.subtitles.join(' · ')
     : copy.none;
+  const webTarget = video.webUrl || (video.id && video.id.includes('groenlandia') ? './groenlandia/' : '');
   return html`
   <article class=${clsx(
     'group relative panel rounded-lg overflow-hidden flex flex-col',
@@ -2403,6 +2404,24 @@ function VideoCard({ video, copy, onOpen }) {
     <div class="p-3.5 flex-1 flex flex-col gap-2">
       <h3 class="font-display font-semibold text-[15px] leading-snug text-slate-100">${video.title}</h3>
       <p class="text-[12.5px] leading-relaxed text-slate-400">${video.description}</p>
+      ${(video.youtubeUrl || webTarget) && html`
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          ${video.youtubeUrl && html`
+            <a href=${video.youtubeUrl} target="_blank" rel="noopener"
+              class="px-2.5 py-1 rounded border border-radar/40 text-radar text-[10px] font-mono uppercase tracking-widest hover:bg-radar/10 transition"
+              onClick=${(e)=>e.stopPropagation()}>
+              YouTube ↗
+            </a>
+          `}
+          ${webTarget && html`
+            <a href=${webTarget} target="_blank" rel="noopener"
+              class="px-2.5 py-1 rounded border border-white/10 text-slate-300 text-[10px] font-mono uppercase tracking-widest hover:bg-white/5 transition"
+              onClick=${(e)=>e.stopPropagation()}>
+              Web/App ↗
+            </a>
+          `}
+        </div>
+      `}
       <div class="mt-auto pt-2 border-t border-white/5 flex items-center justify-between gap-2">
         <div class="flex items-center gap-1.5 text-[10.5px] font-mono uppercase tracking-widest text-slate-500">
           <span class="w-1.5 h-1.5 rounded-full animate-pulse-dot" style=${{background: cat.accent}}></span>
