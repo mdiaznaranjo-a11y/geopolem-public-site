@@ -4,7 +4,7 @@ import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
 import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, WAICO_INVESTIGACION, CONFLICTOS_ACTIVOS, CONFLICT_WATCHLIST_2026, CABLES_SUBMARINOS } from './data.js?v=sentinel-weekly-20260921';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
-import { VIDEOS, VIDEO_CATEGORIES } from './videos.js?v=greenland-audiofix-20260924';
+import { VIDEOS, VIDEO_CATEGORIES } from './videos.js?v=greenland-audiofix-final-20260924';
 import { loadWatchlistFocos } from './api-adapter.js';
 
 const html = htm.bind(React.createElement);
