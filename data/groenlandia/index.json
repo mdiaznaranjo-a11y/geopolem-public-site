@@ -1,6 +1,6 @@
 {
   "id": "groenlandia-2026-cuasi-soberania-funcional",
-  "generated_at": "2026-09-24T04:37:13Z",
+  "generated_at": "2026-09-24T17:50:00Z",
   "title": "Groenlandia 2026 · la cuasi-soberanía funcional que redefine el Ártico",
   "dek": "Trump no compró Groenlandia ni la anexó. Pero el acuerdo firmado por Estados Unidos, Dinamarca y Groenlandia reordena el tablero ártico: soberanía formal, control operativo ampliado y arquitectura de seguridad sin fecha de expiración.",
   "status": "publicado",
@@ -12,16 +12,18 @@
   },
   "youtube": {
     "long_video": {
-      "id": "9MVBBwvNzHw",
-      "url": "https://youtu.be/9MVBBwvNzHw",
-      "title": "Groenlandia 2026: Trump no la compró, capturó el tablero ártico",
-      "duration": "04:52"
+      "id": "q3TCYzp3qk0",
+      "url": "https://youtu.be/q3TCYzp3qk0",
+      "title": "Groenlandia 2026: Trump no la compró, pero cambió el tablero ártico | GEOPÓLEM",
+      "duration": "08:45"
     },
     "short": {
-      "id": "Wldrz_CwzNg",
-      "url": "https://youtu.be/Wldrz_CwzNg",
-      "title": "Groenlandia: Trump no la compró, capturó el tablero ártico #Shorts",
-      "duration": "00:58"
+      "id": "S70d1-ZQDxw",
+      "url": "https://youtu.be/S70d1-ZQDxw",
+      "title": "Groenlandia: Trump no la compró, pero cambió el tablero ártico #Shorts",
+      "duration": "00:54",
+      "local_asset": "assets/videos/geopolem_groenlandia_short_9x16_link_youtube.mp4",
+      "promotes": "https://youtu.be/q3TCYzp3qk0"
     }
   },
   "web": {
