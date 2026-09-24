@@ -1,8 +1,8 @@
 # GEOPÓLEM · Groenlandia 2026 · Paquete final de publicación
 
 **Estado:** publicado en YouTube, preparado para web, app y redes.  
-**Video largo:** https://youtu.be/rI6cBqDIl_s  
-**Short:** https://youtu.be/HT1klTFoHoc  
+**Video largo:** https://youtu.be/9MVBBwvNzHw  
+**Short:** https://youtu.be/Hf_O_1rLvCM  
 **Web:** https://mdiaznaranjo-a11y.github.io/geopolem-public-site/groenlandia/  
 **App:** https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala  
 
@@ -15,8 +15,8 @@ Groenlandia no cambió de bandera. Pero el acuerdo firmado por Estados Unidos, D
 
 En este análisis GEOPÓLEM explicamos qué dice el texto, qué no debe exagerarse y por qué la clave no es la anexión sino la cuasi-soberanía funcional: soberanía formal, control operativo ampliado y una arquitectura de seguridad sin fecha de expiración.
 
-Video completo: https://youtu.be/rI6cBqDIl_s  
-Short: https://youtu.be/HT1klTFoHoc  
+Video completo: https://youtu.be/9MVBBwvNzHw  
+Short corregido: https://youtu.be/Hf_O_1rLvCM  
 Web GEOPÓLEM: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/groenlandia/  
 App GEOPÓLEM: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala  
 
@@ -32,7 +32,7 @@ GEOPÓLEM. Bienvenidos al tablero.
 **Descripción:**  
 Groenlandia no fue comprada ni anexada. Pero el acuerdo firmado en 2026 reordena el tablero ártico.
 
-Video completo: https://youtu.be/rI6cBqDIl_s  
+Video completo: https://youtu.be/9MVBBwvNzHw  
 Web GEOPÓLEM: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/groenlandia/  
 App GEOPÓLEM: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala  
 
@@ -50,7 +50,7 @@ La clave no está en la bandera. Está en las funciones: defensa, bases, acceso 
 
 En GEOPÓLEM lo llamamos cuasi-soberanía funcional: cuando la soberanía formal permanece, pero las decisiones estratégicas empiezan a moverse en otra dirección.
 
-Video completo en YouTube: https://youtu.be/rI6cBqDIl_s  
+Video completo en YouTube: https://youtu.be/9MVBBwvNzHw  
 Ficha web y app GEOPÓLEM disponibles.
 
 GEOPÓLEM. Bienvenidos al tablero.
@@ -62,7 +62,7 @@ GEOPÓLEM. Bienvenidos al tablero.
 1. Trump no compró Groenlandia.  
 2. Tampoco la anexó.  
 3. Pero el tablero ártico sí cambió.  
-4. Video completo: https://youtu.be/rI6cBqDIl_s  
+4. Video completo: https://youtu.be/9MVBBwvNzHw  
 5. GEOPÓLEM. Bienvenidos al tablero.
 
 ## TikTok
@@ -72,7 +72,7 @@ Groenlandia no cambió de bandera. Pero el acuerdo de 2026 mueve el tablero árt
 
 No es anexión. Es cuasi-soberanía funcional: soberanía formal, control operativo ampliado.
 
-Video completo: https://youtu.be/rI6cBqDIl_s
+Video completo: https://youtu.be/9MVBBwvNzHw
 
 **Hashtags:**  
 #GEOPÓLEM #Groenlandia #Ártico #Trump #Geopolitica #OSINT #Shorts
@@ -84,7 +84,7 @@ Trump no compró Groenlandia. No la anexó. Pero el acuerdo de 2026 reordena el 
 
 La clave no es la bandera. Es el control operativo: bases, defensa antimisiles, inversiones sensibles y seguridad.
 
-Análisis GEOPÓLEM: https://youtu.be/rI6cBqDIl_s
+Análisis GEOPÓLEM: https://youtu.be/9MVBBwvNzHw
 
 #Groenlandia #Ártico #GEOPÓLEM
 
@@ -97,7 +97,7 @@ Desde GEOPÓLEM proponemos leer este caso como cuasi-soberanía funcional. La ba
 
 El Ártico deja de ser periferia climática y se convierte en arquitectura de seguridad de la tripolaridad imperfecta.
 
-Video completo: https://youtu.be/rI6cBqDIl_s  
+Video completo: https://youtu.be/9MVBBwvNzHw  
 Ficha web: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/groenlandia/  
 App: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala
 
@@ -115,7 +115,7 @@ No hablamos de anexión ni de compra territorial. Hablamos de algo más silencio
 
 El análisis completo ya está disponible en YouTube, web y app GEOPÓLEM.
 
-Video completo: https://youtu.be/rI6cBqDIl_s  
+Video completo: https://youtu.be/9MVBBwvNzHw  
 Web: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/groenlandia/  
 App: https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala
 
