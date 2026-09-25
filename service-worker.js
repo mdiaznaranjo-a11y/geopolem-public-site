@@ -1,4 +1,4 @@
-const CACHE_NAME = 'geopolem-command-v1.35.8';
+const CACHE_NAME = 'geopolem-command-v1.35.9';
 const CONFLICTS_DIR = './conflictos-activos/';
 const CONFLICTS_SHELL = CONFLICTS_DIR + 'index.html';
 const WATCHLIST_DIR = './conflict-watchlist-2026/';
@@ -24,6 +24,7 @@ const APP_SHELL = [
   './',
   './index.html',
   './soberania-cognitiva/index.html',
+  './educacion-pantallas/index.html',
   './talasocracia/index.html',
   './waico/index.html',
   './tripolaridad/index.html',
@@ -38,6 +39,7 @@ const APP_SHELL = [
   './data/tripolaridad/tripolaridad-imperfecta-paquete-manus-tesis.md',
   './data/tripolaridad/anexo-manus-ventana-overton-tripolaridad.md',
   './data/tripolaridad/trilogia-doctrinal-geopolem.json',
+  './data/educacion-pantallas/index.json',
   './app.html',
   './app.js',
   './api-adapter.js',

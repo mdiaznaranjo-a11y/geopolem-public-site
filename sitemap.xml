@@ -353,4 +353,12 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://geopolem.com/groenlandia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://geopolem.com/groenlandia/" />
   </url>
+  <url>
+    <loc>https://geopolem.com/educacion-pantallas/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geopolem.com/educacion-pantallas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geopolem.com/educacion-pantallas/" />
+  </url>
 </urlset>

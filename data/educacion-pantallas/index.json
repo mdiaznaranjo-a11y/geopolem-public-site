@@ -1,0 +1,28 @@
+{
+  "id": "educacion-pantallas-maestros-desigualdad-cognitiva",
+  "published_at": "2026-09-25T10:54:16Z",
+  "title": "Niños con maestros, niños con pantallas: la nueva desigualdad cognitiva",
+  "section": "Soberanía cognitiva",
+  "format": "video_largo_y_short_story_redes",
+  "youtube_long": {
+    "id": "sDGQLygtj44",
+    "url": "https://youtu.be/sDGQLygtj44",
+    "embed": "https://www.youtube-nocookie.com/embed/sDGQLygtj44",
+    "duration": "10:11",
+    "status": "public"
+  },
+  "short_story": {
+    "file": "../assets/videos/geopolem_educacion_pantallas_short_story_redes.mp4",
+    "duration": "00:59",
+    "platform_status": "prepared_for_social_networks",
+    "youtube_upload": false
+  },
+  "web_url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/educacion-pantallas/",
+  "app_url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala",
+  "thesis": "El riesgo no es que los niños pobres tengan pantallas. El riesgo es que solo tengan pantallas.",
+  "sources": [
+    "https://www.elmundo.es/papel/historias/2026/09/24/6ab54b59fc6c83685b8b45ac.html",
+    "https://www.unesco.org/en/articles/global-report-teachers-addressing-teacher-shortages-and-transforming-profession"
+  ],
+  "editorial_close": "GEOPÓLEM. Bienvenidos al tablero."
+}
