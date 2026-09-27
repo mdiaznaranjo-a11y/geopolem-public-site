@@ -1,5 +1,1248 @@
 {
-  "events": [],
+  "events": [
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "independent.co.uk",
+      "id": "evt_77825aeb9453a662",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia",
+        "nato"
+      ],
+      "matched_themes": [
+        "war",
+        "escalation"
+      ],
+      "region": "Europa del Este",
+      "score": 9.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 5.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United Kingdom",
+      "tier": "high",
+      "title": "Ukraine - Russia war live : Germany urges Putin to stop  dangerous escalation  against Nato countries",
+      "tone": null,
+      "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-trump-zelensky-nato-drones-b3056139.html"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "lokmat.com",
+      "id": "evt_80e0d18e99f96b52",
+      "language": "Marathi",
+      "matched_regions": [
+        "india",
+        "china",
+        "philippines"
+      ],
+      "matched_themes": [
+        "missile",
+        "deploy"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 8.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 4.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "India",
+      "tier": "high",
+      "title": "चीनसोबत तणाव अन् भारताची ब्रह्मोस  एंट्री ! फिलिपिन्सने समुद्रकिनारी तैनात केल्या घातक मिसाइल - Marathi News | Tensions with China and India Brahmos  entry ! Philippines deploys deadly missiles on the coast",
+      "tone": null,
+      "url": "https://www.lokmat.com/international/tensions-with-china-and-india-brahmos-entry-philippines-deploys-deadly-missiles-on-the-coast-a-a629/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wral.com",
+      "id": "evt_5887fee621b1cc83",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia",
+        "russian",
+        "moscow"
+      ],
+      "matched_themes": [
+        "escalate",
+        "strike"
+      ],
+      "region": "Europa del Este",
+      "score": 7.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Russian strikes kill 2 in Ukraine after Moscow rejects German calls to de - escalate",
+      "tone": null,
+      "url": "https://www.wral.com/news/ap/f91ac-russian-strikes-kill-2-in-ukraine-after-moscow-rejects-german-calls-to-de-escalate/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "clickorlando.com",
+      "id": "evt_2a41cb3befaa8673",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia",
+        "russian",
+        "moscow"
+      ],
+      "matched_themes": [
+        "escalate",
+        "strike"
+      ],
+      "region": "Europa del Este",
+      "score": 7.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Russian strikes kill 2 in Ukraine after Moscow rejects German calls to de - escalate",
+      "tone": null,
+      "url": "https://www.clickorlando.com/news/world/2026/09/27/russian-strikes-kill-2-in-ukraine-after-moscow-rejects-german-calls-to-de-escalate/"
+    },
+    {
+      "actors": [
+        "Canada"
+      ],
+      "domain": "thepeterboroughexaminer.com",
+      "id": "evt_a9f7beaa1a2e8534",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [
+        "war",
+        "escalation"
+      ],
+      "region": "Eurasia",
+      "score": 7.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 5.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "Canada",
+      "tier": "high",
+      "title": "Russia top diplomat rejects German calls to ease off its  dangerou escalation toward the country",
+      "tone": null,
+      "url": "https://www.thepeterboroughexaminer.com/news/world/german-russian-foreign-ministers-have-rare-meeting-at-un/article_cef4d14e-c43a-5084-8f48-d6e7d27a7185.html"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "elystandard.co.uk",
+      "id": "evt_0d7db5389638b412",
+      "language": "English",
+      "matched_regions": [
+        "gaza",
+        "palestin"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T111500Z",
+      "source_country": "United Kingdom",
+      "tier": "high",
+      "title": "Palestinian death toll in Gaza war rises above 74 , 000",
+      "tone": null,
+      "url": "https://www.elystandard.co.uk/news/national/26584888.palestinian-death-toll-gaza-war-rises-74-000/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "clickorlando.com",
+      "id": "evt_7488278f2d268d8f",
+      "language": "English",
+      "matched_regions": [
+        "gaza",
+        "palestin"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Palestinian death toll in Gaza war rises above 74 , 000 since the war began and other Mideast news",
+      "tone": null,
+      "url": "https://www.clickorlando.com/news/world/2026/09/27/palestinian-death-toll-in-gaza-war-rises-above-74000-since-the-war-began-and-other-mideast-news/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilfattonisseno.it",
+      "id": "evt_b8da46819124e6ff",
+      "language": "Italian",
+      "matched_regions": [
+        "iran",
+        "united states"
+      ],
+      "matched_themes": [
+        "bombard"
+      ],
+      "region": "MENA",
+      "score": 6.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "Italy",
+      "tier": "high",
+      "title": "Grave incidente  vicino a base united kingdom : da Fairford decollano bombardieri united states per attacchi a Iran - il Fatto Nisseno",
+      "tone": null,
+      "url": "https://www.ilfattonisseno.it/2026/09/grave-incidente-vicino-a-base-uk-da-fairford-decollano-bombardieri-usa-per-attacchi-a-iran/"
+    },
+    {
+      "actors": [],
+      "domain": "presstv.co.uk",
+      "id": "evt_fe7f8c65bf75bcb7",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza",
+        "palestin"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "",
+      "tier": "medium",
+      "title": "Israeli attacks kill 7 Palestinians in central , northern Gaza over 48 hours : Health Ministry",
+      "tone": null,
+      "url": "https://www.presstv.co.uk/Detail/2026/09/27/777099/Seven-Palestinians-killed-in-Israeli-attacks-Health-Ministry-Gaza-Strip"
+    },
+    {
+      "actors": [],
+      "domain": "presstv.co.uk",
+      "id": "evt_97905883d3fe3917",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "iraq"
+      ],
+      "matched_themes": [
+        "blockade"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "",
+      "tier": "medium",
+      "title": "Top cleric calls upon all Iraqis to break  unjust , inhumane  US aerial blockade on Iran",
+      "tone": null,
+      "url": "https://www.presstv.co.uk/Detail/2026/09/27/777101/Top-cleric-calls-upon-all-Iraqis-to-break-"
+    },
+    {
+      "actors": [],
+      "domain": "eng.kavkaz-uzel.eu",
+      "id": "evt_b06081e84e2b5063",
+      "language": "English",
+      "matched_regions": [
+        "moscow"
+      ],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "",
+      "tier": "medium",
+      "title": "Caucasian Knot | A metro passenger in Moscow knelt to apologize again for the conflict with a Chechen girl .",
+      "tone": null,
+      "url": "https://www.eng.kavkaz-uzel.eu/articles/78917"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "caribbeanherald.com",
+      "id": "evt_2d85df6480cebf36",
+      "language": "English",
+      "matched_regions": [
+        "india"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Asia del Sur",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "If you want peace , prepare for war : Rajnath Singh says India  preparation in defence is complete and strong",
+      "tone": null,
+      "url": "http://www.caribbeanherald.com/news/279335126/if-you-want-peace-prepare-for-war-rajnath-singh-says-india-preparation-in-defence-is-complete-and-strong"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "londonlovesbusiness.com",
+      "id": "evt_058302140c158565",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Russia builds huge nuclear command centre deep beneath the Urals - London Business News",
+      "tone": null,
+      "url": "https://londonlovesbusiness.com/russia-builds-huge-nuclear-command-centre-deep-beneath-the-urals/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilmessaggero.it",
+      "id": "evt_7bcedf708729b898",
+      "language": "Italian",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T111500Z",
+      "source_country": "Italy",
+      "tier": "medium",
+      "title": "Russia , il progetto « Mano Morta » in caso di uccisione di Putin : riattivato lObject 1335 , un bunker apocalittico ( top secret ) per la risposta nucleare",
+      "tone": null,
+      "url": "https://www.ilmessaggero.it:443/mondo/russia_putin_ucciso_bunker_guerra_nucleare_objetc_1335_progetto_mano_morta_morte_putin-9787475.html"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "bursa.ro",
+      "id": "evt_85811fa351121095",
+      "language": "Romanian",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "Romania",
+      "tier": "medium",
+      "title": "Anadolu Ajansi : Ministrul israelian , Smotrich , cere anexarea unor teritorii din Gaza şi sudul Libanului",
+      "tone": null,
+      "url": "https://www.bursa.ro/anadolu-ajansi-ministrul-israelian-smotrich-cere-anexarea-unor-teritorii-din-gaza-si-sudul-libanului-66204068"
+    },
+    {
+      "actors": [],
+      "domain": "presstv.co.uk",
+      "id": "evt_089f3bfbfc197247",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "",
+      "tier": "medium",
+      "title": "Regional insecurity will spare no one ; expulsion of US , Israeli forces inevitable : Iran Army chief",
+      "tone": null,
+      "url": "https://www.presstv.co.uk/Detail/2026/09/27/777104/Regional-insecurity-will-spare-no-one,-expulsion-of-US-and-zionist-forces-inevitable-Iranian-army-commander"
+    },
+    {
+      "actors": [],
+      "domain": "editorialedomani.it",
+      "id": "evt_e80824bbcc08d3c6",
+      "language": "Italian",
+      "matched_regions": [
+        "russia",
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "",
+      "tier": "medium",
+      "title": "La Svizzera vota sulla neutralità : in gioco sanzioni alla Russia e partnership con la Nato",
+      "tone": null,
+      "url": "https://www.editorialedomani.it/politica/europa/svizzera-referendum-neutralita-sanzioni-russia-nato-gc6hehpm"
+    },
+    {
+      "actors": [
+        "Albania"
+      ],
+      "domain": "24-ore.com",
+      "id": "evt_86b7c9a549db6019",
+      "language": "Albanian",
+      "matched_regions": [
+        "iran",
+        "iranian"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "Albania",
+      "tier": "medium",
+      "title": "Zëdhënësi i ushtrisë iraniane : Pozicioni i SHBA - së në Lindjen e Mesme është  i pasigurt  Uashingtoni mund të sulmojë sërish – 24 ore",
+      "tone": null,
+      "url": "https://24-ore.com/zedhenesi-i-ushtrise-iraniane-pozicioni-i-shba-se-ne-lindjen-e-mesme-eshte-i-pasigurt-uashingtoni-mund-te-sulmoje-serish/"
+    },
+    {
+      "actors": [],
+      "domain": "presstv.co.uk",
+      "id": "evt_3ade0103a289d077",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "",
+      "tier": "medium",
+      "title": "Iran has tried every diplomatic avenue to reopen Strait of Hormuz : Araghchi",
+      "tone": null,
+      "url": "https://www.presstv.co.uk/Detail/2026/09/27/777093/No-one-can-accuse-Iran-of-not-trying-diplomatic-path-amid-contradictory-positions-of-US--Araghchi"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "mailtimes.com.au",
+      "id": "evt_68e5a31094aea449",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Veteran Voices : 3rd Field Survey Company | Wimmera Mallee News | Local News covering Sport , Rural , Council & Business News for Horsham , Warracknabeal , Dimboola , Rainbow , Jeparit & Yaapeet in VIC Australia .",
+      "tone": null,
+      "url": "https://www.mailtimes.com.au/veteran-s-voices-3rd-field-survey-company-1-2026-09-27"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "dziennikwschodni.pl",
+      "id": "evt_bd97fa4b65abe0d3",
+      "language": "Polish",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Dyrektor Krzysztofik radzi , gdzie schować się podczas alarmu . „ Unikajmy otwartej przestrzeni",
+      "tone": null,
+      "url": "https://www.dziennikwschodni.pl:443/artykul/392665,dyrektor-krzysztofik-radzi-gdzie-schowac-sie-podczas-alarmu-unikajmy-otwartej-przestrzeni"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "koat.com",
+      "id": "evt_a7a9923e76f0d488",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Several arrested on suspicion of explosives offensives near united kingdom base used by US forces",
+      "tone": null,
+      "url": "https://www.koat.com/article/uk-air-base-us-explosives-offensives-detainment/73907874"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wisn.com",
+      "id": "evt_235ea4cc3f040b2b",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Several arrested on suspicion of explosives offensives near united kingdom base used by US forces",
+      "tone": null,
+      "url": "https://www.wisn.com/article/uk-air-base-us-explosives-offensives-detainment/73907874"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wdsu.com",
+      "id": "evt_c85dcfd7c9961769",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Several arrested on suspicion of explosives offensives near united kingdom base used by US forces",
+      "tone": null,
+      "url": "https://www.wdsu.com/article/uk-air-base-us-explosives-offensives-detainment/73907874"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "clickorlando.com",
+      "id": "evt_84b2270a79fd8185",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "UK police evacuate homes near air base used by US and detain men on suspected explosives offensives",
+      "tone": null,
+      "url": "https://www.clickorlando.com/news/world/2026/09/27/uk-police-evacuate-homes-near-air-base-used-by-us-and-detain-men-on-suspected-explosives-offensives/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "salisburyjournal.co.uk",
+      "id": "evt_08b21117bec77122",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Counter - terrorism police leading inquiry after explosive arrests near RAF base",
+      "tone": null,
+      "url": "https://www.salisburyjournal.co.uk/news/national/26585156.counter-terrorism-police-leading-inquiry-explosive-arrests-near-raf-base/"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "punjabkesari.in",
+      "id": "evt_4805341e83176f00",
+      "language": "Hindi",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "ट्रंप ने ठुकराया ईरान का 7 दिन का युद्धविराम प्रस्ताव , अराघची का भी दो टूक जवाब - शर्तों से पीछे नहीं हटेंगे - iran s fm araghchi says waiting for definitive opinions from mediators",
+      "tone": null,
+      "url": "https://www.punjabkesari.in/international/news/iran-s-fm-araghchi-says-waiting-for-definitive-opinions-from-mediators-2383745"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "republicain-lorrain.fr",
+      "id": "evt_b2f872b45ce2a5d1",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Guerre en Ukraine . Cinq morts dans des nouvelles frappes russes , Kiev attaquée « sans relâche »",
+      "tone": null,
+      "url": "https://www.republicain-lorrain.fr/defense-guerre-conflit/2026/09/27/cinq-morts-dans-des-nouvelles-frappes-russes-kiev-attaquee-sans-relache"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "guardian-series.co.uk",
+      "id": "evt_2943aa1ea0464e86",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Counter - terrorism police leading inquiry after explosive arrests near RAF base",
+      "tone": null,
+      "url": "https://www.guardian-series.co.uk/news/national/26585156.counter-terrorism-police-leading-inquiry-explosive-arrests-near-raf-base/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "stourbridgenews.co.uk",
+      "id": "evt_1333d3b6435ca152",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Counter - terrorism police leading inquiry after explosive arrests near RAF base",
+      "tone": null,
+      "url": "https://www.stourbridgenews.co.uk/news/national/26585166.counter-terrorism-police-leading-inquiry-explosive-arrests-near-raf-base/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "manchestereveningnews.co.uk",
+      "id": "evt_f0b11013b603e461",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Update issued as counter - terror police lead  major incident  at RAF base",
+      "tone": null,
+      "url": "https://www.manchestereveningnews.co.uk/news/uk-news/update-issued-counter-terror-police-34678608"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "deutschlandfunk.de",
+      "id": "evt_5c0490d31fe23f12",
+      "language": "German",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Mittlerer Osten - Iran beharrt auf Bedingungen für Wiederöffnung der Straße von Hormus",
+      "tone": null,
+      "url": "https://www.deutschlandfunk.de/iran-beharrt-auf-bedingungen-fuer-wiederoeffnung-der-strasse-von-hormus-100.html"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "la-croix.com",
+      "id": "evt_58189bb7dff2d56c",
+      "language": "French",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Guerre au Moyen - Orient  : les écoles de Riyad en distanciel  ; lIran maintient sa position sur Ormuz",
+      "tone": null,
+      "url": "https://www.la-croix.com/international/direct-guerre-iran-israel-usa-jour-107-moyen-orient-bilan-resume-aujourdhui-20260927"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "antaranews.com",
+      "id": "evt_2475c37b71a5848d",
+      "language": "Indonesian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T111500Z",
+      "source_country": "Indonesia",
+      "tier": "monitor",
+      "title": "Jubir Iran ungkap kemampuan militer strategis disimpan di bawah tanah",
+      "tone": null,
+      "url": "https://www.antaranews.com/berita/5760733/jubir-iran-ungkap-kemampuan-militer-strategis-disimpan-di-bawah-tanah"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "watfordobserver.co.uk",
+      "id": "evt_dce4b23ac3c7cef0",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T111500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Counter - terrorism police leading inquiry after explosive arrests near RAF base",
+      "tone": null,
+      "url": "https://www.watfordobserver.co.uk/news/national/26585156.counter-terrorism-police-leading-inquiry-explosive-arrests-near-raf-base/"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "sudouest.fr",
+      "id": "evt_a1b60597edfef916",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T111500Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Guerre en Ukraine : la Russie accuse lEurope de  tout faire  pour contrecarrer les plans de paix mais ses objectifs  seront atteints  ,  peu importe les circonstances",
+      "tone": null,
+      "url": "https://www.sudouest.fr/international/europe/ukraine/guerre-en-ukraine-la-russie-accuse-l-europe-de-tout-faire-pour-contrecarrer-les-plans-de-paix-mais-ses-objectifs-seront-atteints-peu-importe-les-circonstances-30802412.php"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "tivysideadvertiser.co.uk",
+      "id": "evt_da4abc7ae54cfaf1",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T111500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Counter - terrorism police leading inquiry after explosive arrests near RAF base",
+      "tone": null,
+      "url": "https://www.tivysideadvertiser.co.uk/news/national/26585166.counter-terrorism-police-leading-inquiry-explosive-arrests-near-raf-base/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "somersetcountygazette.co.uk",
+      "id": "evt_7791cb12f678d11a",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Counter - terrorism police leading inquiry after explosive arrests near RAF base",
+      "tone": null,
+      "url": "https://www.somersetcountygazette.co.uk/news/national/26585156.counter-terrorism-police-leading-inquiry-explosive-arrests-near-raf-base/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "arkansasonline.com",
+      "id": "evt_19ad5a02362a6d77",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "US , China agree to up cooperation | The Arkansas Democrat - Gazette - Arkansa Best News Source",
+      "tone": null,
+      "url": "https://www.arkansasonline.com/news/2026/sep/27/us-china-agree-to-up-cooperation/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "arkansasonline.com",
+      "id": "evt_2844b219a243a112",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Russia , Germany hold parley at UN | The Arkansas Democrat - Gazette - Arkansa Best News Source",
+      "tone": null,
+      "url": "https://www.arkansasonline.com/news/2026/sep/27/russia-germany-hold-parley-at-un/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "arkansasonline.com",
+      "id": "evt_396713574d5e3d20",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Israeli settlers divert spring water in West Bank | The Arkansas Democrat - Gazette",
+      "tone": null,
+      "url": "https://www.arkansasonline.com/news/2026/sep/27/israeli-settlers-divert-spring-water-in-west-bank/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "kentonline.co.uk",
+      "id": "evt_28f054828c26a31c",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Counter - terrorism police leading inquiry after explosive arrests near RAF base",
+      "tone": null,
+      "url": "https://www.kentonline.co.uk/news/national/counter-terrorism-police-leading-inquiry-after-explosive-arrests-near-raf-base-172213/"
+    },
+    {
+      "actors": [
+        "Slovenia"
+      ],
+      "domain": "siol.net",
+      "id": "evt_b53001dbbabfa5d3",
+      "language": "Slovenian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "Slovenia",
+      "tier": "monitor",
+      "title": "ZDA s pritiski na države zaostrujejo gospodarsko izolacijo Irana",
+      "tone": null,
+      "url": "https://siol.net/novice/svet/zda-s-pritiski-na-drzave-zaostrujejo-gospodarsko-izolacijo-irana-702505"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilgazzettino.it",
+      "id": "evt_ff6af2117fde5834",
+      "language": "Italian",
+      "matched_regions": [
+        "houthi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T113000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Ft , gli Houthi promettono di non prendere di mira le navi europee",
+      "tone": null,
+      "url": "https://www.ilgazzettino.it/speciali/quieuropa/ft_gli_houthi_promettono_di_non_prendere_di_mira_le_navi_europee-9785978.html"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "independent.co.uk",
+      "id": "evt_a1e5fb08fbbf1502",
+      "language": "English",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Republican senator says his own party are  tone deaf  as GOP spends millions to try to hold back Democratic blue wave",
+      "tone": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/republicans-senate-race-spending-jim-justice-b3056978.html"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "bursa.ro",
+      "id": "evt_f7199fed4ad62549",
+      "language": "Romanian",
+      "matched_regions": [
+        "kyiv"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Kyiv Post : Zelenski cere Chinei şi Indiei să facă presiuni asupra Rusiei",
+      "tone": null,
+      "url": "https://www.bursa.ro/kyiv-post-zelenski-cere-chinei-si-indiei-sa-faca-presiuni-asupra-rusiei-29204061"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "bursa.ro",
+      "id": "evt_a9065779bd2dd7ff",
+      "language": "Romanian",
+      "matched_regions": [
+        "kyiv"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Kyiv Post : Lavtov afirmă că avertismentele europene de război ar putea deveni o „ profeţie autoîmplinită  - 27 . 09 . 2026",
+      "tone": null,
+      "url": "https://www.bursa.ro/kyiv-post-lavtov-afirma-ca-avertismentele-europene-de-razboi-ar-putea-deveni-o-8222profetie-autoimplinita8221-24204066"
+    },
+    {
+      "actors": [
+        "Lithuania"
+      ],
+      "domain": "klaipeda.diena.lt",
+      "id": "evt_d96e4205ebee62f4",
+      "language": "Lithuanian",
+      "matched_regions": [
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260927T110000Z",
+      "source_country": "Lithuania",
+      "tier": "monitor",
+      "title": "Indija kaltina Pakistaną nepriimtinu elgesiu",
+      "tone": null,
+      "url": "https://klaipeda.diena.lt/naujienos/pasaulis/konfliktai-nelaimes/indija-kaltina-pakistana-nepriimtinu-elgesiu-1776395"
+    }
+  ],
   "filters": {
     "max_records": 250,
     "query": "(conflict OR war OR military OR offensive OR airstrike OR shelling OR clashes OR insurgency OR ceasefire OR missile OR sanctions OR coup OR escalation)",
@@ -11,13 +1254,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-09-26T11:23:15Z",
+  "generated_at": "2026-09-27T12:00:22Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 0,
-    "medium": 0,
-    "monitor": 0
+    "high": 8,
+    "medium": 11,
+    "monitor": 29
   },
-  "total_events": 0
+  "total_events": 48
 }
