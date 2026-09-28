@@ -1,10 +1,17 @@
 {
   "project": "GEOPÓLEM",
   "collection": "SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "updated_at": "2026-09-21T08:04:00+02:00",
+  "updated_at": "2026-09-28T08:02:00+02:00",
   "latest": "./weekly-brief.json",
   "feed": "./conflict-events.json",
   "items": [
+    {
+      "date": "2026-09-28",
+      "window": "21-27 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+      "status": "un acople operacional confirmado y dos señales en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
+      "json": "./sentinel_weekly_brief_2026-09-21_2026-09-27.json",
+      "markdown": "./weekly-brief-2026-09-28.md"
+    },
     {
       "date": "2026-09-14",
       "window": "7-13 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
@@ -104,13 +111,25 @@
     }
   ],
   "latest_meta": {
-    "date": "2026-09-14",
-    "window": "7-13 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
-    "status": "sin acople significativo confirmado esta semana; tres señales quedan en observación sin inferencia causal",
-    "archive": "./sentinel_weekly_brief_2026-09-07_2026-09-13.json",
-    "markdown": "./weekly-brief-2026-09-14.md"
+    "date": "2026-09-28",
+    "window": "21-27 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+    "status": "un acople operacional confirmado y dos señales en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
+    "archive": "./sentinel_weekly_brief_2026-09-21_2026-09-27.json",
+    "markdown": "./weekly-brief-2026-09-28.md"
   },
   "briefs": [
+    {
+      "date": "2026-09-28",
+      "window": "21-27 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+      "status": "un acople operacional confirmado y dos señales en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
+      "json": "./sentinel_weekly_brief_2026-09-21_2026-09-27.json",
+      "markdown": "./weekly-brief-2026-09-28.md",
+      "points": [
+        "Gaza: el acople confirmado es WASH, combustible y temporada de lluvias",
+        "Ucrania: ataques energéticos antes del invierno, sin disparador ambiental nuevo",
+        "Filipinas: disuasión marítima y supertifón regional en el mismo tablero"
+      ]
+    },
     {
       "date": "2026-09-21",
       "window": "14-20 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
