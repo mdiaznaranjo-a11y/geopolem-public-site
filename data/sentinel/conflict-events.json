@@ -2,241 +2,471 @@
   "events": [
     {
       "actors": [
-        "Australia"
+        "Argentina"
       ],
-      "domain": "easternriverinachronicle.com.au",
-      "id": "evt_d61c980d3f2aa585",
-      "language": "English",
+      "domain": "eldestapeweb.com",
+      "id": "evt_b1dc2ed092a9bcab",
+      "language": "Spanish",
       "matched_regions": [
-        "ukraine",
-        "russia"
+        "israel",
+        "yemen"
       ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 4.0,
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "MENA",
+      "score": 6.0,
       "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
+        "region": 3.5,
+        "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Australia",
-      "tier": "medium",
-      "title": "Russia pounds civilian areas as Ukraine claims advances",
+      "seen_date": "20260929T123000Z",
+      "source_country": "Argentina",
+      "tier": "high",
+      "title": "Guerra entre Irán , Estados Unidos , Israel y Yemen EN VIVO : últimas noticias de hoy , martes 29 de septiembre , del conflicto en Medio Oriente",
       "tone": null,
-      "url": "https://www.easternriverinachronicle.com.au/story/9359046/russia-pounds-civilian-areas-as-ukraine-claims-advances/"
+      "url": "http://www.eldestapeweb.com/internacionales/eeuu-iran-retoman-contactos-indirectos-nuevo-intento-frenar-guerra-20269297332"
     },
     {
       "actors": [
         "Italy"
       ],
-      "domain": "notiziegeopolitiche.net",
-      "id": "evt_f361dbdd97a51a96",
+      "domain": "zazoom.it",
+      "id": "evt_c87e1c076b5c8c7d",
       "language": "Italian",
       "matched_regions": [
-        "israel",
-        "gaza",
-        "palestin"
+        "russia",
+        "iran"
       ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Eurasia",
+      "score": 6.0,
       "score_breakdown": {
         "region": 4.0,
-        "themes": 0.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
+      "seen_date": "20260929T123000Z",
       "source_country": "Italy",
-      "tier": "medium",
-      "title": "Israele chiude la Cisgiordania per una settimana : vietata Al - Aqsa ai palestinesi . Il ministro Smotrich : « Guerra come a Gaza »",
+      "tier": "high",
+      "title": "Russia | Iran non si ritiri dal Trattato non proliferazione nucleare",
       "tone": null,
-      "url": "https://www.notiziegeopolitiche.net/israele-chiude-la-cisgiordania-per-una-settimana-vietata-al-aqsa-ai-palestinesi-il-ministro-smotrich-guerra-come-a-gaza/"
+      "url": "https://www.zazoom.it/2026-09-29/russia-iran-non-si-ritiri-dal-trattato-non-proliferazione-nucleare/19737000/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "strettoweb.com",
+      "id": "evt_956ce1a518f8a613",
+      "language": "Italian",
+      "matched_regions": [
+        "russia",
+        "nato"
+      ],
+      "matched_themes": [
+        "escalation"
+      ],
+      "region": "Eurasia",
+      "score": 6.0,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "Italy",
+      "tier": "high",
+      "title": "La Russia scrive alla Nato :  pronti a usare intero arsenale . Perchè Kaliningrad è al centro di una possibile escalation",
+      "tone": null,
+      "url": "https://www.strettoweb.com/2026/09/la-russia-scrive-alla-nato-pronti-a-usare-intero-arsenale-perche-kaliningrad-e-al-centro-di-una-possibile-escalation/2151461/"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "dominicanrepublicpost.com",
-      "id": "evt_1ea80004d6a1dc84",
+      "domain": "wvlkam.com",
+      "id": "evt_23a3c5eac91c8bd3",
       "language": "English",
       "matched_regions": [
-        "ukraine",
-        "north korea"
+        "iran"
       ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 3.5,
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "MENA",
+      "score": 5.0,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
+        "region": 2.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
+      "seen_date": "20260929T123000Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "Why South Korea is demanding an apology from Ukraine over North Korean PoWs - Dominican Republic Post – Caribbean News , Business , Travel & Culture",
+      "title": "Trump Rejects Sanctions Relief Rumors While Iran Signals Openness to Talks",
       "tone": null,
-      "url": "https://dominicanrepublicpost.com/why-south-korea-is-demanding-an-apology-from-ukraine-over-north-korean-pows/"
+      "url": "https://www.wvlkam.com/2026/09/29/trump-rejects-sanctions-relief-rumors-while-iran-signals-openness-to-talks/"
     },
     {
-      "actors": [],
-      "domain": "gulfcoastnewsnow.com",
-      "id": "evt_b6d2fb21ed759742",
+      "actors": [
+        "United States"
+      ],
+      "domain": "haitisun.com",
+      "id": "evt_c5633568357fa368",
       "language": "English",
       "matched_regions": [
         "iran"
       ],
       "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "",
-      "tier": "medium",
-      "title": "British police investigate whether arrests near US - run air base foiled an Iran - linked attack",
-      "tone": null,
-      "url": "https://www.gulfcoastnewsnow.com/article/uk-us-air-base-iran-war/73920782"
-    },
-    {
-      "actors": [
-        "Indonesia"
-      ],
-      "domain": "khazanah.republika.co.id",
-      "id": "evt_e555b811ef13e9ed",
-      "language": "Indonesian",
-      "matched_regions": [
-        "iran",
-        "houthi"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Indonesia",
-      "tier": "medium",
-      "title": "Sistem Pertahanan Houthi Kini Dibekali Rudal Jelajah Canggih Iran , Peta Perang Berubah ?",
-      "tone": null,
-      "url": "https://khazanah.republika.co.id/berita/tm2rjj320/sistem-pertahanan-houthi-kini-dibekali-rudal-jelajah-canggih-iran-peta-perang-berubah"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "arynews.tv",
-      "id": "evt_dd6ef72b9294bf22",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Pakistan",
-      "tier": "medium",
-      "title": "UK police question five men held at airbase used by US to attack Iran",
-      "tone": null,
-      "url": "https://arynews.tv/uk-police-question-five-men-held-at-airbase-used-by-us-to-attack-iran"
-    },
-    {
-      "actors": [],
-      "domain": "euronews.al",
-      "id": "evt_f652210f0b764148",
-      "language": "Albanian",
-      "matched_regions": [
-        "iran",
-        "hormuz"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "",
-      "tier": "medium",
-      "title": "Ushtria amerikane : Pretendimet e Iranit për kontroll të plotë mbi Ngushticën e Hormuzit janë të rreme",
-      "tone": null,
-      "url": "https://euronews.al/ushtria-amerikane-pretendimet-e-iranit-per-kontroll-te-plote-mbi-ngushticen-e-hormuzit-jane-te-rreme/"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "economictimes.indiatimes.com",
-      "id": "evt_62fcf3c59483ca31",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
         "war"
       ],
-      "region": "Global",
-      "score": 3.0,
+      "region": "MENA",
+      "score": 5.0,
       "score_breakdown": {
-        "region": 0.0,
+        "region": 2.0,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "Hundreds of migrants head towards US border as Trump popularity dwindles ahead of midterm polls",
+      "seen_date": "20260929T123000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Iran Warns Of Possible Winter Gas Shortages",
       "tone": null,
-      "url": "https://economictimes.indiatimes.com/news/international/global-trends/hundreds-of-migrants-head-towards-us-border-as-trumps-popularity-dwindles-ahead-of-midterm-polls/articleshow/134542170.cms"
-    },
-    {
-      "actors": [
-        "Netherlands"
-      ],
-      "domain": "nrc.nl",
-      "id": "evt_370acd076ccdfece",
-      "language": "Dutch",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Netherlands",
-      "tier": "monitor",
-      "title": "Britse minister van Defensie suggereert dat veiligheidsdiensten wél op de hoogte waren van poging tot bomaanslag luchtmachtbasis",
-      "tone": null,
-      "url": "https://www.nrc.nl/nieuws/2026/09/28/britse-minister-van-defensie-suggereert-dat-veiligheidsdiensten-wel-op-de-hoogte-waren-van-poging-tot-bomaanslag-luchtmachtbasis-a4937707"
+      "url": "http://www.haitisun.com/news/279339890/iran-warns-of-possible-winter-gas-shortages"
     },
     {
       "actors": [
         "United States"
       ],
       "domain": "mymotherlode.com",
-      "id": "evt_63a6306c0e5d07e6",
+      "id": "evt_b3ad5337b6d903a2",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "EU nations seek energy alternatives after spending over $113 billion extra since Iran war began",
+      "tone": null,
+      "url": "https://mymotherlode.com/news/world/11178068/eu-nations-seek-energy-alternatives-after-spending-over-113-billion-extra-since-iran-war-began.html"
+    },
+    {
+      "actors": [
+        "Syria"
+      ],
+      "domain": "arabherald.com",
+      "id": "evt_92985cb908c0ca39",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "Syria",
+      "tier": "medium",
+      "title": "In a region where we do not sell oil , no one will sell oil : Iran Parliament Speaker Ghalibaf warns US",
+      "tone": null,
+      "url": "http://www.arabherald.com/news/279339636/in-a-region-where-we-do-not-sell-oil-no-one-will-sell-oil-iran-parliament-speaker-ghalibaf-warns-us"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "mymotherlode.com",
+      "id": "evt_2b4e0c6b4c36abc1",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Iran currency hits new record low , as war erodes Iran economic stability",
+      "tone": null,
+      "url": "https://mymotherlode.com/news/national/11178054/irans-currency-hits-new-record-low-as-war-erodes-irans-economic-stability.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "newsroomamerica.com",
+      "id": "evt_005fdbb0ca9f19ab",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war",
+        "escalate"
+      ],
+      "region": "Global",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 5.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Media Monitor : U . S . Bans on Canadian Alcohol , Motorcycles and Dairy Take Effect as Trade War Escalates",
+      "tone": null,
+      "url": "https://newsroomamerica.com/a/NZLV3fQgzCyIWn1g9ZisOk9nWvu/cbc_news_reports_u_s_bans_on_select_canadian_imports_including_alcohol_motorcycles_and_whey_took_effect_at_midnight_while_a_new_study_links_one_in_eight_cancers_worldwide_to_infections.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "fortmorgantimes.com",
+      "id": "evt_9d1ea136c134f82a",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Iran currency hits new record low , as war erodes economic stability",
+      "tone": null,
+      "url": "https://www.fortmorgantimes.com/2026/09/29/iran-war-economy-negotiations/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "hna.de",
+      "id": "evt_826962daf67a8a06",
+      "language": "German",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T120000Z",
+      "source_country": "Germany",
+      "tier": "medium",
+      "title": "Iran stellt Hormus - Ultimatum an Trump – US - Antwort erwartet",
+      "tone": null,
+      "url": "https://www.hna.de/politik/iran-stellt-hormus-ultimatum-an-trump-us-antwort-soll-noch-heute-kommen-zr-94516034.html"
+    },
+    {
+      "actors": [
+        "Syria"
+      ],
+      "domain": "naharnet.com",
+      "id": "evt_f40da93fa678e990",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T120000Z",
+      "source_country": "Syria",
+      "tier": "medium",
+      "title": "Iran currency hits new record low , as war erodes Iran economic stability",
+      "tone": null,
+      "url": "https://www.naharnet.com:443/stories/en/322794-iran-s-currency-hits-new-record-low-as-war-erodes-iran-s-economic-stability"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "thetimes-tribune.com",
+      "id": "evt_7cd799e906bfc118",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T120000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Iran currency hits new record low , as war erodes economic stability",
+      "tone": null,
+      "url": "https://www.thetimes-tribune.com/2026/09/29/iran-war-economy-negotiations/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "theuknews.com",
+      "id": "evt_e4a9ae70bfbd0970",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Tehran denounces united kingdom  Iranophobia  over airbase  terror case",
+      "tone": null,
+      "url": "http://www.theuknews.com/news/279339775/tehran-denounces-uk-iranophobia-over-airbase-terror-case"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "theuknews.com",
+      "id": "evt_e3793084d14beea4",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Tehran denounces united kingdom Iranophobia over airbase terror case",
+      "tone": null,
+      "url": "http://www.theuknews.com/news/279339767/tehran-denounces-uk-iranophobia-over-airbase-terror-case"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "bankingnews.gr",
+      "id": "evt_d0ec86c284129101",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian",
+        "india"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "Greece",
+      "tier": "medium",
+      "title": "India is not abandoning Russian oil - Turning its back on Trump threats",
+      "tone": null,
+      "url": "https://www.bankingnews.gr/diethni/articles/902189/india-is-not-abandoning-russian-oil-turning-its-back-on-trump-s-threats%20title="
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "dagospia.com",
+      "id": "evt_567cafc4549e7c29",
+      "language": "Italian",
+      "matched_regions": [
+        "iran",
+        "iranian"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "Italy",
+      "tier": "medium",
+      "title": "Gli iraniani fanno il culo a strisce a trump – con i missili cruise e i droni kamikaze ...",
+      "tone": null,
+      "url": "https://www.dagospia.com/politica/gli-iraniani-fanno-culo-strisce-trump-i-missili-cruise-i-droni-488471"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "countytimes.co.uk",
+      "id": "evt_d9e7abbcdbebf6f0",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -249,23 +479,23 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
+      "seen_date": "20260929T123000Z",
+      "source_country": "United Kingdom",
       "tier": "monitor",
-      "title": "Pope urges Europe to draw from Christian roots to confront thirst for domination driving wars",
+      "title": "Diesel price hits all - time high in financial blow , RAC warns",
       "tone": null,
-      "url": "https://mymotherlode.com/news/world/11175401/pope-urges-europe-to-draw-from-christian-roots-to-confront-thirst-for-domination-driving-wars.html"
+      "url": "https://www.countytimes.co.uk/news/26589606.diesel-price-hits-all-time-high-financial-blow-rac-warns/"
     },
     {
       "actors": [
-        "Austria"
+        "United States"
       ],
-      "domain": "boerse-express.com",
-      "id": "evt_37a0a1287289d069",
-      "language": "German",
+      "domain": "trentonian.com",
+      "id": "evt_6ef06d0b261bab17",
+      "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "bombard"
+        "war"
       ],
       "region": "Global",
       "score": 3.0,
@@ -274,49 +504,148 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Austria",
+      "seen_date": "20260929T123000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Bombardier Aktie : Gespräche mit Saab über GlobalEye - Fertigung",
+      "title": "Flyers can take another step forward if players continue to make progress",
       "tone": null,
-      "url": "https://www.boerse-express.com/news/articles/bombardier-aktie-gespraeche-mit-saab-ueber-globaleye-fertigung-949285"
+      "url": "https://www.trentonian.com/2026/09/29/season-preview-flyers-can-take-another-step-forward-if-players-continue-to-make-progress/"
     },
     {
-      "actors": [
-        "India"
-      ],
-      "domain": "hindustantimes.com",
-      "id": "evt_10cacfae7a578196",
+      "actors": [],
+      "domain": "430462.us20.myftpupload.com",
+      "id": "evt_7ae851fdce2225c1",
       "language": "English",
-      "matched_regions": [
-        "india",
-        "china"
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
       ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
+      "region": "Global",
       "score": 3.0,
       "score_breakdown": {
-        "region": 3.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "India",
+      "seen_date": "20260929T123000Z",
+      "source_country": "",
       "tier": "monitor",
-      "title": "Xi - Trump meet : US wooing China means it abandoning India ? Point Blank decodes Delhi strategy",
+      "title": "Mamdani Selective War Criminals",
       "tone": null,
-      "url": "https://www.hindustantimes.com/india-news/india-strategic-autonomy-in-a-fractured-world-order-foreign-policy-us-china-trump-xi-meeting-un-iran-west-asia-101790597765320.html"
+      "url": "https://430462.us20.myftpupload.com/2026/07/mamdanis-selective-war-criminals/"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "dailymail.com",
-      "id": "evt_b076bdb3b88cbe52",
+      "domain": "wgan.com",
+      "id": "evt_335b2d0124ae68f5",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "WGAN Veterans Forward Radiothon",
+      "tone": null,
+      "url": "https://wgan.com/veteransforward/"
+    },
+    {
+      "actors": [
+        "Bangladesh"
+      ],
+      "domain": "bdnews24.com",
+      "id": "evt_3bd8c3beac6ce48b",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "Bangladesh",
+      "tier": "monitor",
+      "title": "President Mirza Fakhrul warns unchecked AI could erode human creativity",
+      "tone": null,
+      "url": "https://bdnews24.com/bangladesh/i4gimga250"
+    },
+    {
+      "actors": [
+        "Egypt"
+      ],
+      "domain": "egyptianstreets.com",
+      "id": "evt_5f3b59595fca7a3a",
+      "language": "English",
+      "matched_regions": [
+        "ethiopia"
+      ],
+      "matched_themes": [
+        "rebel"
+      ],
+      "region": "Cuerno de África",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "Egypt",
+      "tier": "monitor",
+      "title": "Egypt Denies Backing Rebel Forces After Ethiopian General Allegation",
+      "tone": null,
+      "url": "https://egyptianstreets.com/2026/09/29/egypt-denies-backing-rebel-forces-after-ethiopian-generals-allegation/"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "pakistantelegraph.com",
+      "id": "evt_c0237fc1205f1c25",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "missile"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20260929T123000Z",
+      "source_country": "Pakistan",
+      "tier": "monitor",
+      "title": "US too late to boost missile production WSJ",
+      "tone": null,
+      "url": "http://www.pakistantelegraph.com/news/279339865/us-too-late-to-boost-missile-production-wsj"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "dailynorthwestern.com",
+      "id": "evt_d0c2fde5cdae9d1d",
       "language": "English",
       "matched_regions": [
         "palestin",
-        "afghan"
+        "united states"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -326,170 +655,70 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
+      "seen_date": "20260929T123000Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "Home Secretary Shabana Mahmood accused of opening borders to large Afghan and Palestinian families as she restarts refugee resettlement scheme",
+      "title": "ACLU , Amnesty International united states cite Northwestern in report documenting suppression of pro - Palestinian speech",
       "tone": null,
-      "url": "https://www.dailymail.com/news/article-16166329/Home-Secretary-Shabana-Mahmood-accused-opening-borders-large-Afghan-Palestinian-families-restarts-refugee-resettlement-scheme.html"
+      "url": "https://dailynorthwestern.com/2026/09/29/top-stories/aclu-amnesty-international-usa-cite-northwestern-in-report-documenting-pro-palestinian-speech-supression/"
     },
     {
       "actors": [
-        "Serbia"
+        "France"
       ],
-      "domain": "danas.rs",
-      "id": "evt_6284b37773007926",
-      "language": "Serbian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Serbia",
-      "tier": "monitor",
-      "title": "Rusija planira izgradnju sedam velikih zatvora , jedan i u okupiranoj oblasti",
-      "tone": null,
-      "url": "https://www.danas.rs/svet/rusija-planira-izgradnju-sedam-velikih-zatvora-jedan-i-u-okupiranoj-oblasti/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "pressdemocrat.com",
-      "id": "evt_c6b44c7bafa32237",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Officials say mediators still working with Iran , US on a possible deal",
-      "tone": null,
-      "url": "https://www.pressdemocrat.com/2026/09/28/mediators-iran-us/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "orlandoecho.com",
-      "id": "evt_6e21f3eed6919b18",
-      "language": "English",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Even with Board of Peace , UNRWA still vital to Gaza plans",
-      "tone": null,
-      "url": "http://www.orlandoecho.com/news/279331918/even-with-board-of-peace-unrwa-still-vital-to-gaza-plans"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wdiy.org",
-      "id": "evt_4ce0ce127315602b",
-      "language": "English",
+      "domain": "lopinion.fr",
+      "id": "evt_e65989fa5be8e420",
+      "language": "French",
       "matched_regions": [],
       "matched_themes": [
-        "terror"
+        "coup"
       ],
       "region": "Global",
-      "score": 2.0,
+      "score": 2.5,
       "score_breakdown": {
         "region": 0.0,
-        "themes": 2.0,
+        "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
+      "seen_date": "20260929T120000Z",
+      "source_country": "France",
       "tier": "monitor",
-      "title": "What we know about the suspected U . K . terror plot . And , why the Gulf remains in limbo",
+      "title": "Rentrée littéraire : Sophie Divry et Anaïs Llobet décortiquent la violence de couple",
       "tone": null,
-      "url": "https://www.wdiy.org/npr-news/2026-09-28/what-we-know-about-the-suspected-u-k-terror-plot-and-why-the-gulf-remains-in-limbo"
+      "url": "https://www.lopinion.fr/lopinion-de/sophie-divry-et-anais-llobet-harcelement-sur-conjoint"
     },
     {
       "actors": [
-        "Croatia"
+        "France"
       ],
-      "domain": "index.hr",
-      "id": "evt_83136d18267549aa",
-      "language": "Bosnian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Croatia",
-      "tier": "monitor",
-      "title": "Američki marinci ranjeni u iranskom udaru",
-      "tone": null,
-      "url": "https://www.index.hr/vijesti/clanak/americki-marinci-ranjeni-u-iranskom-udaru/2839503.aspx?index_tid=1170164&index_ref=naslovnica_vijesti_ostalo_d_0"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "time.com",
-      "id": "evt_fbe9f5bb17839b7b",
-      "language": "English",
+      "domain": "leparisien.fr",
+      "id": "evt_7eff603b7bfc9097",
+      "language": "French",
       "matched_regions": [],
       "matched_themes": [
-        "terror"
+        "coup"
       ],
       "region": "Global",
-      "score": 2.0,
+      "score": 2.5,
       "score_breakdown": {
         "region": 0.0,
-        "themes": 2.0,
+        "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
+      "seen_date": "20260929T120000Z",
+      "source_country": "France",
       "tier": "monitor",
-      "title": "U . S . Embassy Issues Security Alert to Citizens in U . K . Amid Suspected Terror Plot",
+      "title": "Inondations , électricité coupée … Louragan Polo frappe durement le Mexique avec des vents allant jusqu  à 175 km / h",
       "tone": null,
-      "url": "https://time.com/article/2026/09/28/raf-fairford-uk-us-airbase-suspected-terror-plot-security-alert/"
+      "url": "https://www.leparisien.fr/www.leparisien.fr/meteo/inondations-electricite-coupee-louragan-polo-frappe-durement-le-mexique-avec-des-vents-allant-jusqua-175-kmh-29-09-2026-OM63FD7J7NAU5EXB6AXD7X4NMA.php"
     },
     {
       "actors": [
-        "Spain"
+        "Poland"
       ],
-      "domain": "eldiario.es",
-      "id": "evt_5c3328e1067c5cdc",
-      "language": "Spanish",
+      "domain": "wnp.pl",
+      "id": "evt_0d7c372fc8408bac",
+      "language": "Polish",
       "matched_regions": [
         "iran"
       ],
@@ -501,397 +730,22 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Spain",
+      "seen_date": "20260929T123000Z",
+      "source_country": "Poland",
       "tier": "monitor",
-      "title": "El petróleo repunta un 4 % y supera los 108 dólares ante el rechazo de Trump al plan iraní para reabrir Ormuz",
+      "title": "Iran traci kontrolę nad cieśniną Ormuz . Tankowce ruszyły",
       "tone": null,
-      "url": "https://www.eldiario.es/economia/petroleo-repunta-4-supera-108-dolares-rechazo-trump-plan-irani-reabrir-ormuz_1_13543645.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "military.com",
-      "id": "evt_b6fb5a4650f5bf4e",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Officials Say Mediators Are Still Working With Iran and the US on a Possible Deal",
-      "tone": null,
-      "url": "https://www.military.com/officials-say-mediators-are-still-working-with-iran-and-the-us-on-a-possible-deal"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "twincities.com",
-      "id": "evt_4a52da5f694df640",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Officials say mediators still working with Iran , US on a possible deal",
-      "tone": null,
-      "url": "https://www.twincities.com/2026/09/28/mediators-iran-us/"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "ynetnews.com",
-      "id": "evt_4f69279d9d528e6d",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "UN aid chief Tom Fletcher criticized over gesture to Iran foreign minister in New Y",
-      "tone": null,
-      "url": "https://www.ynetnews.com/article/rylqsadqgx"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "military.com",
-      "id": "evt_0c142c528729cb32",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Trump Asked China President if He Wants to Buy US Arms , Ambassador Says",
-      "tone": null,
-      "url": "https://www.military.com/trump-asked-chinas-president-if-he-wants-to-buy-us-arms-ambassador-says"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "n-tv.de",
-      "id": "evt_c5862c3a6f2dace3",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Ukraine - Krieg im Liveticker : +++ 14 : 57 Ukraine : In 24 Stunden mehr Soldaten ausgeschaltet als an fast jedem anderen Kriegstag +++",
-      "tone": null,
-      "url": "https://www.n-tv.de/politik/14-57-Ukraine-In-24-Stunden-mehr-Soldaten-ausgeschaltet-als-an-fast-jedem-anderen-Kriegstag-id30859357.html"
-    },
-    {
-      "actors": [
-        "Vietnam"
-      ],
-      "domain": "dantri.com.vn",
-      "id": "evt_69c442b98b0e2b06",
-      "language": "Vietnamese",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Vietnam",
-      "tier": "monitor",
-      "title": "Tiết lộ vụ tên lửa Iran tấn công tàu chở lính thủy đánh bộ Mỹ",
-      "tone": null,
-      "url": "https://dantri.com.vn/the-gioi/tiet-lo-vu-ten-lua-iran-tan-cong-tau-cho-linh-thuy-danh-bo-my-20260928195025423.htm"
-    },
-    {
-      "actors": [
-        "Greece"
-      ],
-      "domain": "onalert.gr",
-      "id": "evt_b39cdfa946409b1a",
-      "language": "Greek",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Greece",
-      "tier": "monitor",
-      "title": "Πολωνία : Κατάρριψη ξένων μαχητικών και drones στον εναέριο χώρο της με νέα αμυντικά πρωτόκολλα",
-      "tone": null,
-      "url": "https://www.onalert.gr/kosmos/polonia-tha-katarriptei-ypo-proypotheseis-maxitika-kai-drones-pou-eiserxontai-ston-enaerio-xoro-tis/822584/"
-    },
-    {
-      "actors": [
-        "Mexico"
-      ],
-      "domain": "milenio.com",
-      "id": "evt_055612ce65d884c4",
-      "language": "Spanish",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Mexico",
-      "tier": "monitor",
-      "title": "Xi y Trump se reúnen para abordar temas relación China y EU",
-      "tone": null,
-      "url": "https://www.milenio.com/internacional/xi-jinping-busco-cambiar-postura-trump-sobre-taiwan-reunion"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "ziare.com",
-      "id": "evt_2e9db805698b9da1",
-      "language": "Romanian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "Iranul neagă reluarea rapidă a negocierilor cu SUA anunțată de Donald Trump",
-      "tone": null,
-      "url": "https://ziare.com/razboi-sua-iran/noi-negocieri-plan-stramtoarea-ormuz-respins-trump-2038031"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "sandiegosun.com",
-      "id": "evt_0d7d526ab44302b4",
-      "language": "English",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Even with Board of Peace , UNRWA still vital to Gaza plans",
-      "tone": null,
-      "url": "http://www.sandiegosun.com/news/279331918/even-with-board-of-peace-unrwa-still-vital-to-gaza-plans"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "cbs12.com",
-      "id": "evt_92fd8104aaa9a160",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "What we know about 5 British nationals suspected in terrorist plot near US airbase",
-      "tone": null,
-      "url": "https://cbs12.com/news/nation-world/what-we-know-about-5-british-nationals-suspected-in-terrorist-plot-near-us-airbase-england-raf-fairford-suspicious-vehicles-metropolitan-police-counter-terrorism-motive-investigation-president-donald-trump-iran-war"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "ohiostandard.com",
-      "id": "evt_13f3a7fbcc09c42b",
-      "language": "English",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Even with Board of Peace , UNRWA still vital to Gaza plans",
-      "tone": null,
-      "url": "http://www.ohiostandard.com/news/279331918/even-with-board-of-peace-unrwa-still-vital-to-gaza-plans"
+      "url": "https://www.wnp.pl/energia/iran-traci-kontrole-nad-ciesnina-ormuz-tankowce-ruszyly,1103744.html"
     },
     {
       "actors": [
         "Italy"
       ],
-      "domain": "larena.it",
-      "id": "evt_e3ae050081d57759",
+      "domain": "dagospia.com",
+      "id": "evt_0fbe6aed9b29577b",
       "language": "Italian",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Drone russo colpisce lAccademia delle Scienze di Kiev",
-      "tone": null,
-      "url": "https://www.larena.it/news/mondo/drone-russo-colpisce-l-accademia-delle-scienze-di-kiev-1.13137361"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "military.com",
-      "id": "evt_3e7c49192cbdc91e",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Five Arrested on Terror Suspicion Near US Bomber Hub RAF Fairford in Britain",
-      "tone": null,
-      "url": "https://www.military.com/five-arrested-on-terror-suspicion-near-us-bomber-hub-raf-fairford-in-britain"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "zeit.de",
-      "id": "evt_d7fb58cf9bb610d2",
-      "language": "German",
       "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Kriegsgefangene aus Nordkorea : Südkorea wirft Ukraine Verstoß gegen vertrauliche Vereinbarung vor",
-      "tone": null,
-      "url": "https://www.zeit.de/politik/ausland/2026-09/nordkorea-kriegsgefangene-ukraine-suedkorea-gxe"
-    },
-    {
-      "actors": [
-        "Saudi Arabia"
-      ],
-      "domain": "arabnews.com",
-      "id": "evt_9673c0a3313e035c",
-      "language": "English",
-      "matched_regions": [
-        "gaza"
+        "israel"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -901,19 +755,19 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Saudi Arabia",
+      "seen_date": "20260929T123000Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "Arab News | Not much has changed in Gaza year of  peace",
+      "title": "Anche ronen bar , lex direttore dei servizi segreti interni israeliani , accusa netanyahu di essere ..",
       "tone": null,
-      "url": "https://www.arabnews.com/opinion/not-much-has-changed-in-gazas-year-of-peace-3003509"
+      "url": "https://www.dagospia.com/cronache/ronen-bar-l-ex-direttore-dei-servizi-segreti-interni-israeliani-accusa-488447"
     },
     {
       "actors": [
-        "India"
+        "Israel"
       ],
-      "domain": "dailyexcelsior.com",
-      "id": "evt_e8de71aa8be0af1d",
+      "domain": "english.wafa.ps",
+      "id": "evt_c57280c98bcc7085",
       "language": "English",
       "matched_regions": [
         "israel"
@@ -926,220 +780,70 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "India",
+      "seen_date": "20260929T123000Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Israel reprimands Spain over  youth minister controversial remarks",
+      "title": "UK rejects and suspends over 80 export licenses to Israel",
       "tone": null,
-      "url": "https://www.dailyexcelsior.com/israel-reprimands-spain-over-youth-ministers-controversial-remarks/"
+      "url": "https://english.wafa.ps/Pages/Details/175318"
     },
     {
       "actors": [
-        "Spain"
+        "United Kingdom"
       ],
-      "domain": "eldiario.es",
-      "id": "evt_5ddf5ca8a5ccf5cd",
-      "language": "Spanish",
+      "domain": "bbc.com",
+      "id": "evt_84b5ba75751eccd9",
+      "language": "Somali",
       "matched_regions": [
-        "palestin"
+        "iran"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 1.5,
+      "score": 2.0,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Spain",
+      "seen_date": "20260929T123000Z",
+      "source_country": "United Kingdom",
       "tier": "monitor",
-      "title": "El activista propalestino  Fergie  Chambers se niega a ser extraditado a EEUU :  España está en el lado bueno de la historia",
+      "title": "Sidee heshiis uu lagalo Iran uu faaiido ugu yahay Donald Trump ?",
       "tone": null,
-      "url": "https://www.eldiario.es/politica/activista-propalestino-fergie-chambers-niega-extraditado-eeuu-espana-lado-bueno-historia_1_13538792.html"
+      "url": "https://www.bbc.com/somali/articles/c9rk3gx64xllo"
     },
     {
       "actors": [
-        "United States"
+        "Indonesia"
       ],
-      "domain": "whbl.com",
-      "id": "evt_85ea38af3aebed4c",
-      "language": "English",
+      "domain": "antaranews.com",
+      "id": "evt_4b4f1f04a51156d1",
+      "language": "Indonesian",
       "matched_regions": [
-        "north korea"
+        "iran"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 1.5,
+      "region": "MENA",
+      "score": 2.0,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
+      "seen_date": "20260929T120000Z",
+      "source_country": "Indonesia",
       "tier": "monitor",
-      "title": "South Korean military :  Highly likely  North Korean mine injured soldiers in DMZ",
+      "title": "Iran ancam hentikan ekspor minyak negara lain jika diblokir",
       "tone": null,
-      "url": "https://whbl.com/2026/09/28/south-korean-military-highly-likely-north-korean-mine-injured-soldiers-in-dmz/"
+      "url": "https://www.antaranews.com/berita/5763511/iran-ancam-hentikan-ekspor-minyak-negara-lain-jika-diblokir"
     },
     {
       "actors": [
-        "United States"
+        "Indonesia"
       ],
-      "domain": "mercurynews.com",
-      "id": "evt_a52cbd20fc99ccee",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "British police investigate US - run air base foiled attack",
-      "tone": null,
-      "url": "https://www.mercurynews.com/2026/09/28/britain-us-air-base-attempted-attack/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "military.com",
-      "id": "evt_69805882a411288b",
-      "language": "English",
-      "matched_regions": [
-        "north korea"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "South Korea Says Border Blasts That Injured 3 Officers Was Likely Caused by North Korean Mines",
-      "tone": null,
-      "url": "https://www.military.com/south-korea-says-border-blasts-that-injured-3-officers-was-likely-caused-by-north-korean-mines"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "mymotherlode.com",
-      "id": "evt_828324f28b8d8518",
-      "language": "English",
-      "matched_regions": [
-        "north korea"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Seoul demands an apology after Zelenskyy reveals North Korean POWs were sent to South Korea",
-      "tone": null,
-      "url": "https://mymotherlode.com/news/world/11175205/seoul-demands-an-apology-after-zelenskyy-reveals-north-korean-pows-were-sent-to-south-korea.html"
-    },
-    {
-      "actors": [
-        "Turkey"
-      ],
-      "domain": "turkiyegazetesi.com.tr",
-      "id": "evt_72c7012e08ed27d0",
-      "language": "Turkish",
-      "matched_regions": [
-        "mali"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Turkey",
-      "tier": "monitor",
-      "title": "Bir depoda maliyet 31 sterlin arttı ! İngilterede dizel fiyatları rekor seviyede",
-      "tone": null,
-      "url": "https://www.turkiyegazetesi.com.tr/ekonomi/bir-depoda-maliyet-31-sterlin-artti-ingilterede-dizel-fiyatlari-rekor-seviyede-1819159"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "twincities.com",
-      "id": "evt_da6c14ac40a99321",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "British police investigate US - run air base foiled attack",
-      "tone": null,
-      "url": "https://www.twincities.com/2026/09/28/britain-us-air-base-attempted-attack/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wunc.org",
-      "id": "evt_cd41c6be2b9306c6",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "5 men arrested over suspected attack at a U . S .- run air force base are British nationals",
-      "tone": null,
-      "url": "https://www.wunc.org/2026-09-28/5-men-arrested-over-suspected-attack-at-a-u-s-run-air-force-base-are-british-nationals"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "notiziegeopolitiche.net",
-      "id": "evt_74a2cc3a116bc40d",
-      "language": "Italian",
+      "domain": "news.harianjogja.com",
+      "id": "evt_c2218f031b7f9bbb",
+      "language": "Indonesian",
       "matched_regions": [
         "nato"
       ],
@@ -1151,48 +855,23 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Italy",
+      "seen_date": "20260929T123000Z",
+      "source_country": "Indonesia",
       "tier": "monitor",
-      "title": "I ministri Ue studiano una risposta comune ai sabotaggi russi sul modello Nato : divisi su come punire Mosca",
+      "title": "Rusia Siap Pertahankan Kaliningrad , Peringatkan NATO soal Risiko Konflik Bersenjata",
       "tone": null,
-      "url": "https://www.notiziegeopolitiche.net/i-ministri-ue-studiano-una-risposta-comune-ai-sabotaggi-russi-sul-modello-nato-divisi-su-come-punire-mosca/"
+      "url": "https://news.harianjogja.com/r-1273087/rusia-siap-pertahankan-kaliningrad-peringatkan-nato-soal-risiko-konflik-bersenjata"
     },
     {
       "actors": [
-        "Italy"
+        "Brazil"
       ],
-      "domain": "bsnews.it",
-      "id": "evt_fca3a778a4ea0e5e",
-      "language": "Italian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Flero , 15enne aggredito e rapinato : misure cautelari per due minorenni",
-      "tone": null,
-      "url": "https://bsnews.it/2026/09/28/flero-15enne-aggredito-e-rapinato-misure-cautelari-per-due-minorenni/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "newschannel9.com",
-      "id": "evt_2ea976529e6bb13b",
-      "language": "English",
+      "domain": "em.com.br",
+      "id": "evt_49f53bc0629efe82",
+      "language": "Portuguese",
       "matched_regions": [],
       "matched_themes": [
-        "attack"
+        "mobiliz"
       ],
       "region": "Global",
       "score": 1.5,
@@ -1201,62 +880,12 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
+      "seen_date": "20260929T123000Z",
+      "source_country": "Brazil",
       "tier": "monitor",
-      "title": "5 men arrested over suspected attack at a US - operated air force base are British nationals",
+      "title": "Polícia Civil mobiliza cerco no Norte de Minas após ataque a tiros em cruzamento",
       "tone": null,
-      "url": "https://newschannel9.com/news/nation-world/5-men-arrested-over-suspected-attack-at-a-us-operated-air-force-base-are-british-nationals"
-    },
-    {
-      "actors": [
-        "Vietnam"
-      ],
-      "domain": "baomoi.com",
-      "id": "evt_1e6cea18cd3c59e6",
-      "language": "Vietnamese",
-      "matched_regions": [
-        "yemen"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "Vietnam",
-      "tier": "monitor",
-      "title": "Tình hình Yemen : Xung đột dồn về Tây Nam , Taiz tiếp tục nóng",
-      "tone": null,
-      "url": "https://baomoi.com/tinh-hinh-yemen-xung-dot-don-ve-tay-nam-taiz-tiep-tuc-nong-c56151054.epi"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "latintimes.com",
-      "id": "evt_2db920440e386ac6",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "truce"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20260928T131500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "No AI Truce Yet : What the Trump - Xi Summit Really Changed",
-      "tone": null,
-      "url": "https://www.latintimes.com/no-ai-truce-yet-what-trump-xi-summit-really-changed-599590"
+      "url": "https://www.em.com.br/gerais/2026/09/7510389-policia-civil-mobiliza-cerco-no-norte-de-minas-apos-ataque-a-tiros-em-cruzamento.html"
     }
   ],
   "filters": {
@@ -1270,13 +899,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-09-28T13:54:18Z",
+  "generated_at": "2026-09-29T12:55:16Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 0,
-    "medium": 7,
-    "monitor": 43
+    "high": 3,
+    "medium": 14,
+    "monitor": 17
   },
-  "total_events": 50
+  "total_events": 34
 }
