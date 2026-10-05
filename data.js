@@ -647,76 +647,76 @@ export const DOCTRINA = {
    IMPORTANTE: correlación temporal no implica causalidad.
    ======================================================================== */
 export const SENTINEL_BRIEF = {
+  "id": "sentinel_weekly_brief_2026-09-28_2026-10-04",
   "eyebrow": "SENTINEL",
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "main_status": "un acople operacional confirmado y dos señales en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
-  "generated_at": "2026-09-28T08:02:00+02:00",
-  "window": "21-27 SEPTIEMBRE 2026 · EUROPE/LUXEMBOURG",
+  "generated_at": "2026-10-05T08:12:00+02:00",
+  "published_at": "2026-10-05T08:12:00+02:00",
+  "window": "28 SEPTIEMBRE-4 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
+  "window_label": "28 SEPTIEMBRE-4 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
   "week_window": {
     "local": {
-      "start": "2026-09-21T00:00:00+02:00",
-      "end": "2026-09-27T23:59:59+02:00",
+      "start": "2026-09-28T00:00:00+02:00",
+      "end": "2026-10-04T23:59:59+02:00",
       "timezone": "Europe/Luxembourg"
     },
     "utc": {
-      "start": "2026-09-20T22:00:00Z",
-      "end": "2026-09-27T21:59:59Z"
+      "start": "2026-09-27T22:00:00Z",
+      "end": "2026-10-04T21:59:59Z"
     }
   },
   "summary": [
-    "SENTINEL revisó 48 eventos del feed público de conflicto dentro de la ventana 21-27 de septiembre; los focos más repetidos fueron MENA, Ucrania/Rusia, Eurasia y Asia-Pacífico.",
-    "NASA EONET registró 14 eventos abiertos y 198 cerrados recientes; USGS registró 5 sismos M5,5+ en la ventana UTC consultada.",
-    "Solo Gaza alcanza umbral de acople operacional confirmado: conflicto, WASH, combustible, salud pública y preparación ante lluvias se refuerzan en el mismo sistema degradado.",
-    "Ucrania y Filipinas quedan como señales en observación: son relevantes para energía, rutas y continuidad operacional, pero no sostienen causalidad ambiental directa esta semana.",
-    "La lectura GEOPÓLEM separa hecho, evaluación e hipótesis: se publica un acople confirmado y dos señales de vigilancia sin convertir coincidencia temporal en causalidad."
+    "El feed público SENTINEL/GDELT consultado para esta ejecución no devolvió eventos de conflicto filtrables en la ventana semanal; se activó el contraste alternativo con fuentes institucionales y abiertas verificables.",
+    "NASA EONET registró 18 eventos abiertos y 154 cerrados recientes, con 36 eventos ambientales dentro de la ventana; USGS registró 6 sismos M5,5+ y 130 sismos M4,5+ en el rango UTC consultado.",
+    "Gaza alcanza el umbral de acople operacional confirmado: conflicto, restricciones de acceso, WASH, refugio, residuos, combustible y riesgo de inundación convergen en el mismo sistema humanitario degradado.",
+    "Ucrania/Rusia y Filipinas/China quedan como señales de vigilancia: tienen valor estratégico para energía, rutas y continuidad operacional, pero no sostienen causalidad ambiental directa esta semana.",
+    "La lectura GEOPÓLEM publica un punto confirmado y dos observaciones: el objetivo no es dramatizar el desastre, sino detectar dónde el ambiente cambia el margen de maniobra del tablero."
   ],
   "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y fuentes abiertas institucionales o reconocidas. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, energía, seguridad alimentaria, capacidad estatal y presión humanitaria. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
-  "caveat": "No se verificaron tres acoples conflicto-ambiente confirmados. Se publica un acople operacional confirmado y dos señales de vigilancia.",
+  "caveat": "No se verificaron tres acoples conflicto-ambiente confirmados. Se publica un acople operacional confirmado y dos señales de vigilancia sin inferencia causal forzada.",
   "source_urls": {
     "sentinel_feed": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
     "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
     "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
-    "usgs_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-20T22:00:00Z&endtime=2026-09-27T21:59:59Z&minmagnitude=5.5&orderby=time",
-    "ocha_gaza_18sep": "https://www.ochaopt.org/content/humanitarian-situation-report-18-september-2026",
-    "unocha_gaza_223": "https://www.unocha.org/publications/report/occupied-palestinian-territory/humanitarian-situation-update-223-gaza-strip",
-    "un_news_gaza": "https://news.un.org/en/story/2026/09/1168333",
-    "bbc_ukraine_winter": "https://www.bbc.com/news/articles/cwyz59yyqk4o",
-    "isw_ukraine_26sep": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-26-2026/",
-    "ct_ukraine_24sep": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-september-24-2026",
-    "jtwc_surigae": "https://www.metoc.navy.mil/jtwc/products/wp2526.tcw",
-    "nyt_surigae": "https://www.nytimes.com/interactive/2026/09/24/weather/surigae-map-path-tracker.html",
-    "stripes_surigae": "https://www.stripes.com/theaters/asia_pacific/storm_tracker/2026-09-23/tropical-depression-25w-(surigae),-",
-    "news18_philippines": "https://hindi.news18.com/world/china-philippines-tension-south-china-sea-brahmos-missile-china-news-10867670.html",
-    "times_india_brahmos": "https://timesofindia.indiatimes.com/defence/international/us-and-philippine-marines-train-with-brahmos-to-deter-china/articleshow/133998211.cms",
-    "usgs_png": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txtc",
-    "usgs_new_caledonia": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txpi"
+    "usgs_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-27T22:00:00Z&endtime=2026-10-04T21:59:59Z&minmagnitude=5.5&orderby=time",
+    "un_news_gaza_winter": "https://news.un.org/en/story/2026/10/1168508",
+    "isw_ukraine_oct2": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-october-2-2026/",
+    "nasa_eonet_choiwan": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24962",
+    "jtwc_choiwan": "https://www.metoc.navy.mil/jtwc/products/wp2626.tcw",
+    "pagasa_weather": "https://www.pagasa.dost.gov.ph/weather",
+    "straits_times_ph_china": "https://www.straitstimes.com/asia/philippines-accuses-chinese-coast-guard-of-blocking-law-enforcement-mission-near-thitu",
+    "taiwan_mnd_oct4": "https://air.mnd.gov.tw/en/News/News_Detail.aspx?CID=214&ID=59279",
+    "usgs_yonakuni": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyhk"
   },
   "data_scan_counts": {
-    "sentinel_events_reviewed": 48,
-    "nasa_open_events": 14,
-    "nasa_closed_events": 198,
-    "usgs_m55_plus": 5,
-    "total_candidates": 8,
+    "sentinel_events_reviewed": 0,
+    "nasa_open_events": 18,
+    "nasa_closed_events": 154,
+    "nasa_events_in_window": 36,
+    "usgs_m55_plus": 6,
+    "usgs_m45_plus": 130,
+    "total_candidates": 9,
     "selected_confirmed_couplings": 1,
     "selected_watch_signals": 2
   },
   "stats": [
     {
       "label": "SentinelEvents",
-      "value": 48
+      "value": 0
     },
     {
       "label": "NasaOpenEvents",
-      "value": 14
+      "value": 18
     },
     {
       "label": "NasaClosedEvents",
-      "value": 198
+      "value": 154
     },
     {
       "label": "UsgsM55Plus",
-      "value": 5
+      "value": 6
     },
     {
       "label": "ConfirmedCouplings",
@@ -727,313 +727,382 @@ export const SENTINEL_BRIEF = {
       "value": 2
     }
   ],
-  "limitations": [
-    "NASA EONET y USGS no capturan por sí solos acoples como WASH, combustible o degradación de red eléctrica; por eso se usaron OCHA, ONU, ISW/BBC y fuentes abiertas reconocidas para los efectos operacionales.",
-    "Gaza se clasifica como acople operacional confirmado por convergencia documentada entre conflicto, servicios básicos, salud pública y lluvias; no se afirma causalidad meteorológica única.",
-    "Ucrania y Filipinas se mantienen como observación: alto valor geopolítico, pero evidencia insuficiente para declarar acople ambiental directo esta semana."
-  ],
   "selected_inflection_points": [
     {
-      "id": "gaza-wash-rainy-season-confirmed",
+      "id": "gaza-wash-winter-access-confirmed",
       "rank": 1,
       "status": "confirmado",
       "status_en": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Gaza / Gaza City, Deir al Balah y sitios de desplazamiento",
-      "headline": "Gaza: el acople confirmado es WASH, combustible y temporada de lluvias",
-      "headlineEn": "Gaza: the confirmed coupling is WASH, fuel and the rainy season",
-      "conflict_event": "El feed SENTINEL recoge la continuidad del conflicto y víctimas palestinas en Gaza durante el 27 de septiembre; OCHA documenta restricciones operativas, ataques, desplazamiento y escasez de maquinaria, combustible, aceite de motor y repuestos para sostener servicios críticos.",
-      "environmental_event": "OCHA y los clústeres WASH/Salud alertan que la temporada de lluvias puede inundar sitios de desplazamiento y puntos médicos; la combinación de saneamiento degradado, agua limitada, residuos y falta de combustible eleva el riesgo sanitario.",
+      "location": "Gaza / cruces humanitarios, refugios y sistema WASH",
+      "headline": "Gaza: invierno, agua y acceso humanitario sobre una infraestructura degradada",
+      "headlineEn": "Gaza: winter, water and humanitarian access over degraded infrastructure",
+      "conflict_event": "La semana cerró con una situación humanitaria todavía condicionada por actividad militar, restricciones de acceso y dependencia de cruces limitados para suministros críticos.",
+      "conflictEvent": "La semana cerró con una situación humanitaria todavía condicionada por actividad militar, restricciones de acceso y dependencia de cruces limitados para suministros críticos.",
+      "environmental_event": "La ONU advirtió que casi dos millones de personas necesitan refugio frente al frío y el riesgo de inundaciones, mientras saneamiento, residuos, agua limpia y combustible siguen bajo presión.",
+      "environmentalEvent": "La ONU advirtió que casi dos millones de personas necesitan refugio frente al frío y el riesgo de inundaciones, mientras saneamiento, residuos, agua limpia y combustible siguen bajo presión.",
       "coupling_type": [
         "WASH",
+        "refugio",
+        "riesgo de inundación",
         "salud pública",
-        "lluvias e inundación",
-        "combustible",
-        "capacidad humanitaria",
-        "acople operacional confirmado"
+        "acceso humanitario"
       ],
-      "why_it_matters": "Importa porque el evento ambiental no es un desastre aislado: las lluvias entran sobre un sistema urbano dañado por guerra, con agua, saneamiento, residuos, salud y combustible ya degradados.",
-      "fact": "Hecho: durante la semana analizada, Gaza siguió bajo violencia activa y OCHA mantuvo alertas sobre servicios básicos, fuel, WASH y preparación ante lluvias.",
-      "coupling": "Dato de acople: OCHA advierte que la lluvia y las inundaciones pueden comprometer puntos médicos, saneamiento y control de enfermedades en sitios de desplazamiento ya afectados por restricciones de acceso y falta de suministros.",
-      "implication": "Implicación estratégica: la vulnerabilidad ambiental se convierte en multiplicador de daño humanitario cuando cae sobre infraestructura civil y gobernanza de emergencia degradadas por el conflicto.",
-      "strategic_implication": "El punto es prioridad alta porque agua, saneamiento, salud y combustible definen continuidad de vida civil y capacidad humanitaria, no solo daños materiales.",
-      "tripolar": "Lectura tripolar: EE. UU. queda condicionado por su relación con Israel y la presión humanitaria; la UE aparece como actor normativo y financiador humanitario; Rusia y China utilizan el caso como argumento diplomático contra el orden liderado por Occidente; el Sur Global lee Gaza como prueba de doble rasero institucional.",
+      "couplingType": [
+        "WASH",
+        "refugio",
+        "riesgo de inundación",
+        "salud pública",
+        "acceso humanitario"
+      ],
+      "why_it_matters": "Importa porque el riesgo ambiental no opera como evento aislado: entra sobre un sistema urbano dañado donde agua, saneamiento, residuos, salud y combustible definen continuidad de vida civil.",
+      "fact": "Hecho: la ONU informó el 2 de octubre que Gaza mantiene una situación humanitaria “abrumadora”, que la ayuda aprobada entra por Kerem Shalom, que otros cuatro pasos principales siguen cerrados y que la falta de acceso fiable limita el trabajo humanitario.",
+      "coupling": "Dato de acople: la misma actualización advierte que casi dos millones de personas necesitan refugio contra el frío y el riesgo de inundaciones, y vincula residuos, agua limpia insuficiente, ratas, saneamiento frágil, maquinaria y combustible con riesgo sanitario.",
+      "couplingEn": "Coupling data: UN reporting links shelter needs against cold and flooding with degraded water, sanitation, waste, equipment and fuel constraints.",
+      "implication": "Implicación estratégica: Gaza muestra cómo una presión ambiental estacional puede amplificar los efectos de un conflicto cuando la infraestructura civil y la logística humanitaria ya están degradadas.",
+      "strategic_implication": "Prioridad alta: el acople afecta supervivencia civil, salud pública, legitimidad diplomática y margen operativo de agencias humanitarias.",
+      "tripolar": "Lectura tripolar: EE. UU. queda condicionado por su relación con Israel y por la presión humanitaria; la UE opera como actor normativo y financiador; Rusia y China explotan el caso en la arena diplomática; el Sur Global lo lee como prueba de coherencia o doble rasero del orden internacional.",
       "confidence": "Alta",
       "sources": [
-        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-        "https://www.ochaopt.org/content/humanitarian-situation-report-18-september-2026",
-        "https://www.unocha.org/publications/report/occupied-palestinian-territory/humanitarian-situation-update-223-gaza-strip",
-        "https://news.un.org/en/story/2026/09/1168333"
+        {
+          "label": "UN News",
+          "url": "https://news.un.org/en/story/2026/10/1168508"
+        },
+        {
+          "label": "SENTINEL feed",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        }
       ]
     },
     {
-      "id": "ukraine-energy-winter-watch",
+      "id": "ukraine-energy-winter-strike-watch",
       "rank": 2,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media-alta",
       "priorityEn": "Medium-high",
       "accent": "#60A5FA",
-      "location": "Ucrania / red energética, infraestructura civil y retaguardia rusa",
-      "headline": "Ucrania: ataques energéticos antes del invierno, sin disparador ambiental nuevo",
-      "headlineEn": "Ukraine: energy strikes before winter, without a new environmental trigger",
-      "conflict_event": "El feed SENTINEL concentra varios eventos de alta prioridad sobre ataques rusos, escalada y Ucrania-Rusia el 27 de septiembre; ISW reporta golpes de largo alcance contra infraestructura energética e industrial en Rusia y continuidad de ataques rusos sobre Ucrania.",
-      "environmental_event": "El componente ambiental es estacional: informes humanitarios advierten que el invierno tensiona calefacción, agua y electricidad si los ataques degradan la red; NASA/USGS no aportan esta semana un evento físico directo que explique la dinámica.",
+      "location": "Ucrania/Rusia / red energética, agua, puertos y logística",
+      "headline": "Ucrania: campaña energética temprana antes del invierno",
+      "headlineEn": "Ukraine: an early energy campaign before winter",
+      "conflict_event": "ISW reportó ataques rusos con drones sobre Kyiv y múltiples impactos en infraestructura residencial, comercial, energética, portuaria y logística, junto con ataques ucranianos contra nodos petroleros rusos.",
+      "conflictEvent": "ISW reportó ataques rusos con drones sobre Kyiv y múltiples impactos en infraestructura residencial, comercial, energética, portuaria y logística, junto con ataques ucranianos contra nodos petroleros rusos.",
+      "environmental_event": "El componente ambiental es estacional: invierno, calefacción, agua y electricidad convierten la red energética en sistema de vida civil. USGS no registró un evento geofísico local que explique la dinámica.",
+      "environmentalEvent": "El componente ambiental es estacional: invierno, calefacción, agua y electricidad convierten la red energética en sistema de vida civil. USGS no registró un evento geofísico local que explique la dinámica.",
       "coupling_type": [
         "energía",
         "invierno",
         "agua y calefacción",
-        "infraestructura crítica",
-        "observación operacional"
+        "logística",
+        "infraestructura crítica"
       ],
-      "why_it_matters": "Importa porque la guerra energética antes del invierno puede transformar daño militar en presión civil sistémica: calefacción, agua, telecomunicaciones y reparación quedan en la misma línea de vulnerabilidad.",
-      "fact": "Hecho: el feed SENTINEL marcó Ucrania/Rusia como foco alto y las evaluaciones abiertas describen ataques continuados sobre energía, industria, telecomunicaciones y objetivos de largo alcance.",
-      "coupling": "Dato de acople: no hay sismo, tormenta o incendio NASA/USGS que confirme un acople ambiental directo; el acople vigilado es conflicto-infraestructura-estación fría.",
-      "implication": "Implicación estratégica: el invierno convierte la red eléctrica en sistema de vida civil y en objetivo coercitivo, con efecto acumulado sobre resistencia social, reparaciones y negociación.",
-      "strategic_implication": "Se mantiene como vigilancia porque el impacto geopolítico puede ser alto, pero la evidencia de esta semana no permite clasificarlo como acople ambiental confirmado.",
-      "tripolar": "Lectura tripolar: EE. UU. y la UE sostienen resiliencia ucraniana; Rusia intenta traducir capacidad de ataque en presión política; China observa costes de una guerra prolongada sobre energía y cadena industrial; el Sur Global recibe efectos indirectos por precios, alimentos y narrativa diplomática.",
+      "couplingType": [
+        "energía",
+        "invierno",
+        "agua y calefacción",
+        "logística",
+        "infraestructura crítica"
+      ],
+      "why_it_matters": "Importa porque los ataques contra energía y logística antes del invierno pueden transformar daño militar en presión social acumulativa: frío, agua, movilidad, reparación y moral pública.",
+      "fact": "Hecho: ISW registró el 2 de octubre ataques rusos con drones contra el Puente Sur de Kyiv y reportes de impactos sobre infraestructura energética, portuaria y logística; también recogió ataques ucranianos contra instalaciones petroleras rusas.",
+      "coupling": "Dato de acople: la evidencia no permite afirmar un desastre natural asociado; el acople queda en observación como interacción entre guerra, infraestructura crítica y exposición estacional al invierno.",
+      "couplingEn": "Coupling data: no natural disaster trigger is confirmed; the watch signal is the interaction between war, critical infrastructure and winter exposure.",
+      "implication": "Implicación estratégica: si la campaña energética se adelanta al invierno, el sistema eléctrico y de agua se convierte en frente político, no solo militar.",
+      "strategic_implication": "Prioridad media-alta: no es un acople ambiental confirmado, pero sí un multiplicador estratégico sobre energía, agua, puertos, moral y negociación.",
+      "tripolar": "Lectura tripolar: EE. UU. y la UE refuerzan la resiliencia ucraniana; Rusia intenta convertir energía y logística en presión coercitiva; China observa una guerra industrial prolongada con efectos sobre energía, seguros, grano y cadenas de suministro; el Sur Global recibe impactos indirectos por precios y narrativas diplomáticas.",
       "confidence": "Media",
       "sources": [
-        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-        "https://www.bbc.com/news/articles/cwyz59yyqk4o",
-        "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-26-2026/",
-        "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-september-24-2026"
+        {
+          "label": "ISW",
+          "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-october-2-2026/"
+        },
+        {
+          "label": "USGS M5.5+",
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-27T22:00:00Z&endtime=2026-10-04T21:59:59Z&minmagnitude=5.5&orderby=time"
+        },
+        {
+          "label": "SENTINEL feed",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+        }
       ]
     },
     {
-      "id": "philippines-surigae-maritime-watch",
+      "id": "philippines-china-choiwan-maritime-watch",
       "rank": 3,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
       "accent": "#F59E0B",
-      "location": "Filipinas / Luzón, Mar del Sur de China y entorno Okinawa-Filipinas",
-      "headline": "Filipinas: disuasión marítima y supertifón regional en el mismo tablero",
-      "headlineEn": "Philippines: maritime deterrence and a regional super typhoon on the same board",
-      "conflict_event": "El feed SENTINEL recoge el 27 de septiembre una señal de tensión China-Filipinas vinculada a despliegue costero de BrahMos; fuentes abiertas describen entrenamiento filipino-estadounidense con BrahMos y drones para disuasión marítima.",
-      "environmental_event": "NASA EONET registró Super Typhoon Surigae el 27 de septiembre en el Pacífico noroccidental; fuentes meteorológicas lo ubicaron como tormenta intensa cerca del corredor Okinawa-Japón, en el mismo arco operativo Indo-Pacífico.",
+      "location": "Filipinas / mar de China Meridional, Visayas y Mindanao",
+      "headline": "Filipinas: fricción marítima y clima severo en el mismo teatro operativo",
+      "headlineEn": "Philippines: maritime friction and severe weather in the same operating theater",
+      "conflict_event": "El 4 de octubre, la Guardia Costera filipina acusó a buques chinos de bloquear una misión de aplicación de la ley cerca de Thitu, mientras la tensión con China continuaba en el mar de China Meridional.",
+      "conflictEvent": "El 4 de octubre, la Guardia Costera filipina acusó a buques chinos de bloquear una misión de aplicación de la ley cerca de Thitu, mientras la tensión con China continuaba en el mar de China Meridional.",
+      "environmental_event": "NASA EONET mantuvo abierto el Super Typhoon Choi-wan en el Pacífico occidental, y PAGASA indicó que su vaguada afectaba Visayas y Mindanao con lluvias dispersas y posibles inundaciones repentinas o deslizamientos.",
+      "environmentalEvent": "NASA EONET mantuvo abierto el Super Typhoon Choi-wan en el Pacífico occidental, y PAGASA indicó que su vaguada afectaba Visayas y Mindanao con lluvias dispersas y posibles inundaciones repentinas o deslizamientos.",
       "coupling_type": [
-        "seguridad marítima",
-        "meteorología regional",
-        "disuasión costera",
-        "operaciones anfibias y aéreas",
-        "observación sin causalidad"
+        "tormenta severa",
+        "mar de China Meridional",
+        "continuidad operacional",
+        "guardia costera",
+        "rutas marítimas"
       ],
-      "why_it_matters": "Importa porque el Indo-Pacífico combina coerción marítima, ejercicios de negación de área y clima extremo; no se afirma que Surigae alterara una operación militar concreta.",
-      "fact": "Hecho: durante la semana, SENTINEL detectó señal de tensión China-Filipinas y las fuentes abiertas situaron a BrahMos en el marco de ejercicios y defensa costera.",
-      "coupling": "Dato de acople: EONET/JTWC registran un supertifón en el Pacífico occidental durante la misma ventana; el vínculo es regional-operacional, no causal.",
-      "implication": "Implicación estratégica: cuando clima extremo y disuasión costera coinciden en el mismo arco, la planificación naval y aérea pierde margen, aunque no haya escalada directa.",
-      "strategic_implication": "Se mantiene como vigilancia por rutas críticas, bases, ejercicios y señal de zona gris en el Mar del Sur de China.",
-      "tripolar": "Lectura tripolar: EE. UU. refuerza red de aliados y acceso operacional; China enfrenta una arquitectura de negación costera más densa; Japón y Filipinas son nodos de primera línea; la UE observa por comercio y libertad de navegación.",
+      "couplingType": [
+        "tormenta severa",
+        "mar de China Meridional",
+        "continuidad operacional",
+        "guardia costera",
+        "rutas marítimas"
+      ],
+      "why_it_matters": "Importa porque el clima severo puede reducir margen de maniobra, vigilancia, rescate y respuesta costera en un teatro donde China y Filipinas compiten por presencia y control narrativo.",
+      "fact": "Hecho: NASA EONET registró el Super Typhoon Choi-wan el 4 de octubre y PAGASA reportó su vaguada sobre Visayas y Mindanao; ese mismo fin de semana Manila denunció obstrucción china cerca de Thitu.",
+      "coupling": "Dato de acople: no hay evidencia de que Choi-wan causara el incidente marítimo; el valor analítico está en la coincidencia operacional de presión meteorológica y fricción de guardias costeras en un teatro estratégico.",
+      "couplingEn": "Coupling data: there is no evidence that Choi-wan caused the maritime incident; the signal is operational co-location of weather pressure and coast-guard friction.",
+      "implication": "Implicación estratégica: cuando el clima degrada visibilidad y respuesta, la competencia de presencia en el mar se vuelve más sensible a errores, retrasos y mensajes de disuasión.",
+      "strategic_implication": "Prioridad media: señal de vigilancia útil para rutas, guardia costera y continuidad operacional, pero no acople confirmado.",
+      "tripolar": "Lectura tripolar: EE. UU. aparece detrás del paraguas de apoyo a Filipinas; China sostiene presión gris en su periferia; Rusia no es actor directo pero observa el costo de distraer capacidades occidentales; la ASEAN y el Sur Global intentan evitar que la rivalidad convierta el clima y la pesca en teatro de escalada.",
       "confidence": "Media-baja",
       "sources": [
-        "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-        "https://www.metoc.navy.mil/jtwc/products/wp2526.tcw",
-        "https://www.nytimes.com/interactive/2026/09/24/weather/surigae-map-path-tracker.html",
-        "https://www.stripes.com/theaters/asia_pacific/storm_tracker/2026-09-23/tropical-depression-25w-(surigae),-",
-        "https://timesofindia.indiatimes.com/defence/international/us-and-philippine-marines-train-with-brahmos-to-deter-china/articleshow/133998211.cms",
-        "https://hindi.news18.com/world/china-philippines-tension-south-china-sea-brahmos-missile-china-news-10867670.html"
+        {
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24962"
+        },
+        {
+          "label": "JTWC",
+          "url": "https://www.metoc.navy.mil/jtwc/products/wp2626.tcw"
+        },
+        {
+          "label": "PAGASA",
+          "url": "https://www.pagasa.dost.gov.ph/weather"
+        },
+        {
+          "label": "The Straits Times",
+          "url": "https://www.straitstimes.com/asia/philippines-accuses-chinese-coast-guard-of-blocking-law-enforcement-mission-near-thitu"
+        }
       ]
     }
   ],
   "points": [
     {
-      "id": "gaza-wash-rainy-season-confirmed",
+      "id": "gaza-wash-winter-access-confirmed",
       "rank": 1,
       "status": "confirmado",
       "status_en": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Gaza / Gaza City, Deir al Balah y sitios de desplazamiento",
-      "headline": "Gaza: el acople confirmado es WASH, combustible y temporada de lluvias",
-      "headlineEn": "Gaza: the confirmed coupling is WASH, fuel and the rainy season",
-      "conflict_event": "El feed SENTINEL recoge la continuidad del conflicto y víctimas palestinas en Gaza durante el 27 de septiembre; OCHA documenta restricciones operativas, ataques, desplazamiento y escasez de maquinaria, combustible, aceite de motor y repuestos para sostener servicios críticos.",
-      "environmental_event": "OCHA y los clústeres WASH/Salud alertan que la temporada de lluvias puede inundar sitios de desplazamiento y puntos médicos; la combinación de saneamiento degradado, agua limitada, residuos y falta de combustible eleva el riesgo sanitario.",
+      "location": "Gaza / cruces humanitarios, refugios y sistema WASH",
+      "headline": "Gaza: invierno, agua y acceso humanitario sobre una infraestructura degradada",
+      "headlineEn": "Gaza: winter, water and humanitarian access over degraded infrastructure",
+      "conflict_event": "La semana cerró con una situación humanitaria todavía condicionada por actividad militar, restricciones de acceso y dependencia de cruces limitados para suministros críticos.",
+      "conflictEvent": "La semana cerró con una situación humanitaria todavía condicionada por actividad militar, restricciones de acceso y dependencia de cruces limitados para suministros críticos.",
+      "environmental_event": "La ONU advirtió que casi dos millones de personas necesitan refugio frente al frío y el riesgo de inundaciones, mientras saneamiento, residuos, agua limpia y combustible siguen bajo presión.",
+      "environmentalEvent": "La ONU advirtió que casi dos millones de personas necesitan refugio frente al frío y el riesgo de inundaciones, mientras saneamiento, residuos, agua limpia y combustible siguen bajo presión.",
       "coupling_type": [
         "WASH",
+        "refugio",
+        "riesgo de inundación",
         "salud pública",
-        "lluvias e inundación",
-        "combustible",
-        "capacidad humanitaria",
-        "acople operacional confirmado"
+        "acceso humanitario"
       ],
-      "why_it_matters": "Importa porque el evento ambiental no es un desastre aislado: las lluvias entran sobre un sistema urbano dañado por guerra, con agua, saneamiento, residuos, salud y combustible ya degradados.",
-      "fact": "Hecho: durante la semana analizada, Gaza siguió bajo violencia activa y OCHA mantuvo alertas sobre servicios básicos, fuel, WASH y preparación ante lluvias.",
-      "coupling": "Dato de acople: OCHA advierte que la lluvia y las inundaciones pueden comprometer puntos médicos, saneamiento y control de enfermedades en sitios de desplazamiento ya afectados por restricciones de acceso y falta de suministros.",
-      "implication": "Implicación estratégica: la vulnerabilidad ambiental se convierte en multiplicador de daño humanitario cuando cae sobre infraestructura civil y gobernanza de emergencia degradadas por el conflicto.",
-      "strategic_implication": "El punto es prioridad alta porque agua, saneamiento, salud y combustible definen continuidad de vida civil y capacidad humanitaria, no solo daños materiales.",
-      "tripolar": "Lectura tripolar: EE. UU. queda condicionado por su relación con Israel y la presión humanitaria; la UE aparece como actor normativo y financiador humanitario; Rusia y China utilizan el caso como argumento diplomático contra el orden liderado por Occidente; el Sur Global lee Gaza como prueba de doble rasero institucional.",
+      "couplingType": [
+        "WASH",
+        "refugio",
+        "riesgo de inundación",
+        "salud pública",
+        "acceso humanitario"
+      ],
+      "why_it_matters": "Importa porque el riesgo ambiental no opera como evento aislado: entra sobre un sistema urbano dañado donde agua, saneamiento, residuos, salud y combustible definen continuidad de vida civil.",
+      "fact": "Hecho: la ONU informó el 2 de octubre que Gaza mantiene una situación humanitaria “abrumadora”, que la ayuda aprobada entra por Kerem Shalom, que otros cuatro pasos principales siguen cerrados y que la falta de acceso fiable limita el trabajo humanitario.",
+      "coupling": "Dato de acople: la misma actualización advierte que casi dos millones de personas necesitan refugio contra el frío y el riesgo de inundaciones, y vincula residuos, agua limpia insuficiente, ratas, saneamiento frágil, maquinaria y combustible con riesgo sanitario.",
+      "couplingEn": "Coupling data: UN reporting links shelter needs against cold and flooding with degraded water, sanitation, waste, equipment and fuel constraints.",
+      "implication": "Implicación estratégica: Gaza muestra cómo una presión ambiental estacional puede amplificar los efectos de un conflicto cuando la infraestructura civil y la logística humanitaria ya están degradadas.",
+      "strategic_implication": "Prioridad alta: el acople afecta supervivencia civil, salud pública, legitimidad diplomática y margen operativo de agencias humanitarias.",
+      "tripolar": "Lectura tripolar: EE. UU. queda condicionado por su relación con Israel y por la presión humanitaria; la UE opera como actor normativo y financiador; Rusia y China explotan el caso en la arena diplomática; el Sur Global lo lee como prueba de coherencia o doble rasero del orden internacional.",
       "confidence": "Alta",
       "sources": [
         {
-          "label": "SENTINEL",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-        },
-        {
-          "label": "OCHA",
-          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-18-september-2026"
-        },
-        {
-          "label": "UNOCHA",
-          "url": "https://www.unocha.org/publications/report/occupied-palestinian-territory/humanitarian-situation-update-223-gaza-strip"
-        },
-        {
           "label": "UN News",
-          "url": "https://news.un.org/en/story/2026/09/1168333"
+          "url": "https://news.un.org/en/story/2026/10/1168508"
+        },
+        {
+          "label": "SENTINEL feed",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
         }
       ]
     },
     {
-      "id": "ukraine-energy-winter-watch",
+      "id": "ukraine-energy-winter-strike-watch",
       "rank": 2,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media-alta",
       "priorityEn": "Medium-high",
       "accent": "#60A5FA",
-      "location": "Ucrania / red energética, infraestructura civil y retaguardia rusa",
-      "headline": "Ucrania: ataques energéticos antes del invierno, sin disparador ambiental nuevo",
-      "headlineEn": "Ukraine: energy strikes before winter, without a new environmental trigger",
-      "conflict_event": "El feed SENTINEL concentra varios eventos de alta prioridad sobre ataques rusos, escalada y Ucrania-Rusia el 27 de septiembre; ISW reporta golpes de largo alcance contra infraestructura energética e industrial en Rusia y continuidad de ataques rusos sobre Ucrania.",
-      "environmental_event": "El componente ambiental es estacional: informes humanitarios advierten que el invierno tensiona calefacción, agua y electricidad si los ataques degradan la red; NASA/USGS no aportan esta semana un evento físico directo que explique la dinámica.",
+      "location": "Ucrania/Rusia / red energética, agua, puertos y logística",
+      "headline": "Ucrania: campaña energética temprana antes del invierno",
+      "headlineEn": "Ukraine: an early energy campaign before winter",
+      "conflict_event": "ISW reportó ataques rusos con drones sobre Kyiv y múltiples impactos en infraestructura residencial, comercial, energética, portuaria y logística, junto con ataques ucranianos contra nodos petroleros rusos.",
+      "conflictEvent": "ISW reportó ataques rusos con drones sobre Kyiv y múltiples impactos en infraestructura residencial, comercial, energética, portuaria y logística, junto con ataques ucranianos contra nodos petroleros rusos.",
+      "environmental_event": "El componente ambiental es estacional: invierno, calefacción, agua y electricidad convierten la red energética en sistema de vida civil. USGS no registró un evento geofísico local que explique la dinámica.",
+      "environmentalEvent": "El componente ambiental es estacional: invierno, calefacción, agua y electricidad convierten la red energética en sistema de vida civil. USGS no registró un evento geofísico local que explique la dinámica.",
       "coupling_type": [
         "energía",
         "invierno",
         "agua y calefacción",
-        "infraestructura crítica",
-        "observación operacional"
+        "logística",
+        "infraestructura crítica"
       ],
-      "why_it_matters": "Importa porque la guerra energética antes del invierno puede transformar daño militar en presión civil sistémica: calefacción, agua, telecomunicaciones y reparación quedan en la misma línea de vulnerabilidad.",
-      "fact": "Hecho: el feed SENTINEL marcó Ucrania/Rusia como foco alto y las evaluaciones abiertas describen ataques continuados sobre energía, industria, telecomunicaciones y objetivos de largo alcance.",
-      "coupling": "Dato de acople: no hay sismo, tormenta o incendio NASA/USGS que confirme un acople ambiental directo; el acople vigilado es conflicto-infraestructura-estación fría.",
-      "implication": "Implicación estratégica: el invierno convierte la red eléctrica en sistema de vida civil y en objetivo coercitivo, con efecto acumulado sobre resistencia social, reparaciones y negociación.",
-      "strategic_implication": "Se mantiene como vigilancia porque el impacto geopolítico puede ser alto, pero la evidencia de esta semana no permite clasificarlo como acople ambiental confirmado.",
-      "tripolar": "Lectura tripolar: EE. UU. y la UE sostienen resiliencia ucraniana; Rusia intenta traducir capacidad de ataque en presión política; China observa costes de una guerra prolongada sobre energía y cadena industrial; el Sur Global recibe efectos indirectos por precios, alimentos y narrativa diplomática.",
+      "couplingType": [
+        "energía",
+        "invierno",
+        "agua y calefacción",
+        "logística",
+        "infraestructura crítica"
+      ],
+      "why_it_matters": "Importa porque los ataques contra energía y logística antes del invierno pueden transformar daño militar en presión social acumulativa: frío, agua, movilidad, reparación y moral pública.",
+      "fact": "Hecho: ISW registró el 2 de octubre ataques rusos con drones contra el Puente Sur de Kyiv y reportes de impactos sobre infraestructura energética, portuaria y logística; también recogió ataques ucranianos contra instalaciones petroleras rusas.",
+      "coupling": "Dato de acople: la evidencia no permite afirmar un desastre natural asociado; el acople queda en observación como interacción entre guerra, infraestructura crítica y exposición estacional al invierno.",
+      "couplingEn": "Coupling data: no natural disaster trigger is confirmed; the watch signal is the interaction between war, critical infrastructure and winter exposure.",
+      "implication": "Implicación estratégica: si la campaña energética se adelanta al invierno, el sistema eléctrico y de agua se convierte en frente político, no solo militar.",
+      "strategic_implication": "Prioridad media-alta: no es un acople ambiental confirmado, pero sí un multiplicador estratégico sobre energía, agua, puertos, moral y negociación.",
+      "tripolar": "Lectura tripolar: EE. UU. y la UE refuerzan la resiliencia ucraniana; Rusia intenta convertir energía y logística en presión coercitiva; China observa una guerra industrial prolongada con efectos sobre energía, seguros, grano y cadenas de suministro; el Sur Global recibe impactos indirectos por precios y narrativas diplomáticas.",
       "confidence": "Media",
       "sources": [
         {
-          "label": "SENTINEL",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
-        },
-        {
-          "label": "BBC",
-          "url": "https://www.bbc.com/news/articles/cwyz59yyqk4o"
-        },
-        {
           "label": "ISW",
-          "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-september-26-2026/"
+          "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-october-2-2026/"
         },
         {
-          "label": "Critical Threats",
-          "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-september-24-2026"
+          "label": "USGS M5.5+",
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-09-27T22:00:00Z&endtime=2026-10-04T21:59:59Z&minmagnitude=5.5&orderby=time"
+        },
+        {
+          "label": "SENTINEL feed",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
         }
       ]
     },
     {
-      "id": "philippines-surigae-maritime-watch",
+      "id": "philippines-china-choiwan-maritime-watch",
       "rank": 3,
       "status": "en observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
       "accent": "#F59E0B",
-      "location": "Filipinas / Luzón, Mar del Sur de China y entorno Okinawa-Filipinas",
-      "headline": "Filipinas: disuasión marítima y supertifón regional en el mismo tablero",
-      "headlineEn": "Philippines: maritime deterrence and a regional super typhoon on the same board",
-      "conflict_event": "El feed SENTINEL recoge el 27 de septiembre una señal de tensión China-Filipinas vinculada a despliegue costero de BrahMos; fuentes abiertas describen entrenamiento filipino-estadounidense con BrahMos y drones para disuasión marítima.",
-      "environmental_event": "NASA EONET registró Super Typhoon Surigae el 27 de septiembre en el Pacífico noroccidental; fuentes meteorológicas lo ubicaron como tormenta intensa cerca del corredor Okinawa-Japón, en el mismo arco operativo Indo-Pacífico.",
+      "location": "Filipinas / mar de China Meridional, Visayas y Mindanao",
+      "headline": "Filipinas: fricción marítima y clima severo en el mismo teatro operativo",
+      "headlineEn": "Philippines: maritime friction and severe weather in the same operating theater",
+      "conflict_event": "El 4 de octubre, la Guardia Costera filipina acusó a buques chinos de bloquear una misión de aplicación de la ley cerca de Thitu, mientras la tensión con China continuaba en el mar de China Meridional.",
+      "conflictEvent": "El 4 de octubre, la Guardia Costera filipina acusó a buques chinos de bloquear una misión de aplicación de la ley cerca de Thitu, mientras la tensión con China continuaba en el mar de China Meridional.",
+      "environmental_event": "NASA EONET mantuvo abierto el Super Typhoon Choi-wan en el Pacífico occidental, y PAGASA indicó que su vaguada afectaba Visayas y Mindanao con lluvias dispersas y posibles inundaciones repentinas o deslizamientos.",
+      "environmentalEvent": "NASA EONET mantuvo abierto el Super Typhoon Choi-wan en el Pacífico occidental, y PAGASA indicó que su vaguada afectaba Visayas y Mindanao con lluvias dispersas y posibles inundaciones repentinas o deslizamientos.",
       "coupling_type": [
-        "seguridad marítima",
-        "meteorología regional",
-        "disuasión costera",
-        "operaciones anfibias y aéreas",
-        "observación sin causalidad"
+        "tormenta severa",
+        "mar de China Meridional",
+        "continuidad operacional",
+        "guardia costera",
+        "rutas marítimas"
       ],
-      "why_it_matters": "Importa porque el Indo-Pacífico combina coerción marítima, ejercicios de negación de área y clima extremo; no se afirma que Surigae alterara una operación militar concreta.",
-      "fact": "Hecho: durante la semana, SENTINEL detectó señal de tensión China-Filipinas y las fuentes abiertas situaron a BrahMos en el marco de ejercicios y defensa costera.",
-      "coupling": "Dato de acople: EONET/JTWC registran un supertifón en el Pacífico occidental durante la misma ventana; el vínculo es regional-operacional, no causal.",
-      "implication": "Implicación estratégica: cuando clima extremo y disuasión costera coinciden en el mismo arco, la planificación naval y aérea pierde margen, aunque no haya escalada directa.",
-      "strategic_implication": "Se mantiene como vigilancia por rutas críticas, bases, ejercicios y señal de zona gris en el Mar del Sur de China.",
-      "tripolar": "Lectura tripolar: EE. UU. refuerza red de aliados y acceso operacional; China enfrenta una arquitectura de negación costera más densa; Japón y Filipinas son nodos de primera línea; la UE observa por comercio y libertad de navegación.",
+      "couplingType": [
+        "tormenta severa",
+        "mar de China Meridional",
+        "continuidad operacional",
+        "guardia costera",
+        "rutas marítimas"
+      ],
+      "why_it_matters": "Importa porque el clima severo puede reducir margen de maniobra, vigilancia, rescate y respuesta costera en un teatro donde China y Filipinas compiten por presencia y control narrativo.",
+      "fact": "Hecho: NASA EONET registró el Super Typhoon Choi-wan el 4 de octubre y PAGASA reportó su vaguada sobre Visayas y Mindanao; ese mismo fin de semana Manila denunció obstrucción china cerca de Thitu.",
+      "coupling": "Dato de acople: no hay evidencia de que Choi-wan causara el incidente marítimo; el valor analítico está en la coincidencia operacional de presión meteorológica y fricción de guardias costeras en un teatro estratégico.",
+      "couplingEn": "Coupling data: there is no evidence that Choi-wan caused the maritime incident; the signal is operational co-location of weather pressure and coast-guard friction.",
+      "implication": "Implicación estratégica: cuando el clima degrada visibilidad y respuesta, la competencia de presencia en el mar se vuelve más sensible a errores, retrasos y mensajes de disuasión.",
+      "strategic_implication": "Prioridad media: señal de vigilancia útil para rutas, guardia costera y continuidad operacional, pero no acople confirmado.",
+      "tripolar": "Lectura tripolar: EE. UU. aparece detrás del paraguas de apoyo a Filipinas; China sostiene presión gris en su periferia; Rusia no es actor directo pero observa el costo de distraer capacidades occidentales; la ASEAN y el Sur Global intentan evitar que la rivalidad convierta el clima y la pesca en teatro de escalada.",
       "confidence": "Media-baja",
       "sources": [
         {
-          "label": "SENTINEL",
-          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24962"
         },
         {
           "label": "JTWC",
-          "url": "https://www.metoc.navy.mil/jtwc/products/wp2526.tcw"
+          "url": "https://www.metoc.navy.mil/jtwc/products/wp2626.tcw"
         },
         {
-          "label": "NYT",
-          "url": "https://www.nytimes.com/interactive/2026/09/24/weather/surigae-map-path-tracker.html"
+          "label": "PAGASA",
+          "url": "https://www.pagasa.dost.gov.ph/weather"
         },
         {
-          "label": "Stars and Stripes",
-          "url": "https://www.stripes.com/theaters/asia_pacific/storm_tracker/2026-09-23/tropical-depression-25w-(surigae),-"
-        },
-        {
-          "label": "Times of India",
-          "url": "https://timesofindia.indiatimes.com/defence/international/us-and-philippine-marines-train-with-brahmos-to-deter-china/articleshow/133998211.cms"
-        },
-        {
-          "label": "News18",
-          "url": "https://hindi.news18.com/world/china-philippines-tension-south-china-sea-brahmos-missile-china-news-10867670.html"
+          "label": "The Straits Times",
+          "url": "https://www.straitstimes.com/asia/philippines-accuses-chinese-coast-guard-of-blocking-law-enforcement-mission-near-thitu"
         }
       ]
     }
   ],
-  "best_short_candidate": {
-    "id": "gaza-wash-rainy-season-confirmed",
-    "title": "Gaza: cuando la lluvia entra en una ciudad sin margen",
-    "reason": "Es el mejor Short porque permite explicar un acople real sin espectacularidad: agua, saneamiento, combustible, salud pública y guerra se combinan antes de la temporada de lluvias.",
-    "script": {
-      "title": "Gaza: la lluvia como multiplicador de crisis",
-      "hook_3s": "No siempre el punto de inflexión es una explosión. A veces es lluvia sobre una ciudad sin margen.",
-      "scene_1": "Hecho: Gaza sigue bajo violencia activa y desplazamiento masivo. La infraestructura civil ya opera con agua, saneamiento, salud y electricidad degradadas.",
-      "scene_2": "Dato de acople ambiental: OCHA advierte que la temporada de lluvias puede inundar sitios de desplazamiento y puntos médicos, mientras faltan combustible, maquinaria, repuestos y materiales básicos.",
-      "scene_3": "Implicación estratégica: cuando la lluvia cae sobre una red urbana destruida, deja de ser clima. Se convierte en presión sobre salud pública, gobernanza humanitaria y supervivencia civil.",
-      "closing": "GEOPÓLEM. Bienvenidos al tablero.",
-      "visuals": [
-        "Mapa 9:16 de Gaza con capas WASH, salud y sitios de desplazamiento",
-        "Placa HECHO / ACOPLE / IMPLICACIÓN",
-        "Gráfico simple: conflicto + lluvia + combustible + saneamiento",
-        "Cierre GEOPÓLEM SENTINEL"
-      ],
-      "english_subtitles": [
-        "The inflection point is not always an explosion. Sometimes it is rain falling on a city with no margin left.",
-        "Fact: Gaza remains under active violence and mass displacement. Civil infrastructure is already degraded: water, sanitation, health and electricity.",
-        "Environmental coupling: OCHA warns that the rainy season could flood displacement sites and medical points while fuel, machinery, spare parts and basic supplies remain scarce.",
-        "Strategic implication: when rain falls on a destroyed urban network, it is no longer just weather. It becomes pressure on public health, humanitarian governance and civilian survival.",
-        "GEOPÓLEM. Welcome to the board."
-      ],
-      "hashtags": [
-        "#GEOPÓLEM",
-        "#SENTINEL",
-        "#Gaza",
-        "#WASH",
-        "#OSINT",
-        "#Geopolítica",
-        "#AyudaHumanitaria",
-        "#ClimaYConflicto"
-      ]
+  "not_selected": [
+    {
+      "id": "taiwan-yona-watch-not-selected",
+      "location": "Taiwán / Yonaguni-Ryukyu",
+      "note": "USGS registró un sismo M5,6 a 74 km al sur de Yonaguni el 30 de septiembre y Taiwán reportó actividad militar variable durante la semana, pero el parte oficial del 4 de octubre indicó 0 aeronaves PLA en el periodo observado; no se elevó al top 3 por falta de acople operacional directo."
+    },
+    {
+      "id": "thailand-flood-border-not-selected",
+      "location": "Tailandia / frontera y norte-oeste",
+      "note": "NASA EONET/GDACS registró Flood in Thailand 1104169 el 4 de octubre. La relación con tensiones fronterizas regionales queda en monitoreo porque no se verificó impacto directo sobre rutas críticas o escalada de seguridad."
     }
+  ],
+  "best_short_candidate": {
+    "id": "gaza-wash-winter-access-confirmed",
+    "title": "Gaza: cuando el invierno entra en una guerra de agua y refugio",
+    "reason": "Es el punto con acople más claro y publicable: el riesgo de inundación y frío no se presenta como causa de la guerra, sino como multiplicador sobre WASH, refugio, salud pública y acceso humanitario."
   },
-  "media_publication": {
-    "status": "short_ready_for_approval",
-    "youtube": "not_published",
-    "note": "No se publica en redes automáticamente; el guion queda listo para aprobación."
+  "bestShort": {
+    "title": "Gaza: cuando el invierno entra en una guerra de agua y refugio",
+    "reason": "Es el punto con acople más claro y publicable: el riesgo de inundación y frío no se presenta como causa de la guerra, sino como multiplicador sobre WASH, refugio, salud pública y acceso humanitario."
   },
+  "short_script": {
+    "title": "Gaza: el invierno como multiplicador de la guerra",
+    "hook_3s": "No es solo lluvia. Es lluvia cayendo sobre una ciudad sin margen.",
+    "scene_1": "Hecho: Gaza llega al invierno con acceso humanitario limitado, cruces restringidos y servicios básicos bajo presión.",
+    "scene_2": "Dato de acople: la ONU advierte que casi dos millones de personas necesitan refugio contra el frío y el riesgo de inundaciones, mientras agua, saneamiento, residuos y combustible siguen frágiles.",
+    "scene_3": "Implicación estratégica: en la tripolaridad imperfecta, Gaza no es solo una crisis local. Es una prueba de legitimidad para Estados Unidos, la UE, Rusia, China y el Sur Global.",
+    "close": "GEOPÓLEM. Bienvenidos al tablero.",
+    "visuals": [
+      "Mapa Gaza con cruces Kerem Shalom, Rafah, Erez y Gate 96",
+      "Capa WASH: agua, saneamiento, residuos, combustible",
+      "Mapa tripolar: EE. UU., UE, Rusia, China y Sur Global alrededor del nodo Gaza"
+    ],
+    "english_subtitles": [
+      "This is not just rain. It is rain falling on a city with no margin.",
+      "Gaza enters winter with limited humanitarian access and basic services under pressure.",
+      "The UN warns that nearly two million people need shelter against cold and flood risk.",
+      "Water, sanitation, waste and fuel become strategic variables.",
+      "GEOPÓLEM. Welcome to the board."
+    ],
+    "hashtags": [
+      "#GEOPÓLEM",
+      "#Gaza",
+      "#Geopolítica",
+      "#OSINT",
+      "#Tripolaridad"
+    ]
+  },
+  "tags": [
+    "#GEOPÓLEM",
+    "#SENTINEL",
+    "#Gaza",
+    "#Ucrania",
+    "#Filipinas",
+    "#Tripolaridad"
+  ],
   "dataUrl": "./data/sentinel/weekly-brief.json",
-  "markdownUrl": "./data/sentinel/weekly-brief-2026-09-28.md",
-  "updatedLabel": "Actualizado 28 septiembre 2026",
-  "close": "GEOPÓLEM. Bienvenidos al tablero.",
-  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-09-21_2026-09-27.json"
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-09-28_2026-10-04.json",
+  "markdownUrl": "./data/sentinel/weekly-brief-2026-10-05.md",
+  "close": "GEOPÓLEM. Bienvenidos al tablero."
 };
 
 export const CONFLICTOS_ACTIVOS = {
