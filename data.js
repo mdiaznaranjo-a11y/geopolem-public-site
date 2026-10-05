@@ -1102,7 +1102,41 @@ export const SENTINEL_BRIEF = {
   "dataUrl": "./data/sentinel/weekly-brief.json",
   "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-09-28_2026-10-04.json",
   "markdownUrl": "./data/sentinel/weekly-brief-2026-10-05.md",
-  "close": "GEOPÓLEM. Bienvenidos al tablero."
+  "close": "GEOPÓLEM. Bienvenidos al tablero.",
+  "media_publication": {
+    "status": "prepared",
+    "published_at": null,
+    "youtube_long": {
+      "title": "GEOPÓLEM SENTINEL · Brief semanal 28 septiembre-4 octubre 2026",
+      "url": "./data/sentinel/weekly-brief-2026-10-05.md",
+      "format": "MD",
+      "duration": "Brief editorial"
+    },
+    "youtube_short": {
+      "title": "Gaza: el invierno como multiplicador de la guerra | Guion Short listo",
+      "url": "./data/sentinel/weekly-brief-2026-10-05.md#short-del-martes",
+      "format": "9:16",
+      "duration": "Guion 45-60s"
+    },
+    "editorial_note": "No se publicó video en YouTube ni redes automáticamente. El brief y el guion del Short quedan listos para revisión editorial y producción del martes."
+  },
+  "mediaPublication": {
+    "status": "prepared",
+    "publishedAt": null,
+    "youtubeLong": {
+      "title": "GEOPÓLEM SENTINEL · Brief semanal 28 septiembre-4 octubre 2026",
+      "url": "./data/sentinel/weekly-brief-2026-10-05.md",
+      "format": "MD",
+      "duration": "Brief editorial"
+    },
+    "youtubeShort": {
+      "title": "Gaza: el invierno como multiplicador de la guerra | Guion Short listo",
+      "url": "./data/sentinel/weekly-brief-2026-10-05.md#short-del-martes",
+      "format": "9:16",
+      "duration": "Guion 45-60s"
+    },
+    "editorialNote": "No se publicó video en YouTube ni redes automáticamente. El brief y el guion del Short quedan listos para revisión editorial y producción del martes."
+  }
 };
 
 export const CONFLICTOS_ACTIVOS = {
