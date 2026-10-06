@@ -1,5 +1,1072 @@
 {
-  "events": [],
+  "events": [
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "newstodaynet.com",
+      "id": "evt_aa2015ff9e8d4bf6",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [
+        "war",
+        "strike"
+      ],
+      "region": "Eurasia",
+      "score": 8.0,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "India",
+      "tier": "high",
+      "title": "Russian strikes kill six in Kharkiv as war intensifies - News Today",
+      "tone": null,
+      "url": "https://newstodaynet.com/2026/10/06/russian-strikes-kill-six-in-kharkiv-as-war-intensifies/"
+    },
+    {
+      "actors": [
+        "Saudi Arabia"
+      ],
+      "domain": "arabnews.com",
+      "id": "evt_b6745dd4ebcec64a",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Saudi Arabia",
+      "tier": "high",
+      "title": "Arab News | Israel puts military on alert for Oct 7 anniversary , warns Gazans",
+      "tone": null,
+      "url": "https://www.arabnews.com/middle-east/israel-puts-military-on-alert-for-oct-7-anniversary-warns-gazans-3004830"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "middleeastmonitor.com",
+      "id": "evt_f9e4d1bdb13a2df7",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Israel",
+      "tier": "high",
+      "title": "MSF warns of deteriorating humanitarian conditions as Israeli - controlled areas in Gaza",
+      "tone": null,
+      "url": "https://www.middleeastmonitor.com/20261006-msf-warns-of-deteriorating-humanitarian-conditions-as-israeli-controlled-areas-in-gaza/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wral.com",
+      "id": "evt_217768866dc1c421",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Israeli documentary  NAZA  opens in the US , reigniting debate over the war in Gaza :: WRAL . com",
+      "tone": null,
+      "url": "https://www.wral.com/news/ap/0f3ec-israeli-documentary-naza-opens-in-the-us-reigniting-debate-over-the-war-in-gaza/"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "business24.ro",
+      "id": "evt_de88b7f96bd6aa3f",
+      "language": "Romanian",
+      "matched_regions": [
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [
+        "rebel",
+        "drone"
+      ],
+      "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 4.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Romania",
+      "tier": "high",
+      "title": "Rebelii houthi revendică atacuri cu rachete și drone asupra aeroporturilor și rafinăriei Aramco din Arabia Saudită",
+      "tone": null,
+      "url": "https://business24.ro/rebelii-houthi/atacuri-rachete-drone-aeroporturi-rafinarie-aramco-1670283"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "newstodaynet.com",
+      "id": "evt_7e9be7b3522b6c08",
+      "language": "English",
+      "matched_regions": [
+        "yemen",
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Saudi - backed Yemen forces intensify strike against Houthis - News Today",
+      "tone": null,
+      "url": "https://newstodaynet.com/2026/10/06/saudi-backed-yemen-forces-intensify-strike-against-houthis/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "utahindependent.com",
+      "id": "evt_8518241be3e92335",
+      "language": "English",
+      "matched_regions": [
+        "yemen",
+        "houthi"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Riyadh instigates attack on Yemen - based Houthis",
+      "tone": null,
+      "url": "http://www.utahindependent.com/news/279349697/riyadh-instigates-attack-on-yemen-based-houthis"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "toulon.maville.com",
+      "id": "evt_91e8085d403e51d1",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Europa del Este",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "France",
+      "tier": "medium",
+      "title": "Guerre en Ukraine . Attaque de drones près de Moscou , marins et civils tués … Le point sur la nuit",
+      "tone": null,
+      "url": "https://toulon.maville.com/actu/actudet_-guerre-en-ukraine-attaque-de-drones-pres-de-moscou-marins-et-civils-tues-le-point-sur-la-nuit_fil-7510152_actu.Htm"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "thehindu.com",
+      "id": "evt_04f0bb52ed518dec",
+      "language": "English",
+      "matched_regions": [
+        "gaza",
+        "iraq",
+        "india"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "View From India Newsletter From Iraq to Gaza : A Long Trail of Damage",
+      "tone": null,
+      "url": "https://www.thehindu.com/news/international/view-from-india-newsletter-from-iraq-to-gaza-a-long-trail-of-damage/article71547254.ece"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "bursa.ro",
+      "id": "evt_d91bca45e325f40d",
+      "language": "Romanian",
+      "matched_regions": [
+        "israel",
+        "palestin",
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Romania",
+      "tier": "medium",
+      "title": "DPA : Secretarul general al ONU cere pace între israelieni şi palestinieni , la trei ani de la atacurile Hamas",
+      "tone": null,
+      "url": "https://www.bursa.ro/dpa-secretarul-general-al-onu-cere-pace-intre-israelieni-si-palestinieni-la-trei-ani-de-la-atacurile-hamas-03515060"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "samaa.tv",
+      "id": "evt_4c507282f83e68e0",
+      "language": "English",
+      "matched_regions": [
+        "saudi",
+        "pakistan"
+      ],
+      "matched_themes": [
+        "deploy"
+      ],
+      "region": "Asia del Sur",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Pakistan",
+      "tier": "medium",
+      "title": "Makkah pact : Pakistan , Türkiye to deploy forces in Saudi Arabia",
+      "tone": null,
+      "url": "https://www.samaa.tv/2087357985-makkah-pact-pakistan-t-rkiye-to-deploy-forces-in-saudi-arabia"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "khaskhabar.com",
+      "id": "evt_82c041002bc3edfa",
+      "language": "Hindi",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Israel orders army to hunt down and kill remaining attackers involved in 2023 attack : Defense Minister",
+      "tone": null,
+      "url": "https://www.khaskhabar.com/news/world-news/news-israel-orders-army-to-hunt-down-and-kill-remaining-attackers-involved-in-2023-attack-defense-minister-news-hindi-1-850696-KKN.html"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "freepressjournal.in",
+      "id": "evt_85aa5a2d3dda949c",
+      "language": "English",
+      "matched_regions": [
+        "india"
+      ],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Asia del Sur",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Air India , IndiGo , SpiceJet Seek Govt Relief As West Asia Conflict Pushes ATF Costs Higher",
+      "tone": null,
+      "url": "https://www.freepressjournal.in/business/air-india-indigo-spicejet-seek-govt-relief-as-west-asia-conflict-pushes-atf-costs-higher"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "bankier.pl",
+      "id": "evt_3fa33b2c71d6bf76",
+      "language": "Polish",
+      "matched_regions": [
+        "gaza",
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Poland",
+      "tier": "medium",
+      "title": "Trzy lata po ataku Hamasu . Tysiące napastników zabitych , Gaza wciąż w ruinach",
+      "tone": null,
+      "url": "https://www.bankier.pl/wiadomosc/Trzy-lata-po-ataku-Hamasu-Tysiace-napastnikow-zabitych-Gaza-wciaz-w-ruinach-9207860.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "handelsblatt.com",
+      "id": "evt_91fb440f97c1bd35",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Konjunktur : Deutsche Industrie mit unerwartet starkem Auftragseinbruch",
+      "tone": null,
+      "url": "https://www.handelsblatt.com/politik/konjunktur/konjunktur-deutsche-industrie-mit-unerwartet-starkem-auftragseinbruch/100259989.html"
+    },
+    {
+      "actors": [],
+      "domain": "mz.de",
+      "id": "evt_ddc74a1352b23316",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Oma gibt Cola , Opa lässt länger fernsehen : Warum Eltern jetzt locker bleiben sollten",
+      "tone": null,
+      "url": "https://www.mz.de/leben/familie/streit-erziehung-eltern-grosseltern-enkel-kinder-regeln-4333515"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "samaa.tv",
+      "id": "evt_5b204886d3b24c8b",
+      "language": "English",
+      "matched_regions": [
+        "houthi"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Pakistan",
+      "tier": "monitor",
+      "title": "Houthis claim attacks on Riyadh airport , Aramco refinery",
+      "tone": null,
+      "url": "https://www.samaa.tv/2087357988-houthis-claim-attacks-on-saudi-airports-aramco-refinery-military-sites"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "negocios.com",
+      "id": "evt_9f8fca7576c01bbf",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "bombard"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Spain",
+      "tier": "monitor",
+      "title": "Trump abre la puerta a negociar con Irán tras retirar 12 bombarderos",
+      "tone": null,
+      "url": "https://www.negocios.com/articulo/geopolitica/trump-abre-puerta-negociar-iran-retirar-12-bombarderos/20261006090456495169.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "capital.de",
+      "id": "evt_ef387f5535b75bb7",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Warum Führung kein Beliebtheitswettbewerb ist",
+      "tone": null,
+      "url": "https://www.capital.de/karriere/warum-fuehrung-kein-beliebtheitswettbewerb-ist-38351426.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "merkur.de",
+      "id": "evt_df381504cef976ad",
+      "language": "German",
+      "matched_regions": [
+        "iran",
+        "united states"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Iran bildet Frauen für Häuserkampf aus – Drohung gegen united states",
+      "tone": null,
+      "url": "https://www.merkur.de/politik/iran-bildet-frauen-fuer-haeuserkampf-aus-drohung-gegen-usa-zr-94526702.html"
+    },
+    {
+      "actors": [
+        "Sri Lanka"
+      ],
+      "domain": "dailymirror.lk",
+      "id": "evt_99acc360666cc921",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Sri Lanka",
+      "tier": "monitor",
+      "title": "IMF urges fuel price adjustments , targeted relief as war risks persist - Business News",
+      "tone": null,
+      "url": "https://www.dailymirror.lk/business-news/IMF-urges-fuel-price-adjustments-targeted-relief-as-war-risks-persist/273-351867"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "bursa.ro",
+      "id": "evt_3867879084bbfd55",
+      "language": "Romanian",
+      "matched_regions": [
+        "yemen",
+        "houthi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Forţele guvernului yemenit anunţă că au recucerit portul Mocha de la houthi",
+      "tone": null,
+      "url": "https://www.bursa.ro/fortele-guvernului-yemenit-anunta-ca-au-recucerit-portul-mocha-de-la-houthi-45515062"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "bursa.ro",
+      "id": "evt_2a1db99aeb6ed35d",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "AFP : Kosovo propune limitarea competenţelor tribunalului pentru crimele de război comise în timpul conflictului",
+      "tone": null,
+      "url": "https://www.bursa.ro/afp-kosovo-propune-limitarea-competentelor-tribunalului-pentru-crimele-de-razboi-comise-in-timpul-conflictului-47315062"
+    },
+    {
+      "actors": [
+        "Ethiopia"
+      ],
+      "domain": "thereporterethiopia.com",
+      "id": "evt_fb6278378a6aea58",
+      "language": "English",
+      "matched_regions": [
+        "red sea",
+        "ethiopia"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Ethiopia",
+      "tier": "monitor",
+      "title": "Ethiopia Reaffirms Rights Over Nile , Red Sea As Regional Alliances Shift",
+      "tone": null,
+      "url": "https://www.thereporterethiopia.com/53223/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilgazzettino.it",
+      "id": "evt_cef35f12dc9bee68",
+      "language": "Italian",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Russia , lEstonia sposta le forze al confine . Berlino , allerta degli 007 su Mosca : « Contro di noi una guerra - ombra »",
+      "tone": null,
+      "url": "https://www.ilgazzettino.it/mondo/estonia_soldati_confine_russia_cosa_sta_succedendo-9805940.html"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "digi24.ro",
+      "id": "evt_c4a12c11f37cfd95",
+      "language": "Romanian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "„ Să distrugă Los Angeles sau San Diego . Este un preț mic . Trump , declarații uluitoare despre războiul cu Iran la un miting electoral",
+      "tone": null,
+      "url": "https://www.digi24.ro/stiri/externe/sua/sa-distruga-los-angeles-sau-san-diego-este-un-pret-mic-trump-declaratii-uluitoare-despre-razboiul-cu-iran-la-un-miting-electoral-3979991"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "infovaticana.com",
+      "id": "evt_97fde8f9bec6bbb7",
+      "language": "Spanish",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Spain",
+      "tier": "monitor",
+      "title": "Los cristianos de Gaza rezarán el Rosario por la paz tras un nuevo ataque mortal – INFOVATICANA",
+      "tone": null,
+      "url": "https://infovaticana.com/2026/10/06/los-cristianos-de-gaza-rezaran-el-rosario-por-la-paz-tras-un-nuevo-ataque-mortal/"
+    },
+    {
+      "actors": [
+        "Cyprus"
+      ],
+      "domain": "philenews.com",
+      "id": "evt_568641ff92b6a1b3",
+      "language": "Greek",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Cyprus",
+      "tier": "monitor",
+      "title": "Ρωσία : Αερόστατα - παγίδες για τα ουκρανικά drones",
+      "tone": null,
+      "url": "https://www.philenews.com/kosmos/article/1778582/rosia-aerostata-pagides-gia-ta-oukranika-drones-i-epistrofi-mias-lisis-apo-ton-v%CE%84-pagkosmio-polemo/"
+    },
+    {
+      "actors": [
+        "Denmark"
+      ],
+      "domain": "kristeligt-dagblad.dk",
+      "id": "evt_bca3d66b7b11e466",
+      "language": "Danish",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Denmark",
+      "tier": "monitor",
+      "title": "Israel øger militært beredskab før årsdag for 7 . oktober - angreb",
+      "tone": null,
+      "url": "https://www.kristeligt-dagblad.dk/udland/israel-oeger-militaert-beredskab-foer-aarsdag-7-oktober-angreb"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "mediafax.ro",
+      "id": "evt_96e69e9f3c5c8ed1",
+      "language": "Romanian",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Israelul și - a ridicat avioanele de luptă după tentativa de deturnare a cursei FlyDubai . Care era scenariul - limită",
+      "tone": null,
+      "url": "https://www.mediafax.ro/externe/israelul-si-a-ridicat-avioanele-de-lupta-dupa-tentativa-de-deturnare-a-cursei-flydubai-care-era-scenariul-limita-23820184"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "bankier.pl",
+      "id": "evt_69fe6edbdafc0326",
+      "language": "Polish",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Iranowi udało się wyłączyć system Starlink . Teheran ujawnił szczegóły",
+      "tone": null,
+      "url": "https://www.bankier.pl/wiadomosc/Iranowi-udalo-sie-wylaczyc-system-Starlink-Teheran-ujawnil-szczegoly-9207885.html"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ilgazzettino.it",
+      "id": "evt_6131d32ac2992972",
+      "language": "Italian",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Crisi carburante in Russia , arrivano 176mila tonnellate di gasolio dalla Corea del Sud : le petroliere ( sanzionate ) cambiano rotta",
+      "tone": null,
+      "url": "https://www.ilgazzettino.it/esteri/russia_crisi_carburante_corea_del_sud_petroliere_cambiano_rotta-9807272.html"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "draguignan.maville.com",
+      "id": "evt_1f11d51347d4d30b",
+      "language": "French",
+      "matched_regions": [],
+      "matched_themes": [
+        "combat"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Guerre au Moyen - Orient : combats au Yémen et en Arabie saoudite , pétrolier attaqué à Ormuz … Les dernières infos",
+      "tone": null,
+      "url": "https://draguignan.maville.com/actu/actudet_-guerre-au-moyen-orient-combats-au-yemen-et-en-arabie-saoudite-petrolier-attaque-a-ormuz-les-dernieres-infos_fil-7510594_actu.Htm"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "skai.gr",
+      "id": "evt_4ecc800c70473f90",
+      "language": "Greek",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Greece",
+      "tier": "monitor",
+      "title": "Ρωσία : Αερόστατα με δίχτυα για την προστασία διυλιστηρίων από drones",
+      "tone": null,
+      "url": "https://www.skai.gr/news/world/rosia-aerostata-me-dixtya-gia-tin-prostasia-diylistirion-apo-drones"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "allafrica.com",
+      "id": "evt_8a9d22dca4a89f76",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "Nigeria : INEC , Editors and the Battle for Trust Ahead of 2027",
+      "tone": null,
+      "url": "https://allafrica.com/stories/202610060134.html"
+    },
+    {
+      "actors": [
+        "Guatemala"
+      ],
+      "domain": "dca.gob.gt",
+      "id": "evt_d723030b7c510ab9",
+      "language": "Spanish",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Guatemala",
+      "tier": "monitor",
+      "title": "Nave militar se estrella en Nigeria",
+      "tone": null,
+      "url": "https://dca.gob.gt/noticias-guatemala-diario-centro-america/nave-militar-se-estrella-en-nigeria/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "analisidifesa.it",
+      "id": "evt_9aa13462ff3d8431",
+      "language": "Italian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Le nuove alleanza regionali in Europa indeboliscono la NATO – Analisi Difesa",
+      "tone": null,
+      "url": "https://www.analisidifesa.it/2026/10/le-nuove-alleanza-regionali-in-europa-indeboliscono-la-nato/"
+    },
+    {
+      "actors": [
+        "Switzerland"
+      ],
+      "domain": "laregione.ch",
+      "id": "evt_73b28eed2bf2440c",
+      "language": "Italian",
+      "matched_regions": [
+        "houthi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Switzerland",
+      "tier": "monitor",
+      "title": "Gli Houthi rivendicano attacchi allaeroporto di Riad e a una raffineria Aramco",
+      "tone": null,
+      "url": "http://www.laregione.ch/estero/estero/1954939/houthi-riad-aeroporto-aramco-raffineria-attacchi"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "ross-shirejournal.co.uk",
+      "id": "evt_8bc507417f2c5b20",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Inverness flight disruption fears after Loganair cabin crews to be balloted on strike action",
+      "tone": null,
+      "url": "https://www.ross-shirejournal.co.uk/news/inverness-flight-disruption-fears-after-loganair-cabin-crews-446769/"
+    },
+    {
+      "actors": [
+        "Sri Lanka"
+      ],
+      "domain": "dailymirror.lk",
+      "id": "evt_5ae1435bd475e5b4",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Sri Lanka",
+      "tier": "monitor",
+      "title": "Flydubai co - pilot originally planned attack for July , investigators believe - International",
+      "tone": null,
+      "url": "https://www.dailymirror.lk/international/Flydubai-co-pilot-originally-planned-attack-for-July-investigators-believe/107-351864"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "negocios.com",
+      "id": "evt_858d111e566c8d14",
+      "language": "Spanish",
+      "matched_regions": [
+        "yemen"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261006T083000Z",
+      "source_country": "Spain",
+      "tier": "monitor",
+      "title": "Arabia Saudí asegura haber destruido 20 misiles hutíes en Yemen",
+      "tone": null,
+      "url": "https://www.negocios.com/articulo/geopolitica/arabia-saudi-asegura-haber-destruido-20-misiles-huties-yemen/20261006090313495168.html"
+    }
+  ],
   "filters": {
     "max_records": 250,
     "query": "(conflict OR war OR military OR offensive OR airstrike OR shelling OR clashes OR insurgency OR ceasefire OR missile OR sanctions OR coup OR escalation)",
@@ -11,13 +1078,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-05T14:39:14Z",
+  "generated_at": "2026-10-06T13:21:44Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 0,
-    "medium": 0,
-    "monitor": 0
+    "high": 5,
+    "medium": 9,
+    "monitor": 27
   },
-  "total_events": 0
+  "total_events": 41
 }
