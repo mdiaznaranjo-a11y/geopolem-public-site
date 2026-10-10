@@ -1,5 +1,1293 @@
 {
-  "events": [],
+  "events": [
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "euronews.com",
+      "id": "evt_6c17e10316db368f",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia"
+      ],
+      "matched_themes": [
+        "war",
+        "escalate"
+      ],
+      "region": "Europa del Este",
+      "score": 9.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 5.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "As Russia escalates its war , the EU realises its support for Ukraine wont be enough",
+      "tone": null,
+      "url": "https://www.euronews.com/2026/10/10/as-russia-escalates-its-war-the-eu-admits-its-support-for-ukraine-wont-be-enough"
+    },
+    {
+      "actors": [
+        "Japan"
+      ],
+      "domain": "japantoday.com",
+      "id": "evt_f37ab0b7afd0514d",
+      "language": "English",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [
+        "war",
+        "ceasefire"
+      ],
+      "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Japan",
+      "tier": "high",
+      "title": "A U . S .- brokered ceasefire was supposed to end the war in Gaza . A year later , progress has stalled",
+      "tone": null,
+      "url": "https://japantoday.com/category/world/a-us-brokered-ceasefire-was-supposed-to-end-the-war-in-gaza.-a-year-later-progress-has-stalled"
+    },
+    {
+      "actors": [
+        "China"
+      ],
+      "domain": "strategypage.com",
+      "id": "evt_b4988b54f3c8b4b9",
+      "language": "English",
+      "matched_regions": [
+        "hamas"
+      ],
+      "matched_themes": [
+        "war",
+        "terror"
+      ],
+      "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 5.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "China",
+      "tier": "high",
+      "title": "Counter - Terrorism : The Hamas Eternal War",
+      "tone": null,
+      "url": "http://www.strategypage.com/%5Chtmw%5Chtterr%5Carticles%5C2026100993248.aspx"
+    },
+    {
+      "actors": [],
+      "domain": "3cat.cat",
+      "id": "evt_6b32d105f6041855",
+      "language": "Catalan",
+      "matched_regions": [
+        "israel",
+        "palestin"
+      ],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "MENA",
+      "score": 6.0,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "",
+      "tier": "high",
+      "title": "Es poden frenar conflictes com el dIsrael i Palestina ? Una proposta des dels sistemes complexos",
+      "tone": null,
+      "url": "https://www.3cat.cat/3catinfo/es-poden-frenar-conflictes-com-el-disrael-i-palestina-una-proposta-des-dels-sistemes-complexos/noticia/3386582/"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "middleeasteye.net",
+      "id": "evt_eb1c9ad2310ba67e",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "hormuz"
+      ],
+      "matched_themes": [
+        "blockade"
+      ],
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Centcom says 133 vessels redirected in Hormuz as it enforces Iran blockade",
+      "tone": null,
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-133-vessels-redirected-hormuz-it-enforces-iran-blockade"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "economictimes.indiatimes.com",
+      "id": "evt_a279ee0b600cfd85",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Trump and Iran agree on one thing . The US election calendar isnt driving their decisions on the war",
+      "tone": null,
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-and-iran-agree-on-one-thing-the-us-election-calendar-isnt-driving-their-decisions-on-the-war/articleshow/134847184.cms"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "gazettextra.com",
+      "id": "evt_2f1059720755aa02",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump and Iran agree on one thing . The US election calendar isnt driving their decisions on the war",
+      "tone": null,
+      "url": "http://www.gazettextra.com/news/nation_world/trump-and-iran-agree-on-one-thing-the-us-election-calendar-isnt-driving-their-decisions/article_1c0bd0ae-dc37-559a-b9db-e23dbf21b05a.html"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "tv.rediff.com",
+      "id": "evt_695dc68dd53c6b05",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "strike",
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Global",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Trump strikes diesel deal with Putin , US lifts sanctions | Rediff - TV",
+      "tone": null,
+      "url": "https://tv.rediff.com/news/trump-strikes-diesel-deal-with-putin-us-lifts-sanctions/407754"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "focus.de",
+      "id": "evt_c883d2e482a8d335",
+      "language": "German",
+      "matched_regions": [
+        "mali"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Sahel",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Germany",
+      "tier": "medium",
+      "title": "Öl - Exporte erholen sich , aber Experten erwarten volle Normalisierung erst im Jahr 2027",
+      "tone": null,
+      "url": "https://www.focus.de/auto/oel-exporte-erholen-sich-langsam-aber-experten-erwarten-volle-normalisierung-erst-im-jahr-2027_8cdde975-738a-413d-98da-a2cb6cd0d6c0.html"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "orissapost.com",
+      "id": "evt_c5a74f35f4dec908",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian",
+        "india"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Trump faces hypocrisy charge over Russian diesel deal after targeting India",
+      "tone": null,
+      "url": "https://www.orissapost.com/trump-faces-hypocrisy-charge-over-russian-diesel-deal-after-targeting-india/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "padovanews.it",
+      "id": "evt_f4ee5f318994b78a",
+      "language": "Italian",
+      "matched_regions": [
+        "iran",
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Italy",
+      "tier": "medium",
+      "title": "Guerra in Iran , attacchi Houthi contro laeroporto di Riad : morti 3 cittadini sauditi , cancellati centinaia di voli – Padovanews",
+      "tone": null,
+      "url": "https://www.padovanews.it/2026/10/10/guerra-in-iran-attacchi-houthi-contro-laeroporto-di-riad-morti-3-cittadini-sauditi-cancellati-centinaia-di-voli/"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_3caac8617c07a3a0",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Voices from the Arab Press : US - Iran tensions , AI dangers , and Israel vote",
+      "tone": null,
+      "url": "http://www.jpost.com/middle-east/article-911021"
+    },
+    {
+      "actors": [
+        "Singapore"
+      ],
+      "domain": "asiaone.com",
+      "id": "evt_cedc4ac19a7c980b",
+      "language": "English",
+      "matched_regions": [
+        "myanmar"
+      ],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Singapore",
+      "tier": "medium",
+      "title": "US lifts sanctions on daughter of Myanmar military - linked businessman",
+      "tone": null,
+      "url": "https://www.asiaone.com/world/us-lifts-sanctions-daughter-myanmar-military-linked-businessman"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "canberratimes.com.au",
+      "id": "evt_42fc616d97e91c30",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Australia",
+      "tier": "medium",
+      "title": "Minister issues hard  no  on Russian diesel imports",
+      "tone": null,
+      "url": "https://www.canberratimes.com.au/story/9365986/minister-issues-hard-no-on-russian-diesel-imports/"
+    },
+    {
+      "actors": [
+        "Oman"
+      ],
+      "domain": "timesofoman.com",
+      "id": "evt_feed6c4d2527543a",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Oman",
+      "tier": "medium",
+      "title": "Putin says Russian oil supplies to US will",
+      "tone": null,
+      "url": "https://timesofoman.com/article/177842-putin-says-russian-oil-supplies-to-us-will-positively-impact-global-economy-after-trump-call"
+    },
+    {
+      "actors": [
+        "Kenya"
+      ],
+      "domain": "the-star.co.ke",
+      "id": "evt_029150ef64c95f1b",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Kenya",
+      "tier": "medium",
+      "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
+      "tone": null,
+      "url": "https://www.the-star.co.ke/news/world/2026-10-10-trump-announces-deal-for-russian-diesel-as-zelensky-calls-it-a-gift-to-putin"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "hardenexpress.com.au",
+      "id": "evt_8eeec1bb5976c9d4",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Australia",
+      "tier": "medium",
+      "title": "Minister issues hard  no  on Russian diesel imports",
+      "tone": null,
+      "url": "https://www.hardenexpress.com.au/story/9365986/minister-issues-hard-no-on-russian-diesel-imports/"
+    },
+    {
+      "actors": [
+        "Philippines"
+      ],
+      "domain": "philstar.com",
+      "id": "evt_a49224593e4e0d33",
+      "language": "English",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [
+        "ceasefire"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Philippines",
+      "tier": "medium",
+      "title": "Year later , Gaza ceasefire promises mostly unfulfilled",
+      "tone": null,
+      "url": "https://www.philstar.com/world/2026/10/10/2562258/year-later-gaza-ceasefire-promises-mostly-unfulfilled"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "ynetnews.com",
+      "id": "evt_0f594f41e46c9414",
+      "language": "English",
+      "matched_regions": [
+        "gaza",
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Who is Ali al - Amoudi , the man now leading Hamas in Gaza ?",
+      "tone": null,
+      "url": "https://www.ynetnews.com/opinions-analysis/article/skomsrwszl"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "indiatimes.com",
+      "id": "evt_bdfa9238fac11dc9",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Tokyo Revengers : War of the Three Titans Arc episode 2 recap : Is Takemichi happy ending ruined by Mikey dark secret ?",
+      "tone": null,
+      "url": "https://www.indiatimes.com/trending/tokyo-revengers-war-of-the-three-titans-arc-episode-2-recap-is-takemichis-happy-ending-ruined-by-mikeys-dark-secret/articleshow/134847901.html"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "middleeasteye.net",
+      "id": "evt_eb9113fbbdbeba85",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "Trump says ICC sanctions aimed at defending Netanyahu and others",
+      "tone": null,
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-icc-sanctions-aimed-defending-netanyahu-and-others"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "dailystar.co.uk",
+      "id": "evt_a0c7e9b962f78c4c",
+      "language": "English",
+      "matched_regions": [
+        "mexico"
+      ],
+      "matched_themes": [
+        "killed"
+      ],
+      "region": "América Latina",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Horror as toddler killed in Mexico prison bloodbath as inmates open fire and kill 10",
+      "tone": null,
+      "url": "https://www.dailystar.co.uk/news/us-news/child-dies-in-prison-brawl-37757093"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "defenseone.com",
+      "id": "evt_2578bd4dfe6bc876",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "The Pentagon awarded $350M to a firm tied to a senior DOD official",
+      "tone": null,
+      "url": "https://www.defenseone.com/policy/2026/10/pentagon-350-million-contracts-official/416543/"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "pakistantelegraph.com",
+      "id": "evt_5a545801e2ab5031",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Pakistan",
+      "tier": "monitor",
+      "title": "PM is scared : CJP Abhijeet Dipke alleges Govt  waging war on its people  ahead of protest march",
+      "tone": null,
+      "url": "http://www.pakistantelegraph.com/news/279362991/pm-is-scared-cjp-abhijeet-dipke-alleges-govt-waging-war-on-its-people-ahead-of-protest-march"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "zazoom.it",
+      "id": "evt_076573d0d1e662c1",
+      "language": "Italian",
+      "matched_regions": [
+        "russia",
+        "united states"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Trump | Accordo con Putin la Russia fornirà gasolio agli united states",
+      "tone": null,
+      "url": "https://www.zazoom.it/2026-10-10/trump-accordo-con-putin-la-russia-fornira-gasolio-agli-usa/19781295/"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "madhyamam.com",
+      "id": "evt_ea04de518c9297e2",
+      "language": "Malayalam",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "നോബൽ പുരസ്‌കാരം ലഭിച്ചില്ല ; രോഷാകുലനായി ട്രംപ് , നോർവേക്ക് മുന്നറിയിപ്പ് | Didnt receive Nobel Prize ; Trump enraged , warns Norway",
+      "tone": null,
+      "url": "https://www.madhyamam.com/world/trump-furious-after-not-receiving-the-nobel-prize-1562038"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "focus.de",
+      "id": "evt_914a9a08b41e96bd",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Faule Kredite in Putins Banken – Sberbank warnt vor Schwierigkeiten russischer Unternehmen",
+      "tone": null,
+      "url": "https://www.focus.de/finanzen/news/faule-kredite-in-putins-banken-sberbank-warnt-vor-schwierigkeiten-russischer-unternehmen_48e8c211-2893-4de5-9bfe-6f1d29e884cb.html"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "perthnow.com.au",
+      "id": "evt_cbfadd6b6a688abe",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Man charged over alleged  offensive  act at Bondi Beach",
+      "tone": null,
+      "url": "https://www.perthnow.com.au/news/man-charged-over-alleged-offensive-act-at-bondi-beach-c-22998267"
+    },
+    {
+      "actors": [
+        "Singapore"
+      ],
+      "domain": "asiaone.com",
+      "id": "evt_63079d5ebaa150f6",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Singapore",
+      "tier": "monitor",
+      "title": "A botched execution and plans for one in public show the US is conflicted about capital punishment",
+      "tone": null,
+      "url": "https://www.asiaone.com/world/botched-execution-and-plans-one-public-show-us-conflicted-about-capital-punishment"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_3bbbd9faf539fff0",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "Israeli researchers : Premature birth may cause lifelong kidney damage",
+      "tone": null,
+      "url": "http://www.jpost.com/health-and-wellness/article-911002"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_f36aaf06fa5dcb64",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "Hind Rajab Foundation targets Israeli medical officials",
+      "tone": null,
+      "url": "http://www.jpost.com/israel-news/article-911212"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wboc.com",
+      "id": "evt_ce13e126b12e176f",
+      "language": "English",
+      "matched_regions": [
+        "taiwan"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Taiwan Lai calls on Indo - Pacific democracies to help maintain peace in National Day speech",
+      "tone": null,
+      "url": "https://www.wboc.com/news/international/taiwans-lai-calls-on-indo-pacific-democracies-to-help-maintain-peace-in-national-day-speech/article_0ffdfc19-8d85-5aac-923e-44e14e433318.html"
+    },
+    {
+      "actors": [],
+      "domain": "3cat.cat",
+      "id": "evt_91198d5155cbe06d",
+      "language": "Catalan",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Les xifres dun any de suposat alto el foc a Gaza",
+      "tone": null,
+      "url": "https://www.3cat.cat/3catinfo/les-xifres-dun-any-de-suposat-alto-el-foc-a-gaza/noticia/3433244/"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_77fb695962a15da9",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "escalate"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "Rabbi Yitzhak Yosef denounces Itamar Ben - Gvir as election tensions escalate",
+      "tone": null,
+      "url": "http://www.jpost.com/israel-election-2026/article-911198"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_65e3458fffc64d82",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "Samin Nosrat celebrity chef who signed BDS pledge shares stage with Israelis",
+      "tone": null,
+      "url": "http://www.jpost.com/diaspora/article-911204"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "canberratimes.com.au",
+      "id": "evt_d7cf4fc5d6a120d2",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Trump says Russia to supply diesel to global markets",
+      "tone": null,
+      "url": "https://www.canberratimes.com.au/story/9365952/trump-says-russia-to-supply-diesel-to-global-markets/"
+    },
+    {
+      "actors": [],
+      "domain": "news.yam.md",
+      "id": "evt_28663728e596778e",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Două mesaje RO - ALERT azi - noapte după depistarea unor drone în apropierea graniței cu România , lângă Tulcea",
+      "tone": null,
+      "url": "https://news.yam.md/ro/story/74096519"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "theguardian.com",
+      "id": "evt_17ca108457a7154b",
+      "language": "English",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "UK accused of giving people of Gaza false hope over new refugee safe route",
+      "tone": null,
+      "url": "https://www.theguardian.com/uk-news/2026/oct/10/uk-gaza-refugee-resettlement-scheme-palestinians-home-office"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_010d0079d698c6ad",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "Hind Rajab Foundation targets Israeli medical officials",
+      "tone": null,
+      "url": "https://www.jpost.com/israel-news/article-911212"
+    },
+    {
+      "actors": [
+        "Singapore"
+      ],
+      "domain": "asiaone.com",
+      "id": "evt_6e12ab8f6c2d4565",
+      "language": "English",
+      "matched_regions": [
+        "taiwan"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Singapore",
+      "tier": "monitor",
+      "title": "US says Chinese actions off Taiwan are  deeply destabilising",
+      "tone": null,
+      "url": "https://www.asiaone.com/asia/us-says-chinese-actions-taiwan-are-deeply-destabilising"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "crookwellgazette.com.au",
+      "id": "evt_797cb70c2666bea5",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Trump says Russia to supply diesel to global markets",
+      "tone": null,
+      "url": "https://www.crookwellgazette.com.au/story/9365952/trump-says-russia-to-supply-diesel-to-global-markets/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "leamingtonobserver.co.uk",
+      "id": "evt_425d1821de8265f7",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Four Shakespeares , Mrs Dalloway and Piranesi in RSC new season",
+      "tone": null,
+      "url": "https://leamingtonobserver.co.uk/news/four-shakespeares-mrs-dalloway-and-piranesi-in-rscs-new-season-64853/"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "middleeasteye.net",
+      "id": "evt_d67b17a3fb7820e5",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "Pezeshkian pitches  CIS + Iran  bloc at Turkmenistan summit",
+      "tone": null,
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/pezeshkian-pitches-cis-iran-bloc-turkmenistan-summit"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "newsday.com",
+      "id": "evt_318cac721eac7968",
+      "language": "English",
+      "matched_regions": [
+        "taiwan"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Taiwan Lai calls on Indo - Pacific democracies to help maintain peace in National Day speech",
+      "tone": null,
+      "url": "https://www.newsday.com/news/nation/taiwan-national-day-lai-ching-te-w47437"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "stardem.com",
+      "id": "evt_b1adeb645150f5e1",
+      "language": "English",
+      "matched_regions": [
+        "taiwan"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Taiwan Lai calls on Indo - Pacific democracies to help maintain peace in National Day speech",
+      "tone": null,
+      "url": "http://www.stardem.com/ap/world/taiwans-lai-calls-on-indo-pacific-democracies-to-help-maintain-peace-in-national-day-speech/article_b2558553-22d8-5240-9ed3-5f3325d98864.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "gazettextra.com",
+      "id": "evt_b1ae4f62290364e9",
+      "language": "English",
+      "matched_regions": [
+        "taiwan"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Taiwan Lai calls on Indo - Pacific democracies to help maintain peace in National Day speech",
+      "tone": null,
+      "url": "http://www.gazettextra.com/news/nation_world/taiwans-lai-calls-on-indo-pacific-democracies-to-help-maintain-peace-in-national-day-speech/article_db4a95aa-e02d-5b20-b354-0a98427cc5c2.html"
+    },
+    {
+      "actors": [
+        "Singapore"
+      ],
+      "domain": "asiaone.com",
+      "id": "evt_9b3e701d9ddf5f47",
+      "language": "English",
+      "matched_regions": [
+        "taiwan"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Singapore",
+      "tier": "monitor",
+      "title": "Taiwan president to say boosting its defences is not  provocation",
+      "tone": null,
+      "url": "https://www.asiaone.com/asia/taiwan-president-say-boosting-its-defences-not-provocation"
+    },
+    {
+      "actors": [
+        "Singapore"
+      ],
+      "domain": "asiaone.com",
+      "id": "evt_d328e207693cc602",
+      "language": "English",
+      "matched_regions": [
+        "taiwan"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Singapore",
+      "tier": "monitor",
+      "title": "Taiwan cherishes peace but will not give up freedom , president says",
+      "tone": null,
+      "url": "https://www.asiaone.com/asia/taiwan-cherishes-peace-will-not-give-freedom-president-says"
+    },
+    {
+      "actors": [
+        "Netherlands"
+      ],
+      "domain": "nieuws.nl",
+      "id": "evt_de4dc4ed3c2e4a27",
+      "language": "Dutch",
+      "matched_regions": [],
+      "matched_themes": [
+        "sanction"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "Netherlands",
+      "tier": "monitor",
+      "title": "Mediawaakhond wil ON ! opnieuw sanctioneren na Hitler - uitzend",
+      "tone": null,
+      "url": "https://nieuws.nl/entertainment/mediawaakhond-wil-on-weer-sanctie-opleggen-na-hitler-uitzending"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "oneindia.com",
+      "id": "evt_a6a6d90af775d3be",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261010T064500Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Donald Trump Makes BIG Announcement , Strikes Diesel Deal With Putin , Says  Prices Will Come Down Fast",
+      "tone": null,
+      "url": "https://www.oneindia.com/international/donald-trump-makes-big-announcement-strikes-diesel-deal-with-putin-says-prices-will-come-down-fas-8230651.html"
+    }
+  ],
   "filters": {
     "max_records": 250,
     "query": "(conflict OR war OR military OR offensive OR airstrike OR shelling OR clashes OR insurgency OR ceasefire OR missile OR sanctions OR coup OR escalation)",
@@ -11,13 +1299,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-09T13:23:14Z",
+  "generated_at": "2026-10-10T12:32:16Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 0,
-    "medium": 0,
-    "monitor": 0
+    "high": 4,
+    "medium": 15,
+    "monitor": 31
   },
-  "total_events": 0
+  "total_events": 50
 }
