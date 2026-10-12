@@ -1,10 +1,17 @@
 {
   "project": "GEOPÓLEM",
   "collection": "SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "updated_at": "2026-10-05T08:12:00+02:00",
+  "updated_at": "2026-10-12T08:07:00+02:00",
   "latest": "./weekly-brief.json",
   "feed": "./conflict-events.json",
   "items": [
+    {
+      "date": "2026-10-12",
+      "window": "5-11 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
+      "status": "un acople operacional confirmado y dos señales en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
+      "json": "./sentinel_weekly_brief_2026-10-05_2026-10-11.json",
+      "markdown": "./weekly-brief-2026-10-12.md"
+    },
     {
       "date": "2026-10-05",
       "window": "28 SEPTIEMBRE-4 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
@@ -118,13 +125,20 @@
     }
   ],
   "latest_meta": {
-    "date": "2026-10-05",
-    "window": "28 SEPTIEMBRE-4 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
+    "date": "2026-10-12",
+    "window": "5-11 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
     "status": "un acople operacional confirmado y dos señales en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
-    "archive": "./sentinel_weekly_brief_2026-09-28_2026-10-04.json",
-    "markdown": "./weekly-brief-2026-10-05.md"
+    "archive": "./sentinel_weekly_brief_2026-10-05_2026-10-11.json",
+    "markdown": "./weekly-brief-2026-10-12.md"
   },
   "briefs": [
+    {
+      "date": "2026-10-12",
+      "window": "5-11 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
+      "status": "un acople operacional confirmado y dos señales en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
+      "json": "./sentinel_weekly_brief_2026-10-05_2026-10-11.json",
+      "markdown": "./weekly-brief-2026-10-12.md"
+    },
     {
       "date": "2026-10-05",
       "window": "28 SEPTIEMBRE-4 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
