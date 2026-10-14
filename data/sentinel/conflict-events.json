@@ -11,7 +11,7 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-13T14:09:32Z",
+  "generated_at": "2026-10-14T11:49:54Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
