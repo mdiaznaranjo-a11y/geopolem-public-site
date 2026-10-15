@@ -1,5 +1,780 @@
 {
-  "events": [],
+  "events": [
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "newstribune.com",
+      "id": "evt_c2cb620e08f29bed",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war",
+        "militant",
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 8.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 6.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Iran fights rising militant attacks as US threatens to renew war | Jefferson City News Tribune",
+      "tone": null,
+      "url": "https://www.newstribune.com/news/2026/oct/15/iran-fights-rising-militant-attacks-as-us/"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "dailysabah.com",
+      "id": "evt_9cee8cdd61baee9d",
+      "language": "English",
+      "matched_regions": [
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [
+        "fighting",
+        "missile"
+      ],
+      "region": "MENA",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Turkey",
+      "tier": "high",
+      "title": "Saudi coalition fighting Houthis intercepts missile near Medina",
+      "tone": null,
+      "url": "https://www.dailysabah.com/world/mid-east/saudi-coalition-fighting-houthis-intercepts-missile-near-medina"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "mankatofreepress.com",
+      "id": "evt_41cd17eb66c6269f",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [
+        "truce",
+        "attack"
+      ],
+      "region": "Europa del Este",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Ukraine resumes attacks on Russian oil refineries , officials say , after brief truce",
+      "tone": null,
+      "url": "https://www.mankatofreepress.com/news/business/ukraine-resumes-attacks-on-russian-oil-refineries-officials-say-after-brief-truce/article_561af0fd-3dc3-5b14-a87f-cae68c579826.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "upstreamonline.com",
+      "id": "evt_8f5dacb51bcd2822",
+      "language": "English",
+      "matched_regions": [
+        "pakistan"
+      ],
+      "matched_themes": [
+        "war",
+        "conflict"
+      ],
+      "region": "Asia del Sur",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 5.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Pakistan LNG chief warns of winter gas shortages as Middle East conflict hits supplies",
+      "tone": null,
+      "url": "https://www.upstreamonline.com/lng/pakistan-lng-chief-warns-of-winter-gas-shortages-as-middle-east-conflict-hits-supplies/2-1-2059091"
+    },
+    {
+      "actors": [
+        "Russia"
+      ],
+      "domain": "russiaherald.com",
+      "id": "evt_128588a862e670c4",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian",
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Russia",
+      "tier": "medium",
+      "title": "NATO state seeks to shut down Russian gas pipeline",
+      "tone": null,
+      "url": "http://www.russiaherald.com/news/279376125/nato-state-seeks-to-shut-down-russian-gas-pipeline-media"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "indiagazette.com",
+      "id": "evt_253b33dcc5bed377",
+      "language": "English",
+      "matched_regions": [
+        "pakistan"
+      ],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Asia del Sur",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Any terror act originating from Pakistan would invite an even stronger response : Defence Minister Rajnath Singh",
+      "tone": null,
+      "url": "http://www.indiagazette.com/news/279376090/any-terror-act-originating-from-pakistan-would-invite-an-even-stronger-response-defence-minister-rajnath-singh"
+    },
+    {
+      "actors": [
+        "Russia"
+      ],
+      "domain": "themoscowtimes.com",
+      "id": "evt_d59b76713fc7445b",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone",
+        "attack"
+      ],
+      "region": "Global",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Russia",
+      "tier": "medium",
+      "title": "Ukrainian Drones Spark Fire at Ryazan Refinery as Zelensky Vows to Resume Attacks",
+      "tone": null,
+      "url": "https://www.themoscowtimes.com/2026/10/15/ukrainian-drones-spark-fire-at-ryazan-refinery-as-zelensky-vows-to-resume-attacks-a93981"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "fortune.com",
+      "id": "evt_f4ec7af6b0cee09d",
+      "language": "English",
+      "matched_regions": [
+        "houthi"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Houthis attacks are  unprecedented . U . S . response is ignore until midterms or calm before the storm",
+      "tone": null,
+      "url": "https://fortune.com/2026/10/15/houthi-saudi-attacks-unprecedented-us-response-ignore-midterms/"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "siap.viva.co.id",
+      "id": "evt_7676098133e9eeb9",
+      "language": "Indonesian",
+      "matched_regions": [
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Indonesia",
+      "tier": "monitor",
+      "title": "Houthi Tebar Ancaman Baru , Arab Saudi Kini Menghadapi Tiga Tekanan Sekaligus",
+      "tone": null,
+      "url": "https://siap.viva.co.id/news/28478-houthi-tebar-ancaman-baru-arab-saudi-kini-menghadapi-tiga-tekanan-sekaligus"
+    },
+    {
+      "actors": [
+        "Syria"
+      ],
+      "domain": "naharnet.com",
+      "id": "evt_b5fae5abff043888",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Syria",
+      "tier": "monitor",
+      "title": "US considers hitting Iran with  Mother of All Bombs",
+      "tone": null,
+      "url": "https://www.naharnet.com/stories/en/323117-us-considers-hitting-iran-with-mother-of-all-bombs"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "kfyi.iheart.com",
+      "id": "evt_5e10e198aa72d712",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Musk : SpaceX Not Behind Ukraine Service Interruptions",
+      "tone": null,
+      "url": "https://kfyi.iheart.com/content/2026-10-15-musk-spacex-not-behind-ukraine-service-interruptions/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wflafm.iheart.com",
+      "id": "evt_ae871f8669acef0f",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Musk : SpaceX Not Behind Ukraine Service Interruptions",
+      "tone": null,
+      "url": "https://wflafm.iheart.com/content/2026-10-15-musk-spacex-not-behind-ukraine-service-interruptions/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wsfcam.iheart.com",
+      "id": "evt_0aeb74193d8fcd4e",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Musk : SpaceX Not Behind Ukraine Service Interruptions",
+      "tone": null,
+      "url": "https://wsfcam.iheart.com/content/2026-10-15-musk-spacex-not-behind-ukraine-service-interruptions/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "thelocal.de",
+      "id": "evt_ea46bdde88bd2b4e",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Germany AfD and populist BSW pass motion to end aid for Ukraine",
+      "tone": null,
+      "url": "https://www.thelocal.de/20261015/germanys-afd-and-populist-bsw-pass-motion-to-end-aid-for-ukraine"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "woodradio.iheart.com",
+      "id": "evt_02086f9e8e189a9d",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Musk : SpaceX Not Behind Ukraine Service Interruptions | Newsradio WOOD 1300 and 106 . 9 FM",
+      "tone": null,
+      "url": "https://woodradio.iheart.com/content/2026-10-15-musk-spacex-not-behind-ukraine-service-interruptions/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "finanzen.net",
+      "id": "evt_67deb28d515c3c71",
+      "language": "German",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Peseschkian zur Krise im Iran : Innere Spaltung große Gefahr",
+      "tone": null,
+      "url": "https://www.finanzen.net/nachricht/aktien/peseschkian-zur-krise-im-iran-innere-spaltung-grosse-gefahr-15986827"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "baomoi.com",
+      "id": "evt_6274339c21ec1fdf",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Tổng thống Mỹ nói xung đột với Iran sẽ kết thúc  rất sớm , rộ tin Washington tính dùng đến vũ khí công phá mạnh nhất",
+      "tone": null,
+      "url": "https://baomoi.com/tong-thong-my-noi-xung-dot-voi-iran-se-ket-thuc-rat-som-ro-tin-washington-tinh-dung-den-vu-khi-cong-pha-manh-nhat-c56276093.epi"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "az-online.de",
+      "id": "evt_9b9ee31b62a2882c",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "„ Zur Kapitulation zwingen : Was hinter Trumps neuem Druck auf die Ukraine steckt",
+      "tone": null,
+      "url": "https://www.az-online.de/politik/zur-kapitulation-zwingen-was-hinter-trumps-neuem-druck-auf-die-ukraine-steckt-zr-94542045.html"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "andaluciainformacion.es",
+      "id": "evt_7ca3468403db3684",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Spain",
+      "tier": "monitor",
+      "title": "Rusia prueba misiles de crucero desde un submarino nuclear en el océano Pacífico",
+      "tone": null,
+      "url": "https://www.andaluciainformacion.es/articulo/mundo/rusia-prueba-misiles-crucero-submarino-nuclear-oceano-pacifico/202610151111003507104.html"
+    },
+    {
+      "actors": [
+        "Finland"
+      ],
+      "domain": "iltalehti.fi",
+      "id": "evt_ac23ddf33390816c",
+      "language": "Finnish",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Finland",
+      "tier": "monitor",
+      "title": "Lahtelaisen terroristin tuomio lyheni kahdella vuodelle",
+      "tone": null,
+      "url": "https://www.iltalehti.fi/kotimaa/a/62873c59-6f36-4d61-a404-37b7b4222e90"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "mankatofreepress.com",
+      "id": "evt_5f1f654546682095",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Ukrainian drones are forced to slow down by sudden restrictions on use of Starlink",
+      "tone": null,
+      "url": "https://www.mankatofreepress.com/news/business/ukrainian-drones-are-forced-to-slow-down-by-sudden-restrictions-on-use-of-starlink/article_edf28a5c-4b18-531d-b1c4-2e5924abaf4c.html"
+    },
+    {
+      "actors": [
+        "Russia"
+      ],
+      "domain": "rferl.org",
+      "id": "evt_ba61c470eb3217cb",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Russia",
+      "tier": "monitor",
+      "title": "Russia And The Taliban Are Drawing Closer . What In It For Both Sides ?",
+      "tone": null,
+      "url": "https://www.rferl.org/a/russia-and-the-taliban-are-drawing-closer-what-s-in-it-for-both-sides/33873471.html"
+    },
+    {
+      "actors": [
+        "Finland"
+      ],
+      "domain": "ksml.fi",
+      "id": "evt_476a9576958ac826",
+      "language": "Finnish",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Finland",
+      "tier": "monitor",
+      "title": "CNN : Yhdysvallat laatinut suunnitelmia  kaikkien pommien äidin  käytöstä Iranissa",
+      "tone": null,
+      "url": "https://www.ksml.fi/uutissuomalainen/9873948"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "finanzen.net",
+      "id": "evt_3996b2f5d0c061df",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Ukraine : Raketen treffen mehrere russische Kampfjets am Boden",
+      "tone": null,
+      "url": "https://www.finanzen.net/nachricht/aktien/ukraine-raketen-treffen-mehrere-russische-kampfjets-am-boden-15986811"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "rhein-zeitung.de",
+      "id": "evt_114612aad3caf498",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Ukraine - Krieg : Selenskyj kündigt Angriffe auf Russlands Ölraffinerien an",
+      "tone": null,
+      "url": "https://www.rhein-zeitung.de/deutschland-welt/politik/selenskyj-kuendigt-angriffe-auf-russlands-oelraffinerien-an_arid-4162677.html"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "correiobraziliense.com.br",
+      "id": "evt_622b2495cb44028c",
+      "language": "Portuguese",
+      "matched_regions": [],
+      "matched_themes": [
+        "mobiliz"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Campanhas de Lula e Flávio Bolsonaro preparam mobilizao nas ruas",
+      "tone": null,
+      "url": "https://www.correiobraziliense.com.br/politica/2026/10/7520931-campanhas-de-lula-e-flavio-bolsonaro-preparam-mobilizacao-nas-ruas.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "ktvo.com",
+      "id": "evt_f8fc1e12c592a660",
+      "language": "English",
+      "matched_regions": [
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Ex - Venezuelan President Nicolás Maduro is returning to federal court to face torture allegations",
+      "tone": null,
+      "url": "https://www.ktvo.com/news/nation-world/ex-venezuelan-president-nicol-s-maduro-is-returning-to-federal-court-to-face-torture-allegations/article_e7a22c9a-3f18-51f2-b25d-8b5893dc5410.html"
+    },
+    {
+      "actors": [
+        "Bulgaria"
+      ],
+      "domain": "bgnes.com",
+      "id": "evt_439413af6b3efffe",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Bulgaria",
+      "tier": "monitor",
+      "title": "Ukrainian Foreign Minister Thanks Bulgaria for Rescuing Ukrainian Sailors from Attacked Vessel Chelsea 3",
+      "tone": null,
+      "url": "http://www.bgnes.com/conflicts/ukrainian-foreign-minister-thanks-bulgaria-for-rescuing-ukrainian-sailors-from-attacked-vessel-chelsea-3"
+    },
+    {
+      "actors": [
+        "Norway"
+      ],
+      "domain": "tu.no",
+      "id": "evt_2cc8fee15ca078a5",
+      "language": "Norwegian",
+      "matched_regions": [
+        "hormuz"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "Norway",
+      "tier": "monitor",
+      "title": "Seks skip angrepet på én dag i Hormuzstredet – mest siden krigens start",
+      "tone": null,
+      "url": "https://www.tu.no/maritim/seks-skip-angrepet-pa-en-dag-i-hormuzstredet-mest-siden-krigens-start/7146864"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "dailymail.com",
+      "id": "evt_b7deec0d329f8115",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261015T100000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Tiger attack victim family expressed  concern about his contact with mental health services before he was mauled to death at Yorkshire zoo , inquest hears",
+      "tone": null,
+      "url": "https://www.dailymail.com/news/article-16210705/Tiger-attack-victim-mauled-death-Yorkshire-zoo-suffered-multiple-traumatic-injuries-inquest-hears.html"
+    }
+  ],
   "filters": {
     "max_records": 250,
     "query": "(conflict OR war OR military OR offensive OR airstrike OR shelling OR clashes OR insurgency OR ceasefire OR missile OR sanctions OR coup OR escalation)",
@@ -11,13 +786,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-14T11:49:54Z",
+  "generated_at": "2026-10-15T11:27:01Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 0,
-    "medium": 0,
-    "monitor": 0
+    "high": 4,
+    "medium": 3,
+    "monitor": 23
   },
-  "total_events": 0
+  "total_events": 30
 }
