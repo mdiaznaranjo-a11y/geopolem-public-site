@@ -2,41 +2,10 @@
   "events": [
     {
       "actors": [
-        "United States"
+        "Pakistan"
       ],
-      "domain": "idahopress.com",
-      "id": "evt_944084d453beea37",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian",
-        "nato"
-      ],
-      "matched_themes": [
-        "escalation",
-        "drone",
-        "strike"
-      ],
-      "region": "Eurasia",
-      "score": 10.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261016T110000Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Drone strikes in the Black Sea raise fears of Russian escalation to test NATO response",
-      "tone": null,
-      "url": "http://www.idahopress.com/news/world/drone-strikes-in-the-black-sea-raise-fears-of-russian-escalation-to-test-natos-response/article_17e4c3da-7807-5819-af9a-dc8ec462083d.html"
-    },
-    {
-      "actors": [
-        "Armenia"
-      ],
-      "domain": "tert.am",
-      "id": "evt_934e859153d95589",
+      "domain": "southeastasiapost.com",
+      "id": "evt_4d1795e2d6fb11e9",
       "language": "English",
       "matched_regions": [
         "russia"
@@ -53,292 +22,483 @@
         "themes": 6.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Armenia",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Pakistan",
       "tier": "high",
-      "title": "EU summit : Sanctions wont ease until Russia stops war . von der Leyen",
+      "title": "Trump Defends Russia Sanctions Waivers , Zelenskyy Warns Of Impact",
       "tone": null,
-      "url": "https://tert.am/en/news/2026/10/16/von%20der%20Leyen/4287117"
+      "url": "http://www.southeastasiapost.com/news/279384247/trump-defends-russia-sanctions-waivers-zelenskyy-warns-of-impact"
     },
     {
       "actors": [
-        "Iran"
+        "Argentina"
       ],
-      "domain": "iranherald.com",
-      "id": "evt_2da67b3219331fcf",
+      "domain": "argentinastar.com",
+      "id": "evt_9caa1b28e079c396",
       "language": "English",
       "matched_regions": [
-        "india"
+        "china",
+        "taiwan"
       ],
       "matched_themes": [
-        "war",
-        "conflict"
+        "sanction",
+        "sanctions"
       ],
-      "region": "Asia del Sur",
-      "score": 6.5,
+      "region": "Asia-Pacífico",
+      "score": 7.0,
       "score_breakdown": {
-        "region": 1.0,
-        "themes": 5.5,
+        "region": 4.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Iran",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Argentina",
       "tier": "high",
-      "title": "IMF flags energy price risks for India , warns prolonged Middle East conflict could fuel inflation",
+      "title": "China sanctions Paraguay , Belize ministers over support for Taiwan",
       "tone": null,
-      "url": "http://www.iranherald.com/news/279378101/imf-flags-energy-price-risks-for-india-warns-prolonged-middle-east-conflict-could-fuel-inflation"
+      "url": "http://www.argentinastar.com/news/279384428/china-sanctions-paraguay-belize-ministers-over-support-for-taiwan"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "nbcnewyork.com",
-      "id": "evt_55cff4b5df742325",
+      "domain": "wsbradio.com",
+      "id": "evt_04494a6e5566718c",
       "language": "English",
       "matched_regions": [
         "ukraine",
         "russia",
-        "russian"
+        "kyiv"
       ],
       "matched_themes": [
-        "strike"
+        "war"
       ],
       "region": "Europa del Este",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Russia targets Ukraine energy as Zelenskyy says Kyiv got no warning",
+      "tone": null,
+      "url": "https://www.wsbradio.com/news/world/russian-missiles/3F5FTDT56I6OHOVOSHHAHC4ODU/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "union-bulletin.com",
+      "id": "evt_2df56fb8208977bb",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Europa del Este",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Zelenskyy says Ukraine got no early warning from partners as Russia hits the power grid again",
+      "tone": null,
+      "url": "https://www.union-bulletin.com/news/world/zelenskyy-says-ukraine-got-no-early-warning-from-partners-as-russia-hits-the-power-grid/article_8c7402c1-f534-535d-b444-b9071505ecab.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "durangoherald.com",
+      "id": "evt_a5042edc1464c8bc",
+      "language": "English",
+      "matched_regions": [
+        "yemen",
+        "houthi"
+      ],
+      "matched_themes": [
+        "rebel",
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T124500Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Houthi rebels strike a government military camp in southern Yemen , killing at least 20 fighters",
+      "tone": null,
+      "url": "https://www.durangoherald.com/articles/associated-press/houthi-rebels-strike-a-government-military-camp-in-southern-yemen-killing-at-least-20-fighters/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "ottumwacourier.com",
+      "id": "evt_3d5d673cca0f1567",
+      "language": "English",
+      "matched_regions": [
+        "yemen",
+        "houthi"
+      ],
+      "matched_themes": [
+        "rebel",
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Houthi rebels strike a government military camp in southern Yemen , killing at least 20 fighters",
+      "tone": null,
+      "url": "https://www.ottumwacourier.com/news/national_news/houthi-rebels-strike-a-government-military-camp-in-southern-yemen-killing-at-least-20-fighters/article_30b0b339-2205-5377-8c9c-d423171242f6.html"
+    },
+    {
+      "actors": [
+        "Ukraine"
+      ],
+      "domain": "kyivpost.com",
+      "id": "evt_1db5e0c8a064a72e",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian",
+        "kyiv"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Eurasia",
       "score": 5.5,
       "score_breakdown": {
         "region": 4.0,
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "United States",
+      "seen_date": "20261019T124500Z",
+      "source_country": "Ukraine",
       "tier": "medium",
-      "title": "Trump calls Ukraine strikes on Russian oil sites a  disgrace  – NBC New York",
+      "title": "Kyiv Cosmo Multimall Takes Heavy Damage in Russian Attack",
       "tone": null,
-      "url": "https://www.nbcnewyork.com/news/national-international/trump-says-ukraine-resuming-strikes-on-russian-oil-sites-is-a-disgrace/6560063/"
+      "url": "https://www.kyivpost.com/post/87506"
     },
     {
       "actors": [
-        "India"
+        "United States"
       ],
-      "domain": "punjabkesari.in",
-      "id": "evt_79619d364f4db1eb",
-      "language": "Hindi",
-      "matched_regions": [
-        "yemen",
-        "houthi"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 3.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261016T110000Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "यमन के अदन स्थित राष्ट्रपति भवन पर हूती हमला , 5 की मौत , 16 घायल , क्षेत्रीय सुरक्षा पर गहराया संकट - houthi attack on yemen presidential palace leaves 5 dead and 16 injured",
-      "tone": null,
-      "url": "https://www.punjabkesari.in/international/news/houthi-attack-on-yemen-presidential-palace-leaves-5-dead-and-16-injured-2390235"
-    },
-    {
-      "actors": [
-        "Afghanistan"
-      ],
-      "domain": "afghanistannews.net",
-      "id": "evt_9ec1ddb70e356fa8",
+      "domain": "dailymail.com",
+      "id": "evt_70ce18ff09b45819",
       "language": "English",
       "matched_regions": [
-        "pakistan"
+        "afghan"
       ],
       "matched_themes": [
-        "conflict"
+        "war",
+        "troops"
       ],
       "region": "Asia del Sur",
-      "score": 4.0,
+      "score": 5.5,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 2.5,
+        "region": 1.0,
+        "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Afghanistan",
+      "seen_date": "20261019T124500Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "Pakistan textile exports struggle as rising costs , regional conflicts threaten growth",
+      "title": "More than 450 Brits never returned : No10 rebukes US Secretary of War Pete Hegseth for mocking contribution of allied troops in Afghanistan",
       "tone": null,
-      "url": "http://www.afghanistannews.net/news/279378476/pakistan-textile-exports-struggle-as-rising-costs-regional-conflicts-threaten-growth"
+      "url": "https://www.dailymail.com/news/article-16220503/More-450-Brits-never-returned-No10-rebukes-US-Secretary-War-Pete-Hegseth-mocking-contribution-allied-troops-Afghanistan.html"
     },
     {
       "actors": [
-        "Israel"
+        "United States"
       ],
-      "domain": "jns.org",
-      "id": "evt_1726ec4c932a2bcd",
+      "domain": "kztv10.com",
+      "id": "evt_15df247932484b54",
       "language": "English",
       "matched_regions": [
-        "israel",
-        "iran"
+        "russia"
+      ],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Eurasia",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T124500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump waives Russia - related sanctions before they kick in",
+      "tone": null,
+      "url": "https://www.kztv10.com/us-news/trump-waives-russia-related-sanctions-before-they-kick-in-prompting-backlash-from-ukraine-and-us-lawmakers"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wmtw.com",
+      "id": "evt_2c53afbf9d9196b9",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Eurasia",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T124500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Trump waives new Russia sanctions",
+      "tone": null,
+      "url": "https://www.wmtw.com/article/trump-waives-new-russia-sanctions/74176154"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "knrs.iheart.com",
+      "id": "evt_c557e8b54cdc47fe",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "china"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Europa del Este",
       "score": 4.0,
       "score_breakdown": {
         "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Israel",
+      "seen_date": "20261019T124500Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "Who will shape Iran future after the Islamic Republic ? - Israel & Jewish News",
+      "title": "Putin Proposes Ukraine Summit With U . S ., China , No Ukraine | Talk Radio 105 . 9",
       "tone": null,
-      "url": "https://www.jns.org/opinion/farid-alamdar/who-will-shape-irans-future-after-the-islamic-republic"
+      "url": "https://knrs.iheart.com/content/2026-10-19-putin-proposes-ukraine-summit-with-us-china-no-ukraine/"
     },
     {
       "actors": [
-        "North Korea"
+        "United States"
       ],
-      "domain": "nknews.org",
-      "id": "evt_32621720a2944047",
+      "domain": "970kfbx.iheart.com",
+      "id": "evt_f4364370d0ba04a2",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Putin Proposes Ukraine Summit With U . S ., China , No Ukraine",
+      "tone": null,
+      "url": "https://970kfbx.iheart.com/content/2026-10-19-putin-proposes-ukraine-summit-with-us-china-no-ukraine/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "kwhn.iheart.com",
+      "id": "evt_a6769de8a883a82f",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Putin Proposes Ukraine Summit With U . S ., China , No Ukraine",
+      "tone": null,
+      "url": "https://kwhn.iheart.com/content/2026-10-19-putin-proposes-ukraine-summit-with-us-china-no-ukraine/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "ibtimes.co.uk",
+      "id": "evt_0b4385f12aa9f5f4",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "moscow"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Putin Trump - Xi Summit Plan Sparks Alarm as Ukraine Faces Peace Deal on Moscow Terms",
+      "tone": null,
+      "url": "https://www.ibtimes.co.uk/putin-trump-xi-summit-ukraine-war-without-zelensky-1826449"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "grenadachronicle.com",
+      "id": "evt_3fe599e76090a62b",
+      "language": "English",
+      "matched_regions": [
+        "gaza",
+        "palestin"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "WFP cuts aid to ‌500 , 000 Palestinians in Gaza amid funding shortages - Grenada Chronicle – Daily Grenada And Caribbean News",
+      "tone": null,
+      "url": "https://grenadachronicle.com/wfp-cuts-aid-to-500000-palestinians-in-gaza-amid-funding-shortages/"
+    },
+    {
+      "actors": [
+        "Philippines"
+      ],
+      "domain": "manilatimes.net",
+      "id": "evt_4422e75f7dc473ca",
       "language": "English",
       "matched_regions": [
         "north korea"
       ],
       "matched_themes": [
-        "missile"
+        "deploy"
       ],
       "region": "Asia-Pacífico",
-      "score": 4.0,
+      "score": 3.0,
       "score_breakdown": {
         "region": 1.5,
-        "themes": 2.5,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "North Korea",
-      "tier": "medium",
-      "title": "North Korean media focuses on party anniversary , while hiding missile launches",
+      "seen_date": "20261019T124500Z",
+      "source_country": "Philippines",
+      "tier": "monitor",
+      "title": "North Korea threatens to restart propaganda broadcasts and deploy more weapons at border with South",
       "tone": null,
-      "url": "https://www.nknews.org/pro/north-korean-media-focuses-on-party-anniversary-while-hiding-missile-launches/"
+      "url": "https://www.manilatimes.net/2026/10/19/world/north-korea-threatens-to-restart-propaganda-broadcasts-and-deploy-more-weapons-at-border-with-south/2448702"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "933flz.iheart.com",
+      "id": "evt_dacbdaefc100dc6a",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T124500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Miami Judge Issues State Arrest Warrant for Raúl Castro Over 1996 Exile Plane Shootdown",
+      "tone": null,
+      "url": "https://933flz.iheart.com/content/2026-10-19-miami-judge-issues-state-arrest-warrant-for-ral-castro-over-1996-exile-plane-shootdown/"
     },
     {
       "actors": [
         "United Kingdom"
       ],
-      "domain": "newsandstar.co.uk",
-      "id": "evt_64c4fb7c8f7fd36b",
+      "domain": "hillingdontimes.co.uk",
+      "id": "evt_a3250386bdb40a90",
       "language": "English",
-      "matched_regions": [
-        "russia"
-      ],
+      "matched_regions": [],
       "matched_themes": [
-        "strike"
+        "war"
       ],
-      "region": "Eurasia",
-      "score": 3.5,
+      "region": "Global",
+      "score": 3.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
+      "seen_date": "20261019T123000Z",
       "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Russia strikes nine Ukrainian regions as strain grows between Zelensky and Trump",
+      "tier": "monitor",
+      "title": "Mortgage rate warning as cheap deals disappear within days",
       "tone": null,
-      "url": "https://www.newsandstar.co.uk/news/national/26643122.russia-strikes-nine-ukrainian-regions-strain-grows-zelensky-trump/"
+      "url": "https://www.hillingdontimes.co.uk/news/national/uk-today/26647986.mortgage-rate-warning-cheap-deals-disappear-within-days/"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Austria"
       ],
-      "domain": "peeblesshirenews.com",
-      "id": "evt_6f5766194116d3f2",
-      "language": "English",
-      "matched_regions": [
-        "russia"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261016T110000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Russia strikes nine Ukrainian regions as strain grows between Zelensky and Trump",
-      "tone": null,
-      "url": "https://www.peeblesshirenews.com/news/national/26643122.russia-strikes-nine-ukrainian-regions-strain-grows-zelensky-trump/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "yourlocalguardian.co.uk",
-      "id": "evt_6f6dc6954b3a3078",
-      "language": "English",
-      "matched_regions": [
-        "russia"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261016T110000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Russia strikes nine Ukrainian regions as strain grows between Zelensky and Trump",
-      "tone": null,
-      "url": "https://www.yourlocalguardian.co.uk/news/national/26643122.russia-strikes-nine-ukrainian-regions-strain-grows-zelensky-trump/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "gazette-news.co.uk",
-      "id": "evt_7f20dc7badf3a482",
-      "language": "English",
-      "matched_regions": [
-        "russia"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261016T110000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Russia strikes nine Ukrainian regions as strain grows between Zelensky and Trump",
-      "tone": null,
-      "url": "https://www.gazette-news.co.uk/news/national/26643122.russia-strikes-nine-ukrainian-regions-strain-grows-zelensky-trump/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "soester-anzeiger.de",
-      "id": "evt_a6deb12dbe062b82",
+      "domain": "tt.com",
+      "id": "evt_ee746444667afbeb",
       "language": "German",
       "matched_regions": [],
       "matched_themes": [
@@ -351,23 +511,23 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Germany",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Austria",
       "tier": "monitor",
-      "title": "„ Wir sorgen dafür , dass Putin diesen Krieg niemals gewinnt  – Warnung vor Angriffen auf Europa",
+      "title": "Selenskyj : Erneut keine Warnung vor Angriffen erhalten | Tiroler Tageszeitung – Aktuelle Nachrichten auf tt . com",
       "tone": null,
-      "url": "http://www.soester-anzeiger.de/politik/wir-sorgen-dafuer-dass-putin-diesen-krieg-niemals-gewinnt-warnung-vor-angriffen-auf-europa-zr-94544049.html"
+      "url": "https://www.tt.com/artikel/30944893/selenskyj-erneut-keine-warnung-vor-angriffen-erhalten"
     },
     {
       "actors": [
-        "Brazil"
+        "Canada"
       ],
-      "domain": "tnonline.uol.com.br",
-      "id": "evt_bfefb727cb8d01a7",
-      "language": "Portuguese",
+      "domain": "winnipegfreepress.com",
+      "id": "evt_8e0a44f012ced5e0",
+      "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "invade"
+        "war"
       ],
       "region": "Global",
       "score": 3.0,
@@ -376,121 +536,244 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Brazil",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Canada",
       "tier": "monitor",
-      "title": "Homem invade casa da ex , quebra câmera e ateia fogo em colchão em Apucarana",
+      "title": "Serbian rector phone was infected with spyware during student protests , group says – Winnipeg Free Press",
       "tone": null,
-      "url": "https://tnonline.uol.com.br/noticias/apucarana/homem-invade-casa-da-ex-quebra-camera-e-ateia-fogo-em-colchao-em-apucarana-1165436"
+      "url": "https://www.winnipegfreepress.com/arts-and-life/life/sci-tech/2026/10/19/serbian-rectors-phone-was-infected-with-spyware-during-student-protests-group-says"
     },
     {
       "actors": [
-        "Italy"
+        "Austria"
       ],
-      "domain": "notiziegeopolitiche.net",
-      "id": "evt_3133f3fc9c138473",
-      "language": "Italian",
-      "matched_regions": [
-        "iran",
-        "united states"
+      "domain": "heute.at",
+      "id": "evt_4b0ca30d8887dc8a",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
       ],
-      "matched_themes": [],
-      "region": "MENA",
+      "region": "Global",
       "score": 3.0,
       "score_breakdown": {
-        "region": 3.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Italy",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Austria",
       "tier": "monitor",
-      "title": "Iran , le sanzioni united states tagliano i voli : per andare a Dubai servono 18 ore e 1 . 000 dollari",
+      "title": "Sabotage , Spionage , Putin – Gefährdungsstufe 4 von 5 : Warnung an alle Österreicher",
       "tone": null,
-      "url": "https://www.notiziegeopolitiche.net/iran-le-sanzioni-usa-tagliano-i-voli-per-andare-a-dubai-servono-18-ore-e-1-000-dollari/"
+      "url": "https://www.heute.at/s/gefaehrdungsstufe-4-von-5-warnung-an-alle-oesterreicher-120268888"
+    },
+    {
+      "actors": [
+        "Switzerland"
+      ],
+      "domain": "gmx.ch",
+      "id": "evt_34df595404c72b9f",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "Switzerland",
+      "tier": "monitor",
+      "title": "Selenskyj kritisiert fehlende Frühwarnung vor neuen Raketenangriffen",
+      "tone": null,
+      "url": "https://www.gmx.ch/magazine/politik/russland-krieg-ukraine/selenskyj-kritisiert-fehlende-fruehwarnung-raketenangriffen-42851398"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "se.pl",
+      "id": "evt_8e36dc53b6a3e9c6",
+      "language": "Polish",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Kercelak : Słynny bazar i gang Taty Tasiemki w Warszawie - Warszawa , Super Express",
+      "tone": null,
+      "url": "https://www.se.pl/warszawa/kercelak-slynny-bazar-ktory-byl-miastem-w-miescie-tu-rzadzili-handlarze-i-gangsterzy-aa-CZBQ-8oMa-D6mf.html"
     },
     {
       "actors": [
         "India"
       ],
-      "domain": "timesofindia.indiatimes.com",
-      "id": "evt_9fa29dd7b6ee23c9",
+      "domain": "tribuneindia.com",
+      "id": "evt_273d38ca07c59a5a",
       "language": "English",
-      "matched_regions": [
-        "iran",
-        "india"
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
       ],
-      "matched_themes": [],
-      "region": "MENA",
+      "region": "Global",
       "score": 3.0,
       "score_breakdown": {
-        "region": 3.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
+      "seen_date": "20261019T123000Z",
       "source_country": "India",
       "tier": "monitor",
-      "title": "Refrain from actions prejudicial to citizen right : Delhi Police notice to CJP Abhijeet Dipke ahead of Tiranga march | India News",
+      "title": "Haryana power staff oppose privatisation of electricity distribution , warn of stir",
       "tone": null,
-      "url": "https://timesofindia.indiatimes.com/india/refrain-from-actions-prejudicial-to-citizens-rights-delhi-police-notice-to-cjps-abhijeet-dipke-ahead-of-tiranga-march/articleshow/134989383.cms"
+      "url": "https://www.tribuneindia.com/news/haryana/haryana-power-staff-oppose-privatisation-of-electricity-distribution-warn-of-stir/"
     },
     {
       "actors": [
-        "France"
+        "China"
       ],
-      "domain": "touteleurope.eu",
-      "id": "evt_9a3da1f09649deb1",
+      "domain": "french.xinhuanet.com",
+      "id": "evt_882ccbe71253a99c",
       "language": "French",
-      "matched_regions": [
-        "ukraine"
+      "matched_regions": [],
+      "matched_themes": [
+        "missile"
       ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
+      "region": "Global",
+      "score": 2.5,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "France",
+      "seen_date": "20261019T124500Z",
+      "source_country": "China",
       "tier": "monitor",
-      "title": "Guerre en Ukraine : Volodymyr Zelensky défie Donald Trump , lUE renouvelle son soutien à lUkraine",
+      "title": "Yémen : 25 morts et 30 blessés dans une attaque de missile contre un camp militaire dans le sud - est du pays - Xinhua",
       "tone": null,
-      "url": "https://www.touteleurope.eu/l-ue-dans-le-monde/guerre-en-ukraine-volodymyr-zelensky-defie-donald-trump-l-ue-renouvelle-son-soutien-a-l-ukraine/"
+      "url": "http://french.xinhuanet.com/20261019/753ad837915c487580654522183dd767/c.html"
     },
     {
       "actors": [
         "Italy"
       ],
-      "domain": "notiziegeopolitiche.net",
-      "id": "evt_8175b5670fa0c5a2",
+      "domain": "ilcrotonese.it",
+      "id": "evt_8dcb2f542e4c64a9",
       "language": "Italian",
       "matched_regions": [],
       "matched_themes": [
-        "nuclear"
+        "escalation"
       ],
       "region": "Global",
-      "score": 2.0,
+      "score": 2.5,
       "score_breakdown": {
         "region": 0.0,
-        "themes": 2.0,
+        "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
+      "seen_date": "20261019T123000Z",
       "source_country": "Italy",
       "tier": "monitor",
-      "title": "La Corea del Nord lancia 2 missili dal sottomarino « nucleare » fermo da 3 anni : Kim Jong - un non cera – Notizie Geopolitiche",
+      "title": "Tentata estorsione Crotone , indagine ha fermato escalation violenze",
       "tone": null,
-      "url": "https://www.notiziegeopolitiche.net/la-corea-del-nord-lancia-2-missili-dal-sottomarino-nucleare-fermo-da-3-anni-kim-jong-un-non-cera/"
+      "url": "https://www.ilcrotonese.it/2026/10/19/tentata-estorsione-crotone-indagine-ha-fermato-escalation-violenze/1740091"
     },
     {
       "actors": [
-        "United States"
+        "Romania"
       ],
-      "domain": "article.wn.com",
-      "id": "evt_e134de1c56e98782",
+      "domain": "capital.ro",
+      "id": "evt_a0bb471371297dbc",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Ne îndreptăm spre Al Treilea Război Mondial ? Avertisment privind riscul unui conflict între marile puteri",
+      "tone": null,
+      "url": "https://www.capital.ro/ne-indreptam-spre-al-treilea-razboi-mondial-avertisment-privind-riscul-unui-conflict-intre-marile-puteri.html"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "teleborsa.it",
+      "id": "evt_01a7f4988d8d61f0",
+      "language": "Italian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T124500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Rheinmetall e MSC acquisiranno cantiere navale di Mangalia in Romania per 138 milioni di euro",
+      "tone": null,
+      "url": "https://www.teleborsa.it/News/2026/10/19/rheinmetall-e-msc-acquisiranno-cantiere-navale-di-mangalia-in-romania-per-138-milioni-di-euro-107.html"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "westernadvocate.com.au",
+      "id": "evt_6239931dcd3eb8a7",
+      "language": "English",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T124500Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "UN food agency slashes Gaza aid , citing money shortages",
+      "tone": null,
+      "url": "https://www.westernadvocate.com.au/story/9371491/un-food-agency-slashes-gaza-aid-citing-money-shortages/"
+    },
+    {
+      "actors": [
+        "Ukraine"
+      ],
+      "domain": "kyivpost.com",
+      "id": "evt_ff07e8cdedf9485f",
       "language": "English",
       "matched_regions": [
         "ukraine"
@@ -503,17 +786,69 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "United States",
+      "seen_date": "20261019T124500Z",
+      "source_country": "Ukraine",
       "tier": "monitor",
-      "title": "Is Ukraine at risk of losing US military support ? How Elon Musk Starlink could weaken ...",
+      "title": "Analysis : How Poland and Ukraine are Rebuilding Trust one Grave at a Time",
       "tone": null,
-      "url": "https://article.wn.com/view/2026/10/16/Is_Ukraine_at_risk_of_losing_US_military_support_How_Elon_Mu/"
+      "url": "https://www.kyivpost.com/analysis/87420"
     },
     {
-      "actors": [],
-      "domain": "english.news.cn",
-      "id": "evt_a5a25bc287ab4fe4",
+      "actors": [
+        "Australia"
+      ],
+      "domain": "goulburnpost.com.au",
+      "id": "evt_fed24be9cbc9c55a",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T124500Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Zelenskiy says US trying to force Ukraine capitulation",
+      "tone": null,
+      "url": "https://www.goulburnpost.com.au/story/9370675/zelenskiy-says-us-trying-to-force-ukraine-capitulation/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "greenreport.it",
+      "id": "evt_00694fdb9d1e51f9",
+      "language": "Italian",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T124500Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Legambiente è finita in un dossier del governo israeliano",
+      "tone": null,
+      "url": "https://www.greenreport.it/news/approfondimenti/64426-legambiente-e-finita-in-un-dossier-del-governo-israeliano"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "stardem.com",
+      "id": "evt_39516e4417ee15e7",
       "language": "English",
       "matched_regions": [
         "israel"
@@ -526,46 +861,23 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "",
+      "seen_date": "20261019T124500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Chinese FM meets Israeli president - Xinhua",
+      "title": "A look at key parties in Israel Oct . 27 election seen as a referendum on Netanyahu | World",
       "tone": null,
-      "url": "https://english.news.cn/20261016/8dba7dd43d15493c8ef35cb1af53da37/c.html"
+      "url": "http://www.stardem.com/ap/world/a-look-at-key-parties-in-israel-s-oct-27-election-seen-as-a-referendum/article_4cf33cad-57a7-5bb8-9086-9d49e6d6b8ae.html"
     },
     {
       "actors": [
-        "Belgium"
+        "Italy"
       ],
-      "domain": "rtbf.be",
-      "id": "evt_5f76e769beb3b508",
-      "language": "French",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Belgium",
-      "tier": "monitor",
-      "title": "Ukraine  : lordre de brider la branche militaire de Starlink émanerait de la Maison Blanche , lUE dit ne pas pouvoir remplacer Starlink à court terme",
-      "tone": null,
-      "url": "https://www.rtbf.be/article/ukraine-l-ordre-de-brider-la-branche-militaire-de-starlink-emanerait-de-la-maison-blanche-l-ue-dit-ne-pas-pouvoir-remplacer-starlink-a-court-terme-11801217"
-    },
-    {
-      "actors": [],
-      "domain": "friendsofthecongo.org",
-      "id": "evt_c08786ac316a8b91",
-      "language": "English",
+      "domain": "zazoom.it",
+      "id": "evt_6e320819620b9527",
+      "language": "Italian",
       "matched_regions": [],
       "matched_themes": [
-        "terror"
+        "combat"
       ],
       "region": "Global",
       "score": 2.0,
@@ -574,20 +886,45 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "Beni : 12 Years of Forgotten Terrorist Massacres ; the Population Demands Justice and Unity",
+      "title": "Bergamo pitbull allevati e dopati per combattere nellarena",
       "tone": null,
-      "url": "https://friendsofthecongo.org/beni-12-years-of-forgotten-terrorist-massacres-the-population-demands-justice-and-unity/"
+      "url": "https://www.zazoom.it/2026-10-19/bergamo-pitbull-allevati-e-dopati-per-combattere-nellarena-denunce-e-sequestri/19819893/"
     },
     {
       "actors": [
-        "Dominican Republic"
+        "Denmark"
       ],
-      "domain": "acento.com.do",
-      "id": "evt_423a5586e04c4211",
-      "language": "Spanish",
+      "domain": "kristeligt-dagblad.dk",
+      "id": "evt_b3256f7dcef43929",
+      "language": "Danish",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "Denmark",
+      "tier": "monitor",
+      "title": "FN - organ skærer i nødhjælpen til indbyggere i Gaza",
+      "tone": null,
+      "url": "https://www.kristeligt-dagblad.dk/udland/wfp-skaerer-i-noedhjaelpen-til-indbyggere-i-gaza"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "jurnalul.ro",
+      "id": "evt_0964857c73495dbf",
+      "language": "Romanian",
       "matched_regions": [
         "china"
       ],
@@ -599,19 +936,19 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Dominican Republic",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Romania",
       "tier": "monitor",
-      "title": "La nueva vocera de la Casa Blanca duda del potencial de China porque carece de  baños adecuados",
+      "title": "Programul pelerinajului de Sfântul Dimitrie cel Nou 2026 la București : Moaștele Sfintei Elisabeta de la Pasărea , când te poți închina și traseul procesiunii „ Calea Sfinților",
       "tone": null,
-      "url": "https://acento.com.do/rfi/la-nueva-vocera-de-la-casa-blanca-duda-del-potencial-de-china-porque-carece-de-banos-adecuados-9771400.html"
+      "url": "https://jurnalul.ro/stiri/social/program-pelerinaj-bucuresti-sf-dimitrie-cel-nou-2026-1047165.html"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "soester-anzeiger.de",
-      "id": "evt_6474969196f9ae86",
+      "domain": "hna.de",
+      "id": "evt_f1ccd3cb225bdf41",
       "language": "German",
       "matched_regions": [
         "ukraine"
@@ -624,18 +961,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
+      "seen_date": "20261019T123000Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "Selenskyj widersetzt sich Trump direkt : Ukraine nimmt Angriffe auf russische Ölraffinerien wieder auf",
+      "title": "Gipfel in Shenzhen : Putin will Ukraine - Krieg ohne Selenskyj lösen",
       "tone": null,
-      "url": "http://www.soester-anzeiger.de/politik/selenskyj-widersetzt-sich-trump-direkt-ukraine-nimmt-angriffe-auf-russische-oelraffinerien-wieder-auf-zr-94544236.html"
+      "url": "https://www.hna.de/politik/gipfel-in-shenzhen-putin-will-ukraine-krieg-ohne-selenskyj-loesen-zr-94548078.html"
     },
     {
-      "actors": [],
-      "domain": "veritas.com.al",
-      "id": "evt_31dfd11ef2ea1170",
-      "language": "Albanian",
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "cafebiz.vn",
+      "id": "evt_6f145e03e86fe2ad",
+      "language": "Vietnamese",
       "matched_regions": [
         "iran"
       ],
@@ -647,93 +986,70 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "Protestat në Tiranë , OKB : Të gjitha palët të përmbahen nga dhuna dhe të ulin tensionet !",
+      "title": "Iran dọa dùng  cha của các loại tên lửa  để tấn công cơ sở năng lượng của đối phương",
       "tone": null,
-      "url": "https://veritas.com.al/protestat-ne-tirane-okb-te-gjitha-palet-te-permbahen-nga-dhuna-dhe-te-ulin-tensionet/"
+      "url": "https://cafebiz.vn/iran-doa-dung-cha-cua-cac-loai-ten-lua-de-tan-cong-co-so-nang-luong-cua-doi-phuong-176261019174845101.chn"
     },
     {
-      "actors": [],
-      "domain": "evropaelire.org",
-      "id": "evt_86dd261116e0fb3b",
-      "language": "Albanian",
+      "actors": [
+        "United States"
+      ],
+      "domain": "union-bulletin.com",
+      "id": "evt_b56a94085df81cd2",
+      "language": "English",
       "matched_regions": [
-        "nato"
+        "israel"
       ],
       "matched_themes": [],
-      "region": "Global",
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "A look at key parties in Israel Oct . 27 election seen as a referendum on Netanyahu | World",
+      "tone": null,
+      "url": "https://www.union-bulletin.com/news/world/a-look-at-key-parties-in-israel-s-oct-27-election-seen-as-a-referendum/article_b1738a9e-1595-5af3-a4f5-b6aeabebd454.html"
+    },
+    {
+      "actors": [
+        "Qatar"
+      ],
+      "domain": "thepeninsulaqatar.com",
+      "id": "evt_616e55e8861883ff",
+      "language": "English",
+      "matched_regions": [
+        "lebanon"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Qatar",
       "tier": "monitor",
-      "title": "Senatorët amerikanë kërkojnë hetim për ndërprerjet e Starshield , ndërsa Zelensky merr pjesë në samitin e BE - së",
+      "title": "Lebanese President , Arab League Secretary - General discuss developments in Lebanon and region",
       "tone": null,
-      "url": "https://www.evropaelire.org/a/senatoret-amerikane-hetim-starshield-ukraina-zelensky-be/33877850.html"
+      "url": "http://thepeninsulaqatar.com/article/19/10/2026/lebanese-president-arab-league-secretary-general-discuss-developments-in-lebanon-and-region"
     },
     {
       "actors": [
-        "Bosnia-Herzegovina"
+        "Mali"
       ],
-      "domain": "klix.ba",
-      "id": "evt_f75915285782a6cd",
-      "language": "Croatian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Bosnia-Herzegovina",
-      "tier": "monitor",
-      "title": "Američki senator želi postati rekorder : 93 - godišnjak ne planira u penziju , u Senatu bi mogao biti do 101 . godine",
-      "tone": null,
-      "url": "https://www.klix.ba/vijesti/svijet/americki-senator-zeli-postati-rekorder-93-godisnjak-ne-planira-u-penziju-u-senatu-bi-mogao-biti-do-101-godine/261016155"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "agerpres.ro",
-      "id": "evt_40734c640a0c5975",
-      "language": "Romanian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "NATO este mult superioară Rusiei din punct de vedere militar , susține comandantul suprem al Alianței",
-      "tone": null,
-      "url": "https://agerpres.ro/politic-extern/2026/10/16/nato-este-mult-superioara-rusiei-din-punct-de-vedere-militar-sustine-comandantul-suprem-al-aliantei--1603759"
-    },
-    {
-      "actors": [
-        "Slovak Republic"
-      ],
-      "domain": "spravy.pozri.sk",
-      "id": "evt_6ecfb25b79c8915d",
-      "language": "Slovak",
+      "domain": "maliactu.net",
+      "id": "evt_19353b5a0e841269",
+      "language": "French",
       "matched_regions": [
         "mali"
       ],
@@ -745,12 +1061,37 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261016T110000Z",
-      "source_country": "Slovak Republic",
+      "seen_date": "20261019T123000Z",
+      "source_country": "Mali",
       "tier": "monitor",
-      "title": "Vyslanie jasného signálu opozícii nevyšlo . Prečo tu stojíme traja , keď sme mali byť piati , kričal Hlina na tlačovke",
+      "title": "Kati : une journée de recueillement pour honorer les militaires et civils disparus – Mali Actu",
       "tone": null,
-      "url": "https://spravy.pozri.sk/clanok/vyslanie-jasneho-signalu-opozicii-nevyslo-preco-tu-stojime-traja-ked-sme-mali-byt-piati-krical-hlina-na-tlacovke/1614910"
+      "url": "https://maliactu.net/kati-une-journee-de-recueillement-pour-honorer-les-militaires-et-civils-disparus/"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "natemat.pl",
+      "id": "evt_11572fcb63ef00bf",
+      "language": "Polish",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261019T123000Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Dlatego francuska policja przegrywa na ulicach . Laurent Nuñez i anatomia bezsilności",
+      "tone": null,
+      "url": "https://natemat.pl/672202,dlatego-francuska-policja-przegrywa-na-ulicach-laurent-nunez-i-anatomia-bezsilnosci"
     }
   ],
   "filters": {
@@ -764,13 +1105,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-16T11:30:04Z",
+  "generated_at": "2026-10-19T13:11:02Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 3,
+    "high": 6,
     "medium": 9,
-    "monitor": 17
+    "monitor": 27
   },
-  "total_events": 29
+  "total_events": 42
 }
