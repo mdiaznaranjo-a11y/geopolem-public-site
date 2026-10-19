@@ -647,78 +647,80 @@ export const DOCTRINA = {
    IMPORTANTE: correlación temporal no implica causalidad.
    ======================================================================== */
 export const SENTINEL_BRIEF = {
-  "id": "sentinel_weekly_brief_2026-10-05_2026-10-11",
+  "id": "sentinel_weekly_brief_2026-10-12_2026-10-18",
   "eyebrow": "SENTINEL",
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "main_status": "un acople operacional confirmado y dos señales en observación; no se fuerza causalidad ambiental donde la evidencia no la sostiene",
-  "generated_at": "2026-10-12T08:07:00+02:00",
-  "published_at": "2026-10-12T08:07:00+02:00",
-  "window": "5-11 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
-  "window_label": "5-11 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
+  "main_status": "un acople confirmado y dos señales en observación; no se fuerza causalidad donde la evidencia no la sostiene",
+  "generated_at": "2026-10-19T08:12:00+02:00",
+  "published_at": "2026-10-19T08:12:00+02:00",
+  "window": "12-18 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
+  "window_label": "12-18 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
   "week_window": {
     "local": {
-      "start": "2026-10-05T00:00:00+02:00",
-      "end": "2026-10-11T23:59:59+02:00",
+      "start": "2026-10-12T00:00:00+02:00",
+      "end": "2026-10-18T23:59:59+02:00",
       "timezone": "Europe/Luxembourg"
     },
     "utc": {
-      "start": "2026-10-04T22:00:00Z",
-      "end": "2026-10-11T21:59:59Z"
+      "start": "2026-10-11T22:00:00Z",
+      "end": "2026-10-18T21:59:59Z"
     }
   },
   "summary": [
-    "El feed público SENTINEL/GDELT consultado para esta ejecución no devolvió eventos de conflicto filtrables en la ventana semanal; se activó el contraste alternativo con fuentes institucionales y abiertas verificables.",
-    "NASA EONET registró 15 eventos abiertos y 163 cerrados recientes; dentro de la ventana se detectaron 62 eventos ambientales, y USGS registró 12 sismos M5,5+ en el rango UTC consultado.",
-    "Gaza alcanza el umbral de acople operacional confirmado: lluvia invernal, refugio, WASH, restricciones de acceso y capacidad humanitaria convergen sobre la misma población desplazada.",
-    "Panamá y Filipinas quedan como señales de vigilancia: Panamá por sismo mayor sobre una ruta crítica global; Filipinas por fricción marítima en paralelo a sismo local y presión meteorológica regional.",
-    "La lectura GEOPÓLEM separa hecho, evaluación e hipótesis: se publica un acople confirmado y dos señales operacionales sin presentar coincidencia temporal como causalidad."
+    "La semana deja un acople confirmado: Sudán, donde guerra, sequía, lluvia deficitaria, presión alimentaria y acceso humanitario convergen de forma explícita en las fuentes institucionales.",
+    "NASA EONET/GDACS añadió señales físicas dentro de la ventana, incluidos incendios en Sudán, el supertifón Champi en el Pacífico occidental y la inundación menor de Libia; USGS registró nueve sismos M5,5+ en el rango UTC.",
+    "Guam/Marianas queda como vigilancia de alto valor estratégico: no es un frente de guerra, pero sí una bisagra logística de la disuasión estadounidense frente a China bajo presión de tifón rojo.",
+    "Pakistán/Baluchistán queda en observación: el sismo de Khuzdar no causó la escalada fronteriza, pero coincide con una semana de presión de seguridad y capacidad estatal en el eje afgano-paquistaní.",
+    "GEOPÓLEM publica un caso confirmado y dos señales; Ucrania/Rusia, Libia y otros eventos quedan fuera por falta de acople ambiental directo suficiente en la semana."
   ],
-  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y fuentes abiertas institucionales o reconocidas. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, energía, seguridad alimentaria, capacidad estatal y presión humanitaria. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
-  "caveat": "No se verificaron tres acoples conflicto-ambiente confirmados. Se publica un acople operacional confirmado y dos señales de vigilancia sin inferencia causal forzada.",
+  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y fuentes institucionales o abiertas verificables. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, energía, seguridad alimentaria, migración, capacidad estatal y presión humanitaria. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
+  "caveat": "No se verificaron tres acoples conflicto-ambiente confirmados. Se publica un acople confirmado y dos señales de vigilancia, separando hecho, evaluación e hipótesis.",
   "source_urls": {
     "sentinel_feed": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
     "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
     "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
-    "usgs_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-04T22:00:00Z&endtime=2026-10-11T21:59:59Z&minmagnitude=5.5&orderby=time",
-    "iom_gaza_winter": "https://media.un.org/unifeed/en/asset/d364/d3646444",
-    "ocha_gaza_2oct": "https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026",
-    "usgs_panama": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18k",
-    "jpost_panama_reuters": "https://www.jpost.com/international/article-911185",
-    "gma_philippines_medical_evacuation": "https://www.gmanetwork.com/news/topstories/nation/1005334/pcg-china-coast-guard-delays-ph-navy-personnel-s-medical-evacuation-from-ayungin-shoal/story/?amp",
-    "usgs_philippines_burias": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0x4",
-    "nasa_eonet_choiwan": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24962",
-    "jtwc_choiwan": "https://www.metoc.navy.mil/jtwc/products/wp2626.tcw",
-    "pagasa_weather": "https://www.pagasa.dost.gov.ph/weather",
-    "taiwan_mnd_oct10": "https://air.mnd.gov.tw/en/News/News_Detail.aspx?CID=214&ID=59300"
+    "usgs_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-11T22:00:00Z&endtime=2026-10-18T21:59:59Z&minmagnitude=5.5&orderby=time",
+    "usgs_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-11T22:00:00Z&endtime=2026-10-18T21:59:59Z&minmagnitude=4.5&orderby=time",
+    "un_sudan_drought_war": "https://news.un.org/en/story/2026/10/1168577",
+    "unifeed_sudan_humanitarian": "https://media.un.org/unifeed/en/asset/d364/d3640527",
+    "gdacs_sudan_wildfire_1032875": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875",
+    "gdacs_sudan_wildfire_1032872": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032872",
+    "gdacs_champi": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001338",
+    "guam_jic_champi": "https://reliefweb.int/report/guam/jic-release-no-1-jic-partially-activated-guam-cor-2-typhoon-watch-effect-tropical-storm-champi-10162026",
+    "usgs_pakistan_khuzdar": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1",
+    "usgs_pakistan_khuzdar_pager": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1/pager",
+    "ap_pakistan_afghanistan_border": "https://apnews.com/article/pakistan-afghanistan-border-clashes-militant-infiltration-af35955a49d8ec9948b4a946bf07d37c",
+    "gdacs_libya_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104231",
+    "reuters_ukraine_energy_76": "https://www.reuters.com/world/europe/zelenskiy-says-russia-attacked-ukrainian-energy-sector-76-times-past-week-2026-10-18/"
   },
   "data_scan_counts": {
-    "sentinel_events_reviewed": 0,
-    "nasa_open_events": 15,
-    "nasa_closed_events": 163,
-    "nasa_events_in_window": 62,
-    "usgs_m55_plus": 12,
-    "usgs_m45_plus": 162,
-    "total_candidates": 10,
+    "sentinel_events_reviewed": 29,
+    "nasa_open_events": 13,
+    "nasa_closed_events": 178,
+    "nasa_events_in_window": 37,
+    "usgs_m55_plus": 9,
+    "usgs_m45_plus": 108,
+    "total_candidates": 9,
     "selected_confirmed_couplings": 1,
     "selected_watch_signals": 2
   },
   "stats": [
     {
       "label": "SentinelEvents",
-      "value": 0
+      "value": 29
     },
     {
       "label": "NasaOpenEvents",
-      "value": 15
+      "value": 13
     },
     {
       "label": "NasaClosedEvents",
-      "value": 163
+      "value": 178
     },
     {
       "label": "UsgsM55Plus",
-      "value": 12
+      "value": 9
     },
     {
       "label": "ConfirmedCouplings",
@@ -731,50 +733,67 @@ export const SENTINEL_BRIEF = {
   ],
   "selected_inflection_points": [
     {
-      "id": "gaza-winter-shelter-wash-confirmed",
+      "id": "sudan-darfur-kordofan-drought-war-confirmed",
       "rank": 1,
       "status": "confirmado",
       "status_en": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Gaza / refugios, WASH y corredores de suministro",
-      "headline": "Gaza: el invierno entra sobre una red humanitaria sin margen",
-      "headlineEn": "Gaza: winter reaches a humanitarian network with no margin",
-      "conflict_event": "La operación humanitaria sigue condicionada por restricciones de acceso, financiación insuficiente y dependencia de entradas críticas para refugio, agua, saneamiento, combustible y repuestos.",
-      "conflictEvent": "La operación humanitaria sigue condicionada por restricciones de acceso, financiación insuficiente y dependencia de entradas críticas para refugio, agua, saneamiento, combustible y repuestos.",
-      "environmental_event": "IOM informó el 9 de octubre que casi dos millones de personas requieren asistencia de refugio cuando comienzan las lluvias de invierno, mientras la cadena de suministro cubre apenas 17% de las necesidades invernales identificadas.",
-      "environmentalEvent": "IOM informó el 9 de octubre que casi dos millones de personas requieren asistencia de refugio cuando comienzan las lluvias de invierno, mientras la cadena de suministro cubre apenas 17% de las necesidades invernales identificadas.",
+      "location": "Sudán / Darfur, Kordofán y eje Nilo Azul",
+      "headline": "Sudán: la sequía entra en el corazón de la guerra alimentaria",
+      "headlineEn": "Sudan: drought enters the core of the food-security war",
+      "conflict_event": "Guerra civil, desplazamiento, ataques a mercados y restricciones de acceso humanitario en Darfur, Kordofán y Nilo Azul.",
+      "conflictEvent": "Guerra civil, desplazamiento, ataques a mercados y restricciones de acceso humanitario en Darfur, Kordofán y Nilo Azul.",
+      "conflictEventEn": "Civil war, displacement, attacks on markets and restricted humanitarian access in Darfur, Kordofan and Blue Nile.",
+      "environmental_event": "Sequía severa asociada a El Niño, lluvias deficitarias y focos de incendio NASA/EONET-GDACS en Sudán durante la ventana semanal.",
+      "environmentalEvent": "Sequía severa asociada a El Niño, lluvias deficitarias y focos de incendio NASA/EONET-GDACS en Sudán durante la ventana semanal.",
+      "environmentalEventEn": "Severe El Niño-related drought, rainfall deficits and NASA/EONET-GDACS wildfire detections in Sudan during the weekly window.",
       "coupling_type": [
-        "refugio",
-        "WASH",
-        "lluvia invernal",
-        "restricciones de acceso",
-        "capacidad humanitaria"
+        "seguridad alimentaria",
+        "desplazamiento",
+        "acceso humanitario",
+        "capacidad estatal",
+        "clima-conflicto"
       ],
       "couplingType": [
-        "refugio",
-        "WASH",
-        "lluvia invernal",
-        "restricciones de acceso",
-        "capacidad humanitaria"
+        "seguridad alimentaria",
+        "desplazamiento",
+        "acceso humanitario",
+        "capacidad estatal",
+        "clima-conflicto"
       ],
-      "why_it_matters": "Importa porque la lluvia y el frío no son un episodio meteorológico aislado: caen sobre tiendas precarias, sitios de desplazamiento, saneamiento frágil y cadenas de suministro bloqueadas o insuficientes.",
-      "fact": "Hecho: IOM reportó el 9 de octubre que casi toda la población de Gaza, casi dos millones de personas, seguía necesitando asistencia de refugio y que la cadena humanitaria cubría solo 17% de las necesidades invernales identificadas.",
-      "coupling": "Dato de acople: OCHA ya había identificado más de 400 sitios evaluados, 217 con riesgo medio o alto de inundación y unas 235.000 personas expuestas en esos sitios, además de edificios inseguros habitados.",
-      "couplingEn": "Coupling data: UN reporting connects winter rain and flooding risk with shelter, WASH, access restrictions and limited supply pipelines.",
-      "implication": "Implicación estratégica: el frente ambiental se convierte en multiplicador de presión civil cuando la logística humanitaria y la infraestructura urbana están degradadas por el conflicto.",
-      "strategic_implication": "Prioridad alta: el acople afecta supervivencia, salud pública, legitimidad diplomática y capacidad de respuesta de agencias humanitarias.",
-      "tripolar": "Lectura tripolar: EE. UU. queda condicionado por su relación con Israel y por la presión humanitaria; la UE opera como actor normativo y financiador; Rusia y China usan Gaza como argumento diplomático contra el orden occidental; el Sur Global lo lee como prueba de coherencia del sistema internacional.",
+      "couplingTypeEn": [
+        "food security",
+        "displacement",
+        "humanitarian access",
+        "state capacity",
+        "climate-conflict"
+      ],
+      "why_it_matters": "El punto importa porque la presión ambiental afecta directamente cosechas, agua y precios mientras la guerra restringe movilidad, mercados y entrega de ayuda.",
+      "fact": "Hecho: la alerta IPC/ONU del 12 de octubre situó a Darfur y Kordofán bajo riesgo creciente de hambruna, con más de 300.000 personas desplazadas en Gran Kordofán desde octubre de 2025 y más de 170 incidentes contra mercados durante 2026.",
+      "coupling": "Dato de acople: la misma alerta señaló sequía en más de la mitad de Sudán y 64% de cropland con pobre crecimiento en Darfur Norte; además, NASA EONET/GDACS registró incendios en Sudán el 12 y 13 de octubre dentro de la ventana semanal. El acople se publica como confirmado porque las fuentes conectan explícitamente guerra, sequía, cosecha, precios y acceso humanitario.",
+      "couplingEn": "Coupling datum: the same alert described drought over more than half of Sudan and 64% of cropland showing poor growth in North Darfur; NASA EONET/GDACS also logged wildfire events in Sudan on 12-13 October inside the weekly window. This is treated as confirmed because the sources explicitly connect war, drought, harvests, prices and humanitarian access.",
+      "implication": "Implicación estratégica: Sudán no es solo crisis humanitaria; es una prueba de continuidad operacional para corredores de ayuda, redes alimentarias regionales y capacidad estatal en un espacio donde actores externos compiten por influencia sin asumir plenamente el coste de estabilización.",
+      "strategic_implication": "La guerra y la sequía reducen margen de maniobra humanitario y elevan el valor geopolítico de acceso, financiación y control de rutas internas.",
+      "tripolar": "Lectura tripolar: EE. UU. y la UE quedan presionados por financiación y acceso humanitario; China y Rusia observan un espacio africano donde la influencia puede comprarse con seguridad, minería o diplomacia; el Sur Global lo lee como crisis de soberanía alimentaria y legitimidad internacional.",
       "confidence": "Alta",
       "sources": [
         {
-          "label": "IOM/UNifeed",
-          "url": "https://media.un.org/unifeed/en/asset/d364/d3646444"
+          "label": "UN News / IPC",
+          "url": "https://news.un.org/en/story/2026/10/1168577"
         },
         {
-          "label": "OCHA oPt",
-          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026"
+          "label": "UNifeed / OCHA",
+          "url": "https://media.un.org/unifeed/en/asset/d364/d3640527"
+        },
+        {
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed"
+        },
+        {
+          "label": "GDACS WF 1032875",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875"
         },
         {
           "label": "SENTINEL feed",
@@ -783,160 +802,191 @@ export const SENTINEL_BRIEF = {
       ]
     },
     {
-      "id": "panama-canal-earthquake-route-watch",
+      "id": "guam-marianas-champi-second-island-chain-watch",
       "rank": 2,
-      "status": "en observación",
+      "status": "observación",
       "status_en": "watch",
       "priority": "Media-alta",
       "priorityEn": "Medium-high",
-      "accent": "#F59E0B",
-      "location": "Panamá / Canal, istmo logístico y red eléctrica",
-      "headline": "Panamá: sismo M7,7 sobre una ruta crítica global",
-      "headlineEn": "Panama: M7.7 earthquake on a global critical route",
-      "conflict_event": "No se trata de un conflicto armado; el nodo geopolítico es la ruta crítica del Canal de Panamá, infraestructura de comercio marítimo global sometida a inspección tras el sismo.",
-      "conflictEvent": "No se trata de un conflicto armado; el nodo geopolítico es la ruta crítica del Canal de Panamá, infraestructura de comercio marítimo global sometida a inspección tras el sismo.",
-      "environmental_event": "USGS registró el 9 de octubre un terremoto M7,7 a 12 km al oeste-suroeste de Pitaloza Arriba, Panamá, con profundidad de 12,6 km y posible secuencia de réplicas fuertes.",
-      "environmentalEvent": "USGS registró el 9 de octubre un terremoto M7,7 a 12 km al oeste-suroeste de Pitaloza Arriba, Panamá, con profundidad de 12,6 km y posible secuencia de réplicas fuertes.",
+      "accent": "#22D3EE",
+      "location": "Guam / Marianas y Segunda Cadena de Islas",
+      "headline": "Guam: un supertifón sobre la bisagra logística del Indo-Pacífico",
+      "headlineEn": "Guam: a super typhoon over the Indo-Pacific logistics hinge",
+      "conflict_event": "No hay combate directo; el nodo estratégico es la continuidad de instalaciones civiles y militares en Guam dentro de la arquitectura de disuasión EE. UU.-China.",
+      "conflictEvent": "No hay combate directo; el nodo estratégico es la continuidad de instalaciones civiles y militares en Guam dentro de la arquitectura de disuasión EE. UU.-China.",
+      "conflictEventEn": "No direct combat is reported; the strategic node is continuity of civilian and military facilities in Guam within the U.S.-China deterrence architecture.",
+      "environmental_event": "GDACS clasificó CHAMPI-26 como ciclón tropical rojo en Guam, Islas Marianas del Norte y Japón, con vientos máximos estimados de 269 km/h y 230.000 personas expuestas a categoría 1 o superior.",
+      "environmentalEvent": "GDACS clasificó CHAMPI-26 como ciclón tropical rojo en Guam, Islas Marianas del Norte y Japón, con vientos máximos estimados de 269 km/h y 230.000 personas expuestas a categoría 1 o superior.",
+      "environmentalEventEn": "GDACS classified CHAMPI-26 as a red tropical cyclone for Guam, the Northern Mariana Islands and Japan, with estimated maximum winds of 269 km/h and 230,000 people exposed to Category 1 or higher winds.",
       "coupling_type": [
-        "sismo",
-        "ruta crítica",
-        "canal interoceánico",
-        "continuidad logística",
-        "energía"
+        "continuidad operacional",
+        "base logística",
+        "disuasión",
+        "infraestructura crítica",
+        "clima extremo"
       ],
       "couplingType": [
-        "sismo",
-        "ruta crítica",
-        "canal interoceánico",
-        "continuidad logística",
-        "energía"
+        "continuidad operacional",
+        "base logística",
+        "disuasión",
+        "infraestructura crítica",
+        "clima extremo"
       ],
-      "why_it_matters": "Importa porque el Canal de Panamá es un chokepoint comercial global; aunque el tránsito se reportó sin interrupción, la inspección de instalaciones y las fallas eléctricas muestran exposición operacional.",
-      "fact": "Hecho: USGS registró el evento M7,7 el 9 de octubre y estimó sacudidas potencialmente severas; reportes basados en Reuters indicaron que el Canal siguió operando sin interrupción mientras equipos técnicos inspeccionaban instalaciones.",
-      "coupling": "Dato de acople: el acople no se eleva a confirmado porque la Autoridad del Canal reportó tránsito normal; queda como señal de vigilancia por exposición de una ruta crítica a sismos, réplicas, licuefacción y disrupciones eléctricas.",
-      "couplingEn": "Coupling data: canal transits reportedly continued, so this is a route-critical watch signal rather than a confirmed disruption.",
-      "implication": "Implicación estratégica: un sismo mayor en Panamá recuerda que las rutas críticas no solo dependen de guerras o bloqueos; también dependen de geología, energía y protocolos de continuidad.",
-      "strategic_implication": "Prioridad media-alta: sin interrupción confirmada del canal, pero con impacto potencial sobre comercio, seguros, puertos, energía y resiliencia logística.",
-      "tripolar": "Lectura tripolar: EE. UU. y China dependen de la fluidez del comercio transpacífico y atlántico; la UE observa continuidad de cadenas marítimas; Rusia y otros exportadores energéticos leen cualquier estrés de chokepoint como variable de precios y seguros; América Latina aparece como infraestructura estratégica, no periferia.",
+      "couplingTypeEn": [
+        "operational continuity",
+        "logistics base",
+        "deterrence",
+        "critical infrastructure",
+        "extreme weather"
+      ],
+      "why_it_matters": "Importa porque Guam no es periferia meteorológica: es un punto de apoyo de la Segunda Cadena de Islas, comunicaciones, proyección aérea y logística aliada.",
+      "fact": "Hecho: el JIC de Guam activó la respuesta pública ante Champi, colocó la isla en COR 2 y reportó que Joint Region Marianas y sus instalaciones declararon TCCOR 2 el 16 de octubre.",
+      "coupling": "Dato de acople: la fuente oficial de Guam anticipó vientos de tormenta tropical desde la noche del sábado, posible viento de tifón el domingo, lluvia de 6 a 12 pulgadas, oleaje peligroso y marejada/runa de olas; no hay evidencia pública de interrupción militar crítica, por lo que se etiqueta como observación.",
+      "couplingEn": "Coupling datum: the Guam official release forecast tropical-storm-force winds from Saturday night, possible typhoon-force winds Sunday, 6-12 inches of rain, dangerous surf and storm-surge/wave run-up; no public evidence confirms critical military disruption, so this remains a watch signal.",
+      "implication": "Implicación estratégica: un evento de alta intensidad en Guam reduce márgenes de reacción y recuerda que la disuasión en el Pacífico occidental depende tanto de bases y combustible como de meteorología, resiliencia eléctrica, puertos y comunicaciones.",
+      "strategic_implication": "El clima extremo puede afectar preparación y continuidad de una plataforma clave de EE. UU. en el Indo-Pacífico sin necesidad de un disparo.",
+      "tripolar": "Lectura tripolar: EE. UU. necesita demostrar resiliencia de su retaguardia avanzada; China observa vulnerabilidades de la arquitectura de bases; Japón y aliados calibran continuidad logística; el Sur Global ve cómo el clima ya condiciona la seguridad dura.",
       "confidence": "Media",
       "sources": [
         {
-          "label": "USGS",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18k"
+          "label": "GDACS CHAMPI",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001338"
         },
         {
-          "label": "Reuters/Jerusalem Post",
-          "url": "https://www.jpost.com/international/article-911185"
+          "label": "Guam JIC",
+          "url": "https://reliefweb.int/report/guam/jic-release-no-1-jic-partially-activated-guam-cor-2-typhoon-watch-effect-tropical-storm-champi-10162026"
+        },
+        {
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
         }
       ]
     },
     {
-      "id": "philippines-scs-medevac-quake-weather-watch",
+      "id": "pakistan-balochistan-khuzdar-quake-border-war-watch",
       "rank": 3,
-      "status": "en observación",
+      "status": "observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
-      "accent": "#60A5FA",
-      "location": "Filipinas / Ayungin Shoal, Visayas-Mindanao y mar de China Meridional",
-      "headline": "Filipinas: presión gris, evacuación médica y entorno físico inestable",
-      "headlineEn": "Philippines: gray-zone pressure, medical evacuation and unstable physical environment",
-      "conflict_event": "La Guardia Costera filipina informó que la Guardia Costera china demoró casi 10 horas una evacuación médica desde Ayungin Shoal el 8 de octubre, en una zona disputada del mar de China Meridional.",
-      "conflictEvent": "La Guardia Costera filipina informó que la Guardia Costera china demoró casi 10 horas una evacuación médica desde Ayungin Shoal el 8 de octubre, en una zona disputada del mar de China Meridional.",
-      "environmental_event": "USGS registró el 8 de octubre un sismo M5,5 a 17 km al suroeste de Burias, Filipinas; NASA mantuvo señales de tormenta severa en el Pacífico occidental durante la semana y PAGASA alertó de lluvias con posibles inundaciones o deslizamientos por sistemas regionales.",
-      "environmentalEvent": "USGS registró el 8 de octubre un sismo M5,5 a 17 km al suroeste de Burias, Filipinas; NASA mantuvo señales de tormenta severa en el Pacífico occidental durante la semana y PAGASA alertó de lluvias con posibles inundaciones o deslizamientos por sistemas regionales.",
+      "accent": "#F59E0B",
+      "location": "Pakistán / Baluchistán, Khuzdar y frontera afgano-paquistaní",
+      "headline": "Pakistán: sismo local, presión insurgente y frontera en escalada",
+      "headlineEn": "Pakistan: local quake, insurgent pressure and an escalating border",
+      "conflict_event": "Choques entre fuerzas paquistaníes y talibanes afganos en Kurram, más violencia militante acumulada en el noroeste y Baluchistán.",
+      "conflictEvent": "Choques entre fuerzas paquistaníes y talibanes afganos en Kurram, más violencia militante acumulada en el noroeste y Baluchistán.",
+      "conflictEventEn": "Clashes between Pakistani forces and Afghan Taliban personnel in Kurram, alongside accumulated militant violence in the northwest and Balochistan.",
+      "environmental_event": "USGS registró un sismo M5,7 a 48 km WNW de Khuzdar, Pakistán, el 17 de octubre a 05:06 UTC, profundidad 10 km, con alerta PAGER amarilla.",
+      "environmentalEvent": "USGS registró un sismo M5,7 a 48 km WNW de Khuzdar, Pakistán, el 17 de octubre a 05:06 UTC, profundidad 10 km, con alerta PAGER amarilla.",
+      "environmentalEventEn": "USGS recorded a M5.7 earthquake 48 km WNW of Khuzdar, Pakistan, on 17 October at 05:06 UTC, 10 km depth, with a yellow PAGER alert.",
       "coupling_type": [
-        "zona gris marítima",
         "sismo",
-        "tormentas regionales",
-        "evacuación médica",
-        "continuidad operacional"
+        "seguridad fronteriza",
+        "capacidad estatal",
+        "respuesta regional",
+        "infraestructura vulnerable"
       ],
       "couplingType": [
-        "zona gris marítima",
         "sismo",
-        "tormentas regionales",
-        "evacuación médica",
-        "continuidad operacional"
+        "seguridad fronteriza",
+        "capacidad estatal",
+        "respuesta regional",
+        "infraestructura vulnerable"
       ],
-      "why_it_matters": "Importa porque una evacuación médica y operaciones de guardia costera en aguas disputadas tienen menos margen cuando el entorno físico regional acumula sismos, tormentas, lluvias y riesgo de deslizamientos.",
-      "fact": "Hecho: GMA/PCG reportó que la evacuación médica desde Ayungin Shoal se prolongó por obstrucciones chinas; USGS registró un M5,5 en Filipinas el mismo día y NASA/JTWC seguían tormentas severas en el Pacífico occidental.",
-      "coupling": "Dato de acople: no hay evidencia de que el sismo o la tormenta causaran la demora de la evacuación; el punto queda en observación por superposición de fricción marítima y entorno físico degradante en un teatro de alta sensibilidad.",
-      "couplingEn": "Coupling data: there is no evidence that the quake or storms caused the delay; the watch signal is operational overlap in a sensitive theater.",
-      "implication": "Implicación estratégica: en el mar de China Meridional, clima, geofísica y presencia coercitiva pueden reducir tiempos de respuesta y aumentar el riesgo de incidentes humanitarios o militares.",
-      "strategic_implication": "Prioridad media: señal útil para vigilancia de rutas y crisis de guardia costera, pero no acople confirmado.",
-      "tripolar": "Lectura tripolar: EE. UU. aparece como respaldo estratégico de Filipinas; China mantiene presión gris en su periferia marítima; la UE observa libertad de navegación y comercio; el Sur Global y ASEAN buscan que seguridad marítima, rescate y clima no deriven en escalada.",
+      "couplingTypeEn": [
+        "earthquake",
+        "border security",
+        "state capacity",
+        "regional response",
+        "vulnerable infrastructure"
+      ],
+      "why_it_matters": "Importa porque el Estado paquistaní gestiona simultáneamente presión sísmica localizada, violencia militante y fricción fronteriza con Afganistán.",
+      "fact": "Hecho: AP reportó el 17 de octubre intercambios de fuego en la frontera noroeste, con tensiones elevadas por choques recurrentes y ataques aéreos; la fuente citó más de 1.100 muertes y heridos civiles documentados por UNAMA por violencia transfronteriza en Afganistán este año.",
+      "coupling": "Dato de acople: el sismo de Khuzdar ocurrió en Baluchistán, no en el punto exacto de los choques de Kurram; por eso no se presenta como causalidad. Queda como señal de vigilancia porque el evento físico añade demanda de respuesta en una provincia también mencionada por violencia militante y vulnerabilidad estructural.",
+      "couplingEn": "Coupling datum: the Khuzdar quake occurred in Balochistan, not at the precise Kurram clash point; it is therefore not treated as causality. It remains a watch signal because the physical event adds response demand in a province also referenced for militant violence and structural vulnerability.",
+      "implication": "Implicación estratégica: Pakistán se vuelve tablero de estrés compuesto: frontera afgana, seguridad interna, corredor hacia el Índico y resiliencia local. La señal no es espectacular, pero sí operacional.",
+      "strategic_implication": "El acople débil sugiere observar si emergen daños, cortes de carretera o desvío de recursos de seguridad y respuesta civil.",
+      "tripolar": "Lectura tripolar: China mira estabilidad de corredores y proyectos en Pakistán; EE. UU. observa terrorismo y gobernabilidad regional; Rusia e Irán leen el flanco afgano-paquistaní como zona de fricción; el Sur Global ve otra prueba de cómo seguridad y desastres compiten por la misma capacidad estatal.",
       "confidence": "Media-baja",
       "sources": [
         {
-          "label": "GMA/PCG",
-          "url": "https://www.gmanetwork.com/news/topstories/nation/1005334/pcg-china-coast-guard-delays-ph-navy-personnel-s-medical-evacuation-from-ayungin-shoal/story/?amp"
+          "label": "USGS Khuzdar",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1"
         },
         {
-          "label": "USGS",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0x4"
+          "label": "USGS PAGER",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1/pager"
         },
         {
-          "label": "NASA EONET",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24962"
-        },
-        {
-          "label": "JTWC",
-          "url": "https://www.metoc.navy.mil/jtwc/products/wp2626.tcw"
-        },
-        {
-          "label": "PAGASA",
-          "url": "https://www.pagasa.dost.gov.ph/weather"
+          "label": "AP frontera",
+          "url": "https://apnews.com/article/pakistan-afghanistan-border-clashes-militant-infiltration-af35955a49d8ec9948b4a946bf07d37c"
         }
       ]
     }
   ],
   "points": [
     {
-      "id": "gaza-winter-shelter-wash-confirmed",
+      "id": "sudan-darfur-kordofan-drought-war-confirmed",
       "rank": 1,
       "status": "confirmado",
       "status_en": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Gaza / refugios, WASH y corredores de suministro",
-      "headline": "Gaza: el invierno entra sobre una red humanitaria sin margen",
-      "headlineEn": "Gaza: winter reaches a humanitarian network with no margin",
-      "conflict_event": "La operación humanitaria sigue condicionada por restricciones de acceso, financiación insuficiente y dependencia de entradas críticas para refugio, agua, saneamiento, combustible y repuestos.",
-      "conflictEvent": "La operación humanitaria sigue condicionada por restricciones de acceso, financiación insuficiente y dependencia de entradas críticas para refugio, agua, saneamiento, combustible y repuestos.",
-      "environmental_event": "IOM informó el 9 de octubre que casi dos millones de personas requieren asistencia de refugio cuando comienzan las lluvias de invierno, mientras la cadena de suministro cubre apenas 17% de las necesidades invernales identificadas.",
-      "environmentalEvent": "IOM informó el 9 de octubre que casi dos millones de personas requieren asistencia de refugio cuando comienzan las lluvias de invierno, mientras la cadena de suministro cubre apenas 17% de las necesidades invernales identificadas.",
+      "location": "Sudán / Darfur, Kordofán y eje Nilo Azul",
+      "headline": "Sudán: la sequía entra en el corazón de la guerra alimentaria",
+      "headlineEn": "Sudan: drought enters the core of the food-security war",
+      "conflict_event": "Guerra civil, desplazamiento, ataques a mercados y restricciones de acceso humanitario en Darfur, Kordofán y Nilo Azul.",
+      "conflictEvent": "Guerra civil, desplazamiento, ataques a mercados y restricciones de acceso humanitario en Darfur, Kordofán y Nilo Azul.",
+      "conflictEventEn": "Civil war, displacement, attacks on markets and restricted humanitarian access in Darfur, Kordofan and Blue Nile.",
+      "environmental_event": "Sequía severa asociada a El Niño, lluvias deficitarias y focos de incendio NASA/EONET-GDACS en Sudán durante la ventana semanal.",
+      "environmentalEvent": "Sequía severa asociada a El Niño, lluvias deficitarias y focos de incendio NASA/EONET-GDACS en Sudán durante la ventana semanal.",
+      "environmentalEventEn": "Severe El Niño-related drought, rainfall deficits and NASA/EONET-GDACS wildfire detections in Sudan during the weekly window.",
       "coupling_type": [
-        "refugio",
-        "WASH",
-        "lluvia invernal",
-        "restricciones de acceso",
-        "capacidad humanitaria"
+        "seguridad alimentaria",
+        "desplazamiento",
+        "acceso humanitario",
+        "capacidad estatal",
+        "clima-conflicto"
       ],
       "couplingType": [
-        "refugio",
-        "WASH",
-        "lluvia invernal",
-        "restricciones de acceso",
-        "capacidad humanitaria"
+        "seguridad alimentaria",
+        "desplazamiento",
+        "acceso humanitario",
+        "capacidad estatal",
+        "clima-conflicto"
       ],
-      "why_it_matters": "Importa porque la lluvia y el frío no son un episodio meteorológico aislado: caen sobre tiendas precarias, sitios de desplazamiento, saneamiento frágil y cadenas de suministro bloqueadas o insuficientes.",
-      "fact": "Hecho: IOM reportó el 9 de octubre que casi toda la población de Gaza, casi dos millones de personas, seguía necesitando asistencia de refugio y que la cadena humanitaria cubría solo 17% de las necesidades invernales identificadas.",
-      "coupling": "Dato de acople: OCHA ya había identificado más de 400 sitios evaluados, 217 con riesgo medio o alto de inundación y unas 235.000 personas expuestas en esos sitios, además de edificios inseguros habitados.",
-      "couplingEn": "Coupling data: UN reporting connects winter rain and flooding risk with shelter, WASH, access restrictions and limited supply pipelines.",
-      "implication": "Implicación estratégica: el frente ambiental se convierte en multiplicador de presión civil cuando la logística humanitaria y la infraestructura urbana están degradadas por el conflicto.",
-      "strategic_implication": "Prioridad alta: el acople afecta supervivencia, salud pública, legitimidad diplomática y capacidad de respuesta de agencias humanitarias.",
-      "tripolar": "Lectura tripolar: EE. UU. queda condicionado por su relación con Israel y por la presión humanitaria; la UE opera como actor normativo y financiador; Rusia y China usan Gaza como argumento diplomático contra el orden occidental; el Sur Global lo lee como prueba de coherencia del sistema internacional.",
+      "couplingTypeEn": [
+        "food security",
+        "displacement",
+        "humanitarian access",
+        "state capacity",
+        "climate-conflict"
+      ],
+      "why_it_matters": "El punto importa porque la presión ambiental afecta directamente cosechas, agua y precios mientras la guerra restringe movilidad, mercados y entrega de ayuda.",
+      "fact": "Hecho: la alerta IPC/ONU del 12 de octubre situó a Darfur y Kordofán bajo riesgo creciente de hambruna, con más de 300.000 personas desplazadas en Gran Kordofán desde octubre de 2025 y más de 170 incidentes contra mercados durante 2026.",
+      "coupling": "Dato de acople: la misma alerta señaló sequía en más de la mitad de Sudán y 64% de cropland con pobre crecimiento en Darfur Norte; además, NASA EONET/GDACS registró incendios en Sudán el 12 y 13 de octubre dentro de la ventana semanal. El acople se publica como confirmado porque las fuentes conectan explícitamente guerra, sequía, cosecha, precios y acceso humanitario.",
+      "couplingEn": "Coupling datum: the same alert described drought over more than half of Sudan and 64% of cropland showing poor growth in North Darfur; NASA EONET/GDACS also logged wildfire events in Sudan on 12-13 October inside the weekly window. This is treated as confirmed because the sources explicitly connect war, drought, harvests, prices and humanitarian access.",
+      "implication": "Implicación estratégica: Sudán no es solo crisis humanitaria; es una prueba de continuidad operacional para corredores de ayuda, redes alimentarias regionales y capacidad estatal en un espacio donde actores externos compiten por influencia sin asumir plenamente el coste de estabilización.",
+      "strategic_implication": "La guerra y la sequía reducen margen de maniobra humanitario y elevan el valor geopolítico de acceso, financiación y control de rutas internas.",
+      "tripolar": "Lectura tripolar: EE. UU. y la UE quedan presionados por financiación y acceso humanitario; China y Rusia observan un espacio africano donde la influencia puede comprarse con seguridad, minería o diplomacia; el Sur Global lo lee como crisis de soberanía alimentaria y legitimidad internacional.",
       "confidence": "Alta",
       "sources": [
         {
-          "label": "IOM/UNifeed",
-          "url": "https://media.un.org/unifeed/en/asset/d364/d3646444"
+          "label": "UN News / IPC",
+          "url": "https://news.un.org/en/story/2026/10/1168577"
         },
         {
-          "label": "OCHA oPt",
-          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026"
+          "label": "UNifeed / OCHA",
+          "url": "https://media.un.org/unifeed/en/asset/d364/d3640527"
+        },
+        {
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed"
+        },
+        {
+          "label": "GDACS WF 1032875",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875"
         },
         {
           "label": "SENTINEL feed",
@@ -945,212 +995,257 @@ export const SENTINEL_BRIEF = {
       ]
     },
     {
-      "id": "panama-canal-earthquake-route-watch",
+      "id": "guam-marianas-champi-second-island-chain-watch",
       "rank": 2,
-      "status": "en observación",
+      "status": "observación",
       "status_en": "watch",
       "priority": "Media-alta",
       "priorityEn": "Medium-high",
-      "accent": "#F59E0B",
-      "location": "Panamá / Canal, istmo logístico y red eléctrica",
-      "headline": "Panamá: sismo M7,7 sobre una ruta crítica global",
-      "headlineEn": "Panama: M7.7 earthquake on a global critical route",
-      "conflict_event": "No se trata de un conflicto armado; el nodo geopolítico es la ruta crítica del Canal de Panamá, infraestructura de comercio marítimo global sometida a inspección tras el sismo.",
-      "conflictEvent": "No se trata de un conflicto armado; el nodo geopolítico es la ruta crítica del Canal de Panamá, infraestructura de comercio marítimo global sometida a inspección tras el sismo.",
-      "environmental_event": "USGS registró el 9 de octubre un terremoto M7,7 a 12 km al oeste-suroeste de Pitaloza Arriba, Panamá, con profundidad de 12,6 km y posible secuencia de réplicas fuertes.",
-      "environmentalEvent": "USGS registró el 9 de octubre un terremoto M7,7 a 12 km al oeste-suroeste de Pitaloza Arriba, Panamá, con profundidad de 12,6 km y posible secuencia de réplicas fuertes.",
+      "accent": "#22D3EE",
+      "location": "Guam / Marianas y Segunda Cadena de Islas",
+      "headline": "Guam: un supertifón sobre la bisagra logística del Indo-Pacífico",
+      "headlineEn": "Guam: a super typhoon over the Indo-Pacific logistics hinge",
+      "conflict_event": "No hay combate directo; el nodo estratégico es la continuidad de instalaciones civiles y militares en Guam dentro de la arquitectura de disuasión EE. UU.-China.",
+      "conflictEvent": "No hay combate directo; el nodo estratégico es la continuidad de instalaciones civiles y militares en Guam dentro de la arquitectura de disuasión EE. UU.-China.",
+      "conflictEventEn": "No direct combat is reported; the strategic node is continuity of civilian and military facilities in Guam within the U.S.-China deterrence architecture.",
+      "environmental_event": "GDACS clasificó CHAMPI-26 como ciclón tropical rojo en Guam, Islas Marianas del Norte y Japón, con vientos máximos estimados de 269 km/h y 230.000 personas expuestas a categoría 1 o superior.",
+      "environmentalEvent": "GDACS clasificó CHAMPI-26 como ciclón tropical rojo en Guam, Islas Marianas del Norte y Japón, con vientos máximos estimados de 269 km/h y 230.000 personas expuestas a categoría 1 o superior.",
+      "environmentalEventEn": "GDACS classified CHAMPI-26 as a red tropical cyclone for Guam, the Northern Mariana Islands and Japan, with estimated maximum winds of 269 km/h and 230,000 people exposed to Category 1 or higher winds.",
       "coupling_type": [
-        "sismo",
-        "ruta crítica",
-        "canal interoceánico",
-        "continuidad logística",
-        "energía"
+        "continuidad operacional",
+        "base logística",
+        "disuasión",
+        "infraestructura crítica",
+        "clima extremo"
       ],
       "couplingType": [
-        "sismo",
-        "ruta crítica",
-        "canal interoceánico",
-        "continuidad logística",
-        "energía"
+        "continuidad operacional",
+        "base logística",
+        "disuasión",
+        "infraestructura crítica",
+        "clima extremo"
       ],
-      "why_it_matters": "Importa porque el Canal de Panamá es un chokepoint comercial global; aunque el tránsito se reportó sin interrupción, la inspección de instalaciones y las fallas eléctricas muestran exposición operacional.",
-      "fact": "Hecho: USGS registró el evento M7,7 el 9 de octubre y estimó sacudidas potencialmente severas; reportes basados en Reuters indicaron que el Canal siguió operando sin interrupción mientras equipos técnicos inspeccionaban instalaciones.",
-      "coupling": "Dato de acople: el acople no se eleva a confirmado porque la Autoridad del Canal reportó tránsito normal; queda como señal de vigilancia por exposición de una ruta crítica a sismos, réplicas, licuefacción y disrupciones eléctricas.",
-      "couplingEn": "Coupling data: canal transits reportedly continued, so this is a route-critical watch signal rather than a confirmed disruption.",
-      "implication": "Implicación estratégica: un sismo mayor en Panamá recuerda que las rutas críticas no solo dependen de guerras o bloqueos; también dependen de geología, energía y protocolos de continuidad.",
-      "strategic_implication": "Prioridad media-alta: sin interrupción confirmada del canal, pero con impacto potencial sobre comercio, seguros, puertos, energía y resiliencia logística.",
-      "tripolar": "Lectura tripolar: EE. UU. y China dependen de la fluidez del comercio transpacífico y atlántico; la UE observa continuidad de cadenas marítimas; Rusia y otros exportadores energéticos leen cualquier estrés de chokepoint como variable de precios y seguros; América Latina aparece como infraestructura estratégica, no periferia.",
+      "couplingTypeEn": [
+        "operational continuity",
+        "logistics base",
+        "deterrence",
+        "critical infrastructure",
+        "extreme weather"
+      ],
+      "why_it_matters": "Importa porque Guam no es periferia meteorológica: es un punto de apoyo de la Segunda Cadena de Islas, comunicaciones, proyección aérea y logística aliada.",
+      "fact": "Hecho: el JIC de Guam activó la respuesta pública ante Champi, colocó la isla en COR 2 y reportó que Joint Region Marianas y sus instalaciones declararon TCCOR 2 el 16 de octubre.",
+      "coupling": "Dato de acople: la fuente oficial de Guam anticipó vientos de tormenta tropical desde la noche del sábado, posible viento de tifón el domingo, lluvia de 6 a 12 pulgadas, oleaje peligroso y marejada/runa de olas; no hay evidencia pública de interrupción militar crítica, por lo que se etiqueta como observación.",
+      "couplingEn": "Coupling datum: the Guam official release forecast tropical-storm-force winds from Saturday night, possible typhoon-force winds Sunday, 6-12 inches of rain, dangerous surf and storm-surge/wave run-up; no public evidence confirms critical military disruption, so this remains a watch signal.",
+      "implication": "Implicación estratégica: un evento de alta intensidad en Guam reduce márgenes de reacción y recuerda que la disuasión en el Pacífico occidental depende tanto de bases y combustible como de meteorología, resiliencia eléctrica, puertos y comunicaciones.",
+      "strategic_implication": "El clima extremo puede afectar preparación y continuidad de una plataforma clave de EE. UU. en el Indo-Pacífico sin necesidad de un disparo.",
+      "tripolar": "Lectura tripolar: EE. UU. necesita demostrar resiliencia de su retaguardia avanzada; China observa vulnerabilidades de la arquitectura de bases; Japón y aliados calibran continuidad logística; el Sur Global ve cómo el clima ya condiciona la seguridad dura.",
       "confidence": "Media",
       "sources": [
         {
-          "label": "USGS",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18k"
+          "label": "GDACS CHAMPI",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001338"
         },
         {
-          "label": "Reuters/Jerusalem Post",
-          "url": "https://www.jpost.com/international/article-911185"
+          "label": "Guam JIC",
+          "url": "https://reliefweb.int/report/guam/jic-release-no-1-jic-partially-activated-guam-cor-2-typhoon-watch-effect-tropical-storm-champi-10162026"
+        },
+        {
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
         }
       ]
     },
     {
-      "id": "philippines-scs-medevac-quake-weather-watch",
+      "id": "pakistan-balochistan-khuzdar-quake-border-war-watch",
       "rank": 3,
-      "status": "en observación",
+      "status": "observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
-      "accent": "#60A5FA",
-      "location": "Filipinas / Ayungin Shoal, Visayas-Mindanao y mar de China Meridional",
-      "headline": "Filipinas: presión gris, evacuación médica y entorno físico inestable",
-      "headlineEn": "Philippines: gray-zone pressure, medical evacuation and unstable physical environment",
-      "conflict_event": "La Guardia Costera filipina informó que la Guardia Costera china demoró casi 10 horas una evacuación médica desde Ayungin Shoal el 8 de octubre, en una zona disputada del mar de China Meridional.",
-      "conflictEvent": "La Guardia Costera filipina informó que la Guardia Costera china demoró casi 10 horas una evacuación médica desde Ayungin Shoal el 8 de octubre, en una zona disputada del mar de China Meridional.",
-      "environmental_event": "USGS registró el 8 de octubre un sismo M5,5 a 17 km al suroeste de Burias, Filipinas; NASA mantuvo señales de tormenta severa en el Pacífico occidental durante la semana y PAGASA alertó de lluvias con posibles inundaciones o deslizamientos por sistemas regionales.",
-      "environmentalEvent": "USGS registró el 8 de octubre un sismo M5,5 a 17 km al suroeste de Burias, Filipinas; NASA mantuvo señales de tormenta severa en el Pacífico occidental durante la semana y PAGASA alertó de lluvias con posibles inundaciones o deslizamientos por sistemas regionales.",
+      "accent": "#F59E0B",
+      "location": "Pakistán / Baluchistán, Khuzdar y frontera afgano-paquistaní",
+      "headline": "Pakistán: sismo local, presión insurgente y frontera en escalada",
+      "headlineEn": "Pakistan: local quake, insurgent pressure and an escalating border",
+      "conflict_event": "Choques entre fuerzas paquistaníes y talibanes afganos en Kurram, más violencia militante acumulada en el noroeste y Baluchistán.",
+      "conflictEvent": "Choques entre fuerzas paquistaníes y talibanes afganos en Kurram, más violencia militante acumulada en el noroeste y Baluchistán.",
+      "conflictEventEn": "Clashes between Pakistani forces and Afghan Taliban personnel in Kurram, alongside accumulated militant violence in the northwest and Balochistan.",
+      "environmental_event": "USGS registró un sismo M5,7 a 48 km WNW de Khuzdar, Pakistán, el 17 de octubre a 05:06 UTC, profundidad 10 km, con alerta PAGER amarilla.",
+      "environmentalEvent": "USGS registró un sismo M5,7 a 48 km WNW de Khuzdar, Pakistán, el 17 de octubre a 05:06 UTC, profundidad 10 km, con alerta PAGER amarilla.",
+      "environmentalEventEn": "USGS recorded a M5.7 earthquake 48 km WNW of Khuzdar, Pakistan, on 17 October at 05:06 UTC, 10 km depth, with a yellow PAGER alert.",
       "coupling_type": [
-        "zona gris marítima",
         "sismo",
-        "tormentas regionales",
-        "evacuación médica",
-        "continuidad operacional"
+        "seguridad fronteriza",
+        "capacidad estatal",
+        "respuesta regional",
+        "infraestructura vulnerable"
       ],
       "couplingType": [
-        "zona gris marítima",
         "sismo",
-        "tormentas regionales",
-        "evacuación médica",
-        "continuidad operacional"
+        "seguridad fronteriza",
+        "capacidad estatal",
+        "respuesta regional",
+        "infraestructura vulnerable"
       ],
-      "why_it_matters": "Importa porque una evacuación médica y operaciones de guardia costera en aguas disputadas tienen menos margen cuando el entorno físico regional acumula sismos, tormentas, lluvias y riesgo de deslizamientos.",
-      "fact": "Hecho: GMA/PCG reportó que la evacuación médica desde Ayungin Shoal se prolongó por obstrucciones chinas; USGS registró un M5,5 en Filipinas el mismo día y NASA/JTWC seguían tormentas severas en el Pacífico occidental.",
-      "coupling": "Dato de acople: no hay evidencia de que el sismo o la tormenta causaran la demora de la evacuación; el punto queda en observación por superposición de fricción marítima y entorno físico degradante en un teatro de alta sensibilidad.",
-      "couplingEn": "Coupling data: there is no evidence that the quake or storms caused the delay; the watch signal is operational overlap in a sensitive theater.",
-      "implication": "Implicación estratégica: en el mar de China Meridional, clima, geofísica y presencia coercitiva pueden reducir tiempos de respuesta y aumentar el riesgo de incidentes humanitarios o militares.",
-      "strategic_implication": "Prioridad media: señal útil para vigilancia de rutas y crisis de guardia costera, pero no acople confirmado.",
-      "tripolar": "Lectura tripolar: EE. UU. aparece como respaldo estratégico de Filipinas; China mantiene presión gris en su periferia marítima; la UE observa libertad de navegación y comercio; el Sur Global y ASEAN buscan que seguridad marítima, rescate y clima no deriven en escalada.",
+      "couplingTypeEn": [
+        "earthquake",
+        "border security",
+        "state capacity",
+        "regional response",
+        "vulnerable infrastructure"
+      ],
+      "why_it_matters": "Importa porque el Estado paquistaní gestiona simultáneamente presión sísmica localizada, violencia militante y fricción fronteriza con Afganistán.",
+      "fact": "Hecho: AP reportó el 17 de octubre intercambios de fuego en la frontera noroeste, con tensiones elevadas por choques recurrentes y ataques aéreos; la fuente citó más de 1.100 muertes y heridos civiles documentados por UNAMA por violencia transfronteriza en Afganistán este año.",
+      "coupling": "Dato de acople: el sismo de Khuzdar ocurrió en Baluchistán, no en el punto exacto de los choques de Kurram; por eso no se presenta como causalidad. Queda como señal de vigilancia porque el evento físico añade demanda de respuesta en una provincia también mencionada por violencia militante y vulnerabilidad estructural.",
+      "couplingEn": "Coupling datum: the Khuzdar quake occurred in Balochistan, not at the precise Kurram clash point; it is therefore not treated as causality. It remains a watch signal because the physical event adds response demand in a province also referenced for militant violence and structural vulnerability.",
+      "implication": "Implicación estratégica: Pakistán se vuelve tablero de estrés compuesto: frontera afgana, seguridad interna, corredor hacia el Índico y resiliencia local. La señal no es espectacular, pero sí operacional.",
+      "strategic_implication": "El acople débil sugiere observar si emergen daños, cortes de carretera o desvío de recursos de seguridad y respuesta civil.",
+      "tripolar": "Lectura tripolar: China mira estabilidad de corredores y proyectos en Pakistán; EE. UU. observa terrorismo y gobernabilidad regional; Rusia e Irán leen el flanco afgano-paquistaní como zona de fricción; el Sur Global ve otra prueba de cómo seguridad y desastres compiten por la misma capacidad estatal.",
       "confidence": "Media-baja",
       "sources": [
         {
-          "label": "GMA/PCG",
-          "url": "https://www.gmanetwork.com/news/topstories/nation/1005334/pcg-china-coast-guard-delays-ph-navy-personnel-s-medical-evacuation-from-ayungin-shoal/story/?amp"
+          "label": "USGS Khuzdar",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1"
         },
         {
-          "label": "USGS",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0x4"
+          "label": "USGS PAGER",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1/pager"
         },
         {
-          "label": "NASA EONET",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24962"
-        },
-        {
-          "label": "JTWC",
-          "url": "https://www.metoc.navy.mil/jtwc/products/wp2626.tcw"
-        },
-        {
-          "label": "PAGASA",
-          "url": "https://www.pagasa.dost.gov.ph/weather"
+          "label": "AP frontera",
+          "url": "https://apnews.com/article/pakistan-afghanistan-border-clashes-militant-infiltration-af35955a49d8ec9948b4a946bf07d37c"
         }
       ]
     }
   ],
   "not_selected": [
     {
-      "id": "ukraine-energy-winter-not-selected",
+      "id": "ukraine-russia-energy",
       "location": "Ucrania/Rusia",
-      "note": "ISW mantuvo la señal de campaña energética de otoño-invierno, pero esta semana no se verificó un evento NASA/USGS o ambiental directo que eleve el caso sobre Gaza, Panamá o Filipinas."
+      "note": "Conflicto energético de alta prioridad, pero sin evento NASA/USGS ambiental espacialmente acoplado en la semana; queda para informe de tripolaridad/energía, no como acople conflicto-ambiente confirmado."
     },
     {
-      "id": "taiwan-pla-weather-not-selected",
-      "location": "Taiwán / estrecho",
-      "note": "Taiwán reportó 21 salidas de aeronaves PLA y 7 buques PLAN el 10 de octubre, pero no se verificó acople ambiental o geofísico directo durante la semana."
+      "id": "libya-flood",
+      "location": "Libia / Trípoli",
+      "note": "GDACS reportó inundación verde con 2 muertes y 5 desplazados; la fragmentación institucional es relevante, pero el impacto semanal fue bajo para entrar en los tres puntos."
     },
     {
-      "id": "hormuz-shipping-weather-not-selected",
-      "location": "Ormuz / Golfo de Omán",
-      "note": "La señal de ataques a buques y descenso de tráfico fue alta, pero no se identificó un evento NASA/USGS ambiental acoplado que justificara elevarla en esta edición."
+      "id": "pacific-quakes",
+      "location": "Rusia-Kamchatka, PNG, Fiji, Tonga",
+      "note": "Eventos sísmicos M5,5+ sin acople geopolítico directo suficientemente trazable en esta edición."
     }
   ],
   "best_short_candidate": {
-    "id": "gaza-winter-shelter-wash-confirmed",
-    "title": "Gaza: cuando el invierno golpea una guerra de refugio",
-    "reason": "Es el caso con acople más claro y éticamente publicable: lluvia y frío no causan el conflicto, pero amplifican el daño cuando refugio, WASH y acceso humanitario están degradados."
+    "id": "sudan-drought-war-short",
+    "title": "Sudán: cuando la sequía entra en la guerra",
+    "reason": "Es el caso más sólido porque fuentes institucionales conectan explícitamente guerra, sequía, cosechas, precios, desplazamiento y acceso humanitario."
   },
   "bestShort": {
-    "title": "Gaza: cuando el invierno golpea una guerra de refugio",
-    "reason": "Es el caso con acople más claro y éticamente publicable: lluvia y frío no causan el conflicto, pero amplifican el daño cuando refugio, WASH y acceso humanitario están degradados."
+    "id": "sudan-drought-war-short",
+    "title": "Sudán: cuando la sequía entra en la guerra",
+    "reason": "Es el caso más sólido porque fuentes institucionales conectan explícitamente guerra, sequía, cosechas, precios, desplazamiento y acceso humanitario."
   },
   "short_script": {
-    "title": "Gaza: el invierno no espera a la diplomacia",
-    "hook_3s": "No es solo lluvia. Es lluvia sobre dos millones de personas sin refugio suficiente.",
-    "scene_1": "Hecho: IOM informó que casi toda la población de Gaza sigue necesitando asistencia de refugio cuando empiezan las lluvias de invierno.",
-    "scene_2": "Dato de acople: la cadena humanitaria cubre apenas 17% de las necesidades invernales identificadas, mientras OCHA ya señalaba sitios con riesgo medio o alto de inundación.",
-    "scene_3": "Implicación estratégica: en la tripolaridad imperfecta, Gaza mide la coherencia del sistema internacional: Estados Unidos, la Unión Europea, Rusia, China y el Sur Global observan el mismo tablero, pero no leen el mismo costo.",
+    "title": "Sudán: cuando la sequía entra en la guerra",
+    "hook_3s": "Sudán no solo está en guerra: también está perdiendo la cosecha.",
+    "scene_1": "Hecho: en Darfur y Kordofán, la guerra sigue desplazando población, golpeando mercados y cortando acceso humanitario.",
+    "scene_2": "Dato de acople ambiental: la alerta IPC/ONU habla de sequía severa en más de la mitad del país; en Darfur Norte, 64% del cropland mostró pobre crecimiento. NASA EONET/GDACS también registró incendios en Sudán durante la semana.",
+    "scene_3": "Implicación estratégica: cuando guerra y sequía se superponen, la comida se convierte en territorio, la ayuda en corredor estratégico y la financiación en poder.",
     "close": "GEOPÓLEM. Bienvenidos al tablero.",
     "visuals": [
-      "Mapa Gaza con capas de refugio, WASH y cruces de suministro",
-      "Mapa de sitios de desplazamiento con riesgo de inundación",
-      "Diagrama tripolar: EE. UU., UE, Rusia, China y Sur Global alrededor del nodo Gaza"
+      "Mapa Sudán con Darfur, Kordofán y Nilo Azul destacados",
+      "Capa de sequía/cultivos y puntos EONET/GDACS de incendio",
+      "Ruta de ayuda Dilling-Kadugli y mercados bajo presión",
+      "Cierre con triángulo EE. UU.-China-Rusia/UE-Sur Global"
     ],
     "english_subtitles": [
-      "This is not just rain. It is rain over two million people without enough shelter.",
-      "IOM says nearly all of Gaza still needs shelter assistance as winter rains begin.",
-      "The humanitarian shelter pipeline covers barely 17 percent of identified winter needs.",
-      "In an imperfect tripolar world, Gaza tests the coherence of the international system.",
+      "Sudan is not only at war. It is also losing the harvest.",
+      "In Darfur and Kordofan, fighting is displacing people, hitting markets and cutting humanitarian access.",
+      "The UN-backed IPC alert points to severe drought across more than half of Sudan.",
+      "In North Darfur, 64 percent of cropland showed poor plant growth.",
+      "When war and drought overlap, food becomes territory, aid becomes strategy, and funding becomes power.",
       "GEOPÓLEM. Welcome to the board."
     ],
     "hashtags": [
       "#GEOPÓLEM",
-      "#Gaza",
+      "#Sudán",
       "#Geopolítica",
-      "#OSINT",
-      "#Tripolaridad"
+      "#SeguridadAlimentaria",
+      "#OSINT"
     ]
   },
   "tags": [
     "#GEOPÓLEM",
     "#SENTINEL",
-    "#Gaza",
-    "#Panamá",
-    "#Filipinas",
-    "#Tripolaridad"
+    "#Sudán",
+    "#Guam",
+    "#Pakistán",
+    "#Tripolaridad",
+    "#OSINT"
   ],
   "dataUrl": "./data/sentinel/weekly-brief.json",
-  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-10-05_2026-10-11.json",
-  "markdownUrl": "./data/sentinel/weekly-brief-2026-10-12.md",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-10-12_2026-10-18.json",
+  "markdownUrl": "./data/sentinel/weekly-brief-2026-10-19.md",
   "close": "GEOPÓLEM. Bienvenidos al tablero.",
+  "monitor_layer": {
+    "label": "Acople ambiental significativo",
+    "status": "1 confirmado · 2 en observación",
+    "items": [
+      {
+        "id": "sudan-darfur-kordofan-drought-war-confirmed",
+        "location": "Sudán / Darfur, Kordofán y eje Nilo Azul",
+        "status": "confirmado",
+        "priority": "Alta",
+        "accent": "#EF4444"
+      },
+      {
+        "id": "guam-marianas-champi-second-island-chain-watch",
+        "location": "Guam / Marianas y Segunda Cadena de Islas",
+        "status": "observación",
+        "priority": "Media-alta",
+        "accent": "#22D3EE"
+      },
+      {
+        "id": "pakistan-balochistan-khuzdar-quake-border-war-watch",
+        "location": "Pakistán / Baluchistán, Khuzdar y frontera afgano-paquistaní",
+        "status": "observación",
+        "priority": "Media",
+        "accent": "#F59E0B"
+      }
+    ]
+  },
   "media_publication": {
     "status": "prepared",
-    "published_at": null,
+    "published_at": "2026-10-19T08:12:00+02:00",
     "youtube_long": {
-      "title": "GEOPÓLEM SENTINEL · Brief semanal 5-11 octubre 2026",
-      "url": "./data/sentinel/weekly-brief-2026-10-12.md",
-      "format": "MD",
-      "duration": "Brief editorial"
+      "title": "GEOPÓLEM SENTINEL · Sudán, Guam y Pakistán: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-10-19.md",
+      "format": "guion editorial",
+      "duration": "4-6 min"
     },
     "youtube_short": {
-      "title": "Gaza: el invierno no espera a la diplomacia | Guion Short listo",
-      "url": "./data/sentinel/weekly-brief-2026-10-12.md#short-del-martes",
-      "format": "9:16",
-      "duration": "Guion 45-60s"
+      "title": "Sudán: cuando la sequía entra en la guerra | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-10-19.md#short-del-martes",
+      "format": "9:16 guion",
+      "duration": "45-60 s"
     },
-    "editorial_note": "No se publicó video en YouTube ni redes automáticamente. El brief y el guion del Short quedan listos para revisión editorial y producción del martes."
+    "editorial_note": "No se publicó video en YouTube ni redes automáticamente. El guion del Short queda listo para revisión y aprobación editorial."
   },
   "mediaPublication": {
     "status": "prepared",
-    "publishedAt": null,
-    "youtubeLong": {
-      "title": "GEOPÓLEM SENTINEL · Brief semanal 5-11 octubre 2026",
-      "url": "./data/sentinel/weekly-brief-2026-10-12.md",
-      "format": "MD",
-      "duration": "Brief editorial"
+    "published_at": "2026-10-19T08:12:00+02:00",
+    "youtube_long": {
+      "title": "GEOPÓLEM SENTINEL · Sudán, Guam y Pakistán: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-10-19.md",
+      "format": "guion editorial",
+      "duration": "4-6 min"
     },
-    "youtubeShort": {
-      "title": "Gaza: el invierno no espera a la diplomacia | Guion Short listo",
-      "url": "./data/sentinel/weekly-brief-2026-10-12.md#short-del-martes",
-      "format": "9:16",
-      "duration": "Guion 45-60s"
+    "youtube_short": {
+      "title": "Sudán: cuando la sequía entra en la guerra | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-10-19.md#short-del-martes",
+      "format": "9:16 guion",
+      "duration": "45-60 s"
     },
-    "editorialNote": "No se publicó video en YouTube ni redes automáticamente. El brief y el guion del Short quedan listos para revisión editorial y producción del martes."
+    "editorial_note": "No se publicó video en YouTube ni redes automáticamente. El guion del Short queda listo para revisión y aprobación editorial."
   }
 };
 

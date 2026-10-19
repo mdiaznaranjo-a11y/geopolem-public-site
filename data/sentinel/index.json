@@ -1,10 +1,17 @@
 {
   "project": "GEOPÓLEM",
   "collection": "SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "updated_at": "2026-10-12T08:07:00+02:00",
+  "updated_at": "2026-10-19T08:12:00+02:00",
   "latest": "./weekly-brief.json",
   "feed": "./conflict-events.json",
   "items": [
+    {
+      "date": "2026-10-19",
+      "window": "12-18 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
+      "status": "un acople confirmado y dos señales en observación; no se fuerza causalidad donde la evidencia no la sostiene",
+      "json": "./sentinel_weekly_brief_2026-10-12_2026-10-18.json",
+      "markdown": "./weekly-brief-2026-10-19.md"
+    },
     {
       "date": "2026-10-12",
       "window": "5-11 OCTUBRE 2026 · EUROPE/LUXEMBOURG",

@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'https://esm.sh/react@18.3.1';
 import { createRoot } from 'https://esm.sh/react-dom@18.3.1/client';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, WAICO_INVESTIGACION, CONFLICTOS_ACTIVOS, CONFLICT_WATCHLIST_2026, CABLES_SUBMARINOS } from './data.js?v=sentinel-weekly-20261012';
+import { FOCOS, CATEGORIES, REGIONS, SYSTEMA_NODES, SYSTEMA_LINKS, BRIEF_DIARIO, KPIS, MILEX, DOCTRINA, SENTINEL_BRIEF, PLAN_Z, FICHA_VENTAJA, WAICO_INVESTIGACION, CONFLICTOS_ACTIVOS, CONFLICT_WATCHLIST_2026, CABLES_SUBMARINOS } from './data.js?v=sentinel-weekly-20261019';
 import { CONTINENTS, MAP_W, MAP_H, project } from './worldmap.js';
 import { VIDEOS, VIDEO_CATEGORIES } from './videos.js?v=greenland-short-clean-20260924';
 import { loadWatchlistFocos } from './api-adapter.js';
@@ -4315,13 +4315,13 @@ function SentinelBrief({ lang }) {
   const media = b.mediaPublication || b.media_publication || {};
   const long = media.youtubeLong || media.youtube_long || {
     title: 'Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL',
-    url: 'https://youtu.be/TRp6iaLneQU',
+    url: './data/sentinel/weekly-brief-2026-10-19.md',
     format: '16:9',
     duration: '6:46'
   };
   const short = media.youtubeShort || media.youtube_short || {
     title: 'Sudán: cuando la lluvia corta la ayuda | GEOPÓLEM SENTINEL #Shorts',
-    url: 'https://youtu.be/fu3QHCGJefo',
+    url: './data/sentinel/weekly-brief-2026-10-19.md#short-del-martes',
     format: '9:16',
     duration: '1:00'
   };
