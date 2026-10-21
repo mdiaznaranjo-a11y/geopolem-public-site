@@ -743,7 +743,7 @@ export const VIDEOS = [
     strategic: 'Lectura de tablero: en el Ártico, quien negocia con el dueño consigue acceso. En la Antártida no hay dueño con quien negociar: la influencia se acumula con ciencia y presencia, y ahí China avanza mientras Estados Unidos se repliega.',
     copyShort: 'Mismo hielo, reglas opuestas. En el Ártico hay dueños; en la Antártida, un tratado lo congela todo.',
     sources: [
-      { label: 'Short en YouTube', url: '__YOUTUBE_URL__' },
+      { label: 'Short en YouTube', url: 'https://youtube.com/shorts/GWNifsE4Qhw' },
       { label: 'Video completo · Groenlandia 2026', url: 'https://youtu.be/q3TCYzp3qk0' },
       { label: 'Tratado Antártico · Secretaría del Tratado', url: 'https://documents.ats.aq/cephandbook/Treaty_e.pdf' },
       { label: 'Protocolo de Madrid · División Antártica de Australia', url: 'https://www.antarctica.gov.au/about-antarctica/law-and-treaty/the-madrid-protocol/' },
@@ -753,7 +753,7 @@ export const VIDEOS = [
     editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
     tags: ['Shorts', 'Ártico', 'Antártida', 'Groenlandia', 'Tratado Antártico', 'Protocolo de Madrid', 'Trump', 'China', 'GEOPÓLEM'],
     source: 'geopolem_short_dos_polos_9x16.mp4',
-    youtubeUrl: '__YOUTUBE_URL__',
+    youtubeUrl: 'https://youtube.com/shorts/GWNifsE4Qhw',
     webUrl: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala',
     featured: true,
     orientation: 'vertical',
