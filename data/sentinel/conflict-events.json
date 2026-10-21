@@ -2,47 +2,44 @@
   "events": [
     {
       "actors": [
-        "United States"
+        "Turkey"
       ],
-      "domain": "clickondetroit.com",
-      "id": "evt_ef5f4efafd37356f",
+      "domain": "aa.com.tr",
+      "id": "evt_eaa5c60a2c075203",
       "language": "English",
       "matched_regions": [
         "ukraine",
-        "russia",
-        "russian"
+        "russia"
       ],
       "matched_themes": [
-        "missile",
-        "drone"
+        "ceasefire",
+        "truce"
       ],
       "region": "Europa del Este",
-      "score": 8.5,
+      "score": 7.0,
       "score_breakdown": {
         "region": 4.0,
-        "themes": 4.5,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T104500Z",
-      "source_country": "United States",
+      "seen_date": "20261021T111500Z",
+      "source_country": "Turkey",
       "tier": "high",
-      "title": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway",
+      "title": "Russia says position on energy ceasefire with Ukraine unchanged , seeks peace not truce",
       "tone": null,
-      "url": "https://www.clickondetroit.com/business/2026/10/20/russian-missile-and-drone-blitz-kills-4-in-ukraine-as-zelenskyy-seeks-help-in-norway/"
+      "url": "https://aa.com.tr/en/eurasia/russia-says-position-on-energy-ceasefire-with-ukraine-unchanged-seeks-peace-not-truce/4095545"
     },
     {
-      "actors": [
-        "United States"
-      ],
-      "domain": "clickondetroit.com",
-      "id": "evt_106d1fc5a550fd3c",
+      "actors": [],
+      "domain": "thenationalnews.com",
+      "id": "evt_b08568b90ff2510e",
       "language": "English",
       "matched_regions": [
         "israel",
-        "gaza"
+        "iran"
       ],
       "matched_themes": [
-        "strike"
+        "attack"
       ],
       "region": "MENA",
       "score": 5.5,
@@ -51,19 +48,19 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261020T104500Z",
-      "source_country": "United States",
+      "seen_date": "20261021T110000Z",
+      "source_country": "",
       "tier": "medium",
-      "title": "An Israeli pre - dawn strike on a Gaza apartment kills 2 people , and other Mideast news",
+      "title": "Iran clings to demands even as threat of renewed US - Israel attacks grows",
       "tone": null,
-      "url": "https://www.clickondetroit.com/news/world/2026/10/20/an-israeli-pre-dawn-strike-on-a-gaza-apartment-kills-2-people-and-other-mideast-news/"
+      "url": "https://www.thenationalnews.com/news/gulf/2026/10/21/araghchi-says-strait-of-hormuz-will-stay-closed-until-us-agrees-to-irans-terms/"
     },
     {
       "actors": [
-        "Kyrgyzstan"
+        "Belarus"
       ],
-      "domain": "akipress.com",
-      "id": "evt_05781f3bbdc46873",
+      "domain": "sb.by",
+      "id": "evt_be4fbe08720f166f",
       "language": "English",
       "matched_regions": [
         "russia"
@@ -78,76 +75,103 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Kyrgyzstan",
+      "seen_date": "20261021T110000Z",
+      "source_country": "Belarus",
       "tier": "medium",
-      "title": "General Prosecutor Office receives appeals regarding Kyrgyz convicts recruited for war in Russia",
+      "title": "First Deputy Chairman of Russia State Duma : Nuremberg trials are stern warning for all subsequent generations",
       "tone": null,
-      "url": "https://akipress.com/news:926097:General_Prosecutor_s_Office_receives_appeals_regarding_Kyrgyz_convicts_recruited_for_war_in_Russia/"
+      "url": "https://www.sb.by/en/first-deputy-chairman-of-russia-s-state-duma-nuremberg-trials-are-stern-warning-for-all-subsequent-g.html"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Italy"
       ],
-      "domain": "express.co.uk",
-      "id": "evt_306bc6f515ddb175",
-      "language": "English",
+      "domain": "zazoom.it",
+      "id": "evt_3579b7aa5ff8cfb3",
+      "language": "Italian",
       "matched_regions": [
-        "ukraine"
+        "israel"
       ],
       "matched_themes": [
-        "war"
+        "combat"
       ],
-      "region": "Europa del Este",
-      "score": 5.0,
+      "region": "MENA",
+      "score": 4.0,
       "score_breakdown": {
         "region": 2.0,
-        "themes": 3.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T110000Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20261021T110000Z",
+      "source_country": "Italy",
       "tier": "medium",
-      "title": "Trump explodes at Ukraine over war as Zelenskyy crunches US meeting | World | News",
+      "title": "Israele al voto chi combatte e chi no | la leva degli ultraortodossi che può decidere le elezioni",
       "tone": null,
-      "url": "https://www.express.co.uk/news/world/2258745/trump-explodes-ukraine-war-zelenskyy"
+      "url": "https://www.zazoom.it/2026-10-21/israele-al-voto-chi-combatte-e-chi-no-la-leva-degli-ultraortodossi-che-puo-decidere-le-elezioni/19828528/"
     },
     {
       "actors": [
-        "Pakistan"
+        "Israel"
       ],
-      "domain": "en.dailypakistan.com.pk",
-      "id": "evt_94c9250424b907b0",
+      "domain": "israelnationalnews.com",
+      "id": "evt_4ccd9e001b69e354",
       "language": "English",
-      "matched_regions": [
-        "israel",
-        "pakistan"
+      "matched_regions": [],
+      "matched_themes": [
+        "terror",
+        "attack"
       ],
-      "matched_themes": [],
-      "region": "MENA",
+      "region": "Global",
       "score": 3.5,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Pakistan",
+      "seen_date": "20261021T110000Z",
+      "source_country": "Israel",
       "tier": "medium",
-      "title": "Israel eyes countering Pakistan - Türkiye Alliance as Smotrich pushes Hellenic Partnership",
+      "title": "IDF eliminates terrorist who planned attack killing four soldiers",
       "tone": null,
-      "url": "https://en.dailypakistan.com.pk/20-Oct-2026/israel-eyes-countering-pakistan-turkiye-alliance-as-smotrich-pushes-hellenic-partnership"
+      "url": "https://www.israelnationalnews.com/news/434942"
     },
     {
       "actors": [
-        "Cyprus"
+        "China"
       ],
-      "domain": "cyprus-mail.com",
-      "id": "evt_41a587cae86b3767",
+      "domain": "splash247.com",
+      "id": "evt_b946ed79066a6d8a",
       "language": "English",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T111500Z",
+      "source_country": "China",
+      "tier": "monitor",
+      "title": "NATO boosts Black Sea surveillance amid attacks on shipping",
+      "tone": null,
+      "url": "https://splash247.com/nato-boosts-black-sea-surveillance-amid-attacks-on-shipping/"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "malagahoy.es",
+      "id": "evt_cd4172f60c2b2bec",
+      "language": "Spanish",
       "matched_regions": [],
       "matched_themes": [
-        "war"
+        "bombard"
       ],
       "region": "Global",
       "score": 3.0,
@@ -156,44 +180,19 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Cyprus",
+      "seen_date": "20261021T111500Z",
+      "source_country": "Spain",
       "tier": "monitor",
-      "title": "Ryanair warns air fares will rise significantly in 2027",
+      "title": "Netanyahu presiona para reanudar los bombardeos sobre Irán",
       "tone": null,
-      "url": "https://cyprus-mail.com/2026/10/20/ryanair-warns-air-fares-will-rise-significantly-in-2027"
+      "url": "https://www.malagahoy.es/mundo/netanyahu-presiona-reanudar-bombardeos-iran_0_2008307802.html"
     },
     {
       "actors": [
-        "Syria"
+        "Austria"
       ],
-      "domain": "english.aawsat.com",
-      "id": "evt_2db52849a3bab22a",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Syria",
-      "tier": "monitor",
-      "title": "S . Korea Warns of  Firm  Response After North Threatens Fresh Measures Near Border",
-      "tone": null,
-      "url": "https://english.aawsat.com/world/5331419-s-korea-warns-%E2%80%98firm%E2%80%99-response-after-north-threatens-fresh-measures-near-border"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "hna.de",
-      "id": "evt_445a6d634afee721",
+      "domain": "vol.at",
+      "id": "evt_ae3b9fd014839883",
       "language": "German",
       "matched_regions": [],
       "matched_themes": [
@@ -206,24 +205,23 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T104500Z",
-      "source_country": "Germany",
+      "seen_date": "20261021T110000Z",
+      "source_country": "Austria",
       "tier": "monitor",
-      "title": "550 . 000 Menschen : Das war der Auslöser der Proteste in Frankreich",
+      "title": "Handelsschiff sinkt im Schwarzen Meer : Zwei Tote",
       "tone": null,
-      "url": "https://www.hna.de/politik/warum-sind-in-frankreich-unruhen-ausgebrochen-proteste-macron-demonstrationen-zr-94549753.html"
+      "url": "https://www.vol.at/handelsschiff-sinkt-im-schwarzen-meer-zwei-tote/10569323"
     },
     {
       "actors": [
-        "Senegal"
+        "Afghanistan"
       ],
-      "domain": "rewmi.com",
-      "id": "evt_799f1d50fc2fc2dd",
-      "language": "French",
+      "domain": "ariananews.af",
+      "id": "evt_f3388912aa623dd8",
+      "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "sanction",
-        "sanctions"
+        "war"
       ],
       "region": "Global",
       "score": 3.0,
@@ -232,19 +230,96 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T104500Z",
-      "source_country": "Senegal",
+      "seen_date": "20261021T110000Z",
+      "source_country": "Afghanistan",
       "tier": "monitor",
-      "title": "Menacé De Sanctions Par Aziz Ndiaye , Sa Thiès Contre - attaque",
+      "title": "Governments warn citizens over security risks in France after riots | Ariana News",
       "tone": null,
-      "url": "https://www.rewmi.com/menace-de-sanctions-par-aziz-ndiaye-sa-thies-contre-attaque/"
+      "url": "https://www.ariananews.af/governments-warn-citizens-over-security-risks-in-france-after-riots/"
     },
     {
       "actors": [
-        "Syria"
+        "Germany"
       ],
-      "domain": "naharnet.com",
-      "id": "evt_6add6a5c4acd8a6d",
+      "domain": "muensterschezeitung.de",
+      "id": "evt_ba85b78c1dc27e1c",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Alice Schwarzer stellt « Emma » nach 50 Jahren ein",
+      "tone": null,
+      "url": "https://www.muensterschezeitung.de/leben-und-erleben/unterhaltung/alice-schwarzer-stellt-emma-nach-50-jahren-ein-3690861"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "gdnonline.com",
+      "id": "evt_a85e01e09e8619b7",
+      "language": "English",
+      "matched_regions": [
+        "north korea"
+      ],
+      "matched_themes": [
+        "troops"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "World News : North Korea tells border troops to take  resolute action  if South threatens their safety",
+      "tone": null,
+      "url": "https://www.gdnonline.com:443/Details/1410393/North-Korea-tells-border-troops-to-take-resolute-action-if-South-threatens-their-safety"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "macg.co",
+      "id": "evt_0060dbe6bb85f463",
+      "language": "French",
+      "matched_regions": [],
+      "matched_themes": [
+        "coup"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Perplexity Computer : lagent IA sur Mac coupe le cordon avec le cloud , à condition davoir de la RAM",
+      "tone": null,
+      "url": "https://www.macg.co/intelligence-artificielle/2026/10/perplexity-computer-lagent-ia-sur-mac-coupe-le-cordon-avec-le-cloud-condition-davoir-de-la-ram-311781"
+    },
+    {
+      "actors": [
+        "Philippines"
+      ],
+      "domain": "manilatimes.net",
+      "id": "evt_0b5338af009d4758",
       "language": "English",
       "matched_regions": [
         "israel"
@@ -257,19 +332,342 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Syria",
+      "seen_date": "20261021T111500Z",
+      "source_country": "Philippines",
       "tier": "monitor",
-      "title": "Israeli politician extreme speech surges ahead of elections",
+      "title": "Israel becomes Pacific Islands Forum partner",
       "tone": null,
-      "url": "https://www.naharnet.com:443/stories/en/323200-israeli-politicians-extreme-speech-surges-ahead-of-elections"
+      "url": "https://www.manilatimes.net/2026/10/21/world/asia-oceania/israel-becomes-pacific-islands-forum-partner/2450613"
     },
     {
       "actors": [
-        "Nigeria"
+        "Germany"
       ],
-      "domain": "vanguardngr.com",
-      "id": "evt_433f6b68943631e4",
+      "domain": "deutschlandfunk.de",
+      "id": "evt_81a71d49f67a50ee",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T111500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Ukraine - Krieg - US - Gesandter Witkoff trifft Präsident Putin in Sankt Petersburg - Freilassung von US - Bürger angekündigt",
+      "tone": null,
+      "url": "https://www.deutschlandfunk.de/us-gesandter-witkoff-trifft-praesident-putin-in-sankt-petersburg-freilassung-von-us-buerger-angekuen-100.html"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "ibtimes.co.uk",
+      "id": "evt_4fab57b5c53bfe84",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T111500Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Jay Stratton Claims Roswell Balloon Story Was a Cover - up and UFOs Are Drawn to Nuclear Energy",
+      "tone": null,
+      "url": "https://www.ibtimes.co.uk/jay-stratton-claims-roswells-balloon-story-was-cover-ufos-are-drawn-nuclear-energy-1826967"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wyff4.com",
+      "id": "evt_81ec57ec8c2c6285",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T111500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Russia releases imprisoned American man , US envoy Witkoff says on visit to St . Petersburg",
+      "tone": null,
+      "url": "https://www.wyff4.com/article/russia-releases-imprisoned-american-envoy-witkoff-says/74201767"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wbhpam.iheart.com",
+      "id": "evt_f2b29204d24c6aff",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T111500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "WSJ : Musk Ordered Ukraine Starlink Slowdown",
+      "tone": null,
+      "url": "https://wbhpam.iheart.com/content/2026-10-21-wsj-musk-ordered-ukraine-starlink-slowdown/"
+    },
+    {
+      "actors": [
+        "Antigua and Barbuda"
+      ],
+      "domain": "sermitsiaq.ag",
+      "id": "evt_d1fb3b299578b4a3",
+      "language": "Danish",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T111500Z",
+      "source_country": "Antigua and Barbuda",
+      "tier": "monitor",
+      "title": "Witkoff ankommer til Rusland før møde med Putin om Ukraine",
+      "tone": null,
+      "url": "https://www.sermitsiaq.ag/samfund/witkoff-ankommer-til-rusland-for-mode-med-putin-om-ukraine/2438837"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "republicain-lorrain.fr",
+      "id": "evt_6acacf4bf949e0af",
+      "language": "French",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T111500Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Var . Des sites militaires sensibles près de Toulon ont ét survolés par des drones  non autorisés",
+      "tone": null,
+      "url": "https://www.republicain-lorrain.fr/defense-guerre-conflit/2026/10/21/des-sites-militaires-sensibles-pres-de-toulon-ont-ete-survoles-par-des-drones-non-autorises"
+    },
+    {
+      "actors": [],
+      "domain": "energia.rp.pl",
+      "id": "evt_315dfaa721a32daf",
+      "language": "Polish",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "W Europie rosną ceny gazu , bo Iran atakuje statki w cieśninie Ormuz",
+      "tone": null,
+      "url": "https://energia.rp.pl/gaz/art45370071-zle-wiadomosci-z-rynku-gazu-po-zlych-wiadomosciach-z-ciesniny-ormuz"
+    },
+    {
+      "actors": [
+        "Syria"
+      ],
+      "domain": "naharnet.com",
+      "id": "evt_ed26c2c730b65830",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "Syria",
+      "tier": "monitor",
+      "title": "Israel elections : Four possible scenarios",
+      "tone": null,
+      "url": "https://www.naharnet.com:443/stories/en/323229-israel-s-elections-four-possible-scenarios"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "idahopress.com",
+      "id": "evt_e59184c39c557428",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Russia releases detained American Stephen Hubbard during a visit by Trump administration envoy",
+      "tone": null,
+      "url": "http://www.idahopress.com/ap_news/us/russia-releases-detained-american-stephen-hubbard-during-a-visit-by-trump-administration-envoy/article_ddf6005c-4af3-5fe8-b03e-f2d7f3015c21.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "article.wn.com",
+      "id": "evt_2579c74126a698d9",
+      "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "A viable path to peace in Ukraine - Worldnews . com",
+      "tone": null,
+      "url": "https://article.wn.com/view/2026/10/21/A_viable_path_to_peace_in_Ukraine/"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "inewsgr.com",
+      "id": "evt_0b2a18f5f4f88002",
+      "language": "Greek",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "Greece",
+      "tier": "monitor",
+      "title": "Θεσσαλονίκη : Νέα προηγμένα συστήματα αντιπυραυλικής προστασίας , drone και όπλα στη φετινή παρέλαση για την 28η Οκτωβρίου",
+      "tone": null,
+      "url": "https://www.inewsgr.com/362/thessaloniki-nea-proigmena-systimata-antipyravlikis-prostasias-drone-kai-opla-sti-fetini-parelasi-gia-tin-28i-oktovriou.htm"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "de.euronews.com",
+      "id": "evt_e5c3654042681935",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Trump bricht mit der Ukraine : Der geheime Deal mit Putin",
+      "tone": null,
+      "url": "https://de.euronews.com/2026/10/21/trump-ukraine-deal-putin"
+    },
+    {
+      "actors": [
+        "Azerbaijan"
+      ],
+      "domain": "news.az",
+      "id": "evt_55382819341fb672",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "Azerbaijan",
+      "tier": "monitor",
+      "title": "Iran defence minister vows to boost military readiness",
+      "tone": null,
+      "url": "https://news.az/news/irans-defence-minister-vows-to-boost-military-readiness"
+    },
+    {
+      "actors": [
+        "China"
+      ],
+      "domain": "shanghaisun.com",
+      "id": "evt_8379b6d1866fd0ff",
       "language": "English",
       "matched_regions": [
         "china"
@@ -282,295 +680,70 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Nigeria",
+      "seen_date": "20261021T110000Z",
+      "source_country": "China",
       "tier": "monitor",
-      "title": "China opposes US ban on govt agencies from using DeepSeek",
+      "title": "CHINA - NINGXIA - GUYUAN - LIUPAN MOUNTAIN - LONG MARCH - VIEWS ( CN )",
       "tone": null,
-      "url": "https://www.vanguardngr.com/2026/10/china-opposes-us-ban-on-govt-agencies-from-using-deepseek/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "thenational.scot",
-      "id": "evt_1eff2277ad3f7c4f",
-      "language": "English",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T110000Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Andy Burnham rejects Jeremy Corbyn call for Gaza genocide inquiry",
-      "tone": null,
-      "url": "https://www.thenational.scot/news/26651707.andy-burnham-rejects-jeremy-corbyns-call-gaza-genocide-inquiry/"
-    },
-    {
-      "actors": [
-        "Uganda"
-      ],
-      "domain": "newvision.co.ug",
-      "id": "evt_aa8429cef9847005",
-      "language": "English",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Uganda",
-      "tier": "monitor",
-      "title": "World : Ukraine races to secure energy supplies ahead of wint",
-      "tone": null,
-      "url": "https://www.newvision.co.ug/category/world/ukraine-races-to-secure-energy-supplies-ahead-NV_242687_102026"
-    },
-    {
-      "actors": [
-        "Azerbaijan"
-      ],
-      "domain": "centralasiatimes.com",
-      "id": "evt_8758304a0ab65911",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Azerbaijan",
-      "tier": "monitor",
-      "title": "No double standards on terrorism : Rajnath Singh strong stance at SCO Meet , in presence of Pak Ishaq Dar",
-      "tone": null,
-      "url": "http://www.centralasiatimes.com/news/279386858/no-double-standards-on-terrorism-rajnath-singh-strong-stance-at-sco-meet-in-presence-of-pak-ishaq-dar"
-    },
-    {
-      "actors": [
-        "Indonesia"
-      ],
-      "domain": "metrotvnews.com",
-      "id": "evt_9ef5074542b4c650",
-      "language": "Indonesian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Indonesia",
-      "tier": "monitor",
-      "title": "Tiongkok Tuduh Kapal Perang AS Masuki Perairan Sengketa Dekat Kepulauan Spratly",
-      "tone": null,
-      "url": "https://www.metrotvnews.com/read/k8oCO3BY-tiongkok-tuduh-kapal-perang-as-masuki-perairan-sengketa-dekat-kepulauan-spratly"
-    },
-    {
-      "actors": [
-        "Cyprus"
-      ],
-      "domain": "cyprus-mail.com",
-      "id": "evt_aaa27d7471ccbeca",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Cyprus",
-      "tier": "monitor",
-      "title": "Israeli firms reportedly close to €150m naval deal with Cyprus",
-      "tone": null,
-      "url": "https://cyprus-mail.com/2026/10/20/israeli-firms-reportedly-close-to-e150m-naval-deal-with-cyprus"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "jpost.com",
-      "id": "evt_191b695ba75a0358",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T104500Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "Benjamin Netanyahu says Israeli arrests of haredi draft evaders  unacceptable",
-      "tone": null,
-      "url": "http://www.jpost.com/israel-election-2026/article-912252"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "israelherald.com",
-      "id": "evt_15a5debedfdcecff",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T104500Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "Iran Repeats Threat To Target Undersea Fiberoptic Cables",
-      "tone": null,
-      "url": "http://www.israelherald.com/news/279387105/iran-repeats-threat-to-target-undersea-fiberoptic-cables"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "maritimejournal.com",
-      "id": "evt_8a23476ddbe72292",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "combat"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T104500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Germany orders 15 coastal combat boats from Finland",
-      "tone": null,
-      "url": "https://www.maritimejournal.com/news/design/germany-orders-15-coastal-combat-boats-from-finland/"
-    },
-    {
-      "actors": [
-        "South Africa"
-      ],
-      "domain": "zalebs.com",
-      "id": "evt_66bf310b63cd7e66",
-      "language": "English",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T104500Z",
-      "source_country": "South Africa",
-      "tier": "monitor",
-      "title": "Ukraine Seeks US Intelligence and Arms Support From Congress",
-      "tone": null,
-      "url": "https://zalebs.com/business/zelensky-urges-congress-to-lift-curbs-on-us-intelligence-and-arms/"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "telerama.fr",
-      "id": "evt_42aeebca4fab16e3",
-      "language": "French",
-      "matched_regions": [],
-      "matched_themes": [
-        "militant"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261020T104500Z",
-      "source_country": "France",
-      "tier": "monitor",
-      "title": "Des bobines oubliées au documentaire  : soixante ans dhistoire israélienne à travers le destin dun militant pour la paix",
-      "tone": null,
-      "url": "https://www.telerama.fr/television/des-bobines-oubliees-au-documentaire-soixante-ans-d-histoire-israelienne-a-travers-le-destin-d-un-militant-pour-la-paix-7033451.php"
+      "url": "http://www.shanghaisun.com/news/279389301/china-ningxia-guyuan-liupan-mountain-long-march-views-cn"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "andhrajyothy.com",
-      "id": "evt_6de7d293e8bc4812",
-      "language": "Telugu",
-      "matched_regions": [],
-      "matched_themes": [
-        "deploy"
+      "domain": "nypost.com",
+      "id": "evt_b338e57999fb29c7",
+      "language": "English",
+      "matched_regions": [
+        "russia"
       ],
-      "region": "Global",
-      "score": 1.5,
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
+        "region": 2.0,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T110000Z",
+      "seen_date": "20261021T110000Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "ఢిల్లీ ఐపీ ఎక్స్‌టెన్షన్‌లో దసరా వేడుకలకు హాజరుకానున్న మోదీ .! | PM Modi likely to attend Dussehra event at Delhi IP Extension : 2 , 500 personnel to be deployed",
+      "title": "Russia frees imprisoned US citizen Stephen Hubbard after plea from Trump",
       "tone": null,
-      "url": "https://www.andhrajyothy.com/2026/national/pm-modi-likely-to-attend-dussehra-event-at-delhis-ip-extension-2500-personnel-to-be-deployed-1569098.html"
+      "url": "https://nypost.com/2026/10/21/world-news/russia-frees-imprisoned-us-citizen-stephen-hubbard-after-plea-from-trump/"
     },
     {
       "actors": [
-        "Syria"
+        "Nigeria"
       ],
-      "domain": "english.aawsat.com",
-      "id": "evt_2725089b77c1b147",
-      "language": "English",
+      "domain": "fr.allafrica.com",
+      "id": "evt_194b97e0d1a73fd7",
+      "language": "French",
+      "matched_regions": [
+        "mali"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T111500Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "Mali : Une quarantaine de civils tués dimanche par des hommes armés dans la région de Ménaka",
+      "tone": null,
+      "url": "https://fr.allafrica.com/stories/202610210277.html"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "vov.vn",
+      "id": "evt_59a0fd2d421fea59",
+      "language": "Vietnamese",
       "matched_regions": [
         "hormuz"
       ],
@@ -582,37 +755,87 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Syria",
+      "seen_date": "20261021T111500Z",
+      "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "IRGC : 2 Tankers Hit Mines , Set Ablaze South of Hormuz",
+      "title": "Thêm tàu dầu bị tấn công tại eo biển Hormuz",
       "tone": null,
-      "url": "https://english.aawsat.com/world/5331506-irgc-2-tankers-hit-mines-set-ablaze-south-hormuz"
+      "url": "http://vov.vn/the-gioi/them-tau-dau-bi-tan-cong-tai-eo-bien-hormuz-post1343450.vov"
     },
     {
       "actors": [
-        "Syria"
+        "Turkey"
       ],
-      "domain": "naharnet.com",
-      "id": "evt_552e609aee01ab78",
-      "language": "English",
+      "domain": "mansethaber.com",
+      "id": "evt_747ff4f53ce8bc14",
+      "language": "Turkish",
       "matched_regions": [
-        "pakistan"
+        "nato"
       ],
       "matched_themes": [],
-      "region": "Asia del Sur",
+      "region": "Global",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261020T110000Z",
-      "source_country": "Syria",
+      "seen_date": "20261021T110000Z",
+      "source_country": "Turkey",
       "tier": "monitor",
-      "title": "Pakistan army chief expected in Tehran on Tuesday",
+      "title": "NATO neden Karadenize uçak , radar ve İHA gönderiyor ?",
       "tone": null,
-      "url": "https://www.naharnet.com:443/stories/en/323208-pakistan-s-army-chief-expected-in-tehran-on-tuesday"
+      "url": "https://mansethaber.com/gundem/karadenizde-neler-oluyor-nato-neden-ucak-ve-iha-gonderiyor"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "de.euronews.com",
+      "id": "evt_c6a345eb3947c011",
+      "language": "German",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Geiselnahme , Panzer , Atomdrohung : NATO übt den Ernstfall",
+      "tone": null,
+      "url": "https://de.euronews.com/2026/10/21/russland-panzer-atomdrohung-nato-kaliningrad"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "zazoom.it",
+      "id": "evt_d52fd13a1a9c3a0c",
+      "language": "Italian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261021T110000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Blocchi e assalti ai distributori nel traffico rapinato automobilista sulla circumvallazione",
+      "tone": null,
+      "url": "https://www.zazoom.it/2026-10-21/blocchi-e-assalti-ai-distributori-nel-traffico-rapinato-automobilista-sulla-circumvallazione/19828458/"
     }
   ],
   "filters": {
@@ -626,13 +849,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-20T11:34:55Z",
+  "generated_at": "2026-10-21T11:46:21Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
     "high": 1,
     "medium": 4,
-    "monitor": 19
+    "monitor": 28
   },
-  "total_events": 24
+  "total_events": 33
 }
