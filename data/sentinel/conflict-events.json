@@ -4,519 +4,722 @@
       "actors": [
         "United States"
       ],
-      "domain": "ksat.com",
-      "id": "evt_c20194dc1ec557a5",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [
-        "war",
-        "terror",
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 8.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Israel says it thwarted  terror attack , and other Middle East developments",
-      "tone": null,
-      "url": "https://www.ksat.com/news/world/2026/10/23/israel-says-it-thwarted-terror-attack-and-other-middle-east-developments/"
-    },
-    {
-      "actors": [
-        "Greece"
-      ],
-      "domain": "bankingnews.gr",
-      "id": "evt_641de15adb0e07ff",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [
-        "war",
-        "drone"
-      ],
-      "region": "Asia-Pacífico",
-      "score": 7.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Greece",
-      "tier": "high",
-      "title": "China breaks record in warship shipbuilding - Aircraft carriers and drones",
-      "tone": null,
-      "url": "https://www.bankingnews.gr/diethni/articles/906763/china-breaks-record-in-warship-shipbuilding-aircraft-carriers-and-drones-erase-us-naval-superiority"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "freepressjournal.in",
-      "id": "evt_d35403144ed79c7b",
-      "language": "English",
-      "matched_regions": [
-        "saudi"
-      ],
-      "matched_themes": [
-        "missile",
-        "drone",
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 7.0,
-      "score_breakdown": {
-        "region": 1.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "IndiGo Extends Saudi Arabia Flight Cancellations Till October 31 Amid Drone , Missile Attacks",
-      "tone": null,
-      "url": "https://www.freepressjournal.in/india/indigo-extends-saudi-arabia-flight-cancellations-till-october-31-amid-drone-missile-attacks"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "cbn.com",
-      "id": "evt_3bc448680b51c114",
-      "language": "English",
-      "matched_regions": [
-        "israel",
-        "iran"
-      ],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "MENA",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "US , Israel Strategize against Iran Weapons Advances ; PM Closes West Bank after Pre - Election Terrorism",
-      "tone": null,
-      "url": "https://cbn.com/news/israel/us-israel-strategize-against-iran-weapons-advances-pm-closes-west-bank-after-pre"
-    },
-    {
-      "actors": [
-        "South Sudan"
-      ],
-      "domain": "eyeradio.org",
-      "id": "evt_84ee9922c44400bc",
-      "language": "English",
-      "matched_regions": [
-        "sudan"
-      ],
-      "matched_themes": [
-        "drone",
-        "strike"
-      ],
-      "region": "Cuerno de África",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "South Sudan",
-      "tier": "medium",
-      "title": "Sudan denies army involvement in deadly drone strike on Abyei market",
-      "tone": null,
-      "url": "https://eyeradio.org/sudan-denies-army-involvement-in-deadly-drone-strike-on-abyei-market/"
-    },
-    {
-      "actors": [
-        "South Africa"
-      ],
-      "domain": "sundayworld.co.za",
-      "id": "evt_f32d0ffabdedaefa",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "South Africa",
-      "tier": "medium",
-      "title": "Iran warns neighbours : Support for U . S . to be seen as a  hostile act",
-      "tone": null,
-      "url": "https://sundayworld.co.za/world/iran-warns-neighbours-support-for-u-s-to-be-seen-as-a-hostile-act/"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "jpost.com",
-      "id": "evt_9456b5897e6c745d",
-      "language": "English",
-      "matched_regions": [
-        "hamas"
-      ],
-      "matched_themes": [
-        "attack",
-        "troops"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Israel",
-      "tier": "medium",
-      "title": "Benjamin Netanyahu praises IDF troops for stopping wide - scale Hamas attack in West Bank",
-      "tone": null,
-      "url": "http://www.jpost.com/israel-news/defense-news/article-912648"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "heraldglobe.com",
-      "id": "evt_7179412106c07572",
+      "domain": "kacu.org",
+      "id": "evt_e6e2c7c93c28f8ff",
       "language": "English",
       "matched_regions": [
         "yemen",
-        "india"
+        "houthi"
       ],
       "matched_themes": [
-        "attack"
+        "rebel",
+        "siege"
       ],
       "region": "MENA",
-      "score": 4.0,
+      "score": 7.5,
       "score_breakdown": {
-        "region": 2.5,
-        "themes": 1.5,
+        "region": 3.0,
+        "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
+      "seen_date": "20261024T103000Z",
       "source_country": "United States",
-      "tier": "medium",
-      "title": "14 Indian nationals on board yacht that was attacked in Yemen waters reported safe",
+      "tier": "high",
+      "title": "Drinking water supplies dwindle in Yemeni city besieged by Houthi rebels",
       "tone": null,
-      "url": "http://www.heraldglobe.com/news/279394080/14-indian-nationals-on-board-yacht-that-was-attacked-in-yemen-waters-reported-safe"
+      "url": "https://www.kacu.org/2026-10-24/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels"
     },
     {
       "actors": [
         "United States"
       ],
       "domain": "wuft.org",
-      "id": "evt_ea7dcc450a1f3b87",
+      "id": "evt_aeb304e782768b26",
       "language": "English",
       "matched_regions": [
-        "israel"
+        "yemen",
+        "houthi"
       ],
       "matched_themes": [
-        "attack"
+        "rebel",
+        "siege"
       ],
       "region": "MENA",
-      "score": 3.5,
+      "score": 7.5,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
+        "region": 3.0,
+        "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
+      "seen_date": "20261024T103000Z",
       "source_country": "United States",
-      "tier": "medium",
-      "title": "Israel orders closure of West Bank after soldiers kill 2 men behind an alleged attack",
+      "tier": "high",
+      "title": "Drinking water supplies dwindle in Yemeni city besieged by Houthi rebels",
       "tone": null,
-      "url": "https://www.wuft.org/2026-10-23/israel-orders-closure-of-west-bank-after-soldiers-kill-2-men-behind-an-alleged-attack"
+      "url": "https://www.wuft.org/2026-10-24/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels"
     },
     {
       "actors": [
-        "United States"
+        "Argentina"
       ],
-      "domain": "kunc.org",
-      "id": "evt_9b8f4aa1acf9f93e",
+      "domain": "argentinastar.com",
+      "id": "evt_0ffae6b05a5bc85e",
       "language": "English",
       "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Israel orders closure of West Bank after soldiers kill 2 men behind an alleged attack",
-      "tone": null,
-      "url": "https://www.kunc.org/npr-news/2026-10-23/israel-orders-closure-of-west-bank-after-soldiers-kill-2-men-behind-an-alleged-attack"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "nbcnews.com",
-      "id": "evt_0ed6f53d5aeca178",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Israel orders West Bank lockdown after Hebron shooting attack",
-      "tone": null,
-      "url": "https://www.nbcnews.com/world/middle-east/israel-orders-west-bank-lockdown-hebron-shooting-attack-rcna605176"
-    },
-    {
-      "actors": [
-        "Central African Republic"
-      ],
-      "domain": "journaldebangui.com",
-      "id": "evt_f3726a341d2a94c5",
-      "language": "French",
-      "matched_regions": [],
-      "matched_themes": [
-        "sanction",
-        "sanctions"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Central African Republic",
-      "tier": "monitor",
-      "title": "RCA : les fonctionnaires absents sous la menace de sanctions à Batangafo",
-      "tone": null,
-      "url": "https://www.journaldebangui.com/rca-les-fonctionnaires-absents-sous-la-menace-de-sanctions-a-batangafo/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "newsradio910wltp.iheart.com",
-      "id": "evt_b3c8aed90a5995fb",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Warhound To Engineer Genetically Modified Military Dogs",
-      "tone": null,
-      "url": "https://newsradio910wltp.iheart.com/content/2026-10-23-warhound-to-engineer-genetically-modified-military-dogs/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "euronews.com",
-      "id": "evt_0dd4e05fb4452e70",
-      "language": "English",
-      "matched_regions": [
+        "iran",
         "hormuz"
       ],
       "matched_themes": [
-        "attack"
+        "strike"
       ],
       "region": "MENA",
-      "score": 3.0,
+      "score": 5.0,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 3.5,
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Oil spill hits UAE beaches as tanker attacks multiply near Hormuz",
+      "seen_date": "20261024T103000Z",
+      "source_country": "Argentina",
+      "tier": "medium",
+      "title": "IRGC claims full control over Hormuz as US contemplates fresh strikes on Iran",
       "tone": null,
-      "url": "https://www.euronews.com/2026/10/23/oil-spill-hits-uae-beaches-as-tanker-attacks-multiply-near-hormuz"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "wisbechstandard.co.uk",
-      "id": "evt_fc80cb6855fa0b6c",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "UK retail sales drop after warm weather hits winter clothing demand",
-      "tone": null,
-      "url": "https://www.wisbechstandard.co.uk/news/national/26662866.uk-retail-sales-drop-warm-weather-hits-winter-clothing-demand/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "thecomet.net",
-      "id": "evt_9f7332bdf3391636",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "UK retail sales drop after warm weather hits winter clothing demand",
-      "tone": null,
-      "url": "https://www.thecomet.net/news/national/26662866.uk-retail-sales-drop-warm-weather-hits-winter-clothing-demand/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "heraldglobe.com",
-      "id": "evt_3fd36ed5c4d12982",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Trump turns to Cold War - era law to tackle fuel crisis",
-      "tone": null,
-      "url": "http://www.heraldglobe.com/news/279394193/trump-turns-to-cold-war-era-law-to-tackle-fuel-crisis"
+      "url": "http://www.argentinastar.com/news/279395973/irgc-claims-full-control-over-hormuz-as-us-contemplates-fresh-strikes-on-iran"
     },
     {
       "actors": [
         "India"
       ],
-      "domain": "chennaionline.com",
-      "id": "evt_20460c61116278c8",
+      "domain": "news.webindia123.com",
+      "id": "evt_9d55396e16124727",
       "language": "English",
       "matched_regions": [
-        "india",
-        "pakistan"
+        "iran",
+        "hormuz"
       ],
-      "matched_themes": [],
-      "region": "Asia del Sur",
-      "score": 2.5,
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 5.0,
       "score_breakdown": {
-        "region": 2.5,
-        "themes": 0.0,
+        "region": 3.5,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
+      "seen_date": "20261024T101500Z",
       "source_country": "India",
-      "tier": "monitor",
-      "title": "Title : India Questions Pakistan Claims on Religious Freedom at UN – Chennaionline",
+      "tier": "medium",
+      "title": "IRGC claims full control over Hormuz as US contemplates fresh strikes on Iran",
       "tone": null,
-      "url": "https://www.chennaionline.com/news/title-india-questions-pakistans-claims-on-religious-freedom-at-un/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "az-online.de",
-      "id": "evt_3d35a1f046c8ae30",
-      "language": "German",
-      "matched_regions": [
-        "saudi",
-        "niger"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 2.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "USA ordnen nach tödlichen Angriffen Ausreise einiger Diplomaten aus Saudi - Arabien an",
-      "tone": null,
-      "url": "https://www.az-online.de/politik/usa-ordnen-nach-toedlichen-angriffen-die-ausreise-einiger-diplomaten-aus-saudi-arabien-an-zr-94555047.html"
+      "url": "https://news.webindia123.com/news/Articles/World/20261024/4514600.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "euronews.com",
-      "id": "evt_fd165c62de328526",
+      "domain": "ksat.com",
+      "id": "evt_e9f93930cae199d4",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Ukraine and Russia eye new peace talks and Melania Trump mission but steep obstacles remain",
+      "tone": null,
+      "url": "https://www.ksat.com/news/world/2026/10/24/ukraine-and-russia-eye-new-peace-talks-and-melania-trumps-mission-but-steep-obstacles-remain/"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "nigerianeye.com",
+      "id": "evt_3caa647da675cd7c",
+      "language": "English",
+      "matched_regions": [
+        "moscow",
+        "iran",
+        "iranian",
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Nigeria",
+      "tier": "medium",
+      "title": "Iranian President Pezeshkian to Meet Putin in Moscow - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
+      "tone": null,
+      "url": "https://www.nigerianeye.com/2026/10/iranian-president-pezeshkian-to-meet.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "ksat.com",
+      "id": "evt_c0c8a87570c2e563",
+      "language": "English",
+      "matched_regions": [
+        "china",
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "North Korean leader Kim Jong Un visits China , South Korean news agency reports",
+      "tone": null,
+      "url": "https://www.ksat.com/news/world/2026/10/24/north-korean-leader-kim-jong-un-visits-china-south-korean-news-agency-reports/"
+    },
+    {
+      "actors": [
+        "Argentina"
+      ],
+      "domain": "argentinastar.com",
+      "id": "evt_2ffb4fc40e3f4e26",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror",
+        "attack"
+      ],
+      "region": "Global",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Argentina",
+      "tier": "medium",
+      "title": "France investigates Paris - area gun attack as terrorism",
+      "tone": null,
+      "url": "http://www.argentinastar.com/news/279395061/france-investigates-paris-area-gun-attack-as-terrorism"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wgauradio.com",
+      "id": "evt_32462dcca2015983",
+      "language": "English",
+      "matched_regions": [
+        "china",
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "North Korean leader Kim Jong Un visits China , South Korea says",
+      "tone": null,
+      "url": "https://www.wgauradio.com/news/world/north-korean-leader/I6PAIIST546OFESEE6CXVAG53I/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wsls.com",
+      "id": "evt_b5fa815c6926d815",
+      "language": "English",
+      "matched_regions": [
+        "china",
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "North Korean leader Kim Jong Un visits China , South Korean news agency reports",
+      "tone": null,
+      "url": "https://www.wsls.com/news/world/2026/10/24/north-korean-leader-kim-jong-un-visits-china-south-korean-news-agency-reports/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "freepressseries.co.uk",
+      "id": "evt_a4a57f2d0d28cd72",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Israel imposes closures across West Bank city after attacks",
+      "tone": null,
+      "url": "https://www.freepressseries.co.uk/news/national/26666823.israel-imposes-closures-across-west-bank-city-attacks/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "leaderlive.co.uk",
+      "id": "evt_f09c32a3551a4944",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Israel imposes closures across West Bank city after attacks",
+      "tone": null,
+      "url": "https://www.leaderlive.co.uk/news/national/26666823.israel-imposes-closures-across-west-bank-city-attacks/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "edp24.co.uk",
+      "id": "evt_d4d693e02bf5d9a6",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Israel imposes closures across West Bank city after attacks",
+      "tone": null,
+      "url": "https://www.edp24.co.uk/news/national/26666823.israel-imposes-closures-across-west-bank-city-attacks/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "texarkanagazette.com",
+      "id": "evt_9527f052abce66d5",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "First tanker of Russian diesel sets sail for the US in Trump controversial deal with Putin",
+      "tone": null,
+      "url": "https://www.texarkanagazette.com/news/2026/oct/24/first-tanker-of-russian-diesel-sets-sail-for-the/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "gazetteherald.co.uk",
+      "id": "evt_0f6693870513ad91",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Israel imposes closures across West Bank city after attacks",
+      "tone": null,
+      "url": "https://www.gazetteherald.co.uk/news/national/26666823.israel-imposes-closures-across-west-bank-city-attacks/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "bordertelegraph.com",
+      "id": "evt_1f2f201db6dfd686",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T101500Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Israel imposes closures across West Bank city after attacks",
+      "tone": null,
+      "url": "https://www.bordertelegraph.com/news/national/26666823.israel-imposes-closures-across-west-bank-city-attacks/"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "ynetnews.com",
+      "id": "evt_e55a4ad8db57a9be",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T101500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Karak church attack tests Jordan response . Israel has a stake in the outcome",
+      "tone": null,
+      "url": "https://www.ynetnews.com/opinions-analysis/article/h1mdrty2ze"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "northwichguardian.co.uk",
+      "id": "evt_8cb126a2e7c94412",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T101500Z",
+      "source_country": "United Kingdom",
+      "tier": "medium",
+      "title": "Israel imposes closures across West Bank city after attacks",
+      "tone": null,
+      "url": "https://www.northwichguardian.co.uk/news/national/26666823.israel-imposes-closures-across-west-bank-city-attacks/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "texasguardian.com",
+      "id": "evt_98dc5764d6c79a93",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror",
+        "attack"
+      ],
+      "region": "Global",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T101500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "France investigates Paris - area gun attack as terrorism",
+      "tone": null,
+      "url": "http://www.texasguardian.com/news/279395061/france-investigates-paris-area-gun-attack-as-terrorism"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "morgenpost.de",
+      "id": "evt_f3aec46c57a5e1b7",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Zeitumstellung abschaffen ? Warum das viel leichter gesagt als getan ist",
+      "tone": null,
+      "url": "https://www.morgenpost.de/wirtschaft/article413491011/zeitumstellung-abschaffen-warum-das-viel-leichter-gesagt-als-getan-ist.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "marinij.com",
+      "id": "evt_ba46ebb9b837d8a2",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Warriors - Grizzlies : Golden State collapses in 4th quarter",
+      "tone": null,
+      "url": "https://www.marinij.com/2026/10/23/warriors-grizzlies-podziemski-curry-green-stewart-temper/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "polygon.com",
+      "id": "evt_ce72c287b32782b9",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "50 Years Later , the Best War Series of All Time Is Still Unlike Anything Else on TV",
+      "tone": null,
+      "url": "https://www.polygon.com/mash-tv-series-retrospective/"
+    },
+    {
+      "actors": [],
+      "domain": "inquirer.com",
+      "id": "evt_f3eb4f828320e34e",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "cuba"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Trump at South Florida rally revives idea of military intervention in Cuba after Iran",
+      "tone": null,
+      "url": "https://www.inquirer.com/news/nation-world/trump-us-cuba-military-intervention-iran-rubio-20261023.html"
+    },
+    {
+      "actors": [
+        "Switzerland"
+      ],
+      "domain": "cdt.ch",
+      "id": "evt_6ba3410a77601376",
+      "language": "Italian",
+      "matched_regions": [
+        "iran",
+        "united states"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Switzerland",
+      "tier": "monitor",
+      "title": "007 united states : « LIran ha piani per uccidere diplomatici e funzionari americani »",
+      "tone": null,
+      "url": "https://www.cdt.ch/news/007-usa-liran-ha-piani-per-uccidere-diplomatici-e-funzionari-americani-442641"
+    },
+    {
+      "actors": [],
+      "domain": "games.24tv.ua",
+      "id": "evt_e826dd4ee0502044",
+      "language": "Ukrainian",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Mass Effect Universe – деталі сюжету та геймплею скасованої гри від BioWare",
+      "tone": null,
+      "url": "https://games.24tv.ua/mass-effect-universe-detali-syuzhetu-geympleyu-skasovanoyi-gri_n3166719"
+    },
+    {
+      "actors": [
+        "Canada"
+      ],
+      "domain": "prpeak.com",
+      "id": "evt_e1e46378f02c474f",
+      "language": "English",
+      "matched_regions": [
+        "cuba"
+      ],
+      "matched_themes": [
+        "blockade"
+      ],
+      "region": "América Latina",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Canada",
+      "tier": "monitor",
+      "title": "Cuban ambassadors ask Canada to renew its rejection of U . S . embargo and fuel blockade",
+      "tone": null,
+      "url": "https://www.prpeak.com/the-mix/cuban-ambassadors-ask-canada-to-renew-its-rejection-of-us-embargo-and-fuel-blockade-12934174"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "hindustantimes.com",
+      "id": "evt_2a2997eb30a14ea7",
+      "language": "English",
+      "matched_regions": [
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Epstein files become new weapon in Houthi campaign against Saudi Arabia : Report",
+      "tone": null,
+      "url": "https://www.hindustantimes.com/world-news/epstein-files-becomes-houthi-new-weapon-to-target-saudi-arabia-religious-credibility-report-101792823886871.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "journalreview.com",
+      "id": "evt_26dd638cb993e70c",
       "language": "English",
       "matched_regions": [
         "ukraine"
@@ -529,95 +732,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
+      "seen_date": "20261024T103000Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "Starlink restrictions not lifted in Ukraine despite Trump claims",
+      "title": "America Munich - grade betrayal of Ukraine",
       "tone": null,
-      "url": "https://www.euronews.com/2026/10/23/starlink-restrictions-not-lifted-in-ukraine-despite-trumps-claims-defence-officials-say"
+      "url": "http://www.journalreview.com/stories/americas-munich-grade-betrayal-of-ukraine,412568"
     },
     {
       "actors": [
         "Vietnam"
       ],
-      "domain": "tuoitre.vn",
-      "id": "evt_e5b36889a2486247",
+      "domain": "baomoi.com",
+      "id": "evt_4d067ab86fd24b00",
       "language": "Vietnamese",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Vietnam",
-      "tier": "monitor",
-      "title": "Tiết lộ thông tin mới về Lãnh tụ tối cao Iran sau 8 tháng vắng bóng",
-      "tone": null,
-      "url": "https://tuoitre.vn/tiet-lo-thong-tin-moi-ve-lanh-tu-toi-cao-iran-sau-8-thang-vang-bong-100261023164601272.htm"
-    },
-    {
-      "actors": [
-        "South Africa"
-      ],
-      "domain": "africa-newsroom.com",
-      "id": "evt_a869b70af73da847",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "combat"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "South Africa",
-      "tier": "monitor",
-      "title": "APO Group - Africa Newsroom / Press release | Forging Combat Readiness through Precision , Power and Discipline",
-      "tone": null,
-      "url": "https://www.africa-newsroom.com/press/forging-combat-readiness-through-precision-power-and-discipline"
-    },
-    {
-      "actors": [
-        "Indonesia"
-      ],
-      "domain": "siap.viva.co.id",
-      "id": "evt_0ffa39f602789ecc",
-      "language": "Indonesian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Indonesia",
-      "tier": "monitor",
-      "title": "Dampak Perang Iran Merembet ke Politik AS , Trump Hadapi Tekanan Berlapis",
-      "tone": null,
-      "url": "https://siap.viva.co.id/news/28639-dampak-perang-iran-merembet-ke-politik-as-trump-hadapi-tekanan-berlapis"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "bild.de",
-      "id": "evt_b3ceb89c6db9d15e",
-      "language": "German",
       "matched_regions": [
         "israel"
       ],
@@ -629,44 +757,19 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Germany",
+      "seen_date": "20261024T103000Z",
+      "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "Nach Angriff in Hebron : Israel bereitet Abriegelung des Westjordanlandes vor",
+      "title": "Thủ tướng Netanyahu : Israel cần chuẩn bị đối phó với các lệnh trừng phạt toàn cầu",
       "tone": null,
-      "url": "https://www.bild.de/politik/ausland-und-internationales/nach-angriff-israel-bereitet-abriegelung-von-westjordanland-vor-6adb10619fbb7e8e310dce88"
+      "url": "https://baomoi.com/thu-tuong-netanyahu-israel-can-chuan-bi-doi-pho-voi-cac-lenh-trung-phat-toan-cau-c56344126.epi"
     },
     {
       "actors": [
-        "United States"
+        "Mexico"
       ],
-      "domain": "hawaiitribune-herald.com",
-      "id": "evt_cadcbd3e825255bf",
-      "language": "English",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Trump says Musk restored Ukraine Starlink access , declines to say if they spoke",
-      "tone": null,
-      "url": "https://www.hawaiitribune-herald.com/2026/10/23/nation-world-news/trump-says-musk-restored-ukraines-starlink-access-declines-to-say-if-they-spoke/"
-    },
-    {
-      "actors": [
-        "Cuba"
-      ],
-      "domain": "prensa-latina.cu",
-      "id": "evt_e7dae7a6c3003375",
+      "domain": "razon.com.mx",
+      "id": "evt_19243c2595c8f841",
       "language": "Spanish",
       "matched_regions": [
         "israel"
@@ -679,94 +782,215 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Cuba",
+      "seen_date": "20261024T103000Z",
+      "source_country": "Mexico",
       "tier": "monitor",
-      "title": "Acciones israelíes socavan la confianza internacional , afirma Ankara",
+      "title": "Israel lanza ofensiva contra Cisjordania",
       "tone": null,
-      "url": "https://www.prensa-latina.cu/2026/10/23/acciones-israelies-socavan-la-confianza-internacional-afirma-ankara/"
+      "url": "https://www.razon.com.mx:443/mundo/2026/10/24/israel-lanza-ofensiva-contra-cisjordania/"
     },
     {
       "actors": [
-        "India"
+        "Serbia"
       ],
-      "domain": "hindustantimes.com",
-      "id": "evt_20842e662823c360",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "killed"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "Chhattisgarh man raped , killed 7 - year - old girl ; sniffer dog leads to his house : Police",
-      "tone": null,
-      "url": "https://www.hindustantimes.com/india-news/chhattisgarh-man-raped-killed-7-year-old-girl-sniffer-dog-leads-to-his-house-police-101792751994781.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wisn.com",
-      "id": "evt_280eca04e1c8697e",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Netanyahu office orders closure of West Bank after soldiers kill 2 men behind an alleged attack",
-      "tone": null,
-      "url": "https://www.wisn.com/article/hebron-shooting-west-bank-closure-netanyahu-hamas/74226323"
-    },
-    {
-      "actors": [
-        "Slovak Republic"
-      ],
-      "domain": "topky.sk",
-      "id": "evt_fe0db6ca4128b2eb",
-      "language": "Slovak",
+      "domain": "danas.rs",
+      "id": "evt_79ad743df83b8a79",
+      "language": "Serbian",
       "matched_regions": [
-        "nato"
+        "iran"
       ],
       "matched_themes": [],
-      "region": "Global",
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Serbia",
+      "tier": "monitor",
+      "title": "Iranski general : Nećemo dozvoliti američkim vojnim brodovima da uđu u Persijski zaliv",
+      "tone": null,
+      "url": "https://www.danas.rs/svet/iran-general-americki-brodovi-persijski-zaliv/"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "baomoi.com",
+      "id": "evt_71b580ebc4848215",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Mỹ để ngỏ khả năng mở chiến dịch quân sự mới nhằm vào Iran",
+      "tone": null,
+      "url": "https://baomoi.com/my-de-ngo-kha-nang-mo-chien-dich-quan-su-moi-nham-vao-iran-c56344185.epi"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "vov.vn",
+      "id": "evt_639e9a06617f53b1",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Liên hợp quốc hoan nghênh thỏa thuận ngừng bắn Nga - Ukraine",
+      "tone": null,
+      "url": "http://vov.vn/the-gioi/lien-hop-quoc-hoan-nghenh-thoa-thuan-ngung-ban-giua-nga-va-ukraine-post1344270.vov"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "deutschlandfunk.de",
+      "id": "evt_77f45bfb39e2a169",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Russischer Angriffskrieg - Starlink - Satellitensystem funktioniert wieder über der Ukraine - Waffenstillstand für Oleschky bestätigt",
+      "tone": null,
+      "url": "https://www.deutschlandfunk.de/starlink-satellitensystem-funktioniert-wieder-ueber-der-ukraine-waffenstillstand-fuer-oleschky-besta-100.html"
+    },
+    {
+      "actors": [
+        "Portugal"
+      ],
+      "domain": "sapo.pt",
+      "id": "evt_bb0a090cdfd6b0f1",
+      "language": "Portuguese",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Portugal",
+      "tier": "monitor",
+      "title": "Big Brother All Stars - Liderança é o  início do fim  de Catarina Miranda ? Rosto da TVI atira :  A forma de …",
+      "tone": null,
+      "url": "https://sapo.pt/artigo/big-brother-all-stars-lideranca-e-o-inicio-do-fim-de-catarina-miranda-rosto-da-tvi-atira-a-forma-de-6adc6a28e6b9fd91ec47ac40"
+    },
+    {
+      "actors": [],
+      "domain": "alfax.mk",
+      "id": "evt_d2f2961c000b3d29",
+      "language": "Albanian",
+      "matched_regions": [
+        "palestin"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Slovak Republic",
+      "seen_date": "20261024T103000Z",
+      "source_country": "",
       "tier": "monitor",
-      "title": "Prigožin mal hovoriť o útoku na NATO , prehovoril jeho bývalý právnik",
+      "title": "Ushtria izraelite vazhdon rrethimin e Hebronit për të dytën ditë , arreston 19 palestinezë në Bregun Perëndimor",
       "tone": null,
-      "url": "https://www.topky.sk/cl/11/9537311/Desive-odhalenie--Wagnerovci-planovali-utok-na-NATO--TIETO-krajiny-by-boli-na-rane"
+      "url": "https://alfax.mk/ushtria-izraelite-vazhdon-rrethimin-e-hebronit-per-te-dyten-dite-arreston-19-palestineze-ne-bregun-perendimor/"
     },
     {
       "actors": [
-        "United States"
+        "Brazil"
       ],
-      "domain": "wnyc.org",
-      "id": "evt_e16a5a5bcac5ee02",
+      "domain": "riotimesonline.com",
+      "id": "evt_6603eca497e7951b",
+      "language": "English",
+      "matched_regions": [
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Venezuela Oil Field Hits 115 , 000 Barrels",
+      "tone": null,
+      "url": "https://www.riotimesonline.com/venezuela-oil-field-115000-barrels-us-deal-october-2026/"
+    },
+    {
+      "actors": [],
+      "domain": "abcnews.al",
+      "id": "evt_edf4786890033645",
+      "language": "Albanian",
+      "matched_regions": [
+        "palestin"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261024T103000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Izraeli nis shembjen e ndërtesave në Hebron , palestinezëve u jepen vetëm pesë minuta për tu larguar – Abc News",
+      "tone": null,
+      "url": "https://abcnews.al/izraeli-nis-shembjen-e-ndertesave-ne-hebron-palestinezeve-u-jepen-vetem-pese-minuta-per-tu-larguar/"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "blueprint.ng",
+      "id": "evt_576766c00e187f67",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -779,137 +1003,35 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
-      "source_country": "United States",
+      "seen_date": "20261024T103000Z",
+      "source_country": "Nigeria",
       "tier": "monitor",
-      "title": "Amid Trump assaults on DEI , how one university is elevating Black students",
+      "title": "Edo NUEE Chairman Hospitalised After Alleged Assault",
       "tone": null,
-      "url": "https://wnyc.org/npr/nx-s1-5797959"
+      "url": "https://blueprint.ng/edo-nuee-chair-hospitalised-after-alleged-assault-says-nlc/"
     },
     {
-      "actors": [
-        "Japan"
+      "actors": [],
+      "domain": "inquirer.com",
+      "id": "evt_65e9a47877b06670",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "troops"
       ],
-      "domain": "newsweekjapan.jp",
-      "id": "evt_92412660ed475171",
-      "language": "Japanese",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
       "region": "Global",
       "score": 1.5,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Japan",
+      "seen_date": "20261024T103000Z",
+      "source_country": "",
       "tier": "monitor",
-      "title": "米海兵隊の軍用ブーツに大量の欠陥 … 極寒のNATO演習で露呈した 「 アメリカ製優先 」 の落とし穴 | ニューズウィーク日本版 オフィシャルサイト",
+      "title": "Military boards are defying orders and letting trans troops serve",
       "tone": null,
-      "url": "https://www.newsweekjapan.jp/articles/-/337839"
-    },
-    {
-      "actors": [
-        "Slovak Republic"
-      ],
-      "domain": "hnonline.sk",
-      "id": "evt_34cb5fdb2f2e8e1c",
-      "language": "Slovak",
-      "matched_regions": [
-        "mali"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Slovak Republic",
-      "tier": "monitor",
-      "title": "Ceny benzínu a nafty prudko vzrástli . V najbližších týždňoch by ceny palív mali skôr kolísať , hovorí analytik",
-      "tone": null,
-      "url": "https://hnonline.sk/finweb/ekonomika/96309438-ceny-benzinu-a-nafty-prudko-vzrastli-benzin-sa-vratil-na-niekolkorocne-maxima"
-    },
-    {
-      "actors": [
-        "Lithuania"
-      ],
-      "domain": "15min.lt",
-      "id": "evt_80d468f9cc4c7dc7",
-      "language": "Lithuanian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Lithuania",
-      "tier": "monitor",
-      "title": "JAV senatoriai ragina Pete  ą Hegsethą ir Marco Rubio atlaisvinti lėšas Baltijos šalių saugumui",
-      "tone": null,
-      "url": "https://www.15min.lt/naujiena/aktualu/pasaulis/jav-senatoriai-ragina-petea-hegsetha-ir-marco-rubio-atlaisvinti-lesas-baltijos-saliu-saugumui-57-2791188"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "antimafiaduemila.com",
-      "id": "evt_fff8a48c62ea7f94",
-      "language": "Italian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Natoli e Lo Forte : contro di noi attacchi infondati . Flop totale delle indagini di Caltanissetta",
-      "tone": null,
-      "url": "https://antimafiaduemila.com/home/mafie-news/topnews/natoli-e-lo-forte-contro-di-noi-attacchi-infondati-flop-totale-delle-indagini-di-caltanissetta"
-    },
-    {
-      "actors": [
-        "Turkey"
-      ],
-      "domain": "trthaber.com",
-      "id": "evt_8160c4e26e341a97",
-      "language": "Turkish",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261023T110000Z",
-      "source_country": "Turkey",
-      "tier": "monitor",
-      "title": "MİAdan  İsrail Yayılmacılığının Anatomisi  Raporu",
-      "tone": null,
-      "url": "https://www.trthaber.com/haber/gundem/miadan-israil-yayilmaciliginin-anatomisi-raporu-960973.html"
+      "url": "https://www.inquirer.com/news/nation-world/transgender-military-review-boards-vote-keep-hegseth-pentagon-navy-marines-20261023.html"
     }
   ],
   "filters": {
@@ -923,13 +1045,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-10-23T11:37:23Z",
+  "generated_at": "2026-10-24T11:05:46Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 4,
-    "medium": 7,
-    "monitor": 24
+    "high": 2,
+    "medium": 17,
+    "monitor": 21
   },
-  "total_events": 35
+  "total_events": 40
 }
