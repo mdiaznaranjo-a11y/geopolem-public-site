@@ -1226,6 +1226,7 @@ export const SENTINEL_BRIEF = {
   "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-10-19_2026-10-25.json",
   "markdownUrl": "./data/sentinel/weekly-brief-2026-10-26.md",
   "close": "GEOPÓLEM. Bienvenidos al tablero.",
+  "layerLabel": "Acople ambiental significativo",
   "monitor_layer": {
     "label": "Acople ambiental significativo",
     "status": "1 confirmado · 1 operacional · 1 en observación",
