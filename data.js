@@ -647,603 +647,649 @@ export const DOCTRINA = {
    IMPORTANTE: correlación temporal no implica causalidad.
    ======================================================================== */
 export const SENTINEL_BRIEF = {
-  "id": "sentinel_weekly_brief_2026-10-12_2026-10-18",
+  "id": "sentinel_weekly_brief_2026-10-19_2026-10-25",
   "eyebrow": "SENTINEL",
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "main_status": "un acople confirmado y dos señales en observación; no se fuerza causalidad donde la evidencia no la sostiene",
-  "generated_at": "2026-10-19T08:12:00+02:00",
-  "published_at": "2026-10-19T08:12:00+02:00",
-  "window": "12-18 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
-  "window_label": "12-18 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
+  "main_status": "un acople confirmado, un acople operacional y una señal en observación; no se fuerza causalidad donde la evidencia no la sostiene",
+  "generated_at": "2026-10-26T07:40:00+01:00",
+  "published_at": "2026-10-26T07:40:00+01:00",
+  "window": "19-25 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
+  "window_label": "19-25 OCTUBRE 2026 · EUROPE/LUXEMBOURG",
   "week_window": {
     "local": {
-      "start": "2026-10-12T00:00:00+02:00",
-      "end": "2026-10-18T23:59:59+02:00",
-      "timezone": "Europe/Luxembourg"
+      "start": "2026-10-19T00:00:00+02:00",
+      "end": "2026-10-25T23:59:59+01:00",
+      "timezone": "Europe/Luxembourg",
+      "note": "Cambio a horario de invierno el 25 de octubre a las 03:00"
     },
     "utc": {
-      "start": "2026-10-11T22:00:00Z",
-      "end": "2026-10-18T21:59:59Z"
+      "start": "2026-10-18T22:00:00Z",
+      "end": "2026-10-25T22:59:59Z"
     }
   },
   "summary": [
-    "La semana deja un acople confirmado: Sudán, donde guerra, sequía, lluvia deficitaria, presión alimentaria y acceso humanitario convergen de forma explícita en las fuentes institucionales.",
-    "NASA EONET/GDACS añadió señales físicas dentro de la ventana, incluidos incendios en Sudán, el supertifón Champi en el Pacífico occidental y la inundación menor de Libia; USGS registró nueve sismos M5,5+ en el rango UTC.",
-    "Guam/Marianas queda como vigilancia de alto valor estratégico: no es un frente de guerra, pero sí una bisagra logística de la disuasión estadounidense frente a China bajo presión de tifón rojo.",
-    "Pakistán/Baluchistán queda en observación: el sismo de Khuzdar no causó la escalada fronteriza, pero coincide con una semana de presión de seguridad y capacidad estatal en el eje afgano-paquistaní.",
-    "GEOPÓLEM publica un caso confirmado y dos señales; Ucrania/Rusia, Libia y otros eventos quedan fuera por falta de acople ambiental directo suficiente en la semana."
+    "Taiz (Yemen) es el acople confirmado de la semana: el cerco hutí y la falta de diésel redujeron a la mitad la producción de agua de una ciudad con escasez hídrica estructural.",
+    "El sismo M7,0 del Tíbet (USGS, alerta PAGER naranja) detuvo durante unas 30 horas el tramo Golmud–Lhasa del ferrocarril Qinghai–Tíbet: acople operacional sobre infraestructura estratégica china.",
+    "Champi, tras Guam, golpeó Taiwán con 1 muerto, 527 heridos y 288.000 hogares sin luz; queda en observación por su paso sobre la Primera Cadena de Islas.",
+    "Se revisaron 40 eventos SENTINEL (24 h), 135 eventos NASA EONET en la ventana y 197 sismos M4,5+ de USGS (19 de M5,5+).",
+    "Ormuz, Crimea, Vanuatu, el Sahel y Cuba quedan fuera por falta de acople ambiental directo o de impacto suficiente."
   ],
-  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y fuentes institucionales o abiertas verificables. La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, energía, seguridad alimentaria, migración, capacidad estatal y presión humanitaria. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
-  "caveat": "No se verificaron tres acoples conflicto-ambiente confirmados. Se publica un acople confirmado y dos señales de vigilancia, separando hecho, evaluación e hipótesis.",
+  "method_note": "Se cruzaron el feed público SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y fuentes institucionales o abiertas verificables (OCHA, UNICEF, FEWS NET, Amnistía, Xinhua, Reuters). La selección prioriza impacto geopolítico, continuidad operacional, rutas críticas, energía, agua, seguridad alimentaria y capacidad estatal. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
+  "caveat": "El feed SENTINEL publicado cubre solo las últimas 24 horas (generado el 24 de octubre), por lo que se complementó con búsqueda abierta en fuentes institucionales para toda la semana. En Taiz el factor ambiental es estructural y no un evento NASA/USGS de la ventana; en Champi no hay evidencia de impacto militar.",
   "source_urls": {
     "sentinel_feed": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+    "nasa_eonet_window": "https://eonet.gsfc.nasa.gov/api/v3/events?start=2026-10-18&end=2026-10-26&status=all",
     "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
-    "nasa_eonet_closed": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed",
-    "usgs_m55": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-11T22:00:00Z&endtime=2026-10-18T21:59:59Z&minmagnitude=5.5&orderby=time",
-    "usgs_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-11T22:00:00Z&endtime=2026-10-18T21:59:59Z&minmagnitude=4.5&orderby=time",
-    "un_sudan_drought_war": "https://news.un.org/en/story/2026/10/1168577",
-    "unifeed_sudan_humanitarian": "https://media.un.org/unifeed/en/asset/d364/d3640527",
-    "gdacs_sudan_wildfire_1032875": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875",
-    "gdacs_sudan_wildfire_1032872": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032872",
-    "gdacs_champi": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001338",
-    "guam_jic_champi": "https://reliefweb.int/report/guam/jic-release-no-1-jic-partially-activated-guam-cor-2-typhoon-watch-effect-tropical-storm-champi-10162026",
-    "usgs_pakistan_khuzdar": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1",
-    "usgs_pakistan_khuzdar_pager": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1/pager",
-    "ap_pakistan_afghanistan_border": "https://apnews.com/article/pakistan-afghanistan-border-clashes-militant-infiltration-af35955a49d8ec9948b4a946bf07d37c",
-    "gdacs_libya_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104231",
-    "reuters_ukraine_energy_76": "https://www.reuters.com/world/europe/zelenskiy-says-russia-attacked-ukrainian-energy-sector-76-times-past-week-2026-10-18/"
+    "usgs_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-18T22:00:00&endtime=2026-10-25T22:59:59&minmagnitude=4.5&orderby=magnitude",
+    "usgs_tibet_m7": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g",
+    "un_news_ocha_taiz": "https://news.un.org/en/story/2026/10/1168654",
+    "amnesty_taiz": "https://www.amnesty.org/en/latest/news/2026/10/yemen-huthis-must-open-taiz-roads-immediately-as-thousands-of-civilians-lives-are-at-risk/",
+    "npr_ap_taiz_water": "https://www.npr.org/2026/10/24/g-s1-149729/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels",
+    "fewsnet_yemen": "https://fews.net/middle-east-and-europe/yemen/food-security-outlook/june-2026",
+    "aljazeera_saudi_intercepts": "https://www.aljazeera.com/news/2026/10/25/saudi-arabia-intercepts-missiles-and-drones-as-fighting-with-houthis-rages",
+    "xinhua_hkcd_railway": "https://www.hkcd.com/hkcdweb/content/2026/10/25/content_8781673.html",
+    "thestar_xinhua_tibet": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/24/deadly-quake-jolts-remote-tibet",
+    "dtnext_tibet": "https://www.dtnext.in/news/world/powerful-earthquake-in-chinas-tibet-region-collapses-hundreds-of-homes-and-kills-at-least-16-people",
+    "reuters_champi_taiwan": "https://www.reuters.com/business/environment/typhoon-champi-sweeps-past-taiwan-leaving-1-dead-500-injured-2026-10-24/",
+    "stripes_champi": "https://www.stripes.com/theaters/asia_pacific/storm_tracker/2026-10-14/96w-invest:-marianas-might-be-in-the-crosshairs-23151384.html",
+    "gdacs_ukraine_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104242"
   },
   "data_scan_counts": {
-    "sentinel_events_reviewed": 29,
-    "nasa_open_events": 13,
-    "nasa_closed_events": 178,
-    "nasa_events_in_window": 37,
-    "usgs_m55_plus": 9,
-    "usgs_m45_plus": 108,
+    "sentinel_events_reviewed": 40,
+    "nasa_events_in_window": 135,
+    "nasa_open_events": 9,
+    "nasa_closed_events": 126,
+    "usgs_m45_plus": 197,
+    "usgs_m55_plus": 19,
     "total_candidates": 9,
-    "selected_confirmed_couplings": 1,
-    "selected_watch_signals": 2
+    "selected_confirmed_couplings": 2,
+    "selected_watch_signals": 1
   },
   "stats": [
     {
       "label": "SentinelEvents",
-      "value": 29
+      "value": 40
     },
     {
-      "label": "NasaOpenEvents",
-      "value": 13
-    },
-    {
-      "label": "NasaClosedEvents",
-      "value": 178
+      "label": "NasaEventsInWindow",
+      "value": 135
     },
     {
       "label": "UsgsM55Plus",
-      "value": 9
+      "value": 19
     },
     {
       "label": "ConfirmedCouplings",
-      "value": 1
+      "value": 2
     },
     {
       "label": "WatchSignals",
-      "value": 2
+      "value": 1
     }
   ],
+  "total_candidates": 9,
   "selected_inflection_points": [
     {
-      "id": "sudan-darfur-kordofan-drought-war-confirmed",
+      "id": "yemen-taiz-siege-water-confirmed",
       "rank": 1,
       "status": "confirmado",
       "status_en": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Sudán / Darfur, Kordofán y eje Nilo Azul",
-      "headline": "Sudán: la sequía entra en el corazón de la guerra alimentaria",
-      "headlineEn": "Sudan: drought enters the core of the food-security war",
-      "conflict_event": "Guerra civil, desplazamiento, ataques a mercados y restricciones de acceso humanitario en Darfur, Kordofán y Nilo Azul.",
-      "conflictEvent": "Guerra civil, desplazamiento, ataques a mercados y restricciones de acceso humanitario en Darfur, Kordofán y Nilo Azul.",
-      "conflictEventEn": "Civil war, displacement, attacks on markets and restricted humanitarian access in Darfur, Kordofan and Blue Nile.",
-      "environmental_event": "Sequía severa asociada a El Niño, lluvias deficitarias y focos de incendio NASA/EONET-GDACS en Sudán durante la ventana semanal.",
-      "environmentalEvent": "Sequía severa asociada a El Niño, lluvias deficitarias y focos de incendio NASA/EONET-GDACS en Sudán durante la ventana semanal.",
-      "environmentalEventEn": "Severe El Niño-related drought, rainfall deficits and NASA/EONET-GDACS wildfire detections in Sudan during the weekly window.",
+      "location": "Yemen / Taiz, eje Taiz–Adén",
+      "lat": 13.58,
+      "lon": 44.02,
+      "headline": "Taiz: el cerco convierte el agua en frente de guerra",
+      "headlineEn": "Taiz: the siege turns water into a front line",
+      "conflict_event": "Cerco hutí de Taiz, tercera ciudad de Yemen: corte de la carretera principal a Adén en octubre, combates cerca de zonas pobladas y bloqueo de ayuda humanitaria.",
+      "conflictEventEn": "Houthi encirclement of Taiz, Yemen's third city: main road to Aden cut in October, fighting near populated areas and humanitarian aid blocked.",
+      "environmental_event": "Escasez hídrica estructural: acuíferos en descenso por sequías frecuentes y crecimiento poblacional, infraestructura hídrica dañada por la guerra y lluvias por debajo de la media en el oeste de Yemen desde la primavera (FEWS NET). No hay evento NASA/USGS puntual en la ventana.",
+      "environmentalEventEn": "Structural water scarcity: groundwater depleted by frequent droughts and population growth, war-damaged water infrastructure and below-average rainfall in western Yemen since spring (FEWS NET). No discrete NASA/USGS event in the window.",
       "coupling_type": [
-        "seguridad alimentaria",
-        "desplazamiento",
+        "agua",
+        "asedio",
         "acceso humanitario",
-        "capacidad estatal",
-        "clima-conflicto"
-      ],
-      "couplingType": [
-        "seguridad alimentaria",
-        "desplazamiento",
-        "acceso humanitario",
-        "capacidad estatal",
-        "clima-conflicto"
+        "energía (diésel)",
+        "seguridad alimentaria"
       ],
       "couplingTypeEn": [
-        "food security",
-        "displacement",
+        "water",
+        "siege",
         "humanitarian access",
-        "state capacity",
-        "climate-conflict"
+        "energy (diesel)",
+        "food security"
       ],
-      "why_it_matters": "El punto importa porque la presión ambiental afecta directamente cosechas, agua y precios mientras la guerra restringe movilidad, mercados y entrega de ayuda.",
-      "fact": "Hecho: la alerta IPC/ONU del 12 de octubre situó a Darfur y Kordofán bajo riesgo creciente de hambruna, con más de 300.000 personas desplazadas en Gran Kordofán desde octubre de 2025 y más de 170 incidentes contra mercados durante 2026.",
-      "coupling": "Dato de acople: la misma alerta señaló sequía en más de la mitad de Sudán y 64% de cropland con pobre crecimiento en Darfur Norte; además, NASA EONET/GDACS registró incendios en Sudán el 12 y 13 de octubre dentro de la ventana semanal. El acople se publica como confirmado porque las fuentes conectan explícitamente guerra, sequía, cosecha, precios y acceso humanitario.",
-      "couplingEn": "Coupling datum: the same alert described drought over more than half of Sudan and 64% of cropland showing poor growth in North Darfur; NASA EONET/GDACS also logged wildfire events in Sudan on 12-13 October inside the weekly window. This is treated as confirmed because the sources explicitly connect war, drought, harvests, prices and humanitarian access.",
-      "implication": "Implicación estratégica: Sudán no es solo crisis humanitaria; es una prueba de continuidad operacional para corredores de ayuda, redes alimentarias regionales y capacidad estatal en un espacio donde actores externos compiten por influencia sin asumir plenamente el coste de estabilización.",
-      "strategic_implication": "La guerra y la sequía reducen margen de maniobra humanitario y elevan el valor geopolítico de acceso, financiación y control de rutas internas.",
-      "tripolar": "Lectura tripolar: EE. UU. y la UE quedan presionados por financiación y acceso humanitario; China y Rusia observan un espacio africano donde la influencia puede comprarse con seguridad, minería o diplomacia; el Sur Global lo lee como crisis de soberanía alimentaria y legitimidad internacional.",
+      "why_it_matters": "Importa porque el cerco actúa sobre una ciudad que ya vivía al límite hídrico: sin carreteras ni diésel, el agua deja de ser servicio y pasa a ser instrumento de presión sobre más de un millón de personas.",
+      "fact": "Hecho: OCHA informó el 23 de octubre que Taiz llevaba «20 días y contando» aislada y que apenas habían entrado combustible, alimentos u otros suministros; Amnistía Internacional pidió el 22 de octubre a los hutíes abrir de inmediato las carreteras tras el corte de la vía principal Taiz–Adén.",
+      "coupling": "Dato de acople: según OCHA, la mayoría de residentes depende de agua distribuida en camiones; con las carreteras cerradas y el diésel muy escaso, la producción de agua de la ciudad cayó a la mitad y el precio del agua en camión se triplicó. AP/NPR documenta plantas desalinizadoras con poco combustible y décadas de descenso de acuíferos por sequías frecuentes; FEWS NET sitúa a Taiz en Emergencia (IPC Fase 4) con lluvias por debajo de la media en el oeste de Yemen. UNICEF detectó en Taiz más de 52.000 niños con desnutrición aguda este año. Se publica como confirmado porque fuentes institucionales conectan explícitamente cerco, combustible, agua y emergencia humanitaria; el factor ambiental es estructural, no un evento NASA/USGS de la semana.",
+      "couplingEn": "Coupling datum: OCHA says most residents rely on trucked water; with roads closed and diesel scarce, the city's water production has halved and trucked water costs about three times more. AP/NPR document desalination plants low on fuel and long-term groundwater decline from frequent droughts; FEWS NET places Taiz in Emergency (IPC Phase 4) with below-average rainfall in western Yemen.",
+      "implication": "Implicación estratégica (Evaluación): Taiz es la puerta del sur de Yemen. Controlar su agua y su combustible es controlar su resistencia. En la misma semana, la coalición saudí interceptó misiles y drones hutíes sobre Riad y el sur del reino (25 de octubre), lo que sitúa el cerco dentro de un frente regional más amplio.",
+      "strategic_implication": "El asedio hídrico de Taiz y los ataques hutíes sobre Arabia Saudí muestran un mismo actor presionando a la vez un frente interno y un frente regional.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. está en guerra con Irán, patrocinador de los hutíes, y su atención se concentra en Ormuz; Arabia Saudí absorbe el frente aéreo. China depende de la energía del Golfo y del tránsito por el mar Rojo, pero mantiene distancia diplomática. Rusia cultiva su relación con Teherán. La UE y el Sur Global quedan frente a la factura humanitaria. Hipótesis: el agua de Taiz se convierte en moneda de negociación local en un conflicto cuyo eje real se decide en el Golfo.",
       "confidence": "Alta",
       "sources": [
         {
-          "label": "UN News / IPC",
-          "url": "https://news.un.org/en/story/2026/10/1168577"
+          "label": "UN News / OCHA, 23 oct",
+          "url": "https://news.un.org/en/story/2026/10/1168654"
         },
         {
-          "label": "UNifeed / OCHA",
-          "url": "https://media.un.org/unifeed/en/asset/d364/d3640527"
+          "label": "Amnistía Internacional, 22 oct",
+          "url": "https://www.amnesty.org/en/latest/news/2026/10/yemen-huthis-must-open-taiz-roads-immediately-as-thousands-of-civilians-lives-are-at-risk/"
         },
         {
-          "label": "NASA EONET",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed"
+          "label": "NPR / AP, 24 oct",
+          "url": "https://www.npr.org/2026/10/24/g-s1-149729/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels"
         },
         {
-          "label": "GDACS WF 1032875",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875"
+          "label": "FEWS NET Yemen",
+          "url": "https://fews.net/middle-east-and-europe/yemen/food-security-outlook/june-2026"
+        },
+        {
+          "label": "Al Jazeera, interceptaciones saudíes, 25 oct",
+          "url": "https://www.aljazeera.com/news/2026/10/25/saudi-arabia-intercepts-missiles-and-drones-as-fighting-with-houthis-rages"
         },
         {
           "label": "SENTINEL feed",
           "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
         }
+      ],
+      "conflictEvent": "Cerco hutí de Taiz, tercera ciudad de Yemen: corte de la carretera principal a Adén en octubre, combates cerca de zonas pobladas y bloqueo de ayuda humanitaria.",
+      "environmentalEvent": "Escasez hídrica estructural: acuíferos en descenso por sequías frecuentes y crecimiento poblacional, infraestructura hídrica dañada por la guerra y lluvias por debajo de la media en el oeste de Yemen desde la primavera (FEWS NET). No hay evento NASA/USGS puntual en la ventana.",
+      "couplingType": [
+        "agua",
+        "asedio",
+        "acceso humanitario",
+        "energía (diésel)",
+        "seguridad alimentaria"
       ]
     },
     {
-      "id": "guam-marianas-champi-second-island-chain-watch",
+      "id": "tibet-nagqu-baqen-m7-strategic-infrastructure",
       "rank": 2,
-      "status": "observación",
-      "status_en": "watch",
+      "status": "confirmado (operacional)",
+      "status_en": "confirmed (operational)",
       "priority": "Media-alta",
       "priorityEn": "Medium-high",
-      "accent": "#22D3EE",
-      "location": "Guam / Marianas y Segunda Cadena de Islas",
-      "headline": "Guam: un supertifón sobre la bisagra logística del Indo-Pacífico",
-      "headlineEn": "Guam: a super typhoon over the Indo-Pacific logistics hinge",
-      "conflict_event": "No hay combate directo; el nodo estratégico es la continuidad de instalaciones civiles y militares en Guam dentro de la arquitectura de disuasión EE. UU.-China.",
-      "conflictEvent": "No hay combate directo; el nodo estratégico es la continuidad de instalaciones civiles y militares en Guam dentro de la arquitectura de disuasión EE. UU.-China.",
-      "conflictEventEn": "No direct combat is reported; the strategic node is continuity of civilian and military facilities in Guam within the U.S.-China deterrence architecture.",
-      "environmental_event": "GDACS clasificó CHAMPI-26 como ciclón tropical rojo en Guam, Islas Marianas del Norte y Japón, con vientos máximos estimados de 269 km/h y 230.000 personas expuestas a categoría 1 o superior.",
-      "environmentalEvent": "GDACS clasificó CHAMPI-26 como ciclón tropical rojo en Guam, Islas Marianas del Norte y Japón, con vientos máximos estimados de 269 km/h y 230.000 personas expuestas a categoría 1 o superior.",
-      "environmentalEventEn": "GDACS classified CHAMPI-26 as a red tropical cyclone for Guam, the Northern Mariana Islands and Japan, with estimated maximum winds of 269 km/h and 230,000 people exposed to Category 1 or higher winds.",
+      "accent": "#F59E0B",
+      "location": "China / Tíbet, condado de Baqên (Nagqu) y ferrocarril Qinghai–Tíbet",
+      "lat": 32.38,
+      "lon": 93.78,
+      "headline": "Tíbet: un M7,0 sacude la arteria logística de China en la meseta",
+      "headlineEn": "Tibet: an M7.0 jolts China's logistics artery on the plateau",
+      "conflict_event": "Sin conflicto armado. El nodo estratégico es la infraestructura de presencia estatal china en la meseta: ferrocarril Golmud–Lhasa, red eléctrica y logística hacia la frontera himalaya con India.",
+      "conflictEventEn": "No armed conflict. The strategic node is China's state-presence infrastructure on the plateau: Golmud–Lhasa railway, power grid and logistics toward the Himalayan frontier with India.",
+      "environmental_event": "USGS: sismo M7,0 el 22 de octubre a las 14:33 UTC, 191 km ENE de Nagqu, profundidad 18 km, intensidad máxima estimada 8,2 y alerta PAGER naranja.",
+      "environmentalEventEn": "USGS: M7.0 earthquake on 22 October at 14:33 UTC, 191 km ENE of Nagqu, depth 18 km, estimated maximum intensity 8.2, orange PAGER alert.",
       "coupling_type": [
+        "sismo",
+        "infraestructura estratégica",
         "continuidad operacional",
-        "base logística",
-        "disuasión",
-        "infraestructura crítica",
-        "clima extremo"
-      ],
-      "couplingType": [
-        "continuidad operacional",
-        "base logística",
-        "disuasión",
-        "infraestructura crítica",
-        "clima extremo"
+        "capacidad estatal"
       ],
       "couplingTypeEn": [
+        "earthquake",
+        "strategic infrastructure",
         "operational continuity",
-        "logistics base",
-        "deterrence",
-        "critical infrastructure",
-        "extreme weather"
+        "state capacity"
       ],
-      "why_it_matters": "Importa porque Guam no es periferia meteorológica: es un punto de apoyo de la Segunda Cadena de Islas, comunicaciones, proyección aérea y logística aliada.",
-      "fact": "Hecho: el JIC de Guam activó la respuesta pública ante Champi, colocó la isla en COR 2 y reportó que Joint Region Marianas y sus instalaciones declararon TCCOR 2 el 16 de octubre.",
-      "coupling": "Dato de acople: la fuente oficial de Guam anticipó vientos de tormenta tropical desde la noche del sábado, posible viento de tifón el domingo, lluvia de 6 a 12 pulgadas, oleaje peligroso y marejada/runa de olas; no hay evidencia pública de interrupción militar crítica, por lo que se etiqueta como observación.",
-      "couplingEn": "Coupling datum: the Guam official release forecast tropical-storm-force winds from Saturday night, possible typhoon-force winds Sunday, 6-12 inches of rain, dangerous surf and storm-surge/wave run-up; no public evidence confirms critical military disruption, so this remains a watch signal.",
-      "implication": "Implicación estratégica: un evento de alta intensidad en Guam reduce márgenes de reacción y recuerda que la disuasión en el Pacífico occidental depende tanto de bases y combustible como de meteorología, resiliencia eléctrica, puertos y comunicaciones.",
-      "strategic_implication": "El clima extremo puede afectar preparación y continuidad de una plataforma clave de EE. UU. en el Indo-Pacífico sin necesidad de un disparo.",
-      "tripolar": "Lectura tripolar: EE. UU. necesita demostrar resiliencia de su retaguardia avanzada; China observa vulnerabilidades de la arquitectura de bases; Japón y aliados calibran continuidad logística; el Sur Global ve cómo el clima ya condiciona la seguridad dura.",
-      "confidence": "Media",
+      "why_it_matters": "Importa porque el sismo golpeó la línea Golmud–Lhasa, la vía terrestre que sostiene la presencia económica y logística de Pekín en el Tíbet, y obligó a detener trenes en ruta.",
+      "fact": "Hecho: según Xinhua, el sismo dejó al menos 16 muertos y 76 heridos, 339 viviendas derrumbadas o dañadas y 12.489 personas evacuadas en el condado de Baqên, a más de 4.500 metros de altitud.",
+      "coupling": "Dato de acople: China Railway Qinghai-Xizang detuvo trenes en ruta y cerró tramos del sector Golmud–Lhasa; los trenes de pasajeros reanudaron a velocidad reducida el 23 de octubre por la mañana y todas las restricciones se levantaron esa misma noche, tras desplegar más de 140 equipos de inspección. State Grid Xizang restableció la electricidad a 1.937 hogares. La interrupción fue real pero breve: unas 30 horas.",
+      "couplingEn": "Coupling datum: China Railway Qinghai-Xizang held trains and closed sections of the Golmud–Lhasa line; passenger trains resumed at reduced speed on 23 October and all speed limits were lifted that night after more than 140 inspection teams were deployed.",
+      "implication": "Implicación estratégica (Evaluación): la rapidez de la restauración, con satélites, drones y equipos masivos, es en sí un mensaje de capacidad estatal en un territorio políticamente sensible. Hipótesis: la sismicidad de la meseta es una variable estructural para toda la infraestructura china en la región, incluida la energética, y no solo un riesgo humanitario.",
+      "strategic_implication": "El sismo pone a prueba la resiliencia de la logística china en la meseta y su capacidad de mostrar control rápido sobre un territorio sensible.",
+      "tripolar": "Lectura tripolar (Evaluación): China exhibe capacidad de respuesta tecnológica y logística; India observa la resiliencia de las líneas de suministro chinas hacia el Himalaya; EE. UU. y Rusia no tienen papel directo. Es un caso de competencia por capacidad, no de confrontación.",
+      "confidence": "Alta en el hecho físico; media en la lectura estratégica",
       "sources": [
         {
-          "label": "GDACS CHAMPI",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001338"
+          "label": "USGS us6000u43g",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g"
         },
         {
-          "label": "Guam JIC",
-          "url": "https://reliefweb.int/report/guam/jic-release-no-1-jic-partially-activated-guam-cor-2-typhoon-watch-effect-tropical-storm-champi-10162026"
+          "label": "Xinhua vía HKCD, ferrocarril",
+          "url": "https://www.hkcd.com/hkcdweb/content/2026/10/25/content_8781673.html"
         },
         {
-          "label": "NASA EONET",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
+          "label": "The Star / Xinhua",
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/24/deadly-quake-jolts-remote-tibet"
+        },
+        {
+          "label": "DT Next / PTI",
+          "url": "https://www.dtnext.in/news/world/powerful-earthquake-in-chinas-tibet-region-collapses-hundreds-of-homes-and-kills-at-least-16-people"
         }
+      ],
+      "conflictEvent": "Sin conflicto armado. El nodo estratégico es la infraestructura de presencia estatal china en la meseta: ferrocarril Golmud–Lhasa, red eléctrica y logística hacia la frontera himalaya con India.",
+      "environmentalEvent": "USGS: sismo M7,0 el 22 de octubre a las 14:33 UTC, 191 km ENE de Nagqu, profundidad 18 km, intensidad máxima estimada 8,2 y alerta PAGER naranja.",
+      "couplingType": [
+        "sismo",
+        "infraestructura estratégica",
+        "continuidad operacional",
+        "capacidad estatal"
       ]
     },
     {
-      "id": "pakistan-balochistan-khuzdar-quake-border-war-watch",
+      "id": "taiwan-okinawa-champi-first-island-chain-watch",
       "rank": 3,
       "status": "observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
-      "accent": "#F59E0B",
-      "location": "Pakistán / Baluchistán, Khuzdar y frontera afgano-paquistaní",
-      "headline": "Pakistán: sismo local, presión insurgente y frontera en escalada",
-      "headlineEn": "Pakistan: local quake, insurgent pressure and an escalating border",
-      "conflict_event": "Choques entre fuerzas paquistaníes y talibanes afganos en Kurram, más violencia militante acumulada en el noroeste y Baluchistán.",
-      "conflictEvent": "Choques entre fuerzas paquistaníes y talibanes afganos en Kurram, más violencia militante acumulada en el noroeste y Baluchistán.",
-      "conflictEventEn": "Clashes between Pakistani forces and Afghan Taliban personnel in Kurram, alongside accumulated militant violence in the northwest and Balochistan.",
-      "environmental_event": "USGS registró un sismo M5,7 a 48 km WNW de Khuzdar, Pakistán, el 17 de octubre a 05:06 UTC, profundidad 10 km, con alerta PAGER amarilla.",
-      "environmentalEvent": "USGS registró un sismo M5,7 a 48 km WNW de Khuzdar, Pakistán, el 17 de octubre a 05:06 UTC, profundidad 10 km, con alerta PAGER amarilla.",
-      "environmentalEventEn": "USGS recorded a M5.7 earthquake 48 km WNW of Khuzdar, Pakistan, on 17 October at 05:06 UTC, 10 km depth, with a yellow PAGER alert.",
+      "accent": "#22D3EE",
+      "location": "Taiwán / Okinawa y Primera Cadena de Islas",
+      "lat": 24.75,
+      "lon": 121.75,
+      "headline": "Champi: el mismo tifón cruza las dos líneas de la disuasión estadounidense",
+      "headlineEn": "Champi: one typhoon crosses both lines of US deterrence",
+      "conflict_event": "Sin combate. El nodo es la Primera Cadena de Islas (Taiwán, Okinawa, Kyushu), eje de la disuasión de EE. UU. y sus aliados frente a China; en la misma semana, Kim Jong Un visitó China.",
+      "conflictEventEn": "No combat. The node is the First Island Chain (Taiwan, Okinawa, Kyushu), the axis of US and allied deterrence toward China; in the same week Kim Jong Un visited China.",
+      "environmental_event": "NASA EONET: supertifón Champi activo durante toda la ventana; rozó la costa noreste de Taiwán (Yilan) el 24 de octubre con rachas de 227 km/h y se degradó a tormenta tropical rumbo a Kyushu.",
+      "environmentalEventEn": "NASA EONET: Super Typhoon Champi active throughout the window; it brushed Taiwan's northeast coast (Yilan) on 24 October with 227 km/h gusts and weakened to a tropical storm heading for Kyushu.",
       "coupling_type": [
-        "sismo",
-        "seguridad fronteriza",
-        "capacidad estatal",
-        "respuesta regional",
-        "infraestructura vulnerable"
-      ],
-      "couplingType": [
-        "sismo",
-        "seguridad fronteriza",
-        "capacidad estatal",
-        "respuesta regional",
-        "infraestructura vulnerable"
+        "clima extremo",
+        "red eléctrica",
+        "continuidad operacional",
+        "disuasión"
       ],
       "couplingTypeEn": [
-        "earthquake",
-        "border security",
-        "state capacity",
-        "regional response",
-        "vulnerable infrastructure"
+        "extreme weather",
+        "power grid",
+        "operational continuity",
+        "deterrence"
       ],
-      "why_it_matters": "Importa porque el Estado paquistaní gestiona simultáneamente presión sísmica localizada, violencia militante y fricción fronteriza con Afganistán.",
-      "fact": "Hecho: AP reportó el 17 de octubre intercambios de fuego en la frontera noroeste, con tensiones elevadas por choques recurrentes y ataques aéreos; la fuente citó más de 1.100 muertes y heridos civiles documentados por UNAMA por violencia transfronteriza en Afganistán este año.",
-      "coupling": "Dato de acople: el sismo de Khuzdar ocurrió en Baluchistán, no en el punto exacto de los choques de Kurram; por eso no se presenta como causalidad. Queda como señal de vigilancia porque el evento físico añade demanda de respuesta en una provincia también mencionada por violencia militante y vulnerabilidad estructural.",
-      "couplingEn": "Coupling datum: the Khuzdar quake occurred in Balochistan, not at the precise Kurram clash point; it is therefore not treated as causality. It remains a watch signal because the physical event adds response demand in a province also referenced for militant violence and structural vulnerability.",
-      "implication": "Implicación estratégica: Pakistán se vuelve tablero de estrés compuesto: frontera afgana, seguridad interna, corredor hacia el Índico y resiliencia local. La señal no es espectacular, pero sí operacional.",
-      "strategic_implication": "El acople débil sugiere observar si emergen daños, cortes de carretera o desvío de recursos de seguridad y respuesta civil.",
-      "tripolar": "Lectura tripolar: China mira estabilidad de corredores y proyectos en Pakistán; EE. UU. observa terrorismo y gobernabilidad regional; Rusia e Irán leen el flanco afgano-paquistaní como zona de fricción; el Sur Global ve otra prueba de cómo seguridad y desastres compiten por la misma capacidad estatal.",
-      "confidence": "Media-baja",
+      "why_it_matters": "Importa porque, tras pasar por Guam la semana anterior, el mismo sistema meteorológico recorrió en diez días la Segunda y la Primera Cadena de Islas.",
+      "fact": "Hecho: Reuters informó el 24 de octubre de 1 muerto y 527 heridos en Taiwán, más de 288.000 hogares sin electricidad (la mayoría reconectados) y dos días de cierre de oficinas y escuelas en el norte y el centro, incluida Taipéi.",
+      "coupling": "Dato de acople: las bases estadounidenses en Okinawa permanecieron en condición de preparación estacional TCCOR 4 mientras Champi pasaba a unas 275 millas al noroeste (Stars and Stripes). No hay evidencia pública de interrupción militar; por eso se etiqueta como observación.",
+      "couplingEn": "Coupling datum: US bases on Okinawa stayed in seasonal TCCOR 4 as Champi passed about 275 miles to the northwest (Stars and Stripes). There is no public evidence of military disruption, so it is labelled as watch.",
+      "implication": "Implicación estratégica (Evaluación): la red eléctrica de Taiwán resistió y se recuperó con rapidez, un dato relevante para una isla que importa casi toda su energía. La lección no es militar, sino de resiliencia de infraestructura civil en la primera línea.",
+      "strategic_implication": "El clima extremo pone a prueba, de forma recurrente, la resiliencia civil de los nodos de la disuasión en el Pacífico occidental.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. y Japón miden la continuidad de su retaguardia; China observa la vulnerabilidad de la red civil taiwanesa; la visita de Kim a China es contexto, no acople ambiental.",
+      "confidence": "Alta en el hecho físico; baja en el acople militar",
       "sources": [
         {
-          "label": "USGS Khuzdar",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1"
+          "label": "Reuters, 24 oct",
+          "url": "https://www.reuters.com/business/environment/typhoon-champi-sweeps-past-taiwan-leaving-1-dead-500-injured-2026-10-24/"
         },
         {
-          "label": "USGS PAGER",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1/pager"
+          "label": "Stars and Stripes, Champi",
+          "url": "https://www.stripes.com/theaters/asia_pacific/storm_tracker/2026-10-14/96w-invest:-marianas-might-be-in-the-crosshairs-23151384.html"
         },
         {
-          "label": "AP frontera",
-          "url": "https://apnews.com/article/pakistan-afghanistan-border-clashes-militant-infiltration-af35955a49d8ec9948b4a946bf07d37c"
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?start=2026-10-18&end=2026-10-26&status=all"
+        },
+        {
+          "label": "SENTINEL feed",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
         }
+      ],
+      "conflictEvent": "Sin combate. El nodo es la Primera Cadena de Islas (Taiwán, Okinawa, Kyushu), eje de la disuasión de EE. UU. y sus aliados frente a China; en la misma semana, Kim Jong Un visitó China.",
+      "environmentalEvent": "NASA EONET: supertifón Champi activo durante toda la ventana; rozó la costa noreste de Taiwán (Yilan) el 24 de octubre con rachas de 227 km/h y se degradó a tormenta tropical rumbo a Kyushu.",
+      "couplingType": [
+        "clima extremo",
+        "red eléctrica",
+        "continuidad operacional",
+        "disuasión"
       ]
     }
   ],
   "points": [
     {
-      "id": "sudan-darfur-kordofan-drought-war-confirmed",
+      "id": "yemen-taiz-siege-water-confirmed",
       "rank": 1,
       "status": "confirmado",
       "status_en": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Sudán / Darfur, Kordofán y eje Nilo Azul",
-      "headline": "Sudán: la sequía entra en el corazón de la guerra alimentaria",
-      "headlineEn": "Sudan: drought enters the core of the food-security war",
-      "conflict_event": "Guerra civil, desplazamiento, ataques a mercados y restricciones de acceso humanitario en Darfur, Kordofán y Nilo Azul.",
-      "conflictEvent": "Guerra civil, desplazamiento, ataques a mercados y restricciones de acceso humanitario en Darfur, Kordofán y Nilo Azul.",
-      "conflictEventEn": "Civil war, displacement, attacks on markets and restricted humanitarian access in Darfur, Kordofan and Blue Nile.",
-      "environmental_event": "Sequía severa asociada a El Niño, lluvias deficitarias y focos de incendio NASA/EONET-GDACS en Sudán durante la ventana semanal.",
-      "environmentalEvent": "Sequía severa asociada a El Niño, lluvias deficitarias y focos de incendio NASA/EONET-GDACS en Sudán durante la ventana semanal.",
-      "environmentalEventEn": "Severe El Niño-related drought, rainfall deficits and NASA/EONET-GDACS wildfire detections in Sudan during the weekly window.",
+      "location": "Yemen / Taiz, eje Taiz–Adén",
+      "lat": 13.58,
+      "lon": 44.02,
+      "headline": "Taiz: el cerco convierte el agua en frente de guerra",
+      "headlineEn": "Taiz: the siege turns water into a front line",
+      "conflict_event": "Cerco hutí de Taiz, tercera ciudad de Yemen: corte de la carretera principal a Adén en octubre, combates cerca de zonas pobladas y bloqueo de ayuda humanitaria.",
+      "conflictEventEn": "Houthi encirclement of Taiz, Yemen's third city: main road to Aden cut in October, fighting near populated areas and humanitarian aid blocked.",
+      "environmental_event": "Escasez hídrica estructural: acuíferos en descenso por sequías frecuentes y crecimiento poblacional, infraestructura hídrica dañada por la guerra y lluvias por debajo de la media en el oeste de Yemen desde la primavera (FEWS NET). No hay evento NASA/USGS puntual en la ventana.",
+      "environmentalEventEn": "Structural water scarcity: groundwater depleted by frequent droughts and population growth, war-damaged water infrastructure and below-average rainfall in western Yemen since spring (FEWS NET). No discrete NASA/USGS event in the window.",
       "coupling_type": [
-        "seguridad alimentaria",
-        "desplazamiento",
+        "agua",
+        "asedio",
         "acceso humanitario",
-        "capacidad estatal",
-        "clima-conflicto"
-      ],
-      "couplingType": [
-        "seguridad alimentaria",
-        "desplazamiento",
-        "acceso humanitario",
-        "capacidad estatal",
-        "clima-conflicto"
+        "energía (diésel)",
+        "seguridad alimentaria"
       ],
       "couplingTypeEn": [
-        "food security",
-        "displacement",
+        "water",
+        "siege",
         "humanitarian access",
-        "state capacity",
-        "climate-conflict"
+        "energy (diesel)",
+        "food security"
       ],
-      "why_it_matters": "El punto importa porque la presión ambiental afecta directamente cosechas, agua y precios mientras la guerra restringe movilidad, mercados y entrega de ayuda.",
-      "fact": "Hecho: la alerta IPC/ONU del 12 de octubre situó a Darfur y Kordofán bajo riesgo creciente de hambruna, con más de 300.000 personas desplazadas en Gran Kordofán desde octubre de 2025 y más de 170 incidentes contra mercados durante 2026.",
-      "coupling": "Dato de acople: la misma alerta señaló sequía en más de la mitad de Sudán y 64% de cropland con pobre crecimiento en Darfur Norte; además, NASA EONET/GDACS registró incendios en Sudán el 12 y 13 de octubre dentro de la ventana semanal. El acople se publica como confirmado porque las fuentes conectan explícitamente guerra, sequía, cosecha, precios y acceso humanitario.",
-      "couplingEn": "Coupling datum: the same alert described drought over more than half of Sudan and 64% of cropland showing poor growth in North Darfur; NASA EONET/GDACS also logged wildfire events in Sudan on 12-13 October inside the weekly window. This is treated as confirmed because the sources explicitly connect war, drought, harvests, prices and humanitarian access.",
-      "implication": "Implicación estratégica: Sudán no es solo crisis humanitaria; es una prueba de continuidad operacional para corredores de ayuda, redes alimentarias regionales y capacidad estatal en un espacio donde actores externos compiten por influencia sin asumir plenamente el coste de estabilización.",
-      "strategic_implication": "La guerra y la sequía reducen margen de maniobra humanitario y elevan el valor geopolítico de acceso, financiación y control de rutas internas.",
-      "tripolar": "Lectura tripolar: EE. UU. y la UE quedan presionados por financiación y acceso humanitario; China y Rusia observan un espacio africano donde la influencia puede comprarse con seguridad, minería o diplomacia; el Sur Global lo lee como crisis de soberanía alimentaria y legitimidad internacional.",
+      "why_it_matters": "Importa porque el cerco actúa sobre una ciudad que ya vivía al límite hídrico: sin carreteras ni diésel, el agua deja de ser servicio y pasa a ser instrumento de presión sobre más de un millón de personas.",
+      "fact": "Hecho: OCHA informó el 23 de octubre que Taiz llevaba «20 días y contando» aislada y que apenas habían entrado combustible, alimentos u otros suministros; Amnistía Internacional pidió el 22 de octubre a los hutíes abrir de inmediato las carreteras tras el corte de la vía principal Taiz–Adén.",
+      "coupling": "Dato de acople: según OCHA, la mayoría de residentes depende de agua distribuida en camiones; con las carreteras cerradas y el diésel muy escaso, la producción de agua de la ciudad cayó a la mitad y el precio del agua en camión se triplicó. AP/NPR documenta plantas desalinizadoras con poco combustible y décadas de descenso de acuíferos por sequías frecuentes; FEWS NET sitúa a Taiz en Emergencia (IPC Fase 4) con lluvias por debajo de la media en el oeste de Yemen. UNICEF detectó en Taiz más de 52.000 niños con desnutrición aguda este año. Se publica como confirmado porque fuentes institucionales conectan explícitamente cerco, combustible, agua y emergencia humanitaria; el factor ambiental es estructural, no un evento NASA/USGS de la semana.",
+      "couplingEn": "Coupling datum: OCHA says most residents rely on trucked water; with roads closed and diesel scarce, the city's water production has halved and trucked water costs about three times more. AP/NPR document desalination plants low on fuel and long-term groundwater decline from frequent droughts; FEWS NET places Taiz in Emergency (IPC Phase 4) with below-average rainfall in western Yemen.",
+      "implication": "Implicación estratégica (Evaluación): Taiz es la puerta del sur de Yemen. Controlar su agua y su combustible es controlar su resistencia. En la misma semana, la coalición saudí interceptó misiles y drones hutíes sobre Riad y el sur del reino (25 de octubre), lo que sitúa el cerco dentro de un frente regional más amplio.",
+      "strategic_implication": "El asedio hídrico de Taiz y los ataques hutíes sobre Arabia Saudí muestran un mismo actor presionando a la vez un frente interno y un frente regional.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. está en guerra con Irán, patrocinador de los hutíes, y su atención se concentra en Ormuz; Arabia Saudí absorbe el frente aéreo. China depende de la energía del Golfo y del tránsito por el mar Rojo, pero mantiene distancia diplomática. Rusia cultiva su relación con Teherán. La UE y el Sur Global quedan frente a la factura humanitaria. Hipótesis: el agua de Taiz se convierte en moneda de negociación local en un conflicto cuyo eje real se decide en el Golfo.",
       "confidence": "Alta",
       "sources": [
         {
-          "label": "UN News / IPC",
-          "url": "https://news.un.org/en/story/2026/10/1168577"
+          "label": "UN News / OCHA, 23 oct",
+          "url": "https://news.un.org/en/story/2026/10/1168654"
         },
         {
-          "label": "UNifeed / OCHA",
-          "url": "https://media.un.org/unifeed/en/asset/d364/d3640527"
+          "label": "Amnistía Internacional, 22 oct",
+          "url": "https://www.amnesty.org/en/latest/news/2026/10/yemen-huthis-must-open-taiz-roads-immediately-as-thousands-of-civilians-lives-are-at-risk/"
         },
         {
-          "label": "NASA EONET",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=14&status=closed"
+          "label": "NPR / AP, 24 oct",
+          "url": "https://www.npr.org/2026/10/24/g-s1-149729/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels"
         },
         {
-          "label": "GDACS WF 1032875",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875"
+          "label": "FEWS NET Yemen",
+          "url": "https://fews.net/middle-east-and-europe/yemen/food-security-outlook/june-2026"
+        },
+        {
+          "label": "Al Jazeera, interceptaciones saudíes, 25 oct",
+          "url": "https://www.aljazeera.com/news/2026/10/25/saudi-arabia-intercepts-missiles-and-drones-as-fighting-with-houthis-rages"
         },
         {
           "label": "SENTINEL feed",
           "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
         }
+      ],
+      "conflictEvent": "Cerco hutí de Taiz, tercera ciudad de Yemen: corte de la carretera principal a Adén en octubre, combates cerca de zonas pobladas y bloqueo de ayuda humanitaria.",
+      "environmentalEvent": "Escasez hídrica estructural: acuíferos en descenso por sequías frecuentes y crecimiento poblacional, infraestructura hídrica dañada por la guerra y lluvias por debajo de la media en el oeste de Yemen desde la primavera (FEWS NET). No hay evento NASA/USGS puntual en la ventana.",
+      "couplingType": [
+        "agua",
+        "asedio",
+        "acceso humanitario",
+        "energía (diésel)",
+        "seguridad alimentaria"
       ]
     },
     {
-      "id": "guam-marianas-champi-second-island-chain-watch",
+      "id": "tibet-nagqu-baqen-m7-strategic-infrastructure",
       "rank": 2,
-      "status": "observación",
-      "status_en": "watch",
+      "status": "confirmado (operacional)",
+      "status_en": "confirmed (operational)",
       "priority": "Media-alta",
       "priorityEn": "Medium-high",
-      "accent": "#22D3EE",
-      "location": "Guam / Marianas y Segunda Cadena de Islas",
-      "headline": "Guam: un supertifón sobre la bisagra logística del Indo-Pacífico",
-      "headlineEn": "Guam: a super typhoon over the Indo-Pacific logistics hinge",
-      "conflict_event": "No hay combate directo; el nodo estratégico es la continuidad de instalaciones civiles y militares en Guam dentro de la arquitectura de disuasión EE. UU.-China.",
-      "conflictEvent": "No hay combate directo; el nodo estratégico es la continuidad de instalaciones civiles y militares en Guam dentro de la arquitectura de disuasión EE. UU.-China.",
-      "conflictEventEn": "No direct combat is reported; the strategic node is continuity of civilian and military facilities in Guam within the U.S.-China deterrence architecture.",
-      "environmental_event": "GDACS clasificó CHAMPI-26 como ciclón tropical rojo en Guam, Islas Marianas del Norte y Japón, con vientos máximos estimados de 269 km/h y 230.000 personas expuestas a categoría 1 o superior.",
-      "environmentalEvent": "GDACS clasificó CHAMPI-26 como ciclón tropical rojo en Guam, Islas Marianas del Norte y Japón, con vientos máximos estimados de 269 km/h y 230.000 personas expuestas a categoría 1 o superior.",
-      "environmentalEventEn": "GDACS classified CHAMPI-26 as a red tropical cyclone for Guam, the Northern Mariana Islands and Japan, with estimated maximum winds of 269 km/h and 230,000 people exposed to Category 1 or higher winds.",
+      "accent": "#F59E0B",
+      "location": "China / Tíbet, condado de Baqên (Nagqu) y ferrocarril Qinghai–Tíbet",
+      "lat": 32.38,
+      "lon": 93.78,
+      "headline": "Tíbet: un M7,0 sacude la arteria logística de China en la meseta",
+      "headlineEn": "Tibet: an M7.0 jolts China's logistics artery on the plateau",
+      "conflict_event": "Sin conflicto armado. El nodo estratégico es la infraestructura de presencia estatal china en la meseta: ferrocarril Golmud–Lhasa, red eléctrica y logística hacia la frontera himalaya con India.",
+      "conflictEventEn": "No armed conflict. The strategic node is China's state-presence infrastructure on the plateau: Golmud–Lhasa railway, power grid and logistics toward the Himalayan frontier with India.",
+      "environmental_event": "USGS: sismo M7,0 el 22 de octubre a las 14:33 UTC, 191 km ENE de Nagqu, profundidad 18 km, intensidad máxima estimada 8,2 y alerta PAGER naranja.",
+      "environmentalEventEn": "USGS: M7.0 earthquake on 22 October at 14:33 UTC, 191 km ENE of Nagqu, depth 18 km, estimated maximum intensity 8.2, orange PAGER alert.",
       "coupling_type": [
+        "sismo",
+        "infraestructura estratégica",
         "continuidad operacional",
-        "base logística",
-        "disuasión",
-        "infraestructura crítica",
-        "clima extremo"
-      ],
-      "couplingType": [
-        "continuidad operacional",
-        "base logística",
-        "disuasión",
-        "infraestructura crítica",
-        "clima extremo"
+        "capacidad estatal"
       ],
       "couplingTypeEn": [
+        "earthquake",
+        "strategic infrastructure",
         "operational continuity",
-        "logistics base",
-        "deterrence",
-        "critical infrastructure",
-        "extreme weather"
+        "state capacity"
       ],
-      "why_it_matters": "Importa porque Guam no es periferia meteorológica: es un punto de apoyo de la Segunda Cadena de Islas, comunicaciones, proyección aérea y logística aliada.",
-      "fact": "Hecho: el JIC de Guam activó la respuesta pública ante Champi, colocó la isla en COR 2 y reportó que Joint Region Marianas y sus instalaciones declararon TCCOR 2 el 16 de octubre.",
-      "coupling": "Dato de acople: la fuente oficial de Guam anticipó vientos de tormenta tropical desde la noche del sábado, posible viento de tifón el domingo, lluvia de 6 a 12 pulgadas, oleaje peligroso y marejada/runa de olas; no hay evidencia pública de interrupción militar crítica, por lo que se etiqueta como observación.",
-      "couplingEn": "Coupling datum: the Guam official release forecast tropical-storm-force winds from Saturday night, possible typhoon-force winds Sunday, 6-12 inches of rain, dangerous surf and storm-surge/wave run-up; no public evidence confirms critical military disruption, so this remains a watch signal.",
-      "implication": "Implicación estratégica: un evento de alta intensidad en Guam reduce márgenes de reacción y recuerda que la disuasión en el Pacífico occidental depende tanto de bases y combustible como de meteorología, resiliencia eléctrica, puertos y comunicaciones.",
-      "strategic_implication": "El clima extremo puede afectar preparación y continuidad de una plataforma clave de EE. UU. en el Indo-Pacífico sin necesidad de un disparo.",
-      "tripolar": "Lectura tripolar: EE. UU. necesita demostrar resiliencia de su retaguardia avanzada; China observa vulnerabilidades de la arquitectura de bases; Japón y aliados calibran continuidad logística; el Sur Global ve cómo el clima ya condiciona la seguridad dura.",
-      "confidence": "Media",
+      "why_it_matters": "Importa porque el sismo golpeó la línea Golmud–Lhasa, la vía terrestre que sostiene la presencia económica y logística de Pekín en el Tíbet, y obligó a detener trenes en ruta.",
+      "fact": "Hecho: según Xinhua, el sismo dejó al menos 16 muertos y 76 heridos, 339 viviendas derrumbadas o dañadas y 12.489 personas evacuadas en el condado de Baqên, a más de 4.500 metros de altitud.",
+      "coupling": "Dato de acople: China Railway Qinghai-Xizang detuvo trenes en ruta y cerró tramos del sector Golmud–Lhasa; los trenes de pasajeros reanudaron a velocidad reducida el 23 de octubre por la mañana y todas las restricciones se levantaron esa misma noche, tras desplegar más de 140 equipos de inspección. State Grid Xizang restableció la electricidad a 1.937 hogares. La interrupción fue real pero breve: unas 30 horas.",
+      "couplingEn": "Coupling datum: China Railway Qinghai-Xizang held trains and closed sections of the Golmud–Lhasa line; passenger trains resumed at reduced speed on 23 October and all speed limits were lifted that night after more than 140 inspection teams were deployed.",
+      "implication": "Implicación estratégica (Evaluación): la rapidez de la restauración, con satélites, drones y equipos masivos, es en sí un mensaje de capacidad estatal en un territorio políticamente sensible. Hipótesis: la sismicidad de la meseta es una variable estructural para toda la infraestructura china en la región, incluida la energética, y no solo un riesgo humanitario.",
+      "strategic_implication": "El sismo pone a prueba la resiliencia de la logística china en la meseta y su capacidad de mostrar control rápido sobre un territorio sensible.",
+      "tripolar": "Lectura tripolar (Evaluación): China exhibe capacidad de respuesta tecnológica y logística; India observa la resiliencia de las líneas de suministro chinas hacia el Himalaya; EE. UU. y Rusia no tienen papel directo. Es un caso de competencia por capacidad, no de confrontación.",
+      "confidence": "Alta en el hecho físico; media en la lectura estratégica",
       "sources": [
         {
-          "label": "GDACS CHAMPI",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001338"
+          "label": "USGS us6000u43g",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g"
         },
         {
-          "label": "Guam JIC",
-          "url": "https://reliefweb.int/report/guam/jic-release-no-1-jic-partially-activated-guam-cor-2-typhoon-watch-effect-tropical-storm-champi-10162026"
+          "label": "Xinhua vía HKCD, ferrocarril",
+          "url": "https://www.hkcd.com/hkcdweb/content/2026/10/25/content_8781673.html"
         },
         {
-          "label": "NASA EONET",
-          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open"
+          "label": "The Star / Xinhua",
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/24/deadly-quake-jolts-remote-tibet"
+        },
+        {
+          "label": "DT Next / PTI",
+          "url": "https://www.dtnext.in/news/world/powerful-earthquake-in-chinas-tibet-region-collapses-hundreds-of-homes-and-kills-at-least-16-people"
         }
+      ],
+      "conflictEvent": "Sin conflicto armado. El nodo estratégico es la infraestructura de presencia estatal china en la meseta: ferrocarril Golmud–Lhasa, red eléctrica y logística hacia la frontera himalaya con India.",
+      "environmentalEvent": "USGS: sismo M7,0 el 22 de octubre a las 14:33 UTC, 191 km ENE de Nagqu, profundidad 18 km, intensidad máxima estimada 8,2 y alerta PAGER naranja.",
+      "couplingType": [
+        "sismo",
+        "infraestructura estratégica",
+        "continuidad operacional",
+        "capacidad estatal"
       ]
     },
     {
-      "id": "pakistan-balochistan-khuzdar-quake-border-war-watch",
+      "id": "taiwan-okinawa-champi-first-island-chain-watch",
       "rank": 3,
       "status": "observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
-      "accent": "#F59E0B",
-      "location": "Pakistán / Baluchistán, Khuzdar y frontera afgano-paquistaní",
-      "headline": "Pakistán: sismo local, presión insurgente y frontera en escalada",
-      "headlineEn": "Pakistan: local quake, insurgent pressure and an escalating border",
-      "conflict_event": "Choques entre fuerzas paquistaníes y talibanes afganos en Kurram, más violencia militante acumulada en el noroeste y Baluchistán.",
-      "conflictEvent": "Choques entre fuerzas paquistaníes y talibanes afganos en Kurram, más violencia militante acumulada en el noroeste y Baluchistán.",
-      "conflictEventEn": "Clashes between Pakistani forces and Afghan Taliban personnel in Kurram, alongside accumulated militant violence in the northwest and Balochistan.",
-      "environmental_event": "USGS registró un sismo M5,7 a 48 km WNW de Khuzdar, Pakistán, el 17 de octubre a 05:06 UTC, profundidad 10 km, con alerta PAGER amarilla.",
-      "environmentalEvent": "USGS registró un sismo M5,7 a 48 km WNW de Khuzdar, Pakistán, el 17 de octubre a 05:06 UTC, profundidad 10 km, con alerta PAGER amarilla.",
-      "environmentalEventEn": "USGS recorded a M5.7 earthquake 48 km WNW of Khuzdar, Pakistan, on 17 October at 05:06 UTC, 10 km depth, with a yellow PAGER alert.",
+      "accent": "#22D3EE",
+      "location": "Taiwán / Okinawa y Primera Cadena de Islas",
+      "lat": 24.75,
+      "lon": 121.75,
+      "headline": "Champi: el mismo tifón cruza las dos líneas de la disuasión estadounidense",
+      "headlineEn": "Champi: one typhoon crosses both lines of US deterrence",
+      "conflict_event": "Sin combate. El nodo es la Primera Cadena de Islas (Taiwán, Okinawa, Kyushu), eje de la disuasión de EE. UU. y sus aliados frente a China; en la misma semana, Kim Jong Un visitó China.",
+      "conflictEventEn": "No combat. The node is the First Island Chain (Taiwan, Okinawa, Kyushu), the axis of US and allied deterrence toward China; in the same week Kim Jong Un visited China.",
+      "environmental_event": "NASA EONET: supertifón Champi activo durante toda la ventana; rozó la costa noreste de Taiwán (Yilan) el 24 de octubre con rachas de 227 km/h y se degradó a tormenta tropical rumbo a Kyushu.",
+      "environmentalEventEn": "NASA EONET: Super Typhoon Champi active throughout the window; it brushed Taiwan's northeast coast (Yilan) on 24 October with 227 km/h gusts and weakened to a tropical storm heading for Kyushu.",
       "coupling_type": [
-        "sismo",
-        "seguridad fronteriza",
-        "capacidad estatal",
-        "respuesta regional",
-        "infraestructura vulnerable"
-      ],
-      "couplingType": [
-        "sismo",
-        "seguridad fronteriza",
-        "capacidad estatal",
-        "respuesta regional",
-        "infraestructura vulnerable"
+        "clima extremo",
+        "red eléctrica",
+        "continuidad operacional",
+        "disuasión"
       ],
       "couplingTypeEn": [
-        "earthquake",
-        "border security",
-        "state capacity",
-        "regional response",
-        "vulnerable infrastructure"
+        "extreme weather",
+        "power grid",
+        "operational continuity",
+        "deterrence"
       ],
-      "why_it_matters": "Importa porque el Estado paquistaní gestiona simultáneamente presión sísmica localizada, violencia militante y fricción fronteriza con Afganistán.",
-      "fact": "Hecho: AP reportó el 17 de octubre intercambios de fuego en la frontera noroeste, con tensiones elevadas por choques recurrentes y ataques aéreos; la fuente citó más de 1.100 muertes y heridos civiles documentados por UNAMA por violencia transfronteriza en Afganistán este año.",
-      "coupling": "Dato de acople: el sismo de Khuzdar ocurrió en Baluchistán, no en el punto exacto de los choques de Kurram; por eso no se presenta como causalidad. Queda como señal de vigilancia porque el evento físico añade demanda de respuesta en una provincia también mencionada por violencia militante y vulnerabilidad estructural.",
-      "couplingEn": "Coupling datum: the Khuzdar quake occurred in Balochistan, not at the precise Kurram clash point; it is therefore not treated as causality. It remains a watch signal because the physical event adds response demand in a province also referenced for militant violence and structural vulnerability.",
-      "implication": "Implicación estratégica: Pakistán se vuelve tablero de estrés compuesto: frontera afgana, seguridad interna, corredor hacia el Índico y resiliencia local. La señal no es espectacular, pero sí operacional.",
-      "strategic_implication": "El acople débil sugiere observar si emergen daños, cortes de carretera o desvío de recursos de seguridad y respuesta civil.",
-      "tripolar": "Lectura tripolar: China mira estabilidad de corredores y proyectos en Pakistán; EE. UU. observa terrorismo y gobernabilidad regional; Rusia e Irán leen el flanco afgano-paquistaní como zona de fricción; el Sur Global ve otra prueba de cómo seguridad y desastres compiten por la misma capacidad estatal.",
-      "confidence": "Media-baja",
+      "why_it_matters": "Importa porque, tras pasar por Guam la semana anterior, el mismo sistema meteorológico recorrió en diez días la Segunda y la Primera Cadena de Islas.",
+      "fact": "Hecho: Reuters informó el 24 de octubre de 1 muerto y 527 heridos en Taiwán, más de 288.000 hogares sin electricidad (la mayoría reconectados) y dos días de cierre de oficinas y escuelas en el norte y el centro, incluida Taipéi.",
+      "coupling": "Dato de acople: las bases estadounidenses en Okinawa permanecieron en condición de preparación estacional TCCOR 4 mientras Champi pasaba a unas 275 millas al noroeste (Stars and Stripes). No hay evidencia pública de interrupción militar; por eso se etiqueta como observación.",
+      "couplingEn": "Coupling datum: US bases on Okinawa stayed in seasonal TCCOR 4 as Champi passed about 275 miles to the northwest (Stars and Stripes). There is no public evidence of military disruption, so it is labelled as watch.",
+      "implication": "Implicación estratégica (Evaluación): la red eléctrica de Taiwán resistió y se recuperó con rapidez, un dato relevante para una isla que importa casi toda su energía. La lección no es militar, sino de resiliencia de infraestructura civil en la primera línea.",
+      "strategic_implication": "El clima extremo pone a prueba, de forma recurrente, la resiliencia civil de los nodos de la disuasión en el Pacífico occidental.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. y Japón miden la continuidad de su retaguardia; China observa la vulnerabilidad de la red civil taiwanesa; la visita de Kim a China es contexto, no acople ambiental.",
+      "confidence": "Alta en el hecho físico; baja en el acople militar",
       "sources": [
         {
-          "label": "USGS Khuzdar",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1"
+          "label": "Reuters, 24 oct",
+          "url": "https://www.reuters.com/business/environment/typhoon-champi-sweeps-past-taiwan-leaving-1-dead-500-injured-2026-10-24/"
         },
         {
-          "label": "USGS PAGER",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1/pager"
+          "label": "Stars and Stripes, Champi",
+          "url": "https://www.stripes.com/theaters/asia_pacific/storm_tracker/2026-10-14/96w-invest:-marianas-might-be-in-the-crosshairs-23151384.html"
         },
         {
-          "label": "AP frontera",
-          "url": "https://apnews.com/article/pakistan-afghanistan-border-clashes-militant-infiltration-af35955a49d8ec9948b4a946bf07d37c"
+          "label": "NASA EONET",
+          "url": "https://eonet.gsfc.nasa.gov/api/v3/events?start=2026-10-18&end=2026-10-26&status=all"
+        },
+        {
+          "label": "SENTINEL feed",
+          "url": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json"
         }
+      ],
+      "conflictEvent": "Sin combate. El nodo es la Primera Cadena de Islas (Taiwán, Okinawa, Kyushu), eje de la disuasión de EE. UU. y sus aliados frente a China; en la misma semana, Kim Jong Un visitó China.",
+      "environmentalEvent": "NASA EONET: supertifón Champi activo durante toda la ventana; rozó la costa noreste de Taiwán (Yilan) el 24 de octubre con rachas de 227 km/h y se degradó a tormenta tropical rumbo a Kyushu.",
+      "couplingType": [
+        "clima extremo",
+        "red eléctrica",
+        "continuidad operacional",
+        "disuasión"
       ]
     }
   ],
   "not_selected": [
     {
-      "id": "ukraine-russia-energy",
-      "location": "Ucrania/Rusia",
-      "note": "Conflicto energético de alta prioridad, pero sin evento NASA/USGS ambiental espacialmente acoplado en la semana; queda para informe de tripolaridad/energía, no como acople conflicto-ambiente confirmado."
+      "id": "hormuz-mines",
+      "location": "Irán / estrecho de Ormuz",
+      "note": "Alta prioridad militar y energética (reclamaciones del IRGC sobre minas y control del estrecho), pero sin acople ambiental; queda para la línea Irán–Ormuz."
     },
     {
-      "id": "libya-flood",
-      "location": "Libia / Trípoli",
-      "note": "GDACS reportó inundación verde con 2 muertes y 5 desplazados; la fragmentación institucional es relevante, pero el impacto semanal fue bajo para entrar en los tres puntos."
+      "id": "crimea-flood",
+      "location": "Ucrania / sur de Crimea",
+      "note": "GDACS: inundación verde del 19 al 21 de octubre, 0 muertes y 5 desplazados; impacto demasiado bajo."
     },
     {
-      "id": "pacific-quakes",
-      "location": "Rusia-Kamchatka, PNG, Fiji, Tonga",
-      "note": "Eventos sísmicos M5,5+ sin acople geopolítico directo suficientemente trazable en esta edición."
+      "id": "vanuatu-bonin-quakes",
+      "location": "Vanuatu y Bonin (Japón)",
+      "note": "Enjambre M6,9 en Vanuatu y M7,0 profundo (473 km) en Bonin, sin daños ni acople geopolítico trazable."
+    },
+    {
+      "id": "sahel-fires",
+      "location": "Malí, Burkina Faso, Chad, Senegal",
+      "note": "Focos EONET compatibles con quemas estacionales; sin vínculo verificable con operaciones armadas esta semana."
+    },
+    {
+      "id": "cuba-energy",
+      "location": "Cuba",
+      "note": "Bloqueo de combustible y apagones, pero sin evento ambiental en la ventana."
+    },
+    {
+      "id": "pacific-storms",
+      "location": "Pacífico mexicano e Índico",
+      "note": "Huracanes Trudy y Vance y ciclón Agueda, sobre todo en mar abierto."
     }
   ],
   "best_short_candidate": {
-    "id": "sudan-drought-war-short",
-    "title": "Sudán: cuando la sequía entra en la guerra",
-    "reason": "Es el caso más sólido porque fuentes institucionales conectan explícitamente guerra, sequía, cosechas, precios, desplazamiento y acceso humanitario."
+    "id": "yemen-taiz-water-short",
+    "title": "Taiz: cuando el agua se vuelve frente",
+    "reason": "Es el acople más sólido de la semana: OCHA, UNICEF, Amnistía y FEWS NET conectan explícitamente cerco, combustible, agua y emergencia humanitaria, y el caso se enlaza con el frente saudí y la guerra con Irán."
   },
   "bestShort": {
-    "id": "sudan-drought-war-short",
-    "title": "Sudán: cuando la sequía entra en la guerra",
-    "reason": "Es el caso más sólido porque fuentes institucionales conectan explícitamente guerra, sequía, cosechas, precios, desplazamiento y acceso humanitario."
+    "id": "yemen-taiz-water-short",
+    "title": "Taiz: cuando el agua se vuelve frente",
+    "reason": "Es el acople más sólido de la semana: OCHA, UNICEF, Amnistía y FEWS NET conectan explícitamente cerco, combustible, agua y emergencia humanitaria, y el caso se enlaza con el frente saudí y la guerra con Irán."
   },
   "short_script": {
-    "title": "Sudán: cuando la sequía entra en la guerra",
-    "hook_3s": "Sudán no solo está en guerra: también está perdiendo la cosecha.",
-    "scene_1": "Hecho: en Darfur y Kordofán, la guerra sigue desplazando población, golpeando mercados y cortando acceso humanitario.",
-    "scene_2": "Dato de acople ambiental: la alerta IPC/ONU habla de sequía severa en más de la mitad del país; en Darfur Norte, 64% del cropland mostró pobre crecimiento. NASA EONET/GDACS también registró incendios en Sudán durante la semana.",
-    "scene_3": "Implicación estratégica: cuando guerra y sequía se superponen, la comida se convierte en territorio, la ayuda en corredor estratégico y la financiación en poder.",
-    "close": "GEOPÓLEM. Bienvenidos al tablero.",
+    "title": "Taiz: cuando el agua se vuelve frente",
+    "hook_3s": "Más de un millón de personas. Veinte días cercadas. Y el agua, a la mitad.",
+    "scene_1": "Hecho: los hutíes cortaron en octubre la carretera principal entre Taiz y Adén. Según la ONU, la ciudad lleva más de veinte días aislada y casi no entran combustible ni alimentos.",
+    "scene_2": "Dato de acople: Taiz vive del agua que llega en camiones. Sin carreteras y sin diésel, la producción de agua cayó a la mitad y su precio se triplicó. Y la ciudad ya arrastraba décadas de sequías y acuíferos agotados.",
+    "scene_3": "Implicación estratégica: en la misma semana, Arabia Saudí interceptó misiles hutíes sobre Riad. Estados Unidos combate a Irán en Ormuz. Y en Taiz, el agua se convierte en el arma más silenciosa del tablero.",
+    "close": "¿Quién decide cuándo vuelve el agua? GEOPÓLEM. Bienvenidos al tablero.",
     "visuals": [
-      "Mapa Sudán con Darfur, Kordofán y Nilo Azul destacados",
-      "Capa de sequía/cultivos y puntos EONET/GDACS de incendio",
-      "Ruta de ayuda Dilling-Kadugli y mercados bajo presión",
-      "Cierre con triángulo EE. UU.-China-Rusia/UE-Sur Global"
+      "Mapa de Yemen con Taiz, Adén y el corredor cortado en rojo",
+      "Camiones cisterna detenidos y contadores de agua: 50% y x3",
+      "Capa de sequía y acuíferos (FEWS NET) sobre el suroeste de Yemen",
+      "Arco de misiles hacia Riad y Ormuz al fondo",
+      "Cierre: triángulo EE. UU.–China–Rusia con Irán y el mar Rojo"
     ],
     "english_subtitles": [
-      "Sudan is not only at war. It is also losing the harvest.",
-      "In Darfur and Kordofan, fighting is displacing people, hitting markets and cutting humanitarian access.",
-      "The UN-backed IPC alert points to severe drought across more than half of Sudan.",
-      "In North Darfur, 64 percent of cropland showed poor plant growth.",
-      "When war and drought overlap, food becomes territory, aid becomes strategy, and funding becomes power.",
-      "GEOPÓLEM. Welcome to the board."
+      "More than a million people. Twenty days under siege. And water, cut by half.",
+      "In October the Houthis cut the main road between Taiz and Aden.",
+      "According to the UN, almost no fuel or food has reached the city since.",
+      "Taiz depends on trucked water. Without roads or diesel, water production has halved and its price has tripled.",
+      "The city was already facing decades of drought and depleted groundwater.",
+      "This week, Saudi Arabia intercepted Houthi missiles over Riyadh. The US fights Iran around Hormuz.",
+      "In Taiz, water becomes the quietest weapon on the board.",
+      "Who decides when the water comes back? GEOPÓLEM. Welcome to the board."
     ],
     "hashtags": [
       "#GEOPÓLEM",
-      "#Sudán",
-      "#Geopolítica",
-      "#SeguridadAlimentaria",
-      "#OSINT"
+      "#Yemen",
+      "#Taiz",
+      "#Agua",
+      "#Geopolítica"
     ]
   },
   "tags": [
     "#GEOPÓLEM",
     "#SENTINEL",
-    "#Sudán",
-    "#Guam",
-    "#Pakistán",
+    "#Yemen",
+    "#Tíbet",
+    "#Taiwán",
     "#Tripolaridad",
     "#OSINT"
   ],
   "dataUrl": "./data/sentinel/weekly-brief.json",
-  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-10-12_2026-10-18.json",
-  "markdownUrl": "./data/sentinel/weekly-brief-2026-10-19.md",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-10-19_2026-10-25.json",
+  "markdownUrl": "./data/sentinel/weekly-brief-2026-10-26.md",
   "close": "GEOPÓLEM. Bienvenidos al tablero.",
   "monitor_layer": {
     "label": "Acople ambiental significativo",
-    "status": "1 confirmado · 2 en observación",
+    "status": "1 confirmado · 1 operacional · 1 en observación",
     "items": [
       {
-        "id": "sudan-darfur-kordofan-drought-war-confirmed",
-        "location": "Sudán / Darfur, Kordofán y eje Nilo Azul",
+        "id": "yemen-taiz-siege-water-confirmed",
+        "location": "Yemen / Taiz, eje Taiz–Adén",
         "status": "confirmado",
         "priority": "Alta",
-        "accent": "#EF4444"
+        "accent": "#EF4444",
+        "lat": 13.58,
+        "lon": 44.02
       },
       {
-        "id": "guam-marianas-champi-second-island-chain-watch",
-        "location": "Guam / Marianas y Segunda Cadena de Islas",
-        "status": "observación",
+        "id": "tibet-nagqu-baqen-m7-strategic-infrastructure",
+        "location": "China / Tíbet, condado de Baqên (Nagqu) y ferrocarril Qinghai–Tíbet",
+        "status": "confirmado (operacional)",
         "priority": "Media-alta",
-        "accent": "#22D3EE"
+        "accent": "#F59E0B",
+        "lat": 32.38,
+        "lon": 93.78
       },
       {
-        "id": "pakistan-balochistan-khuzdar-quake-border-war-watch",
-        "location": "Pakistán / Baluchistán, Khuzdar y frontera afgano-paquistaní",
+        "id": "taiwan-okinawa-champi-first-island-chain-watch",
+        "location": "Taiwán / Okinawa y Primera Cadena de Islas",
         "status": "observación",
         "priority": "Media",
-        "accent": "#F59E0B"
+        "accent": "#22D3EE",
+        "lat": 24.75,
+        "lon": 121.75
       }
     ]
   },
   "media_publication": {
     "status": "prepared",
-    "published_at": "2026-10-19T08:12:00+02:00",
+    "published_at": "2026-10-26T07:40:00+01:00",
     "youtube_long": {
-      "title": "GEOPÓLEM SENTINEL · Sudán, Guam y Pakistán: el tablero conflicto-ambiente",
-      "url": "./data/sentinel/weekly-brief-2026-10-19.md",
+      "title": "GEOPÓLEM SENTINEL · Taiz, Tíbet y Taiwán: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-10-26.md",
       "format": "guion editorial",
       "duration": "4-6 min"
     },
     "youtube_short": {
-      "title": "Sudán: cuando la sequía entra en la guerra | GEOPÓLEM SENTINEL",
-      "url": "./data/sentinel/weekly-brief-2026-10-19.md#short-del-martes",
+      "title": "Taiz: cuando el agua se vuelve frente | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-10-26.md#short-del-martes",
       "format": "9:16 guion",
-      "duration": "45-60 s"
+      "duration": "45-55 s"
     },
     "editorial_note": "No se publicó video en YouTube ni redes automáticamente. El guion del Short queda listo para revisión y aprobación editorial."
   },
   "mediaPublication": {
     "status": "prepared",
-    "published_at": "2026-10-19T08:12:00+02:00",
+    "published_at": "2026-10-26T07:40:00+01:00",
     "youtube_long": {
-      "title": "GEOPÓLEM SENTINEL · Sudán, Guam y Pakistán: el tablero conflicto-ambiente",
-      "url": "./data/sentinel/weekly-brief-2026-10-19.md",
+      "title": "GEOPÓLEM SENTINEL · Taiz, Tíbet y Taiwán: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-10-26.md",
       "format": "guion editorial",
       "duration": "4-6 min"
     },
     "youtube_short": {
-      "title": "Sudán: cuando la sequía entra en la guerra | GEOPÓLEM SENTINEL",
-      "url": "./data/sentinel/weekly-brief-2026-10-19.md#short-del-martes",
+      "title": "Taiz: cuando el agua se vuelve frente | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-10-26.md#short-del-martes",
       "format": "9:16 guion",
-      "duration": "45-60 s"
+      "duration": "45-55 s"
     },
     "editorial_note": "No se publicó video en YouTube ni redes automáticamente. El guion del Short queda listo para revisión y aprobación editorial."
   }
