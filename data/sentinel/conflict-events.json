@@ -2,779 +2,159 @@
   "events": [
     {
       "actors": [
-        "United States"
-      ],
-      "domain": "bozemandailychronicle.com",
-      "id": "evt_b50e0d1639db3045",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian",
-        "hormuz"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.5,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "US strikes Iranian targets in the Strait of Hormuz , official says , leaving unclear what comes next",
-      "tone": null,
-      "url": "http://www.bozemandailychronicle.com/wire/news/us-strikes-iranian-targets-in-the-strait-of-hormuz-official-says-leaving-unclear-what-comes/article_2a589236-cc8b-5ff3-b827-2e79217f4103.html"
-    },
-    {
-      "actors": [
-        "Canada"
-      ],
-      "domain": "stcatharinesstandard.ca",
-      "id": "evt_75958a13a7e032af",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian",
-        "hormuz"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.5,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Canada",
-      "tier": "medium",
-      "title": "US strikes Iranian targets in the Strait of Hormuz , official says , leaving unclear what comes next",
-      "tone": null,
-      "url": "https://www.stcatharinesstandard.ca/news/world/middle-east/us-strikes-iranian-targets-in-the-strait-of-hormuz-official-says-leaving-unclear-what-comes-next/article_299bc1f8-1927-52e5-b95b-1271e3a4fbca.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wfmz.com",
-      "id": "evt_84c55286a39b7177",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran chief negotiator says the US must act to prevent renewed war , and other Mideast news",
-      "tone": null,
-      "url": "https://www.wfmz.com/news/ap/ap-national/iran-s-chief-negotiator-says-the-us-must-act-to-prevent-renewed-war-and-other-mideast-news/article_4cd51f4d-14df-5d20-90c9-21ddc855c56c.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wdov.iheart.com",
-      "id": "evt_6b2fdd3480c2fef9",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "U . S . Carries Out Defensive Strike On Iranian Island",
-      "tone": null,
-      "url": "https://wdov.iheart.com/content/2026-11-03-us-carries-out-defensive-strike-on-iranian-island/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "1019bigwaax.iheart.com",
-      "id": "evt_51814393590b0ad0",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "U . S . Carries Out Defensive Strike On Iranian Island | News Radio 101 . 9 Big WAAX",
-      "tone": null,
-      "url": "https://1019bigwaax.iheart.com/content/2026-11-03-us-carries-out-defensive-strike-on-iranian-island/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "1190kex.iheart.com",
-      "id": "evt_5b9004418d0cdf19",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "U . S . Carries Out Defensive Strike On Iranian Island",
-      "tone": null,
-      "url": "https://1190kex.iheart.com/content/2026-11-03-us-carries-out-defensive-strike-on-iranian-island/"
-    },
-    {
-      "actors": [
-        "Bangladesh"
-      ],
-      "domain": "bangladeshsun.com",
-      "id": "evt_19dbdab8160528b4",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "clash",
-        "clashes"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Bangladesh",
-      "tier": "medium",
-      "title": "Bangladesh : Garment workers clashes with police in Dhaka Mirpur as protest enters fourth day",
-      "tone": null,
-      "url": "http://www.bangladeshsun.com/news/279409055/bangladesh-garment-workers-clashes-with-police-in-dhaka-mirpur-as-protest-enters-fourth-day"
-    },
-    {
-      "actors": [
-        "Denmark"
-      ],
-      "domain": "jyllands-posten.dk",
-      "id": "evt_923cee3dfd657b47",
-      "language": "Danish",
-      "matched_regions": [
-        "iran",
-        "hormuz",
-        "united states"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Denmark",
-      "tier": "medium",
-      "title": "Medier : united states har angrebet iransk ø i Hormuzstrædet",
-      "tone": null,
-      "url": "https://jyllands-posten.dk/international/ECE19793541/medier-usa-har-angrebet-iransk-oe-i-hormuzstraedet/?fp-exp=60320002&fp-alg=603200020"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wgow.com",
-      "id": "evt_9ca997572771ea42",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Netanyahu Urges Trump to Launch New Strikes on Iran as Diplomatic Talks Continue",
-      "tone": null,
-      "url": "https://www.wgow.com/2026/11/03/netanyahu-urges-trump-to-launch-new-strikes-on-iran-as-diplomatic-talks-continue/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "1490wosh.com",
-      "id": "evt_3ca3ac717cc39576",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Netanyahu Urges Trump to Launch New Strikes on Iran as Diplomatic Talks Continue",
-      "tone": null,
-      "url": "https://www.1490wosh.com/2026/11/03/netanyahu-urges-trump-to-launch-new-strikes-on-iran-as-diplomatic-talks-continue/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "kreiszeitung.de",
-      "id": "evt_ed8c029ffdbc8c26",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Putin warnt Europa : „ Russland ist bereit  für einen Krieg",
-      "tone": null,
-      "url": "https://www.kreiszeitung.de/politik/putin-warnt-europa-russland-ist-bereit-fuer-einen-krieg-zr-94571624.html"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "illawarramercury.com.au",
-      "id": "evt_dffa5855ae63a2fe",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "Musicals to lead Merrigong Theatre Company 2027 season | Illawarra Mercury",
-      "tone": null,
-      "url": "https://www.illawarramercury.com.au/story/9385105/musicals-to-lead-merrigong-theatre-companys-2027-season/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "hna.de",
-      "id": "evt_66d949bba2b1891a",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Warhammer 40 , 000 : Boltgun 2 setzt die lizenzierte Action in wenigen Tagen auch auf der Nintendo Switch 2 fort",
-      "tone": null,
-      "url": "https://www.hna.de/leben/games/warhammer-40000-boltgun-setzt-die-lizenzierte-action-in-wenigen-tagen-auch-auf-der-nintendo-switch-fort-zr-94571165.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "ksut.org",
-      "id": "evt_4e384ebf4d552888",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "A new cold war : hackers target fridges across the globe",
-      "tone": null,
-      "url": "https://www.ksut.org/2026-11-03/a-new-cold-war-hackers-target-fridges-across-the-globe"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wcsufm.org",
-      "id": "evt_1c55819f41455e2e",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "A new cold war : hackers target fridges across the globe",
-      "tone": null,
-      "url": "https://www.wcsufm.org/latest-from-npr/2026-11-03/a-new-cold-war-hackers-target-fridges-across-the-globe"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "dailymail.com",
-      "id": "evt_a85b177c3a891731",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Dubai bounces back ! British Airways announces return to UAE flights after eight - month hiatus amid Middle East conflict",
-      "tone": null,
-      "url": "https://www.dailymail.com/travel/article-16261461/Dubai-flights-return-British-Airways-Middle-East.html"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "faz.net",
-      "id": "evt_59121899c7d96c65",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Ukraine - Liveticker : Merz : Selenskyj soll bald im Kanzleramt eintreffen",
-      "tone": null,
-      "url": "https://www.faz.net/aktuell/politik/ukraine/ukraine-liveticker-merz-selenskyj-soll-bald-im-kanzleramt-eintreffen-faz-110683325.html"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "kreiszeitung.de",
-      "id": "evt_7cd8be77bce6ec7c",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Blutdruck - und Krebsmedikamente werden wegen des Iran - Kriegs knapp",
-      "tone": null,
-      "url": "https://www.kreiszeitung.de/welt/blutdruck-und-krebsmedikamente-werden-wegen-des-iran-kriegs-knapp-zr-94571603.html"
-    },
-    {
-      "actors": [
-        "Switzerland"
-      ],
-      "domain": "rts.ch",
-      "id": "evt_1cd89818d432c307",
-      "language": "French",
-      "matched_regions": [],
-      "matched_themes": [
-        "occupation"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Switzerland",
-      "tier": "monitor",
-      "title": "Un marché noir  de Bérénice Pichat , la France sous lOccupation",
-      "tone": null,
-      "url": "https://www.rts.ch/info/culture/livres/2026/article/un-marche-noir-de-berenice-pichat-la-france-sous-l-occupation-29402858.html"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "lanouvellerepublique.fr",
-      "id": "evt_4ba338059881749c",
-      "language": "French",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "France",
-      "tier": "monitor",
-      "title": "Guerre en Ukraine : Kiev accuse Moscou de torpiller les espoirs de paix après la mort de 29 personnes lundi",
-      "tone": null,
-      "url": "https://www.lanouvellerepublique.fr/a-la-une/guerre-en-ukraine-kiev-accuse-moscou-de-torpiller-les-espoirs-de-paix-apres-la-mort-de-29-personnes-lundi-1793691682"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "az-online.de",
-      "id": "evt_d82c55a67c9ca69a",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "USA greifen Iran an : Geheime Angriffe vor den Zwischenwahlen",
-      "tone": null,
-      "url": "https://www.az-online.de/politik/usa-greifen-iran-an-geheime-angriffe-vor-den-zwischenwahlen-zr-94571598.html"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "sudouest.fr",
-      "id": "evt_f07c65a578bd1848",
-      "language": "French",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "France",
-      "tier": "monitor",
-      "title": "Iran  : un immense panneau daffichage menaçant Donald Trump de mort dévoilé à Téhéran",
-      "tone": null,
-      "url": "https://www.sudouest.fr/international/iran/iran-un-immense-panneau-d-affichage-menacant-donald-trump-de-mort-devoile-a-teheran-31360274.php"
-    },
-    {
-      "actors": [
-        "Kosovo"
-      ],
-      "domain": "telegrafi.com",
-      "id": "evt_4156432a134f4e95",
-      "language": "Albanian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Kosovo",
-      "tier": "monitor",
-      "title": "Marrëveshja Iran - SHBA mbetet ende larg , pavarësisht përpjekjeve të shtuara diplomatike",
-      "tone": null,
-      "url": "https://telegrafi.com/marreveshja-iran-shba-mbetet-ende-larg-pavaresisht-perpjekjeve-te-shtuara-diplomatike/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "bbc.com",
-      "id": "evt_a0e3a89d8c1c0fdc",
-      "language": "Swahili",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Utulivu kati ya Marekani na China ni wa kupotosha - The Guardian",
-      "tone": null,
-      "url": "https://www.bbc.com/swahili/articles/cq33x0p0n6jko"
-    },
-    {
-      "actors": [
-        "Benin"
-      ],
-      "domain": "lanouvelletribune.info",
-      "id": "evt_098b259180125363",
-      "language": "French",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Benin",
-      "tier": "monitor",
-      "title": "Iran : face au risque dune frappe nucléaire , un guide de survie rendu public",
-      "tone": null,
-      "url": "https://lanouvelletribune.info/2026/11/iran-face-au-risque-dune-frappe-nucleaire-un-guide-de-survie-rendu-public/"
-    },
-    {
-      "actors": [
-        "Denmark"
-      ],
-      "domain": "jyllands-posten.dk",
-      "id": "evt_5479a4df8802e0c7",
-      "language": "Danish",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Denmark",
-      "tier": "monitor",
-      "title": "Ukraine melder om 25 sårede efter angreb i Kharkiv",
-      "tone": null,
-      "url": "https://jyllands-posten.dk/international/ECE19793893/ukraine-melder-om-25-saarede-efter-angreb-i-kharkiv/?fp-exp=60300005&fp-alg=603000050"
-    },
-    {
-      "actors": [
         "India"
       ],
-      "domain": "hindustantimes.com",
-      "id": "evt_31c78c30ed92c71f",
+      "domain": "dailyexcelsior.com",
+      "id": "evt_58599b3078a3517c",
       "language": "English",
       "matched_regions": [
-        "israel"
+        "iran"
       ],
-      "matched_themes": [],
+      "matched_themes": [
+        "coup",
+        "sanction",
+        "sanctions"
+      ],
       "region": "MENA",
-      "score": 2.0,
+      "score": 7.5,
       "score_breakdown": {
         "region": 2.0,
-        "themes": 0.0,
+        "themes": 5.5,
         "tone": 0.0
       },
-      "seen_date": "20261103T111500Z",
+      "seen_date": "20261105T071500Z",
       "source_country": "India",
-      "tier": "monitor",
-      "title": "Accept political reality : Top Arab - Israeli leader urges opposition to seize  historic opportunity  to oust Netanyahu",
+      "tier": "high",
+      "title": "Chandigarh - based couple , their firms face  US sanctions over Iran oil links",
       "tone": null,
-      "url": "https://www.hindustantimes.com/world-news/israel-election-results-2026-arab-parties-yousef-jabareen-netanyahu-coalition-gadi-eisenkot-knesset-latest-updates-101793694162083.html"
-    },
-    {
-      "actors": [
-        "Belgium"
-      ],
-      "domain": "dhnet.be",
-      "id": "evt_7abbf03c28ee4aba",
-      "language": "French",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Belgium",
-      "tier": "monitor",
-      "title": "Premier exercice en Pologne de la Force multinationale pour lUkraine",
-      "tone": null,
-      "url": "https://www.dhnet.be/dernieres-depeches/2026/11/03/premier-exercice-en-pologne-de-la-force-multinationale-pour-lukraine-I4NCOZ4INJBETNTRYSXF4SR32U/"
+      "url": "https://www.dailyexcelsior.com/chandigarh-based-couple-their-firms-face-us-sanctions-over-iran-oil-links/"
     },
     {
       "actors": [
         "United States"
       ],
       "domain": "aljazeera.com",
-      "id": "evt_0515a7947f1bf621",
+      "id": "evt_3cc10cf1363d3f37",
       "language": "English",
       "matched_regions": [
-        "lebanon"
+        "iran"
       ],
-      "matched_themes": [],
+      "matched_themes": [
+        "war"
+      ],
       "region": "MENA",
-      "score": 1.5,
+      "score": 5.0,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
+        "region": 2.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261103T111500Z",
+      "seen_date": "20261105T071500Z",
       "source_country": "United States",
-      "tier": "monitor",
-      "title": "Lebanon cuts power to public bodies as electricity crisis deepens",
+      "tier": "medium",
+      "title": "US midterm election results live : Trump blames Iran war after losses | US Midterm Elections 2026 News",
       "tone": null,
-      "url": "https://www.aljazeera.com/news/2026/11/3/lebanon-cuts-power-to-public-bodies-as-electricity-crisis-deepens"
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/4/us-midterm-election-results-live-trump-reacts-as-more-results-awaited?update=5123773"
     },
     {
       "actors": [
-        "Italy"
+        "Germany"
       ],
-      "domain": "zazoom.it",
-      "id": "evt_4cf1af3a8d3e26cd",
-      "language": "Italian",
+      "domain": "lr-online.de",
+      "id": "evt_4780436f7db9e4ec",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261105T071500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "War es das Maga ?: Trumps Bewegung erlebt Midterm - Debakel als Anfang vom Ende",
+      "tone": null,
+      "url": "https://www.lr-online.de/nachrichten/politik/war-es-das-maga-trumps-bewegung-erlebt-midterm-debakel-als-anfang-vom-ende-79666386.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "nypost.com",
+      "id": "evt_d7b6a6bb035c33ef",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261105T071500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Ted Cruz calls midterm election results a  Watergate - level repudiation  of the GOP , warns  Americans will be hurt  by radical Dems",
+      "tone": null,
+      "url": "https://nypost.com/2026/11/05/us-news/ted-cruz-calls-midterm-election-results-a-watergate-level-repudiation-of-the-gop-warns-americans-will-be-hurt-by-radical-dems/"
+    },
+    {
+      "actors": [
+        "Serbia"
+      ],
+      "domain": "naslovi.net",
+      "id": "evt_f54e07b584d7ae80",
+      "language": "Serbian",
       "matched_regions": [
-        "nato"
+        "iran"
       ],
       "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
+      "region": "MENA",
+      "score": 2.0,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261103T111500Z",
-      "source_country": "Italy",
+      "seen_date": "20261105T071500Z",
+      "source_country": "Serbia",
       "tier": "monitor",
-      "title": "Quattro seminatori di pace | funerali di Stato per i militari vittime dell  incidente in Bosnia",
+      "title": "Tramp : Rat sa Iranom doprineo porazu republikanaca , ali je bio neophodan",
       "tone": null,
-      "url": "https://www.zazoom.it/2026-11-03/quattro-seminatori-di-pace-funerali-di-stato-per-i-militari-vittime-dellincidente-in-bosnia/19880191/"
+      "url": "https://naslovi.net/2026-11-05/insajder/tramp-rat-sa-iranom-doprineo-porazu-republikanaca-ali-je-bio-neophodan/42569641"
+    },
+    {
+      "actors": [
+        "Belgium"
+      ],
+      "domain": "lalibre.be",
+      "id": "evt_eeb31a730cf3b1bf",
+      "language": "French",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261105T071500Z",
+      "source_country": "Belgium",
+      "tier": "monitor",
+      "title": "Guerre en Ukraine : la Banque centrale de Russie réclame à la saisie de documents chez Euroclear",
+      "tone": null,
+      "url": "https://www.lalibre.be/economie/entreprises-startup/2026/11/05/guerre-en-ukraine-la-banque-centrale-de-russie-reclame-a-la-saisie-de-documents-chez-euroclear-3JMYSYJGXJDRVMNGDVGVF66CSM/"
     }
   ],
   "filters": {
@@ -788,13 +168,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-03T14:11:42Z",
+  "generated_at": "2026-11-05T14:37:26Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 0,
-    "medium": 10,
-    "monitor": 20
+    "high": 1,
+    "medium": 1,
+    "monitor": 4
   },
-  "total_events": 30
+  "total_events": 6
 }
