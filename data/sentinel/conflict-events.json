@@ -2,66 +2,169 @@
   "events": [
     {
       "actors": [
-        "India"
+        "United States"
       ],
-      "domain": "dailyexcelsior.com",
-      "id": "evt_58599b3078a3517c",
+      "domain": "cbsnews.com",
+      "id": "evt_b412a7bb391e8107",
       "language": "English",
       "matched_regions": [
         "iran"
       ],
       "matched_themes": [
-        "coup",
-        "sanction",
-        "sanctions"
+        "war",
+        "strike"
       ],
       "region": "MENA",
-      "score": 7.5,
+      "score": 6.5,
       "score_breakdown": {
         "region": 2.0,
-        "themes": 5.5,
+        "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20261105T071500Z",
-      "source_country": "India",
+      "seen_date": "20261106T130000Z",
+      "source_country": "United States",
       "tier": "high",
-      "title": "Chandigarh - based couple , their firms face  US sanctions over Iran oil links",
+      "title": "Iran War Updates : Trump touts imminent decision on new U . S . strikes , keeping up threats , but also diplomacy",
       "tone": null,
-      "url": "https://www.dailyexcelsior.com/chandigarh-based-couple-their-firms-face-us-sanctions-over-iran-oil-links/"
+      "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/"
     },
     {
       "actors": [
-        "United States"
+        "Germany"
       ],
-      "domain": "aljazeera.com",
-      "id": "evt_3cc10cf1363d3f37",
-      "language": "English",
+      "domain": "onvista.de",
+      "id": "evt_9fa689084ea8ac87",
+      "language": "German",
       "matched_regions": [
-        "iran"
+        "ukraine"
       ],
       "matched_themes": [
         "war"
       ],
-      "region": "MENA",
+      "region": "Europa del Este",
       "score": 5.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261105T071500Z",
-      "source_country": "United States",
+      "seen_date": "20261106T123000Z",
+      "source_country": "Germany",
       "tier": "medium",
-      "title": "US midterm election results live : Trump blames Iran war after losses | US Midterm Elections 2026 News",
+      "title": "Kreml dämpft Erwartungen nach Trumps Ankündigung zur Ukraine",
       "tone": null,
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/4/us-midterm-election-results-live-trump-reacts-as-more-results-awaited?update=5123773"
+      "url": "https://www.onvista.de/news/2026/11-06-kreml-daempft-erwartungen-nach-trumps-ankuendigung-zur-ukraine-0-10-26573430"
+    },
+    {
+      "actors": [
+        "Yemen"
+      ],
+      "domain": "khabaragency.net",
+      "id": "evt_2dfa7ae35511b53a",
+      "language": "English",
+      "matched_regions": [
+        "houthi"
+      ],
+      "matched_themes": [
+        "casualties"
+      ],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "Yemen",
+      "tier": "medium",
+      "title": "Taiz Rights Center Reports 1 , 444 Houthi Violations and 367 Civilian Casualties in October",
+      "tone": null,
+      "url": "https://www.khabaragency.net/news255371.html"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "tribune.com.pk",
+      "id": "evt_7ea65a30b483c732",
+      "language": "English",
+      "matched_regions": [
+        "pakistan"
+      ],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Asia del Sur",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T123000Z",
+      "source_country": "Pakistan",
+      "tier": "medium",
+      "title": "UK security minister visits Pakistan to strengthen counter - terrorism cooperation",
+      "tone": null,
+      "url": "https://tribune.com.pk/story/2638978/uk-security-minister-visits-pakistan-to-strengthen-counter-terrorism-cooperation"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "dunmowbroadcast.co.uk",
+      "id": "evt_666bcf752890dddd",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Appeal to raise £150 , 000 for memorial to World War II heroes",
+      "tone": null,
+      "url": "https://www.dunmowbroadcast.co.uk/news/26704644.appeal-raise-150-000-memorial-world-war-ii-heroes/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "irvinetimes.com",
+      "id": "evt_5291edf085aee2cd",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Appeal to raise £150 , 000 for memorial to World War II heroes",
+      "tone": null,
+      "url": "https://www.irvinetimes.com/news/26704688.appeal-raise-150-000-memorial-world-war-ii-heroes/"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "lr-online.de",
-      "id": "evt_4780436f7db9e4ec",
+      "domain": "merkur.de",
+      "id": "evt_4f4dd5f129bd38d0",
       "language": "German",
       "matched_regions": [],
       "matched_themes": [
@@ -74,19 +177,19 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261105T071500Z",
+      "seen_date": "20261106T130000Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "War es das Maga ?: Trumps Bewegung erlebt Midterm - Debakel als Anfang vom Ende",
+      "title": "„ Waren nicht vorbereitet : US - Verteidigungsministerium räumt schwere Versäumnis ein",
       "tone": null,
-      "url": "https://www.lr-online.de/nachrichten/politik/war-es-das-maga-trumps-bewegung-erlebt-midterm-debakel-als-anfang-vom-ende-79666386.html"
+      "url": "http://www.merkur.de/politik/waren-nicht-vorbereitet-us-verteidigungsministerium-raeumt-schwere-versaeumnis-ein-zr-94577002.html"
     },
     {
       "actors": [
-        "United States"
+        "Israel"
       ],
-      "domain": "nypost.com",
-      "id": "evt_d7b6a6bb035c33ef",
+      "domain": "middleeasteye.net",
+      "id": "evt_1bf11b421eec49f3",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -99,20 +202,70 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261105T071500Z",
-      "source_country": "United States",
+      "seen_date": "20261106T130000Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Ted Cruz calls midterm election results a  Watergate - level repudiation  of the GOP , warns  Americans will be hurt  by radical Dems",
+      "title": "The alternative to diplomacy is war : Polisario warns of risks after collapse of Western Sahara UN mission",
       "tone": null,
-      "url": "https://nypost.com/2026/11/05/us-news/ted-cruz-calls-midterm-election-results-a-watergate-level-repudiation-of-the-gop-warns-americans-will-be-hurt-by-radical-dems/"
+      "url": "https://www.middleeasteye.net/news/alternative-to-diplomacy-is-war-polisario-warns-risks-after-collapse-western-sahara-un-mission"
     },
     {
       "actors": [
-        "Serbia"
+        "United States"
       ],
-      "domain": "naslovi.net",
-      "id": "evt_f54e07b584d7ae80",
-      "language": "Serbian",
+      "domain": "dailyyonder.com",
+      "id": "evt_ff63536faa589a66",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T123000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Trump Administration Delays Awards Slated To Improve Rural America Health",
+      "tone": null,
+      "url": "https://dailyyonder.com/trump-administration-delays-awards-slated-to-improve-rural-americas-health/2026/11/06/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "asianimage.co.uk",
+      "id": "evt_0a6be02e782a2d83",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T123000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Appeal to raise £150 , 000 for memorial to World War II heroes",
+      "tone": null,
+      "url": "https://www.asianimage.co.uk/news/26704600.appeal-raise-150-000-memorial-world-war-ii-heroes/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ansa.it",
+      "id": "evt_4a0da23d0c2673c3",
+      "language": "Italian",
       "matched_regions": [
         "iran"
       ],
@@ -124,20 +277,220 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261105T071500Z",
-      "source_country": "Serbia",
+      "seen_date": "20261106T130000Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "Tramp : Rat sa Iranom doprineo porazu republikanaca , ali je bio neophodan",
+      "title": "Trump torna a minacciare :  O certifico un accordo con lIran o li distruggo  - Politica",
       "tone": null,
-      "url": "https://naslovi.net/2026-11-05/insajder/tramp-rat-sa-iranom-doprineo-porazu-republikanaca-ali-je-bio-neophodan/42569641"
+      "url": "https://www.ansa.it/ansamed/it/notizie/rubriche/politica/2026/11/06/trump-torna-a-minacciare-o-certifico-un-accordo-con-liran-o-li-distruggo_d574ce94-9faa-4de1-80ee-9c7b10914d1a.html"
     },
     {
       "actors": [
-        "Belgium"
+        "Poland"
       ],
-      "domain": "lalibre.be",
-      "id": "evt_eeb31a730cf3b1bf",
-      "language": "French",
+      "domain": "wnp.pl",
+      "id": "evt_c76675515e89ebc4",
+      "language": "Polish",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "W . Brytania : „ FT : Cztery powiązane z Iranem statki zatrzymywały się nad kablami internetowymi",
+      "tone": null,
+      "url": "https://www.wnp.pl/rynki/w-brytania-ft-cztery-powiazane-z-iranem-statki-zatrzymywaly-sie-nad-kablami-internetowymi,1117078.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "movieweb.com",
+      "id": "evt_9bea648ab9f66f46",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Forget  Liones : The Counterterrorism Thriller That Changed TV Remains a Masterpiece After 25 Years",
+      "tone": null,
+      "url": "https://movieweb.com/24-anniversary-streaming-recommendation/"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "extra.globo.com",
+      "id": "evt_e81ca98e31c1635a",
+      "language": "Portuguese",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "China alega que explosivo encontrado em contêiner na Oceania é  garrafa de vinho",
+      "tone": null,
+      "url": "https://extra.globo.com/blogs/page-not-found/post/2026/11/china-alega-que-explosivo-encontrado-em-conteiner-na-oceania-e-garrafa-de-vinho.ghtml"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "tg24.sky.it",
+      "id": "evt_75d9c8a2c6b92cab",
+      "language": "Italian",
+      "matched_regions": [],
+      "matched_themes": [
+        "combat"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Chi sono i Combattenti dello Stato Maschile che hanno rivendicato gli allarmi bomba sui voli",
+      "tone": null,
+      "url": "https://tg24.sky.it/mondo/2026/11/06/combattenti-stato-maschile-chi-sono-allarme-bomba-voli"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "taz.de",
+      "id": "evt_ddf757eec2404a93",
+      "language": "German",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Nach der Wahl in Israel : Bekommt Eisenkot das Mandat , eine Koalition zu bilden ?",
+      "tone": null,
+      "url": "https://taz.de/Nach-der-Wahl-in-Israel/!6228139/"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "business24.ro",
+      "id": "evt_1ff112fbd5391dd9",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "România și Ucraina anunță un proiect de 200 de milioane de euro în sectorul dronelor",
+      "tone": null,
+      "url": "https://business24.ro/romania-ucraina/romania-ucraina-proiect-doua-sute-milioane-euro-drone-1673939"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "armscontrolwonk.com",
+      "id": "evt_297e8d23b523cf27",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Russia : Its Own Worst Enemy ?",
+      "tone": null,
+      "url": "https://www.armscontrolwonk.com/archive/602086/russia-its-own-worst-enemy/"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "moneycontrol.com",
+      "id": "evt_4e1e16abaef4d7be",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Netanyahu office says Trump US aid cutoff shows  strength  of Israel partnership",
+      "tone": null,
+      "url": "https://www.moneycontrol.com/world/netanyahu-s-office-says-trump-s-us-aid-cutoff-shows-strength-of-israel-partnership-article-14073462.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "hna.de",
+      "id": "evt_565e7ef5a0a4d3da",
+      "language": "German",
       "matched_regions": [
         "ukraine"
       ],
@@ -149,12 +502,185 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261105T071500Z",
-      "source_country": "Belgium",
+      "seen_date": "20261106T123000Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Guerre en Ukraine : la Banque centrale de Russie réclame à la saisie de documents chez Euroclear",
+      "title": "Ukraine - Krieg vor Ende ? Trump kündigt „ großen Deal  mit Russland an",
       "tone": null,
-      "url": "https://www.lalibre.be/economie/entreprises-startup/2026/11/05/guerre-en-ukraine-la-banque-centrale-de-russie-reclame-a-la-saisie-de-documents-chez-euroclear-3JMYSYJGXJDRVMNGDVGVF66CSM/"
+      "url": "https://www.hna.de/politik/ende-ukraine-krieg-trump-kuendigt-grossen-deal-mit-russland-an-zr-94576735.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "n-tv.de",
+      "id": "evt_3a5365d9516c2035",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T123000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Melania Trump holt Ukraine und Russland gemeinsam ins Weiße Haus – Premiere für Kreml - Unterhändler",
+      "tone": null,
+      "url": "https://www.n-tv.de/politik/Melania-Trump-holt-Ukraine-und-Russland-gemeinsam-ins-Weisse-Haus-Premiere-fuer-Kreml-Unterhaendler-id31501045.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "warontherocks.com",
+      "id": "evt_5038cb3d30197964",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T123000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Can Washington and China Build Confidence Around AI and Stability ?",
+      "tone": null,
+      "url": "https://warontherocks.com/can-washington-and-china-build-confidence-around-ai-and-stability/"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "thenationonlineng.net",
+      "id": "evt_084cc013d4404692",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "troops"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "Troops rescue nine kidnap victims , recover 108 livestock in Kebbi",
+      "tone": null,
+      "url": "https://thenationonlineng.net/troops-rescue-nine-kidnap-victims-recover-108-livestock-in-kebbi/"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "thenationonlineng.net",
+      "id": "evt_f9a10ee1a21851c6",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T130000Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "Nigeria explore diplomatic options with AES states amid MNJTF review",
+      "tone": null,
+      "url": "https://thenationonlineng.net/nigeria-explore-diplomatic-options-with-aes-states-amid-mnjtf-review/"
+    },
+    {
+      "actors": [],
+      "domain": "executivedigest.sapo.pt",
+      "id": "evt_24ec5532b13a4aab",
+      "language": "Portuguese",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T123000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Nem Putin nem Zelensky deverão conseguir uma vitória total : NATO antecipa desfecho negociado para a guerra",
+      "tone": null,
+      "url": "https://executivedigest.sapo.pt/nem-putin-nem-zelensky-deverao-conseguir-uma-vitoria-total-nato-antecipa-desfecho-negociado-para-a-guerra/"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "aydinses.com",
+      "id": "evt_649388b1dfd2584b",
+      "language": "Turkish",
+      "matched_regions": [
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T123000Z",
+      "source_country": "Turkey",
+      "tier": "monitor",
+      "title": "Türkiye - Pakistan - Suudi Arabistan savunma anlaşması TBMMde kabul edildi",
+      "tone": null,
+      "url": "https://www.aydinses.com/turkiye-pakistan-suudi-arabistan-savunma-anlasmasi-tbmmde-kabul-edildi"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "oprogressonet.com",
+      "id": "evt_68e148487d7508c1",
+      "language": "Portuguese",
+      "matched_regions": [],
+      "matched_themes": [
+        "mobiliz"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261106T123000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Operao integrada mobiliza forças de segurança para retomada de área na Vila Vitória",
+      "tone": null,
+      "url": "https://oprogressonet.com/noticia/55245/operacao-integrada-mobiliza-forcas-de-seguranca-para-retomada-area-na-vila-vitoria"
     }
   ],
   "filters": {
@@ -168,13 +694,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-05T14:37:26Z",
+  "generated_at": "2026-11-06T14:15:48Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
     "high": 1,
-    "medium": 1,
-    "monitor": 4
+    "medium": 3,
+    "monitor": 23
   },
-  "total_events": 6
+  "total_events": 27
 }
