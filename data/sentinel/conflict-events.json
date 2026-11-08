@@ -4,467 +4,727 @@
       "actors": [
         "United States"
       ],
-      "domain": "cbsnews.com",
-      "id": "evt_b412a7bb391e8107",
+      "domain": "foxnews.com",
+      "id": "evt_a56cbc863aafa381",
       "language": "English",
       "matched_regions": [
+        "iran",
+        "iranian",
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [
+        "air strike",
+        "strike",
+        "killed",
+        "blockade"
+      ],
+      "region": "MENA",
+      "score": 10.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 6.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Trump orders blockade on Iranian ground transport as Houthis say Saudis killed dozens in air strikes",
+      "tone": null,
+      "url": "https://www.foxnews.com/live-news/iran-war-news-trump-saudi-houthi-november-8"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "dailysabah.com",
+      "id": "evt_dc9ec74a0d4181c4",
+      "language": "English",
+      "matched_regions": [
+        "israel",
         "iran"
       ],
       "matched_themes": [
-        "war",
-        "strike"
+        "war"
+      ],
+      "region": "MENA",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Turkey",
+      "tier": "high",
+      "title": "Iran reports 3 tanker fires as Israel warns of unfinished mission",
+      "tone": null,
+      "url": "https://www.dailysabah.com/world/mid-east/iran-reports-3-tanker-fires-as-israel-warns-of-unfinished-mission"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "examiner.com.au",
+      "id": "evt_7a21b8bbac38b40a",
+      "language": "English",
+      "matched_regions": [
+        "houthi",
+        "saudi"
+      ],
+      "matched_themes": [
+        "escalation",
+        "attack"
       ],
       "region": "MENA",
       "score": 6.5,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 4.5,
+        "region": 2.5,
+        "themes": 4.0,
         "tone": 0.0
       },
-      "seen_date": "20261106T130000Z",
-      "source_country": "United States",
+      "seen_date": "20261108T130000Z",
+      "source_country": "Australia",
       "tier": "high",
-      "title": "Iran War Updates : Trump touts imminent decision on new U . S . strikes , keeping up threats , but also diplomacy",
+      "title": "Saudis report new attacks amid escalation with Houthis",
       "tone": null,
-      "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/"
+      "url": "https://www.examiner.com.au/story/9387819/saudis-report-new-attacks-amid-escalation-with-houthis/"
     },
     {
       "actors": [
-        "Germany"
+        "United States"
       ],
-      "domain": "onvista.de",
-      "id": "evt_9fa689084ea8ac87",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Europa del Este",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T123000Z",
-      "source_country": "Germany",
-      "tier": "medium",
-      "title": "Kreml dämpft Erwartungen nach Trumps Ankündigung zur Ukraine",
-      "tone": null,
-      "url": "https://www.onvista.de/news/2026/11-06-kreml-daempft-erwartungen-nach-trumps-ankuendigung-zur-ukraine-0-10-26573430"
-    },
-    {
-      "actors": [
-        "Yemen"
-      ],
-      "domain": "khabaragency.net",
-      "id": "evt_2dfa7ae35511b53a",
+      "domain": "arkansasonline.com",
+      "id": "evt_abbdedd58be29b8a",
       "language": "English",
       "matched_regions": [
+        "yemen",
         "houthi"
       ],
       "matched_themes": [
-        "casualties"
+        "strike"
       ],
       "region": "MENA",
-      "score": 4.0,
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Houthis : Strikes in Yemen kill 27 | The Arkansas Democrat - Gazette - Arkansa Best News Source",
+      "tone": null,
+      "url": "https://www.arkansasonline.com/news/2026/nov/08/houthis-strikes-in-yemen-kill-27/"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "nigerianeye.com",
+      "id": "evt_fda357c4c326b341",
+      "language": "English",
+      "matched_regions": [
+        "niger"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Sahel",
+      "score": 4.5,
       "score_breakdown": {
         "region": 1.5,
-        "themes": 2.5,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Yemen",
+      "seen_date": "20261108T130000Z",
+      "source_country": "Nigeria",
       "tier": "medium",
-      "title": "Taiz Rights Center Reports 1 , 444 Houthi Violations and 367 Civilian Casualties in October",
+      "title": "Amaechi Warns ADC Court Ruling Could Spark Civil War If Mismanaged - Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
       "tone": null,
-      "url": "https://www.khabaragency.net/news255371.html"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "tribune.com.pk",
-      "id": "evt_7ea65a30b483c732",
-      "language": "English",
-      "matched_regions": [
-        "pakistan"
-      ],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "Asia del Sur",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T123000Z",
-      "source_country": "Pakistan",
-      "tier": "medium",
-      "title": "UK security minister visits Pakistan to strengthen counter - terrorism cooperation",
-      "tone": null,
-      "url": "https://tribune.com.pk/story/2638978/uk-security-minister-visits-pakistan-to-strengthen-counter-terrorism-cooperation"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "dunmowbroadcast.co.uk",
-      "id": "evt_666bcf752890dddd",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Appeal to raise £150 , 000 for memorial to World War II heroes",
-      "tone": null,
-      "url": "https://www.dunmowbroadcast.co.uk/news/26704644.appeal-raise-150-000-memorial-world-war-ii-heroes/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "irvinetimes.com",
-      "id": "evt_5291edf085aee2cd",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Appeal to raise £150 , 000 for memorial to World War II heroes",
-      "tone": null,
-      "url": "https://www.irvinetimes.com/news/26704688.appeal-raise-150-000-memorial-world-war-ii-heroes/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "merkur.de",
-      "id": "evt_4f4dd5f129bd38d0",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "„ Waren nicht vorbereitet : US - Verteidigungsministerium räumt schwere Versäumnis ein",
-      "tone": null,
-      "url": "http://www.merkur.de/politik/waren-nicht-vorbereitet-us-verteidigungsministerium-raeumt-schwere-versaeumnis-ein-zr-94577002.html"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "middleeasteye.net",
-      "id": "evt_1bf11b421eec49f3",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "The alternative to diplomacy is war : Polisario warns of risks after collapse of Western Sahara UN mission",
-      "tone": null,
-      "url": "https://www.middleeasteye.net/news/alternative-to-diplomacy-is-war-polisario-warns-risks-after-collapse-western-sahara-un-mission"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "dailyyonder.com",
-      "id": "evt_ff63536faa589a66",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T123000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Trump Administration Delays Awards Slated To Improve Rural America Health",
-      "tone": null,
-      "url": "https://dailyyonder.com/trump-administration-delays-awards-slated-to-improve-rural-americas-health/2026/11/06/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "asianimage.co.uk",
-      "id": "evt_0a6be02e782a2d83",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T123000Z",
-      "source_country": "United Kingdom",
-      "tier": "monitor",
-      "title": "Appeal to raise £150 , 000 for memorial to World War II heroes",
-      "tone": null,
-      "url": "https://www.asianimage.co.uk/news/26704600.appeal-raise-150-000-memorial-world-war-ii-heroes/"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "ansa.it",
-      "id": "evt_4a0da23d0c2673c3",
-      "language": "Italian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Trump torna a minacciare :  O certifico un accordo con lIran o li distruggo  - Politica",
-      "tone": null,
-      "url": "https://www.ansa.it/ansamed/it/notizie/rubriche/politica/2026/11/06/trump-torna-a-minacciare-o-certifico-un-accordo-con-liran-o-li-distruggo_d574ce94-9faa-4de1-80ee-9c7b10914d1a.html"
-    },
-    {
-      "actors": [
-        "Poland"
-      ],
-      "domain": "wnp.pl",
-      "id": "evt_c76675515e89ebc4",
-      "language": "Polish",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Poland",
-      "tier": "monitor",
-      "title": "W . Brytania : „ FT : Cztery powiązane z Iranem statki zatrzymywały się nad kablami internetowymi",
-      "tone": null,
-      "url": "https://www.wnp.pl/rynki/w-brytania-ft-cztery-powiazane-z-iranem-statki-zatrzymywaly-sie-nad-kablami-internetowymi,1117078.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "movieweb.com",
-      "id": "evt_9bea648ab9f66f46",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Forget  Liones : The Counterterrorism Thriller That Changed TV Remains a Masterpiece After 25 Years",
-      "tone": null,
-      "url": "https://movieweb.com/24-anniversary-streaming-recommendation/"
-    },
-    {
-      "actors": [
-        "Brazil"
-      ],
-      "domain": "extra.globo.com",
-      "id": "evt_e81ca98e31c1635a",
-      "language": "Portuguese",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Brazil",
-      "tier": "monitor",
-      "title": "China alega que explosivo encontrado em contêiner na Oceania é  garrafa de vinho",
-      "tone": null,
-      "url": "https://extra.globo.com/blogs/page-not-found/post/2026/11/china-alega-que-explosivo-encontrado-em-conteiner-na-oceania-e-garrafa-de-vinho.ghtml"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "tg24.sky.it",
-      "id": "evt_75d9c8a2c6b92cab",
-      "language": "Italian",
-      "matched_regions": [],
-      "matched_themes": [
-        "combat"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Chi sono i Combattenti dello Stato Maschile che hanno rivendicato gli allarmi bomba sui voli",
-      "tone": null,
-      "url": "https://tg24.sky.it/mondo/2026/11/06/combattenti-stato-maschile-chi-sono-allarme-bomba-voli"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "taz.de",
-      "id": "evt_ddf757eec2404a93",
-      "language": "German",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Nach der Wahl in Israel : Bekommt Eisenkot das Mandat , eine Koalition zu bilden ?",
-      "tone": null,
-      "url": "https://taz.de/Nach-der-Wahl-in-Israel/!6228139/"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "business24.ro",
-      "id": "evt_1ff112fbd5391dd9",
-      "language": "Romanian",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "România și Ucraina anunță un proiect de 200 de milioane de euro în sectorul dronelor",
-      "tone": null,
-      "url": "https://business24.ro/romania-ucraina/romania-ucraina-proiect-doua-sute-milioane-euro-drone-1673939"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "armscontrolwonk.com",
-      "id": "evt_297e8d23b523cf27",
-      "language": "English",
-      "matched_regions": [
-        "russia"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Russia : Its Own Worst Enemy ?",
-      "tone": null,
-      "url": "https://www.armscontrolwonk.com/archive/602086/russia-its-own-worst-enemy/"
+      "url": "https://www.nigerianeye.com/2026/11/amaechi-warns-adc-court-ruling-could.html"
     },
     {
       "actors": [
         "India"
       ],
-      "domain": "moneycontrol.com",
-      "id": "evt_4e1e16abaef4d7be",
+      "domain": "prokerala.com",
+      "id": "evt_4bef65908d4c8158",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "clash",
+        "clashes"
+      ],
+      "region": "Global",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 4.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Bangladesh political violence persists despite govt change , clashes among party workers at ground level raise concern",
+      "tone": null,
+      "url": "https://www.prokerala.com/news/articles/a1834410.html"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "midweekherald.co.uk",
+      "id": "evt_4cbca310c09c0b21",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "King leads nation in silence to honour war dead on Remembrance Sunday",
+      "tone": null,
+      "url": "https://www.midweekherald.co.uk/news/national/26709499.king-leads-nation-silence-honour-war-dead-remembrance-sunday/"
+    },
+    {
+      "actors": [],
+      "domain": "thecatholicherald.com",
+      "id": "evt_89d97afc0ddaf358",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "ACN honours nun who stayed in Aleppo to help families during civil war",
+      "tone": null,
+      "url": "https://thecatholicherald.com/article/acn-honours-nun-who-stayed-in-aleppo-to-help-families-during-civil-war"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "eveshamjournal.co.uk",
+      "id": "evt_f63238b3357bd9b2",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "King leads nation in silence to honour war dead on Remembrance Sunday",
+      "tone": null,
+      "url": "https://www.eveshamjournal.co.uk/news/national/26709499.king-leads-nation-silence-honour-war-dead-remembrance-sunday/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "northwalespioneer.co.uk",
+      "id": "evt_2afeb7e665efde91",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "King leads nation in silence to honour war dead on Remembrance Sunday",
+      "tone": null,
+      "url": "https://www.northwalespioneer.co.uk/news/national/26709499.king-leads-nation-silence-honour-war-dead-remembrance-sunday/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "thisisoxfordshire.co.uk",
+      "id": "evt_23f4b096004cdf83",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "King leads nation in silence to honour war dead on Remembrance Sunday",
+      "tone": null,
+      "url": "https://www.thisisoxfordshire.co.uk/news/national/26709499.king-leads-nation-silence-honour-war-dead-remembrance-sunday/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "darlingtonandstocktontimes.co.uk",
+      "id": "evt_63ba89b6ccc6133c",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "King leads nation in silence to honour war dead on Remembrance Sunday",
+      "tone": null,
+      "url": "https://www.darlingtonandstocktontimes.co.uk/news/national/26709499.king-leads-nation-silence-honour-war-dead-remembrance-sunday/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "twincities.com",
+      "id": "evt_cb64ad369244a38e",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Matt Witt : This Veterans Day , let focus on preventing war – Twin Cities",
+      "tone": null,
+      "url": "https://www.twincities.com/2026/11/08/matt-witt-this-veterans-day-lets-focus-on-preventing-war/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "keighleynews.co.uk",
+      "id": "evt_bfe753202fd7d79c",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "King leads nation in silence to honour war dead on Remembrance Sunday",
+      "tone": null,
+      "url": "https://www.keighleynews.co.uk/news/national/26709499.king-leads-nation-silence-honour-war-dead-remembrance-sunday/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "post-gazette.com",
+      "id": "evt_7cfc6ac0c9b6cf3e",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Jimmy Stewart returns to the big screen and his hometown celebrates",
+      "tone": null,
+      "url": "https://www.post-gazette.com/ae/movies/2026/11/08/jimmy-stewart-biopic-indiana-pa/stories/202611070045"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "dailysabah.com",
+      "id": "evt_6982341669961620",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Turkey",
+      "tier": "monitor",
+      "title": "Brothers in arms : Erdoğan receives warm welcome in Azerbaijan",
+      "tone": null,
+      "url": "https://www.dailysabah.com/politics/diplomacy/brothers-in-arms-erdogan-receives-warm-welcome-in-azerbaijan"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "dailysabah.com",
+      "id": "evt_6f8f81057f1a1883",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Turkey",
+      "tier": "monitor",
+      "title": "Through genocide and war , till elections do them part",
+      "tone": null,
+      "url": "https://www.dailysabah.com/opinion/op-ed/through-genocide-and-war-till-elections-do-them-part"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "dudleynews.co.uk",
+      "id": "evt_66e9dad80d57b4d8",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "King leads nation in silence to honour war dead on Remembrance Sunday",
+      "tone": null,
+      "url": "https://www.dudleynews.co.uk/news/national/26709499.king-leads-nation-silence-honour-war-dead-remembrance-sunday/"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "stourbridgenews.co.uk",
+      "id": "evt_c3b5d3b05babacf5",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "King leads nation in silence to honour war dead on Remembrance Sunday",
+      "tone": null,
+      "url": "https://www.stourbridgenews.co.uk/news/national/26709499.king-leads-nation-silence-honour-war-dead-remembrance-sunday/"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "vietnamnet.vn",
+      "id": "evt_55a48c9f1b4afcef",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Brazil nghi Mỹ , Argentina , Israel giúp ông Bolsonaro rời đất nước",
+      "tone": null,
+      "url": "https://vietnamnet.vn/brazil-nghi-my-argentina-israel-giup-ong-bolsonaro-roi-dat-nuoc-2572747.html"
+    },
+    {
+      "actors": [
+        "North Korea"
+      ],
+      "domain": "northkoreatimes.com",
+      "id": "evt_f833cdf604876a17",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "North Korea",
+      "tier": "monitor",
+      "title": "Explosions Reported In Southern Iran",
+      "tone": null,
+      "url": "http://www.northkoreatimes.com/news/279419559/explosions-reported-in-southern-iran"
+    },
+    {
+      "actors": [
+        "Russia"
+      ],
+      "domain": "russiaherald.com",
+      "id": "evt_20ad2f4b227bb3c3",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Russia",
+      "tier": "monitor",
+      "title": "Explosions Reported In Southern Iran",
+      "tone": null,
+      "url": "http://www.russiaherald.com/news/279419559/explosions-reported-in-southern-iran"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "g1.globo.com",
+      "id": "evt_951b2631ebae0c91",
+      "language": "Portuguese",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Gadi Eisenkot : Quem é o principal rival de Netanyahu que pode se tornar novo primeiro - ministro de Israel ?",
+      "tone": null,
+      "url": "https://g1.globo.com/mundo/noticia/2026/11/08/gadi-eisenkot-quem-e-o-principal-rival-de-netanyahu-que-pode-se-tornar-novo-primeiro-ministro-de-israel.ghtml"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "zazoom.it",
+      "id": "evt_93572f94bc6457ab",
+      "language": "Italian",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Il dramma di Gaza piogge torrenziali e inondazioni | 70 mila tende allagate migliaia di famiglie al freddo",
+      "tone": null,
+      "url": "https://www.zazoom.it/2026-11-08/il-dramma-di-gaza-piogge-torrenziali-e-inondazioni-70-mila-tende-allagate-migliaia-di-famiglie-al-freddo/19902648/"
+    },
+    {
+      "actors": [
+        "Algeria"
+      ],
+      "domain": "tsa-algerie.com",
+      "id": "evt_6dd006829e1d46cc",
+      "language": "French",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Algeria",
+      "tier": "monitor",
+      "title": "Gaza noyée sous de fortes pluies : images choquantes de familles et denfants sans abris",
+      "tone": null,
+      "url": "https://www.tsa-algerie.com/gaza-les-images-choquantes-denfants-et-de-familles-noyes-sous-de-fortes-pluies/"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "vietnamnet.vn",
+      "id": "evt_0ba48813ea4db1ee",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Iran dỡ bỏ giới hạn tự đặt ra với tầm bắn tên lửa",
+      "tone": null,
+      "url": "https://vietnamnet.vn/iran-do-bo-gioi-han-tu-dat-ra-voi-tam-ban-ten-lua-2572759.html"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "bresciaoggi.it",
+      "id": "evt_b545f7d71fe5dae5",
+      "language": "Italian",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Il racconto dei due attivisti bresciani arrestati in Israele : « Picchiati e umiliati . Non siamo costati un euro allItalia »",
+      "tone": null,
+      "url": "https://www.bresciaoggi.it/territorio-bresciano/brescia/attivisti-bresciani-trattenuti-israele-la-lunga-attesa-per-il-rimpatrio-1.13177712"
+    },
+    {
+      "actors": [
+        "Belgium"
+      ],
+      "domain": "dhnet.be",
+      "id": "evt_5f809cf5a963b933",
+      "language": "French",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Belgium",
+      "tier": "monitor",
+      "title": "La Pologne en deuil confrontée au  terrorisme de lintérieur",
+      "tone": null,
+      "url": "https://www.dhnet.be/dernieres-depeches/2026/11/08/la-pologne-en-deuil-confrontee-au-terrorisme-de-linterieur-UUVAWRLKBVCIVIIPJR6ZKDSKS4/"
+    },
+    {
+      "actors": [
+        "Russia"
+      ],
+      "domain": "russiaherald.com",
+      "id": "evt_503cf283eac20fb5",
       "language": "English",
       "matched_regions": [
         "israel"
@@ -477,20 +737,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261106T130000Z",
-      "source_country": "India",
+      "seen_date": "20261108T130000Z",
+      "source_country": "Russia",
       "tier": "monitor",
-      "title": "Netanyahu office says Trump US aid cutoff shows  strength  of Israel partnership",
+      "title": "Israel President to formally handover Govt formation mandate to Eisenkot today , swearing - in of Knesset members on Tuesday",
       "tone": null,
-      "url": "https://www.moneycontrol.com/world/netanyahu-s-office-says-trump-s-us-aid-cutoff-shows-strength-of-israel-partnership-article-14073462.html"
+      "url": "http://www.russiaherald.com/news/279419658/israel-president-to-formally-handover-govt-formation-mandate-to-eisenkot-today-swearing-in-of-knesset-members-on-tuesday"
     },
     {
       "actors": [
-        "Germany"
+        "France"
       ],
-      "domain": "hna.de",
-      "id": "evt_565e7ef5a0a4d3da",
-      "language": "German",
+      "domain": "estrepublicain.fr",
+      "id": "evt_ad9c24746373f1c1",
+      "language": "French",
       "matched_regions": [
         "ukraine"
       ],
@@ -502,94 +762,44 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261106T123000Z",
-      "source_country": "Germany",
+      "seen_date": "20261108T130000Z",
+      "source_country": "France",
       "tier": "monitor",
-      "title": "Ukraine - Krieg vor Ende ? Trump kündigt „ großen Deal  mit Russland an",
+      "title": "Guerre en Ukraine . De nouvelles négociations de paix à venir , la France et les Européens seront représentés",
       "tone": null,
-      "url": "https://www.hna.de/politik/ende-ukraine-krieg-trump-kuendigt-grossen-deal-mit-russland-an-zr-94576735.html"
+      "url": "https://www.estrepublicain.fr/defense-guerre-conflit/2026/11/08/de-nouvelles-negociations-de-paix-a-venir-la-france-et-les-europeens-seront-representes"
     },
     {
       "actors": [
-        "Germany"
+        "Lithuania"
       ],
-      "domain": "n-tv.de",
-      "id": "evt_3a5365d9516c2035",
-      "language": "German",
+      "domain": "respublika.lt",
+      "id": "evt_685cf652561742a0",
+      "language": "Lithuanian",
       "matched_regions": [
-        "ukraine"
+        "iran"
       ],
       "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "MENA",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261106T123000Z",
-      "source_country": "Germany",
+      "seen_date": "20261108T130000Z",
+      "source_country": "Lithuania",
       "tier": "monitor",
-      "title": "Melania Trump holt Ukraine und Russland gemeinsam ins Weiße Haus – Premiere für Kreml - Unterhändler",
+      "title": "Izraelio gynybos ministras : mūsų misija Irane dar nebaigta",
       "tone": null,
-      "url": "https://www.n-tv.de/politik/Melania-Trump-holt-Ukraine-und-Russland-gemeinsam-ins-Weisse-Haus-Premiere-fuer-Kreml-Unterhaendler-id31501045.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "warontherocks.com",
-      "id": "evt_5038cb3d30197964",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T123000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Can Washington and China Build Confidence Around AI and Stability ?",
-      "tone": null,
-      "url": "https://warontherocks.com/can-washington-and-china-build-confidence-around-ai-and-stability/"
+      "url": "https://www.respublika.lt/lt/naujienos/pasaulis/pasaulio_politika/izraelio-gynybos-ministras-musu-misija-irane-dar-nebaigta/"
     },
     {
       "actors": [
         "Nigeria"
       ],
-      "domain": "thenationonlineng.net",
-      "id": "evt_084cc013d4404692",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "troops"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T130000Z",
-      "source_country": "Nigeria",
-      "tier": "monitor",
-      "title": "Troops rescue nine kidnap victims , recover 108 livestock in Kebbi",
-      "tone": null,
-      "url": "https://thenationonlineng.net/troops-rescue-nine-kidnap-victims-recover-108-livestock-in-kebbi/"
-    },
-    {
-      "actors": [
-        "Nigeria"
-      ],
-      "domain": "thenationonlineng.net",
-      "id": "evt_f9a10ee1a21851c6",
+      "domain": "nigerianeye.com",
+      "id": "evt_58fd3a6d6d29c6a7",
       "language": "English",
       "matched_regions": [
         "niger"
@@ -602,71 +812,48 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261106T130000Z",
+      "seen_date": "20261108T130000Z",
       "source_country": "Nigeria",
       "tier": "monitor",
-      "title": "Nigeria explore diplomatic options with AES states amid MNJTF review",
+      "title": "Latest News In Nigeria , Nigeria News Today , Your Online Nigerian Newspaper",
       "tone": null,
-      "url": "https://thenationonlineng.net/nigeria-explore-diplomatic-options-with-aes-states-amid-mnjtf-review/"
+      "url": "https://www.nigerianeye.com/search?updated-max=2026-11-07T21:42:00+01:00&max-results=15"
     },
     {
-      "actors": [],
-      "domain": "executivedigest.sapo.pt",
-      "id": "evt_24ec5532b13a4aab",
-      "language": "Portuguese",
+      "actors": [
+        "Slovak Republic"
+      ],
+      "domain": "topky.sk",
+      "id": "evt_568932e7f16e3ea6",
+      "language": "Slovak",
       "matched_regions": [
-        "nato"
+        "mali"
       ],
       "matched_themes": [],
-      "region": "Global",
+      "region": "Sahel",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261106T123000Z",
-      "source_country": "",
+      "seen_date": "20261108T130000Z",
+      "source_country": "Slovak Republic",
       "tier": "monitor",
-      "title": "Nem Putin nem Zelensky deverão conseguir uma vitória total : NATO antecipa desfecho negociado para a guerra",
+      "title": "Po sobote prišla o život aj rodina strelca z Krakowa , jeho sestra bola maliarkou",
       "tone": null,
-      "url": "https://executivedigest.sapo.pt/nem-putin-nem-zelensky-deverao-conseguir-uma-vitoria-total-nato-antecipa-desfecho-negociado-para-a-guerra/"
+      "url": "https://www.topky.sk/cl/11/9550209/NOVY-rozmer-tragedie-v-Krakove--Sobotny-MASAKER-neprezili-ani-blizki-strelca--sestra-utocnika---21--bola-umelkyna-"
     },
     {
       "actors": [
-        "Turkey"
+        "United States"
       ],
-      "domain": "aydinses.com",
-      "id": "evt_649388b1dfd2584b",
-      "language": "Turkish",
-      "matched_regions": [
-        "pakistan"
-      ],
-      "matched_themes": [],
-      "region": "Asia del Sur",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261106T123000Z",
-      "source_country": "Turkey",
-      "tier": "monitor",
-      "title": "Türkiye - Pakistan - Suudi Arabistan savunma anlaşması TBMMde kabul edildi",
-      "tone": null,
-      "url": "https://www.aydinses.com/turkiye-pakistan-suudi-arabistan-savunma-anlasmasi-tbmmde-kabul-edildi"
-    },
-    {
-      "actors": [
-        "Brazil"
-      ],
-      "domain": "oprogressonet.com",
-      "id": "evt_68e148487d7508c1",
-      "language": "Portuguese",
+      "domain": "fingerlakes1.com",
+      "id": "evt_4c766ee36a88984a",
+      "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "mobiliz"
+        "assault"
       ],
       "region": "Global",
       "score": 1.5,
@@ -675,12 +862,37 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261106T123000Z",
-      "source_country": "Brazil",
+      "seen_date": "20261108T130000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Operao integrada mobiliza forças de segurança para retomada de área na Vila Vitória",
+      "title": "Cornell faculty votes no confidence over sexual assault response ; trustees back Kotlikoff",
       "tone": null,
-      "url": "https://oprogressonet.com/noticia/55245/operacao-integrada-mobiliza-forcas-de-seguranca-para-retomada-area-na-vila-vitoria"
+      "url": "https://www.fingerlakes1.com/2026/11/08/cornell-faculty-votes-no-confidence-over-sexual-assault-response-trustees-back-kotlikoff/"
+    },
+    {
+      "actors": [
+        "Burkina Faso"
+      ],
+      "domain": "lefaso.net",
+      "id": "evt_a0b6bafde1da94c3",
+      "language": "French",
+      "matched_regions": [
+        "burkina"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261108T130000Z",
+      "source_country": "Burkina Faso",
+      "tier": "monitor",
+      "title": "Guinée / Lutte contre lorpaillage illégal : 1 263 personnes interpellées , dont des Burkinabè",
+      "tone": null,
+      "url": "https://lefaso.net/spip.php?article150611"
     }
   ],
   "filters": {
@@ -694,13 +906,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-06T14:15:48Z",
+  "generated_at": "2026-11-08T13:22:21Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 1,
+    "high": 3,
     "medium": 3,
-    "monitor": 23
+    "monitor": 29
   },
-  "total_events": 27
+  "total_events": 35
 }
