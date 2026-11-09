@@ -1,628 +1,675 @@
 {
-  "id": "sentinel_weekly_brief_2026-10-26_2026-11-01",
+  "id": "sentinel_weekly_brief_2026-11-02_2026-11-08",
   "eyebrow": "SENTINEL",
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "main_status": "un acople confirmado en escalada, un acople operacional y una señal en observación; sin causalidad forzada",
-  "generated_at": "2026-11-02T08:30:00+01:00",
-  "published_at": "2026-11-02T08:30:00+01:00",
-  "window": "26 OCTUBRE - 1 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",
-  "window_label": "26 OCTUBRE - 1 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",
+  "main_status": "un acople confirmado, un riesgo ambiental derivado del conflicto en observación y una señal climática en observación; sin causalidad forzada",
+  "generated_at": "2026-11-09T07:40:00+01:00",
+  "published_at": "2026-11-09T07:40:00+01:00",
+  "window": "2 - 8 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",
+  "window_label": "2 - 8 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",
   "week_window": {
     "local": {
-      "start": "2026-10-26T00:00:00+01:00",
-      "end": "2026-11-01T23:59:59+01:00",
+      "start": "2026-11-02T00:00:00+01:00",
+      "end": "2026-11-08T23:59:59+01:00",
       "timezone": "Europe/Luxembourg"
     },
     "utc": {
-      "start": "2026-10-25T23:00:00Z",
-      "end": "2026-11-01T22:59:59Z"
+      "start": "2026-11-01T23:00:00Z",
+      "end": "2026-11-08T22:59:59Z"
     }
   },
   "summary": [
-    "Taiz (Yemen) escala de cerco hídrico a hambruna declarada por su gobernador: los hutíes tomaron la última fuente de agua exterior y el PMA no llega a más de 600.000 personas.",
-    "Las riadas del 27 al 29 de octubre en el noreste de Siria derribaron el puente al-Salmani y cortaron la carretera Raqqa–Alepo en plena integración de las antiguas FDS.",
-    "El ciclón Arnab tocó tierra en Andhra Pradesh el 28 de octubre y suspendió Visakhapatnam y otros puertos del golfo de Bengala; queda en observación.",
-    "Se revisaron 28 eventos SENTINEL (instantánea del 26 de octubre), 95 eventos NASA EONET y 134 sismos M4,5+ de USGS (14 de M5,5+).",
-    "Gaza (invierno), el Néguev, In-fa en las Marianas y Ucrania quedan fuera o en observación por falta de evento en la ventana o de impacto suficiente."
+    "Gaza: la primera tormenta del invierno (6–7 nov, unos 60 mm en 12 h) activó alertas en 261 sitios de desplazados; OCHA calculaba que hacían falta 121.000 tiendas y había unas 2.800.",
+    "Ormuz: la CGRI declaró incendios de tanqueros el 3, 5 y 8 de noviembre y UKMTO confirmó uno frente a Khasab; el riesgo de contaminación marina queda en observación porque no hay medición independiente en la ventana.",
+    "India: el ciclón Murasu, segundo en una semana, tocó tierra cerca de Ongole el 3 de noviembre con ocho muertos y unos 203 millones de dólares en daños; queda en observación.",
+    "Se revisaron 35 eventos del feed SENTINEL (recuperado tras la caída de finales de octubre) y 19 titulares de prioridad alta o media en 5 instantáneas de la semana, 70 eventos NASA EONET y 84 sismos M4,5+ de USGS (5 de M5,5+).",
+    "Taiz, In-fa, los sismos de Japón y Colombia, las inundaciones en Francia y Bulgaria y Ucrania quedan descartados o en observación por falta de dato ambiental nuevo o de impacto suficiente."
   ],
-  "method_note": "Se cruzaron el feed SENTINEL/GDELT de GEOPÓLEM, NASA EONET, USGS y GDACS/Copernicus con fuentes institucionales y periodísticas verificables (AP, HRW, IMD, NASA Earth Observatory, ministerio sirio de Emergencias vía SANA/WAM). La selección prioriza impacto geopolítico, rutas, agua, seguridad alimentaria y capacidad estatal. Donde la evidencia no sostiene causalidad, se etiqueta como observación.",
-  "caveat": "Incidencia técnica: el feed SENTINEL/GDELT publica 0 eventos desde el 28 de octubre (y la ejecución del 1 de noviembre falló), por lo que se usó la instantánea del 26 de octubre (28 eventos) y búsqueda abierta en fuentes institucionales. En Taiz el factor ambiental es estructural; «hambruna» es una declaración del gobernador, no una clasificación IPC.",
+  "method_note": "Se cruzaron el feed SENTINEL/GDELT de GEOPÓLEM (instantánea actual y 5 instantáneas de la semana), NASA EONET, USGS y GDACS con fuentes institucionales y periodísticas verificables (OCHA, ReliefWeb, UN UNifeed, IMD, UKMTO vía AFP, Lloyd's List, Reuters, AP). La selección prioriza impacto geopolítico, refugio, rutas marítimas, energía y capacidad estatal. Donde la evidencia no sostiene causalidad o daño medido, se etiqueta como observación.",
+  "caveat": "El feed SENTINEL/GDELT vuelve a publicar eventos (35 en la instantánea del 8 de noviembre, 13:22 UTC), tras la caída de finales de octubre. Las cifras de tiendas inundadas en Gaza proceden de la oficina de medios del gobierno de Hamás; las de la ONU se citan aparte. Las afirmaciones de la CGRI sobre tanqueros no están verificadas de forma independiente y no hay medición de nuevos derrames en la ventana. Correlación no implica causalidad.",
   "source_urls": {
     "sentinel_feed": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-    "nasa_eonet_window": "https://eonet.gsfc.nasa.gov/api/v3/events?start=2026-10-25&end=2026-11-02&status=all",
+    "nasa_eonet_window": "https://eonet.gsfc.nasa.gov/api/v3/events?start=2026-11-01&end=2026-11-09&status=all",
     "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
-    "usgs_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-25T23:00:00&endtime=2026-11-01T22:59:59&minmagnitude=4.5&orderby=magnitude",
-    "ap_taiz_famine": "https://apnews.com/article/yemen-taiz-houthis-siege-famine-humanitarian-crisis-172666b6c90fc3f0ed8a161f2457be2c",
-    "ap_taiz_water": "https://apnews.com/article/yemen-siege-houthis-war-taiz-city-food-fuel-water-8536818c3d496b04b00c13a995b8f8a1",
-    "hrw_taiz": "https://www.hrw.org/news/2026/10/29/yemen-houthis-depriving-taizz-civilians-of-food-medicine",
-    "gdacs_syria_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104263",
-    "aljazeera_syria_floods": "https://www.aljazeera.com/news/2026/10/30/flash-floods-kills-five-in-syria",
-    "syrianow_raqqa_camps": "https://www.syrianow.net/en/posts/2026/10/29/floods-raqqa-camps-bridges/",
-    "wam_syria_floods": "https://sharjah24.ae/en/Articles/2026/10/31/a30",
-    "enab_baladi_floods": "https://english.enabbaladi.net/archives/2026/10/flash-floods-kill-five-in-syrias-deir-ezzor-and-raqqa/",
-    "voa_sdf_integration": "https://www.voanews.com/a/syrian-kurdish-leader-cites-progress-in-integration-deal-but-warns-of-unresolved-issues/8210731.html",
-    "fdd_turkey_syria": "https://www.fdd.org/analysis/turkeys-justification-for-military-presence-in-syria-doesnt-hold-up/",
-    "nasa_eo_arnab": "https://science.nasa.gov/earth/earth-observatory/arnab-strikes-india/",
-    "imd_arnab_bulletin": "https://imdagrimet.gov.in/Files/Press%20Release/Arnab/Special%20AgroMet%20Bulletin%20No%203%20dated%2026%20Oct%202026.pdf",
-    "abc_arnab": "https://www.abc.net.au/news/2026-10-29/cyclone-arnab-hits-india-east-coast/107321328",
-    "loadstar_arnab_ports": "https://theloadstar.com/cyclone-arnab-brings-more-disruption-along-indias-eastern-coast/",
-    "gdacs_israel_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104261",
-    "aljazeera_gaza_winter": "https://www.aljazeera.com/features/2026/10/28/gaza-families-brace-for-a-fourth-winter-of-wind-rain-and-floods-in-camps",
-    "rnz_infa_marianas": "https://www.rnz.co.nz/news/pacific/2235442/super-typhoon-in-fa-marianas-braces-for-fifth-major-storm"
+    "usgs_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-01T23:00:00&endtime=2026-11-08T22:59:59&minmagnitude=4.5&orderby=magnitude",
+    "reliefweb_gaza_site_mgmt": "https://reliefweb.int/report/occupied-palestinian-territory/heavy-rain-and-flooding-incidents-across-gaza-06-07-november-2026-update-1",
+    "unifeed_gaza_floods": "https://media.un.org/unifeed/en/asset/d368/d3682757",
+    "aa_ocha_gaza": "https://www.aa.com.tr/en/world/heavy-rains-flood-gaza-shelters-putting-displaced-families-at-immediate-risk-ocha/4115188",
+    "reuters_gaza_floods": "https://www.reuters.com/business/environment/heavy-rain-floods-tents-housing-gaza-displaced-people-aid-shortages-hamper-2026-11-07/",
+    "aljazeera_gaza_floods": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza",
+    "aa_gaza_rainfall": "https://u.aa.com.tr/en/middle-east/flooded-out-of-their-tents-gaza-families-have-nowhere-left-to-go/4115647",
+    "jpost_cogat": "http://store.jpost.com/middle-east/article-914223",
+    "gulfnews_hormuz_tankers": "https://gulfnews.com/world/mena/iran-says-3-tankers-caught-fire-in-hormuz-1.500740005",
+    "aa_hormuz_mines": "https://www.aa.com.tr/en/us-israel-iran-war/iran-says-3-oil-tankers-hit-naval-mines-catch-fire-in-strait-of-hormuz/4110024",
+    "globalsecurity_day251": "https://www.globalsecurity.org/military/ops/iran-war-20261105.htm",
+    "lloydslist_gem2": "https://www.lloydslist.com/LL1158887/VLCC-stops-leaking-oil-off-UAE",
+    "uani_shipping_nov3": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-november-3-2026",
+    "cnn_gulf_pollution": "https://www.egyptindependent.com/the-iran-wars-toxic-impact-on-one-of-the-planets-most-unique-seas/",
+    "imd_murasu_adv15": "https://mausam.imd.gov.in/backend/assets/cyclone_pdf/TROPICAL_CYCLONE_ADVISORY_NO__15_based_on_0300_UTC_of_03_11_2026.pdf",
+    "gdacs_murasu": "https://www.gdacs.org/Cyclones/report.aspx?eventtype=TC&eventid=1001346&episodedate=2026-11-01%2012:00:00&sourceid=JTWC",
+    "ap_murasu": "https://apnews.com/article/cyclone-murasu-india-andhra-pradesh-bay-of-bengal-c8d1899f4344625f63d6d456dc3805fb",
+    "ians_murasu_damage": "https://indiatribune.com/public/andhra-cyclone-murasu-claimed-eight-lives-caused-rs-1918-crore-loss",
+    "telegraph_murasu_fishermen": "https://www.telegraphindia.com/india/cyclone-murasu-four-of-nine-missing-fishermen-found-dead-after-boat-capsizes-off-andhra-coast/cid/2187988",
+    "wikipedia_murasu": "https://en.wikipedia.org/wiki/Cyclone_Murasu"
   },
   "data_scan_counts": {
-    "sentinel_events_reviewed": 28,
-    "sentinel_feed_status": "0 eventos desde 2026-10-28; instantánea 2026-10-26 usada",
-    "nasa_events_in_window": 95,
-    "nasa_open_events": 13,
-    "nasa_closed_events": 82,
-    "usgs_m45_plus": 134,
-    "usgs_m55_plus": 14,
-    "total_candidates": 9,
-    "selected_confirmed_couplings": 2,
-    "selected_watch_signals": 1
+    "sentinel_events_reviewed": 35,
+    "sentinel_feed_status": "recuperado: 35 eventos en la instantánea del 2026-11-08; 19 titulares alta/media únicos en 5 instantáneas de la semana",
+    "nasa_events_in_window": 70,
+    "nasa_open_events": 7,
+    "nasa_closed_events": 63,
+    "usgs_m45_plus": 84,
+    "usgs_m55_plus": 5,
+    "total_candidates": 10,
+    "selected_confirmed_couplings": 1,
+    "selected_watch_signals": 2
   },
   "stats": [
     {
       "label": "SentinelEvents",
-      "value": 28
+      "value": 35
     },
     {
       "label": "NasaEventsInWindow",
-      "value": 95
+      "value": 70
     },
     {
       "label": "UsgsM55Plus",
-      "value": 14
+      "value": 5
     },
     {
       "label": "ConfirmedCouplings",
-      "value": 2
+      "value": 1
     },
     {
       "label": "WatchSignals",
-      "value": 1
+      "value": 2
     }
   ],
-  "total_candidates": 9,
+  "total_candidates": 10,
   "selected_inflection_points": [
     {
-      "id": "yemen-taiz-siege-water-famine-confirmed",
+      "id": "gaza-first-winter-storm-tents-flooded",
       "rank": 1,
       "status": "confirmado",
       "status_en": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Yemen / Taiz, eje Taiz–Adén",
-      "lat": 13.58,
-      "lon": 44.02,
-      "headline": "Taiz: del cerco hídrico a la hambruna declarada por el gobernador",
-      "headlineEn": "Taiz: from water siege to famine declared by the governor",
-      "conflict_event": "Cerco hutí de Taiz desde principios de octubre; ataque aéreo saudí en el oeste de Taiz con al menos 13 muertos el 29 de octubre (cifra del ministerio de salud hutí).",
-      "conflictEventEn": "Houthi siege of Taiz since early October; Saudi airstrike in western Taiz killing at least 13 on 29 October (Houthi-run health ministry figure).",
-      "environmental_event": "Escasez hídrica estructural agravada: según el gobernador, los hutíes tomaron la última fuente de agua exterior de la ciudad; acuíferos agotados y plantas desalinizadoras con poco combustible (AP). No hay evento NASA/USGS puntual en la ventana.",
-      "environmentalEventEn": "Worsening structural water scarcity: according to the governor, the Houthis seized the city's last outside water source; depleted aquifers and fuel-starved desalination plants (AP). No discrete NASA/USGS event in the window.",
-      "coupling_type": [
-        "agua",
-        "asedio",
-        "seguridad alimentaria",
-        "energía (diésel y gas)"
-      ],
-      "couplingTypeEn": [
-        "water",
-        "siege",
-        "food security",
-        "energy (diesel and gas)"
-      ],
-      "why_it_matters": "Importa porque el acople detectado la semana pasada escaló: el agua dejó de ser escasa para ser controlada por una de las partes, y la autoridad local ya habla de hambruna.",
-      "fact": "Hecho: el 29 de octubre, el gobernador de Taiz, Nabil Shamsan, afirmó que la ciudad «está en hambruna, no al borde de ella» y cifró en 271 los muertos y 1.129 los heridos desde el inicio de la ofensiva; el PMA dijo que no puede llegar a más de 600.000 personas que dependen de ayuda (AP). Human Rights Watch documentó el 29 de octubre el cerco total y el bloqueo de la ruta Taiz–Adén.",
-      "coupling": "Dato de acople: según AP, la ciudad recibe solo una fracción del agua que necesita tras perder su última fuente exterior; el gas de cocina está bloqueado y las familias queman leña. UNICEF advirtió a HRW que la escasez de diésel amenaza con detener las bombas y que el agua en camión triplicó su precio. Advertencia de método: «hambruna» es una declaración del gobernador, no una clasificación IPC Fase 5.",
-      "couplingEn": "Coupling datum: according to AP, the city now receives only a fraction of the water it needs after losing its last outside source; cooking gas is blocked and families burn wood. UNICEF told HRW that diesel shortages threaten to halt water pumps. Method note: 'famine' is the governor's statement, not an IPC Phase 5 classification.",
-      "implication": "Implicación estratégica (Evaluación): Taiz consolida un patrón de guerra de asedio donde agua, combustible y alimentos son variables militares. El ataque aéreo saudí del 29 de octubre muestra que el frente local ya está conectado con el frente regional.",
-      "strategic_implication": "El control del agua se convierte en palanca militar en la puerta del sur de Yemen.",
-      "tripolar": "Lectura tripolar (Evaluación): EE. UU. está concentrado en la guerra con Irán y en Ormuz; Arabia Saudí asume el coste militar directo; China y Rusia mantienen distancia pública. Hipótesis: sin un canal humanitario negociado por actores regionales, Taiz se convierte en moneda de negociación del conflicto Golfo–Irán.",
-      "confidence": "Alta en los hechos; media en la caracterización de hambruna (no IPC)",
-      "sources": [
-        {
-          "label": "AP, hambruna y ataque saudí",
-          "url": "https://apnews.com/article/yemen-taiz-houthis-siege-famine-humanitarian-crisis-172666b6c90fc3f0ed8a161f2457be2c"
-        },
-        {
-          "label": "AP, crisis de agua",
-          "url": "https://apnews.com/article/yemen-siege-houthis-war-taiz-city-food-fuel-water-8536818c3d496b04b00c13a995b8f8a1"
-        },
-        {
-          "label": "Human Rights Watch, 29 oct",
-          "url": "https://www.hrw.org/news/2026/10/29/yemen-houthis-depriving-taizz-civilians-of-food-medicine"
-        }
-      ],
-      "conflictEvent": "Cerco hutí de Taiz desde principios de octubre; ataque aéreo saudí en el oeste de Taiz con al menos 13 muertos el 29 de octubre (cifra del ministerio de salud hutí).",
-      "environmentalEvent": "Escasez hídrica estructural agravada: según el gobernador, los hutíes tomaron la última fuente de agua exterior de la ciudad; acuíferos agotados y plantas desalinizadoras con poco combustible (AP). No hay evento NASA/USGS puntual en la ventana.",
-      "couplingType": [
-        "agua",
-        "asedio",
-        "seguridad alimentaria",
-        "energía (diésel y gas)"
-      ]
-    },
-    {
-      "id": "syria-northeast-floods-raqqa-aleppo-road",
-      "rank": 2,
-      "status": "confirmado (operacional)",
-      "status_en": "confirmed (operational)",
-      "priority": "Media-alta",
-      "priorityEn": "Medium-high",
-      "accent": "#F59E0B",
-      "location": "Siria / Raqqa, Deir ez-Zor, Hasaka y Alepo",
-      "lat": 35.83,
-      "lon": 38.55,
-      "headline": "Siria: la riada corta la carretera Raqqa–Alepo en pleno proceso de integración del noreste",
-      "headlineEn": "Syria: flash floods cut the Raqqa–Aleppo road as the northeast is being integrated",
-      "conflict_event": "Sin combate activo: el noreste está en la fase de integración de las antiguas FDS y de sus instituciones civiles en el Estado sirio, un proceso que los propios líderes kurdos describen como «en fase de prueba».",
-      "conflictEventEn": "No active combat: the northeast is integrating the former SDF and its civilian institutions into the Syrian state, a process Kurdish leaders themselves describe as 'in a testing phase'.",
-      "environmental_event": "GDACS/Copernicus GloFAS: inundación del 27 al 29 de octubre en Siria (alerta verde); tormentas con granizo sobre Raqqa, Hasaka, Deir ez-Zor, Homs, Hama y Alepo.",
-      "environmentalEventEn": "GDACS/Copernicus GloFAS: flooding in Syria on 27–29 October (green alert); hailstorms over Raqqa, Hasakah, Deir ez-Zor, Homs, Hama and Aleppo.",
+      "location": "Gaza / Ciudad de Gaza, Deir al-Balah, Nuseirat, al-Mawasi",
+      "lat": 31.42,
+      "lon": 34.35,
+      "headline": "Gaza: la primera tormenta del invierno inunda el refugio de una población desplazada",
+      "headlineEn": "Gaza: the first winter storm floods the shelter of a displaced population",
+      "conflict_event": "Alto el fuego vigente, pero sin reconstrucción: la mayoría de los 2,1 millones de habitantes sigue desplazada y la entrada de materiales de refugio está restringida o demorada, según OCHA.",
+      "conflictEventEn": "Ceasefire in place but no reconstruction: most of the 2.1 million residents remain displaced and shelter materials face restrictions or delays, according to OCHA.",
+      "environmental_event": "Sistema de bajas presiones del 6 al 7 de noviembre: unos 60 mm en 12 horas en Ciudad de Gaza, alrededor del 15% de la lluvia anual (municipio, vía Anadolu). El propio feed SENTINEL/GDELT captó la señal en la capa de monitorización.",
+      "environmentalEventEn": "Low-pressure system on 6–7 November: about 60 mm in 12 hours in Gaza City, roughly 15% of annual rainfall (municipality, via Anadolu). The SENTINEL/GDELT feed itself picked up the signal in its monitor layer.",
       "coupling_type": [
         "inundación",
-        "infraestructura vial",
-        "campos de desplazados",
-        "capacidad estatal"
+        "refugio",
+        "desplazamiento",
+        "acceso humanitario"
       ],
       "couplingTypeEn": [
         "flood",
-        "road infrastructure",
-        "displacement camps",
-        "state capacity"
+        "shelter",
+        "displacement",
+        "humanitarian access"
       ],
-      "why_it_matters": "Importa porque el colapso del puente al-Salmani, al oeste de Tabqa, cortó la carretera Raqqa–Alepo, uno de los ejes que unen el noreste recién integrado con el resto del país.",
-      "fact": "Hecho: el Ministerio sirio de Emergencias contabilizó ocho muertos (siete ahogados, cinco de ellos niños) y cuatro desaparecidos; evacuó a unas 375 familias de tres campos de desplazados en el campo de Raqqa y dejó fuera de servicio siete puentes, alcantarillas y caminos (Syria Now, WAM, Al Jazeera).",
-      "coupling": "Dato de acople: la agencia estatal SANA informó del colapso del puente al-Salmani, que cerró la carretera Raqqa–Alepo. El impacto humano es moderado (alerta GDACS verde), pero el impacto operacional es concreto: rutas, telecomunicaciones y campos de desplazados en la región donde Damasco debe demostrar que gobierna.",
-      "couplingEn": "Coupling datum: state agency SANA reported the collapse of al-Salmani bridge, closing the Raqqa–Aleppo road. Human impact is moderate (GDACS green), but operational impact is concrete: roads, telecoms and displacement camps in the region where Damascus must show it governs.",
-      "implication": "Implicación estratégica (Evaluación): la respuesta a la riada funciona como prueba de capacidad estatal en un territorio que hasta este año administraban las FDS. Una reparación rápida refuerza la integración; una respuesta lenta alimentaría los reclamos pendientes, como la educación en kurdo, que Ilham Ahmad señaló como no resuelta.",
-      "strategic_implication": "Un evento hidrometeorológico menor pone a prueba la gobernanza de Damasco en el noreste recién integrado.",
-      "tripolar": "Lectura tripolar (Evaluación): EE. UU. y Francia mediaron el acuerdo de integración de enero; Turquía mantiene presencia militar y su justificación se debilita a medida que avanza la integración (FDD). Rusia y China no aparecen como actores directos en este episodio. Hipótesis: la reconstrucción de infraestructuras críticas en el noreste será un terreno de competencia por influencia (financiación del Golfo, Turquía y la UE).",
-      "confidence": "Alta en el hecho físico; media en la lectura política",
+      "why_it_matters": "Importa porque el factor que convierte una lluvia ordinaria en emergencia es político: refugio precario, infraestructura dañada y materiales que no entran. Es el acople que SENTINEL tenía en observación desde octubre.",
+      "fact": "Hecho: el Clúster de Gestión de Sitios de la ONU registró 264 alertas por lluvia e inundación en 261 sitios de desplazados hasta las 09:00 del 8 de noviembre (ReliefWeb). La oficina de medios del gobierno de Hamás cifró en 70.000 las tiendas inundadas en 12 horas; Defensa Civil recibió unas 1.500 llamadas de auxilio (Reuters, Al Jazeera). No se reportaron muertes.",
+      "coupling": "Dato de acople: según OCHA, al 1 de noviembre Gaza necesitaba unas 121.000 tiendas, 561.000 lonas y 1,7 millones de colchones, y los socios humanitarios solo disponían de unas 2.800 tiendas dentro del territorio (UN UNifeed). IOM y el Clúster estiman que 761.000 personas en sitios de desplazados pueden verse afectadas por inundaciones este invierno. Versión contraria: COGAT (Israel) afirma haber facilitado la entrada de 91.000 tiendas nuevas y lonas (Jerusalem Post).",
+      "couplingEn": "Coupling datum: according to OCHA, as of 1 November Gaza needed about 121,000 tents, 561,000 tarpaulins and 1.7 million mattresses, while partners had only about 2,800 tents inside the territory (UN UNifeed). IOM and the Cluster estimate 761,000 people in displacement sites may be affected by flooding this winter. Counter-claim: COGAT (Israel) says it facilitated entry of 91,000 new tents and tarps (Jerusalem Post).",
+      "implication": "Implicación estratégica (Evaluación): el invierno convierte la cuestión del acceso de materiales en un indicador medible del alto el fuego. Cada tormenta genera presión diplomática sobre los garantes y una disputa de narrativas (Hamás frente a COGAT) sobre la responsabilidad.",
+      "strategic_implication": "El clima convierte el acceso humanitario en métrica pública de la calidad del alto el fuego.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. es garante del alto el fuego y el actor con más palanca sobre la entrada de materiales; China y Rusia capitalizan el tema en foros multilaterales sin capacidad operativa sobre el terreno. Hipótesis: si las tormentas se repiten sin cambio en el acceso, la reconstrucción de Gaza se convertirá en terreno de competencia de financiación entre el Golfo, la UE y otros actores.",
+      "confidence": "Alta en el hecho físico y en las cifras ONU; media en las cifras de daños de la oficina de medios de Gaza",
       "sources": [
         {
-          "label": "GDACS FL 1104263",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104263"
+          "label": "ReliefWeb, Clúster de Gestión de Sitios",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/heavy-rain-and-flooding-incidents-across-gaza-06-07-november-2026-update-1"
         },
         {
-          "label": "Al Jazeera, 30 oct",
-          "url": "https://www.aljazeera.com/news/2026/10/30/flash-floods-kills-five-in-syria"
+          "label": "UN UNifeed (OCHA)",
+          "url": "https://media.un.org/unifeed/en/asset/d368/d3682757"
         },
         {
-          "label": "Syria Now, campos de Raqqa",
-          "url": "https://www.syrianow.net/en/posts/2026/10/29/floods-raqqa-camps-bridges/"
+          "label": "Anadolu, OCHA",
+          "url": "https://www.aa.com.tr/en/world/heavy-rains-flood-gaza-shelters-putting-displaced-families-at-immediate-risk-ocha/4115188"
         },
         {
-          "label": "WAM / Sharjah24",
-          "url": "https://sharjah24.ae/en/Articles/2026/10/31/a30"
+          "label": "Reuters, 7 nov",
+          "url": "https://www.reuters.com/business/environment/heavy-rain-floods-tents-housing-gaza-displaced-people-aid-shortages-hamper-2026-11-07/"
         },
         {
-          "label": "Enab Baladi",
-          "url": "https://english.enabbaladi.net/archives/2026/10/flash-floods-kill-five-in-syrias-deir-ezzor-and-raqqa/"
+          "label": "Al Jazeera, 7 nov",
+          "url": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza"
         },
         {
-          "label": "VOA, integración FDS",
-          "url": "https://www.voanews.com/a/syrian-kurdish-leader-cites-progress-in-integration-deal-but-warns-of-unresolved-issues/8210731.html"
+          "label": "Anadolu, 60 mm",
+          "url": "https://u.aa.com.tr/en/middle-east/flooded-out-of-their-tents-gaza-families-have-nowhere-left-to-go/4115647"
         },
         {
-          "label": "FDD, Turquía en Siria",
-          "url": "https://www.fdd.org/analysis/turkeys-justification-for-military-presence-in-syria-doesnt-hold-up/"
+          "label": "Jerusalem Post, COGAT",
+          "url": "http://store.jpost.com/middle-east/article-914223"
         }
       ],
-      "conflictEvent": "Sin combate activo: el noreste está en la fase de integración de las antiguas FDS y de sus instituciones civiles en el Estado sirio, un proceso que los propios líderes kurdos describen como «en fase de prueba».",
-      "environmentalEvent": "GDACS/Copernicus GloFAS: inundación del 27 al 29 de octubre en Siria (alerta verde); tormentas con granizo sobre Raqqa, Hasaka, Deir ez-Zor, Homs, Hama y Alepo.",
+      "conflictEvent": "Alto el fuego vigente, pero sin reconstrucción: la mayoría de los 2,1 millones de habitantes sigue desplazada y la entrada de materiales de refugio está restringida o demorada, según OCHA.",
+      "environmentalEvent": "Sistema de bajas presiones del 6 al 7 de noviembre: unos 60 mm en 12 horas en Ciudad de Gaza, alrededor del 15% de la lluvia anual (municipio, vía Anadolu). El propio feed SENTINEL/GDELT captó la señal en la capa de monitorización.",
       "couplingType": [
         "inundación",
-        "infraestructura vial",
-        "campos de desplazados",
-        "capacidad estatal"
+        "refugio",
+        "desplazamiento",
+        "acceso humanitario"
       ]
     },
     {
-      "id": "india-bay-of-bengal-arnab-ports-watch",
+      "id": "hormuz-tanker-fires-marine-pollution-risk",
+      "rank": 2,
+      "status": "acople en observación (riesgo ambiental derivado del conflicto)",
+      "status_en": "watch (conflict-driven environmental risk)",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#F59E0B",
+      "location": "Estrecho de Ormuz / golfo de Omán, costa de Khasab y Jask",
+      "lat": 26.4,
+      "lon": 56.6,
+      "headline": "Ormuz: tanqueros en llamas en el estrecho y riesgo de contaminación marina",
+      "headlineEn": "Hormuz: burning tankers in the strait and marine pollution risk",
+      "conflict_event": "Guerra con Irán desde finales de febrero; bloqueo naval de EE. UU. a puertos iraníes y control iraní de rutas en el estrecho. La CGRI afirmó incendios de tanqueros el 3, 5 y 8 de noviembre en rutas que considera «no autorizadas»; EE. UU. atacó la isla de Qeshm el 3 de noviembre.",
+      "conflictEventEn": "War with Iran since late February; US naval blockade of Iranian ports and Iranian control of routes in the strait. The IRGC claimed tanker fires on 3, 5 and 8 November on routes it calls 'unauthorized'; the US struck Qeshm Island on 3 November.",
+      "environmental_event": "No hay evento NASA/USGS. Riesgo de contaminación por hidrocarburos: el VLCC Gem No.2, alcanzado el 9 de octubre frente a Sharjah, perdió crudo durante más de una semana hasta detenerse a comienzos de noviembre (Lloyd's List, 2 nov). Imágenes Copernicus del 3 de noviembre muestran un tanquero dañado en el corredor sur (UANI).",
+      "environmentalEventEn": "No NASA/USGS event. Oil pollution risk: VLCC Gem No.2, hit on 9 October off Sharjah, leaked crude for over a week until it stopped in early November (Lloyd's List, 2 Nov). Copernicus imagery from 3 November shows a damaged tanker in the southern corridor (UANI).",
+      "coupling_type": [
+        "contaminación marina",
+        "energía",
+        "rutas marítimas",
+        "conflicto naval"
+      ],
+      "couplingTypeEn": [
+        "marine pollution",
+        "energy",
+        "sea lanes",
+        "naval conflict"
+      ],
+      "why_it_matters": "Importa porque es un acople inverso: aquí el conflicto produce el riesgo ambiental, en un mar semicerrado con una única salida y en el principal cuello de botella petrolero del mundo.",
+      "fact": "Hecho: la CGRI afirmó que tres tanqueros ardieron el 8 de noviembre y otros el 3 y el 5; UKMTO informó de un tanquero en llamas frente a Khasab (Omán) el 7 de noviembre con evacuación de la tripulación (Gulf News/AFP). La OMI contabiliza 128 incidentes con buques comerciales y 24 marinos muertos desde el inicio de la guerra (UANI). Las afirmaciones de la CGRI no están verificadas de forma independiente.",
+      "coupling": "Dato de acople: un oceanógrafo de la Universidad del Sur de Florida estimó en octubre que la superficie con petróleo en el golfo Pérsico duplicaba lo esperable sin conflicto (CNN, contexto anterior a la ventana). En la ventana no hay medición independiente de nuevos derrames asociados a los incendios declarados; por eso queda como riesgo en observación, no como daño confirmado.",
+      "couplingEn": "Coupling datum: a University of South Florida oceanographer estimated in October that surface oil in the Persian Gulf was double what would be expected without conflict (CNN, context prior to the window). Within the window there is no independent measurement of new spills linked to the declared fires, so it stays as a watched risk, not confirmed damage.",
+      "implication": "Implicación estratégica (Evaluación): la contaminación se suma como coste del uso de minas y del control de rutas; afecta a pesquerías, desalinizadoras y costas de terceros (EAU, Omán) que no son parte directa del conflicto, lo que amplía el número de actores con interés en una salida negociada.",
+      "strategic_implication": "El daño ambiental en Ormuz amplía el conflicto a Estados costeros que no combaten.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. sostiene el bloqueo y escolta tránsitos; China, primer comprador del crudo del Golfo, es la más expuesta a la interrupción; Rusia gana con precios altos y recibe al presidente iraní. Hipótesis: un derrame mayor documentado por satélite podría convertirse en argumento diplomático para un corredor marítimo supervisado.",
+      "confidence": "Media en los hechos (reclamaciones no verificadas de la CGRI); baja en el daño ambiental dentro de la ventana",
+      "sources": [
+        {
+          "label": "Gulf News / AFP, 8 nov",
+          "url": "https://gulfnews.com/world/mena/iran-says-3-tankers-caught-fire-in-hormuz-1.500740005"
+        },
+        {
+          "label": "Anadolu, 3 nov",
+          "url": "https://www.aa.com.tr/en/us-israel-iran-war/iran-says-3-oil-tankers-hit-naval-mines-catch-fire-in-strait-of-hormuz/4110024"
+        },
+        {
+          "label": "GlobalSecurity, día 251",
+          "url": "https://www.globalsecurity.org/military/ops/iran-war-20261105.htm"
+        },
+        {
+          "label": "Lloyd's List, Gem No.2",
+          "url": "https://www.lloydslist.com/LL1158887/VLCC-stops-leaking-oil-off-UAE"
+        },
+        {
+          "label": "UANI, imágenes Copernicus",
+          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-november-3-2026"
+        },
+        {
+          "label": "CNN vía Egypt Independent",
+          "url": "https://www.egyptindependent.com/the-iran-wars-toxic-impact-on-one-of-the-planets-most-unique-seas/"
+        }
+      ],
+      "conflictEvent": "Guerra con Irán desde finales de febrero; bloqueo naval de EE. UU. a puertos iraníes y control iraní de rutas en el estrecho. La CGRI afirmó incendios de tanqueros el 3, 5 y 8 de noviembre en rutas que considera «no autorizadas»; EE. UU. atacó la isla de Qeshm el 3 de noviembre.",
+      "environmentalEvent": "No hay evento NASA/USGS. Riesgo de contaminación por hidrocarburos: el VLCC Gem No.2, alcanzado el 9 de octubre frente a Sharjah, perdió crudo durante más de una semana hasta detenerse a comienzos de noviembre (Lloyd's List, 2 nov). Imágenes Copernicus del 3 de noviembre muestran un tanquero dañado en el corredor sur (UANI).",
+      "couplingType": [
+        "contaminación marina",
+        "energía",
+        "rutas marítimas",
+        "conflicto naval"
+      ]
+    },
+    {
+      "id": "india-murasu-second-cyclone-andhra-watch",
       "rank": 3,
       "status": "observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
       "accent": "#22D3EE",
-      "location": "India / Andhra Pradesh, puertos de Visakhapatnam, Gangavaram y Kakinada",
-      "lat": 16.9,
-      "lon": 82.2,
-      "headline": "Arnab: el ciclón tardío que detuvo los puertos del este de India",
-      "headlineEn": "Arnab: the late cyclone that halted India's eastern ports",
-      "conflict_event": "Sin conflicto armado. El nodo es la logística marítima del golfo de Bengala, espacio de competencia naval y comercial en el Indo-Pacífico.",
-      "conflictEventEn": "No armed conflict. The node is Bay of Bengal maritime logistics, a space of naval and commercial competition in the Indo-Pacific.",
-      "environmental_event": "NASA EONET / IMD: ciclón tropical Arnab, primera tormenta con nombre de la temporada del Índico Norte; tocó tierra el 28 de octubre entre Bapatla y Visakhapatnam con vientos sostenidos de 130 km/h (tormenta ciclónica muy severa).",
-      "environmentalEventEn": "NASA EONET / IMD: Tropical Cyclone Arnab, the first named storm of the North Indian Ocean season; landfall on 28 October between Bapatla and Visakhapatnam with 130 km/h sustained winds (very severe cyclonic storm).",
+      "location": "India / Andhra Pradesh: Prakasam, Bapatla, Guntur, Palnadu",
+      "lat": 15.53,
+      "lon": 80.22,
+      "headline": "Murasu: segundo ciclón en una semana sobre la misma costa india",
+      "headlineEn": "Murasu: a second cyclone in one week on the same Indian coast",
+      "conflict_event": "Sin conflicto armado. Nodo: capacidad estatal y procesos institucionales bajo choques climáticos encadenados en la costa del golfo de Bengala.",
+      "conflictEventEn": "No armed conflict. Node: state capacity and institutional processes under back-to-back climate shocks on the Bay of Bengal coast.",
+      "environmental_event": "NASA EONET / IMD: tormenta ciclónica severa Murasu, cruzó la costa cerca de Ongole entre las 22:00 UTC del 2 y las 00:00 UTC del 3 de noviembre con vientos de 100–110 km/h; GDACS la clasificó con alerta roja.",
+      "environmentalEventEn": "NASA EONET / IMD: severe cyclonic storm Murasu crossed the coast near Ongole between 22:00 UTC on 2 November and 00:00 UTC on 3 November with 100–110 km/h winds; GDACS rated it a red alert.",
       "coupling_type": [
         "ciclón",
-        "puertos",
-        "cadenas de suministro",
-        "continuidad operacional"
+        "agricultura",
+        "pesca",
+        "continuidad institucional"
       ],
       "couplingTypeEn": [
         "cyclone",
-        "ports",
-        "supply chains",
-        "operational continuity"
+        "agriculture",
+        "fisheries",
+        "institutional continuity"
       ],
-      "why_it_matters": "Importa porque Visakhapatnam suspendió todas sus operaciones y es un puerto alimentador clave de la costa este de India, ya presionada por la llegada en bloque de buques retrasados desde Asia.",
-      "fact": "Hecho: al menos tres muertos en Andhra Pradesh y decenas de miles de evacuados (ABC, NASA Earth Observatory); el IMD mantuvo señales de «gran peligro» en Kakinada, Visakhapatnam y Gangavaram el 28 de octubre.",
-      "coupling": "Dato de acople: The Loadstar informó de la suspensión de servicios portuarios en varios puertos de la costa este desde el 26 de octubre, con riesgo de congestión. No hay evidencia pública de impacto sobre operaciones navales ni de seguridad; por eso queda en observación.",
-      "couplingEn": "Coupling datum: The Loadstar reported suspended port services across several east-coast ports from 26 October, with congestion risk. There is no public evidence of impact on naval or security operations, so it stays on watch.",
-      "implication": "Implicación estratégica (Evaluación): el golfo de Bengala concentra rutas hacia el estrecho de Malaca y una creciente competencia naval. La resiliencia portuaria india ante ciclones es un factor de su peso como Estado bisagra en el Indo-Pacífico.",
-      "strategic_implication": "La exposición climática de los puertos indios es una variable de su capacidad logística regional.",
-      "tripolar": "Lectura tripolar (Evaluación): India, socio del Quad con EE. UU., compite con la presencia comercial y naval china en el Índico; Rusia sigue siendo proveedor energético de India. Arnab no altera ese equilibrio, pero muestra su fragilidad logística.",
+      "why_it_matters": "Importa porque llega una semana después de Arnab sobre la misma costa: el impacto acumulado pesa sobre agricultura, pesca y servicios, y obligó a reprogramar el recuento de elecciones municipales en los distritos más afectados.",
+      "fact": "Hecho: el gobierno de Andhra Pradesh cifró en ocho los muertos y en 1.918,55 millones de rupias (unos 203 millones de dólares) los daños, con 143.122 hectáreas de cultivos y 186.063 agricultores afectados, 983 viviendas y 346 barcos dañados (IANS). Cuatro de nueve pescadores de Tamil Nadu desaparecidos fueron hallados muertos (Telegraph India).",
+      "coupling": "Dato de acople: según la recopilación de Wikipedia con fuentes locales, la comisión electoral del estado reprogramó el recuento de votos de elecciones municipales en Prakasam y Bapatla. No hay evidencia de impacto en seguridad ni en operaciones navales; el acople es institucional y socioeconómico, por eso queda en observación.",
+      "couplingEn": "Coupling datum: according to Wikipedia's compilation of local sources, the state election commission rescheduled municipal vote counting in Prakasam and Bapatla. There is no evidence of security or naval impact; the coupling is institutional and socioeconomic, so it stays on watch.",
+      "implication": "Implicación estratégica (Evaluación): la repetición de ciclones tardíos sobre la misma franja pone a prueba la capacidad de respuesta de un Estado que aspira a ser potencia marítima del Índico. El coste agrícola y pesquero acumulado es la variable a seguir.",
+      "strategic_implication": "Los choques climáticos encadenados son una variable de la resiliencia interna de India, Estado bisagra del Indo-Pacífico.",
+      "tripolar": "Lectura tripolar (Evaluación): India mantiene su autonomía estratégica entre EE. UU., Rusia y China; Murasu no altera ese equilibrio, pero muestra que la resiliencia climática es parte de su capacidad de proyección. Hipótesis: la cooperación en alerta temprana y reconstrucción costera será un terreno de influencia en el golfo de Bengala.",
       "confidence": "Alta en el hecho físico; baja en el acople estratégico",
       "sources": [
         {
-          "label": "NASA Earth Observatory",
-          "url": "https://science.nasa.gov/earth/earth-observatory/arnab-strikes-india/"
+          "label": "IMD, aviso 15",
+          "url": "https://mausam.imd.gov.in/backend/assets/cyclone_pdf/TROPICAL_CYCLONE_ADVISORY_NO__15_based_on_0300_UTC_of_03_11_2026.pdf"
         },
         {
-          "label": "IMD, boletín especial",
-          "url": "https://imdagrimet.gov.in/Files/Press%20Release/Arnab/Special%20AgroMet%20Bulletin%20No%203%20dated%2026%20Oct%202026.pdf"
+          "label": "GDACS, alerta roja",
+          "url": "https://www.gdacs.org/Cyclones/report.aspx?eventtype=TC&eventid=1001346&episodedate=2026-11-01%2012:00:00&sourceid=JTWC"
         },
         {
-          "label": "ABC News",
-          "url": "https://www.abc.net.au/news/2026-10-29/cyclone-arnab-hits-india-east-coast/107321328"
+          "label": "AP",
+          "url": "https://apnews.com/article/cyclone-murasu-india-andhra-pradesh-bay-of-bengal-c8d1899f4344625f63d6d456dc3805fb"
         },
         {
-          "label": "The Loadstar, puertos",
-          "url": "https://theloadstar.com/cyclone-arnab-brings-more-disruption-along-indias-eastern-coast/"
+          "label": "IANS, balance de daños",
+          "url": "https://indiatribune.com/public/andhra-cyclone-murasu-claimed-eight-lives-caused-rs-1918-crore-loss"
+        },
+        {
+          "label": "Telegraph India",
+          "url": "https://www.telegraphindia.com/india/cyclone-murasu-four-of-nine-missing-fishermen-found-dead-after-boat-capsizes-off-andhra-coast/cid/2187988"
+        },
+        {
+          "label": "Wikipedia, recuento electoral",
+          "url": "https://en.wikipedia.org/wiki/Cyclone_Murasu"
         }
       ],
-      "conflictEvent": "Sin conflicto armado. El nodo es la logística marítima del golfo de Bengala, espacio de competencia naval y comercial en el Indo-Pacífico.",
-      "environmentalEvent": "NASA EONET / IMD: ciclón tropical Arnab, primera tormenta con nombre de la temporada del Índico Norte; tocó tierra el 28 de octubre entre Bapatla y Visakhapatnam con vientos sostenidos de 130 km/h (tormenta ciclónica muy severa).",
+      "conflictEvent": "Sin conflicto armado. Nodo: capacidad estatal y procesos institucionales bajo choques climáticos encadenados en la costa del golfo de Bengala.",
+      "environmentalEvent": "NASA EONET / IMD: tormenta ciclónica severa Murasu, cruzó la costa cerca de Ongole entre las 22:00 UTC del 2 y las 00:00 UTC del 3 de noviembre con vientos de 100–110 km/h; GDACS la clasificó con alerta roja.",
       "couplingType": [
         "ciclón",
-        "puertos",
-        "cadenas de suministro",
-        "continuidad operacional"
+        "agricultura",
+        "pesca",
+        "continuidad institucional"
       ]
     }
   ],
   "points": [
     {
-      "id": "yemen-taiz-siege-water-famine-confirmed",
+      "id": "gaza-first-winter-storm-tents-flooded",
       "rank": 1,
       "status": "confirmado",
       "status_en": "confirmed",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Yemen / Taiz, eje Taiz–Adén",
-      "lat": 13.58,
-      "lon": 44.02,
-      "headline": "Taiz: del cerco hídrico a la hambruna declarada por el gobernador",
-      "headlineEn": "Taiz: from water siege to famine declared by the governor",
-      "conflict_event": "Cerco hutí de Taiz desde principios de octubre; ataque aéreo saudí en el oeste de Taiz con al menos 13 muertos el 29 de octubre (cifra del ministerio de salud hutí).",
-      "conflictEventEn": "Houthi siege of Taiz since early October; Saudi airstrike in western Taiz killing at least 13 on 29 October (Houthi-run health ministry figure).",
-      "environmental_event": "Escasez hídrica estructural agravada: según el gobernador, los hutíes tomaron la última fuente de agua exterior de la ciudad; acuíferos agotados y plantas desalinizadoras con poco combustible (AP). No hay evento NASA/USGS puntual en la ventana.",
-      "environmentalEventEn": "Worsening structural water scarcity: according to the governor, the Houthis seized the city's last outside water source; depleted aquifers and fuel-starved desalination plants (AP). No discrete NASA/USGS event in the window.",
-      "coupling_type": [
-        "agua",
-        "asedio",
-        "seguridad alimentaria",
-        "energía (diésel y gas)"
-      ],
-      "couplingTypeEn": [
-        "water",
-        "siege",
-        "food security",
-        "energy (diesel and gas)"
-      ],
-      "why_it_matters": "Importa porque el acople detectado la semana pasada escaló: el agua dejó de ser escasa para ser controlada por una de las partes, y la autoridad local ya habla de hambruna.",
-      "fact": "Hecho: el 29 de octubre, el gobernador de Taiz, Nabil Shamsan, afirmó que la ciudad «está en hambruna, no al borde de ella» y cifró en 271 los muertos y 1.129 los heridos desde el inicio de la ofensiva; el PMA dijo que no puede llegar a más de 600.000 personas que dependen de ayuda (AP). Human Rights Watch documentó el 29 de octubre el cerco total y el bloqueo de la ruta Taiz–Adén.",
-      "coupling": "Dato de acople: según AP, la ciudad recibe solo una fracción del agua que necesita tras perder su última fuente exterior; el gas de cocina está bloqueado y las familias queman leña. UNICEF advirtió a HRW que la escasez de diésel amenaza con detener las bombas y que el agua en camión triplicó su precio. Advertencia de método: «hambruna» es una declaración del gobernador, no una clasificación IPC Fase 5.",
-      "couplingEn": "Coupling datum: according to AP, the city now receives only a fraction of the water it needs after losing its last outside source; cooking gas is blocked and families burn wood. UNICEF told HRW that diesel shortages threaten to halt water pumps. Method note: 'famine' is the governor's statement, not an IPC Phase 5 classification.",
-      "implication": "Implicación estratégica (Evaluación): Taiz consolida un patrón de guerra de asedio donde agua, combustible y alimentos son variables militares. El ataque aéreo saudí del 29 de octubre muestra que el frente local ya está conectado con el frente regional.",
-      "strategic_implication": "El control del agua se convierte en palanca militar en la puerta del sur de Yemen.",
-      "tripolar": "Lectura tripolar (Evaluación): EE. UU. está concentrado en la guerra con Irán y en Ormuz; Arabia Saudí asume el coste militar directo; China y Rusia mantienen distancia pública. Hipótesis: sin un canal humanitario negociado por actores regionales, Taiz se convierte en moneda de negociación del conflicto Golfo–Irán.",
-      "confidence": "Alta en los hechos; media en la caracterización de hambruna (no IPC)",
-      "sources": [
-        {
-          "label": "AP, hambruna y ataque saudí",
-          "url": "https://apnews.com/article/yemen-taiz-houthis-siege-famine-humanitarian-crisis-172666b6c90fc3f0ed8a161f2457be2c"
-        },
-        {
-          "label": "AP, crisis de agua",
-          "url": "https://apnews.com/article/yemen-siege-houthis-war-taiz-city-food-fuel-water-8536818c3d496b04b00c13a995b8f8a1"
-        },
-        {
-          "label": "Human Rights Watch, 29 oct",
-          "url": "https://www.hrw.org/news/2026/10/29/yemen-houthis-depriving-taizz-civilians-of-food-medicine"
-        }
-      ],
-      "conflictEvent": "Cerco hutí de Taiz desde principios de octubre; ataque aéreo saudí en el oeste de Taiz con al menos 13 muertos el 29 de octubre (cifra del ministerio de salud hutí).",
-      "environmentalEvent": "Escasez hídrica estructural agravada: según el gobernador, los hutíes tomaron la última fuente de agua exterior de la ciudad; acuíferos agotados y plantas desalinizadoras con poco combustible (AP). No hay evento NASA/USGS puntual en la ventana.",
-      "couplingType": [
-        "agua",
-        "asedio",
-        "seguridad alimentaria",
-        "energía (diésel y gas)"
-      ]
-    },
-    {
-      "id": "syria-northeast-floods-raqqa-aleppo-road",
-      "rank": 2,
-      "status": "confirmado (operacional)",
-      "status_en": "confirmed (operational)",
-      "priority": "Media-alta",
-      "priorityEn": "Medium-high",
-      "accent": "#F59E0B",
-      "location": "Siria / Raqqa, Deir ez-Zor, Hasaka y Alepo",
-      "lat": 35.83,
-      "lon": 38.55,
-      "headline": "Siria: la riada corta la carretera Raqqa–Alepo en pleno proceso de integración del noreste",
-      "headlineEn": "Syria: flash floods cut the Raqqa–Aleppo road as the northeast is being integrated",
-      "conflict_event": "Sin combate activo: el noreste está en la fase de integración de las antiguas FDS y de sus instituciones civiles en el Estado sirio, un proceso que los propios líderes kurdos describen como «en fase de prueba».",
-      "conflictEventEn": "No active combat: the northeast is integrating the former SDF and its civilian institutions into the Syrian state, a process Kurdish leaders themselves describe as 'in a testing phase'.",
-      "environmental_event": "GDACS/Copernicus GloFAS: inundación del 27 al 29 de octubre en Siria (alerta verde); tormentas con granizo sobre Raqqa, Hasaka, Deir ez-Zor, Homs, Hama y Alepo.",
-      "environmentalEventEn": "GDACS/Copernicus GloFAS: flooding in Syria on 27–29 October (green alert); hailstorms over Raqqa, Hasakah, Deir ez-Zor, Homs, Hama and Aleppo.",
+      "location": "Gaza / Ciudad de Gaza, Deir al-Balah, Nuseirat, al-Mawasi",
+      "lat": 31.42,
+      "lon": 34.35,
+      "headline": "Gaza: la primera tormenta del invierno inunda el refugio de una población desplazada",
+      "headlineEn": "Gaza: the first winter storm floods the shelter of a displaced population",
+      "conflict_event": "Alto el fuego vigente, pero sin reconstrucción: la mayoría de los 2,1 millones de habitantes sigue desplazada y la entrada de materiales de refugio está restringida o demorada, según OCHA.",
+      "conflictEventEn": "Ceasefire in place but no reconstruction: most of the 2.1 million residents remain displaced and shelter materials face restrictions or delays, according to OCHA.",
+      "environmental_event": "Sistema de bajas presiones del 6 al 7 de noviembre: unos 60 mm en 12 horas en Ciudad de Gaza, alrededor del 15% de la lluvia anual (municipio, vía Anadolu). El propio feed SENTINEL/GDELT captó la señal en la capa de monitorización.",
+      "environmentalEventEn": "Low-pressure system on 6–7 November: about 60 mm in 12 hours in Gaza City, roughly 15% of annual rainfall (municipality, via Anadolu). The SENTINEL/GDELT feed itself picked up the signal in its monitor layer.",
       "coupling_type": [
         "inundación",
-        "infraestructura vial",
-        "campos de desplazados",
-        "capacidad estatal"
+        "refugio",
+        "desplazamiento",
+        "acceso humanitario"
       ],
       "couplingTypeEn": [
         "flood",
-        "road infrastructure",
-        "displacement camps",
-        "state capacity"
+        "shelter",
+        "displacement",
+        "humanitarian access"
       ],
-      "why_it_matters": "Importa porque el colapso del puente al-Salmani, al oeste de Tabqa, cortó la carretera Raqqa–Alepo, uno de los ejes que unen el noreste recién integrado con el resto del país.",
-      "fact": "Hecho: el Ministerio sirio de Emergencias contabilizó ocho muertos (siete ahogados, cinco de ellos niños) y cuatro desaparecidos; evacuó a unas 375 familias de tres campos de desplazados en el campo de Raqqa y dejó fuera de servicio siete puentes, alcantarillas y caminos (Syria Now, WAM, Al Jazeera).",
-      "coupling": "Dato de acople: la agencia estatal SANA informó del colapso del puente al-Salmani, que cerró la carretera Raqqa–Alepo. El impacto humano es moderado (alerta GDACS verde), pero el impacto operacional es concreto: rutas, telecomunicaciones y campos de desplazados en la región donde Damasco debe demostrar que gobierna.",
-      "couplingEn": "Coupling datum: state agency SANA reported the collapse of al-Salmani bridge, closing the Raqqa–Aleppo road. Human impact is moderate (GDACS green), but operational impact is concrete: roads, telecoms and displacement camps in the region where Damascus must show it governs.",
-      "implication": "Implicación estratégica (Evaluación): la respuesta a la riada funciona como prueba de capacidad estatal en un territorio que hasta este año administraban las FDS. Una reparación rápida refuerza la integración; una respuesta lenta alimentaría los reclamos pendientes, como la educación en kurdo, que Ilham Ahmad señaló como no resuelta.",
-      "strategic_implication": "Un evento hidrometeorológico menor pone a prueba la gobernanza de Damasco en el noreste recién integrado.",
-      "tripolar": "Lectura tripolar (Evaluación): EE. UU. y Francia mediaron el acuerdo de integración de enero; Turquía mantiene presencia militar y su justificación se debilita a medida que avanza la integración (FDD). Rusia y China no aparecen como actores directos en este episodio. Hipótesis: la reconstrucción de infraestructuras críticas en el noreste será un terreno de competencia por influencia (financiación del Golfo, Turquía y la UE).",
-      "confidence": "Alta en el hecho físico; media en la lectura política",
+      "why_it_matters": "Importa porque el factor que convierte una lluvia ordinaria en emergencia es político: refugio precario, infraestructura dañada y materiales que no entran. Es el acople que SENTINEL tenía en observación desde octubre.",
+      "fact": "Hecho: el Clúster de Gestión de Sitios de la ONU registró 264 alertas por lluvia e inundación en 261 sitios de desplazados hasta las 09:00 del 8 de noviembre (ReliefWeb). La oficina de medios del gobierno de Hamás cifró en 70.000 las tiendas inundadas en 12 horas; Defensa Civil recibió unas 1.500 llamadas de auxilio (Reuters, Al Jazeera). No se reportaron muertes.",
+      "coupling": "Dato de acople: según OCHA, al 1 de noviembre Gaza necesitaba unas 121.000 tiendas, 561.000 lonas y 1,7 millones de colchones, y los socios humanitarios solo disponían de unas 2.800 tiendas dentro del territorio (UN UNifeed). IOM y el Clúster estiman que 761.000 personas en sitios de desplazados pueden verse afectadas por inundaciones este invierno. Versión contraria: COGAT (Israel) afirma haber facilitado la entrada de 91.000 tiendas nuevas y lonas (Jerusalem Post).",
+      "couplingEn": "Coupling datum: according to OCHA, as of 1 November Gaza needed about 121,000 tents, 561,000 tarpaulins and 1.7 million mattresses, while partners had only about 2,800 tents inside the territory (UN UNifeed). IOM and the Cluster estimate 761,000 people in displacement sites may be affected by flooding this winter. Counter-claim: COGAT (Israel) says it facilitated entry of 91,000 new tents and tarps (Jerusalem Post).",
+      "implication": "Implicación estratégica (Evaluación): el invierno convierte la cuestión del acceso de materiales en un indicador medible del alto el fuego. Cada tormenta genera presión diplomática sobre los garantes y una disputa de narrativas (Hamás frente a COGAT) sobre la responsabilidad.",
+      "strategic_implication": "El clima convierte el acceso humanitario en métrica pública de la calidad del alto el fuego.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. es garante del alto el fuego y el actor con más palanca sobre la entrada de materiales; China y Rusia capitalizan el tema en foros multilaterales sin capacidad operativa sobre el terreno. Hipótesis: si las tormentas se repiten sin cambio en el acceso, la reconstrucción de Gaza se convertirá en terreno de competencia de financiación entre el Golfo, la UE y otros actores.",
+      "confidence": "Alta en el hecho físico y en las cifras ONU; media en las cifras de daños de la oficina de medios de Gaza",
       "sources": [
         {
-          "label": "GDACS FL 1104263",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104263"
+          "label": "ReliefWeb, Clúster de Gestión de Sitios",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/heavy-rain-and-flooding-incidents-across-gaza-06-07-november-2026-update-1"
         },
         {
-          "label": "Al Jazeera, 30 oct",
-          "url": "https://www.aljazeera.com/news/2026/10/30/flash-floods-kills-five-in-syria"
+          "label": "UN UNifeed (OCHA)",
+          "url": "https://media.un.org/unifeed/en/asset/d368/d3682757"
         },
         {
-          "label": "Syria Now, campos de Raqqa",
-          "url": "https://www.syrianow.net/en/posts/2026/10/29/floods-raqqa-camps-bridges/"
+          "label": "Anadolu, OCHA",
+          "url": "https://www.aa.com.tr/en/world/heavy-rains-flood-gaza-shelters-putting-displaced-families-at-immediate-risk-ocha/4115188"
         },
         {
-          "label": "WAM / Sharjah24",
-          "url": "https://sharjah24.ae/en/Articles/2026/10/31/a30"
+          "label": "Reuters, 7 nov",
+          "url": "https://www.reuters.com/business/environment/heavy-rain-floods-tents-housing-gaza-displaced-people-aid-shortages-hamper-2026-11-07/"
         },
         {
-          "label": "Enab Baladi",
-          "url": "https://english.enabbaladi.net/archives/2026/10/flash-floods-kill-five-in-syrias-deir-ezzor-and-raqqa/"
+          "label": "Al Jazeera, 7 nov",
+          "url": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza"
         },
         {
-          "label": "VOA, integración FDS",
-          "url": "https://www.voanews.com/a/syrian-kurdish-leader-cites-progress-in-integration-deal-but-warns-of-unresolved-issues/8210731.html"
+          "label": "Anadolu, 60 mm",
+          "url": "https://u.aa.com.tr/en/middle-east/flooded-out-of-their-tents-gaza-families-have-nowhere-left-to-go/4115647"
         },
         {
-          "label": "FDD, Turquía en Siria",
-          "url": "https://www.fdd.org/analysis/turkeys-justification-for-military-presence-in-syria-doesnt-hold-up/"
+          "label": "Jerusalem Post, COGAT",
+          "url": "http://store.jpost.com/middle-east/article-914223"
         }
       ],
-      "conflictEvent": "Sin combate activo: el noreste está en la fase de integración de las antiguas FDS y de sus instituciones civiles en el Estado sirio, un proceso que los propios líderes kurdos describen como «en fase de prueba».",
-      "environmentalEvent": "GDACS/Copernicus GloFAS: inundación del 27 al 29 de octubre en Siria (alerta verde); tormentas con granizo sobre Raqqa, Hasaka, Deir ez-Zor, Homs, Hama y Alepo.",
+      "conflictEvent": "Alto el fuego vigente, pero sin reconstrucción: la mayoría de los 2,1 millones de habitantes sigue desplazada y la entrada de materiales de refugio está restringida o demorada, según OCHA.",
+      "environmentalEvent": "Sistema de bajas presiones del 6 al 7 de noviembre: unos 60 mm en 12 horas en Ciudad de Gaza, alrededor del 15% de la lluvia anual (municipio, vía Anadolu). El propio feed SENTINEL/GDELT captó la señal en la capa de monitorización.",
       "couplingType": [
         "inundación",
-        "infraestructura vial",
-        "campos de desplazados",
-        "capacidad estatal"
+        "refugio",
+        "desplazamiento",
+        "acceso humanitario"
       ]
     },
     {
-      "id": "india-bay-of-bengal-arnab-ports-watch",
+      "id": "hormuz-tanker-fires-marine-pollution-risk",
+      "rank": 2,
+      "status": "acople en observación (riesgo ambiental derivado del conflicto)",
+      "status_en": "watch (conflict-driven environmental risk)",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#F59E0B",
+      "location": "Estrecho de Ormuz / golfo de Omán, costa de Khasab y Jask",
+      "lat": 26.4,
+      "lon": 56.6,
+      "headline": "Ormuz: tanqueros en llamas en el estrecho y riesgo de contaminación marina",
+      "headlineEn": "Hormuz: burning tankers in the strait and marine pollution risk",
+      "conflict_event": "Guerra con Irán desde finales de febrero; bloqueo naval de EE. UU. a puertos iraníes y control iraní de rutas en el estrecho. La CGRI afirmó incendios de tanqueros el 3, 5 y 8 de noviembre en rutas que considera «no autorizadas»; EE. UU. atacó la isla de Qeshm el 3 de noviembre.",
+      "conflictEventEn": "War with Iran since late February; US naval blockade of Iranian ports and Iranian control of routes in the strait. The IRGC claimed tanker fires on 3, 5 and 8 November on routes it calls 'unauthorized'; the US struck Qeshm Island on 3 November.",
+      "environmental_event": "No hay evento NASA/USGS. Riesgo de contaminación por hidrocarburos: el VLCC Gem No.2, alcanzado el 9 de octubre frente a Sharjah, perdió crudo durante más de una semana hasta detenerse a comienzos de noviembre (Lloyd's List, 2 nov). Imágenes Copernicus del 3 de noviembre muestran un tanquero dañado en el corredor sur (UANI).",
+      "environmentalEventEn": "No NASA/USGS event. Oil pollution risk: VLCC Gem No.2, hit on 9 October off Sharjah, leaked crude for over a week until it stopped in early November (Lloyd's List, 2 Nov). Copernicus imagery from 3 November shows a damaged tanker in the southern corridor (UANI).",
+      "coupling_type": [
+        "contaminación marina",
+        "energía",
+        "rutas marítimas",
+        "conflicto naval"
+      ],
+      "couplingTypeEn": [
+        "marine pollution",
+        "energy",
+        "sea lanes",
+        "naval conflict"
+      ],
+      "why_it_matters": "Importa porque es un acople inverso: aquí el conflicto produce el riesgo ambiental, en un mar semicerrado con una única salida y en el principal cuello de botella petrolero del mundo.",
+      "fact": "Hecho: la CGRI afirmó que tres tanqueros ardieron el 8 de noviembre y otros el 3 y el 5; UKMTO informó de un tanquero en llamas frente a Khasab (Omán) el 7 de noviembre con evacuación de la tripulación (Gulf News/AFP). La OMI contabiliza 128 incidentes con buques comerciales y 24 marinos muertos desde el inicio de la guerra (UANI). Las afirmaciones de la CGRI no están verificadas de forma independiente.",
+      "coupling": "Dato de acople: un oceanógrafo de la Universidad del Sur de Florida estimó en octubre que la superficie con petróleo en el golfo Pérsico duplicaba lo esperable sin conflicto (CNN, contexto anterior a la ventana). En la ventana no hay medición independiente de nuevos derrames asociados a los incendios declarados; por eso queda como riesgo en observación, no como daño confirmado.",
+      "couplingEn": "Coupling datum: a University of South Florida oceanographer estimated in October that surface oil in the Persian Gulf was double what would be expected without conflict (CNN, context prior to the window). Within the window there is no independent measurement of new spills linked to the declared fires, so it stays as a watched risk, not confirmed damage.",
+      "implication": "Implicación estratégica (Evaluación): la contaminación se suma como coste del uso de minas y del control de rutas; afecta a pesquerías, desalinizadoras y costas de terceros (EAU, Omán) que no son parte directa del conflicto, lo que amplía el número de actores con interés en una salida negociada.",
+      "strategic_implication": "El daño ambiental en Ormuz amplía el conflicto a Estados costeros que no combaten.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. sostiene el bloqueo y escolta tránsitos; China, primer comprador del crudo del Golfo, es la más expuesta a la interrupción; Rusia gana con precios altos y recibe al presidente iraní. Hipótesis: un derrame mayor documentado por satélite podría convertirse en argumento diplomático para un corredor marítimo supervisado.",
+      "confidence": "Media en los hechos (reclamaciones no verificadas de la CGRI); baja en el daño ambiental dentro de la ventana",
+      "sources": [
+        {
+          "label": "Gulf News / AFP, 8 nov",
+          "url": "https://gulfnews.com/world/mena/iran-says-3-tankers-caught-fire-in-hormuz-1.500740005"
+        },
+        {
+          "label": "Anadolu, 3 nov",
+          "url": "https://www.aa.com.tr/en/us-israel-iran-war/iran-says-3-oil-tankers-hit-naval-mines-catch-fire-in-strait-of-hormuz/4110024"
+        },
+        {
+          "label": "GlobalSecurity, día 251",
+          "url": "https://www.globalsecurity.org/military/ops/iran-war-20261105.htm"
+        },
+        {
+          "label": "Lloyd's List, Gem No.2",
+          "url": "https://www.lloydslist.com/LL1158887/VLCC-stops-leaking-oil-off-UAE"
+        },
+        {
+          "label": "UANI, imágenes Copernicus",
+          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-november-3-2026"
+        },
+        {
+          "label": "CNN vía Egypt Independent",
+          "url": "https://www.egyptindependent.com/the-iran-wars-toxic-impact-on-one-of-the-planets-most-unique-seas/"
+        }
+      ],
+      "conflictEvent": "Guerra con Irán desde finales de febrero; bloqueo naval de EE. UU. a puertos iraníes y control iraní de rutas en el estrecho. La CGRI afirmó incendios de tanqueros el 3, 5 y 8 de noviembre en rutas que considera «no autorizadas»; EE. UU. atacó la isla de Qeshm el 3 de noviembre.",
+      "environmentalEvent": "No hay evento NASA/USGS. Riesgo de contaminación por hidrocarburos: el VLCC Gem No.2, alcanzado el 9 de octubre frente a Sharjah, perdió crudo durante más de una semana hasta detenerse a comienzos de noviembre (Lloyd's List, 2 nov). Imágenes Copernicus del 3 de noviembre muestran un tanquero dañado en el corredor sur (UANI).",
+      "couplingType": [
+        "contaminación marina",
+        "energía",
+        "rutas marítimas",
+        "conflicto naval"
+      ]
+    },
+    {
+      "id": "india-murasu-second-cyclone-andhra-watch",
       "rank": 3,
       "status": "observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
       "accent": "#22D3EE",
-      "location": "India / Andhra Pradesh, puertos de Visakhapatnam, Gangavaram y Kakinada",
-      "lat": 16.9,
-      "lon": 82.2,
-      "headline": "Arnab: el ciclón tardío que detuvo los puertos del este de India",
-      "headlineEn": "Arnab: the late cyclone that halted India's eastern ports",
-      "conflict_event": "Sin conflicto armado. El nodo es la logística marítima del golfo de Bengala, espacio de competencia naval y comercial en el Indo-Pacífico.",
-      "conflictEventEn": "No armed conflict. The node is Bay of Bengal maritime logistics, a space of naval and commercial competition in the Indo-Pacific.",
-      "environmental_event": "NASA EONET / IMD: ciclón tropical Arnab, primera tormenta con nombre de la temporada del Índico Norte; tocó tierra el 28 de octubre entre Bapatla y Visakhapatnam con vientos sostenidos de 130 km/h (tormenta ciclónica muy severa).",
-      "environmentalEventEn": "NASA EONET / IMD: Tropical Cyclone Arnab, the first named storm of the North Indian Ocean season; landfall on 28 October between Bapatla and Visakhapatnam with 130 km/h sustained winds (very severe cyclonic storm).",
+      "location": "India / Andhra Pradesh: Prakasam, Bapatla, Guntur, Palnadu",
+      "lat": 15.53,
+      "lon": 80.22,
+      "headline": "Murasu: segundo ciclón en una semana sobre la misma costa india",
+      "headlineEn": "Murasu: a second cyclone in one week on the same Indian coast",
+      "conflict_event": "Sin conflicto armado. Nodo: capacidad estatal y procesos institucionales bajo choques climáticos encadenados en la costa del golfo de Bengala.",
+      "conflictEventEn": "No armed conflict. Node: state capacity and institutional processes under back-to-back climate shocks on the Bay of Bengal coast.",
+      "environmental_event": "NASA EONET / IMD: tormenta ciclónica severa Murasu, cruzó la costa cerca de Ongole entre las 22:00 UTC del 2 y las 00:00 UTC del 3 de noviembre con vientos de 100–110 km/h; GDACS la clasificó con alerta roja.",
+      "environmentalEventEn": "NASA EONET / IMD: severe cyclonic storm Murasu crossed the coast near Ongole between 22:00 UTC on 2 November and 00:00 UTC on 3 November with 100–110 km/h winds; GDACS rated it a red alert.",
       "coupling_type": [
         "ciclón",
-        "puertos",
-        "cadenas de suministro",
-        "continuidad operacional"
+        "agricultura",
+        "pesca",
+        "continuidad institucional"
       ],
       "couplingTypeEn": [
         "cyclone",
-        "ports",
-        "supply chains",
-        "operational continuity"
+        "agriculture",
+        "fisheries",
+        "institutional continuity"
       ],
-      "why_it_matters": "Importa porque Visakhapatnam suspendió todas sus operaciones y es un puerto alimentador clave de la costa este de India, ya presionada por la llegada en bloque de buques retrasados desde Asia.",
-      "fact": "Hecho: al menos tres muertos en Andhra Pradesh y decenas de miles de evacuados (ABC, NASA Earth Observatory); el IMD mantuvo señales de «gran peligro» en Kakinada, Visakhapatnam y Gangavaram el 28 de octubre.",
-      "coupling": "Dato de acople: The Loadstar informó de la suspensión de servicios portuarios en varios puertos de la costa este desde el 26 de octubre, con riesgo de congestión. No hay evidencia pública de impacto sobre operaciones navales ni de seguridad; por eso queda en observación.",
-      "couplingEn": "Coupling datum: The Loadstar reported suspended port services across several east-coast ports from 26 October, with congestion risk. There is no public evidence of impact on naval or security operations, so it stays on watch.",
-      "implication": "Implicación estratégica (Evaluación): el golfo de Bengala concentra rutas hacia el estrecho de Malaca y una creciente competencia naval. La resiliencia portuaria india ante ciclones es un factor de su peso como Estado bisagra en el Indo-Pacífico.",
-      "strategic_implication": "La exposición climática de los puertos indios es una variable de su capacidad logística regional.",
-      "tripolar": "Lectura tripolar (Evaluación): India, socio del Quad con EE. UU., compite con la presencia comercial y naval china en el Índico; Rusia sigue siendo proveedor energético de India. Arnab no altera ese equilibrio, pero muestra su fragilidad logística.",
+      "why_it_matters": "Importa porque llega una semana después de Arnab sobre la misma costa: el impacto acumulado pesa sobre agricultura, pesca y servicios, y obligó a reprogramar el recuento de elecciones municipales en los distritos más afectados.",
+      "fact": "Hecho: el gobierno de Andhra Pradesh cifró en ocho los muertos y en 1.918,55 millones de rupias (unos 203 millones de dólares) los daños, con 143.122 hectáreas de cultivos y 186.063 agricultores afectados, 983 viviendas y 346 barcos dañados (IANS). Cuatro de nueve pescadores de Tamil Nadu desaparecidos fueron hallados muertos (Telegraph India).",
+      "coupling": "Dato de acople: según la recopilación de Wikipedia con fuentes locales, la comisión electoral del estado reprogramó el recuento de votos de elecciones municipales en Prakasam y Bapatla. No hay evidencia de impacto en seguridad ni en operaciones navales; el acople es institucional y socioeconómico, por eso queda en observación.",
+      "couplingEn": "Coupling datum: according to Wikipedia's compilation of local sources, the state election commission rescheduled municipal vote counting in Prakasam and Bapatla. There is no evidence of security or naval impact; the coupling is institutional and socioeconomic, so it stays on watch.",
+      "implication": "Implicación estratégica (Evaluación): la repetición de ciclones tardíos sobre la misma franja pone a prueba la capacidad de respuesta de un Estado que aspira a ser potencia marítima del Índico. El coste agrícola y pesquero acumulado es la variable a seguir.",
+      "strategic_implication": "Los choques climáticos encadenados son una variable de la resiliencia interna de India, Estado bisagra del Indo-Pacífico.",
+      "tripolar": "Lectura tripolar (Evaluación): India mantiene su autonomía estratégica entre EE. UU., Rusia y China; Murasu no altera ese equilibrio, pero muestra que la resiliencia climática es parte de su capacidad de proyección. Hipótesis: la cooperación en alerta temprana y reconstrucción costera será un terreno de influencia en el golfo de Bengala.",
       "confidence": "Alta en el hecho físico; baja en el acople estratégico",
       "sources": [
         {
-          "label": "NASA Earth Observatory",
-          "url": "https://science.nasa.gov/earth/earth-observatory/arnab-strikes-india/"
+          "label": "IMD, aviso 15",
+          "url": "https://mausam.imd.gov.in/backend/assets/cyclone_pdf/TROPICAL_CYCLONE_ADVISORY_NO__15_based_on_0300_UTC_of_03_11_2026.pdf"
         },
         {
-          "label": "IMD, boletín especial",
-          "url": "https://imdagrimet.gov.in/Files/Press%20Release/Arnab/Special%20AgroMet%20Bulletin%20No%203%20dated%2026%20Oct%202026.pdf"
+          "label": "GDACS, alerta roja",
+          "url": "https://www.gdacs.org/Cyclones/report.aspx?eventtype=TC&eventid=1001346&episodedate=2026-11-01%2012:00:00&sourceid=JTWC"
         },
         {
-          "label": "ABC News",
-          "url": "https://www.abc.net.au/news/2026-10-29/cyclone-arnab-hits-india-east-coast/107321328"
+          "label": "AP",
+          "url": "https://apnews.com/article/cyclone-murasu-india-andhra-pradesh-bay-of-bengal-c8d1899f4344625f63d6d456dc3805fb"
         },
         {
-          "label": "The Loadstar, puertos",
-          "url": "https://theloadstar.com/cyclone-arnab-brings-more-disruption-along-indias-eastern-coast/"
+          "label": "IANS, balance de daños",
+          "url": "https://indiatribune.com/public/andhra-cyclone-murasu-claimed-eight-lives-caused-rs-1918-crore-loss"
+        },
+        {
+          "label": "Telegraph India",
+          "url": "https://www.telegraphindia.com/india/cyclone-murasu-four-of-nine-missing-fishermen-found-dead-after-boat-capsizes-off-andhra-coast/cid/2187988"
+        },
+        {
+          "label": "Wikipedia, recuento electoral",
+          "url": "https://en.wikipedia.org/wiki/Cyclone_Murasu"
         }
       ],
-      "conflictEvent": "Sin conflicto armado. El nodo es la logística marítima del golfo de Bengala, espacio de competencia naval y comercial en el Indo-Pacífico.",
-      "environmentalEvent": "NASA EONET / IMD: ciclón tropical Arnab, primera tormenta con nombre de la temporada del Índico Norte; tocó tierra el 28 de octubre entre Bapatla y Visakhapatnam con vientos sostenidos de 130 km/h (tormenta ciclónica muy severa).",
+      "conflictEvent": "Sin conflicto armado. Nodo: capacidad estatal y procesos institucionales bajo choques climáticos encadenados en la costa del golfo de Bengala.",
+      "environmentalEvent": "NASA EONET / IMD: tormenta ciclónica severa Murasu, cruzó la costa cerca de Ongole entre las 22:00 UTC del 2 y las 00:00 UTC del 3 de noviembre con vientos de 100–110 km/h; GDACS la clasificó con alerta roja.",
       "couplingType": [
         "ciclón",
-        "puertos",
-        "cadenas de suministro",
-        "continuidad operacional"
+        "agricultura",
+        "pesca",
+        "continuidad institucional"
       ]
     }
   ],
   "not_selected": [
     {
-      "id": "gaza-winter",
-      "location": "Gaza",
-      "note": "OCHA estima 294.250 familias que necesitan refugio de invierno y solo un 18% con ayuda parcial; las primeras lluvias (20 de octubre) son anteriores a la ventana. Queda en observación para las próximas semanas."
+      "id": "yemen-saudi-houthi",
+      "location": "Yemen / Taiz y frente saudí-hutí",
+      "note": "Escalada militar saudí-hutí (27 muertos según los hutíes, 8 nov) y 367 víctimas civiles en Taiz en octubre según el Taiz Rights Center; sin nuevo dato ambiental verificable en la ventana. El cerco hídrico de Taiz sigue en observación; no hay clasificación IPC nueva."
     },
     {
-      "id": "israel-negev-floods",
-      "location": "Israel / Néguev y Arava",
-      "note": "GDACS verde, 0 muertes; cortes de carreteras hacia Eilat el día de las elecciones (28 de octubre). Impacto operacional breve."
+      "id": "in-fa",
+      "location": "Pacífico occidental, sur de Japón",
+      "note": "El supertifón In-fa se situó el 5 de noviembre al sur de Japón (29,4N 141,5E) sin impacto documentado en zonas pobladas ni en instalaciones militares."
     },
     {
-      "id": "infa-marianas",
-      "location": "Marianas del Norte (EE. UU.)",
-      "note": "El supertifón In-fa pasó sobre Agrihan, al norte de Guam, Saipán y Tinian, y no tocó las zonas pobladas. Sin impacto militar documentado."
+      "id": "japan-quakes",
+      "location": "Japón, costa de Hasaki y Hamakita",
+      "note": "Sismos M6,1, M5,5 y M5,5 con alerta USGS verde; sin daños relevantes ni acople geopolítico."
     },
     {
-      "id": "ukraine-energy",
+      "id": "colombia-quake",
+      "location": "Colombia / Rioblanco (Tolima)",
+      "note": "Sismo M5,4 con alerta verde en zona con presencia histórica de grupos armados; sin daños reportados."
+    },
+    {
+      "id": "europe-floods",
+      "location": "Francia y Bulgaria",
+      "note": "Inundaciones registradas por EONET; impacto local sin acople geopolítico."
+    },
+    {
+      "id": "ukraine-grid",
       "location": "Ucrania",
-      "note": "Ataques continuados contra la red eléctrica antes del invierno; sin evento ambiental en la ventana. Hay acople estacional (frío) en observación."
-    },
-    {
-      "id": "pacific-quakes",
-      "location": "Vanuatu, isla de Pascua, Japón",
-      "note": "Sismos M6,0–6,4 con alerta verde, sin daños ni acople geopolítico."
+      "note": "El acople frío-red eléctrica sigue en observación; en esta ejecución no se verificó un evento ambiental nuevo en la ventana."
     },
     {
       "id": "wildfires",
-      "location": "Sahel, África austral, Australia",
-      "note": "Focos EONET compatibles con quemas estacionales."
+      "location": "Sahel, Sudán del Sur, África austral, Australia",
+      "note": "Focos EONET compatibles con quemas estacionales; sin acople verificado con el conflicto en Sudán."
     }
   ],
   "best_short_candidate": {
-    "id": "syria-raqqa-bridge-short",
-    "title": "Siria: el puente que cayó con la riada",
-    "reason": "Taiz sigue siendo la prioridad máxima, pero ya fue el Short de la semana pasada. Siria aporta un acople nuevo, físico y verificable (puente colapsado, carretera cortada, campos evacuados) con una lectura de capacidad estatal clara y sin sobreafirmar."
+    "id": "gaza-first-winter-storm-short",
+    "title": "Gaza: la primera lluvia del invierno",
+    "reason": "Es el acople más sólido de la semana: evento físico medido, cifras de la ONU sobre la brecha de refugio y una lectura estratégica clara (acceso de materiales como métrica del alto el fuego), con la versión israelí incluida para no sobreafirmar."
   },
   "bestShort": {
-    "id": "syria-raqqa-bridge-short",
-    "title": "Siria: el puente que cayó con la riada",
-    "reason": "Taiz sigue siendo la prioridad máxima, pero ya fue el Short de la semana pasada. Siria aporta un acople nuevo, físico y verificable (puente colapsado, carretera cortada, campos evacuados) con una lectura de capacidad estatal clara y sin sobreafirmar."
+    "id": "gaza-first-winter-storm-short",
+    "title": "Gaza: la primera lluvia del invierno",
+    "reason": "Es el acople más sólido de la semana: evento físico medido, cifras de la ONU sobre la brecha de refugio y una lectura estratégica clara (acceso de materiales como métrica del alto el fuego), con la versión israelí incluida para no sobreafirmar."
   },
   "short_script": {
-    "title": "Siria: el puente que cayó con la riada",
-    "hook_3s": "Una tormenta. Un puente caído. Y la carretera Raqqa–Alepo, cortada.",
-    "scene_1": "Hecho: del 27 al 29 de octubre, tormentas con granizo inundaron Raqqa, Deir ez-Zor, Hasaka y Alepo. El ministerio sirio de Emergencias cuenta ocho muertos y 375 familias evacuadas de campos de desplazados.",
-    "scene_2": "Dato de acople: el puente al-Salmani, al oeste de Tabqa, colapsó y cortó la carretera Raqqa–Alepo. Siete puentes y caminos quedaron fuera de servicio. La alerta humana es verde. La logística, no.",
-    "scene_3": "Implicación estratégica: es el noreste que Damasco absorbió este año al integrar a las antiguas FDS, con mediación de EE. UU. y Francia y con Turquía observando. Reparar un puente es, aquí, demostrar que se gobierna.",
-    "close": "¿Quién repara primero el puente: el Estado o sus rivales? GEOPÓLEM. Bienvenidos al tablero.",
+    "title": "Gaza: la primera lluvia del invierno",
+    "hook_3s": "Sesenta milímetros en doce horas. Setenta mil tiendas bajo el agua.",
+    "scene_1": "Hecho: el 6 y 7 de noviembre, la primera tormenta del invierno inundó campos de desplazados en toda Gaza. La ONU registró alertas en 261 sitios. Defensa Civil recibió unas 1.500 llamadas de auxilio.",
+    "scene_2": "Dato de acople: OCHA calculaba que Gaza necesitaba 121.000 tiendas para el invierno. Dentro del territorio había unas 2.800. La lluvia es meteorología. El refugio es política.",
+    "scene_3": "Implicación estratégica: con alto el fuego pero sin reconstrucción, cada tormenta mide si los materiales entran. Israel dice que ha facilitado 91.000 tiendas; la ONU pide más acceso. El invierno convierte esa disputa en un dato público.",
+    "close": "¿Cuántas tormentas aguanta un alto el fuego sin reconstrucción? GEOPÓLEM. Bienvenidos al tablero.",
     "visuals": [
-      "Mapa del noreste de Siria: Raqqa, Tabqa, Alepo, Deir ez-Zor y Hasaka; carretera Raqqa–Alepo en teal con corte rojo",
-      "Capa GDACS/GloFAS de inundación del 27 al 29 de octubre",
-      "Contadores: 8 muertos · 375 familias · 7 puentes",
-      "Capa política: zona de integración de las FDS y presencia turca en la frontera norte",
-      "Cierre: puente reconstruido como pieza del tablero"
+      "Mapa de Gaza en navy/teal: Ciudad de Gaza, Nuseirat, Deir al-Balah, al-Mawasi con puntos de alerta en rojo",
+      "Contador: 60 mm en 12 h · 15% de la lluvia anual",
+      "Barra comparativa en rojo: 121.000 tiendas necesarias frente a 2.800 disponibles (OCHA, 1 nov)",
+      "Línea de fuente: ONU · OCHA · ReliefWeb",
+      "Cierre: logo, BIENVENIDOS AL TABLERO, firma de la analista jefe y pregunta CTA en rojo"
     ],
     "english_subtitles": [
-      "A storm. A collapsed bridge. And the Raqqa–Aleppo road, cut off.",
-      "From 27 to 29 October, hailstorms flooded Raqqa, Deir ez-Zor, Hasakah and Aleppo.",
-      "Syria's emergency ministry counts eight dead and 375 families evacuated from displacement camps.",
-      "Al-Salmani bridge, west of Tabqa, collapsed and closed the Raqqa–Aleppo road.",
-      "The human alert is green. The logistics are not.",
-      "This is the northeast Damascus absorbed this year by integrating the former SDF.",
-      "Here, repairing a bridge means proving you govern.",
-      "Who repairs the bridge first: the state or its rivals? GEOPÓLEM. Welcome to the board."
+      "Sixty millimetres in twelve hours. Seventy thousand tents under water.",
+      "On 6 and 7 November, the first winter storm flooded displacement camps across Gaza.",
+      "The UN logged alerts at 261 sites. Civil defence received about 1,500 distress calls.",
+      "OCHA estimated Gaza needed 121,000 tents for winter. About 2,800 were inside the territory.",
+      "Rain is weather. Shelter is politics.",
+      "With a ceasefire but no reconstruction, every storm tests whether materials get in.",
+      "Israel says it facilitated 91,000 tents; the UN asks for more access.",
+      "How many storms can a ceasefire without reconstruction withstand? GEOPÓLEM. Welcome to the board."
     ],
     "hashtags": [
       "#GEOPÓLEM",
-      "#Siria",
-      "#Raqqa",
-      "#Inundaciones",
+      "#Gaza",
+      "#Invierno",
+      "#OCHA",
       "#Geopolítica"
     ]
   },
   "tags": [
     "#GEOPÓLEM",
     "#SENTINEL",
-    "#Yemen",
-    "#Siria",
+    "#Gaza",
+    "#Ormuz",
     "#India",
     "#Tripolaridad",
     "#OSINT"
   ],
   "dataUrl": "./data/sentinel/weekly-brief.json",
-  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-10-26_2026-11-01.json",
-  "markdownUrl": "./data/sentinel/weekly-brief-2026-11-02.md",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-11-02_2026-11-08.json",
+  "markdownUrl": "./data/sentinel/weekly-brief-2026-11-09.md",
   "close": "GEOPÓLEM. Bienvenidos al tablero.",
   "layerLabel": "Acople ambiental significativo",
   "monitor_layer": {
     "label": "Acople ambiental significativo",
-    "status": "1 confirmado · 1 operacional · 1 en observación",
+    "status": "1 confirmado · 2 en observación",
     "items": [
       {
-        "id": "yemen-taiz-siege-water-famine-confirmed",
-        "location": "Yemen / Taiz, eje Taiz–Adén",
+        "id": "gaza-first-winter-storm-tents-flooded",
+        "location": "Gaza / Ciudad de Gaza, Deir al-Balah, Nuseirat, al-Mawasi",
         "status": "confirmado",
         "priority": "Alta",
         "accent": "#EF4444",
-        "lat": 13.58,
-        "lon": 44.02
+        "lat": 31.42,
+        "lon": 34.35
       },
       {
-        "id": "syria-northeast-floods-raqqa-aleppo-road",
-        "location": "Siria / Raqqa, Deir ez-Zor, Hasaka y Alepo",
-        "status": "confirmado (operacional)",
+        "id": "hormuz-tanker-fires-marine-pollution-risk",
+        "location": "Estrecho de Ormuz / golfo de Omán, costa de Khasab y Jask",
+        "status": "acople en observación (riesgo ambiental derivado del conflicto)",
         "priority": "Media-alta",
         "accent": "#F59E0B",
-        "lat": 35.83,
-        "lon": 38.55
+        "lat": 26.4,
+        "lon": 56.6
       },
       {
-        "id": "india-bay-of-bengal-arnab-ports-watch",
-        "location": "India / Andhra Pradesh, puertos de Visakhapatnam, Gangavaram y Kakinada",
+        "id": "india-murasu-second-cyclone-andhra-watch",
+        "location": "India / Andhra Pradesh: Prakasam, Bapatla, Guntur, Palnadu",
         "status": "observación",
         "priority": "Media",
         "accent": "#22D3EE",
-        "lat": 16.9,
-        "lon": 82.2
+        "lat": 15.53,
+        "lon": 80.22
       }
     ]
   },
   "media_publication": {
     "status": "prepared",
-    "published_at": "2026-11-02T08:30:00+01:00",
+    "published_at": "2026-11-09T07:40:00+01:00",
     "youtube_long": {
-      "title": "GEOPÓLEM SENTINEL · Taiz, Siria e India: el tablero conflicto-ambiente",
-      "url": "./data/sentinel/weekly-brief-2026-11-02.md",
+      "title": "GEOPÓLEM SENTINEL · Gaza, Ormuz e India: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-11-09.md",
       "format": "guion editorial",
       "duration": "4-6 min"
     },
     "youtube_short": {
-      "title": "Siria: el puente que cayó con la riada | GEOPÓLEM SENTINEL",
-      "url": "./data/sentinel/weekly-brief-2026-11-02.md#short-del-martes",
+      "title": "Gaza: la primera lluvia del invierno | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-11-09.md#short-del-martes",
       "format": "9:16 guion",
       "duration": "45-55 s"
     },
@@ -630,16 +677,16 @@
   },
   "mediaPublication": {
     "status": "prepared",
-    "published_at": "2026-11-02T08:30:00+01:00",
+    "published_at": "2026-11-09T07:40:00+01:00",
     "youtube_long": {
-      "title": "GEOPÓLEM SENTINEL · Taiz, Siria e India: el tablero conflicto-ambiente",
-      "url": "./data/sentinel/weekly-brief-2026-11-02.md",
+      "title": "GEOPÓLEM SENTINEL · Gaza, Ormuz e India: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-11-09.md",
       "format": "guion editorial",
       "duration": "4-6 min"
     },
     "youtube_short": {
-      "title": "Siria: el puente que cayó con la riada | GEOPÓLEM SENTINEL",
-      "url": "./data/sentinel/weekly-brief-2026-11-02.md#short-del-martes",
+      "title": "Gaza: la primera lluvia del invierno | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-11-09.md#short-del-martes",
       "format": "9:16 guion",
       "duration": "45-55 s"
     },
