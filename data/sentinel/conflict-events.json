@@ -2,160 +2,74 @@
   "events": [
     {
       "actors": [
-        "India"
+        "United Kingdom"
       ],
-      "domain": "madhyamam.com",
-      "id": "evt_044e30eed7947589",
-      "language": "Malayalam",
-      "matched_regions": [
-        "israel",
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 7.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "അമേരിക്കക്കാർക്ക് ഇസ്രായേലിനോട് വെറുപ്പ് , അവസാനമില്ലാത്ത യുദ്ധങ്ങൾ മതിയായി : ഇറാൻ വിദേശകാര്യമന്ത്രി | Americans are disgusted with Israel and tired of its forever wars : Iranian Foreign Minister",
-      "tone": null,
-      "url": "https://www.madhyamam.com/world/iranian-fm-araghchi-criticizes-us-israel-relations-and-wars-1570567"
-    },
-    {
-      "actors": [
-        "Indonesia"
-      ],
-      "domain": "metrotvnews.com",
-      "id": "evt_66d92297904205b6",
-      "language": "Indonesian",
-      "matched_regions": [
-        "israel",
-        "gaza",
-        "hamas"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 7.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Indonesia",
-      "tier": "high",
-      "title": "Hamas : Israel Bertanggung Jawab atas Tewasnya Lima Warga Gaza akibat Longsor",
-      "tone": null,
-      "url": "https://www.metrotvnews.com/read/NA0CzAm7-hamas-israel-bertanggung-jawab-atas-tewasnya-lima-warga-gaza-akibat-longsor"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "news.webindia123.com",
-      "id": "evt_ca7a6ad4fc07e2dd",
+      "domain": "theguardian.com",
+      "id": "evt_799d3791f46aadd7",
       "language": "English",
-      "matched_regions": [
-        "israel",
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 7.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "Americans are  disgusted with Israel  and tired of its  forever wars : Iranian Foreign Minister",
-      "tone": null,
-      "url": "https://news.webindia123.com/news/Articles/World/20261109/4517546.html"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "livemint.com",
-      "id": "evt_547e3401a3795512",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war",
-        "blockade"
-      ],
-      "region": "MENA",
-      "score": 7.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "India",
-      "tier": "high",
-      "title": "US - Iran war : What is Trump  Task Force Iron Gate ? How will land  blockade  impact Tehran , its economy ? Explained",
-      "tone": null,
-      "url": "https://www.livemint.com/news/us-news/usiran-war-what-is-trumps-task-force-iron-gate-how-will-land-blockade-impact-tehran-its-economy-explained-11794198846233.html"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "20minutes.fr",
-      "id": "evt_4fec8ed8c1046b34",
-      "language": "French",
       "matched_regions": [
         "ukraine",
-        "iran"
+        "russia"
       ],
       "matched_themes": [
-        "missile"
+        "war"
       ],
       "region": "Europa del Este",
-      "score": 6.5,
+      "score": 7.0,
       "score_breakdown": {
         "region": 4.0,
-        "themes": 2.5,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
-      "source_country": "France",
+      "seen_date": "20261110T060000Z",
+      "source_country": "United Kingdom",
       "tier": "high",
-      "title": "LIran peut - il vraiment tirer des missiles sur lUkraine  ?",
+      "title": "US officials seek  final end  to Russia - Ukraine war as Abu Dhabi talks begin | Ukraine",
       "tone": null,
-      "url": "https://www.20minutes.fr/monde/ukraine/4260598-20261109-iran-peut-vraiment-tirer-missiles-ukraine"
+      "url": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks"
     },
     {
       "actors": [
-        "Pakistan"
+        "Nigeria"
       ],
-      "domain": "dunyanews.tv",
-      "id": "evt_1e33f5d0c65875f3",
+      "domain": "allafrica.com",
+      "id": "evt_3abd794028ad5cee",
+      "language": "English",
+      "matched_regions": [
+        "sudan",
+        "ethiopia"
+      ],
+      "matched_themes": [
+        "clash",
+        "clashes"
+      ],
+      "region": "Cuerno de África",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 4.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "Nigeria",
+      "tier": "high",
+      "title": "Sudan : Proxy Politics and Border Clashes - an Escalating Crisis Between Sudan and Ethiopia",
+      "tone": null,
+      "url": "https://allafrica.com/stories/202611100043.html"
+    },
+    {
+      "actors": [
+        "South Korea"
+      ],
+      "domain": "koreaherald.com",
+      "id": "evt_281ddcc81dc36a13",
       "language": "English",
       "matched_regions": [
         "iran"
       ],
       "matched_themes": [
         "war",
-        "attack"
+        "deploy"
       ],
       "region": "MENA",
       "score": 6.5,
@@ -164,19 +78,19 @@
         "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Pakistan",
+      "seen_date": "20261110T060000Z",
+      "source_country": "South Korea",
       "tier": "high",
-      "title": "Iran says 2 - day proposal stands , warns US against fresh attacks",
+      "title": "Seoul reiterates noninvolvement in Iran war as Tehran warns against naval deployment",
       "tone": null,
-      "url": "https://dunyanews.tv/en/World/981931-iran-says-2day-proposal-stands-warns-us-against-fresh-attacks"
+      "url": "https://www.koreaherald.com/article/10932274"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "inquisitr.com",
-      "id": "evt_f2e20ed2e86a7306",
+      "domain": "mymotherlode.com",
+      "id": "evt_54fd979dd099b514",
       "language": "English",
       "matched_regions": [
         "iran"
@@ -191,77 +105,50 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
+      "seen_date": "20261110T060000Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "Trump says Vance was right that Iran war cost GOP midterms",
+      "title": "Heat - trapping carbon pollution drops , but scientists cite the Iran war rather than energy progress",
       "tone": null,
-      "url": "https://www.inquisitr.com/trump-vance-iran-war-midterms/"
+      "url": "https://mymotherlode.com/news/world/11295878/heat-trapping-carbon-pollution-drops-but-scientists-cite-the-iran-war-rather-than-energy-progress.html"
     },
     {
       "actors": [
-        "United States"
+        "Switzerland"
       ],
-      "domain": "juancole.com",
-      "id": "evt_143845f8f1dc3020",
-      "language": "English",
+      "domain": "gmx.ch",
+      "id": "evt_d210f4fbe5b422a8",
+      "language": "German",
       "matched_regions": [
-        "gaza"
+        "ukraine"
       ],
       "matched_themes": [
-        "escalate"
+        "war"
       ],
-      "region": "MENA",
-      "score": 4.0,
+      "region": "Europa del Este",
+      "score": 5.0,
       "score_breakdown": {
         "region": 2.0,
-        "themes": 2.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
-      "source_country": "United States",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Switzerland",
       "tier": "medium",
-      "title": "Enough . Have Mercy on Us ! Suffering in Gaza Escalates as 70 , 000 Tents Destroyed by Floods",
+      "title": "Was ist von den Ukraine - Verhandlungen in Abu Dhabi zu erwarten ?",
       "tone": null,
-      "url": "https://www.juancole.com/2026/11/suffering-escalates-destroyed.html"
+      "url": "https://www.gmx.ch/magazine/politik/russland-krieg-ukraine/ukraine-verhandlungen-abu-dhabi-erwarten-42929674"
     },
     {
       "actors": [
-        "United States"
+        "Indonesia"
       ],
-      "domain": "inquisitr.com",
-      "id": "evt_f46e0313f3a13be4",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "nuclear"
-      ],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran Nuclear Talks End With No Deal , Though Officials Still Hopeful",
-      "tone": null,
-      "url": "https://www.inquisitr.com/iran-nuclear-talks-end-with-no-deal-though-officials-still-hopeful/"
-    },
-    {
-      "actors": [
-        "China"
-      ],
-      "domain": "en.ce.cn",
-      "id": "evt_3c42ac23270d323c",
-      "language": "English",
+      "domain": "international.sindonews.com",
+      "id": "evt_61a6c35b615d19d0",
+      "language": "Indonesian",
       "matched_regions": [
         "israel",
-        "china"
+        "iran"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -271,328 +158,249 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T063000Z",
-      "source_country": "China",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Indonesia",
       "tier": "medium",
-      "title": "Explainer : Can Eisenkot form Israeli govt after getting mandate ?-- China Economic Net",
+      "title": "Iran Perdebatkan Halal - Haram Miliki Bom Nuklir setelah Dikeroyok AS - Israel",
       "tone": null,
-      "url": "http://en.ce.cn/main/latest/202611/t20261109_3288143.shtml"
+      "url": "https://international.sindonews.com/read/1770389/43/iran-perdebatkan-halal-haram-miliki-bom-nuklir-setelah-dikeroyok-as-israel-1794287508"
     },
     {
       "actors": [
         "India"
       ],
-      "domain": "mangalorean.com",
-      "id": "evt_f398dc6e5797ae14",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "Trump says renewed strikes on Iran  highly unlikely  if talks progress",
-      "tone": null,
-      "url": "https://www.mangalorean.com/trump-says-renewed-strikes-on-iran-highly-unlikely-if-talks-progress/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wjcl.com",
-      "id": "evt_755aa161b60ca7ee",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Deportation flight of Iranians from US scuttled at last minute , attorney says",
-      "tone": null,
-      "url": "https://www.wjcl.com/article/iran-deportation-flight-canceled-last-minute/74371093"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wisn.com",
-      "id": "evt_460491822d40d07d",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Deportation flight of Iranians from US scuttled at last minute , attorney says",
-      "tone": null,
-      "url": "https://www.wisn.com/article/iran-deportation-flight-canceled-last-minute/74371093"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "koco.com",
-      "id": "evt_d7f4cccde2a5ee65",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Deportation flight of Iranians from US scuttled at last minute , attorney says",
-      "tone": null,
-      "url": "https://www.koco.com/article/iran-deportation-flight-canceled-last-minute/74371093"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "politicaldog101.com",
-      "id": "evt_8846571511696fc4",
+      "domain": "rozanaspokesman.com",
+      "id": "evt_073e2409c59f14c4",
       "language": "English",
       "matched_regions": [
         "russia",
-        "russian"
+        "russian",
+        "moscow"
       ],
       "matched_themes": [],
       "region": "Eurasia",
-      "score": 3.5,
+      "score": 4.0,
       "score_breakdown": {
-        "region": 3.5,
+        "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T063000Z",
-      "source_country": "United States",
+      "seen_date": "20261110T060000Z",
+      "source_country": "India",
       "tier": "medium",
-      "title": "Russian troop problems",
+      "title": "Novaya Gazeta Closes Moscow Offices , Last Major Independent Russian Newspaper",
       "tone": null,
-      "url": "https://politicaldog101.com/tag/russian-troop-problems/"
+      "url": "https://www.rozanaspokesman.com/news/world/101126/novaya-gazeta-russias-last-major-independent-newspaper-closes-mos.html"
     },
     {
       "actors": [
-        "Egypt"
+        "United States"
       ],
-      "domain": "cairoscene.com",
-      "id": "evt_57032fc86b10121d",
+      "domain": "dailyadvance.com",
+      "id": "evt_12554dea6546edbf",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Egypt",
-      "tier": "monitor",
-      "title": "Karl Mattar  The Weather of the World  Documents Wartime Beirut",
-      "tone": null,
-      "url": "https://cairoscene.com/Noise/Karl-Mattar-s-The-Weather-of-the-World-Documents-Wartime-Beirut"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "20minutes.fr",
-      "id": "evt_3cfcbf9d2feed770",
-      "language": "French",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "France",
-      "tier": "monitor",
-      "title": "Quasi une vente à perte : Amazon détruit le prix de ces 5 LEGO Star Wars",
-      "tone": null,
-      "url": "https://www.20minutes.fr/guide-achat/4261161-20261109-quasi-vente-perte-amazon-detruit-prix-5-lego-star-wars"
-    },
-    {
-      "actors": [
-        "Iraq"
-      ],
-      "domain": "middle-east-online.com",
-      "id": "evt_dd6b2f45dba7ba86",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Iraq",
-      "tier": "monitor",
-      "title": "COP31 faces uphill battle as war , AI reshape climate agenda",
-      "tone": null,
-      "url": "https://www.middle-east-online.com/en/cop31-faces-uphill-battle-war-ai-reshape-climate-agenda"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "weser-kurier.de",
-      "id": "evt_a7451d20602deac4",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Wie die Deutschen ihre schwarze Hautfarbe verloren",
-      "tone": null,
-      "url": "https://www.weser-kurier.de/kultur/film/wie-die-deutschen-ihre-schwarze-hautfarbe-verloren-doc88e6na5ac52amo8df14"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "fnp.de",
-      "id": "evt_cac062347882f754",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Miosga zur US - Wahl : Gabriel warnt vor Trump - Stabschef Miller",
-      "tone": null,
-      "url": "http://www.fnp.de/politik/us-talk-bei-caren-miosga-sigmar-gabriel-warnt-vor-lord-voldemort-der-us-politik-zr-94580323.html"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "fnp.de",
-      "id": "evt_69266c9182cb1ba9",
-      "language": "German",
       "matched_regions": [
-        "saudi",
-        "china"
+        "ukraine",
+        "russia"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
+      "region": "Europa del Este",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "US - brokered talks are set to start in Abu Dhabi to discuss Ukraine - Russia peace deal",
+      "tone": null,
+      "url": "http://www.dailyadvance.com/news/world/us-brokered-talks-are-set-to-start-in-abu-dhabi-to-discuss-ukraine-russia-peace/article_62c64435-a2f9-5c48-868e-a122633d548c.html"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "arynews.tv",
+      "id": "evt_b9161f63d05c4574",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "saudi"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
       "score": 3.0,
       "score_breakdown": {
         "region": 3.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T063000Z",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Pakistan",
+      "tier": "monitor",
+      "title": "Donald Trump says Qatar , Saudi Arabia want peaceful Iran deal",
+      "tone": null,
+      "url": "https://arynews.tv/donald-trump-says-qatar-saudi-arabia-want-peaceful-iran-deal"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "hindustantimes.com",
+      "id": "evt_a22d1dfacb291cc6",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "The chip war behind the Nvidia Jenson Huang scandal , from Dutch machines to dummy servers",
+      "tone": null,
+      "url": "https://www.hindustantimes.com/ht-explainers/us-china-ai-chip-war-nvidia-jensen-huang-export-controls-china-101794288198870.html"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "timesofindia.indiatimes.com",
+      "id": "evt_ec2d285aafc120c7",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "On November 2 , 1947 , Howard Hughes lifted his 8 - engine , 320 - foot - wide wooden flying boat 70 feet above Long Beach ; it flew one mile and never flew again | World News",
+      "tone": null,
+      "url": "https://timesofindia.indiatimes.com/world/us/on-november-2-1947-howard-hughes-lifted-his-8-engine-320-foot-wide-wooden-flying-boat-70-feet-above-long-beach-it-flew-one-mile-and-never-flew-again/articleshow/135601490.cms"
+    },
+    {
+      "actors": [
+        "Guatemala"
+      ],
+      "domain": "publinews.gt",
+      "id": "evt_b85b9bd3e7052ff7",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "Guatemala",
+      "tier": "monitor",
+      "title": "TSE instala mesa para prevenir conflictos en elecciones 2027 – Publinews",
+      "tone": null,
+      "url": "https://www.publinews.gt/noticias/2026/11/10/tse-instala-mesa-para-prevenir-conflictos-de-cara-a-las-elecciones-generales-de-2027/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "dailyadvance.com",
+      "id": "evt_0fed3af7f5d7269c",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Exclusive : AP joins EU naval patrol as piracy rebounds amid regional conflicts",
+      "tone": null,
+      "url": "http://www.dailyadvance.com/news/world/exclusive-ap-joins-eu-naval-patrol-as-piracy-rebounds-amid-regional-conflicts/article_d88a3660-6e2e-5a4c-bd65-00c161f2a4cc.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "t-online.de",
+      "id": "evt_b55f021259e73a06",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "Chinas Militärtechnik taucht auf beiden Seiten im Krieg zwischen Saudi - Arabien und den Huthis auf",
+      "title": "Ukraine - Krieg : Trump : Starke Bereitschaft für ein Kriegsende in der Ukraine",
       "tone": null,
-      "url": "http://www.fnp.de/politik/chinas-militaertechnik-taucht-auf-beiden-seiten-im-krieg-zwischen-saudi-arabien-und-den-huthis-auf-zr-94580315.html"
+      "url": "https://www.t-online.de/nachrichten/ukraine/id_101519404/ukraine-krieg-trump-starke-bereitschaft-fuer-ein-kriegsende-in-der-ukraine.html"
     },
     {
       "actors": [
         "Vietnam"
       ],
       "domain": "baomoi.com",
-      "id": "evt_d1208f10769d6b75",
+      "id": "evt_47cabfb9e5cd5b96",
       "language": "Vietnamese",
       "matched_regions": [
-        "houthi",
-        "saudi"
+        "ukraine"
       ],
       "matched_themes": [],
-      "region": "MENA",
-      "score": 2.5,
+      "region": "Europa del Este",
+      "score": 2.0,
       "score_breakdown": {
-        "region": 2.5,
+        "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T063000Z",
+      "seen_date": "20261110T060000Z",
       "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "Tòa tháp tại Saudi Arabia trúng đòn tấn công của Houthi",
+      "title": "Tổng thống Ukraine tuyên bố về chuyển biến giúp Kiev củng cố vị thế trước đàm phán",
       "tone": null,
-      "url": "https://baomoi.com/toa-thap-tai-saudi-arabia-trung-don-tan-cong-cua-houthi-c56466711.epi"
+      "url": "https://baomoi.com/tong-thong-ukraine-tuyen-bo-ve-chuyen-bien-giup-kiev-cung-co-vi-the-truoc-dam-phan-c56474929.epi"
     },
     {
       "actors": [
-        "Belgium"
+        "Germany"
       ],
-      "domain": "vrt.be",
-      "id": "evt_19167509118238bd",
-      "language": "Dutch",
+      "domain": "dw.com",
+      "id": "evt_df75af3caf99ce0e",
+      "language": "German",
       "matched_regions": [],
       "matched_themes": [
         "terror"
@@ -604,20 +412,95 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Belgium",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Politie Eeklo test unieke sensoren die gevaarlijke stoffen bij terroristische aanslagen moeten opsporen",
+      "title": "Terror in Krakau : Polen verliert sein Sicherheitsgefühl",
       "tone": null,
-      "url": "https://www.vrt.be/vrtnws/nl/2026/11/07/politie-eeklo-sensoren-terroristische-aanval-proefproject/"
+      "url": "https://www.dw.com/de/der-anschlag-von-krakau-und-das-ende-des-polnischen-sicherheitsgef%C3%BChls/a-79898241"
     },
     {
       "actors": [
-        "Spain"
+        "United States"
       ],
-      "domain": "mundiario.com",
-      "id": "evt_90f8ef0f0a10f721",
-      "language": "Spanish",
+      "domain": "oilprice.com",
+      "id": "evt_83b1bc69de6cad17",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Oil Prices Plunge Below $92 as Trump Signals Restraint on Iran",
+      "tone": null,
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-Below-92-as-Trump-Signals-Restraint-on-Iran.html"
+    },
+    {
+      "actors": [
+        "Maldives"
+      ],
+      "domain": "maldivesindependent.com",
+      "id": "evt_85edbde19d70b99a",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "Maldives",
+      "tier": "monitor",
+      "title": "Lease resets , Israeli ban and execution bill - Maldives Independent",
+      "tone": null,
+      "url": "https://maldivesindependent.com/news-in-brief/lease-resets-israeli-ban-and-execution-bill-05a0"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "spiegel.de",
+      "id": "evt_efcbe05d7f398834",
+      "language": "German",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Irankrieg laut Donald Trump » effektiv vorüber « – Teheran spricht von » Fake News «",
+      "tone": null,
+      "url": "https://www.spiegel.de/ausland/irankrieg-laut-donald-trump-effektiv-vorueber-teheran-spricht-von-fake-news-a-f83d28b2-502c-4353-a9df-50ffe4ee8278"
+    },
+    {
+      "actors": [
+        "Malaysia"
+      ],
+      "domain": "malaysiasun.com",
+      "id": "evt_1aa3088d348fa4b3",
+      "language": "English",
       "matched_regions": [
         "china"
       ],
@@ -629,168 +512,45 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Spain",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Malaysia",
       "tier": "monitor",
-      "title": "Nvidia investiga a Jensen Huang por sus vínculos con presunta espía china",
+      "title": "World First ! LivingPHOENIX Secures China First Medical Device Registration Certificate for Biomimetic Collagen , Ushering in the Era of Third - Generation",
       "tone": null,
-      "url": "https://www.mundiario.com/tecnologia-ciencia/nvidia-investiga-jensen-huang-vinculos-presunta-espia-china/20261109053505451738.html"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "stimme.de",
-      "id": "evt_b7cb73e000c24dae",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Trump : Ukraine wird « etwas andere Form » haben",
-      "tone": null,
-      "url": "https://www.stimme.de/politik/welt/politik/ausland/trump-ukraine-wird-etwas-andere-form-haben-art-5232713"
-    },
-    {
-      "actors": [
-        "Finland"
-      ],
-      "domain": "kauppalehti.fi",
-      "id": "evt_8404dd59c09fdb04",
-      "language": "Finnish",
-      "matched_regions": [
-        "taiwan"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Finland",
-      "tier": "monitor",
-      "title": "Taiwanin pörssi ponnahti yli viisi prosenttia – Wall Streetillä odotetaan , kantaako teknologiaosakkeiden toipuminen",
-      "tone": null,
-      "url": "https://www.kauppalehti.fi/uutiset/a/7a315a46-9690-4d53-b42b-4e7eddabefbc"
-    },
-    {
-      "actors": [
-        "Iraq"
-      ],
-      "domain": "middle-east-online.com",
-      "id": "evt_9483ab54a579fc91",
-      "language": "English",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Iraq",
-      "tier": "monitor",
-      "title": "G7 allies weigh impact of US election results on Ukraine , Middle East",
-      "tone": null,
-      "url": "https://www.middle-east-online.com/en/g7-allies-weigh-impact-us-election-results-ukraine-middle-east"
+      "url": "http://www.malaysiasun.com/news/279422898/world-first-livingphoenix-secures-china-first-medical-device-registration-certificate-for-biomimetic-collagen-ushering-in-the-era-of-third-generation-biomimetic-collagen-ecm"
     },
     {
       "actors": [
         "Canada"
       ],
       "domain": "winnipegfreepress.com",
-      "id": "evt_179a00277684e992",
+      "id": "evt_4741eef4e26e124f",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "terror"
+      "matched_regions": [
+        "ukraine"
       ],
-      "region": "Global",
+      "matched_themes": [],
+      "region": "Europa del Este",
       "score": 2.0,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
+        "region": 2.0,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
+      "seen_date": "20261110T060000Z",
       "source_country": "Canada",
       "tier": "monitor",
-      "title": "Remembering Kristallnacht : Witness says night of terror risks being a lesson not learned – Winnipeg Free Press",
+      "title": "G7 attention in Paris turns to Ukraine while US - mediated talks get underway in Abu Dhabi – Winnipeg Free Press",
       "tone": null,
-      "url": "https://www.winnipegfreepress.com/arts-and-life/life/faith/2026/11/09/remembering-kristallnacht-witness-says-night-of-terror-risks-being-a-lesson-not-learned"
-    },
-    {
-      "actors": [],
-      "domain": "punjabijagran.com",
-      "id": "evt_572e2dc6664d2fd5",
-      "language": "Punjabi",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "",
-      "tier": "monitor",
-      "title": "ਇਮੀਗ੍ਰੇਸ਼ਨ , ਈਰਾਨ ਤੇ AI ... ਮਿਡਟਰਮ ਚੋਣਾਂ  ਚ ਹਾਰ ਤੋਂ ਬਾਅਦ ਟਰੰਪ ਦੇ ਇੰਟਰਵਿਊ ਦੀਆਂ 5 ਵੱਡੀਆਂ ਗੱਲਾਂ - Immigration Iran and AI 5 key points from Trumps interview following the defeat in the midterm elections",
-      "tone": null,
-      "url": "https://www.punjabijagran.com/world/usa-immigration-iran-and-ai-5-key-points-from-trumps-interview-following-the-defeat-in-the-midterm-elections-9709969.html"
+      "url": "https://www.winnipegfreepress.com/world/2026/11/10/g7-attention-in-paris-turns-to-ukraine-while-us-mediated-talks-get-underway-in-abu-dhabi"
     },
     {
       "actors": [
-        "Denmark"
+        "Romania"
       ],
-      "domain": "cphpost.dk",
-      "id": "evt_d6a8489b871a35c7",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Denmark",
-      "tier": "monitor",
-      "title": "U . S . military forms new task force to disrupt land routes into Iran",
-      "tone": null,
-      "url": "https://cphpost.dk/2026-11-09/global/u-s-military-forms-new-task-force-to-disrupt-land-routes-into-iran/"
-    },
-    {
-      "actors": [
-        "Indonesia"
-      ],
-      "domain": "jawapos.com",
-      "id": "evt_53d501393119a223",
-      "language": "Indonesian",
+      "domain": "digi24.ro",
+      "id": "evt_c39dcbab20bc3127",
+      "language": "Romanian",
       "matched_regions": [
         "israel"
       ],
@@ -802,120 +562,70 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Indonesia",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Romania",
       "tier": "monitor",
-      "title": "Netanyahu Bisa Tersingkir , Eks Panglima Militer Israel Bentuk Pemerintahan Baru",
+      "title": "Bătăi pe stradă , lupte online . Cum au exploatat protestele din Franța o rețea rusă și conturi legate de MAGA și Israel",
       "tone": null,
-      "url": "https://www.jawapos.com/internasional/2611090212/netanyahu-bisa-tersingkir-eks-panglima-militer-israel-bentuk-pemerintahan-baru"
+      "url": "https://www.digi24.ro/stiri/externe/ue/batai-pe-strada-lupte-online-cum-au-exploatat-protestele-din-franta-o-retea-rusa-si-conturi-legate-de-maga-si-israel-4027597"
     },
     {
       "actors": [
-        "Italy"
+        "France"
       ],
-      "domain": "zazoom.it",
-      "id": "evt_ee8f61e1c2cfaa75",
-      "language": "Italian",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Israele Eisenkot riceve lincarico di formare il nuovo governo Via alle consultazioni Trump",
-      "tone": null,
-      "url": "https://www.zazoom.it/2026-11-09/israele-eisenkot-riceve-lincarico-di-formare-il-nuovo-governo-via-alle-consultazioni-trump-dice-cose-belle-su-di-me/19904672/"
-    },
-    {
-      "actors": [
-        "Switzerland"
-      ],
-      "domain": "lematin.ch",
-      "id": "evt_04574b21906f5d2d",
+      "domain": "lindependant.fr",
+      "id": "evt_3b6173a78281f66e",
       "language": "French",
       "matched_regions": [
-        "iran"
+        "ukraine"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Europa del Este",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Switzerland",
+      "seen_date": "20261110T060000Z",
+      "source_country": "France",
       "tier": "monitor",
-      "title": "Trump : Une reprise de la guerre avec lIran jugée « très improbable »",
+      "title": "Guerre en Ukraine : la Russie continue de perdre du terrain en Ukraine , les troupes de Moscou ont déjà perdu la moitié des territoires conquis cette année",
       "tone": null,
-      "url": "https://www.lematin.ch/story/etats-unis-trump-juge-tres-improbable-une-reprise-de-la-guerre-avec-l-iran-103664455"
+      "url": "https://www.lindependant.fr/2026/11/10/guerre-en-ukraine-la-russie-continue-de-perdre-du-terrain-en-ukraine-les-troupes-de-moscou-ont-deja-perdu-la-moitie-des-territoires-conquis-cette-13644551.php"
     },
     {
       "actors": [
-        "Pakistan"
+        "Germany"
       ],
-      "domain": "dunyanews.tv",
-      "id": "evt_fde023f13dba2ac6",
-      "language": "English",
+      "domain": "n-tv.de",
+      "id": "evt_068b5d38848c823a",
+      "language": "German",
       "matched_regions": [
-        "iran"
+        "ukraine"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Europa del Este",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Pakistan",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Explosions reported in Iran Bandar Abbas , Qeshm Island",
+      "title": "Ukraine - Krieg im Liveticker : +++ 06 : 18 Wie es zur festgefahrenen Frontlinie kam +++",
       "tone": null,
-      "url": "https://dunyanews.tv/en/World/981942-explosions-reported-in-irans-bandar-abbas-qeshm-island"
+      "url": "https://www.n-tv.de/politik/06-18-Wie-es-zur-festgefahrenen-Frontlinie-kam-id30859357.html"
     },
     {
       "actors": [
-        "Pakistan"
+        "Australia"
       ],
-      "domain": "dunyanews.tv",
-      "id": "evt_2e3529c5db79092d",
+      "domain": "australiannews.net",
+      "id": "evt_bdb73fd23872f49e",
       "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Pakistan",
-      "tier": "monitor",
-      "title": "Trump to meet Qatar prime minister as Iran diplomacy faces hurdles",
-      "tone": null,
-      "url": "https://dunyanews.tv/en/World/981953-trump-to-meet-qatars-prime-minister-as-iran-diplomacy-faces-hurdles"
-    },
-    {
-      "actors": [
-        "Mexico"
-      ],
-      "domain": "zocalo.com.mx",
-      "id": "evt_deeaa43062f00066",
-      "language": "Spanish",
       "matched_regions": [
         "china"
       ],
@@ -927,20 +637,45 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Mexico",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Australia",
       "tier": "monitor",
-      "title": "Trump dice que posiblemente se reúna con Putin y Xi en China – Periódico Zócalo",
+      "title": "World First ! LivingPHOENIX Secures China First Medical Device Registration Certificate for Biomimetic Collagen , Ushering in the Era of Third - Generation",
       "tone": null,
-      "url": "https://www.zocalo.com.mx/trump-dice-que-posiblemente-se-reuna-con-putin-y-xi-en-china/"
+      "url": "http://www.australiannews.net/news/279422898/world-first-livingphoenix-secures-china-first-medical-device-registration-certificate-for-biomimetic-collagen-ushering-in-the-era-of-third-generation-biomimetic-collagen-ecm"
     },
     {
       "actors": [
-        "Spain"
+        "Israel"
       ],
-      "domain": "elperiodico.cat",
-      "id": "evt_26e73f7462034687",
-      "language": "Spanish",
+      "domain": "middleeasteye.net",
+      "id": "evt_652532100c6dceb5",
+      "language": "English",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "Nearly 80 percent of Britons see Israel as a threat to world peace",
+      "tone": null,
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/nearly-80-percent-britons-see-israel-threat-world-peace"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "haaretz.com",
+      "id": "evt_a9f1bd5a49f63cd9",
+      "language": "English",
       "matched_regions": [
         "iran"
       ],
@@ -952,187 +687,112 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Spain",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Directe | Guerra de lIran i Orient Mitjà",
+      "title": "Trump Economic Chokehold on Iran Puts U . S . Allies Across Asia to the Test",
       "tone": null,
-      "url": "https://www.elperiodico.cat/internacional/20261109/guerra-iran-estats-units-israel-ormuz-ultima-hora-directe-130265713"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "finanzen.net",
-      "id": "evt_6436963228d7b049",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Iran am finanziellen Abgrund ? Trump verschärft den Druck auf Teheran",
-      "tone": null,
-      "url": "https://www.finanzen.net/nachricht/aktien/wirtschaftliche-blockade-trump-weitere-angriffe-auf-iran-vorerst-unwahrscheinlich-usa-verschaerfen-blockade-16048649"
-    },
-    {
-      "actors": [
-        "Serbia"
-      ],
-      "domain": "informer.rs",
-      "id": "evt_7d00b9cc33501c57",
-      "language": "Serbian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Serbia",
-      "tier": "monitor",
-      "title": "SAD napale iransko ostrvo Kešm , dronovi pogodili gasno polje Hor Mor u Iraku : Veliki požar i nestanak struje",
-      "tone": null,
-      "url": "https://informer.rs/planeta/vesti/1168130/iran-amerika-napad-kesm-irak-gasno-polje"
-    },
-    {
-      "actors": [
-        "Sweden"
-      ],
-      "domain": "gp.se",
-      "id": "evt_dc7b10b10c6e1d15",
-      "language": "Swedish",
-      "matched_regions": [],
-      "matched_themes": [
-        "attack"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Sweden",
-      "tier": "monitor",
-      "title": "Kievs cyberchef : Kylattack ett enkelt angrepp",
-      "tone": null,
-      "url": "https://www.gp.se/nyheter/sverige/kievs-cyberchef-kylattack-ett-enkelt-angrepp.eace74d8-89af-546c-b444-25eb9f91e4a5"
+      "url": "https://www.haaretz.com/middle-east-news/iran/2026-11-10/ty-article/.premium/trumps-economic-chokehold-on-iran-puts-u-s-allies-across-asia-to-the-test/000001a1-c166-db7d-a5e3-e57f570b0000"
     },
     {
       "actors": [
         "Pakistan"
       ],
-      "domain": "pakobserver.net",
-      "id": "evt_0c3e5bb6efc931cf",
+      "domain": "arynews.tv",
+      "id": "evt_704103506fd646c4",
       "language": "English",
       "matched_regions": [
-        "pakistan"
+        "iran"
       ],
       "matched_themes": [],
-      "region": "Asia del Sur",
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "Pakistan",
+      "tier": "monitor",
+      "title": "Time to surrender to Tehran seven condition : Iran security chief tells US",
+      "tone": null,
+      "url": "https://arynews.tv/news/liveblog/iran-war-2026-live-updates-trump-us-israel?update=10-Nov-2026-09-37-00"
+    },
+    {
+      "actors": [
+        "Albania"
+      ],
+      "domain": "24-ore.com",
+      "id": "evt_db32fac7f1cb407d",
+      "language": "Albanian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261110T060000Z",
+      "source_country": "Albania",
+      "tier": "monitor",
+      "title": "Trump : Vendet e Gjirit Persik mbështesin vazhdimin e bllokadës ndaj Iranit , shtja bërthamore e panegociueshme",
+      "tone": null,
+      "url": "https://24-ore.com/trump-vendet-e-gjirit-persik-mbeshtesin-vazhdimin-e-bllokades-ndaj-iranit-ceshtja-berthamore-e-panegociueshme/"
+    },
+    {
+      "actors": [
+        "Lebanon"
+      ],
+      "domain": "lebanondebate.com",
+      "id": "evt_610f85e2827f0dc1",
+      "language": "Arabic",
+      "matched_regions": [
+        "lebanon"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
-      "source_country": "Pakistan",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Lebanon",
       "tier": "monitor",
-      "title": "Iqbal Shaheen and PAF wings of resolve - Pakistan Observer",
+      "title": "مخرج قطري بدعم روسي ؟ | Lebanon Debate",
       "tone": null,
-      "url": "https://pakobserver.net/iqbals-shaheen-and-pafs-wings-of-resolve/"
+      "url": "https://www.lebanondebate.com/article/898395-%D9%85%D8%AE%D8%B1%D8%AC-%D9%82%D8%B7%D8%B1%D9%8A-%D8%A8%D8%AF%D8%B9%D9%85-%D8%B1%D9%88%D8%B3%D9%8A"
     },
     {
       "actors": [
-        "France"
+        "Romania"
       ],
-      "domain": "ladepeche.fr",
-      "id": "evt_18182f17b1fe0df0",
-      "language": "French",
-      "matched_regions": [],
-      "matched_themes": [
-        "sanction"
+      "domain": "digi24.ro",
+      "id": "evt_6cca7c2d4836593f",
+      "language": "Romanian",
+      "matched_regions": [
+        "nato"
       ],
+      "matched_themes": [],
       "region": "Global",
       "score": 1.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T070000Z",
-      "source_country": "France",
-      "tier": "monitor",
-      "title": "Campan : Alexandre Pujo - Menjouet :  On est sanctionné car on a appliqué le code électoral , réagit le maire après lannulation des élections",
-      "tone": null,
-      "url": "https://www.ladepeche.fr/2026/11/09/campan-alexandre-pujo-menjouet-on-est-sanctionne-car-on-a-applique-le-code-electoral-reagit-le-maire-apres-lannulation-des-elections-13642662.php"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "prokerala.com",
-      "id": "evt_caae151e1c608253",
-      "language": "English",
-      "matched_regions": [
-        "pakistan"
-      ],
-      "matched_themes": [],
-      "region": "Asia del Sur",
-      "score": 1.5,
-      "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261109T070000Z",
-      "source_country": "India",
+      "seen_date": "20261110T060000Z",
+      "source_country": "Romania",
       "tier": "monitor",
-      "title": "PoK violence : JAAC demands immediate halt to Pakistani force crackdown on civilians",
+      "title": "Cum ar putea testa Rusia Articolul 5 al NATO . Scenariul îngrijorător pentru Europa , după înfrângerea lui Trump la alegerile din SUA",
       "tone": null,
-      "url": "https://www.prokerala.com/news/articles/a1834518.html"
-    },
-    {
-      "actors": [
-        "Venezuela"
-      ],
-      "domain": "el-carabobeno.com",
-      "id": "evt_0b2819c1cdbd68df",
-      "language": "Spanish",
-      "matched_regions": [
-        "venezuela"
-      ],
-      "matched_themes": [],
-      "region": "América Latina",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261109T063000Z",
-      "source_country": "Venezuela",
-      "tier": "monitor",
-      "title": "Familiares de presos políticos cierran campamento tras 10 meses de protesta en Venezuela",
-      "tone": null,
-      "url": "https://www.el-carabobeno.com/familiares-de-presos-politicos-cierran-campamento-tras-10-meses-de-protesta-en-venezuela/"
+      "url": "https://www.digi24.ro/stiri/externe/cum-ar-putea-testa-rusia-articolul-5-al-nato-scenariul-ingrijorator-pentru-europa-dupa-infrangerea-lui-trump-la-alegerile-din-sua-4028421"
     }
   ],
   "filters": {
@@ -1146,13 +806,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-09T16:17:24Z",
+  "generated_at": "2026-11-10T14:54:23Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 6,
-    "medium": 9,
-    "monitor": 29
+    "high": 3,
+    "medium": 5,
+    "monitor": 23
   },
-  "total_events": 44
+  "total_events": 31
 }
