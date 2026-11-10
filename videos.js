@@ -41,6 +41,33 @@ export const VIDEO_CATEGORIES = {
 //   editorialClose — optional editorial sign-off line shown in the player
 export const VIDEOS = [
   {
+    id: 'venezuela-200-mw-no-son-luz',
+    src: './assets/videos/geopolem_venezuela_200_mw_no_son_luz_16x9.mp4',
+    poster: './assets/videos/posters/geopolem_venezuela_200_mw_no_son_luz_16x9.jpg',
+    title: 'Venezuela · 200 megavatios no son luz: barcazas turcas y apagón',
+    category: 'hemisferio',
+    language: 'ES',
+    subtitles: ['EN'],
+    duration: '03:25',
+    description: 'El 5 de noviembre de 2026, Corpoelec anunció dos barcazas de Karpowership con 200 MW para el Zulia. En mayo, Venezuela tenía menos de 13.000 MW disponibles frente a unos 36.000 instalados (Reuters). Del contrato no se conocen ni el precio, ni la duración, ni el combustible. El déficit son tres problemas a la vez: generar, transmitir y pagar.',
+    strategic: 'Evaluación GEOPÓLEM: la barcaza puede ser un puente, pero no sustituye un plan. El combustible es la factura real, y tener más proveedores no da autonomía por sí solo.',
+    copyShort: '¿Puente o plan?',
+    sources: [
+      { label: 'Ver video completo en YouTube', url: 'https://www.youtube.com/watch?v=_xenrdnmruw' },
+      { label: 'Reuters · 4 may 2026', url: 'https://www.reuters.com/sustainability/climate-energy/power-suppliers-hesitate-venezuela-seeks-grid-repairs-without-payment-guarantees-2026-05-04/' },
+      { label: 'El Pitazo · 5 nov 2026', url: 'https://elpitazo.net/economia/corpoelec-contrata-barcazas-para-aumentar-generacion-electrica-en-zulia-un-esquema-fallido-en-el-pasado/' },
+      { label: 'Primicias · contrato Ecuador', url: 'https://www.primicias.ec/economia/barcaza-turca-karpowership-contrato-celec-75812/' },
+      { label: 'ANEEL · Brasil 2022', url: 'https://leisinstitucionais.s3.amazonaws.com/anexos/aneel/2022/ANEXO-RESA-12469-2022-ANEEL-BR-2.pdf' },
+    ],
+    editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
+    tags: ['Venezuela', 'Apagones', 'Energía', 'Zulia', 'Karpowership', 'Corpoelec', 'Tripolaridad imperfecta', 'GEOPÓLEM'],
+    source: 'GEOPOLEM--200-megavatios-no-son-luz--Video-largo-16x9.mp4',
+    youtubeUrl: 'https://www.youtube.com/watch?v=_xenrdnmruw',
+    webUrl: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala',
+    featured: true,
+    orientation: 'horizontal',
+  },
+  {
     id: 'venezuela-rusia-tambien-negocia',
     src: './assets/videos/geopolem_venezuela_rusia_tambien_negocia_16x9.mp4',
     poster: './assets/videos/posters/geopolem_venezuela_rusia_tambien_negocia_16x9.jpg',
