@@ -2,10 +2,38 @@
   "events": [
     {
       "actors": [
-        "United Kingdom"
+        "India"
       ],
-      "domain": "theguardian.com",
-      "id": "evt_799d3791f46aadd7",
+      "domain": "openthemagazine.com",
+      "id": "evt_546cad4fa9a7e45f",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war",
+        "clash"
+      ],
+      "region": "MENA",
+      "score": 7.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 5.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "India",
+      "tier": "high",
+      "title": "Trump and Netanyahu Clash Over Iran : Heated Debate on War Strategy Reported",
+      "tone": null,
+      "url": "https://openthemagazine.com/world/trump-netanyahu-iran-war-clash-shouting-match-from-hell-reported-as-leaders-disagree"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "abcnews.com",
+      "id": "evt_c670be77248b9bb1",
       "language": "English",
       "matched_regions": [
         "ukraine",
@@ -21,335 +49,574 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261110T060000Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
       "tier": "high",
-      "title": "US officials seek  final end  to Russia - Ukraine war as Abu Dhabi talks begin | Ukraine",
+      "title": "Ireland faces pressure to stop sending Russia an ingredient vital to its war on Ukraine",
       "tone": null,
-      "url": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks"
+      "url": "https://abcnews.com/Business/wireStory/ireland-faces-pressure-stop-sending-russia-ingredient-vital-138069913"
     },
     {
       "actors": [
-        "Nigeria"
+        "Singapore"
       ],
-      "domain": "allafrica.com",
-      "id": "evt_3abd794028ad5cee",
+      "domain": "asiaone.com",
+      "id": "evt_0ddb9ae3d89432a6",
       "language": "English",
       "matched_regions": [
-        "sudan",
-        "ethiopia"
+        "houthi",
+        "saudi"
       ],
       "matched_themes": [
-        "clash",
-        "clashes"
-      ],
-      "region": "Cuerno de África",
-      "score": 6.5,
-      "score_breakdown": {
-        "region": 2.5,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Nigeria",
-      "tier": "high",
-      "title": "Sudan : Proxy Politics and Border Clashes - an Escalating Crisis Between Sudan and Ethiopia",
-      "tone": null,
-      "url": "https://allafrica.com/stories/202611100043.html"
-    },
-    {
-      "actors": [
-        "South Korea"
-      ],
-      "domain": "koreaherald.com",
-      "id": "evt_281ddcc81dc36a13",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "war",
-        "deploy"
+        "missile",
+        "drone"
       ],
       "region": "MENA",
-      "score": 6.5,
+      "score": 7.0,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 2.5,
         "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20261110T060000Z",
-      "source_country": "South Korea",
+      "seen_date": "20261112T070000Z",
+      "source_country": "Singapore",
       "tier": "high",
-      "title": "Seoul reiterates noninvolvement in Iran war as Tehran warns against naval deployment",
+      "title": "Saudi Arabia intercepts Houthi missiles , drones ; group denies targeting Mecca",
       "tone": null,
-      "url": "https://www.koreaherald.com/article/10932274"
+      "url": "https://www.asiaone.com:443/asia/saudi-arabia-intercepts-houthi-missiles-drones-group-denies-targeting-mecca"
     },
     {
       "actors": [
-        "United States"
+        "Australia"
       ],
-      "domain": "mymotherlode.com",
-      "id": "evt_54fd979dd099b514",
+      "domain": "ibtimes.com.au",
+      "id": "evt_a36fc96e6805bcc7",
       "language": "English",
       "matched_regions": [
-        "iran"
+        "iran",
+        "hormuz"
       ],
       "matched_themes": [
         "war"
       ],
       "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "Australia",
+      "tier": "high",
+      "title": "Strait of Hormuz Latest : Iran Vows Waterway Will Never Return to Pre - War Status as More Tankers Hit Mines",
+      "tone": null,
+      "url": "https://www.ibtimes.com.au/iran-strait-hormuz-prewar-status-shipping-concerns-1878465"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "fox21online.com",
+      "id": "evt_6c865c585142e3a3",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Israeli strike on a Gaza hospital kills 6 people , health authorities say",
+      "tone": null,
+      "url": "https://www.fox21online.com/news/us-world/israeli-strike-on-a-gaza-hospital-kills-6-people-health-authorities-say/article_24f78f96-d361-5111-83c6-f13bf62b38fd.html"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "queanbeyanage.com.au",
+      "id": "evt_e50966c117aa957b",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza",
+        "hamas"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "Australia",
+      "tier": "medium",
+      "title": "Israel claims Hamas hit in deadly Gaza hospital strike",
+      "tone": null,
+      "url": "https://www.queanbeyanage.com.au/story/9390769/israel-claims-hamas-hit-in-deadly-gaza-hospital-strike/"
+    },
+    {
+      "actors": [
+        "Singapore"
+      ],
+      "domain": "asiaone.com",
+      "id": "evt_532d56d04d0f26ff",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "iran"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "Singapore",
+      "tier": "medium",
+      "title": "Iran tells COP31 it wants compensation for environmental damage from US - Israeli strikes",
+      "tone": null,
+      "url": "https://www.asiaone.com:443/asia/iran-tells-cop31-it-wants-compensation-environmental-damage-us-israeli-strikes"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "newsday.com",
+      "id": "evt_67fe2224d195f0fc",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Israeli strike on a Gaza hospital kills 6 people , health authorities say",
+      "tone": null,
+      "url": "https://www.newsday.com/news/nation/gaza-israel-hospital-strike-people-killed-h38646"
+    },
+    {
+      "actors": [
+        "Malaysia"
+      ],
+      "domain": "malaysiakini.com",
+      "id": "evt_5c91f3d7f064ec16",
+      "language": "English",
+      "matched_regions": [
+        "taiwan"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Asia-Pacífico",
       "score": 5.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261110T060000Z",
-      "source_country": "United States",
+      "seen_date": "20261112T070000Z",
+      "source_country": "Malaysia",
       "tier": "medium",
-      "title": "Heat - trapping carbon pollution drops , but scientists cite the Iran war rather than energy progress",
+      "title": "Unfazed by Taiwan suspending investment talks , Anwar says numbers going up",
       "tone": null,
-      "url": "https://mymotherlode.com/news/world/11295878/heat-trapping-carbon-pollution-drops-but-scientists-cite-the-iran-war-rather-than-energy-progress.html"
+      "url": "https://www.malaysiakini.com/news/888950-anwar-unfazed-by-taiwan-suspending-investment-talks-says-numbers-going-up"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "openthemagazine.com",
+      "id": "evt_b0b5bb1755a4cd04",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "Trump - Xi - Putin Summit : Will China Join Nuclear Talks Amid Global Tensions ?",
+      "tone": null,
+      "url": "https://openthemagazine.com/world/rubio-wang-call-puts-trump-xi-putin-summit-in-focus-will-china-agree-to-nuclear-talks"
     },
     {
       "actors": [
         "Switzerland"
       ],
-      "domain": "gmx.ch",
-      "id": "evt_d210f4fbe5b422a8",
+      "domain": "tagesanzeiger.ch",
+      "id": "evt_6daafd2e06f638b8",
+      "language": "German",
+      "matched_regions": [
+        "israel",
+        "gaza",
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "Switzerland",
+      "tier": "medium",
+      "title": "Israel : Angriff auf Spital in Gaza galt Hamas",
+      "tone": null,
+      "url": "https://www.tagesanzeiger.ch/nahost-ticker-iran-israel-usa-jemen-33-872658086267"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "caribbeanherald.com",
+      "id": "evt_0489298fb95bca74",
+      "language": "English",
+      "matched_regions": [
+        "haiti"
+      ],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "América Latina",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "El Salvador is exporting the  Bukele model  to Haiti - but the gang offensive is a gamble for both nations",
+      "tone": null,
+      "url": "http://www.caribbeanherald.com/news/279427292/el-salvador-is-exporting-the-bukele-model-to-haiti-but-the-gang-offensive-is-a-gamble-for-both-nations"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "news.webindia123.com",
+      "id": "evt_93366ddee98fe4cb",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "iranian"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "After midterm setback , JD Vance weighs direct talks with Iranian official amid US push for peace : Report",
+      "tone": null,
+      "url": "https://news.webindia123.com/news/Articles/World/20261112/4518650.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "z93jamz.com",
+      "id": "evt_092904973621e573",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Rockets halt Warrior 8 - game winning streak ; Stephen Curry injured",
+      "tone": null,
+      "url": "https://www.z93jamz.com/2026/11/12/rockets-halt-warriors-8-game-winning-streak-stephen-curry-injured/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wlwt.com",
+      "id": "evt_e6b6b234e0a1c0c4",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Wanted posters help Orléans museum find World War II art",
+      "tone": null,
+      "url": "https://www.wlwt.com/article/french-museum-wanted-posters-world-war-ii-art/74405898"
+    },
+    {
+      "actors": [
+        "Singapore"
+      ],
+      "domain": "asiaone.com",
+      "id": "evt_7c6a52282dfc79df",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "Singapore",
+      "tier": "monitor",
+      "title": "Grab CEO Anthony Tan awarded title of Datuk by Sultan of Selangor :  Deeply honoured",
+      "tone": null,
+      "url": "https://www.asiaone.com:443/singapore/grab-ceo-anthony-tan-conferred-dato-title"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "giornaleibleo.it",
+      "id": "evt_3687a882d071007a",
+      "language": "Italian",
+      "matched_regions": [],
+      "matched_themes": [
+        "escalation"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Confcommercio Modica dopo la preoccupante escalation criminale in città :  Servono risposte  – Giornale Ibleo",
+      "tone": null,
+      "url": "https://www.giornaleibleo.it/2026/11/12/confcommercio-modica-dopo-la-preoccupante-escalation-criminale-in-citta-servono-risposte/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "annarbors107one.com",
+      "id": "evt_14fe17e3790048e1",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Sombr Stops Concert to Address Fan Making Offensive Gesture",
+      "tone": null,
+      "url": "https://www.annarbors107one.com/2026/11/12/sombr-stops-concert-to-address-fan-making-offensive-gesture/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "star98.net",
+      "id": "evt_984690e5dd0ecdba",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Sombr Stops Concert to Address Fan Making Offensive Gesture",
+      "tone": null,
+      "url": "https://www.star98.net/2026/11/12/sombr-stops-concert-to-address-fan-making-offensive-gesture/"
+    },
+    {
+      "actors": [
+        "France"
+      ],
+      "domain": "sudouest.fr",
+      "id": "evt_04868d0c3dc87ac5",
+      "language": "French",
+      "matched_regions": [],
+      "matched_themes": [
+        "coup"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Festival du film daventure de La Rochelle 2026 : les cinq coups de cœur de la coordinatrice générale du festival",
+      "tone": null,
+      "url": "https://www.sudouest.fr/culture/festival/festival-du-film-d-aventure-de-la-rochelle-2026-les-cinq-coups-de-coeur-de-la-coordinatrice-generale-du-festival-31345182.php"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "indiaeducationdiary.in",
+      "id": "evt_ae28e28ab9f1528a",
+      "language": "English",
+      "matched_regions": [
+        "lebanon",
+        "india"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Food insecurity persists in Lebanon as fragile conditions stall recovery efforts , new analysis shows - India Education | Latest Education News | Global Educational News",
+      "tone": null,
+      "url": "https://indiaeducationdiary.in/food-insecurity-persists-in-lebanon-as-fragile-conditions-stall-recovery-efforts-new-analysis-shows/"
+    },
+    {
+      "actors": [
+        "Austria"
+      ],
+      "domain": "heute.at",
+      "id": "evt_df941018959cfb65",
       "language": "German",
       "matched_regions": [
         "ukraine"
       ],
-      "matched_themes": [
-        "war"
-      ],
+      "matched_themes": [],
       "region": "Europa del Este",
-      "score": 5.0,
+      "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Switzerland",
-      "tier": "medium",
-      "title": "Was ist von den Ukraine - Verhandlungen in Abu Dhabi zu erwarten ?",
-      "tone": null,
-      "url": "https://www.gmx.ch/magazine/politik/russland-krieg-ukraine/ukraine-verhandlungen-abu-dhabi-erwarten-42929674"
-    },
-    {
-      "actors": [
-        "Indonesia"
-      ],
-      "domain": "international.sindonews.com",
-      "id": "evt_61a6c35b615d19d0",
-      "language": "Indonesian",
-      "matched_regions": [
-        "israel",
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Indonesia",
-      "tier": "medium",
-      "title": "Iran Perdebatkan Halal - Haram Miliki Bom Nuklir setelah Dikeroyok AS - Israel",
+      "seen_date": "20261112T070000Z",
+      "source_country": "Austria",
+      "tier": "monitor",
+      "title": "Demografische Krise – Ukraine hat seit 1990 15 Mio . Einwohner verloren",
       "tone": null,
-      "url": "https://international.sindonews.com/read/1770389/43/iran-perdebatkan-halal-haram-miliki-bom-nuklir-setelah-dikeroyok-as-israel-1794287508"
+      "url": "https://www.heute.at/s/ukraine-verliert-seit-1990-15-mio-einwohner-120280459"
     },
     {
       "actors": [
-        "India"
+        "Germany"
       ],
-      "domain": "rozanaspokesman.com",
-      "id": "evt_073e2409c59f14c4",
-      "language": "English",
+      "domain": "merkur.de",
+      "id": "evt_02801df3915777c5",
+      "language": "German",
       "matched_regions": [
-        "russia",
-        "russian",
-        "moscow"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "Novaya Gazeta Closes Moscow Offices , Last Major Independent Russian Newspaper",
-      "tone": null,
-      "url": "https://www.rozanaspokesman.com/news/world/101126/novaya-gazeta-russias-last-major-independent-newspaper-closes-mos.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "dailyadvance.com",
-      "id": "evt_12554dea6546edbf",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia"
+        "ukraine"
       ],
       "matched_themes": [],
       "region": "Europa del Este",
-      "score": 4.0,
+      "score": 2.0,
       "score_breakdown": {
-        "region": 4.0,
+        "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261110T060000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "US - brokered talks are set to start in Abu Dhabi to discuss Ukraine - Russia peace deal",
-      "tone": null,
-      "url": "http://www.dailyadvance.com/news/world/us-brokered-talks-are-set-to-start-in-abu-dhabi-to-discuss-ukraine-russia-peace/article_62c64435-a2f9-5c48-868e-a122633d548c.html"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "arynews.tv",
-      "id": "evt_b9161f63d05c4574",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "saudi"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 3.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Pakistan",
+      "seen_date": "20261112T070000Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Donald Trump says Qatar , Saudi Arabia want peaceful Iran deal",
+      "title": "Geheimdienst deckt auf : Russlands neuer Plan soll die Ukraine im Alltag treffen",
       "tone": null,
-      "url": "https://arynews.tv/donald-trump-says-qatar-saudi-arabia-want-peaceful-iran-deal"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "hindustantimes.com",
-      "id": "evt_a22d1dfacb291cc6",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "The chip war behind the Nvidia Jenson Huang scandal , from Dutch machines to dummy servers",
-      "tone": null,
-      "url": "https://www.hindustantimes.com/ht-explainers/us-china-ai-chip-war-nvidia-jensen-huang-export-controls-china-101794288198870.html"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "timesofindia.indiatimes.com",
-      "id": "evt_ec2d285aafc120c7",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "On November 2 , 1947 , Howard Hughes lifted his 8 - engine , 320 - foot - wide wooden flying boat 70 feet above Long Beach ; it flew one mile and never flew again | World News",
-      "tone": null,
-      "url": "https://timesofindia.indiatimes.com/world/us/on-november-2-1947-howard-hughes-lifted-his-8-engine-320-foot-wide-wooden-flying-boat-70-feet-above-long-beach-it-flew-one-mile-and-never-flew-again/articleshow/135601490.cms"
-    },
-    {
-      "actors": [
-        "Guatemala"
-      ],
-      "domain": "publinews.gt",
-      "id": "evt_b85b9bd3e7052ff7",
-      "language": "Spanish",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Guatemala",
-      "tier": "monitor",
-      "title": "TSE instala mesa para prevenir conflictos en elecciones 2027 – Publinews",
-      "tone": null,
-      "url": "https://www.publinews.gt/noticias/2026/11/10/tse-instala-mesa-para-prevenir-conflictos-de-cara-a-las-elecciones-generales-de-2027/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "dailyadvance.com",
-      "id": "evt_0fed3af7f5d7269c",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Exclusive : AP joins EU naval patrol as piracy rebounds amid regional conflicts",
-      "tone": null,
-      "url": "http://www.dailyadvance.com/news/world/exclusive-ap-joins-eu-naval-patrol-as-piracy-rebounds-amid-regional-conflicts/article_d88a3660-6e2e-5a4c-bd65-00c161f2a4cc.html"
+      "url": "http://www.merkur.de/politik/geheimdienst-deckt-auf-russlands-neuer-plan-soll-die-ukraine-im-alltag-treffen-zr-94585251.html"
     },
     {
       "actors": [
         "Germany"
       ],
       "domain": "t-online.de",
-      "id": "evt_b55f021259e73a06",
+      "id": "evt_873c7661882c502c",
       "language": "German",
       "matched_regions": [
         "ukraine"
@@ -362,48 +629,48 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261110T060000Z",
+      "seen_date": "20261112T070000Z",
       "source_country": "Germany",
       "tier": "monitor",
-      "title": "Ukraine - Krieg : Trump : Starke Bereitschaft für ein Kriegsende in der Ukraine",
+      "title": "Trump - Vertraute auf dem Weg zu Putin : Wie kann der Ukraine - Krieg enden ?",
       "tone": null,
-      "url": "https://www.t-online.de/nachrichten/ukraine/id_101519404/ukraine-krieg-trump-starke-bereitschaft-fuer-ein-kriegsende-in-der-ukraine.html"
-    },
-    {
-      "actors": [
-        "Vietnam"
-      ],
-      "domain": "baomoi.com",
-      "id": "evt_47cabfb9e5cd5b96",
-      "language": "Vietnamese",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Vietnam",
-      "tier": "monitor",
-      "title": "Tổng thống Ukraine tuyên bố về chuyển biến giúp Kiev củng cố vị thế trước đàm phán",
-      "tone": null,
-      "url": "https://baomoi.com/tong-thong-ukraine-tuyen-bo-ve-chuyen-bien-giup-kiev-cung-co-vi-the-truoc-dam-phan-c56474929.epi"
+      "url": "https://www.t-online.de/nachrichten/ausland/internationale-politik/id_101524724/trump-vertraute-auf-dem-weg-zu-putin-wie-kann-der-ukraine-krieg-enden-.html"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "dw.com",
-      "id": "evt_df75af3caf99ce0e",
+      "domain": "deutschlandfunk.de",
+      "id": "evt_abcdc144006faa6e",
       "language": "German",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Nahost - Mehrere Tote bei Luftangriff im Süden des Gazastreifens",
+      "tone": null,
+      "url": "https://www.deutschlandfunk.de/mehrere-tote-bei-luftangriff-im-sueden-des-gazastreifens-100.html"
+    },
+    {
+      "actors": [
+        "Egypt"
+      ],
+      "domain": "el-balad.com",
+      "id": "evt_6c06b0b171a9ef1c",
+      "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "terror"
+        "drone"
       ],
       "region": "Global",
       "score": 2.0,
@@ -412,370 +679,120 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Germany",
+      "seen_date": "20261112T070000Z",
+      "source_country": "Egypt",
       "tier": "monitor",
-      "title": "Terror in Krakau : Polen verliert sein Sicherheitsgefühl",
+      "title": "Germany bans Dji drones at military bases immediately",
       "tone": null,
-      "url": "https://www.dw.com/de/der-anschlag-von-krakau-und-das-ende-des-polnischen-sicherheitsgef%C3%BChls/a-79898241"
+      "url": "https://www.el-balad.com/17066100"
     },
     {
       "actors": [
-        "United States"
+        "India"
       ],
-      "domain": "oilprice.com",
-      "id": "evt_83b1bc69de6cad17",
+      "domain": "udaipurkiran.com",
+      "id": "evt_8bf51efe1f3183fc",
       "language": "English",
       "matched_regions": [
-        "iran"
+        "kashmir"
       ],
       "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Oil Prices Plunge Below $92 as Trump Signals Restraint on Iran",
-      "tone": null,
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-Below-92-as-Trump-Signals-Restraint-on-Iran.html"
-    },
-    {
-      "actors": [
-        "Maldives"
-      ],
-      "domain": "maldivesindependent.com",
-      "id": "evt_85edbde19d70b99a",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Maldives",
-      "tier": "monitor",
-      "title": "Lease resets , Israeli ban and execution bill - Maldives Independent",
-      "tone": null,
-      "url": "https://maldivesindependent.com/news-in-brief/lease-resets-israeli-ban-and-execution-bill-05a0"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "spiegel.de",
-      "id": "evt_efcbe05d7f398834",
-      "language": "German",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Irankrieg laut Donald Trump » effektiv vorüber « – Teheran spricht von » Fake News «",
-      "tone": null,
-      "url": "https://www.spiegel.de/ausland/irankrieg-laut-donald-trump-effektiv-vorueber-teheran-spricht-von-fake-news-a-f83d28b2-502c-4353-a9df-50ffe4ee8278"
-    },
-    {
-      "actors": [
-        "Malaysia"
-      ],
-      "domain": "malaysiasun.com",
-      "id": "evt_1aa3088d348fa4b3",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Malaysia",
-      "tier": "monitor",
-      "title": "World First ! LivingPHOENIX Secures China First Medical Device Registration Certificate for Biomimetic Collagen , Ushering in the Era of Third - Generation",
-      "tone": null,
-      "url": "http://www.malaysiasun.com/news/279422898/world-first-livingphoenix-secures-china-first-medical-device-registration-certificate-for-biomimetic-collagen-ushering-in-the-era-of-third-generation-biomimetic-collagen-ecm"
-    },
-    {
-      "actors": [
-        "Canada"
-      ],
-      "domain": "winnipegfreepress.com",
-      "id": "evt_4741eef4e26e124f",
-      "language": "English",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Canada",
-      "tier": "monitor",
-      "title": "G7 attention in Paris turns to Ukraine while US - mediated talks get underway in Abu Dhabi – Winnipeg Free Press",
-      "tone": null,
-      "url": "https://www.winnipegfreepress.com/world/2026/11/10/g7-attention-in-paris-turns-to-ukraine-while-us-mediated-talks-get-underway-in-abu-dhabi"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "digi24.ro",
-      "id": "evt_c39dcbab20bc3127",
-      "language": "Romanian",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "Bătăi pe stradă , lupte online . Cum au exploatat protestele din Franța o rețea rusă și conturi legate de MAGA și Israel",
-      "tone": null,
-      "url": "https://www.digi24.ro/stiri/externe/ue/batai-pe-strada-lupte-online-cum-au-exploatat-protestele-din-franta-o-retea-rusa-si-conturi-legate-de-maga-si-israel-4027597"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "lindependant.fr",
-      "id": "evt_3b6173a78281f66e",
-      "language": "French",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "France",
-      "tier": "monitor",
-      "title": "Guerre en Ukraine : la Russie continue de perdre du terrain en Ukraine , les troupes de Moscou ont déjà perdu la moitié des territoires conquis cette année",
-      "tone": null,
-      "url": "https://www.lindependant.fr/2026/11/10/guerre-en-ukraine-la-russie-continue-de-perdre-du-terrain-en-ukraine-les-troupes-de-moscou-ont-deja-perdu-la-moitie-des-territoires-conquis-cette-13644551.php"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "n-tv.de",
-      "id": "evt_068b5d38848c823a",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Ukraine - Krieg im Liveticker : +++ 06 : 18 Wie es zur festgefahrenen Frontlinie kam +++",
-      "tone": null,
-      "url": "https://www.n-tv.de/politik/06-18-Wie-es-zur-festgefahrenen-Frontlinie-kam-id30859357.html"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "australiannews.net",
-      "id": "evt_bdb73fd23872f49e",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "World First ! LivingPHOENIX Secures China First Medical Device Registration Certificate for Biomimetic Collagen , Ushering in the Era of Third - Generation",
-      "tone": null,
-      "url": "http://www.australiannews.net/news/279422898/world-first-livingphoenix-secures-china-first-medical-device-registration-certificate-for-biomimetic-collagen-ushering-in-the-era-of-third-generation-biomimetic-collagen-ecm"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "middleeasteye.net",
-      "id": "evt_652532100c6dceb5",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "Nearly 80 percent of Britons see Israel as a threat to world peace",
-      "tone": null,
-      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/nearly-80-percent-britons-see-israel-threat-world-peace"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "haaretz.com",
-      "id": "evt_a9f1bd5a49f63cd9",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "Trump Economic Chokehold on Iran Puts U . S . Allies Across Asia to the Test",
-      "tone": null,
-      "url": "https://www.haaretz.com/middle-east-news/iran/2026-11-10/ty-article/.premium/trumps-economic-chokehold-on-iran-puts-u-s-allies-across-asia-to-the-test/000001a1-c166-db7d-a5e3-e57f570b0000"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "arynews.tv",
-      "id": "evt_704103506fd646c4",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Pakistan",
-      "tier": "monitor",
-      "title": "Time to surrender to Tehran seven condition : Iran security chief tells US",
-      "tone": null,
-      "url": "https://arynews.tv/news/liveblog/iran-war-2026-live-updates-trump-us-israel?update=10-Nov-2026-09-37-00"
-    },
-    {
-      "actors": [
-        "Albania"
-      ],
-      "domain": "24-ore.com",
-      "id": "evt_db32fac7f1cb407d",
-      "language": "Albanian",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Albania",
-      "tier": "monitor",
-      "title": "Trump : Vendet e Gjirit Persik mbështesin vazhdimin e bllokadës ndaj Iranit , shtja bërthamore e panegociueshme",
-      "tone": null,
-      "url": "https://24-ore.com/trump-vendet-e-gjirit-persik-mbeshtesin-vazhdimin-e-bllokades-ndaj-iranit-ceshtja-berthamore-e-panegociueshme/"
-    },
-    {
-      "actors": [
-        "Lebanon"
-      ],
-      "domain": "lebanondebate.com",
-      "id": "evt_610f85e2827f0dc1",
-      "language": "Arabic",
-      "matched_regions": [
-        "lebanon"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
+      "region": "Asia del Sur",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Lebanon",
+      "seen_date": "20261112T070000Z",
+      "source_country": "India",
       "tier": "monitor",
-      "title": "مخرج قطري بدعم روسي ؟ | Lebanon Debate",
+      "title": "Two SPOs Found Murdered in Jammu and Kashmir",
       "tone": null,
-      "url": "https://www.lebanondebate.com/article/898395-%D9%85%D8%AE%D8%B1%D8%AC-%D9%82%D8%B7%D8%B1%D9%8A-%D8%A8%D8%AF%D8%B9%D9%85-%D8%B1%D9%88%D8%B3%D9%8A"
+      "url": "https://udaipurkiran.com/two-spos-found-murdered-in-jammu-and-kashmir/"
     },
     {
       "actors": [
-        "Romania"
+        "Nigeria"
       ],
-      "domain": "digi24.ro",
-      "id": "evt_6cca7c2d4836593f",
-      "language": "Romanian",
+      "domain": "blueprint.ng",
+      "id": "evt_04167cab77a02f8f",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "deploy"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "Banditry : IGP deploys more officers , air support to affected states - Blueprint Newspapers Limited",
+      "tone": null,
+      "url": "https://blueprint.ng/banditry-igp-deploys-more-officers-air-support-to-affected-states/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "caribbeanherald.com",
+      "id": "evt_5b3c771ce3ae0ab3",
+      "language": "English",
+      "matched_regions": [
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "North Korea Kim Yo Jong criticizes UN over border blast",
+      "tone": null,
+      "url": "http://www.caribbeanherald.com/news/279424224/north-korea-s-kim-yo-jong-criticizes-un-over-border-blast"
+    },
+    {
+      "actors": [
+        "Slovak Republic"
+      ],
+      "domain": "teraz.sk",
+      "id": "evt_aecef74b20516478",
+      "language": "Slovak",
+      "matched_regions": [
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "Slovak Republic",
+      "tier": "monitor",
+      "title": "Pri útoku na policajný konvoj v Pakistane zahynulo najmenej 10 ľudí",
+      "tone": null,
+      "url": "https://www.teraz.sk/zahranicie/pri-utoku-na-policajny-konvoj-v-pakist/1007009-clanok.html"
+    },
+    {
+      "actors": [
+        "Croatia"
+      ],
+      "domain": "tportal.hr",
+      "id": "evt_ba0fc0542fcf666b",
+      "language": "Croatian",
       "matched_regions": [
         "nato"
       ],
@@ -787,12 +804,62 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261110T060000Z",
-      "source_country": "Romania",
+      "seen_date": "20261112T070000Z",
+      "source_country": "Croatia",
       "tier": "monitor",
-      "title": "Cum ar putea testa Rusia Articolul 5 al NATO . Scenariul îngrijorător pentru Europa , după înfrângerea lui Trump la alegerile din SUA",
+      "title": "Demokrat osvojio senatorsko mjesto u Mississippiju nakon 44 godine",
       "tone": null,
-      "url": "https://www.digi24.ro/stiri/externe/cum-ar-putea-testa-rusia-articolul-5-al-nato-scenariul-ingrijorator-pentru-europa-dupa-infrangerea-lui-trump-la-alegerile-din-sua-4028421"
+      "url": "https://www.tportal.hr/vijesti/clanak/demokrat-osvojio-senatorsko-mjesto-u-mississippiju-nakon-44-godine-20261112"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "openthemagazine.com",
+      "id": "evt_13f73b5f8643f3f9",
+      "language": "English",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Scott Colom Becomes Mississippi First Black Senator in 150 Years , Breaking Historical Barriers",
+      "tone": null,
+      "url": "https://openthemagazine.com/world/scott-colom-makes-history-meet-mississippis-first-black-senator-in-150-years"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "caribbeanherald.com",
+      "id": "evt_0890f0664436a7c0",
+      "language": "English",
+      "matched_regions": [
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261112T070000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Venezuela , Brazil agree to restore ties at highest level",
+      "tone": null,
+      "url": "http://www.caribbeanherald.com/news/279427669/venezuela-brazil-agree-to-restore-ties-at-highest-level"
     }
   ],
   "filters": {
@@ -806,13 +873,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-10T14:54:23Z",
+  "generated_at": "2026-11-12T15:14:04Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 3,
-    "medium": 5,
-    "monitor": 23
+    "high": 4,
+    "medium": 9,
+    "monitor": 20
   },
-  "total_events": 31
+  "total_events": 33
 }
