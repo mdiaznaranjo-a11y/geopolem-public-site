@@ -41,6 +41,33 @@ export const VIDEO_CATEGORIES = {
 //   editorialClose — optional editorial sign-off line shown in the player
 export const VIDEOS = [
   {
+    id: 'isla-de-aves-del-guano-al-gas',
+    src: './assets/videos/geopolem_isla_de_aves_guano_gas_16x9.mp4',
+    poster: './assets/videos/posters/geopolem_isla_de_aves_guano_gas_16x9.jpg',
+    title: 'Isla de Aves: del guano al gas · ¿Isla o roca?',
+    category: 'hemisferio',
+    language: 'ES',
+    subtitles: ['EN'],
+    duration: '03:21',
+    description: 'Un banco de arena de 375 metros que, en el siglo XIX, valía por el guano; el laudo de 1865 dio la isla a Venezuela. Hoy vale por el mar: 200 millas si se considera isla, solo 12 si se considera roca. Entre 2000 y 2002 se hallaron fragmentos de roca con hidrocarburos, publicados en 2024: son indicios, no reservas. No hay gasoducto, pero una cordillera submarina une la isla con el fondo marino venezolano.',
+    strategic: 'Evaluación GEOPÓLEM: no se negocia la isla, se negocia el mar. Aves pesa como título jurídico, como posible frontera de exploración y, lo menos probable, como plataforma logística.',
+    copyShort: '¿Isla o roca?',
+    sources: [
+      { label: 'Ver video completo en YouTube', url: 'https://www.youtube.com/watch?v=DvjuJDkefSc' },
+      { label: 'Scherer · ACFIMAN 2024', url: 'https://acfiman.org/wp-content/uploads/2024/03/isla_de_aves.pdf' },
+      { label: 'Laudo de 1865 · ONU', url: 'https://legal.un.org/riaa/cases/vol_XXVIII/115-124.pdf' },
+      { label: 'Convención del Mar · ONU', url: 'https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf' },
+      { label: 'Aldea Mundo · 2000', url: 'https://www.redalyc.org/pdf/543/54300909.pdf' },
+    ],
+    editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
+    tags: ['Venezuela', 'Isla de Aves', 'Caribe', 'Gas', 'Energía', 'Zona económica exclusiva', 'Tripolaridad imperfecta', 'GEOPÓLEM'],
+    source: 'GEOPOLEM--Isla-de-Aves--Del-guano-al-gas--Video-largo-16x9.mp4',
+    youtubeUrl: 'https://www.youtube.com/watch?v=DvjuJDkefSc',
+    webUrl: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala',
+    featured: true,
+    orientation: 'horizontal',
+  },
+  {
     id: 'venezuela-200-mw-no-son-luz',
     src: './assets/videos/geopolem_venezuela_200_mw_no_son_luz_16x9.mp4',
     poster: './assets/videos/posters/geopolem_venezuela_200_mw_no_son_luz_16x9.jpg',
