@@ -2,97 +2,121 @@
   "events": [
     {
       "actors": [
-        "United States"
+        "Israel"
       ],
-      "domain": "aljazeera.com",
-      "id": "evt_7c8a9e5e05c566d2",
+      "domain": "jpost.com",
+      "id": "evt_a906ded87ba72c08",
       "language": "English",
       "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
+        "iran",
+        "iranian"
       ],
       "matched_themes": [
-        "war",
-        "casualties"
+        "drone",
+        "strike"
       ],
-      "region": "Europa del Este",
-      "score": 9.5,
+      "region": "MENA",
+      "score": 7.0,
       "score_breakdown": {
-        "region": 4.0,
-        "themes": 5.5,
+        "region": 3.5,
+        "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
       "tier": "high",
-      "title": "Ukraine claims record 3 , 000 Russian casualties in one day as war drags on",
+      "title": "US intercepts two Iranian drones as IRGC claims strike on radar in Bahrain",
       "tone": null,
-      "url": "https://www.aljazeera.com/news/2026/11/13/russias-demands-come-from-different-reality-as-war-efforts-stagnates"
+      "url": "https://www.jpost.com/middle-east/iran-news/article-914895"
     },
     {
       "actors": [
         "Israel"
       ],
-      "domain": "english.wafa.ps",
-      "id": "evt_ad7e2b37744b294d",
+      "domain": "israelnationalnews.com",
+      "id": "evt_adc53a7179df5818",
       "language": "English",
       "matched_regions": [
-        "israel",
-        "gaza"
-      ],
-      "matched_themes": [
-        "war",
-        "attack"
-      ],
-      "region": "MENA",
-      "score": 8.5,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 4.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Israel",
-      "tier": "high",
-      "title": "UN warns Israeli attacks have pushed Gaza health system to brink of collapse",
-      "tone": null,
-      "url": "https://english.wafa.ps/Pages/Details/176900"
-    },
-    {
-      "actors": [
-        "India"
-      ],
-      "domain": "timesofindia.indiatimes.com",
-      "id": "evt_b493b7bd4a60e343",
-      "language": "English",
-      "matched_regions": [
-        "india",
-        "china"
+        "iran",
+        "hezbollah"
       ],
       "matched_themes": [
         "war"
       ],
-      "region": "Asia-Pacífico",
-      "score": 6.0,
+      "region": "MENA",
+      "score": 6.5,
       "score_breakdown": {
-        "region": 3.0,
+        "region": 3.5,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "India",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
       "tier": "high",
-      "title": "Huang China affair may fix Howard Lutnick , the man who wanted to fix India",
+      "title": "Military Intelligence : Hezbollah highly likely to join if war with Iran resumes",
       "tone": null,
-      "url": "https://timesofindia.indiatimes.com/business/international-business/huangs-china-affair-may-fix-howard-lutnick-the-man-who-wanted-to-fix-india/articleshow/135810703.cms"
+      "url": "https://www.israelnationalnews.com/news/436212"
     },
     {
       "actors": [
-        "India"
+        "Oman"
       ],
-      "domain": "hindustantimes.com",
-      "id": "evt_4e9be672dc7281d6",
+      "domain": "omanobserver.om",
+      "id": "evt_29d59ff712f5a9e8",
+      "language": "English",
+      "matched_regions": [
+        "saudi"
+      ],
+      "matched_themes": [
+        "war",
+        "missile"
+      ],
+      "region": "MENA",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 5.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Oman",
+      "tier": "high",
+      "title": "Saudi intercepts two ballistic missiles fired towards Riyadh",
+      "tone": null,
+      "url": "https://www.omanobserver.om/article/1199693/world/region/saudi-intercepts-two-ballistic-missiles-fired-towards-riyadh"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "fox32chicago.com",
+      "id": "evt_f0ac66604c65d35c",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "china"
+      ],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Eurasia",
+      "score": 6.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Trump to start new nuclear talks with Russia , China next week",
+      "tone": null,
+      "url": "https://www.fox32chicago.com/news/trump-start-new-nuclear-talks-russia-china-next-week"
+    },
+    {
+      "actors": [],
+      "domain": "rnz.co.nz",
+      "id": "evt_f38f5e049c73403e",
       "language": "English",
       "matched_regions": [
         "iran"
@@ -108,329 +132,286 @@
         "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "India",
+      "seen_date": "20261115T074500Z",
+      "source_country": "",
       "tier": "medium",
-      "title": "US military denies Iran claim of attack on radar in Bahrain , says it shot down two drones",
+      "title": "Sirens sound in Bahrain as Iran Guards claim drone attack",
       "tone": null,
-      "url": "https://www.hindustantimes.com/world-news/us-military-denies-iran-s-claim-of-attack-on-radar-in-bahrain-says-it-shot-down-two-drones-101794581485752.html"
+      "url": "https://www.rnz.co.nz/news/world/2609842/sirens-sound-in-bahrain-as-iran-s-guards-claim-drone-attack"
     },
     {
       "actors": [
-        "United States"
+        "Israel"
       ],
-      "domain": "fox17.com",
-      "id": "evt_19c4700f8f5a7422",
+      "domain": "ynetnews.com",
+      "id": "evt_9eb0da9e5da333b0",
       "language": "English",
       "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "US lieutenant colonel identified after united kingdom arrest over alleged Russian spying",
-      "tone": null,
-      "url": "https://fox17.com/news/nation-world/us-lieutenant-colonel-brandon-tyner-identified-after-uk-arrest-over-alleged-russian-spying-gloucester-national-security-act-foreign-intelligence-protected-information-fbi-counterterrorism"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "foxreno.com",
-      "id": "evt_2a0755fd057bd76b",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "US lieutenant colonel identified after united kingdom arrest over alleged Russian spying",
-      "tone": null,
-      "url": "https://foxreno.com/news/nation-world/us-lieutenant-colonel-brandon-tyner-identified-after-uk-arrest-over-alleged-russian-spying-gloucester-national-security-act-foreign-intelligence-protected-information-fbi-counterterrorism"
-    },
-    {
-      "actors": [
-        "Denmark"
-      ],
-      "domain": "jyllands-posten.dk",
-      "id": "evt_627911e61bd0ce7d",
-      "language": "Danish",
-      "matched_regions": [
-        "kyiv"
+        "iran"
       ],
       "matched_themes": [
-        "drone"
+        "drone",
+        "attack"
       ],
-      "region": "Europa del Este",
+      "region": "MENA",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Iran claims drone attack on US base in Bahrain as Gulf tensions rise",
+      "tone": null,
+      "url": "https://www.ynetnews.com/article/s1wbfalrzx"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "israelnationalnews.com",
+      "id": "evt_b8a1963a03378100",
+      "language": "English",
+      "matched_regions": [
+        "lebanon",
+        "hezbollah"
+      ],
+      "matched_themes": [
+        "fighting"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Inside Lebanon : IDF intelligence officer reveals challenges of fighting Hezbollah",
+      "tone": null,
+      "url": "https://www.israelnationalnews.com/news/436214"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "ynetnews.com",
+      "id": "evt_564e6d4c8279e6f5",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "missile"
+      ],
+      "region": "MENA",
+      "score": 4.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Iran rebuilding missile arsenal , with up to 2 , 500 missiles remaining , report says",
+      "tone": null,
+      "url": "https://www.ynetnews.com/article/hyz7en8czg"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "ynetnews.com",
+      "id": "evt_b1cbae279512e338",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "No money , just revenge : Israeli arrested after allegedly offering to spy for Iran for",
+      "tone": null,
+      "url": "https://www.ynetnews.com/article/s1hb9rlafx"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "israelnationalnews.com",
+      "id": "evt_429ab957f666e36f",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Israeli arrested for allegedly spying for Iran for free",
+      "tone": null,
+      "url": "https://www.israelnationalnews.com/news/436215"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_6dc786a6cba9c2c5",
+      "language": "English",
+      "matched_regions": [
+        "syria"
+      ],
+      "matched_themes": [
+        "killed"
+      ],
+      "region": "MENA",
       "score": 3.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Denmark",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
       "tier": "medium",
-      "title": "Russiske droneangreb rammer hospital nær dansk ambassade i Kyiv",
+      "title": "Syria continues diplomatic outreach as two killed in countryside explosion",
       "tone": null,
-      "url": "https://jyllands-posten.dk/international/ECE19833676/russiske-droneangreb-rammer-hospital-naer-dansk-ambassade-i-kyiv/"
+      "url": "https://www.jpost.com/middle-east/article-914909"
     },
     {
       "actors": [
-        "India"
+        "Oman"
       ],
-      "domain": "divyamarathi.bhaskar.com",
-      "id": "evt_5f20b250f01e05c8",
-      "language": "Marathi",
-      "matched_regions": [],
+      "domain": "omanobserver.om",
+      "id": "evt_d04d25085fc4458b",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
       "matched_themes": [
-        "militant",
         "attack"
       ],
-      "region": "Global",
+      "region": "MENA",
       "score": 3.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.5,
+        "region": 2.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "India",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Oman",
       "tier": "medium",
-      "title": "Manipur Militant Attack | Firing On Vehicles In Ukhrul District",
+      "title": "Blasts , sirens in Bahrain as Iran attacks on US base",
       "tone": null,
-      "url": "https://divyamarathi.bhaskar.com/national/news/manipur-militant-attack-firing-on-vehicles-in-ukhrul-district-139677363.html"
+      "url": "https://www.omanobserver.om/article/1199692/world/region/blasts-sirens-in-bahrain-as-iran-attacks-on-us-base"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "13wham.com",
-      "id": "evt_250b1cc1cbd57cf8",
+      "domain": "article.wn.com",
+      "id": "evt_4b4009c8cdb2ef39",
       "language": "English",
       "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "US lieutenant colonel identified after united kingdom arrest over alleged Russian spying",
-      "tone": null,
-      "url": "https://13wham.com/news/nation-world/us-lieutenant-colonel-brandon-tyner-identified-after-uk-arrest-over-alleged-russian-spying-gloucester-national-security-act-foreign-intelligence-protected-information-fbi-counterterrorism"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kval.com",
-      "id": "evt_9f721687bbe9fb33",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "US lieutenant colonel identified after united kingdom arrest over alleged Russian spying",
-      "tone": null,
-      "url": "https://kval.com/news/nation-world/us-lieutenant-colonel-brandon-tyner-identified-after-uk-arrest-over-alleged-russian-spying-gloucester-national-security-act-foreign-intelligence-protected-information-fbi-counterterrorism"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "cbs4local.com",
-      "id": "evt_e301ce600bd0171f",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [],
-      "region": "Eurasia",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "US lieutenant colonel identified after united kingdom arrest over alleged Russian spying",
-      "tone": null,
-      "url": "https://cbs4local.com/news/nation-world/us-lieutenant-colonel-brandon-tyner-identified-after-uk-arrest-over-alleged-russian-spying-gloucester-national-security-act-foreign-intelligence-protected-information-fbi-counterterrorism"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "polygon.com",
-      "id": "evt_48a30b79f53d6abc",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Sony Officially Confirms New Platform for 2026 God of War Game",
-      "tone": null,
-      "url": "https://www.polygon.com/god-of-war-sons-of-sparta-new-update-ps4-release/"
-    },
-    {
-      "actors": [
-        "Poland"
-      ],
-      "domain": "se.pl",
-      "id": "evt_7dd38352968bc9c6",
-      "language": "Polish",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Poland",
-      "tier": "monitor",
-      "title": "Nowolipki 23 : Historia przedwojennego „ niebotyku  Warszawy - Warszawa , Super Express",
-      "tone": null,
-      "url": "https://www.se.pl/warszawa/przedwojenny-niebotyk-przy-nowolipkach-23-niezwykle-losy-perly-dawnego-muranowa-aa-dPE6-f9EF-NaTz.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "dailypostathenian.com",
-      "id": "evt_0f53baa225b76f46",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Area students awarded for , read winning essays in Athens Veterans Day event",
-      "tone": null,
-      "url": "http://www.dailypostathenian.com/news/article_e2729565-fa85-4300-b985-8dcee6b89ba7.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "newsroomamerica.com",
-      "id": "evt_2166b33d84d59bd8",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "sanction",
-        "sanctions"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Treasury Sanctions Two Guatemalan Drug Trafficking Organizations Backing Sinaloa Cartel and CJNG",
-      "tone": null,
-      "url": "https://newsroomamerica.com/a/YhreVqcG0LaGcs02LcxKHZRBE7/ofac_sanctions_guatemala_s_los_mendoza_and_los_huistas_dtos_for_supporting_mexico_s_sinaloa_cartel_and_cjng_targeting_trafficking_corridors_along_the_honduran_and_mexican_borders.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "de.euronews.com",
-      "id": "evt_9cc291fba84b10b0",
-      "language": "German",
-      "matched_regions": [
-        "iran",
-        "united states"
+        "israel",
+        "hamas"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 3.0,
+      "score": 3.5,
       "score_breakdown": {
-        "region": 3.0,
+        "region": 3.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
+      "seen_date": "20261115T074500Z",
       "source_country": "United States",
-      "tier": "monitor",
-      "title": "Wollen united states Iran - Krieg beenden ? Revolutionsgarden melden Angriff auf US - Radar in Bahrain",
+      "tier": "medium",
+      "title": "Israeli military says it struck senior member of Hamas military wing",
       "tone": null,
-      "url": "https://de.euronews.com/2026/11/13/wollen-usa-iran-krieg-beenden-revolutionsgarden-melden-angriff-auf-us-radar-in-bahrain"
+      "url": "https://article.wn.com/view/2026/11/15/Israeli_military_says_it_struck_senior_member_of_Hamas_milit_o/"
     },
     {
       "actors": [
-        "India"
+        "Malaysia"
       ],
-      "domain": "timesofindia.indiatimes.com",
-      "id": "evt_6571766b7fdd0bbe",
+      "domain": "freemalaysiatoday.com",
+      "id": "evt_246ed2d78c913127",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "hamas"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Malaysia",
+      "tier": "medium",
+      "title": "Israeli military says it struck senior member of Hamas military wing",
+      "tone": null,
+      "url": "https://www.freemalaysiatoday.com/category/world/2026/11/15/israeli-military-says-it-struck-senior-member-of-hamas-military-wing"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "hurriyetdailynews.com",
+      "id": "evt_05504eba612fae95",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [],
+      "region": "Eurasia",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Turkey",
+      "tier": "medium",
+      "title": "Russian economy growth slows to 1 percent in third quarter",
+      "tone": null,
+      "url": "https://www.hurriyetdailynews.com/russian-economy-growth-slows-to-1-percent-in-third-quarter-229399"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "areanews.com.au",
+      "id": "evt_1efbb877291384d1",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -443,19 +424,94 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "India",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Australia",
       "tier": "monitor",
-      "title": "BJP , Shiv Sena and NCP locked in tug - of - war for Satara DCC bank chief post | Kolhapur News",
+      "title": "Awkward moment awaits PM with potential Putin photo",
       "tone": null,
-      "url": "https://timesofindia.indiatimes.com/city/kolhapur/bjp-shiv-sena-and-ncp-locked-in-tug-of-war-for-satara-dcc-bank-chiefs-post/articleshow/135811926.cms"
+      "url": "https://www.areanews.com.au/story/9391656/awkward-moment-awaits-pm-with-potential-putin-photo/"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "muswellbrookchronicle.com.au",
+      "id": "evt_859d77f1e60e252c",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Awkward moment awaits PM with potential Putin photo",
+      "tone": null,
+      "url": "https://www.muswellbrookchronicle.com.au/story/9391656/awkward-moment-awaits-pm-with-potential-putin-photo/"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "ynetnews.com",
+      "id": "evt_80ddb714c17a1599",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "From a bomb shelter to the stage : finding light through music during the war",
+      "tone": null,
+      "url": "https://www.ynetnews.com/culture/article/r1jyjr8rge"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "texarkanagazette.com",
+      "id": "evt_3da61c9b2a8b30a7",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "East Texas Republicans ran their campaigns differently than the rest of the state by bucking culture war rhetoric",
+      "tone": null,
+      "url": "https://www.texarkanagazette.com/news/2026/nov/14/east-texas-republicans-ran-their-campaigns/"
     },
     {
       "actors": [
         "United Kingdom"
       ],
-      "domain": "nottinghampost.com",
-      "id": "evt_23ef61ad6ee1171b",
+      "domain": "newstatesman.com",
+      "id": "evt_36f4713494ac56c7",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -468,45 +524,170 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
+      "seen_date": "20261115T074500Z",
       "source_country": "United Kingdom",
       "tier": "monitor",
-      "title": "A travesty : Villagers go to war with local pub over proposed felling of oak tree",
+      "title": "Kim Ghattas :  War in the Middle East doesnt serve anyone interests",
       "tone": null,
-      "url": "https://www.nottinghampost.com/news/local-news/a-travesty-villagers-go-war-11241044"
+      "url": "https://www.newstatesman.com/the-weekend-interview/2026/11/kim-ghattas-war-in-the-middle-east-doesnt-serve-anyones-interests"
     },
     {
       "actors": [
-        "Romania"
+        "Australia"
       ],
-      "domain": "libertatea.ro",
-      "id": "evt_857c88847a2d7129",
-      "language": "Romanian",
-      "matched_regions": [
-        "china"
+      "domain": "southernhighlandnews.com.au",
+      "id": "evt_5213c6e3e67bc3d9",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
       ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
+      "region": "Global",
+      "score": 3.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Romania",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Australia",
       "tier": "monitor",
-      "title": "Friedrich Merz refuză să - i facă pe plac lui Putin și are un mesaj pentru Trump înainte de summitul din China : „ Vă rog , fără surprize",
+      "title": "Awkward moment awaits PM with potential Putin photo",
       "tone": null,
-      "url": "https://www.libertatea.ro/stiri/friedrich-merz-refuza-sa-i-faca-pe-plac-lui-putin-si-are-un-mesaj-pentru-trump-inainte-de-summitul-din-china-va-rog-fara-surprize-wcep8e9"
+      "url": "https://www.southernhighlandnews.com.au/story/9391656/awkward-moment-awaits-pm-with-potential-putin-photo/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "dailymail.com",
+      "id": "evt_ff197232e0f7419c",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Naked and Afraid star who claimed her boss looked at nude photos and videos of her from when she appeared on the show is awarded $175 , 000",
+      "tone": null,
+      "url": "https://www.dailymail.com/news/article-16293193/naked-afraid-star-boss-nude-photos-lawsuit-county-settlement.html"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "ynetnews.com",
+      "id": "evt_4800199f9cdf9f2d",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
+      "tier": "monitor",
+      "title": "A Zelensky in Putin family ? Leaked records expose an awkward family secret",
+      "tone": null,
+      "url": "https://www.ynetnews.com/article/rjphlclrfe"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "dailyadvance.com",
+      "id": "evt_aedf83c5457f5061",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Southeast Asian leaders open annual summit with major conflicts and their impact topping the agenda",
+      "tone": null,
+      "url": "http://www.dailyadvance.com/news/world/southeast-asian-leaders-open-annual-summit-with-major-conflicts-and-their-impact-topping-the-agenda/article_d251656e-c182-563d-bfe4-60c5c7353acd.html"
     },
     {
       "actors": [
         "France"
       ],
-      "domain": "lexpress.fr",
-      "id": "evt_c190ec49be592c64",
+      "domain": "lindependant.fr",
+      "id": "evt_9ff795472df4900a",
       "language": "French",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "France",
+      "tier": "monitor",
+      "title": "Guerre au Moyen - Orient : les Gardiens de la Révolution revendiquent une attaque de drones contre une base américaine au Bahreïn",
+      "tone": null,
+      "url": "https://www.lindependant.fr/2026/11/15/guerre-au-moyen-orient-les-gardiens-de-la-revolution-revendiquent-une-attaque-de-drones-contre-une-base-americaine-au-bahrein-13653531.php"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "infodefensa.com",
+      "id": "evt_138aff45cef3c62b",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "combat"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Spain",
+      "tier": "monitor",
+      "title": "Saab suministrará a Dinamarca nuevos sistemas de entrenamiento con fuego simulado para sus vehículos de combate de Infantería CV90",
+      "tone": null,
+      "url": "https://www.infodefensa.com/texto-diario/mostrar/6087716/saab-suministrara-dinamarca-nuevos-sistemas-entrenamiento-fuego-simulado-vehiculos-cv90"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "baomoi.com",
+      "id": "evt_76f49f75dc5faacc",
+      "language": "Vietnamese",
       "matched_regions": [
         "iran"
       ],
@@ -518,70 +699,145 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "France",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "Guerre en Iran : entre Donald Trump et J . D . Vance , le divorce est - il consommé ?",
+      "title": "Iran đánh giá ra sao việc Mỹ gạt ông JD Vance tham gia đàm phán ?",
       "tone": null,
-      "url": "https://www.lexpress.fr/monde/proche-moyen-orient/guerre-en-iran-entre-donald-trump-et-jd-vance-le-divorce-est-il-consomme-K2K3WRTGPVDPZPPNK74G44XKU4/"
+      "url": "https://baomoi.com/iran-danh-gia-ra-sao-viec-my-gat-ong-jd-vance-tham-gia-dam-phan-c56517262.epi"
     },
     {
       "actors": [
-        "Denmark"
+        "Poland"
       ],
-      "domain": "bt.dk",
-      "id": "evt_8a16b7f0ef801b99",
-      "language": "Danish",
+      "domain": "wiadomosci.wp.pl",
+      "id": "evt_2b90d1a310236b2d",
+      "language": "Polish",
       "matched_regions": [
-        "ukraine"
+        "iran"
       ],
       "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "MENA",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Denmark",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Poland",
       "tier": "monitor",
-      "title": "E5 - magterne skal repræsenterer Europa i Ukraine - forhandlinger",
+      "title": "Trump na celowniku Iranu . Mossad ostrzegł CIA",
       "tone": null,
-      "url": "https://www.bt.dk/udland/e5-magterne-skal-repraesenterer-europa-i-ukraine-forhandlinger"
+      "url": "https://wiadomosci.wp.pl/trump-na-celowniku-iranu-mossad-ostrzegl-cia-7351199309715488a"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "ziare.com",
+      "id": "evt_627405a5a87ab35c",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Două nave comerciale au luat foc după ce au fost lovite de drone lângă Sulina . Ce anunță MApN despre victime",
+      "tone": null,
+      "url": "https://ziare.com/nave-comerciale/incendiu-drone-sulina-2047776"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "aljazeera.com",
-      "id": "evt_e06ab8319471733d",
-      "language": "English",
-      "matched_regions": [
-        "ukraine"
+      "domain": "almomento.net",
+      "id": "evt_a8ebe8f3642a57f6",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
       ],
-      "matched_themes": [],
-      "region": "Europa del Este",
+      "region": "Global",
       "score": 2.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
+      "seen_date": "20261115T074500Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "Europe seeks seat at Ukraine peace talks but lacks unified voice",
+      "title": "Delito de terrorismo no sanciona la planificación sino la ejecución",
       "tone": null,
-      "url": "https://www.aljazeera.com/news/2026/11/13/europe-seeks-seat-at-ukraine-peace-talks-but-lacks-unified-voice"
+      "url": "https://almomento.net/delito-de-terrorismo-no-sanciona-la-planificacion-sino-la-ejecucion/"
     },
     {
       "actors": [
-        "United States"
+        "Serbia"
       ],
-      "domain": "gcaptain.com",
-      "id": "evt_4efb637eee9666de",
-      "language": "English",
+      "domain": "vreme.com",
+      "id": "evt_7048601f1bdbeafc",
+      "language": "Serbian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Serbia",
+      "tier": "monitor",
+      "title": "Dociranje iz kule od slonovače",
+      "tone": null,
+      "url": "https://vreme.com/vreme/dociranje-iz-kule-od-slonovace/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "merkur.de",
+      "id": "evt_8933794988b5fad1",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Ukraine - Krieg aktuell : Selenskyj fordert mehr F - 16 - Jets und Patriot - Raketen",
+      "tone": null,
+      "url": "https://www.merkur.de/politik/putin-ukraine-krieg-aktuell-news-ticker-verhandlungen-abu-dhabi-ende-russland-selenskyj-zr-94584176.html"
+    },
+    {
+      "actors": [
+        "Switzerland"
+      ],
+      "domain": "ticinonews.ch",
+      "id": "evt_7f2034fa0d7ec08e",
+      "language": "Italian",
       "matched_regions": [
         "russia"
       ],
@@ -593,47 +849,22 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Switzerland",
       "tier": "monitor",
-      "title": "Russia Oil Revenues Hit Five - Month High on Crude Rally , IEA Says",
+      "title": "« I negoziatori dellUE non hanno ancora stabilito contatti con la Russia »",
       "tone": null,
-      "url": "https://gcaptain.com/russia-oil-revenues-hit-five-month-high-on-crude-rally-iea-says/"
+      "url": "https://www.ticinonews.ch/estero/i-negoziatori-dellue-non-hanno-ancora-stabilito-contatti-con-la-russia-446680"
     },
     {
       "actors": [
-        "United States"
+        "Israel"
       ],
-      "domain": "pressdemocrat.com",
-      "id": "evt_9f16fba13a2a48df",
+      "domain": "ynetnews.com",
+      "id": "evt_b5a5d42bc7ff3c7f",
       "language": "English",
       "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Europe pushes for a seat at Ukraine peace talks but lacks a unified voice",
-      "tone": null,
-      "url": "https://www.pressdemocrat.com/2026/11/13/russia-ukraine-war-europe-envoy/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "breitbart.com",
-      "id": "evt_17c405355a142d4e",
-      "language": "English",
-      "matched_regions": [
-        "iran"
+        "israel"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -643,44 +874,19 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "United States",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Reports : U . N . Atomic Agency  Increasingly Concerned  Iran Wont Let It Inspect Uranium Facility Trump Bombed",
+      "title": "Gadi Eisenkot must form Israel next government at any cost",
       "tone": null,
-      "url": "https://www.breitbart.com/middle-east/2026/11/13/reports-u-n-atomic-agency-increasingly-concerned-iran-wont-let-it-inspect-uranium-facility-trump-bombed/"
-    },
-    {
-      "actors": [
-        "Portugal"
-      ],
-      "domain": "dnoticias.pt",
-      "id": "evt_82b6d9c60961bff5",
-      "language": "Portuguese",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Portugal",
-      "tier": "monitor",
-      "title": "EUA diz que abateu dois drones dirigidos a radar no Bahrein , cuja destruio Teerão reivindica",
-      "tone": null,
-      "url": "https://www.dnoticias.pt/2026/11/13/512833-eua-diz-que-abateu-dois-drones-dirigidos-a-radar-no-bahrein-cuja-destruicao-teerao-reivindica/"
+      "url": "https://www.ynetnews.com/opinions-analysis/article/rkza1purfe"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "ncregister.com",
-      "id": "evt_392ecc61fe8dc0bc",
+      "domain": "milwaukeesun.com",
+      "id": "evt_3bc6d7c5b8ab0f10",
       "language": "English",
       "matched_regions": [
         "lebanon"
@@ -693,72 +899,22 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
+      "seen_date": "20261115T074500Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "Lebanon President Reassures Christians As They Remain Under Pressure",
+      "title": "Four generations keep Lebanon falafel heritage alive",
       "tone": null,
-      "url": "https://www.ncregister.com/cna/lebanon-s-president-reassures-christians-as-they-remain-under-pressure"
+      "url": "http://www.milwaukeesun.com/news/279429101/four-generations-keep-lebanon-s-falafel-heritage-alive"
     },
     {
       "actors": [
-        "Brazil"
+        "Israel"
       ],
-      "domain": "veja.abril.com.br",
-      "id": "evt_3fd6664849645eb9",
-      "language": "Portuguese",
+      "domain": "ynetnews.com",
+      "id": "evt_089f3a56887fbc5a",
+      "language": "English",
       "matched_regions": [
-        "venezuela"
-      ],
-      "matched_themes": [],
-      "region": "América Latina",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Brazil",
-      "tier": "monitor",
-      "title": "Venezuela retoma diálogo político sem a presença de María Corina Machado",
-      "tone": null,
-      "url": "https://veja.abril.com.br/mundo/venezuela-retoma-dialogo-politico-sem-a-presenca-de-maria-corina-machado/"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "anconatoday.it",
-      "id": "evt_8186c6a989c7f396",
-      "language": "Italian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Il professor Andrea Giovagnoni è stato nominato socio emerito della Società italiana di Radiologia medica e interventistica",
-      "tone": null,
-      "url": "https://www.anconatoday.it/attualita/univpm-andrea-giovagnoni-ancona-premio-riconoscimento.html"
-    },
-    {
-      "actors": [
-        "Lebanon"
-      ],
-      "domain": "cedarnews.net",
-      "id": "evt_c2817d8481035b26",
-      "language": "Lithuanian",
-      "matched_regions": [
-        "hormuz"
+        "hamas"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -768,73 +924,23 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Lebanon",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "WSJ : blogiau nei Hormuze – Juodoji jūra tapo pavojingiausiu laivybos keliu pasaulyje",
+      "title": "From a 1990 double murder to Hamas leader : Khalil al - Hayya hidden past revealed",
       "tone": null,
-      "url": "https://cedarnews.net/lietuvos-naujienos/1143220/wsj-blogiau-nei-hormuze-juodoji-jura-tapo/"
+      "url": "https://www.ynetnews.com/article/ryzcfciafl"
     },
     {
       "actors": [
-        "Indonesia"
+        "Israel"
       ],
-      "domain": "cnnindonesia.com",
-      "id": "evt_dfab723de73f076b",
-      "language": "Indonesian",
-      "matched_regions": [
-        "palestin"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Indonesia",
-      "tier": "monitor",
-      "title": "Shawn Mendes Ajak Publik Bantu Palestina dan Berani Bersuara",
-      "tone": null,
-      "url": "https://www.cnnindonesia.com/hiburan/20261113203549-234-1427046/shawn-mendes-ajak-publik-bantu-palestina-dan-berani-bersuara"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "ilmattino.it",
-      "id": "evt_32fd3f7f9ee8b662",
-      "language": "Italian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "« Per far finire la guerra in Ucraina Putin vuole la Finlandia fuori dalla Nato e Moldavia divisa in tre »",
-      "tone": null,
-      "url": "https://www.ilmattino.it/primopiano/esteri/russia_fine_guerra_ucraina_finlandia_moldavia_bild-9888128.html"
-    },
-    {
-      "actors": [
-        "Nigeria"
-      ],
-      "domain": "vanguardngr.com",
-      "id": "evt_0badf294fd87b6cb",
+      "domain": "ynetnews.com",
+      "id": "evt_7281ba02366afd92",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "deploy"
+        "attack"
       ],
       "region": "Global",
       "score": 1.5,
@@ -843,22 +949,22 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "Nigeria",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Boko Haram : Zulum announces ₦50k for each soldier deployed to Borno communities",
+      "title": "My wife died : birthday shopping trip ends in deadly grenade attack",
       "tone": null,
-      "url": "https://www.vanguardngr.com/2026/11/boko-haram-zulum-announces-%E2%82%A650k-for-each-soldier-deployed-to-borno-communities/"
+      "url": "https://www.ynetnews.com/article/ry43ua80ml"
     },
     {
       "actors": [
-        "India"
+        "Israel"
       ],
-      "domain": "siasat.com",
-      "id": "evt_cfa88bfac2f3c079",
+      "domain": "israelnationalnews.com",
+      "id": "evt_0859182b58d0a18c",
       "language": "English",
       "matched_regions": [
-        "palestin"
+        "hamas"
       ],
       "matched_themes": [],
       "region": "MENA",
@@ -868,12 +974,87 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261113T180000Z",
-      "source_country": "India",
+      "seen_date": "20261115T074500Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "X suspends account of Palestinian American seeking US Senate seat",
+      "title": "IDF confirms elimination of Hamas Rafah Brigade Commander 2 months after he took command",
       "tone": null,
-      "url": "https://www.siasat.com/x-suspends-account-of-palestinian-american-seeking-us-senate-seat-3576778/"
+      "url": "https://www.israelnationalnews.com/news/436211"
+    },
+    {
+      "actors": [
+        "Serbia"
+      ],
+      "domain": "tanjug.rs",
+      "id": "evt_3b9e335d812756d1",
+      "language": "Bosnian",
+      "matched_regions": [
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Serbia",
+      "tier": "monitor",
+      "title": "Deset osoba poginulo u bezbednosnim operacijama na jugozapadu Pakistana",
+      "tone": null,
+      "url": "https://www.tanjug.rs/bliski-istok/vesti/297889/deset-osoba-poginulo-u-bezbednosnim-operacijama-na-jugozapadu-pakistana/vest"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "wiadomosci.wp.pl",
+      "id": "evt_cd04a3214ee7242f",
+      "language": "Polish",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Rosja chce cofnąć NATO do granic z 1997 roku . ISW ostrzega przed planami Kremla",
+      "tone": null,
+      "url": "https://wiadomosci.wp.pl/rosja-chce-cofnac-nato-do-granic-z-1997-roku-isw-ostrzega-przed-planami-kremla-7351184768673792a"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "merkur.de",
+      "id": "evt_1d7121e9a734f5e2",
+      "language": "German",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261115T074500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "US - Denkfabrik simuliert Putins Tod und Einmarsch in NATO - Staat bis 2030",
+      "tone": null,
+      "url": "https://www.merkur.de/politik/us-denkfabrik-simuliert-putins-tod-und-einmarsch-in-nato-staat-bis-2030-zr-94590482.html"
     }
   ],
   "filters": {
@@ -887,13 +1068,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-14T13:30:34Z",
+  "generated_at": "2026-11-15T13:54:43Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 3,
-    "medium": 8,
-    "monitor": 23
+    "high": 4,
+    "medium": 11,
+    "monitor": 26
   },
-  "total_events": 34
+  "total_events": 41
 }
