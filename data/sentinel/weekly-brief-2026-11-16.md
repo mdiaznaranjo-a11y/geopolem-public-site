@@ -1,7 +1,7 @@
 # GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente
 
 **Edición del 16 de noviembre de 2026**  
-<sub>Datos del 9 al 15 de noviembre de 2026 · Europe/Luxembourg</sub>  
+Datos del 9 al 15 de noviembre de 2026 · Europe/Luxembourg  
 **Ventana UTC:** 2026-11-08T23:00:00Z / 2026-11-15T22:59:59Z
 
 ## Resumen ejecutivo
