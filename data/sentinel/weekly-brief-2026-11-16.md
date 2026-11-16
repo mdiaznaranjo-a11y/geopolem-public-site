@@ -1,7 +1,7 @@
 # GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente
 
-**Fecha de publicación:** 16 de noviembre de 2026  
-**Ventana analizada:** 9 - 15 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG  
+**Edición del 16 de noviembre de 2026**  
+<sub>Datos del 9 al 15 de noviembre de 2026 · Europe/Luxembourg</sub>  
 **Ventana UTC:** 2026-11-08T23:00:00Z / 2026-11-15T22:59:59Z
 
 ## Resumen ejecutivo
@@ -90,7 +90,9 @@ Las cifras de emisiones de 2026 son proyecciones del Global Carbon Project con u
 
 **Escena 3 · Tripolaridad (30–45 s):** Implicación estratégica: EE. UU. reduce emisiones un 1,3% y China un 0,9%; Rusia gana con el precio. La guerra entra en la diplomacia climática por dos puertas: la estadística y la reclamación.
 
-**Cierre (45–50 s):** ¿Puede una guerra entrar en la contabilidad del clima? GEOPÓLEM. Bienvenidos al tablero.
+**Cierre (45–50 s):** ¿Puede una guerra entrar en la contabilidad del clima? Analista jefe · María del Carmen Díaz Naranjo
+
+GEOPÓLEM. Bienvenidos al tablero.
 
 **Visuales y mapas sugeridos:**
 
@@ -135,5 +137,7 @@ Estado: guion listo para aprobación. No se ha publicado en YouTube ni en redes.
 - [dmh_myanmar_rain_records](https://www.moezala.gov.mm/en/bulletin/135056)
 - [rsoe_shan_evacuation](https://rsoe-edis.org/eventList/details/1158279/0)
 - [intelligenceonline_china_myanmar](https://www.intelligenceonline.com/asia-pacific/2026/11/09/beijing-helps-myanmar-rebels-after-junta-attack-on-chinese-vehicle,110915947-art)
+
+Analista jefe · María del Carmen Díaz Naranjo
 
 GEOPÓLEM. Bienvenidos al tablero.
