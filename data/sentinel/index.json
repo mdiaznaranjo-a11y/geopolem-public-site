@@ -1,10 +1,17 @@
 {
   "project": "GEOPÓLEM",
   "collection": "SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "updated_at": "2026-11-09T07:40:00+01:00",
+  "updated_at": "2026-11-16T07:50:00+01:00",
   "latest": "./weekly-brief.json",
   "feed": "./conflict-events.json",
   "items": [
+    {
+      "date": "2026-11-16",
+      "window": "9 - 15 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",
+      "status": "dos acoples confirmados (guerra-emisiones-COP31 y Gaza-invierno) y una señal hidrometeorológica en zona de conflicto en observación; sin causalidad forzada",
+      "json": "./sentinel_weekly_brief_2026-11-09_2026-11-15.json",
+      "markdown": "./weekly-brief-2026-11-16.md"
+    },
     {
       "date": "2026-11-09",
       "window": "2 - 8 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",

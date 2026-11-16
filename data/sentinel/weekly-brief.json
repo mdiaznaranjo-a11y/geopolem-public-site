@@ -1,675 +1,617 @@
 {
-  "id": "sentinel_weekly_brief_2026-11-02_2026-11-08",
+  "id": "sentinel_weekly_brief_2026-11-09_2026-11-15",
   "eyebrow": "SENTINEL",
   "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
   "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "main_status": "un acople confirmado, un riesgo ambiental derivado del conflicto en observación y una señal climática en observación; sin causalidad forzada",
-  "generated_at": "2026-11-09T07:40:00+01:00",
-  "published_at": "2026-11-09T07:40:00+01:00",
-  "window": "2 - 8 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",
-  "window_label": "2 - 8 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",
+  "main_status": "dos acoples confirmados (guerra-emisiones-COP31 y Gaza-invierno) y una señal hidrometeorológica en zona de conflicto en observación; sin causalidad forzada",
+  "generated_at": "2026-11-16T07:50:00+01:00",
+  "published_at": "2026-11-16T07:50:00+01:00",
+  "window": "9 - 15 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",
+  "window_label": "9 - 15 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",
   "week_window": {
     "local": {
-      "start": "2026-11-02T00:00:00+01:00",
-      "end": "2026-11-08T23:59:59+01:00",
+      "start": "2026-11-09T00:00:00+01:00",
+      "end": "2026-11-15T23:59:59+01:00",
       "timezone": "Europe/Luxembourg"
     },
     "utc": {
-      "start": "2026-11-01T23:00:00Z",
-      "end": "2026-11-08T22:59:59Z"
+      "start": "2026-11-08T23:00:00Z",
+      "end": "2026-11-15T22:59:59Z"
     }
   },
   "summary": [
-    "Gaza: la primera tormenta del invierno (6–7 nov, unos 60 mm en 12 h) activó alertas en 261 sitios de desplazados; OCHA calculaba que hacían falta 121.000 tiendas y había unas 2.800.",
-    "Ormuz: la CGRI declaró incendios de tanqueros el 3, 5 y 8 de noviembre y UKMTO confirmó uno frente a Khasab; el riesgo de contaminación marina queda en observación porque no hay medición independiente en la ventana.",
-    "India: el ciclón Murasu, segundo en una semana, tocó tierra cerca de Ongole el 3 de noviembre con ocho muertos y unos 203 millones de dólares en daños; queda en observación.",
-    "Se revisaron 35 eventos del feed SENTINEL (recuperado tras la caída de finales de octubre) y 19 titulares de prioridad alta o media en 5 instantáneas de la semana, 70 eventos NASA EONET y 84 sismos M4,5+ de USGS (5 de M5,5+).",
-    "Taiz, In-fa, los sismos de Japón y Colombia, las inundaciones en Francia y Bulgaria y Ucrania quedan descartados o en observación por falta de dato ambiental nuevo o de impacto suficiente."
+    "El Global Carbon Budget (10 nov) proyecta una caída del 0,4% en las emisiones fósiles de 2026 y del 1,9% en las del petróleo, atribuida sobre todo al choque energético de la guerra con Irán y al cierre de Ormuz.",
+    "En la COP31 (Antalya, 11 nov), Irán pidió mecanismos de compensación por el daño ambiental de los ataques de EE. UU. e Israel; sus cifras de daño no están verificadas.",
+    "Gaza: OCHA cifra en más de 6.000 los refugios destruidos por la primera tormenta, mientras más de 150.000 tiendas esperan fuera del territorio el permiso para entrar.",
+    "Myanmar: lluvia récord de noviembre en Taunggyi y unas 4.950 personas evacuadas en el sur de Shan; queda en observación. Se revisaron 41 eventos del feed SENTINEL, 70 titulares de 5 instantáneas semanales, 92 eventos NASA EONET y 121 sismos M4,5+ de USGS (8 de M5,5+).",
+    "Bahréin y Ormuz, Yemen, la frontera Sudán–Etiopía, Ucrania, los ciclones en mar abierto y los sismos con alerta verde quedan descartados o en observación."
   ],
-  "method_note": "Se cruzaron el feed SENTINEL/GDELT de GEOPÓLEM (instantánea actual y 5 instantáneas de la semana), NASA EONET, USGS y GDACS con fuentes institucionales y periodísticas verificables (OCHA, ReliefWeb, UN UNifeed, IMD, UKMTO vía AFP, Lloyd's List, Reuters, AP). La selección prioriza impacto geopolítico, refugio, rutas marítimas, energía y capacidad estatal. Donde la evidencia no sostiene causalidad o daño medido, se etiqueta como observación.",
-  "caveat": "El feed SENTINEL/GDELT vuelve a publicar eventos (35 en la instantánea del 8 de noviembre, 13:22 UTC), tras la caída de finales de octubre. Las cifras de tiendas inundadas en Gaza proceden de la oficina de medios del gobierno de Hamás; las de la ONU se citan aparte. Las afirmaciones de la CGRI sobre tanqueros no están verificadas de forma independiente y no hay medición de nuevos derrames en la ventana. Correlación no implica causalidad.",
+  "method_note": "Se cruzaron el feed SENTINEL/GDELT de GEOPÓLEM (instantánea actual y 5 instantáneas de la semana), NASA EONET, USGS y GDACS con fuentes institucionales y periodísticas verificables (Global Carbon Project, OCHA/UN News, GDACS, DMH Myanmar, Reuters, Carbon Brief, DW, Al Jazeera). La selección prioriza impacto geopolítico, refugio, rutas marítimas, energía y capacidad estatal. Donde la evidencia no sostiene causalidad o daño medido, se etiqueta como observación.",
+  "caveat": "Las cifras de emisiones de 2026 son proyecciones del Global Carbon Project con un intervalo de -1,5% a +0,6%. Las estimaciones de CO2 de los ataques en Irán proceden del gobierno iraní y no están verificadas. El derrumbe de Al Berka (Gaza) ocurrió el 8 de noviembre, en la ventana anterior; se incluye por el balance de OCHA publicado el 9. Se descartó un artículo fechado el 15 de noviembre sobre Namhsan (Myanmar) por ser de 2023. Correlación no implica causalidad.",
   "source_urls": {
     "sentinel_feed": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
-    "nasa_eonet_window": "https://eonet.gsfc.nasa.gov/api/v3/events?start=2026-11-01&end=2026-11-09&status=all",
+    "nasa_eonet_window": "https://eonet.gsfc.nasa.gov/api/v3/events?start=2026-11-08&end=2026-11-16&status=all",
     "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
-    "usgs_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-01T23:00:00&endtime=2026-11-08T22:59:59&minmagnitude=4.5&orderby=magnitude",
-    "reliefweb_gaza_site_mgmt": "https://reliefweb.int/report/occupied-palestinian-territory/heavy-rain-and-flooding-incidents-across-gaza-06-07-november-2026-update-1",
-    "unifeed_gaza_floods": "https://media.un.org/unifeed/en/asset/d368/d3682757",
-    "aa_ocha_gaza": "https://www.aa.com.tr/en/world/heavy-rains-flood-gaza-shelters-putting-displaced-families-at-immediate-risk-ocha/4115188",
-    "reuters_gaza_floods": "https://www.reuters.com/business/environment/heavy-rain-floods-tents-housing-gaza-displaced-people-aid-shortages-hamper-2026-11-07/",
-    "aljazeera_gaza_floods": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza",
-    "aa_gaza_rainfall": "https://u.aa.com.tr/en/middle-east/flooded-out-of-their-tents-gaza-families-have-nowhere-left-to-go/4115647",
-    "jpost_cogat": "http://store.jpost.com/middle-east/article-914223",
-    "gulfnews_hormuz_tankers": "https://gulfnews.com/world/mena/iran-says-3-tankers-caught-fire-in-hormuz-1.500740005",
-    "aa_hormuz_mines": "https://www.aa.com.tr/en/us-israel-iran-war/iran-says-3-oil-tankers-hit-naval-mines-catch-fire-in-strait-of-hormuz/4110024",
-    "globalsecurity_day251": "https://www.globalsecurity.org/military/ops/iran-war-20261105.htm",
-    "lloydslist_gem2": "https://www.lloydslist.com/LL1158887/VLCC-stops-leaking-oil-off-UAE",
-    "uani_shipping_nov3": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-november-3-2026",
-    "cnn_gulf_pollution": "https://www.egyptindependent.com/the-iran-wars-toxic-impact-on-one-of-the-planets-most-unique-seas/",
-    "imd_murasu_adv15": "https://mausam.imd.gov.in/backend/assets/cyclone_pdf/TROPICAL_CYCLONE_ADVISORY_NO__15_based_on_0300_UTC_of_03_11_2026.pdf",
-    "gdacs_murasu": "https://www.gdacs.org/Cyclones/report.aspx?eventtype=TC&eventid=1001346&episodedate=2026-11-01%2012:00:00&sourceid=JTWC",
-    "ap_murasu": "https://apnews.com/article/cyclone-murasu-india-andhra-pradesh-bay-of-bengal-c8d1899f4344625f63d6d456dc3805fb",
-    "ians_murasu_damage": "https://indiatribune.com/public/andhra-cyclone-murasu-claimed-eight-lives-caused-rs-1918-crore-loss",
-    "telegraph_murasu_fishermen": "https://www.telegraphindia.com/india/cyclone-murasu-four-of-nine-missing-fishermen-found-dead-after-boat-capsizes-off-andhra-coast/cid/2187988",
-    "wikipedia_murasu": "https://en.wikipedia.org/wiki/Cyclone_Murasu"
+    "usgs_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-08T23:00:00&endtime=2026-11-15T22:59:59&minmagnitude=4.5&orderby=magnitude",
+    "global_carbon_budget": "https://globalcarbonbudget.org/fossil-co2-emissions-decrease-in-2026/",
+    "carbonbrief_gcb": "https://www.carbonbrief.org/analysis-fossil-fuel-co2-emissions-set-to-dip-in-2026-as-Iran-conflict-hits-oil-use",
+    "dw_gcb": "https://amp.dw.com/en/iran-war-oil-shock-drives-dip-in-global-emissions-study-shows/a-79905937",
+    "reuters_iran_cop31": "https://www.reuters.com/sustainability/cop/iran-tells-cop31-it-wants-compensation-environmental-damage-us-israeli-strikes-2026-11-11/",
+    "rappler_cop31_speech": "https://www.youtube.com/watch?v=Vri424VyUQQ",
+    "newscientist_gcb": "https://www.newscientist.com/article/2598130-global-carbon-emissions-fall-in-2026-due-to-iran-energy-shock/",
+    "un_news_gaza_rains": "https://news.un.org/en/story/2026/11/1168766",
+    "aljazeera_gaza_mudslide": "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people",
+    "euronews_gaza_storm": "https://www.euronews.com/2026/11/09/storm-killed-five-in-gaza-as-sandstone-slab-collapsed-onto-tents",
+    "gdacs_myanmar_flood": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104280",
+    "dmh_myanmar_rain_records": "https://www.moezala.gov.mm/en/bulletin/135056",
+    "rsoe_shan_evacuation": "https://rsoe-edis.org/eventList/details/1158279/0",
+    "intelligenceonline_china_myanmar": "https://www.intelligenceonline.com/asia-pacific/2026/11/09/beijing-helps-myanmar-rebels-after-junta-attack-on-chinese-vehicle,110915947-art"
   },
   "data_scan_counts": {
-    "sentinel_events_reviewed": 35,
-    "sentinel_feed_status": "recuperado: 35 eventos en la instantánea del 2026-11-08; 19 titulares alta/media únicos en 5 instantáneas de la semana",
-    "nasa_events_in_window": 70,
-    "nasa_open_events": 7,
-    "nasa_closed_events": 63,
-    "usgs_m45_plus": 84,
-    "usgs_m55_plus": 5,
-    "total_candidates": 10,
-    "selected_confirmed_couplings": 1,
-    "selected_watch_signals": 2
+    "sentinel_events_reviewed": 41,
+    "sentinel_feed_status": "operativo: 41 eventos en la instantánea del 2026-11-15 (4 alta, 11 media); 70 titulares únicos alta/media/ambientales en 5 instantáneas de la semana",
+    "nasa_events_in_window": 92,
+    "nasa_open_events": 11,
+    "nasa_closed_events": 81,
+    "usgs_m45_plus": 121,
+    "usgs_m55_plus": 8,
+    "total_candidates": 11,
+    "selected_confirmed_couplings": 2,
+    "selected_watch_signals": 1
   },
   "stats": [
     {
       "label": "SentinelEvents",
-      "value": 35
+      "value": 41
     },
     {
       "label": "NasaEventsInWindow",
-      "value": 70
+      "value": 92
     },
     {
       "label": "UsgsM55Plus",
-      "value": 5
+      "value": 8
     },
     {
       "label": "ConfirmedCouplings",
-      "value": 1
+      "value": 2
     },
     {
       "label": "WatchSignals",
-      "value": 2
+      "value": 1
     }
   ],
-  "total_candidates": 10,
+  "total_candidates": 11,
   "selected_inflection_points": [
     {
-      "id": "gaza-first-winter-storm-tents-flooded",
+      "id": "iran-war-oil-shock-emissions-cop31",
       "rank": 1,
-      "status": "confirmado",
-      "status_en": "confirmed",
+      "status": "confirmado (datos científicos); reclamación iraní no verificada",
+      "status_en": "confirmed (scientific data); Iranian claim unverified",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Gaza / Ciudad de Gaza, Deir al-Balah, Nuseirat, al-Mawasi",
+      "location": "Global / estrecho de Ormuz y COP31 en Antalya (Turquía)",
+      "lat": 36.88,
+      "lon": 30.7,
+      "headline": "La guerra que bajó las emisiones: Ormuz entra en la COP31",
+      "headlineEn": "The war that lowered emissions: Hormuz enters COP31",
+      "conflict_event": "Guerra de EE. UU. e Israel con Irán desde finales de febrero, con ataques a infraestructura energética y a buques, y cierre de facto del estrecho de Ormuz.",
+      "conflictEventEn": "US-Israeli war with Iran since late February, with strikes on energy infrastructure and shipping, and de facto closure of the Strait of Hormuz.",
+      "environmental_event": "Global Carbon Budget 2026 (10 nov): las emisiones fósiles de CO2 caerían un 0,4%, hasta 38.200 millones de toneladas; las del petróleo, un 1,9%. Es la primera caída anual desde 2020. Las emisiones totales, con el cambio de uso del suelo, marcarían un récord de 43.300 millones.",
+      "environmentalEventEn": "Global Carbon Budget 2026 (10 Nov): fossil CO2 emissions projected to fall 0.4% to 38.2 billion tonnes; oil emissions down 1.9%. First annual fall since 2020. Total emissions including land use would reach a record 43.3 billion.",
+      "coupling_type": [
+        "energía",
+        "clima",
+        "diplomacia climática",
+        "rutas marítimas"
+      ],
+      "couplingTypeEn": [
+        "energy",
+        "climate",
+        "climate diplomacy",
+        "sea lanes"
+      ],
+      "why_it_matters": "Importa porque el conflicto ya aparece en la contabilidad climática global y en la agenda de la COP31: la caída se debe más al choque de precios que a la transición, y Teherán ha convertido el daño ambiental en reclamación diplomática.",
+      "fact": "Hecho: el Global Carbon Project atribuye la mayor parte de la caída del petróleo a los precios altos y a las restricciones de oferta tras el cierre de Ormuz; los vehículos eléctricos explican alrededor de una quinta parte (Carbon Brief). El 11 de noviembre, en la COP31 de Antalya, el presidente iraní Masud Pezeshkian pidió documentar el daño ambiental de los ataques de EE. UU. e Israel y crear mecanismos de compensación (Reuters).",
+      "coupling": "Dato de acople: el intervalo de la proyección va de una caída del 1,5% a una subida del 0,6%, así que no se descarta un leve aumento (Carbon Brief). Los autores esperan un rebote cuando se calmen las tensiones del petróleo (DW). En su discurso, Pezeshkian cifró en unas 500.000 y 1.000.000 de toneladas de CO2 las emisiones de los ataques a Asaluyeh y a depósitos cerca de Teherán; son cifras del gobierno iraní, no verificadas (discurso, vía Rappler). Reuters recuerda además que los ataques iraníes a petroleros también han causado vertidos.",
+      "couplingEn": "Coupling datum: the projection range runs from a 1.5% fall to a 0.6% rise, so a small increase cannot be ruled out (Carbon Brief). The authors expect a rebound once oil tensions ease (DW). Pezeshkian put emissions from strikes on Asaluyeh and depots near Tehran at about 0.5 and 1 million tonnes of CO2; these are unverified Iranian government figures (speech, via Rappler). Reuters notes Iranian attacks on tankers have also caused spills.",
+      "implication": "Implicación estratégica (Evaluación): no es una buena noticia climática, sino un efecto de un choque energético. La guerra pasa a la diplomacia climática por dos vías: la caída temporal de emisiones y la propuesta iraní de vincular la responsabilidad en tiempos de guerra con los compromisos climáticos, algo para lo que hoy no existe ningún mecanismo (Reuters).",
+      "strategic_implication": "Ormuz convierte el precio del petróleo en variable climática y el daño ambiental de la guerra en herramienta diplomática.",
+      "tripolar": "Lectura tripolar (Evaluación): las emisiones caerían un 1,3% en EE. UU. y un 0,9% en China, que combina choque de precios y expansión renovable (Global Carbon Budget, New Scientist). Rusia se beneficia de los precios altos. La UE y el Sur Global reciben el foro: la COP31 la acoge Turquía. Hipótesis: la reclamación iraní buscará apoyos en el Sur Global; es poco probable que prospere sin consenso, pero instala el precedente de la «responsabilidad ambiental de guerra».",
+      "confidence": "Alta en los datos del Global Carbon Budget; baja en las cifras de daño declaradas por Irán",
+      "sources": [
+        {
+          "label": "Global Carbon Budget",
+          "url": "https://globalcarbonbudget.org/fossil-co2-emissions-decrease-in-2026/"
+        },
+        {
+          "label": "Carbon Brief",
+          "url": "https://www.carbonbrief.org/analysis-fossil-fuel-co2-emissions-set-to-dip-in-2026-as-Iran-conflict-hits-oil-use"
+        },
+        {
+          "label": "DW",
+          "url": "https://amp.dw.com/en/iran-war-oil-shock-drives-dip-in-global-emissions-study-shows/a-79905937"
+        },
+        {
+          "label": "Reuters, COP31",
+          "url": "https://www.reuters.com/sustainability/cop/iran-tells-cop31-it-wants-compensation-environmental-damage-us-israeli-strikes-2026-11-11/"
+        },
+        {
+          "label": "Discurso de Pezeshkian (Rappler)",
+          "url": "https://www.youtube.com/watch?v=Vri424VyUQQ"
+        },
+        {
+          "label": "New Scientist",
+          "url": "https://www.newscientist.com/article/2598130-global-carbon-emissions-fall-in-2026-due-to-iran-energy-shock/"
+        }
+      ],
+      "conflictEvent": "Guerra de EE. UU. e Israel con Irán desde finales de febrero, con ataques a infraestructura energética y a buques, y cierre de facto del estrecho de Ormuz.",
+      "environmentalEvent": "Global Carbon Budget 2026 (10 nov): las emisiones fósiles de CO2 caerían un 0,4%, hasta 38.200 millones de toneladas; las del petróleo, un 1,9%. Es la primera caída anual desde 2020. Las emisiones totales, con el cambio de uso del suelo, marcarían un récord de 43.300 millones.",
+      "couplingType": [
+        "energía",
+        "clima",
+        "diplomacia climática",
+        "rutas marítimas"
+      ]
+    },
+    {
+      "id": "gaza-storm-damage-150k-tents-outside",
+      "rank": 2,
+      "status": "confirmado (seguimiento)",
+      "status_en": "confirmed (follow-up)",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#F59E0B",
+      "location": "Gaza / Deir al-Balah y las cinco gobernaciones",
       "lat": 31.42,
       "lon": 34.35,
-      "headline": "Gaza: la primera tormenta del invierno inunda el refugio de una población desplazada",
-      "headlineEn": "Gaza: the first winter storm floods the shelter of a displaced population",
-      "conflict_event": "Alto el fuego vigente, pero sin reconstrucción: la mayoría de los 2,1 millones de habitantes sigue desplazada y la entrada de materiales de refugio está restringida o demorada, según OCHA.",
-      "conflictEventEn": "Ceasefire in place but no reconstruction: most of the 2.1 million residents remain displaced and shelter materials face restrictions or delays, according to OCHA.",
-      "environmental_event": "Sistema de bajas presiones del 6 al 7 de noviembre: unos 60 mm en 12 horas en Ciudad de Gaza, alrededor del 15% de la lluvia anual (municipio, vía Anadolu). El propio feed SENTINEL/GDELT captó la señal en la capa de monitorización.",
-      "environmentalEventEn": "Low-pressure system on 6–7 November: about 60 mm in 12 hours in Gaza City, roughly 15% of annual rainfall (municipality, via Anadolu). The SENTINEL/GDELT feed itself picked up the signal in its monitor layer.",
+      "headline": "Gaza: 150.000 tiendas esperan fuera mientras dentro se agotan",
+      "headlineEn": "Gaza: 150,000 tents wait outside while stocks run out inside",
+      "conflict_event": "Alto el fuego sin reconstrucción y restricciones de acceso. En la misma semana, el 12 de noviembre, un ataque israelí contra un hospital (Israel afirma que el objetivo era Hamás), y el 14 de noviembre la ONU avisó de que el sistema sanitario está al borde del colapso (feed SENTINEL).",
+      "conflictEventEn": "Ceasefire without reconstruction and access restrictions. In the same week, an Israeli strike on a hospital on 12 November (Israel says it targeted Hamas), and on 14 November the UN warned the health system is near collapse (SENTINEL feed).",
+      "environmental_event": "Balance de la primera tormenta del invierno (6–8 nov) publicado por OCHA el 9 de noviembre: más de 6.000 refugios destruidos, 17.400 dañados y 55 espacios educativos inundados.",
+      "environmentalEventEn": "Toll of the first winter storm (6–8 Nov) published by OCHA on 9 November: more than 6,000 shelters destroyed, 17,400 damaged and 55 learning spaces flooded.",
       "coupling_type": [
         "inundación",
+        "deslizamiento",
         "refugio",
-        "desplazamiento",
         "acceso humanitario"
       ],
       "couplingTypeEn": [
         "flood",
+        "landslide",
         "shelter",
-        "displacement",
         "humanitarian access"
       ],
-      "why_it_matters": "Importa porque el factor que convierte una lluvia ordinaria en emergencia es político: refugio precario, infraestructura dañada y materiales que no entran. Es el acople que SENTINEL tenía en observación desde octubre.",
-      "fact": "Hecho: el Clúster de Gestión de Sitios de la ONU registró 264 alertas por lluvia e inundación en 261 sitios de desplazados hasta las 09:00 del 8 de noviembre (ReliefWeb). La oficina de medios del gobierno de Hamás cifró en 70.000 las tiendas inundadas en 12 horas; Defensa Civil recibió unas 1.500 llamadas de auxilio (Reuters, Al Jazeera). No se reportaron muertes.",
-      "coupling": "Dato de acople: según OCHA, al 1 de noviembre Gaza necesitaba unas 121.000 tiendas, 561.000 lonas y 1,7 millones de colchones, y los socios humanitarios solo disponían de unas 2.800 tiendas dentro del territorio (UN UNifeed). IOM y el Clúster estiman que 761.000 personas en sitios de desplazados pueden verse afectadas por inundaciones este invierno. Versión contraria: COGAT (Israel) afirma haber facilitado la entrada de 91.000 tiendas nuevas y lonas (Jerusalem Post).",
-      "couplingEn": "Coupling datum: according to OCHA, as of 1 November Gaza needed about 121,000 tents, 561,000 tarpaulins and 1.7 million mattresses, while partners had only about 2,800 tents inside the territory (UN UNifeed). IOM and the Cluster estimate 761,000 people in displacement sites may be affected by flooding this winter. Counter-claim: COGAT (Israel) says it facilitated entry of 91,000 new tents and tarps (Jerusalem Post).",
-      "implication": "Implicación estratégica (Evaluación): el invierno convierte la cuestión del acceso de materiales en un indicador medible del alto el fuego. Cada tormenta genera presión diplomática sobre los garantes y una disputa de narrativas (Hamás frente a COGAT) sobre la responsabilidad.",
-      "strategic_implication": "El clima convierte el acceso humanitario en métrica pública de la calidad del alto el fuego.",
-      "tripolar": "Lectura tripolar (Evaluación): EE. UU. es garante del alto el fuego y el actor con más palanca sobre la entrada de materiales; China y Rusia capitalizan el tema en foros multilaterales sin capacidad operativa sobre el terreno. Hipótesis: si las tormentas se repiten sin cambio en el acceso, la reconstrucción de Gaza se convertirá en terreno de competencia de financiación entre el Golfo, la UE y otros actores.",
-      "confidence": "Alta en el hecho físico y en las cifras ONU; media en las cifras de daños de la oficina de medios de Gaza",
+      "why_it_matters": "Importa porque el balance oficial confirma el acople de la semana pasada y lo hace medible: dentro de Gaza las existencias están prácticamente agotadas y fuera esperan más de 150.000 tiendas.",
+      "fact": "Hecho: según OCHA, más de 26.000 hogares pidieron ayuda, más de 3.900 se quedaron sin ningún refugio, y Defensa Civil recibió 2.166 llamadas de auxilio y solo pudo atender 218 (UN News). El 8 de noviembre, el derrumbe de un talud de arena sobre tiendas en Al Berka, al oeste de Deir al-Balah, causó cinco muertos, entre ellos tres niños (UN News, Al Jazeera).",
+      "coupling": "Dato de acople: más de 150.000 tiendas compradas por socios humanitarios y Estados están fuera de Gaza, listas para entrar; unas 117.000 están en Al-Arish (Egipto). El portavoz adjunto de la ONU dijo que falta el permiso de las autoridades israelinas para que pasen los controles (UN News). Advertencia: el derrumbe es del 8 de noviembre, en la ventana anterior; se incluye porque el balance se publicó en esta.",
+      "couplingEn": "Coupling datum: more than 150,000 tents bought by humanitarian partners and states are outside Gaza, ready to enter; about 117,000 are in Al-Arish (Egypt). The UN deputy spokesperson said permission from Israeli authorities is needed to pass checkpoints (UN News). Note: the landslide occurred on 8 November, in the previous window; it is included because the toll was published in this one.",
+      "implication": "Implicación estratégica (Evaluación): el cuello de botella ya no es la falta de material, sino su entrada. Eso traslada la presión del clima a la gestión de los pasos fronterizos y a los garantes del alto el fuego.",
+      "strategic_implication": "El invierno mide el alto el fuego por los pasos fronterizos, no por las existencias.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. tiene la mayor palanca sobre los permisos; Egipto y los donantes del Golfo y de la UE acumulan material en Al-Arish; China y Rusia usan el tema en foros multilaterales. Hipótesis: si se repiten las tormentas sin cambios en los permisos, crecerá la presión de la UE y de los Estados árabes sobre Washington.",
+      "confidence": "Alta (cifras de OCHA y de la ONU)",
       "sources": [
         {
-          "label": "ReliefWeb, Clúster de Gestión de Sitios",
-          "url": "https://reliefweb.int/report/occupied-palestinian-territory/heavy-rain-and-flooding-incidents-across-gaza-06-07-november-2026-update-1"
+          "label": "UN News, 9 nov",
+          "url": "https://news.un.org/en/story/2026/11/1168766"
         },
         {
-          "label": "UN UNifeed (OCHA)",
-          "url": "https://media.un.org/unifeed/en/asset/d368/d3682757"
+          "label": "Al Jazeera, 9 nov",
+          "url": "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people"
         },
         {
-          "label": "Anadolu, OCHA",
-          "url": "https://www.aa.com.tr/en/world/heavy-rains-flood-gaza-shelters-putting-displaced-families-at-immediate-risk-ocha/4115188"
-        },
-        {
-          "label": "Reuters, 7 nov",
-          "url": "https://www.reuters.com/business/environment/heavy-rain-floods-tents-housing-gaza-displaced-people-aid-shortages-hamper-2026-11-07/"
-        },
-        {
-          "label": "Al Jazeera, 7 nov",
-          "url": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza"
-        },
-        {
-          "label": "Anadolu, 60 mm",
-          "url": "https://u.aa.com.tr/en/middle-east/flooded-out-of-their-tents-gaza-families-have-nowhere-left-to-go/4115647"
-        },
-        {
-          "label": "Jerusalem Post, COGAT",
-          "url": "http://store.jpost.com/middle-east/article-914223"
+          "label": "Euronews",
+          "url": "https://www.euronews.com/2026/11/09/storm-killed-five-in-gaza-as-sandstone-slab-collapsed-onto-tents"
         }
       ],
-      "conflictEvent": "Alto el fuego vigente, pero sin reconstrucción: la mayoría de los 2,1 millones de habitantes sigue desplazada y la entrada de materiales de refugio está restringida o demorada, según OCHA.",
-      "environmentalEvent": "Sistema de bajas presiones del 6 al 7 de noviembre: unos 60 mm en 12 horas en Ciudad de Gaza, alrededor del 15% de la lluvia anual (municipio, vía Anadolu). El propio feed SENTINEL/GDELT captó la señal en la capa de monitorización.",
+      "conflictEvent": "Alto el fuego sin reconstrucción y restricciones de acceso. En la misma semana, el 12 de noviembre, un ataque israelí contra un hospital (Israel afirma que el objetivo era Hamás), y el 14 de noviembre la ONU avisó de que el sistema sanitario está al borde del colapso (feed SENTINEL).",
+      "environmentalEvent": "Balance de la primera tormenta del invierno (6–8 nov) publicado por OCHA el 9 de noviembre: más de 6.000 refugios destruidos, 17.400 dañados y 55 espacios educativos inundados.",
       "couplingType": [
         "inundación",
+        "deslizamiento",
         "refugio",
-        "desplazamiento",
         "acceso humanitario"
       ]
     },
     {
-      "id": "hormuz-tanker-fires-marine-pollution-risk",
-      "rank": 2,
-      "status": "acople en observación (riesgo ambiental derivado del conflicto)",
-      "status_en": "watch (conflict-driven environmental risk)",
-      "priority": "Media-alta",
-      "priorityEn": "Medium-high",
-      "accent": "#F59E0B",
-      "location": "Estrecho de Ormuz / golfo de Omán, costa de Khasab y Jask",
-      "lat": 26.4,
-      "lon": 56.6,
-      "headline": "Ormuz: tanqueros en llamas en el estrecho y riesgo de contaminación marina",
-      "headlineEn": "Hormuz: burning tankers in the strait and marine pollution risk",
-      "conflict_event": "Guerra con Irán desde finales de febrero; bloqueo naval de EE. UU. a puertos iraníes y control iraní de rutas en el estrecho. La CGRI afirmó incendios de tanqueros el 3, 5 y 8 de noviembre en rutas que considera «no autorizadas»; EE. UU. atacó la isla de Qeshm el 3 de noviembre.",
-      "conflictEventEn": "War with Iran since late February; US naval blockade of Iranian ports and Iranian control of routes in the strait. The IRGC claimed tanker fires on 3, 5 and 8 November on routes it calls 'unauthorized'; the US struck Qeshm Island on 3 November.",
-      "environmental_event": "No hay evento NASA/USGS. Riesgo de contaminación por hidrocarburos: el VLCC Gem No.2, alcanzado el 9 de octubre frente a Sharjah, perdió crudo durante más de una semana hasta detenerse a comienzos de noviembre (Lloyd's List, 2 nov). Imágenes Copernicus del 3 de noviembre muestran un tanquero dañado en el corredor sur (UANI).",
-      "environmentalEventEn": "No NASA/USGS event. Oil pollution risk: VLCC Gem No.2, hit on 9 October off Sharjah, leaked crude for over a week until it stopped in early November (Lloyd's List, 2 Nov). Copernicus imagery from 3 November shows a damaged tanker in the southern corridor (UANI).",
-      "coupling_type": [
-        "contaminación marina",
-        "energía",
-        "rutas marítimas",
-        "conflicto naval"
-      ],
-      "couplingTypeEn": [
-        "marine pollution",
-        "energy",
-        "sea lanes",
-        "naval conflict"
-      ],
-      "why_it_matters": "Importa porque es un acople inverso: aquí el conflicto produce el riesgo ambiental, en un mar semicerrado con una única salida y en el principal cuello de botella petrolero del mundo.",
-      "fact": "Hecho: la CGRI afirmó que tres tanqueros ardieron el 8 de noviembre y otros el 3 y el 5; UKMTO informó de un tanquero en llamas frente a Khasab (Omán) el 7 de noviembre con evacuación de la tripulación (Gulf News/AFP). La OMI contabiliza 128 incidentes con buques comerciales y 24 marinos muertos desde el inicio de la guerra (UANI). Las afirmaciones de la CGRI no están verificadas de forma independiente.",
-      "coupling": "Dato de acople: un oceanógrafo de la Universidad del Sur de Florida estimó en octubre que la superficie con petróleo en el golfo Pérsico duplicaba lo esperable sin conflicto (CNN, contexto anterior a la ventana). En la ventana no hay medición independiente de nuevos derrames asociados a los incendios declarados; por eso queda como riesgo en observación, no como daño confirmado.",
-      "couplingEn": "Coupling datum: a University of South Florida oceanographer estimated in October that surface oil in the Persian Gulf was double what would be expected without conflict (CNN, context prior to the window). Within the window there is no independent measurement of new spills linked to the declared fires, so it stays as a watched risk, not confirmed damage.",
-      "implication": "Implicación estratégica (Evaluación): la contaminación se suma como coste del uso de minas y del control de rutas; afecta a pesquerías, desalinizadoras y costas de terceros (EAU, Omán) que no son parte directa del conflicto, lo que amplía el número de actores con interés en una salida negociada.",
-      "strategic_implication": "El daño ambiental en Ormuz amplía el conflicto a Estados costeros que no combaten.",
-      "tripolar": "Lectura tripolar (Evaluación): EE. UU. sostiene el bloqueo y escolta tránsitos; China, primer comprador del crudo del Golfo, es la más expuesta a la interrupción; Rusia gana con precios altos y recibe al presidente iraní. Hipótesis: un derrame mayor documentado por satélite podría convertirse en argumento diplomático para un corredor marítimo supervisado.",
-      "confidence": "Media en los hechos (reclamaciones no verificadas de la CGRI); baja en el daño ambiental dentro de la ventana",
-      "sources": [
-        {
-          "label": "Gulf News / AFP, 8 nov",
-          "url": "https://gulfnews.com/world/mena/iran-says-3-tankers-caught-fire-in-hormuz-1.500740005"
-        },
-        {
-          "label": "Anadolu, 3 nov",
-          "url": "https://www.aa.com.tr/en/us-israel-iran-war/iran-says-3-oil-tankers-hit-naval-mines-catch-fire-in-strait-of-hormuz/4110024"
-        },
-        {
-          "label": "GlobalSecurity, día 251",
-          "url": "https://www.globalsecurity.org/military/ops/iran-war-20261105.htm"
-        },
-        {
-          "label": "Lloyd's List, Gem No.2",
-          "url": "https://www.lloydslist.com/LL1158887/VLCC-stops-leaking-oil-off-UAE"
-        },
-        {
-          "label": "UANI, imágenes Copernicus",
-          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-november-3-2026"
-        },
-        {
-          "label": "CNN vía Egypt Independent",
-          "url": "https://www.egyptindependent.com/the-iran-wars-toxic-impact-on-one-of-the-planets-most-unique-seas/"
-        }
-      ],
-      "conflictEvent": "Guerra con Irán desde finales de febrero; bloqueo naval de EE. UU. a puertos iraníes y control iraní de rutas en el estrecho. La CGRI afirmó incendios de tanqueros el 3, 5 y 8 de noviembre en rutas que considera «no autorizadas»; EE. UU. atacó la isla de Qeshm el 3 de noviembre.",
-      "environmentalEvent": "No hay evento NASA/USGS. Riesgo de contaminación por hidrocarburos: el VLCC Gem No.2, alcanzado el 9 de octubre frente a Sharjah, perdió crudo durante más de una semana hasta detenerse a comienzos de noviembre (Lloyd's List, 2 nov). Imágenes Copernicus del 3 de noviembre muestran un tanquero dañado en el corredor sur (UANI).",
-      "couplingType": [
-        "contaminación marina",
-        "energía",
-        "rutas marítimas",
-        "conflicto naval"
-      ]
-    },
-    {
-      "id": "india-murasu-second-cyclone-andhra-watch",
+      "id": "myanmar-southern-shan-floods-watch",
       "rank": 3,
       "status": "observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
       "accent": "#22D3EE",
-      "location": "India / Andhra Pradesh: Prakasam, Bapatla, Guntur, Palnadu",
-      "lat": 15.53,
-      "lon": 80.22,
-      "headline": "Murasu: segundo ciclón en una semana sobre la misma costa india",
-      "headlineEn": "Murasu: a second cyclone in one week on the same Indian coast",
-      "conflict_event": "Sin conflicto armado. Nodo: capacidad estatal y procesos institucionales bajo choques climáticos encadenados en la costa del golfo de Bengala.",
-      "conflictEventEn": "No armed conflict. Node: state capacity and institutional processes under back-to-back climate shocks on the Bay of Bengal coast.",
-      "environmental_event": "NASA EONET / IMD: tormenta ciclónica severa Murasu, cruzó la costa cerca de Ongole entre las 22:00 UTC del 2 y las 00:00 UTC del 3 de noviembre con vientos de 100–110 km/h; GDACS la clasificó con alerta roja.",
-      "environmentalEventEn": "NASA EONET / IMD: severe cyclonic storm Murasu crossed the coast near Ongole between 22:00 UTC on 2 November and 00:00 UTC on 3 November with 100–110 km/h winds; GDACS rated it a red alert.",
+      "location": "Myanmar / sur del estado Shan (Taunggyi)",
+      "lat": 20.78,
+      "lon": 97.04,
+      "headline": "Shan: lluvia récord de noviembre en un estado en guerra",
+      "headlineEn": "Shan: record November rain in a state at war",
+      "conflict_event": "El estado Shan es uno de los principales frentes de la guerra civil. Según Intelligence Online (9 nov), Pekín abrió la frontera en zonas controladas por el KIA y grupos de la Alianza de la Hermandad después de que un avión de la junta atacara un vehículo chino.",
+      "conflictEventEn": "Shan State is a main front of the civil war. According to Intelligence Online (9 Nov), Beijing opened the border in areas held by the KIA and Brotherhood Alliance groups after a junta warplane attacked a Chinese vehicle.",
+      "environmental_event": "NASA EONET / GDACS (Copernicus GloFAS): inundación en Shan del 10 al 12 de noviembre (alerta verde). El servicio meteorológico birmano (DMH) registró en Taunggyi un nuevo récord de lluvia de noviembre (103 mm el 11 de noviembre; el anterior, de 1974, era de 80 mm).",
+      "environmentalEventEn": "NASA EONET / GDACS (Copernicus GloFAS): flooding in Shan on 10–12 November (green alert). Myanmar's DMH recorded a new November rainfall record at Taunggyi (103 mm on 11 November; the previous 1974 record was 80 mm).",
       "coupling_type": [
-        "ciclón",
-        "agricultura",
-        "pesca",
-        "continuidad institucional"
+        "inundación",
+        "desplazamiento",
+        "zona de conflicto"
       ],
       "couplingTypeEn": [
-        "cyclone",
-        "agriculture",
-        "fisheries",
-        "institutional continuity"
+        "flood",
+        "displacement",
+        "conflict zone"
       ],
-      "why_it_matters": "Importa porque llega una semana después de Arnab sobre la misma costa: el impacto acumulado pesa sobre agricultura, pesca y servicios, y obligó a reprogramar el recuento de elecciones municipales en los distritos más afectados.",
-      "fact": "Hecho: el gobierno de Andhra Pradesh cifró en ocho los muertos y en 1.918,55 millones de rupias (unos 203 millones de dólares) los daños, con 143.122 hectáreas de cultivos y 186.063 agricultores afectados, 983 viviendas y 346 barcos dañados (IANS). Cuatro de nueve pescadores de Tamil Nadu desaparecidos fueron hallados muertos (Telegraph India).",
-      "coupling": "Dato de acople: según la recopilación de Wikipedia con fuentes locales, la comisión electoral del estado reprogramó el recuento de votos de elecciones municipales en Prakasam y Bapatla. No hay evidencia de impacto en seguridad ni en operaciones navales; el acople es institucional y socioeconómico, por eso queda en observación.",
-      "couplingEn": "Coupling datum: according to Wikipedia's compilation of local sources, the state election commission rescheduled municipal vote counting in Prakasam and Bapatla. There is no evidence of security or naval impact; the coupling is institutional and socioeconomic, so it stays on watch.",
-      "implication": "Implicación estratégica (Evaluación): la repetición de ciclones tardíos sobre la misma franja pone a prueba la capacidad de respuesta de un Estado que aspira a ser potencia marítima del Índico. El coste agrícola y pesquero acumulado es la variable a seguir.",
-      "strategic_implication": "Los choques climáticos encadenados son una variable de la resiliencia interna de India, Estado bisagra del Indo-Pacífico.",
-      "tripolar": "Lectura tripolar (Evaluación): India mantiene su autonomía estratégica entre EE. UU., Rusia y China; Murasu no altera ese equilibrio, pero muestra que la resiliencia climática es parte de su capacidad de proyección. Hipótesis: la cooperación en alerta temprana y reconstrucción costera será un terreno de influencia en el golfo de Bengala.",
-      "confidence": "Alta en el hecho físico; baja en el acople estratégico",
+      "why_it_matters": "Importa como señal: un choque hidrometeorológico fuera de temporada en una región en guerra, con frontera con China. No hay evidencia de que haya alterado operaciones militares ni el acceso humanitario.",
+      "fact": "Hecho: unas 4.950 personas de 1.123 hogares fueron evacuadas en cinco municipios del sur de Shan, según los bomberos locales (RSOE-EDIS). GDACS no registra muertes.",
+      "coupling": "Dato de acople: el acople es solo espacial (inundación en un estado con conflicto activo). No hay fuentes que vinculen la inundación con cambios en el conflicto; por eso queda en observación.",
+      "couplingEn": "Coupling datum: the coupling is only spatial (a flood in a state with active conflict). No source links the flood to changes in the conflict, so it stays on watch.",
+      "implication": "Implicación estratégica (Evaluación): la capacidad de la junta para responder a desastres en zonas que controla, como Taunggyi, frente a las zonas en manos de la resistencia, es un indicador de legitimidad que conviene seguir.",
+      "strategic_implication": "La respuesta a desastres es un indicador de control territorial en Myanmar.",
+      "tripolar": "Lectura tripolar (Evaluación): China gestiona su frontera con los grupos armados de Shan; Intelligence Online informa de operadores rusos de drones que apoyan a la junta. Hipótesis: la ayuda ante desastres puede convertirse en canal de influencia en la frontera sino-birmana.",
+      "confidence": "Alta en el hecho físico; baja en el acople",
       "sources": [
         {
-          "label": "IMD, aviso 15",
-          "url": "https://mausam.imd.gov.in/backend/assets/cyclone_pdf/TROPICAL_CYCLONE_ADVISORY_NO__15_based_on_0300_UTC_of_03_11_2026.pdf"
+          "label": "GDACS FL 1104280",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104280"
         },
         {
-          "label": "GDACS, alerta roja",
-          "url": "https://www.gdacs.org/Cyclones/report.aspx?eventtype=TC&eventid=1001346&episodedate=2026-11-01%2012:00:00&sourceid=JTWC"
+          "label": "DMH Myanmar, récords de lluvia",
+          "url": "https://www.moezala.gov.mm/en/bulletin/135056"
         },
         {
-          "label": "AP",
-          "url": "https://apnews.com/article/cyclone-murasu-india-andhra-pradesh-bay-of-bengal-c8d1899f4344625f63d6d456dc3805fb"
+          "label": "RSOE-EDIS, evacuaciones",
+          "url": "https://rsoe-edis.org/eventList/details/1158279/0"
         },
         {
-          "label": "IANS, balance de daños",
-          "url": "https://indiatribune.com/public/andhra-cyclone-murasu-claimed-eight-lives-caused-rs-1918-crore-loss"
-        },
-        {
-          "label": "Telegraph India",
-          "url": "https://www.telegraphindia.com/india/cyclone-murasu-four-of-nine-missing-fishermen-found-dead-after-boat-capsizes-off-andhra-coast/cid/2187988"
-        },
-        {
-          "label": "Wikipedia, recuento electoral",
-          "url": "https://en.wikipedia.org/wiki/Cyclone_Murasu"
+          "label": "Intelligence Online",
+          "url": "https://www.intelligenceonline.com/asia-pacific/2026/11/09/beijing-helps-myanmar-rebels-after-junta-attack-on-chinese-vehicle,110915947-art"
         }
       ],
-      "conflictEvent": "Sin conflicto armado. Nodo: capacidad estatal y procesos institucionales bajo choques climáticos encadenados en la costa del golfo de Bengala.",
-      "environmentalEvent": "NASA EONET / IMD: tormenta ciclónica severa Murasu, cruzó la costa cerca de Ongole entre las 22:00 UTC del 2 y las 00:00 UTC del 3 de noviembre con vientos de 100–110 km/h; GDACS la clasificó con alerta roja.",
+      "conflictEvent": "El estado Shan es uno de los principales frentes de la guerra civil. Según Intelligence Online (9 nov), Pekín abrió la frontera en zonas controladas por el KIA y grupos de la Alianza de la Hermandad después de que un avión de la junta atacara un vehículo chino.",
+      "environmentalEvent": "NASA EONET / GDACS (Copernicus GloFAS): inundación en Shan del 10 al 12 de noviembre (alerta verde). El servicio meteorológico birmano (DMH) registró en Taunggyi un nuevo récord de lluvia de noviembre (103 mm el 11 de noviembre; el anterior, de 1974, era de 80 mm).",
       "couplingType": [
-        "ciclón",
-        "agricultura",
-        "pesca",
-        "continuidad institucional"
+        "inundación",
+        "desplazamiento",
+        "zona de conflicto"
       ]
     }
   ],
   "points": [
     {
-      "id": "gaza-first-winter-storm-tents-flooded",
+      "id": "iran-war-oil-shock-emissions-cop31",
       "rank": 1,
-      "status": "confirmado",
-      "status_en": "confirmed",
+      "status": "confirmado (datos científicos); reclamación iraní no verificada",
+      "status_en": "confirmed (scientific data); Iranian claim unverified",
       "priority": "Alta",
       "priorityEn": "High",
       "accent": "#EF4444",
-      "location": "Gaza / Ciudad de Gaza, Deir al-Balah, Nuseirat, al-Mawasi",
+      "location": "Global / estrecho de Ormuz y COP31 en Antalya (Turquía)",
+      "lat": 36.88,
+      "lon": 30.7,
+      "headline": "La guerra que bajó las emisiones: Ormuz entra en la COP31",
+      "headlineEn": "The war that lowered emissions: Hormuz enters COP31",
+      "conflict_event": "Guerra de EE. UU. e Israel con Irán desde finales de febrero, con ataques a infraestructura energética y a buques, y cierre de facto del estrecho de Ormuz.",
+      "conflictEventEn": "US-Israeli war with Iran since late February, with strikes on energy infrastructure and shipping, and de facto closure of the Strait of Hormuz.",
+      "environmental_event": "Global Carbon Budget 2026 (10 nov): las emisiones fósiles de CO2 caerían un 0,4%, hasta 38.200 millones de toneladas; las del petróleo, un 1,9%. Es la primera caída anual desde 2020. Las emisiones totales, con el cambio de uso del suelo, marcarían un récord de 43.300 millones.",
+      "environmentalEventEn": "Global Carbon Budget 2026 (10 Nov): fossil CO2 emissions projected to fall 0.4% to 38.2 billion tonnes; oil emissions down 1.9%. First annual fall since 2020. Total emissions including land use would reach a record 43.3 billion.",
+      "coupling_type": [
+        "energía",
+        "clima",
+        "diplomacia climática",
+        "rutas marítimas"
+      ],
+      "couplingTypeEn": [
+        "energy",
+        "climate",
+        "climate diplomacy",
+        "sea lanes"
+      ],
+      "why_it_matters": "Importa porque el conflicto ya aparece en la contabilidad climática global y en la agenda de la COP31: la caída se debe más al choque de precios que a la transición, y Teherán ha convertido el daño ambiental en reclamación diplomática.",
+      "fact": "Hecho: el Global Carbon Project atribuye la mayor parte de la caída del petróleo a los precios altos y a las restricciones de oferta tras el cierre de Ormuz; los vehículos eléctricos explican alrededor de una quinta parte (Carbon Brief). El 11 de noviembre, en la COP31 de Antalya, el presidente iraní Masud Pezeshkian pidió documentar el daño ambiental de los ataques de EE. UU. e Israel y crear mecanismos de compensación (Reuters).",
+      "coupling": "Dato de acople: el intervalo de la proyección va de una caída del 1,5% a una subida del 0,6%, así que no se descarta un leve aumento (Carbon Brief). Los autores esperan un rebote cuando se calmen las tensiones del petróleo (DW). En su discurso, Pezeshkian cifró en unas 500.000 y 1.000.000 de toneladas de CO2 las emisiones de los ataques a Asaluyeh y a depósitos cerca de Teherán; son cifras del gobierno iraní, no verificadas (discurso, vía Rappler). Reuters recuerda además que los ataques iraníes a petroleros también han causado vertidos.",
+      "couplingEn": "Coupling datum: the projection range runs from a 1.5% fall to a 0.6% rise, so a small increase cannot be ruled out (Carbon Brief). The authors expect a rebound once oil tensions ease (DW). Pezeshkian put emissions from strikes on Asaluyeh and depots near Tehran at about 0.5 and 1 million tonnes of CO2; these are unverified Iranian government figures (speech, via Rappler). Reuters notes Iranian attacks on tankers have also caused spills.",
+      "implication": "Implicación estratégica (Evaluación): no es una buena noticia climática, sino un efecto de un choque energético. La guerra pasa a la diplomacia climática por dos vías: la caída temporal de emisiones y la propuesta iraní de vincular la responsabilidad en tiempos de guerra con los compromisos climáticos, algo para lo que hoy no existe ningún mecanismo (Reuters).",
+      "strategic_implication": "Ormuz convierte el precio del petróleo en variable climática y el daño ambiental de la guerra en herramienta diplomática.",
+      "tripolar": "Lectura tripolar (Evaluación): las emisiones caerían un 1,3% en EE. UU. y un 0,9% en China, que combina choque de precios y expansión renovable (Global Carbon Budget, New Scientist). Rusia se beneficia de los precios altos. La UE y el Sur Global reciben el foro: la COP31 la acoge Turquía. Hipótesis: la reclamación iraní buscará apoyos en el Sur Global; es poco probable que prospere sin consenso, pero instala el precedente de la «responsabilidad ambiental de guerra».",
+      "confidence": "Alta en los datos del Global Carbon Budget; baja en las cifras de daño declaradas por Irán",
+      "sources": [
+        {
+          "label": "Global Carbon Budget",
+          "url": "https://globalcarbonbudget.org/fossil-co2-emissions-decrease-in-2026/"
+        },
+        {
+          "label": "Carbon Brief",
+          "url": "https://www.carbonbrief.org/analysis-fossil-fuel-co2-emissions-set-to-dip-in-2026-as-Iran-conflict-hits-oil-use"
+        },
+        {
+          "label": "DW",
+          "url": "https://amp.dw.com/en/iran-war-oil-shock-drives-dip-in-global-emissions-study-shows/a-79905937"
+        },
+        {
+          "label": "Reuters, COP31",
+          "url": "https://www.reuters.com/sustainability/cop/iran-tells-cop31-it-wants-compensation-environmental-damage-us-israeli-strikes-2026-11-11/"
+        },
+        {
+          "label": "Discurso de Pezeshkian (Rappler)",
+          "url": "https://www.youtube.com/watch?v=Vri424VyUQQ"
+        },
+        {
+          "label": "New Scientist",
+          "url": "https://www.newscientist.com/article/2598130-global-carbon-emissions-fall-in-2026-due-to-iran-energy-shock/"
+        }
+      ],
+      "conflictEvent": "Guerra de EE. UU. e Israel con Irán desde finales de febrero, con ataques a infraestructura energética y a buques, y cierre de facto del estrecho de Ormuz.",
+      "environmentalEvent": "Global Carbon Budget 2026 (10 nov): las emisiones fósiles de CO2 caerían un 0,4%, hasta 38.200 millones de toneladas; las del petróleo, un 1,9%. Es la primera caída anual desde 2020. Las emisiones totales, con el cambio de uso del suelo, marcarían un récord de 43.300 millones.",
+      "couplingType": [
+        "energía",
+        "clima",
+        "diplomacia climática",
+        "rutas marítimas"
+      ]
+    },
+    {
+      "id": "gaza-storm-damage-150k-tents-outside",
+      "rank": 2,
+      "status": "confirmado (seguimiento)",
+      "status_en": "confirmed (follow-up)",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#F59E0B",
+      "location": "Gaza / Deir al-Balah y las cinco gobernaciones",
       "lat": 31.42,
       "lon": 34.35,
-      "headline": "Gaza: la primera tormenta del invierno inunda el refugio de una población desplazada",
-      "headlineEn": "Gaza: the first winter storm floods the shelter of a displaced population",
-      "conflict_event": "Alto el fuego vigente, pero sin reconstrucción: la mayoría de los 2,1 millones de habitantes sigue desplazada y la entrada de materiales de refugio está restringida o demorada, según OCHA.",
-      "conflictEventEn": "Ceasefire in place but no reconstruction: most of the 2.1 million residents remain displaced and shelter materials face restrictions or delays, according to OCHA.",
-      "environmental_event": "Sistema de bajas presiones del 6 al 7 de noviembre: unos 60 mm en 12 horas en Ciudad de Gaza, alrededor del 15% de la lluvia anual (municipio, vía Anadolu). El propio feed SENTINEL/GDELT captó la señal en la capa de monitorización.",
-      "environmentalEventEn": "Low-pressure system on 6–7 November: about 60 mm in 12 hours in Gaza City, roughly 15% of annual rainfall (municipality, via Anadolu). The SENTINEL/GDELT feed itself picked up the signal in its monitor layer.",
+      "headline": "Gaza: 150.000 tiendas esperan fuera mientras dentro se agotan",
+      "headlineEn": "Gaza: 150,000 tents wait outside while stocks run out inside",
+      "conflict_event": "Alto el fuego sin reconstrucción y restricciones de acceso. En la misma semana, el 12 de noviembre, un ataque israelí contra un hospital (Israel afirma que el objetivo era Hamás), y el 14 de noviembre la ONU avisó de que el sistema sanitario está al borde del colapso (feed SENTINEL).",
+      "conflictEventEn": "Ceasefire without reconstruction and access restrictions. In the same week, an Israeli strike on a hospital on 12 November (Israel says it targeted Hamas), and on 14 November the UN warned the health system is near collapse (SENTINEL feed).",
+      "environmental_event": "Balance de la primera tormenta del invierno (6–8 nov) publicado por OCHA el 9 de noviembre: más de 6.000 refugios destruidos, 17.400 dañados y 55 espacios educativos inundados.",
+      "environmentalEventEn": "Toll of the first winter storm (6–8 Nov) published by OCHA on 9 November: more than 6,000 shelters destroyed, 17,400 damaged and 55 learning spaces flooded.",
       "coupling_type": [
         "inundación",
+        "deslizamiento",
         "refugio",
-        "desplazamiento",
         "acceso humanitario"
       ],
       "couplingTypeEn": [
         "flood",
+        "landslide",
         "shelter",
-        "displacement",
         "humanitarian access"
       ],
-      "why_it_matters": "Importa porque el factor que convierte una lluvia ordinaria en emergencia es político: refugio precario, infraestructura dañada y materiales que no entran. Es el acople que SENTINEL tenía en observación desde octubre.",
-      "fact": "Hecho: el Clúster de Gestión de Sitios de la ONU registró 264 alertas por lluvia e inundación en 261 sitios de desplazados hasta las 09:00 del 8 de noviembre (ReliefWeb). La oficina de medios del gobierno de Hamás cifró en 70.000 las tiendas inundadas en 12 horas; Defensa Civil recibió unas 1.500 llamadas de auxilio (Reuters, Al Jazeera). No se reportaron muertes.",
-      "coupling": "Dato de acople: según OCHA, al 1 de noviembre Gaza necesitaba unas 121.000 tiendas, 561.000 lonas y 1,7 millones de colchones, y los socios humanitarios solo disponían de unas 2.800 tiendas dentro del territorio (UN UNifeed). IOM y el Clúster estiman que 761.000 personas en sitios de desplazados pueden verse afectadas por inundaciones este invierno. Versión contraria: COGAT (Israel) afirma haber facilitado la entrada de 91.000 tiendas nuevas y lonas (Jerusalem Post).",
-      "couplingEn": "Coupling datum: according to OCHA, as of 1 November Gaza needed about 121,000 tents, 561,000 tarpaulins and 1.7 million mattresses, while partners had only about 2,800 tents inside the territory (UN UNifeed). IOM and the Cluster estimate 761,000 people in displacement sites may be affected by flooding this winter. Counter-claim: COGAT (Israel) says it facilitated entry of 91,000 new tents and tarps (Jerusalem Post).",
-      "implication": "Implicación estratégica (Evaluación): el invierno convierte la cuestión del acceso de materiales en un indicador medible del alto el fuego. Cada tormenta genera presión diplomática sobre los garantes y una disputa de narrativas (Hamás frente a COGAT) sobre la responsabilidad.",
-      "strategic_implication": "El clima convierte el acceso humanitario en métrica pública de la calidad del alto el fuego.",
-      "tripolar": "Lectura tripolar (Evaluación): EE. UU. es garante del alto el fuego y el actor con más palanca sobre la entrada de materiales; China y Rusia capitalizan el tema en foros multilaterales sin capacidad operativa sobre el terreno. Hipótesis: si las tormentas se repiten sin cambio en el acceso, la reconstrucción de Gaza se convertirá en terreno de competencia de financiación entre el Golfo, la UE y otros actores.",
-      "confidence": "Alta en el hecho físico y en las cifras ONU; media en las cifras de daños de la oficina de medios de Gaza",
+      "why_it_matters": "Importa porque el balance oficial confirma el acople de la semana pasada y lo hace medible: dentro de Gaza las existencias están prácticamente agotadas y fuera esperan más de 150.000 tiendas.",
+      "fact": "Hecho: según OCHA, más de 26.000 hogares pidieron ayuda, más de 3.900 se quedaron sin ningún refugio, y Defensa Civil recibió 2.166 llamadas de auxilio y solo pudo atender 218 (UN News). El 8 de noviembre, el derrumbe de un talud de arena sobre tiendas en Al Berka, al oeste de Deir al-Balah, causó cinco muertos, entre ellos tres niños (UN News, Al Jazeera).",
+      "coupling": "Dato de acople: más de 150.000 tiendas compradas por socios humanitarios y Estados están fuera de Gaza, listas para entrar; unas 117.000 están en Al-Arish (Egipto). El portavoz adjunto de la ONU dijo que falta el permiso de las autoridades israelinas para que pasen los controles (UN News). Advertencia: el derrumbe es del 8 de noviembre, en la ventana anterior; se incluye porque el balance se publicó en esta.",
+      "couplingEn": "Coupling datum: more than 150,000 tents bought by humanitarian partners and states are outside Gaza, ready to enter; about 117,000 are in Al-Arish (Egypt). The UN deputy spokesperson said permission from Israeli authorities is needed to pass checkpoints (UN News). Note: the landslide occurred on 8 November, in the previous window; it is included because the toll was published in this one.",
+      "implication": "Implicación estratégica (Evaluación): el cuello de botella ya no es la falta de material, sino su entrada. Eso traslada la presión del clima a la gestión de los pasos fronterizos y a los garantes del alto el fuego.",
+      "strategic_implication": "El invierno mide el alto el fuego por los pasos fronterizos, no por las existencias.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. tiene la mayor palanca sobre los permisos; Egipto y los donantes del Golfo y de la UE acumulan material en Al-Arish; China y Rusia usan el tema en foros multilaterales. Hipótesis: si se repiten las tormentas sin cambios en los permisos, crecerá la presión de la UE y de los Estados árabes sobre Washington.",
+      "confidence": "Alta (cifras de OCHA y de la ONU)",
       "sources": [
         {
-          "label": "ReliefWeb, Clúster de Gestión de Sitios",
-          "url": "https://reliefweb.int/report/occupied-palestinian-territory/heavy-rain-and-flooding-incidents-across-gaza-06-07-november-2026-update-1"
+          "label": "UN News, 9 nov",
+          "url": "https://news.un.org/en/story/2026/11/1168766"
         },
         {
-          "label": "UN UNifeed (OCHA)",
-          "url": "https://media.un.org/unifeed/en/asset/d368/d3682757"
+          "label": "Al Jazeera, 9 nov",
+          "url": "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people"
         },
         {
-          "label": "Anadolu, OCHA",
-          "url": "https://www.aa.com.tr/en/world/heavy-rains-flood-gaza-shelters-putting-displaced-families-at-immediate-risk-ocha/4115188"
-        },
-        {
-          "label": "Reuters, 7 nov",
-          "url": "https://www.reuters.com/business/environment/heavy-rain-floods-tents-housing-gaza-displaced-people-aid-shortages-hamper-2026-11-07/"
-        },
-        {
-          "label": "Al Jazeera, 7 nov",
-          "url": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza"
-        },
-        {
-          "label": "Anadolu, 60 mm",
-          "url": "https://u.aa.com.tr/en/middle-east/flooded-out-of-their-tents-gaza-families-have-nowhere-left-to-go/4115647"
-        },
-        {
-          "label": "Jerusalem Post, COGAT",
-          "url": "http://store.jpost.com/middle-east/article-914223"
+          "label": "Euronews",
+          "url": "https://www.euronews.com/2026/11/09/storm-killed-five-in-gaza-as-sandstone-slab-collapsed-onto-tents"
         }
       ],
-      "conflictEvent": "Alto el fuego vigente, pero sin reconstrucción: la mayoría de los 2,1 millones de habitantes sigue desplazada y la entrada de materiales de refugio está restringida o demorada, según OCHA.",
-      "environmentalEvent": "Sistema de bajas presiones del 6 al 7 de noviembre: unos 60 mm en 12 horas en Ciudad de Gaza, alrededor del 15% de la lluvia anual (municipio, vía Anadolu). El propio feed SENTINEL/GDELT captó la señal en la capa de monitorización.",
+      "conflictEvent": "Alto el fuego sin reconstrucción y restricciones de acceso. En la misma semana, el 12 de noviembre, un ataque israelí contra un hospital (Israel afirma que el objetivo era Hamás), y el 14 de noviembre la ONU avisó de que el sistema sanitario está al borde del colapso (feed SENTINEL).",
+      "environmentalEvent": "Balance de la primera tormenta del invierno (6–8 nov) publicado por OCHA el 9 de noviembre: más de 6.000 refugios destruidos, 17.400 dañados y 55 espacios educativos inundados.",
       "couplingType": [
         "inundación",
+        "deslizamiento",
         "refugio",
-        "desplazamiento",
         "acceso humanitario"
       ]
     },
     {
-      "id": "hormuz-tanker-fires-marine-pollution-risk",
-      "rank": 2,
-      "status": "acople en observación (riesgo ambiental derivado del conflicto)",
-      "status_en": "watch (conflict-driven environmental risk)",
-      "priority": "Media-alta",
-      "priorityEn": "Medium-high",
-      "accent": "#F59E0B",
-      "location": "Estrecho de Ormuz / golfo de Omán, costa de Khasab y Jask",
-      "lat": 26.4,
-      "lon": 56.6,
-      "headline": "Ormuz: tanqueros en llamas en el estrecho y riesgo de contaminación marina",
-      "headlineEn": "Hormuz: burning tankers in the strait and marine pollution risk",
-      "conflict_event": "Guerra con Irán desde finales de febrero; bloqueo naval de EE. UU. a puertos iraníes y control iraní de rutas en el estrecho. La CGRI afirmó incendios de tanqueros el 3, 5 y 8 de noviembre en rutas que considera «no autorizadas»; EE. UU. atacó la isla de Qeshm el 3 de noviembre.",
-      "conflictEventEn": "War with Iran since late February; US naval blockade of Iranian ports and Iranian control of routes in the strait. The IRGC claimed tanker fires on 3, 5 and 8 November on routes it calls 'unauthorized'; the US struck Qeshm Island on 3 November.",
-      "environmental_event": "No hay evento NASA/USGS. Riesgo de contaminación por hidrocarburos: el VLCC Gem No.2, alcanzado el 9 de octubre frente a Sharjah, perdió crudo durante más de una semana hasta detenerse a comienzos de noviembre (Lloyd's List, 2 nov). Imágenes Copernicus del 3 de noviembre muestran un tanquero dañado en el corredor sur (UANI).",
-      "environmentalEventEn": "No NASA/USGS event. Oil pollution risk: VLCC Gem No.2, hit on 9 October off Sharjah, leaked crude for over a week until it stopped in early November (Lloyd's List, 2 Nov). Copernicus imagery from 3 November shows a damaged tanker in the southern corridor (UANI).",
-      "coupling_type": [
-        "contaminación marina",
-        "energía",
-        "rutas marítimas",
-        "conflicto naval"
-      ],
-      "couplingTypeEn": [
-        "marine pollution",
-        "energy",
-        "sea lanes",
-        "naval conflict"
-      ],
-      "why_it_matters": "Importa porque es un acople inverso: aquí el conflicto produce el riesgo ambiental, en un mar semicerrado con una única salida y en el principal cuello de botella petrolero del mundo.",
-      "fact": "Hecho: la CGRI afirmó que tres tanqueros ardieron el 8 de noviembre y otros el 3 y el 5; UKMTO informó de un tanquero en llamas frente a Khasab (Omán) el 7 de noviembre con evacuación de la tripulación (Gulf News/AFP). La OMI contabiliza 128 incidentes con buques comerciales y 24 marinos muertos desde el inicio de la guerra (UANI). Las afirmaciones de la CGRI no están verificadas de forma independiente.",
-      "coupling": "Dato de acople: un oceanógrafo de la Universidad del Sur de Florida estimó en octubre que la superficie con petróleo en el golfo Pérsico duplicaba lo esperable sin conflicto (CNN, contexto anterior a la ventana). En la ventana no hay medición independiente de nuevos derrames asociados a los incendios declarados; por eso queda como riesgo en observación, no como daño confirmado.",
-      "couplingEn": "Coupling datum: a University of South Florida oceanographer estimated in October that surface oil in the Persian Gulf was double what would be expected without conflict (CNN, context prior to the window). Within the window there is no independent measurement of new spills linked to the declared fires, so it stays as a watched risk, not confirmed damage.",
-      "implication": "Implicación estratégica (Evaluación): la contaminación se suma como coste del uso de minas y del control de rutas; afecta a pesquerías, desalinizadoras y costas de terceros (EAU, Omán) que no son parte directa del conflicto, lo que amplía el número de actores con interés en una salida negociada.",
-      "strategic_implication": "El daño ambiental en Ormuz amplía el conflicto a Estados costeros que no combaten.",
-      "tripolar": "Lectura tripolar (Evaluación): EE. UU. sostiene el bloqueo y escolta tránsitos; China, primer comprador del crudo del Golfo, es la más expuesta a la interrupción; Rusia gana con precios altos y recibe al presidente iraní. Hipótesis: un derrame mayor documentado por satélite podría convertirse en argumento diplomático para un corredor marítimo supervisado.",
-      "confidence": "Media en los hechos (reclamaciones no verificadas de la CGRI); baja en el daño ambiental dentro de la ventana",
-      "sources": [
-        {
-          "label": "Gulf News / AFP, 8 nov",
-          "url": "https://gulfnews.com/world/mena/iran-says-3-tankers-caught-fire-in-hormuz-1.500740005"
-        },
-        {
-          "label": "Anadolu, 3 nov",
-          "url": "https://www.aa.com.tr/en/us-israel-iran-war/iran-says-3-oil-tankers-hit-naval-mines-catch-fire-in-strait-of-hormuz/4110024"
-        },
-        {
-          "label": "GlobalSecurity, día 251",
-          "url": "https://www.globalsecurity.org/military/ops/iran-war-20261105.htm"
-        },
-        {
-          "label": "Lloyd's List, Gem No.2",
-          "url": "https://www.lloydslist.com/LL1158887/VLCC-stops-leaking-oil-off-UAE"
-        },
-        {
-          "label": "UANI, imágenes Copernicus",
-          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-november-3-2026"
-        },
-        {
-          "label": "CNN vía Egypt Independent",
-          "url": "https://www.egyptindependent.com/the-iran-wars-toxic-impact-on-one-of-the-planets-most-unique-seas/"
-        }
-      ],
-      "conflictEvent": "Guerra con Irán desde finales de febrero; bloqueo naval de EE. UU. a puertos iraníes y control iraní de rutas en el estrecho. La CGRI afirmó incendios de tanqueros el 3, 5 y 8 de noviembre en rutas que considera «no autorizadas»; EE. UU. atacó la isla de Qeshm el 3 de noviembre.",
-      "environmentalEvent": "No hay evento NASA/USGS. Riesgo de contaminación por hidrocarburos: el VLCC Gem No.2, alcanzado el 9 de octubre frente a Sharjah, perdió crudo durante más de una semana hasta detenerse a comienzos de noviembre (Lloyd's List, 2 nov). Imágenes Copernicus del 3 de noviembre muestran un tanquero dañado en el corredor sur (UANI).",
-      "couplingType": [
-        "contaminación marina",
-        "energía",
-        "rutas marítimas",
-        "conflicto naval"
-      ]
-    },
-    {
-      "id": "india-murasu-second-cyclone-andhra-watch",
+      "id": "myanmar-southern-shan-floods-watch",
       "rank": 3,
       "status": "observación",
       "status_en": "watch",
       "priority": "Media",
       "priorityEn": "Medium",
       "accent": "#22D3EE",
-      "location": "India / Andhra Pradesh: Prakasam, Bapatla, Guntur, Palnadu",
-      "lat": 15.53,
-      "lon": 80.22,
-      "headline": "Murasu: segundo ciclón en una semana sobre la misma costa india",
-      "headlineEn": "Murasu: a second cyclone in one week on the same Indian coast",
-      "conflict_event": "Sin conflicto armado. Nodo: capacidad estatal y procesos institucionales bajo choques climáticos encadenados en la costa del golfo de Bengala.",
-      "conflictEventEn": "No armed conflict. Node: state capacity and institutional processes under back-to-back climate shocks on the Bay of Bengal coast.",
-      "environmental_event": "NASA EONET / IMD: tormenta ciclónica severa Murasu, cruzó la costa cerca de Ongole entre las 22:00 UTC del 2 y las 00:00 UTC del 3 de noviembre con vientos de 100–110 km/h; GDACS la clasificó con alerta roja.",
-      "environmentalEventEn": "NASA EONET / IMD: severe cyclonic storm Murasu crossed the coast near Ongole between 22:00 UTC on 2 November and 00:00 UTC on 3 November with 100–110 km/h winds; GDACS rated it a red alert.",
+      "location": "Myanmar / sur del estado Shan (Taunggyi)",
+      "lat": 20.78,
+      "lon": 97.04,
+      "headline": "Shan: lluvia récord de noviembre en un estado en guerra",
+      "headlineEn": "Shan: record November rain in a state at war",
+      "conflict_event": "El estado Shan es uno de los principales frentes de la guerra civil. Según Intelligence Online (9 nov), Pekín abrió la frontera en zonas controladas por el KIA y grupos de la Alianza de la Hermandad después de que un avión de la junta atacara un vehículo chino.",
+      "conflictEventEn": "Shan State is a main front of the civil war. According to Intelligence Online (9 Nov), Beijing opened the border in areas held by the KIA and Brotherhood Alliance groups after a junta warplane attacked a Chinese vehicle.",
+      "environmental_event": "NASA EONET / GDACS (Copernicus GloFAS): inundación en Shan del 10 al 12 de noviembre (alerta verde). El servicio meteorológico birmano (DMH) registró en Taunggyi un nuevo récord de lluvia de noviembre (103 mm el 11 de noviembre; el anterior, de 1974, era de 80 mm).",
+      "environmentalEventEn": "NASA EONET / GDACS (Copernicus GloFAS): flooding in Shan on 10–12 November (green alert). Myanmar's DMH recorded a new November rainfall record at Taunggyi (103 mm on 11 November; the previous 1974 record was 80 mm).",
       "coupling_type": [
-        "ciclón",
-        "agricultura",
-        "pesca",
-        "continuidad institucional"
+        "inundación",
+        "desplazamiento",
+        "zona de conflicto"
       ],
       "couplingTypeEn": [
-        "cyclone",
-        "agriculture",
-        "fisheries",
-        "institutional continuity"
+        "flood",
+        "displacement",
+        "conflict zone"
       ],
-      "why_it_matters": "Importa porque llega una semana después de Arnab sobre la misma costa: el impacto acumulado pesa sobre agricultura, pesca y servicios, y obligó a reprogramar el recuento de elecciones municipales en los distritos más afectados.",
-      "fact": "Hecho: el gobierno de Andhra Pradesh cifró en ocho los muertos y en 1.918,55 millones de rupias (unos 203 millones de dólares) los daños, con 143.122 hectáreas de cultivos y 186.063 agricultores afectados, 983 viviendas y 346 barcos dañados (IANS). Cuatro de nueve pescadores de Tamil Nadu desaparecidos fueron hallados muertos (Telegraph India).",
-      "coupling": "Dato de acople: según la recopilación de Wikipedia con fuentes locales, la comisión electoral del estado reprogramó el recuento de votos de elecciones municipales en Prakasam y Bapatla. No hay evidencia de impacto en seguridad ni en operaciones navales; el acople es institucional y socioeconómico, por eso queda en observación.",
-      "couplingEn": "Coupling datum: according to Wikipedia's compilation of local sources, the state election commission rescheduled municipal vote counting in Prakasam and Bapatla. There is no evidence of security or naval impact; the coupling is institutional and socioeconomic, so it stays on watch.",
-      "implication": "Implicación estratégica (Evaluación): la repetición de ciclones tardíos sobre la misma franja pone a prueba la capacidad de respuesta de un Estado que aspira a ser potencia marítima del Índico. El coste agrícola y pesquero acumulado es la variable a seguir.",
-      "strategic_implication": "Los choques climáticos encadenados son una variable de la resiliencia interna de India, Estado bisagra del Indo-Pacífico.",
-      "tripolar": "Lectura tripolar (Evaluación): India mantiene su autonomía estratégica entre EE. UU., Rusia y China; Murasu no altera ese equilibrio, pero muestra que la resiliencia climática es parte de su capacidad de proyección. Hipótesis: la cooperación en alerta temprana y reconstrucción costera será un terreno de influencia en el golfo de Bengala.",
-      "confidence": "Alta en el hecho físico; baja en el acople estratégico",
+      "why_it_matters": "Importa como señal: un choque hidrometeorológico fuera de temporada en una región en guerra, con frontera con China. No hay evidencia de que haya alterado operaciones militares ni el acceso humanitario.",
+      "fact": "Hecho: unas 4.950 personas de 1.123 hogares fueron evacuadas en cinco municipios del sur de Shan, según los bomberos locales (RSOE-EDIS). GDACS no registra muertes.",
+      "coupling": "Dato de acople: el acople es solo espacial (inundación en un estado con conflicto activo). No hay fuentes que vinculen la inundación con cambios en el conflicto; por eso queda en observación.",
+      "couplingEn": "Coupling datum: the coupling is only spatial (a flood in a state with active conflict). No source links the flood to changes in the conflict, so it stays on watch.",
+      "implication": "Implicación estratégica (Evaluación): la capacidad de la junta para responder a desastres en zonas que controla, como Taunggyi, frente a las zonas en manos de la resistencia, es un indicador de legitimidad que conviene seguir.",
+      "strategic_implication": "La respuesta a desastres es un indicador de control territorial en Myanmar.",
+      "tripolar": "Lectura tripolar (Evaluación): China gestiona su frontera con los grupos armados de Shan; Intelligence Online informa de operadores rusos de drones que apoyan a la junta. Hipótesis: la ayuda ante desastres puede convertirse en canal de influencia en la frontera sino-birmana.",
+      "confidence": "Alta en el hecho físico; baja en el acople",
       "sources": [
         {
-          "label": "IMD, aviso 15",
-          "url": "https://mausam.imd.gov.in/backend/assets/cyclone_pdf/TROPICAL_CYCLONE_ADVISORY_NO__15_based_on_0300_UTC_of_03_11_2026.pdf"
+          "label": "GDACS FL 1104280",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104280"
         },
         {
-          "label": "GDACS, alerta roja",
-          "url": "https://www.gdacs.org/Cyclones/report.aspx?eventtype=TC&eventid=1001346&episodedate=2026-11-01%2012:00:00&sourceid=JTWC"
+          "label": "DMH Myanmar, récords de lluvia",
+          "url": "https://www.moezala.gov.mm/en/bulletin/135056"
         },
         {
-          "label": "AP",
-          "url": "https://apnews.com/article/cyclone-murasu-india-andhra-pradesh-bay-of-bengal-c8d1899f4344625f63d6d456dc3805fb"
+          "label": "RSOE-EDIS, evacuaciones",
+          "url": "https://rsoe-edis.org/eventList/details/1158279/0"
         },
         {
-          "label": "IANS, balance de daños",
-          "url": "https://indiatribune.com/public/andhra-cyclone-murasu-claimed-eight-lives-caused-rs-1918-crore-loss"
-        },
-        {
-          "label": "Telegraph India",
-          "url": "https://www.telegraphindia.com/india/cyclone-murasu-four-of-nine-missing-fishermen-found-dead-after-boat-capsizes-off-andhra-coast/cid/2187988"
-        },
-        {
-          "label": "Wikipedia, recuento electoral",
-          "url": "https://en.wikipedia.org/wiki/Cyclone_Murasu"
+          "label": "Intelligence Online",
+          "url": "https://www.intelligenceonline.com/asia-pacific/2026/11/09/beijing-helps-myanmar-rebels-after-junta-attack-on-chinese-vehicle,110915947-art"
         }
       ],
-      "conflictEvent": "Sin conflicto armado. Nodo: capacidad estatal y procesos institucionales bajo choques climáticos encadenados en la costa del golfo de Bengala.",
-      "environmentalEvent": "NASA EONET / IMD: tormenta ciclónica severa Murasu, cruzó la costa cerca de Ongole entre las 22:00 UTC del 2 y las 00:00 UTC del 3 de noviembre con vientos de 100–110 km/h; GDACS la clasificó con alerta roja.",
+      "conflictEvent": "El estado Shan es uno de los principales frentes de la guerra civil. Según Intelligence Online (9 nov), Pekín abrió la frontera en zonas controladas por el KIA y grupos de la Alianza de la Hermandad después de que un avión de la junta atacara un vehículo chino.",
+      "environmentalEvent": "NASA EONET / GDACS (Copernicus GloFAS): inundación en Shan del 10 al 12 de noviembre (alerta verde). El servicio meteorológico birmano (DMH) registró en Taunggyi un nuevo récord de lluvia de noviembre (103 mm el 11 de noviembre; el anterior, de 1974, era de 80 mm).",
       "couplingType": [
-        "ciclón",
-        "agricultura",
-        "pesca",
-        "continuidad institucional"
+        "inundación",
+        "desplazamiento",
+        "zona de conflicto"
       ]
     }
   ],
   "not_selected": [
     {
-      "id": "yemen-saudi-houthi",
-      "location": "Yemen / Taiz y frente saudí-hutí",
-      "note": "Escalada militar saudí-hutí (27 muertos según los hutíes, 8 nov) y 367 víctimas civiles en Taiz en octubre según el Taiz Rights Center; sin nuevo dato ambiental verificable en la ventana. El cerco hídrico de Taiz sigue en observación; no hay clasificación IPC nueva."
+      "id": "hormuz-bahrain",
+      "location": "Golfo / Bahréin y Ormuz",
+      "note": "La CGRI reivindicó un ataque contra un radar de EE. UU. en Bahréin y EE. UU. dice que derribó dos drones (14–15 nov); sin nuevo dato ambiental medido en la ventana. El riesgo de vertidos sigue en observación."
     },
     {
-      "id": "in-fa",
-      "location": "Pacífico occidental, sur de Japón",
-      "note": "El supertifón In-fa se situó el 5 de noviembre al sur de Japón (29,4N 141,5E) sin impacto documentado en zonas pobladas ni en instalaciones militares."
+      "id": "yemen-saudi",
+      "location": "Arabia Saudí / Yemen",
+      "note": "Interceptaciones de misiles hutíes hacia Riad; sin acople ambiental."
     },
     {
-      "id": "japan-quakes",
-      "location": "Japón, costa de Hasaki y Hamakita",
-      "note": "Sismos M6,1, M5,5 y M5,5 con alerta USGS verde; sin daños relevantes ni acople geopolítico."
+      "id": "sudan-ethiopia",
+      "location": "Frontera Sudán–Etiopía",
+      "note": "Tensión fronteriza descrita por el feed; sin evento ambiental verificado en la ventana."
     },
     {
-      "id": "colombia-quake",
-      "location": "Colombia / Rioblanco (Tolima)",
-      "note": "Sismo M5,4 con alerta verde en zona con presencia histórica de grupos armados; sin daños reportados."
+      "id": "cyclone-03s",
+      "location": "Índico suroccidental (norte de Madagascar)",
+      "note": "Ciclón tropical 03S en EONET (8 nov) sin impacto documentado en tierra."
     },
     {
-      "id": "europe-floods",
-      "location": "Francia y Bulgaria",
-      "note": "Inundaciones registradas por EONET; impacto local sin acople geopolítico."
+      "id": "pacific-storms",
+      "location": "Pacífico (Cempaka, Pena)",
+      "note": "Sistemas en mar abierto sin impacto en tierra."
     },
     {
-      "id": "ukraine-grid",
+      "id": "quakes",
+      "location": "Islas Salomón, Papúa Nueva Guinea, Perú, Japón, Guatemala",
+      "note": "Sismos M5,5–6,4 con alerta USGS verde, sin daños relevantes."
+    },
+    {
+      "id": "ukraine",
       "location": "Ucrania",
-      "note": "El acople frío-red eléctrica sigue en observación; en esta ejecución no se verificó un evento ambiental nuevo en la ventana."
-    },
-    {
-      "id": "wildfires",
-      "location": "Sahel, Sudán del Sur, África austral, Australia",
-      "note": "Focos EONET compatibles con quemas estacionales; sin acople verificado con el conflicto en Sudán."
+      "note": "Negociaciones en Abu Dabi y ataques con drones en Kiev; sin evento ambiental verificado. El acople frío-red eléctrica sigue en observación."
     }
   ],
   "best_short_candidate": {
-    "id": "gaza-first-winter-storm-short",
-    "title": "Gaza: la primera lluvia del invierno",
-    "reason": "Es el acople más sólido de la semana: evento físico medido, cifras de la ONU sobre la brecha de refugio y una lectura estratégica clara (acceso de materiales como métrica del alto el fuego), con la versión israelí incluida para no sobreafirmar."
+    "id": "iran-war-emissions-cop31-short",
+    "title": "La guerra que bajó las emisiones",
+    "reason": "Es el acople de mayor alcance geopolítico de la semana, con datos científicos publicados y verificables, y una lectura tripolar directa. Además no repite el tema de la semana anterior (Gaza) y evita contenido gráfico de violencia."
   },
   "bestShort": {
-    "id": "gaza-first-winter-storm-short",
-    "title": "Gaza: la primera lluvia del invierno",
-    "reason": "Es el acople más sólido de la semana: evento físico medido, cifras de la ONU sobre la brecha de refugio y una lectura estratégica clara (acceso de materiales como métrica del alto el fuego), con la versión israelí incluida para no sobreafirmar."
+    "id": "iran-war-emissions-cop31-short",
+    "title": "La guerra que bajó las emisiones",
+    "reason": "Es el acople de mayor alcance geopolítico de la semana, con datos científicos publicados y verificables, y una lectura tripolar directa. Además no repite el tema de la semana anterior (Gaza) y evita contenido gráfico de violencia."
   },
   "short_script": {
-    "title": "Gaza: la primera lluvia del invierno",
-    "hook_3s": "Sesenta milímetros en doce horas. Setenta mil tiendas bajo el agua.",
-    "scene_1": "Hecho: el 6 y 7 de noviembre, la primera tormenta del invierno inundó campos de desplazados en toda Gaza. La ONU registró alertas en 261 sitios. Defensa Civil recibió unas 1.500 llamadas de auxilio.",
-    "scene_2": "Dato de acople: OCHA calculaba que Gaza necesitaba 121.000 tiendas para el invierno. Dentro del territorio había unas 2.800. La lluvia es meteorología. El refugio es política.",
-    "scene_3": "Implicación estratégica: con alto el fuego pero sin reconstrucción, cada tormenta mide si los materiales entran. Israel dice que ha facilitado 91.000 tiendas; la ONU pide más acceso. El invierno convierte esa disputa en un dato público.",
-    "close": "¿Cuántas tormentas aguanta un alto el fuego sin reconstrucción? GEOPÓLEM. Bienvenidos al tablero.",
+    "title": "La guerra que bajó las emisiones",
+    "hook_3s": "Por primera vez desde 2020, el mundo emite menos CO2 fósil. El motivo no es verde.",
+    "scene_1": "Hecho: el Global Carbon Budget proyecta para 2026 una caída del 0,4% en las emisiones fósiles y del 1,9% en las del petróleo. La causa principal: el choque de precios tras el cierre de Ormuz.",
+    "scene_2": "Dato de acople: el intervalo va de menos 1,5% a más 0,6%, y los autores esperan un rebote. No es un pico: es un efecto del precio. Y en la COP31, Irán pidió compensación por el daño ambiental de los ataques que ha sufrido.",
+    "scene_3": "Implicación estratégica: EE. UU. reduce emisiones un 1,3% y China un 0,9%; Rusia gana con el precio. La guerra entra en la diplomacia climática por dos puertas: la estadística y la reclamación.",
+    "close": "¿Puede una guerra entrar en la contabilidad del clima? GEOPÓLEM. Bienvenidos al tablero.",
     "visuals": [
-      "Mapa de Gaza en navy/teal: Ciudad de Gaza, Nuseirat, Deir al-Balah, al-Mawasi con puntos de alerta en rojo",
-      "Contador: 60 mm en 12 h · 15% de la lluvia anual",
-      "Barra comparativa en rojo: 121.000 tiendas necesarias frente a 2.800 disponibles (OCHA, 1 nov)",
-      "Línea de fuente: ONU · OCHA · ReliefWeb",
+      "Gráfico de línea en teal: emisiones fósiles 2015–2026 con la caída de 2026 en rojo",
+      "Mapa del estrecho de Ormuz con la ruta marítima cortada",
+      "Barra roja: petróleo −1,9% · carbón +0,6%",
+      "Plano de la COP31 en Antalya con la cita de Pezeshkian como texto de fuente",
+      "Línea de fuente: Global Carbon Project · Reuters",
       "Cierre: logo, BIENVENIDOS AL TABLERO, firma de la analista jefe y pregunta CTA en rojo"
     ],
     "english_subtitles": [
-      "Sixty millimetres in twelve hours. Seventy thousand tents under water.",
-      "On 6 and 7 November, the first winter storm flooded displacement camps across Gaza.",
-      "The UN logged alerts at 261 sites. Civil defence received about 1,500 distress calls.",
-      "OCHA estimated Gaza needed 121,000 tents for winter. About 2,800 were inside the territory.",
-      "Rain is weather. Shelter is politics.",
-      "With a ceasefire but no reconstruction, every storm tests whether materials get in.",
-      "Israel says it facilitated 91,000 tents; the UN asks for more access.",
-      "How many storms can a ceasefire without reconstruction withstand? GEOPÓLEM. Welcome to the board."
+      "For the first time since 2020, the world emits less fossil CO2. The reason is not green.",
+      "The Global Carbon Budget projects a 0.4% fall in fossil emissions in 2026, and 1.9% in oil.",
+      "The main driver: the price shock after the closure of Hormuz.",
+      "The range runs from minus 1.5% to plus 0.6%, and the authors expect a rebound.",
+      "It is not a peak. It is a price effect.",
+      "At COP31, Iran asked for compensation for environmental damage from the strikes it suffered.",
+      "US emissions fall 1.3%, China's 0.9%; Russia gains from the price.",
+      "Can a war enter the climate ledger? GEOPÓLEM. Welcome to the board."
     ],
     "hashtags": [
       "#GEOPÓLEM",
-      "#Gaza",
-      "#Invierno",
-      "#OCHA",
+      "#COP31",
+      "#Ormuz",
+      "#Clima",
       "#Geopolítica"
     ]
   },
   "tags": [
     "#GEOPÓLEM",
     "#SENTINEL",
-    "#Gaza",
+    "#COP31",
     "#Ormuz",
-    "#India",
+    "#Gaza",
+    "#Myanmar",
     "#Tripolaridad",
     "#OSINT"
   ],
   "dataUrl": "./data/sentinel/weekly-brief.json",
-  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-11-02_2026-11-08.json",
-  "markdownUrl": "./data/sentinel/weekly-brief-2026-11-09.md",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-11-09_2026-11-15.json",
+  "markdownUrl": "./data/sentinel/weekly-brief-2026-11-16.md",
   "close": "GEOPÓLEM. Bienvenidos al tablero.",
   "layerLabel": "Acople ambiental significativo",
   "monitor_layer": {
     "label": "Acople ambiental significativo",
-    "status": "1 confirmado · 2 en observación",
+    "status": "2 confirmados · 1 en observación",
     "items": [
       {
-        "id": "gaza-first-winter-storm-tents-flooded",
-        "location": "Gaza / Ciudad de Gaza, Deir al-Balah, Nuseirat, al-Mawasi",
-        "status": "confirmado",
+        "id": "iran-war-oil-shock-emissions-cop31",
+        "location": "Global / estrecho de Ormuz y COP31 en Antalya (Turquía)",
+        "status": "confirmado (datos científicos); reclamación iraní no verificada",
         "priority": "Alta",
         "accent": "#EF4444",
+        "lat": 36.88,
+        "lon": 30.7
+      },
+      {
+        "id": "gaza-storm-damage-150k-tents-outside",
+        "location": "Gaza / Deir al-Balah y las cinco gobernaciones",
+        "status": "confirmado (seguimiento)",
+        "priority": "Media-alta",
+        "accent": "#F59E0B",
         "lat": 31.42,
         "lon": 34.35
       },
       {
-        "id": "hormuz-tanker-fires-marine-pollution-risk",
-        "location": "Estrecho de Ormuz / golfo de Omán, costa de Khasab y Jask",
-        "status": "acople en observación (riesgo ambiental derivado del conflicto)",
-        "priority": "Media-alta",
-        "accent": "#F59E0B",
-        "lat": 26.4,
-        "lon": 56.6
-      },
-      {
-        "id": "india-murasu-second-cyclone-andhra-watch",
-        "location": "India / Andhra Pradesh: Prakasam, Bapatla, Guntur, Palnadu",
+        "id": "myanmar-southern-shan-floods-watch",
+        "location": "Myanmar / sur del estado Shan (Taunggyi)",
         "status": "observación",
         "priority": "Media",
         "accent": "#22D3EE",
-        "lat": 15.53,
-        "lon": 80.22
+        "lat": 20.78,
+        "lon": 97.04
       }
     ]
   },
   "media_publication": {
     "status": "prepared",
-    "published_at": "2026-11-09T07:40:00+01:00",
+    "published_at": "2026-11-16T07:50:00+01:00",
     "youtube_long": {
-      "title": "GEOPÓLEM SENTINEL · Gaza, Ormuz e India: el tablero conflicto-ambiente",
-      "url": "./data/sentinel/weekly-brief-2026-11-09.md",
+      "title": "GEOPÓLEM SENTINEL · Ormuz, Gaza y Shan: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-11-16.md",
       "format": "guion editorial",
       "duration": "4-6 min"
     },
     "youtube_short": {
-      "title": "Gaza: la primera lluvia del invierno | GEOPÓLEM SENTINEL",
-      "url": "./data/sentinel/weekly-brief-2026-11-09.md#short-del-martes",
+      "title": "La guerra que bajó las emisiones | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-11-16.md#short-del-martes",
       "format": "9:16 guion",
       "duration": "45-55 s"
     },
@@ -677,16 +619,16 @@
   },
   "mediaPublication": {
     "status": "prepared",
-    "published_at": "2026-11-09T07:40:00+01:00",
+    "published_at": "2026-11-16T07:50:00+01:00",
     "youtube_long": {
-      "title": "GEOPÓLEM SENTINEL · Gaza, Ormuz e India: el tablero conflicto-ambiente",
-      "url": "./data/sentinel/weekly-brief-2026-11-09.md",
+      "title": "GEOPÓLEM SENTINEL · Ormuz, Gaza y Shan: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-11-16.md",
       "format": "guion editorial",
       "duration": "4-6 min"
     },
     "youtube_short": {
-      "title": "Gaza: la primera lluvia del invierno | GEOPÓLEM SENTINEL",
-      "url": "./data/sentinel/weekly-brief-2026-11-09.md#short-del-martes",
+      "title": "La guerra que bajó las emisiones | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-11-16.md#short-del-martes",
       "format": "9:16 guion",
       "duration": "45-55 s"
     },
