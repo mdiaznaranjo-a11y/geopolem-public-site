@@ -41,6 +41,31 @@ export const VIDEO_CATEGORIES = {
 //   editorialClose — optional editorial sign-off line shown in the player
 export const VIDEOS = [
   {
+    id: 'sentinel-brief-2026-11-09-15',
+    src: './assets/videos/geopolem_sentinel_brief_2026_11_09_15_revista.mp4',
+    poster: './assets/videos/posters/geopolem_sentinel_brief_2026_11_09_15_revista.jpg',
+    title: 'SENTINEL · Guerra, clima y territorio (9-15 nov 2026)',
+    category: 'osint',
+    language: 'ES',
+    subtitles: [],
+    duration: '00:23',
+    description: 'Brief semanal SENTINEL en formato revista. Ormuz y COP31: primera caída del CO2 fósil desde 2020 (−0,4%), por el choque de precios tras el cierre de Ormuz. Gaza: más de 6.000 refugios destruidos y 150.000 tiendas esperando fuera. Myanmar: lluvia récord en Shan, en observación.',
+    strategic: 'Evaluación GEOPÓLEM: la guerra entra en la diplomacia climática por dos puertas, la estadística y la reclamación. Correlación no implica causalidad.',
+    copyShort: '¿Puede una guerra entrar en la contabilidad del clima?',
+    sources: [
+      { label: 'Ver en YouTube', url: 'https://youtube.com/shorts/CdNjWfdy-04' },
+      { label: 'Brief completo SENTINEL', url: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sentinel' },
+      { label: 'Global Carbon Budget · 10 nov 2026', url: 'https://globalcarbonbudget.org/fossil-co2-emissions-decrease-in-2026/' },
+      { label: 'UN News / OCHA · 9 nov 2026', url: 'https://news.un.org/en/story/2026/11/1168766' },
+    ],
+    editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
+    tags: ['SENTINEL', 'COP31', 'Ormuz', 'Gaza', 'Clima', 'GEOPÓLEM'],
+    source: 'GEOPOLEM-SENTINEL-Brief-9-15-nov--Revista.mp4',
+    youtubeUrl: 'https://youtube.com/shorts/CdNjWfdy-04',
+    webUrl: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala',
+    orientation: 'vertical',
+  },
+  {
     id: 'venezuela-maquina-de-manipular',
     src: './assets/videos/geopolem_venezuela_maquina_de_manipular_16x9.mp4',
     poster: './assets/videos/posters/geopolem_venezuela_maquina_de_manipular_16x9.jpg',
