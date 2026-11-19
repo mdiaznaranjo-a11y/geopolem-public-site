@@ -2,376 +2,102 @@
   "events": [
     {
       "actors": [
-        "United States"
+        "Australia"
       ],
-      "domain": "sanangelolive.com",
-      "id": "evt_04e3bbe74583a2a5",
+      "domain": "westernadvocate.com.au",
+      "id": "evt_9265c7418884f4a3",
       "language": "English",
       "matched_regions": [
-        "iran",
-        "iranian"
+        "yemen",
+        "houthi",
+        "saudi"
       ],
       "matched_themes": [
-        "missile",
-        "drone",
-        "strike",
+        "rebel",
         "attack"
-      ],
-      "region": "MENA",
-      "score": 9.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "U . S . Strikes Iranian Missile Site After Drone Attack in Bahrain",
-      "tone": null,
-      "url": "https://sanangelolive.com/news/national/2026-11-17/us-strikes-iranian-missile-site-after-drone-attack-bahrain"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "richmondandtwickenhamtimes.co.uk",
-      "id": "evt_b4b8a7f5b018d95c",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "escalate",
-        "strike",
-        "attack"
-      ],
-      "region": "Europa del Este",
-      "score": 9.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Ukraine strikes major Russian bridge as aerial attacks escalate",
-      "tone": null,
-      "url": "https://www.richmondandtwickenhamtimes.co.uk/news/national/26735858.ukraine-strikes-major-russian-bridge-aerial-attacks-escalate/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "hexham-courant.co.uk",
-      "id": "evt_884f06f9c3aab8e8",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "escalate",
-        "strike",
-        "attack"
-      ],
-      "region": "Europa del Este",
-      "score": 9.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Ukraine strikes major Russian bridge as aerial attacks escalate",
-      "tone": null,
-      "url": "https://www.hexham-courant.co.uk/news/national/26735858.ukraine-strikes-major-russian-bridge-aerial-attacks-escalate/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "guardian-series.co.uk",
-      "id": "evt_794d923656e0a9aa",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "escalate",
-        "strike",
-        "attack"
-      ],
-      "region": "Europa del Este",
-      "score": 9.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Ukraine strikes major Russian bridge as aerial attacks escalate",
-      "tone": null,
-      "url": "https://www.guardian-series.co.uk/news/national/26735858.ukraine-strikes-major-russian-bridge-aerial-attacks-escalate/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "thisiswiltshire.co.uk",
-      "id": "evt_cfc557a2ef9e5ca8",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "escalate",
-        "strike",
-        "attack"
-      ],
-      "region": "Europa del Este",
-      "score": 9.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Ukraine strikes major Russian bridge as aerial attacks escalate",
-      "tone": null,
-      "url": "https://www.thisiswiltshire.co.uk/news/national/26735858.ukraine-strikes-major-russian-bridge-aerial-attacks-escalate/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "stroudnewsandjournal.co.uk",
-      "id": "evt_d59075217e1c8e77",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "escalate",
-        "strike",
-        "attack"
-      ],
-      "region": "Europa del Este",
-      "score": 9.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Ukraine strikes major Russian bridge as aerial attacks escalate",
-      "tone": null,
-      "url": "https://www.stroudnewsandjournal.co.uk/news/national/26735858.ukraine-strikes-major-russian-bridge-aerial-attacks-escalate/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "wiltsglosstandard.co.uk",
-      "id": "evt_9f0d508c21e5d858",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "russian"
-      ],
-      "matched_themes": [
-        "escalate",
-        "strike",
-        "attack"
-      ],
-      "region": "Europa del Este",
-      "score": 9.0,
-      "score_breakdown": {
-        "region": 4.0,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Ukraine strikes major Russian bridge as aerial attacks escalate",
-      "tone": null,
-      "url": "https://www.wiltsglosstandard.co.uk/news/national/26735858.ukraine-strikes-major-russian-bridge-aerial-attacks-escalate/"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "foreignpolicyjournal.com",
-      "id": "evt_87a376dfc0f426a6",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "war",
-        "blockade"
-      ],
-      "region": "MENA",
-      "score": 8.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 5.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Israel",
-      "tier": "high",
-      "title": "Nearly 100 , 000 Iranians Shelter In Turkey As War , Blockade And Repression Fuel Unprecedented Brain Drain",
-      "tone": null,
-      "url": "https://www.foreignpolicyjournal.com/2026/11/17/nearly-100000-iranians-shelter-in-turkey-as-war-blockade-and-repression-fuel-unprecedented-brain-drain/"
-    },
-    {
-      "actors": [],
-      "domain": "wyomingnewsnow.tv",
-      "id": "evt_887f8a502b93d614",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "missile",
-        "strike"
       ],
       "region": "MENA",
       "score": 7.5,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "",
-      "tier": "high",
-      "title": "U . S . strikes Iranian missile site in  self - defense  | News",
-      "tone": null,
-      "url": "https://www.wyomingnewsnow.tv/news/national/u-s-strikes-iranian-missile-site-in-self-defense/article_23c1f7c2-09ae-5b60-b29e-9f3959037d85.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "ksat.com",
-      "id": "evt_f0cba3b1fbc8ceed",
-      "language": "English",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [
-        "war",
-        "ceasefire"
-      ],
-      "region": "MENA",
-      "score": 6.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 4.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "high",
-      "title": "Board of Peace delivers bleak report on Gaza , warning of ceasefire collapse without immediate action",
-      "tone": null,
-      "url": "https://www.ksat.com/news/world/2026/11/17/board-of-peace-delivers-bleak-report-on-gaza-warning-of-ceasefire-collapse-without-immediate-action/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "10news.com",
-      "id": "evt_1a74ee135cb2f2f1",
-      "language": "English",
-      "matched_regions": [
-        "ukraine",
-        "russia",
-        "kyiv"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "Europa del Este",
-      "score": 5.5,
-      "score_breakdown": {
         "region": 4.0,
-        "themes": 1.5,
+        "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Ukraine hits Russia Kerch Bridge , as Russia strikes back at Kyiv bridges",
+      "seen_date": "20261118T173000Z",
+      "source_country": "Australia",
+      "tier": "high",
+      "title": "Saudi forces launch major Yemen attack on Houthi rebels",
       "tone": null,
-      "url": "https://www.10news.com/investigations/russia-ukraine-war-on-the-ground/ukraine-says-it-brought-down-part-of-russias-kerch-bridge-as-russia-hits-back-at-kyivs-bridges"
+      "url": "https://www.westernadvocate.com.au/story/9394288/saudi-forces-launch-major-yemen-attack-on-houthi-rebels/"
     },
     {
       "actors": [
         "India"
       ],
-      "domain": "timesofindia.indiatimes.com",
-      "id": "evt_eef26b3527271f69",
+      "domain": "thehindu.com",
+      "id": "evt_a4f29d842b8ea6ca",
       "language": "English",
       "matched_regions": [
-        "ukraine",
-        "crimea",
-        "china"
+        "houthi",
+        "saudi"
       ],
       "matched_themes": [
-        "strike"
+        "war"
       ],
-      "region": "Europa del Este",
+      "region": "MENA",
       "score": 5.5,
       "score_breakdown": {
-        "region": 4.0,
-        "themes": 1.5,
+        "region": 2.5,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
+      "seen_date": "20261118T173000Z",
       "source_country": "India",
       "tier": "medium",
-      "title": "Ukraine strikes Putin prized Crimean Bridge , destroys central road section ahead of US - China meet",
+      "title": "Saudis prepare for Houthi war to last well into 2027",
       "tone": null,
-      "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-strikes-putins-prized-crimean-bridge-destroys-central-road-section-ahead-of-us-china-meet/articleshow/135944199.cms"
+      "url": "https://www.thehindu.com/news/international/saudis-prepare-for-houthi-war-to-last-well-into-2027/article71717227.ece"
     },
     {
       "actors": [
         "Israel"
       ],
-      "domain": "al-monitor.com",
-      "id": "evt_55ab8d4d864fe5b3",
+      "domain": "jpost.com",
+      "id": "evt_e9f8ab14e229c938",
+      "language": "English",
+      "matched_regions": [
+        "russia"
+      ],
+      "matched_themes": [
+        "drone",
+        "attack"
+      ],
+      "region": "Eurasia",
+      "score": 5.5,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261118T173000Z",
+      "source_country": "Israel",
+      "tier": "medium",
+      "title": "Drone attacks nearly halve Russia November oil refining , sources say",
+      "tone": null,
+      "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337"
+    },
+    {
+      "actors": [
+        "Israel"
+      ],
+      "domain": "jpost.com",
+      "id": "evt_11d216fa50c70bef",
       "language": "English",
       "matched_regions": [
         "israel"
       ],
       "matched_themes": [
-        "sanction",
-        "sanctions"
+        "war"
       ],
       "region": "MENA",
       "score": 5.0,
@@ -380,54 +106,25 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
+      "seen_date": "20261118T173000Z",
       "source_country": "Israel",
       "tier": "medium",
-      "title": "Australia sanctions Israeli settlers , organisations over West Bank expansion",
+      "title": "Israel missionary problem a  stage four cancer , Rabbi Tovia Singer warns",
       "tone": null,
-      "url": "https://www.al-monitor.com/originals/2026/11/australia-sanctions-israeli-settlers-organisations-over-west-bank-expansion"
+      "url": "https://www.jpost.com/podcast/article-915323"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Syria"
       ],
-      "domain": "thisiswiltshire.co.uk",
-      "id": "evt_cd01c761df43a7ab",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Two - month lull ends with another Iranian strike in Bahrain , and US retaliation",
-      "tone": null,
-      "url": "https://www.thisiswiltshire.co.uk/news/national/26736144.two-month-lull-ends-another-iranian-strike-bahrain-us-retaliation/"
-    },
-    {
-      "actors": [
-        "China"
-      ],
-      "domain": "eng.chinamil.com.cn",
-      "id": "evt_66b3845876ab3b06",
+      "domain": "middleeaststar.com",
+      "id": "evt_f2841850b2f28276",
       "language": "English",
       "matched_regions": [
         "iran"
       ],
       "matched_themes": [
-        "strike",
-        "attack"
+        "war"
       ],
       "region": "MENA",
       "score": 5.0,
@@ -436,499 +133,125 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
-      "source_country": "China",
+      "seen_date": "20261118T173000Z",
+      "source_country": "Syria",
       "tier": "medium",
-      "title": "U . S . strikes Iran Qeshm Island after reported attack on Bahrain radar site",
+      "title": "Is another US - Iran war looming ?",
       "tone": null,
-      "url": "http://eng.chinamil.com.cn/2025xb/W/N/16500419.html"
+      "url": "http://www.middleeaststar.com/news/279440849/is-another-us-iran-war-looming"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Pakistan"
       ],
-      "domain": "guardian-series.co.uk",
-      "id": "evt_603ae89c6f9f1b2e",
+      "domain": "pakobserver.net",
+      "id": "evt_80b9238558cfd932",
       "language": "English",
       "matched_regions": [
-        "iran",
-        "iranian"
+        "pakistan"
       ],
       "matched_themes": [
-        "strike"
+        "missile"
       ],
-      "region": "MENA",
-      "score": 5.0,
+      "region": "Asia del Sur",
+      "score": 4.0,
       "score_breakdown": {
-        "region": 3.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Two - month lull ends with another Iranian strike in Bahrain , and US retaliation",
-      "tone": null,
-      "url": "https://www.guardian-series.co.uk/news/national/26736144.two-month-lull-ends-another-iranian-strike-bahrain-us-retaliation/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "wiltsglosstandard.co.uk",
-      "id": "evt_ffd745beedcf91dc",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Two - month lull ends with another Iranian strike in Bahrain , and US retaliation",
-      "tone": null,
-      "url": "https://www.wiltsglosstandard.co.uk/news/national/26736144.two-month-lull-ends-another-iranian-strike-bahrain-us-retaliation/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "harrowtimes.co.uk",
-      "id": "evt_5c480e0385d5ca3b",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Two - month lull ends with another Iranian strike in Bahrain , and US retaliation",
-      "tone": null,
-      "url": "https://www.harrowtimes.co.uk/news/national/26736144.two-month-lull-ends-another-iranian-strike-bahrain-us-retaliation/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "hexham-courant.co.uk",
-      "id": "evt_32c59b5c0bd090ca",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Two - month lull ends with another Iranian strike in Bahrain , and US retaliation",
-      "tone": null,
-      "url": "https://www.hexham-courant.co.uk/news/national/26736144.two-month-lull-ends-another-iranian-strike-bahrain-us-retaliation/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "richmondandtwickenhamtimes.co.uk",
-      "id": "evt_38fcc53b37c20e4b",
-      "language": "English",
-      "matched_regions": [
-        "iran",
-        "iranian"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Two - month lull ends with another Iranian strike in Bahrain , and US retaliation",
-      "tone": null,
-      "url": "https://www.richmondandtwickenhamtimes.co.uk/news/national/26736144.two-month-lull-ends-another-iranian-strike-bahrain-us-retaliation/"
-    },
-    {
-      "actors": [
-        "Argentina"
-      ],
-      "domain": "pronto.com.ar",
-      "id": "evt_ac38dc28c53ad22d",
-      "language": "Spanish",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "Asia-Pacífico",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 2.0,
+        "region": 1.5,
         "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Argentina",
+      "seen_date": "20261118T173000Z",
+      "source_country": "Pakistan",
       "tier": "medium",
-      "title": "Emilia Attias se metió en el conflicto entre la China Suárez y Wanda Nara : su contundente definición",
+      "title": "Pakistan Strengthens Military Might with Successful Fatah - 3 Supersonic Cruise Missile Test",
       "tone": null,
-      "url": "https://www.pronto.com.ar/espectaculos/2026/11/17/emilia-attias-se-metio-en-el-conflicto-entre-la-china-suarez-y-wanda-nara-su-contundente-definicion-266421.html"
+      "url": "https://pakobserver.net/pakistan-strengthens-military-might-with-successful-fatah-3-supersonic-cruise-missile-test/"
     },
     {
       "actors": [
-        "Brazil"
+        "United States"
       ],
-      "domain": "correiobraziliense.com.br",
-      "id": "evt_7a54667c5e6d3057",
-      "language": "Portuguese",
+      "domain": "advocateanddemocrat.com",
+      "id": "evt_76cba53fe99e5f6f",
+      "language": "English",
       "matched_regions": [
-        "israel",
-        "gaza"
+        "russia",
+        "china"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Eurasia",
       "score": 4.0,
       "score_breakdown": {
         "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Brazil",
-      "tier": "medium",
-      "title": "O dia do massacre em Israel e a destruio da Faixa de Gaza",
-      "tone": null,
-      "url": "https://www.correiobraziliense.com.br/mundo/2026/11/7539437-o-dia-do-massacre-em-israel-e-a-destruicao-da-faixa-gaza.html"
-    },
-    {
-      "actors": [],
-      "domain": "midmichigannow.com",
-      "id": "evt_71f0bd022d2eb155",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "escalate"
-      ],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "",
-      "tier": "medium",
-      "title": "Tucker Carlson says he spoke to Trump and is convinced he wants to de - escalate in Iran",
-      "tone": null,
-      "url": "https://midmichigannow.com/news/nation-world/tucker-carlson-says-he-spoke-to-trump-and-is-convinced-he-wants-to-de-escalate-in-iran-nukes-truth-social-house-senate-rrt"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wjla.com",
-      "id": "evt_4a2d230b5b94761e",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "escalate"
-      ],
-      "region": "MENA",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
+      "seen_date": "20261118T173000Z",
       "source_country": "United States",
       "tier": "medium",
-      "title": "Tucker Carlson says he spoke to Trump and is convinced he wants to de - escalate in Iran",
+      "title": "How the US power rivalry with Russia and China is turning outer space into the next battlefront",
       "tone": null,
-      "url": "https://wjla.com/news/nation-world/tucker-carlson-says-he-spoke-to-trump-and-is-convinced-he-wants-to-de-escalate-in-iran-nukes-truth-social-house-senate-rrt"
+      "url": "http://www.advocateanddemocrat.com/news/national/article_a0b7ad52-4030-5f3f-9ee9-164cf18a9650.html"
     },
     {
       "actors": [
-        "United States"
+        "Israel"
       ],
-      "domain": "kwit.org",
-      "id": "evt_dc36f8731e39c944",
+      "domain": "jpost.com",
+      "id": "evt_17da8885b87d79e4",
       "language": "English",
       "matched_regions": [
-        "iran"
+        "israel",
+        "india"
       ],
-      "matched_themes": [
-        "strike"
-      ],
+      "matched_themes": [],
       "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran launches a third round of strikes on Bahrain , host of U . S . Navy 5th Fleet",
-      "tone": null,
-      "url": "https://www.kwit.org/2026-11-17/iran-launches-a-third-round-of-strikes-on-bahrain-host-of-u-s-navys-5th-fleet"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "news.prairiepublic.org",
-      "id": "evt_55324802550c6062",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran launches a third round of strikes on Bahrain , host of U . S . Navy 5th Fleet",
-      "tone": null,
-      "url": "https://news.prairiepublic.org/news-from-npr/2026-11-17/iran-launches-a-third-round-of-strikes-on-bahrain-host-of-u-s-navys-5th-fleet"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "kazu.org",
-      "id": "evt_d1b3a36d7057a70a",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [
-        "strike"
-      ],
-      "region": "MENA",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "medium",
-      "title": "Iran launches a third round of strikes on Bahrain , host of U . S . Navy 5th Fleet",
-      "tone": null,
-      "url": "https://www.kazu.org/npr-news/2026-11-17/iran-launches-a-third-round-of-strikes-on-bahrain-host-of-u-s-navys-5th-fleet"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "muswellbrookchronicle.com.au",
-      "id": "evt_d5b91da8d6fa803e",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "sanction",
-        "sanctions"
-      ],
-      "region": "Global",
       "score": 3.0,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
+        "region": 3.0,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Australia",
+      "seen_date": "20261118T173000Z",
+      "source_country": "Israel",
       "tier": "monitor",
-      "title": "Sanctions first for construction firm in West Bank",
+      "title": "India signs $211m deal with Israel Aerospace Industries to upgrade Barak naval defense system",
       "tone": null,
-      "url": "https://www.muswellbrookchronicle.com.au/story/9393568/sanctions-first-for-construction-firm-in-west-bank/"
+      "url": "https://www.jpost.com/defense-and-tech/article-915326"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "heraldglobe.com",
-      "id": "evt_a06be02925ae5055",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Mavericks try to regroup against struggling Warriors",
-      "tone": null,
-      "url": "http://www.heraldglobe.com/news/279439637/mavericks-try-to-regroup-against-struggling-warriors"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "massachusettssun.com",
-      "id": "evt_af0115f65525bc37",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Mavericks try to regroup against struggling Warriors",
-      "tone": null,
-      "url": "http://www.massachusettssun.com/news/279439637/mavericks-try-to-regroup-against-struggling-warriors"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "blessyouboys.com",
-      "id": "evt_00f3941e4c0e72d3",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Dillon Dingler , Kevin McGonigle , and Riley Greene win Silver Slugger awards",
-      "tone": null,
-      "url": "https://www.blessyouboys.com/detroit-tigers-news/101557/detroit-tigers-news-dillon-dingler-riley-greene-silver-slugger-awards"
-    },
-    {
-      "actors": [
-        "Lebanon"
-      ],
-      "domain": "cedarnews.net",
-      "id": "evt_2c52190b43504628",
+      "domain": "mvariety.com",
+      "id": "evt_d8f287a09ebb31c1",
       "language": "English",
       "matched_regions": [
-        "afghan"
+        "china",
+        "philippines"
       ],
-      "matched_themes": [
-        "combat"
-      ],
-      "region": "Asia del Sur",
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
       "score": 3.0,
       "score_breakdown": {
-        "region": 1.0,
-        "themes": 2.0,
+        "region": 3.0,
+        "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Lebanon",
+      "seen_date": "20261118T173000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Maryland Gov . Wes Moore Afghanistan record disputed over enemy fire and combat claims",
+      "title": "Trump lauds defense alliance with Philippines ahead of China talks",
       "tone": null,
-      "url": "https://cedarnews.net/newstasks/1162779/maryland-gov-wes-moores-afghanistan-record-disputed/"
+      "url": "https://www.mvariety.com/news/regional/trump-lauds-defense-alliance-with-philippines-ahead-of-china-talks/article_d1a256d1-76c7-4a99-b622-6806f9b79734.html"
     },
     {
       "actors": [
-        "Lebanon"
+        "Netherlands"
       ],
-      "domain": "libnanews.com",
-      "id": "evt_9f502a0e2463c46d",
-      "language": "French",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Lebanon",
-      "tier": "monitor",
-      "title": "Qeshm : un site de missiles visé , selon Washington",
-      "tone": null,
-      "url": "https://libnanews.com/qeshm-un-site-de-missiles-vise-selon-washington/"
-    },
-    {
-      "actors": [
-        "Argentina"
-      ],
-      "domain": "tn.com.ar",
-      "id": "evt_b1957b41235d2c58",
-      "language": "Spanish",
+      "domain": "nieuws.nl",
+      "id": "evt_764c06e9511c3bbb",
+      "language": "Dutch",
       "matched_regions": [],
       "matched_themes": [
         "conflict"
@@ -940,70 +263,93 @@
         "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Argentina",
+      "seen_date": "20261118T173000Z",
+      "source_country": "Netherlands",
       "tier": "monitor",
-      "title": "El provocador mensaje de Mauro Icardi en medio del conflicto con Wanda Nara :  Bastante desgracia tienen",
+      "title": "Rover roept werkgevers en vakbonden op tot oplossing cao - conflict",
       "tone": null,
-      "url": "https://tn.com.ar/show/famosos/2026/11/17/bastante-desgracia-tienen-el-provocador-descargo-de-mauro-icardi-en-medio-del-conflicto-con-wanda-nara/"
+      "url": "https://nieuws.nl/economie/rover-roept-werkgevers-en-vakbonden-op-tot-oplossing-cao-conflict"
     },
     {
       "actors": [
-        "Canada"
+        "Romania"
       ],
-      "domain": "lactualite.com",
-      "id": "evt_c8476bff413d6d6b",
-      "language": "French",
+      "domain": "digi24.ro",
+      "id": "evt_1127a397524d4160",
+      "language": "Romanian",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261118T173000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Rusia , furioasă pe o țară europeană după ce o companie privată a furnizat rachete care au lovit podul Crimeei . „ Participă în conflict ?",
+      "tone": null,
+      "url": "https://www.digi24.ro/stiri/externe/rusia-furioasa-pe-o-tara-europeana-dupa-ce-o-companie-privata-a-furnizat-rachete-care-au-lovit-podul-crimeei-participa-in-conflict-4042481"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "digi24.ro",
+      "id": "evt_c0b172c179846730",
+      "language": "Romanian",
       "matched_regions": [
-        "gaza"
+        "china"
       ],
       "matched_themes": [],
-      "region": "MENA",
+      "region": "Asia-Pacífico",
       "score": 2.0,
       "score_breakdown": {
         "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Canada",
+      "seen_date": "20261118T173000Z",
+      "source_country": "Romania",
       "tier": "monitor",
-      "title": "Le Conseil de la paix craint un effondrement du cessez - le - feu à Gaza",
+      "title": "Ce așteptări are Ucraina privind întâlnirea lui Trump cu Putin și Xi Jinping din China",
       "tone": null,
-      "url": "https://lactualite.com/actualites/le-conseil-de-la-paix-craint-un-effondrement-du-cessez-le-feu-a-gaza/"
+      "url": "https://www.digi24.ro/stiri/externe/ce-asteptari-are-ucraina-privind-intalnirea-lui-trump-cu-putin-si-xi-jinping-din-china-4042555"
+    },
+    {
+      "actors": [],
+      "domain": "dol.com.br",
+      "id": "evt_cc58a1d928e7e13b",
+      "language": "Portuguese",
+      "matched_regions": [],
+      "matched_themes": [
+        "combat"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261118T173000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Semas entrega 250 equipamentos para combater incêndios no Pará",
+      "tone": null,
+      "url": "https://dol.com.br/noticias/para/968787/semas-entrega-250-equipamentos-para-combater-incendios-no-para"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "ksat.com",
-      "id": "evt_350c4dcbd13c992a",
+      "domain": "foxnews.com",
+      "id": "evt_d147f3276f3cb345",
       "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Italy approves antisemitism law as debate over criticism of Israel intensifies",
-      "tone": null,
-      "url": "https://www.ksat.com/news/world/2026/11/17/italy-approves-antisemitism-law-as-debate-over-criticism-of-israel-intensifies/"
-    },
-    {
-      "actors": [
-        "France"
-      ],
-      "domain": "mondafrique.com",
-      "id": "evt_8dca8aa4d9914d86",
-      "language": "French",
       "matched_regions": [
         "iran"
       ],
@@ -1015,287 +361,212 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
-      "source_country": "France",
+      "seen_date": "20261118T173000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Israël va - t - il attaquer lIran seul ?",
+      "title": "Iran protests erupt over bus crash killing 13 oil workers in Abdanan",
       "tone": null,
-      "url": "https://mondafrique.com/decryptage/israel-va-t-il-attaquer-liran-seul/"
+      "url": "https://www.foxnews.com/world/protesters-call-regime-change-iran-following-deadly-crash-killed-13-oil-gas-workers"
+    },
+    {
+      "actors": [
+        "Spain"
+      ],
+      "domain": "negocios.com",
+      "id": "evt_3ffb6537ed03e047",
+      "language": "Spanish",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261118T173000Z",
+      "source_country": "Spain",
+      "tier": "monitor",
+      "title": "Microsoft desafía a OpenAI : negocia 500 millones con China y desata la polémica",
+      "tone": null,
+      "url": "https://www.negocios.com/tecnologia/microsoft-desafia-openai-negocia-500-millones-china-desata-polemica/20261118172013498304.html"
+    },
+    {
+      "actors": [
+        "Argentina"
+      ],
+      "domain": "rionegro.com.ar",
+      "id": "evt_9072832f3853fba9",
+      "language": "Spanish",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261118T173000Z",
+      "source_country": "Argentina",
+      "tier": "monitor",
+      "title": "Trump , Putin y Xi Jinping se reúnen en China : los objetivos de cada potencia en una cumbre inédita",
+      "tone": null,
+      "url": "https://www.rionegro.com.ar/mundo/trump-putin-y-xi-jinping-frente-a-frente-en-china-que-busca-cada-potencia-en-una-cumbre-inedita-4802860/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "ansa.it",
+      "id": "evt_316abf5f7e9eee76",
+      "language": "Italian",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261118T173000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "LIdf lancia un attacco nel centro di Gaza , avviso di sfollare - Cronaca",
+      "tone": null,
+      "url": "https://www.ansa.it/ansamed/it/notizie/rubriche/cronaca/2026/11/18/idf-lancia-attacco-nel-centro-di-gaza-avviso-di-sfollare_afaeb8d2-28fc-4151-9372-447a6b31bf91.html"
+    },
+    {
+      "actors": [
+        "Romania"
+      ],
+      "domain": "ziare.com",
+      "id": "evt_ee0ec5a331491739",
+      "language": "Romanian",
+      "matched_regions": [
+        "israel"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261118T173000Z",
+      "source_country": "Romania",
+      "tier": "monitor",
+      "title": "Parlamentul israelian alege un nou președinte al Knessetului , slăbind controlul lui Netanyahu asupra puterii",
+      "tone": null,
+      "url": "https://ziare.com/israel/alegere-presedinte-parlament-israel-2048487"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "wapa.tv",
+      "id": "evt_fc22c148363006d9",
+      "language": "Spanish",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261118T173000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Donald Trump llega a China para foro APEC y reunión con Vladimir Putin",
+      "tone": null,
+      "url": "https://wapa.tv/noticias/internacionales/donald-trump-llega-a-china-para-foro-apec-y-reuni-n-con-vladimir-putin/article_f3f40672-5739-41cd-a530-5c23370fa8d9.html"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "republicanherald.com",
+      "id": "evt_7ae49635b3e7b62b",
+      "language": "English",
+      "matched_regions": [
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261118T173000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Pete Hegseth is in Venezuela to meet interim authorities",
+      "tone": null,
+      "url": "https://www.republicanherald.com/2026/11/18/hegseth-venezuela-visit/"
     },
     {
       "actors": [
         "Vietnam"
       ],
-      "domain": "baomoi.com",
-      "id": "evt_01f3b58e2dc20bd8",
+      "domain": "techz.vn",
+      "id": "evt_1e083a5bbca9f091",
       "language": "Vietnamese",
       "matched_regions": [
-        "ukraine"
+        "mali"
       ],
       "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
+      "region": "Sahel",
+      "score": 1.5,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
+      "seen_date": "20261118T173000Z",
       "source_country": "Vietnam",
       "tier": "monitor",
-      "title": "Anh cấp hơn 1 . 000 tên lửa phòng không cho Ukraine trước mùa Đông",
+      "title": "NHẬN ĐỊNH bóng đá U17 Mali vs U17 New Zealand 20h30 ngày 20 / 11 - Dự đoán tỷ số U17 World Cup 2026",
       "tone": null,
-      "url": "https://baomoi.com/anh-cap-hon-1-000-ten-lua-phong-khong-cho-ukraine-truoc-mua-dong-c56538908.epi"
-    },
-    {
-      "actors": [
-        "Portugal"
-      ],
-      "domain": "observador.pt",
-      "id": "evt_da5b4a6b50f02493",
-      "language": "Portuguese",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Portugal",
-      "tier": "monitor",
-      "title": "Gaza . Conselho de Paz alerta para cessar - fogo falhado – Observador",
-      "tone": null,
-      "url": "https://observador.pt/2026/11/17/conselho-de-paz-entrega-relatorio-sobre-gaza-e-alerta-para-cessar-fogo-falhado/"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "yasstribune.com.au",
-      "id": "evt_87cad0d587ae2e6d",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "Trump to meet Marcos in Manila before China talks",
-      "tone": null,
-      "url": "https://www.yasstribune.com.au/story/9393804/trump-to-meet-marcos-in-manila-before-china-talks/"
+      "url": "https://www.techz.vn/201-1126-1-nhan-dinh-bong-da-u17-mali-vs-u17-new-zealand-20h30-ngay-20-11-du-doan-ty-so-u17-world-cup-2026-ylt717715.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "greeleytribune.com",
-      "id": "evt_6d41fc5096db77e2",
+      "domain": "dailyherald.com",
+      "id": "evt_484aad609fe11962",
       "language": "English",
       "matched_regions": [
-        "iran"
+        "venezuela"
       ],
       "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Man gets more than 27 years in US prison for assassination plot that he said was steered from Iran",
-      "tone": null,
-      "url": "https://www.greeleytribune.com/2026/11/17/political-assassinations-plot-sentencing/"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "al-monitor.com",
-      "id": "evt_6916fca029bb9ab5",
-      "language": "English",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "Israel parliament elects Eisenkot ally as speaker in blow for Netanyahu",
-      "tone": null,
-      "url": "https://www.al-monitor.com/originals/2026/11/israel-parliament-elects-eisenkot-ally-speaker-blow-netanyahu"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "dailyliberal.com.au",
-      "id": "evt_4867cb315a8083f2",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "Australia",
-      "tier": "monitor",
-      "title": "Trump to meet Marcos in Manila before China talks",
-      "tone": null,
-      "url": "https://www.dailyliberal.com.au/story/9393804/trump-to-meet-marcos-in-manila-before-china-talks/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "mcall.com",
-      "id": "evt_e1d3b0acd99b31ef",
-      "language": "English",
-      "matched_regions": [
-        "iran"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Man gets more than 27 years in US prison for assassination plot that he said was steered from Iran",
-      "tone": null,
-      "url": "https://www.mcall.com/2026/11/17/political-assassinations-plot-sentencing/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "mcall.com",
-      "id": "evt_739692f103d3f823",
-      "language": "English",
-      "matched_regions": [
-        "mali"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
+      "region": "América Latina",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T011500Z",
+      "seen_date": "20261118T173000Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "A Somali American Uber driver was strangled and run over by a passenger , authorities say",
+      "title": "Pete Hegseth is in Venezuela to meet interim authorities",
       "tone": null,
-      "url": "https://www.mcall.com/2026/11/17/rideshare-driver-attacked/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "greeleytribune.com",
-      "id": "evt_9b1d57f1a2f0598d",
-      "language": "English",
-      "matched_regions": [
-        "mali"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "A Somali American Uber driver was strangled and run over by a passenger , authorities say",
-      "tone": null,
-      "url": "https://www.greeleytribune.com/2026/11/17/rideshare-driver-attacked/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "ksat.com",
-      "id": "evt_fa7067a407890cb8",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "troops"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Divided appeals court blocks Pentagon from expelling several transgender troops from US military",
-      "tone": null,
-      "url": "https://www.ksat.com/news/politics/2026/11/17/divided-appeals-court-blocks-pentagon-from-expelling-several-transgender-troops-from-us-military/"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "greeleytribune.com",
-      "id": "evt_9e1789bd8c01858d",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "troops"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T011500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Divided appeals court blocks Pentagon from expelling several transgender troops from US military",
-      "tone": null,
-      "url": "https://www.greeleytribune.com/2026/11/17/trump-transgender-troops-appeals-court/"
+      "url": "https://www.dailyherald.com/2026/11/18/hegseth-venezuela-visit/"
     }
   ],
   "filters": {
@@ -1309,13 +580,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-18T15:38:39Z",
+  "generated_at": "2026-11-19T15:48:04Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 10,
-    "medium": 17,
-    "monitor": 21
+    "high": 1,
+    "medium": 6,
+    "monitor": 15
   },
-  "total_events": 48
+  "total_events": 22
 }
