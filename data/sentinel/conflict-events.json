@@ -4,100 +4,100 @@
       "actors": [
         "Australia"
       ],
-      "domain": "westernadvocate.com.au",
-      "id": "evt_9265c7418884f4a3",
+      "domain": "centralwesterndaily.com.au",
+      "id": "evt_f89620f48bdc8f10",
       "language": "English",
       "matched_regions": [
-        "yemen",
-        "houthi",
-        "saudi"
+        "ukraine",
+        "russia",
+        "kyiv"
       ],
       "matched_themes": [
-        "rebel",
+        "killed",
         "attack"
       ],
-      "region": "MENA",
+      "region": "Europa del Este",
       "score": 7.5,
       "score_breakdown": {
         "region": 4.0,
         "themes": 3.5,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
+      "seen_date": "20261120T064500Z",
       "source_country": "Australia",
       "tier": "high",
-      "title": "Saudi forces launch major Yemen attack on Houthi rebels",
+      "title": "Russia attacks bridges in Ukraine Kyiv , three killed",
       "tone": null,
-      "url": "https://www.westernadvocate.com.au/story/9394288/saudi-forces-launch-major-yemen-attack-on-houthi-rebels/"
+      "url": "https://www.centralwesterndaily.com.au/story/9395009/russia-attacks-bridges-in-ukraines-kyiv-three-killed/"
     },
     {
       "actors": [
-        "India"
+        "Pakistan"
       ],
-      "domain": "thehindu.com",
-      "id": "evt_a4f29d842b8ea6ca",
+      "domain": "tribune.com.pk",
+      "id": "evt_66d5d4643910d5f6",
       "language": "English",
       "matched_regions": [
-        "houthi",
-        "saudi"
+        "iran",
+        "iraq"
       ],
       "matched_themes": [
         "war"
       ],
       "region": "MENA",
-      "score": 5.5,
+      "score": 6.0,
       "score_breakdown": {
-        "region": 2.5,
+        "region": 3.0,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "India",
-      "tier": "medium",
-      "title": "Saudis prepare for Houthi war to last well into 2027",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Pakistan",
+      "tier": "high",
+      "title": "Iran rejects Trump bioweapons claims , warns against repeat of disproved allegations that Iraq had WMD",
       "tone": null,
-      "url": "https://www.thehindu.com/news/international/saudis-prepare-for-houthi-war-to-last-well-into-2027/article71717227.ece"
+      "url": "https://tribune.com.pk/story/2641331/iran-rejects-trumps-bioweapons-claims-warns-against-repeat-of-disproved-allegations"
     },
     {
       "actors": [
-        "Israel"
+        "India"
       ],
-      "domain": "jpost.com",
-      "id": "evt_e9f8ab14e229c938",
+      "domain": "hindustantimes.com",
+      "id": "evt_a2993216608df7c6",
       "language": "English",
       "matched_regions": [
-        "russia"
+        "israel",
+        "iran"
       ],
       "matched_themes": [
-        "drone",
-        "attack"
+        "strike"
       ],
-      "region": "Eurasia",
+      "region": "MENA",
       "score": 5.5,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.5,
+        "region": 4.0,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Israel",
+      "seen_date": "20261120T064500Z",
+      "source_country": "India",
       "tier": "medium",
-      "title": "Drone attacks nearly halve Russia November oil refining , sources say",
+      "title": "Israeli Spy Chief Pressed for Renewed Iran Strikes During U . S . Visit",
       "tone": null,
-      "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337"
+      "url": "https://www.hindustantimes.com/world-news/israeli-spy-chief-pressed-for-renewed-iran-strikes-during-u-s-visit-101795144686603.html"
     },
     {
       "actors": [
-        "Israel"
+        "Indonesia"
       ],
-      "domain": "jpost.com",
-      "id": "evt_11d216fa50c70bef",
-      "language": "English",
+      "domain": "beritasatu.com",
+      "id": "evt_964b427464b8d122",
+      "language": "Indonesian",
       "matched_regions": [
-        "israel"
+        "iran"
       ],
       "matched_themes": [
-        "war"
+        "bombard"
       ],
       "region": "MENA",
       "score": 5.0,
@@ -106,19 +106,19 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Israel",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Indonesia",
       "tier": "medium",
-      "title": "Israel missionary problem a  stage four cancer , Rabbi Tovia Singer warns",
+      "title": "AS Habiskan Rp 882 , 4 Triliun demi Bombardir Iran",
       "tone": null,
-      "url": "https://www.jpost.com/podcast/article-915323"
+      "url": "https://www.beritasatu.com/internasional/3042503/as-habiskan-rp-8824-triliun-demi-bombardir-iran"
     },
     {
       "actors": [
-        "Syria"
+        "United States"
       ],
-      "domain": "middleeaststar.com",
-      "id": "evt_f2841850b2f28276",
+      "domain": "ktok.iheart.com",
+      "id": "evt_e1d7316a5d7b4bb8",
       "language": "English",
       "matched_regions": [
         "iran"
@@ -133,201 +133,365 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Syria",
+      "seen_date": "20261120T064500Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "Is another US - Iran war looming ?",
+      "title": "Senate Republicans Block Iran War Resolution Again",
       "tone": null,
-      "url": "http://www.middleeaststar.com/news/279440849/is-another-us-iran-war-looming"
+      "url": "https://ktok.iheart.com/content/2026-11-20-senate-republicans-block-iran-war-resolution-again/"
     },
     {
       "actors": [
-        "Pakistan"
+        "Mauritius"
       ],
-      "domain": "pakobserver.net",
-      "id": "evt_80b9238558cfd932",
-      "language": "English",
+      "domain": "defimedia.info",
+      "id": "evt_1c08b4a907b2961a",
+      "language": "French",
       "matched_regions": [
-        "pakistan"
+        "iran"
       ],
       "matched_themes": [
-        "missile"
+        "war"
       ],
-      "region": "Asia del Sur",
-      "score": 4.0,
+      "region": "MENA",
+      "score": 5.0,
       "score_breakdown": {
-        "region": 1.5,
-        "themes": 2.5,
+        "region": 2.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Pakistan",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Mauritius",
       "tier": "medium",
-      "title": "Pakistan Strengthens Military Might with Successful Fatah - 3 Supersonic Cruise Missile Test",
+      "title": "Guerre contre lIran : les démocrates « ne renonceront jamais » à y mettre fin , affirme Mark Warner",
       "tone": null,
-      "url": "https://pakobserver.net/pakistan-strengthens-military-might-with-successful-fatah-3-supersonic-cruise-missile-test/"
+      "url": "https://defimedia.info/guerre-contre-liran-les-democrates-ne-renonceront-jamais-y-mettre-fin-affirme-mark-warner"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "advocateanddemocrat.com",
-      "id": "evt_76cba53fe99e5f6f",
+      "domain": "knst.iheart.com",
+      "id": "evt_62df4ae00d7a0b21",
       "language": "English",
       "matched_regions": [
-        "russia",
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Senate Republicans Block Iran War Resolution Again",
+      "tone": null,
+      "url": "https://knst.iheart.com/content/2026-11-20-senate-republicans-block-iran-war-resolution-again/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "790waeb.iheart.com",
+      "id": "evt_9b3be41783ad82fa",
+      "language": "English",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "MENA",
+      "score": 5.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "Senate Republicans Block Iran War Resolution Again",
+      "tone": null,
+      "url": "https://790waeb.iheart.com/content/2026-11-20-senate-republicans-block-iran-war-resolution-again/"
+    },
+    {
+      "actors": [
+        "Argentina"
+      ],
+      "domain": "infobae.com",
+      "id": "evt_bd7a110b4244d176",
+      "language": "Spanish",
+      "matched_regions": [
         "china"
       ],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Argentina",
+      "tier": "medium",
+      "title": "Trump ofrecerá una conferencia de prensa tras su viaje a China , donde abordó con Xi y Putin la reducción de los riesgos nucleares",
+      "tone": null,
+      "url": "https://www.infobae.com/america/mundo/2026/11/20/trump-ofrecera-una-conferencia-de-prensa-tras-su-viaje-a-china-donde-abordo-con-xi-y-putin-la-reduccion-de-los-riesgos-nucleares/"
+    },
+    {
+      "actors": [
+        "South Africa"
+      ],
+      "domain": "jacarandafm.com",
+      "id": "evt_d610e977217acfa0",
+      "language": "English",
+      "matched_regions": [
+        "israel",
+        "gaza"
+      ],
       "matched_themes": [],
-      "region": "Eurasia",
+      "region": "MENA",
       "score": 4.0,
       "score_breakdown": {
         "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "United States",
+      "seen_date": "20261120T064500Z",
+      "source_country": "South Africa",
       "tier": "medium",
-      "title": "How the US power rivalry with Russia and China is turning outer space into the next battlefront",
+      "title": "Gazans return after Israel army ends rare ground operation",
       "tone": null,
-      "url": "http://www.advocateanddemocrat.com/news/national/article_a0b7ad52-4030-5f3f-9ee9-164cf18a9650.html"
+      "url": "https://www.jacarandafm.com/news/news/gazans-return-after-israel-army-ends-ground-operation/"
     },
     {
       "actors": [
-        "Israel"
+        "Sri Lanka"
       ],
-      "domain": "jpost.com",
-      "id": "evt_17da8885b87d79e4",
+      "domain": "slguardian.org",
+      "id": "evt_e0e250c76444d672",
       "language": "English",
       "matched_regions": [
-        "israel",
         "india"
       ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 3.0,
+      "matched_themes": [
+        "missile"
+      ],
+      "region": "Asia del Sur",
+      "score": 3.5,
       "score_breakdown": {
-        "region": 3.0,
-        "themes": 0.0,
+        "region": 1.0,
+        "themes": 2.5,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Israel",
-      "tier": "monitor",
-      "title": "India signs $211m deal with Israel Aerospace Industries to upgrade Barak naval defense system",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Sri Lanka",
+      "tier": "medium",
+      "title": "Japan Secures Access to Indian Missile Ranges in Major Indo - Pacific Defence Push",
       "tone": null,
-      "url": "https://www.jpost.com/defense-and-tech/article-915326"
+      "url": "https://slguardian.org/japan-secures-access-to-indian-missile-ranges-in-major-indo-pacific-defence-push/"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "mvariety.com",
-      "id": "evt_d8f287a09ebb31c1",
+      "domain": "zerohedge.com",
+      "id": "evt_f555c73a1a240bf2",
       "language": "English",
       "matched_regions": [
-        "china",
-        "philippines"
+        "north korea"
+      ],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Asia-Pacífico",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "United States",
+      "tier": "medium",
+      "title": "UN Nuclear Watchdog Voices  Serious Concern  As North Korea Expands Uranium Enrichment",
+      "tone": null,
+      "url": "http://www.zerohedge.com/geopolitical/un-nuclear-watchdog-voices-serious-concern-north-korea-expands-uranium-enrichment"
+    },
+    {
+      "actors": [
+        "Pakistan"
+      ],
+      "domain": "tribune.com.pk",
+      "id": "evt_cd5152cf35819b73",
+      "language": "English",
+      "matched_regions": [
+        "mali",
+        "pakistan"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
+      "region": "Sahel",
       "score": 3.0,
       "score_breakdown": {
         "region": 3.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Pakistan",
+      "tier": "monitor",
+      "title": "Musadik Malik arrives in New Delhi to lead Pakistan delegation at SCO forum",
+      "tone": null,
+      "url": "https://tribune.com.pk/story/2641334/musadik-malik-arrives-in-new-delhi-to-lead-pakistan-delegation-at-sco-forum"
+    },
+    {
+      "actors": [
+        "Argentina"
+      ],
+      "domain": "infobae.com",
+      "id": "evt_311c2d194e4eec37",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "bombard"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Argentina",
+      "tier": "monitor",
+      "title": "Rusia lanzó un ataque con misiles contra Ucrania y bombardeó puentes e infraestructura crítica de Kiev : al menos tres muertos",
+      "tone": null,
+      "url": "https://www.infobae.com/america/mundo/2026/11/20/rusia-lanzo-un-ataque-con-misiles-contra-ucrania-y-bombardeo-puentes-e-infraestructura-critica-de-kiev-al-menos-tres-muertos/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "oilprice.com",
+      "id": "evt_8540e9c0018bfdf2",
+      "language": "English",
+      "matched_regions": [
+        "houthi"
+      ],
+      "matched_themes": [
+        "attack"
+      ],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "Trump lauds defense alliance with Philippines ahead of China talks",
+      "title": "Oil Prices Rebound as Houthi Attacks Reignite Middle East Supply Fears",
       "tone": null,
-      "url": "https://www.mvariety.com/news/regional/trump-lauds-defense-alliance-with-philippines-ahead-of-china-talks/article_d1a256d1-76c7-4a99-b622-6806f9b79734.html"
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rebound-as-Houthi-Attacks-Reignite-Middle-East-Supply-Fears.html"
     },
     {
       "actors": [
-        "Netherlands"
+        "Germany"
       ],
-      "domain": "nieuws.nl",
-      "id": "evt_764c06e9511c3bbb",
-      "language": "Dutch",
+      "domain": "wdr.de",
+      "id": "evt_2b1f85f77e40135f",
+      "language": "German",
       "matched_regions": [],
       "matched_themes": [
-        "conflict"
+        "war"
       ],
       "region": "Global",
-      "score": 2.5,
+      "score": 3.0,
       "score_breakdown": {
         "region": 0.0,
-        "themes": 2.5,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Netherlands",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "Rover roept werkgevers en vakbonden op tot oplossing cao - conflict",
+      "title": "Warum Freiwillige Feuerwehrleute unfreiwillig gehen",
       "tone": null,
-      "url": "https://nieuws.nl/economie/rover-roept-werkgevers-en-vakbonden-op-tot-oplossing-cao-conflict"
+      "url": "https://www1.wdr.de/nrw/niederrhein/kreis-kleve/freiwillige-feuerwehr-unfreiwilliger-abschied-kranenburg-100.html"
     },
     {
       "actors": [
-        "Romania"
+        "Italy"
       ],
-      "domain": "digi24.ro",
-      "id": "evt_1127a397524d4160",
-      "language": "Romanian",
-      "matched_regions": [],
-      "matched_themes": [
-        "conflict"
-      ],
-      "region": "Global",
-      "score": 2.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "Rusia , furioasă pe o țară europeană după ce o companie privată a furnizat rachete care au lovit podul Crimeei . „ Participă în conflict ?",
-      "tone": null,
-      "url": "https://www.digi24.ro/stiri/externe/rusia-furioasa-pe-o-tara-europeana-dupa-ce-o-companie-privata-a-furnizat-rachete-care-au-lovit-podul-crimeei-participa-in-conflict-4042481"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "digi24.ro",
-      "id": "evt_c0b172c179846730",
-      "language": "Romanian",
+      "domain": "zazoom.it",
+      "id": "evt_bf99fe8304de0e5a",
+      "language": "Italian",
       "matched_regions": [
-        "china"
+        "houthi",
+        "saudi"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
+      "region": "MENA",
+      "score": 2.5,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 2.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Romania",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "Ce așteptări are Ucraina privind întâlnirea lui Trump cu Putin și Xi Jinping din China",
+      "title": "Un attacco degli Houthi su Riyad ha danneggiato la sede del fondo sovrano dellArabia Saudita",
       "tone": null,
-      "url": "https://www.digi24.ro/stiri/externe/ce-asteptari-are-ucraina-privind-intalnirea-lui-trump-cu-putin-si-xi-jinping-din-china-4042555"
+      "url": "https://www.zazoom.it/2026-11-20/un-attacco-degli-houthi-su-riyad-ha-danneggiato-la-sede-del-fondo-sovrano-dellarabia-saudita/19951942/"
     },
     {
-      "actors": [],
-      "domain": "dol.com.br",
-      "id": "evt_cc58a1d928e7e13b",
-      "language": "Portuguese",
+      "actors": [
+        "United States"
+      ],
+      "domain": "latinpost.com",
+      "id": "evt_e1a7095ed8abcdcf",
+      "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "combat"
+        "siege"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "What Guatemala 30 - Day State of Siege in Zacapa and Izabal Means for Security and the 2027 Elections",
+      "tone": null,
+      "url": "https://www.latinpost.com/articles/167755/20261119/what-guatemalas-30-day-state-siege-zacapa-izabal-means-security-2027-elections.htm"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "laopinion.com",
+      "id": "evt_f4dd11b2ddf6994f",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
       ],
       "region": "Global",
       "score": 2.0,
@@ -336,20 +500,245 @@
         "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "",
+      "seen_date": "20261120T064500Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Semas entrega 250 equipamentos para combater incêndios no Pará",
+      "title": "Donald Trump , Vladímir Putin y Xi Jinping coinciden en la necesidad de evitar una guerra nuclear",
       "tone": null,
-      "url": "https://dol.com.br/noticias/para/968787/semas-entrega-250-equipamentos-para-combater-incendios-no-para"
+      "url": "https://laopinion.com/2026/11/19/donald-trump-vladimir-putin-y-xi-jinping-coinciden-en-la-necesidad-de-evitar-una-guerra-nuclear/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "thueringer-allgemeine.de",
+      "id": "evt_c7b9bea679352c1b",
+      "language": "German",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "„ Maybrit Illner  zum China - Gipfel : „ Da haben sich drei Heuchler getroffen",
+      "tone": null,
+      "url": "https://www.thueringer-allgemeine.de/kultur/tv-streaming/article413727708/sigmar-gabriel-bei-illnerE2809D-da-haben-sich-drei-heuchler-getroffenE2809D.html"
+    },
+    {
+      "actors": [
+        "Sri Lanka"
+      ],
+      "domain": "slguardian.org",
+      "id": "evt_08868a41d37fcb6f",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "rebel"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Sri Lanka",
+      "tier": "monitor",
+      "title": "Congo Former President Turns Rebel Leader in Bid to Block Tshisekedi Third Term – Sri Lanka Guardian",
+      "tone": null,
+      "url": "https://slguardian.org/congos-former-president-turns-rebel-leader-in-bid-to-block-tshisekedis-third-term/"
+    },
+    {
+      "actors": [
+        "Hungary"
+      ],
+      "domain": "budapesttimes.hu",
+      "id": "evt_e6afa833110cf5e8",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Hungary",
+      "tier": "monitor",
+      "title": "Xi , Putin , and Trump sign joint declaration on security and nuclear risk",
+      "tone": null,
+      "url": "https://www.budapesttimes.hu/world/xi-putin-and-trump-sign-joint-declaration-on-security-and-nuclear-risk/"
+    },
+    {
+      "actors": [
+        "Sri Lanka"
+      ],
+      "domain": "slguardian.org",
+      "id": "evt_dc7634cbc03a0f1d",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Sri Lanka",
+      "tier": "monitor",
+      "title": "White House Seizes Journalist Phones on Trump Flight from China over Espionage Concerns – Sri Lanka Guardian",
+      "tone": null,
+      "url": "https://slguardian.org/white-house-seizes-journalists-phones-on-trumps-flight-from-china-over-espionage-concerns/"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "juneesoutherncross.com.au",
+      "id": "evt_e0b395aaba6b0e88",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Xi lauds PM for  full turnaround  in China relationship",
+      "tone": null,
+      "url": "https://www.juneesoutherncross.com.au/story/9395015/xi-lauds-pm-for-full-turnaround-in-china-relationship/"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "oneindia.com",
+      "id": "evt_133aeff2a12b94e0",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Trump , Xi , Putin Hold Rare 3 - Way Talks On Nuclear Risks But Deliver No Breakthroughs",
+      "tone": null,
+      "url": "https://www.oneindia.com/international/trump-xi-putin-hold-rare-3-way-talks-on-nuclear-risks-but-deliver-no-breakthroughs-8264789.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "foxnews.com",
-      "id": "evt_d147f3276f3cb345",
+      "domain": "jacksonprogress-argus.com",
+      "id": "evt_1ce48f949d3094fc",
       "language": "English",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "ARTHUR CYR : Movement and perhaps progress on Ukraine",
+      "tone": null,
+      "url": "https://www.jacksonprogress-argus.com/opinion/arthur-cyr-movement-and-perhaps-progress-on-ukraine/article_bdf11a45-0b53-5f8f-9c26-6eb5ce4a7219.html"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "sofokleousin.gr",
+      "id": "evt_21478f9bbdfb6d9c",
+      "language": "Greek",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Greece",
+      "tier": "monitor",
+      "title": "Σ . Αραβία : Αναχαιτίσεις πυραύλων και drones των Χούθι",
+      "tone": null,
+      "url": "http://sofokleousin.gr/epikairotita/diethni/s-aravia-anaxaitiseis-pyraylon-kai-drones-ton-xouthi"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "stuttgarter-nachrichten.de",
+      "id": "evt_d8fc37ec160af2e2",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Russischer Angriffskrieg in der Ukraine : Tote bei russischen Angriffen auf Brücken in Kiew",
+      "tone": null,
+      "url": "https://www.stuttgarter-nachrichten.de/politik/russischer-angriffskrieg-in-der-ukraine-tote-bei-russischen-angriffen-auf-bruecken-in-kiew-79723411.html"
+    },
+    {
+      "actors": [
+        "Serbia"
+      ],
+      "domain": "tanjug.rs",
+      "id": "evt_9f8ecc5dc5b12b5f",
+      "language": "Serbian",
       "matched_regions": [
         "iran"
       ],
@@ -361,212 +750,237 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "United States",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Serbia",
       "tier": "monitor",
-      "title": "Iran protests erupt over bus crash killing 13 oil workers in Abdanan",
+      "title": "Bagei : Lažni izveštaji da Iran razvija biološko oružje , SAD traže opravdanje za rat",
       "tone": null,
-      "url": "https://www.foxnews.com/world/protesters-call-regime-change-iran-following-deadly-crash-killed-13-oil-gas-workers"
+      "url": "https://www.tanjug.rs/bliski-istok/vesti/299328/bagei-lazni-izvestaji-da-iran-razvija-biolosko-oruzje-sad-traze-opravdanje-za-rat/vest"
     },
     {
       "actors": [
-        "Spain"
+        "Sri Lanka"
       ],
-      "domain": "negocios.com",
-      "id": "evt_3ffb6537ed03e047",
-      "language": "Spanish",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Spain",
-      "tier": "monitor",
-      "title": "Microsoft desafía a OpenAI : negocia 500 millones con China y desata la polémica",
-      "tone": null,
-      "url": "https://www.negocios.com/tecnologia/microsoft-desafia-openai-negocia-500-millones-china-desata-polemica/20261118172013498304.html"
-    },
-    {
-      "actors": [
-        "Argentina"
-      ],
-      "domain": "rionegro.com.ar",
-      "id": "evt_9072832f3853fba9",
-      "language": "Spanish",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Argentina",
-      "tier": "monitor",
-      "title": "Trump , Putin y Xi Jinping se reúnen en China : los objetivos de cada potencia en una cumbre inédita",
-      "tone": null,
-      "url": "https://www.rionegro.com.ar/mundo/trump-putin-y-xi-jinping-frente-a-frente-en-china-que-busca-cada-potencia-en-una-cumbre-inedita-4802860/"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "ansa.it",
-      "id": "evt_316abf5f7e9eee76",
-      "language": "Italian",
-      "matched_regions": [
-        "gaza"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "LIdf lancia un attacco nel centro di Gaza , avviso di sfollare - Cronaca",
-      "tone": null,
-      "url": "https://www.ansa.it/ansamed/it/notizie/rubriche/cronaca/2026/11/18/idf-lancia-attacco-nel-centro-di-gaza-avviso-di-sfollare_afaeb8d2-28fc-4151-9372-447a6b31bf91.html"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "ziare.com",
-      "id": "evt_ee0ec5a331491739",
-      "language": "Romanian",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Romania",
-      "tier": "monitor",
-      "title": "Parlamentul israelian alege un nou președinte al Knessetului , slăbind controlul lui Netanyahu asupra puterii",
-      "tone": null,
-      "url": "https://ziare.com/israel/alegere-presedinte-parlament-israel-2048487"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "wapa.tv",
-      "id": "evt_fc22c148363006d9",
-      "language": "Spanish",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261118T173000Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Donald Trump llega a China para foro APEC y reunión con Vladimir Putin",
-      "tone": null,
-      "url": "https://wapa.tv/noticias/internacionales/donald-trump-llega-a-china-para-foro-apec-y-reuni-n-con-vladimir-putin/article_f3f40672-5739-41cd-a530-5c23370fa8d9.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "republicanherald.com",
-      "id": "evt_7ae49635b3e7b62b",
+      "domain": "slguardian.org",
+      "id": "evt_6e33126c256ef5da",
       "language": "English",
       "matched_regions": [
-        "venezuela"
+        "china"
       ],
       "matched_themes": [],
-      "region": "América Latina",
-      "score": 1.5,
+      "region": "Asia-Pacífico",
+      "score": 2.0,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "United States",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Sri Lanka",
       "tier": "monitor",
-      "title": "Pete Hegseth is in Venezuela to meet interim authorities",
+      "title": "Takaichi Signals Dialogue with China After First Direct Encounters with Xi Amid Diplomatic Tensions",
       "tone": null,
-      "url": "https://www.republicanherald.com/2026/11/18/hegseth-venezuela-visit/"
+      "url": "https://slguardian.org/takaichi-signals-dialogue-with-china-after-first-direct-encounters-with-xi-amid-diplomatic-tensions/"
     },
     {
       "actors": [
-        "Vietnam"
+        "Germany"
       ],
-      "domain": "techz.vn",
-      "id": "evt_1e083a5bbca9f091",
-      "language": "Vietnamese",
+      "domain": "berchtesgadener-anzeiger.de",
+      "id": "evt_a587ce3c9f5f3bc4",
+      "language": "German",
       "matched_regions": [
-        "mali"
+        "ukraine"
       ],
       "matched_themes": [],
-      "region": "Sahel",
-      "score": 1.5,
+      "region": "Europa del Este",
+      "score": 2.0,
       "score_breakdown": {
-        "region": 1.5,
+        "region": 2.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "Vietnam",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Germany",
       "tier": "monitor",
-      "title": "NHẬN ĐỊNH bóng đá U17 Mali vs U17 New Zealand 20h30 ngày 20 / 11 - Dự đoán tỷ số U17 World Cup 2026",
+      "title": "Mehr als Waffen : Berlin will Ukraine wirtschaftlich stärken",
       "tone": null,
-      "url": "https://www.techz.vn/201-1126-1-nhan-dinh-bong-da-u17-mali-vs-u17-new-zealand-20h30-ngay-20-11-du-doan-ty-so-u17-world-cup-2026-ylt717715.html"
+      "url": "https://www.berchtesgadener-anzeiger.de/startseite_artikel,-mehr-als-waffen-berlin-will-ukraine-wirtschaftlich-staerken-_arid,1027590.html"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "come-on.de",
+      "id": "evt_c39c97eca5c266ae",
+      "language": "German",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "China - Gipfel bei Lanz : Expertin sieht eine gezielte Inszenierung",
+      "tone": null,
+      "url": "http://www.come-on.de/politik/politologin-bilanziert-nach-gipfel-in-shenzhen-bei-lanz-ein-gigantischer-pr-erfolg-fuer-putin-zr-94599335.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "dailyherald.com",
-      "id": "evt_484aad609fe11962",
+      "domain": "laopinion.com",
+      "id": "evt_c7f05ff40b4e58c4",
+      "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "terror"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "EE . UU . reafirma apoyo a Ecuador contra el narcoterrorismo y amplía cooperación militar",
+      "tone": null,
+      "url": "https://laopinion.com/2026/11/19/pete-hegseth-reafirma-apoyo-de-ee-uu-a-ecuador-contra-el-narcoterrorismo-y-amplia-cooperacion-militar/"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "narrominenewsonline.com.au",
+      "id": "evt_41d78a18a7c1a0cb",
       "language": "English",
       "matched_regions": [
-        "venezuela"
+        "china"
       ],
       "matched_themes": [],
-      "region": "América Latina",
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Australia",
+      "tier": "monitor",
+      "title": "Xi lauds PM for  full turnaround  in China relationship",
+      "tone": null,
+      "url": "https://www.narrominenewsonline.com.au/story/9395015/xi-lauds-pm-for-full-turnaround-in-china-relationship/"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "haber7.com",
+      "id": "evt_451ff753fe8db00b",
+      "language": "Turkish",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261118T173000Z",
-      "source_country": "United States",
+      "seen_date": "20261120T064500Z",
+      "source_country": "Turkey",
       "tier": "monitor",
-      "title": "Pete Hegseth is in Venezuela to meet interim authorities",
+      "title": "Son dakika haberi ! ABD Senatosundan Trumpa savaş yetkisi",
       "tone": null,
-      "url": "https://www.dailyherald.com/2026/11/18/hegseth-venezuela-visit/"
+      "url": "https://www.haber7.com/dunya/haber/3678324-son-dakika-haberi-abd-senatosundan-trumpa-savas-yetkisi"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "timesofindia.indiatimes.com",
+      "id": "evt_1fa5d79892d292fb",
+      "language": "English",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Salman Khan and Nayanthara starrer  Monster  recruits global action team of six stunt coordinators for STYLISH ACTION SCENES - Reports | Hindi Movie News",
+      "tone": null,
+      "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/salman-khan-and-nayanthara-starrer-monster-recruits-global-action-team-of-six-stunt-coordinators-for-stylish-action-scenes-reports/articleshow/136015596.cms"
+    },
+    {
+      "actors": [
+        "Hungary"
+      ],
+      "domain": "portfolio.hu",
+      "id": "evt_17181dee273a4d2c",
+      "language": "Hungarian",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Hungary",
+      "tier": "monitor",
+      "title": "Napirendre kerülhet Ukrajna csatlakozása a NATO - hoz , Putyin bosszút forral a Krími híd miatt – Háborús híreink pénteken",
+      "tone": null,
+      "url": "https://www.portfolio.hu/global/20261120/napirendre-kerulhet-ukrajna-csatlakozasa-a-nato-hoz-putyin-bosszut-forral-a-krimi-hid-miatt-haborus-hireink-penteken-877886"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "haberler.com",
+      "id": "evt_0f3a5ad7b87fbc81",
+      "language": "Turkish",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261120T064500Z",
+      "source_country": "Turkey",
+      "tier": "monitor",
+      "title": "ABD Senatosu , Trump  ın İran savaşını bitirme tasarısını 51 oyla reddetti",
+      "tone": null,
+      "url": "https://www.haberler.com/guncel/abd-senatosu-trump-in-iran-savasini-bitirme-20444761-haberi/"
     }
   ],
   "filters": {
@@ -580,13 +994,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-19T15:48:04Z",
+  "generated_at": "2026-11-20T15:34:38Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 1,
-    "medium": 6,
-    "monitor": 15
+    "high": 2,
+    "medium": 10,
+    "monitor": 26
   },
-  "total_events": 22
+  "total_events": 38
 }
