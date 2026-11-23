@@ -2,345 +2,131 @@
   "events": [
     {
       "actors": [
-        "India"
+        "United States"
       ],
-      "domain": "manoramanews.com",
-      "id": "evt_c71e3254fb66bd03",
-      "language": "Malayalam",
+      "domain": "foxnews.com",
+      "id": "evt_b8fe78185da104c5",
+      "language": "English",
       "matched_regions": [
-        "houthi",
-        "saudi"
+        "russia",
+        "russian"
       ],
       "matched_themes": [
-        "rebel",
-        "missile"
+        "war",
+        "drone",
+        "attack"
       ],
-      "region": "MENA",
-      "score": 7.0,
+      "region": "Eurasia",
+      "score": 9.5,
       "score_breakdown": {
-        "region": 2.5,
-        "themes": 4.5,
+        "region": 3.5,
+        "themes": 6.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "India",
+      "seen_date": "20261123T033000Z",
+      "source_country": "United States",
       "tier": "high",
-      "title": "Saudi Coalition Intercepts Ballistic Missiles Fired at Riyadh by Houthi Rebels | റിയാദിലേക്ക് ബാലിസ്റ്റിക് മിസൈലുകൾ തൊടുത്ത് ഹൂതി വിമതര്‍ ; പ്രതിരോധിച്ച് സൗദി",
+      "title": "Russian warship sinks in Libya after suspected Ukrainian sea drone attack",
       "tone": null,
-      "url": "https://www.manoramanews.com/gulf-and-global/middle-east/2026/11/21/saudi-arabia-prevent-houthi-missile-attack.html"
+      "url": "https://www.foxnews.com/world/russian-warship-sinks-libya-suspected-ukrainian-strikes-take-war-beyond-black-sea"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "wtae.com",
-      "id": "evt_2758d0652837c232",
+      "domain": "wbaa.org",
+      "id": "evt_4adfb9562ea3a6da",
       "language": "English",
       "matched_regions": [
-        "iran",
-        "hormuz"
+        "ukraine",
+        "nato"
       ],
       "matched_themes": [
         "war"
       ],
-      "region": "MENA",
+      "region": "Europa del Este",
       "score": 6.5,
       "score_breakdown": {
         "region": 3.5,
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
+      "seen_date": "20261123T033000Z",
       "source_country": "United States",
       "tier": "high",
-      "title": "Man swims in Strait of Hormuz to highlight Iran war impact",
+      "title": "Ukraine war spilling into NATO territory",
       "tone": null,
-      "url": "https://www.wtae.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133"
+      "url": "https://www.wbaa.org/npr-news/2026-11-22/ukraine-war-spilling-into-nato-territory"
     },
     {
       "actors": [
-        "United Kingdom"
+        "India"
       ],
-      "domain": "leighjournal.co.uk",
-      "id": "evt_802c35a17897c83e",
+      "domain": "ianslive.in",
+      "id": "evt_5ab0f53e67a67be0",
       "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "killed",
-        "attack"
+      "matched_regions": [
+        "iran"
       ],
-      "region": "Global",
-      "score": 6.0,
+      "matched_themes": [
+        "war",
+        "strike"
+      ],
+      "region": "MENA",
+      "score": 6.5,
       "score_breakdown": {
-        "region": 0.0,
-        "themes": 6.0,
+        "region": 2.0,
+        "themes": 4.5,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20261123T033000Z",
+      "source_country": "India",
       "tier": "high",
-      "title": "Young boy one of two killed in ballistic missile attack on Zelensky home town",
+      "title": "IDF warns Netanyahu strike on Iran could trigger wider regional war : Report",
       "tone": null,
-      "url": "https://www.leighjournal.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-town/"
+      "url": "https://ianslive.in/idf-warns-netanyahu-strike-on-iran-could-trigger-wider-regional-war-reports--20261123075113"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Mexico"
       ],
-      "domain": "wharfedaleobserver.co.uk",
-      "id": "evt_75a6595b8859f55a",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "killed",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Young boy one of two killed in ballistic missile attack on Zelensky home town",
-      "tone": null,
-      "url": "https://www.wharfedaleobserver.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-town/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "eadt.co.uk",
-      "id": "evt_46a898df1c4a2ddd",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "killed",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Young boy one of two killed in ballistic missile attack on Zelensky home town",
-      "tone": null,
-      "url": "https://www.eadt.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-town/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "halesowennews.co.uk",
-      "id": "evt_733544d80fe5adb7",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "killed",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Young boy one of two killed in ballistic missile attack on Zelensky home town",
-      "tone": null,
-      "url": "https://www.halesowennews.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-town/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "thetottenhamindependent.co.uk",
-      "id": "evt_1ab921ca8ddedc47",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "killed",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Young boy one of two killed in ballistic missile attack on Zelensky home town",
-      "tone": null,
-      "url": "https://www.thetottenhamindependent.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-town/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "surreycomet.co.uk",
-      "id": "evt_966425bd040ae35e",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "killed",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Young boy one of two killed in ballistic missile attack on Zelensky home town",
-      "tone": null,
-      "url": "https://www.surreycomet.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-town/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "enfieldindependent.co.uk",
-      "id": "evt_a5f581597f4e83ee",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "killed",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Young boy one of two killed in ballistic missile attack on Zelensky home town",
-      "tone": null,
-      "url": "https://www.enfieldindependent.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-town/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "cravenherald.co.uk",
-      "id": "evt_e684f8349a2e773c",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "killed",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 6.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 6.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "high",
-      "title": "Young boy one of two killed in ballistic missile attack on Zelensky home town",
-      "tone": null,
-      "url": "https://www.cravenherald.co.uk/news/national/26750572.young-boy-one-two-killed-ballistic-missile-attack-zelenskys-home-town/"
-    },
-    {
-      "actors": [
-        "Kuwait"
-      ],
-      "domain": "arabtimesonline.com",
-      "id": "evt_b19c8e04c1bd06f6",
+      "domain": "mexicostar.com",
+      "id": "evt_89cf191fe113e436",
       "language": "English",
       "matched_regions": [
         "iran",
         "iranian"
       ],
       "matched_themes": [
-        "blockade"
+        "attack"
       ],
       "region": "MENA",
-      "score": 5.5,
-      "score_breakdown": {
-        "region": 3.5,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Kuwait",
-      "tier": "medium",
-      "title": "Iranian Regime Says It Has No Choice but to Break US Blockade as 14 Oil Tankers Prepare to Challenge Restrictions",
-      "tone": null,
-      "url": "https://www.arabtimesonline.com/news/iranian-regime-says-it-has-no-choice-but-to-break-us-blockade-as-14-oil-tankers-prepare-to-challenge-restrictions/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "taz.de",
-      "id": "evt_31bd90041c9e8f84",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Europa del Este",
       "score": 5.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
+        "region": 3.5,
+        "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Germany",
+      "seen_date": "20261123T033000Z",
+      "source_country": "Mexico",
       "tier": "medium",
-      "title": "Tagebuch aus der Ukraine : Die Wälder und das Meer können nicht auf Frieden warten",
+      "title": "Iranian leaders consider Democrats weak : Trump claims Iran intensified attacks after US midterm elections",
       "tone": null,
-      "url": "https://taz.de/Tagebuch-aus-der-Ukraine/!6225358/"
+      "url": "http://www.mexicostar.com/news/279449395/iranian-leaders-consider-democrats-weak-trump-claims-iran-intensified-attacks-after-us-midterm-elections"
     },
     {
       "actors": [
-        "Azerbaijan"
+        "Qatar"
       ],
-      "domain": "en.apa.az",
-      "id": "evt_21488ab00c56f9bd",
+      "domain": "thepeninsulaqatar.com",
+      "id": "evt_ea35b390a68993c1",
       "language": "English",
       "matched_regions": [
-        "mexico"
+        "colombia"
       ],
       "matched_themes": [
-        "clash",
-        "clashes"
+        "rebel",
+        "killed"
       ],
       "region": "América Latina",
       "score": 5.0,
@@ -349,444 +135,102 @@
         "themes": 4.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Azerbaijan",
+      "seen_date": "20261123T023000Z",
+      "source_country": "Qatar",
       "tier": "medium",
-      "title": "Armed clashes erupt in Mexico following reported arrest of drug cartel leader",
+      "title": "5 rebels killed in bombing in southwestern Colombia | The Peninsula Qatar",
       "tone": null,
-      "url": "https://en.apa.az/america/armed-clashes-erupt-in-mexico-following-reported-arrest-of-drug-cartel-leader-537638"
+      "url": "http://thepeninsulaqatar.com/article/23/11/2026/5-rebels-killed-in-bombing-in-southwestern-colombia"
     },
     {
       "actors": [
-        "United Kingdom"
+        "Indonesia"
       ],
-      "domain": "wharfedaleobserver.co.uk",
-      "id": "evt_3442925cfc12de71",
-      "language": "English",
+      "domain": "antaranews.com",
+      "id": "evt_7c99efa229e70fe1",
+      "language": "Indonesian",
       "matched_regions": [
-        "hormuz"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Briton swims in Strait of Hormuz to highlight  environmental cost of war",
-      "tone": null,
-      "url": "https://www.wharfedaleobserver.co.uk/news/national/26750618.briton-swims-strait-hormuz-highlight-environmental-cost-war/"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "lavanguardia.com",
-      "id": "evt_8c8c5f0ced8e8db6",
-      "language": "Spanish",
-      "matched_regions": [
-        "crimea"
-      ],
-      "matched_themes": [
-        "bombard"
-      ],
-      "region": "Europa del Este",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Spain",
-      "tier": "medium",
-      "title": "Rusia restablece totalmente el tránsito ferroviario por el puente bombardeado en Crimea",
-      "tone": null,
-      "url": "https://www.lavanguardia.com/internacional/20261121/11689885/rusia-restablece-totalmente-transito-ferroviario-puente-bombardeado-crimea.html"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "thetottenhamindependent.co.uk",
-      "id": "evt_469fa2fb6b161e4f",
-      "language": "English",
-      "matched_regions": [
-        "hormuz"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Briton swims in Strait of Hormuz to highlight  environmental cost of war",
-      "tone": null,
-      "url": "https://www.thetottenhamindependent.co.uk/news/national/26750618.briton-swims-strait-hormuz-highlight-environmental-cost-war/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "surreycomet.co.uk",
-      "id": "evt_d8885232a9744571",
-      "language": "English",
-      "matched_regions": [
-        "hormuz"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Briton swims in Strait of Hormuz to highlight  environmental cost of war",
-      "tone": null,
-      "url": "https://www.surreycomet.co.uk/news/national/26750618.briton-swims-strait-hormuz-highlight-environmental-cost-war/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "ealingtimes.co.uk",
-      "id": "evt_aac77b28e3c79fc4",
-      "language": "English",
-      "matched_regions": [
-        "hormuz"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Briton swims in Strait of Hormuz to highlight  environmental cost of war",
-      "tone": null,
-      "url": "https://www.ealingtimes.co.uk/news/national/26750618.briton-swims-strait-hormuz-highlight-environmental-cost-war/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "cravenherald.co.uk",
-      "id": "evt_978469093fe344d3",
-      "language": "English",
-      "matched_regions": [
-        "hormuz"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Briton swims in Strait of Hormuz to highlight  environmental cost of war",
-      "tone": null,
-      "url": "https://www.cravenherald.co.uk/news/national/26750618.briton-swims-strait-hormuz-highlight-environmental-cost-war/"
-    },
-    {
-      "actors": [
-        "United Kingdom"
-      ],
-      "domain": "irvinetimes.com",
-      "id": "evt_0fb38fb92d64f240",
-      "language": "English",
-      "matched_regions": [
-        "hormuz"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "MENA",
-      "score": 4.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United Kingdom",
-      "tier": "medium",
-      "title": "Briton swims in Strait of Hormuz to highlight  environmental cost of war",
-      "tone": null,
-      "url": "https://www.irvinetimes.com/news/national/26750618.briton-swims-strait-hormuz-highlight-environmental-cost-war/"
-    },
-    {
-      "actors": [
-        "Australia"
-      ],
-      "domain": "perthnow.com.au",
-      "id": "evt_41fb86a29eba9f1b",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Australia",
-      "tier": "medium",
-      "title": "Missile attack on Zelenskiy hometown kills two",
-      "tone": null,
-      "url": "https://www.perthnow.com.au/news/conflict/missile-attack-on-zelenskiys-hometown-kills-two-c-23195124"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "theepochtimes.com",
-      "id": "evt_a6d738b419165e2f",
-      "language": "English",
-      "matched_regions": [
-        "russia",
-        "china"
+        "israel",
+        "iran"
       ],
       "matched_themes": [],
-      "region": "Eurasia",
+      "region": "MENA",
       "score": 4.0,
       "score_breakdown": {
         "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United States",
+      "seen_date": "20261123T033000Z",
+      "source_country": "Indonesia",
       "tier": "medium",
-      "title": "Shenzhen Summit Puts Limits of China – Russia Partnership in Focus",
+      "title": "Iran siap gugat AS dan Israel atas dugaan kejahatan perang",
       "tone": null,
-      "url": "https://www.theepochtimes.com/china/shenzhen-summit-puts-limits-of-china-russia-partnership-in-focus-6127510"
+      "url": "https://www.antaranews.com/berita/5871663/iran-siap-gugat-as-dan-israel-atas-dugaan-kejahatan-perang"
     },
     {
       "actors": [
-        "Australia"
+        "United States"
       ],
-      "domain": "goulburnpost.com.au",
-      "id": "evt_bd8edeb4ca537b50",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "missile",
-        "attack"
-      ],
-      "region": "Global",
-      "score": 4.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 4.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Australia",
-      "tier": "medium",
-      "title": "Missile attack on Zelenskiy hometown kills two",
-      "tone": null,
-      "url": "https://www.goulburnpost.com.au/story/9395785/missile-attack-on-zelenskiys-hometown-kills-two/"
-    },
-    {
-      "actors": [
-        "Portugal"
-      ],
-      "domain": "sapo.pt",
-      "id": "evt_429f5f0ecde350d1",
-      "language": "Portuguese",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 3.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Portugal",
-      "tier": "medium",
-      "title": "Mísseis e drone russos atingem Polónia e agravam tensão entre NATO e Moscovo",
-      "tone": null,
-      "url": "https://sapo.pt/artigo/misseis-e-drone-russos-atingem-polonia-e-agravam-tensao-entre-nato-e-moscovo-6b0193f1b111ab45ff159f81"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "jpost.com",
-      "id": "evt_97c4f1e415200e42",
+      "domain": "worldtribune.com",
+      "id": "evt_d238ac573ab009b2",
       "language": "English",
       "matched_regions": [
-        "russia",
-        "russian"
+        "china",
+        "north korea"
       ],
       "matched_themes": [],
-      "region": "Eurasia",
+      "region": "Asia-Pacífico",
       "score": 3.5,
       "score_breakdown": {
         "region": 3.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Israel",
+      "seen_date": "20261123T033000Z",
+      "source_country": "United States",
       "tier": "medium",
-      "title": "Denmark urges EU to stop Russian tourist visas after foiled assassination plot",
+      "title": "Trump cites  peace declaration  in Shenzen on heels of  Quad  summit ;  Whoever wins SI win – World Tribune : U . S . Politics and Culture , Geostrategy , China , North Korea , Corporate Watch , Media Watch",
       "tone": null,
-      "url": "http://www.jpost.com/international/article-915635"
+      "url": "https://worldtribune.com/trump-cites-peace-declaration-at-3-way-summit-on-heels-of-quad-summit-whoever-wins-si-wins/"
     },
     {
       "actors": [
-        "Canada"
+        "India"
       ],
-      "domain": "winnipegfreepress.com",
-      "id": "evt_a2ae0cbcc9dd27b8",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Canada",
-      "tier": "monitor",
-      "title": "Oath Keepers founder and Jan . 6 leader Stewart Rhodes is  absolutely done  with Trump – Winnipeg Free Press",
-      "tone": null,
-      "url": "https://www.winnipegfreepress.com/world/2026/11/21/oath-keepers-founder-and-jan-6-leader-stewart-rhodes-is-absolutely-done-with-trump"
-    },
-    {
-      "actors": [
-        "Kuwait"
-      ],
-      "domain": "arabtimesonline.com",
-      "id": "evt_d18ee8c67af7201f",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Kuwait",
-      "tier": "monitor",
-      "title": "Former French premier de Villepin launches presidential bid , warns against Le Pen victory",
-      "tone": null,
-      "url": "https://www.arabtimesonline.com/news/former-french-premier-de-villepin-launches-presidential-bid-warns-against-le-pen-victory/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "taz.de",
-      "id": "evt_d792d63ff19e5bf5",
-      "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Raketen gehen in Ostpolen nieder : Kreml provoziert Warschau",
-      "tone": null,
-      "url": "https://taz.de/Raketen-gehen-in-Ostpolen-nieder/!6232156/"
-    },
-    {
-      "actors": [
-        "Israel"
-      ],
-      "domain": "jpost.com",
-      "id": "evt_1b6dce2509918bf3",
+      "domain": "ianslive.in",
+      "id": "evt_9cdc33caf4dc4b12",
       "language": "English",
       "matched_regions": [
-        "mali",
-        "somalia"
+        "pakistan",
+        "nato"
       ],
       "matched_themes": [],
-      "region": "Sahel",
+      "region": "Asia del Sur",
       "score": 3.0,
       "score_breakdown": {
         "region": 3.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Israel",
+      "seen_date": "20261123T033000Z",
+      "source_country": "India",
       "tier": "monitor",
-      "title": "UAE builds up military bases in Somalia as US expands interest in region",
+      "title": "US senator - elect El - Sayed opposes funding Pakistan military",
       "tone": null,
-      "url": "http://www.jpost.com/middle-east/article-915630"
+      "url": "https://ianslive.in/us-senator-elect-el-sayed-opposes-funding-pakistans-military--20261123074503"
     },
     {
       "actors": [
-        "Azerbaijan"
+        "Nigeria"
       ],
-      "domain": "en.apa.az",
-      "id": "evt_ea3ca8404a57f8fb",
+      "domain": "punchng.com",
+      "id": "evt_0f4335256492ea07",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "war"
+        "sanction",
+        "sanctions"
       ],
       "region": "Global",
       "score": 3.0,
@@ -795,23 +239,23 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Azerbaijan",
+      "seen_date": "20261123T033000Z",
+      "source_country": "Nigeria",
       "tier": "monitor",
-      "title": "President : We are grateful to Vietnam for the support and fair position it has shown especially during the Patriotic War",
+      "title": "CAF threatens sanctions over poor treatment of away teams",
       "tone": null,
-      "url": "https://en.apa.az/official-news/president-we-are-grateful-to-vietnam-for-the-support-and-fair-position-it-has-shown-especially-during-the-patriotic-war-537647"
+      "url": "https://punchng.com/caf-frowns-at-poor-treatment-of-away-teams-2/"
     },
     {
       "actors": [
-        "United States"
+        "Brazil"
       ],
-      "domain": "de.euronews.com",
-      "id": "evt_00197e8a20b2d08b",
-      "language": "German",
+      "domain": "oglobo.globo.com",
+      "id": "evt_3eb84caefd3e0ee7",
+      "language": "Portuguese",
       "matched_regions": [],
       "matched_themes": [
-        "war"
+        "bombard"
       ],
       "region": "Global",
       "score": 3.0,
@@ -820,46 +264,143 @@
         "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "United States",
+      "seen_date": "20261123T033000Z",
+      "source_country": "Brazil",
       "tier": "monitor",
-      "title": "Frankreich : Macron warnt vor Russlands schmutzigen Tricks",
+      "title": "Bombardeios russos deixam dez mortos na região de Kiev",
       "tone": null,
-      "url": "https://de.euronews.com/2026/11/21/frankreich-macron-warnt-vor-russlands-schmutzigen-tricks"
+      "url": "https://oglobo.globo.com/mundo/noticia/2026/11/22/bombardeios-russos-deixam-dez-mortos-na-regiao-de-kiev.ghtml"
     },
     {
       "actors": [
         "Australia"
       ],
-      "domain": "ibtimes.com.au",
-      "id": "evt_bec5c6b2b09011e9",
+      "domain": "theage.com.au",
+      "id": "evt_f40ea56bc0a538cf",
       "language": "English",
-      "matched_regions": [
-        "mexico"
-      ],
+      "matched_regions": [],
       "matched_themes": [
-        "blockade"
+        "war"
       ],
-      "region": "América Latina",
+      "region": "Global",
       "score": 3.0,
       "score_breakdown": {
-        "region": 1.0,
-        "themes": 2.0,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
+      "seen_date": "20261123T033000Z",
       "source_country": "Australia",
       "tier": "monitor",
-      "title": "FBI Most Wanted Fugitive El Chapo Isidro Captured in Mexico as Gunfire , Burning Cars and Blockades Hit Sinaloa",
+      "title": "Brisbane family home sparks nine - way bidding war",
       "tone": null,
-      "url": "https://www.ibtimes.com.au/mexico-captures-el-chapo-isidro-sinaloa-1879097"
+      "url": "https://www.theage.com.au/property/news/brisbane-family-home-sparks-nine-way-bidding-war-20261123-p61gee.html"
     },
     {
       "actors": [
-        "Israel"
+        "India"
       ],
-      "domain": "jpost.com",
-      "id": "evt_0fb73aedabe04c28",
+      "domain": "businesstoday.in",
+      "id": "evt_3eea59b18f657394",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "Showdown ahead of November 26 meet : Chandrasekaran backs Tata Sons IPO , Noel Tata flags conflict",
+      "tone": null,
+      "url": "https://www.businesstoday.in/latest/corporate/story/showdown-ahead-of-november-26-meet-chandrasekaran-backs-tata-sons-ipo-noel-tata-flags-conflict-568968-2026-11-23"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "greekherald.com",
+      "id": "evt_614e07dbef5442f4",
+      "language": "English",
+      "matched_regions": [
+        "india",
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 2.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "Greece",
+      "tier": "monitor",
+      "title": "US cant seek India support while engaging with Pakistan : Congres Shama Mohamed",
+      "tone": null,
+      "url": "http://www.greekherald.com/news/279449492/us-cant-seek-india-support-while-engaging-with-pakistan-congress-shama-mohamed"
+    },
+    {
+      "actors": [
+        "Kosovo"
+      ],
+      "domain": "lajmi.net",
+      "id": "evt_698912654fecb2c9",
+      "language": "Albanian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "Kosovo",
+      "tier": "monitor",
+      "title": "Trump kërcënon Iranin me sulme ushtarake pas Vitit të Ri : Nëse nuk arrihet marrëveshje , do të ndërhyjmë",
+      "tone": null,
+      "url": "https://lajmi.net/trump-kercenon-iranin-me-sulme-ushtarake-pas-vitit-te-ri-nese-nuk-arrihet-marreveshje-do-te-nderhyjme/"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "investimentosenoticias.com.br",
+      "id": "evt_d3b6d91a2e00d9a7",
+      "language": "Portuguese",
+      "matched_regions": [
+        "gaza"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Cessar - fogo em Gaza : Conversaes Paralisadas em Meio a Conflitos e Mortes",
+      "tone": null,
+      "url": "https://www.investimentosenoticias.com.br/noticias/politica/cessar-fogo-em-gaza-conversacoes-paralisadas-em-meio-a-conflitos-e-mortes/"
+    },
+    {
+      "actors": [],
+      "domain": "thenationalnews.com",
+      "id": "evt_d5fd9ed32a1de003",
       "language": "English",
       "matched_regions": [
         "israel"
@@ -872,44 +413,19 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Israel",
+      "seen_date": "20261123T033000Z",
+      "source_country": "",
       "tier": "monitor",
-      "title": "The future of Israel depends on whether Jacob and Esau can truly reconcile",
+      "title": "Israel accused of systematic abuse and obstruction of West Bank medics",
       "tone": null,
-      "url": "http://www.jpost.com/opinion/article-915414"
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/22/israel-accused-of-systematic-abuse-and-obstruction-of-west-bank-medics/"
     },
     {
       "actors": [
-        "India"
+        "Bolivia"
       ],
-      "domain": "filmfare.com",
-      "id": "evt_d3cc22ee4933e717",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "clash"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "India",
-      "tier": "monitor",
-      "title": "Salman Khan on Maatrubhumi Clash With Eetha and Why He Didnt Clash With Shah Rukh Khan King",
-      "tone": null,
-      "url": "https://www.filmfare.com/news/bollywood/salman-khan-on-maatrubhumis-clash-with-eetha-and-why-he-didnt-clash-with-shah-rukh-khans-king-87302.html"
-    },
-    {
-      "actors": [
-        "Spain"
-      ],
-      "domain": "infodefensa.com",
-      "id": "evt_09517ad3be97b565",
+      "domain": "opinion.com.bo",
+      "id": "evt_e0d7da51bcd91652",
       "language": "Spanish",
       "matched_regions": [
         "israel"
@@ -922,45 +438,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Spain",
+      "seen_date": "20261123T033000Z",
+      "source_country": "Bolivia",
       "tier": "monitor",
-      "title": "Israel Aerospace Industries promociona en DACS Peru 2026 su dron kamikaze Point Blank",
+      "title": "Presidente de Israel recibe a delegación de legisladores bolivianos",
       "tone": null,
-      "url": "https://www.infodefensa.com/texto-diario/mostrar/6101413/israel-aerospace-industries-promociona-dacs-peru-2026-dron-kamikaze-point-blank"
+      "url": "https://www.opinion.com.bo/pais/presidente-israel-recibe-delegacion-legisladores-bolivianos/20261122223333999531.html"
     },
     {
       "actors": [
-        "Germany"
+        "Italy"
       ],
-      "domain": "taz.de",
-      "id": "evt_32726f1d94603830",
-      "language": "German",
-      "matched_regions": [
-        "ukraine"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "+++ Nachrichten im Ukrainekrieg +++ : EU kündigt neue Sicherheitsstrategie an",
-      "tone": null,
-      "url": "https://taz.de/-Nachrichten-im-Ukrainekrieg-/!6232151/"
-    },
-    {
-      "actors": [
-        "Romania"
-      ],
-      "domain": "money.ro",
-      "id": "evt_da04b7bc8781d282",
-      "language": "Romanian",
+      "domain": "zazoom.it",
+      "id": "evt_f8fe94c4d8866048",
+      "language": "Italian",
       "matched_regions": [
         "israel"
       ],
@@ -972,20 +463,20 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Romania",
+      "seen_date": "20261123T033000Z",
+      "source_country": "Italy",
       "tier": "monitor",
-      "title": "O sută de țări vor să interzică „ roboții ucigași . SUA , Rusia și Israel se opun , iar ONU amână decizia",
+      "title": "I coloni israeliani devastano la Cisgiordania Eisenkot",
       "tone": null,
-      "url": "https://www.money.ro/stiri/o-suta-de-tari-vor-sa-interzica-robotii-ucigasi-sua-rusia-si-israel-se-opun-iar--mwq5zr66"
+      "url": "https://www.zazoom.it/2026-11-23/i-coloni-israeliani-devastano-la-cisgiordania-eisenkot-terrorismo-ebraico/19963104/"
     },
     {
       "actors": [
-        "Germany"
+        "Argentina"
       ],
-      "domain": "epochtimes.de",
-      "id": "evt_661807459001e21e",
-      "language": "German",
+      "domain": "laarena.com.ar",
+      "id": "evt_bc75aaf334d16bf3",
+      "language": "Spanish",
       "matched_regions": [
         "china"
       ],
@@ -997,47 +488,247 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Germany",
+      "seen_date": "20261123T033000Z",
+      "source_country": "Argentina",
       "tier": "monitor",
-      "title": "Trump : China baut sein Atomwaffenarsenal in rasantem Tempo aus",
+      "title": "Rusia y China buscan darle forma al mundo multipolar",
       "tone": null,
-      "url": "https://www.epochtimes.de/politik/ausland/trump-china-baut-sein-atomwaffenarsenal-in-rasantem-tempo-aus-a5669896.html"
+      "url": "http://www.laarena.com.ar/la-pampa/rusia-y-china-buscan-darle-forma-al-mundo-multipolar-202611230130"
     },
     {
       "actors": [
-        "Spain"
+        "Mexico"
       ],
-      "domain": "infodefensa.com",
-      "id": "evt_c05922f9e05e3e03",
+      "domain": "mimorelia.com",
+      "id": "evt_66e97c6114dd3619",
       "language": "Spanish",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "Mexico",
+      "tier": "monitor",
+      "title": "Drones y mensajes a su madre : las pistas para capturar a El Chapo Isidro",
+      "tone": null,
+      "url": "https://mimorelia.com/mexico/drones-y-mensajes-su-madre-las-pistas-capturar-el-chapo-isidro-n5597943"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "baomoi.com",
+      "id": "evt_66cad574a9ebba17",
+      "language": "Vietnamese",
       "matched_regions": [
-        "venezuela"
+        "iran"
       ],
       "matched_themes": [],
-      "region": "América Latina",
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Vì sao Iran gia tăng tấn công tại vùng Vịnh bất chấp nguy cơ chiến tranh với Mỹ ?",
+      "tone": null,
+      "url": "https://baomoi.com/vi-sao-iran-gia-tang-tan-cong-tai-vung-vinh-bat-chap-nguy-co-chien-tranh-voi-my-c56579439.epi"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "investimentosenoticias.com.br",
+      "id": "evt_83f635751ac91ea7",
+      "language": "Portuguese",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Exportaes da China Crescem em Abril , Superando Previsões e Impulsionadas por Demanda Internacional",
+      "tone": null,
+      "url": "https://www.investimentosenoticias.com.br/noticias/mercado/exportacoes-da-china-crescem-em-abril-superando-previsoes-e-impulsionadas-por-demanda-internacional/"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "international.sindonews.com",
+      "id": "evt_c031093c1472ff26",
+      "language": "Indonesian",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "Indonesia",
+      "tier": "monitor",
+      "title": "Kapal Perang Rusia Tenggelam di Libya , Diduga Diserang Drone Laut Ukraina",
+      "tone": null,
+      "url": "https://international.sindonews.com/read/1775153/41/kapal-perang-rusia-tenggelam-di-libya-diduga-diserang-drone-laut-ukraina-1795399915"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "baomoi.com",
+      "id": "evt_c5ba7f325db8c29b",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Tin nóng thế giới hôm nay 23 / 11 : Mỹ dọa đánh chìm tàu Iran , tàu Nga nổ tại Libya",
+      "tone": null,
+      "url": "https://baomoi.com/tin-nong-the-gioi-hom-nay-23-11-my-doa-danh-chim-tau-iran-tau-nga-no-tai-libya-c56579408.epi"
+    },
+    {
+      "actors": [
+        "Vietnam"
+      ],
+      "domain": "anninhthudo.vn",
+      "id": "evt_2a8f4c91c1417706",
+      "language": "Vietnamese",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T023000Z",
+      "source_country": "Vietnam",
+      "tier": "monitor",
+      "title": "Ông Trump cảnh báo tấn công Iran sau ngày 1 - 1 - 2027",
+      "tone": null,
+      "url": "https://anninhthudo.vn/my-canh-bao-se-tan-cong-iran-sau-nam-moi-neu-khong-dat-duoc-thoa-thuan-post676644.antd"
+    },
+    {
+      "actors": [
+        "China"
+      ],
+      "domain": "asianews.network",
+      "id": "evt_75f4b3afe9be5f28",
+      "language": "English",
+      "matched_regions": [
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Spain",
+      "seen_date": "20261123T033000Z",
+      "source_country": "China",
       "tier": "monitor",
-      "title": "El Ejército de Venezuela estudia una reestructuración para organizarse en nueve cuerpos de armas y servicios",
+      "title": "US President Trump - North Korean leader Kim summit still possible despite APEC setback , but major hurdles persist : analysts",
       "tone": null,
-      "url": "https://www.infodefensa.com/texto-diario/mostrar/6101271/ejercito-venezuela-estudia-reestructuracion-organizarse-nueve-cuerpos-armas-servicios"
+      "url": "https://asianews.network/us-president-trump-north-korean-leader-kim-summit-still-possible-despite-apec-setback-but-major-hurdles-persist-analysts/"
     },
     {
       "actors": [
-        "Nigeria"
+        "United States"
       ],
-      "domain": "dailypost.ng",
-      "id": "evt_a62c44fef7562cfb",
+      "domain": "wsws.org",
+      "id": "evt_1308eb41ff55902d",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "strike"
+      ],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 1.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "New Zealand firefighters union cancels strikes",
+      "tone": null,
+      "url": "https://www.wsws.org/en/articles/2026/11/23/wlch-n23.html"
+    },
+    {
+      "actors": [
+        "China"
+      ],
+      "domain": "asianews.network",
+      "id": "evt_7e17c5af857e1b2b",
       "language": "English",
       "matched_regions": [
-        "niger"
+        "pakistan"
+      ],
+      "matched_themes": [],
+      "region": "Asia del Sur",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261123T033000Z",
+      "source_country": "China",
+      "tier": "monitor",
+      "title": "Oman to supply Pakistan petroleum products , $200m credit facility to PSO under new agreement – Asia News Network",
+      "tone": null,
+      "url": "https://asianews.network/oman-to-supply-pakistans-petroleum-products-200m-credit-facility-to-pso-under-new-agreement/"
+    },
+    {
+      "actors": [
+        "Mexico"
+      ],
+      "domain": "mexicostar.com",
+      "id": "evt_e3a09eb03894b9fa",
+      "language": "English",
+      "matched_regions": [
+        "mali"
       ],
       "matched_themes": [],
       "region": "Sahel",
@@ -1047,62 +738,12 @@
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Nigeria",
+      "seen_date": "20261123T033000Z",
+      "source_country": "Mexico",
       "tier": "monitor",
-      "title": "Nigerian Army neutralises 21 ISWAP fighters , frees kidnap victims",
+      "title": "Trump claims Somali community has",
       "tone": null,
-      "url": "https://dailypost.ng/2026/11/21/military-neutralises-21-iswap-fighters-rescues-kidnap-victims-in-nationwide-operations/"
-    },
-    {
-      "actors": [
-        "Italy"
-      ],
-      "domain": "ilgazzettino.it",
-      "id": "evt_86044bf3331d2675",
-      "language": "Italian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Italy",
-      "tier": "monitor",
-      "title": "Gianni De Gennaro , chi era lex capo della Polizia morto suicida : soprannominato lo squalo . Lamicizia con Falcone , il G8 , linchiesta per depistaggio",
-      "tone": null,
-      "url": "https://www.ilgazzettino.it/italia/cronaca_nera/gianni_de_gennaro_eta_chi_era_moglie_figli_carriera_falcone_borsellino-9904323.html"
-    },
-    {
-      "actors": [
-        "Ukraine"
-      ],
-      "domain": "h.ua",
-      "id": "evt_ef173bb84e298b4f",
-      "language": "Ukrainian",
-      "matched_regions": [
-        "kyiv"
-      ],
-      "matched_themes": [],
-      "region": "Europa del Este",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261121T133000Z",
-      "source_country": "Ukraine",
-      "tier": "monitor",
-      "title": "Данія зірвала ймовірний замах на Kyivstoner · h . ua",
-      "tone": null,
-      "url": "https://h.ua/2026/11/21/daniia-zirvala-zamah-na-kyivstonera"
+      "url": "http://www.mexicostar.com/news/279449494/trump-claims-somali-community-has-completely-taken-over-minnesota"
     }
   ],
   "filters": {
@@ -1116,13 +757,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-21T14:39:25Z",
+  "generated_at": "2026-11-23T18:04:33Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 10,
-    "medium": 15,
-    "monitor": 17
+    "high": 3,
+    "medium": 4,
+    "monitor": 22
   },
-  "total_events": 42
+  "total_events": 29
 }
