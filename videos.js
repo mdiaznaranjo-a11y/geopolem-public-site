@@ -41,6 +41,33 @@ export const VIDEO_CATEGORIES = {
 //   editorialClose — optional editorial sign-off line shown in the player
 export const VIDEOS = [
   {
+    id: 'sentinel-lo-que-viene-2026-11-23-29',
+    src: './assets/videos/geopolem_sentinel_2026_11_23_29_revista.mp4',
+    poster: './assets/videos/posters/geopolem_sentinel_2026_11_23_29_revista.jpg',
+    title: 'SENTINEL · La otra puerta de Ormuz · Semana del 23 al 29 de noviembre de 2026',
+    category: 'osint',
+    language: 'ES',
+    subtitles: [],
+    duration: '00:26',
+    description: 'Brief SENTINEL «Lo que viene», en formato revista. Yemen: los hutíes presionan la salida saudí que esquiva Ormuz (oleoducto Este-Oeste, Yanbu, Bab el-Mandeb). Chancay: COSCO controla el 60 % del puerto y EE. UU. financia el diseño del Callao; el Tribunal Constitucional decidirá quién lo supervisa. Francia: el 16 de diciembre se examinan las QPC del caso Le Pen.',
+    strategic: 'Evaluación GEOPÓLEM: si la ruta alternativa a Ormuz también está bajo presión, el margen del petróleo del Golfo se estrecha. En Chancay, la soberanía se juega en la supervisión, no en la propiedad. Cinco hipótesis se contrastan el lunes 30.',
+    copyShort: 'Si la salida alternativa también tiembla, ¿qué margen queda?',
+    sources: [
+      { label: 'Ver en YouTube', url: 'https://youtube.com/shorts/BWdQ79vp3p4' },
+      { label: 'Brief completo · Lo que viene 23-29 nov', url: 'https://github.com/mdiaznaranjo-a11y/geopolem-public-site/blob/main/data/sentinel/lo-que-viene-2026-11-23.md' },
+      { label: 'Reuters · ataques hutíes en Arabia Saudita', url: 'https://www.reuters.com/world/middle-east/houthi-attacks-saudi-arabia-2026-11-19/' },
+      { label: 'Al Jazeera · 22 nov 2026', url: 'https://aljazeera.com/news/2026/11/22/houthis-report-attack-on-sanaa-as-saudi-arabia-intercepts-drone' },
+      { label: 'El Comercio · Chancay en el TC', url: 'https://elcomercio.pe/economia/peru/cosco-shipping-lleva-disputa-contra-ositran-por-el-puerto-de-chancay-al-tribunal-constitucional-l-ultimas-noticia/' },
+      { label: 'RTL · QPC el 16 de diciembre', url: 'https://www.rtl.fr/actu/justice-faits-divers/proces-des-assistants-parlementaires-du-rn-la-cour-de-cassation-examinera-les-qpc-le-16-decembre-une-date-cruciale-avant-la-presidentielle-2027-7900686372' },
+    ],
+    editorialClose: 'GEOPÓLEM. Bienvenidos al tablero.',
+    tags: ['SENTINEL', 'Yemen', 'Mar Rojo', 'Ormuz', 'Chancay', 'Francia', 'GEOPÓLEM'],
+    source: 'GEOPOLEM-SENTINEL-Semana-23-29-nov--Revista.mp4',
+    youtubeUrl: 'https://youtube.com/shorts/BWdQ79vp3p4',
+    webUrl: 'https://mdiaznaranjo-a11y.github.io/geopolem-public-site/app.html#sala',
+    orientation: 'vertical',
+  },
+  {
     id: 'shenzhen-2026-la-foto-a-tres',
     src: './assets/videos/geopolem_shenzhen_2026_foto_a_tres_16x9.mp4',
     poster: './assets/videos/posters/geopolem_shenzhen_2026_foto_a_tres_16x9.jpg',
