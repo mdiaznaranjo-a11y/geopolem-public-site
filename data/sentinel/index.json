@@ -1,10 +1,17 @@
 {
   "project": "GEOPÓLEM",
   "collection": "SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
-  "updated_at": "2026-11-16T07:50:00+01:00",
+  "updated_at": "2026-11-23T07:55:00+01:00",
   "latest": "./weekly-brief.json",
   "feed": "./conflict-events.json",
   "items": [
+    {
+      "date": "2026-11-23",
+      "window": "EDICIÓN DEL 23 DE NOVIEMBRE 2026 · DATOS DEL 16 AL 22 NOV",
+      "status": "dos acoples confirmados (Ormuz: guerra de petroleros y vertidos; Gaza: inundaciones y restricciones) y una señal energética en observación (refinerías rusas); sin causalidad forzada",
+      "json": "./sentinel_weekly_brief_2026-11-16_2026-11-22.json",
+      "markdown": "./weekly-brief-2026-11-23.md"
+    },
     {
       "date": "2026-11-16",
       "window": "9 - 15 NOVIEMBRE 2026 · EUROPE/LUXEMBOURG",

@@ -1,0 +1,641 @@
+{
+  "id": "sentinel_weekly_brief_2026-11-16_2026-11-22",
+  "eyebrow": "SENTINEL",
+  "title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
+  "brief_title": "GEOPÓLEM SENTINEL · Brief semanal de inflexiones conflicto-ambiente",
+  "main_status": "dos acoples confirmados (Ormuz: guerra de petroleros y vertidos; Gaza: inundaciones y restricciones) y una señal energética en observación (refinerías rusas); sin causalidad forzada",
+  "generated_at": "2026-11-23T07:55:00+01:00",
+  "published_at": "2026-11-23T07:55:00+01:00",
+  "window": "EDICIÓN DEL 23 DE NOVIEMBRE 2026 · DATOS DEL 16 AL 22 NOV",
+  "window_label": "EDICIÓN DEL 23 DE NOVIEMBRE 2026 · DATOS DEL 16 AL 22 NOV",
+  "week_window": {
+    "local": {
+      "start": "2026-11-16T00:00:00+01:00",
+      "end": "2026-11-22T23:59:59+01:00",
+      "timezone": "Europe/Luxembourg"
+    },
+    "utc": {
+      "start": "2026-11-15T23:00:00Z",
+      "end": "2026-11-22T22:59:59Z"
+    }
+  },
+  "summary": [
+    "Ormuz: Greenpeace y Kpler contabilizan más de 600 vertidos de petróleo y más de 160 ataques a petroleros desde febrero; el UKMTO confirmó nuevos impactos cerca de Khasab el 16, 20 y 21 de noviembre.",
+    "Las reclamaciones de la CGRI sobre minas y un superpetrolero hundido con dos millones de barriles siguen sin verificación independiente, igual que el anunciado convoy de 14 petroleros desde Kharg.",
+    "Gaza: el informe de la Junta de Paz al Consejo de Seguridad reconoce que las restricciones israelíes y la falta de fondos han impedido preparar a la población para las inundaciones.",
+    "Rusia (en observación): los ataques ucranianos con drones han reducido un 45% el refino, con incendios industriales sin medición ambiental publicada.",
+    "Se revisaron 42 eventos del feed SENTINEL, 51 titulares de 6 instantáneas semanales, 59 eventos NASA EONET y 99 sismos M4,5+ de USGS (10 de M5,5+); el ciclón Akvan (India) y los sismos quedan descartados por falta de acople con un conflicto."
+  ],
+  "method_note": "Se cruzaron el feed SENTINEL/GDELT de GEOPÓLEM (instantánea actual y 6 instantáneas de la semana), NASA EONET, USGS y GDACS con fuentes institucionales y periodísticas verificables (Greenpeace/Kpler vía Skift y Arab News, UKMTO vía CNBC/Reuters, OCHA, OIM, Reuters, IMD, Down To Earth). La selección prioriza impacto geopolítico, refugio, rutas marítimas, energía y capacidad estatal. Donde la evidencia no sostiene causalidad o daño medido, se etiqueta como observación.",
+  "caveat": "Las reclamaciones de la CGRI sobre minas, hundimientos y barriles vertidos no están verificadas de forma independiente; solo se tratan como hechos los avisos del UKMTO y los recuentos de Greenpeace/Kpler, que no estiman el volumen vertido. El recuento de 540 manchas es del 12 de noviembre (ventana anterior) y se usa como línea de base. Las inundaciones de Gaza ocurrieron del 6 al 8 de noviembre; se incluyen por los balances de OCHA y el informe de la Junta de Paz publicados en la ventana. La caída del refino ruso procede de fuentes del sector citadas por Reuters. Correlación no implica causalidad.",
+  "source_urls": {
+    "sentinel_feed": "https://mdiaznaranjo-a11y.github.io/geopolem-public-site/data/sentinel/conflict-events.json",
+    "nasa_eonet_window": "https://eonet.gsfc.nasa.gov/api/v3/events?start=2026-11-15&end=2026-11-23&status=all",
+    "nasa_eonet_open": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=open",
+    "usgs_m45": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-15T23:00:00&endtime=2026-11-22T22:59:59&minmagnitude=4.5&orderby=magnitude",
+    "skift_greenpeace_kpler": "https://skift.com/2026/11/20/oil-spills-affect-uae-oman-beaches-as-hormuz-strikes-go-on/",
+    "arabnews_greenpeace_540": "https://www.arabnews.pk/middle-east/how-iran-war-oil-spills-are-threatening-gulf-marine-life-tourism-and-coastal-communities-3006882",
+    "cnbc_ukmto_nov21": "https://cnbc.com/2026/11/21/two-tanker-attacks-reported-near-omans-khasab-ukmto-says.html",
+    "marineradar_supertanker_claim": "https://www.marineradar.com/trends/supertanker-with-2-million-barrels-sinks-at-hormuz-2026-11-15",
+    "marineradar_ukmto_nov16": "https://www.marineradar.com/trends/tanker-struck-in-strait-of-hormuz-engine-fire-reported-2026-11-16",
+    "gulfnews_14_tankers": "https://gulfnews.com/world/mena/iran-readies-14-tankers-to-break-us-blockade-what-happens-if-they-try-1.500756460",
+    "iranintl_14_tankers": "https://www.iranintl.com/en/202611216660",
+    "reuters_board_of_peace": "https://www.reuters.com/world/middle-east/trumps-board-peace-faults-israel-hamas-failure-end-gaza-war-2026-11-18/",
+    "ocha_sitrep_18nov": "https://www.ochaopt.org/content/humanitarian-situation-report-18-november-2026",
+    "ocha_winter_appeal": "https://www.unocha.org/publications/report/occupied-palestinian-territory/urgent-appeal-expedite-entry-winter-supplies-gaza",
+    "spa_iom_briefing": "https://www.spa.gov.sa/en/N2730095",
+    "reuters_russia_refining_45": "https://www.reuters.com/business/energy/drone-attacks-nearly-halve-russias-november-oil-refining-sources-say-2026-11-18/",
+    "reuters_russia_fuel_limits": "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/",
+    "reuters_biggest_drone_attack": "https://www.reuters.com/world/europe/ukraine-launches-biggest-drone-attack-russia-since-war-began-defence-ministry-2026-11-16/",
+    "imd_akvan_landfall": "https://internal.imd.gov.in/press_release/20261121_pr_5513.pdf",
+    "downtoearth_akvan": "https://www.downtoearth.org.in/natural-disasters/odisha-escapes-major-damage-as-cyclone-akvan-makes-landfall"
+  },
+  "data_scan_counts": {
+    "sentinel_events_reviewed": 42,
+    "sentinel_feed_status": "operativo: 42 eventos en la instantánea del 2026-11-21 (10 alta, 15 media); 51 titulares únicos alta/media en 6 instantáneas de la semana",
+    "nasa_events_in_window": 59,
+    "nasa_open_events": 16,
+    "nasa_closed_events": 43,
+    "usgs_m45_plus": 99,
+    "usgs_m55_plus": 10,
+    "total_candidates": 10,
+    "selected_confirmed_couplings": 2,
+    "selected_watch_signals": 1
+  },
+  "stats": [
+    {
+      "label": "SentinelEvents",
+      "value": 42
+    },
+    {
+      "label": "NasaEventsInWindow",
+      "value": 59
+    },
+    {
+      "label": "UsgsM55Plus",
+      "value": 10
+    },
+    {
+      "label": "ConfirmedCouplings",
+      "value": 2
+    },
+    {
+      "label": "WatchSignals",
+      "value": 1
+    }
+  ],
+  "total_candidates": 10,
+  "selected_inflection_points": [
+    {
+      "id": "hormuz-tanker-war-oil-slicks",
+      "rank": 1,
+      "status": "confirmado (vertidos y ataques); hundimientos reclamados por la CGRI no verificados",
+      "status_en": "confirmed (spills and attacks); IRGC sinking claims unverified",
+      "priority": "Alta",
+      "priorityEn": "High",
+      "accent": "#EF4444",
+      "location": "Estrecho de Ormuz / Musandam (Omán) y costa de EAU",
+      "lat": 26.2,
+      "lon": 56.4,
+      "headline": "Ormuz: la guerra de minas deja más de 600 manchas de petróleo",
+      "headlineEn": "Hormuz: the mine war leaves more than 600 oil slicks",
+      "conflict_event": "Guerra de EE. UU. e Israel con Irán y bloqueo naval estadounidense. La CGRI afirma casi a diario que petroleros que cruzan rutas «no autorizadas» chocan con minas. El UKMTO confirmó impactos de proyectiles contra petroleros el 16, el 20 y el 21 de noviembre cerca de Khasab (Omán).",
+      "conflictEventEn": "US-Israeli war with Iran and US naval blockade. The IRGC claims almost daily that tankers using 'unauthorised' routes hit mines. UKMTO confirmed projectile strikes on tankers on 16, 20 and 21 November near Khasab (Oman).",
+      "environmental_event": "Greenpeace y Kpler contabilizan más de 600 vertidos de petróleo en el Golfo desde el 28 de febrero y más de 160 ataques a petroleros, con datos hasta el 19 de noviembre. El 12 de noviembre eran 540 manchas que afectaban a unos 20.000 km² de mar.",
+      "environmentalEventEn": "Greenpeace and Kpler count more than 600 oil spills in the Gulf since 28 February and more than 160 attacks on tankers, with data to 19 November. On 12 November the figure was 540 slicks affecting about 20,000 km² of sea.",
+      "coupling_type": [
+        "vertidos de petróleo",
+        "ruta marítima crítica",
+        "energía",
+        "ecosistemas costeros"
+      ],
+      "couplingTypeEn": [
+        "oil spills",
+        "critical sea lane",
+        "energy",
+        "coastal ecosystems"
+      ],
+      "why_it_matters": "Importa porque la principal ruta petrolera del mundo se ha convertido a la vez en frente naval y en fuente continua de contaminación, con efectos sobre el turismo, la pesca y las costas de dos aliados de EE. UU.",
+      "fact": "Hecho: el 21 de noviembre, el UKMTO informó de dos petroleros alcanzados por proyectiles al norte y al este de Khasab, sin víctimas y con un «impacto ambiental desconocido». Reuters no pudo verificar la versión iraní de una mina (CNBC). El 15 de noviembre, la CGRI afirmó que un superpetrolero con más de dos millones de barriles se hundió tras chocar con una mina; la magnitud de cualquier vertido no estaba confirmada (Marine Radar).",
+      "coupling": "Dato de acople: según Greenpeace y Kpler, el número de manchas detectadas pasó de 540 (12 nov) a más de 600 (19 nov). Las manchas cartografiadas recorren la costa de EAU, el estrecho y la costa omaní hasta Mascate (Skift, Arab News). Ningún monitor independiente ha confirmado una mancha asociada a los hundimientos que reclama la CGRI.",
+      "couplingEn": "Coupling datum: according to Greenpeace and Kpler, detected slicks rose from 540 (12 Nov) to more than 600 (19 Nov). Mapped slicks run along the UAE coast, through the strait and down Oman's coast to Muscat (Skift, Arab News). No independent monitor has confirmed a slick linked to the sinkings the IRGC claims.",
+      "implication": "Implicación estratégica (Evaluación): la guerra de minas sirve a Irán para presionar sin cerrar formalmente el estrecho, y el daño ambiental se acumula en las costas de los Estados del Golfo. El anuncio de un convoy de 14 petroleros desde Kharg para romper el bloqueo no está verificado y analistas de seguimiento marítimo lo ponen en duda (Gulf News, Iran International); si se produjera, elevaría el riesgo de choque naval y de nuevos vertidos.",
+      "strategic_implication": "El estrecho funciona a la vez como frente naval, palanca de precios y foco de contaminación.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. sostiene el bloqueo; China, principal comprador de crudo iraní, busca alternativas como el crudo iraquí (feed SENTINEL); Rusia se beneficia de precios altos pese a los ataques a sus refinerías. Los Estados del Golfo (EAU, Omán) cargan con el coste ambiental. Hipótesis: el daño costero puede reforzar la presión del Golfo sobre Washington para una salida negociada.",
+      "confidence": "Alta en los vertidos acumulados y los ataques confirmados por UKMTO; baja en los hundimientos y minas reclamados por Irán",
+      "sources": [
+        {
+          "label": "Skift (datos Greenpeace/Kpler)",
+          "url": "https://skift.com/2026/11/20/oil-spills-affect-uae-oman-beaches-as-hormuz-strikes-go-on/"
+        },
+        {
+          "label": "Arab News",
+          "url": "https://www.arabnews.pk/middle-east/how-iran-war-oil-spills-are-threatening-gulf-marine-life-tourism-and-coastal-communities-3006882"
+        },
+        {
+          "label": "CNBC/Reuters, UKMTO 21 nov",
+          "url": "https://cnbc.com/2026/11/21/two-tanker-attacks-reported-near-omans-khasab-ukmto-says.html"
+        },
+        {
+          "label": "Marine Radar",
+          "url": "https://www.marineradar.com/trends/supertanker-with-2-million-barrels-sinks-at-hormuz-2026-11-15"
+        },
+        {
+          "label": "Iran International",
+          "url": "https://www.iranintl.com/en/202611216660"
+        },
+        {
+          "label": "Gulf News",
+          "url": "https://gulfnews.com/world/mena/iran-readies-14-tankers-to-break-us-blockade-what-happens-if-they-try-1.500756460"
+        }
+      ],
+      "conflictEvent": "Guerra de EE. UU. e Israel con Irán y bloqueo naval estadounidense. La CGRI afirma casi a diario que petroleros que cruzan rutas «no autorizadas» chocan con minas. El UKMTO confirmó impactos de proyectiles contra petroleros el 16, el 20 y el 21 de noviembre cerca de Khasab (Omán).",
+      "environmentalEvent": "Greenpeace y Kpler contabilizan más de 600 vertidos de petróleo en el Golfo desde el 28 de febrero y más de 160 ataques a petroleros, con datos hasta el 19 de noviembre. El 12 de noviembre eran 540 manchas que afectaban a unos 20.000 km² de mar.",
+      "couplingType": [
+        "vertidos de petróleo",
+        "ruta marítima crítica",
+        "energía",
+        "ecosistemas costeros"
+      ]
+    },
+    {
+      "id": "gaza-board-of-peace-flooding-restrictions",
+      "rank": 2,
+      "status": "confirmado (seguimiento)",
+      "status_en": "confirmed (follow-up)",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#F59E0B",
+      "location": "Gaza / campos de desplazados (Deir al-Balah, Al-Mawasi)",
+      "lat": 31.42,
+      "lon": 34.35,
+      "headline": "Gaza: el informe de la Junta de Paz vincula inundaciones y restricciones",
+      "headlineEn": "Gaza: Board of Peace report links flooding and restrictions",
+      "conflict_event": "Alto el fuego frágil. El informe de la Junta de Paz al Consejo de Seguridad (17–18 nov) culpa a Israel y a Hamás de incumplir sus compromisos y advierte del riesgo de colapso de la tregua.",
+      "conflictEventEn": "Fragile ceasefire. The Board of Peace report to the Security Council (17–18 Nov) blames Israel and Hamas for failing their commitments and warns the truce risks collapse.",
+      "environmental_event": "Inundaciones de invierno: OCHA estima que las lluvias del 6 al 8 de noviembre afectaron a unos 46.000 hogares (226.000 personas), con más de 5.000 hogares sin refugio. Se esperan más lluvias a finales de mes.",
+      "environmentalEventEn": "Winter flooding: OCHA estimates the 6–8 November rains affected about 46,000 households (226,000 people), with more than 5,000 households without shelter. More rain is expected later this month.",
+      "coupling_type": [
+        "inundación",
+        "refugio",
+        "acceso humanitario",
+        "gobernanza del alto el fuego"
+      ],
+      "couplingTypeEn": [
+        "flood",
+        "shelter",
+        "humanitarian access",
+        "ceasefire governance"
+      ],
+      "why_it_matters": "Importa porque el propio órgano que supervisa el plan de EE. UU. reconoce que las restricciones israelíes y la falta de fondos han impedido preparar a Gaza para las inundaciones: el acople clima-conflicto entra en el documento oficial del alto el fuego.",
+      "fact": "Hecho: según Reuters, el informe dice que las restricciones impuestas por Israel a suministros y equipos, junto con la falta de financiación, han limitado la capacidad de Gaza para prepararse y responder a las inundaciones estacionales, y que la población afronta «otro invierno en tiendas y escombros». La OIM informó el 17 de noviembre de la muerte de un bebé por frío y de dos niños en incendios mientras sus familias intentaban calentarse (SPA).",
+      "coupling": "Dato de acople: OCHA mantiene más de 150.000 tiendas fuera de Gaza, la mayoría en Al-Arish, a 50 km de Jan Yunis (OCHA). Dentro, cada tormenta destruye más tiendas.",
+      "couplingEn": "Coupling datum: OCHA reports more than 150,000 tents outside Gaza, most in Al-Arish, 50 km from Khan Younis (OCHA). Inside, each storm destroys more tents.",
+      "implication": "Implicación estratégica (Evaluación): la gestión del invierno se convierte en indicador de la viabilidad de la tregua. Un alto el fuego que «no entrega nada visible» pierde apoyo, según el propio informe.",
+      "strategic_implication": "El invierno pone a prueba la credibilidad del plan de paz estadounidense.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. es a la vez garante del plan y principal influencia sobre Israel; la UE y los Estados árabes financian y almacenan la ayuda; Rusia y China usan el caso en el Consejo de Seguridad. Hipótesis: si las lluvias de finales de mes repiten el daño, aumentará la presión sobre Washington antes de la presentación del informe en Nueva York.",
+      "confidence": "Alta (Reuters, OCHA, OIM)",
+      "sources": [
+        {
+          "label": "Reuters, Junta de Paz",
+          "url": "https://www.reuters.com/world/middle-east/trumps-board-peace-faults-israel-hamas-failure-end-gaza-war-2026-11-18/"
+        },
+        {
+          "label": "OCHA, informe 18 nov",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-18-november-2026"
+        },
+        {
+          "label": "OCHA, llamamiento de invierno",
+          "url": "https://www.unocha.org/publications/report/occupied-palestinian-territory/urgent-appeal-expedite-entry-winter-supplies-gaza"
+        },
+        {
+          "label": "SPA (sesión informativa OIM)",
+          "url": "https://www.spa.gov.sa/en/N2730095"
+        }
+      ],
+      "conflictEvent": "Alto el fuego frágil. El informe de la Junta de Paz al Consejo de Seguridad (17–18 nov) culpa a Israel y a Hamás de incumplir sus compromisos y advierte del riesgo de colapso de la tregua.",
+      "environmentalEvent": "Inundaciones de invierno: OCHA estima que las lluvias del 6 al 8 de noviembre afectaron a unos 46.000 hogares (226.000 personas), con más de 5.000 hogares sin refugio. Se esperan más lluvias a finales de mes.",
+      "couplingType": [
+        "inundación",
+        "refugio",
+        "acceso humanitario",
+        "gobernanza del alto el fuego"
+      ]
+    },
+    {
+      "id": "russia-refinery-strikes-watch",
+      "rank": 3,
+      "status": "observación",
+      "status_en": "watch",
+      "priority": "Media",
+      "priorityEn": "Medium",
+      "accent": "#22D3EE",
+      "location": "Rusia europea / refinerías (Riazán, Kirishi, Volga, Krasnodar)",
+      "lat": 54.6,
+      "lon": 39.7,
+      "headline": "Rusia: los drones recortan un 45% el refino y multiplican los incendios industriales",
+      "headlineEn": "Russia: drones cut refining by 45% and multiply industrial fires",
+      "conflict_event": "Campaña ucraniana de drones contra refinerías rusas desde finales de octubre. El 16 de noviembre, Ucrania lanzó el mayor ataque con drones contra Rusia desde el inicio de la guerra, según el Ministerio de Defensa ruso (Reuters).",
+      "conflictEventEn": "Ukrainian drone campaign against Russian refineries since late October. On 16 November Ukraine launched its largest drone attack on Russia since the war began, per the Russian defence ministry (Reuters).",
+      "environmental_event": "Incendios industriales en refinerías y depósitos (Azov, Ilsky). No hay medición publicada de emisiones o contaminación; el acople ambiental es indirecto.",
+      "environmentalEventEn": "Industrial fires at refineries and depots (Azov, Ilsky). No published measurement of emissions or pollution; the environmental coupling is indirect.",
+      "coupling_type": [
+        "energía",
+        "incendio industrial",
+        "suministro de combustible"
+      ],
+      "couplingTypeEn": [
+        "energy",
+        "industrial fire",
+        "fuel supply"
+      ],
+      "why_it_matters": "Importa por el efecto energético: menos refino ruso afecta al mercado de diésel  El componente ambiental es real pero no medido, por eso queda en observación.",
+      "fact": "Hecho: dos fuentes del sector estiman que el procesamiento de crudo ruso ha caído un 45% desde finales de octubre, con 15 de 35 grandes refinerías afectadas (Reuters, 18 nov). Más regiones rusas limitan la venta de gasolina y diésel (Reuters, 20 nov).",
+      "coupling": "Dato de acople: el ataque del 16 de noviembre provocó incendios en instalaciones de Azov e Ilsky (Reuters). No hay datos públicos sobre vertidos o calidad del aire.",
+      "couplingEn": "Coupling datum: the 16 November attack caused fires at sites in Azov and Ilsky (Reuters). No public data on spills or air quality.",
+      "implication": "Implicación estratégica (Evaluación): Kiev ataca la capacidad de Moscú para financiar la guerra y abastecer su mercado interno. La caída del refino reduce los productos disponibles para la exportación.",
+      "strategic_implication": "La guerra energética se libra en dos estrechos: Ormuz y el refino ruso.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. observa un mercado de diésel más tenso; China e India siguen siendo los principales compradores de crudo ruso; la UE mantiene las sanciones y depende menos del combustible ruso. Hipótesis: si el refino sigue cayendo, Rusia exportará más crudo y menos productos.",
+      "confidence": "Media en la caída del refino (fuentes del sector); baja en el impacto ambiental",
+      "sources": [
+        {
+          "label": "Reuters, refino −45%",
+          "url": "https://www.reuters.com/business/energy/drone-attacks-nearly-halve-russias-november-oil-refining-sources-say-2026-11-18/"
+        },
+        {
+          "label": "Reuters, límites de combustible",
+          "url": "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/"
+        },
+        {
+          "label": "Reuters, mayor ataque con drones",
+          "url": "https://www.reuters.com/world/europe/ukraine-launches-biggest-drone-attack-russia-since-war-began-defence-ministry-2026-11-16/"
+        }
+      ],
+      "conflictEvent": "Campaña ucraniana de drones contra refinerías rusas desde finales de octubre. El 16 de noviembre, Ucrania lanzó el mayor ataque con drones contra Rusia desde el inicio de la guerra, según el Ministerio de Defensa ruso (Reuters).",
+      "environmentalEvent": "Incendios industriales en refinerías y depósitos (Azov, Ilsky). No hay medición publicada de emisiones o contaminación; el acople ambiental es indirecto.",
+      "couplingType": [
+        "energía",
+        "incendio industrial",
+        "suministro de combustible"
+      ]
+    }
+  ],
+  "points": [
+    {
+      "id": "hormuz-tanker-war-oil-slicks",
+      "rank": 1,
+      "status": "confirmado (vertidos y ataques); hundimientos reclamados por la CGRI no verificados",
+      "status_en": "confirmed (spills and attacks); IRGC sinking claims unverified",
+      "priority": "Alta",
+      "priorityEn": "High",
+      "accent": "#EF4444",
+      "location": "Estrecho de Ormuz / Musandam (Omán) y costa de EAU",
+      "lat": 26.2,
+      "lon": 56.4,
+      "headline": "Ormuz: la guerra de minas deja más de 600 manchas de petróleo",
+      "headlineEn": "Hormuz: the mine war leaves more than 600 oil slicks",
+      "conflict_event": "Guerra de EE. UU. e Israel con Irán y bloqueo naval estadounidense. La CGRI afirma casi a diario que petroleros que cruzan rutas «no autorizadas» chocan con minas. El UKMTO confirmó impactos de proyectiles contra petroleros el 16, el 20 y el 21 de noviembre cerca de Khasab (Omán).",
+      "conflictEventEn": "US-Israeli war with Iran and US naval blockade. The IRGC claims almost daily that tankers using 'unauthorised' routes hit mines. UKMTO confirmed projectile strikes on tankers on 16, 20 and 21 November near Khasab (Oman).",
+      "environmental_event": "Greenpeace y Kpler contabilizan más de 600 vertidos de petróleo en el Golfo desde el 28 de febrero y más de 160 ataques a petroleros, con datos hasta el 19 de noviembre. El 12 de noviembre eran 540 manchas que afectaban a unos 20.000 km² de mar.",
+      "environmentalEventEn": "Greenpeace and Kpler count more than 600 oil spills in the Gulf since 28 February and more than 160 attacks on tankers, with data to 19 November. On 12 November the figure was 540 slicks affecting about 20,000 km² of sea.",
+      "coupling_type": [
+        "vertidos de petróleo",
+        "ruta marítima crítica",
+        "energía",
+        "ecosistemas costeros"
+      ],
+      "couplingTypeEn": [
+        "oil spills",
+        "critical sea lane",
+        "energy",
+        "coastal ecosystems"
+      ],
+      "why_it_matters": "Importa porque la principal ruta petrolera del mundo se ha convertido a la vez en frente naval y en fuente continua de contaminación, con efectos sobre el turismo, la pesca y las costas de dos aliados de EE. UU.",
+      "fact": "Hecho: el 21 de noviembre, el UKMTO informó de dos petroleros alcanzados por proyectiles al norte y al este de Khasab, sin víctimas y con un «impacto ambiental desconocido». Reuters no pudo verificar la versión iraní de una mina (CNBC). El 15 de noviembre, la CGRI afirmó que un superpetrolero con más de dos millones de barriles se hundió tras chocar con una mina; la magnitud de cualquier vertido no estaba confirmada (Marine Radar).",
+      "coupling": "Dato de acople: según Greenpeace y Kpler, el número de manchas detectadas pasó de 540 (12 nov) a más de 600 (19 nov). Las manchas cartografiadas recorren la costa de EAU, el estrecho y la costa omaní hasta Mascate (Skift, Arab News). Ningún monitor independiente ha confirmado una mancha asociada a los hundimientos que reclama la CGRI.",
+      "couplingEn": "Coupling datum: according to Greenpeace and Kpler, detected slicks rose from 540 (12 Nov) to more than 600 (19 Nov). Mapped slicks run along the UAE coast, through the strait and down Oman's coast to Muscat (Skift, Arab News). No independent monitor has confirmed a slick linked to the sinkings the IRGC claims.",
+      "implication": "Implicación estratégica (Evaluación): la guerra de minas sirve a Irán para presionar sin cerrar formalmente el estrecho, y el daño ambiental se acumula en las costas de los Estados del Golfo. El anuncio de un convoy de 14 petroleros desde Kharg para romper el bloqueo no está verificado y analistas de seguimiento marítimo lo ponen en duda (Gulf News, Iran International); si se produjera, elevaría el riesgo de choque naval y de nuevos vertidos.",
+      "strategic_implication": "El estrecho funciona a la vez como frente naval, palanca de precios y foco de contaminación.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. sostiene el bloqueo; China, principal comprador de crudo iraní, busca alternativas como el crudo iraquí (feed SENTINEL); Rusia se beneficia de precios altos pese a los ataques a sus refinerías. Los Estados del Golfo (EAU, Omán) cargan con el coste ambiental. Hipótesis: el daño costero puede reforzar la presión del Golfo sobre Washington para una salida negociada.",
+      "confidence": "Alta en los vertidos acumulados y los ataques confirmados por UKMTO; baja en los hundimientos y minas reclamados por Irán",
+      "sources": [
+        {
+          "label": "Skift (datos Greenpeace/Kpler)",
+          "url": "https://skift.com/2026/11/20/oil-spills-affect-uae-oman-beaches-as-hormuz-strikes-go-on/"
+        },
+        {
+          "label": "Arab News",
+          "url": "https://www.arabnews.pk/middle-east/how-iran-war-oil-spills-are-threatening-gulf-marine-life-tourism-and-coastal-communities-3006882"
+        },
+        {
+          "label": "CNBC/Reuters, UKMTO 21 nov",
+          "url": "https://cnbc.com/2026/11/21/two-tanker-attacks-reported-near-omans-khasab-ukmto-says.html"
+        },
+        {
+          "label": "Marine Radar",
+          "url": "https://www.marineradar.com/trends/supertanker-with-2-million-barrels-sinks-at-hormuz-2026-11-15"
+        },
+        {
+          "label": "Iran International",
+          "url": "https://www.iranintl.com/en/202611216660"
+        },
+        {
+          "label": "Gulf News",
+          "url": "https://gulfnews.com/world/mena/iran-readies-14-tankers-to-break-us-blockade-what-happens-if-they-try-1.500756460"
+        }
+      ],
+      "conflictEvent": "Guerra de EE. UU. e Israel con Irán y bloqueo naval estadounidense. La CGRI afirma casi a diario que petroleros que cruzan rutas «no autorizadas» chocan con minas. El UKMTO confirmó impactos de proyectiles contra petroleros el 16, el 20 y el 21 de noviembre cerca de Khasab (Omán).",
+      "environmentalEvent": "Greenpeace y Kpler contabilizan más de 600 vertidos de petróleo en el Golfo desde el 28 de febrero y más de 160 ataques a petroleros, con datos hasta el 19 de noviembre. El 12 de noviembre eran 540 manchas que afectaban a unos 20.000 km² de mar.",
+      "couplingType": [
+        "vertidos de petróleo",
+        "ruta marítima crítica",
+        "energía",
+        "ecosistemas costeros"
+      ]
+    },
+    {
+      "id": "gaza-board-of-peace-flooding-restrictions",
+      "rank": 2,
+      "status": "confirmado (seguimiento)",
+      "status_en": "confirmed (follow-up)",
+      "priority": "Media-alta",
+      "priorityEn": "Medium-high",
+      "accent": "#F59E0B",
+      "location": "Gaza / campos de desplazados (Deir al-Balah, Al-Mawasi)",
+      "lat": 31.42,
+      "lon": 34.35,
+      "headline": "Gaza: el informe de la Junta de Paz vincula inundaciones y restricciones",
+      "headlineEn": "Gaza: Board of Peace report links flooding and restrictions",
+      "conflict_event": "Alto el fuego frágil. El informe de la Junta de Paz al Consejo de Seguridad (17–18 nov) culpa a Israel y a Hamás de incumplir sus compromisos y advierte del riesgo de colapso de la tregua.",
+      "conflictEventEn": "Fragile ceasefire. The Board of Peace report to the Security Council (17–18 Nov) blames Israel and Hamas for failing their commitments and warns the truce risks collapse.",
+      "environmental_event": "Inundaciones de invierno: OCHA estima que las lluvias del 6 al 8 de noviembre afectaron a unos 46.000 hogares (226.000 personas), con más de 5.000 hogares sin refugio. Se esperan más lluvias a finales de mes.",
+      "environmentalEventEn": "Winter flooding: OCHA estimates the 6–8 November rains affected about 46,000 households (226,000 people), with more than 5,000 households without shelter. More rain is expected later this month.",
+      "coupling_type": [
+        "inundación",
+        "refugio",
+        "acceso humanitario",
+        "gobernanza del alto el fuego"
+      ],
+      "couplingTypeEn": [
+        "flood",
+        "shelter",
+        "humanitarian access",
+        "ceasefire governance"
+      ],
+      "why_it_matters": "Importa porque el propio órgano que supervisa el plan de EE. UU. reconoce que las restricciones israelíes y la falta de fondos han impedido preparar a Gaza para las inundaciones: el acople clima-conflicto entra en el documento oficial del alto el fuego.",
+      "fact": "Hecho: según Reuters, el informe dice que las restricciones impuestas por Israel a suministros y equipos, junto con la falta de financiación, han limitado la capacidad de Gaza para prepararse y responder a las inundaciones estacionales, y que la población afronta «otro invierno en tiendas y escombros». La OIM informó el 17 de noviembre de la muerte de un bebé por frío y de dos niños en incendios mientras sus familias intentaban calentarse (SPA).",
+      "coupling": "Dato de acople: OCHA mantiene más de 150.000 tiendas fuera de Gaza, la mayoría en Al-Arish, a 50 km de Jan Yunis (OCHA). Dentro, cada tormenta destruye más tiendas.",
+      "couplingEn": "Coupling datum: OCHA reports more than 150,000 tents outside Gaza, most in Al-Arish, 50 km from Khan Younis (OCHA). Inside, each storm destroys more tents.",
+      "implication": "Implicación estratégica (Evaluación): la gestión del invierno se convierte en indicador de la viabilidad de la tregua. Un alto el fuego que «no entrega nada visible» pierde apoyo, según el propio informe.",
+      "strategic_implication": "El invierno pone a prueba la credibilidad del plan de paz estadounidense.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. es a la vez garante del plan y principal influencia sobre Israel; la UE y los Estados árabes financian y almacenan la ayuda; Rusia y China usan el caso en el Consejo de Seguridad. Hipótesis: si las lluvias de finales de mes repiten el daño, aumentará la presión sobre Washington antes de la presentación del informe en Nueva York.",
+      "confidence": "Alta (Reuters, OCHA, OIM)",
+      "sources": [
+        {
+          "label": "Reuters, Junta de Paz",
+          "url": "https://www.reuters.com/world/middle-east/trumps-board-peace-faults-israel-hamas-failure-end-gaza-war-2026-11-18/"
+        },
+        {
+          "label": "OCHA, informe 18 nov",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-18-november-2026"
+        },
+        {
+          "label": "OCHA, llamamiento de invierno",
+          "url": "https://www.unocha.org/publications/report/occupied-palestinian-territory/urgent-appeal-expedite-entry-winter-supplies-gaza"
+        },
+        {
+          "label": "SPA (sesión informativa OIM)",
+          "url": "https://www.spa.gov.sa/en/N2730095"
+        }
+      ],
+      "conflictEvent": "Alto el fuego frágil. El informe de la Junta de Paz al Consejo de Seguridad (17–18 nov) culpa a Israel y a Hamás de incumplir sus compromisos y advierte del riesgo de colapso de la tregua.",
+      "environmentalEvent": "Inundaciones de invierno: OCHA estima que las lluvias del 6 al 8 de noviembre afectaron a unos 46.000 hogares (226.000 personas), con más de 5.000 hogares sin refugio. Se esperan más lluvias a finales de mes.",
+      "couplingType": [
+        "inundación",
+        "refugio",
+        "acceso humanitario",
+        "gobernanza del alto el fuego"
+      ]
+    },
+    {
+      "id": "russia-refinery-strikes-watch",
+      "rank": 3,
+      "status": "observación",
+      "status_en": "watch",
+      "priority": "Media",
+      "priorityEn": "Medium",
+      "accent": "#22D3EE",
+      "location": "Rusia europea / refinerías (Riazán, Kirishi, Volga, Krasnodar)",
+      "lat": 54.6,
+      "lon": 39.7,
+      "headline": "Rusia: los drones recortan un 45% el refino y multiplican los incendios industriales",
+      "headlineEn": "Russia: drones cut refining by 45% and multiply industrial fires",
+      "conflict_event": "Campaña ucraniana de drones contra refinerías rusas desde finales de octubre. El 16 de noviembre, Ucrania lanzó el mayor ataque con drones contra Rusia desde el inicio de la guerra, según el Ministerio de Defensa ruso (Reuters).",
+      "conflictEventEn": "Ukrainian drone campaign against Russian refineries since late October. On 16 November Ukraine launched its largest drone attack on Russia since the war began, per the Russian defence ministry (Reuters).",
+      "environmental_event": "Incendios industriales en refinerías y depósitos (Azov, Ilsky). No hay medición publicada de emisiones o contaminación; el acople ambiental es indirecto.",
+      "environmentalEventEn": "Industrial fires at refineries and depots (Azov, Ilsky). No published measurement of emissions or pollution; the environmental coupling is indirect.",
+      "coupling_type": [
+        "energía",
+        "incendio industrial",
+        "suministro de combustible"
+      ],
+      "couplingTypeEn": [
+        "energy",
+        "industrial fire",
+        "fuel supply"
+      ],
+      "why_it_matters": "Importa por el efecto energético: menos refino ruso afecta al mercado de diésel  El componente ambiental es real pero no medido, por eso queda en observación.",
+      "fact": "Hecho: dos fuentes del sector estiman que el procesamiento de crudo ruso ha caído un 45% desde finales de octubre, con 15 de 35 grandes refinerías afectadas (Reuters, 18 nov). Más regiones rusas limitan la venta de gasolina y diésel (Reuters, 20 nov).",
+      "coupling": "Dato de acople: el ataque del 16 de noviembre provocó incendios en instalaciones de Azov e Ilsky (Reuters). No hay datos públicos sobre vertidos o calidad del aire.",
+      "couplingEn": "Coupling datum: the 16 November attack caused fires at sites in Azov and Ilsky (Reuters). No public data on spills or air quality.",
+      "implication": "Implicación estratégica (Evaluación): Kiev ataca la capacidad de Moscú para financiar la guerra y abastecer su mercado interno. La caída del refino reduce los productos disponibles para la exportación.",
+      "strategic_implication": "La guerra energética se libra en dos estrechos: Ormuz y el refino ruso.",
+      "tripolar": "Lectura tripolar (Evaluación): EE. UU. observa un mercado de diésel más tenso; China e India siguen siendo los principales compradores de crudo ruso; la UE mantiene las sanciones y depende menos del combustible ruso. Hipótesis: si el refino sigue cayendo, Rusia exportará más crudo y menos productos.",
+      "confidence": "Media en la caída del refino (fuentes del sector); baja en el impacto ambiental",
+      "sources": [
+        {
+          "label": "Reuters, refino −45%",
+          "url": "https://www.reuters.com/business/energy/drone-attacks-nearly-halve-russias-november-oil-refining-sources-say-2026-11-18/"
+        },
+        {
+          "label": "Reuters, límites de combustible",
+          "url": "https://www.reuters.com/business/energy/more-russian-regions-limit-fuel-sales-ukrainian-drone-strikes-hit-refinery-2026-11-20/"
+        },
+        {
+          "label": "Reuters, mayor ataque con drones",
+          "url": "https://www.reuters.com/world/europe/ukraine-launches-biggest-drone-attack-russia-since-war-began-defence-ministry-2026-11-16/"
+        }
+      ],
+      "conflictEvent": "Campaña ucraniana de drones contra refinerías rusas desde finales de octubre. El 16 de noviembre, Ucrania lanzó el mayor ataque con drones contra Rusia desde el inicio de la guerra, según el Ministerio de Defensa ruso (Reuters).",
+      "environmentalEvent": "Incendios industriales en refinerías y depósitos (Azov, Ilsky). No hay medición publicada de emisiones o contaminación; el acople ambiental es indirecto.",
+      "couplingType": [
+        "energía",
+        "incendio industrial",
+        "suministro de combustible"
+      ]
+    }
+  ],
+  "not_selected": [
+    {
+      "id": "akvan",
+      "location": "India / Odisha y norte de Andhra Pradesh",
+      "note": "El ciclón Akvan tocó tierra cerca de Gopalpur el 20 de noviembre sin daños importantes; no hay conflicto asociado. El IMD vigila otra posible circulación en el mar de Andamán a finales de mes."
+    },
+    {
+      "id": "bahrain-qeshm",
+      "location": "Bahréin / isla de Qeshm (Irán)",
+      "note": "Ataques iraníes contra Bahréin y ataque de EE. UU. en Qeshm; escalada militar sin evento ambiental medido en la ventana."
+    },
+    {
+      "id": "yemen",
+      "location": "Yemen / Arabia Saudí",
+      "note": "Ofensiva saudí contra los hutíes y misiles hacia Riad; sin acople ambiental verificado."
+    },
+    {
+      "id": "mexico",
+      "location": "México",
+      "note": "Inundación (EONET, 15 nov) y enfrentamientos tras la detención de un líder del narcotráfico; sin relación entre ambos."
+    },
+    {
+      "id": "quakes",
+      "location": "Timor Oriental, Perú, Indonesia, China (Tíbet)",
+      "note": "Sismos M5,9–6,8; todos con alerta USGS verde salvo un M5,9 en China con alerta amarilla, sin zona de conflicto."
+    },
+    {
+      "id": "xavier",
+      "location": "Pacífico Sur",
+      "note": "Ciclón tropical Xavier en mar abierto."
+    },
+    {
+      "id": "sahel-fires",
+      "location": "Sudán del Sur, Chad, República Centroafricana",
+      "note": "Incendios de estación seca en zonas con conflicto; patrón estacional sin impacto documentado."
+    }
+  ],
+  "best_short_candidate": {
+    "id": "hormuz-oil-slicks-short",
+    "title": "Ormuz: 600 manchas de petróleo",
+    "reason": "Es el acople con más datos nuevos verificables en la ventana (Greenpeace/Kpler hasta el 19 nov y avisos del UKMTO), tiene lectura tripolar directa y permite separar con claridad lo confirmado de las reclamaciones iraníes. No repite el Short de la semana pasada (emisiones) ni el de Gaza."
+  },
+  "bestShort": {
+    "id": "hormuz-oil-slicks-short",
+    "title": "Ormuz: 600 manchas de petróleo",
+    "reason": "Es el acople con más datos nuevos verificables en la ventana (Greenpeace/Kpler hasta el 19 nov y avisos del UKMTO), tiene lectura tripolar directa y permite separar con claridad lo confirmado de las reclamaciones iraníes. No repite el Short de la semana pasada (emisiones) ni el de Gaza."
+  },
+  "short_script": {
+    "title": "Ormuz: 600 manchas de petróleo",
+    "hook_3s": "La ruta del petróleo del mundo ya tiene más de 600 manchas de crudo.",
+    "scene_1": "Hecho: desde el 28 de febrero, Greenpeace y Kpler cuentan más de 160 ataques a petroleros en el Golfo. Solo esta semana, el UKMTO confirmó impactos contra petroleros cerca de Khasab, en Omán.",
+    "scene_2": "Dato de acople: las manchas detectadas pasaron de 540 a más de 600 en una semana, y recorren la costa de Emiratos y Omán hasta Mascate. Irán dice que un superpetrolero se hundió; nadie lo ha verificado.",
+    "scene_3": "Implicación estratégica: EE. UU. mantiene el bloqueo, China busca crudo en Irak y Rusia gana con los precios. La factura ambiental la pagan las costas del Golfo.",
+    "close": "¿Quién limpia una guerra en el mar? Analista jefe · María del Carmen Díaz Naranjo\n\nGEOPÓLEM. Bienvenidos al tablero.",
+    "visuals": [
+      "Mapa del estrecho de Ormuz en navy/teal con las manchas en negro y Khasab marcado en rojo",
+      "Contador animado: 540 → 600+ manchas",
+      "Línea de tiempo 16–21 nov con los avisos del UKMTO",
+      "Sello rojo «NO VERIFICADO» sobre la reclamación del superpetrolero",
+      "Flechas: EE. UU. (bloqueo), China (Irak), Rusia (precio)",
+      "Línea de fuente: Greenpeace/Kpler · UKMTO",
+      "Cierre: logo, BIENVENIDOS AL TABLERO, firma y pregunta CTA en rojo"
+    ],
+    "english_subtitles": [
+      "The world's oil route now has more than 600 crude slicks.",
+      "Since 28 February, Greenpeace and Kpler count over 160 attacks on tankers in the Gulf.",
+      "This week alone, UKMTO confirmed strikes on tankers near Khasab, Oman.",
+      "Detected slicks rose from 540 to over 600 in one week.",
+      "They run along the coasts of the Emirates and Oman down to Muscat.",
+      "Iran says a supertanker sank. No one has verified it.",
+      "The US keeps the blockade, China turns to Iraq, Russia gains from prices.",
+      "Who cleans up a war at sea? GEOPÓLEM. Welcome to the board."
+    ],
+    "hashtags": [
+      "#GEOPÓLEM",
+      "#Ormuz",
+      "#Petróleo",
+      "#Medioambiente",
+      "#Geopolítica"
+    ]
+  },
+  "tags": [
+    "#GEOPÓLEM",
+    "#SENTINEL",
+    "#Ormuz",
+    "#Petróleo",
+    "#Gaza",
+    "#Rusia",
+    "#Tripolaridad",
+    "#OSINT"
+  ],
+  "dataUrl": "./data/sentinel/weekly-brief.json",
+  "archiveUrl": "./data/sentinel/sentinel_weekly_brief_2026-11-16_2026-11-22.json",
+  "markdownUrl": "./data/sentinel/weekly-brief-2026-11-23.md",
+  "close": "GEOPÓLEM. Bienvenidos al tablero.",
+  "layerLabel": "Acople ambiental significativo",
+  "monitor_layer": {
+    "label": "Acople ambiental significativo",
+    "status": "2 confirmados · 1 en observación",
+    "items": [
+      {
+        "id": "hormuz-tanker-war-oil-slicks",
+        "location": "Estrecho de Ormuz / Musandam (Omán) y costa de EAU",
+        "status": "confirmado (vertidos y ataques); hundimientos reclamados por la CGRI no verificados",
+        "priority": "Alta",
+        "accent": "#EF4444",
+        "lat": 26.2,
+        "lon": 56.4
+      },
+      {
+        "id": "gaza-board-of-peace-flooding-restrictions",
+        "location": "Gaza / campos de desplazados (Deir al-Balah, Al-Mawasi)",
+        "status": "confirmado (seguimiento)",
+        "priority": "Media-alta",
+        "accent": "#F59E0B",
+        "lat": 31.42,
+        "lon": 34.35
+      },
+      {
+        "id": "russia-refinery-strikes-watch",
+        "location": "Rusia europea / refinerías (Riazán, Kirishi, Volga, Krasnodar)",
+        "status": "observación",
+        "priority": "Media",
+        "accent": "#22D3EE",
+        "lat": 54.6,
+        "lon": 39.7
+      }
+    ]
+  },
+  "media_publication": {
+    "status": "prepared",
+    "published_at": "2026-11-23T07:55:00+01:00",
+    "youtube_long": {
+      "title": "GEOPÓLEM SENTINEL · Ormuz, Gaza y refinerías rusas: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-11-23.md",
+      "format": "guion editorial",
+      "duration": "4-6 min"
+    },
+    "youtube_short": {
+      "title": "Ormuz: 600 manchas de petróleo | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-11-23.md#short-del-martes",
+      "format": "9:16 guion",
+      "duration": "45-55 s"
+    },
+    "editorial_note": "No se publicó video en YouTube ni en redes automáticamente. El guion del Short queda listo para revisión y aprobación editorial."
+  },
+  "mediaPublication": {
+    "status": "prepared",
+    "published_at": "2026-11-23T07:55:00+01:00",
+    "youtube_long": {
+      "title": "GEOPÓLEM SENTINEL · Ormuz, Gaza y refinerías rusas: el tablero conflicto-ambiente",
+      "url": "./data/sentinel/weekly-brief-2026-11-23.md",
+      "format": "guion editorial",
+      "duration": "4-6 min"
+    },
+    "youtube_short": {
+      "title": "Ormuz: 600 manchas de petróleo | GEOPÓLEM SENTINEL",
+      "url": "./data/sentinel/weekly-brief-2026-11-23.md#short-del-martes",
+      "format": "9:16 guion",
+      "duration": "45-55 s"
+    },
+    "editorial_note": "No se publicó video en YouTube ni en redes automáticamente. El guion del Short queda listo para revisión y aprobación editorial."
+  }
+}
