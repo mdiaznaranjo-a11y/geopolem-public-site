@@ -2,593 +2,996 @@
   "events": [
     {
       "actors": [
-        "United States"
+        "Russia"
       ],
-      "domain": "bignewsnetwork.com",
-      "id": "evt_57fa2221d8cc042e",
+      "domain": "russiaherald.com",
+      "id": "evt_9939ed35e4cc52ec",
       "language": "English",
       "matched_regions": [
-        "israel",
-        "gaza",
-        "hamas"
+        "ukraine",
+        "iran",
+        "nato"
       ],
       "matched_themes": [
-        "killed"
+        "war",
+        "ceasefire",
+        "nuclear"
       ],
-      "region": "MENA",
-      "score": 6.0,
+      "region": "Europa del Este",
+      "score": 10.0,
       "score_breakdown": {
         "region": 4.0,
-        "themes": 2.0,
+        "themes": 6.0,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
-      "source_country": "United States",
+      "seen_date": "20261127T063000Z",
+      "source_country": "Russia",
       "tier": "high",
-      "title": "Israel says killed Hamas security chief for N . Gaza",
+      "title": "Ukraine war , Melania short - term ceasefire , Iran nuclear threat , Greenland : Trump details Mar - a - Lago talks with NATO chief",
       "tone": null,
-      "url": "http://www.bignewsnetwork.com/news/279454015/israel-says-killed-hamas-security-chief-for-n-gaza"
+      "url": "http://www.russiaherald.com/news/279464182/ukraine-war-melania-short-term-ceasefire-iran-nuclear-threat-greenland-trump-details-mar-a-lago-talks-with-nato-chief"
     },
     {
       "actors": [
-        "Qatar"
+        "Russia"
       ],
-      "domain": "thepeninsulaqatar.com",
-      "id": "evt_6535ddffb97bcf78",
+      "domain": "russiaherald.com",
+      "id": "evt_58df1ace216403e2",
       "language": "English",
       "matched_regions": [
-        "israel",
-        "gaza",
-        "palestin"
+        "iran",
+        "iranian"
       ],
       "matched_themes": [
-        "strike"
+        "war",
+        "deploy",
+        "troops"
+      ],
+      "region": "MENA",
+      "score": 9.5,
+      "score_breakdown": {
+        "region": 3.5,
+        "themes": 6.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Russia",
+      "tier": "high",
+      "title": "No intention of intervening in war , no plans to deploy troops in region : South Korean FM assures Iranian counterpart Araghchi",
+      "tone": null,
+      "url": "http://www.russiaherald.com/news/279464793/no-intention-of-intervening-in-war-no-plans-to-deploy-troops-in-region-south-korean-fm-assures-iranian-counterpart-araghchi"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "decaturdaily.com",
+      "id": "evt_078110466fc0844e",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "russia",
+        "russian"
+      ],
+      "matched_themes": [
+        "war",
+        "attack"
+      ],
+      "region": "Europa del Este",
+      "score": 8.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "United States",
+      "tier": "high",
+      "title": "Zelenskyy warns of imminent major Russian attack on Ukraine power grid",
+      "tone": null,
+      "url": "https://www.decaturdaily.com/news/other_news/international/zelenskyy-warns-of-imminent-major-russian-attack-on-ukraines-power-grid/article_90c39308-2f3e-4d55-ac94-a94513ecad80.html"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "economictimes.indiatimes.com",
+      "id": "evt_21dcdcce0a424b39",
+      "language": "English",
+      "matched_regions": [
+        "ukraine",
+        "iran",
+        "nato"
+      ],
+      "matched_themes": [
+        "war",
+        "ceasefire"
+      ],
+      "region": "Europa del Este",
+      "score": 8.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 4.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "India",
+      "tier": "high",
+      "title": "Ukraine war , Melania short - term ceasefire , Iran nukes , Greenland : Trump details Mar - a - Lago talks with NATO chief",
+      "tone": null,
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/ukraine-war-melanias-short-term-ceasefire-iran-nukes-greenland-trump-details-mar-a-lago-talks-with-nato-chief/articleshow/136208549.cms"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "hindustantimes.com",
+      "id": "evt_584a93964293abd4",
+      "language": "English",
+      "matched_regions": [
+        "russia",
+        "iran",
+        "china"
+      ],
+      "matched_themes": [
+        "conflict"
+      ],
+      "region": "Eurasia",
+      "score": 6.5,
+      "score_breakdown": {
+        "region": 4.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "India",
+      "tier": "high",
+      "title": "Trump says Russia , China give Iran little intelligence help , both want conflict to end",
+      "tone": null,
+      "url": "https://www.hindustantimes.com/world-news/trump-says-russia-china-give-iran-little-intelligence-help-both-want-conflict-to-end-101795746727890.html"
+    },
+    {
+      "actors": [
+        "Kenya"
+      ],
+      "domain": "kenyastar.com",
+      "id": "evt_574ebf2f5d4c4e02",
+      "language": "English",
+      "matched_regions": [
+        "iran",
+        "hormuz"
+      ],
+      "matched_themes": [
+        "blockade"
       ],
       "region": "MENA",
       "score": 5.5,
       "score_breakdown": {
-        "region": 4.0,
-        "themes": 1.5,
+        "region": 3.5,
+        "themes": 2.0,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Qatar",
+      "seen_date": "20261127T063000Z",
+      "source_country": "Kenya",
       "tier": "medium",
-      "title": "Palestinian martyred , several injured in Israeli strike on displacement camp in Gaza",
+      "title": "Iran vows to break US naval blockade , claims full control over Strait of Hormuz : MP Esmaeil Kowsari",
       "tone": null,
-      "url": "http://thepeninsulaqatar.com/article/25/11/2026/palestinian-martyred-several-injured-in-israeli-strike-on-displacement-camp-in-gaza"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "arynews.tv",
-      "id": "evt_ee974a61989978e7",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Asia-Pacífico",
-      "score": 5.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Pakistan",
-      "tier": "medium",
-      "title": "China warns US against imposing new tariffs",
-      "tone": null,
-      "url": "https://arynews.tv/china-warns-us-imposing-new-tariffs"
-    },
-    {
-      "actors": [
-        "Malaysia"
-      ],
-      "domain": "sinarharian.com.my",
-      "id": "evt_4559b8530bf0e69f",
-      "language": "Malay",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Malaysia",
-      "tier": "monitor",
-      "title": "Penuntut warga asing didakwa memandu melulu sebabkan kematian pesara tentera",
-      "tone": null,
-      "url": "https://www.sinarharian.com.my/article/806152/berita/semasa/penuntut-warga-asing-didakwa-memandu-melulu-sebabkan-kematian-pesara-tentera"
+      "url": "http://www.kenyastar.com/news/279464412/iran-vows-to-break-us-naval-blockade-claims-full-control-over-strait-of-hormuz-mp-esmaeil-kowsari"
     },
     {
       "actors": [
         "Germany"
       ],
-      "domain": "focus.de",
-      "id": "evt_4c74c6592365ce31",
+      "domain": "unternehmen-heute.de",
+      "id": "evt_057bf609f1ad75e2",
       "language": "German",
-      "matched_regions": [],
-      "matched_themes": [
-        "war"
-      ],
-      "region": "Global",
-      "score": 3.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 3.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Ukrainische Drohnen greifen russische Schiffe vor Libyen an – Italien und Lybien warnen Kiew",
-      "tone": null,
-      "url": "https://www.focus.de/politik/ausland/ukrainische-drohnen-greifen-russische-schiffe-vor-libyen-an-italien-und-lybien-warnen-kiew_8812752a-cd22-4e05-971e-c50d04acc969.html"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "aol.com",
-      "id": "evt_192bcba622d3f332",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "UK moving military aircraft to hangars at night over possible drone threats , media reports say",
-      "tone": null,
-      "url": "https://www.aol.com/articles/uk-raf-moving-aircraft-hangars-121827000.html"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "arynews.tv",
-      "id": "evt_4caba4bab3e6b6c0",
-      "language": "English",
       "matched_regions": [
-        "gaza"
+        "iran",
+        "china"
       ],
       "matched_themes": [],
       "region": "MENA",
-      "score": 2.0,
+      "score": 4.0,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 4.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Pakistan",
-      "tier": "monitor",
-      "title": "Amnesty Urges ICC to Investigate Genocide Allegations in Gaza",
+      "seen_date": "20261127T063000Z",
+      "source_country": "Germany",
+      "tier": "medium",
+      "title": "Politik - Trump spielt Berichte über Hilfe Russlands und Chinas für den Iran herunter",
       "tone": null,
-      "url": "https://arynews.tv/amnesty-says-israeli-actions-in-gaza-preventing-births-urges-icc-to-investigate-genocide"
+      "url": "https://unternehmen-heute.de/news.php?newsid=6719155"
+    },
+    {
+      "actors": [
+        "Canada"
+      ],
+      "domain": "winnipegfreepress.com",
+      "id": "evt_5458fa4e5775bf3d",
+      "language": "English",
+      "matched_regions": [
+        "iraq"
+      ],
+      "matched_themes": [
+        "invasion"
+      ],
+      "region": "MENA",
+      "score": 4.0,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Canada",
+      "tier": "medium",
+      "title": "French politician who stood up to Bush over the invasion of Iraq is back to stop Le Pen – Winnipeg Free Press",
+      "tone": null,
+      "url": "https://www.winnipegfreepress.com/world/2026/11/27/french-politician-who-stood-up-to-bush-over-the-invasion-of-iraq-is-back-to-stop-le-pen"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "idrw.org",
+      "id": "evt_330ce168fe26358e",
+      "language": "English",
+      "matched_regions": [
+        "india"
+      ],
+      "matched_themes": [
+        "missile"
+      ],
+      "region": "Asia del Sur",
+      "score": 3.5,
+      "score_breakdown": {
+        "region": 1.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "India",
+      "tier": "medium",
+      "title": "India and Japan May Explore Joint Ship - Launched Hypersonic Missile",
+      "tone": null,
+      "url": "https://idrw.org/india-japan-joint-ship-launched-hypersonic-missile/"
     },
     {
       "actors": [
         "China"
       ],
-      "domain": "chinanationalnews.com",
-      "id": "evt_6dbb70d7e09bda44",
-      "language": "English",
+      "domain": "russian.news.cn",
+      "id": "evt_fb9ff575e255c297",
+      "language": "Russian",
       "matched_regions": [
-        "china"
+        "russia",
+        "russian"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
+      "region": "Eurasia",
+      "score": 3.5,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 3.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
+      "seen_date": "20261127T063000Z",
+      "source_country": "China",
+      "tier": "medium",
+      "title": "Обмен телами погибших военнослужащих прошел между Россией и Украиной на белорусско - украинской границе _ Russian . news . cn",
+      "tone": null,
+      "url": "http://russian.news.cn/20261127/518d9301a2c64318b62c6d54f2cc6478/c.html"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "riotimesonline.com",
+      "id": "evt_79cc9e60a2db6909",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Canada Keeps Sanctions on Guatemala Porras",
+      "tone": null,
+      "url": "https://www.riotimesonline.com/guatemala-canada-keeps-porras-sanctions/"
+    },
+    {
+      "actors": [
+        "Poland"
+      ],
+      "domain": "rp.pl",
+      "id": "evt_1469e39b545bd2ab",
+      "language": "Polish",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Poland",
+      "tier": "monitor",
+      "title": "Malowali „ Slava UPA  na warszawskich pomnikach . Pięć osób zatrzymanych , w tym czterech Ukraińców",
+      "tone": null,
+      "url": "https://www.rp.pl/przestepczosc/art45551221-malowali-slava-upa-na-pomnikach-policja-zatrzymala-czterech-ukraincow-i-polaka"
+    },
+    {
+      "actors": [
+        "China"
+      ],
+      "domain": "morningstar.com",
+      "id": "evt_92ab31c45dfd97b6",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
       "source_country": "China",
       "tier": "monitor",
-      "title": "CHINA - BEIJING - CAI QI - PARTY REGULATION - NATIONAL MEETING ( CN )",
+      "title": "Dow Jones Top Financial Services Headlines at 12 AM ET : BOE Warns Scale and Breadth Of AI Financing Poses Threat to Financial Stability | Capital ...",
       "tone": null,
-      "url": "http://www.chinanationalnews.com/news/279453920/china-beijing-cai-qi-party-regulation-national-meeting-cn"
-    },
-    {
-      "actors": [
-        "Greece"
-      ],
-      "domain": "athensvoice.gr",
-      "id": "evt_68a717bcec8d4657",
-      "language": "Greek",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Greece",
-      "tier": "monitor",
-      "title": "Βρετανία : « Κρύβουν » τα μαχητικά αεροσκάφη τη νύχτα υπό τον φόβο επιθέσεων από drones",
-      "tone": null,
-      "url": "https://www.athensvoice.gr/epikairotita/diethni/999700/vretania-i-vasiliki-polemiki-aeroporia-metakinei-aeroskafi-se-upostega-ti-nuhta-logo-pithanon-apeilon-apo-drones/"
-    },
-    {
-      "actors": [
-        "Greece"
-      ],
-      "domain": "onalert.gr",
-      "id": "evt_7937bbdfd86e27bf",
-      "language": "Greek",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Greece",
-      "tier": "monitor",
-      "title": "Ουκρανία : Φονικές επιδρομές ρωσικών drones σε Οδησσό , Σαμάρα και σε προάστιο έξω από το Κίεβο",
-      "tone": null,
-      "url": "https://www.onalert.gr/kosmos/oukrania-fonikes-epidromes-rosikon-drones-se-odisso-samara-kai-se-proastio-ekso-apo-to-kievo/835975/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "juedische-allgemeine.de",
-      "id": "evt_a6ad225bea89457c",
-      "language": "German",
-      "matched_regions": [
-        "israel"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Regierungsbildung in Israel : Keine Klarheit . Nirgends",
-      "tone": null,
-      "url": "https://www.juedische-allgemeine.de/israel/keine-klarheit-nirgends/"
-    },
-    {
-      "actors": [
-        "Greece"
-      ],
-      "domain": "protothema.gr",
-      "id": "evt_53da2770401d7966",
-      "language": "Greek",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Greece",
-      "tier": "monitor",
-      "title": "Τουλάχιστον 14 άνθρωποι σκοτώθηκαν , ανάμεσά τους παιδιά , σε επίθεση με drones στο Σουδάν",
-      "tone": null,
-      "url": "https://www.protothema.gr/world/article/1916812/toulahiston-14-anthropoi-skotothikan-anamesa-tous-paidia-se-epithesi-me-drones-sto-soudan/"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "thenews.com.pk",
-      "id": "evt_1956e825dcac1c6a",
-      "language": "English",
-      "matched_regions": [
-        "china"
-      ],
-      "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Pakistan",
-      "tier": "monitor",
-      "title": "Jensen Huang return to Nvidia reignites Washington fight over China chip access",
-      "tone": null,
-      "url": "https://www.thenews.com.pk/latest/1425062-jensen-huangs-return-to-nvidia-reignites-washington-fight-over-chinas-chip-access"
+      "url": "https://www.morningstar.com/news/dow-jones/2026112752/dow-jones-top-financial-services-headlines-at-12-am-et-boe-warns-scale-and-breadth-of-ai-financing-poses-threat-to-financial-stability-capital"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "cbn.com",
-      "id": "evt_067f1cd0cddef866",
+      "domain": "stripes.com",
+      "id": "evt_55cffc93fd199514",
       "language": "English",
-      "matched_regions": [
-        "israel"
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
       ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 2.0,
+      "region": "Global",
+      "score": 3.0,
       "score_breakdown": {
-        "region": 2.0,
-        "themes": 0.0,
+        "region": 0.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
+      "seen_date": "20261127T063000Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "Coins Become a Window on History : Real or Fake , Every Coin Tells a Story at Israel Museum",
+      "title": "Hawaii veteran of WWII , Korean War presented belated medals for service",
       "tone": null,
-      "url": "https://cbn.com/news/israel/coins-become-window-history-real-or-fake-every-coin-tells-story-israel-museum"
+      "url": "https://www.stripes.com/branches/army/2026-11-26/hawaii-veteran-korea-wwii-acosta-medals-23589387.html"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "995qyk.com",
-      "id": "evt_a73e61bffcec424a",
+      "domain": "thecollegefix.com",
+      "id": "evt_d6c70861b6864e50",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "clash"
+        "war"
       ],
       "region": "Global",
-      "score": 2.0,
+      "score": 3.0,
       "score_breakdown": {
         "region": 0.0,
-        "themes": 2.0,
+        "themes": 3.0,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
+      "seen_date": "20261127T063000Z",
       "source_country": "United States",
       "tier": "monitor",
-      "title": "Jannus Live Faces Uncertain Future as Operator and Courtyard Owner Clash",
+      "title": "War Department cuts ties with Brown over DEI ,  ideological  concerns",
       "tone": null,
-      "url": "https://995qyk.com/2026/11/25/jannus-live-faces-uncertain-future-as-operator-and-courtyard-owner-clash/"
+      "url": "https://www.thecollegefix.com/war-department-cuts-ties-with-brown-over-dei-ideological-concerns/"
     },
     {
       "actors": [
-        "United States"
+        "India"
       ],
-      "domain": "euronews.com",
-      "id": "evt_65b34beb4621a5c7",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "Christmas decorations found in washed up container from ship hit by drones off Bulgaria Black Sea coast",
-      "tone": null,
-      "url": "https://www.euronews.com/2026/11/25/christmas-decorations-found-in-washed-up-container-from-ship-hit-by-drones-off-bulgarias-b"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "finanznachrichten.de",
-      "id": "evt_e919d43544551760",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "drone"
-      ],
-      "region": "Global",
-      "score": 2.0,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 2.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Dynamic Aerospace Systems Expands IP with Three Breakthrough Patents for Advanced Autonomous UAV / Drones",
-      "tone": null,
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70227714-dynamic-aerospace-systems-expands-ip-with-three-breakthrough-patents-for-advanced-autonomous-uav-drones-200.htm"
-    },
-    {
-      "actors": [
-        "United States"
-      ],
-      "domain": "dailylocal.com",
-      "id": "evt_e4a3e67d0739a8d9",
+      "domain": "idrw.org",
+      "id": "evt_899cca0e8de2ade6",
       "language": "English",
       "matched_regions": [
-        "china"
+        "russia",
+        "india"
       ],
       "matched_themes": [],
-      "region": "Asia-Pacífico",
-      "score": 2.0,
+      "region": "Eurasia",
+      "score": 3.0,
       "score_breakdown": {
-        "region": 2.0,
+        "region": 3.0,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
-      "source_country": "United States",
+      "seen_date": "20261127T063000Z",
+      "source_country": "India",
       "tier": "monitor",
-      "title": "US plans to hike tariffs on China , EU , Brazil and others",
+      "title": "Russia May Bring Twin - Seater Su - 57 Variant to Aero India 2027",
       "tone": null,
-      "url": "https://www.dailylocal.com/2026/11/25/trump-tariff-hikes/"
-    },
-    {
-      "actors": [],
-      "domain": "thesun.ng",
-      "id": "evt_273f9e9990e3bf11",
-      "language": "English",
-      "matched_regions": [
-        "niger"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "",
-      "tier": "monitor",
-      "title": "Igboho directive : You owe Nigerians explanation - Atiku camp tells Tinubu",
-      "tone": null,
-      "url": "https://thesun.ng/igboho-directive-you-owe-nigerians-explanation-atikus-camp-tells-tinubu/"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "morgenpost.de",
-      "id": "evt_d709576c1e0310a2",
-      "language": "German",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Nato - Jets hätten fast gefeuert : Major erläutert „ brenzligen  Zwischenfall in Polen",
-      "tone": null,
-      "url": "https://www.morgenpost.de/politik/article413775106/nato-jets-haetten-fast-gefeuert-major-erlaeutert-brenzligen-zwischenfall-in-polen.html"
-    },
-    {
-      "actors": [
-        "South Africa"
-      ],
-      "domain": "okayafrica.com",
-      "id": "evt_637c6eb5388c5eed",
-      "language": "English",
-      "matched_regions": [
-        "niger"
-      ],
-      "matched_themes": [],
-      "region": "Sahel",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "South Africa",
-      "tier": "monitor",
-      "title": "What It Like To … Be a Filmmaker Representing Nigeria at the Oscars",
-      "tone": null,
-      "url": "https://www.okayafrica.com/what-its-like-to-be-a-filmmaker-representing-nigeria-at-the-oscars/1442228"
-    },
-    {
-      "actors": [
-        "Germany"
-      ],
-      "domain": "dw.com",
-      "id": "evt_be69d8ed821085cc",
-      "language": "Indonesian",
-      "matched_regions": [
-        "houthi"
-      ],
-      "matched_themes": [],
-      "region": "MENA",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Germany",
-      "tier": "monitor",
-      "title": "Perang Yaman Memanas , Houthi Dekati Aden dan Serang Riyadh",
-      "tone": null,
-      "url": "https://www.dw.com/id/houthi-perluas-serangan-riyadh-dan-aden-jadi-sorotan/a-80045712"
-    },
-    {
-      "actors": [
-        "Lithuania"
-      ],
-      "domain": "delfi.lt",
-      "id": "evt_d6f2dda46b575cc4",
-      "language": "Lithuanian",
-      "matched_regions": [
-        "nato"
-      ],
-      "matched_themes": [],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 1.5,
-        "themes": 0.0,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Lithuania",
-      "tier": "monitor",
-      "title": "Šaltiniai : Lenkija kreipėsi į NATO su prieštaringu pasiūlymu",
-      "tone": null,
-      "url": "https://www.delfi.lt/naujienos/uzsienyje/saltiniai-lenkija-kreipesi-i-nato-su-priestaringu-pasiulymu-120339118"
+      "url": "https://idrw.org/russia-su-57d-aero-india-2027/"
     },
     {
       "actors": [
         "United Kingdom"
       ],
-      "domain": "ibtimes.co.uk",
-      "id": "evt_50dbb291dfaf26b4",
+      "domain": "dailyrecord.co.uk",
+      "id": "evt_01524b329605cbec",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Labour defence spending will prepare for war and help preserve peace",
+      "tone": null,
+      "url": "https://www.dailyrecord.co.uk/news/scottish-news/labour-defence-spending-prepare-war-37920613"
+    },
+    {
+      "actors": [],
+      "domain": "chrismon.de",
+      "id": "evt_0b38ffc5a5830575",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "",
+      "tier": "monitor",
+      "title": "Was bedeutet eigentlich Advent , und worauf wird gewartet ?",
+      "tone": null,
+      "url": "https://chrismon.de/artikel/58858/was-bedeutet-eigentlich-advent-und-worauf-wird-gewartet"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "kreiszeitung.de",
+      "id": "evt_2e4f80ff627bc629",
+      "language": "German",
+      "matched_regions": [],
+      "matched_themes": [
+        "war"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Frauke Brosius - Gersdorf warnt eindringlich bei Lanz : „ Das ist das , was uns wirklich Angst machen muss",
+      "tone": null,
+      "url": "https://www.kreiszeitung.de/politik/frauke-brosius-gersdorf-warnt-eindringlich-bei-lanz-das-ist-das-was-uns-wirklich-angst-machen-muss-zr-94610538.html"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "zazoom.it",
+      "id": "evt_eb5cadd5522d153d",
+      "language": "Italian",
+      "matched_regions": [
+        "hamas",
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 3.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Eliminato un capo di Hamas file e moglie danni collaterali",
+      "tone": null,
+      "url": "https://www.zazoom.it/2026-11-27/eliminato-un-capo-di-hamas-file-e-moglie-danni-collaterali/19981917/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "livetradingnews.com",
+      "id": "evt_eac7a72b7f3b711c",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "sanction",
+        "sanctions"
+      ],
+      "region": "Global",
+      "score": 3.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 3.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Sanctions are splitting the AI chip market in two , and power will decide who wins , by Shayne Heffernan",
+      "tone": null,
+      "url": "https://www.livetradingnews.com/sanctions-are-splitting-the-ai-chip-market-in-two-and-power-will-decide-who-wins"
+    },
+    {
+      "actors": [
+        "United Kingdom"
+      ],
+      "domain": "warringtonguardian.co.uk",
+      "id": "evt_6c75e0db4b14ad6b",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "United Kingdom",
+      "tier": "monitor",
+      "title": "Culcheth man avoids jail after offensive weapon offence",
+      "tone": null,
+      "url": "https://www.warringtonguardian.co.uk/news/26761333.culcheth-man-avoids-jail-offensive-weapon-offence/"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "spartanavenue.com",
+      "id": "evt_37fbbfe409d60482",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "offensive"
+      ],
+      "region": "Global",
+      "score": 2.5,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.5,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Michigan State second - half offensive outburst vs . Arkansas was actually absurd",
+      "tone": null,
+      "url": "https://spartanavenue.com/michigan-state-s-second-half-offensive-outburst-vs-arkansas-was-actually-absurd-01m8dm0eexw6"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "newpost.gr",
+      "id": "evt_f1c6e2985871b3c7",
+      "language": "Greek",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Greece",
+      "tier": "monitor",
+      "title": "Νοβοροσίσκ : Τρεις τραυματίες και ζημιές από επίθεση με drones",
+      "tone": null,
+      "url": "https://newpost.gr/eidiseis/tramp-den-xero-an-tha-erthei-o-poytin-sti-g20-synechizontai-oi-antidraseis-gia-ta-oykranika-pligmata-sti-livyi/"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "inewsgr.com",
+      "id": "evt_15822327ad33e1ff",
+      "language": "Greek",
+      "matched_regions": [],
+      "matched_themes": [
+        "drone"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Greece",
+      "tier": "monitor",
+      "title": "Επιδρομή της Ουκρανίας με drones στο Ναβρασίσκ της Ρωσίας – Τρεις τραυματίες",
+      "tone": null,
+      "url": "https://www.inewsgr.com/97/epidromi-tis-oukranias-me-drones-sto-navrasisk-tis-rosias--treis-travmaties.htm"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "tucsonpost.com",
+      "id": "evt_51067da740455c69",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "China faces highest rate as US announces fresh raft of tariffs",
+      "tone": null,
+      "url": "http://www.tucsonpost.com/news/279454307/china-faces-highest-rate-as-us-announces-fresh-raft-of-tariffs"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "siap.viva.co.id",
+      "id": "evt_dc3ad3fa5faef5f3",
+      "language": "Indonesian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Indonesia",
+      "tier": "monitor",
+      "title": "Panglima IRGC Keluarkan Peringatan Keras , Iran Siapkan Balasan Menghancurkan",
+      "tone": null,
+      "url": "https://siap.viva.co.id/news/29328-panglima-irgc-keluarkan-peringatan-keras-iran-siapkan-balasan-menghancurkan"
+    },
+    {
+      "actors": [
+        "Indonesia"
+      ],
+      "domain": "news.okezone.com",
+      "id": "evt_77a8d5f1f4a0b931",
+      "language": "Indonesian",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Indonesia",
+      "tier": "monitor",
+      "title": "Kala Prabowo Singgung Perang Candu China : Narkoba Bisa Hancurkan Kekuatan Bangsa : Okezone News",
+      "tone": null,
+      "url": "https://news.okezone.com/read/2026/11/27/337/3256527/kala-prabowo-singgung-perang-candu-china-narkoba-bisa-hancurkan-kekuatan-bangsa"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "ipsnews.net",
+      "id": "evt_6f8cbe2af25efa22",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "Nuclear Progress Amidst Gloomy Political Outlook",
+      "tone": null,
+      "url": "https://www.ipsnews.net/2026/11/nuclear-progress-amidst-gloomy-political-outlook/"
+    },
+    {
+      "actors": [
+        "Italy"
+      ],
+      "domain": "zazoom.it",
+      "id": "evt_3e54b000fd191e06",
+      "language": "Italian",
+      "matched_regions": [
+        "iran"
+      ],
+      "matched_themes": [],
+      "region": "MENA",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Italy",
+      "tier": "monitor",
+      "title": "Kuwait due tecnici italiani morti in un attacco con droni LIran respinge le accuse",
+      "tone": null,
+      "url": "https://www.zazoom.it/2026-11-27/kuwait-due-tecnici-italiani-morti-in-un-attacco-con-droni-liran-respinge-le-accuse/19981940/"
+    },
+    {
+      "actors": [
+        "Greece"
+      ],
+      "domain": "cyprusnews.eu",
+      "id": "evt_9371640533299e3e",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "nuclear"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Greece",
+      "tier": "monitor",
+      "title": "Jared Kushner : Putin showed  restraint  by not using nuclear weapons",
+      "tone": null,
+      "url": "https://cyprusnews.eu/cnn-kosmos/jared-kushner-putin-showed-restraint-by-not-using-nuclear-weapons/"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "kreisbote.de",
+      "id": "evt_2428bb6ab464c3cd",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Soldaten - Tode – und Abweisung auf der Flucht : Roma leiden im Ukraine - Krieg",
+      "tone": null,
+      "url": "http://www.kreisbote.de/politik/soldaten-tode-und-abweisung-auf-der-flucht-roma-leiden-im-ukraine-krieg-zr-94610509.html"
+    },
+    {
+      "actors": [
+        "India"
+      ],
+      "domain": "economictimes.indiatimes.com",
+      "id": "evt_87538e1ea7cca5b6",
+      "language": "English",
+      "matched_regions": [
+        "china"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "India",
+      "tier": "monitor",
+      "title": "China , Hong Kong stocks rise as AI and chip shares lead gains",
+      "tone": null,
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/china-hong-kong-stocks-rise-as-ai-and-chip-shares-lead-gains/articleshow/136210600.cms"
+    },
+    {
+      "actors": [
+        "Germany"
+      ],
+      "domain": "kreiszeitung.de",
+      "id": "evt_52d435bf0dfc20e8",
+      "language": "German",
+      "matched_regions": [
+        "ukraine"
+      ],
+      "matched_themes": [],
+      "region": "Europa del Este",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 2.0,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Germany",
+      "tier": "monitor",
+      "title": "Soldaten - Tode – und Abweisung auf der Flucht : Roma leiden im Ukraine - Krieg",
+      "tone": null,
+      "url": "https://www.kreiszeitung.de/politik/soldaten-tode-und-abweisung-auf-der-flucht-roma-leiden-im-ukraine-krieg-zr-94610509.html"
+    },
+    {
+      "actors": [
+        "Nigeria"
+      ],
+      "domain": "dailypost.ng",
+      "id": "evt_34ad9a4ec744eec1",
+      "language": "English",
+      "matched_regions": [],
+      "matched_themes": [
+        "killed"
+      ],
+      "region": "Global",
+      "score": 2.0,
+      "score_breakdown": {
+        "region": 0.0,
+        "themes": 2.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Nigeria",
+      "tier": "monitor",
+      "title": "Tinubu approves N100m compensation for families of military personnel killed in Igbokoda crash",
+      "tone": null,
+      "url": "https://dailypost.ng/2026/11/27/tinubu-approves-100m-compensation-for-families-of-military-personnel-killed-in-igbokoda-crash/"
+    },
+    {
+      "actors": [
+        "Turkey"
+      ],
+      "domain": "yenisafak.com",
+      "id": "evt_c776f601ff5bbc66",
+      "language": "Turkish",
+      "matched_regions": [
+        "nato"
+      ],
+      "matched_themes": [],
+      "region": "Global",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Turkey",
+      "tier": "monitor",
+      "title": "Zaharovadan Kiev yönetimine NATO suçlaması",
+      "tone": null,
+      "url": "https://www.yenisafak.com/dunya/zaharovadan-kiev-yonetimine-nato-suclamasi-4877007"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "the-messenger.com",
+      "id": "evt_e471cf11241da19d",
+      "language": "English",
+      "matched_regions": [
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "What to know about North Korean move to shut down Swiss diplomatic office",
+      "tone": null,
+      "url": "https://www.the-messenger.com/news/world/article_e1e0942e-f005-5e3e-8ea7-02604820bb9f.html"
+    },
+    {
+      "actors": [
+        "Finland"
+      ],
+      "domain": "hameensanomat.fi",
+      "id": "evt_26c82b67f186f25d",
+      "language": "Finnish",
+      "matched_regions": [
+        "venezuela"
+      ],
+      "matched_themes": [],
+      "region": "América Latina",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Finland",
+      "tier": "monitor",
+      "title": "Venezuela aikoo kumota lain , joka est opposition edustajien asettumisen virkaan",
+      "tone": null,
+      "url": "https://www.hameensanomat.fi/uutissuomalainen/9990524"
+    },
+    {
+      "actors": [
+        "United States"
+      ],
+      "domain": "gdnonline.com",
+      "id": "evt_48c29071641dd4bf",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
@@ -601,73 +1004,98 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
-      "source_country": "United Kingdom",
+      "seen_date": "20261127T063000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "Trump Celebrates Being a President Who Prays Before Sharing Pastor Attack on Islam and Its  False Prophet",
+      "title": "World News : Aerial attack on Aramco claims life of employee",
       "tone": null,
-      "url": "https://www.ibtimes.co.uk/trump-shares-pastor-condemnation-islam-1834775"
+      "url": "https://www.gdnonline.com:443/Details/1414151"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "cnycentral.com",
-      "id": "evt_e3505a31273d26c6",
-      "language": "English",
-      "matched_regions": [],
-      "matched_themes": [
-        "deploy"
-      ],
-      "region": "Global",
-      "score": 1.5,
-      "score_breakdown": {
-        "region": 0.0,
-        "themes": 1.5,
-        "tone": 0.0
-      },
-      "seen_date": "20261125T141500Z",
-      "source_country": "United States",
-      "tier": "monitor",
-      "title": "NASA deploys research aircraft and satellite tools to aid in lead azide detonation in Iowa",
-      "tone": null,
-      "url": "https://cnycentral.com/news/nation-world/nasa-deploys-research-aircraft-and-satellite-tools-to-aid-in-lead-azide-detonation-in-iowa"
-    },
-    {
-      "actors": [
-        "Pakistan"
-      ],
-      "domain": "southeastasiapost.com",
-      "id": "evt_764d2fc08eab6247",
+      "domain": "the-messenger.com",
+      "id": "evt_a91ac2518e13e7e4",
       "language": "English",
       "matched_regions": [
-        "pakistan"
+        "lebanon"
       ],
       "matched_themes": [],
-      "region": "Asia del Sur",
+      "region": "MENA",
       "score": 1.5,
       "score_breakdown": {
         "region": 1.5,
         "themes": 0.0,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
-      "source_country": "Pakistan",
+      "seen_date": "20261127T063000Z",
+      "source_country": "United States",
       "tier": "monitor",
-      "title": "UKPNP spokesperson condemns Pakistan threat of military operation in PoJK Poonch , calls for dialogue",
+      "title": "UN peacekeepers are preparing to leave southern Lebanon . There no plan for what comes next | World",
       "tone": null,
-      "url": "http://www.southeastasiapost.com/news/279453628/ukpnp-spokesperson-condemns-pakistan-threat-of-military-operation-in-pojk-poonch-calls-for-dialogue"
+      "url": "https://www.the-messenger.com/news/world/article_ba1698bc-266c-5f76-8dfe-84690f15dcd1.html"
+    },
+    {
+      "actors": [
+        "Brazil"
+      ],
+      "domain": "riotimesonline.com",
+      "id": "evt_17e1b12fb274d35f",
+      "language": "English",
+      "matched_regions": [
+        "mali"
+      ],
+      "matched_themes": [],
+      "region": "Sahel",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "Brazil",
+      "tier": "monitor",
+      "title": "Barrick Chief Meets Mali Prime Minister",
+      "tone": null,
+      "url": "https://www.riotimesonline.com/barrick-chief-meets-mali-prime-minister-gold-dispute/"
     },
     {
       "actors": [
         "United States"
       ],
-      "domain": "local12.com",
-      "id": "evt_dcbb82798e39770c",
+      "domain": "the-messenger.com",
+      "id": "evt_a5c9f818af94af96",
+      "language": "English",
+      "matched_regions": [
+        "north korea"
+      ],
+      "matched_themes": [],
+      "region": "Asia-Pacífico",
+      "score": 1.5,
+      "score_breakdown": {
+        "region": 1.5,
+        "themes": 0.0,
+        "tone": 0.0
+      },
+      "seen_date": "20261127T063000Z",
+      "source_country": "United States",
+      "tier": "monitor",
+      "title": "South Korea lets a North Korean fisherman resettle in South and returns six others",
+      "tone": null,
+      "url": "https://www.the-messenger.com/news/world/article_f09acc37-ec10-5915-ab17-9ee3ecf586a9.html"
+    },
+    {
+      "actors": [
+        "Australia"
+      ],
+      "domain": "hardenexpress.com.au",
+      "id": "evt_99a9a457d977966e",
       "language": "English",
       "matched_regions": [],
       "matched_themes": [
-        "deploy"
+        "attack"
       ],
       "region": "Global",
       "score": 1.5,
@@ -676,12 +1104,12 @@
         "themes": 1.5,
         "tone": 0.0
       },
-      "seen_date": "20261125T141500Z",
-      "source_country": "United States",
+      "seen_date": "20261127T063000Z",
+      "source_country": "Australia",
       "tier": "monitor",
-      "title": "NASA deploys research aircraft and satellite tools to aid in lead azide detonation in Iowa",
+      "title": "Alleged masterminds of anti - Semitic attacks revealed",
       "tone": null,
-      "url": "https://local12.com/news/nation-world/nasa-deploys-research-aircraft-and-satellite-tools-to-aid-in-lead-azide-detonation-in-iowa"
+      "url": "https://www.hardenexpress.com.au/story/9399645/alleged-masterminds-of-anti-semitic-attacks-revealed/"
     }
   ],
   "filters": {
@@ -695,13 +1123,13 @@
     "tone_negative_threshold": -5.0,
     "version": "1.0.0"
   },
-  "generated_at": "2026-11-25T17:11:36Z",
+  "generated_at": "2026-11-27T16:38:39Z",
   "query_window": "last 24h",
   "source": "GDELT 2.0 DOC API",
   "tier_counts": {
-    "high": 1,
-    "medium": 2,
-    "monitor": 24
+    "high": 5,
+    "medium": 5,
+    "monitor": 33
   },
-  "total_events": 27
+  "total_events": 43
 }
